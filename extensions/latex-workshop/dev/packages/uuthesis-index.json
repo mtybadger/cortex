@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "makeidx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "indexname",
+      "unusual": true
+    },
+    {
+      "name": "newindexgroup",
+      "arg": {
+        "format": "{}",
+        "snippet": "newindexgroup{${1:title%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

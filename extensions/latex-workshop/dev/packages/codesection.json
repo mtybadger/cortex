@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DefineCodeSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineCodeSection{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineCodeSection",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineCodeSection[${2:true|false%keyvals}]{${1:name}}",
+        "keys": [
+          "\\DefineCodeSection,\\SetCodeSection"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetCodeSection",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetCodeSection{${1:name}}{${2:true|false%keyvals}}",
+        "keys": [
+          "\\DefineCodeSection,\\SetCodeSection"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "BeginCodeSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "BeginCodeSection{${1:name}}"
+      }
+    },
+    {
+      "name": "EndCodeSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "EndCodeSection{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\DefineCodeSection,\\SetCodeSection": [
+      "true",
+      "false"
+    ]
+  },
+  "args": []
+}

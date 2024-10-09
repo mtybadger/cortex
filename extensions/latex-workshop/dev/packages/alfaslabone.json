@@ -1,0 +1,54 @@
+{
+  "deps": [
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "supfigures",
+      "unusual": true
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "textsup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsup{${1:text}}"
+      }
+    },
+    {
+      "name": "textsuperior",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperior{${1:text}}"
+      }
+    },
+    {
+      "name": "alfaslabonetabular"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

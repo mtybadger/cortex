@@ -13,7 +13,7 @@ import { DebianArchString } from './types';
 import * as ansiColors from 'ansi-colors';
 
 // Based on https://source.chromium.org/chromium/chromium/src/+/main:build/linux/sysroot_scripts/install-sysroot.py.
-const URL_PREFIX = 'https://msftelectronbuild.z5.web.core.windows.net';
+const URL_PREFIX = 'https://msftelectron.blob.core.windows.net';
 const URL_PATH = 'sysroots/toolchain';
 const REPO_ROOT = path.dirname(path.dirname(path.dirname(__dirname)));
 
@@ -38,14 +38,15 @@ interface IFetchOptions {
 }
 
 function getElectronVersion(): Record<string, string> {
-	const npmrc = fs.readFileSync(path.join(REPO_ROOT, '.npmrc'), 'utf8');
-	const electronVersion = /^target="(.*)"$/m.exec(npmrc)![1];
-	const msBuildId = /^ms_build_id="(.*)"$/m.exec(npmrc)![1];
+	const yarnrc = fs.readFileSync(path.join(REPO_ROOT, '.yarnrc'), 'utf8');
+	const electronVersion = /^target "(.*)"$/m.exec(yarnrc)![1];
+	const msBuildId = /^ms_build_id "(.*)"$/m.exec(yarnrc)![1];
 	return { electronVersion, msBuildId };
 }
 
 function getSha(filename: fs.PathLike): string {
-	const hash = createHash('sha256');
+	// CodeQL [SM04514] Hash logic cannot be changed due to external dependency, also the code is only used during build.
+	const hash = createHash('sha1');
 	// Read file 1 MB at a time
 	const fd = fs.openSync(filename, 'r');
 	const buffer = Buffer.alloc(1024 * 1024);
@@ -128,7 +129,7 @@ async function fetchUrl(options: IFetchOptions, retries = 10, retryDelay = 1000)
 }
 
 type SysrootDictEntry = {
-	Sha256Sum: string;
+	Sha1Sum: string;
 	SysrootDir: string;
 	Tarball: string;
 };
@@ -185,9 +186,9 @@ export async function getChromiumSysroot(arch: DebianArchString): Promise<string
 	const sysrootArch = `bullseye_${arch}`;
 	const sysrootDict: SysrootDictEntry = sysrootInfo[sysrootArch];
 	const tarballFilename = sysrootDict['Tarball'];
-	const tarballSha = sysrootDict['Sha256Sum'];
+	const tarballSha = sysrootDict['Sha1Sum'];
 	const sysroot = path.join(tmpdir(), sysrootDict['SysrootDir']);
-	const url = [URL_PREFIX, URL_PATH, tarballSha].join('/');
+	const url = [URL_PREFIX, URL_PATH, tarballSha, tarballFilename].join('/');
 	const stamp = path.join(sysroot, '.stamp');
 	if (fs.existsSync(stamp) && fs.readFileSync(stamp).toString() === url) {
 		return sysroot;

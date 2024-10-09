@@ -1,0 +1,309 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "dataplot"
+    },
+    {
+      "name": "datatool"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DTLbarchart",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DTLbarchart{${1:settings%keyvals}}{${2:db%special}}{${3:values}}",
+        "keys": [
+          "\\DTLbarchart",
+          "\\DTLbarchart,\\DTLmultibarchart"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DTLbarchart",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "DTLbarchart[${4:condition}]{${1:settings%keyvals}}{${2:db%special}}{${3:values}}",
+        "keys": [
+          "\\DTLbarchart",
+          "\\DTLbarchart,\\DTLmultibarchart"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "DTLmultibarchart",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DTLmultibarchart{${1:settings%keyvals}}{${2:db%special}}{${3:values}}",
+        "keys": [
+          "\\DTLmultibarchart",
+          "\\DTLbarchart,\\DTLmultibarchart"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DTLmultibarchart",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "DTLmultibarchart[${4:condition}]{${1:settings%keyvals}}{${2:db%special}}{${3:values}}",
+        "keys": [
+          "\\DTLmultibarchart",
+          "\\DTLbarchart,\\DTLmultibarchart"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "DTLbarchartlength",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarwidth",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarlabeloffset",
+      "unusual": true
+    },
+    {
+      "name": "DTLsetbarcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DTLsetbarcolor{${1:index}}{${2:color}}"
+      }
+    },
+    {
+      "name": "DTLdobarcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLdobarcolor{${1:index}}"
+      }
+    },
+    {
+      "name": "DTLbaroutlinecolor",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaroutlinewidth",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaratbegintikz"
+    },
+    {
+      "name": "DTLbaratendtikz"
+    },
+    {
+      "name": "DTLeverybarhook",
+      "unusual": true
+    },
+    {
+      "name": "DTLstartpt",
+      "unusual": true
+    },
+    {
+      "name": "DTLmidpt",
+      "unusual": true
+    },
+    {
+      "name": "DTLendpt",
+      "unusual": true
+    },
+    {
+      "name": "ifDTLverticalbars",
+      "unusual": true
+    },
+    {
+      "name": "DTLverticalbarstrue",
+      "unusual": true
+    },
+    {
+      "name": "DTLverticalbarsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifDTLcolorbarchart",
+      "unusual": true
+    },
+    {
+      "name": "DTLcolorbarcharttrue",
+      "unusual": true
+    },
+    {
+      "name": "DTLcolorbarchartfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifDTLbarxaxis",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarxaxistrue",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarxaxisfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifDTLbaryaxis",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaryaxistrue",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaryaxisfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifDTLbarytics",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaryticstrue",
+      "unusual": true
+    },
+    {
+      "name": "DTLbaryticsfalse",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarXlabelalign",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarYticklabelalign",
+      "unusual": true
+    },
+    {
+      "name": "DTLbardisplayYticklabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLbardisplayYticklabel{${1:text}}"
+      }
+    },
+    {
+      "name": "DTLdisplaylowerbarlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLdisplaylowerbarlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "DTLdisplaylowermultibarlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLdisplaylowermultibarlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "DTLdisplayupperbarlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLdisplayupperbarlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "DTLdisplayuppermultibarlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLdisplayuppermultibarlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "DTLbarchartwidth",
+      "unusual": true
+    },
+    {
+      "name": "DTLbargroupwidth",
+      "unusual": true
+    },
+    {
+      "name": "DTLnegextent",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarmax",
+      "unusual": true
+    },
+    {
+      "name": "DTLbarvariable",
+      "unusual": true
+    },
+    {
+      "name": "DTLBarXAxisStyle",
+      "unusual": true
+    },
+    {
+      "name": "DTLBarYAxisStyle",
+      "unusual": true
+    },
+    {
+      "name": "DTLdocurrentbarcolor",
+      "unusual": true
+    },
+    {
+      "name": "DTLgetbarcolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DTLgetbarcolor{${1:index}}"
+      }
+    },
+    {
+      "name": "theDTLbarroundvar",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/databar#c": [
+      "color",
+      "gray",
+      "vertical",
+      "horizontal"
+    ],
+    "\\DTLbarchart": [
+      "variable=${1:\\var}",
+      "upperbarlabel=${1:text}"
+    ],
+    "\\DTLmultibarchart": [
+      "variables={${1:\\var1,\\var2,...}}",
+      "multibarlabels={${1:text1,text2,...}}",
+      "uppermultibarlabels={${1:text1,text2,...}}",
+      "groupgap="
+    ],
+    "\\DTLbarchart,\\DTLmultibarchart": [
+      "max=${1:decimal}",
+      "length=",
+      "maxdepth=${1:decimal}",
+      "axes=${1|both,x,y,none|}",
+      "barlabel=${1:text}",
+      "yticpoints={${1:decimal1,decimal2,...}}",
+      "yticgap=",
+      "yticlabels={${1:text1,text2,...}}",
+      "ylabel=${1:text}",
+      "verticalbars",
+      "barwidth="
+    ]
+  },
+  "args": [
+    "\\usepackage/databar#c"
+  ]
+}

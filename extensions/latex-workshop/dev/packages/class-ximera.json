@@ -1,0 +1,716 @@
+{
+  "deps": [
+    {
+      "name": "cancel"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "titletoc"
+    },
+    {
+      "name": "titling"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgfplots"
+    },
+    {
+      "name": "pgfplotslibrarygroupplots"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "comment"
+    },
+    {
+      "name": "gettitlestring"
+    },
+    {
+      "name": "nameref"
+    },
+    {
+      "name": "epstopdf"
+    },
+    {
+      "name": "tikzlibraryexternal"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "sagetex"
+    },
+    {
+      "name": "titleps"
+    },
+    {
+      "name": "colortbl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "acknowledgement",
+      "arg": {
+        "format": "{}",
+        "snippet": "acknowledgement{${1:text}}"
+      }
+    },
+    {
+      "name": "alt",
+      "arg": {
+        "format": "{}",
+        "snippet": "alt{${1:alt text%text}}"
+      }
+    },
+    {
+      "name": "answer",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "answer[${2:options%keyvals}]{${1:answer}}",
+        "keys": [
+          "\\answer"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "answer",
+      "arg": {
+        "format": "{}",
+        "snippet": "answer{${1:answer}}"
+      }
+    },
+    {
+      "name": "chapterstyle"
+    },
+    {
+      "name": "choice",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "choice[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\choice"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "choice",
+      "arg": {
+        "format": "{}",
+        "snippet": "choice{${1:text}}"
+      }
+    },
+    {
+      "name": "desmos",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "desmos{${1:desmos id}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "desmosThreeD",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "desmosThreeD{${1:desmos3D id}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "geogebra",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "geogebra{${1:geogebra id}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "googleSheet",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "googleSheet{${1:id}}{${2:width}}{${3:height}}{${4:sheet id}}{${5:cell range}}"
+      }
+    },
+    {
+      "name": "graph",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "graph[${2:options%keyvals}]{${1:formula}}",
+        "keys": [
+          "\\graph"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "graph",
+      "arg": {
+        "format": "{}",
+        "snippet": "graph{${1:formula}}"
+      }
+    },
+    {
+      "name": "handoutfalse"
+    },
+    {
+      "name": "handouttrue"
+    },
+    {
+      "name": "ifhandout",
+      "unusual": true
+    },
+    {
+      "name": "includeinteractive",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includeinteractive[${2:id=id}]{${1:js file}}"
+      }
+    },
+    {
+      "name": "includeinteractive",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeinteractive{${1:js file%file}}"
+      }
+    },
+    {
+      "name": "js",
+      "arg": {
+        "format": "{}",
+        "snippet": "js{${1:js code}}"
+      }
+    },
+    {
+      "name": "license",
+      "arg": {
+        "format": "{}",
+        "snippet": "license{${1:text}}"
+      }
+    },
+    {
+      "name": "link",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "link[${2:text}]{${1:URL}}"
+      }
+    },
+    {
+      "name": "link",
+      "arg": {
+        "format": "{}",
+        "snippet": "link{${1:URL}}"
+      }
+    },
+    {
+      "name": "outcome",
+      "arg": {
+        "format": "{}",
+        "snippet": "outcome{${1:text}}"
+      }
+    },
+    {
+      "name": "pdfOnly",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfOnly{${1:content%text}}"
+      }
+    },
+    {
+      "name": "sectionstyle"
+    },
+    {
+      "name": "wordChoice",
+      "arg": {
+        "format": "{}",
+        "snippet": "wordChoice{${1:choices%text}}"
+      }
+    },
+    {
+      "name": "xkcd",
+      "arg": {
+        "format": "{}",
+        "snippet": "xkcd{${1:xkcd name}}"
+      }
+    },
+    {
+      "name": "youtube",
+      "arg": {
+        "format": "{}",
+        "snippet": "youtube{${1:youtube id}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "algorithm"
+    },
+    {
+      "name": "algorithm",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "claim"
+    },
+    {
+      "name": "claim",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conclusion"
+    },
+    {
+      "name": "conclusion",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "condition"
+    },
+    {
+      "name": "condition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "criterion"
+    },
+    {
+      "name": "criterion",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "dialogue"
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "expandable"
+    },
+    {
+      "name": "explanation"
+    },
+    {
+      "name": "explanation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exploration"
+    },
+    {
+      "name": "fact"
+    },
+    {
+      "name": "fact",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "feedback"
+    },
+    {
+      "name": "feedback",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "foldable"
+    },
+    {
+      "name": "formula"
+    },
+    {
+      "name": "formula",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "freeResponse"
+    },
+    {
+      "name": "hint"
+    },
+    {
+      "name": "idea"
+    },
+    {
+      "name": "idea",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "image"
+    },
+    {
+      "name": "image",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    },
+    {
+      "name": "instructorIntro"
+    },
+    {
+      "name": "instructorNotes"
+    },
+    {
+      "name": "javascript"
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "model"
+    },
+    {
+      "name": "model",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "multipleChoice"
+    },
+    {
+      "name": "multipleChoice",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:id=id}]"
+      }
+    },
+    {
+      "name": "notation"
+    },
+    {
+      "name": "notation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "observation"
+    },
+    {
+      "name": "observation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "onlineOnly"
+    },
+    {
+      "name": "paradox"
+    },
+    {
+      "name": "paradox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "procedure"
+    },
+    {
+      "name": "procedure",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "prompt"
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "question"
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "sageCell"
+    },
+    {
+      "name": "sageOutput"
+    },
+    {
+      "name": "selectAll"
+    },
+    {
+      "name": "solution"
+    },
+    {
+      "name": "summary"
+    },
+    {
+      "name": "summary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "template"
+    },
+    {
+      "name": "template",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "ungraded"
+    },
+    {
+      "name": "validator",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:expr}]"
+      }
+    },
+    {
+      "name": "warning"
+    },
+    {
+      "name": "warning",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/ximera#c": [
+      "handout",
+      "noauthor",
+      "nooutcomes",
+      "instructornotes",
+      "noinstructornotes",
+      "hints",
+      "newpage",
+      "numbers",
+      "wordchoicegiven",
+      "xake",
+      "tikzexport"
+    ],
+    "\\answer": [
+      "given",
+      "tolerance=${1:tolerance}",
+      "validator=${1:expr}",
+      "id=${1:id}",
+      "format=${1:format}",
+      "onlinenoinput",
+      "onlineshowanswerbutton"
+    ],
+    "\\choice": [
+      "value=${1:value}",
+      "correct"
+    ],
+    "\\graph": [
+      "xmin=${1:number}",
+      "xmax=${1:number}",
+      "ymin=${1:number}",
+      "ymax=${1:number}",
+      "panel",
+      "xAxisLabel=\"${1:text}\"",
+      "yAxisLabel=\"${1:text}\"",
+      "hideXAxis",
+      "hideYAxis",
+      "hideXAxisNumbers",
+      "hideYAxisNumbers",
+      "polar"
+    ]
+  },
+  "args": [
+    "\\documentclass/ximera#c"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "arg",
+      "arg": {
+        "format": "{}",
+        "snippet": "arg{${1:i}}"
+      }
+    },
+    {
+      "name": "pgfaddtoshape",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfaddtoshape{${1:name}}{${2:code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\tikzset#c": [
+      "memory graph"
+    ],
+    "\\node#c": [
+      "block",
+      "arity=${1:n}",
+      "block mark north east",
+      "block mark north east={${1:options}}",
+      "block mark north west",
+      "block mark north west={${1:options}}",
+      "block mark south east",
+      "block mark south east={${1:options}}",
+      "block mark south west",
+      "block mark south west={${1:options}}"
+    ],
+    "\\tikzset#c": [
+      "every block/.style={${1:options}}"
+    ],
+    "\\draw#c": [
+      "ref"
+    ]
+  },
+  "args": []
+}

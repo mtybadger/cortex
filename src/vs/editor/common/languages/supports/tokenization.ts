@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Color } from '../../../../base/common/color.js';
-import { LanguageId, FontStyle, ColorId, StandardTokenType, MetadataConsts } from '../../encodedTokenAttributes.js';
+import { Color } from 'vs/base/common/color';
+import { LanguageId, FontStyle, ColorId, StandardTokenType, MetadataConsts } from 'vs/editor/common/encodedTokenAttributes';
 
 export interface ITokenThemeRule {
 	token: string;

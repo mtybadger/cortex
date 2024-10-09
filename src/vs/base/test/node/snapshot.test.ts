@@ -5,12 +5,12 @@
 
 import * as fs from 'fs';
 import { tmpdir } from 'os';
-import { getRandomTestPath } from './testUtils.js';
-import { Promises } from '../../node/pfs.js';
-import { SnapshotContext, assertSnapshot } from '../common/snapshot.js';
-import { URI } from '../../common/uri.js';
+import { getRandomTestPath } from 'vs/base/test/node/testUtils';
+import { Promises } from 'vs/base/node/pfs';
+import { SnapshotContext, assertSnapshot } from 'vs/base/test/common/snapshot';
+import { URI } from 'vs/base/common/uri';
 import * as path from 'path';
-import { assertThrowsAsync, ensureNoDisposablesAreLeakedInTestSuite } from '../common/utils.js';
+import { assertThrowsAsync, ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 // tests for snapshot are in Node so that we can use native FS operations to
 // set up and validate things.

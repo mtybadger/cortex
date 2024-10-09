@@ -1,0 +1,70 @@
+{
+  "deps": [
+    {
+      "name": "class-scrbook"
+    },
+    {
+      "name": "kao"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setchapterstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "setchapterstyle{${1:style name%keyvals}}",
+        "keys": [
+          "\\setchapterstyle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "chapterstylebar",
+      "unusual": true
+    },
+    {
+      "name": "chapterstylekao",
+      "unusual": true
+    },
+    {
+      "name": "chapterstylelines",
+      "unusual": true
+    },
+    {
+      "name": "chapterstyleplain",
+      "unusual": true
+    },
+    {
+      "name": "setchapterimage",
+      "arg": {
+        "format": "{}",
+        "snippet": "setchapterimage{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "setchapterimage",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setchapterimage[${2:height}]{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "hrulefill",
+      "arg": {
+        "format": "[]",
+        "snippet": "hrulefill[${1:height}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setchapterstyle": [
+      "plain",
+      "kao",
+      "bar",
+      "lines"
+    ]
+  },
+  "args": []
+}

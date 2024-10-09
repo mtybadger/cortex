@@ -1,0 +1,28 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "psset{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "psset",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "psset[${2:families}]{${1:keyvals}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

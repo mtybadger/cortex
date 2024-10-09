@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cscshape"
+    },
+    {
+      "name": "textcsc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcsc{${1:text}}"
+      }
+    },
+    {
+      "name": "csconlyshape"
+    },
+    {
+      "name": "csconly",
+      "arg": {
+        "format": "{}",
+        "snippet": "csconly{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,114 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bigtimes",
+      "detail": "⨉ (\"txfonts\" command)",
+      "doc": "N-ary times operator"
+    },
+    {
+      "name": "nuparrow"
+    },
+    {
+      "name": "ndownarrow"
+    },
+    {
+      "name": "NewShadedTheorem",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "NewShadedTheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
+      }
+    },
+    {
+      "name": "NewShadedTheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewShadedTheorem{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "NewShadedTheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "NewShadedTheorem{${1:envname}}{${2:caption}}[${3:within}]"
+      }
+    },
+    {
+      "name": "theoremframecommand",
+      "unusual": true
+    },
+    {
+      "name": "InsertTheoremBreak"
+    },
+    {
+      "name": "InsertTheoremBreak*"
+    },
+    {
+      "name": "MathIndent"
+    },
+    {
+      "name": "SetMathIndent",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetMathIndent{${1:math code}}"
+      }
+    },
+    {
+      "name": "AddtoMathIndent",
+      "arg": {
+        "format": "{}",
+        "snippet": "AddtoMathIndent{${1:math code}}"
+      }
+    },
+    {
+      "name": "PopMathIndent"
+    },
+    {
+      "name": "PopMathIndent*"
+    },
+    {
+      "name": "DeclareMathSet",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareMathSet{${1:identifier}}"
+      }
+    },
+    {
+      "name": "DeclareMathSet",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DeclareMathSet[${2:options%keyvals}]{${1:identifier}}",
+        "keys": [
+          "\\DeclareMathSet"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ProvidePGFPagesFourOnOneWithSpaceForNotes"
+    },
+    {
+      "name": "OverloadUnderscoreInMath"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\DeclareMathSet": [
+      "format=",
+      "name=",
+      "prefix=",
+      "overwrite"
+    ]
+  },
+  "args": []
+}

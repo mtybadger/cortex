@@ -1,0 +1,40 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pgfsetcurvilinearbeziercurve",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "pgfsetcurvilinearbeziercurve{${1:start}}{${2:support1}}{${3:support2}}{${4:end}}"
+      }
+    },
+    {
+      "name": "pgfcurvilineardistancetotime",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfcurvilineardistancetotime{${1:distance}}"
+      }
+    },
+    {
+      "name": "pgfpointcurvilinearbezierorthogonal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfpointcurvilinearbezierorthogonal{${1:distance}}{${2:offset}}"
+      }
+    },
+    {
+      "name": "pgfpointcurvilinearbezierpolar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfpointcurvilinearbezierpolar{${1:x}}{${2:y}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

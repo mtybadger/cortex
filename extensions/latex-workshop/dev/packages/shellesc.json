@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ShellEscapeStatus",
+      "unusual": true
+    },
+    {
+      "name": "DelayedShellEscape",
+      "arg": {
+        "format": "{}",
+        "snippet": "DelayedShellEscape{${1:script}}"
+      }
+    },
+    {
+      "name": "ShellEscape",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShellEscape{${1:script}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

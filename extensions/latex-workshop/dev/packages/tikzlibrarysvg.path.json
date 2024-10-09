@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "pgfparser"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfpathsvg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfpathsvg{${1:path}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

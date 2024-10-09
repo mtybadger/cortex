@@ -1,0 +1,59 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "chapterNoNumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "chapterNoNumber{${1:title}}"
+      }
+    },
+    {
+      "name": "sectionNoNumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionNoNumber{${1:title}}"
+      }
+    },
+    {
+      "name": "toc",
+      "arg": {
+        "format": "{}",
+        "snippet": "toc{${1:extension de la table}}"
+      }
+    },
+    {
+      "name": "tablesname",
+      "unusual": true
+    },
+    {
+      "name": "sectiontable",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sectiontable{${1:title}}{${2:extension de la table}}"
+      }
+    },
+    {
+      "name": "sectiontableoffigure"
+    },
+    {
+      "name": "sectiontableoftable"
+    },
+    {
+      "name": "tablechapter"
+    },
+    {
+      "name": "stdtables"
+    },
+    {
+      "name": "mabibliographie",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mabibliographie{${1:bibstyle}}{${2:bib file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

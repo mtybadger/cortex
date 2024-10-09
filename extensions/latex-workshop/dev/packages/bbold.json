@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "textbb",
+      "arg": {
+        "format": "{}",
+        "snippet": "textbb{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "bbfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

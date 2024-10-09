@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibraryext.node-families"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

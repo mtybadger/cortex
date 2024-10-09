@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { SyncDescriptor } from './descriptors.js';
-import { BrandedService, ServiceIdentifier } from './instantiation.js';
+import { SyncDescriptor } from './descriptors';
+import { BrandedService, ServiceIdentifier } from './instantiation';
 
 const _registry: [ServiceIdentifier<any>, SyncDescriptor<any>][] = [];
 
@@ -35,3 +35,5 @@ export function registerSingleton<T, Services extends BrandedService[]>(id: Serv
 export function getSingletonServiceDescriptors(): [ServiceIdentifier<any>, SyncDescriptor<any>][] {
 	return _registry;
 }
+
+

@@ -1,0 +1,91 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "ragged2e"
+    }
+  ],
+  "macros": [
+    {
+      "name": "idxlayout",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxlayout{${1:options%keyvals}}",
+        "keys": [
+          "\\idxlayout,\\usepackage/idxlayout#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setindexprenote",
+      "arg": {
+        "format": "{}",
+        "snippet": "setindexprenote{${1:text}}"
+      }
+    },
+    {
+      "name": "noindexprenote"
+    },
+    {
+      "name": "indexfont",
+      "unusual": true
+    },
+    {
+      "name": "indexjustific",
+      "unusual": true
+    },
+    {
+      "name": "indexsubsdelim",
+      "unusual": true
+    },
+    {
+      "name": "indexstheadcase",
+      "unusual": true
+    },
+    {
+      "name": "theidxcols",
+      "unusual": true
+    },
+    {
+      "name": "indexcolsep",
+      "unusual": true
+    },
+    {
+      "name": "indexrule",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\idxlayout,\\usepackage/idxlayout#c": [
+      "columns=${1:integer}",
+      "unbalanced",
+      "columnsep=",
+      "rule=",
+      "itemlayout=${1|abshang,relhang,singlepar|}",
+      "indentunit=",
+      "hangindent=",
+      "subindent=",
+      "subsubindent=",
+      "initsep=",
+      "notesep=",
+      "columnnote",
+      "minspace=",
+      "font=${1:format csnames}",
+      "justific=${1|standard,raggedright,RaggedRight|}",
+      "totoc"
+    ]
+  },
+  "args": [
+    "\\idxlayout,\\usepackage/idxlayout#c"
+  ]
+}

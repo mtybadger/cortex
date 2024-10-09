@@ -1,0 +1,11 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "syntaxonly"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

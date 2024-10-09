@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "persianday"
+    },
+    {
+      "name": "persianmonth"
+    },
+    {
+      "name": "persianyear"
+    },
+    {
+      "name": "persiantoday",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,547 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "InitCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "InitCS{${1:cmd}}"
+      }
+    },
+    {
+      "name": "InitCS*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "InitCS*{${1:cmd}}"
+      }
+    },
+    {
+      "name": "InitName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "InitName{${1:csname}}"
+      }
+    },
+    {
+      "name": "InitName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "InitName*{${1:csname}}"
+      }
+    },
+    {
+      "name": "ShortEmpty",
+      "unusual": true
+    },
+    {
+      "name": "LongEmpty"
+    },
+    {
+      "name": "ReserveCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ReserveCS{${1:cmd}}"
+      }
+    },
+    {
+      "name": "ReserveCS*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ReserveCS*{${1:cmd}}"
+      }
+    },
+    {
+      "name": "ReserveName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ReserveName{${1:csname}}"
+      }
+    },
+    {
+      "name": "ReserveName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ReserveName*{${1:csname}}"
+      }
+    },
+    {
+      "name": "SaveCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SaveCS{${1:cmd}}"
+      }
+    },
+    {
+      "name": "RestoreCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RestoreCS{${1:cmd}}"
+      }
+    },
+    {
+      "name": "SaveName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SaveName{${1:csname}}"
+      }
+    },
+    {
+      "name": "RestoreName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RestoreName{${1:csname}}"
+      }
+    },
+    {
+      "name": "requirecommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "requirecommand{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "requirecommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "requirecommand{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "requirecommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "requirecommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "requirecommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "requirecommand*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "requirecommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "requirecommand*{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "requirecommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "requirecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "newtokens",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newtokens{${1:cmd}}"
+      }
+    },
+    {
+      "name": "newlet",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newlet{${1:cmd1%cmd}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "newboolean",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newboolean{${1:csname}}"
+      }
+    },
+    {
+      "name": "providetokens",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "providetokens{${1:cmd}}"
+      }
+    },
+    {
+      "name": "provideboolean",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "provideboolean{${1:csname}}"
+      }
+    },
+    {
+      "name": "providesavebox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "providesavebox{${1:cmd}}"
+      }
+    },
+    {
+      "name": "providecounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "providecounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "providelength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "providelength{${1:cmd}}"
+      }
+    },
+    {
+      "name": "UndefineCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "UndefineCS{${1:cmd}}"
+      }
+    },
+    {
+      "name": "UndefineName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "UndefineName{${1:csname}}"
+      }
+    },
+    {
+      "name": "defcommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defcommand{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "defcommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "defcommand{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "defcommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "defcommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "defcommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defcommand*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "defcommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "defcommand*{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "defcommand*",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "defcommand*{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "NewName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "NewName{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "NewName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "NewName*{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "DefName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DefName{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "DefName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DefName*{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "Global",
+      "unusual": true
+    },
+    {
+      "name": "CheckName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CheckName{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "CheckName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CheckName*{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "RequireName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "RequireName{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "RequireName*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "RequireName*{${1:csname}}{${2:template}}{${3:body}}"
+      }
+    },
+    {
+      "name": "NewTextFontCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewTextFontCommand{${1:cmd}}{${2:font-switches%definition}}"
+      }
+    },
+    {
+      "name": "NewRobustCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewRobustCommand{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "NewRobustCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "NewRobustCommand{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "NewRobustCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "NewRobustCommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "Elet",
+      "unusual": true
+    },
+    {
+      "name": "EElet",
+      "unusual": true
+    },
+    {
+      "name": "NewUserInfo",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NewUserInfo{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "NewUserInfo",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "NewUserInfo[${2:user-cmd}]{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "NewUserInfo*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NewUserInfo*{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "NewUserInfo*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "NewUserInfo*[${2:user-cmd}]{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "eExecute",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "eExecute{${1:code}}"
+      }
+    },
+    {
+      "name": "eExecute*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "eExecute*{${1:code}}"
+      }
+    },
+    {
+      "name": "Gobble",
+      "unusual": true
+    },
+    {
+      "name": "GobbleM",
+      "unusual": true
+    },
+    {
+      "name": "GobbleO",
+      "unusual": true
+    },
+    {
+      "name": "GobbleMM",
+      "unusual": true
+    },
+    {
+      "name": "GobbleMO",
+      "unusual": true
+    },
+    {
+      "name": "GobbleOM",
+      "unusual": true
+    },
+    {
+      "name": "DeclareBooleanOptions",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareBooleanOptions{${1:on}}{${2:off}}"
+      }
+    },
+    {
+      "name": "DeclareBooleanUserOptions",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareBooleanUserOptions{${1:on}}{${2:off}}"
+      }
+    },
+    {
+      "name": "ToggleBoolean",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ToggleBoolean{${1:boolean}}"
+      }
+    },
+    {
+      "name": "VerboseErrors",
+      "unusual": true
+    },
+    {
+      "name": "VerboseErrors",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "VerboseErrors[${1:number}]"
+      }
+    },
+    {
+      "name": "GVerboseErrors",
+      "unusual": true
+    },
+    {
+      "name": "GVerboseErrors",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "GVerboseErrors[${1:number}]"
+      }
+    },
+    {
+      "name": "Debug",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Debug{${1:number}}"
+      }
+    },
+    {
+      "name": "GDebug",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "GDebug{${1:number}}"
+      }
+    },
+    {
+      "name": "DTypeout",
+      "unusual": true
+    },
+    {
+      "name": "DDTypeout",
+      "unusual": true
+    },
+    {
+      "name": "DDDTypeout",
+      "unusual": true
+    },
+    {
+      "name": "DGobbleM",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

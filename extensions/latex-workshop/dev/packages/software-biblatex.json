@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "xurl"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/biblatex#c,\\ExecuteBibliographyOptions#c": [
+      "halid",
+      "swhid",
+      "shortswhid",
+      "swlabels",
+      "vcs",
+      "license"
+    ]
+  },
+  "args": [
+    "\\usepackage/biblatex#c,\\ExecuteBibliographyOptions#c"
+  ]
+}

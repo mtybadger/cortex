@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathlemmaellipsis",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "NotesToMath"
+    },
+    {
+      "name": "NoNotesToMath"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

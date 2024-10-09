@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "thepdfnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "thepdfnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "thepdfnumberNormZeroOne",
+      "arg": {
+        "format": "{}",
+        "snippet": "thepdfnumberNormZeroOne{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

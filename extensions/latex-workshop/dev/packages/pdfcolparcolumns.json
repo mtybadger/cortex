@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "parcolumns"
+    },
+    {
+      "name": "pdfcol"
+    },
+    {
+      "name": "infwarerr"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{parcolumns}": [
+      "rulebetweencolor=${1:color}",
+      "rulebetweencolor=[${1:model}]{${2:colorspec}}"
+    ]
+  },
+  "args": []
+}

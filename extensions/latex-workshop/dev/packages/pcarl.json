@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "offamily"
+    },
+    {
+      "name": "textof",
+      "arg": {
+        "format": "{}",
+        "snippet": "textof{${1:text}}"
+      }
+    },
+    {
+      "name": "offamilydefault",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pcarl#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pcarl#c"
+  ]
+}

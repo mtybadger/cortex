@@ -1,0 +1,56 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "StopDoing",
+      "unusual": true
+    },
+    {
+      "name": "setdo",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setdo[${2:digit}]{${1:do%definition}}"
+      }
+    },
+    {
+      "name": "setdo",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "setdo[${2:digit}][${3:default}]{${1:do%definition}}"
+      }
+    },
+    {
+      "name": "DoWithAllOf",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DoWithAllOf{${1:repeat}}{${2:<arg1><arg2>...<${3:argN}>}}"
+      }
+    },
+    {
+      "name": "DoWithAllIn",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DoWithAllIn{${1:repeat}}{${2:list macro}}"
+      }
+    },
+    {
+      "name": "ifltx",
+      "unusual": true
+    },
+    {
+      "name": "PushCatMakeLetterAt",
+      "unusual": true
+    },
+    {
+      "name": "PopLetterCatAt",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

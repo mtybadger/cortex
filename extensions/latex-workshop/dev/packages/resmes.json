@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "resmes"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

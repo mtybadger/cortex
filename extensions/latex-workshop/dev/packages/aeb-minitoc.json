@@ -1,0 +1,163 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "TOPLevel",
+      "arg": {
+        "format": "{}",
+        "snippet": "TOPLevel{${1:level%keyvals}}",
+        "keys": [
+          "\\TOPLevel#c,\\BTMLevel#c,\\TOCLevels#c,\\declaretocfmt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "BTMLevel",
+      "arg": {
+        "format": "{}",
+        "snippet": "BTMLevel{${1:level%keyvals}}",
+        "keys": [
+          "\\TOPLevel#c,\\BTMLevel#c,\\TOCLevels#c,\\declaretocfmt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "TOCLevels",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TOCLevels{${1:top level%keyvals}}{${2:btm level}}",
+        "keys": [
+          "\\TOPLevel#c,\\BTMLevel#c,\\TOCLevels#c,\\declaretocfmt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "insertminitoc"
+    },
+    {
+      "name": "insertminitoc",
+      "arg": {
+        "format": "[]",
+        "snippet": "insertminitoc[${1:label}]"
+      }
+    },
+    {
+      "name": "mtoclabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "mtoclabel{${1:label}}"
+      }
+    },
+    {
+      "name": "declaretocfmt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "declaretocfmt{${1:level%keyvals}}{${2:various}}",
+        "keys": [
+          "\\TOPLevel#c,\\BTMLevel#c,\\TOCLevels#c,\\declaretocfmt#c",
+          "\\declaretocfmt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mtocgobble",
+      "arg": {
+        "format": "{}",
+        "snippet": "mtocgobble{${1:arg}}"
+      }
+    },
+    {
+      "name": "miniorfulltoc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "miniorfulltoc{${1:fmt}}{${2:toc-sec-heading%text}}"
+      }
+    },
+    {
+      "name": "FmtTOCEntry"
+    },
+    {
+      "name": "NoFmtTOCEntry"
+    },
+    {
+      "name": "mtocCL",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mtocCL{${1:contentsline%text}}{${2:entry-cnt}}"
+      }
+    },
+    {
+      "name": "mtocref",
+      "arg": {
+        "format": "{}",
+        "snippet": "mtocref{${1:label}}"
+      }
+    },
+    {
+      "name": "ifMiniTocListings",
+      "unusual": true
+    },
+    {
+      "name": "MiniTocListingsfalse",
+      "unusual": true
+    },
+    {
+      "name": "MiniTocListingstrue",
+      "unusual": true
+    },
+    {
+      "name": "insertminitocNOT",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "insertminitocNOT{${1:arg}}"
+      }
+    },
+    {
+      "name": "numBoxWidth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "numBoxWidth{${1:length}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "minitocfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:command}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/aeb-minitoc#c": [
+      "nominitocs",
+      "!nominitocs"
+    ],
+    "\\TOPLevel#c,\\BTMLevel#c,\\TOCLevels#c,\\declaretocfmt#c": [
+      "chapter",
+      "section",
+      "subsection",
+      "subsubsection",
+      "paragraph",
+      "subparagraph"
+    ],
+    "\\declaretocfmt#c": [
+      "chapter*",
+      "section*",
+      "subsection*",
+      "subsubsection*",
+      "paragraph*",
+      "subparagraph*"
+    ]
+  },
+  "args": [
+    "\\usepackage/aeb-minitoc#c"
+  ]
+}

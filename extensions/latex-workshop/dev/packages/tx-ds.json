@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bbdotlessi"
+    },
+    {
+      "name": "bbdotlessj"
+    },
+    {
+      "name": "imathbb",
+      "unusual": true
+    },
+    {
+      "name": "jmathbb",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tx-ds#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/tx-ds#c"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "pgfmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfmxfpdeclarefunction",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pgfmxfpdeclarefunction{${1:name}}{${2:args}}{${3:fp expression}}"
+      }
+    },
+    {
+      "name": "pgfmxfpdeclarefunction",
+      "arg": {
+        "format": "{}{}[]{}",
+        "snippet": "pgfmxfpdeclarefunction{${1:name}}{${2:args}}[${4:process-args}]{${3:fp expression}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

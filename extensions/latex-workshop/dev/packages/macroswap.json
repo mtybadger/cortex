@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "macroswap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "macroswap{${1:csname1}}{${2:csname2}}"
+      }
+    },
+    {
+      "name": "gmacroswap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gmacroswap{${1:csname1}}{${2:csname2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,127 @@
+{
+  "deps": [
+    {
+      "name": "arrayjobx"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xargs"
+    },
+    {
+      "name": "macroswap"
+    },
+    {
+      "name": "pdftexcmds",
+      "if": "comparestr"
+    },
+    {
+      "name": "lcg",
+      "if": "randompart"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sortArray",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sortArray{${1:integer}}{${2:array}}"
+      }
+    },
+    {
+      "name": "sortArray",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "sortArray[${3:comparator%keyvals}]{${1:integer}}{${2:array}}",
+        "keys": [
+          "\\sortArray#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sortArray",
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "sortArray[${3:comparator%keyvals}][${4:start}]{${1:integer}}{${2:array}}",
+        "keys": [
+          "\\sortArray#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "arraysortcomparestr",
+      "if": "comparestr",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "arraysortcomparestr{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "arraysortcomparenum",
+      "if": "comparenum",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "arraysortcomparenum{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "sortArrayPartitionRand",
+      "if": "randompart",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sortArrayPartitionRand{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
+      }
+    },
+    {
+      "name": "sortArrayPartitionMed",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sortArrayPartitionMed{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
+      }
+    },
+    {
+      "name": "sortArrayPartitionMid",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sortArrayPartitionMid{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
+      }
+    },
+    {
+      "name": "sortArrayPartitionFirst",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sortArrayPartitionFirst{${1:comparator}}{${2:start}}{${3:end}}{${4:array}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/arraysort#c": [
+      "comparestr",
+      "comparenum",
+      "randompart"
+    ],
+    "\\sortArray#c": [
+      "arraysortcomparestr",
+      "arraysortcomparenum"
+    ]
+  },
+  "args": [
+    "\\usepackage/arraysort#c"
+  ]
+}

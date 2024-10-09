@@ -1,0 +1,76 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "defUniStr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defUniStr{${1:name%specialDef}}{${2:string}}"
+      }
+    },
+    {
+      "name": "unicodeStr",
+      "arg": {
+        "format": "()",
+        "snippet": "unicodeStr(${1:name%keyvals})"
+      }
+    },
+    {
+      "name": "EURO"
+    },
+    {
+      "name": "BSLASH"
+    },
+    {
+      "name": "LBRACE"
+    },
+    {
+      "name": "RBRACE"
+    },
+    {
+      "name": "DQUOTE"
+    },
+    {
+      "name": "ucspace"
+    },
+    {
+      "name": "aref",
+      "unusual": true,
+      "arg": {
+        "format": "()",
+        "snippet": "aref(${1:arg})"
+      }
+    },
+    {
+      "name": "convertChriiUnicode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "convertChriiUnicode{${1:char}}{${2:codepoint}}"
+      }
+    },
+    {
+      "name": "displayUnicode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "displayUnicode{${1:arg}}"
+      }
+    },
+    {
+      "name": "getUniDescript",
+      "unusual": true
+    },
+    {
+      "name": "stringiiUnicode",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\unicodeStr#c": [
+      "%unicodestr"
+    ]
+  },
+  "args": []
+}

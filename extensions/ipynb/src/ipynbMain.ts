@@ -4,10 +4,11 @@
  *--------------------------------------------------------------------------------------------*/
 
 import * as vscode from 'vscode';
+import { NotebookSerializer } from './notebookSerializer';
 import { activate as keepNotebookModelStoreInSync } from './notebookModelStoreSync';
 import { notebookImagePasteSetup } from './notebookImagePaste';
 import { AttachmentCleaner } from './notebookAttachmentCleaner';
-import { serializeNotebookToString } from './serializers';
+import { useCustomPropertyInMetadata } from './common';
 
 // From {nbformat.INotebookMetadata} in @jupyterlab/coreutils
 type NotebookMetadata = {
@@ -28,18 +29,16 @@ type NotebookMetadata = {
 	[propName: string]: unknown;
 };
 
-type OptionsWithCellContentMetadata = vscode.NotebookDocumentContentOptions & { cellContentMetadata: { attachments: boolean } };
-
-
-export function activate(context: vscode.ExtensionContext, serializer: vscode.NotebookSerializer) {
+export function activate(context: vscode.ExtensionContext) {
+	const serializer = new NotebookSerializer(context);
 	keepNotebookModelStoreInSync(context);
-	const notebookSerializerOptions: OptionsWithCellContentMetadata = {
+	context.subscriptions.push(vscode.workspace.registerNotebookSerializer('jupyter-notebook', serializer, {
 		transientOutputs: false,
-		transientDocumentMetadata: {
-			cells: true,
-			indentAmount: true
-		},
-		transientCellMetadata: {
+		transientCellMetadata: useCustomPropertyInMetadata() ? {
+			breakpointMargin: true,
+			custom: false,
+			attachments: false
+		} : {
 			breakpointMargin: true,
 			id: false,
 			metadata: false,
@@ -48,12 +47,15 @@ export function activate(context: vscode.ExtensionContext, serializer: vscode.No
 		cellContentMetadata: {
 			attachments: true
 		}
-	};
-	context.subscriptions.push(vscode.workspace.registerNotebookSerializer('jupyter-notebook', serializer, notebookSerializerOptions));
+	} as vscode.NotebookDocumentContentOptions));
 
-	const interactiveSerializeOptions: OptionsWithCellContentMetadata = {
+	context.subscriptions.push(vscode.workspace.registerNotebookSerializer('interactive', serializer, {
 		transientOutputs: false,
-		transientCellMetadata: {
+		transientCellMetadata: useCustomPropertyInMetadata() ? {
+			breakpointMargin: true,
+			custom: false,
+			attachments: false
+		} : {
 			breakpointMargin: true,
 			id: false,
 			metadata: false,
@@ -62,8 +64,7 @@ export function activate(context: vscode.ExtensionContext, serializer: vscode.No
 		cellContentMetadata: {
 			attachments: true
 		}
-	};
-	context.subscriptions.push(vscode.workspace.registerNotebookSerializer('interactive', serializer, interactiveSerializeOptions));
+	} as vscode.NotebookDocumentContentOptions));
 
 	vscode.languages.registerCodeLensProvider({ pattern: '**/*.ipynb' }, {
 		provideCodeLenses: (document) => {
@@ -83,7 +84,14 @@ export function activate(context: vscode.ExtensionContext, serializer: vscode.No
 		const language = 'python';
 		const cell = new vscode.NotebookCellData(vscode.NotebookCellKind.Code, '', language);
 		const data = new vscode.NotebookData([cell]);
-		data.metadata = {
+		data.metadata = useCustomPropertyInMetadata() ? {
+			custom: {
+				cells: [],
+				metadata: {},
+				nbformat: 4,
+				nbformat_minor: 2
+			}
+		} : {
 			cells: [],
 			metadata: {},
 			nbformat: 4,
@@ -111,10 +119,10 @@ export function activate(context: vscode.ExtensionContext, serializer: vscode.No
 
 	return {
 		get dropCustomMetadata() {
-			return true;
+			return !useCustomPropertyInMetadata();
 		},
-		exportNotebook: (notebook: vscode.NotebookData): Promise<string> => {
-			return Promise.resolve(serializeNotebookToString(notebook));
+		exportNotebook: (notebook: vscode.NotebookData): string => {
+			return exportNotebook(notebook, serializer);
 		},
 		setNotebookMetadata: async (resource: vscode.Uri, metadata: Partial<NotebookMetadata>): Promise<boolean> => {
 			const document = vscode.workspace.notebookDocuments.find(doc => doc.uri.toString() === resource.toString());
@@ -123,16 +131,33 @@ export function activate(context: vscode.ExtensionContext, serializer: vscode.No
 			}
 
 			const edit = new vscode.WorkspaceEdit();
-			edit.set(resource, [vscode.NotebookEdit.updateNotebookMetadata({
-				...document.metadata,
-				metadata: {
-					...(document.metadata.metadata ?? {}),
-					...metadata
-				} satisfies NotebookMetadata,
-			})]);
+			if (useCustomPropertyInMetadata()) {
+				edit.set(resource, [vscode.NotebookEdit.updateNotebookMetadata({
+					...document.metadata,
+					custom: {
+						...(document.metadata.custom ?? {}),
+						metadata: <NotebookMetadata>{
+							...(document.metadata.custom?.metadata ?? {}),
+							...metadata
+						},
+					}
+				})]);
+			} else {
+				edit.set(resource, [vscode.NotebookEdit.updateNotebookMetadata({
+					...document.metadata,
+					metadata: <NotebookMetadata>{
+						...(document.metadata.metadata ?? {}),
+						...metadata
+					},
+				})]);
+			}
 			return vscode.workspace.applyEdit(edit);
 		},
 	};
+}
+
+function exportNotebook(notebook: vscode.NotebookData, serializer: NotebookSerializer): string {
+	return serializer.serializeNotebookToString(notebook);
 }
 
 export function deactivate() { }

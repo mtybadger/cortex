@@ -1,0 +1,240 @@
+{
+  "deps": [
+    {
+      "name": "testidx"
+    },
+    {
+      "name": "glossaries"
+    },
+    {
+      "name": "glossaries-mcols"
+    },
+    {
+      "name": "glossaries-extra",
+      "if": "extra"
+    },
+    {
+      "name": "glossaries-extra",
+      "if": "bib2gls"
+    },
+    {
+      "name": "glossaries-extra-bib2gls",
+      "if": "bib2gls"
+    }
+  ],
+  "macros": [
+    {
+      "name": "GlsSetXdyLanguage",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyLanguage",
+      "if": "xindy",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyCodePage",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyCodePage{${1:code}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyCounters",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyCounters{${1:counter list}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyAttribute",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyAttribute{${1:name}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyLocation",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddXdyLocation{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyLocation",
+      "if": "xindy",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyLocationClassOrder",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyLocationClassOrder{${1:location names}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyMinRangeLength",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyMinRangeLength{${1:integer}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyFirstLetterAfterDigits",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyNumberGroupOrder",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyNumberGroupOrder{${1:relative location}}"
+      }
+    },
+    {
+      "name": "GlsAddLetterGroup",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "GlsAddSortRule",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddSortRule{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyAlphabet",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyStyle",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyStyle{${1:xindy style}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyStyles",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyStyles{${1:xindy styles}}"
+      }
+    },
+    {
+      "name": "tstidxloadsamples"
+    },
+    {
+      "name": "tstidxmakegloss"
+    },
+    {
+      "name": "tstidxmakegloss",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "tstidxmakegloss[${1:options}]"
+      }
+    },
+    {
+      "name": "tstidxprintglossaries"
+    },
+    {
+      "name": "tstidxprintglossary"
+    },
+    {
+      "name": "tstidxprintglossary",
+      "arg": {
+        "format": "[]",
+        "snippet": "tstidxprintglossary[${1:options%keyvals}]",
+        "keys": [
+          "\\tstidxprintglossary#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/testidx-glossaries#c": [
+      "extra",
+      "noextra",
+      "makeindex",
+      "xindy",
+      "tex",
+      "bib2gls",
+      "manual",
+      "seekey",
+      "noseekey",
+      "noglsnumbers",
+      "glsnumbers",
+      "desc",
+      "nodesc",
+      "ascii",
+      "noascii",
+      "german",
+      "ngerman",
+      "nogerman",
+      "stripaccents",
+      "nostripaccents",
+      "sanitize",
+      "nosanitize",
+      "showmarks",
+      "hidemarks",
+      "noshowmarks",
+      "verbose",
+      "noverbose",
+      "notestencaps",
+      "testencaps",
+      "prefix",
+      "noprefix",
+      "diglyphs",
+      "nodiglyphs"
+    ],
+    "\\tstidxprintglossary#c": [
+      "type=",
+      "title=",
+      "toctitle=",
+      "style=",
+      "numberedsection=${1|false,nolabel,autolabel|}",
+      "nonumberlist",
+      "nogroupskip",
+      "nopostdot",
+      "entrycounter",
+      "subentrycounter",
+      "sort=${1|word,letter,standard,use,def,nocase,case|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/testidx-glossaries#c"
+  ]
+}

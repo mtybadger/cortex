@@ -1,0 +1,73 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "notoserif"
+    },
+    {
+      "name": "notoseriflgr",
+      "unusual": true
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "notoseriffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/noto-serif#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "lf",
+      "tabular",
+      "tf",
+      "proportional",
+      "pf",
+      "oldstyle",
+      "osf",
+      "thin",
+      "extralight",
+      "light",
+      "regular",
+      "medium",
+      "semibold",
+      "extrabold",
+      "black",
+      "bold"
+    ]
+  },
+  "args": [
+    "\\usepackage/noto-serif#c"
+  ]
+}

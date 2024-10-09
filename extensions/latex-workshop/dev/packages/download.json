@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "download",
+      "arg": {
+        "format": "{}",
+        "snippet": "download{${1:URL}}"
+      }
+    },
+    {
+      "name": "download",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "download[${2:filename%URL}]{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/download#c": [
+      "engine=${1|auto,curl,wget,aria2,axel|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/download#c"
+  ]
+}

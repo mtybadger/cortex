@@ -1,0 +1,38 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "gothfamily"
+    },
+    {
+      "name": "frakfamily"
+    },
+    {
+      "name": "swabfamily"
+    },
+    {
+      "name": "textgoth",
+      "arg": {
+        "format": "{}",
+        "snippet": "textgoth{${1:text}}"
+      }
+    },
+    {
+      "name": "textfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfrak{${1:text}}"
+      }
+    },
+    {
+      "name": "textswab",
+      "arg": {
+        "format": "{}",
+        "snippet": "textswab{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

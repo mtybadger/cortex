@@ -1,0 +1,193 @@
+/* media/style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: var(--vscode-sideBar-background);
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 16px); /* Subtract top and bottom padding */
+    overflow: hidden; /* Prevent scrolling on the container */
+}
+
+.sticky-search {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--vscode-sideBar-background);
+    z-index: 1000;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    height: 36px;
+}
+
+input[type="text"] {
+    flex: 1;
+    background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+button {
+    padding: 8px 8px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+}
+
+button svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--vscode-button-foreground);
+}
+
+.results {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: var(--vscode-sideBar-background);
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.paper {
+    position: relative; /* Added to position the button absolutely within the paper */
+    /* margin-bottom: 16px; */
+    padding: 1em;
+    background-color: var(--vscode-sideBar-background);
+    /* border-radius: 4px; */
+}
+
+.paper:hover {
+    background-color: var(--vscode-list-hoverBackground);
+}
+
+.paper:focus {
+    background-color: var(--vscode-list-activeSelectionBackground);
+}
+
+.paper-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--vscode-editor-foreground);
+    text-decoration: none;
+}
+
+.paper-title:hover {
+    text-decoration: underline;
+}
+
+.paper-authors {
+    font-size: 14px;
+    color: var(--vscode-editor-foreground);
+}
+
+.paper-journal {
+    font-size: 14px;
+    color: var(--vscode-textLink-foreground);
+}
+
+/* Container for sort button and dropdown */
+.sort-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 0px; /* Adjust spacing as needed */
+}
+
+/* Sort button styling */
+.sort-button {
+    background-color: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Sort menu styling */
+.sort-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Hide the menu by default */
+.hidden {
+    display: none;
+}
+
+/* Sort option buttons */
+.sort-option {
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+    padding: 4px 8px;
+    text-align: left;
+    background-color: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+    border: none;
+    cursor: pointer;
+}
+
+.sort-option:hover {
+    background-color: var(--vscode-input-background);
+}
+
+/* Add the following styles for the "Cite This" button */
+.cite-button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    padding: 6px 12px;
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.paper:hover .cite-button {
+    display: block; /* Show the button on hover */
+}
+
+/* Optional: Add hover effect for the button */
+.cite-button:hover {
+    background-color: var(--vscode-button-hoverBackground, var(--vscode-button-background));
+}
+
+.rate-limit-warning {
+    background-color: var(--vscode-sideBar-background);
+    margin: 1em;
+}
+

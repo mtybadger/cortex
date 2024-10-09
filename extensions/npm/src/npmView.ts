@@ -91,11 +91,9 @@ class NpmScript extends TreeItem {
 				command: 'vscode.open',
 				arguments: [
 					this.taskLocation?.uri,
-					this.taskLocation ?
-						{
-							selection: new Range(this.taskLocation.range.start, this.taskLocation.range.start)
-						} satisfies TextDocumentShowOptions
-						: undefined
+					this.taskLocation ? <TextDocumentShowOptions>{
+						selection: new Range(this.taskLocation.range.start, this.taskLocation.range.start)
+					} : undefined
 				]
 			},
 			'run': {

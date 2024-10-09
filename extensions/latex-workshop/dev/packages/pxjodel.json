@@ -1,0 +1,112 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "ifuptex"
+    },
+    {
+      "name": "otf"
+    },
+    {
+      "name": "mlutf",
+      "if": "multi"
+    },
+    {
+      "name": "mlcid",
+      "if": "multi"
+    },
+    {
+      "name": "uplatex",
+      "if": "uplatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "rubydefault",
+      "if": "expert",
+      "unusual": true
+    },
+    {
+      "name": "rubyfamily",
+      "if": "expert"
+    },
+    {
+      "name": "rubykatuji",
+      "if": "expert"
+    },
+    {
+      "name": "mgdefault",
+      "if": "deluxe",
+      "unusual": true
+    },
+    {
+      "name": "propdefault",
+      "if": "deluxe",
+      "unusual": true
+    },
+    {
+      "name": "ebdefault",
+      "if": "deluxe",
+      "unusual": true
+    },
+    {
+      "name": "ltdefault",
+      "if": "deluxe",
+      "unusual": true
+    },
+    {
+      "name": "mathmg",
+      "if": "deluxe",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathmg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mgfamily",
+      "if": "deluxe"
+    },
+    {
+      "name": "textmg",
+      "if": "deluxe",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmg{${1:text}}"
+      }
+    },
+    {
+      "name": "propshape",
+      "if": "deluxe"
+    },
+    {
+      "name": "ebseries",
+      "if": "deluxe"
+    },
+    {
+      "name": "ltseries",
+      "if": "deluxe"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pxjodel#c": [
+      "prefix=${1:string}",
+      "nomacros",
+      "noreplace",
+      "bold",
+      "expert",
+      "deluxe",
+      "multi",
+      "burasage",
+      "uplatex",
+      "autodetect",
+      "jis2004",
+      "scale=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pxjodel#c"
+  ]
+}

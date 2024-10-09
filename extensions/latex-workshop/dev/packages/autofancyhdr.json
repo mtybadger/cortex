@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "biditools"
+    },
+    {
+      "name": "fancyhdr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "eheadfootlength",
+      "unusual": true
+    },
+    {
+      "name": "headfootlength",
+      "unusual": true
+    },
+    {
+      "name": "newheadheight",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

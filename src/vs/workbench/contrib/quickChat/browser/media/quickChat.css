@@ -1,0 +1,151 @@
+.quick-chat-widget {
+  background-color: var(--vscode-editorWidget-background);
+  color: var(--vscode-editorWidget-foreground);
+  border: 1px solid var(--vscode-editorWidget-border);
+  box-shadow: var(--vscode-widget-shadow);
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  gap: 8px;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.quick-chat-viewzone {
+  position: relative;
+  height: auto; /* Height managed dynamically by the editor */
+  width: 400px;
+}
+
+.quick-chat-close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  padding: 4px;
+  padding-right: 6px;
+  right: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.quick-chat-close-button:focus {
+  outline: none !important;
+}
+
+.quick-chat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.quick-chat-input {
+  resize: none;
+  font-family: sans-serif;
+  /* padding: 8px; */
+  border: 0;
+  background-color: var(--vscode-editorWidget-background);
+  color: var(--vscode-input-foreground);
+  flex-grow: 1;
+  font-size: 12px;
+  flex-shrink: 1;
+}
+
+.quick-chat-input:focus {
+  outline: none !important;
+}
+
+.quick-chat-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.quick-chat-button {
+  padding: 3px 6px;
+  font-size: 10px;
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quick-chat-submit-button:hover {
+  background-color: var(--vscode-button-hoverBackground);
+}
+
+.quick-chat-model-switcher {
+  font-size: 10px;
+  background-color: var(--vscode-dropdown-background);
+  color: var(--vscode-dropdown-foreground);
+  border-radius: 4px;
+  border: 0 !important;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.quick-chat-model-switcher:focus {
+  outline: none !important;
+}
+
+.quick-chat-model-switcher-container {
+  position: relative;
+  display: inline-block;
+}
+
+.quick-chat-model-switcher {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 15px;
+  border: 0 !important;
+}
+
+.quick-chat-model-switcher-arrow {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-40%);
+  pointer-events: none;
+  font-size: 8px;
+}
+
+
+.quick-chat-model-switcher:hover {
+  background-color: var(--vscode-dropdown-hoverBackground);
+}
+
+@keyframes loadingDots {
+  0%, 20% {
+    content: '.';
+  }
+  40%, 60% {
+    content: '..';
+  }
+  80%, 100% {
+    content: '...';
+  }
+}
+
+.quick-chat-loading-indicator {
+  font-size: 12px;
+  color: var(--vscode-foreground);
+}
+
+.quick-chat-loading-indicator::after {
+  content: '';
+  animation: loadingDots 1.5s infinite;
+  display: inline-block;
+  width: 1em;
+  text-align: left;
+  padding-left: 4px;
+}

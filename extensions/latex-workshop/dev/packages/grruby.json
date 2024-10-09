@@ -1,0 +1,91 @@
+{
+  "deps": [
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "relsize"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "grrubystyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "grrubystyle{${1:options}}",
+        "keys": [
+          "\\grrubystyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grrubycolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "grrubycolor{${1:color}}"
+      }
+    },
+    {
+      "name": "grexpos"
+    },
+    {
+      "name": "grexpos",
+      "arg": {
+        "format": "[]",
+        "snippet": "grexpos[${1:options}]",
+        "keys": [
+          "\\grexpos#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grrubyUserDefined",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "grrubyUserDefined{${1:hangul}}{${2:hanja}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "grruby"
+    },
+    {
+      "name": "grrubypars"
+    }
+  ],
+  "keys": {
+    "\\usepackage/grruby#c": [
+      "rubystyle=${1|default,gromob,XXruby,ruby,progress,rup,lw,rw,user|}",
+      "rubycolor=",
+      "expos",
+      "pdflatex"
+    ],
+    "\\grrubystyle#c": [
+      "default",
+      "gromob",
+      "XXruby",
+      "ruby",
+      "progress",
+      "rup",
+      "lw",
+      "rw",
+      "user"
+    ],
+    "\\grexpos#c": [
+      "true",
+      "false"
+    ]
+  },
+  "args": [
+    "\\usepackage/grruby#c"
+  ]
+}

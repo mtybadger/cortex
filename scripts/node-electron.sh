@@ -18,7 +18,7 @@ else
 fi
 
 # Get electron
-npm run electron
+yarn electron
 
 popd
 

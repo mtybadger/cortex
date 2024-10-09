@@ -18,8 +18,8 @@ else
 fi
 
 if [ ! -e 'test/integration/browser/out/index.js' ];then
-	(cd test/integration/browser && npm run compile)
-	npm run playwright-install
+	yarn --cwd test/integration/browser compile
+	yarn playwright-install
 fi
 
 

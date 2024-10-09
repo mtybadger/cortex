@@ -1,0 +1,158 @@
+{
+  "deps": [
+    {
+      "name": "paralist"
+    }
+  ],
+  "macros": [
+    {
+      "name": "catques",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "catques{${1:question%text}}{${2:answer%text}}"
+      }
+    },
+    {
+      "name": "catcomment",
+      "arg": {
+        "format": "{}",
+        "snippet": "catcomment{${1:text}}"
+      }
+    },
+    {
+      "name": "catexplic",
+      "arg": {
+        "format": "{}",
+        "snippet": "catexplic{${1:text}}"
+      }
+    },
+    {
+      "name": "restoreindents"
+    },
+    {
+      "name": "catcitetitle"
+    },
+    {
+      "name": "catcite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "catcite{${1:citation%text}}{${2:source}}"
+      }
+    },
+    {
+      "name": "scripture",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "scripture{${1:citation%text}}{${2:source}}"
+      }
+    },
+    {
+      "name": "thecatquesnum",
+      "unusual": true
+    },
+    {
+      "name": "catquesnumwd",
+      "unusual": true
+    },
+    {
+      "name": "catquesindent",
+      "unusual": true
+    },
+    {
+      "name": "catqueshindent",
+      "unusual": true
+    },
+    {
+      "name": "catquessty",
+      "unusual": true
+    },
+    {
+      "name": "catquesnumsty",
+      "unusual": true
+    },
+    {
+      "name": "catansindent",
+      "unusual": true
+    },
+    {
+      "name": "catanshindent",
+      "unusual": true
+    },
+    {
+      "name": "catanssty",
+      "unusual": true
+    },
+    {
+      "name": "commindent",
+      "unusual": true
+    },
+    {
+      "name": "commhindent",
+      "unusual": true
+    },
+    {
+      "name": "catcommsty",
+      "unusual": true
+    },
+    {
+      "name": "explicindent",
+      "unusual": true
+    },
+    {
+      "name": "explichindent",
+      "unusual": true
+    },
+    {
+      "name": "catexplicsty",
+      "unusual": true
+    },
+    {
+      "name": "catcitetitleword",
+      "unusual": true
+    },
+    {
+      "name": "catcitetitlesty",
+      "unusual": true
+    },
+    {
+      "name": "catcitationbefskip",
+      "unusual": true
+    },
+    {
+      "name": "catcitationaftskip",
+      "unusual": true
+    },
+    {
+      "name": "catciteindent",
+      "unusual": true
+    },
+    {
+      "name": "catcitehindent",
+      "unusual": true
+    },
+    {
+      "name": "catcitesty",
+      "unusual": true
+    },
+    {
+      "name": "catsrcindent",
+      "unusual": true
+    },
+    {
+      "name": "catsrchindent",
+      "unusual": true
+    },
+    {
+      "name": "catsrcsty",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "catcitations"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

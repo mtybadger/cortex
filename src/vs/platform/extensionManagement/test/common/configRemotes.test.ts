@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../base/test/common/utils.js';
-import { getDomainsOfRemotes, getRemotes } from '../../common/configRemotes.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { getDomainsOfRemotes, getRemotes } from 'vs/platform/extensionManagement/common/configRemotes';
 
 suite('Config Remotes', () => {
 

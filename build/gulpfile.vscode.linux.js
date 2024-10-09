@@ -25,8 +25,6 @@ const exec = util.promisify(cp.exec);
 const root = path.dirname(__dirname);
 const commit = getVersion(root);
 
-const linuxPackageRevision = Math.floor(new Date().getTime() / 1000);
-
 /**
  * @param {string} arch
  */
@@ -87,7 +85,7 @@ function prepareDebPackage(arch) {
 				const dependencies = await dependenciesGenerator.getDependencies('deb', binaryDir, product.applicationName, debArch);
 				gulp.src('resources/linux/debian/control.template', { base: '.' })
 					.pipe(replace('@@NAME@@', product.applicationName))
-					.pipe(replace('@@VERSION@@', packageJson.version + '-' + linuxPackageRevision))
+					.pipe(replace('@@VERSION@@', `${packageJson.version}.${packageJson.release}`))
 					.pipe(replace('@@ARCHITECTURE@@', debArch))
 					.pipe(replace('@@DEPENDS@@', dependencies.join(', ')))
 					.pipe(replace('@@RECOMMENDS@@', debianRecommendedDependencies.join(', ')))
@@ -108,11 +106,7 @@ function prepareDebPackage(arch) {
 			.pipe(replace('@@NAME@@', product.applicationName))
 			.pipe(rename('DEBIAN/postinst'));
 
-		const templates = gulp.src('resources/linux/debian/templates.template', { base: '.' })
-			.pipe(replace('@@NAME@@', product.applicationName))
-			.pipe(rename('DEBIAN/templates'));
-
-		const all = es.merge(control, templates, postinst, postrm, prerm, desktops, appdata, workspaceMime, icon, bash_completion, zsh_completion, code);
+		const all = es.merge(control, postinst, postrm, prerm, desktops, appdata, workspaceMime, icon, bash_completion, zsh_completion, code);
 
 		return all.pipe(vfs.dest(destination));
 	};
@@ -128,7 +122,7 @@ function buildDebPackage(arch) {
 	return async () => {
 		await exec(`chmod 755 ${product.applicationName}-${debArch}/DEBIAN/postinst ${product.applicationName}-${debArch}/DEBIAN/prerm ${product.applicationName}-${debArch}/DEBIAN/postrm`, { cwd });
 		await exec('mkdir -p deb', { cwd });
-		await exec(`fakeroot dpkg-deb -Zxz -b ${product.applicationName}-${debArch} deb`, { cwd });
+		await exec(`fakeroot dpkg-deb -b ${product.applicationName}-${debArch} deb`, { cwd });
 	};
 }
 
@@ -152,7 +146,6 @@ function getRpmPackageArch(arch) {
 function prepareRpmPackage(arch) {
 	const binaryDir = '../VSCode-linux-' + arch;
 	const rpmArch = getRpmPackageArch(arch);
-	const stripBinary = process.env['STRIP'] ?? '/usr/bin/strip';
 
 	return function () {
 		const desktop = gulp.src('resources/linux/code.desktop', { base: '.' })
@@ -202,14 +195,12 @@ function prepareRpmPackage(arch) {
 					.pipe(replace('@@NAME@@', product.applicationName))
 					.pipe(replace('@@NAME_LONG@@', product.nameLong))
 					.pipe(replace('@@ICON@@', product.linuxIconName))
-					.pipe(replace('@@VERSION@@', packageJson.version))
-					.pipe(replace('@@RELEASE@@', linuxPackageRevision))
+					.pipe(replace('@@VERSION@@', `${packageJson.version}.${packageJson.release}`))
 					.pipe(replace('@@ARCHITECTURE@@', rpmArch))
 					.pipe(replace('@@LICENSE@@', product.licenseName))
 					.pipe(replace('@@QUALITY@@', product.quality || '@@QUALITY@@'))
 					.pipe(replace('@@UPDATEURL@@', product.updateUrl || '@@UPDATEURL@@'))
 					.pipe(replace('@@DEPENDENCIES@@', dependencies.join(', ')))
-					.pipe(replace('@@STRIP@@', stripBinary))
 					.pipe(rename('SPECS/' + product.applicationName + '.spec'))
 					.pipe(es.through(function (f) { that.emit('data', f); }, function () { that.emit('end'); }));
 			}));
@@ -279,7 +270,7 @@ function prepareSnapPackage(arch) {
 
 		const snapcraft = gulp.src('resources/linux/snap/snapcraft.yaml', { base: '.' })
 			.pipe(replace('@@NAME@@', product.applicationName))
-			.pipe(replace('@@VERSION@@', commit.substr(0, 8)))
+			.pipe(replace('@@VERSION@@', `${packageJson.version}.${packageJson.release}`))
 			// Possible run-on values https://snapcraft.io/docs/architectures
 			.pipe(replace('@@ARCHITECTURE@@', arch === 'x64' ? 'amd64' : arch))
 			.pipe(rename('snap/snapcraft.yaml'));

@@ -1,0 +1,55 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "trace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "textfnscript",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfnscript{${1:text}}"
+      }
+    },
+    {
+      "name": "textSuperscript",
+      "arg": {
+        "format": "{}",
+        "snippet": "textSuperscript{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/superiors#c": [
+      "notitlepatch",
+      "supscale=${1:factor}",
+      "supscolor=",
+      "supsraised=",
+      "supsfam=${1:family}",
+      "supsotf=${1:.otf file}",
+      "supsLspaced=",
+      "supsRspaced=",
+      "supspaced="
+    ]
+  },
+  "args": [
+    "\\usepackage/superiors#c"
+  ]
+}

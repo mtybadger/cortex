@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/HindMadurai#c": [
+      "scaled=${2|${1:factor},MatchLowercase|}",
+      "lining",
+      "tabular",
+      "mainfont",
+      "semibold",
+      "bold",
+      "medium",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/HindMadurai#c"
+  ]
+}

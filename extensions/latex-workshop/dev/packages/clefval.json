@@ -1,0 +1,30 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "TheKey",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TheKey{${1:key}}{${2:value}}"
+      }
+    },
+    {
+      "name": "TheValue",
+      "arg": {
+        "format": "{}",
+        "snippet": "TheValue{${1:key}}"
+      }
+    },
+    {
+      "name": "newkey",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newkey{${1:key}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

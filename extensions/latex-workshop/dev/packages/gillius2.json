@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gilliustwo"
+    },
+    {
+      "name": "gilliustwocondensed"
+    },
+    {
+      "name": "gilliusfamily",
+      "unusual": true
+    },
+    {
+      "name": "gilliuscondensedfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gillius2#c": [
+      "scaled=${1:factor}",
+      "default",
+      "sfdefault",
+      "type1",
+      "condensed"
+    ]
+  },
+  "args": [
+    "\\usepackage/gillius2#c"
+  ]
+}

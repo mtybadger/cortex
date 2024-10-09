@@ -1,0 +1,522 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "luacolor"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "arabluatex-patch"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "adjustbox"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "lua-ul"
+    }
+  ],
+  "macros": [
+    {
+      "name": "arabicfont"
+    },
+    {
+      "name": "SetArbEasy"
+    },
+    {
+      "name": "SetArbEasy*"
+    },
+    {
+      "name": "SetArbDflt"
+    },
+    {
+      "name": "SetArbDflt*"
+    },
+    {
+      "name": "arb",
+      "arg": {
+        "format": "{}",
+        "snippet": "arb{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "arb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "arb[${2:mode%keyvals}]{${1:Arabic text%definition}}",
+        "keys": [
+          "\\arb,\\begin{arab}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "arbnull"
+    },
+    {
+      "name": "abjad",
+      "arg": {
+        "format": "{}",
+        "snippet": "abjad{${1:number}}"
+      }
+    },
+    {
+      "name": "aemph",
+      "arg": {
+        "format": "{}",
+        "snippet": "aemph{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "aemph*",
+      "arg": {
+        "format": "{}",
+        "snippet": "aemph*{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "aoline",
+      "arg": {
+        "format": "{}",
+        "snippet": "aoline{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "aoline*",
+      "arg": {
+        "format": "{}",
+        "snippet": "aoline*{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "auline",
+      "arg": {
+        "format": "{}",
+        "snippet": "auline{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "SetHemistichDelim",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetHemistichDelim{${1:delimiter}}"
+      }
+    },
+    {
+      "name": "StretchBayt"
+    },
+    {
+      "name": "StretchBayt",
+      "arg": {
+        "format": "[]",
+        "snippet": "StretchBayt[${1:true|false}]"
+      }
+    },
+    {
+      "name": "abraces",
+      "arg": {
+        "format": "{}",
+        "snippet": "abraces{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "arbmark",
+      "arg": {
+        "format": "{}",
+        "snippet": "arbmark{${1:shorthand%keyvals}}",
+        "keys": [
+          "\\arbmark#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "arbmark",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "arbmark[${2:rl|lr}]{${1:shorthand%keyvals}}",
+        "keys": [
+          "\\arbmark#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "newarbmark",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newarbmark{${1:shorthand%specialDef}}{${2:RTL codepoint}}{${3:LTR codepoint}}"
+      }
+    },
+    {
+      "name": "ayah",
+      "arg": {
+        "format": "{}",
+        "snippet": "ayah{3-digit number}"
+      }
+    },
+    {
+      "name": "arbcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "arbcolor{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "arbcolor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "arbcolor[${2:color}]{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "SetTranslitConvention",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTranslitConvention{${1:mode%keyvals}}",
+        "keys": [
+          "\\SetTranslitConvention"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetTranslitStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTranslitStyle{${1:style commands}}"
+      }
+    },
+    {
+      "name": "SetTranslitFont",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTranslitFont{${1:font selection commands}}"
+      }
+    },
+    {
+      "name": "uc",
+      "arg": {
+        "format": "{}",
+        "snippet": "uc{${1:word%definition}}"
+      }
+    },
+    {
+      "name": "prname",
+      "arg": {
+        "format": "{}",
+        "snippet": "prname{${1:Arabic proper name%definition}}"
+      }
+    },
+    {
+      "name": "prname*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "prname*{${1:Arabic proper name%definition}}"
+      }
+    },
+    {
+      "name": "arbup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "arbup{${1:Arabic text%definition}}"
+      }
+    },
+    {
+      "name": "NoArbUp"
+    },
+    {
+      "name": "ArbUpDflt"
+    },
+    {
+      "name": "SetArbUp",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetArbUp{${1:formatting directives}}"
+      }
+    },
+    {
+      "name": "SetInputScheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetInputScheme{${1:scheme%keyvals}}",
+        "keys": [
+          "\\SetInputScheme"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "txarb",
+      "arg": {
+        "format": "{}",
+        "snippet": "txarb{${1:Unicode Arabic}}"
+      }
+    },
+    {
+      "name": "LR",
+      "arg": {
+        "format": "{}",
+        "snippet": "LR{${1:arg%text}}"
+      }
+    },
+    {
+      "name": "RL",
+      "arg": {
+        "format": "{}",
+        "snippet": "RL{${1:arg%text}}"
+      }
+    },
+    {
+      "name": "LRfootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "LRfootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "RLfootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "RLfootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "FixArbFtnmk"
+    },
+    {
+      "name": "LRmarginpar",
+      "arg": {
+        "format": "{}",
+        "snippet": "LRmarginpar{${1:right%text}}"
+      }
+    },
+    {
+      "name": "LRmarginpar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "LRmarginpar[${2:left%text}]{${1:right%text}}"
+      }
+    },
+    {
+      "name": "setRL"
+    },
+    {
+      "name": "setLR"
+    },
+    {
+      "name": "MkArbBreak",
+      "arg": {
+        "format": "{}",
+        "snippet": "MkArbBreak{${1:list of csnames}}"
+      }
+    },
+    {
+      "name": "MkArbBreak*",
+      "arg": {
+        "format": "{}",
+        "snippet": "MkArbBreak*{${1:list of csnames}}"
+      }
+    },
+    {
+      "name": "SetArbOutSuffix",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetArbOutSuffix{${1:suffix}}"
+      }
+    },
+    {
+      "name": "arbpardir",
+      "unusual": true
+    },
+    {
+      "name": "ArbOutFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "ArbOutFile{${1:argument}}"
+      }
+    },
+    {
+      "name": "ArbOutFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ArbOutFile[${2:newline}]{${1:argument}}"
+      }
+    },
+    {
+      "name": "ArbOutFile*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ArbOutFile*{${1:argument}}"
+      }
+    },
+    {
+      "name": "ArbOutFile*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ArbOutFile*[${2:newline}]{${1:argument}}"
+      }
+    },
+    {
+      "name": "SetDefaultIndex",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetDefaultIndex{${1:file}}"
+      }
+    },
+    {
+      "name": "SetIndexMode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetIndexMode{${1:mode}}"
+      }
+    },
+    {
+      "name": "Uc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Uc{${1:word%definition}}"
+      }
+    },
+    {
+      "name": "arind",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "arind{${1:root}}"
+      }
+    },
+    {
+      "name": "arind",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "arind[${2:opt%keyvals}]{${1:root}}",
+        "keys": [
+          "\\arind"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "txtrans",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "txtrans{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "arab"
+    },
+    {
+      "name": "arab",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:mode%keyvals}]",
+        "keys": [
+          "\\arb,\\begin{arab}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "arabverse"
+    },
+    {
+      "name": "arabverse",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{arabverse}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "txarab"
+    },
+    {
+      "name": "arabexport"
+    },
+    {
+      "name": "txarabtr",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/arabluatex#c": [
+      "voc",
+      "fullvoc",
+      "novoc",
+      "trans",
+      "export"
+    ],
+    "\\arb,\\begin{arab}": [
+      "voc",
+      "fullvoc",
+      "novoc",
+      "trans"
+    ],
+    "\\begin{arabverse}": [
+      "mode=${1|voc,fullvoc,novoc,trans|}",
+      "width=",
+      "gutter=",
+      "metre=${1:name}",
+      "delim",
+      "utf",
+      "color=",
+      "export"
+    ],
+    "\\arbmark#c": [
+      "bismillah",
+      "salam",
+      "slm",
+      "jalla",
+      "%arbmark"
+    ],
+    "\\SetTranslitConvention": [
+      "dmg",
+      "loc",
+      "arabica"
+    ],
+    "\\SetInputScheme": [
+      "arabtex",
+      "buckwalter"
+    ],
+    "\\arind": [
+      "index",
+      "root",
+      "form"
+    ]
+  },
+  "args": [
+    "\\usepackage/arabluatex#c"
+  ]
+}

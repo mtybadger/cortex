@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "easylist"
+    }
+  ],
+  "macros": [
+    {
+      "name": "itemLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "itemLabel{${1:label}}"
+      }
+    },
+    {
+      "name": "itemLabel",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "itemLabel{${1:label}}[${2:skipA}]"
+      }
+    },
+    {
+      "name": "itemLabel",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "itemLabel{${1:label}}[${2:skipA}][${3:skipB}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "easylist",
+      "if": "ampersand"
+    },
+    {
+      "name": "easylist",
+      "if": "ampersand",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:style%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/labels4easylist#c": [
+      "pilcrow",
+      "at",
+      "sharp",
+      "ampersand",
+      "${1:number of counters}"
+    ]
+  },
+  "args": [
+    "\\usepackage/labels4easylist#c"
+  ]
+}

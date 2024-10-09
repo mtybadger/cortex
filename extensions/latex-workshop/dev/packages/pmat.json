@@ -1,0 +1,44 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pmatcross"
+    },
+    {
+      "name": "pmatnocross"
+    },
+    {
+      "name": "pmatget",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmatget{${1:parameter 0-6}}"
+      }
+    },
+    {
+      "name": "pmatset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pmatset{${1:parameter 0-6}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pmat",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:ldelim}}{${2:vline-spec}}{${3:rdelim}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/pmat#c": [
+      "debug",
+      "cross",
+      "nocross"
+    ]
+  },
+  "args": [
+    "\\usepackage/pmat#c"
+  ]
+}

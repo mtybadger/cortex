@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { normalizeMimeType } from '../../common/mime.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { normalizeMimeType } from 'vs/base/common/mime';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('Mime', () => {
 

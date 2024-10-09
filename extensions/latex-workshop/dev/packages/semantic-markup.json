@@ -1,0 +1,222 @@
+{
+  "deps": [
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "stackengine"
+    },
+    {
+      "name": "endnotes",
+      "if": "endnotes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DoBeforeEndnotes",
+      "if": "endnotes"
+    },
+    {
+      "name": "EndnoteFont",
+      "if": "endnotes"
+    },
+    {
+      "name": "SetupEndnotes",
+      "if": "endnotes"
+    },
+    {
+      "name": "ifdefaultquotes",
+      "unusual": true
+    },
+    {
+      "name": "defaultquotestrue",
+      "unusual": true
+    },
+    {
+      "name": "defaultquotesfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifendnotes",
+      "unusual": true
+    },
+    {
+      "name": "endnotestrue",
+      "unusual": true
+    },
+    {
+      "name": "endnotesfalse",
+      "unusual": true
+    },
+    {
+      "name": "strong",
+      "arg": {
+        "format": "{}",
+        "snippet": "strong{${1:text}}"
+      }
+    },
+    {
+      "name": "quoted",
+      "arg": {
+        "format": "{}",
+        "snippet": "quoted{${1:text}}"
+      }
+    },
+    {
+      "name": "soCalled",
+      "arg": {
+        "format": "{}",
+        "snippet": "soCalled{${1:text}}"
+      }
+    },
+    {
+      "name": "code",
+      "arg": {
+        "format": "{}",
+        "snippet": "code{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "term",
+      "arg": {
+        "format": "{}",
+        "snippet": "term{${1:text}}"
+      }
+    },
+    {
+      "name": "mentioned",
+      "arg": {
+        "format": "{}",
+        "snippet": "mentioned{${1:text}}"
+      }
+    },
+    {
+      "name": "foreign",
+      "arg": {
+        "format": "{}",
+        "snippet": "foreign{${1:text}}"
+      }
+    },
+    {
+      "name": "worktitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "worktitle{${1:text}}"
+      }
+    },
+    {
+      "name": "parttitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "parttitle{${1:text}}"
+      }
+    },
+    {
+      "name": "wtitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "wtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "ptitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ptitle{${1:text}}"
+      }
+    },
+    {
+      "name": "add",
+      "arg": {
+        "format": "{}",
+        "snippet": "add{${1:text}}"
+      }
+    },
+    {
+      "name": "Dots"
+    },
+    {
+      "name": "gloss",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gloss{${1:term%text}}{${2:def%text}}"
+      }
+    },
+    {
+      "name": "quotedgloss",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "quotedgloss{${1:term%text}}{${2:def%text}}"
+      }
+    },
+    {
+      "name": "XXX"
+    },
+    {
+      "name": "XXX",
+      "arg": {
+        "format": "[]",
+        "snippet": "XXX[${1:text}]"
+      }
+    },
+    {
+      "name": "citXXX"
+    },
+    {
+      "name": "citXXX",
+      "arg": {
+        "format": "[]",
+        "snippet": "citXXX[${1:text}]"
+      }
+    },
+    {
+      "name": "fl"
+    },
+    {
+      "name": "na"
+    },
+    {
+      "name": "sh"
+    },
+    {
+      "name": "octave",
+      "arg": {
+        "format": "{}",
+        "snippet": "octave{${1:text}}"
+      }
+    },
+    {
+      "name": "musfig",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "musfig{${1:upper}}{${2:lower}}"
+      }
+    },
+    {
+      "name": "meter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "meter{${1:upper}}{${2:lower}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Footnote"
+    }
+  ],
+  "keys": {
+    "\\usepackage/semantic-markup#c": [
+      "defaultquotes",
+      "endnotes"
+    ]
+  },
+  "args": [
+    "\\usepackage/semantic-markup#c"
+  ]
+}

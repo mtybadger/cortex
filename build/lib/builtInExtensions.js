@@ -16,6 +16,7 @@ const vfs = require("vinyl-fs");
 const ext = require("./extensions");
 const fancyLog = require("fancy-log");
 const ansiColors = require("ansi-colors");
+const mkdirp = require('mkdirp');
 const root = path.dirname(path.dirname(__dirname));
 const productjson = JSON.parse(fs.readFileSync(path.join(__dirname, '../../product.json'), 'utf8'));
 const builtInExtensions = productjson.builtInExtensions || [];
@@ -45,9 +46,7 @@ function isUpToDate(extension) {
     }
 }
 function getExtensionDownloadStream(extension) {
-    const galleryServiceUrl = productjson.extensionsGallery?.serviceUrl;
-    return (galleryServiceUrl ? ext.fromMarketplace(galleryServiceUrl, extension) : ext.fromGithub(extension))
-        .pipe(rename(p => p.dirname = `${extension.name}/${p.dirname}`));
+    return ext.fromGithub(extension).pipe(rename(p => p.dirname = `${extension.name}/${p.dirname}`));
 }
 function getExtensionStream(extension) {
     // if the extension exists on disk, use those files instead of downloading anew
@@ -106,7 +105,7 @@ function readControlFile() {
     }
 }
 function writeControlFile(control) {
-    fs.mkdirSync(path.dirname(controlFilePath), { recursive: true });
+    mkdirp.sync(path.dirname(controlFilePath));
     fs.writeFileSync(controlFilePath, JSON.stringify(control, null, 2));
 }
 function getBuiltInExtensions() {

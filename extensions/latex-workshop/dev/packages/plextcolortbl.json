@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "plextarray"
+    },
+    {
+      "name": "colortbl"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/plextcolortbl#c": [
+      "monochrome",
+      "debugshow",
+      "setpagesize",
+      "nosetpagesize",
+      "dvipsnames",
+      "nodvipsnames"
+    ]
+  },
+  "args": [
+    "\\usepackage/plextcolortbl#c"
+  ]
+}

@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { URI } from '../../../base/common/uri.js';
-import { IBaseBackupInfo, IFolderBackupInfo, IWorkspaceBackupInfo } from '../common/backup.js';
+import { URI } from 'vs/base/common/uri';
+import { IBaseBackupInfo, IFolderBackupInfo, IWorkspaceBackupInfo } from 'vs/platform/backup/common/backup';
 
 export interface IEmptyWindowBackupInfo extends IBaseBackupInfo {
 	readonly backupFolder: string;

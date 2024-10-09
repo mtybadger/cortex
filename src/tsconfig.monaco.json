@@ -3,13 +3,12 @@
 	"compilerOptions": {
 		"noEmit": true,
 		"types": [
-			"@webgpu/types",
 			"trusted-types",
 			"wicg-file-system-access"
 		],
 		"paths": {},
 		"module": "amd",
-		"moduleResolution": "node",
+		"moduleResolution": "classic",
 		"removeComments": false,
 		"preserveConstEnums": true,
 		"target": "ES2022",
@@ -17,10 +16,11 @@
 		"declaration": true
 	},
 	"include": [
+		"typings/require.d.ts",
 		"typings/thenable.d.ts",
 		"typings/vscode-globals-product.d.ts",
 		"typings/vscode-globals-nls.d.ts",
-		"typings/editContext.d.ts",
+		"vs/loader.d.ts",
 		"vs/monaco.d.ts",
 		"vs/editor/*",
 		"vs/base/common/*",

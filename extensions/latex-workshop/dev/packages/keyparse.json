@@ -1,0 +1,24 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "KeyparseKeys",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KeyparseKeys{${1:<rule>}}"
+      }
+    },
+    {
+      "name": "KeyparseEval",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "KeyparseEval{${1:<rule>}}{${2:<key><args}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

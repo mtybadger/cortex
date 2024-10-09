@@ -1,0 +1,198 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "givbcfamily"
+    },
+    {
+      "name": "textgivbc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textgivbc{${1:arg}}"
+      }
+    },
+    {
+      "name": "Aalpha"
+    },
+    {
+      "name": "Abeta"
+    },
+    {
+      "name": "Agamma"
+    },
+    {
+      "name": "Adelta"
+    },
+    {
+      "name": "Aepsilon"
+    },
+    {
+      "name": "Azeta"
+    },
+    {
+      "name": "Aeta"
+    },
+    {
+      "name": "Atheta"
+    },
+    {
+      "name": "Aiota"
+    },
+    {
+      "name": "Akappa"
+    },
+    {
+      "name": "Alambda"
+    },
+    {
+      "name": "Amu"
+    },
+    {
+      "name": "Anu"
+    },
+    {
+      "name": "Axi"
+    },
+    {
+      "name": "Aomicron"
+    },
+    {
+      "name": "Api"
+    },
+    {
+      "name": "Arho"
+    },
+    {
+      "name": "Asigma"
+    },
+    {
+      "name": "Atau"
+    },
+    {
+      "name": "Aupsilon"
+    },
+    {
+      "name": "Achi"
+    },
+    {
+      "name": "Aphi"
+    },
+    {
+      "name": "Apsi"
+    },
+    {
+      "name": "Aomega"
+    },
+    {
+      "name": "ARalpha",
+      "unusual": true
+    },
+    {
+      "name": "ARbeta",
+      "unusual": true
+    },
+    {
+      "name": "ARgamma",
+      "unusual": true
+    },
+    {
+      "name": "ARdelta",
+      "unusual": true
+    },
+    {
+      "name": "ARepsilon",
+      "unusual": true
+    },
+    {
+      "name": "ARzeta",
+      "unusual": true
+    },
+    {
+      "name": "AReta",
+      "unusual": true
+    },
+    {
+      "name": "ARtheta",
+      "unusual": true
+    },
+    {
+      "name": "ARiota",
+      "unusual": true
+    },
+    {
+      "name": "ARkappa",
+      "unusual": true
+    },
+    {
+      "name": "ARlambda",
+      "unusual": true
+    },
+    {
+      "name": "ARmu",
+      "unusual": true
+    },
+    {
+      "name": "ARnu",
+      "unusual": true
+    },
+    {
+      "name": "ARxi",
+      "unusual": true
+    },
+    {
+      "name": "ARomicron",
+      "unusual": true
+    },
+    {
+      "name": "ARpi",
+      "unusual": true
+    },
+    {
+      "name": "ARrho",
+      "unusual": true
+    },
+    {
+      "name": "ARsigma",
+      "unusual": true
+    },
+    {
+      "name": "ARtau",
+      "unusual": true
+    },
+    {
+      "name": "Aupsilon",
+      "unusual": true
+    },
+    {
+      "name": "ARchi",
+      "unusual": true
+    },
+    {
+      "name": "ARphi",
+      "unusual": true
+    },
+    {
+      "name": "ARpsi",
+      "unusual": true
+    },
+    {
+      "name": "ARomega",
+      "unusual": true
+    },
+    {
+      "name": "translitgivbc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "translitgivbc{${1:char-commands}}"
+      }
+    },
+    {
+      "name": "translitgivbcfont",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,92 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DeclareRobustActChar",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "DeclareRobustActChar{${1:active-char%cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareRobustActChar",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "DeclareRobustActChar{${1:active-char%cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareRobustActChar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareRobustActChar{${1:active-char%cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareRobustActChar*",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "DeclareRobustActChar*{${1:active-char%cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareRobustActChar*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "DeclareRobustActChar*{${1:active-char%cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareRobustActChar*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareRobustActChar*{${1:active-char%cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "ReDeclareRobActChar{${1:active-char%cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ReDeclareRobActChar{${1:active-char%cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ReDeclareRobActChar{${1:active-char%cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar*",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "ReDeclareRobActChar*{${1:active-char%cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ReDeclareRobActChar*{${1:active-char%cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ReDeclareRobActChar*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ReDeclareRobActChar*{${1:active-char%cmd}}{${2:definition}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

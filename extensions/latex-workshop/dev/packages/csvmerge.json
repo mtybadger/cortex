@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "stringstrings"
+    },
+    {
+      "name": "trimspaces"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mergeFields",
+      "arg": {
+        "format": "{}",
+        "snippet": "mergeFields{${1:specification}}"
+      }
+    },
+    {
+      "name": "Field",
+      "arg": {
+        "format": "{}",
+        "snippet": "Field{${1:field name}}"
+      }
+    },
+    {
+      "name": "ifFieldEmpty",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifFieldEmpty{${1:field name}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "setDelimitersCommaQuote"
+    },
+    {
+      "name": "setDelimitersTabQuote"
+    },
+    {
+      "name": "makeMePublic"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

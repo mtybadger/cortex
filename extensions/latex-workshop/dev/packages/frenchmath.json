@@ -1,0 +1,159 @@
+{
+  "deps": [
+    {
+      "name": "mathrsfs"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsopn"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "ibrackets"
+    },
+    {
+      "name": "decimalcomma"
+    },
+    {
+      "name": "mathgreeks"
+    }
+  ],
+  "macros": [
+    {
+      "name": "curs",
+      "arg": {
+        "format": "{}",
+        "snippet": "curs{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "ssi"
+    },
+    {
+      "name": "Oij"
+    },
+    {
+      "name": "Oijk"
+    },
+    {
+      "name": "Ouv"
+    },
+    {
+      "name": "Oij*"
+    },
+    {
+      "name": "Oijk*"
+    },
+    {
+      "name": "Ouv*"
+    },
+    {
+      "name": "ijk"
+    },
+    {
+      "name": "infeg"
+    },
+    {
+      "name": "supeg"
+    },
+    {
+      "name": "vide"
+    },
+    {
+      "name": "paral"
+    },
+    {
+      "name": "paral*"
+    },
+    {
+      "name": "cmod"
+    },
+    {
+      "name": "pgcd"
+    },
+    {
+      "name": "ppcm"
+    },
+    {
+      "name": "card"
+    },
+    {
+      "name": "Card"
+    },
+    {
+      "name": "Ker"
+    },
+    {
+      "name": "Hom"
+    },
+    {
+      "name": "rg"
+    },
+    {
+      "name": "Vect"
+    },
+    {
+      "name": "ch"
+    },
+    {
+      "name": "sh"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "cosec"
+    },
+    {
+      "name": "cosech"
+    },
+    {
+      "name": "DeclareMathUp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareMathUp{${1:cmd}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/frenchmath#c": [
+      "capsit",
+      "noibrackets",
+      "lgrmath",
+      "lgrmath=${1:font name}",
+      "fontspec",
+      "fontspec=${1:font name}",
+      "unicode-math",
+      "unicode-math=${1:font name}",
+      "upgreek",
+      "upgreek=${1|Euler,Symbol,Symbolsmallscale|}",
+      "mathdesign",
+      "mathdesign=${1|Utopia,Garamond,Charter|}",
+      "kpfonts",
+      "kpfonts=${1|normal,light|}",
+      "fourier",
+      "pxfonts",
+      "txfonts",
+      "libertinus",
+      "concrete",
+      "cmbright",
+      "savegreeks",
+      "otherfonts",
+      "libsans",
+      "lowercase",
+      "uppercase"
+    ]
+  },
+  "args": [
+    "\\usepackage/frenchmath#c"
+  ]
+}

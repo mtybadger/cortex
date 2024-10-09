@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarygraphs"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

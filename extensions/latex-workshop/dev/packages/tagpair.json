@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "varwidth"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pairing",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pairing{${1:upper text%text}}{${2:lower text%text}}"
+      }
+    },
+    {
+      "name": "bottomline",
+      "arg": {
+        "format": "{}",
+        "snippet": "bottomline{${1:bottom text%text}}"
+      }
+    },
+    {
+      "name": "narrowraggedleft",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "pairingline"
+    },
+    {
+      "name": "taggedline",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

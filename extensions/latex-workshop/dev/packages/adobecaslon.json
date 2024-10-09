@@ -1,0 +1,85 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adobecaslonfamily"
+    },
+    {
+      "name": "textadobecaslon",
+      "arg": {
+        "format": "{}",
+        "snippet": "textadobecaslon{${1:text}}"
+      }
+    },
+    {
+      "name": "sbseries"
+    },
+    {
+      "name": "textsb",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsb{${1:text}}"
+      }
+    },
+    {
+      "name": "adobecaslonexpert",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonosf",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonalternate",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonlongs",
+      "unusual": true
+    },
+    {
+      "name": "adobecasloneighteenth",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonswashit",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonswashcaps",
+      "unusual": true
+    },
+    {
+      "name": "adobecaslonornaments",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/adobecaslon#c": [
+      "expert",
+      "osf",
+      "swashit",
+      "alternate",
+      "longs",
+      "c18th",
+      "swashlongs",
+      "extraligs",
+      "rmdefault",
+      "normdefault",
+      "scaled=${1:factor}",
+      "bold",
+      "semibold"
+    ]
+  },
+  "args": [
+    "\\usepackage/adobecaslon#c"
+  ]
+}

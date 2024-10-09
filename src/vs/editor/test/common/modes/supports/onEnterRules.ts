@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IndentAction } from '../../../../common/languages/languageConfiguration.js';
+import { IndentAction } from 'vs/editor/common/languages/languageConfiguration';
 
 export const javascriptOnEnterRules = [
 	{

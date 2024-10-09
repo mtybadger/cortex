@@ -1,0 +1,971 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ifpgfmanualprettyenabled",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualclosebrace",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualprettyprintcode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualprettyprintcode{${1:tokens}}"
+      }
+    },
+    {
+      "name": "pgfmanualprettyprintstyles",
+      "unusual": true
+    },
+    {
+      "name": "ifpgfmanualprettycommentactive",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualprettyprinterhandlecollectedargs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualprettyprinterhandlecollectedargs{${1:arg}}"
+      }
+    },
+    {
+      "name": "pgfmanualprettyprinterhandlecollectedargsVtwo",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmanualprettyprinterhandlecollectedargsVtwo{${1:result}}{${2:found terminator: 0|1}}"
+      }
+    },
+    {
+      "name": "ifpgfmanualprettyprinterarghasunmatchedbraces",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualprettyprintercollectargcount",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmanualprettyprintercollectargcount{${1:numargs}}{${2:code}}"
+      }
+    },
+    {
+      "name": "ifpgfmanualprettyprinterfoundterminator",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualprettyprintercollectupto",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmanualprettyprintercollectupto{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "pgfmanualprettyprinterterminator",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualprettyprintpgfkeys",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualprettyprintpgfkeys{${1:pgfkeys}}"
+      }
+    },
+    {
+      "name": "ifpgfmanualpdfwarnings",
+      "unusual": true
+    },
+    {
+      "name": "ifpgfmanualshowlabels",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualpdflabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmanualpdflabel{${1:label}}{${2:text}}"
+      }
+    },
+    {
+      "name": "pgfmanualpdflabel",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pgfmanualpdflabel[${3:catcode changes}]{${1:label}}{${2:text}}"
+      }
+    },
+    {
+      "name": "pgfmanualpdfref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmanualpdfref{${1:label}}{${2:text}}"
+      }
+    },
+    {
+      "name": "declareandlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "declareandlabel{${1:\\controlsequence}}"
+      }
+    },
+    {
+      "name": "verbpdfref",
+      "arg": {
+        "format": "{}",
+        "snippet": "verbpdfref{${1:\\controlsequence more stuff}}"
+      }
+    },
+    {
+      "name": "pgfmanualtargetcount",
+      "unusual": true
+    },
+    {
+      "name": "thepgfmanualentry",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualentryheadline",
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualentryheadline{${1:text}}"
+      }
+    },
+    {
+      "name": "pgfmanualbody"
+    },
+    {
+      "name": "exclamationmarktext",
+      "unusual": true
+    },
+    {
+      "name": "atmarktext",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualnormalbar",
+      "unusual": true
+    },
+    {
+      "name": "includeluadocumentationof",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeluadocumentationof{${1:lua class}}"
+      }
+    },
+    {
+      "name": "parametercount",
+      "unusual": true
+    },
+    {
+      "name": "mvar",
+      "arg": {
+        "format": "{}",
+        "snippet": "mvar{${1:arg}}"
+      }
+    },
+    {
+      "name": "pgfmanualemptytext",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualvbarvbar",
+      "unusual": true
+    },
+    {
+      "name": "mathinfixoperator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathinfixoperator{${1:operator}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathprefixoperator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathprefixoperator{${1:operator}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathpostfixoperator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathpostfixoperator{${1:operator}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathgroupoperator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathgroupoperator{${1:operator}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathconditionaloperator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathconditionaloperator{${1:operator}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathcommand"
+    },
+    {
+      "name": "mathcommand",
+      "arg": {
+        "format": "[]",
+        "snippet": "mathcommand[${1:expr}]"
+      }
+    },
+    {
+      "name": "calcname"
+    },
+    {
+      "name": "gobble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "gobble{${1:arg}}"
+      }
+    },
+    {
+      "name": "choicesep",
+      "unusual": true
+    },
+    {
+      "name": "choicearg",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "choicearg{${1:text}}"
+      }
+    },
+    {
+      "name": "iffirstchoice",
+      "unusual": true
+    },
+    {
+      "name": "mchoice",
+      "arg": {
+        "format": "{}",
+        "snippet": "mchoice{${1:choice1,choice2,...}}"
+      }
+    },
+    {
+      "name": "insertpathifneeded",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "insertpathifneeded{${1:path/key}}{${2:default path}}"
+      }
+    },
+    {
+      "name": "keyalias",
+      "arg": {
+        "format": "{}",
+        "snippet": "keyalias{${1:path}}"
+      }
+    },
+    {
+      "name": "iffirsttime",
+      "unusual": true
+    },
+    {
+      "name": "indexkey",
+      "arg": {
+        "format": "{}",
+        "snippet": "indexkey{${1:/path/key}}"
+      }
+    },
+    {
+      "name": "pgfmanualbar"
+    },
+    {
+      "name": "doublebs",
+      "unusual": true
+    },
+    {
+      "name": "opt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "ooarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "ooarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "beamer"
+    },
+    {
+      "name": "pdf"
+    },
+    {
+      "name": "eps"
+    },
+    {
+      "name": "pgfname"
+    },
+    {
+      "name": "tikzname"
+    },
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "prosper"
+    },
+    {
+      "name": "seminar"
+    },
+    {
+      "name": "texpower"
+    },
+    {
+      "name": "foils"
+    },
+    {
+      "name": "printanat",
+      "unusual": true
+    },
+    {
+      "name": "declare",
+      "arg": {
+        "format": "{}",
+        "snippet": "declare{${1:entry}}"
+      }
+    },
+    {
+      "name": "pgfmanualdeclare",
+      "unusual": true
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "themeauthor"
+    },
+    {
+      "name": "indexoption",
+      "arg": {
+        "format": "{}",
+        "snippet": "indexoption{${1:option}}"
+      }
+    },
+    {
+      "name": "itemcalendaroption",
+      "arg": {
+        "format": "{}",
+        "snippet": "itemcalendaroption{${1:option}}"
+      }
+    },
+    {
+      "name": "noindexing",
+      "unusual": true
+    },
+    {
+      "name": "arrowcapexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "arrowcapexample[${1:options}]"
+      }
+    },
+    {
+      "name": "arrowexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "arrowexample[${1:options}]"
+      }
+    },
+    {
+      "name": "arrowexampledup",
+      "arg": {
+        "format": "[]",
+        "snippet": "arrowexampledup[${1:options}]"
+      }
+    },
+    {
+      "name": "arrowexampledupdot",
+      "arg": {
+        "format": "[]",
+        "snippet": "arrowexampledupdot[${1:options}]"
+      }
+    },
+    {
+      "name": "arrowexampledouble",
+      "arg": {
+        "format": "[]",
+        "snippet": "arrowexampledouble[${1:options}]"
+      }
+    },
+    {
+      "name": "symarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "symarrow{${1:arrow tip}}"
+      }
+    },
+    {
+      "name": "symarrowdouble",
+      "arg": {
+        "format": "{}",
+        "snippet": "symarrowdouble{${1:arrow tip}}"
+      }
+    },
+    {
+      "name": "sarrow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sarrow{${1:tip1}}{${2:tip2}}"
+      }
+    },
+    {
+      "name": "sarrowdouble",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sarrowdouble{${1:tip1}}{${2:tip2}}"
+      }
+    },
+    {
+      "name": "carrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "carrow{${1:arrow tip}}"
+      }
+    },
+    {
+      "name": "myvbar"
+    },
+    {
+      "name": "plotmarkentry",
+      "arg": {
+        "format": "{}",
+        "snippet": "plotmarkentry{${1:mark}}"
+      }
+    },
+    {
+      "name": "plotmarkentrytikz",
+      "arg": {
+        "format": "{}",
+        "snippet": "plotmarkentrytikz{${1:mark}}"
+      }
+    },
+    {
+      "name": "ifpgfmanualtikzsyntaxhilighting",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualanimscale",
+      "unusual": true
+    },
+    {
+      "name": "opensource",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "opensource{${1:file}}"
+      }
+    },
+    {
+      "name": "ifcodeexamplefromfile",
+      "unusual": true
+    },
+    {
+      "name": "codeexamplewidth",
+      "unusual": true
+    },
+    {
+      "name": "codeexamplebox",
+      "unusual": true
+    },
+    {
+      "name": "codeexampleboxanim",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualdolisting",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualdolisting{${1:arg}}"
+      }
+    },
+    {
+      "name": "pgfmanualcslinkpreskip",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualswitchoncolors",
+      "unusual": true
+    },
+    {
+      "name": "pgfmanualwordstartup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmanualwordstartup{${1:text}}"
+      }
+    },
+    {
+      "name": "noligs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "noligs{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pgfmanualentry"
+    },
+    {
+      "name": "pgflayout",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:layout}}"
+      }
+    },
+    {
+      "name": "sysanimateattribute",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:attribute}}"
+      }
+    },
+    {
+      "name": "animateattribute",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:attribute}}"
+      }
+    },
+    {
+      "name": "tikzanimateattribute",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:attribute}}"
+      }
+    },
+    {
+      "name": "command",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:command%plain}}"
+      }
+    },
+    {
+      "name": "luageneric",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "luatable",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "luafield",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:field}}"
+      }
+    },
+    {
+      "name": "lualibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:library}}"
+      }
+    },
+    {
+      "name": "luadeclare",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "luadeclarestyle",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "luanamespace",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:prefix}}{${2:name}}"
+      }
+    },
+    {
+      "name": "luafiledescription",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:arg}}"
+      }
+    },
+    {
+      "name": "luacommand",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "luaparameters"
+    },
+    {
+      "name": "luareturns"
+    },
+    {
+      "name": "parameterdescription"
+    },
+    {
+      "name": "commandlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cmd1,cmd2,...}}"
+      }
+    },
+    {
+      "name": "internallist",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cmd1,cmd2,...}}"
+      }
+    },
+    {
+      "name": "internallist",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:type}]{${1:cmd1,cmd2,...}}"
+      }
+    },
+    {
+      "name": "shape",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:shape}}"
+      }
+    },
+    {
+      "name": "pictype",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:pictype}}{${2:arguments}}"
+      }
+    },
+    {
+      "name": "shading",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:shading}}"
+      }
+    },
+    {
+      "name": "graph",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:graph}}"
+      }
+    },
+    {
+      "name": "gdalgorithm",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:name}}{${2:employs}}"
+      }
+    },
+    {
+      "name": "dataformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:format}}"
+      }
+    },
+    {
+      "name": "stylesheet",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:stylesheet}}"
+      }
+    },
+    {
+      "name": "handler",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:handler}}"
+      }
+    },
+    {
+      "name": "stylekey",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:path/key=value}}"
+      }
+    },
+    {
+      "name": "key",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:path/key=value}}"
+      }
+    },
+    {
+      "name": "keylist",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:path1/key1=value1,path2/key2=value2,...}}"
+      }
+    },
+    {
+      "name": "keylist",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:default path}]{${1:path1/key1=value1,path2/key2=value2,...}}"
+      }
+    },
+    {
+      "name": "predefinedmethod",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:}}"
+      }
+    },
+    {
+      "name": "ooclass",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:}}"
+      }
+    },
+    {
+      "name": "method",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:}}"
+      }
+    },
+    {
+      "name": "classattribute",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:attribute}}"
+      }
+    },
+    {
+      "name": "predefinednode",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:method}}"
+      }
+    },
+    {
+      "name": "coordinatesystem",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:system}}"
+      }
+    },
+    {
+      "name": "snake",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "decoration",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:decoration}}"
+      }
+    },
+    {
+      "name": "pathoperation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:operation}}{${2:other text}}"
+      }
+    },
+    {
+      "name": "pathoperation",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:noindex}]{${1:operation}}{${2:other text}}"
+      }
+    },
+    {
+      "name": "datavisualizationoperation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:operation}}{${2:other text}}"
+      }
+    },
+    {
+      "name": "datavisualizationoperation",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:noindex}]{${1:operation}}{${2:other text}}"
+      }
+    },
+    {
+      "name": "package",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:package}}"
+      }
+    },
+    {
+      "name": "pgfmodule",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:module}}"
+      }
+    },
+    {
+      "name": "pgflibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:library}}"
+      }
+    },
+    {
+      "name": "purepgflibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:library}}"
+      }
+    },
+    {
+      "name": "tikzlibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:library}}"
+      }
+    },
+    {
+      "name": "pgfkeyslibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:library}}"
+      }
+    },
+    {
+      "name": "filedescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:file}}"
+      }
+    },
+    {
+      "name": "packageoption",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:option}}"
+      }
+    },
+    {
+      "name": "textoken",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:token}}"
+      }
+    },
+    {
+      "name": "class",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:class}}"
+      }
+    },
+    {
+      "name": "arrowtipsimple",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "arrowtip",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:name}}{${2:description%text}}{${3:draw options}}{${4:option labels}}"
+      }
+    },
+    {
+      "name": "arrowcap",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "{${1:name}}{${2:description%text}}{${3:draw options}}{${4:option labels}}{${5:shift}}"
+      }
+    },
+    {
+      "name": "pattern",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:pattern}}"
+      }
+    },
+    {
+      "name": "arrowexamples"
+    },
+    {
+      "name": "arrowcapexamples"
+    },
+    {
+      "name": "codeexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{codeexample}#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{codeexample}#c": [
+      "width=",
+      "graphic=",
+      "code=",
+      "execute code",
+      "hidden",
+      "code only",
+      "setup code",
+      "multipage",
+      "pre={${1:code}",
+      "post={${1:code}",
+      "typeset listing=",
+      "render instead={${1:code}}",
+      "vbox",
+      "ignorespaces",
+      "leave comments",
+      "from file=${1:file}",
+      "tikz syntax",
+      "animation list={${1:num1,num2,...}}",
+      "animation pre={${1:code}}",
+      "animation post={${1:code}}",
+      "animation scale=${1:factor}",
+      "animation bb={(${1:x1,y1}) ${2:type} (${3:x2,y2})}",
+      "preamble={${1:code}}"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,50 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cropbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "cropbox{${1:content%text}}"
+      }
+    },
+    {
+      "name": "cropbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cropbox[${2:width}]{${1:content%text}}"
+      }
+    },
+    {
+      "name": "cropbox",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "cropbox[${2:width}][${3:height}]{${1:content%text}}"
+      }
+    },
+    {
+      "name": "cropboxsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "cropboxsep{${1:length}}"
+      }
+    },
+    {
+      "name": "croplinewidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "croplinewidth{${1:length}}"
+      }
+    },
+    {
+      "name": "croplinelength",
+      "arg": {
+        "format": "{}",
+        "snippet": "croplinelength{${1:length}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

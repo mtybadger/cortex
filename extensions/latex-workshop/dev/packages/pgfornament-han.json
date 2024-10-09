@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "pgfornament"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfornamenthan",
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfornamenthan{${1:ornament number}}"
+      }
+    },
+    {
+      "name": "pgfornamenthan",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pgfornamenthan[${2:options%keyvals}]{${1:ornament number}}",
+        "keys": [
+          "\\pgfornamenthan#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pgfOrnamentsHanObject",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\pgfornamenthan#c": [
+      "scale=${1:factor}",
+      "width=",
+      "height=",
+      "color=",
+      "opacity=${1:factor}",
+      "ydelta=",
+      "symmetry=${1|v,h,c,none|}",
+      "anchor=${1:anchor}"
+    ]
+  },
+  "args": []
+}

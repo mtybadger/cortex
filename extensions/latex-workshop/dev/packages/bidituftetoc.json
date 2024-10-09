@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "titletoc"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "biditools"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bidituftetoc#c": [
+      "notoc",
+      "toc"
+    ]
+  },
+  "args": [
+    "\\usepackage/bidituftetoc#c"
+  ]
+}

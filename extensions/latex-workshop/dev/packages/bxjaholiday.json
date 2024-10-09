@@ -1,0 +1,43 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "jaholidayname",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "jaholidayname{${1:year}}{${2:month}}{${3:day}}"
+      }
+    },
+    {
+      "name": "jadayofweek",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "jadayofweek{${1:year}}{${2:month}}{${3:day}}"
+      }
+    },
+    {
+      "name": "IfJaHolidayTF",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "IfJaHolidayTF{${1:year}}{${2:month}}{${3:day}}{${4:true code}}{${5:false code}}"
+      }
+    },
+    {
+      "name": "IfJaHolidayT",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "IfJaHolidayT{${1:year}}{${2:month}}{${3:day}}{${4:true code}}"
+      }
+    },
+    {
+      "name": "IfJaHolidayF",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "IfJaHolidayF{${1:year}}{${2:month}}{${3:day}}{${4:false code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

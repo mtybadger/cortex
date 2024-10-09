@@ -1,0 +1,175 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "fancybox"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "jurabase"
+    },
+    {
+      "name": "class-scrartcl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "formulierung",
+      "arg": {
+        "format": "{}",
+        "snippet": "formulierung{${1:text}}"
+      }
+    },
+    {
+      "name": "hand"
+    },
+    {
+      "name": "jdef"
+    },
+    {
+      "name": "lonelyhand",
+      "arg": {
+        "format": "{}",
+        "snippet": "lonelyhand{${1:text}}"
+      }
+    },
+    {
+      "name": "lonelytriangle",
+      "arg": {
+        "format": "{}",
+        "snippet": "lonelytriangle{${1:text}}"
+      }
+    },
+    {
+      "name": "merke",
+      "arg": {
+        "format": "{}",
+        "snippet": "merke{${1:text}}"
+      }
+    },
+    {
+      "name": "okay"
+    },
+    {
+      "name": "settheme",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "settheme{${1:thema}}{${2:datum}}"
+      }
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "bspname",
+      "unusual": true
+    },
+    {
+      "name": "fall",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fall[${2:quelle}]{${1:definitionstext%text}}"
+      }
+    },
+    {
+      "name": "fall",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fall{${1:definitionstext%text}}"
+      }
+    },
+    {
+      "name": "greybox",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "greybox[${2:width}]{${1:text}}"
+      }
+    },
+    {
+      "name": "greybox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "greybox{${1:text}}"
+      }
+    },
+    {
+      "name": "jdef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "jdef[${2:quelle}]{${1:definitionstext%text}}"
+      }
+    },
+    {
+      "name": "jdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "jdef{${1:definitionstext%text}}"
+      }
+    },
+    {
+      "name": "lithinweis",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "lithinweis{${1:text}}"
+      }
+    },
+    {
+      "name": "litname",
+      "unusual": true
+    },
+    {
+      "name": "merkename",
+      "unusual": true
+    },
+    {
+      "name": "resetparskip",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "aufzaehlung"
+    },
+    {
+      "name": "beispiel"
+    },
+    {
+      "name": "gesetzestext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:paragraph%text}}{${2:ueberschrift%text}}"
+      }
+    },
+    {
+      "name": "hands"
+    },
+    {
+      "name": "hinweis"
+    },
+    {
+      "name": "stars"
+    },
+    {
+      "name": "triangles"
+    },
+    {
+      "name": "uebersicht"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

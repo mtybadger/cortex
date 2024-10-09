@@ -1,0 +1,27 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mgdefault"
+    },
+    {
+      "name": "mgfamily"
+    },
+    {
+      "name": "textmg",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmg{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/morisawa#c": [
+      "fake"
+    ]
+  },
+  "args": [
+    "\\usepackage/morisawa#c"
+  ]
+}

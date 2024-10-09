@@ -1,0 +1,270 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "RBibitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "RBibitem{${1:citekey}}"
+      }
+    },
+    {
+      "name": "RBibitem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "RBibitem[${2:label}]{${1:citekey}}"
+      }
+    },
+    {
+      "name": "Bibitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bibitem{${1:citekey}}"
+      }
+    },
+    {
+      "name": "Bibitem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Bibitem[${2:label}]{${1:citekey}}"
+      }
+    },
+    {
+      "name": "adsnasa",
+      "arg": {
+        "format": "{}",
+        "snippet": "adsnasa{${1:URL}}"
+      }
+    },
+    {
+      "name": "arxiv"
+    },
+    {
+      "name": "book"
+    },
+    {
+      "name": "bookinfo"
+    },
+    {
+      "name": "bookvol"
+    },
+    {
+      "name": "bookvols"
+    },
+    {
+      "name": "by"
+    },
+    {
+      "name": "byy"
+    },
+    {
+      "name": "crossref",
+      "arg": {
+        "format": "{}",
+        "snippet": "crossref{${1:URL}}"
+      }
+    },
+    {
+      "name": "ed"
+    },
+    {
+      "name": "edition"
+    },
+    {
+      "name": "eds"
+    },
+    {
+      "name": "elink"
+    },
+    {
+      "name": "eprint"
+    },
+    {
+      "name": "eprintinfo"
+    },
+    {
+      "name": "finalbookinfo"
+    },
+    {
+      "name": "finalinfo"
+    },
+    {
+      "name": "hrarxiv",
+      "arg": {
+        "format": "{}",
+        "snippet": "hrarxiv{${1:URL}}"
+      }
+    },
+    {
+      "name": "inbook"
+    },
+    {
+      "name": "isbn"
+    },
+    {
+      "name": "isi",
+      "arg": {
+        "format": "{}",
+        "snippet": "isi{${1:URL}}"
+      }
+    },
+    {
+      "name": "issue"
+    },
+    {
+      "name": "issueinfo"
+    },
+    {
+      "name": "jour"
+    },
+    {
+      "name": "journalname"
+    },
+    {
+      "name": "lang"
+    },
+    {
+      "name": "mathnet",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathnet{${1:URL}}"
+      }
+    },
+    {
+      "name": "mathscinet",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathscinet{${1:URL}}"
+      }
+    },
+    {
+      "name": "miscnote"
+    },
+    {
+      "name": "monthissue"
+    },
+    {
+      "name": "moreref"
+    },
+    {
+      "name": "morerref"
+    },
+    {
+      "name": "No"
+    },
+    {
+      "name": "nofrills"
+    },
+    {
+      "name": "page"
+    },
+    {
+      "name": "pages"
+    },
+    {
+      "name": "paper"
+    },
+    {
+      "name": "paperinfo"
+    },
+    {
+      "name": "papernumber"
+    },
+    {
+      "name": "preprint"
+    },
+    {
+      "name": "preprintinfo"
+    },
+    {
+      "name": "proc"
+    },
+    {
+      "name": "procinfo"
+    },
+    {
+      "name": "ptype"
+    },
+    {
+      "name": "publ"
+    },
+    {
+      "name": "publaddr"
+    },
+    {
+      "name": "publaddrr"
+    },
+    {
+      "name": "publaddrrr"
+    },
+    {
+      "name": "publl"
+    },
+    {
+      "name": "publll"
+    },
+    {
+      "name": "rtransl"
+    },
+    {
+      "name": "scopus",
+      "arg": {
+        "format": "{}",
+        "snippet": "scopus{${1:URL}}"
+      }
+    },
+    {
+      "name": "serial"
+    },
+    {
+      "name": "serissue"
+    },
+    {
+      "name": "thesis"
+    },
+    {
+      "name": "thesisinfo"
+    },
+    {
+      "name": "toappear"
+    },
+    {
+      "name": "totalpages"
+    },
+    {
+      "name": "transl"
+    },
+    {
+      "name": "vol"
+    },
+    {
+      "name": "volinfo"
+    },
+    {
+      "name": "voltitle"
+    },
+    {
+      "name": "yr"
+    },
+    {
+      "name": "zmath",
+      "arg": {
+        "format": "{}",
+        "snippet": "zmath{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

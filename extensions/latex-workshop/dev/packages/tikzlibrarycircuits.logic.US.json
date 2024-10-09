@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycircuits.logic"
+    },
+    {
+      "name": "tikzlibraryshapes.gates.logic.US"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "circuit logic US"
+    ]
+  },
+  "args": []
+}

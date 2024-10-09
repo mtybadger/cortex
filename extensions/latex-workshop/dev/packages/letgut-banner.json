@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "accsupp"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/letgut-banner#c": [
+      "pagecolor={${1:r,g,b}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/letgut-banner#c"
+  ]
+}

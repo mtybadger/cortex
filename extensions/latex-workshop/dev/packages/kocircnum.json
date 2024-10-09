@@ -1,0 +1,338 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshadings"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hcrcircnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "hcrcircnum{${1:number}}"
+      }
+    },
+    {
+      "name": "hcrcircnum*",
+      "arg": {
+        "format": "{}",
+        "snippet": "hcrcircnum*{${1:number}}"
+      }
+    },
+    {
+      "name": "hcrcircnum",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hcrcircnum[${2:options}]{${1:number}}",
+        "keys": [
+          "\\hcrcircnum#c,\\hcrcircnum*#c,\\hcrcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hcrcircnum*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hcrcircnum*[${2:options}]{${1:number}}",
+        "keys": [
+          "\\hcrcircnum#c,\\hcrcircnum*#c,\\hcrcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hcrcircnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "hcrcircnumsetup{${1:options}}",
+        "keys": [
+          "\\hcrcircnum#c,\\hcrcircnum*#c,\\hcrcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "restorehcrcircnumsetup"
+    },
+    {
+      "name": "hzcircnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "hzcircnum{${1:number}}"
+      }
+    },
+    {
+      "name": "hzcircnum*",
+      "arg": {
+        "format": "{}",
+        "snippet": "hzcircnum*{${1:number}}"
+      }
+    },
+    {
+      "name": "hzcircnum",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hzcircnum[${2:args%keyvals}]{${1:number}}",
+        "keys": [
+          "\\hzcircnum#c,\\hzcircnum*#c,\\hzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hzcircnum*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hzcircnum*[${2:args%keyvals}]{${1:number}}",
+        "keys": [
+          "\\hzcircnum#c,\\hzcircnum*#c,\\hzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hzcircnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "hzcircnumsetup{${1:args%keyvals}}",
+        "keys": [
+          "\\hzcircnum#c,\\hzcircnum*#c,\\hzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "restorehzcircnumsetup"
+    },
+    {
+      "name": "tikzcircnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzcircnum{${1:number}}"
+      }
+    },
+    {
+      "name": "tikzcircnum*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzcircnum*{${1:number}}"
+      }
+    },
+    {
+      "name": "tikzcircnum",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tikzcircnum[${2:options}]{${1:number}}",
+        "keys": [
+          "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tikzcircnum*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tikzcircnum*[${2:options}]{${1:number}}",
+        "keys": [
+          "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tikzcircnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzcircnumsetup{${1:options}}",
+        "keys": [
+          "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tikzcircnumonce",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tikzcircnumonce[${2:options}]{${1:number}}",
+        "keys": [
+          "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "settikzcircnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "settikzcircnumsetup{${1:options}}",
+        "keys": [
+          "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "restoretikzcircnumsetup"
+    },
+    {
+      "name": "declaretikzcircnumsmallsetup",
+      "unusual": true
+    },
+    {
+      "name": "declaretikzcircnumbigsetup",
+      "unusual": true
+    },
+    {
+      "name": "circnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "circnum{${1:number}}"
+      }
+    },
+    {
+      "name": "circnum",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "circnum[${2:options}]{${1:number}}",
+        "keys": [
+          "\\circnum#c,\\circnum*#c,\\circnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "circnum*",
+      "arg": {
+        "format": "{}",
+        "snippet": "circnum*{${1:number}}"
+      }
+    },
+    {
+      "name": "circnum*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "circnum*[${2:options}]{${1:number}}",
+        "keys": [
+          "\\circnum#c,\\circnum*#c,\\circnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "circnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "circnumsetup{${1:options}}",
+        "keys": [
+          "\\circnum#c,\\circnum*#c,\\circnumsetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "restorecircnumsetup"
+    },
+    {
+      "name": "Cnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "Cnum{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/kocircnum#c": [
+      "hcr",
+      "hz",
+      "tikz",
+      "tikzsmall",
+      "tikzbig"
+    ],
+    "\\hcrcircnum#c,\\hcrcircnum*#c,\\hcrcircnumsetup#c": [
+      "shape=${1|circle,box,rectangle|}",
+      "white",
+      "black",
+      "color=",
+      "font=${1:font commands}",
+      "reset"
+    ],
+    "\\hzcircnum#c,\\hzcircnum*#c,\\hzcircnumsetup#c": [
+      "shape=${1|circle,circ,rectangle,rect,oval,ball|}",
+      "color=",
+      "bgcolor=",
+      "fgcolor=",
+      "sep=",
+      "raise=",
+      "Raise=",
+      "font=${1:font commands}",
+      "fontplus=${1:font commands}",
+      "base=${1:text}",
+      "reset"
+    ],
+    "\\tikzcircnum#c,\\tikzcircnum*#c,\\tikzcircnumsetup#c,\\tikzcircnumonce#c,\\settikzcircnumsetup#c": [
+      "shape=${1|circle,rectangle,ball|}",
+      "color=",
+      "bgcolor=",
+      "fgcolor=",
+      "bdcolor=",
+      "colorinv=",
+      "round=",
+      "raise=",
+      "Raise=",
+      "sep=",
+      "sepplus=",
+      "font=${1:font commands}",
+      "fontplus=${1:font commands}",
+      "base=${1:text}",
+      "bdwidth=",
+      "linewidth=",
+      "reset"
+    ],
+    "\\circnum#c,\\circnum*#c,\\circnumsetup#c": [
+      "shape=${1|circle,circ,rectangle,rect,oval,ball|}",
+      "white",
+      "black",
+      "color=",
+      "font=${1:font commands}",
+      "reset",
+      "bgcolor=",
+      "fgcolor=",
+      "sep=",
+      "raise=",
+      "Raise=",
+      "font=${1:font commands}",
+      "fontplus=${1:font commands}",
+      "base=${1:text}",
+      "bgcolor=",
+      "fgcolor=",
+      "bdcolor=",
+      "colorinv=",
+      "round=",
+      "raise=",
+      "Raise=",
+      "sep=",
+      "sepplus=",
+      "font=${1:font commands}",
+      "fontplus=${1:font commands}",
+      "base=${1:text}",
+      "bdwidth=",
+      "linewidth="
+    ]
+  },
+  "args": [
+    "\\usepackage/kocircnum#c"
+  ]
+}

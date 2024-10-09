@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "issuusetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "issuusetup{${1:options%keyvals}}",
+        "keys": [
+          "\\issuusetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "newISSUUlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newISSUUlink{${1:name}}{${2:abspage}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\issuusetup": [
+      "prefix=${1:URL prefix}"
+    ]
+  },
+  "args": []
+}

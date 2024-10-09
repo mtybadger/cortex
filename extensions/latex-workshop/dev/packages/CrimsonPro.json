@@ -1,0 +1,110 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "crimsonpro"
+    },
+    {
+      "name": "crimsonproOsF"
+    },
+    {
+      "name": "crimsonproLF"
+    },
+    {
+      "name": "crimsonprotabular"
+    },
+    {
+      "name": "crimsonproproportional"
+    },
+    {
+      "name": "tabularnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabularnums{${1:text}}"
+      }
+    },
+    {
+      "name": "proportionalnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "proportionalnums{${1:text}}"
+      }
+    },
+    {
+      "name": "liningnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "liningnums{${1:text}}"
+      }
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "textinf",
+      "arg": {
+        "format": "{}",
+        "snippet": "textinf{${1:text}}"
+      }
+    },
+    {
+      "name": "infigures"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CrimsonPro#c": [
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "nf",
+      "lf",
+      "oldstyle",
+      "osf",
+      "tabular",
+      "t",
+      "proportional",
+      "p",
+      "medium",
+      "m",
+      "semibold",
+      "sb",
+      "extrabold",
+      "eb",
+      "k",
+      "black",
+      "light",
+      "el",
+      "extralight"
+    ]
+  },
+  "args": [
+    "\\usepackage/CrimsonPro#c"
+  ]
+}

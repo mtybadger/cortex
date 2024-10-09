@@ -1,0 +1,569 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MFPloadextra",
+      "unusual": true
+    },
+    {
+      "name": "startMFPprogram"
+    },
+    {
+      "name": "stopMFPprogram"
+    },
+    {
+      "name": "MFPadd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPadd{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPsub",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPsub{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPmul",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPmul{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPmpy",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPmpy{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPdiv",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPdiv{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPmin",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPmin{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPmax",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPmax{${1:num1}}{${2:num2}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPchs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPchs{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPabs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPabs{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPdbl",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPdbl{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPhalve",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPhalve{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPint",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPint{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPfrac{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPfloor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPfloor{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPceil",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPceil{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPsgn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPsgn{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPsq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPsq{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPinv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPinv{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPincr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPincr{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPdecr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPdecr{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPzero",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPzero{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPstore",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPstore{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPnoop"
+    },
+    {
+      "name": "MFPpi"
+    },
+    {
+      "name": "MFPe"
+    },
+    {
+      "name": "MFPphi"
+    },
+    {
+      "name": "MFPchk",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFPchk{${1:num}}"
+      }
+    },
+    {
+      "name": "MFPcmp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPcmp{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "IFneg",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFneg{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "IFzero",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFzero{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "IFpos",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFpos{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "IFlt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFlt{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "IFeq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFeq{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "IFgt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IFgt{${1:true text}}{${2:false text}}"
+      }
+    },
+    {
+      "name": "MFPtruncate",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPtruncate{${1:integer}}{${2:num}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPround",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPround{${1:integer}}{${2:num}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPstrip",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPstrip{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "Rpush",
+      "arg": {
+        "format": "{}",
+        "snippet": "Rpush{${1:num}}"
+      }
+    },
+    {
+      "name": "Rpop",
+      "arg": {
+        "format": "{}",
+        "snippet": "Rpop{${1:cmd}}"
+      }
+    },
+    {
+      "name": "Radd"
+    },
+    {
+      "name": "Rsub"
+    },
+    {
+      "name": "Rmul"
+    },
+    {
+      "name": "Rmpy"
+    },
+    {
+      "name": "Rdiv"
+    },
+    {
+      "name": "Rmin"
+    },
+    {
+      "name": "Rmax"
+    },
+    {
+      "name": "Rchs"
+    },
+    {
+      "name": "Rabs"
+    },
+    {
+      "name": "Rdbl"
+    },
+    {
+      "name": "Rhalve"
+    },
+    {
+      "name": "Rint"
+    },
+    {
+      "name": "Rfrac"
+    },
+    {
+      "name": "Rfloor"
+    },
+    {
+      "name": "Rceil"
+    },
+    {
+      "name": "Rsgn"
+    },
+    {
+      "name": "Rsq"
+    },
+    {
+      "name": "Rinv"
+    },
+    {
+      "name": "Rincr"
+    },
+    {
+      "name": "Rdecr"
+    },
+    {
+      "name": "Rzero"
+    },
+    {
+      "name": "Rnoop"
+    },
+    {
+      "name": "Rchk"
+    },
+    {
+      "name": "Rcmp"
+    },
+    {
+      "name": "Rdup"
+    },
+    {
+      "name": "Rexch"
+    },
+    {
+      "name": "Export",
+      "arg": {
+        "format": "{}",
+        "snippet": "Export{${1:macro}}"
+      }
+    },
+    {
+      "name": "Global",
+      "arg": {
+        "format": "{}",
+        "snippet": "Global{${1:macro}}"
+      }
+    },
+    {
+      "name": "ExportStack"
+    },
+    {
+      "name": "GlobalStack"
+    },
+    {
+      "name": "EndofStack",
+      "unusual": true
+    },
+    {
+      "name": "ZeroOverZeroInt",
+      "unusual": true
+    },
+    {
+      "name": "ZeroOverZeroFrac",
+      "unusual": true
+    },
+    {
+      "name": "xOverZeroInt",
+      "unusual": true
+    },
+    {
+      "name": "xOverZeroFrac",
+      "unusual": true
+    },
+    {
+      "name": "MaxRealInt",
+      "unusual": true
+    },
+    {
+      "name": "MaxRealFrac",
+      "unusual": true
+    },
+    {
+      "name": "MFPsin",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPsin{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPcos",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPcos{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPangle",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPangle{${1:x}}{${2:y}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPrad",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPrad{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPdeg",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPdeg{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPlog",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPlog{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPln",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPln{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPexp",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPexp{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPsqrt",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPsqrt{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPrand",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFPrand{${1:num}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "MFPpow",
+      "if": "extra",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "MFPpow{${1:num}}{${2:integer}}{${3:cmd}}"
+      }
+    },
+    {
+      "name": "MFPsetseed",
+      "if": "extra",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFPsetseed{${1:integer}}"
+      }
+    },
+    {
+      "name": "MFPrandgenA",
+      "if": "extra"
+    },
+    {
+      "name": "MFPrandgenB",
+      "if": "extra"
+    },
+    {
+      "name": "MFPrandgenC",
+      "if": "extra"
+    },
+    {
+      "name": "Rsin",
+      "if": "extra"
+    },
+    {
+      "name": "Rcos",
+      "if": "extra"
+    },
+    {
+      "name": "Rangle",
+      "if": "extra"
+    },
+    {
+      "name": "Rrad",
+      "if": "extra"
+    },
+    {
+      "name": "Rdeg",
+      "if": "extra"
+    },
+    {
+      "name": "Rlog",
+      "if": "extra"
+    },
+    {
+      "name": "Rln",
+      "if": "extra"
+    },
+    {
+      "name": "Rexp",
+      "if": "extra"
+    },
+    {
+      "name": "Rsqrt",
+      "if": "extra"
+    },
+    {
+      "name": "Rrand",
+      "if": "extra"
+    },
+    {
+      "name": "Rpow",
+      "if": "extra"
+    },
+    {
+      "name": "LogOfZeroInt",
+      "if": "extra",
+      "unusual": true
+    },
+    {
+      "name": "LogOfZeroFrac",
+      "if": "extra",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/minifp#c": [
+      "extra"
+    ]
+  },
+  "args": [
+    "\\usepackage/minifp#c"
+  ]
+}

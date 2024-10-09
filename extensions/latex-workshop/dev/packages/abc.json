@@ -1,0 +1,130 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "shellesc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "abcinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "abcinput{${1:file}}"
+      }
+    },
+    {
+      "name": "abcinput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "abcinput[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\begin{abc},\\abcinput,\\begin{mup},\\mupinput"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "abcwidth",
+      "unusual": true
+    },
+    {
+      "name": "normalabcoutputfile",
+      "unusual": true
+    },
+    {
+      "name": "normalmupoutputfile",
+      "if": "mup",
+      "unusual": true
+    },
+    {
+      "name": "mupinput",
+      "if": "mup",
+      "arg": {
+        "format": "{}",
+        "snippet": "mupinput{${1:file}}"
+      }
+    },
+    {
+      "name": "mupinput",
+      "if": "mup",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "mupinput[${2:options%keyvals}]{${1:file}}"
+      }
+    },
+    {
+      "name": "mupwidth",
+      "if": "mup",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "abc"
+    },
+    {
+      "name": "abc",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{abc},\\abcinput,\\begin{mup},\\mupinput"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mup",
+      "if": "mup"
+    },
+    {
+      "name": "mup",
+      "if": "mup",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/abc#c": [
+      "shellescape",
+      "noshellescape",
+      "generate",
+      "nogenerate",
+      "ps2epsi",
+      "ps2epsidos",
+      "ps2eps",
+      "nosaveall",
+      "saveall",
+      "mup"
+    ],
+    "\\begin{abc},\\abcinput,\\begin{mup},\\mupinput": [
+      "name=${1:name}",
+      "options={${1:abcm2ps options}}",
+      "postoptions={${1:abcm2ps options}}",
+      "program=${1:program}",
+      "width=",
+      "center",
+      "extension=${1:extension}"
+    ]
+  },
+  "args": [
+    "\\usepackage/abc#c"
+  ]
+}

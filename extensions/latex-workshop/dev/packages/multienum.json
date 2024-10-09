@@ -1,0 +1,301 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mitemx",
+      "arg": {
+        "format": "{}",
+        "snippet": "mitemx{${1:text}}"
+      }
+    },
+    {
+      "name": "mitemxx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mitemxx{${1:text1%text}}{${2:text2%text}}"
+      }
+    },
+    {
+      "name": "mitemxxx",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "mitemxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}"
+      }
+    },
+    {
+      "name": "mitemxox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mitemxox{${1:left%text}}{${2:right%text}}"
+      }
+    },
+    {
+      "name": "mitemxxo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mitemxxo{${1:left%text}}{${2:center%text}}"
+      }
+    },
+    {
+      "name": "mitemxxxx",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "mitemxxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}{${4:text4%text}}"
+      }
+    },
+    {
+      "name": "mitemxoxx",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "mitemxoxx{${1:left%text}}{${2:right1%text}}{${3:right2%text}}"
+      }
+    },
+    {
+      "name": "mitemxxox",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "mitemxxox{${1:left1%text}}{${2:left2%text}}{${3:right%text}}"
+      }
+    },
+    {
+      "name": "mitemxxxo",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "mitemxxxo{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}"
+      }
+    },
+    {
+      "name": "mitemxxoo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mitemxxoo{${1:left1%text}}{${2:left2%text}}"
+      }
+    },
+    {
+      "name": "mitemxxxxx",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "mitemxxxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}{${4:text4%text}}{${5:text5%text}}"
+      }
+    },
+    {
+      "name": "usedx",
+      "unusual": true
+    },
+    {
+      "name": "remainx",
+      "unusual": true
+    },
+    {
+      "name": "usedxx",
+      "unusual": true
+    },
+    {
+      "name": "remainxx",
+      "unusual": true
+    },
+    {
+      "name": "usedxxx",
+      "unusual": true
+    },
+    {
+      "name": "remainxxx",
+      "unusual": true
+    },
+    {
+      "name": "usedxxxx",
+      "unusual": true
+    },
+    {
+      "name": "remainxxxx",
+      "unusual": true
+    },
+    {
+      "name": "remainxox",
+      "unusual": true
+    },
+    {
+      "name": "remainxoxx",
+      "unusual": true
+    },
+    {
+      "name": "usedxxxxx",
+      "unusual": true
+    },
+    {
+      "name": "remainxxxxx",
+      "unusual": true
+    },
+    {
+      "name": "labelname",
+      "unusual": true
+    },
+    {
+      "name": "itemx",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "itemx{${1:text}}"
+      }
+    },
+    {
+      "name": "itemxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "itemxx{${1:text1%text}}{${2:text2%text}}"
+      }
+    },
+    {
+      "name": "itemxxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "itemxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}"
+      }
+    },
+    {
+      "name": "itemxox",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "itemxox{${1:left%text}}{${2:right%text}}"
+      }
+    },
+    {
+      "name": "itemxxo",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "itemxxo{${1:left%text}}{${2:center%text}}"
+      }
+    },
+    {
+      "name": "itemxxxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "itemxxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}{${4:text4%text}}"
+      }
+    },
+    {
+      "name": "itemxoxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "itemxoxx{${1:left%text}}{${2:right1%text}}{${3:right2%text}}"
+      }
+    },
+    {
+      "name": "itemxxox",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "itemxxox{${1:left1%text}}{${2:left2%text}}{${3:right%text}}"
+      }
+    },
+    {
+      "name": "itemxxxo",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "itemxxxo{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}"
+      }
+    },
+    {
+      "name": "itemxxxxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "itemxxxxx{${1:text1%text}}{${2:text2%text}}{${3:text3%text}}{${4:text4%text}}{${5:text5%text}}"
+      }
+    },
+    {
+      "name": "oddlist",
+      "unusual": true
+    },
+    {
+      "name": "evenlist",
+      "unusual": true
+    },
+    {
+      "name": "regularlist",
+      "unusual": true
+    },
+    {
+      "name": "listtype",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "listtype{${1:type}}"
+      }
+    },
+    {
+      "name": "regularlisti",
+      "unusual": true
+    },
+    {
+      "name": "regularlistii",
+      "unusual": true
+    },
+    {
+      "name": "regularlistiii",
+      "unusual": true
+    },
+    {
+      "name": "oddlisti",
+      "unusual": true
+    },
+    {
+      "name": "evenlisti",
+      "unusual": true
+    },
+    {
+      "name": "themultienum",
+      "unusual": true
+    },
+    {
+      "name": "themultienumdepth",
+      "unusual": true
+    },
+    {
+      "name": "themultienumi",
+      "unusual": true
+    },
+    {
+      "name": "themultienumii",
+      "unusual": true
+    },
+    {
+      "name": "themultienumiii",
+      "unusual": true
+    },
+    {
+      "name": "themultienumiv",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "multienumerate"
+    },
+    {
+      "name": "multienumerate",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:type%keyvals}]",
+        "keys": [
+          "\\begin{multienumerate}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{multienumerate}": [
+      "evenlist",
+      "oddlist"
+    ]
+  },
+  "args": []
+}

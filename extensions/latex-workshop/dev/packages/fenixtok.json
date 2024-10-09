@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fornexttokl",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fornexttokl{${1:csname}}{${2:code}}"
+      }
+    },
+    {
+      "name": "fornexttokr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fornexttokr{${1:csname}}{${2:code}}"
+      }
+    },
+    {
+      "name": "NewTypeoftok",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "NewTypeoftok{${1:csname}}{${2:type name}}{${3:code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

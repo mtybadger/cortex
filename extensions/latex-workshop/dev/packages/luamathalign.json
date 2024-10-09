@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "AlignHere"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

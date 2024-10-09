@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "xeCJK"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setCJKfallbackfamily",
+      "arg": {
+        "format": "{}",
+        "snippet": "setCJKfallbackfamily{${1:family}}"
+      }
+    },
+    {
+      "name": "unsetCJKfallbackfamily"
+    },
+    {
+      "name": "CJKsymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKsymbol{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,1069 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "super",
+      "arg": {
+        "format": "{}",
+        "snippet": "super{${1:content}}"
+      }
+    },
+    {
+      "name": "super",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "super[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "super",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "super[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "super",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "super{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sub",
+      "arg": {
+        "format": "{}",
+        "snippet": "sub{${1:content}}"
+      }
+    },
+    {
+      "name": "sub",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sub[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sub",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sub[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sub",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sub{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "llastwd"
+    },
+    {
+      "name": "clastwd"
+    },
+    {
+      "name": "rlastwd"
+    },
+    {
+      "name": "supersub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "supersub{${1:super}}{${2:sub}}"
+      }
+    },
+    {
+      "name": "supersub",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "supersub[${3:keyvals}]{${1:super}}{${2:sub}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "supersub",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "supersub[${3:keyvals}][${4:height,depth}]{${1:super}}{${2:sub}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "supersub",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "supersub{${1:super}}{${2:sub}}[${3:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "superwd"
+    },
+    {
+      "name": "subwd"
+    },
+    {
+      "name": "maxwd"
+    },
+    {
+      "name": "spb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "spb{${1:super}}{${2:sub}}"
+      }
+    },
+    {
+      "name": "spb",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "spb[${3:keyvals}]{${1:super}}{${2:sub}}"
+      }
+    },
+    {
+      "name": "spb",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "spb[${3:keyvals}][${4:height,depth}]{${1:super}}{${2:sub}}"
+      }
+    },
+    {
+      "name": "spb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "spb{${1:super}}{${2:sub}}[${3:keyvals%plain}]"
+      }
+    },
+    {
+      "name": "defspbstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defspbstyle{${1:style name}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "spbifmath",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "spbifmath{${1:math code%formula}}{${2:text code}}"
+      }
+    },
+    {
+      "name": "spbshortkv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "spbshortkv{${1:short opt%specialDef}}{${2:keyval%keyvals}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\spbshortkv"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math",
+      "arg": {
+        "format": "{}",
+        "snippet": "sp{${1:content}}"
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sp[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sp[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sp{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math",
+      "arg": {
+        "format": "{}",
+        "snippet": "sb{${1:content}}"
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sb[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sb[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sb{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "sp{${1:content}}"
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math=true",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sp[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math=true",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sp[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "math=true",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sp{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "sb{${1:content}}"
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math=true",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sb[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math=true",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sb[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "math=true",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sb{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsuperscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsuperscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsubscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsubscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text=true",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsuperscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text=true",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "text=true",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsuperscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text=true",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsubscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text=true",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "text=true",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsubscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sp",
+      "if": "both",
+      "arg": {
+        "format": "{}",
+        "snippet": "sp{${1:content}}"
+      }
+    },
+    {
+      "name": "sp",
+      "if": "both",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sp[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sp[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sp{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sb",
+      "if": "both",
+      "arg": {
+        "format": "{}",
+        "snippet": "sb{${1:content}}"
+      }
+    },
+    {
+      "name": "sb",
+      "if": "both",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sb[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sb[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sb{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "both",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "both",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsuperscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsuperscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "both",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "both",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsubscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "both",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsubscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sp",
+      "if": "all",
+      "arg": {
+        "format": "{}",
+        "snippet": "sp{${1:content}}"
+      }
+    },
+    {
+      "name": "sp",
+      "if": "all",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sp[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sp[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sp",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sp{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "sb",
+      "if": "all",
+      "arg": {
+        "format": "{}",
+        "snippet": "sb{${1:content}}"
+      }
+    },
+    {
+      "name": "sb",
+      "if": "all",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sb[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sb[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sb",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sb{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "all",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "all",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsuperscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsuperscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsuperscript",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsuperscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "all",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubscript{${1:content}}"
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "all",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsubscript[${2:keyvals}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "textsubscript[${2:keyvals}][${3:height,depth}]{${1:content}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsubscript",
+      "if": "all",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "textsubscript{${1:content}}[${2:keyvals%plain}]",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "spbset",
+      "arg": {
+        "format": "{}",
+        "snippet": "spbset{${1:options%keyvals}}",
+        "keys": [
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv",
+          "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript",
+          "\\spbset,\\spbshortkv"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fnmarkfont",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/spbmark#c": [
+      "text",
+      "math",
+      "math*",
+      "foot",
+      "both",
+      "all",
+      "spcore=${1|trad,none|}",
+      "sbcore=${1|trad,none|}"
+    ],
+    "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript,\\spbshortkv": [
+      "vmove=",
+      "hmove=",
+      "cmd={${1:format cmds}}",
+      "cmd+={${1:format cmds}}",
+      "height=",
+      "depth=",
+      "style=${1:style name}",
+      "mode=${1|text,math,match|}",
+      "vsep={${1:super move,sub move}}",
+      "halign=${1|l,c,r|}"
+    ],
+    "\\spbset,\\super,\\sub,\\supersub,\\sp,\\sb,\\textsuperscript,\\textsubscript": [
+      "%spbshortkv"
+    ],
+    "\\spbset,\\spbshortkv": [
+      "spvmove=",
+      "sphmove=",
+      "sbvmove=",
+      "sbhmove=",
+      "nohmove",
+      "novmove",
+      "spcmd={${1:format cmds}}",
+      "spcmd+={${1:format cmds}}",
+      "sbcmd={${1:format cmds}}",
+      "sbcmd+={${1:format cmds}}",
+      "spheight=",
+      "spdepth=",
+      "sbheight=",
+      "sbdepth=",
+      "spbhmove=",
+      "spbcmd={${1:super cmds,sub cmds}}",
+      "spbcmd+={${1:super cmds,sub cmds}}",
+      "spbheight=",
+      "spbdepth="
+    ]
+  },
+  "args": [
+    "\\usepackage/spbmark#c"
+  ]
+}

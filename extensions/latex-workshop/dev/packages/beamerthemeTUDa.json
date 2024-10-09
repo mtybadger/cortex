@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "tudafonts"
+    },
+    {
+      "name": "tudarules"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "trimclip"
+    },
+    {
+      "name": "tudacolors"
+    }
+  ],
+  "macros": [
+    {
+      "name": "insertsmalllogo",
+      "unusual": true
+    },
+    {
+      "name": "logo*",
+      "arg": {
+        "format": "{}",
+        "snippet": "logo*{${1:logo text%text}}"
+      }
+    },
+    {
+      "name": "setupTUDaFrame",
+      "arg": {
+        "format": "{}",
+        "snippet": "setupTUDaFrame{${1:options%keyvals}}",
+        "keys": [
+          "\\setupTUDaFrame"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "titlegraphic*",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlegraphic*{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/TUDa#c": [
+      "accentcolor=",
+      "colortitle",
+      "colorbacktitle",
+      "colorframetitle",
+      "colorback",
+      "logo="
+    ],
+    "\\setupTUDaFrame": [
+      "logo",
+      "logofile=${1:file}",
+      "colorframetitle",
+      "centerframetitle",
+      "framebgcolor=",
+      "singleframebgcolor=",
+      "headsepline"
+    ]
+  },
+  "args": []
+}

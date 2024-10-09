@@ -1,0 +1,289 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "substr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "layerPages",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "layerPages{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "layerPages",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "layerPages[${3:page numbers}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "FirstDoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "FirstDoc{${1:text}}"
+      }
+    },
+    {
+      "name": "SecondDoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "SecondDoc{${1:text}}"
+      }
+    },
+    {
+      "name": "obj",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "obj{${1:arg}}"
+      }
+    },
+    {
+      "name": "objref",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "objref{${1:arg}}"
+      }
+    },
+    {
+      "name": "doobjref",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "doobjref{${1:arg}}"
+      }
+    },
+    {
+      "name": "objrefs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "objrefs{${1:arg}}"
+      }
+    },
+    {
+      "name": "lastobjref",
+      "unusual": true
+    },
+    {
+      "name": "thisobjref",
+      "unusual": true
+    },
+    {
+      "name": "nextobjref",
+      "unusual": true
+    },
+    {
+      "name": "openlayer",
+      "unusual": true
+    },
+    {
+      "name": "closelayer",
+      "unusual": true
+    },
+    {
+      "name": "PPDonercname",
+      "unusual": true
+    },
+    {
+      "name": "PPDoneobjnum",
+      "unusual": true
+    },
+    {
+      "name": "PPDone",
+      "unusual": true
+    },
+    {
+      "name": "PPDtworcname",
+      "unusual": true
+    },
+    {
+      "name": "PPDtwoobjnum",
+      "unusual": true
+    },
+    {
+      "name": "PPDtwo",
+      "unusual": true
+    },
+    {
+      "name": "layersnames",
+      "unusual": true
+    },
+    {
+      "name": "next",
+      "unusual": true
+    },
+    {
+      "name": "layersorder",
+      "unusual": true
+    },
+    {
+      "name": "layerson",
+      "unusual": true
+    },
+    {
+      "name": "layersoff",
+      "unusual": true
+    },
+    {
+      "name": "layersconfig",
+      "unusual": true
+    },
+    {
+      "name": "layersOn",
+      "unusual": true
+    },
+    {
+      "name": "thecpages",
+      "unusual": true
+    },
+    {
+      "name": "thepages",
+      "unusual": true
+    },
+    {
+      "name": "vlength",
+      "unusual": true
+    },
+    {
+      "name": "hoddlength",
+      "unusual": true
+    },
+    {
+      "name": "hevenlength",
+      "unusual": true
+    },
+    {
+      "name": "buildPageList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "buildPageList{${1:arg}}"
+      }
+    },
+    {
+      "name": "processNormal",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "processNormal{${1:arg}}"
+      }
+    },
+    {
+      "name": "processComma",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "processComma{${1:arg}}"
+      }
+    },
+    {
+      "name": "processOther",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "processOther{${1:arg}}"
+      }
+    },
+    {
+      "name": "processHyphen",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "processHyphen{${1:arg}}"
+      }
+    },
+    {
+      "name": "findPages",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "findPages{${1:arg}}"
+      }
+    },
+    {
+      "name": "ifFiles",
+      "unusual": true
+    },
+    {
+      "name": "Filestrue",
+      "unusual": true
+    },
+    {
+      "name": "Filesfalse",
+      "unusual": true
+    },
+    {
+      "name": "PPDfirstdoc",
+      "unusual": true
+    },
+    {
+      "name": "PPDseconddoc",
+      "unusual": true
+    },
+    {
+      "name": "PPDfirstlastpage",
+      "unusual": true
+    },
+    {
+      "name": "PPDsecondlastpage",
+      "unusual": true
+    },
+    {
+      "name": "lastpage",
+      "unusual": true
+    },
+    {
+      "name": "pdflastpage",
+      "unusual": true
+    },
+    {
+      "name": "placepages",
+      "unusual": true
+    },
+    {
+      "name": "definejnldata",
+      "unusual": true
+    },
+    {
+      "name": "normaljnldata",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "normaljnldata{${1:jid}}{${2:vlength}}{${3:hodd}}{${4:heven}}"
+      }
+    },
+    {
+      "name": "starjnldata",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "starjnldata{${1:jid}}{${2:vlength}}{${3:hodd}}{${4:heven}}"
+      }
+    },
+    {
+      "name": "nameUse",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nameUse{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

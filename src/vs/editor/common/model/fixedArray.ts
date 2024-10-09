@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { arrayInsert } from '../../../base/common/arrays.js';
+import { arrayInsert } from 'vs/base/common/arrays';
 
 /**
  * An array that avoids being sparse by always

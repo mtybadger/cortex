@@ -1,0 +1,504 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "ifplatform"
+    },
+    {
+      "name": "shellesc"
+    },
+    {
+      "name": "readprov"
+    },
+    {
+      "name": "fancybox"
+    },
+    {
+      "name": "getitems"
+    },
+    {
+      "name": "randomlist",
+      "if": "handout"
+    },
+    {
+      "name": "graphicx",
+      "if": "svg"
+    },
+    {
+      "name": "tikz",
+      "if": "tikz"
+    },
+    {
+      "name": "varwidth",
+      "if": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "embedaspict",
+      "if": "tikz",
+      "arg": {
+        "format": "{}",
+        "snippet": "embedaspict{${1:LaTeX content%text}}"
+      }
+    },
+    {
+      "name": "moodleset",
+      "arg": {
+        "format": "{}",
+        "snippet": "moodleset{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setcategory",
+      "arg": {
+        "format": "{}",
+        "snippet": "setcategory{${1:category name%text}}"
+      }
+    },
+    {
+      "name": "setsubcategory",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsubcategory{${1:subcategory name%text}}"
+      }
+    },
+    {
+      "name": "item*"
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "[]*",
+        "snippet": "item[${1:options}]*"
+      }
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "htmlonly",
+      "arg": {
+        "format": "{}",
+        "snippet": "htmlonly{${1:HTML content}}"
+      }
+    },
+    {
+      "name": "htmlonly",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "htmlonly[${2:LaTeX content%text}]{${1:HTML content}}"
+      }
+    },
+    {
+      "name": "htmlregister",
+      "arg": {
+        "format": "{}",
+        "snippet": "htmlregister{${1:cmd}}"
+      }
+    },
+    {
+      "name": "moodleregisternewcommands"
+    },
+    {
+      "name": "ghostscriptcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "ghostscriptcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "imagemagickcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "imagemagickcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "optipngcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "optipngcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "PDFtoSVGcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "PDFtoSVGcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "SVGtoPDFcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "SVGtoPDFcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "optiSVGcommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "optiSVGcommand{${1:executable filename}}"
+      }
+    },
+    {
+      "name": "verbatiminput",
+      "arg": {
+        "format": "{}",
+        "snippet": "verbatiminput{${1:file}}"
+      }
+    },
+    {
+      "name": "VerbatimInput",
+      "arg": {
+        "format": "{}",
+        "snippet": "VerbatimInput{${1:file}}"
+      }
+    },
+    {
+      "name": "VerbatimInput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "VerbatimInput[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\VerbatimInput,\\BVerbatimInput,\\LVerbatimInput,\\inputminted"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "BVerbatimInput",
+      "arg": {
+        "format": "{}",
+        "snippet": "BVerbatimInput{${1:file}}"
+      }
+    },
+    {
+      "name": "BVerbatimInput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "BVerbatimInput[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\VerbatimInput,\\BVerbatimInput,\\LVerbatimInput,\\inputminted"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "LVerbatimInput",
+      "arg": {
+        "format": "{}",
+        "snippet": "LVerbatimInput{${1:file}}"
+      }
+    },
+    {
+      "name": "LVerbatimInput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "LVerbatimInput[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\VerbatimInput,\\BVerbatimInput,\\LVerbatimInput,\\inputminted"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "inputminted",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "inputminted{${1:language}}{${2:file}}"
+      }
+    },
+    {
+      "name": "inputminted",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "inputminted[${3:options%keyvals}]{${1:language}}{${2:file}}",
+        "keys": [
+          "\\VerbatimInput,\\BVerbatimInput,\\LVerbatimInput,\\inputminted"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "quiz",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:category name%text}}"
+      }
+    },
+    {
+      "name": "quiz",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:category name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "truefalse",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "truefalse",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "multi",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "multi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "numerical",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "numerical",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shortanswer",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "shortanswer",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "essay",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "essay",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "matching",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "matching",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cloze",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "cloze",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}",
+        "keys": [
+          "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "description",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "description",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:question name%text}}"
+      }
+    },
+    {
+      "name": "",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:question name%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/moodle#c": [
+      "draft",
+      "handout",
+      "final",
+      "nostamp",
+      "tikz",
+      "svg",
+      "section",
+      "section*",
+      "subsection",
+      "subsection*",
+      "feedbackleft",
+      "feedbackright",
+      "samepage",
+      "LMS=${1:major.minor}",
+      "pluginfile"
+    ],
+    "\\begin{quiz},\\moodleset,\\begin{truefalse},\\begin{multi},\\begin{numerical},\\begin{shortanswer},\\begin{essay},\\begin{matching},\\begin{cloze}": [
+      "points=${1:number}",
+      "default grade=${1:number}",
+      "penalty=${1:fraction}",
+      "fraction=${1:number}",
+      "fractiontol=${1:value}",
+      "feedback={${1:text}}",
+      "tags={${1:tag1,tag2,...}}",
+      "shuffle",
+      "numbering=${1|alph,Alph,arabic,roman,Roman,none|}",
+      "single",
+      "sanction=${1:number}",
+      "multiple",
+      "allornothing",
+      "tolerance=${1:value}",
+      "case sensitive",
+      "usecase",
+      "response required",
+      "response format=${1|html,file,html+file,text,monospaced|}",
+      "response field lines=${1|5,10,15,20,25,30,25,40|}",
+      "attachments allowed=${1|0,1,2,3,unlimited|}",
+      "attachments required=${1|0,1,2,3|}",
+      "template={${1:text}}",
+      "drag and drop",
+      "dd",
+      "vertical",
+      "horizontal",
+      "inline",
+      "ppi=${1:pixels per inch}"
+    ],
+    "\\includegraphics": [
+      "ppi=${1:pixels per inch}"
+    ],
+    "\\VerbatimInput,\\BVerbatimInput,\\LVerbatimInput,\\inputminted": [
+      "gobble=${1:integer}",
+      "autogobble",
+      "tabsize=${1:integer}",
+      "numbers=${1|none,left,right,both|}",
+      "firstnumber=${1:auto|last|<integer>}",
+      "firstline=${1:integer}",
+      "lastline=${1:integer}",
+      "numberblanklines",
+      "highlightlines={${1:line ranges}}",
+      "style=${1:style name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/moodle#c"
+  ]
+}

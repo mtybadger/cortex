@@ -1,0 +1,238 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AxiomC",
+      "arg": {
+        "format": "{}",
+        "snippet": "AxiomC{${1:text}}"
+      }
+    },
+    {
+      "name": "UnaryInfC",
+      "arg": {
+        "format": "{}",
+        "snippet": "UnaryInfC{${1:text}}"
+      }
+    },
+    {
+      "name": "BinaryInfC",
+      "arg": {
+        "format": "{}",
+        "snippet": "BinaryInfC{${1:text}}"
+      }
+    },
+    {
+      "name": "TrinaryInfC",
+      "arg": {
+        "format": "{}",
+        "snippet": "TrinaryInfC{${1:text}}"
+      }
+    },
+    {
+      "name": "QuaternaryInfC",
+      "arg": {
+        "format": "{}",
+        "snippet": "QuaternaryInfC{${1:text}}"
+      }
+    },
+    {
+      "name": "QuinaryInfC",
+      "arg": {
+        "format": "{}",
+        "snippet": "QuinaryInfC{${1:text}}"
+      }
+    },
+    {
+      "name": "DisplayProof"
+    },
+    {
+      "name": "fCenter"
+    },
+    {
+      "name": "LeftLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "LeftLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "RightLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "RightLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "noLine"
+    },
+    {
+      "name": "singleLine"
+    },
+    {
+      "name": "doubleLine"
+    },
+    {
+      "name": "solidLine"
+    },
+    {
+      "name": "dottedLine"
+    },
+    {
+      "name": "dashedLine"
+    },
+    {
+      "name": "alwaysNoLine"
+    },
+    {
+      "name": "alwaysSingleLine"
+    },
+    {
+      "name": "alwaysDoubleLine"
+    },
+    {
+      "name": "alwaysSolidLine"
+    },
+    {
+      "name": "alwaysDottedLine"
+    },
+    {
+      "name": "alwaysDashedLine"
+    },
+    {
+      "name": "rootAtTop"
+    },
+    {
+      "name": "alwaysRootAtTop"
+    },
+    {
+      "name": "rootAtBottom"
+    },
+    {
+      "name": "alwaysRootAtBottom"
+    },
+    {
+      "name": "proofSkipAmount",
+      "unusual": true
+    },
+    {
+      "name": "ScoreOverhang",
+      "unusual": true
+    },
+    {
+      "name": "extraVskip",
+      "unusual": true
+    },
+    {
+      "name": "labelSpacing",
+      "unusual": true
+    },
+    {
+      "name": "defaultHypSeparation",
+      "unusual": true
+    },
+    {
+      "name": "insertBetweenHyps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "insertBetweenHyps{${1:content}}"
+      }
+    },
+    {
+      "name": "kernHyps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "kernHyps{${1:kern%l}}"
+      }
+    },
+    {
+      "name": "ruleScoreFiller",
+      "unusual": true
+    },
+    {
+      "name": "dottedScoreFiller",
+      "unusual": true
+    },
+    {
+      "name": "dashedBuildScore",
+      "unusual": true
+    },
+    {
+      "name": "EnableBpAbbreviations",
+      "unusual": true
+    },
+    {
+      "name": "AXC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AXC{${1:text}}"
+      }
+    },
+    {
+      "name": "UIC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "UIC{${1:text}}"
+      }
+    },
+    {
+      "name": "BIC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BIC{${1:text}}"
+      }
+    },
+    {
+      "name": "TIC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TIC{${1:text}}"
+      }
+    },
+    {
+      "name": "LL",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "LL{${1:text}}"
+      }
+    },
+    {
+      "name": "RL",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RL{${1:text}}"
+      }
+    },
+    {
+      "name": "DP",
+      "unusual": true
+    },
+    {
+      "name": "centerAlignProof",
+      "unusual": true
+    },
+    {
+      "name": "bottomAlignProof",
+      "unusual": true
+    },
+    {
+      "name": "normalAlignProof",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "prooftree"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

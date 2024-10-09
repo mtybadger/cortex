@@ -1,0 +1,305 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "CJK"
+    },
+    {
+      "name": "CJKutf8"
+    },
+    {
+      "name": "CJKspace"
+    },
+    {
+      "name": "CJKpunct"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setminchofont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminchofont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setminchofont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setminchofont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setgothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setgothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setgothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setgothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmarugothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setmarugothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmarugothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setmarugothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmediumminchofont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setmediumminchofont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmediumminchofont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setmediumminchofont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setboldminchofont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setboldminchofont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setboldminchofont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setboldminchofont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmediumgothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setmediumgothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setmediumgothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setmediumgothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setboldgothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setboldgothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setboldgothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setboldgothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setxboldgothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setxboldgothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setxboldgothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setxboldgothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setoneweightgothicfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setoneweightgothicfont{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setoneweightgothicfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setoneweightgothicfont[${2:id}]{${1:font-file}}"
+      }
+    },
+    {
+      "name": "setCJKfamilydefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "setCJKfamilydefault{${1:family}}"
+      }
+    },
+    {
+      "name": "CJKecglue"
+    },
+    {
+      "name": ">",
+      "unusual": true
+    },
+    {
+      "name": "UTF",
+      "arg": {
+        "format": "{}",
+        "snippet": "UTF{${1:hex-number}}"
+      }
+    },
+    {
+      "name": "CJKforce",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKforce{${1:characters}}"
+      }
+    },
+    {
+      "name": "CJKunforce",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKunforce{${1:characters}}"
+      }
+    },
+    {
+      "name": "mcdefault",
+      "unusual": true
+    },
+    {
+      "name": "gtdefault",
+      "unusual": true
+    },
+    {
+      "name": "mgdefault",
+      "unusual": true
+    },
+    {
+      "name": "mcfamily"
+    },
+    {
+      "name": "gtfamily"
+    },
+    {
+      "name": "mgfamily"
+    },
+    {
+      "name": "CJKboldbyembolden",
+      "unusual": true
+    },
+    {
+      "name": "CJKnoboldbyembolden",
+      "unusual": true
+    },
+    {
+      "name": "CJKforced",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKforced{${1:kanji}}"
+      }
+    },
+    {
+      "name": "ebdefault",
+      "unusual": true
+    },
+    {
+      "name": "ebseries",
+      "unusual": true
+    },
+    {
+      "name": "EveryCJKUse",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "EveryCJKUse{${1:code}}"
+      }
+    },
+    {
+      "name": "FirstCJKUse",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FirstCJKUse{${1:code}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "uCJK"
+    },
+    {
+      "name": "uCJK*"
+    }
+  ],
+  "keys": {
+    "\\usepackage/bxcjkjatype#c": [
+      "whole",
+      "wholeCJK*",
+      "wholeCJK",
+      "nowhole",
+      "everypage",
+      "noeverypage",
+      "ipaex-type1",
+      "defaultmingoth",
+      "oneweight",
+      "nooneweight",
+      "autotilde",
+      "noautotilde",
+      "CJKpunct",
+      "noCJKpunct",
+      "CJKspace",
+      "noCJKspace",
+      "boldbyembolden",
+      "noboldbyembolden",
+      "substmingoth",
+      "nosubstmingoth",
+      "CJKtildeasspace",
+      "noCJKtildeasspace",
+      "ms",
+      "ipa",
+      "ipaex",
+      "ms-hg",
+      "ipa-hg",
+      "ipaex-hg",
+      "moga-mobo",
+      "moga-maruberi",
+      "kozuka-pro",
+      "kozuka-pr6",
+      "kozuka-pr6n",
+      "hiragino-pro",
+      "hiragino-pron",
+      "hiragino-elcapitan-pro",
+      "hiragino-elcapitan-pron",
+      "morisawa-pro",
+      "morisawa-pr6n",
+      "yu-win",
+      "yu-win10",
+      "yu-osx",
+      "scale=${1:factor}",
+      "ttfname=${1:pattern}"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxcjkjatype#c"
+  ]
+}

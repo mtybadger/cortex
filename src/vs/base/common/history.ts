@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { SetWithKey } from './collections.js';
-import { ArrayNavigator, INavigator } from './navigator.js';
+import { SetWithKey } from 'vs/base/common/collections';
+import { ArrayNavigator, INavigator } from 'vs/base/common/navigator';
 
 export class HistoryNavigator<T> implements INavigator<T> {
 
@@ -128,7 +128,7 @@ export class HistoryNavigator2<T> {
 	private _size: number;
 	get size(): number { return this._size; }
 
-	constructor(history: readonly T[], private capacity: number = 10, private identityFn: (t: T) => unknown = t => t) {
+	constructor(history: readonly T[], private capacity: number = 10, private identityFn: (t: T) => any = t => t) {
 		if (history.length < 1) {
 			throw new Error('not supported');
 		}

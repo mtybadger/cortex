@@ -1,0 +1,12 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\pagestyle#c": [
+      "underline",
+      "myunderline"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,36 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "UniqueCounterNew",
+      "arg": {
+        "format": "{}",
+        "snippet": "UniqueCounterNew{${1:name}}"
+      }
+    },
+    {
+      "name": "UniqueCounterCall",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "UniqueCounterCall{${1:counter}}{${2:code}}"
+      }
+    },
+    {
+      "name": "UniqueCounterIncrement",
+      "arg": {
+        "format": "{}",
+        "snippet": "UniqueCounterIncrement{${1:counter}}"
+      }
+    },
+    {
+      "name": "UniqueCounterGet",
+      "arg": {
+        "format": "{}",
+        "snippet": "UniqueCounterGet{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

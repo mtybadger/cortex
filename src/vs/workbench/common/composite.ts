@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Event } from '../../base/common/event.js';
+import { Event } from 'vs/base/common/event';
 
 export interface IComposite {
 

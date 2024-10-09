@@ -1,0 +1,130 @@
+{
+  "deps": [
+    {
+      "name": "iexec"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "anyfontsize"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "textpos"
+    }
+  ],
+  "macros": [
+    {
+      "name": "putSpine",
+      "arg": {
+        "format": "{}",
+        "snippet": "putSpine{${1:text}}"
+      }
+    },
+    {
+      "name": "putSpine",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "putSpine[${2:imagefile}]{${1:text}}"
+      }
+    },
+    {
+      "name": "putPicture",
+      "arg": {
+        "format": "{}",
+        "snippet": "putPicture{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "putVolume",
+      "arg": {
+        "format": "{}",
+        "snippet": "putVolume{${1:number}}"
+      }
+    },
+    {
+      "name": "putPrice",
+      "arg": {
+        "format": "{}",
+        "snippet": "putPrice{${1:price}}"
+      }
+    },
+    {
+      "name": "putBack",
+      "arg": {
+        "format": "{}",
+        "snippet": "putBack{${1:text}}"
+      }
+    },
+    {
+      "name": "putTitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "putTitle{${1:text}}"
+      }
+    },
+    {
+      "name": "putAuthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "putAuthor{${1:name}}"
+      }
+    },
+    {
+      "name": "putTLDR",
+      "arg": {
+        "format": "{}",
+        "snippet": "putTLDR{${1:text}}"
+      }
+    },
+    {
+      "name": "putVersion",
+      "arg": {
+        "format": "{}",
+        "snippet": "putVersion{${1:version}}"
+      }
+    },
+    {
+      "name": "putCopyright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "putCopyright{${1:year}}{${2:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/kdpcover#c": [
+      "6x9",
+      "7x10",
+      "8x10",
+      "pages=${1:integer}",
+      "barless",
+      "pdf=${1:PDF file}"
+    ]
+  },
+  "args": [
+    "\\documentclass/kdpcover#c"
+  ]
+}

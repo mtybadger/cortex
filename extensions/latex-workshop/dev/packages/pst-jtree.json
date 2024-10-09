@@ -1,0 +1,164 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "jtree"
+    },
+    {
+      "name": "jtree",
+      "arg": {
+        "format": "[]",
+        "snippet": "jtree[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "endjtree"
+    },
+    {
+      "name": "defbranch<name>",
+      "arg": {
+        "format": "()()",
+        "snippet": "defbranch<name>(${1:height})(${2:slope})"
+      }
+    },
+    {
+      "name": "deftriangle<name>",
+      "arg": {
+        "format": "()()()",
+        "snippet": "deftriangle<name>(${1:height})(${2:slopeA})(${3:slopeB})"
+      }
+    },
+    {
+      "name": "triline",
+      "arg": {
+        "format": "{}",
+        "snippet": "triline{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "triwd"
+    },
+    {
+      "name": "defvartriangle<name>",
+      "arg": {
+        "format": "()",
+        "snippet": "defvartriangle<name>(${1:height})"
+      }
+    },
+    {
+      "name": "jtlong"
+    },
+    {
+      "name": "jtshort"
+    },
+    {
+      "name": "jtwide"
+    },
+    {
+      "name": "jtbig"
+    },
+    {
+      "name": "jtjot"
+    },
+    {
+      "name": "blank"
+    },
+    {
+      "name": "brokenbranch"
+    },
+    {
+      "name": "etcbranch"
+    },
+    {
+      "name": "etc"
+    },
+    {
+      "name": "stuff",
+      "arg": {
+        "format": "[]",
+        "snippet": "stuff[${1:tag}]"
+      }
+    },
+    {
+      "name": "defstuff",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "defstuff[${2:tag}]{${1:code}}"
+      }
+    },
+    {
+      "name": "multiline"
+    },
+    {
+      "name": "endmultiline"
+    },
+    {
+      "name": "psinterpolate",
+      "unusual": true,
+      "arg": {
+        "format": "()(){}{}",
+        "snippet": "psinterpolate(${3:node1})(${4:node2}){${1:num}}{${2:node name}}"
+      }
+    },
+    {
+      "name": "elc",
+      "arg": {
+        "format": "{}",
+        "snippet": "elc{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "elc",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "elc[${2:options%keyvals}]{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "adjoinop",
+      "unusual": true
+    },
+    {
+      "name": "jtreevalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "jtreevalue{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "NormalLabelStrut",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "jtree",
+      "unusual": true
+    },
+    {
+      "name": "jtree",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "multiline",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

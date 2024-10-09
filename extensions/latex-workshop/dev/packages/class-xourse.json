@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "class-ximera"
+    }
+  ],
+  "macros": [
+    {
+      "name": "activity",
+      "arg": {
+        "format": "{}",
+        "snippet": "activity{${1:file}}"
+      }
+    },
+    {
+      "name": "logo",
+      "arg": {
+        "format": "{}",
+        "snippet": "logo{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "practice",
+      "arg": {
+        "format": "{}",
+        "snippet": "practice{${1:file}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "graded",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:weight}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/xourse#c": [
+      "notoc",
+      "nonewpage",
+      "handout",
+      "noauthor",
+      "nooutcomes",
+      "instructornotes",
+      "noinstructornotes",
+      "hints",
+      "newpage",
+      "numbers",
+      "wordchoicegiven",
+      "xake",
+      "tikzexport"
+    ]
+  },
+  "args": [
+    "\\documentclass/xourse#c"
+  ]
+}

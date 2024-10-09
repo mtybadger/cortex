@@ -1,0 +1,71 @@
+{
+  "deps": [
+    {
+      "name": "bibentry"
+    },
+    {
+      "name": "pdfcomment"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pdfbase",
+      "if": "ocg"
+    },
+    {
+      "name": "ocgbase",
+      "if": "ocg"
+    },
+    {
+      "name": "calc",
+      "if": "ocg"
+    },
+    {
+      "name": "linegoal",
+      "if": "ocg"
+    },
+    {
+      "name": "xcolor",
+      "if": "ocg"
+    },
+    {
+      "name": "tcolorbox",
+      "if": "tcolorbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xpdfcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "xpdfcite{${1:keylist}}"
+      }
+    },
+    {
+      "name": "xpdfcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "xpdfcite[${2:postfix}]{${1:keylist}}"
+      }
+    },
+    {
+      "name": "xpdfcite",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "xpdfcite[${2:prefix}][${3:postfix}]{${1:keylist}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xcpdftips#c": [
+      "redefcite",
+      "ocg",
+      "tcolorbox"
+    ]
+  },
+  "args": [
+    "\\usepackage/xcpdftips#c"
+  ]
+}

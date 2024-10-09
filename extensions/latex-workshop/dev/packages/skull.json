@@ -1,0 +1,11 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "skull"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "gettitlestring"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ztitleref",
+      "arg": {
+        "format": "{}",
+        "snippet": "ztitleref{${1:label}}"
+      }
+    },
+    {
+      "name": "ztitlerefsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "ztitlerefsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\ztitlerefsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\ztitlerefsetup": [
+      "title=",
+      "stripperiod",
+      "expand",
+      "cleanup={${1:code}}"
+    ],
+    "\\zref#c": [
+      "title"
+    ]
+  },
+  "args": []
+}

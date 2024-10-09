@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": [
+            "es2021"
+        ],
+        "module": "commonjs",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "out",
+        "resolveJsonModule": true,
+        "rootDir": ".",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2021",
+        "baseUrl": "./",
+        "paths": {
+            "mathjax-full": ["types/mathjax-full"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "viewer"
+    ]
+}

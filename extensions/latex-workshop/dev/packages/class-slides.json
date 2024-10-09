@@ -1,0 +1,121 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "theminutes",
+      "unusual": true
+    },
+    {
+      "name": "theseconds",
+      "unusual": true
+    },
+    {
+      "name": "settime",
+      "arg": {
+        "format": "{}",
+        "snippet": "settime{${1:seconds}}"
+      }
+    },
+    {
+      "name": "addtime",
+      "arg": {
+        "format": "{}",
+        "snippet": "addtime{${1:seconds}}"
+      }
+    },
+    {
+      "name": "ifourteenpt",
+      "unusual": true
+    },
+    {
+      "name": "iseventeenpt",
+      "unusual": true
+    },
+    {
+      "name": "itwentypt",
+      "unusual": true
+    },
+    {
+      "name": "itwentyfourpt",
+      "unusual": true
+    },
+    {
+      "name": "itwentyninept",
+      "unusual": true
+    },
+    {
+      "name": "ithirtyfourpt",
+      "unusual": true
+    },
+    {
+      "name": "ifortyonept",
+      "unusual": true
+    },
+    {
+      "name": "theslide",
+      "unusual": true
+    },
+    {
+      "name": "theoverlay",
+      "unusual": true
+    },
+    {
+      "name": "thenote",
+      "unusual": true
+    },
+    {
+      "name": "onlyslides",
+      "arg": {
+        "format": "{}",
+        "snippet": "onlyslides{${1:list}}"
+      }
+    },
+    {
+      "name": "onlynotes",
+      "arg": {
+        "format": "{}",
+        "snippet": "onlynotes{${1:list}}"
+      }
+    },
+    {
+      "name": "invisible"
+    },
+    {
+      "name": "visible"
+    }
+  ],
+  "envs": [
+    {
+      "name": "slide"
+    },
+    {
+      "name": "overlay"
+    },
+    {
+      "name": "note"
+    }
+  ],
+  "keys": {
+    "\\documentclass/slides#c": [
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "clock",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn"
+    ]
+  },
+  "args": [
+    "\\documentclass/slides#c"
+  ]
+}

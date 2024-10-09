@@ -3,13 +3,13 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IInstantiationService } from '../../../../platform/instantiation/common/instantiation.js';
-import { IUserActivityService } from './userActivityService.js';
+import { IInstantiationService } from 'vs/platform/instantiation/common/instantiation';
+import { IUserActivityService } from 'vs/workbench/services/userActivity/common/userActivityService';
 
 class UserActivityRegistry {
-	private todo: { new(s: IUserActivityService, ...args: any[]): unknown }[] = [];
+	private todo: { new(s: IUserActivityService, ...args: any[]): any }[] = [];
 
-	public add = (ctor: { new(s: IUserActivityService, ...args: any[]): unknown }) => {
+	public add = (ctor: { new(s: IUserActivityService, ...args: any[]): any }) => {
 		this.todo.push(ctor);
 	};
 

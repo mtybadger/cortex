@@ -1,0 +1,71 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "pgfmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newscrambledenv",
+      "arg": {
+        "format": "{}",
+        "snippet": "newscrambledenv{${1:envname}}"
+      }
+    },
+    {
+      "name": "defaultlabelfont",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultlabelfont{${1:font cmds}}"
+      }
+    },
+    {
+      "name": "defaultrefprefix",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultrefprefix{${1:prefix}}"
+      }
+    },
+    {
+      "name": "defaultreffont",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultreffont{${1:font cmds}}"
+      }
+    },
+    {
+      "name": "defaultprintenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defaultprintenv{${1:open env code}}{${2:close env code}}"
+      }
+    },
+    {
+      "name": "defaultprintitem",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultprintitem{${1:item cmds}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/scrambledenvs#c": [
+      "noscramble"
+    ]
+  },
+  "args": [
+    "\\usepackage/scrambledenvs#c"
+  ]
+}

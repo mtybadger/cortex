@@ -1,0 +1,253 @@
+{
+  "deps": [
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "minitoc",
+      "if": "minitoc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Overviewpage"
+    },
+    {
+      "name": "thumbwidth"
+    },
+    {
+      "name": "thumbheight"
+    },
+    {
+      "name": "thumbskip"
+    },
+    {
+      "name": "overviewskip"
+    },
+    {
+      "name": "thumbchap",
+      "unusual": true
+    },
+    {
+      "name": "thumbHskip",
+      "unusual": true
+    },
+    {
+      "name": "thethumbheight",
+      "unusual": true
+    },
+    {
+      "name": "thethumbwidth",
+      "unusual": true
+    },
+    {
+      "name": "thelthumbskip",
+      "unusual": true
+    },
+    {
+      "name": "therthumbskip",
+      "unusual": true
+    },
+    {
+      "name": "theoverviewskip",
+      "unusual": true
+    },
+    {
+      "name": "Prefacename",
+      "unusual": true
+    },
+    {
+      "name": "ifPreface",
+      "unusual": true
+    },
+    {
+      "name": "Prefacetrue",
+      "unusual": true
+    },
+    {
+      "name": "Prefacefalse",
+      "unusual": true
+    },
+    {
+      "name": "preface",
+      "unusual": true
+    },
+    {
+      "name": "preface",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "preface[${1:text}]"
+      }
+    },
+    {
+      "name": "thumbfilledbox",
+      "unusual": true
+    },
+    {
+      "name": "rthumb",
+      "unusual": true
+    },
+    {
+      "name": "lthumb",
+      "unusual": true
+    },
+    {
+      "name": "ovrthumb",
+      "unusual": true
+    },
+    {
+      "name": "thumbbox",
+      "unusual": true
+    },
+    {
+      "name": "ovrthumb",
+      "unusual": true
+    },
+    {
+      "name": "thumbfilledoval",
+      "unusual": true
+    },
+    {
+      "name": "thumboval",
+      "unusual": true
+    },
+    {
+      "name": "thumbheaderfont",
+      "unusual": true
+    },
+    {
+      "name": "Overviewtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "Overviewauthorfont",
+      "unusual": true
+    },
+    {
+      "name": "Overviewdatefont",
+      "unusual": true
+    },
+    {
+      "name": "thumbtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "thumbauthorfont",
+      "unusual": true
+    },
+    {
+      "name": "thumbdatefont",
+      "unusual": true
+    },
+    {
+      "name": "thumbtitle",
+      "unusual": true
+    },
+    {
+      "name": "thumbauthor",
+      "unusual": true
+    },
+    {
+      "name": "thumbdate",
+      "unusual": true
+    },
+    {
+      "name": "Overviewtitle",
+      "unusual": true
+    },
+    {
+      "name": "ifAppendix",
+      "unusual": true
+    },
+    {
+      "name": "Appendixtrue",
+      "unusual": true
+    },
+    {
+      "name": "Appendixfalse",
+      "unusual": true
+    },
+    {
+      "name": "theappendix",
+      "unusual": true
+    },
+    {
+      "name": "thumbspace",
+      "unusual": true
+    },
+    {
+      "name": "thumbsecnum",
+      "unusual": true
+    },
+    {
+      "name": "Overviewname",
+      "unusual": true
+    },
+    {
+      "name": "Overviewfont",
+      "unusual": true
+    },
+    {
+      "name": "secname",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "secname{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "thumboverview",
+      "unusual": true
+    },
+    {
+      "name": "thethumbhskip",
+      "unusual": true
+    },
+    {
+      "name": "theOverviewnumber",
+      "unusual": true
+    },
+    {
+      "name": "theline",
+      "unusual": true
+    },
+    {
+      "name": "thethumbline",
+      "unusual": true
+    },
+    {
+      "name": "ifOverview",
+      "unusual": true
+    },
+    {
+      "name": "Overviewtrue",
+      "unusual": true
+    },
+    {
+      "name": "Overviewfalse",
+      "unusual": true
+    },
+    {
+      "name": "OverviewPage",
+      "unusual": true
+    },
+    {
+      "name": "thethumbovrwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/thumb#c": [
+      "minitoc",
+      "box",
+      "filledbox",
+      "oval",
+      "filledoval"
+    ]
+  },
+  "args": [
+    "\\usepackage/thumb#c"
+  ]
+}

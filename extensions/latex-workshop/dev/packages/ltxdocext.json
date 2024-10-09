@@ -1,0 +1,191 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "shortvrb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "arg",
+      "arg": {
+        "format": "{}",
+        "snippet": "arg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "backmatter"
+    },
+    {
+      "name": "botrule"
+    },
+    {
+      "name": "classname",
+      "arg": {
+        "format": "{}",
+        "snippet": "classname{${1:name}}"
+      }
+    },
+    {
+      "name": "classoption",
+      "arg": {
+        "format": "{}",
+        "snippet": "classoption{${1:name}}"
+      }
+    },
+    {
+      "name": "cleartorecto"
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:command}}"
+      }
+    },
+    {
+      "name": "colrule"
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "envb",
+      "arg": {
+        "format": "{}",
+        "snippet": "envb{${1:envname}}"
+      }
+    },
+    {
+      "name": "enve",
+      "arg": {
+        "format": "{}",
+        "snippet": "enve{${1:envname}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:name}}"
+      }
+    },
+    {
+      "name": "filedate",
+      "unusual": true
+    },
+    {
+      "name": "fileinfo",
+      "unusual": true
+    },
+    {
+      "name": "filename",
+      "unusual": true
+    },
+    {
+      "name": "fileversion",
+      "unusual": true
+    },
+    {
+      "name": "frontmatter"
+    },
+    {
+      "name": "GetFileInfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "GetFileInfo{${1:file}}"
+      }
+    },
+    {
+      "name": "LANGLE",
+      "unusual": true
+    },
+    {
+      "name": "mainmatter"
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "RANGLE",
+      "unusual": true
+    },
+    {
+      "name": "scmd",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "scmd{${1:arg}}"
+      }
+    },
+    {
+      "name": "substyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "substyle{${1:name}}"
+      }
+    },
+    {
+      "name": "subsubsubsection",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subsubsubsection[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "subsubsubsection",
+      "arg": {
+        "format": "{}",
+        "snippet": "subsubsubsection{${1:title}}"
+      }
+    },
+    {
+      "name": "toprule"
+    },
+    {
+      "name": "url",
+      "arg": {
+        "format": "{}",
+        "snippet": "url{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "unnumtable"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

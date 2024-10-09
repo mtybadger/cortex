@@ -1,0 +1,68 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bbbb"
+    },
+    {
+      "name": "bbbm"
+    },
+    {
+      "name": "bbbc"
+    },
+    {
+      "name": "bbbn"
+    },
+    {
+      "name": "bbbd"
+    },
+    {
+      "name": "bbbo"
+    },
+    {
+      "name": "bbbe"
+    },
+    {
+      "name": "bbbp"
+    },
+    {
+      "name": "bbbf"
+    },
+    {
+      "name": "bbbq"
+    },
+    {
+      "name": "bbbg"
+    },
+    {
+      "name": "bbbr"
+    },
+    {
+      "name": "bbbh"
+    },
+    {
+      "name": "bbbs"
+    },
+    {
+      "name": "bbbi"
+    },
+    {
+      "name": "bbbz"
+    },
+    {
+      "name": "bbbk"
+    },
+    {
+      "name": "bbbl"
+    },
+    {
+      "name": "bbbzero"
+    },
+    {
+      "name": "bbbone"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

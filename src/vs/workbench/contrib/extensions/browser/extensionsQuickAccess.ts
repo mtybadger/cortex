@@ -3,22 +3,24 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IQuickPickSeparator } from '../../../../platform/quickinput/common/quickInput.js';
-import { IPickerQuickAccessItem, PickerQuickAccessProvider } from '../../../../platform/quickinput/browser/pickerQuickAccess.js';
-import { CancellationToken } from '../../../../base/common/cancellation.js';
-import { localize } from '../../../../nls.js';
-import { IExtensionGalleryService, IExtensionManagementService, IGalleryExtension } from '../../../../platform/extensionManagement/common/extensionManagement.js';
-import { INotificationService } from '../../../../platform/notification/common/notification.js';
-import { ILogService } from '../../../../platform/log/common/log.js';
-import { DisposableStore } from '../../../../base/common/lifecycle.js';
-import { IExtensionsWorkbenchService } from '../common/extensions.js';
+import { IQuickPickSeparator } from 'vs/platform/quickinput/common/quickInput';
+import { IPickerQuickAccessItem, PickerQuickAccessProvider } from 'vs/platform/quickinput/browser/pickerQuickAccess';
+import { CancellationToken } from 'vs/base/common/cancellation';
+import { localize } from 'vs/nls';
+import { VIEWLET_ID, IExtensionsViewPaneContainer } from 'vs/workbench/contrib/extensions/common/extensions';
+import { IExtensionGalleryService, IExtensionManagementService, IGalleryExtension } from 'vs/platform/extensionManagement/common/extensionManagement';
+import { INotificationService } from 'vs/platform/notification/common/notification';
+import { ILogService } from 'vs/platform/log/common/log';
+import { DisposableStore } from 'vs/base/common/lifecycle';
+import { IPaneCompositePartService } from 'vs/workbench/services/panecomposite/browser/panecomposite';
+import { ViewContainerLocation } from 'vs/workbench/common/views';
 
 export class InstallExtensionQuickAccessProvider extends PickerQuickAccessProvider<IPickerQuickAccessItem> {
 
 	static PREFIX = 'ext install ';
 
 	constructor(
-		@IExtensionsWorkbenchService private readonly extensionsWorkbenchService: IExtensionsWorkbenchService,
+		@IPaneCompositePartService private readonly paneCompositeService: IPaneCompositePartService,
 		@IExtensionGalleryService private readonly galleryService: IExtensionGalleryService,
 		@IExtensionManagementService private readonly extensionsService: IExtensionManagementService,
 		@INotificationService private readonly notificationService: INotificationService,
@@ -38,7 +40,7 @@ export class InstallExtensionQuickAccessProvider extends PickerQuickAccessProvid
 
 		const genericSearchPickItem: IPickerQuickAccessItem = {
 			label: localize('searchFor', "Press Enter to search for extension '{0}'.", filter),
-			accept: () => this.extensionsWorkbenchService.openSearch(filter)
+			accept: () => this.searchExtension(filter)
 		};
 
 		// Extension ID typed: try to find it
@@ -78,11 +80,15 @@ export class InstallExtensionQuickAccessProvider extends PickerQuickAccessProvid
 
 	private async installExtension(extension: IGalleryExtension, name: string): Promise<void> {
 		try {
-			await this.extensionsWorkbenchService.openSearch(`@id:${name}`);
+			await openExtensionsViewlet(this.paneCompositeService, `@id:${name}`);
 			await this.extensionsService.installFromGallery(extension);
 		} catch (error) {
 			this.notificationService.error(error);
 		}
+	}
+
+	private async searchExtension(name: string): Promise<void> {
+		openExtensionsViewlet(this.paneCompositeService, name);
 	}
 }
 
@@ -90,14 +96,21 @@ export class ManageExtensionsQuickAccessProvider extends PickerQuickAccessProvid
 
 	static PREFIX = 'ext ';
 
-	constructor(@IExtensionsWorkbenchService private readonly extensionsWorkbenchService: IExtensionsWorkbenchService) {
+	constructor(@IPaneCompositePartService private readonly paneCompositeService: IPaneCompositePartService) {
 		super(ManageExtensionsQuickAccessProvider.PREFIX);
 	}
 
 	protected _getPicks(): Array<IPickerQuickAccessItem | IQuickPickSeparator> {
 		return [{
 			label: localize('manage', "Press Enter to manage your extensions."),
-			accept: () => this.extensionsWorkbenchService.openSearch('')
+			accept: () => openExtensionsViewlet(this.paneCompositeService)
 		}];
 	}
+}
+
+async function openExtensionsViewlet(paneCompositeService: IPaneCompositePartService, search = ''): Promise<void> {
+	const viewlet = await paneCompositeService.openPaneComposite(VIEWLET_ID, ViewContainerLocation.Sidebar, true);
+	const view = viewlet?.getViewPaneContainer() as IExtensionsViewPaneContainer | undefined;
+	view?.search(search);
+	view?.focus();
 }

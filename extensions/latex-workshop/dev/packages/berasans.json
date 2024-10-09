@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/berasans#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/berasans#c"
+  ]
+}

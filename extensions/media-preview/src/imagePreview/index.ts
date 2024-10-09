@@ -113,6 +113,8 @@ class ImagePreview extends MediaPreview {
 		this.updateBinarySize();
 		this.render();
 		this.updateState();
+
+		this.webviewEditor.webview.postMessage({ type: 'setActive', value: this.webviewEditor.active });
 	}
 
 	public override dispose(): void {
@@ -155,10 +157,6 @@ class ImagePreview extends MediaPreview {
 			this.zoomStatusBarEntry.hide(this);
 		}
 	}
-	protected override async render(): Promise<void> {
-		await super.render();
-		this.webviewEditor.webview.postMessage({ type: 'setActive', value: this.webviewEditor.active });
-	}
 
 	protected override async getWebviewContents(): Promise<string> {
 		const version = Date.now().toString();
@@ -189,7 +187,7 @@ class ImagePreview extends MediaPreview {
 	<div class="loading-indicator"></div>
 	<div class="image-load-error">
 		<p>${vscode.l10n.t("An error occurred while loading the image.")}</p>
-		<a href="#" class="open-file-link">${vscode.l10n.t("Open file using VS Code's standard text/binary editor?")}</a>
+		<a href="#" class="open-file-link">${vscode.l10n.t("Open file using Cortex's standard text/binary editor?")}</a>
 	</div>
 	<script src="${escapeAttribute(this.extensionResource('media', 'imagePreview.js'))}" nonce="${nonce}"></script>
 </body>

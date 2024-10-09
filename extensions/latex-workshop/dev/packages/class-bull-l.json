@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "class-amsart"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SuperTitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "SuperTitle{${1:text}}"
+      }
+    },
+    {
+      "name": "STintro",
+      "arg": {
+        "format": "{}",
+        "snippet": "STintro{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/bull-l#c": [
+      "10pt",
+      "11pt",
+      "12pt",
+      "8pt",
+      "9pt",
+      "a4paper",
+      "centertags",
+      "draft",
+      "e-only",
+      "final",
+      "fleqn",
+      "landscape",
+      "leqno",
+      "letterpaper",
+      "noamsfonts",
+      "nomath",
+      "notitlepage",
+      "onecolumn",
+      "oneside",
+      "portrait",
+      "reqno",
+      "tbtags",
+      "titlepage",
+      "twocolumn",
+      "twoside"
+    ]
+  },
+  "args": [
+    "\\documentclass/bull-l#c"
+  ]
+}

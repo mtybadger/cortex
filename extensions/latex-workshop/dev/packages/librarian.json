@@ -1,0 +1,232 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Cite",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "Cite{${1:bibid}}{${2:list}}{${3:code1}}{${4:code2}}"
+      }
+    },
+    {
+      "name": "EntryKey"
+    },
+    {
+      "name": "BibFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "BibFile{${1:bib file}}"
+      }
+    },
+    {
+      "name": "SortingOrder",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SortingOrder{${1:list of fields}}{${2:name parts}}"
+      }
+    },
+    {
+      "name": "SortList",
+      "arg": {
+        "format": "{}",
+        "snippet": "SortList{${1:list}}"
+      }
+    },
+    {
+      "name": "ReadList",
+      "arg": {
+        "format": "{}",
+        "snippet": "ReadList{${1:list}}"
+      }
+    },
+    {
+      "name": "ifequalentry"
+    },
+    {
+      "name": "equalentrytrue"
+    },
+    {
+      "name": "equalentryfalse"
+    },
+    {
+      "name": "SortDef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SortDef{${1:command}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "WriteInfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "WriteInfo{${1:arg}}"
+      }
+    },
+    {
+      "name": "WriteImmediateInfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "WriteImmediateInfo{${1:arg}}"
+      }
+    },
+    {
+      "name": "Preamble"
+    },
+    {
+      "name": "CreateField",
+      "arg": {
+        "format": "{}",
+        "snippet": "CreateField{${1:field}}"
+      }
+    },
+    {
+      "name": "AbbreviateFirstname"
+    },
+    {
+      "name": "RetrieveField",
+      "arg": {
+        "format": "{}",
+        "snippet": "RetrieveField{${1:field}}"
+      }
+    },
+    {
+      "name": "RetrieveFieldFor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RetrieveFieldFor{${1:field}}{${2:bibid}}"
+      }
+    },
+    {
+      "name": "RetrieveFieldIn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RetrieveFieldIn{${1:field}}{${2:command}}"
+      }
+    },
+    {
+      "name": "RetrieveFieldInFor",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "RetrieveFieldInFor{${1:field}}{${2:bibid}}{${3:command}}"
+      }
+    },
+    {
+      "name": "EntryNumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "EntryNumber{${1:list}}"
+      }
+    },
+    {
+      "name": "EntryNumberFor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "EntryNumberFor{${1:bibid}}{${2:list}}"
+      }
+    },
+    {
+      "name": "EntryNumberIn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "EntryNumberIn{${1:list}}{${2:command}}"
+      }
+    },
+    {
+      "name": "EntryNumberInFor",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EntryNumberInFor{${1:bibid}}{${2:list}}{${3:command}}"
+      }
+    },
+    {
+      "name": "ReadName",
+      "arg": {
+        "format": "{}",
+        "snippet": "ReadName{${1:code}}"
+      }
+    },
+    {
+      "name": "ReadNameFor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ReadNameFor{${1:bibid}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Firstname"
+    },
+    {
+      "name": "Lastname"
+    },
+    {
+      "name": "Von"
+    },
+    {
+      "name": "Junior"
+    },
+    {
+      "name": "NameCount"
+    },
+    {
+      "name": "ReadAuthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "ReadAuthor{${1:code}}"
+      }
+    },
+    {
+      "name": "ReadAuthorFor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ReadAuthorFor{${1:bibid}}{${2:code}}"
+      }
+    },
+    {
+      "name": "ReadEditor",
+      "arg": {
+        "format": "{}",
+        "snippet": "ReadEditor{${1:code}}"
+      }
+    },
+    {
+      "name": "ReadEditorFor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ReadEditorFor{${1:bibid}}{${2:code}}"
+      }
+    },
+    {
+      "name": "TypesetField",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TypesetField{${1:field}}{${2:command}}{${3:code}}"
+      }
+    },
+    {
+      "name": "TypesetFieldFor",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "TypesetFieldFor{${1:field}}{${2:bibid}}{${3:command}}{${4:code}}"
+      }
+    },
+    {
+      "name": "CheckEntry",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CheckEntry{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "MakeCiteName",
+      "unusual": true
+    },
+    {
+      "name": "MakeReference",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

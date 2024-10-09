@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "qs"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\lstset,\\lstinline,\\begin{lstlisting},\\lstinputlisting,\\lstMakeShortInline,\\lstdefinelanguage,\\lstdefinestyle": [
+      "style=QSharp"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tikzextnodefamiliesgetwidth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzextnodefamiliesgetwidth{${1:family}}"
+      }
+    },
+    {
+      "name": "tikzextnodefamiliesgetheight",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzextnodefamiliesgetheight{${1:family}}"
+      }
+    },
+    {
+      "name": "tikzextnodefamiliesgettextwidth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzextnodefamiliesgettextwidth{${1:family}}"
+      }
+    },
+    {
+      "name": "tikzextnodefamiliesgettextdepth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzextnodefamiliesgettextdepth{${1:family}}"
+      }
+    },
+    {
+      "name": "tikzextnodefamiliesgettextheight",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzextnodefamiliesgettextheight{${1:family}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

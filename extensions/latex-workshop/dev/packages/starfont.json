@@ -1,0 +1,272 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "starfontsans"
+    },
+    {
+      "name": "starfontserif"
+    },
+    {
+      "name": "Sun"
+    },
+    {
+      "name": "Jupiter"
+    },
+    {
+      "name": "Moon"
+    },
+    {
+      "name": "Saturn"
+    },
+    {
+      "name": "Mercury"
+    },
+    {
+      "name": "Uranus"
+    },
+    {
+      "name": "Venus"
+    },
+    {
+      "name": "Neptune"
+    },
+    {
+      "name": "Terra"
+    },
+    {
+      "name": "Pluto"
+    },
+    {
+      "name": "Mars"
+    },
+    {
+      "name": "varTerra"
+    },
+    {
+      "name": "Aries"
+    },
+    {
+      "name": "Libra"
+    },
+    {
+      "name": "Taurus"
+    },
+    {
+      "name": "Scorpio"
+    },
+    {
+      "name": "Gemini"
+    },
+    {
+      "name": "Sagittarius"
+    },
+    {
+      "name": "Cancer"
+    },
+    {
+      "name": "Capricorn"
+    },
+    {
+      "name": "Leo"
+    },
+    {
+      "name": "Aquarius"
+    },
+    {
+      "name": "Virgo"
+    },
+    {
+      "name": "Pisces"
+    },
+    {
+      "name": "varCapricorn"
+    },
+    {
+      "name": "Zodiac",
+      "arg": {
+        "format": "{}",
+        "snippet": "Zodiac{${1:number}}"
+      }
+    },
+    {
+      "name": "Ceres"
+    },
+    {
+      "name": "Amor"
+    },
+    {
+      "name": "Pallas"
+    },
+    {
+      "name": "Eros"
+    },
+    {
+      "name": "Juno"
+    },
+    {
+      "name": "Hidalgo"
+    },
+    {
+      "name": "Vesta"
+    },
+    {
+      "name": "Hygiea"
+    },
+    {
+      "name": "Chiron"
+    },
+    {
+      "name": "Psyche"
+    },
+    {
+      "name": "Sappho"
+    },
+    {
+      "name": "Cupido"
+    },
+    {
+      "name": "Apollon"
+    },
+    {
+      "name": "Hades"
+    },
+    {
+      "name": "Admetos"
+    },
+    {
+      "name": "Zeus"
+    },
+    {
+      "name": "Vulkanus"
+    },
+    {
+      "name": "Kronos"
+    },
+    {
+      "name": "Poseidon"
+    },
+    {
+      "name": "NorthNode"
+    },
+    {
+      "name": "SouthNode"
+    },
+    {
+      "name": "Lilith"
+    },
+    {
+      "name": "Fortune"
+    },
+    {
+      "name": "Conjunction"
+    },
+    {
+      "name": "Quincunx"
+    },
+    {
+      "name": "Opposition"
+    },
+    {
+      "name": "Semisextile"
+    },
+    {
+      "name": "Trine"
+    },
+    {
+      "name": "Semisquare"
+    },
+    {
+      "name": "Square"
+    },
+    {
+      "name": "Sesquiquadrate"
+    },
+    {
+      "name": "Sextile"
+    },
+    {
+      "name": "ASC"
+    },
+    {
+      "name": "DSC"
+    },
+    {
+      "name": "MC"
+    },
+    {
+      "name": "IC"
+    },
+    {
+      "name": "Vertex"
+    },
+    {
+      "name": "EastPoint"
+    },
+    {
+      "name": "Retrograde"
+    },
+    {
+      "name": "Station"
+    },
+    {
+      "name": "Direct"
+    },
+    {
+      "name": "Fire"
+    },
+    {
+      "name": "Earth"
+    },
+    {
+      "name": "Air"
+    },
+    {
+      "name": "Water"
+    },
+    {
+      "name": "Natal"
+    },
+    {
+      "name": "Radix"
+    },
+    {
+      "name": "Pentagram"
+    },
+    {
+      "name": "varMoon"
+    },
+    {
+      "name": "varUranus"
+    },
+    {
+      "name": "varPluto"
+    },
+    {
+      "name": "stf",
+      "unusual": true
+    },
+    {
+      "name": "stchr",
+      "unusual": true
+    },
+    {
+      "name": "textstf",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textstf{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/starfont#c": [
+      "starfontsans",
+      "starfontserif"
+    ]
+  },
+  "args": [
+    "\\usepackage/starfont#c"
+  ]
+}

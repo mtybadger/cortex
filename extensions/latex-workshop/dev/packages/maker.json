@@ -1,0 +1,104 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarylistings"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ArduinoSketch",
+      "if": "arduino",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ArduinoSketch{${1:file}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "ArduinoInline",
+      "if": "arduino",
+      "arg": {
+        "format": "{}",
+        "snippet": "ArduinoInline{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "ProcessingSketch",
+      "if": "processing",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProcessingSketch{${1:file}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "ProcessingInline",
+      "if": "processing",
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessingInline{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "FormatDigit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FormatDigit{${1:digits}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "ArduinoSketchBox",
+      "if": "arduino",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    },
+    {
+      "name": "ArduinoSketchBox",
+      "if": "arduino",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:tcolorbox options}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "ProcessingSketchBox",
+      "if": "processing",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    },
+    {
+      "name": "ProcessingSketchBox",
+      "if": "processing",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:tcolorbox options}]{${1:title%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/maker#c": [
+      "arduino",
+      "processing"
+    ]
+  },
+  "args": [
+    "\\usepackage/maker#c"
+  ]
+}

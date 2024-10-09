@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "pgfrcs"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "pgfmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "breakforeach",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\foreach#c": [
+      "var=${1:variable}",
+      "evaluate=${1:variable}",
+      "evaluate=${1:variable} as ${2:macro}",
+      "evaluate=${1:variable} as ${2:macro} using ${3:formula}",
+      "remember=${1:variable} as ${2:macro}",
+      "remember=${1:variable} as ${2:macro} (initially ${3:value})",
+      "count=${1:macro}",
+      "count=${1:macro} from ${2:value}",
+      "parse",
+      "expand list"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,155 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "title",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "title[${2:short title%text}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtitle{${1:subtitle%text}}"
+      }
+    },
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subtitle[${2:short subtitle%text}]{${1:subtitle%text}}"
+      }
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:short author}]{${1:author}}"
+      }
+    },
+    {
+      "name": "institute",
+      "arg": {
+        "format": "{}",
+        "snippet": "institute{${1:institute%text}}"
+      }
+    },
+    {
+      "name": "institute",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "institute[${2:short institute%text}]{${1:institute%text}}"
+      }
+    },
+    {
+      "name": "date",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "date[${2:short date}]{${1:date}}"
+      }
+    },
+    {
+      "name": "inserttitle",
+      "unusual": true
+    },
+    {
+      "name": "insertshorttitle",
+      "unusual": true
+    },
+    {
+      "name": "insertsubtitle",
+      "unusual": true
+    },
+    {
+      "name": "insertshortsubtitle",
+      "unusual": true
+    },
+    {
+      "name": "insertauthor",
+      "unusual": true
+    },
+    {
+      "name": "insertshortauthor",
+      "unusual": true
+    },
+    {
+      "name": "insertinstitute",
+      "unusual": true
+    },
+    {
+      "name": "insertshortinstitute",
+      "unusual": true
+    },
+    {
+      "name": "insertdate",
+      "unusual": true
+    },
+    {
+      "name": "insertshortdate",
+      "unusual": true
+    },
+    {
+      "name": "fancysection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fancysection{${1:title}}"
+      }
+    },
+    {
+      "name": "fancysubsection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fancysubsection{${1:title}}"
+      }
+    },
+    {
+      "name": "fancysubsubsection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fancysubsubsection{${1:title}}"
+      }
+    },
+    {
+      "name": "phantomsection",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/fancyhandout#c": [
+      "letter",
+      "oneside",
+      "10pt",
+      "11pt",
+      "12pt",
+      "rmfont"
+    ]
+  },
+  "args": [
+    "\\documentclass/fancyhandout#c"
+  ]
+}

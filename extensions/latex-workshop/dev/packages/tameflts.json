@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "releasefloats"
+    },
+    {
+      "name": "tamefloats"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

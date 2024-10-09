@@ -1,0 +1,606 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "web"
+    },
+    {
+      "name": "eforms"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "icon-appr",
+      "if": "usebtnappr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "quesNumTxt",
+      "if": "usebtnappr",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "quesNumTxt{${1:text}}"
+      }
+    },
+    {
+      "name": "quesNumTxTPost",
+      "if": "usebtnappr",
+      "unusual": true
+    },
+    {
+      "name": "ltrToNum",
+      "if": "usebtnappr",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ltrToNum{${1:arg}}"
+      }
+    },
+    {
+      "name": "dpsEmbedIcons",
+      "if": "usebtnappr"
+    },
+    {
+      "name": "dpsQuesIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dpsQuesIcon{${1:name}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "dpsQuesIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "dpsQuesIcon[${4:modifications}]{${1:name}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "dpsOtherIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dpsOtherIcon{${1:name}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "dpsOtherIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "dpsOtherIcon[${4:modifications}]{${1:name}}{${2:width}}{${3:height}}"
+      }
+    },
+    {
+      "name": "placeQuesIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeQuesIcon{${1:placement cmds}}"
+      }
+    },
+    {
+      "name": "placeOtherIcon",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeOtherIcon{${1:placement cmds}}"
+      }
+    },
+    {
+      "name": "dpsEmbedSideShow",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dpsEmbedSideShow{${1:n}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "dpsEmbedSideShow",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dpsEmbedSideShow[${3:ext}]{${1:n}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "dpsNumSideShowPics",
+      "if": "usebtnappr",
+      "unusual": true
+    },
+    {
+      "name": "insertSideshow",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "insertSideshow{${1:rows}}{${2:cols}}{${3:width}}{${4:height}}"
+      }
+    },
+    {
+      "name": "iconPresets",
+      "if": "usebtnappr",
+      "unusual": true
+    },
+    {
+      "name": "fmtOCGQues",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "fmtOCGQues{${1:formatting cmds}}"
+      }
+    },
+    {
+      "name": "dpsQuesLayer",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "dpsQuesLayer{${1:arg}}"
+      }
+    },
+    {
+      "name": "placeQuesLayer",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeQuesLayer{${1:formatting cmds}}"
+      }
+    },
+    {
+      "name": "placeOtherLayer",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeOtherLayer{${1:formatting cmds}}"
+      }
+    },
+    {
+      "name": "insertQuesLayer",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "insertQuesLayer{${1:arg}}"
+      }
+    },
+    {
+      "name": "quesNumTxt",
+      "if": "uselayers",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "quesNumTxt{${1:text}}"
+      }
+    },
+    {
+      "name": "quesNumTxTPost",
+      "if": "uselayers",
+      "unusual": true
+    },
+    {
+      "name": "insertSideshow",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "insertSideshow{${1:rows}}{${2:cols}}{${3:imagefile}}"
+      }
+    },
+    {
+      "name": "insertSideshow",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}{}[]{}",
+        "snippet": "insertSideshow{${1:rows}}{${2:cols}}[${4:options%keyvals}]{${3:imagefile}}",
+        "keys": [
+          "\\insertSideshow"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "AnswerKey"
+    },
+    {
+      "name": "setdpsfootskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdpsfootskip{${1:skip}}"
+      }
+    },
+    {
+      "name": "nPuzzleCols",
+      "arg": {
+        "format": "{}",
+        "snippet": "nPuzzleCols{${1:n}}"
+      }
+    },
+    {
+      "name": "sideshowPackaged"
+    },
+    {
+      "name": "writeComposingEnv"
+    },
+    {
+      "name": "insertPuzzle",
+      "arg": {
+        "format": "{}",
+        "snippet": "insertPuzzle{${1:n}}"
+      }
+    },
+    {
+      "name": "PuzzleAppearance",
+      "arg": {
+        "format": "{}",
+        "snippet": "PuzzleAppearance{${1:modifications}}"
+      }
+    },
+    {
+      "name": "rowsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "rowsep{${1:skip}}"
+      }
+    },
+    {
+      "name": "wdPuzzleFields",
+      "arg": {
+        "format": "{}",
+        "snippet": "wdPuzzleFields{${1:length}}"
+      }
+    },
+    {
+      "name": "htPuzzleFields",
+      "arg": {
+        "format": "{}",
+        "snippet": "htPuzzleFields{${1:length}}"
+      }
+    },
+    {
+      "name": "displayRandomizedQuestions"
+    },
+    {
+      "name": "QuesAppearance",
+      "arg": {
+        "format": "{}",
+        "snippet": "QuesAppearance{${1:modifications}}"
+      }
+    },
+    {
+      "name": "widestFmtdQNum",
+      "arg": {
+        "format": "{}",
+        "snippet": "widestFmtdQNum{${1:string}}"
+      }
+    },
+    {
+      "name": "htOfQ",
+      "arg": {
+        "format": "{}",
+        "snippet": "htOfQ{${1:length}}"
+      }
+    },
+    {
+      "name": "displayRandomizedAnswers"
+    },
+    {
+      "name": "displayRandomizedAnswersLeftPanel"
+    },
+    {
+      "name": "displayRandomizedAnswersRightPanel"
+    },
+    {
+      "name": "AnsAppearance",
+      "arg": {
+        "format": "{}",
+        "snippet": "AnsAppearance{${1:modifications}}"
+      }
+    },
+    {
+      "name": "ltrFmtA",
+      "arg": {
+        "format": "{}",
+        "snippet": "ltrFmtA{${1:definition}}"
+      }
+    },
+    {
+      "name": "widestFmtdALtr",
+      "arg": {
+        "format": "{}",
+        "snippet": "widestFmtdALtr{${1:string}}"
+      }
+    },
+    {
+      "name": "htOfA",
+      "arg": {
+        "format": "{}",
+        "snippet": "htOfA{${1:length}}"
+      }
+    },
+    {
+      "name": "placeMessageField",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "placeMessageField{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "placeMessageField",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "placeMessageField[${3:modifications}]{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "useRandomSeed",
+      "arg": {
+        "format": "{}",
+        "snippet": "useRandomSeed{${1:seed}}"
+      }
+    },
+    {
+      "name": "inputRandomSeed"
+    },
+    {
+      "name": "useLastSeed"
+    },
+    {
+      "name": "printDPS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printDPS{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "printDPS",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "printDPS[${3:modifications}]{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "resetDPS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "resetDPS{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "resetDPS",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "resetDPS[${3:modifications}]{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "dpsResetHook",
+      "arg": {
+        "format": "{}",
+        "snippet": "dpsResetHook{${1:JS code%definition}}"
+      }
+    },
+    {
+      "name": "dpsFinishedEvent",
+      "arg": {
+        "format": "{}",
+        "snippet": "dpsFinishedEvent{${1:JS code%definition}}"
+      }
+    },
+    {
+      "name": "dpsfinishedevent",
+      "unusual": true
+    },
+    {
+      "name": "randomizePicMappings"
+    },
+    {
+      "name": "sortPicMappings"
+    },
+    {
+      "name": "clearOnCloseOrSave"
+    },
+    {
+      "name": "threshold",
+      "arg": {
+        "format": "{}",
+        "snippet": "threshold{${1:n}}"
+      }
+    },
+    {
+      "name": "dsthreshold",
+      "unusual": true
+    },
+    {
+      "name": "penaltypoints",
+      "arg": {
+        "format": "{}",
+        "snippet": "penaltypoints{${1:n}}"
+      }
+    },
+    {
+      "name": "dspenaltypoints",
+      "unusual": true
+    },
+    {
+      "name": "passing",
+      "arg": {
+        "format": "{}",
+        "snippet": "passing{${1:n}}"
+      }
+    },
+    {
+      "name": "dspassing",
+      "unusual": true
+    },
+    {
+      "name": "randomi",
+      "unusual": true
+    },
+    {
+      "name": "nextrandom",
+      "unusual": true
+    },
+    {
+      "name": "setrannum",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrannum{${1:count register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "setrandim",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrandim{${1:dimen register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "pointless",
+      "unusual": true
+    },
+    {
+      "name": "ranval",
+      "unusual": true
+    },
+    {
+      "name": "dpsLastSeed",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dpsLastSeed{${1:seed}}"
+      }
+    },
+    {
+      "name": "nextPuzzleChar",
+      "unusual": true
+    },
+    {
+      "name": "nextPuzzleLetter",
+      "unusual": true
+    },
+    {
+      "name": "nextPuzzlePair",
+      "unusual": true
+    },
+    {
+      "name": "puzzleParameters",
+      "unusual": true
+    },
+    {
+      "name": "redefnextrandomAsNeeded",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "setContent",
+      "if": "usebtnappr",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "setContent",
+      "if": "uselayers",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "Composing"
+    },
+    {
+      "name": "cQ",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "cA",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "cA",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:alt-letter}]{${1:name}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/dps#c": [
+      "nonrandomized",
+      "!nonrandomized",
+      "viewmode",
+      "!viewmode",
+      "showletters",
+      "!showletters",
+      "showanswerlabels",
+      "!showanswerlabels",
+      "showanswerkey",
+      "!showanswerkey",
+      "usebtnappr",
+      "uselayers",
+      "savedata",
+      "!savedata",
+      "lang=${1|english,german,custom|}"
+    ],
+    "\\insertSideshow": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/dps#c"
+  ]
+}

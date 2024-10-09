@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\lstset,\\lstinline,\\begin{lstlisting},\\lstinputlisting": [
+      "autogobble"
+    ]
+  },
+  "args": []
+}

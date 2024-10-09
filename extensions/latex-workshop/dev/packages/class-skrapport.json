@@ -1,0 +1,535 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "typearea"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "isodate"
+    },
+    {
+      "name": "isomath"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "skmath"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "grid",
+      "if": "twocolumn"
+    },
+    {
+      "name": "grid",
+      "if": "twocolumn=true"
+    },
+    {
+      "name": "kpfonts",
+      "if": "font=kpfonts"
+    },
+    {
+      "name": "lmodern",
+      "if": "font=lmodern"
+    },
+    {
+      "name": "sourcecodepro",
+      "if": "font=lmodern"
+    },
+    {
+      "name": "arev",
+      "if": "font=palatino"
+    },
+    {
+      "name": "pxfonts",
+      "if": "font=palatino"
+    },
+    {
+      "name": "tgpagella",
+      "if": "font=palatino"
+    },
+    {
+      "name": "sourcecodepro",
+      "if": "font=palatino"
+    },
+    {
+      "name": "MinionPro",
+      "if": "font=minion"
+    },
+    {
+      "name": "MnSymbol",
+      "if": "font=minion"
+    },
+    {
+      "name": "MyriadPro",
+      "if": "font=minion"
+    },
+    {
+      "name": "sourcecodepro",
+      "if": "font=minion"
+    },
+    {
+      "name": "PTSerif",
+      "if": "font=skdoc"
+    },
+    {
+      "name": "opensans",
+      "if": "font=skdoc"
+    },
+    {
+      "name": "sourcecodepro",
+      "if": "font=skdoc"
+    },
+    {
+      "name": "fontspec",
+      "if": "font=word"
+    }
+  ],
+  "macros": [
+    {
+      "name": "captionsbritish",
+      "unusual": true
+    },
+    {
+      "name": "datebritish",
+      "unusual": true
+    },
+    {
+      "name": "extrasbritish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasbritish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "captionsswedish",
+      "if": "lang=en",
+      "unusual": true
+    },
+    {
+      "name": "dateswedish",
+      "if": "lang=en",
+      "unusual": true
+    },
+    {
+      "name": "extrasswedish",
+      "if": "lang=en",
+      "unusual": true
+    },
+    {
+      "name": "noextrasswedish",
+      "if": "lang=en",
+      "unusual": true
+    },
+    {
+      "name": "swedishhyphenmins",
+      "if": "lang=en",
+      "unusual": true
+    },
+    {
+      "name": "datesymd",
+      "if": "lang=en"
+    },
+    {
+      "name": "datesdmy",
+      "if": "lang=en"
+    },
+    {
+      "name": "dq",
+      "if": "lang=en"
+    },
+    {
+      "name": "captionsswedish",
+      "if": "lang=sv",
+      "unusual": true
+    },
+    {
+      "name": "dateswedish",
+      "if": "lang=sv",
+      "unusual": true
+    },
+    {
+      "name": "extrasswedish",
+      "if": "lang=sv",
+      "unusual": true
+    },
+    {
+      "name": "noextrasswedish",
+      "if": "lang=sv",
+      "unusual": true
+    },
+    {
+      "name": "swedishhyphenmins",
+      "if": "lang=sv",
+      "unusual": true
+    },
+    {
+      "name": "datesymd",
+      "if": "lang=sv"
+    },
+    {
+      "name": "datesdmy",
+      "if": "lang=sv"
+    },
+    {
+      "name": "dq",
+      "if": "lang=sv"
+    },
+    {
+      "name": "captionsngerman",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "datengerman",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "extrasngerman",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "noextrasngerman",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "dq",
+      "if": "lang=de"
+    },
+    {
+      "name": "ntosstrue",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "ntossfalse",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "mdqon",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "mdqoff",
+      "if": "lang=de",
+      "unusual": true
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:email%URL}]{${1:name}}"
+      }
+    },
+    {
+      "name": "regarding",
+      "arg": {
+        "format": "{}",
+        "snippet": "regarding{${1:topic%text}}"
+      }
+    },
+    {
+      "name": "license",
+      "arg": {
+        "format": "{}",
+        "snippet": "license{${1:license name%text}}"
+      }
+    },
+    {
+      "name": "maketitle",
+      "arg": {
+        "format": "[]",
+        "snippet": "maketitle[${1:options%keyvals}]",
+        "keys": [
+          "\\maketitle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "{}",
+        "snippet": "comment{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "comment*",
+      "arg": {
+        "format": "{}",
+        "snippet": "comment*{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "note",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "note{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "note*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "note*{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "com",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "com{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "com*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "com*{${1:comment%todo}}"
+      }
+    },
+    {
+      "name": "eg"
+    },
+    {
+      "name": "ie"
+    },
+    {
+      "name": "etc"
+    },
+    {
+      "name": "cf"
+    },
+    {
+      "name": "viz"
+    },
+    {
+      "name": "dash"
+    },
+    {
+      "name": "colortheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "colortheme{${1:theme%keyvals}}",
+        "keys": [
+          "\\colortheme"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [
+    {
+      "name": "onecol",
+      "if": "twocolumn"
+    },
+    {
+      "name": "onecol",
+      "if": "twocolumn=true"
+    },
+    {
+      "name": "figcenter"
+    }
+  ],
+  "keys": {
+    "\\documentclass/skrapport#c": [
+      "paper=${1|a4,a5|}",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "indent",
+      "titles=${1|rm,it,bf,sf|}",
+      "hanging-titles",
+      "color=${1|default,unscathed,cruelwater,violet,skdoc,false|}",
+      "ptsize=${1|10pt,11pt,12pt|}",
+      "font=${1|none,kpfonts,lmodern,palatino,minion,skdoc,word|}",
+      "nomath",
+      "lang=${1|en,sv,de|}",
+      "draft"
+    ],
+    "\\maketitle": [
+      "hide={${1:types}}",
+      "nopdfinfo"
+    ],
+    "\\colortheme": [
+      "default",
+      "unscathed",
+      "cruelwater",
+      "violet",
+      "skdoc"
+    ]
+  },
+  "args": [
+    "\\documentclass/skrapport#c"
+  ]
+}

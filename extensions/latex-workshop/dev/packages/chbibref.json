@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setbibref",
+      "arg": {
+        "format": "{}",
+        "snippet": "setbibref{${1:name%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

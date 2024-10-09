@@ -4,20 +4,19 @@
  *--------------------------------------------------------------------------------------------*/
 
 import type { Terminal as RawXtermTerminal } from '@xterm/xterm';
-import { Dimension, getActiveWindow, IFocusTracker, trackFocus } from '../../../../../base/browser/dom.js';
-import { Emitter, Event } from '../../../../../base/common/event.js';
-import { Disposable, toDisposable } from '../../../../../base/common/lifecycle.js';
-import { MicrotaskDelay } from '../../../../../base/common/symbols.js';
-import './media/terminalChatWidget.css';
-import { localize } from '../../../../../nls.js';
-import { IContextKey, IContextKeyService } from '../../../../../platform/contextkey/common/contextkey.js';
-import { IInstantiationService } from '../../../../../platform/instantiation/common/instantiation.js';
-import { ChatAgentLocation } from '../../../chat/common/chatAgents.js';
-import { InlineChatWidget } from '../../../inlineChat/browser/inlineChatWidget.js';
-import { ITerminalInstance, type IXtermTerminal } from '../../../terminal/browser/terminal.js';
-import { MENU_TERMINAL_CHAT_INPUT, MENU_TERMINAL_CHAT_WIDGET, MENU_TERMINAL_CHAT_WIDGET_STATUS, TerminalChatCommandId, TerminalChatContextKeys } from './terminalChat.js';
-import { TerminalStickyScrollContribution } from '../../stickyScroll/browser/terminalStickyScrollContribution.js';
-import { MENU_INLINE_CHAT_WIDGET_SECONDARY } from '../../../inlineChat/common/inlineChat.js';
+import { Dimension, getActiveWindow, IFocusTracker, trackFocus } from 'vs/base/browser/dom';
+import { Emitter, Event } from 'vs/base/common/event';
+import { Disposable, toDisposable } from 'vs/base/common/lifecycle';
+import { MicrotaskDelay } from 'vs/base/common/symbols';
+import 'vs/css!./media/terminalChatWidget';
+import { localize } from 'vs/nls';
+import { IContextKey, IContextKeyService } from 'vs/platform/contextkey/common/contextkey';
+import { IInstantiationService } from 'vs/platform/instantiation/common/instantiation';
+import { ChatAgentLocation } from 'vs/workbench/contrib/chat/common/chatAgents';
+import { InlineChatWidget } from 'vs/workbench/contrib/inlineChat/browser/inlineChatWidget';
+import { ITerminalInstance, type IXtermTerminal } from 'vs/workbench/contrib/terminal/browser/terminal';
+import { MENU_TERMINAL_CHAT_INPUT, MENU_TERMINAL_CHAT_WIDGET, MENU_TERMINAL_CHAT_WIDGET_STATUS, TerminalChatCommandId, TerminalChatContextKeys } from 'vs/workbench/contrib/terminalContrib/chat/browser/terminalChat';
+import { TerminalStickyScrollContribution } from 'vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollContribution';
 
 const enum Constants {
 	HorizontalMargin = 10,
@@ -43,19 +42,19 @@ export class TerminalChatWidget extends Disposable {
 		private readonly _terminalElement: HTMLElement,
 		private readonly _instance: ITerminalInstance,
 		private readonly _xterm: IXtermTerminal & { raw: RawXtermTerminal },
-		@IContextKeyService contextKeyService: IContextKeyService,
-		@IInstantiationService instantiationService: IInstantiationService,
+		@IInstantiationService private readonly _instantiationService: IInstantiationService,
+		@IContextKeyService private readonly _contextKeyService: IContextKeyService
 	) {
 		super();
 
-		this._focusedContextKey = TerminalChatContextKeys.focused.bindTo(contextKeyService);
-		this._visibleContextKey = TerminalChatContextKeys.visible.bindTo(contextKeyService);
+		this._focusedContextKey = TerminalChatContextKeys.focused.bindTo(this._contextKeyService);
+		this._visibleContextKey = TerminalChatContextKeys.visible.bindTo(this._contextKeyService);
 
 		this._container = document.createElement('div');
 		this._container.classList.add('terminal-inline-chat');
 		_terminalElement.appendChild(this._container);
 
-		this._inlineChatWidget = instantiationService.createInstance(
+		this._inlineChatWidget = this._instantiationService.createInstance(
 			InlineChatWidget,
 			{
 				location: ChatAgentLocation.Terminal,
@@ -77,7 +76,6 @@ export class TerminalChatWidget extends Disposable {
 						}
 					}
 				},
-				secondaryMenuId: MENU_INLINE_CHAT_WIDGET_SECONDARY,
 				chatWidgetViewOptions: {
 					rendererOptions: { editableCodeBlock: true },
 					menus: {
@@ -86,7 +84,7 @@ export class TerminalChatWidget extends Disposable {
 						inputSideToolbar: MENU_TERMINAL_CHAT_WIDGET,
 					}
 				}
-			},
+			}
 		);
 		this._register(Event.any(
 			this._inlineChatWidget.onDidChangeHeight,
@@ -104,7 +102,12 @@ export class TerminalChatWidget extends Disposable {
 
 		this._focusTracker = this._register(trackFocus(this._container));
 		this._register(this._focusTracker.onDidFocus(() => this._focusedContextKey.set(true)));
-		this._register(this._focusTracker.onDidBlur(() => this._focusedContextKey.set(false)));
+		this._register(this._focusTracker.onDidBlur(() => {
+			this._focusedContextKey.set(false);
+			if (!this.inlineChatWidget.responseContent) {
+				this.hide();
+			}
+		}));
 
 		this.hide();
 	}
@@ -200,6 +203,7 @@ export class TerminalChatWidget extends Disposable {
 		this._container.classList.add('hide');
 		this._inlineChatWidget.reset();
 		this._reset();
+		this._inlineChatWidget.updateChatMessage(undefined);
 		this._inlineChatWidget.updateToolbar(false);
 		this._visibleContextKey.set(false);
 		this._inlineChatWidget.value = '';
@@ -226,6 +230,12 @@ export class TerminalChatWidget extends Disposable {
 	}
 	input(): string {
 		return this._inlineChatWidget.value;
+	}
+	addToHistory(input: string): void {
+		this._inlineChatWidget.addToHistory(input);
+		this._inlineChatWidget.saveState();
+		this._inlineChatWidget.value = input;
+		this._inlineChatWidget.selectAll(true);
 	}
 	setValue(value?: string) {
 		this._inlineChatWidget.value = value ?? '';

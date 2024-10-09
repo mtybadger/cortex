@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "cphwtfamily",
+      "unusual": true
+    },
+    {
+      "name": "cooperhewitt"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CooperHewitt#c": [
+      "scale=${1:factor}",
+      "default",
+      "type1",
+      "semibold",
+      "heavy",
+      "medium",
+      "thin",
+      "light"
+    ]
+  },
+  "args": [
+    "\\usepackage/CooperHewitt#c"
+  ]
+}

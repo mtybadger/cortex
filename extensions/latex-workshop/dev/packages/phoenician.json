@@ -1,0 +1,317 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "phncfamily"
+    },
+    {
+      "name": "textphnc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textphnc{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "Arq"
+    },
+    {
+      "name": "ARrq"
+    },
+    {
+      "name": "Aaleph"
+    },
+    {
+      "name": "ARaleph"
+    },
+    {
+      "name": "Aa"
+    },
+    {
+      "name": "ARa"
+    },
+    {
+      "name": "Ab"
+    },
+    {
+      "name": "ARb"
+    },
+    {
+      "name": "Abeth"
+    },
+    {
+      "name": "ARbeth"
+    },
+    {
+      "name": "Ag"
+    },
+    {
+      "name": "ARg"
+    },
+    {
+      "name": "Agimel"
+    },
+    {
+      "name": "ARgimel"
+    },
+    {
+      "name": "Ad"
+    },
+    {
+      "name": "ARd"
+    },
+    {
+      "name": "Adaleth"
+    },
+    {
+      "name": "ARdaleth"
+    },
+    {
+      "name": "Ah"
+    },
+    {
+      "name": "ARh"
+    },
+    {
+      "name": "Ahe"
+    },
+    {
+      "name": "ARhe"
+    },
+    {
+      "name": "Af"
+    },
+    {
+      "name": "ARf"
+    },
+    {
+      "name": "Avaf"
+    },
+    {
+      "name": "ARvaf"
+    },
+    {
+      "name": "Az"
+    },
+    {
+      "name": "ARz"
+    },
+    {
+      "name": "Azayin"
+    },
+    {
+      "name": "ARzayin"
+    },
+    {
+      "name": "Ahd"
+    },
+    {
+      "name": "ARhd"
+    },
+    {
+      "name": "Aheth"
+    },
+    {
+      "name": "ARheth"
+    },
+    {
+      "name": "Atd"
+    },
+    {
+      "name": "ARtd"
+    },
+    {
+      "name": "Ateth"
+    },
+    {
+      "name": "ARteth"
+    },
+    {
+      "name": "Ay"
+    },
+    {
+      "name": "ARy"
+    },
+    {
+      "name": "Ayod"
+    },
+    {
+      "name": "ARyod"
+    },
+    {
+      "name": "Ak"
+    },
+    {
+      "name": "ARk"
+    },
+    {
+      "name": "Akaph"
+    },
+    {
+      "name": "ARkaph"
+    },
+    {
+      "name": "Al"
+    },
+    {
+      "name": "ARl"
+    },
+    {
+      "name": "Alamed"
+    },
+    {
+      "name": "ARlamed"
+    },
+    {
+      "name": "Am"
+    },
+    {
+      "name": "ARm"
+    },
+    {
+      "name": "Amem"
+    },
+    {
+      "name": "ARmem"
+    },
+    {
+      "name": "An"
+    },
+    {
+      "name": "ARn"
+    },
+    {
+      "name": "Anun"
+    },
+    {
+      "name": "ARnun"
+    },
+    {
+      "name": "As"
+    },
+    {
+      "name": "ARs"
+    },
+    {
+      "name": "Asamekh"
+    },
+    {
+      "name": "ARsamekh"
+    },
+    {
+      "name": "Alq"
+    },
+    {
+      "name": "ARlq"
+    },
+    {
+      "name": "Aayin"
+    },
+    {
+      "name": "ARayin"
+    },
+    {
+      "name": "Ao"
+    },
+    {
+      "name": "ARo"
+    },
+    {
+      "name": "Ap"
+    },
+    {
+      "name": "ARp"
+    },
+    {
+      "name": "Ape"
+    },
+    {
+      "name": "ARpe"
+    },
+    {
+      "name": "Asd"
+    },
+    {
+      "name": "ARsd"
+    },
+    {
+      "name": "Asade"
+    },
+    {
+      "name": "ARsade"
+    },
+    {
+      "name": "Aq"
+    },
+    {
+      "name": "ARq"
+    },
+    {
+      "name": "Aqoph"
+    },
+    {
+      "name": "ARqoph"
+    },
+    {
+      "name": "Ar"
+    },
+    {
+      "name": "ARr"
+    },
+    {
+      "name": "Aresh"
+    },
+    {
+      "name": "ARresh"
+    },
+    {
+      "name": "Asv"
+    },
+    {
+      "name": "ARsv"
+    },
+    {
+      "name": "Ashin"
+    },
+    {
+      "name": "ARshin"
+    },
+    {
+      "name": "At"
+    },
+    {
+      "name": "ARt"
+    },
+    {
+      "name": "Atav"
+    },
+    {
+      "name": "ARtav"
+    },
+    {
+      "name": "Aw"
+    },
+    {
+      "name": "ARw"
+    },
+    {
+      "name": "Avav"
+    },
+    {
+      "name": "ARvav"
+    },
+    {
+      "name": "translitphnc",
+      "arg": {
+        "format": "{}",
+        "snippet": "translitphnc{${1:commands}}"
+      }
+    },
+    {
+      "name": "translitphncfont",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

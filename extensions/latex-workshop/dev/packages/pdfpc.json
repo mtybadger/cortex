@@ -1,0 +1,54 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "hyperxmp"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pdfpcsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfpcsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\pdfpcsetup,\\usepackage/pdfpc#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pdfpcnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfpcnote{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\pdfpcsetup,\\usepackage/pdfpc#c": [
+      "duration=",
+      "starttime=",
+      "endtime=",
+      "enduserslide=",
+      "lastminutes=",
+      "hidenotes",
+      "overridenote",
+      "notesposition=${1|right,left,top,bottom,none|}",
+      "disablemarkdown",
+      "defaulttransition="
+    ]
+  },
+  "args": [
+    "\\pdfpcsetup,\\usepackage/pdfpc#c"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "byoTwemoji",
+      "arg": {
+        "format": "{}",
+        "snippet": "byoTwemoji{${1:elmt1;elmt2;...}}"
+      }
+    },
+    {
+      "name": "byoTwemoji",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "byoTwemoji[${2:options%keyvals}]{${1:elmt1;elmt2;...}}",
+        "keys": [
+          "\\byoTwemoji#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "forElementInList",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "forElementInList{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "byoTwemojiShadowTransparency",
+      "unusual": true
+    },
+    {
+      "name": "twemojiDefaultHeight",
+      "unusual": true
+    },
+    {
+      "name": "defineByoTwemojiElement",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defineByoTwemojiElement{${1:elmt name}}{${2:elmt TikZ paths}}"
+      }
+    },
+    {
+      "name": "byoTwemojiElement",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "byoTwemojiElement{${1:name!TikZ options}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\byoTwemoji#c": [
+      "let White=",
+      "let WhiteGray=",
+      "let LightGray=",
+      "let Gray=",
+      "let DarkGray=",
+      "let Black=",
+      "let LightBrown=",
+      "let Brown=",
+      "let Yellow=",
+      "let DarkYellow=",
+      "let LightOrange=",
+      "let Orange=",
+      "let DarkOrange=",
+      "let LightRose=",
+      "let Rose=",
+      "let LightRed=",
+      "let Red=",
+      "let DarkRed=",
+      "let WineRed=",
+      "let DarkWineRed=",
+      "let LightBlue=",
+      "let Blue=",
+      "let DarkBlue=",
+      "let LightGreen=",
+      "let Green=",
+      "let DarkGreen=",
+      "let LightPurple=",
+      "let Purple=",
+      "let Shadow=",
+      "set White=",
+      "set WhiteGray=",
+      "set LightGray=",
+      "set Gray=",
+      "set DarkGray=",
+      "set Black=",
+      "set LightBrown=",
+      "set Brown=",
+      "set Yellow=",
+      "set DarkYellow=",
+      "set LightOrange=",
+      "set Orange=",
+      "set DarkOrange=",
+      "set LightRose=",
+      "set Rose=",
+      "set LightRed=",
+      "set Red=",
+      "set DarkRed=",
+      "set WineRed=",
+      "set DarkWineRed=",
+      "set LightBlue=",
+      "set Blue=",
+      "set DarkBlue=",
+      "set LightGreen=",
+      "set Green=",
+      "set DarkGreen=",
+      "set LightPurple=",
+      "set Purple=",
+      "set Shadow="
+    ]
+  },
+  "args": []
+}

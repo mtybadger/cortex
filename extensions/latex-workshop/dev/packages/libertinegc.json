@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "libertine"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/libertinegc#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/libertinegc#c"
+  ]
+}

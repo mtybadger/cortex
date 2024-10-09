@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "monott",
+      "arg": {
+        "format": "{}",
+        "snippet": "monott{${1:text}}"
+      }
+    },
+    {
+      "name": "proptt",
+      "arg": {
+        "format": "{}",
+        "snippet": "proptt{${1:text}}"
+      }
+    },
+    {
+      "name": "lctt",
+      "arg": {
+        "format": "{}",
+        "snippet": "lctt{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/zlmtt#c": [
+      "light",
+      "l",
+      "lightcondensed",
+      "lc",
+      "med",
+      "m",
+      "proportional",
+      "p",
+      "scale=${1:factor}",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/zlmtt#c"
+  ]
+}

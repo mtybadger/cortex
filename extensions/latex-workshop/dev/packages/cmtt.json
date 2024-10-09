@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mttfamily"
+    },
+    {
+      "name": "textmtt",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmtt{${1:text}}"
+      }
+    },
+    {
+      "name": "mtt",
+      "arg": {
+        "format": "{}",
+        "snippet": "mtt{${1:text}}"
+      }
+    },
+    {
+      "name": "nbsp"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cmtt#c": [
+      "override",
+      "t1",
+      "ot1"
+    ]
+  },
+  "args": [
+    "\\usepackage/cmtt#c"
+  ]
+}

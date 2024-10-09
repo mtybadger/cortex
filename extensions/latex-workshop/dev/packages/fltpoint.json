@@ -1,0 +1,203 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fpAdd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fpAdd{${1:cmd}}{${2:num1}}{${3:num2}}"
+      }
+    },
+    {
+      "name": "fpSub",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fpSub{${1:cmd}}{${2:num1}}{${3:num2}}"
+      }
+    },
+    {
+      "name": "fpMul",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fpMul{${1:cmd}}{${2:num1}}{${3:num2}}"
+      }
+    },
+    {
+      "name": "fpDiv",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fpDiv{${1:cmd}}{${2:num1}}{${3:num2}}"
+      }
+    },
+    {
+      "name": "fpNeg",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpNeg{${1:cmd}}{${2:number}}"
+      }
+    },
+    {
+      "name": "fpAbs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpAbs{${1:cmd}}{${2:number}}"
+      }
+    },
+    {
+      "name": "fpRound",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fpRound{${1:cmd}}{${2:number}}{${3:precision}}"
+      }
+    },
+    {
+      "name": "fpRegSet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegSet{${1:reg-name}}{${2:number}}"
+      }
+    },
+    {
+      "name": "fpRegGet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegGet{${1:reg-name}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "fpRegAdd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegAdd{${1:reg-name1}}{${2:reg-name2}}"
+      }
+    },
+    {
+      "name": "fpRegSub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegSub{${1:reg-name1}}{${2:reg-name2}}"
+      }
+    },
+    {
+      "name": "fpRegMul",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegMul{${1:reg-name1}}{${2:reg-name2}}"
+      }
+    },
+    {
+      "name": "fpRegDiv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegDiv{${1:reg-name1}}{${2:reg-name2}}"
+      }
+    },
+    {
+      "name": "fpRegAbs",
+      "arg": {
+        "format": "{}",
+        "snippet": "fpRegAbs{${1:reg-name}}"
+      }
+    },
+    {
+      "name": "fpRegNeg",
+      "arg": {
+        "format": "{}",
+        "snippet": "fpRegNeg{${1:reg-name}}"
+      }
+    },
+    {
+      "name": "fpRegRound",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegRound{${1:reg name}}{${2:precision}}"
+      }
+    },
+    {
+      "name": "fpRegCopy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fpRegCopy{${1:reg-name1}}{${2:reg-name2}}"
+      }
+    },
+    {
+      "name": "fpAccuracy",
+      "arg": {
+        "format": "{}",
+        "snippet": "fpAccuracy{${1:number}}"
+      }
+    },
+    {
+      "name": "fpDecimalSign",
+      "arg": {
+        "format": "{}",
+        "snippet": "fpDecimalSign{${1:character}}"
+      }
+    },
+    {
+      "name": "fpThousandSep",
+      "arg": {
+        "format": "{}",
+        "snippet": "fpThousandSep{${1:character}}"
+      }
+    },
+    {
+      "name": "iloop",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "iloop{${1:arg}}"
+      }
+    },
+    {
+      "name": "irepeat",
+      "unusual": true
+    },
+    {
+      "name": "iiterate",
+      "unusual": true
+    },
+    {
+      "name": "ibody",
+      "unusual": true
+    },
+    {
+      "name": "inext",
+      "unusual": true
+    },
+    {
+      "name": "xloop",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xloop{${1:arg}}"
+      }
+    },
+    {
+      "name": "xrepeat",
+      "unusual": true
+    },
+    {
+      "name": "xiterate",
+      "unusual": true
+    },
+    {
+      "name": "xbody",
+      "unusual": true
+    },
+    {
+      "name": "xnext",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fltpoint#c": [
+      "comma",
+      "point"
+    ]
+  },
+  "args": [
+    "\\usepackage/fltpoint#c"
+  ]
+}

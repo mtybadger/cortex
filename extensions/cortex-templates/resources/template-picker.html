@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX Template Picker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .template-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4em;
+        }
+        .template-item {
+            width: 150px;
+            height: 225px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2em;
+            transition: box-shadow 0.3s ease;
+        }
+        .template-item img:hover {
+            box-shadow: 0 0 10px var(--vscode-editor-background);
+        }
+        .template-item img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .template-item h3 {
+            margin: 0 0 10px 0;
+        }
+        .template-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        h1 {
+            margin-block-start: 0px;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        #searchInput {
+            width: 30%;
+            padding: 8px;
+            appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            background-color: var(--vscode-input-background);
+            color: var(--vscode-input-foreground);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Templates</h1>
+    <input type="text" id="searchInput" placeholder="Filter templates...">
+    <div id="templateContainer" class="template-container">
+        {{TEMPLATE_ITEMS}}
+    </div>
+    <script src="{{SCRIPT_URI}}"></script>
+</body>
+</html>

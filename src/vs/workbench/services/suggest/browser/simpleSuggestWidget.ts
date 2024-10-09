@@ -3,22 +3,22 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import './media/suggest.css';
-import * as dom from '../../../../base/browser/dom.js';
-import { IListEvent, IListGestureEvent, IListMouseEvent } from '../../../../base/browser/ui/list/list.js';
-import { List } from '../../../../base/browser/ui/list/listWidget.js';
-import { ResizableHTMLElement } from '../../../../base/browser/ui/resizable/resizable.js';
-import { SimpleCompletionItem } from './simpleCompletionItem.js';
-import { LineContext, SimpleCompletionModel } from './simpleCompletionModel.js';
-import { SimpleSuggestWidgetItemRenderer, type ISimpleSuggestWidgetFontInfo } from './simpleSuggestWidgetRenderer.js';
-import { TimeoutTimer } from '../../../../base/common/async.js';
-import { Emitter, Event } from '../../../../base/common/event.js';
-import { MutableDisposable, Disposable } from '../../../../base/common/lifecycle.js';
-import { clamp } from '../../../../base/common/numbers.js';
-import { localize } from '../../../../nls.js';
-import { IInstantiationService } from '../../../../platform/instantiation/common/instantiation.js';
-import { SuggestWidgetStatus } from '../../../../editor/contrib/suggest/browser/suggestWidgetStatus.js';
-import { MenuId } from '../../../../platform/actions/common/actions.js';
+import 'vs/css!./media/suggest';
+import * as dom from 'vs/base/browser/dom';
+import { IListEvent, IListGestureEvent, IListMouseEvent } from 'vs/base/browser/ui/list/list';
+import { List } from 'vs/base/browser/ui/list/listWidget';
+import { ResizableHTMLElement } from 'vs/base/browser/ui/resizable/resizable';
+import { SimpleCompletionItem } from 'vs/workbench/services/suggest/browser/simpleCompletionItem';
+import { LineContext, SimpleCompletionModel } from 'vs/workbench/services/suggest/browser/simpleCompletionModel';
+import { SimpleSuggestWidgetItemRenderer } from 'vs/workbench/services/suggest/browser/simpleSuggestWidgetRenderer';
+import { TimeoutTimer } from 'vs/base/common/async';
+import { Emitter, Event } from 'vs/base/common/event';
+import { MutableDisposable, Disposable } from 'vs/base/common/lifecycle';
+import { clamp } from 'vs/base/common/numbers';
+import { localize } from 'vs/nls';
+import { IInstantiationService } from 'vs/platform/instantiation/common/instantiation';
+import { SuggestWidgetStatus } from 'vs/editor/contrib/suggest/browser/suggestWidgetStatus';
+import { MenuId } from 'vs/platform/actions/common/actions';
 
 const $ = dom.$;
 
@@ -84,7 +84,7 @@ export class SimpleSuggestWidget extends Disposable {
 	constructor(
 		private readonly _container: HTMLElement,
 		private readonly _persistedSize: IPersistedWidgetSizeDelegate,
-		private readonly _getFontInfo: () => ISimpleSuggestWidgetFontInfo,
+		private readonly _getFontInfo: () => { fontFamily: string; fontSize: number; lineHeight: number; fontWeight: string; letterSpacing: number },
 		options: IWorkbenchSuggestWidgetOptions,
 		@IInstantiationService instantiationService: IInstantiationService
 	) {

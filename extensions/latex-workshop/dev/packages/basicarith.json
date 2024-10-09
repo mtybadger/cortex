@@ -1,0 +1,166 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "probline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "probline{${1:width}}{${2:number}}"
+      }
+    },
+    {
+      "name": "nextpline",
+      "arg": {
+        "format": "{}",
+        "snippet": "nextpline{${1:number}}"
+      }
+    },
+    {
+      "name": "opline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opline{${1:operator}}{${2:number}}"
+      }
+    },
+    {
+      "name": "soluline",
+      "arg": {
+        "format": "{}",
+        "snippet": "soluline{${1:number}}"
+      }
+    },
+    {
+      "name": "noopline",
+      "arg": {
+        "format": "{}",
+        "snippet": "noopline{${1:number}}"
+      }
+    },
+    {
+      "name": "longdiv",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "longdiv{${1:length}}{${2:dividend}}{${3:divisor}}"
+      }
+    },
+    {
+      "name": "ldsoluline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ldsoluline{${1:solution}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "nextldline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nextldline{${1:cutoff}}{${2:number}}"
+      }
+    },
+    {
+      "name": "linestyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "linestyle{${1:line number}}{${2:style}}"
+      }
+    },
+    {
+      "name": "clearlinestyles"
+    },
+    {
+      "name": "digstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "digstyle{${1:column number}}{${2:style}}"
+      }
+    },
+    {
+      "name": "cleardigitstyles"
+    },
+    {
+      "name": "carryline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "carryline{${1:num of digits}}{${2:carries}}"
+      }
+    },
+    {
+      "name": "strike",
+      "arg": {
+        "format": "{}",
+        "snippet": "strike{${1:text}}"
+      }
+    },
+    {
+      "name": "problembox",
+      "arg": {
+        "format": "{}",
+        "snippet": "problembox{${1:contents}}"
+      }
+    },
+    {
+      "name": "showdivwork"
+    },
+    {
+      "name": "noshowdivwork"
+    },
+    {
+      "name": "fractionsymbol",
+      "unusual": true
+    },
+    {
+      "name": "ifshowdivisionwork",
+      "unusual": true
+    },
+    {
+      "name": "showdivisionworktrue",
+      "unusual": true
+    },
+    {
+      "name": "showdivisionworkfalse",
+      "unusual": true
+    },
+    {
+      "name": "specialdigitstyle",
+      "unusual": true
+    },
+    {
+      "name": "speciallinestyle",
+      "unusual": true
+    },
+    {
+      "name": "gobblechar",
+      "unusual": true
+    },
+    {
+      "name": "assignthencheck",
+      "unusual": true
+    },
+    {
+      "name": "countunlessnil",
+      "unusual": true
+    },
+    {
+      "name": "auxcountchar",
+      "unusual": true
+    },
+    {
+      "name": "countchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "countchar{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/basicarith#c": [
+      "noshowdivwork",
+      "showdivwork"
+    ]
+  },
+  "args": [
+    "\\usepackage/basicarith#c"
+  ]
+}

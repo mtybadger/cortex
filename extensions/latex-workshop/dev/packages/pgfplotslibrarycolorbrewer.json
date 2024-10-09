@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycolorbrewer"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

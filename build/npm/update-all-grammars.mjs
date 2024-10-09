@@ -16,7 +16,7 @@ async function spawn(cmd, args, opts) {
 }
 
 async function main() {
-	await spawn('npm', ['ci'], { cwd: 'extensions' });
+	await spawn('yarn', [], { cwd: 'extensions' });
 
 	for (const extension of readdirSync('extensions')) {
 		try {

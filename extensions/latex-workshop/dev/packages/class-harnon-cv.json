@@ -1,0 +1,238 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "nopageno"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "framed"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "cantarell"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "addcallout",
+      "arg": {
+        "format": "{}",
+        "snippet": "addcallout{${1:text}}"
+      }
+    },
+    {
+      "name": "adddocumentheader",
+      "arg": {
+        "format": "{}",
+        "snippet": "adddocumentheader{${1:text}}"
+      }
+    },
+    {
+      "name": "addheadertext",
+      "arg": {
+        "format": "{}",
+        "snippet": "addheadertext{${1:text}}"
+      }
+    },
+    {
+      "name": "addsubheader",
+      "arg": {
+        "format": "{}",
+        "snippet": "addsubheader{${1:text}}"
+      }
+    },
+    {
+      "name": "addtimelinebullet",
+      "arg": {
+        "format": "{}",
+        "snippet": "addtimelinebullet{${1:text}}"
+      }
+    },
+    {
+      "name": "addtimelineheader",
+      "arg": {
+        "format": "{}",
+        "snippet": "addtimelineheader{${1:text}}"
+      }
+    },
+    {
+      "name": "listitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "listitem{${1:text}}"
+      }
+    },
+    {
+      "name": "recenthistory",
+      "arg": {
+        "format": "{}",
+        "snippet": "recenthistory{${1:text}}"
+      }
+    },
+    {
+      "name": "starttimeline"
+    },
+    {
+      "name": "stoptimeline"
+    },
+    {
+      "name": "timelineitem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "timelineitem{${1:date}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "timelinespacer"
+    },
+    {
+      "name": "youraddress",
+      "arg": {
+        "format": "{}",
+        "snippet": "youraddress{${1:address}}"
+      }
+    },
+    {
+      "name": "youremail",
+      "arg": {
+        "format": "{}",
+        "snippet": "youremail{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "yourname",
+      "arg": {
+        "format": "{}",
+        "snippet": "yourname{${1:name}}"
+      }
+    },
+    {
+      "name": "yournumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "yournumber{${1:number}}"
+      }
+    },
+    {
+      "name": "yourwebsite",
+      "arg": {
+        "format": "{}",
+        "snippet": "yourwebsite{${1:URL}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    }
+  ],
+  "envs": [
+    {
+      "name": "callout"
+    },
+    {
+      "name": "sectionheader"
+    },
+    {
+      "name": "subheader"
+    },
+    {
+      "name": "timelinebar"
+    },
+    {
+      "name": "timelinebullet"
+    },
+    {
+      "name": "timelineheader"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

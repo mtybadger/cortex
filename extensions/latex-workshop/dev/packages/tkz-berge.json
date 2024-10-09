@@ -1,0 +1,551 @@
+{
+  "deps": [
+    {
+      "name": "tkz-graph"
+    }
+  ],
+  "macros": [
+    {
+      "name": "grEmptyPath",
+      "arg": {
+        "format": "{}",
+        "snippet": "grEmptyPath{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grEmptyPath",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grEmptyPath[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\grEmptyPath#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "EdgeInGraphLoop",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "EdgeInGraphLoop{${1:prefix}}{${2:number of vertices}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphLoop*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "EdgeInGraphLoop*{${1:prefix}}{${2:number of vertices}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphSeq",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EdgeInGraphSeq{${1:prefix}}{${2:start}}{${3:end}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphMod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EdgeInGraphMod{${1:prefix}}{${2:number of vertices}}{${3:add}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphMod*",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "EdgeInGraphMod*{${1:prefix}}{${2:number of vertices}}{${3:add}}{${4:start}}{${5:step}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphModLoop",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "EdgeInGraphModLoop{${1:prefix}}{${2:number of vertices}}{${3:add}}{${4:start}}"
+      }
+    },
+    {
+      "name": "EdgeIdentity",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EdgeIdentity{${1:prefix1}}{${2:prefix2}}{${3:number of vertices}}"
+      }
+    },
+    {
+      "name": "EdgeIdentity*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EdgeIdentity*{${1:prefix1}}{${2:prefix2}}{${3:vertex1,vertex2,...}}"
+      }
+    },
+    {
+      "name": "EdgeFromOneToAll",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "EdgeFromOneToAll{${1:prefix1}}{${2:prefix2}}{${3:from}}{${4:number of vertices}}"
+      }
+    },
+    {
+      "name": "EdgeFromOneToSeq",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "EdgeFromOneToSeq{${1:prefix1}}{${2:prefix2}}{${3:from}}{${4:start}}{${5:end}}"
+      }
+    },
+    {
+      "name": "EdgeFromOneToSel",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "EdgeFromOneToSel{${1:prefix1}}{${2:prefix2}}{${3:from}}{${4:vertex1,vertex2,...}}"
+      }
+    },
+    {
+      "name": "EdgeFromOneToComp",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "EdgeFromOneToComp{${1:prefix1}}{${2:prefix2}}{${3:from}}{${4:number of vertices}}"
+      }
+    },
+    {
+      "name": "EdgeMod",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "EdgeMod{${1:prefix1}}{${2:prefix2}}{${3:number of vertices}}{${4:step}}"
+      }
+    },
+    {
+      "name": "EdgeMod*",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "EdgeMod*{${1:prefix1}}{${2:prefix2}}{${3:number of vertices}}{${4:step1}}{${5:step2}}"
+      }
+    },
+    {
+      "name": "EdgeDoubleMod",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}{}",
+        "snippet": "EdgeDoubleMod{${1:prefix1}}{${2:numofvertices1}}{${3:start1}}{${4:add1}}{${5:prefix2}}{${6:numofvertices2}}{${7:start2}}{${8:add2}}{${9:end}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphFromOneToComp",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "EdgeInGraphFromOneToComp{${1:prefix}}{${2:number of vertices}}{${3:from}}"
+      }
+    },
+    {
+      "name": "EdgeInGraphFromOneToComp",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "EdgeInGraphFromOneToComp[${4:options%keyvals}]{${1:prefix}}{${2:number of vertices}}{${3:from}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grEmptyCycle",
+      "arg": {
+        "format": "{}",
+        "snippet": "grEmptyCycle{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grEmptyCycle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grEmptyCycle[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grCycle",
+      "arg": {
+        "format": "{}",
+        "snippet": "grCycle{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grCycle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grCycle[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grComplete",
+      "arg": {
+        "format": "{}",
+        "snippet": "grComplete{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grComplete",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grComplete[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grCirculant",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "grCirculant{${1:number of vertices}}{${2:step1,step2,...}}"
+      }
+    },
+    {
+      "name": "grCirculant",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "grCirculant[${3:options%keyvals}]{${1:number of vertices}}{${2:step1,step2,...}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grStar",
+      "arg": {
+        "format": "{}",
+        "snippet": "grStar{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grStar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grStar[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grSQCycle",
+      "arg": {
+        "format": "{}",
+        "snippet": "grSQCycle{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grSQCycle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grSQCycle[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grWheel",
+      "arg": {
+        "format": "{}",
+        "snippet": "grWheel{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grWheel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grWheel[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grLadder",
+      "arg": {
+        "format": "{}",
+        "snippet": "grLadder{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grLadder",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grLadder[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\grLadder#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grPrism",
+      "arg": {
+        "format": "{}",
+        "snippet": "grPrism{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grPrism",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grPrism[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\grPrism#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grCompleteBipartite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "grCompleteBipartite{${1:number1}}{${2:number2}}"
+      }
+    },
+    {
+      "name": "grCompleteBipartite",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "grCompleteBipartite[${3:options%keyvals}]{${1:number1}}{${2:number2}}",
+        "keys": [
+          "\\grCompleteBipartite#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grTriangularGrid",
+      "arg": {
+        "format": "{}",
+        "snippet": "grTriangularGrid{${1:number of vertices}}"
+      }
+    },
+    {
+      "name": "grTriangularGrid",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "grTriangularGrid[${2:options%keyvals}]{${1:number of vertices}}",
+        "keys": [
+          "\\grTriangularGrid#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grLCF",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "grLCF[${3:RA-number}]{${1:num1,num2,...}}{${2:number}}"
+      }
+    },
+    {
+      "name": "tkzSetUpColors",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzSetUpColors[${1:options%keyvals}]",
+        "keys": [
+          "\\tkzSetUpColors"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "AssignVertexLabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AssignVertexLabel{${1:prefix}}{${2:name1,name2,...}}"
+      }
+    },
+    {
+      "name": "AssignVertexLabel",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "AssignVertexLabel[${3:options%keyvals}]{${1:prefix}}{${2:name1,name2,...}}",
+        "keys": [
+          "\\AssignVertexLabel"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grAndrasfai"
+    },
+    {
+      "name": "grBalaban"
+    },
+    {
+      "name": "grChvatal"
+    },
+    {
+      "name": "grCocktailParty"
+    },
+    {
+      "name": "grCrown"
+    },
+    {
+      "name": "grCubicalGraph"
+    },
+    {
+      "name": "grDesargues"
+    },
+    {
+      "name": "grDodecahedral"
+    },
+    {
+      "name": "grDoyle"
+    },
+    {
+      "name": "grEmptyGrid"
+    },
+    {
+      "name": "grEmptyLadder"
+    },
+    {
+      "name": "grEmptyStar"
+    },
+    {
+      "name": "grFolkman"
+    },
+    {
+      "name": "grFoster"
+    },
+    {
+      "name": "grFranklin"
+    },
+    {
+      "name": "grGeneralizedPetersen"
+    },
+    {
+      "name": "grGrotzsch"
+    },
+    {
+      "name": "grHeawood"
+    },
+    {
+      "name": "grIcosahedral"
+    },
+    {
+      "name": "grKonisberg"
+    },
+    {
+      "name": "grLevi"
+    },
+    {
+      "name": "grMcGee"
+    },
+    {
+      "name": "grMobiusKantor"
+    },
+    {
+      "name": "grMobiusLadder"
+    },
+    {
+      "name": "grOctahedral"
+    },
+    {
+      "name": "grPappus"
+    },
+    {
+      "name": "grPath"
+    },
+    {
+      "name": "grPetersen"
+    },
+    {
+      "name": "grRobertson"
+    },
+    {
+      "name": "grRobertsonWegner"
+    },
+    {
+      "name": "grTetrahedral"
+    },
+    {
+      "name": "grTutteCoxeter"
+    },
+    {
+      "name": "grWong"
+    },
+    {
+      "name": "grWriteExplicitLabel",
+      "unusual": true
+    },
+    {
+      "name": "grWriteExplicitLabels",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\grEmptyPath#c": [
+      "RA=",
+      "RS=",
+      "prefix=",
+      "Math",
+      "form="
+    ],
+    "\\EdgeInGraphFromOneToComp#c,\\grEmptyCycle#c,\\grCycle#c,\\grComplete#c,\\grCirculant#c,\\grStar#c,\\grSQCycle#c,\\grWheel#c": [
+      "x=",
+      "y=",
+      "rotation=",
+      "RA=",
+      "prefix=",
+      "Math"
+    ],
+    "\\grLadder#c": [
+      "RA=",
+      "RS=",
+      "prefix=",
+      "prefixx=",
+      "Math"
+    ],
+    "\\grPrism#c": [
+      "RA=",
+      "RB=",
+      "prefix=",
+      "prefixx=",
+      "Math"
+    ],
+    "\\grCompleteBipartite#c": [
+      "RA=",
+      "RB=",
+      "RS=",
+      "form=",
+      "prefix=",
+      "prefixx=",
+      "Math"
+    ],
+    "\\grTriangularGrid#c": [
+      "RA=",
+      "form=",
+      "prefix=",
+      "Math"
+    ],
+    "\\grLCF#c": [
+      "RA="
+    ],
+    "\\tkzSetUpColors": [
+      "background=",
+      "text="
+    ],
+    "\\AssignVertexLabel": [
+      "size=",
+      "color=",
+      "Math"
+    ]
+  },
+  "args": []
+}

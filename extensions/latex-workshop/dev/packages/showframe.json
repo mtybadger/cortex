@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "eso-pic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ShowFrameColor"
+    },
+    {
+      "name": "ShowFrameLinethickness"
+    },
+    {
+      "name": "ShowFramePicture"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

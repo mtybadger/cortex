@@ -1,0 +1,97 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "showexpl"
+    },
+    {
+      "name": "accsupp"
+    },
+    {
+      "name": "changepage"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarylistings"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hwidth",
+      "unusual": true
+    },
+    {
+      "name": "noaccsupp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "noaccsupp{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "PSTcode"
+    },
+    {
+      "name": "PSTcode",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{PSTcode}#c,\\begin{PSTexample}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PSTexample"
+    },
+    {
+      "name": "PSTexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{PSTcode}#c,\\begin{PSTexample}#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/pst-exa#c": [
+      "swpl",
+      "tcb",
+      "pdf"
+    ],
+    "\\begin{PSTcode}#c,\\begin{PSTexample}#c": [
+      "hwidth=",
+      "graphic={${1:includegraphics options}}{${2:imagefile}}",
+      "numbers=${1|true,none,out,fancy|}",
+      "fcolor=",
+      "tcolor=",
+      "bcolor=",
+      "scolor=",
+      "hsep=",
+      "vsep=",
+      "pos=${1|r,l,b,t,e|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pst-exa#c"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "ae"
+    }
+  ],
+  "macros": [
+    {
+      "name": "guillemotleft"
+    },
+    {
+      "name": "guillemotright"
+    },
+    {
+      "name": "aeguillfrenchdefault",
+      "unusual": true
+    },
+    {
+      "name": "ecguills",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ecguills{${1:font family}}"
+      }
+    },
+    {
+      "name": "selectguillfont",
+      "unusual": true
+    },
+    {
+      "name": "aeguills",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/aeguill#c": [
+      "lm",
+      "pl",
+      "cyr",
+      "cm",
+      "ec"
+    ]
+  },
+  "args": [
+    "\\usepackage/aeguill#c"
+  ]
+}

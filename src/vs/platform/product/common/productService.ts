@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IProductConfiguration } from '../../../base/common/product.js';
-import { createDecorator } from '../../instantiation/common/instantiation.js';
+import { IProductConfiguration } from 'vs/base/common/product';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
 
 export const IProductService = createDecorator<IProductService>('productService');
 

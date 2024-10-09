@@ -1,0 +1,533 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryexternal",
+      "if": "external"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tikzcausetsset",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzcausetsset{${1:options%keyvals}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pcauset",
+      "arg": {
+        "format": "{}",
+        "snippet": "pcauset{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pcauset",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pcauset[${2:options%keyvals}]{${1:permutation}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pcausetP",
+      "arg": {
+        "format": "{}",
+        "snippet": "pcausetP{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pcausetP",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pcausetP[${2:options%keyvals}]{${1:permutation}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pcausetL",
+      "arg": {
+        "format": "{}",
+        "snippet": "pcausetL{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pcausetL",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pcausetL[${2:options%keyvals}]{${1:permutation}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pcausetX",
+      "arg": {
+        "format": "{}",
+        "snippet": "pcausetX{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pcausetX",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pcausetX[${2:options%keyvals}]{${1:permutation}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rcauset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rcauset{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "rcauset",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "rcauset[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rcausetP",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rcausetP{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "rcausetP",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "rcausetP[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rcausetL",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rcausetL{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "rcausetL",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "rcausetL[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rcausetX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rcausetX{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "rcausetX",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "rcausetX[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "causet{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "causet",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "causet[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetP",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "causetP{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "causetP",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "causetP[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetL",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "causetL{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "causetL",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "causetL[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "causetX{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "causetX",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "causetX[${3:options%keyvals}]{${1:permutation}}{${2:event pairs}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetFence",
+      "arg": {
+        "format": "{}",
+        "snippet": "causetFence{${1:number}}"
+      }
+    },
+    {
+      "name": "causetFence",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "causetFence[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetCrown",
+      "arg": {
+        "format": "{}",
+        "snippet": "causetCrown{${1:number}}"
+      }
+    },
+    {
+      "name": "causetCrown",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "causetCrown[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "causetTileSize",
+      "unusual": true
+    },
+    {
+      "name": "causetRegionLine",
+      "unusual": true
+    },
+    {
+      "name": "causetGridLine",
+      "unusual": true
+    },
+    {
+      "name": "causetEventSize",
+      "unusual": true
+    },
+    {
+      "name": "causetLinkWidth",
+      "unusual": true
+    },
+    {
+      "name": "causetBrokenLinkGap",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawPermutationtrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawPermutationfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawLinkstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawLinksfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsBreakLinkstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsBreakLinksfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawSpatialLinkstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawSpatialLinksfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawLabelstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawLabelsfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawULabelstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawULabelsfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawVLabelstrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsDrawVLabelsfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetsNameExternaltrue",
+      "unusual": true
+    },
+    {
+      "name": "causetsNameExternalfalse",
+      "unusual": true
+    },
+    {
+      "name": "causetfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "causetfile{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "causetfile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "causetfile[${2:options%keyvals}]{${1:imagefile}}",
+        "keys": [
+          "\\causetfile"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "drawpcauset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "drawpcauset{${1:permutation}}"
+      }
+    },
+    {
+      "name": "drawrcauset",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "drawrcauset{${1:permutation}}{${2:event pairs}}"
+      }
+    },
+    {
+      "name": "drawcauset",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "drawcauset{${1:permutation}}{${2:event pairs}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/causets": [
+      "tiny",
+      "smaller",
+      "small",
+      "large",
+      "larger",
+      "huge",
+      "gray",
+      "black",
+      "blue",
+      "neon",
+      "linked",
+      "unlinked",
+      "caps",
+      "arrows",
+      "continuous",
+      "spatial",
+      "external",
+      "permutation",
+      "labeled",
+      "unlabeled",
+      "ulabeled",
+      "uunlabeled",
+      "vlabeled",
+      "vunlabeled"
+    ],
+    "\\tikzcausetsset#c,\\pcauset#c,\\pcausetP#c,\\pcausetL#c,\\pcausetX#c,\\rcauset#c,\\rcausetP#c,\\rcausetL#c,\\rcausetX#c,\\causet#c,\\causetP#c,\\causetL#c,\\causetX#c,\\causetFence#c,\\causetCrown#c": [
+      "all labels={${1:TikZ keys}}",
+      "arrow links",
+      "baseline=",
+      "black colors",
+      "blue colors",
+      "broken link gap=",
+      "brokenly linked",
+      "cap links",
+      "continuously linked",
+      "event=${1:value}",
+      "event color=",
+      "event outline=",
+      "event size=",
+      "events={${1:TikZ keys}}",
+      "gray colors",
+      "grid color=",
+      "grid line width=",
+      "grid={${1:TikZ keys}}",
+      "huge",
+      "label=${1:text}",
+      "label color=",
+      "labeled",
+      "labels={${1:TikZ keys}}",
+      "large",
+      "link color=",
+      "link ends={${1:TikZ keys}}",
+      "link pauses={${1:TikZ keys}}",
+      "link resumes={${1:TikZ keys}}",
+      "link starts={${1:TikZ keys}}",
+      "link width=",
+      "links={${1:TikZ keys}}",
+      "name=${1:name}",
+      "name external",
+      "name prefix=${1:prefix}",
+      "neon colors",
+      "normal",
+      "offset=${1:integer}",
+      "padding=",
+      "permutation",
+      "region color=",
+      "region line width=",
+      "region={${1:TikZ keys}}",
+      "replaced events={${1:TikZ keys}}",
+      "replaced labels={${1:TikZ keys}}",
+      "set prefix=${1:prefix}",
+      "show permutation",
+      "small",
+      "spatial link color=",
+      "spatial links={${1:TikZ keys}}",
+      "spatially linked",
+      "text font=${1:font commands}",
+      "text scale=${1:factor}",
+      "tile color=",
+      "tile size=",
+      "tiles={${1:TikZ keys}}",
+      "tiny",
+      "ulabel color=",
+      "ulabels={${1:TikZ keys}}",
+      "very large",
+      "very small",
+      "vlabel color=",
+      "vlabels={${1:TikZ keys}}"
+    ],
+    "\\causetfile": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/causets"
+  ]
+}

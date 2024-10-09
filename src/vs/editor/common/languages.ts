@@ -3,31 +3,29 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { VSBuffer } from '../../base/common/buffer.js';
-import { CancellationToken } from '../../base/common/cancellation.js';
-import { Codicon } from '../../base/common/codicons.js';
-import { Color } from '../../base/common/color.js';
-import { IReadonlyVSDataTransfer } from '../../base/common/dataTransfer.js';
-import { Event } from '../../base/common/event.js';
-import { HierarchicalKind } from '../../base/common/hierarchicalKind.js';
-import { IMarkdownString } from '../../base/common/htmlContent.js';
-import { IDisposable } from '../../base/common/lifecycle.js';
-import { ThemeIcon } from '../../base/common/themables.js';
-import { URI, UriComponents } from '../../base/common/uri.js';
-import { EditOperation, ISingleEditOperation } from './core/editOperation.js';
-import { IPosition, Position } from './core/position.js';
-import { IRange, Range } from './core/range.js';
-import { Selection } from './core/selection.js';
-import { LanguageId } from './encodedTokenAttributes.js';
-import { LanguageSelector } from './languageSelector.js';
-import * as model from './model.js';
-import { TokenizationRegistry as TokenizationRegistryImpl } from './tokenizationRegistry.js';
-import { ContiguousMultilineTokens } from './tokens/contiguousMultilineTokens.js';
-import { localize } from '../../nls.js';
-import { ExtensionIdentifier } from '../../platform/extensions/common/extensions.js';
-import { IMarkerData } from '../../platform/markers/common/markers.js';
-import { IModelTokensChangedEvent } from './textModelEvents.js';
-import type { Parser } from '@vscode/tree-sitter-wasm';
+import { VSBuffer } from 'vs/base/common/buffer';
+import { CancellationToken } from 'vs/base/common/cancellation';
+import { Codicon } from 'vs/base/common/codicons';
+import { Color } from 'vs/base/common/color';
+import { IReadonlyVSDataTransfer } from 'vs/base/common/dataTransfer';
+import { Event } from 'vs/base/common/event';
+import { HierarchicalKind } from 'vs/base/common/hierarchicalKind';
+import { IMarkdownString } from 'vs/base/common/htmlContent';
+import { IDisposable } from 'vs/base/common/lifecycle';
+import { ThemeIcon } from 'vs/base/common/themables';
+import { URI, UriComponents } from 'vs/base/common/uri';
+import { EditOperation, ISingleEditOperation } from 'vs/editor/common/core/editOperation';
+import { IPosition, Position } from 'vs/editor/common/core/position';
+import { IRange, Range } from 'vs/editor/common/core/range';
+import { Selection } from 'vs/editor/common/core/selection';
+import { LanguageId } from 'vs/editor/common/encodedTokenAttributes';
+import { LanguageSelector } from 'vs/editor/common/languageSelector';
+import * as model from 'vs/editor/common/model';
+import { TokenizationRegistry as TokenizationRegistryImpl } from 'vs/editor/common/tokenizationRegistry';
+import { ContiguousMultilineTokens } from 'vs/editor/common/tokens/contiguousMultilineTokens';
+import { localize } from 'vs/nls';
+import { ExtensionIdentifier } from 'vs/platform/extensions/common/extensions';
+import { IMarkerData } from 'vs/platform/markers/common/markers';
 
 /**
  * @internal
@@ -82,17 +80,6 @@ export class EncodedTokenizationResult {
 		public readonly endState: IState,
 	) {
 	}
-}
-
-/**
- * An intermediate interface for scaffolding the new tree sitter tokenization support. Not final.
- * @internal
- */
-export interface ITreeSitterTokenizationSupport {
-	tokenizeEncoded(lineNumber: number, textModel: model.ITextModel): Uint32Array | undefined;
-	captureAtPosition(lineNumber: number, column: number, textModel: model.ITextModel): Parser.QueryCapture[];
-	captureAtPositionTree(lineNumber: number, column: number, tree: Parser.Tree): Parser.QueryCapture[];
-	onDidChangeTokens: Event<{ textModel: model.ITextModel; changes: IModelTokensChangedEvent }>;
 }
 
 /**
@@ -761,8 +748,6 @@ export interface InlineCompletion {
 	 * Defaults to `false`.
 	*/
 	readonly completeBracketPairs?: boolean;
-
-	readonly isInlineEdit?: boolean;
 }
 
 export interface InlineCompletions<TItem extends InlineCompletion = InlineCompletion> {
@@ -789,7 +774,7 @@ export interface InlineCompletionsProvider<T extends InlineCompletions = InlineC
 	 * @experimental
 	 * @internal
 	*/
-	provideInlineEditsForRange?(model: model.ITextModel, range: Range, context: InlineCompletionContext, token: CancellationToken): ProviderResult<T>;
+	provideInlineEdits?(model: model.ITextModel, range: Range, context: InlineCompletionContext, token: CancellationToken): ProviderResult<T>;
 
 	/**
 	 * Will be called when an item is shown.
@@ -1211,16 +1196,6 @@ export function isLocationLink(thing: any): thing is LocationLink {
 		&& Range.isIRange((thing as LocationLink).range)
 		&& (Range.isIRange((thing as LocationLink).originSelectionRange) || Range.isIRange((thing as LocationLink).targetSelectionRange));
 }
-
-/**
- * @internal
- */
-export function isLocation(thing: any): thing is Location {
-	return thing
-		&& URI.isUri((thing as Location).uri)
-		&& Range.isIRange((thing as Location).range);
-}
-
 
 export type Definition = Location | Location[] | LocationLink[];
 
@@ -1901,7 +1876,7 @@ export interface CommentThread<T = IRange> {
 	range: T | undefined;
 	label: string | undefined;
 	contextValue: string | undefined;
-	comments: ReadonlyArray<Comment> | undefined;
+	comments: Comment[] | undefined;
 	onDidChangeComments: Event<readonly Comment[] | undefined>;
 	collapsibleState?: CommentThreadCollapsibleState;
 	initialCollapsibleState?: CommentThreadCollapsibleState;
@@ -1911,6 +1886,7 @@ export interface CommentThread<T = IRange> {
 	canReply: boolean;
 	input?: CommentInput;
 	onDidChangeInput: Event<CommentInput | undefined>;
+	onDidChangeRange: Event<T | undefined>;
 	onDidChangeLabel: Event<string | undefined>;
 	onDidChangeCollapsibleState: Event<CommentThreadCollapsibleState | undefined>;
 	onDidChangeState: Event<CommentThreadState | undefined>;
@@ -2001,16 +1977,11 @@ export interface Comment {
 }
 
 export interface PendingCommentThread {
+	body: string;
 	range: IRange | undefined;
 	uri: URI;
 	uniqueOwner: string;
 	isReply: boolean;
-	comment: PendingComment;
-}
-
-export interface PendingComment {
-	body: string;
-	cursor: IPosition;
 }
 
 /**
@@ -2135,17 +2106,17 @@ export interface ITokenizationSupportChangedEvent {
 /**
  * @internal
  */
-export interface ILazyTokenizationSupport<TSupport> {
-	get tokenizationSupport(): Promise<TSupport | null>;
+export interface ILazyTokenizationSupport {
+	get tokenizationSupport(): Promise<ITokenizationSupport | null>;
 }
 
 /**
  * @internal
  */
-export class LazyTokenizationSupport<TSupport = ITokenizationSupport> implements IDisposable, ILazyTokenizationSupport<TSupport> {
-	private _tokenizationSupport: Promise<TSupport & IDisposable | null> | null = null;
+export class LazyTokenizationSupport implements IDisposable, ILazyTokenizationSupport {
+	private _tokenizationSupport: Promise<ITokenizationSupport & IDisposable | null> | null = null;
 
-	constructor(private readonly createSupport: () => Promise<TSupport & IDisposable | null>) {
+	constructor(private readonly createSupport: () => Promise<ITokenizationSupport & IDisposable | null>) {
 	}
 
 	dispose(): void {
@@ -2158,7 +2129,7 @@ export class LazyTokenizationSupport<TSupport = ITokenizationSupport> implements
 		}
 	}
 
-	get tokenizationSupport(): Promise<TSupport | null> {
+	get tokenizationSupport(): Promise<ITokenizationSupport | null> {
 		if (!this._tokenizationSupport) {
 			this._tokenizationSupport = this.createSupport();
 		}
@@ -2169,7 +2140,7 @@ export class LazyTokenizationSupport<TSupport = ITokenizationSupport> implements
 /**
  * @internal
  */
-export interface ITokenizationRegistry<TSupport> {
+export interface ITokenizationRegistry {
 
 	/**
 	 * An event triggered when:
@@ -2187,24 +2158,24 @@ export interface ITokenizationRegistry<TSupport> {
 	/**
 	 * Register a tokenization support.
 	 */
-	register(languageId: string, support: TSupport): IDisposable;
+	register(languageId: string, support: ITokenizationSupport): IDisposable;
 
 	/**
 	 * Register a tokenization support factory.
 	 */
-	registerFactory(languageId: string, factory: ILazyTokenizationSupport<TSupport>): IDisposable;
+	registerFactory(languageId: string, factory: ILazyTokenizationSupport): IDisposable;
 
 	/**
 	 * Get or create the tokenization support for a language.
 	 * Returns `null` if not found.
 	 */
-	getOrCreate(languageId: string): Promise<TSupport | null>;
+	getOrCreate(languageId: string): Promise<ITokenizationSupport | null>;
 
 	/**
 	 * Get the tokenization support for a language.
 	 * Returns `null` if not found.
 	 */
-	get(languageId: string): TSupport | null;
+	get(languageId: string): ITokenizationSupport | null;
 
 	/**
 	 * Returns false if a factory is still pending.
@@ -2224,12 +2195,8 @@ export interface ITokenizationRegistry<TSupport> {
 /**
  * @internal
  */
-export const TokenizationRegistry: ITokenizationRegistry<ITokenizationSupport> = new TokenizationRegistryImpl();
+export const TokenizationRegistry: ITokenizationRegistry = new TokenizationRegistryImpl();
 
-/**
- * @internal
- */
-export const TreeSitterTokenizationRegistry: ITokenizationRegistry<ITreeSitterTokenizationSupport> = new TokenizationRegistryImpl();
 
 /**
  * @internal
@@ -2285,28 +2252,7 @@ export interface DocumentContextItem {
 
 export interface MappedEditsContext {
 	/** The outer array is sorted by priority - from highest to lowest. The inner arrays contain elements of the same priority. */
-	readonly documents: DocumentContextItem[][];
-	/**
-	 * @internal
-	 */
-	readonly conversation?: (ConversationRequest | ConversationResponse)[];
-}
-
-/**
- * @internal
- */
-export interface ConversationRequest {
-	readonly type: 'request';
-	readonly message: string;
-}
-
-/**
- * @internal
- */
-export interface ConversationResponse {
-	readonly type: 'response';
-	readonly message: string;
-	readonly references?: DocumentContextItem[];
+	documents: DocumentContextItem[][];
 }
 
 export interface MappedEditsProvider {

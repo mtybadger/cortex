@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "doc"
+    },
+    {
+      "name": "pxmulticol"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

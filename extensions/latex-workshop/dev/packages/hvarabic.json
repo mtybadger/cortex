@@ -1,0 +1,71 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "RTLfootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "RTLfootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "textRTL",
+      "arg": {
+        "format": "{}",
+        "snippet": "textRTL{${1:text}}"
+      }
+    },
+    {
+      "name": "nLTR",
+      "arg": {
+        "format": "{}",
+        "snippet": "nLTR{${1:digits}}"
+      }
+    },
+    {
+      "name": "setLTRfootnoterule"
+    },
+    {
+      "name": "setRTLfootnoterule"
+    },
+    {
+      "name": "RTLfont"
+    },
+    {
+      "name": "hvALM"
+    },
+    {
+      "name": "setRTL"
+    },
+    {
+      "name": "setLTR"
+    },
+    {
+      "name": "LTRfootnoterule",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "RTL"
+    }
+  ],
+  "keys": {
+    "\\usepackage/hvarabic#c": [
+      "RTLfootnoterule"
+    ]
+  },
+  "args": [
+    "\\usepackage/hvarabic#c"
+  ]
+}

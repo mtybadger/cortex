@@ -76,10 +76,6 @@ function inferredProjectConfigSnippet(
 	config: TypeScriptServiceConfiguration
 ) {
 	const baseConfig = inferredProjectCompilerOptions(version, projectType, config);
-	if (projectType === ProjectType.TypeScript) {
-		delete baseConfig.allowImportingTsExtensions;
-	}
-
 	const compilerOptions = Object.keys(baseConfig).map(key => `"${key}": ${JSON.stringify(baseConfig[key])}`);
 	return new vscode.SnippetString(`{
 	"compilerOptions": {
@@ -153,7 +149,7 @@ export async function openProjectConfigForFile(
 	const rootPath = client.getWorkspaceRootForResource(resource);
 	if (!rootPath) {
 		vscode.window.showInformationMessage(
-			vscode.l10n.t("Please open a folder in VS Code to use a TypeScript or JavaScript project"));
+			vscode.l10n.t("Please open a folder in Cortex to use a TypeScript or JavaScript project"));
 		return;
 	}
 

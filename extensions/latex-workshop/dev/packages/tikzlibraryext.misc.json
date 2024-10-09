@@ -1,0 +1,97 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pgfmathstrrepeat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathstrrepeat{${1:\"text\"}}{${2:number}}"
+      }
+    },
+    {
+      "name": "pgfmathisInString",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathisInString{${1:\"string\"}}{${2:\"text\"}}"
+      }
+    },
+    {
+      "name": "pgfmathstrcat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathstrcat{${1:\"textA\"}}{${2:\"textB\"}}"
+      }
+    },
+    {
+      "name": "pgfmathisEmpty",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathisEmpty{${1:\"text\"}}"
+      }
+    },
+    {
+      "name": "pgfmathatanXY",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathatanXY{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathatanYX",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathatanYX{${1:y}}{${2:x}}"
+      }
+    },
+    {
+      "name": "pgfmathanglebetween",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathanglebetween{${1:\"p1\"}}{${2:\"p2\"}}"
+      }
+    },
+    {
+      "name": "pgfmathqanglebetween",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathqanglebetween{${1:\"p\"}}"
+      }
+    },
+    {
+      "name": "pgfmathdistancebetween",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathdistancebetween{${1:\"p1\"}}{${2:\"p2\"}}"
+      }
+    },
+    {
+      "name": "pgfmathqdistancebetween",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathqdistancebetween{${1:\"p\"}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "full arc",
+      "full arc=${1:number}"
+    ],
+    "\\foreach#c": [
+      "no separator",
+      "normal list"
+    ]
+  },
+  "args": []
+}

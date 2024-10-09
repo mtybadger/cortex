@@ -1,0 +1,70 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "EANsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "EANsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\usepackage/ean13isbn#c,\\EANsetup,\\EANisbn"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ISBN"
+    },
+    {
+      "name": "EANisbn"
+    },
+    {
+      "name": "EANisbn",
+      "arg": {
+        "format": "[]",
+        "snippet": "EANisbn[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ean13isbn#c,\\EANsetup,\\EANisbn": [
+      "ISBN=${1:ISBN}",
+      "SC0",
+      "SC0a",
+      "SC0b",
+      "SC1",
+      "SC1a",
+      "SC2",
+      "SC2a",
+      "SC3",
+      "SC3a",
+      "SC4",
+      "SC4a",
+      "SC5",
+      "SC5a",
+      "SC5b",
+      "SC5c",
+      "SC6",
+      "SC6a",
+      "SC7",
+      "SC7a",
+      "SC7b",
+      "SC7c",
+      "SC8",
+      "SC8a",
+      "SC8b",
+      "SC8c",
+      "SC9",
+      "SC10",
+      "help"
+    ]
+  },
+  "args": [
+    "\\usepackage/ean13isbn#c,\\EANsetup,\\EANisbn"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "letltxmacro"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Signature"
+    },
+    {
+      "name": "Signature",
+      "arg": {
+        "format": "[]",
+        "snippet": "Signature[${1:width}]"
+      }
+    },
+    {
+      "name": "signaturecity"
+    },
+    {
+      "name": "beforesigvspace",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

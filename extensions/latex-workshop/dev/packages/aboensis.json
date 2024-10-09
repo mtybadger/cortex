@@ -1,0 +1,611 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifFibonacciNumbers",
+      "unusual": true
+    },
+    {
+      "name": "FibonacciNumberstrue",
+      "unusual": true
+    },
+    {
+      "name": "FibonacciNumbersfalse",
+      "unusual": true
+    },
+    {
+      "name": "abtildes"
+    },
+    {
+      "name": "abrubricred"
+    },
+    {
+      "name": "abrubricgreen"
+    },
+    {
+      "name": "abrubricblue"
+    },
+    {
+      "name": "abotherrubricred"
+    },
+    {
+      "name": "abotherrubricgreen"
+    },
+    {
+      "name": "abotherrubricblue"
+    },
+    {
+      "name": "absetrubriccolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "absetrubriccolor{${1:color}}"
+      }
+    },
+    {
+      "name": "absetotherrubriccolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "absetotherrubriccolor{${1:color}}"
+      }
+    },
+    {
+      "name": "absettextcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "absettextcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "abrubric",
+      "arg": {
+        "format": "{}",
+        "snippet": "abrubric{${1:text}}"
+      }
+    },
+    {
+      "name": "abtorubric"
+    },
+    {
+      "name": "abotherrubric",
+      "arg": {
+        "format": "{}",
+        "snippet": "abotherrubric{${1:text}}"
+      }
+    },
+    {
+      "name": "abtootherrubric"
+    },
+    {
+      "name": "abtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "abtext{${1:text}}"
+      }
+    },
+    {
+      "name": "abcursivefamily"
+    },
+    {
+      "name": "aboensis",
+      "arg": {
+        "format": "{}",
+        "snippet": "aboensis{${1:text}}"
+      }
+    },
+    {
+      "name": "Aboensis",
+      "arg": {
+        "format": "{}",
+        "snippet": "Aboensis{${1:text}}"
+      }
+    },
+    {
+      "name": "absetcolormixpercentage",
+      "arg": {
+        "format": "{}",
+        "snippet": "absetcolormixpercentage{${1:percentage}}"
+      }
+    },
+    {
+      "name": "absetothercolormixpercentage",
+      "arg": {
+        "format": "{}",
+        "snippet": "absetothercolormixpercentage{${1:percentage}}"
+      }
+    },
+    {
+      "name": "abcapital",
+      "arg": {
+        "format": "{}",
+        "snippet": "abcapital{${1:letter}}"
+      }
+    },
+    {
+      "name": "abcapitalother",
+      "arg": {
+        "format": "{}",
+        "snippet": "abcapitalother{${1:letter}}"
+      }
+    },
+    {
+      "name": "abinitial",
+      "arg": {
+        "format": "{}",
+        "snippet": "abinitial{${1:letter}}"
+      }
+    },
+    {
+      "name": "abinitialother",
+      "arg": {
+        "format": "{}",
+        "snippet": "abinitialother{${1:letter}}"
+      }
+    },
+    {
+      "name": "abinitialtwo",
+      "arg": {
+        "format": "{}",
+        "snippet": "abinitialtwo{${1:letter}}"
+      }
+    },
+    {
+      "name": "abinitialothertwo",
+      "arg": {
+        "format": "{}",
+        "snippet": "abinitialothertwo{${1:letter}}"
+      }
+    },
+    {
+      "name": "abinitwpos",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "abinitwpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}"
+      }
+    },
+    {
+      "name": "abinitowpos",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "abinitowpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}"
+      }
+    },
+    {
+      "name": "abinittwowpos",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "abinittwowpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}"
+      }
+    },
+    {
+      "name": "abinitotwowpos",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "abinitotwowpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}"
+      }
+    },
+    {
+      "name": "abindent"
+    },
+    {
+      "name": "abcursiveinitial",
+      "arg": {
+        "format": "{}",
+        "snippet": "abcursiveinitial{${1:letter}}"
+      }
+    },
+    {
+      "name": "abcursiveinitialwithpos",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "abcursiveinitialwithpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}"
+      }
+    },
+    {
+      "name": "abstartchapter",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "abstartchapter{${1:letter}}{${2:line1%text}}{${3:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchaptertwo",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "abstartchaptertwo{${1:letter}}{${2:line1%text}}{${3:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchapterother",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "abstartchapterother{${1:letter}}{${2:line1%text}}{${3:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchapterothertwo",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "abstartchapterothertwo{${1:letter}}{${2:line1%text}}{${3:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchapterwithpos",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "abstartchapterwithpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}{${5:line1%text}}{${6:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchaptertwowithpos",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "abstartchaptertwowithpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}{${5:line1%text}}{${6:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchapterotherwithpos",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "abstartchapterotherwithpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}{${5:line1%text}}{${6:line2%text}}"
+      }
+    },
+    {
+      "name": "abstartchapterothertwowithpos",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "abstartchapterothertwowithpos{${1:letter}}{${2:scale}}{${3:xpos%l}}{${4:ypos%l}}{${5:line1%text}}{${6:line2%text}}"
+      }
+    },
+    {
+      "name": "ableftindex"
+    },
+    {
+      "name": "abrightindex"
+    },
+    {
+      "name": "abupindex"
+    },
+    {
+      "name": "abdownindex"
+    },
+    {
+      "name": "abl",
+      "arg": {
+        "format": "{}",
+        "snippet": "abl{${1:text}}"
+      }
+    },
+    {
+      "name": "abb",
+      "arg": {
+        "format": "{}",
+        "snippet": "abb{${1:text}}"
+      }
+    },
+    {
+      "name": "abpara"
+    },
+    {
+      "name": "abparaother"
+    },
+    {
+      "name": "ablibra"
+    },
+    {
+      "name": "abmark"
+    },
+    {
+      "name": "abmarc"
+    },
+    {
+      "name": "abmk"
+    },
+    {
+      "name": "absolidus"
+    },
+    {
+      "name": "abdenarius"
+    },
+    {
+      "name": "ablod"
+    },
+    {
+      "name": "abquintin"
+    },
+    {
+      "name": "abore"
+    },
+    {
+      "name": "abortug"
+    },
+    {
+      "name": "abpenning"
+    },
+    {
+      "name": "ablispund"
+    },
+    {
+      "name": "ablispundtwo"
+    },
+    {
+      "name": "ablispundthree"
+    },
+    {
+      "name": "ablispundfour"
+    },
+    {
+      "name": "abskeppund"
+    },
+    {
+      "name": "abskeppundtwo"
+    },
+    {
+      "name": "abbesmanspund"
+    },
+    {
+      "name": "abpund"
+    },
+    {
+      "name": "abpundtwo"
+    },
+    {
+      "name": "abpundthree"
+    },
+    {
+      "name": "abpundfour"
+    },
+    {
+      "name": "abskaalpund"
+    },
+    {
+      "name": "abmarkpund"
+    },
+    {
+      "name": "abmarkpundtwo"
+    },
+    {
+      "name": "abtunna"
+    },
+    {
+      "name": "abtunnor"
+    },
+    {
+      "name": "abspann"
+    },
+    {
+      "name": "abfjarding"
+    },
+    {
+      "name": "abfjardingtwo"
+    },
+    {
+      "name": "absattung"
+    },
+    {
+      "name": "abskappa"
+    },
+    {
+      "name": "abskole"
+    },
+    {
+      "name": "abkappa"
+    },
+    {
+      "name": "abkappatwo"
+    },
+    {
+      "name": "abthyn"
+    },
+    {
+      "name": "abkolmannes"
+    },
+    {
+      "name": "abkylmitta"
+    },
+    {
+      "name": "ablast"
+    },
+    {
+      "name": "abvakka"
+    },
+    {
+      "name": "abmodius"
+    },
+    {
+      "name": "absoll"
+    },
+    {
+      "name": "abkarpio"
+    },
+    {
+      "name": "abkarpiotwo"
+    },
+    {
+      "name": "abparmas"
+    },
+    {
+      "name": "abdragu"
+    },
+    {
+      "name": "abaam"
+    },
+    {
+      "name": "ablass"
+    },
+    {
+      "name": "absommarlass"
+    },
+    {
+      "name": "abvinterlass"
+    },
+    {
+      "name": "absommardragu"
+    },
+    {
+      "name": "abvinterdragu"
+    },
+    {
+      "name": "abfangh"
+    },
+    {
+      "name": "abkarve"
+    },
+    {
+      "name": "abambar"
+    },
+    {
+      "name": "abstop"
+    },
+    {
+      "name": "abkanna"
+    },
+    {
+      "name": "abkannatwo"
+    },
+    {
+      "name": "abotting"
+    },
+    {
+      "name": "abbaat"
+    },
+    {
+      "name": "abquarter"
+    },
+    {
+      "name": "abfat"
+    },
+    {
+      "name": "abstang"
+    },
+    {
+      "name": "abaln"
+    },
+    {
+      "name": "abhalvaln"
+    },
+    {
+      "name": "abfot"
+    },
+    {
+      "name": "abmil"
+    },
+    {
+      "name": "abrast"
+    },
+    {
+      "name": "abvika"
+    },
+    {
+      "name": "abvecka"
+    },
+    {
+      "name": "abfamn"
+    },
+    {
+      "name": "abtum"
+    },
+    {
+      "name": "abspannland"
+    },
+    {
+      "name": "abtunnland"
+    },
+    {
+      "name": "abpundland"
+    },
+    {
+      "name": "abpundlandtwo"
+    },
+    {
+      "name": "abmarksland"
+    },
+    {
+      "name": "abmarkslandtwo"
+    },
+    {
+      "name": "aboresland"
+    },
+    {
+      "name": "abortugsland"
+    },
+    {
+      "name": "abpenningsland"
+    },
+    {
+      "name": "abskattemark"
+    },
+    {
+      "name": "abhalvbol"
+    },
+    {
+      "name": "abbol"
+    },
+    {
+      "name": "abstycke"
+    },
+    {
+      "name": "abdacker"
+    },
+    {
+      "name": "abtimber"
+    },
+    {
+      "name": "abtimmer"
+    },
+    {
+      "name": "abothernum",
+      "arg": {
+        "format": "{}",
+        "snippet": "abothernum{${1:number}}"
+      }
+    },
+    {
+      "name": "abroman",
+      "arg": {
+        "format": "{}",
+        "snippet": "abroman{${1:number}}"
+      }
+    },
+    {
+      "name": "abthousand"
+    },
+    {
+      "name": "abhundred"
+    },
+    {
+      "name": "abromanother",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "abromanother{${1:thousands}}{${2:hundreds}}{${3:number}}"
+      }
+    },
+    {
+      "name": "abthird"
+    },
+    {
+      "name": "abfourth"
+    },
+    {
+      "name": "absixth"
+    },
+    {
+      "name": "abitem"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/aboensis#c": [
+      "Fibonacci"
+    ]
+  },
+  "args": [
+    "\\usepackage/aboensis#c"
+  ]
+}

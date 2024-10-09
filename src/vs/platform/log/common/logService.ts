@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable } from '../../../base/common/lifecycle.js';
-import { Event } from '../../../base/common/event.js';
-import { ILogger, ILogService, LogLevel, MultiplexLogger } from './log.js';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { Event } from 'vs/base/common/event';
+import { ILogger, ILogService, LogLevel, MultiplexLogger } from 'vs/platform/log/common/log';
 
 export class LogService extends Disposable implements ILogService {
 

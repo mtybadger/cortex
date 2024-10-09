@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { localize } from '../../../../nls.js';
-import { IJSONSchema } from '../../../../base/common/jsonSchema.js';
-import { EXTENSION_IDENTIFIER_PATTERN } from '../../../../platform/extensionManagement/common/extensionManagement.js';
+import { localize } from 'vs/nls';
+import { IJSONSchema } from 'vs/base/common/jsonSchema';
+import { EXTENSION_IDENTIFIER_PATTERN } from 'vs/platform/extensionManagement/common/extensionManagement';
 
 export const ExtensionsConfigurationSchemaId = 'vscode://schemas/extensions';
 export const ExtensionsConfigurationSchema: IJSONSchema = {
@@ -27,7 +27,7 @@ export const ExtensionsConfigurationSchema: IJSONSchema = {
 		},
 		unwantedRecommendations: {
 			type: 'array',
-			description: localize('app.extensions.json.unwantedRecommendations', "List of extensions recommended by VS Code that should not be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'."),
+			description: localize('app.extensions.json.unwantedRecommendations', "List of extensions recommended by Cortex that should not be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'."),
 			items: {
 				type: 'string',
 				pattern: EXTENSION_IDENTIFIER_PATTERN,
@@ -46,7 +46,7 @@ export const ExtensionsConfigurationInitialContent: string = [
 	'\t"recommendations": [',
 	'\t\t',
 	'\t],',
-	'\t// List of extensions recommended by VS Code that should not be recommended for users of this workspace.',
+	'\t// List of extensions recommended by Cortex that should not be recommended for users of this workspace.',
 	'\t"unwantedRecommendations": [',
 	'\t\t',
 	'\t]',

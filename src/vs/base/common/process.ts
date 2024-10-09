@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { INodeProcess, isMacintosh, isWindows } from './platform.js';
+import { INodeProcess, isMacintosh, isWindows } from 'vs/base/common/platform';
 
 let safeProcess: Omit<INodeProcess, 'arch'> & { arch: string | undefined };
 declare const process: INodeProcess;
@@ -21,7 +21,7 @@ if (typeof vscodeGlobal !== 'undefined' && typeof vscodeGlobal.process !== 'unde
 }
 
 // Native node.js environment
-else if (typeof process !== 'undefined' && typeof process?.versions?.node === 'string') {
+else if (typeof process !== 'undefined') {
 	safeProcess = {
 		get platform() { return process.platform; },
 		get arch() { return process.arch; },

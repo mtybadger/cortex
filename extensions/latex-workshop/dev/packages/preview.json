@@ -1,0 +1,131 @@
+{
+  "deps": [
+    {
+      "name": "luatex85"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PreviewBorder",
+      "if": "tightpage"
+    },
+    {
+      "name": "PreviewBbAdjust",
+      "if": "tightpage"
+    },
+    {
+      "name": "PreviewMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "PreviewMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "PreviewMacro",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PreviewMacro[${2:arg spec}]{${1:macro}}"
+      }
+    },
+    {
+      "name": "PreviewMacro*",
+      "arg": {
+        "format": "{}",
+        "snippet": "PreviewMacro*{${1:macro}}"
+      }
+    },
+    {
+      "name": "PreviewMacro*",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "PreviewMacro*[${2:arg spec}][${3:default}]{${1:macro}}"
+      }
+    },
+    {
+      "name": "PreviewEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "PreviewEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewEnvironment",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PreviewEnvironment[${2:arg spec}]{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewEnvironment*",
+      "arg": {
+        "format": "{}",
+        "snippet": "PreviewEnvironment*{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewEnvironment*",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "PreviewEnvironment*[${2:arg spec}][${3:default}]{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewSnarfEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "PreviewSnarfEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewSnarfEnvironment",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PreviewSnarfEnvironment[${2:arg spec}]{${1:envname}}"
+      }
+    },
+    {
+      "name": "PreviewOpen"
+    },
+    {
+      "name": "PreviewClose"
+    },
+    {
+      "name": "ifPreview"
+    }
+  ],
+  "envs": [
+    {
+      "name": "preview"
+    },
+    {
+      "name": "nopreview"
+    }
+  ],
+  "keys": {
+    "\\usepackage/preview#c": [
+      "active",
+      "noconfig",
+      "psfixbb",
+      "dvips",
+      "pdftex",
+      "xetex",
+      "displaymath",
+      "floats",
+      "textmath",
+      "graphics",
+      "sections",
+      "delayed",
+      "auctex",
+      "showlabels",
+      "tightpage",
+      "lyx",
+      "counters",
+      "footnotes",
+      "tracingall",
+      "showbox"
+    ]
+  },
+  "args": [
+    "\\usepackage/preview#c"
+  ]
+}

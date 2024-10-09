@@ -1,0 +1,87 @@
+{
+  "deps": [
+    {
+      "name": "iflang"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "newcomputermodern",
+      "if": "default"
+    },
+    {
+      "name": "newcomputermodern",
+      "if": "olddefault"
+    },
+    {
+      "name": "fourier-otf",
+      "if": "erewhon"
+    },
+    {
+      "name": "gfsneohellenicot",
+      "if": "gfsneohellenic"
+    },
+    {
+      "name": "libertinus-otf",
+      "if": "libertinus"
+    },
+    {
+      "name": "xcharter-otf",
+      "if": "xcharter"
+    }
+  ],
+  "macros": [
+    {
+      "name": "leftgrquotes",
+      "unusual": true
+    },
+    {
+      "name": "rightgrquotes",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fontsetup#c": [
+      "default",
+      "upint",
+      "varnothing",
+      "newcmbb",
+      "olddefault",
+      "cambria",
+      "concrete",
+      "ebgaramond",
+      "erewhon",
+      "euler",
+      "fira",
+      "gfsartemisia",
+      "gfsdidotclassic",
+      "gfsdidot",
+      "gfsneohellenic",
+      "kerkis",
+      "libertinus",
+      "lucida",
+      "minion",
+      "msgaramond",
+      "oldstandard",
+      "palatino",
+      "stixtwo",
+      "talos",
+      "times",
+      "xcharter"
+    ]
+  },
+  "args": [
+    "\\usepackage/fontsetup#c"
+  ]
+}

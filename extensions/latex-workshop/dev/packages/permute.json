@@ -1,0 +1,296 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmt{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmt[${2:print order}]{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmt*",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmt*{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmt*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmt*[${2:print order}]{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmtv",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtv{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmtv",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtv[${2:print order}]{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmtv*",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtv*{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmtv*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtv*[${2:print order}]{${1:permutation}}"
+      }
+    },
+    {
+      "name": "pmttable",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pmttable{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmttable",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pmttable[${3:print order}]{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmttable*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pmttable*{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmttable*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pmttable*[${3:print order}]{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmtvtable",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pmtvtable{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmtvtable",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pmtvtable[${3:print order}]{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmtvtable*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pmtvtable*{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmtvtable*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pmtvtable*[${3:print order}]{${1:list of pmts}}{${2:list of pmts}}"
+      }
+    },
+    {
+      "name": "pmtshorttrue",
+      "unusual": true
+    },
+    {
+      "name": "pmtshortfalse",
+      "unusual": true
+    },
+    {
+      "name": "pmtload",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtload{${1:name}}"
+      }
+    },
+    {
+      "name": "pmtsave",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtsave{${1:name}}"
+      }
+    },
+    {
+      "name": "pmtid",
+      "unusual": true
+    },
+    {
+      "name": "pmtid",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pmtid[${1:name}]"
+      }
+    },
+    {
+      "name": "pmtdo",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtdo{${1:permutation%formula}}"
+      }
+    },
+    {
+      "name": "pmtdo",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtdo[${2:name}]{${1:permutation%formula}}"
+      }
+    },
+    {
+      "name": "pmtcirc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtcirc{${1:permutation%formula}}"
+      }
+    },
+    {
+      "name": "pmtcirc",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtcirc[${2:name}]{${1:permutation%formula}}"
+      }
+    },
+    {
+      "name": "pmtprint",
+      "unusual": true
+    },
+    {
+      "name": "pmtprint*",
+      "unusual": true
+    },
+    {
+      "name": "pmtprint",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pmtprint[${1:print order}]"
+      }
+    },
+    {
+      "name": "pmtprint*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pmtprint*[${1:print order}]"
+      }
+    },
+    {
+      "name": "pmtvprint",
+      "unusual": true
+    },
+    {
+      "name": "pmtvprint*",
+      "unusual": true
+    },
+    {
+      "name": "pmtvprint",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pmtvprint[${1:print order}]"
+      }
+    },
+    {
+      "name": "pmtvprint*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pmtvprint*[${1:print order}]"
+      }
+    },
+    {
+      "name": "pmtimageof",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtimageof{${1:pre-image}}"
+      }
+    },
+    {
+      "name": "pmtimageof",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtimageof[${2:name}]{${1:pre-image}}"
+      }
+    },
+    {
+      "name": "pmtpreimageof",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pmtpreimageof{${1:image}}"
+      }
+    },
+    {
+      "name": "pmtpreimageof",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pmtpreimageof[${2:name}]{${1:image}}"
+      }
+    },
+    {
+      "name": "pmtprintorder",
+      "unusual": true
+    },
+    {
+      "name": "pmtseparator",
+      "unusual": true
+    },
+    {
+      "name": "pmtidname",
+      "unusual": true
+    },
+    {
+      "name": "pmtldelim",
+      "unusual": true
+    },
+    {
+      "name": "pmtrdelim",
+      "unusual": true
+    },
+    {
+      "name": "pmttableborders",
+      "unusual": true
+    },
+    {
+      "name": "pmtarraystretch",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,691 @@
+{
+  "deps": [
+    {
+      "name": "projlib-language"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "create-theorem"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DisableTheoremNumbering",
+      "arg": {
+        "format": "{}",
+        "snippet": "DisableTheoremNumbering{${1:envname}}"
+      }
+    },
+    {
+      "name": "SwitchTheoremNumbering",
+      "arg": {
+        "format": "{}",
+        "snippet": "SwitchTheoremNumbering{${1:envname}}"
+      }
+    },
+    {
+      "name": "theapplication",
+      "unusual": true
+    },
+    {
+      "name": "theassertion",
+      "unusual": true
+    },
+    {
+      "name": "theassumption",
+      "unusual": true
+    },
+    {
+      "name": "theaxiom",
+      "unusual": true
+    },
+    {
+      "name": "theclaim",
+      "unusual": true
+    },
+    {
+      "name": "theconclusion",
+      "unusual": true
+    },
+    {
+      "name": "theconjecture",
+      "unusual": true
+    },
+    {
+      "name": "theconstruction",
+      "unusual": true
+    },
+    {
+      "name": "theconvention",
+      "unusual": true
+    },
+    {
+      "name": "thecorollary",
+      "unusual": true
+    },
+    {
+      "name": "thedefinition",
+      "unusual": true
+    },
+    {
+      "name": "theexample",
+      "unusual": true
+    },
+    {
+      "name": "theexercise",
+      "unusual": true
+    },
+    {
+      "name": "thefact",
+      "unusual": true
+    },
+    {
+      "name": "thehypothesis",
+      "unusual": true
+    },
+    {
+      "name": "thelemma",
+      "unusual": true
+    },
+    {
+      "name": "thenotation",
+      "unusual": true
+    },
+    {
+      "name": "theobservation",
+      "unusual": true
+    },
+    {
+      "name": "thepostulate",
+      "unusual": true
+    },
+    {
+      "name": "theproblem",
+      "unusual": true
+    },
+    {
+      "name": "theproof",
+      "unusual": true
+    },
+    {
+      "name": "theproperty",
+      "unusual": true
+    },
+    {
+      "name": "theproposition",
+      "unusual": true
+    },
+    {
+      "name": "thequestion",
+      "unusual": true
+    },
+    {
+      "name": "therecall",
+      "unusual": true
+    },
+    {
+      "name": "theremark",
+      "unusual": true
+    },
+    {
+      "name": "thetheorem",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "application"
+    },
+    {
+      "name": "application",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "application*"
+    },
+    {
+      "name": "application*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assertion"
+    },
+    {
+      "name": "assertion",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assertion*"
+    },
+    {
+      "name": "assertion*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assumption"
+    },
+    {
+      "name": "assumption",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assumption*"
+    },
+    {
+      "name": "assumption*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "axiom*"
+    },
+    {
+      "name": "axiom*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "claim"
+    },
+    {
+      "name": "claim",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "claim*"
+    },
+    {
+      "name": "claim*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conclusion"
+    },
+    {
+      "name": "conclusion",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conclusion*"
+    },
+    {
+      "name": "conclusion*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture*"
+    },
+    {
+      "name": "conjecture*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "construction"
+    },
+    {
+      "name": "construction",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "construction*"
+    },
+    {
+      "name": "construction*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "convention"
+    },
+    {
+      "name": "convention",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "convention*"
+    },
+    {
+      "name": "convention*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary*"
+    },
+    {
+      "name": "corollary*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition*"
+    },
+    {
+      "name": "definition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example*"
+    },
+    {
+      "name": "example*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exercise*"
+    },
+    {
+      "name": "exercise*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "fact"
+    },
+    {
+      "name": "fact",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "fact*"
+    },
+    {
+      "name": "fact*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "hypothesis"
+    },
+    {
+      "name": "hypothesis",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "hypothesis*"
+    },
+    {
+      "name": "hypothesis*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma*"
+    },
+    {
+      "name": "lemma*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "notation"
+    },
+    {
+      "name": "notation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "notation*"
+    },
+    {
+      "name": "notation*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "observation"
+    },
+    {
+      "name": "observation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "observation*"
+    },
+    {
+      "name": "observation*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "postulate"
+    },
+    {
+      "name": "postulate",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "postulate*"
+    },
+    {
+      "name": "postulate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem*"
+    },
+    {
+      "name": "problem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "property"
+    },
+    {
+      "name": "property",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "property*"
+    },
+    {
+      "name": "property*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition*"
+    },
+    {
+      "name": "proposition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "question"
+    },
+    {
+      "name": "question",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "question*"
+    },
+    {
+      "name": "question*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "recall"
+    },
+    {
+      "name": "recall",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "recall*"
+    },
+    {
+      "name": "recall*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark*"
+    },
+    {
+      "name": "remark*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem*"
+    },
+    {
+      "name": "theorem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof*"
+    },
+    {
+      "name": "proof*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/projlib-theorem#c": [
+      "nothms",
+      "nothmnum",
+      "thmnum",
+      "thmnum=${1:counter}",
+      "theorem style=${1:style}",
+      "complex name",
+      "simple name",
+      "no preset names"
+    ]
+  },
+  "args": [
+    "\\usepackage/projlib-theorem#c"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "KalDate",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "KalDate{${1:year}}{${2:month}}{${3:day}}"
+      }
+    },
+    {
+      "name": "KalDate",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "KalDate[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}",
+        "keys": [
+          "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "KalDateStr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "KalDateStr{${1:format}}{${2:delimiter}}{${3:date string}}"
+      }
+    },
+    {
+      "name": "KalDateStr",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "KalDateStr[${4:options%keyvals}]{${1:format}}{${2:delimiter}}{${3:date string}}",
+        "keys": [
+          "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "KalToday"
+    },
+    {
+      "name": "KalToday",
+      "arg": {
+        "format": "[]",
+        "snippet": "KalToday[${1:options%keyvals}]",
+        "keys": [
+          "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "KalWeekday",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "KalWeekday{${1:year}}{${2:month}}{${3:day}}"
+      }
+    },
+    {
+      "name": "KalWeekday",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "KalWeekday[${4:options%keyvals}]{${1:year}}{${2:month}}{${3:day}}",
+        "keys": [
+          "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "KalAbbrFormat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KalAbbrFormat{${1:abbreviation}}"
+      }
+    },
+    {
+      "name": "KalDayFormat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KalDayFormat{${1:day}}"
+      }
+    },
+    {
+      "name": "KalYearFormat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KalYearFormat{${1:year}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday": [
+      "abbreviate",
+      "periods",
+      "era=${1|ad,adshort,auc,secular,none|}",
+      "julian",
+      "dayfmt=${1|roman,latin,arabic|}",
+      "yearfmt=${1|roman,arabic|}",
+      "antediem",
+      "bissextum",
+      "oldmonths"
+    ]
+  },
+  "args": [
+    "\\usepackage/kalendarium#c,\\KalDate,\\KalDateStr,\\KalToday,\\KalWeekday"
+  ]
+}

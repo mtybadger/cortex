@@ -1,0 +1,310 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "institution",
+      "arg": {
+        "format": "{}",
+        "snippet": "institution{${1:text}}"
+      }
+    },
+    {
+      "name": "Logo",
+      "arg": {
+        "format": "{}",
+        "snippet": "Logo{${1:logo text%text}}"
+      }
+    },
+    {
+      "name": "Logo",
+      "arg": {
+        "format": "(){}",
+        "snippet": "Logo(${2:x},${3:y}){${1:logo text%text}}"
+      }
+    },
+    {
+      "name": "overlays",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "overlays{${1:number}}{${2:slide environment%text}}"
+      }
+    },
+    {
+      "name": "fromSlide",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fromSlide{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "fromSlide*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fromSlide*{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "onlySlide",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "onlySlide{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "onlySlide*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "onlySlide*{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "untilSlide",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "untilSlide{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "untilSlide*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "untilSlide*{${1:slide number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "FromSlide",
+      "arg": {
+        "format": "{}",
+        "snippet": "FromSlide{${1:slide number}}"
+      }
+    },
+    {
+      "name": "OnlySlide",
+      "arg": {
+        "format": "{}",
+        "snippet": "OnlySlide{${1:slide number}}"
+      }
+    },
+    {
+      "name": "UntilSlide",
+      "arg": {
+        "format": "{}",
+        "snippet": "UntilSlide{${1:slide number}}"
+      }
+    },
+    {
+      "name": "slideCaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "slideCaption{${1:text}}"
+      }
+    },
+    {
+      "name": "fontTitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "fontTitle{${1:text}}"
+      }
+    },
+    {
+      "name": "fontText",
+      "arg": {
+        "format": "{}",
+        "snippet": "fontText{${1:text}}"
+      }
+    },
+    {
+      "name": "PDFtransition",
+      "arg": {
+        "format": "{}",
+        "snippet": "PDFtransition{${1:prosper transition%keyvals}}"
+      }
+    },
+    {
+      "name": "hiddenitem"
+    },
+    {
+      "name": "prosperpart",
+      "arg": {
+        "format": "{}",
+        "snippet": "prosperpart{${1:text}}"
+      }
+    },
+    {
+      "name": "prosperpart",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "prosperpart[${2:options%keyvals}]{${1:text}}"
+      }
+    },
+    {
+      "name": "tsection",
+      "arg": {
+        "format": "{}",
+        "snippet": "tsection{${1:title}}"
+      }
+    },
+    {
+      "name": "tsection*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tsection*{${1:title}}"
+      }
+    },
+    {
+      "name": "tsectionandpart",
+      "arg": {
+        "format": "{}",
+        "snippet": "tsectionandpart{${1:title}}"
+      }
+    },
+    {
+      "name": "tsectionandpart",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tsectionandpart[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "tsectionandpart*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tsectionandpart*{${1:title}}"
+      }
+    },
+    {
+      "name": "tsectionandpart*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tsectionandpart*[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "dualslide",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}{}{}",
+        "snippet": "dualslide[${4:x}][${5:y}][${6:z}]{${1:options%keyvals}}{${2:left column%text}}{${3:right column%text}}",
+        "keys": [
+          "\\dualslide"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "dualslide",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}{}{}",
+        "snippet": "dualslide[${4:y}][${5:z}]{${1:options%keyvals}}{${2:left column%text}}{${3:right column%text}}",
+        "keys": [
+          "\\dualslide"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "dualslide",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "dualslide[${4:z}]{${1:options%keyvals}}{${2:left column%text}}{${3:right column%text}}",
+        "keys": [
+          "\\dualslide"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "dualslide",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dualslide{${1:options%keyvals}}{${2:left column%text}}{${3:right column%text}}",
+        "keys": [
+          "\\dualslide"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PDForPS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PDForPS{${1:PostScript text}}{${2:PDF text}}"
+      }
+    },
+    {
+      "name": "onlyInPDF",
+      "arg": {
+        "format": "{}",
+        "snippet": "onlyInPDF{${1:PDF text}}"
+      }
+    },
+    {
+      "name": "onlyInPS",
+      "arg": {
+        "format": "{}",
+        "snippet": "onlyInPS{${1:PostScript text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "slide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:frame title%text}}"
+      }
+    },
+    {
+      "name": "slide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:frame title%text}}"
+      }
+    },
+    {
+      "name": "notes",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/beamerprosper#c": [
+      "framesassubsections"
+    ],
+    "\\begin{slides},\\prosperpart": [
+      "toc=${1:entry}",
+      "trans=${1|Glitter,R,Replace,Split,Blinds,Box,Wipe,Dissolve|}"
+    ],
+    "\\begin{slides},\\prosperpart,\\PDFtransition": [
+      "Glitter",
+      "R",
+      "Replace",
+      "Split",
+      "Blinds",
+      "Box",
+      "Wipe",
+      "Dissolve"
+    ],
+    "\\dualslide": [
+      "lcolwidth=",
+      "rcolwidth="
+    ]
+  },
+  "args": [
+    "\\usepackage/beamerprosper#c"
+  ]
+}

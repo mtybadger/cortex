@@ -1,0 +1,130 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ifcolorODEarrow"
+    },
+    {
+      "name": "colorODEarrowtrue"
+    },
+    {
+      "name": "colorODEarrowfalse"
+    },
+    {
+      "name": "ODEdefineequation",
+      "arg": {
+        "format": "{}",
+        "snippet": "ODEdefineequation{${1:f(${2:x},${3:y})}}"
+      }
+    },
+    {
+      "name": "trajectory",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "trajectory{${1:x0}}{${2:y0}}"
+      }
+    },
+    {
+      "name": "trajectoryRK",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "trajectoryRK{${1:x0}}{${2:y0}}"
+      }
+    },
+    {
+      "name": "trajectoryRKF",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "trajectoryRKF{${1:x0}}{${2:y0}}"
+      }
+    },
+    {
+      "name": "trajectories",
+      "arg": {
+        "format": "{}",
+        "snippet": "trajectories{${1:x1,y1;x2,y2;...}}"
+      }
+    },
+    {
+      "name": "ODEarrow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ODEarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ODEharrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "ODEharrow{${1:x}}"
+      }
+    },
+    {
+      "name": "ODEvarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "ODEvarrow{${1:x}}"
+      }
+    },
+    {
+      "name": "ODEarrows",
+      "arg": {
+        "format": "{}",
+        "snippet": "ODEarrows{${1:x1,y1;x2,y2;...}}"
+      }
+    },
+    {
+      "name": "ASdefineequations",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ASdefineequations{${1:f(${3:x},${4:y})}}{${2:g(${5:x},${6:y})}}"
+      }
+    },
+    {
+      "name": "AStrajectory",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AStrajectory{${1:x0}}{${2:y0}}"
+      }
+    },
+    {
+      "name": "AStrajectoryRKF",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AStrajectoryRKF{${1:x0}}{${2:y0}}"
+      }
+    },
+    {
+      "name": "AStrajectories",
+      "arg": {
+        "format": "{}",
+        "snippet": "AStrajectories{${1:x1,y1;x2,y2;...}}"
+      }
+    },
+    {
+      "name": "ASarrow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ASarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ASarrows",
+      "arg": {
+        "format": "{}",
+        "snippet": "ASarrows{${1:x1,y1;x2,y2;...}}"
+      }
+    },
+    {
+      "name": "ODEline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ODEline{${1:p0}}{${2:p1}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

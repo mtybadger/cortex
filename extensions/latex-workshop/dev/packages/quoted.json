@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "lquote"
+    },
+    {
+      "name": "rquote"
+    },
+    {
+      "name": "inquote"
+    },
+    {
+      "name": "quoted",
+      "arg": {
+        "format": "{}",
+        "snippet": "quoted{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/quoted#c": [
+      "american",
+      "british",
+      "german",
+      "polish"
+    ]
+  },
+  "args": [
+    "\\usepackage/quoted#c"
+  ]
+}

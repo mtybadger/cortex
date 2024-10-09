@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bezierplot",
+      "arg": {
+        "format": "{}",
+        "snippet": "bezierplot{${1:function%definition}}"
+      }
+    },
+    {
+      "name": "bezierplot",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "bezierplot[${2:xmin}][${3:xmax}]{${1:function%definition}}"
+      }
+    },
+    {
+      "name": "bezierplot",
+      "arg": {
+        "format": "[][][][]{}",
+        "snippet": "bezierplot[${2:xmin}][${3:xmax}][${4:ymin}][${5:ymax}]{${1:function%definition}}"
+      }
+    },
+    {
+      "name": "bezierplot",
+      "arg": {
+        "format": "[][][][][]{}",
+        "snippet": "bezierplot[${2:xmin}][${3:xmax}][${4:ymin}][${5:ymax}][${6:samples}]{${1:function%definition}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

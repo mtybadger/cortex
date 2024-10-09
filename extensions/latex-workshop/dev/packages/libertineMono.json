@@ -1,0 +1,39 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "libmono"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/libertineMono#c": [
+      "type1",
+      "nofontspec",
+      "ttscaled=${1:factor}",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/libertineMono#c"
+  ]
+}

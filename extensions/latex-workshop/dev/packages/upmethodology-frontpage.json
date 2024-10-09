@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "upmethodology-p-common"
+    },
+    {
+      "name": "upmethodology-extension"
+    },
+    {
+      "name": "upmethodology-document"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setfrontcover",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfrontcover{${1:layout name%keyvals}}",
+        "keys": [
+          "\\setfrontcover#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "makefrontcover"
+    },
+    {
+      "name": "setfrontillustration",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfrontillustration{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "setfrontillustration",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setfrontillustration[${2:scale}]{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "clearfrontillustration"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/upmethodology-frontpage#c": [
+      "french",
+      "francais",
+      "english"
+    ],
+    "\\setfrontcover#c": [
+      "classic",
+      "modern"
+    ]
+  },
+  "args": [
+    "\\usepackage/upmethodology-frontpage#c"
+  ]
+}

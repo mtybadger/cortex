@@ -1,0 +1,125 @@
+{
+  "deps": [
+    {
+      "name": "grruby"
+    }
+  ],
+  "macros": [
+    {
+      "name": "readhanja",
+      "arg": {
+        "format": "{}",
+        "snippet": "readhanja{${1:hanja}}"
+      }
+    },
+    {
+      "name": "readhanja",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "readhanja{${1:hanja}}[${2:number}]"
+      }
+    },
+    {
+      "name": "readhanjaword",
+      "arg": {
+        "format": "{}",
+        "snippet": "readhanjaword{${1:hanja}}"
+      }
+    },
+    {
+      "name": "rwhanja",
+      "arg": {
+        "format": "{}",
+        "snippet": "rwhanja{${1:hanja}}"
+      }
+    },
+    {
+      "name": "AssignReading",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AssignReading{${1:hanja}}{${2:reading}}"
+      }
+    },
+    {
+      "name": "rpSetReading",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rpSetReading{${1:hanja=reading}}"
+      }
+    },
+    {
+      "name": "grrwhanja",
+      "arg": {
+        "format": "{}",
+        "snippet": "grrwhanja{${1:hanja}}"
+      }
+    },
+    {
+      "name": "rwhanjachar",
+      "arg": {
+        "format": "{}",
+        "snippet": "rwhanjachar{${1:hanja}}"
+      }
+    },
+    {
+      "name": "rpRead",
+      "arg": {
+        "format": "{}",
+        "snippet": "rpRead{${1:options}}",
+        "keys": [
+          "\\rpRead#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rpRead",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "rpRead{${1:options}}[${2:hanja=reading}]",
+        "keys": [
+          "\\rpRead#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "viewCodePoint",
+      "arg": {
+        "format": "{}",
+        "snippet": "viewCodePoint{${1:unicode char}}"
+      }
+    },
+    {
+      "name": "viewCodePoint*",
+      "arg": {
+        "format": "{}",
+        "snippet": "viewCodePoint*{${1:unicode char}}"
+      }
+    },
+    {
+      "name": "showReadings",
+      "arg": {
+        "format": "{}",
+        "snippet": "showReadings{${1:hanja}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hnja2hngl#c": [
+      "grruby=false"
+    ],
+    "\\rpRead#c": [
+      "comma",
+      "para",
+      "at",
+      "period"
+    ]
+  },
+  "args": [
+    "\\usepackage/hnja2hngl#c"
+  ]
+}

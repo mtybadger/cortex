@@ -1,0 +1,85 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "TO"
+    },
+    {
+      "name": "EACH"
+    },
+    {
+      "name": "IN"
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "{}",
+        "snippet": "item{${1:condition}}"
+      }
+    },
+    {
+      "name": "DEFAULT"
+    },
+    {
+      "name": "CALL",
+      "arg": {
+        "format": "{}",
+        "snippet": "CALL{${1:function}}"
+      }
+    },
+    {
+      "name": "ERROR",
+      "arg": {
+        "format": "{}",
+        "snippet": "ERROR{${1:text}}"
+      }
+    },
+    {
+      "name": "algkey",
+      "arg": {
+        "format": "{}",
+        "snippet": "algkey{${1:text}}"
+      }
+    },
+    {
+      "name": "RETURN"
+    },
+    {
+      "name": "NIL"
+    }
+  ],
+  "envs": [
+    {
+      "name": "algorithm",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:title%text}}{${2:vars%formula}}"
+      }
+    },
+    {
+      "name": "IF",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:condition}}"
+      }
+    },
+    {
+      "name": "FOR",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:condition}}"
+      }
+    },
+    {
+      "name": "WHILE"
+    },
+    {
+      "name": "REPEAT"
+    },
+    {
+      "name": "SWITCH"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

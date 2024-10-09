@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bkcounttrue"
+    },
+    {
+      "name": "bkcountfalse"
+    },
+    {
+      "name": "breakboxskip",
+      "unusual": true
+    },
+    {
+      "name": "breakboxparindent",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "breakbox"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

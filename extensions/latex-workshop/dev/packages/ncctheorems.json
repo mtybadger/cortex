@@ -1,0 +1,317 @@
+{
+  "deps": [
+    {
+      "name": "nccdefaults"
+    }
+  ],
+  "macros": [
+    {
+      "name": "theoremname",
+      "unusual": true
+    },
+    {
+      "name": "lemmaname",
+      "unusual": true
+    },
+    {
+      "name": "propositionname",
+      "unusual": true
+    },
+    {
+      "name": "corollaryname",
+      "unusual": true
+    },
+    {
+      "name": "definitionname",
+      "unusual": true
+    },
+    {
+      "name": "statementname",
+      "unusual": true
+    },
+    {
+      "name": "examplename",
+      "unusual": true
+    },
+    {
+      "name": "remarkname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "statement"
+    },
+    {
+      "name": "statement",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "atheorem"
+    },
+    {
+      "name": "atheorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "alemma"
+    },
+    {
+      "name": "alemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "aproposition"
+    },
+    {
+      "name": "aproposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "acorollary"
+    },
+    {
+      "name": "acorollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "astatement"
+    },
+    {
+      "name": "astatement",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "adefinition"
+    },
+    {
+      "name": "adefinition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "anexample"
+    },
+    {
+      "name": "anexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "aremark"
+    },
+    {
+      "name": "aremark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Theorem",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Theorem",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Lemma",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Lemma",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Proposition",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Proposition",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Corollary",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Corollary",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Statement",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Statement",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Definition",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Definition",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Example",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Example",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Remark",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "Remark",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:number}}[${2:comment%text}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

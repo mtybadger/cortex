@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Event } from '../../../base/common/event.js';
-import { createDecorator } from '../../instantiation/common/instantiation.js';
+import { Event } from 'vs/base/common/event';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
 
 export const IExtensionHostStarter = createDecorator<IExtensionHostStarter>('extensionHostStarter');
 

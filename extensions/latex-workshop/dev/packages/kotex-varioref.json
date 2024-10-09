@@ -1,0 +1,49 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "varioref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "kotexvarioreftexts",
+      "arg": {
+        "format": "{}",
+        "snippet": "kotexvarioreftexts{${1:options%keyvals}}",
+        "keys": [
+          "\\usepackage/kotex-varioref#c,\\kotexvarioreftexts"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ifUI",
+      "unusual": true
+    },
+    {
+      "name": "UItrue"
+    },
+    {
+      "name": "UIfalse"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/kotex-varioref#c,\\kotexvarioreftexts": [
+      "pagename=${1:text}",
+      "aftertext=${1:text}",
+      "beforetext=${1:text}",
+      "currenttext=${1:text}",
+      "totext=${1:text}",
+      "footnotename=${1:text}",
+      "figurename=${1:text}",
+      "tablename=${1:text}"
+    ]
+  },
+  "args": [
+    "\\usepackage/kotex-varioref#c,\\kotexvarioreftexts"
+  ]
+}

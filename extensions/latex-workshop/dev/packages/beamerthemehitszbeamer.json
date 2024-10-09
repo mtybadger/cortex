@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgf"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "multimedia"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ctex"
+    },
+    {
+      "name": "natbib"
+    },
+    {
+      "name": "ctex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hitszbeamer",
+      "unusual": true
+    },
+    {
+      "name": "varparallel"
+    },
+    {
+      "name": "frameofframes",
+      "unusual": true
+    },
+    {
+      "name": "setframeofframes",
+      "arg": {
+        "format": "{}",
+        "snippet": "setframeofframes{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/hitszbeamer#c": [
+      "hitszred",
+      "hitszblue"
+    ]
+  },
+  "args": []
+}

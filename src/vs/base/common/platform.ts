@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../nls.js';
+import * as nls from 'vs/nls';
 
 export const LANGUAGE_DEFAULT = 'en';
 
@@ -103,7 +103,8 @@ else if (typeof navigator === 'object' && !isElectronRenderer) {
 	_isLinux = _userAgent.indexOf('Linux') >= 0;
 	_isMobile = _userAgent?.indexOf('Mobi') >= 0;
 	_isWeb = true;
-	_language = nls.getNLSLanguage() || LANGUAGE_DEFAULT;
+	// VSCODE_GLOBALS: NLS
+	_language = globalThis._VSCODE_NLS_LANGUAGE || LANGUAGE_DEFAULT;
 	_locale = navigator.language.toLowerCase();
 	_platformLocale = _locale;
 }

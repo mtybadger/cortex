@@ -1,0 +1,71 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "markversion",
+      "arg": {
+        "format": "{}",
+        "snippet": "markversion{${1:version%envname}}"
+      }
+    },
+    {
+      "name": "includeversion",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeversion{${1:version%envname}}"
+      }
+    },
+    {
+      "name": "excludeversion",
+      "arg": {
+        "format": "{}",
+        "snippet": "excludeversion{${1:version%envname}}"
+      }
+    },
+    {
+      "name": "processifversion",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "processifversion{${1:version}}{${2:code}}"
+      }
+    },
+    {
+      "name": "includeversionnogroup",
+      "if": "nogroup",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeversionnogroup{${1:version%envname}}"
+      }
+    },
+    {
+      "name": "versionmessage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "versionmessage{${1:version}}{${2:type%keyvals}}",
+        "keys": [
+          "\\versionmessage#c"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "comment"
+    }
+  ],
+  "keys": {
+    "\\usepackage/versions#c": [
+      "nogroup",
+      "tracing"
+    ],
+    "\\versionmessage#c": [
+      "excluded",
+      "included",
+      "included with marks"
+    ]
+  },
+  "args": [
+    "\\usepackage/versions#c"
+  ]
+}

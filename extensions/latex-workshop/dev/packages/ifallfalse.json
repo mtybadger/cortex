@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "orcheck",
+      "arg": {
+        "format": "{}",
+        "snippet": "orcheck{${1:setstring}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "allfalse",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:string}}{${2:true}}{${3:false}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

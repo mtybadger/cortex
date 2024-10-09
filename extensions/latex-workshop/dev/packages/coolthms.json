@@ -1,0 +1,119 @@
+{
+  "deps": [
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "scrbase"
+    },
+    {
+      "name": "letltxmacro"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xargs"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "ntheorem"
+    },
+    {
+      "name": "cleveref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "definetheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definetheorem{${1:envname}}{${2:thm name}}"
+      }
+    },
+    {
+      "name": "definetheorem",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}"
+      }
+    },
+    {
+      "name": "definetheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "definetheorem{${1:envname}}{${2:thm name}}[${3:counter within}]"
+      }
+    },
+    {
+      "name": "definetheorem",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "definetheorem[${3:numbered like}]{${1:envname}}{${2:thm name}}[${4:counter within}]"
+      }
+    },
+    {
+      "name": "definetheorem",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "definetheorem{${1:envname}}[${3:thm plural name}]{${2:thm name}}"
+      }
+    },
+    {
+      "name": "Label",
+      "arg": {
+        "format": "{}",
+        "snippet": "Label{${1:key}}"
+      }
+    },
+    {
+      "name": "theoremmarkup",
+      "arg": {
+        "format": "[][][][][][]",
+        "snippet": "theoremmarkup[${1:header font}][${2:body font}][${3:symbol}][${4:indent}][${5:separator}][${6:numbering}]"
+      }
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "theoremsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremsymbol{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "proof"
+    }
+  ],
+  "keys": {
+    "\\usepackage/coolthms#c": [
+      "proofname=${1:text}",
+      "proofsymbol=${1:symbol}",
+      "proofcaptionstyle=${1:font commands}",
+      "proofindent=",
+      "separator=${1:symbol}",
+      "indent=",
+      "minskip=",
+      "maxskip=",
+      "externalchapters"
+    ]
+  },
+  "args": [
+    "\\usepackage/coolthms#c"
+  ]
+}

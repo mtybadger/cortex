@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "float"
+    },
+    {
+      "name": "expkv-def"
+    },
+    {
+      "name": "expkv-opt"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "hyperxmp"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gfdlcopyrightdescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "gfdlcopyrightdescription{${1:project-description%text}}"
+      }
+    },
+    {
+      "name": "gfdlcopyrightableyears",
+      "arg": {
+        "format": "{}",
+        "snippet": "gfdlcopyrightableyears{${1:copyrightable-years}}"
+      }
+    },
+    {
+      "name": "gfdlcopyrightholders",
+      "arg": {
+        "format": "{}",
+        "snippet": "gfdlcopyrightholders{${1:copyright-holders}}"
+      }
+    },
+    {
+      "name": "printgfdlnotice"
+    },
+    {
+      "name": "printgfdltext"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gfdl#c": [
+      "manual"
+    ]
+  },
+  "args": [
+    "\\usepackage/gfdl#c"
+  ]
+}

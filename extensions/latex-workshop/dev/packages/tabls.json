@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tablinesep"
+    },
+    {
+      "name": "tablineskip",
+      "unusual": true
+    },
+    {
+      "name": "arraylinesep"
+    },
+    {
+      "name": "arraylineskip",
+      "unusual": true
+    },
+    {
+      "name": "extrarulesep"
+    },
+    {
+      "name": "hline",
+      "arg": {
+        "format": "[]",
+        "snippet": "hline[${1:extra%l}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

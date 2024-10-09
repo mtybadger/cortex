@@ -1,0 +1,46 @@
+<!-- media/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cortex Cite - Papers Search</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sticky-search">
+            <form id="search-form" hx-post="custom-search-endpoint" hx-trigger="submit" hx-target="#results" hx-swap="innerHTML">
+                <input type="text" name="query" id="query" placeholder='Search for papers (optionally, add title="", authors="", etc.)' required>
+
+                <!-- Sorting Button and Dropdown -->
+                <div class="sort-dropdown">
+                    <button type="button" id="sort-button" class="sort-button">
+                        <!-- Sorting Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="M2.354 7.354L4.998 4.71V16.5a.5.5 0 0 0 1 0V4.705l2.649 2.65a.5.5 0 0 0 .707-.708l-3.49-3.49l-.01-.01A.5.5 0 0 0 5.5 3h-.002a.5.5 0 0 0-.383.179L1.646 6.647a.5.5 0 1 0 .708.707m15.293 5.292l-2.644 2.644V3.5a.5.5 0 0 0-1 0v11.795l-2.65-2.65a.5.5 0 0 0-.707.708l3.49 3.49l.01.01a.5.5 0 0 0 .355.147h.002a.5.5 0 0 0 .383-.179l3.468-3.468a.5.5 0 1 0-.707-.707"/></svg>
+                    </button>
+                    <div id="sort-menu" class="sort-menu hidden">
+                        <button type="button" class="sort-option" data-sort="relevance">Relevance</button>
+                        <button type="button" class="sort-option" data-sort="issued">Date</button>
+                        <button type="button" class="sort-option" data-sort="is-referenced-by-count">Citations</button>
+                    </div>
+                </div>
+
+                <!-- Hidden input to store selected sort value -->
+                <input type="hidden" name="sort" id="sort" value="relevance">
+
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4.5 10a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0M10 3a7 7 0 1 0 4.391 12.452l5.329 5.328a.75.75 0 1 0 1.06-1.06l-5.328-5.329A7 7 0 0 0 10 3"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div id="results" class="results">
+            <!-- Search results will appear here -->
+        </div>
+    </div>
+    <script src="htmx.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

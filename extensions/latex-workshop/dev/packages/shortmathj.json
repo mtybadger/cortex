@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "shortifyAMSjournalname",
+      "arg": {
+        "format": "{}",
+        "snippet": "shortifyAMSjournalname{${1:journal}}"
+      }
+    },
+    {
+      "name": "shortifiedAMSjournalname",
+      "unusual": true
+    },
+    {
+      "name": "givenAMSjournalname",
+      "unusual": true
+    },
+    {
+      "name": "firstletter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

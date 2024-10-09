@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tabto",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabto{${1:length}}"
+      }
+    },
+    {
+      "name": "tabto*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabto*{${1:length}}"
+      }
+    },
+    {
+      "name": "CurrentLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "TabPrevPos",
+      "unusual": true
+    },
+    {
+      "name": "tab"
+    },
+    {
+      "name": "TabPositions",
+      "arg": {
+        "format": "{}",
+        "snippet": "TabPositions{${1:length1,length2,...}}"
+      }
+    },
+    {
+      "name": "NumTabs",
+      "arg": {
+        "format": "{}",
+        "snippet": "NumTabs{${1:number}}"
+      }
+    },
+    {
+      "name": "NextTabStop",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

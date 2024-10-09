@@ -1,0 +1,37 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "addxref",
+      "arg": {
+        "format": "{}",
+        "snippet": "addxref{${1:label}}"
+      }
+    },
+    {
+      "name": "crossreferences"
+    },
+    {
+      "name": "thexref",
+      "unusual": true
+    },
+    {
+      "name": "xreflabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xreflabel{${1:arg}}"
+      }
+    },
+    {
+      "name": "xref",
+      "arg": {
+        "format": "{}",
+        "snippet": "xref{${1:key}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

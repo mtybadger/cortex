@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryshapes.multipart"
+    },
+    {
+      "name": "makeshape"
+    },
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "defaulttriangleanchors",
+      "unusual": true
+    },
+    {
+      "name": "defaulttrianglelengths",
+      "unusual": true
+    },
+    {
+      "name": "opmInstance",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opmInstance{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "trianglepath",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\node#c": [
+      "opmobject",
+      "opmprocess",
+      "opmaggregation",
+      "opmexhibition",
+      "opmgeneralization",
+      "opminstantiation",
+      "opmstate"
+    ]
+  },
+  "args": []
+}

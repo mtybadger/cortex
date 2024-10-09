@@ -1,0 +1,49 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "inconsolatanffamily"
+    },
+    {
+      "name": "inconsolatanfmonofamily"
+    },
+    {
+      "name": "inconsolatanfpropofamily"
+    },
+    {
+      "name": "textinconsolatanf",
+      "arg": {
+        "format": "{}",
+        "snippet": "textinconsolatanf{${1:text}}"
+      }
+    },
+    {
+      "name": "textinconsolatanfmono",
+      "arg": {
+        "format": "{}",
+        "snippet": "textinconsolatanfmono{${1:text}}"
+      }
+    },
+    {
+      "name": "textinconsolatanfpropo",
+      "arg": {
+        "format": "{}",
+        "snippet": "textinconsolatanfpropo{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/inconsolata-nerd-font#c": [
+      "variant=${1|default,mono,propo|}",
+      "scale=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/inconsolata-nerd-font#c"
+  ]
+}

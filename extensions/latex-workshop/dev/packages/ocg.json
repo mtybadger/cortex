@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "ocg",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:name}}{${2:num}}{${3:on|off}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

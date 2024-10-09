@@ -1,0 +1,149 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "translations"
+    }
+  ],
+  "macros": [
+    {
+      "name": "footnote*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "footnote*[${2:number}]{${1:text}}"
+      }
+    },
+    {
+      "name": "footnote*",
+      "arg": {
+        "format": "{}",
+        "snippet": "footnote*{${1:text}}"
+      }
+    },
+    {
+      "name": "footnotemark*",
+      "unusual": true
+    },
+    {
+      "name": "footnotemark*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "footnotemark*[${1:number}]"
+      }
+    },
+    {
+      "name": "setfnpct",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfnpct{${1:options%keyvals}}",
+        "keys": [
+          "\\setfnpct"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "multfootsep",
+      "unusual": true
+    },
+    {
+      "name": "multfootrange",
+      "unusual": true
+    },
+    {
+      "name": "multfootnote",
+      "if": "multiple",
+      "arg": {
+        "format": "{}",
+        "snippet": "multfootnote{${1:fn1;fn2;...}}"
+      }
+    },
+    {
+      "name": "multfootnote*",
+      "if": "multiple",
+      "arg": {
+        "format": "{}",
+        "snippet": "multfootnote*{${1:fn1;fn2;...}}"
+      }
+    },
+    {
+      "name": "AdaptNote",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "AdaptNote{${1:cmd}}{${2:args}}{${3:code}}"
+      }
+    },
+    {
+      "name": "AdaptNote",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]{}",
+        "snippet": "AdaptNote{${1:cmd}}{${2:args}}[${4:counter}]{${3:code}}"
+      }
+    },
+    {
+      "name": "AdaptNoteName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "AdaptNoteName{${1:csname}}{${2:args}}{${3:code}}"
+      }
+    },
+    {
+      "name": "AdaptNoteName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]{}",
+        "snippet": "AdaptNoteName{${1:csname}}{${2:args}}[${4:counter}]{${3:code}}"
+      }
+    },
+    {
+      "name": "MultVariant",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MultVariant{${1:cmd}}"
+      }
+    },
+    {
+      "name": "MultVariantName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MultVariantName{${1:csname}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setfnpct": [
+      "dont-mess-around",
+      "reverse",
+      "unspace",
+      "ranges",
+      "add-trailing-token={${1:token}{${2:name}}}",
+      "add-trailing-token={[${1:before}]${2:token}[${3:after}]{${4:name}}}",
+      "activate-trailing-tokens={${1:tokenlist}}",
+      "deactivate-trailing-tokens={${1:tokenlist}}",
+      "before-footnote-space=",
+      "before-dot-space=",
+      "before-comma-space=",
+      "before-punct-space=",
+      "after-dot-space=",
+      "after-comma-space=",
+      "after-punct-space=",
+      "mult-variant-prefix={${1:letters}}",
+      "mult-fn-delim={${1:code}}",
+      "separation-symbol=${1:symbol}",
+      "range-symbol=${1:symbol}",
+      "print-separation={${1:code}}",
+      "print-range={${1:code}}",
+      "keep-ranges"
+    ]
+  },
+  "args": []
+}

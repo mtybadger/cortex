@@ -1,0 +1,443 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "eforms"
+    },
+    {
+      "name": "graphicxsp"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "fp",
+      "if": "use3D"
+    }
+  ],
+  "macros": [
+    {
+      "name": "AcroVer",
+      "arg": {
+        "format": "{}",
+        "snippet": "AcroVer{${1:version}}"
+      }
+    },
+    {
+      "name": "AcroVer",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "AcroVer[${2:option%keyvals}]{${1:version}}",
+        "keys": [
+          "\\AcroVer"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pathToSkins",
+      "arg": {
+        "format": "{}",
+        "snippet": "pathToSkins{${1:path%definition}}"
+      }
+    },
+    {
+      "name": "saveNamedPath",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "saveNamedPath{${1:name}}{${2:path%definition}}"
+      }
+    },
+    {
+      "name": "saveNamedPath",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "saveNamedPath[${3:mime type}]{${1:name}}{${2:path%definition}}"
+      }
+    },
+    {
+      "name": "defineRMPath",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defineRMPath{${1:cmd}}{${2:path%definition}}"
+      }
+    },
+    {
+      "name": "makePoster",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "makePoster{${1:name}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "makePoster",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "makePoster[${3:options%keyvals}]{${1:name}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "defaultPoster",
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultPoster{${1:code}}"
+      }
+    },
+    {
+      "name": "setPosterProps",
+      "arg": {
+        "format": "{}",
+        "snippet": "setPosterProps{${1:keyvals}}",
+        "keys": [
+          "\\setPosterProps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rmAnnot",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "rmAnnot{${1:width}}{${2:height}}{${3:name}}"
+      }
+    },
+    {
+      "name": "rmAnnot",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "rmAnnot[${4:options%keyvals}]{${1:width}}{${2:height}}{${3:name}}",
+        "keys": [
+          "\\rmAnnot"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cntrlbrWd",
+      "unusual": true
+    },
+    {
+      "name": "cntrlbrHt",
+      "unusual": true
+    },
+    {
+      "name": "setWindowDimPos",
+      "arg": {
+        "format": "{}",
+        "snippet": "setWindowDimPos{${1:keyvals}}",
+        "keys": [
+          "\\setWindowDimPos"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "resetWindowDimPos"
+    },
+    {
+      "name": "rmAnnot",
+      "if": "use3D",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "rmAnnot{${1:width}}{${2:height}}{${3:name}}{3Dmodel}"
+      }
+    },
+    {
+      "name": "rmAnnot",
+      "if": "use3D",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "rmAnnot[${4:options%keyvals}]{${1:width}}{${2:height}}{${3:name}}{3Dmodel}",
+        "keys": [
+          "\\rmAnnot"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setRmOptions3D",
+      "if": "use3D",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setRmOptions3D{${1:annot name}}{${2:options%keyvals}}",
+        "keys": [
+          "\\setRmOptions3D"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "AcrobatVer",
+      "unusual": true
+    },
+    {
+      "name": "appType",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "appType{${1:arg1}}"
+      }
+    },
+    {
+      "name": "audCtrlHt",
+      "unusual": true
+    },
+    {
+      "name": "audCtrlWd",
+      "unusual": true
+    },
+    {
+      "name": "FileStrmAudioPlayer",
+      "unusual": true
+    },
+    {
+      "name": "FileStrmVideoPlayer",
+      "unusual": true
+    },
+    {
+      "name": "getargsiii",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "getargsiii{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "ifuseWinAcrobat",
+      "unusual": true
+    },
+    {
+      "name": "ifVideoPlayerEx",
+      "unusual": true
+    },
+    {
+      "name": "mmGetMetaData",
+      "unusual": true
+    },
+    {
+      "name": "mmGetSource",
+      "unusual": true
+    },
+    {
+      "name": "mmGetVersion",
+      "unusual": true
+    },
+    {
+      "name": "mmGetVideoState",
+      "unusual": true
+    },
+    {
+      "name": "mmIsLooping",
+      "unusual": true
+    },
+    {
+      "name": "mmMute",
+      "unusual": true
+    },
+    {
+      "name": "mmNextCuePoint",
+      "unusual": true
+    },
+    {
+      "name": "mmPause",
+      "unusual": true
+    },
+    {
+      "name": "mmPlay",
+      "unusual": true
+    },
+    {
+      "name": "mmPrevCuePoint",
+      "unusual": true
+    },
+    {
+      "name": "mmRewind",
+      "unusual": true
+    },
+    {
+      "name": "mmSeek",
+      "unusual": true
+    },
+    {
+      "name": "mmSeekCuePoint",
+      "unusual": true
+    },
+    {
+      "name": "mmSetScaleMode",
+      "unusual": true
+    },
+    {
+      "name": "mmSetStageColor",
+      "unusual": true
+    },
+    {
+      "name": "mmShowLoopButton",
+      "unusual": true
+    },
+    {
+      "name": "mmSkin",
+      "unusual": true
+    },
+    {
+      "name": "mmSkinAlpha",
+      "unusual": true
+    },
+    {
+      "name": "mmSkinAutoHide",
+      "unusual": true
+    },
+    {
+      "name": "mmSkinColor",
+      "unusual": true
+    },
+    {
+      "name": "mmSource",
+      "unusual": true
+    },
+    {
+      "name": "mmUseLocal",
+      "unusual": true
+    },
+    {
+      "name": "mmVolume",
+      "unusual": true
+    },
+    {
+      "name": "Name",
+      "unusual": true
+    },
+    {
+      "name": "pathToPlayers",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pathToPlayers{${1:arg1}}"
+      }
+    },
+    {
+      "name": "PathToSkins",
+      "unusual": true
+    },
+    {
+      "name": "RefObjRm",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RefObjRm{${1:arg1}}"
+      }
+    },
+    {
+      "name": "rmaName",
+      "unusual": true
+    },
+    {
+      "name": "rmaNameP",
+      "unusual": true
+    },
+    {
+      "name": "rmaUrlName",
+      "unusual": true
+    },
+    {
+      "name": "rmaUrlNameP",
+      "unusual": true
+    },
+    {
+      "name": "rmDC",
+      "unusual": true
+    },
+    {
+      "name": "rmSkinPath",
+      "unusual": true
+    },
+    {
+      "name": "romanVer",
+      "unusual": true
+    },
+    {
+      "name": "urlName",
+      "unusual": true
+    },
+    {
+      "name": "useVideoPlayerPlus",
+      "unusual": true
+    },
+    {
+      "name": "useVideoPlayerX",
+      "unusual": true
+    },
+    {
+      "name": "useWinAcrobatfalse",
+      "unusual": true
+    },
+    {
+      "name": "useWinAcrobattrue",
+      "unusual": true
+    },
+    {
+      "name": "VideoPlayerExfalse",
+      "unusual": true
+    },
+    {
+      "name": "VideoPlayerExtrue",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/rmannot#c": [
+      "use3D"
+    ],
+    "\\AcroVer": [
+      "win=${1|32,64|}",
+      "mac"
+    ],
+    "\\setPosterProps": [
+      "color=${1:postscript color}",
+      "xPos=${1:number}",
+      "yPos=${1:number}",
+      "textColor=${1:postscript color}",
+      "relTextSize=${1:number}",
+      "textSize=${1:number}",
+      "textFont=${1:font name}"
+    ],
+    "\\rmAnnot": [
+      "name=${1:name}",
+      "enabled=${1|onclick,pageopen,pagevisible|}",
+      "deactivated=${1|onclick,pageclose,pageinvisible|}",
+      "windowed",
+      "url",
+      "borderwidth=${1|none,thin,medium,thick|}",
+      "poster=${1:name}",
+      "posternote=${1:text}",
+      "defaultposter",
+      "invisible",
+      "skin=${1|all,none|}",
+      "skinAutoHide",
+      "width=",
+      "height=",
+      "scale=${1:factor}",
+      "toolbar",
+      "modeltree"
+    ],
+    "\\setWindowDimPos": [
+      "width={${1:KV pairs}}",
+      "height={${1:KV pairs}}",
+      "position={${1:KV pairs}}"
+    ],
+    "\\setRmOptions3D": [
+      "3DOptions={${1:movie15 options}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/rmannot#c"
+  ]
+}

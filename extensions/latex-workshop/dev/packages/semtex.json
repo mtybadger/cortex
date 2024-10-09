@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "SemantexBullet"
+    },
+    {
+      "name": "SemantexDoubleBullet"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

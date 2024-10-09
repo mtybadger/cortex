@@ -1,0 +1,84 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sansmath"
+    },
+    {
+      "name": "unsansmath"
+    },
+    {
+      "name": "mathsfsl",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathsfsl{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathsfbf",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathsfbf{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "matheug",
+      "if": "eulergreek",
+      "arg": {
+        "format": "{}",
+        "snippet": "matheug{${1:arg}}"
+      }
+    },
+    {
+      "name": "matheug",
+      "if": "EULERGREEK",
+      "arg": {
+        "format": "{}",
+        "snippet": "matheug{${1:arg}}"
+      }
+    },
+    {
+      "name": "sansmathencoding",
+      "unusual": true
+    },
+    {
+      "name": "EulGreek",
+      "unusual": true
+    },
+    {
+      "name": "EuUCGreek",
+      "unusual": true
+    },
+    {
+      "name": "NonEulGreek",
+      "unusual": true
+    },
+    {
+      "name": "EulGreekList",
+      "unusual": true
+    },
+    {
+      "name": "NonEulGreek",
+      "unusual": true
+    },
+    {
+      "name": "sfMathSwitch",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "sansmath"
+    }
+  ],
+  "keys": {
+    "\\usepackage/sansmath#c": [
+      "T1",
+      "EULERGREEK",
+      "eulergreek"
+    ]
+  },
+  "args": [
+    "\\usepackage/sansmath#c"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setsecnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsecnum{${1:num format}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/secnum#c": [
+      "tocdep=${1:integer}",
+      "breaking=${1:token}"
+    ]
+  },
+  "args": [
+    "\\usepackage/secnum#c"
+  ]
+}

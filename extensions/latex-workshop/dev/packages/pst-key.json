@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psset",
+      "arg": {
+        "format": "{}",
+        "snippet": "psset{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "setkeys",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setkeys{${1:family}}{${2:keyvals}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

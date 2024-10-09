@@ -10,6 +10,7 @@ import * as path from 'path';
 import * as os from 'os';
 import * as minimist from 'minimist';
 import * as rimraf from 'rimraf';
+import * as mkdirp from 'mkdirp';
 import * as vscodetest from '@vscode/test-electron';
 import fetch from 'node-fetch';
 import { Quality, MultiLogger, Logger, ConsoleLogger, FileLogger, measureAndLog, getDevElectronPath, getBuildElectronPath, getBuildVersion } from '../../automation';
@@ -104,7 +105,7 @@ function createLogger(): Logger {
 
 	// Prepare logs rot path
 	fs.rmSync(logsRootPath, { recursive: true, force: true, maxRetries: 3 });
-	fs.mkdirSync(logsRootPath, { recursive: true });
+	mkdirp.sync(logsRootPath);
 
 	// Always log to log file
 	loggers.push(new FileLogger(path.join(logsRootPath, 'smoke-test-runner.log')));
@@ -122,7 +123,7 @@ const testDataPath = path.join(os.tmpdir(), 'vscsmoke');
 if (fs.existsSync(testDataPath)) {
 	rimraf.sync(testDataPath);
 }
-fs.mkdirSync(testDataPath, { recursive: true });
+mkdirp.sync(testDataPath);
 process.once('exit', () => {
 	try {
 		rimraf.sync(testDataPath);
@@ -134,7 +135,7 @@ process.once('exit', () => {
 const testRepoUrl = 'https://github.com/microsoft/vscode-smoketest-express';
 const workspacePath = path.join(testDataPath, 'vscode-smoketest-express');
 const extensionsPath = path.join(testDataPath, 'extensions-dir');
-fs.mkdirSync(extensionsPath, { recursive: true });
+mkdirp.sync(extensionsPath);
 
 function fail(errorMessage): void {
 	logger.log(errorMessage);
@@ -178,7 +179,7 @@ function parseQuality(): Quality {
 //
 if (!opts.web) {
 	let testCodePath = opts.build;
-	let electronPath: string | undefined;
+	let electronPath: string;
 
 	if (testCodePath) {
 		electronPath = getBuildElectronPath(testCodePath);
@@ -399,7 +400,7 @@ describe(`VSCode Smoke Tests (${opts.web ? 'Web' : 'Electron'})`, () => {
 	if (!opts.web) { setupDataLossTests(() => opts['stable-build'] /* Do not change, deferred for a reason! */, logger); }
 	setupPreferencesTests(logger);
 	setupSearchTests(logger);
-	if (!opts.web) { setupNotebookTests(logger); }
+	setupNotebookTests(logger);
 	setupLanguagesTests(logger);
 	setupTerminalTests(logger);
 	setupTaskTests(logger);

@@ -1,0 +1,168 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "asterisco"
+    },
+    {
+      "name": "Asterisk",
+      "unusual": true
+    },
+    {
+      "name": "Bar",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bar{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "barretta",
+      "arg": {
+        "format": "{}",
+        "snippet": "barretta{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "crocetta"
+    },
+    {
+      "name": "crucicula",
+      "unusual": true
+    },
+    {
+      "name": "Crux"
+    },
+    {
+      "name": "djois"
+    },
+    {
+      "name": "dubbio",
+      "arg": {
+        "format": "{}",
+        "snippet": "dubbio{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "dubious",
+      "arg": {
+        "format": "{}",
+        "snippet": "dubious{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "h"
+    },
+    {
+      "name": "horiakh"
+    },
+    {
+      "name": "iesus"
+    },
+    {
+      "name": "LatinEnc",
+      "unusual": true
+    },
+    {
+      "name": "Ov",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ov{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "Overline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Overline{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "pont",
+      "arg": {
+        "format": "{}",
+        "snippet": "pont{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "puntonero",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "puntonero{${1:number}}"
+      }
+    },
+    {
+      "name": "setcopto",
+      "unusual": true
+    },
+    {
+      "name": "sic",
+      "arg": {
+        "format": "{}",
+        "snippet": "sic{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "textcopte",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textcopte{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "textcoptic",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcoptic{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "textcopto",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textcopto{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "textlatin",
+      "arg": {
+        "format": "{}",
+        "snippet": "textlatin{${1:text}}"
+      }
+    },
+    {
+      "name": "threedots",
+      "unusual": true
+    },
+    {
+      "name": "trepun"
+    },
+    {
+      "name": "trepund"
+    },
+    {
+      "name": "xc"
+    },
+    {
+      "name": "xcr"
+    }
+  ],
+  "envs": [
+    {
+      "name": "coptic"
+    },
+    {
+      "name": "copte",
+      "unusual": true
+    },
+    {
+      "name": "copto",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,72 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "zexternaldocument",
+      "arg": {
+        "format": "{}",
+        "snippet": "zexternaldocument{${1:file}}"
+      }
+    },
+    {
+      "name": "zexternaldocument",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "zexternaldocument[${2:prefix}]{${1:file}}[${3:url}]"
+      }
+    },
+    {
+      "name": "zexternaldocument*",
+      "arg": {
+        "format": "{}",
+        "snippet": "zexternaldocument*{${1:file}}"
+      }
+    },
+    {
+      "name": "zexternaldocument*",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "zexternaldocument*[${2:prefix}]{${1:file}}[${3:url}]"
+      }
+    },
+    {
+      "name": "zxrsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "zxrsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\zxrsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\zxrsetup": [
+      "ext=${1:extension}",
+      "tozreflabel",
+      "urluse",
+      "verbose"
+    ],
+    "\\zref#c": [
+      "url",
+      "urluse",
+      "externaldocument",
+      "anchor",
+      "theotype",
+      "title"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "tcolorboxlibraryraster"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tcolorboxlibraryhooks"
+    },
+    {
+      "name": "tcolorboxlibrarytheorems"
+    },
+    {
+      "name": "tcolorboxlibraryfitting"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

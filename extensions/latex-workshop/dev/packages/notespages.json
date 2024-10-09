@@ -1,0 +1,168 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setnotespages",
+      "arg": {
+        "format": "{}",
+        "snippet": "setnotespages{${1:options%keyvals}}",
+        "keys": [
+          "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c",
+          "\\setnotespages,\\notespage,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c",
+          "\\setnotespages,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c",
+          "\\setnotespages,\\notesfill,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "notespage"
+    },
+    {
+      "name": "notespage",
+      "arg": {
+        "format": "[]",
+        "snippet": "notespage[${1:options%keyvals}]",
+        "keys": [
+          "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c",
+          "\\setnotespages,\\notespage,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "notespages"
+    },
+    {
+      "name": "notespages",
+      "arg": {
+        "format": "[]",
+        "snippet": "notespages[${1:options%keyvals}]",
+        "keys": [
+          "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c",
+          "\\setnotespages,\\notespage,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c",
+          "\\setnotespages,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "notesfill"
+    },
+    {
+      "name": "notesfill",
+      "arg": {
+        "format": "[]",
+        "snippet": "notesfill[${1:options%keyvals}]",
+        "keys": [
+          "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c",
+          "\\setnotespages,\\notesfill,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definenotesoption",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definenotesoption{${1:name}}{${2:options%keyvals}}"
+      }
+    },
+    {
+      "name": "definenotesstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definenotesstyle{${1:name}}{${2:commands}}"
+      }
+    },
+    {
+      "name": "remainingtextheight",
+      "unusual": true
+    },
+    {
+      "name": "notesareatext",
+      "unusual": true
+    },
+    {
+      "name": "definetitlestyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definetitlestyle{${1:name}}{${2:commands}}"
+      }
+    },
+    {
+      "name": "notestitletext",
+      "unusual": true
+    },
+    {
+      "name": "nppatchchapter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nppatchchapter{${1:options%keyvals}}"
+      }
+    },
+    {
+      "name": "npunpatchchapter",
+      "unusual": true
+    },
+    {
+      "name": "npnotesname",
+      "unusual": true
+    },
+    {
+      "name": "npnotestext",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c": [
+      "allowfloats",
+      "notesstyle=${1|plain,lines,vlines,grid,text|}",
+      "hparts=${1:integer}",
+      "vparts=${1:integer}",
+      "usenotesareaheight",
+      "titlestyle=${1|none,text,section,subsection,subsubsection,minisec|}",
+      "titletext={${1:text}}",
+      "titleskip=",
+      "titlenotesfill",
+      "notestext={${1:text}}",
+      "notestextalign=${1|right,left,center,none|}",
+      "empty",
+      "vacant",
+      "default"
+    ],
+    "\\setnotespages,\\notespage,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c": [
+      "startnotes=${1|newpage,clearpage|}",
+      "pagestyle=${1|empty,plain,headings,myheadings,current|}",
+      "mark=${1|both,right,left,keep|}",
+      "marktext={${1:text}}",
+      "markuppercase"
+    ],
+    "\\setnotespages,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c": [
+      "multiple=${1:integer}",
+      "minpages=${1:integer}",
+      "endpages=${1:integer}"
+    ],
+    "\\setnotespages,\\notesfill,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c": [
+      "fillminspace=",
+      "fillmaxspace=",
+      "filltopskip=",
+      "filltopfill"
+    ]
+  },
+  "args": [
+    "\\setnotespages,\\notespage,\\notespages,\\notesfill,\\usepackage/notespages#c",
+    "\\setnotespages,\\notespage,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c",
+    "\\setnotespages,\\notespages,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c",
+    "\\setnotespages,\\notesfill,\\definenotesoption,\\nppatchchapter,\\usepackage/notespages#c"
+  ]
+}

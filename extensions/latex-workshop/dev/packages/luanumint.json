@@ -1,0 +1,178 @@
+{
+  "deps": [
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "breqn"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "luaMidpt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaMidpt{${1:function}}"
+      }
+    },
+    {
+      "name": "luaMidpt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaMidpt[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaMidptSteps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaMidptSteps{${1:function}}"
+      }
+    },
+    {
+      "name": "luaMidptSteps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaMidptSteps[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaTrapz",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaTrapz{${1:function}}"
+      }
+    },
+    {
+      "name": "luaTrapz",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaTrapz[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaTrapzSteps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaTrapzSteps{${1:function}}"
+      }
+    },
+    {
+      "name": "luaTrapzSteps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaTrapzSteps[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaSimpsonOneThird",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaSimpsonOneThird{${1:function}}"
+      }
+    },
+    {
+      "name": "luaSimpsonOneThird",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaSimpsonOneThird[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaSimpsonOneThirdSteps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaSimpsonOneThirdSteps{${1:function}}"
+      }
+    },
+    {
+      "name": "luaSimpsonOneThirdSteps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaSimpsonOneThirdSteps[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaSimpsonThreeEighth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaSimpsonThreeEighth{${1:function}}"
+      }
+    },
+    {
+      "name": "luaSimpsonThreeEighth",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaSimpsonThreeEighth[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "luaSimpsonThreeEighthSteps",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luaSimpsonThreeEighthSteps{${1:function}}"
+      }
+    },
+    {
+      "name": "luaSimpsonThreeEighthSteps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luaSimpsonThreeEighthSteps[${2:options%keyvals}]{${1:function}}",
+        "keys": [
+          "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\luaMidpt,\\luaMidptSteps,\\luaTrapz,\\luaTrapzSteps,\\luaSimpsonOneThird,\\luaSimpsonOneThirdSteps,\\luaSimpsonThreeEighth,\\luaSimpsonThreeEighthSteps": [
+      "a=${1:number}",
+      "b=${1:number}",
+      "n=${1:integer}",
+      "func=${1:label}",
+      "trun=${1:integer}"
+    ]
+  },
+  "args": []
+}

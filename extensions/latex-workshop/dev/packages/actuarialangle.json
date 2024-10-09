@@ -1,0 +1,58 @@
+{
+  "deps": [
+    {
+      "name": "pict2e"
+    }
+  ],
+  "macros": [
+    {
+      "name": "actuarialangle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "actuarialangle{${1:arg}}"
+      }
+    },
+    {
+      "name": "angl",
+      "arg": {
+        "format": "{}",
+        "snippet": "angl{${1:arg}}"
+      }
+    },
+    {
+      "name": "angln"
+    },
+    {
+      "name": "anglr"
+    },
+    {
+      "name": "anglk"
+    },
+    {
+      "name": "overanglebracket",
+      "arg": {
+        "format": "{}",
+        "snippet": "overanglebracket{${1:arg}}"
+      }
+    },
+    {
+      "name": "group",
+      "arg": {
+        "format": "{}",
+        "snippet": "group{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/actuarialangle#c": [
+      "thinspace",
+      "thickspace",
+      "nobracket"
+    ]
+  },
+  "args": [
+    "\\usepackage/actuarialangle#c"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "deps": [
+    {
+      "name": "xtemplate"
+    },
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "fontawesome5"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "minted"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    }
+  ],
+  "macros": [
+    {
+      "name": "termfile",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "termfile{${1:title%text}}{${2:file}}"
+      }
+    },
+    {
+      "name": "termfile",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "termfile[${3:options%keyvals}]{${1:title%text}}{${2:file}}",
+        "keys": [
+          "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "termfile*",
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "termfile*[${3:options%keyvals}][${4:comments%text}]{${1:title%text}}{${2:file}}",
+        "keys": [
+          "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "termset",
+      "arg": {
+        "format": "{}",
+        "snippet": "termset{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "UbuntuMin",
+      "unusual": true
+    },
+    {
+      "name": "UbuntuClose",
+      "unusual": true
+    },
+    {
+      "name": "UbuntuMax",
+      "unusual": true
+    },
+    {
+      "name": "WindowsLogo",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "terminal",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    },
+    {
+      "name": "terminal",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title%text}}",
+        "keys": [
+          "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "terminal*",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:options%keyvals}][${3:comments%text}]{${1:title%text}}",
+        "keys": [
+          "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{terminal},\\begin{terminal*},\\termfile,\\termfile*,\\termset": [
+      "minted",
+      "os=${1|win10,mac,ubuntu|}",
+      "theme=${1|dark,light,white|}",
+      "shstyle=${1:style}",
+      "shsize=${1:font size command}",
+      "commentf=${1:format commands}",
+      "shstretch=${1:factor}"
+    ]
+  },
+  "args": []
+}

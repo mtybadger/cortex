@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "includetikzgraphics",
+      "arg": {
+        "format": "{}",
+        "snippet": "includetikzgraphics{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "includetikzgraphics",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includetikzgraphics[${2:name}]{${1:imagefile}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

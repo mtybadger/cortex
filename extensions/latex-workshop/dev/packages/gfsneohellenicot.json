@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "unicode-math"
+    }
+  ],
+  "macros": [
+    {
+      "name": "nrightrightarrows"
+    },
+    {
+      "name": "nleftleftarrows"
+    },
+    {
+      "name": "smallprod"
+    },
+    {
+      "name": "smallcoprod"
+    },
+    {
+      "name": "smallsum"
+    },
+    {
+      "name": "Bigint"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

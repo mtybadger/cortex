@@ -1,0 +1,50 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "punctstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "punctstyle{${1:style%keyvals}}",
+        "keys": [
+          "\\punctstyle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CJKpunctallowbreakbetweenpuncts"
+    },
+    {
+      "name": "CJKpunctnobreakbetweenpuncts"
+    },
+    {
+      "name": "CJKpunctsetkern",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CJKpunctsetkern{${1:标点1}}{${2:标点2}}{${3:间距}}"
+      }
+    },
+    {
+      "name": "CJKpunctmapfamily",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "CJKpunctmapfamily{${1:encoding}}{${2:family}}{${3:series}}{${4:shape}}{${5:punct family}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\punctstyle": [
+      "banjiao",
+      "quanjiao",
+      "kaiming",
+      "hangmobanjiao",
+      "CCT",
+      "plain"
+    ]
+  },
+  "args": []
+}

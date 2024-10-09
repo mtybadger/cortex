@@ -1,0 +1,64 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "currfileabsdir",
+      "unusual": true
+    },
+    {
+      "name": "currfileabspath",
+      "unusual": true
+    },
+    {
+      "name": "ifcurrfileabsdir",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifcurrfileabsdir{${1:text}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifcurrfileabspath",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifcurrfileabspath{${1:text}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "getpwd",
+      "unusual": true
+    },
+    {
+      "name": "thepwd",
+      "unusual": true
+    },
+    {
+      "name": "getmainfile",
+      "unusual": true
+    },
+    {
+      "name": "themainfile",
+      "unusual": true
+    },
+    {
+      "name": "getabspath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getabspath{${1:file}}"
+      }
+    },
+    {
+      "name": "theabspath",
+      "unusual": true
+    },
+    {
+      "name": "theabsdir",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

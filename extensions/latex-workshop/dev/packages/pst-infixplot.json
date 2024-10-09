@@ -1,0 +1,43 @@
+{
+  "deps": [
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "infix-RPN"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psPlot",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "psPlot{${1:x0}}{${2:x1}}{${3:infix expr}}"
+      }
+    },
+    {
+      "name": "psPlot",
+      "arg": {
+        "format": "[]{}{}{infi",
+        "snippet": "psPlot[${3:options%keyvals}]{${1:x0}}{${2:x1}}{infi"
+      }
+    },
+    {
+      "name": "parametricPlot",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "parametricPlot{${1:t0}}{${2:t1}}{${3:x(${5:t})}}{${4:y(${6:t})}}"
+      }
+    },
+    {
+      "name": "parametricPlot",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "parametricPlot[${5:options}]{${1:t0}}{${2:t1}}{${3:x(${6:t})}}{${4:y(${7:t})}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

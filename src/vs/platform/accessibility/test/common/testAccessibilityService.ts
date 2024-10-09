@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Event } from '../../../../base/common/event.js';
-import { IAccessibilityService, AccessibilitySupport } from '../../common/accessibility.js';
+import { Event } from 'vs/base/common/event';
+import { IAccessibilityService, AccessibilitySupport } from 'vs/platform/accessibility/common/accessibility';
 
 export class TestAccessibilityService implements IAccessibilityService {
 

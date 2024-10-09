@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "EURtm"
+    },
+    {
+      "name": "EURhv"
+    },
+    {
+      "name": "EURcr"
+    },
+    {
+      "name": "EUR"
+    },
+    {
+      "name": "EURofc"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

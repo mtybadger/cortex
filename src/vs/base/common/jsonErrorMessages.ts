@@ -6,8 +6,8 @@
 /**
  * Extracted from json.ts to keep json nls free.
  */
-import { localize } from '../../nls.js';
-import { ParseErrorCode } from './json.js';
+import { localize } from 'vs/nls';
+import { ParseErrorCode } from './json';
 
 export function getParseErrorMessage(errorCode: ParseErrorCode): string {
 	switch (errorCode) {

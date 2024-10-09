@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "thm-patch"
+    },
+    {
+      "name": "thm-kv"
+    },
+    {
+      "name": "thm-autoref"
+    },
+    {
+      "name": "thm-listof"
+    },
+    {
+      "name": "thm-restate"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/thmtools#c": [
+      "debug",
+      "lowercase",
+      "uppercase",
+      "anycase"
+    ]
+  },
+  "args": [
+    "\\usepackage/thmtools#c"
+  ]
+}

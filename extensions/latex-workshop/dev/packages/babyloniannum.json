@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "xunicode"
+    },
+    {
+      "name": "numname"
+    }
+  ],
+  "macros": [
+    {
+      "name": "babyloniannum",
+      "arg": {
+        "format": "{}",
+        "snippet": "babyloniannum{${1:number}}"
+      }
+    },
+    {
+      "name": "babylonian",
+      "arg": {
+        "format": "{}",
+        "snippet": "babylonian{${1:counter}}"
+      }
+    },
+    {
+      "name": "babylonianfont",
+      "unusual": true
+    },
+    {
+      "name": "unicodedisp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "unicodedisp{${1:unicode num}}"
+      }
+    },
+    {
+      "name": "babylonianglyph",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "babylonianglyph{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

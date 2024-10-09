@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "josefinthin"
+    },
+    {
+      "name": "josefinlight"
+    },
+    {
+      "name": "josefinextralight"
+    },
+    {
+      "name": "josefinmedium"
+    },
+    {
+      "name": "josefinsemibold"
+    },
+    {
+      "name": "josefinfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/josefin#c": [
+      "scaled=${1:factor}",
+      "type1",
+      "medium",
+      "mb",
+      "semibold",
+      "sb",
+      "light",
+      "l",
+      "extralight",
+      "thin",
+      "default",
+      "sfdefault"
+    ]
+  },
+  "args": [
+    "\\usepackage/josefin#c"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DoBraces"
+    },
+    {
+      "name": "DoBrackets"
+    },
+    {
+      "name": "DoGroups"
+    },
+    {
+      "name": "DoParens"
+    },
+    {
+      "name": "LCschema"
+    },
+    {
+      "name": "NudgeSB"
+    },
+    {
+      "name": "SBNudgeFactor",
+      "unusual": true
+    },
+    {
+      "name": "Schema",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "Schema[${5:type}]{${1:adjust%l}}{${2:size%l}}{${3:left}}{${4:right}}"
+      }
+    },
+    {
+      "name": "schema",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "schema[${3:type}]{${1:left}}{${2:right}}"
+      }
+    },
+    {
+      "name": "Schema",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "Schema{${1:adjust%l}}{${2:size%l}}{${3:left}}{${4:right}}"
+      }
+    },
+    {
+      "name": "schema",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "schema{${1:left}}{${2:right}}"
+      }
+    },
+    {
+      "name": "schemabox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "schemabox[${2:width}]{${1:text}}"
+      }
+    },
+    {
+      "name": "schemabox",
+      "arg": {
+        "format": "{}",
+        "snippet": "schemabox{${1:text}}"
+      }
+    },
+    {
+      "name": "schemataLaTeX",
+      "unusual": true
+    },
+    {
+      "name": "SwitchSB"
+    },
+    {
+      "name": "UCschema"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/schemata#c": [
+      "braces",
+      "brackets",
+      "parens",
+      "groups"
+    ]
+  },
+  "args": [
+    "\\usepackage/schemata#c"
+  ]
+}

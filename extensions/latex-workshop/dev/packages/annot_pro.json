@@ -1,0 +1,263 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "trig"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "aeb_mlink"
+    },
+    {
+      "name": "taborder"
+    },
+    {
+      "name": "richtext",
+      "if": "richtext"
+    },
+    {
+      "name": "richtext",
+      "if": "useTextBox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "annotpro",
+      "arg": {
+        "format": "{}",
+        "snippet": "annotpro{${1:content%text}}"
+      }
+    },
+    {
+      "name": "annotpro",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "annotpro[${2:options%keyvals}]{${1:content%text}}",
+        "keys": [
+          "\\annotpro,\\annotpro*,\\setAnnotOptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "annotpro*",
+      "arg": {
+        "format": "{}",
+        "snippet": "annotpro*{${1:content%text}}"
+      }
+    },
+    {
+      "name": "annotpro*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "annotpro*[${2:options%keyvals}]{${1:content%text}}",
+        "keys": [
+          "\\annotpro,\\annotpro*,\\setAnnotOptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setAnnotOptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "setAnnotOptions{${1:options%keyvals}}",
+        "keys": [
+          "\\annotpro,\\annotpro*,\\setAnnotOptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "margintextformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "margintextformat{${1:format cmds}}"
+      }
+    },
+    {
+      "name": "apmargintextformat",
+      "unusual": true
+    },
+    {
+      "name": "apContText",
+      "unusual": true
+    },
+    {
+      "name": "currentAnnotName",
+      "unusual": true
+    },
+    {
+      "name": "apmargintext",
+      "unusual": true
+    },
+    {
+      "name": "defaultStampHeight",
+      "unusual": true
+    },
+    {
+      "name": "defaultStampWidth",
+      "unusual": true
+    },
+    {
+      "name": "getargsiii",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "getargsiii{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "ifpreview",
+      "unusual": true
+    },
+    {
+      "name": "ifuseAAXdim",
+      "unusual": true
+    },
+    {
+      "name": "isrichtextkey",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "isrichtextkey{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+      }
+    },
+    {
+      "name": "isstrikeout",
+      "unusual": true
+    },
+    {
+      "name": "makeStamp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "makeStamp{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "mldblevel",
+      "unusual": true
+    },
+    {
+      "name": "mlignore",
+      "unusual": true
+    },
+    {
+      "name": "previewfalse",
+      "unusual": true
+    },
+    {
+      "name": "previewtrue",
+      "unusual": true
+    },
+    {
+      "name": "pStamp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pStamp{${1:arg1}}"
+      }
+    },
+    {
+      "name": "QuadPoints",
+      "unusual": true
+    },
+    {
+      "name": "stampHeight",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stampHeight{${1:arg1}}"
+      }
+    },
+    {
+      "name": "stampWidth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stampWidth{${1:arg1}}"
+      }
+    },
+    {
+      "name": "standardStampHeight",
+      "unusual": true
+    },
+    {
+      "name": "standardStampWidth",
+      "unusual": true
+    },
+    {
+      "name": "useAAXdimfalse",
+      "unusual": true
+    },
+    {
+      "name": "useAAXdimtrue",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "textboxpara"
+    }
+  ],
+  "keys": {
+    "\\usepackage/annot_pro#c": [
+      "preview",
+      "useA10Icons",
+      "!useA10Icons",
+      "richtext",
+      "scandoc",
+      "!scandoc",
+      "dblevel=${1:number}"
+    ],
+    "\\annotpro,\\annotpro*,\\setAnnotOptions": [
+      "type=${1|text,stamp,fileattachment,textbox,highlight,underline,squiggly,strikeout|}",
+      "name=${1:name}",
+      "title={${1:text}}",
+      "subject={${1:text}}",
+      "color=",
+      "readonly",
+      "hidden",
+      "opacity=${1:factor}",
+      "internalID=${1:name}",
+      "margin",
+      "margintext=${1:text}",
+      "margprior=${1:\\cmd}",
+      "presets=",
+      "open",
+      "nohspace",
+      "novspace",
+      "nospace",
+      "width=",
+      "height=",
+      "rotate=${1:degrees}",
+      "scale=${1:factor}",
+      "widthTo=",
+      "heightTo=",
+      "customStamp=",
+      "ap=",
+      "file=${1:file path}",
+      "bgcolor=",
+      "bcolor=",
+      "borderstyle=${1|none,solid,dash1,dash2,dash3,dash4,dash5,dash6,cloud1,cloud2|}",
+      "borderwidth=${1|.5,1,2,3,4,6,8,10|}",
+      "crackat=${1:number}",
+      "hyph",
+      "crackinsat=${1:LaTeX markup}",
+      "copycontent",
+      "objdef=",
+      "taborder="
+    ]
+  },
+  "args": [
+    "\\usepackage/annot_pro#c"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cooltooltip",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "cooltooltip{${1:subject%text}}{${2:message%text}}{${3:URL}}{${4:tooltip}}{${5:text}}"
+      }
+    },
+    {
+      "name": "cooltooltip",
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "cooltooltip[${6:popup color}]{${1:subject%text}}{${2:message%text}}{${3:URL}}{${4:tooltip}}{${5:text}}"
+      }
+    },
+    {
+      "name": "cooltooltip",
+      "arg": {
+        "format": "[][]{}{}{}{}{}",
+        "snippet": "cooltooltip[${6:popup color}][${7:link color}]{${1:subject%text}}{${2:message%text}}{${3:URL}}{${4:tooltip}}{${5:text}}"
+      }
+    },
+    {
+      "name": "cooltooltiptoggle",
+      "arg": {
+        "format": "{}",
+        "snippet": "cooltooltiptoggle{${1:text}}"
+      }
+    },
+    {
+      "name": "ifcoolpdf",
+      "unusual": true
+    },
+    {
+      "name": "coolpdftrue",
+      "unusual": true
+    },
+    {
+      "name": "coolpdffalse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

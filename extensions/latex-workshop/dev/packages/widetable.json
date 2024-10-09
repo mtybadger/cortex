@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "widetabular",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:width}}{${2:preamble}}"
+      }
+    },
+    {
+      "name": "widetabular",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "{${1:width}}[${3:alignment}]{${2:preamble}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

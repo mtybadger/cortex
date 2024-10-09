@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "lineno"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LNenv",
+      "unusual": true
+    },
+    {
+      "name": "addtodef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "addtodef{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "pwvbbl",
+      "unusual": true
+    },
+    {
+      "name": "barwidth",
+      "unusual": true
+    },
+    {
+      "name": "barspace",
+      "unusual": true
+    },
+    {
+      "name": "addtomakeLNL",
+      "unusual": true
+    },
+    {
+      "name": "pwvbLNL",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "vertbar"
+    }
+  ],
+  "keys": {
+    "\\usepackage/vertbars#c": [
+      "addpageno",
+      "mathrefs",
+      "edtable",
+      "longtable",
+      "nolongtablepatch",
+      "left",
+      "right",
+      "switch",
+      "switch*",
+      "columnwise",
+      "pagewise",
+      "running",
+      "modulo",
+      "modulo*",
+      "mathlines"
+    ]
+  },
+  "args": [
+    "\\usepackage/vertbars#c"
+  ]
+}

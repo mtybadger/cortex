@@ -1,0 +1,552 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Ydown"
+    },
+    {
+      "name": "Yleft"
+    },
+    {
+      "name": "Yright"
+    },
+    {
+      "name": "Yup",
+      "detail": "⅄ (\"stmaryrd\" command)",
+      "doc": "Turned sans-serif capital y"
+    },
+    {
+      "name": "baro"
+    },
+    {
+      "name": "bbslash"
+    },
+    {
+      "name": "binampersand"
+    },
+    {
+      "name": "bindnasrepma"
+    },
+    {
+      "name": "boxast",
+      "detail": "⧆ (\"stmaryrd txfonts\" command)",
+      "doc": "Squared asterisk"
+    },
+    {
+      "name": "boxbar",
+      "detail": "◫ (\"stmaryrd txfonts\" command)",
+      "doc": "Vertical bar in box"
+    },
+    {
+      "name": "boxbox",
+      "detail": "⧈ (\"stmaryrd\" command)",
+      "doc": "Squared square"
+    },
+    {
+      "name": "boxbslash",
+      "detail": "⧅ (\"stmaryrd txfonts\" command)",
+      "doc": "Squared falling diagonal slash"
+    },
+    {
+      "name": "boxcircle",
+      "detail": "⧇ (\"stmaryrd\" command)",
+      "doc": "Squared small circle"
+    },
+    {
+      "name": "boxdot",
+      "detail": "⊡ (\"amssymb stmaryrd\" command)",
+      "doc": "/dotsquare /boxdot b: small dot in box"
+    },
+    {
+      "name": "boxempty"
+    },
+    {
+      "name": "boxslash"
+    },
+    {
+      "name": "curlyveedownarrow"
+    },
+    {
+      "name": "curlyveeuparrow"
+    },
+    {
+      "name": "curlywedgedownarrow"
+    },
+    {
+      "name": "curlywedgeuparrow"
+    },
+    {
+      "name": "fatbslash"
+    },
+    {
+      "name": "fatsemi"
+    },
+    {
+      "name": "fatslash"
+    },
+    {
+      "name": "interleave",
+      "detail": "⫴ (\"stmaryrd\" command)",
+      "doc": "Triple vertical bar binary relation"
+    },
+    {
+      "name": "leftslice"
+    },
+    {
+      "name": "merge"
+    },
+    {
+      "name": "minuso"
+    },
+    {
+      "name": "moo"
+    },
+    {
+      "name": "nplus"
+    },
+    {
+      "name": "obar",
+      "detail": "⌽",
+      "doc": "\\aplvert{\\circle} (wasysym), \\obar (stmaryrd), apl functional symbol circle stile, circle with vertical bar"
+    },
+    {
+      "name": "oblong"
+    },
+    {
+      "name": "obslash",
+      "detail": "⦸ (\"txfonts\" command)",
+      "doc": "Circled reverse solidus"
+    },
+    {
+      "name": "ogreaterthan",
+      "detail": "⧁ (\"txfonts\" command)",
+      "doc": "Circled greater-than"
+    },
+    {
+      "name": "olessthan",
+      "detail": "⧀ (\"txfonts\" command)",
+      "doc": "Circled less-than"
+    },
+    {
+      "name": "ovee"
+    },
+    {
+      "name": "owedge"
+    },
+    {
+      "name": "rightslice"
+    },
+    {
+      "name": "sslash",
+      "detail": "⫽ (\"stmaryrd\" command)",
+      "doc": "\\varparallel (txfonts), double solidus operator"
+    },
+    {
+      "name": "talloblong",
+      "detail": "⫾ (\"stmaryrd\" command)",
+      "doc": "White vertical bar"
+    },
+    {
+      "name": "varbigcirc"
+    },
+    {
+      "name": "varcurlyvee"
+    },
+    {
+      "name": "varcurlywedge"
+    },
+    {
+      "name": "varoast"
+    },
+    {
+      "name": "varobar"
+    },
+    {
+      "name": "varobslash"
+    },
+    {
+      "name": "varocircle"
+    },
+    {
+      "name": "varodot"
+    },
+    {
+      "name": "varogreaterthan"
+    },
+    {
+      "name": "varolessthan"
+    },
+    {
+      "name": "varominus"
+    },
+    {
+      "name": "varoplus"
+    },
+    {
+      "name": "varoslash"
+    },
+    {
+      "name": "varotimes"
+    },
+    {
+      "name": "varovee"
+    },
+    {
+      "name": "varowedge"
+    },
+    {
+      "name": "vartimes"
+    },
+    {
+      "name": "oast"
+    },
+    {
+      "name": "ocircle"
+    },
+    {
+      "name": "bigbox"
+    },
+    {
+      "name": "bigcurlyvee"
+    },
+    {
+      "name": "bigcurlywedge"
+    },
+    {
+      "name": "biginterleave",
+      "detail": "⫼ (\"stmaryrd\" command)",
+      "doc": "Large triple vertical bar operator"
+    },
+    {
+      "name": "bignplus"
+    },
+    {
+      "name": "bigparallel"
+    },
+    {
+      "name": "bigsqcap",
+      "detail": "⨅ (\"txfonts\" command)",
+      "doc": "N-ary square intersection operator"
+    },
+    {
+      "name": "bigtriangledown",
+      "detail": "▽",
+      "doc": "Big down triangle, open"
+    },
+    {
+      "name": "bigtriangleup",
+      "detail": "△",
+      "doc": "\\triangle (amsfonts), \\vartriangle (amssymb), big up triangle, open"
+    },
+    {
+      "name": "inplus"
+    },
+    {
+      "name": "niplus"
+    },
+    {
+      "name": "ntrianglelefteqslant"
+    },
+    {
+      "name": "ntrianglerighteqslant"
+    },
+    {
+      "name": "subsetplus",
+      "detail": "⪿",
+      "doc": "Subset with plus sign below"
+    },
+    {
+      "name": "subsetpluseq"
+    },
+    {
+      "name": "supsetplus",
+      "detail": "⫀",
+      "doc": "Superset with plus sign below"
+    },
+    {
+      "name": "supsetpluseq"
+    },
+    {
+      "name": "trianglelefteqslant"
+    },
+    {
+      "name": "trianglerighteqslant"
+    },
+    {
+      "name": "Longmapsfrom",
+      "detail": "⟽ (\"stmaryrd\" command)",
+      "doc": "\\longmappedfrom (kpfonts), long leftwards double arrow from bar"
+    },
+    {
+      "name": "Longmapsto",
+      "detail": "⟾ (\"stmaryrd\" command)",
+      "doc": "Long rightwards double arrow from bar"
+    },
+    {
+      "name": "Mapsfrom",
+      "detail": "⤆ (\"stmaryrd\" command)",
+      "doc": "\\mappedfrom (kpfonts), leftwards double arrow from bar"
+    },
+    {
+      "name": "Mapsto",
+      "detail": "⤇ (\"stmaryrd\" command)",
+      "doc": "Rightwards double arrow from bar"
+    },
+    {
+      "name": "leftarrowtriangle",
+      "detail": "⇽ (\"stmaryrd\" command)",
+      "doc": "Leftwards open-headed arrow"
+    },
+    {
+      "name": "leftrightarroweq"
+    },
+    {
+      "name": "leftrightarrowtriangle",
+      "detail": "⇿ (\"stmaryrd\" command)",
+      "doc": "Left right open-headed arrow"
+    },
+    {
+      "name": "lightning"
+    },
+    {
+      "name": "longmapsfrom",
+      "detail": "⟻ (\"stmaryrd\" command)",
+      "doc": "\\longmappedfrom (kpfonts), long leftwards arrow from bar"
+    },
+    {
+      "name": "mapsfrom",
+      "detail": "↤ (\"stmaryrd\" command)",
+      "doc": "\\mappedfrom (kpfonts), maps to, leftward"
+    },
+    {
+      "name": "nnearrow"
+    },
+    {
+      "name": "nnwarrow"
+    },
+    {
+      "name": "rightarrowtriangle",
+      "detail": "⇾ (\"stmaryrd\" command)",
+      "doc": "Rightwards open-headed arrow"
+    },
+    {
+      "name": "rrparenthesis",
+      "detail": "⦈ (\"oz\" command)",
+      "doc": "\\rrparenthesis (stmaryrd), right image bracket"
+    },
+    {
+      "name": "shortdownarrow"
+    },
+    {
+      "name": "shortleftarrow"
+    },
+    {
+      "name": "shortrightarrow"
+    },
+    {
+      "name": "shortuparrow"
+    },
+    {
+      "name": "ssearrow"
+    },
+    {
+      "name": "sswarrow"
+    },
+    {
+      "name": "Lbag"
+    },
+    {
+      "name": "Rbag"
+    },
+    {
+      "name": "lbag",
+      "detail": "⟅ (\"stmaryrd txfonts\" command)",
+      "doc": "\\lbag (stmaryrd -oz), left s-shaped bag delimiter"
+    },
+    {
+      "name": "llbracket"
+    },
+    {
+      "name": "llceil"
+    },
+    {
+      "name": "llfloor"
+    },
+    {
+      "name": "llparenthesis",
+      "detail": "⦇ (\"oz\" command)",
+      "doc": "\\llparenthesis (stmaryrd), left image bracket"
+    },
+    {
+      "name": "rbag",
+      "detail": "⟆ (\"stmaryrd txfonts\" command)",
+      "doc": "\\rbag (stmaryrd -oz), right s-shaped bag delimiter"
+    },
+    {
+      "name": "rrbracket"
+    },
+    {
+      "name": "rrceil"
+    },
+    {
+      "name": "rrfloor"
+    },
+    {
+      "name": "Arrownot",
+      "unusual": true
+    },
+    {
+      "name": "Mapsfromchar",
+      "unusual": true
+    },
+    {
+      "name": "Mapstochar",
+      "unusual": true
+    },
+    {
+      "name": "arrownot",
+      "unusual": true
+    },
+    {
+      "name": "mapsfromchar",
+      "unusual": true
+    },
+    {
+      "name": "longarrownot",
+      "unusual": true
+    },
+    {
+      "name": "Longarrownot",
+      "unusual": true
+    },
+    {
+      "name": "varcopyright"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/stmaryrd#c": [
+      "only",
+      "heavycircles",
+      "Ydown",
+      "Yleft",
+      "Yright",
+      "Yup",
+      "baro",
+      "bbslash",
+      "binampersand",
+      "bindnasrepma",
+      "boxast",
+      "boxbar",
+      "boxbox",
+      "boxbslash",
+      "boxcircle",
+      "boxdot",
+      "boxempty",
+      "boxslash",
+      "curlyveedownarrow",
+      "curlyveeuparrow",
+      "curlywedgedownarrow",
+      "curlywedgeuparrow",
+      "fatbslash",
+      "fatsemi",
+      "fatslash",
+      "interleave",
+      "leftslice",
+      "merge",
+      "minuso",
+      "moo",
+      "nplus",
+      "obar",
+      "oblong",
+      "obslash",
+      "ogreaterthan",
+      "olessthan",
+      "ovee",
+      "owedge",
+      "rightslice",
+      "sslash",
+      "talloblong",
+      "varbigcirc",
+      "varcurlyvee",
+      "varcurlywedge",
+      "varoast",
+      "varobar",
+      "varobslash",
+      "varocircle",
+      "varodot",
+      "varogreaterthan",
+      "varolessthan",
+      "varominus",
+      "varoplus",
+      "varoslash",
+      "varotimes",
+      "varovee",
+      "varowedge",
+      "vartimes",
+      "oast",
+      "ocircle",
+      "bigbox",
+      "bigcurlyvee",
+      "bigcurlywedge",
+      "biginterleave",
+      "bignplus",
+      "bigparallel",
+      "bigsqcap",
+      "bigtriangledown",
+      "bigtriangleup",
+      "inplus",
+      "niplus",
+      "ntrianglelefteqslant",
+      "ntrianglerighteqslant",
+      "subsetplus",
+      "subsetpluseq",
+      "supsetplus",
+      "supsetpluseq",
+      "trianglelefteqslant",
+      "trianglerighteqslant",
+      "Longmapsfrom",
+      "Longmapsto",
+      "Mapsfrom",
+      "Mapsto",
+      "leftarrowtriangle",
+      "leftrightarroweq",
+      "leftrightarrowtriangle",
+      "lightning",
+      "longmapsfrom",
+      "mapsfrom",
+      "nnearrow",
+      "nnwarrow",
+      "rightarrowtriangle",
+      "rrparenthesis",
+      "shortdownarrow",
+      "shortleftarrow",
+      "shortrightarrow",
+      "shortuparrow",
+      "ssearrow",
+      "sswarrow",
+      "Lbag",
+      "Rbag",
+      "lbag",
+      "llbracket",
+      "llceil",
+      "llfloor",
+      "llparenthesis",
+      "rbag",
+      "rrbracket",
+      "rrceil",
+      "rrfloor",
+      "Arrownot",
+      "Mapsfromchar",
+      "Mapstochar",
+      "arrownot",
+      "mapsfromchar",
+      "varcopyright",
+      "longarrownot",
+      "Longarrownot"
+    ]
+  },
+  "args": [
+    "\\usepackage/stmaryrd#c"
+  ]
+}

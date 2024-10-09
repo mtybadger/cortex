@@ -1,0 +1,160 @@
+{
+  "deps": [
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "accsupp"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cnsr",
+      "arg": {
+        "format": "{}",
+        "snippet": "cnsr{${1:text}}"
+      }
+    },
+    {
+      "name": "ifcnsr",
+      "unusual": true
+    },
+    {
+      "name": "cnsrtrue"
+    },
+    {
+      "name": "cnsrfalse"
+    },
+    {
+      "name": "cnsrfnt",
+      "unusual": true
+    },
+    {
+      "name": "onething",
+      "unusual": true
+    },
+    {
+      "name": "twothings",
+      "unusual": true
+    },
+    {
+      "name": "donothing",
+      "unusual": true
+    },
+    {
+      "name": "voidenvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "voidenvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "hddn",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hddn{${1:text}}"
+      }
+    },
+    {
+      "name": "ifwarning",
+      "unusual": true
+    },
+    {
+      "name": "warningtrue",
+      "unusual": true
+    },
+    {
+      "name": "warningfalse",
+      "unusual": true
+    },
+    {
+      "name": "wrnstncl",
+      "unusual": true
+    },
+    {
+      "name": "warnword",
+      "unusual": true
+    },
+    {
+      "name": "danger",
+      "unusual": true,
+      "detail": "☡",
+      "doc": "Caution sign, dangerous bend"
+    },
+    {
+      "name": "warnformat",
+      "unusual": true
+    },
+    {
+      "name": "textwarn",
+      "unusual": true
+    },
+    {
+      "name": "textsafe",
+      "unusual": true
+    },
+    {
+      "name": "dquad",
+      "unusual": true
+    },
+    {
+      "name": "dangersign",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dangersign{${1:arg}}"
+      }
+    },
+    {
+      "name": "dangerblock",
+      "unusual": true
+    },
+    {
+      "name": "warnblock",
+      "unusual": true
+    },
+    {
+      "name": "tworules",
+      "unusual": true
+    },
+    {
+      "name": "allwarning",
+      "unusual": true
+    },
+    {
+      "name": "confwarning",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "hidden",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/luacensor#c": [
+      "warning"
+    ]
+  },
+  "args": [
+    "\\usepackage/luacensor#c"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "gishape"
+    },
+    {
+      "name": "gushape"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

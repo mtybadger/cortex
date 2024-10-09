@@ -3,14 +3,14 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { join } from '../../../base/common/path.js';
+import { join } from 'vs/base/common/path';
 import { tmpdir } from 'os';
-import { generateUuid } from '../../../base/common/uuid.js';
-import { IExtHostCommands } from '../common/extHostCommands.js';
-import { Disposable } from '../../../base/common/lifecycle.js';
-import { MainContext } from '../common/extHost.protocol.js';
-import { URI } from '../../../base/common/uri.js';
-import { IExtHostRpcService } from '../common/extHostRpcService.js';
+import { generateUuid } from 'vs/base/common/uuid';
+import { IExtHostCommands } from 'vs/workbench/api/common/extHostCommands';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { MainContext } from 'vs/workbench/api/common/extHost.protocol';
+import { URI } from 'vs/base/common/uri';
+import { IExtHostRpcService } from 'vs/workbench/api/common/extHostRpcService';
 
 export class ExtHostDownloadService extends Disposable {
 

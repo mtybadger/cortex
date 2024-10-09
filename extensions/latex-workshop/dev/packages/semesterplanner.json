@@ -1,0 +1,174 @@
+{
+  "deps": [
+    {
+      "name": "fontawesome"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "schedule"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "lecture",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "lecture{${1:course name}}{${2:lecturer}}{${3:room}}{${4:day%keyvals}}{${5:start-end}}{${6:priority}}",
+        "keys": [
+          "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "seminar",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "seminar{${1:course name}}{${2:lecturer}}{${3:room}}{${4:day%keyvals}}{${5:start-end}}{${6:priority}}",
+        "keys": [
+          "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "meeting",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "meeting{${1:course name}}{${2:lecturer}}{${3:room}}{${4:day%keyvals}}{${5:start-end}}{${6:priority}}",
+        "keys": [
+          "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "officehour",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "officehour{${1:course name}}{${2:lecturer}}{${3:room}}{${4:day%keyvals}}{${5:start-end}}{${6:priority}}",
+        "keys": [
+          "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "tutorial",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "tutorial{${1:course name}}{${2:lecturer}}{${3:room}}{${4:day%keyvals}}{${5:start-end}}{${6:priority}}",
+        "keys": [
+          "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "ttlegend",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ttlegend{${1:color}}{${2:description}}"
+      }
+    },
+    {
+      "name": "appointment",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "appointment{${1:date}}{${2:time}}{${3:course}}{${4:description}}{${5:room}}{${6:priority}}"
+      }
+    },
+    {
+      "name": "deadline",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "deadline{${1:date}}{${2:course}}{${3:description}}{${4:priority}}"
+      }
+    },
+    {
+      "name": "exam",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "exam{${1:date}}{${2:time}}{${3:course}}{${4:type}}"
+      }
+    },
+    {
+      "name": "pnone"
+    },
+    {
+      "name": "plow"
+    },
+    {
+      "name": "pmid"
+    },
+    {
+      "name": "phigh"
+    },
+    {
+      "name": "pmandatory"
+    },
+    {
+      "name": "teams"
+    },
+    {
+      "name": "zoom"
+    },
+    {
+      "name": "youtube"
+    },
+    {
+      "name": "written"
+    },
+    {
+      "name": "oral"
+    },
+    {
+      "name": "tba"
+    },
+    {
+      "name": "tbd"
+    }
+  ],
+  "envs": [
+    {
+      "name": "timetable"
+    },
+    {
+      "name": "legend"
+    },
+    {
+      "name": "appointments"
+    },
+    {
+      "name": "appointments",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:room-column title}]"
+      }
+    },
+    {
+      "name": "deadlines"
+    },
+    {
+      "name": "exams"
+    }
+  ],
+  "keys": {
+    "\\lecture,\\seminar,\\meeting,\\officehour,\\tutorial": [
+      "M",
+      "T",
+      "W",
+      "Th",
+      "F"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,535 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "opset",
+      "arg": {
+        "format": "{}",
+        "snippet": "opset{${1:options%keyvals}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opadd#c,\\opset#c",
+          "\\opmanyadd#c,\\opset#c",
+          "\\opsub#c,\\opset#c",
+          "\\opmul#c,\\opset#c",
+          "\\opdiv#c,\\opidiv#c,\\opset#c",
+          "\\opdiv*#c,\\opexpr#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opadd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opadd{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "opadd",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opadd[${3:options%keyvals}]{${1:num1}}{${2:num2}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opadd#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opsub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opsub{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "opsub",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opsub[${3:options%keyvals}]{${1:num1}}{${2:num2}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opsub#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opmul",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opmul{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "opmul",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opmul[${3:options%keyvals}]{${1:num1}}{${2:num2}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opmul#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opdiv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opdiv{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "opdiv",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opdiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opdiv#c,\\opidiv#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opidiv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opidiv{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "opidiv",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opidiv[${3:options%keyvals}]{${1:num1}}{${2:num2}}",
+        "keys": [
+          "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c",
+          "\\opdiv#c,\\opidiv#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opcolumnwidth",
+      "unusual": true
+    },
+    {
+      "name": "oplineheight",
+      "unusual": true
+    },
+    {
+      "name": "opadd*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opadd*{${1:num1}}{${2:num2}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opsub*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opsub*{${1:num1}}{${2:num2}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opmul*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opmul*{${1:num1}}{${2:num2}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opdiv*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "opdiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
+      }
+    },
+    {
+      "name": "opdiv*",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "opdiv*[${5:options%keyvals}]{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}",
+        "keys": [
+          "\\opdiv*#c,\\opexpr#c,\\opset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opidiv*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "opidiv*{${1:num1}}{${2:num2}}{${3:quotient var}}{${4:remainder var}}"
+      }
+    },
+    {
+      "name": "opcopy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opcopy{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "opprint{${1:arg}}"
+      }
+    },
+    {
+      "name": "opdisplay",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opdisplay{${1:style%keyvals}}{${2:number}}"
+      }
+    },
+    {
+      "name": "opdisplay",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opdisplay[${3:specs}]{${1:style}}{${2:number}}"
+      }
+    },
+    {
+      "name": "oplput",
+      "arg": {
+        "format": "(){}",
+        "snippet": "oplput(${2:x},${3:y}){${1:text}}"
+      }
+    },
+    {
+      "name": "oprput",
+      "arg": {
+        "format": "(){}",
+        "snippet": "oprput(${2:x},${3:y}){${1:text}}"
+      }
+    },
+    {
+      "name": "ophline",
+      "arg": {
+        "format": "(){}",
+        "snippet": "ophline(${2:x},${3:y}){${1:length}}"
+      }
+    },
+    {
+      "name": "opvline",
+      "arg": {
+        "format": "(){}",
+        "snippet": "opvline(${2:x},${3:y}){${1:length}}"
+      }
+    },
+    {
+      "name": "opexport",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opexport{${1:number}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "opwidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opwidth{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opintegerwidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opintegerwidth{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opdecimalwidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opdecimalwidth{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opunzero",
+      "arg": {
+        "format": "{}",
+        "snippet": "opunzero{${1:number}}"
+      }
+    },
+    {
+      "name": "opinteger",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opinteger{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opdecimal",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opdecimal{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opgetdigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opgetdigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opsetdigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opsetdigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opgetintegerdigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opgetintegerdigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opsetintegerdigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opsetintegerdigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opgetdecimaldigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opgetdecimaldigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opsetdecimaldigit",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opsetdecimaldigit{${1:number}}{${2:index}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opcmp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opcmp{${1:num1}}{${2:num2}}"
+      }
+    },
+    {
+      "name": "ifopgt"
+    },
+    {
+      "name": "ifopge"
+    },
+    {
+      "name": "ifople"
+    },
+    {
+      "name": "ifoplt"
+    },
+    {
+      "name": "ifopeq"
+    },
+    {
+      "name": "ifopneq"
+    },
+    {
+      "name": "opgcd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opgcd{${1:num1}}{${2:num2}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opdivperiod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opdivperiod{${1:num1}}{${2:num2}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opcastingoutnines",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opcastingoutnines{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opcastingoutelevens",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opcastingoutelevens{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "oppower",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "oppower{${1:number}}{${2:power}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opfloor",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opfloor{${1:number}}{${2:approx rank}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opceil",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opceil{${1:number}}{${2:approx rank}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opround",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "opround{${1:number}}{${2:approx rank}}{${3:variable}}"
+      }
+    },
+    {
+      "name": "opsqrt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opsqrt{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opsqrt",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opsqrt[${3:options%keyvals}]{${1:number}}{${2:variable}}",
+        "keys": [
+          "\\opsqrt#c,\\opgfsqrt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opgfsqrt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opgfsqrt{${1:number}}"
+      }
+    },
+    {
+      "name": "opgfsqrt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "opgfsqrt[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\opsqrt#c,\\opgfsqrt#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "opexpr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opexpr{${1:expression}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opexpr",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "opexpr[${3:options%keyvals}]{${1:expression}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opabs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opabs{${1:number}}{${2:variable}}"
+      }
+    },
+    {
+      "name": "opneg",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opneg{${1:number}}{${2:variable}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\opset#c,\\opadd#c,\\opmanyadd#c,\\opsub#c,\\opmul#c,\\opdiv#c,\\opidiv#c": [
+      "afterperiodsymbol=${1:symbol}",
+      "equalsymbol=${1:symbol}",
+      "approxsymbol=${1:symbol}",
+      "decimalsepsymbol=${1:symbol}",
+      "addsymbol=${1:symbol}",
+      "subsymbol=${1:symbol}",
+      "mulsymbol=${1:symbol}",
+      "divsymbol=${1:symbol}",
+      "voperation=${1|top,center,bottom|}",
+      "voperator=${1|top,center,bottom|}",
+      "deletezero",
+      "style=${1|display,text|}",
+      "parenthesisnegative=${1|none,all,last|}",
+      "lineheight=",
+      "columnwidth=",
+      "decimalsepwidth=",
+      "hrulewidth=",
+      "vrulewidth=",
+      "decimalsepoffset=",
+      "operandstyle=${1:style cmds}",
+      "operandstyle.${1:num}=${2:style cmds}",
+      "resultstyle=${1:style cmds}",
+      "resultstyle.${1:num}=${2:style cmds}",
+      "remainderstyle=${1:style cmds}",
+      "remainderstyle.${1:num}=${2:style cmds}",
+      "intermediarystyle=${1:style cmds}",
+      "intermediarystyle.${1:num}=${2:style cmds}",
+      "carrystyle=${1:style cmds}",
+      "carrystyle.${1:num}=${2:style cmds}"
+    ],
+    "\\opadd#c,\\opset#c": [
+      "carryadd",
+      "lastcarry"
+    ],
+    "\\opmanyadd#c,\\opset#c": [
+      "vmanyoperator=${1|top,center,bottom,Top,Center,Bottom|}"
+    ],
+    "\\opsub#c,\\opset#c": [
+      "carrysub",
+      "lastcarry",
+      "offsetcarry=",
+      "behaviorsub=${1|silent,warning,error|}"
+    ],
+    "\\opmul#c,\\opset#c": [
+      "displayshiftintermediary=${1|shift,all,none|}",
+      "shiftintermediarysymbol=",
+      "displayintermediary=${1|none,all,nonzero,None|}",
+      "hfactor=${1|right,decimal|}"
+    ],
+    "\\opdiv#c,\\opidiv#c,\\opset#c": [
+      "maxdivstep=${1:integer}",
+      "safedivstep=${1:integer}",
+      "period",
+      "vruleperiod=",
+      "displayintermediary=${1|none,all,nonzero,None|}",
+      "dividendbridge",
+      "shiftdecimalsep=${1|both,divisor,none|}",
+      "strikedecimalsepsymbol="
+    ],
+    "\\opdiv*#c,\\opexpr#c,\\opset#c": [
+      "maxdivstep=${1:integer}",
+      "safedivstep=${1:integer}",
+      "period"
+    ],
+    "\\opsqrt#c,\\opgfsqrt#c": [
+      "maxdivstep=${1:integer}"
+    ]
+  },
+  "args": []
+}

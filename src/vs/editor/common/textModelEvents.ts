@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IRange } from './core/range.js';
-import { Selection } from './core/selection.js';
-import { IModelDecoration, InjectedTextOptions } from './model.js';
+import { IRange } from 'vs/editor/common/core/range';
+import { Selection } from 'vs/editor/common/core/selection';
+import { IModelDecoration, InjectedTextOptions } from 'vs/editor/common/model';
 
 /**
  * An event describing that the current language associated with a model has changed.
@@ -55,9 +55,6 @@ export interface IModelContentChange {
  * An event describing a change in the text of a model.
  */
 export interface IModelContentChangedEvent {
-	/**
-	 * The changes are ordered from the end of the document to the beginning, so they should be safe to apply in sequence.
-	 */
 	readonly changes: IModelContentChange[];
 	/**
 	 * The (new) end-of-line character.

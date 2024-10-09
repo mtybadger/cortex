@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CharisSIL"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CharisSIL#c": [
+      "scaled=${1:factor}",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/CharisSIL#c"
+  ]
+}

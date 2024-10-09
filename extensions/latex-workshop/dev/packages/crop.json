@@ -1,0 +1,116 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "graphics"
+    }
+  ],
+  "macros": [
+    {
+      "name": "crop"
+    },
+    {
+      "name": "crop",
+      "arg": {
+        "format": "[]",
+        "snippet": "crop[${1:options%keyvals}]",
+        "keys": [
+          "\\crop,\\usepackage/crop#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cropdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "cropdef{${1:ul-macro}}{${2:ur-macro}}{${3:ll-macro}}{${4:lr-macro}}{${5:mode name}}"
+      }
+    },
+    {
+      "name": "cropdef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "cropdef[${6:page-info macro}]{${1:ul-macro}}{${2:ur-macro}}{${3:ll-macro}}{${4:lr-macro}}{${5:mode name}}"
+      }
+    },
+    {
+      "name": "stockwidth",
+      "unusual": true
+    },
+    {
+      "name": "stockheight",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/crop#c": [
+      "a0",
+      "a1",
+      "a2",
+      "a3",
+      "a4",
+      "a5",
+      "a6",
+      "b0",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "b6",
+      "letter",
+      "legal",
+      "executive",
+      "width=",
+      "height=",
+      "center",
+      "landscape",
+      "dvips",
+      "pdftex",
+      "pdflatex",
+      "luatex",
+      "lualatex",
+      "vtex",
+      "nodriver",
+      "mirror",
+      "rotate",
+      "invert",
+      "notext"
+    ],
+    "\\crop,\\usepackage/crop#c": [
+      "cam",
+      "cross",
+      "frame",
+      "off",
+      "odd",
+      "even",
+      "axes",
+      "noaxes",
+      "info",
+      "noinfo",
+      "font=${1:font csname}",
+      "color=",
+      "mount1",
+      "mount1=${1:integer}",
+      "mount2",
+      "mount2=${1:integer}",
+      "horigin=",
+      "vorigin=",
+      "graphics",
+      "nographics"
+    ]
+  },
+  "args": [
+    "\\usepackage/crop#c",
+    "\\crop,\\usepackage/crop#c"
+  ]
+}

@@ -9,8 +9,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../../base/test/common/utils.js';
-import { formatCellDuration } from '../../../browser/contrib/cellStatusBar/executionStatusBarItemController.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { formatCellDuration } from 'vs/workbench/contrib/notebook/browser/contrib/cellStatusBar/executionStatusBarItemController';
 
 suite('notebookBrowser', () => {
 	ensureNoDisposablesAreLeakedInTestSuite();

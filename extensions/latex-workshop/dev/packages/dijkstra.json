@@ -1,0 +1,115 @@
+{
+  "deps": [
+    {
+      "name": "simplekv"
+    }
+  ],
+  "macros": [
+    {
+      "name": "readgraph",
+      "arg": {
+        "format": "{}",
+        "snippet": "readgraph{${1:graph specs}}"
+      }
+    },
+    {
+      "name": "readgraph*",
+      "arg": {
+        "format": "{}",
+        "snippet": "readgraph*{${1:graph specs}}"
+      }
+    },
+    {
+      "name": "dijkstra",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dijkstra{${1:vertex1}}{${2:vertex2}}"
+      }
+    },
+    {
+      "name": "dijkstra",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dijkstra[${3:options%keyvals}]{${1:vertex1}}{${2:vertex2}}",
+        "keys": [
+          "\\dijkstra,\\setdijk,\\setdijkdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setdijk",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdijk{${1:options%keyvals}}",
+        "keys": [
+          "\\dijkstra,\\setdijk,\\setdijkdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setdijkdefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdijkdefault{${1:options%keyvals}}",
+        "keys": [
+          "\\dijkstra,\\setdijk,\\setdijkdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dijkdist"
+    },
+    {
+      "name": "dijkpath"
+    },
+    {
+      "name": "initdijk"
+    },
+    {
+      "name": "formatnodewithprev",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "formatnodewithprev{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "highlightfirstnode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "highlightfirstnode{${1:arg}}"
+      }
+    },
+    {
+      "name": "highlightnode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "highlightnode{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\dijkstra,\\setdijk,\\setdijkdefault": [
+      "show-tab",
+      "v-position=",
+      "pre-tab=${1:code}",
+      "post-tab=${1:code}",
+      "col-type=",
+      "infinity-code=${1:code}",
+      "norevisit-code=${1:code}",
+      "h-rules",
+      "show-lastcol",
+      "lastcol-type=",
+      "lastcol-label=",
+      "nopath-string=",
+      "path-sep="
+    ]
+  },
+  "args": []
+}

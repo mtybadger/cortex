@@ -1,0 +1,90 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "pgffor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "alert",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "alert{${1:overlay specification}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "visible",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "visible{${1:overlay specification}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "only",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "only{${1:overlay specification}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "savecounterbetweenoverlays",
+      "arg": {
+        "format": "{}",
+        "snippet": "savecounterbetweenoverlays{${1:counter}}"
+      }
+    },
+    {
+      "name": "saveseriesbetweenoverlays",
+      "arg": {
+        "format": "{}",
+        "snippet": "saveseriesbetweenoverlays{${1:series name}}"
+      }
+    },
+    {
+      "name": "overlaysoff"
+    },
+    {
+      "name": "alertsoff"
+    },
+    {
+      "name": "psalert",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "psalert{${1:overlay specification}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "psvisible",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "psvisible{${1:overlay specification}}{${2:content%text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "overlays",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    },
+    {
+      "name": "fragileoverlays",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

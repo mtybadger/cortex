@@ -1,0 +1,312 @@
+{
+  "deps": [
+    {
+      "name": "lcd"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tipa"
+    },
+    {
+      "name": "textgreek"
+    },
+    {
+      "name": "wasysym"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tiscreenX"
+    },
+    {
+      "name": "tiscreenY"
+    },
+    {
+      "name": "tibtn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tibtn{${1:bgcolor}}{${2:text}}"
+      }
+    },
+    {
+      "name": "tibtn",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "tibtn[${3:textcolor}]{${1:bgcolor}}{${2:text}}"
+      }
+    },
+    {
+      "name": "tibtnextra",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tibtnextra{${1:content%text}}{${2:text1%text}}{${3:text2%text}}"
+      }
+    },
+    {
+      "name": "tibtnalpha"
+    },
+    {
+      "name": "tibtnsecond"
+    },
+    {
+      "name": "tibtnenter"
+    },
+    {
+      "name": "tibtnextraalpha"
+    },
+    {
+      "name": "tibtnextrasecond"
+    },
+    {
+      "name": "tibtnextraenter"
+    },
+    {
+      "name": "tibtndiv"
+    },
+    {
+      "name": "tibtntimes"
+    },
+    {
+      "name": "tibtnminus"
+    },
+    {
+      "name": "tibtnplus"
+    },
+    {
+      "name": "tibtnextradiv"
+    },
+    {
+      "name": "tibtnextratimes"
+    },
+    {
+      "name": "tibtnextraminus"
+    },
+    {
+      "name": "tibtnextraplus"
+    },
+    {
+      "name": "tibtnzero"
+    },
+    {
+      "name": "tibtnone"
+    },
+    {
+      "name": "tibtntwo"
+    },
+    {
+      "name": "tibtnthree"
+    },
+    {
+      "name": "tibtnfour"
+    },
+    {
+      "name": "tibtnfive"
+    },
+    {
+      "name": "tibtnsix"
+    },
+    {
+      "name": "tibtnseven"
+    },
+    {
+      "name": "tibtneight"
+    },
+    {
+      "name": "tibtnnine"
+    },
+    {
+      "name": "tibtnextrazero"
+    },
+    {
+      "name": "tibtnextraone"
+    },
+    {
+      "name": "tibtnextratwo"
+    },
+    {
+      "name": "tibtnextrathree"
+    },
+    {
+      "name": "tibtnextrafour"
+    },
+    {
+      "name": "tibtnextrafive"
+    },
+    {
+      "name": "tibtnextrasix"
+    },
+    {
+      "name": "tibtnextraseven"
+    },
+    {
+      "name": "tibtnextraeight"
+    },
+    {
+      "name": "tibtnextranine"
+    },
+    {
+      "name": "tibtnmode"
+    },
+    {
+      "name": "tibtndel"
+    },
+    {
+      "name": "tibtnxton"
+    },
+    {
+      "name": "tibtnstat"
+    },
+    {
+      "name": "tibtnmath"
+    },
+    {
+      "name": "tibtnmatrix"
+    },
+    {
+      "name": "tibtnprgm"
+    },
+    {
+      "name": "tibtnvars"
+    },
+    {
+      "name": "tibtnclear"
+    },
+    {
+      "name": "tibtnxnone"
+    },
+    {
+      "name": "tibtnsin"
+    },
+    {
+      "name": "tibtncos"
+    },
+    {
+      "name": "tibtntan"
+    },
+    {
+      "name": "tibtnpower"
+    },
+    {
+      "name": "tibtnxtwo"
+    },
+    {
+      "name": "tibtncomma"
+    },
+    {
+      "name": "tibtnleftparen"
+    },
+    {
+      "name": "tibtnrightparen"
+    },
+    {
+      "name": "tibtnlog"
+    },
+    {
+      "name": "tibtnln"
+    },
+    {
+      "name": "tibtnsto"
+    },
+    {
+      "name": "tibtnon"
+    },
+    {
+      "name": "tibtndot"
+    },
+    {
+      "name": "tibtnneg"
+    },
+    {
+      "name": "tibtnextramode"
+    },
+    {
+      "name": "tibtnextradel"
+    },
+    {
+      "name": "tibtnextraxton"
+    },
+    {
+      "name": "tibtnextrastat"
+    },
+    {
+      "name": "tibtnextramath"
+    },
+    {
+      "name": "tibtnextramatrix"
+    },
+    {
+      "name": "tibtnextraprgm"
+    },
+    {
+      "name": "tibtnextravars"
+    },
+    {
+      "name": "tibtnextraclear"
+    },
+    {
+      "name": "tibtnextraxnone"
+    },
+    {
+      "name": "tibtnextrasin"
+    },
+    {
+      "name": "tibtnextracos"
+    },
+    {
+      "name": "tibtnextratan"
+    },
+    {
+      "name": "tibtnextrapower"
+    },
+    {
+      "name": "tibtnextraxtwo"
+    },
+    {
+      "name": "tibtnextracomma"
+    },
+    {
+      "name": "tibtnextraleftparen"
+    },
+    {
+      "name": "tibtnextrarightparen"
+    },
+    {
+      "name": "tibtnextralog"
+    },
+    {
+      "name": "tibtnextraln"
+    },
+    {
+      "name": "tibtnextrasto"
+    },
+    {
+      "name": "tibtnextraon"
+    },
+    {
+      "name": "tibtnextradot"
+    },
+    {
+      "name": "tibtnextraneg"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tiscreen#c": [
+      "color"
+    ]
+  },
+  "args": [
+    "\\usepackage/tiscreen#c"
+  ]
+}

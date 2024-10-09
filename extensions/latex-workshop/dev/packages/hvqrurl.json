@@ -1,0 +1,84 @@
+{
+  "deps": [
+    {
+      "name": "qrcode"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "marginnote"
+    },
+    {
+      "name": "url"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hvqrset",
+      "arg": {
+        "format": "{}",
+        "snippet": "hvqrset{${1:options%keyvals}}",
+        "keys": [
+          "\\hvqrset,\\hvqrurl,\\hvqrurl*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hvqrurl",
+      "arg": {
+        "format": "{}",
+        "snippet": "hvqrurl{${1:URL}}"
+      }
+    },
+    {
+      "name": "hvqrurl",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hvqrurl[${2:options%keyvals}]{${1:URL}}",
+        "keys": [
+          "\\hvqrset,\\hvqrurl,\\hvqrurl*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hvqrurl*",
+      "arg": {
+        "format": "{}",
+        "snippet": "hvqrurl*{${1:URL}}"
+      }
+    },
+    {
+      "name": "hvqrurl*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hvqrurl*[${2:options%keyvals}]{${1:URL}}",
+        "keys": [
+          "\\hvqrset,\\hvqrurl,\\hvqrurl*"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hvqrurl#c": [
+      "nohyperref",
+      "forget"
+    ],
+    "\\hvqrset,\\hvqrurl,\\hvqrurl*": [
+      "qrlink=${1|nolink,link|}",
+      "qrcolor=",
+      "qradjust=",
+      "qrheight=",
+      "qrlevel=${1|L,M,Q,H|}",
+      "qrreverse",
+      "linktext=${1:text}"
+    ]
+  },
+  "args": [
+    "\\usepackage/hvqrurl#c"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "deps": [
+    {
+      "name": "rcsinfo"
+    },
+    {
+      "name": "ltxtable"
+    },
+    {
+      "name": "svninfo",
+      "if": "svn"
+    },
+    {
+      "name": "svninfo",
+      "if": "subversion"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ProvideFileInfos",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProvideFileInfos{${1:id-string}}{${2:description%text}}"
+      }
+    },
+    {
+      "name": "mainFileToList"
+    },
+    {
+      "name": "printFileList"
+    },
+    {
+      "name": "printFileList",
+      "arg": {
+        "format": "[]",
+        "snippet": "printFileList[${1:section command}]"
+      }
+    },
+    {
+      "name": "fileListName",
+      "unusual": true
+    },
+    {
+      "name": "fileListPreamble",
+      "unusual": true
+    },
+    {
+      "name": "fileNameName",
+      "unusual": true
+    },
+    {
+      "name": "dateName",
+      "unusual": true
+    },
+    {
+      "name": "verName",
+      "unusual": true
+    },
+    {
+      "name": "descriptionName",
+      "unusual": true
+    },
+    {
+      "name": "pageName",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dateiliste#c": [
+      "addmain",
+      "noaddmain",
+      "cat12",
+      "nocat12",
+      "showpages",
+      "noshowpages",
+      "svn",
+      "subversion",
+      "cvs",
+      "rcs"
+    ]
+  },
+  "args": [
+    "\\usepackage/dateiliste#c"
+  ]
+}

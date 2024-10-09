@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Event } from '../../../../base/common/event.js';
-import { createDecorator } from '../../../../platform/instantiation/common/instantiation.js';
-import { IWindowOpenable, IOpenWindowOptions, IOpenEmptyWindowOptions, IPoint, IRectangle } from '../../../../platform/window/common/window.js';
+import { Event } from 'vs/base/common/event';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
+import { IWindowOpenable, IOpenWindowOptions, IOpenEmptyWindowOptions, IPoint, IRectangle } from 'vs/platform/window/common/window';
 
 export const IHostService = createDecorator<IHostService>('hostService');
 
@@ -122,4 +122,9 @@ export interface IHostService {
 
 	//#endregion
 
+	//#region File
+
+	getPathForFile(file: File): string | undefined;
+
+	//#endregion
 }

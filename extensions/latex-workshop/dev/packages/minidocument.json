@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "graphics"
+    }
+  ],
+  "macros": [
+    {
+      "name": "lastminidocument"
+    },
+    {
+      "name": "minidocumentscale"
+    },
+    {
+      "name": "minidocumentshipout",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "minidocument"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

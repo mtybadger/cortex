@@ -1,0 +1,43 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "infwarerr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ProtectedDef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProtectedDef{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "ProtectedDef",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ProtectedDef{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ProtectedDef*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProtectedDef*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "ProtectedDef*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ProtectedDef*{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

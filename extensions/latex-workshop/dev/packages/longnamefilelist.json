@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "myfilist"
+    }
+  ],
+  "macros": [
+    {
+      "name": "listfiles",
+      "arg": {
+        "format": "[]",
+        "snippet": "listfiles[${1:number}]"
+      }
+    },
+    {
+      "name": "MaxLengthEmptyList",
+      "arg": {
+        "format": "{}",
+        "snippet": "MaxLengthEmptyList{${1:⟨digit⟩⟨digit⟩}}"
+      }
+    },
+    {
+      "name": "MaxLengthEmptyList",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "MaxLengthEmptyList{${1:⟨digit⟩⟨digit⟩}}[${2:read-again-files}]"
+      }
+    },
+    {
+      "name": "SetLongNameFileListChars",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetLongNameFileListChars{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

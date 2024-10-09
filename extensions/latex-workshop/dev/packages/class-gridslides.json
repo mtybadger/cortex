@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "gridslides"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

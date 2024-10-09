@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "insdljs"
+    }
+  ],
+  "macros": [
+    {
+      "name": "certifyInvisibleSign"
+    },
+    {
+      "name": "chngDocObjectTo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "chngDocObjectTo{${1:command}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareJSHelper",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareJSHelper{${1:command}}{${2:JS cmd}}"
+      }
+    },
+    {
+      "name": "sigInfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "sigInfo{${1:signature specs%definition}}"
+      }
+    },
+    {
+      "name": "signatureSign"
+    },
+    {
+      "name": "theDocObject",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "docassembly"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pdfsync"
+    },
+    {
+      "name": "pdfsyncstart"
+    },
+    {
+      "name": "pdfsyncstop"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pdfsync#c": [
+      "nopar",
+      "nomath",
+      "nodisplay",
+      "nohbox",
+      "novbox",
+      "nocr",
+      "off"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfsync#c"
+  ]
+}

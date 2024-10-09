@@ -1,0 +1,174 @@
+{
+  "deps": [
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "scrlayer-scrpage"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "zb-basics"
+    }
+  ],
+  "macros": [
+    {
+      "name": "makefooter"
+    },
+    {
+      "name": "blue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "blue{${1:text}}"
+      }
+    },
+    {
+      "name": "helper",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "helper{${1:text}}"
+      }
+    },
+    {
+      "name": "kwx",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "kwx{${1:text1;text2;...%text}}"
+      }
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:text1;text2;...%text}}"
+      }
+    },
+    {
+      "name": "citationbox",
+      "unusual": true
+    },
+    {
+      "name": "msclen",
+      "unusual": true
+    },
+    {
+      "name": "msc",
+      "arg": {
+        "format": "{}",
+        "snippet": "msc{${1:class1 class2 ...}}"
+      }
+    },
+    {
+      "name": "blueitem",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "blueitem{${1:text}}"
+      }
+    },
+    {
+      "name": "reviewer",
+      "arg": {
+        "format": "{}",
+        "snippet": "reviewer{${1:name (${2:location})}}"
+      }
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

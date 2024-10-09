@@ -1,0 +1,39 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "colorcurrentmixin"
+    },
+    {
+      "name": "newcolormixin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newcolormixin{${1:cmd}}"
+      }
+    },
+    {
+      "name": "applycolormixins",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "applycolormixins{${1:color}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "colormixin",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:mix-in specification}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,2402 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "graphics"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "alignment",
+      "arg": {
+        "format": "{}",
+        "snippet": "alignment{${1:position%keyvals}}",
+        "keys": [
+          "\\alignment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "allmatchspecial"
+    },
+    {
+      "name": "allmatchspecial",
+      "arg": {
+        "format": "[]",
+        "snippet": "allmatchspecial[${1:percentage}]"
+      }
+    },
+    {
+      "name": "allowzero"
+    },
+    {
+      "name": "alphacount"
+    },
+    {
+      "name": "Alphacount"
+    },
+    {
+      "name": "appearance",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "appearance{${1:filetype%keyvals}}{${2:type}}{${3:position}}{${4:labelstyle}}{${5:text}}",
+        "keys": [
+          "\\appearance"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "backtranslabel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "backtranslabel[${2:size}]{${1:style%keyvals}}",
+        "keys": [
+          "\\backtranslabel,\\backtranstext"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "backtranslabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "backtranslabel{${1:style%keyvals}}",
+        "keys": [
+          "\\backtranslabel,\\backtranstext"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "backtranstext",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "backtranstext[${2:size}]{${1:style%keyvals}}",
+        "keys": [
+          "\\backtranslabel,\\backtranstext"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "backtranstext",
+      "arg": {
+        "format": "{}",
+        "snippet": "backtranstext{${1:style%keyvals}}",
+        "keys": [
+          "\\backtranslabel,\\backtranstext"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bargraphstretch",
+      "arg": {
+        "format": "{}",
+        "snippet": "bargraphstretch{${1:factor}}"
+      }
+    },
+    {
+      "name": "bbbbottomspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "bbbbottomspace{${1:length}}"
+      }
+    },
+    {
+      "name": "bbbottomspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "bbbottomspace{${1:length}}"
+      }
+    },
+    {
+      "name": "bbottomspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "bbottomspace{${1:length}}"
+      }
+    },
+    {
+      "name": "bigblockskip"
+    },
+    {
+      "name": "bigsepline"
+    },
+    {
+      "name": "bottomspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "bottomspace{${1:length}}"
+      }
+    },
+    {
+      "name": "changeshadingcolors",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "changeshadingcolors{${1:seqref}}{${2:selection}}{${3:name}}"
+      }
+    },
+    {
+      "name": "charge",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "charge{${1:seqref}}{${2:i|${3:o}|${4:N}|C}}"
+      }
+    },
+    {
+      "name": "charstretch",
+      "arg": {
+        "format": "{}",
+        "snippet": "charstretch{${1:factor}}"
+      }
+    },
+    {
+      "name": "chimeraaxisdistance",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "chimeraaxisdistance{${1:x-dist}}{${2:y-dist}}{${3:z-dist}}"
+      }
+    },
+    {
+      "name": "chimeraballScale",
+      "arg": {
+        "format": "{}",
+        "snippet": "chimeraballScale{${1:factor}}"
+      }
+    },
+    {
+      "name": "chimerachain",
+      "arg": {
+        "format": "{}",
+        "snippet": "chimerachain{${1:chain-label}}"
+      }
+    },
+    {
+      "name": "clearfuncgroups"
+    },
+    {
+      "name": "clearlogocolors"
+    },
+    {
+      "name": "clearlogocolors",
+      "arg": {
+        "format": "[]",
+        "snippet": "clearlogocolors[${1:color}]"
+      }
+    },
+    {
+      "name": "codon",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "codon{${1:amino-acid}}{${2:triplet1,triplet2,...}}"
+      }
+    },
+    {
+      "name": "colorscalestretch",
+      "arg": {
+        "format": "{}",
+        "snippet": "colorscalestretch{${1:factor}}"
+      }
+    },
+    {
+      "name": "constoallseqs"
+    },
+    {
+      "name": "constosingleseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "constosingleseq{${1:seqref}}"
+      }
+    },
+    {
+      "name": "constosingleseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "constosingleseq{${1:seqref}}"
+      }
+    },
+    {
+      "name": "defconsensus",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defconsensus{${1:symbol1}}{${2:symbol2}}{${3:symbol3}}"
+      }
+    },
+    {
+      "name": "defshadingcolors",
+      "arg": {
+        "format": "{}",
+        "snippet": "defshadingcolors{${1:name}}"
+      }
+    },
+    {
+      "name": "disallowzero"
+    },
+    {
+      "name": "DNAgroups",
+      "arg": {
+        "format": "{}",
+        "snippet": "DNAgroups{${1:group1,group2,...}}"
+      }
+    },
+    {
+      "name": "DNAsims",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DNAsims{${1:residue}}{${2:similars}}"
+      }
+    },
+    {
+      "name": "dofrequencycorrection"
+    },
+    {
+      "name": "domaingaprule",
+      "arg": {
+        "format": "{}",
+        "snippet": "domaingaprule{${1:thickness%l}}"
+      }
+    },
+    {
+      "name": "donotshade",
+      "arg": {
+        "format": "{}",
+        "snippet": "donotshade{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "echostructurefile",
+      "arg": {
+        "format": "{}",
+        "snippet": "echostructurefile{${1:strucref}}"
+      }
+    },
+    {
+      "name": "emphblock",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "emphblock{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "emphdefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "emphdefault{${1:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "emphregion",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "emphregion{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "englishlanguage"
+    },
+    {
+      "name": "exportconsensus",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "exportconsensus[${3:pymol/chimera}]{${1:seqref}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "exportconsensus",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "exportconsensus{${1:seqref}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "feature",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "feature{${1:position%keyvals}}{${2:seqref}}{${3:selection}}{${4:labelstyle}}{${5:text}}",
+        "keys": [
+          "\\feature"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "featurenamecolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "featurenamecolor{${1:ttttop...bbbbottom}}{${2:color}}"
+      }
+    },
+    {
+      "name": "featurenamesbf"
+    },
+    {
+      "name": "featurenamescolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "featurenamescolor{${1:color}}"
+      }
+    },
+    {
+      "name": "featurenamesfootnotesize"
+    },
+    {
+      "name": "featurenameshuge"
+    },
+    {
+      "name": "featurenamesHuge"
+    },
+    {
+      "name": "featurenamesit"
+    },
+    {
+      "name": "featurenameslarge"
+    },
+    {
+      "name": "featurenamesLarge"
+    },
+    {
+      "name": "featurenamesLARGE"
+    },
+    {
+      "name": "featurenamesmd"
+    },
+    {
+      "name": "featurenamesnormalsize"
+    },
+    {
+      "name": "featurenamesrm"
+    },
+    {
+      "name": "featurenamessc"
+    },
+    {
+      "name": "featurenamesscriptsize"
+    },
+    {
+      "name": "featurenamessf"
+    },
+    {
+      "name": "featurenamessl"
+    },
+    {
+      "name": "featurenamessmall"
+    },
+    {
+      "name": "featurenamestiny"
+    },
+    {
+      "name": "featurenamestt"
+    },
+    {
+      "name": "featurenamesup"
+    },
+    {
+      "name": "featurerule",
+      "arg": {
+        "format": "{}",
+        "snippet": "featurerule{${1:length}}"
+      }
+    },
+    {
+      "name": "featuresbf"
+    },
+    {
+      "name": "featuresfootnotesize"
+    },
+    {
+      "name": "featureshuge"
+    },
+    {
+      "name": "featuresHuge"
+    },
+    {
+      "name": "featuresit"
+    },
+    {
+      "name": "featureslarge"
+    },
+    {
+      "name": "featuresLarge"
+    },
+    {
+      "name": "featuresLARGE"
+    },
+    {
+      "name": "featuresmd"
+    },
+    {
+      "name": "featuresnormalsize"
+    },
+    {
+      "name": "featuresrm"
+    },
+    {
+      "name": "featuressc"
+    },
+    {
+      "name": "featuresscriptsize"
+    },
+    {
+      "name": "featuressf"
+    },
+    {
+      "name": "featuressl"
+    },
+    {
+      "name": "featuressmall"
+    },
+    {
+      "name": "featurestiny"
+    },
+    {
+      "name": "featurestt"
+    },
+    {
+      "name": "featurestylenamecolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "featurestylenamecolor{${1:ttttop...bbbbottom}}{${2:color}}"
+      }
+    },
+    {
+      "name": "featurestylenamesbf"
+    },
+    {
+      "name": "featurestylenamescolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "featurestylenamescolor{${1:color}}"
+      }
+    },
+    {
+      "name": "featurestylenamesfootnotesize"
+    },
+    {
+      "name": "featurestylenameshuge"
+    },
+    {
+      "name": "featurestylenamesHuge"
+    },
+    {
+      "name": "featurestylenamesit"
+    },
+    {
+      "name": "featurestylenameslarge"
+    },
+    {
+      "name": "featurestylenamesLarge"
+    },
+    {
+      "name": "featurestylenamesLARGE"
+    },
+    {
+      "name": "featurestylenamesmd"
+    },
+    {
+      "name": "featurestylenamesnormalsize"
+    },
+    {
+      "name": "featurestylenamesrm"
+    },
+    {
+      "name": "featurestylenamessc"
+    },
+    {
+      "name": "featurestylenamesscriptsize"
+    },
+    {
+      "name": "featurestylenamessf"
+    },
+    {
+      "name": "featurestylenamessl"
+    },
+    {
+      "name": "featurestylenamessmall"
+    },
+    {
+      "name": "featurestylenamestiny"
+    },
+    {
+      "name": "featurestylenamestt"
+    },
+    {
+      "name": "featurestylenamesup"
+    },
+    {
+      "name": "featurestylesbf"
+    },
+    {
+      "name": "featurestylesfootnotesize"
+    },
+    {
+      "name": "featurestyleshuge"
+    },
+    {
+      "name": "featurestylesHuge"
+    },
+    {
+      "name": "featurestylesit"
+    },
+    {
+      "name": "featurestyleslarge"
+    },
+    {
+      "name": "featurestylesLarge"
+    },
+    {
+      "name": "featurestylesLARGE"
+    },
+    {
+      "name": "featurestylesmd"
+    },
+    {
+      "name": "featurestylesnormalsize"
+    },
+    {
+      "name": "featurestylesrm"
+    },
+    {
+      "name": "featurestylessc"
+    },
+    {
+      "name": "featurestylesscriptsize"
+    },
+    {
+      "name": "featurestylessf"
+    },
+    {
+      "name": "featurestylessl"
+    },
+    {
+      "name": "featurestylessmall"
+    },
+    {
+      "name": "featurestylestiny"
+    },
+    {
+      "name": "featurestylestt"
+    },
+    {
+      "name": "featurestylesup"
+    },
+    {
+      "name": "featuresup"
+    },
+    {
+      "name": "fingerprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "fingerprint{${1:res. per line}}"
+      }
+    },
+    {
+      "name": "firstcolumnDSSP"
+    },
+    {
+      "name": "fixblockspace"
+    },
+    {
+      "name": "flexblockspace"
+    },
+    {
+      "name": "frameblock",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "frameblock{${1:seqref}}{${2:selection}}{${3:color[${4:length}]}}"
+      }
+    },
+    {
+      "name": "frameblock",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "frameblock{${1:seqref}}{${2:selection}}{${3:color}}"
+      }
+    },
+    {
+      "name": "gapchar",
+      "arg": {
+        "format": "{}",
+        "snippet": "gapchar{${1:symbol}}"
+      }
+    },
+    {
+      "name": "gappenalty",
+      "arg": {
+        "format": "{}",
+        "snippet": "gappenalty{${1:value}}"
+      }
+    },
+    {
+      "name": "gaprule",
+      "arg": {
+        "format": "{}",
+        "snippet": "gaprule{${1:thickness%l}}"
+      }
+    },
+    {
+      "name": "geneticcode",
+      "arg": {
+        "format": "{}",
+        "snippet": "geneticcode{${1:filename%file}}"
+      }
+    },
+    {
+      "name": "germanlanguage"
+    },
+    {
+      "name": "hideallmatchpositions"
+    },
+    {
+      "name": "hideconsensus"
+    },
+    {
+      "name": "hidefeaturename",
+      "arg": {
+        "format": "{}",
+        "snippet": "hidefeaturename{${1:ttttop...bbbbottom}}"
+      }
+    },
+    {
+      "name": "hidefeaturenames"
+    },
+    {
+      "name": "hidefeaturestylename",
+      "arg": {
+        "format": "{}",
+        "snippet": "hidefeaturestylename{${1:ttttop...bbbbottom}}"
+      }
+    },
+    {
+      "name": "hidefeaturestylenames"
+    },
+    {
+      "name": "hideleadinggaps"
+    },
+    {
+      "name": "hidelegend"
+    },
+    {
+      "name": "hidelogoscale"
+    },
+    {
+      "name": "hidename",
+      "arg": {
+        "format": "{}",
+        "snippet": "hidename{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "hidenames"
+    },
+    {
+      "name": "hidenegatives"
+    },
+    {
+      "name": "hidenumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "hidenumber{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "hidenumbering"
+    },
+    {
+      "name": "hideonDSSP",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideonDSSP{${1:structures}}"
+      }
+    },
+    {
+      "name": "hideonHMMTOP",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideonHMMTOP{${1:structures}}"
+      }
+    },
+    {
+      "name": "hideonPHDsec",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideonPHDsec{${1:structures}}"
+      }
+    },
+    {
+      "name": "hideonPHDtopo",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideonPHDtopo{${1:structures}}"
+      }
+    },
+    {
+      "name": "hideonSTRIDE",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideonSTRIDE{${1:structures}}"
+      }
+    },
+    {
+      "name": "hiderelevance"
+    },
+    {
+      "name": "hideresidues"
+    },
+    {
+      "name": "hideruler"
+    },
+    {
+      "name": "hideruler",
+      "arg": {
+        "format": "[]",
+        "snippet": "hideruler[${1:top/bottom}]"
+      }
+    },
+    {
+      "name": "hideseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "hideseq{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "hideseqs"
+    },
+    {
+      "name": "hidesequencelogo"
+    },
+    {
+      "name": "hidesubfamilylogo"
+    },
+    {
+      "name": "includeDSSP",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includeDSSP[${3:make new}]{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeDSSP",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includeDSSP{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeHMMTOP",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includeHMMTOP[${3:make new}]{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeHMMTOP",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includeHMMTOP{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includePHDsec",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includePHDsec[${3:make new}]{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includePHDsec",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includePHDsec{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includePHDtopo",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includePHDtopo[${3:make new}]{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includePHDtopo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includePHDtopo{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeSTRIDE",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includeSTRIDE[${3:make new}]{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeSTRIDE",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includeSTRIDE{${1:seqref}}{${2:file}}"
+      }
+    },
+    {
+      "name": "includeTCoffee",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeTCoffee{${1:file}}"
+      }
+    },
+    {
+      "name": "killseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "killseq{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "legendbf"
+    },
+    {
+      "name": "legendcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "legendcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "legendfootnotesize"
+    },
+    {
+      "name": "legendhuge"
+    },
+    {
+      "name": "legendHuge"
+    },
+    {
+      "name": "legendit"
+    },
+    {
+      "name": "legendlarge"
+    },
+    {
+      "name": "legendLarge"
+    },
+    {
+      "name": "legendLARGE"
+    },
+    {
+      "name": "legendmd"
+    },
+    {
+      "name": "legendnormalsize"
+    },
+    {
+      "name": "legendrm"
+    },
+    {
+      "name": "legendsc"
+    },
+    {
+      "name": "legendscriptsize"
+    },
+    {
+      "name": "legendsf"
+    },
+    {
+      "name": "legendsl"
+    },
+    {
+      "name": "legendsmall"
+    },
+    {
+      "name": "legendtiny"
+    },
+    {
+      "name": "legendtt"
+    },
+    {
+      "name": "legendup"
+    },
+    {
+      "name": "linestretch",
+      "arg": {
+        "format": "{}",
+        "snippet": "linestretch{${1:factor}}"
+      }
+    },
+    {
+      "name": "logocolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "logocolor{${1:residues}}{${2:color}}"
+      }
+    },
+    {
+      "name": "logostretch",
+      "arg": {
+        "format": "{}",
+        "snippet": "logostretch{${1:factor}}"
+      }
+    },
+    {
+      "name": "lowerblock",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lowerblock{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "lowerregion",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lowerregion{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "medblockskip"
+    },
+    {
+      "name": "medsepline"
+    },
+    {
+      "name": "memeBlack",
+      "arg": {
+        "format": "{}",
+        "snippet": "memeBlack{${1:residues}}"
+      }
+    },
+    {
+      "name": "memeBlue",
+      "arg": {
+        "format": "{}",
+        "snippet": "memeBlue{${1:residues}}"
+      }
+    },
+    {
+      "name": "memelabelcutoff",
+      "arg": {
+        "format": "{}",
+        "snippet": "memelabelcutoff{${1:bit-value}}"
+      }
+    },
+    {
+      "name": "memeRed",
+      "arg": {
+        "format": "{}",
+        "snippet": "memeRed{${1:residues}}"
+      }
+    },
+    {
+      "name": "memeStandardcolors"
+    },
+    {
+      "name": "memeWhite",
+      "arg": {
+        "format": "{}",
+        "snippet": "memeWhite{${1:residues}}"
+      }
+    },
+    {
+      "name": "memeYellow",
+      "arg": {
+        "format": "{}",
+        "snippet": "memeYellow{${1:residues}}"
+      }
+    },
+    {
+      "name": "messagePDBlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "messagePDBlist{${1:selection}}"
+      }
+    },
+    {
+      "name": "molweight",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "molweight{${1:seqref}}{${2:Da|kDa}}"
+      }
+    },
+    {
+      "name": "movelegend",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "movelegend{${1:x-offset}}{${2:y-offset}}"
+      }
+    },
+    {
+      "name": "namecolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "namecolor{${1:seq1,seq2,...}}{${2:color}}"
+      }
+    },
+    {
+      "name": "nameconsensus",
+      "arg": {
+        "format": "{}",
+        "snippet": "nameconsensus{${1:name}}"
+      }
+    },
+    {
+      "name": "nameruler",
+      "arg": {
+        "format": "{}",
+        "snippet": "nameruler{${1:name}}"
+      }
+    },
+    {
+      "name": "nameruler",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "nameruler[${2:top/bottom}]{${1:name}}"
+      }
+    },
+    {
+      "name": "namerulerpos",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "namerulerpos{${1:number}}{${2:text[${3:color}]}}"
+      }
+    },
+    {
+      "name": "namerulerpos",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "namerulerpos[${3:top/bottom}]{${1:number}}{${2:text[${4:color}]}}"
+      }
+    },
+    {
+      "name": "namerulerpos",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "namerulerpos{${1:number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "namerulerpos",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "namerulerpos[${3:top/bottom}]{${1:number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "namesbf"
+    },
+    {
+      "name": "namescolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "namescolor{${1:color}}"
+      }
+    },
+    {
+      "name": "nameseq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nameseq{${1:seqref}}{${2:name}}"
+      }
+    },
+    {
+      "name": "namesequencelogo",
+      "arg": {
+        "format": "{}",
+        "snippet": "namesequencelogo{${1:name}}"
+      }
+    },
+    {
+      "name": "namesfootnotesize"
+    },
+    {
+      "name": "nameshuge"
+    },
+    {
+      "name": "namesHuge"
+    },
+    {
+      "name": "namesit"
+    },
+    {
+      "name": "nameslarge"
+    },
+    {
+      "name": "namesLarge"
+    },
+    {
+      "name": "namesLARGE"
+    },
+    {
+      "name": "namesmd"
+    },
+    {
+      "name": "namesnormalsize"
+    },
+    {
+      "name": "namesrm"
+    },
+    {
+      "name": "namessc"
+    },
+    {
+      "name": "namesscriptsize"
+    },
+    {
+      "name": "namessf"
+    },
+    {
+      "name": "namessl"
+    },
+    {
+      "name": "namessmall"
+    },
+    {
+      "name": "namestiny"
+    },
+    {
+      "name": "namestt"
+    },
+    {
+      "name": "namesubfamilylogo",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "namesubfamilylogo[${2:neg-name}]{${1:pos-name}}"
+      }
+    },
+    {
+      "name": "namesubfamilylogo",
+      "arg": {
+        "format": "{}",
+        "snippet": "namesubfamilylogo{${1:pos-name}}"
+      }
+    },
+    {
+      "name": "namesup"
+    },
+    {
+      "name": "noblockskip"
+    },
+    {
+      "name": "nosepline"
+    },
+    {
+      "name": "numbercolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "numbercolor{${1:seq1,seq2,...}}{${2:color}}"
+      }
+    },
+    {
+      "name": "numberingbf"
+    },
+    {
+      "name": "numberingcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "numberingcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "numberingfootnotesize"
+    },
+    {
+      "name": "numberinghuge"
+    },
+    {
+      "name": "numberingHuge"
+    },
+    {
+      "name": "numberingit"
+    },
+    {
+      "name": "numberinglarge"
+    },
+    {
+      "name": "numberingLarge"
+    },
+    {
+      "name": "numberingLARGE"
+    },
+    {
+      "name": "numberingmd"
+    },
+    {
+      "name": "numberingnormalsize"
+    },
+    {
+      "name": "numberingrm"
+    },
+    {
+      "name": "numberingsc"
+    },
+    {
+      "name": "numberingscriptsize"
+    },
+    {
+      "name": "numberingsf"
+    },
+    {
+      "name": "numberingsl"
+    },
+    {
+      "name": "numberingsmall"
+    },
+    {
+      "name": "numberingtiny"
+    },
+    {
+      "name": "numberingtt"
+    },
+    {
+      "name": "numberingup"
+    },
+    {
+      "name": "numberingwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "numberingwidth{${1:digits}}"
+      }
+    },
+    {
+      "name": "numcount"
+    },
+    {
+      "name": "orderseqs",
+      "arg": {
+        "format": "{}",
+        "snippet": "orderseqs{${1:seq1,seq2,...}}"
+      }
+    },
+    {
+      "name": "pepgroups",
+      "arg": {
+        "format": "{}",
+        "snippet": "pepgroups{${1:group1,group2,...}}"
+      }
+    },
+    {
+      "name": "pepsims",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pepsims{${1:residue}}{${2:similars}}"
+      }
+    },
+    {
+      "name": "percentidentity",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "percentidentity{${1:seqref1}}{${2:seqref2}}"
+      }
+    },
+    {
+      "name": "percentsimilarity",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "percentsimilarity{${1:seqref1}}{${2:seqref2}}"
+      }
+    },
+    {
+      "name": "printPDBlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "printPDBlist{${1:selection}}"
+      }
+    },
+    {
+      "name": "relevance",
+      "arg": {
+        "format": "{}",
+        "snippet": "relevance{${1:bit-value}}"
+      }
+    },
+    {
+      "name": "residuesbf"
+    },
+    {
+      "name": "residuesfootnotesize"
+    },
+    {
+      "name": "residueshuge"
+    },
+    {
+      "name": "residuesHuge"
+    },
+    {
+      "name": "residuesit"
+    },
+    {
+      "name": "residueslarge"
+    },
+    {
+      "name": "residuesLarge"
+    },
+    {
+      "name": "residuesLARGE"
+    },
+    {
+      "name": "residuesmd"
+    },
+    {
+      "name": "residuesnormalsize"
+    },
+    {
+      "name": "residuesperline*",
+      "arg": {
+        "format": "{}",
+        "snippet": "residuesperline*{${1:number}}"
+      }
+    },
+    {
+      "name": "residuesperline",
+      "arg": {
+        "format": "{}",
+        "snippet": "residuesperline{${1:number}}"
+      }
+    },
+    {
+      "name": "residuesrm"
+    },
+    {
+      "name": "residuessc"
+    },
+    {
+      "name": "residuesscriptsize"
+    },
+    {
+      "name": "residuessf"
+    },
+    {
+      "name": "residuessl"
+    },
+    {
+      "name": "residuessmall"
+    },
+    {
+      "name": "residuestiny"
+    },
+    {
+      "name": "residuestt"
+    },
+    {
+      "name": "residuesup"
+    },
+    {
+      "name": "romancount"
+    },
+    {
+      "name": "Romancount"
+    },
+    {
+      "name": "rotateruler"
+    },
+    {
+      "name": "rotateruler",
+      "arg": {
+        "format": "[]",
+        "snippet": "rotateruler[${1:top/bottom}]"
+      }
+    },
+    {
+      "name": "rulercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "rulercolor{${1:color}}"
+      }
+    },
+    {
+      "name": "rulercolor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rulercolor[${2:top/bottom}]{${1:color}}"
+      }
+    },
+    {
+      "name": "rulerfootnotesize"
+    },
+    {
+      "name": "rulerhuge"
+    },
+    {
+      "name": "rulerHuge"
+    },
+    {
+      "name": "rulerlarge"
+    },
+    {
+      "name": "rulerLarge"
+    },
+    {
+      "name": "rulerLARGE"
+    },
+    {
+      "name": "rulernamecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "rulernamecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "rulernamecolor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rulernamecolor[${2:top/bottom}]{${1:color}}"
+      }
+    },
+    {
+      "name": "rulernamefootnotesize"
+    },
+    {
+      "name": "rulernamehuge"
+    },
+    {
+      "name": "rulernameHuge"
+    },
+    {
+      "name": "rulernamelarge"
+    },
+    {
+      "name": "rulernameLarge"
+    },
+    {
+      "name": "rulernameLARGE"
+    },
+    {
+      "name": "rulernamenormalsize"
+    },
+    {
+      "name": "rulernamerm"
+    },
+    {
+      "name": "rulernamescriptsize"
+    },
+    {
+      "name": "rulernamesf"
+    },
+    {
+      "name": "rulernamesmall"
+    },
+    {
+      "name": "rulernametiny"
+    },
+    {
+      "name": "rulernamett"
+    },
+    {
+      "name": "rulernormalsize"
+    },
+    {
+      "name": "rulerrm"
+    },
+    {
+      "name": "rulerscriptsize"
+    },
+    {
+      "name": "rulersf"
+    },
+    {
+      "name": "rulersmall"
+    },
+    {
+      "name": "rulerspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "rulerspace{${1:length}}"
+      }
+    },
+    {
+      "name": "rulerspace",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rulerspace[${2:top/bottom}]{${1:length}}"
+      }
+    },
+    {
+      "name": "rulersteps",
+      "arg": {
+        "format": "{}",
+        "snippet": "rulersteps{${1:number}}"
+      }
+    },
+    {
+      "name": "rulersteps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rulersteps[${2:top/bottom}]{${1:number}}"
+      }
+    },
+    {
+      "name": "rulertiny"
+    },
+    {
+      "name": "rulertt"
+    },
+    {
+      "name": "secondcolumnDSSP"
+    },
+    {
+      "name": "separationline",
+      "arg": {
+        "format": "{}",
+        "snippet": "separationline{${1:seqref}}"
+      }
+    },
+    {
+      "name": "seqlength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "seqlength{${1:seqref}}{${2:length%plain}}"
+      }
+    },
+    {
+      "name": "seqtype",
+      "arg": {
+        "format": "{}",
+        "snippet": "seqtype{${1:type%keyvals}}",
+        "keys": [
+          "\\seqtype"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setdomain",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setdomain{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "setends",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "setends[${3:start-number}]{${1:seqref}}{${2:start..stop}}"
+      }
+    },
+    {
+      "name": "setends",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setends{${1:seqref}}{${2:start..stop}}"
+      }
+    },
+    {
+      "name": "setfamily",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setfamily{${1:text%plain}}{${2:family%keyvals}}",
+        "keys": [
+          "\\setfamily"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setfont",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "setfont{${1:text%plain}}{${2:family}}{${3:series}}{${4:shape}}{${5:size%keyvals}}",
+        "keys": [
+          "\\setsize,\\setfont"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "setseries",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setseries{${1:text%plain}}{${2:series%keyvals}}",
+        "keys": [
+          "\\setseries"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setshape",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setshape{${1:text%plain}}{${2:shape%keyvals}}",
+        "keys": [
+          "\\setshape"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setsize",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setsize{${1:text%plain}}{${2:size%keyvals}}",
+        "keys": [
+          "\\setsize,\\setfont"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setsubfamily",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsubfamily{${1:seqrefs}}"
+      }
+    },
+    {
+      "name": "setweight",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setweight{${1:res1}}{${2:res2}}{${3:value}}"
+      }
+    },
+    {
+      "name": "shadeallresidues"
+    },
+    {
+      "name": "shadebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "shadebox{${1:color%keyvals}}",
+        "keys": [
+          "\\shadebox"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shadingcolors",
+      "arg": {
+        "format": "{}",
+        "snippet": "shadingcolors{${1:scheme%keyvals}}",
+        "keys": [
+          "\\shadingcolors"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shadingmode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "shadingmode[${2:option}]{${1:mode%keyvals}}",
+        "keys": [
+          "\\shadingmode"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "shadingmode",
+      "arg": {
+        "format": "{}",
+        "snippet": "shadingmode{${1:mode%keyvals}}",
+        "keys": [
+          "\\shadingmode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shortcaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "shortcaption{${1:text}}"
+      }
+    },
+    {
+      "name": "showcaption",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showcaption[${2:position}]{${1:text}}"
+      }
+    },
+    {
+      "name": "showcaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "showcaption{${1:text}}"
+      }
+    },
+    {
+      "name": "showconsensus",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showconsensus[${2:type%keyvals}]{${1:top|bottom}}",
+        "keys": [
+          "\\showconsensus"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "showconsensus",
+      "arg": {
+        "format": "{}",
+        "snippet": "showconsensus{${1:top|bottom}}"
+      }
+    },
+    {
+      "name": "showfeaturename",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showfeaturename{${1:ttttop...bbbbottom}}{${2:name}}"
+      }
+    },
+    {
+      "name": "showfeaturestylename",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showfeaturestylename{${1:ttttop...bbbbottom}}{${2:name}}"
+      }
+    },
+    {
+      "name": "showleadinggaps"
+    },
+    {
+      "name": "showlegend"
+    },
+    {
+      "name": "showlogoscale",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showlogoscale[${2:color}]{${1:position%keyvals}}",
+        "keys": [
+          "\\showlogoscale,\\shownumbering"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "showlogoscale",
+      "arg": {
+        "format": "{}",
+        "snippet": "showlogoscale{${1:position%keyvals}}",
+        "keys": [
+          "\\showlogoscale,\\shownumbering"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shownames",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "shownames[${2:color}]{${1:position%keyvals}}",
+        "keys": [
+          "\\shownames"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "shownames",
+      "arg": {
+        "format": "{}",
+        "snippet": "shownames{${1:position%keyvals}}",
+        "keys": [
+          "\\shownames"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shownegatives"
+    },
+    {
+      "name": "shownegatives",
+      "arg": {
+        "format": "[]",
+        "snippet": "shownegatives[${1:choice%keyvals}]",
+        "keys": [
+          "\\shownegatives,\\tintdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shownumbering",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "shownumbering[${2:color}]{${1:position%keyvals}}",
+        "keys": [
+          "\\showlogoscale,\\shownumbering"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "shownumbering",
+      "arg": {
+        "format": "{}",
+        "snippet": "shownumbering{${1:position%keyvals}}",
+        "keys": [
+          "\\showlogoscale,\\shownumbering"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "showonDSSP",
+      "arg": {
+        "format": "{}",
+        "snippet": "showonDSSP{${1:structures}}"
+      }
+    },
+    {
+      "name": "showonHMMTOP",
+      "arg": {
+        "format": "{}",
+        "snippet": "showonHMMTOP{${1:structures}}"
+      }
+    },
+    {
+      "name": "showonPHDsec",
+      "arg": {
+        "format": "{}",
+        "snippet": "showonPHDsec{${1:structures}}"
+      }
+    },
+    {
+      "name": "showonPHDtopo",
+      "arg": {
+        "format": "{}",
+        "snippet": "showonPHDtopo{${1:structures}}"
+      }
+    },
+    {
+      "name": "showonSTRIDE",
+      "arg": {
+        "format": "{}",
+        "snippet": "showonSTRIDE{${1:structures}}"
+      }
+    },
+    {
+      "name": "showrelevance",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showrelevance[${2:color}]{${1:symbol}}"
+      }
+    },
+    {
+      "name": "showrelevance",
+      "arg": {
+        "format": "{}",
+        "snippet": "showrelevance{${1:symbol}}"
+      }
+    },
+    {
+      "name": "showresidues"
+    },
+    {
+      "name": "showruler",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "showruler[${3:color}]{${1:position%keyvals}}{${2:seqref}}",
+        "keys": [
+          "\\showruler,\\showcaption"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "showruler",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showruler{${1:position%keyvals}}{${2:seqref}}",
+        "keys": [
+          "\\showruler,\\showcaption"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "showseqs"
+    },
+    {
+      "name": "showsequencelogo",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showsequencelogo[${2:colorset%keyvals}]{${1:top|bottom}}",
+        "keys": [
+          "\\showsequencelogo,\\showsubfamilylogo"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "showsequencelogo",
+      "arg": {
+        "format": "{}",
+        "snippet": "showsequencelogo{${1:top|bottom}}"
+      }
+    },
+    {
+      "name": "showsubfamilylogo",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showsubfamilylogo[${2:colorset%keyvals}]{${1:top|bottom}}",
+        "keys": [
+          "\\showsequencelogo,\\showsubfamilylogo"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "showsubfamilylogo",
+      "arg": {
+        "format": "{}",
+        "snippet": "showsubfamilylogo{${1:top|bottom}}"
+      }
+    },
+    {
+      "name": "similaritytable"
+    },
+    {
+      "name": "smallblockskip"
+    },
+    {
+      "name": "smallsepline"
+    },
+    {
+      "name": "spanishlanguage"
+    },
+    {
+      "name": "startnumber",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "startnumber[${3:start..stop}]{${1:seqref}}{${2:start-number}}"
+      }
+    },
+    {
+      "name": "startnumber",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "startnumber{${1:seqref}}{${2:start-number}}"
+      }
+    },
+    {
+      "name": "stopchar",
+      "arg": {
+        "format": "{}",
+        "snippet": "stopchar{${1:symbol}}"
+      }
+    },
+    {
+      "name": "structurememe",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "structurememe[${2:seqref}]{${1:filename%file}}"
+      }
+    },
+    {
+      "name": "structurememe",
+      "arg": {
+        "format": "{}",
+        "snippet": "structurememe{${1:filename%file}}"
+      }
+    },
+    {
+      "name": "TeXshade"
+    },
+    {
+      "name": "threshold",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "threshold[${2:percentage}]{${1:percentage}}"
+      }
+    },
+    {
+      "name": "threshold",
+      "arg": {
+        "format": "{}",
+        "snippet": "threshold{${1:percentage}}"
+      }
+    },
+    {
+      "name": "tintblock",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tintblock{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "tintdefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "tintdefault{${1:level%keyvals}}",
+        "keys": [
+          "\\shownegatives,\\tintdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tintregion",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tintregion{${1:seqref}}{${2:selection}}"
+      }
+    },
+    {
+      "name": "topspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "topspace{${1:length}}"
+      }
+    },
+    {
+      "name": "ttopspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "ttopspace{${1:length}}"
+      }
+    },
+    {
+      "name": "tttopspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "tttopspace{${1:length}}"
+      }
+    },
+    {
+      "name": "ttttopspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "ttttopspace{${1:length}}"
+      }
+    },
+    {
+      "name": "undofrequencycorrection"
+    },
+    {
+      "name": "unrotateruler"
+    },
+    {
+      "name": "unrotateruler",
+      "arg": {
+        "format": "[]",
+        "snippet": "unrotateruler[${1:top/bottom}]"
+      }
+    },
+    {
+      "name": "vblockspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "vblockspace{${1:length}}"
+      }
+    },
+    {
+      "name": "vsepspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "vsepspace{${1:length}}"
+      }
+    },
+    {
+      "name": "weighttable",
+      "arg": {
+        "format": "{}",
+        "snippet": "weighttable{${1:table%keyvals}}",
+        "keys": [
+          "\\weighttable"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "nomatchresidues",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "nomatchresidues{${1:res-color}}{${2:shad-color}}{${3:case}}{${4:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "conservedresidues",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "conservedresidues{${1:res-color}}{${2:shad-color}}{${3:case}}{${4:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "allmatchresidues",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "allmatchresidues{${1:res-color}}{${2:shad-color}}{${3:case}}{${4:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "similarresidues",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "similarresidues{${1:res-color}}{${2:shad-color}}{${3:case}}{${4:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "funcshadingstyle",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "funcshadingstyle{${1:residue}}{${2:res-color}}{${3:shad-color}}{${4:case}}{${5:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "funcgroup",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "funcgroup{${1:descr}}{${2:residues}}{${3:res-color}}{${4:shad-color}}{${5:case}}{${6:style%keyvals}}",
+        "keys": [
+          "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues"
+        ],
+        "keyPos": 5
+      }
+    },
+    {
+      "name": "consensuscolors",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "consensuscolors{${1:res-color1}}{${2:shad-color1}}{${3:res-color2}}{${4:shad-color2}}{${5:res-color3}}{${6:shad-color3}}"
+      }
+    },
+    {
+      "name": "gapcolors",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gapcolors{${1:symbol-color}}{${2:background-color}}"
+      }
+    },
+    {
+      "name": "domaingapcolors",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "domaingapcolors{${1:foreground-color}}{${2:background-color}}"
+      }
+    },
+    {
+      "name": "shaderegion",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "shaderegion{${1:seqref}}{${2:selection}}{${3:res-color}}{${4:shad-color}}"
+      }
+    },
+    {
+      "name": "shadeblock",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "shadeblock{${1:seqref}}{${2:selection}}{${3:res-color}}{${4:shad-color}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "texshade",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:alignment-file%file}}"
+      }
+    },
+    {
+      "name": "texshade",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:parameter-file%file}]{${1:alignment-file%file}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/texshade#c": [
+      "monochrome",
+      "debugshow",
+      "setpagesize",
+      "nosetpagesize",
+      "dvips",
+      "xdvi",
+      "dvipdf",
+      "dvipdfm",
+      "dvipdfmx",
+      "pdftex",
+      "luatex",
+      "dvisvgm",
+      "xetex",
+      "dvipsone",
+      "dviwindo",
+      "emtex",
+      "dviwin",
+      "oztex",
+      "textures",
+      "pctexps",
+      "pctexwin",
+      "pctexhp",
+      "pctex32",
+      "truetex",
+      "tcidvi",
+      "vtex",
+      "dvipsnames",
+      "nodvipsnames",
+      "usenames"
+    ],
+    "\\alignment": [
+      "left",
+      "center",
+      "right"
+    ],
+    "\\appearance": [
+      "DSSP",
+      "STRIDE",
+      "PHDsec",
+      "PHDtopo",
+      "HMMTOP"
+    ],
+    "\\allmatchresidues,\\conservedresidues,\\emphdefault,\\funcgroup,\\funcshadingstyle,\\nomatchresidues,\\similarresidues": [
+      "bf",
+      "md",
+      "up",
+      "it",
+      "sl",
+      "rm",
+      "sf",
+      "tt"
+    ],
+    "\\backtranslabel,\\backtranstext": [
+      "horizontal",
+      "alternating",
+      "zigzag",
+      "oblique",
+      "vertical"
+    ],
+    "\\feature": [
+      "top",
+      "ttop",
+      "tttop",
+      "ttttop",
+      "bottom",
+      "bbottom",
+      "bbbottom",
+      "bbbbottom"
+    ],
+    "\\seqtype": [
+      "P",
+      "N"
+    ],
+    "\\setfamily": [
+      "rm",
+      "sf",
+      "tt"
+    ],
+    "\\setseries": [
+      "bf",
+      "md"
+    ],
+    "\\setshape": [
+      "it",
+      "sl",
+      "sc",
+      "up"
+    ],
+    "\\setsize,\\setfont": [
+      "tiny",
+      "scriptsize",
+      "footnotesize",
+      "small",
+      "normalsize",
+      "large",
+      "Large",
+      "LARGE",
+      "huge",
+      "Huge"
+    ],
+    "\\shadebox": [
+      "%color",
+      "nomatch",
+      "similar",
+      "conserved",
+      "allmatch"
+    ],
+    "\\shadingcolors": [
+      "blues",
+      "reds",
+      "greens",
+      "grays",
+      "black"
+    ],
+    "\\shadingmode": [
+      "identical",
+      "similar",
+      "T-Coffee",
+      "diverse"
+    ],
+    "\\showconsensus": [
+      "Gray",
+      "BlueRed",
+      "RedBlue",
+      "GreenRed",
+      "RedGreen",
+      "ColdHot",
+      "HotCold",
+      "T-Coffee"
+    ],
+    "\\showlogoscale,\\shownumbering": [
+      "left",
+      "right",
+      "leftright"
+    ],
+    "\\shownames": [
+      "left",
+      "right"
+    ],
+    "\\shownegatives,\\tintdefault": [
+      "weak",
+      "medium",
+      "strong"
+    ],
+    "\\showruler,\\showcaption": [
+      "top",
+      "bottom"
+    ],
+    "\\showsequencelogo,\\showsubfamilylogo": [
+      "chemical",
+      "rasmol",
+      "hydropathy",
+      "structure",
+      "standard area",
+      "accessible area"
+    ],
+    "\\weighttable": [
+      "identity",
+      "structural",
+      "PAM250",
+      "PAM100",
+      "BLOSUM62"
+    ]
+  },
+  "args": [
+    "\\usepackage/texshade#c"
+  ]
+}

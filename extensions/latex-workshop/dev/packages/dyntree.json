@@ -1,0 +1,44 @@
+{
+  "deps": [
+    {
+      "name": "coollist"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "epic"
+    },
+    {
+      "name": "eepic"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "start",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "start{${1:dyntree}}{${2:num roots}}"
+      }
+    },
+    {
+      "name": "dynbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dynbox{${1:cartan coeffs%formula}}{${2:root list}}"
+      }
+    },
+    {
+      "name": "lend"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

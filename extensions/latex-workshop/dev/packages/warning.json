@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "addglobalwarning",
+      "arg": {
+        "format": "{}",
+        "snippet": "addglobalwarning{${1:warning}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

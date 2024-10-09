@@ -1,0 +1,96 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "drawLevel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "drawLevel[${2:options%keyvals}]{${1:name}}",
+        "keys": [
+          "\\drawLevel"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "orbital",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "orbital[${2:options%keyvals}]{${1:type}}",
+        "keys": [
+          "\\orbital#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "satom",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "satom[${2:options}]{${1:color/rotation-angle/anchor/number of electrons/scale}}",
+        "keys": [
+          "\\satom#c,\\atom#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "atom",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "atom[${2:options}]{${1:color/rotation-angle/anchor/number of electrons/scale}}",
+        "keys": [
+          "\\satom#c,\\atom#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setOrbitalDrawing",
+      "arg": {
+        "format": "{}",
+        "snippet": "setOrbitalDrawing{${1:TikZ options}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\drawLevel": [
+      "elec=${1|up,down,updown,pair|}",
+      "pos={(%|)}",
+      "width=${1:number}",
+      "style={${1:TikZ options}}",
+      "spinstyle={${1:TikZ options}}",
+      "spinlength=${1:number}"
+    ],
+    "\\orbital#c": [
+      "pos={(%|)}",
+      "scale=${1:factor}",
+      "opacity=${1:factor}",
+      "pcolor=",
+      "ncolor=",
+      "color=",
+      "rotate=${1:degrees}",
+      "nelec=${1:integer}"
+    ],
+    "\\satom#c,\\atom#c": [
+      "pos={(%|)}",
+      "name=${1:name}",
+      "color=",
+      "opacity=${1:factor}",
+      "scale=${1:factor}"
+    ]
+  },
+  "args": []
+}

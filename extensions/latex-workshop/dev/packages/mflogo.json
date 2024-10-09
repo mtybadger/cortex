@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MF"
+    },
+    {
+      "name": "MP"
+    },
+    {
+      "name": "logofamily",
+      "unusual": true
+    },
+    {
+      "name": "textlogo",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textlogo{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

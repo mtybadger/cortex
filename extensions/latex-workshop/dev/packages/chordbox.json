@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes.misc"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "chordbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "chordbox{${1:chord-name%formula}}{${2:fret-positions}}"
+      }
+    },
+    {
+      "name": "chordbox",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "chordbox[${3:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}"
+      }
+    },
+    {
+      "name": "bchordbox",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bchordbox{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
+      }
+    },
+    {
+      "name": "bchordbox",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bchordbox[${4:base-fret}]{${1:chord-name%formula}}{${2:fret-positions}}{${3:barre-frets}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "chordboxenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:basefret}}{${2:chord-name%formula}}{${3:fret-positions}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

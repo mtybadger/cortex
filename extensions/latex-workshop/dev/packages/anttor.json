@@ -1,0 +1,166 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "minusleft",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "equalleft",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "equalright",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "equalc",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "Leftarrowj",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "minusleft",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "minusright",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "minusc",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "Longrightarrow",
+      "if": "math",
+      "detail": "⟹",
+      "doc": "\\implies (amsmath), long rightwards double arrow"
+    },
+    {
+      "name": "Longleftarrow",
+      "if": "math",
+      "detail": "⟸",
+      "doc": "\\impliedby (amsmath), long leftwards double arrow"
+    },
+    {
+      "name": "longrightarrow",
+      "if": "math",
+      "detail": "⟶",
+      "doc": "Long rightwards arrow"
+    },
+    {
+      "name": "longleftarrow",
+      "if": "math",
+      "detail": "⟵",
+      "doc": "Long leftwards arrow"
+    },
+    {
+      "name": "rightarrowfill",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "leftarrowfill",
+      "if": "math",
+      "unusual": true
+    },
+    {
+      "name": "minusleft",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "equalleft",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "equalright",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "equalc",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "Leftarrowj",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "minusleft",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "minusright",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "minusc",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "Longrightarrow",
+      "if": "mathnoalias",
+      "detail": "⟹",
+      "doc": "\\implies (amsmath), long rightwards double arrow"
+    },
+    {
+      "name": "Longleftarrow",
+      "if": "mathnoalias",
+      "detail": "⟸",
+      "doc": "\\impliedby (amsmath), long leftwards double arrow"
+    },
+    {
+      "name": "longrightarrow",
+      "if": "mathnoalias",
+      "detail": "⟶",
+      "doc": "Long rightwards arrow"
+    },
+    {
+      "name": "longleftarrow",
+      "if": "mathnoalias",
+      "detail": "⟵",
+      "doc": "Long leftwards arrow"
+    },
+    {
+      "name": "rightarrowfill",
+      "if": "mathnoalias",
+      "unusual": true
+    },
+    {
+      "name": "leftarrowfill",
+      "if": "mathnoalias",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/anttor#c": [
+      "regular",
+      "light",
+      "condensed",
+      "mathnoalias",
+      "math"
+    ]
+  },
+  "args": [
+    "\\usepackage/anttor#c"
+  ]
+}

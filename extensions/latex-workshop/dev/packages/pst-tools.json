@@ -1,0 +1,111 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psPrintValue",
+      "arg": {
+        "format": "{}",
+        "snippet": "psPrintValue{${1:PS code}}"
+      }
+    },
+    {
+      "name": "psPrintValue",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "psPrintValue[${2:options%keyvals}]{${1:PS code}}",
+        "keys": [
+          "\\psPrintValue,\\psPrintValueNew"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "psPrintValueNew",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "psPrintValueNew{${1:PS code}}"
+      }
+    },
+    {
+      "name": "psPrintValueNew",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "psPrintValueNew[${2:options%keyvals}]{${1:PS code}}",
+        "keys": [
+          "\\psPrintValue,\\psPrintValueNew",
+          "\\psPrintValueNew"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "psRegisterList",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "psRegisterList{${1:name}}{${2:value list}}"
+      }
+    },
+    {
+      "name": "randomi",
+      "unusual": true
+    },
+    {
+      "name": "nextrandom",
+      "unusual": true
+    },
+    {
+      "name": "setrannum",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrannum{${1:count register%cmd}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "setrandim",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrandim{${1:dimen register%cmd}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "pointless"
+    },
+    {
+      "name": "PoinTless",
+      "unusual": true
+    },
+    {
+      "name": "ranval",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\psPrintValue,\\psPrintValueNew": [
+      "printfont=${1:font name}",
+      "postString=${1:string}",
+      "trimSpaces",
+      "fontscale=${1:scale in pts}",
+      "valuewidth=${1:number}",
+      "decimals=${1:number}",
+      "xShift=${1:shift in pts}",
+      "algebraic",
+      "VarName=${1:string}",
+      "comma"
+    ],
+    "\\psPrintValueNew": [
+      "round",
+      "science"
+    ]
+  },
+  "args": []
+}

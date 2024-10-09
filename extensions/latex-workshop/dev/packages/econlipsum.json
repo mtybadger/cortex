@@ -1,0 +1,87 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "econ"
+    },
+    {
+      "name": "econ",
+      "arg": {
+        "format": "[]",
+        "snippet": "econ[${1:num}]"
+      }
+    },
+    {
+      "name": "econ",
+      "arg": {
+        "format": "[][]",
+        "snippet": "econ[${1:num}][${2:num}]"
+      }
+    },
+    {
+      "name": "econ",
+      "arg": {
+        "format": "[]",
+        "snippet": "econ[${1:num-num}]"
+      }
+    },
+    {
+      "name": "econ",
+      "arg": {
+        "format": "[][]",
+        "snippet": "econ[${1:num-num}][${2:num-num}]"
+      }
+    },
+    {
+      "name": "econ*"
+    },
+    {
+      "name": "econ*",
+      "arg": {
+        "format": "[]",
+        "snippet": "econ*[${1:num}]"
+      }
+    },
+    {
+      "name": "econ*",
+      "arg": {
+        "format": "[]",
+        "snippet": "econ*[${1:num-num}]"
+      }
+    },
+    {
+      "name": "econ*",
+      "arg": {
+        "format": "[]",
+        "snippet": "econ*[${1:num-num}]"
+      }
+    },
+    {
+      "name": "econ*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "econ*[${1:num-num}][${2:num-num}]"
+      }
+    },
+    {
+      "name": "econdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "econdef{${1:cmd}}{${2:num}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/econlipsum#c": [
+      "par",
+      "nopar",
+      "numbers",
+      "index"
+    ]
+  },
+  "args": [
+    "\\usepackage/econlipsum#c"
+  ]
+}

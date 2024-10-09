@@ -1,0 +1,66 @@
+{
+  "deps": [
+    {
+      "name": "basque-date"
+    }
+  ],
+  "macros": [
+    {
+      "name": "frontmatter"
+    },
+    {
+      "name": "mainmatter"
+    },
+    {
+      "name": "backmatter"
+    },
+    {
+      "name": "thechapter",
+      "unusual": true
+    },
+    {
+      "name": "chaptername"
+    },
+    {
+      "name": "bibname"
+    },
+    {
+      "name": "captionwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "captionwidth{${1:width}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/basque-book#c": [
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "openright",
+      "openany",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ]
+  },
+  "args": [
+    "\\documentclass/basque-book#c"
+  ]
+}

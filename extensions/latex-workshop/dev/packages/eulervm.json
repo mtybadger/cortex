@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathbold",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbold{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "upOmega",
+      "detail": "Ω",
+      "doc": "\\omega (-slantedgreek), \\mathrm{\\omega}, capital omega, greek"
+    },
+    {
+      "name": "upDelta",
+      "detail": "Δ",
+      "doc": "\\delta (-slantedgreek), \\mathrm{\\delta}, capital delta, greek"
+    },
+    {
+      "name": "hslash",
+      "detail": "ℏ (\"amssymb fourier arevmath\" command)",
+      "doc": "=\\hbar (wrisym), #\\hbar, planck's h over 2pi"
+    },
+    {
+      "name": "mathcomma",
+      "if": "icomma"
+    },
+    {
+      "name": "domathcomma",
+      "if": "icomma",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/eulervm#c": [
+      "small",
+      "euler-digits",
+      "euler-hat-accent",
+      "OT1",
+      "T1",
+      "LY1",
+      "icomma"
+    ]
+  },
+  "args": [
+    "\\usepackage/eulervm#c"
+  ]
+}

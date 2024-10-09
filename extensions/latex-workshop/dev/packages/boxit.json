@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "boxit"
+    },
+    {
+      "name": "boxit*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

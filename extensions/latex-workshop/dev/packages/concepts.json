@@ -1,0 +1,149 @@
+{
+  "deps": [
+    {
+      "name": "etextools"
+    },
+    {
+      "name": "nth"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "ltxkeys"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "NewConcept",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewConcept{${1:concept key}}{${2:options%keyvals}}",
+        "keys": [
+          "\\NewConcept"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "ConceptOption",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConceptOption{${1:concept key}}{${2:option%keyvals}}",
+        "keys": [
+          "\\ConceptOption"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "ConceptName",
+      "arg": {
+        "format": "{}",
+        "snippet": "ConceptName{${1:concept key}}"
+      }
+    },
+    {
+      "name": "ConceptName^",
+      "arg": {
+        "format": "{}",
+        "snippet": "ConceptName^{${1:concept key}}"
+      }
+    },
+    {
+      "name": "ConceptName*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ConceptName*{${1:concept key}}"
+      }
+    },
+    {
+      "name": "ConceptName^*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ConceptName^*{${1:concept key}}"
+      }
+    },
+    {
+      "name": "ConceptSymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "ConceptSymbol{${1:concept key}}"
+      }
+    },
+    {
+      "name": "ConceptSymbol",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ConceptSymbol{${1:concept key}}[${2:symbol index}]"
+      }
+    },
+    {
+      "name": "ConceptSymbols",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConceptSymbols{${1:concept key}}{${2:symbol indices}}"
+      }
+    },
+    {
+      "name": "ConceptSymbols",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ConceptSymbols{${1:concept key}}[${3:separator}]{${2:symbol indices}}"
+      }
+    },
+    {
+      "name": "ConceptSymbols",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "ConceptSymbols{${1:concept key}}[${3:separator}][${4:last separator}]{${2:symbol indices}}"
+      }
+    },
+    {
+      "name": "ConceptNameAndSymbols",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConceptNameAndSymbols{${1:concept key}}{${2:symbol indices}}"
+      }
+    },
+    {
+      "name": "ConceptNameAndSymbols",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ConceptNameAndSymbols{${1:concept key}}[${3:separator}]{${2:symbol indices}}"
+      }
+    },
+    {
+      "name": "ConceptNameAndSymbols",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "ConceptNameAndSymbols{${1:concept key}}[${3:separator}][${4:last separator}]{${2:symbol indices}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\NewConcept": [
+      "name=",
+      "Name=",
+      "plural=",
+      "Plural=",
+      "namecmd=",
+      "symbols={${1:list of symbols}}",
+      "symbolcmd="
+    ],
+    "\\ConceptOption": [
+      "name",
+      "Name",
+      "plural",
+      "Plural",
+      "namecmd",
+      "symbols",
+      "symbolcmd"
+    ]
+  },
+  "args": []
+}

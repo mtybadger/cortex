@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "precattl"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "saveenv",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "saveenvghost",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "saveenvkeeplast",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "saveenvreinsert",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:macro%cmd}}{${2:code}}"
+      }
+    },
+    {
+      "name": "saveenvkeeplastreinsert",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:macro%cmd}}{${2:code}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

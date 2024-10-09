@@ -1,0 +1,218 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "scripttheta"
+    },
+    {
+      "name": "straightepsilon"
+    },
+    {
+      "name": "straightphi"
+    },
+    {
+      "name": "straighttheta"
+    },
+    {
+      "name": "textalpha"
+    },
+    {
+      "name": "textAlpha"
+    },
+    {
+      "name": "textbeta"
+    },
+    {
+      "name": "textBeta"
+    },
+    {
+      "name": "textchi"
+    },
+    {
+      "name": "textChi"
+    },
+    {
+      "name": "textdelta"
+    },
+    {
+      "name": "textDelta"
+    },
+    {
+      "name": "textepsilon"
+    },
+    {
+      "name": "textEpsilon"
+    },
+    {
+      "name": "texteta"
+    },
+    {
+      "name": "textEta"
+    },
+    {
+      "name": "textgamma"
+    },
+    {
+      "name": "textGamma"
+    },
+    {
+      "name": "textiota"
+    },
+    {
+      "name": "textIota"
+    },
+    {
+      "name": "textkappa"
+    },
+    {
+      "name": "textKappa"
+    },
+    {
+      "name": "textlambda"
+    },
+    {
+      "name": "textLambda"
+    },
+    {
+      "name": "textmu"
+    },
+    {
+      "name": "textMu"
+    },
+    {
+      "name": "textmugreek"
+    },
+    {
+      "name": "textnu"
+    },
+    {
+      "name": "textNu"
+    },
+    {
+      "name": "textomega"
+    },
+    {
+      "name": "textOmega"
+    },
+    {
+      "name": "textomikron"
+    },
+    {
+      "name": "textOmikron"
+    },
+    {
+      "name": "textphi"
+    },
+    {
+      "name": "textPhi"
+    },
+    {
+      "name": "textpi"
+    },
+    {
+      "name": "textPi"
+    },
+    {
+      "name": "textpsi"
+    },
+    {
+      "name": "textPsi"
+    },
+    {
+      "name": "textrho"
+    },
+    {
+      "name": "textRho"
+    },
+    {
+      "name": "textsigma"
+    },
+    {
+      "name": "textSigma"
+    },
+    {
+      "name": "texttau"
+    },
+    {
+      "name": "textTau"
+    },
+    {
+      "name": "texttheta"
+    },
+    {
+      "name": "textTheta"
+    },
+    {
+      "name": "textupsilon"
+    },
+    {
+      "name": "textUpsilon"
+    },
+    {
+      "name": "textvarsigma"
+    },
+    {
+      "name": "textxi"
+    },
+    {
+      "name": "textXi"
+    },
+    {
+      "name": "textzeta"
+    },
+    {
+      "name": "textZeta"
+    },
+    {
+      "name": "textgreekfontmap",
+      "unusual": true
+    },
+    {
+      "name": "textgreekfont",
+      "unusual": true
+    },
+    {
+      "name": "TextGreek",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TextGreek{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "DeclareTextGreekSymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareTextGreekSymbol{${1:letter}}{${2:LGR}}"
+      }
+    },
+    {
+      "name": "DeclareTextGreekSymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "DeclareTextGreekSymbol{${1:letter}}{${2:LGR}}[${3:OML}]"
+      }
+    },
+    {
+      "name": "DeclareTextGreekSymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "DeclareTextGreekSymbol{${1:letter}}{${2:LGR}}[${3:OML}][${4:U}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/textgreek#c": [
+      "cbgreek",
+      "euler",
+      "artemisia"
+    ]
+  },
+  "args": [
+    "\\usepackage/textgreek#c"
+  ]
+}

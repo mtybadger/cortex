@@ -1,0 +1,171 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "hdashline"
+    },
+    {
+      "name": "hdashline",
+      "arg": {
+        "format": "[]",
+        "snippet": "hdashline[${1:dash/gap}]"
+      }
+    },
+    {
+      "name": "cdashline",
+      "arg": {
+        "format": "{}",
+        "snippet": "cdashline{${1:i-j}}"
+      }
+    },
+    {
+      "name": "cdashline",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "cdashline{${1:i-j}}[${2:dash/gap}]"
+      }
+    },
+    {
+      "name": "firsthdashline"
+    },
+    {
+      "name": "lasthdashline"
+    },
+    {
+      "name": "dashlinedash",
+      "unusual": true
+    },
+    {
+      "name": "dashlinegap",
+      "unusual": true
+    },
+    {
+      "name": "ADLnullwide",
+      "unusual": true
+    },
+    {
+      "name": "ADLsomewide",
+      "unusual": true
+    },
+    {
+      "name": "ADLdrawingmode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ADLdrawingmode{${1:mode number%keyvals}}",
+        "keys": [
+          "\\ADLdrawingmode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ADLinactivate",
+      "unusual": true
+    },
+    {
+      "name": "ADLactivate",
+      "unusual": true
+    },
+    {
+      "name": "ADLnoshorthanded",
+      "unusual": true
+    },
+    {
+      "name": "ADLnullwidehline",
+      "unusual": true
+    },
+    {
+      "name": "ADLsomewidehline",
+      "unusual": true
+    },
+    {
+      "name": "dashgapcolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dashgapcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "dashgapcolor",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dashgapcolor[${2:model}]{${1:color specs}}"
+      }
+    },
+    {
+      "name": "nodashgapcolor",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "Array",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "Array",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "Tabular",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "Tabular",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "Tabular*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "{${1:width}}[${3:pos}]{${2:cols}}"
+      }
+    },
+    {
+      "name": "Tabular*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:width}}{${2:cols}}"
+      }
+    },
+    {
+      "name": "Longtable",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "Longtable",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:cols}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\ADLdrawingmode": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  "args": []
+}

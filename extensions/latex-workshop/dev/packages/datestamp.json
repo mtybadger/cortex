@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adddatestamp",
+      "arg": {
+        "format": "{}",
+        "snippet": "adddatestamp{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "adddaystamp",
+      "arg": {
+        "format": "{}",
+        "snippet": "adddaystamp{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "addmonthstamp",
+      "arg": {
+        "format": "{}",
+        "snippet": "addmonthstamp{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "addyearstamp",
+      "arg": {
+        "format": "{}",
+        "snippet": "addyearstamp{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "luacodefordatestamp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "luacodefordatestamp{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "svn-prov"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "perpage"
+    },
+    {
+      "name": "polyglossia"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "indentfirst"
+    },
+    {
+      "name": "icomma"
+    }
+  ],
+  "macros": [
+    {
+      "name": "npageref",
+      "arg": {
+        "format": "{}",
+        "snippet": "npageref{${1:label}}"
+      }
+    },
+    {
+      "name": "nref",
+      "arg": {
+        "format": "{}",
+        "snippet": "nref{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

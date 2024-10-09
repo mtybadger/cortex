@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "ifluatex"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

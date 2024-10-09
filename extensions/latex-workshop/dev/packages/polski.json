@@ -1,0 +1,384 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "DH",
+      "if": "T1"
+    },
+    {
+      "name": "dh",
+      "if": "T1"
+    },
+    {
+      "name": "dj",
+      "if": "T1"
+    },
+    {
+      "name": "DJ",
+      "if": "T1"
+    },
+    {
+      "name": "guillemetleft",
+      "if": "T1"
+    },
+    {
+      "name": "guillemetright",
+      "if": "T1"
+    },
+    {
+      "name": "guillemotleft",
+      "if": "T1",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "if": "T1",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft",
+      "if": "T1"
+    },
+    {
+      "name": "guilsinglright",
+      "if": "T1"
+    },
+    {
+      "name": "Hwithstroke",
+      "if": "T1"
+    },
+    {
+      "name": "hwithstroke",
+      "if": "T1"
+    },
+    {
+      "name": "k",
+      "if": "T1",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG",
+      "if": "T1"
+    },
+    {
+      "name": "ng",
+      "if": "T1"
+    },
+    {
+      "name": "quotedblbase",
+      "if": "T1"
+    },
+    {
+      "name": "quotesinglbase",
+      "if": "T1"
+    },
+    {
+      "name": "textogonekcentered",
+      "if": "T1",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl",
+      "if": "T1"
+    },
+    {
+      "name": "th",
+      "if": "T1"
+    },
+    {
+      "name": "TH",
+      "if": "T1"
+    },
+    {
+      "name": "DH",
+      "if": "QX"
+    },
+    {
+      "name": "dh",
+      "if": "QX"
+    },
+    {
+      "name": "DJ",
+      "if": "QX"
+    },
+    {
+      "name": "dj",
+      "if": "QX"
+    },
+    {
+      "name": "guillemotleft",
+      "if": "QX"
+    },
+    {
+      "name": "guillemotright",
+      "if": "QX"
+    },
+    {
+      "name": "k",
+      "if": "QX",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "quotedblbase",
+      "if": "QX"
+    },
+    {
+      "name": "textalpha",
+      "if": "QX"
+    },
+    {
+      "name": "textanglearc",
+      "if": "QX"
+    },
+    {
+      "name": "textapprox",
+      "if": "QX"
+    },
+    {
+      "name": "textbeta",
+      "if": "QX"
+    },
+    {
+      "name": "textDelta",
+      "if": "QX"
+    },
+    {
+      "name": "textdelta",
+      "if": "QX"
+    },
+    {
+      "name": "textdiameter",
+      "if": "QX"
+    },
+    {
+      "name": "textell",
+      "if": "QX"
+    },
+    {
+      "name": "textEuro",
+      "if": "QX"
+    },
+    {
+      "name": "textinfty",
+      "if": "QX"
+    },
+    {
+      "name": "textOmega",
+      "if": "QX"
+    },
+    {
+      "name": "textpi",
+      "if": "QX"
+    },
+    {
+      "name": "textPi",
+      "if": "QX"
+    },
+    {
+      "name": "textquotedbl",
+      "if": "QX"
+    },
+    {
+      "name": "textSigma",
+      "if": "QX"
+    },
+    {
+      "name": "textxgeq",
+      "if": "QX"
+    },
+    {
+      "name": "textxleq",
+      "if": "QX"
+    },
+    {
+      "name": "TH",
+      "if": "QX"
+    },
+    {
+      "name": "th",
+      "if": "QX"
+    },
+    {
+      "name": "LaMeX",
+      "if": "MeX"
+    },
+    {
+      "name": "MeX",
+      "if": "MeX"
+    },
+    {
+      "name": "english",
+      "if": "MeX",
+      "unusual": true
+    },
+    {
+      "name": "polish",
+      "if": "MeX",
+      "unusual": true
+    },
+    {
+      "name": "macron",
+      "if": "MeX",
+      "arg": {
+        "format": "{}",
+        "snippet": "macron{${1:arg}}"
+      }
+    },
+    {
+      "name": "PLdateending"
+    },
+    {
+      "name": "dywiz"
+    },
+    {
+      "name": "pauza"
+    },
+    {
+      "name": "tg"
+    },
+    {
+      "name": "tgh"
+    },
+    {
+      "name": "ctg"
+    },
+    {
+      "name": "ctgh"
+    },
+    {
+      "name": "nwd"
+    },
+    {
+      "name": "arccot"
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "nonprefixing",
+      "unusual": true
+    },
+    {
+      "name": "PlPrIeC",
+      "unusual": true
+    },
+    {
+      "name": "PLSlash",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PLSlash{${1:arg}}"
+      }
+    },
+    {
+      "name": "ppauza",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "prefixing",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "selecthyphenation",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "selecthyphenation{${1:language}}"
+      }
+    },
+    {
+      "name": "Slash",
+      "unusual": true
+    },
+    {
+      "name": "xgeq",
+      "unusual": true
+    },
+    {
+      "name": "xleq",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/polski#c": [
+      "plmath",
+      "nomathsymbols",
+      "MeX",
+      "T1",
+      "QX",
+      "OT1",
+      "OT4",
+      "prefixinginverb",
+      "noprefixinginverb",
+      "roku",
+      "r.",
+      "noroku"
+    ]
+  },
+  "args": [
+    "\\usepackage/polski#c"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "wvsc-cortex-themes",
+  "displayName": "Cortex Themes",
+  "description": "Elegant, minimal, and clean color palette to give your eyes rest on different interfaces.",
+  "version": "1.66.0",
+  "publisher": "wicked-labs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Serendipity-Theme/vs-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Serendipity-Theme/vs-code.git",
+    "email": "michael@andreuzza.com"
+  },
+  "homepage": "https://www.michaelandreuzza.com/vscode/serendipity/",
+  "icon": "logo/theme-icon.png",
+  "galleryBanner": {
+    "color": "#060a15",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "michael andreuzza",
+    "serendipity",
+    "light-theme",
+    "dark-theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cortex Light",
+        "uiTheme": "vs",
+        "path": "./themes/cortex-light.json"
+      },
+      {
+        "label": "Cortex Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cortex-dark.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "cortex-icons",
+        "label": "Cortex Icons",
+        "path": "./icons/cortex-theme.json"
+      }
+    ]
+  }
+}

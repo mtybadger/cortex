@@ -1,0 +1,64 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "macrolist"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newpalettetheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "newpalettetheme{${1:theme}}"
+      }
+    },
+    {
+      "name": "addcolortotheme",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addcolortotheme{${1:theme}}{${2:color}}"
+      }
+    },
+    {
+      "name": "newpalette",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newpalette{${1:theme}}{${2:palette}}"
+      }
+    },
+    {
+      "name": "setpalettecolor",
+      "arg": {
+        "format": "{}{}{}[]{}",
+        "snippet": "setpalettecolor{${1:theme}}{${2:palette}}{${3:color}}[${5:encoding}]{${4:value}}"
+      }
+    },
+    {
+      "name": "activepalette",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "activepalette{${1:theme}}{${2:palette}}"
+      }
+    },
+    {
+      "name": "getcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getcolor{${1:theme}}{${2:color}}"
+      }
+    },
+    {
+      "name": "applycolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "applycolor{${1:theme}}{${2:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

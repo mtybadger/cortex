@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/UniversalisADFStd#c": [
+      "scaled=${1:factor}",
+      "lining",
+      "proportional",
+      "bold",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/UniversalisADFStd#c"
+  ]
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "blank",
+        "name": "Blank",
+        "description": "",
+        "image": "images/blank.png"
+    },
+    {
+        "id": "ieee_journal",
+        "name": "IEEE Journal",
+        "description": "IEEE Journal template",
+        "image": "images/ieee_journal.png"
+    },
+    {
+        "id": "ieee_conference",
+        "name": "IEEE Conference",
+        "description": "IEEE Conference template",
+        "image": "images/ieee_conference.png"
+    },
+    {
+        "id": "resume",
+        "name": "Resume",
+        "description": "Resume/CV template",
+        "image": "images/resume.png"
+    },
+    {
+        "id": "icml",
+        "name": "ICML 2024",
+        "description": "ICML 2024 conference template",
+        "image": "images/icml.png"
+    },
+    {
+        "id": "neurips",
+        "name": "NeurIPS 2024",
+        "description": "NeurIPS 2024 conference template",
+        "image": "images/neurips.png"
+    },
+    {
+        "id": "jlab",
+        "name": "MIT Junior Lab Template",
+        "description": "MIT Junior Lab template, adapted from RevTeX (APS)",
+        "image": "images/jlab.png"
+    }
+]

@@ -3,22 +3,22 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as browser from './browser.js';
-import { BrowserFeatures } from './canIUse.js';
-import { IKeyboardEvent, StandardKeyboardEvent } from './keyboardEvent.js';
-import { IMouseEvent, StandardMouseEvent } from './mouseEvent.js';
-import { AbstractIdleValue, IntervalTimer, TimeoutTimer, _runWhenIdle, IdleDeadline } from '../common/async.js';
-import { onUnexpectedError } from '../common/errors.js';
-import * as event from '../common/event.js';
-import * as dompurify from './dompurify/dompurify.js';
-import { KeyCode } from '../common/keyCodes.js';
-import { Disposable, DisposableStore, IDisposable, toDisposable } from '../common/lifecycle.js';
-import { RemoteAuthorities, Schemas } from '../common/network.js';
-import * as platform from '../common/platform.js';
-import { URI } from '../common/uri.js';
-import { hash } from '../common/hash.js';
-import { CodeWindow, ensureCodeWindow, mainWindow } from './window.js';
-import { isPointWithinTriangle } from '../common/numbers.js';
+import * as browser from 'vs/base/browser/browser';
+import { BrowserFeatures } from 'vs/base/browser/canIUse';
+import { IKeyboardEvent, StandardKeyboardEvent } from 'vs/base/browser/keyboardEvent';
+import { IMouseEvent, StandardMouseEvent } from 'vs/base/browser/mouseEvent';
+import { AbstractIdleValue, IntervalTimer, TimeoutTimer, _runWhenIdle, IdleDeadline } from 'vs/base/common/async';
+import { onUnexpectedError } from 'vs/base/common/errors';
+import * as event from 'vs/base/common/event';
+import * as dompurify from 'vs/base/browser/dompurify/dompurify';
+import { KeyCode } from 'vs/base/common/keyCodes';
+import { Disposable, DisposableStore, IDisposable, toDisposable } from 'vs/base/common/lifecycle';
+import { FileAccess, RemoteAuthorities, Schemas } from 'vs/base/common/network';
+import * as platform from 'vs/base/common/platform';
+import { URI } from 'vs/base/common/uri';
+import { hash } from 'vs/base/common/hash';
+import { CodeWindow, ensureCodeWindow, mainWindow } from 'vs/base/browser/window';
+import { isPointWithinTriangle } from 'vs/base/common/numbers';
 
 export interface IRegisteredCodeWindow {
 	readonly window: CodeWindow;
@@ -1556,7 +1556,7 @@ export function removeTabIndexAndUpdateFocus(node: HTMLElement): void {
 	node.removeAttribute('tabindex');
 }
 
-export function finalHandler<T extends Event>(fn: (event: T) => unknown): (event: T) => unknown {
+export function finalHandler<T extends Event>(fn: (event: T) => any): (event: T) => any {
 	return e => {
 		e.preventDefault();
 		e.stopPropagation();
@@ -1675,6 +1675,35 @@ export function animate(targetWindow: Window, fn: () => void): IDisposable {
 }
 
 RemoteAuthorities.setPreferredWebSchema(/^https:/.test(mainWindow.location.href) ? 'https' : 'http');
+
+/**
+ * returns url('...')
+ */
+export function asCSSUrl(uri: URI | null | undefined): string {
+	if (!uri) {
+		return `url('')`;
+	}
+	return `url('${FileAccess.uriToBrowserUri(uri).toString(true).replace(/'/g, '%27')}')`;
+}
+
+export function asCSSPropertyValue(value: string) {
+	return `'${value.replace(/'/g, '%27')}'`;
+}
+
+export function asCssValueWithDefault(cssPropertyValue: string | undefined, dflt: string): string {
+	if (cssPropertyValue !== undefined) {
+		const variableMatch = cssPropertyValue.match(/^\s*var\((.+)\)$/);
+		if (variableMatch) {
+			const varArguments = variableMatch[1].split(',', 2);
+			if (varArguments.length === 2) {
+				dflt = asCssValueWithDefault(varArguments[1].trim(), dflt);
+			}
+			return `var(${varArguments[0]}, ${dflt})`;
+		}
+		return cssPropertyValue;
+	}
+	return dflt;
+}
 
 export function triggerDownload(dataOrUri: Uint8Array | URI, name: string): void {
 
@@ -1922,10 +1951,10 @@ const defaultDomPurifyConfig = Object.freeze<dompurify.Config & { RETURN_TRUSTED
 /**
  * Sanitizes the given `value` and reset the given `node` with it.
  */
-export function safeInnerHtml(node: HTMLElement, value: string, extraDomPurifyConfig?: dompurify.Config): void {
+export function safeInnerHtml(node: HTMLElement, value: string): void {
 	const hook = hookDomPurifyHrefAndSrcSanitizer(defaultSafeProtocols);
 	try {
-		const html = dompurify.sanitize(value, { ...defaultDomPurifyConfig, ...extraDomPurifyConfig });
+		const html = dompurify.sanitize(value, defaultDomPurifyConfig);
 		node.innerHTML = html as unknown as string;
 	} finally {
 		hook.dispose();
@@ -2487,17 +2516,13 @@ export function trackAttributes(from: Element, to: Element, filter?: string[]): 
 	return disposables;
 }
 
-export function isEditableElement(element: Element): boolean {
-	return element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'textarea' || isHTMLElement(element) && !!element.editContext;
-}
-
 /**
  * Helper for calculating the "safe triangle" occluded by hovers to avoid early dismissal.
  * @see https://www.smashingmagazine.com/2023/08/better-context-menus-safe-triangles/ for example
  */
 export class SafeTriangle {
-	// 4 points (x, y), 8 length
-	private points = new Int16Array(8);
+	// 4 triangles, 2 points (x, y) stored for each
+	private triangles: number[] = [];
 
 	constructor(
 		private readonly originX: number,
@@ -2505,28 +2530,34 @@ export class SafeTriangle {
 		target: HTMLElement
 	) {
 		const { top, left, right, bottom } = target.getBoundingClientRect();
-		const t = this.points;
+		const t = this.triangles;
 		let i = 0;
 
 		t[i++] = left;
 		t[i++] = top;
-
 		t[i++] = right;
 		t[i++] = top;
 
 		t[i++] = left;
+		t[i++] = top;
+		t[i++] = left;
 		t[i++] = bottom;
 
+		t[i++] = right;
+		t[i++] = top;
+		t[i++] = right;
+		t[i++] = bottom;
+
+		t[i++] = left;
+		t[i++] = bottom;
 		t[i++] = right;
 		t[i++] = bottom;
 	}
 
 	public contains(x: number, y: number) {
-		const { points, originX, originY } = this;
+		const { triangles, originX, originY } = this;
 		for (let i = 0; i < 4; i++) {
-			const p1 = 2 * i;
-			const p2 = 2 * ((i + 1) % 4);
-			if (isPointWithinTriangle(x, y, originX, originY, points[p1], points[p1 + 1], points[p2], points[p2 + 1])) {
+			if (isPointWithinTriangle(x, y, originX, originY, triangles[2 * i], triangles[2 * i + 1], triangles[2 * i + 2], triangles[2 * i + 3])) {
 				return true;
 			}
 		}

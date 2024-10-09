@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "typearea"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "lineno"
+    },
+    {
+      "name": "hyphenat"
+    },
+    {
+      "name": "titlesec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CharsX",
+      "unusual": true
+    },
+    {
+      "name": "CharsI",
+      "unusual": true
+    },
+    {
+      "name": "zeichenzahl",
+      "unusual": true
+    },
+    {
+      "name": "zeilenzahl",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/stdpage#c": [
+      "just",
+      "noindent",
+      "linenumbers",
+      "hyphen",
+      "parskip",
+      "chars=${1:integer}",
+      "lines=${1:integer}",
+      "baselinestretch",
+      "baselinestretch=${1:factor}",
+      "typewriter"
+    ]
+  },
+  "args": [
+    "\\usepackage/stdpage#c"
+  ]
+}

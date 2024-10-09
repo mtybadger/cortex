@@ -13,7 +13,7 @@ steps:
     continueOnError: true
     displayName: Download ESRPClient
 
-  - task: AzureKeyVault@2
+  - task: AzureKeyVault@1
     displayName: "Azure Key Vault: Get Secrets"
     inputs:
       azureSubscription: "vscode-builds-subscription"

@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "uptex"
+    },
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

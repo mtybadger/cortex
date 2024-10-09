@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "nlq"
+    },
+    {
+      "name": "nrq"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/nestquot#c": [
+      "german",
+      "french",
+      "guillemet",
+      "dq"
+    ]
+  },
+  "args": [
+    "\\usepackage/nestquot#c"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "ifuptex"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gckanbunruby",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gckanbunruby{${1:text1}}{${2:text2}}"
+      }
+    },
+    {
+      "name": "gckanbunokurigana",
+      "arg": {
+        "format": "{}",
+        "snippet": "gckanbunokurigana{${1:text}}"
+      }
+    },
+    {
+      "name": "gckanbunkaeriten",
+      "arg": {
+        "format": "{}",
+        "snippet": "gckanbunkaeriten{${1:text}}"
+      }
+    },
+    {
+      "name": "ruby",
+      "if": "prefix=",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ruby{${1:text1}}{${2:text2}}"
+      }
+    },
+    {
+      "name": "okurigana",
+      "if": "prefix=",
+      "arg": {
+        "format": "{}",
+        "snippet": "okurigana{${1:text}}"
+      }
+    },
+    {
+      "name": "kaeriten",
+      "if": "prefix=",
+      "arg": {
+        "format": "{}",
+        "snippet": "kaeriten{${1:text}}"
+      }
+    },
+    {
+      "name": "kanbunruby",
+      "if": "prefix=kanbun",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "kanbunruby{${1:text1}}{${2:text2}}"
+      }
+    },
+    {
+      "name": "kanbunokurigana",
+      "if": "prefix=kanbun",
+      "arg": {
+        "format": "{}",
+        "snippet": "kanbunokurigana{${1:text}}"
+      }
+    },
+    {
+      "name": "kanbunkaeriten",
+      "if": "prefix=kanbun",
+      "arg": {
+        "format": "{}",
+        "snippet": "kanbunkaeriten{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gckanbun#c": [
+      "prefix=${1:prefix}"
+    ]
+  },
+  "args": [
+    "\\usepackage/gckanbun#c"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "bxcalcux"
+    }
+  ],
+  "macros": [
+    {
+      "name": "usepTeXunits",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

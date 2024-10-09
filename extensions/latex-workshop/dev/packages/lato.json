@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "lato"
+    },
+    {
+      "name": "latofamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lato#c": [
+      "scaled=${1:factor}",
+      "default",
+      "defaultsans",
+      "oldstyle",
+      "tabular",
+      "proportional",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/lato#c"
+  ]
+}

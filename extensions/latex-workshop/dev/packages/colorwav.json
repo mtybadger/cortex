@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "fp"
+    }
+  ],
+  "macros": [
+    {
+      "name": "storeRGBofWavelength",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "storeRGBofWavelength{${1:r-val-cmd%cmd}}{${2:g-val-cmd%cmd}}{${3:b-val-cmd%cmd}}{${4:wavelength}}"
+      }
+    },
+    {
+      "name": "setUnitsE",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setUnitsE{${1:number}}"
+      }
+    },
+    {
+      "name": "setMinVisibleWavelength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setMinVisibleWavelength{${1:arg}}"
+      }
+    },
+    {
+      "name": "setMaxVisibleWavelength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setMaxVisibleWavelength{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

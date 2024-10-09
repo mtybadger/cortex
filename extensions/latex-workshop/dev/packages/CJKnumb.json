@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "CJK"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CJKnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "CJKdigits",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKdigits{${1:digits}}"
+      }
+    },
+    {
+      "name": "CJKdigits*",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKdigits*{${1:digits}}"
+      }
+    },
+    {
+      "name": "CJKnullspace",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

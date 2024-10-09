@@ -1,0 +1,44 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "allowprelistbreaks"
+    },
+    {
+      "name": "allowpostlistbreaks"
+    },
+    {
+      "name": "allowitembreaks"
+    },
+    {
+      "name": "RestoreSpaces"
+    },
+    {
+      "name": "RemoveSpaces"
+    },
+    {
+      "name": "newseparatedlabel",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newseparatedlabel{${1:cmd}}{${2:captype}}{${3:subcaptype}}"
+      }
+    },
+    {
+      "name": "newseparatedref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newseparatedref{${1:cmd}}{${2:separator}}"
+      }
+    },
+    {
+      "name": "makelabelseparator",
+      "arg": {
+        "format": "{}",
+        "snippet": "makelabelseparator{${1:separator}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

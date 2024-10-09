@@ -1,0 +1,83 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "showrefnames"
+    },
+    {
+      "name": "norefnames"
+    },
+    {
+      "name": "showcitenames"
+    },
+    {
+      "name": "nocitenames"
+    },
+    {
+      "name": "refcheckxrdoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "refcheckxrdoc{${1:file}}"
+      }
+    },
+    {
+      "name": "refcheckxrdoc",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "refcheckxrdoc[${2:prefix}]{${1:file}}"
+      }
+    },
+    {
+      "name": "setonmsgs"
+    },
+    {
+      "name": "setoffmsgs"
+    },
+    {
+      "name": "checkunlbld"
+    },
+    {
+      "name": "ignoreunlbld"
+    },
+    {
+      "name": "cleanprefix",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cleanprefix{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "usedref",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "usedref{${1:arg}}"
+      }
+    },
+    {
+      "name": "wrtusdrf",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "wrtusdrf{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/refcheck#c": [
+      "showrefs",
+      "showcites",
+      "msgs",
+      "chckunlbld",
+      "norefs",
+      "nocites",
+      "nomsgs",
+      "ignoreunlbld"
+    ]
+  },
+  "args": [
+    "\\usepackage/refcheck#c"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "aksharStrLen",
+      "arg": {
+        "format": "{}",
+        "snippet": "aksharStrLen{${1:tokens}}"
+      }
+    },
+    {
+      "name": "aksharStrHead",
+      "arg": {
+        "format": "{}",
+        "snippet": "aksharStrHead{${1:tokens}}"
+      }
+    },
+    {
+      "name": "aksharStrTail",
+      "arg": {
+        "format": "{}",
+        "snippet": "aksharStrTail{${1:tokens}}"
+      }
+    },
+    {
+      "name": "aksharStrChar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "aksharStrChar{${1:tokens}}{${2:n}}"
+      }
+    },
+    {
+      "name": "aksharStrReplace",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "aksharStrReplace{${1:tokens1}}{${2:tokens2}}{${3:tokens3}}"
+      }
+    },
+    {
+      "name": "aksharStrReplace*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "aksharStrReplace*{${1:tokens1}}{${2:tokens2}}{${3:tokens3}}"
+      }
+    },
+    {
+      "name": "aksharStrRemove",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "aksharStrRemove{${1:tokens1}}{${2:tokens2}}"
+      }
+    },
+    {
+      "name": "aksharStrRemove*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "aksharStrRemove*{${1:tokens1}}{${2:tokens2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

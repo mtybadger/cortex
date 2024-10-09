@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "infile",
+      "arg": {
+        "format": "{}",
+        "snippet": "infile{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

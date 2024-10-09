@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "emotionsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "emotionsetup{${1:font name}}"
+      }
+    },
+    {
+      "name": "emotiondef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "emotiondef{${1:name}}{${2:emoji}}"
+      }
+    },
+    {
+      "name": "emotion",
+      "arg": {
+        "format": "{}",
+        "snippet": "emotion{${1:emoji}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

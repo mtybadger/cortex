@@ -1,0 +1,38 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LobsterTwo"
+    },
+    {
+      "name": "LobsterTwofamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/LobsterTwo#c": [
+      "scaled=${1:factor}",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/LobsterTwo#c"
+  ]
+}

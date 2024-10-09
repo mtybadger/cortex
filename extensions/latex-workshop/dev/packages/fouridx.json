@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fourIdx",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "fourIdx{${1:left sup}}{${2:left sub}}{${3:right sup}}{${4:right sub}}{${5:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

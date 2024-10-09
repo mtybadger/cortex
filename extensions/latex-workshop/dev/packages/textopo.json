@@ -1,0 +1,1023 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "graphics"
+    }
+  ],
+  "macros": [
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getsequence{${1:PHD}}{${2:PHD-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "getsequence[${3:make new}]{${1:PHD}}{${2:PHD-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getsequence{${1:HMMTOP}}{${2:HMMTOP-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "getsequence[${3:make new}]{${1:HMMTOP}}{${2:HMMTOP-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getsequence{${1:SwissProt}}{${2:SwissProt-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "getsequence[${3:make new}]{${1:SwissProt}}{${2:SwissProt-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getsequence{${1:alignment}}{${2:SwissProt-file}}"
+      }
+    },
+    {
+      "name": "getsequence",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "getsequence[${3:seqnum}]{${1:alignment}}{${2:alignment-file}}"
+      }
+    },
+    {
+      "name": "MRs",
+      "arg": {
+        "format": "{}",
+        "snippet": "MRs{${1:start1..stop1,start2..stop2,...}}"
+      }
+    },
+    {
+      "name": "Nterm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Nterm{${1:intra|extra}}"
+      }
+    },
+    {
+      "name": "sequence",
+      "arg": {
+        "format": "{}",
+        "snippet": "sequence{${1:amino-acid-sequence}}"
+      }
+    },
+    {
+      "name": "scaletopo",
+      "arg": {
+        "format": "{}",
+        "snippet": "scaletopo{${1:factor}}"
+      }
+    },
+    {
+      "name": "loopextent",
+      "arg": {
+        "format": "{}",
+        "snippet": "loopextent{${1:extent}}"
+      }
+    },
+    {
+      "name": "loopextent",
+      "arg": {
+        "format": "{}",
+        "snippet": "loopextent{${1:extent[${2:distance}]}}"
+      }
+    },
+    {
+      "name": "loopextent",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "loopextent[${2:loop}]{${1:extent}}"
+      }
+    },
+    {
+      "name": "loopextent",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "loopextent[${2:loop}]{${1:extent[${3:distance}]}}"
+      }
+    },
+    {
+      "name": "loopfoot",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "loopfoot{${1:loop}}{${2:direction[${3:neck}]}}"
+      }
+    },
+    {
+      "name": "flipNterm"
+    },
+    {
+      "name": "flipCterm"
+    },
+    {
+      "name": "clearMRs"
+    },
+    {
+      "name": "anchor",
+      "arg": {
+        "format": "{}",
+        "snippet": "anchor{${1:pos}}"
+      }
+    },
+    {
+      "name": "membranecolors",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "membranecolors{${1:border}}{${2:interior}}"
+      }
+    },
+    {
+      "name": "borderthickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "borderthickness{${1:length}}"
+      }
+    },
+    {
+      "name": "labeloutside",
+      "arg": {
+        "format": "{}",
+        "snippet": "labeloutside{${1:text}}"
+      }
+    },
+    {
+      "name": "labeloutside",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "labeloutside[${2:left|right}]{${1:text}}"
+      }
+    },
+    {
+      "name": "labelinside",
+      "arg": {
+        "format": "{}",
+        "snippet": "labelinside{${1:text}}"
+      }
+    },
+    {
+      "name": "labelinside",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "labelinside[${2:left|right}]{${1:text}}"
+      }
+    },
+    {
+      "name": "moveinsidelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "moveinsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
+      }
+    },
+    {
+      "name": "moveoutsidelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "moveoutsidelabel{${1:⟨dir,dist⟩ or ⟨x,y⟩}}"
+      }
+    },
+    {
+      "name": "broadenmembrane",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "broadenmembrane{${1:left|right}}{${2:length}}"
+      }
+    },
+    {
+      "name": "thickenmembrane",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "thickenmembrane{${1:top|bottom}}{${2:length}}"
+      }
+    },
+    {
+      "name": "hidemembrane"
+    },
+    {
+      "name": "showmembrane"
+    },
+    {
+      "name": "labelTMs",
+      "arg": {
+        "format": "{}",
+        "snippet": "labelTMs{${1:style}}"
+      }
+    },
+    {
+      "name": "numcount"
+    },
+    {
+      "name": "alphacount"
+    },
+    {
+      "name": "Alphacount"
+    },
+    {
+      "name": "romancount"
+    },
+    {
+      "name": "Romancount"
+    },
+    {
+      "name": "labelTM",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "labelTM{${1:num}}{${2:label-text}}"
+      }
+    },
+    {
+      "name": "labelTM",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "labelTM[${3:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:num}}{${2:label-text}}"
+      }
+    },
+    {
+      "name": "moveTMlabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "moveTMlabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
+      }
+    },
+    {
+      "name": "TMlabelcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "TMlabelcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "hideTMlabels"
+    },
+    {
+      "name": "labelloops",
+      "arg": {
+        "format": "{}",
+        "snippet": "labelloops{${1:style}}"
+      }
+    },
+    {
+      "name": "labelloop",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "labelloop[${3:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:num}}{${2:label-text}}"
+      }
+    },
+    {
+      "name": "movelooplabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "movelooplabel{${1:num}}{${2:⟨dir,dist⟩ or ⟨x,y⟩}}"
+      }
+    },
+    {
+      "name": "looplabelcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "looplabelcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "hidelooplabels"
+    },
+    {
+      "name": "showNterm"
+    },
+    {
+      "name": "hideNterm"
+    },
+    {
+      "name": "showCterm"
+    },
+    {
+      "name": "hideCterm"
+    },
+    {
+      "name": "labelstyle",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "labelstyle{${1:name}}{${2:shape}}{${3:frame-color}}{${4:background-color}}{${5:char-color}}{${6:legend-text}}"
+      }
+    },
+    {
+      "name": "labelregion",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "labelregion{${1:list-of-regions}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "labelregion",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "labelregion[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:list-of-regions}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "phosphorylation",
+      "arg": {
+        "format": "{}",
+        "snippet": "phosphorylation{${1:list-of-positions}}"
+      }
+    },
+    {
+      "name": "glycosylation",
+      "arg": {
+        "format": "{}",
+        "snippet": "glycosylation{${1:list-of-positions}}"
+      }
+    },
+    {
+      "name": "countercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "countercolor{${1:color}}"
+      }
+    },
+    {
+      "name": "rulethickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "rulethickness{${1:length}}"
+      }
+    },
+    {
+      "name": "place",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "place{${1:x%,y% }}{${2:label-text}}"
+      }
+    },
+    {
+      "name": "place",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "place[${3:num}]{${1:x%,y% }}{${2:label-text}}"
+      }
+    },
+    {
+      "name": "addtagtoNterm",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "addtagtoNterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "addtagtoNterm",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "addtagtoNterm[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "addtagtoCterm",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "addtagtoCterm{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "addtagtoCterm",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "addtagtoCterm[${4:⟨dir,dist⟩ or ⟨x,y⟩}]{${1:tag-sequence}}{${2:style-name}}{${3:label-text}}"
+      }
+    },
+    {
+      "name": "seqstart",
+      "arg": {
+        "format": "{}",
+        "snippet": "seqstart{${1:num}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "applyshading{${1:identical}}{${2:file}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "applyshading[${3:num}]{${1:identical}}{${2:file}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "applyshading{${1:similar}}{${2:file}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "applyshading[${3:num}]{${1:similar}}{${2:file}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "applyshading{${1:functional}}{${2:group}}"
+      }
+    },
+    {
+      "name": "applyshading",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "applyshading[${3:parameter-file}]{${1:functional}}{${2:group}}"
+      }
+    },
+    {
+      "name": "shadingcolors",
+      "arg": {
+        "format": "{}",
+        "snippet": "shadingcolors{${1:colorscheme}}"
+      }
+    },
+    {
+      "name": "allmatchspecial"
+    },
+    {
+      "name": "allmatchspecialoff"
+    },
+    {
+      "name": "standardresidues",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "standardresidues{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}",
+        "keys": [
+          "\\standardresidues,\\similarpositions,\\conservedpositions,\\invariablepositions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "similarpositions",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "similarpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}",
+        "keys": [
+          "\\standardresidues,\\similarpositions,\\conservedpositions,\\invariablepositions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "conservedpositions",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "conservedpositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}",
+        "keys": [
+          "\\standardresidues,\\similarpositions,\\conservedpositions,\\invariablepositions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "invariablepositions",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "invariablepositions{${1:style%keyvals}}{${2:frame}}{${3:background}}{${4:char}}",
+        "keys": [
+          "\\standardresidues,\\similarpositions,\\conservedpositions,\\invariablepositions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "donotshadestartMet"
+    },
+    {
+      "name": "shadestartMet"
+    },
+    {
+      "name": "hidelegend"
+    },
+    {
+      "name": "showlegend"
+    },
+    {
+      "name": "movelegend",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "movelegend{${1:x-offset}}{${2:y-offset}}"
+      }
+    },
+    {
+      "name": "helixstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "helixstyle{${1:style%keyvals}}",
+        "keys": [
+          "\\helixstyle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "scalewheel",
+      "arg": {
+        "format": "{}",
+        "snippet": "scalewheel{${1:percent}}"
+      }
+    },
+    {
+      "name": "symbolsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "symbolsize{${1:size%keyvals}}",
+        "keys": [
+          "\\symbolsize"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "wheelsperline",
+      "arg": {
+        "format": "{}",
+        "snippet": "wheelsperline{${1:num}}"
+      }
+    },
+    {
+      "name": "viewfromextra"
+    },
+    {
+      "name": "viewfromintra"
+    },
+    {
+      "name": "showmoment"
+    },
+    {
+      "name": "hidemoment"
+    },
+    {
+      "name": "Hmean",
+      "arg": {
+        "format": "{}",
+        "snippet": "Hmean{${1:helix-num}}"
+      }
+    },
+    {
+      "name": "muH",
+      "arg": {
+        "format": "{}",
+        "snippet": "muH{${1:helix-num}}"
+      }
+    },
+    {
+      "name": "muHmean",
+      "arg": {
+        "format": "{}",
+        "snippet": "muHmean{${1:helix-num}}"
+      }
+    },
+    {
+      "name": "mudelta",
+      "arg": {
+        "format": "{}",
+        "snippet": "mudelta{${1:helix-num}}"
+      }
+    },
+    {
+      "name": "momentcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "momentcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "scalemoment",
+      "arg": {
+        "format": "{}",
+        "snippet": "scalemoment{${1:percent}}"
+      }
+    },
+    {
+      "name": "showwheelnumbering"
+    },
+    {
+      "name": "hidewheelnumbering"
+    },
+    {
+      "name": "showbonds"
+    },
+    {
+      "name": "hidebonds"
+    },
+    {
+      "name": "setfamily",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setfamily{${1:text}}{${2:family%keyvals}}",
+        "keys": [
+          "\\setfamily#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setseries",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setseries{${1:text}}{${2:series%keyvals}}",
+        "keys": [
+          "\\setseries#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setshape",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setshape{${1:text}}{${2:shape%keyvals}}",
+        "keys": [
+          "\\setshape#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setsize",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setsize{${1:text}}{${2:size%keyvals}}",
+        "keys": [
+          "\\setsize#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "setfont",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "setfont{${1:text}}{${2:family}}{${3:series}}{${4:shape}}{${5:size}}"
+      }
+    },
+    {
+      "name": "labelsrm"
+    },
+    {
+      "name": "labelstiny"
+    },
+    {
+      "name": "labelssf"
+    },
+    {
+      "name": "labelsscriptsize"
+    },
+    {
+      "name": "labelstt"
+    },
+    {
+      "name": "labelsfootnotesize"
+    },
+    {
+      "name": "labelsbf"
+    },
+    {
+      "name": "labelssmall"
+    },
+    {
+      "name": "labelsmd"
+    },
+    {
+      "name": "labelsnormalsize"
+    },
+    {
+      "name": "labelsit"
+    },
+    {
+      "name": "labelslarge"
+    },
+    {
+      "name": "labelssl"
+    },
+    {
+      "name": "labelsLarge"
+    },
+    {
+      "name": "labelssc"
+    },
+    {
+      "name": "labelsLARGE"
+    },
+    {
+      "name": "labelsup"
+    },
+    {
+      "name": "labelshuge"
+    },
+    {
+      "name": "labelsHuge"
+    },
+    {
+      "name": "membranelabelsrm"
+    },
+    {
+      "name": "membranelabelssf"
+    },
+    {
+      "name": "membranelabelstt"
+    },
+    {
+      "name": "membranelabelsmd"
+    },
+    {
+      "name": "membranelabelsbf"
+    },
+    {
+      "name": "membranelabelsup"
+    },
+    {
+      "name": "membranelabelsit"
+    },
+    {
+      "name": "membranelabelssl"
+    },
+    {
+      "name": "membranelabelssc"
+    },
+    {
+      "name": "membranelabelstiny"
+    },
+    {
+      "name": "membranelabelsscriptsize"
+    },
+    {
+      "name": "membranelabelsfootnotesize"
+    },
+    {
+      "name": "membranelabelssmall"
+    },
+    {
+      "name": "membranelabelsnormalsize"
+    },
+    {
+      "name": "membranelabelslarge"
+    },
+    {
+      "name": "membranelabelsLarge"
+    },
+    {
+      "name": "membranelabelsLARGE"
+    },
+    {
+      "name": "membranelabelshuge"
+    },
+    {
+      "name": "membranelabelsHuge"
+    },
+    {
+      "name": "looplabelsrm"
+    },
+    {
+      "name": "looplabelssf"
+    },
+    {
+      "name": "looplabelstt"
+    },
+    {
+      "name": "looplabelsmd"
+    },
+    {
+      "name": "looplabelsbf"
+    },
+    {
+      "name": "looplabelsup"
+    },
+    {
+      "name": "looplabelsit"
+    },
+    {
+      "name": "looplabelssl"
+    },
+    {
+      "name": "looplabelssc"
+    },
+    {
+      "name": "looplabelstiny"
+    },
+    {
+      "name": "looplabelsscriptsize"
+    },
+    {
+      "name": "looplabelsfootnotesize"
+    },
+    {
+      "name": "looplabelssmall"
+    },
+    {
+      "name": "looplabelsnormalsize"
+    },
+    {
+      "name": "looplabelslarge"
+    },
+    {
+      "name": "looplabelsLarge"
+    },
+    {
+      "name": "looplabelsLARGE"
+    },
+    {
+      "name": "looplabelshuge"
+    },
+    {
+      "name": "looplabelsHuge"
+    },
+    {
+      "name": "TMlabelsrm"
+    },
+    {
+      "name": "TMlabelssf"
+    },
+    {
+      "name": "TMlabelstt"
+    },
+    {
+      "name": "TMlabelsmd"
+    },
+    {
+      "name": "TMlabelsbf"
+    },
+    {
+      "name": "TMlabelsup"
+    },
+    {
+      "name": "TMlabelsit"
+    },
+    {
+      "name": "TMlabelssl"
+    },
+    {
+      "name": "TMlabelssc"
+    },
+    {
+      "name": "TMlabelstiny"
+    },
+    {
+      "name": "TMlabelsscriptsize"
+    },
+    {
+      "name": "TMlabelsfootnotesize"
+    },
+    {
+      "name": "TMlabelssmall"
+    },
+    {
+      "name": "TMlabelsnormalsize"
+    },
+    {
+      "name": "TMlabelslarge"
+    },
+    {
+      "name": "TMlabelsLarge"
+    },
+    {
+      "name": "TMlabelsLARGE"
+    },
+    {
+      "name": "TMlabelshuge"
+    },
+    {
+      "name": "TMlabelsHuge"
+    },
+    {
+      "name": "TeXtopo"
+    }
+  ],
+  "envs": [
+    {
+      "name": "textopo"
+    },
+    {
+      "name": "textopo",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:parameter-file%file}]"
+      }
+    },
+    {
+      "name": "helicalwheel",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:helix-list}}"
+      }
+    },
+    {
+      "name": "helicalwheel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:parameter-file%file}]{${1:helix-list}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/textopo#c": [
+      "monochrome",
+      "debugshow",
+      "setpagesize",
+      "nosetpagesize",
+      "dvips",
+      "xdvi",
+      "dvipdf",
+      "dvipdfm",
+      "dvipdfmx",
+      "pdftex",
+      "luatex",
+      "dvisvgm",
+      "xetex",
+      "dvipsone",
+      "dviwindo",
+      "emtex",
+      "dviwin",
+      "oztex",
+      "textures",
+      "pctexps",
+      "pctexwin",
+      "pctexhp",
+      "pctex32",
+      "truetex",
+      "tcidvi",
+      "vtex",
+      "dvipsnames",
+      "nodvipsnames",
+      "usenames"
+    ],
+    "\\standardresidues,\\similarpositions,\\conservedpositions,\\invariablepositions": [
+      "circ",
+      "box",
+      "diamond"
+    ],
+    "\\helixstyle": [
+      "perspective",
+      "wheel",
+      "net"
+    ],
+    "\\symbolsize": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "\\setfamily#c": [
+      "rm",
+      "sf",
+      "tt"
+    ],
+    "\\setseries#c": [
+      "bf",
+      "md"
+    ],
+    "\\setshape#c": [
+      "it",
+      "sl",
+      "sc",
+      "up"
+    ],
+    "\\setsize#c": [
+      "tiny",
+      "scriptsize",
+      "footnotesize",
+      "small",
+      "normalsize",
+      "large",
+      "Large",
+      "LARGE",
+      "huge",
+      "Huge"
+    ]
+  },
+  "args": [
+    "\\usepackage/textopo#c"
+  ]
+}

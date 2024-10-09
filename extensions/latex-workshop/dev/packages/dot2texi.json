@@ -1,0 +1,107 @@
+{
+  "deps": [
+    {
+      "name": "moreverb"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setoutputdir",
+      "arg": {
+        "format": "{}",
+        "snippet": "setoutputdir{${1:directory%definition}}"
+      }
+    },
+    {
+      "name": "BeforeStream",
+      "unusual": true
+    },
+    {
+      "name": "dottotexCutFile",
+      "unusual": true
+    },
+    {
+      "name": "dottotexgraphicsinclude",
+      "unusual": true
+    },
+    {
+      "name": "dottotexgraphicsprocess",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "dot2tex"
+    },
+    {
+      "name": "dot2tex",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{dot2tex}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dottotexverbatimwrite",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:file}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/dot2texi": [
+      "shell",
+      "noshell",
+      "forceshell",
+      "miktex",
+      "pgf",
+      "tikz",
+      "pstricks",
+      "autosize",
+      "dot",
+      "neato",
+      "circo",
+      "fdp",
+      "twopi",
+      "outputdir=${1:directory}",
+      "debug"
+    ],
+    "\\begin{dot2tex}": [
+      "shell",
+      "noshell",
+      "dot",
+      "neato",
+      "circo",
+      "fdp",
+      "twopi",
+      "prog=${1|dot,neato,circo,fdp,twopi|}",
+      "pgf",
+      "tikz",
+      "pstricks",
+      "format=${1|tikz,pgf,pstricks|}",
+      "styleonly",
+      "codeonly",
+      "autosize",
+      "noautosize",
+      "straightedges",
+      "tikzedgelabels",
+      "mathmode",
+      "graphstyle={${1:TikZ options}}",
+      "scale=${1:factor}",
+      "outputdir=${1:directory}",
+      "file=${1:file name}",
+      "options={${1:dot2tex options}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/dot2texi"
+  ]
+}

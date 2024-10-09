@@ -1,0 +1,618 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newoperator",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newoperator{${1:cmd}}{${2:text%plain}}{${3:after code}}"
+      }
+    },
+    {
+      "name": "renewoperator",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "renewoperator{${1:cmd}}{${2:text%plain}}{${3:after code}}"
+      }
+    },
+    {
+      "name": "SC"
+    },
+    {
+      "name": "SN"
+    },
+    {
+      "name": "SQ"
+    },
+    {
+      "name": "SR"
+    },
+    {
+      "name": "SZ"
+    },
+    {
+      "name": "calA"
+    },
+    {
+      "name": "calB"
+    },
+    {
+      "name": "calC"
+    },
+    {
+      "name": "calD"
+    },
+    {
+      "name": "calE"
+    },
+    {
+      "name": "calF"
+    },
+    {
+      "name": "calG"
+    },
+    {
+      "name": "calH"
+    },
+    {
+      "name": "calI"
+    },
+    {
+      "name": "calJ"
+    },
+    {
+      "name": "calK"
+    },
+    {
+      "name": "calL"
+    },
+    {
+      "name": "calM"
+    },
+    {
+      "name": "calN"
+    },
+    {
+      "name": "calO"
+    },
+    {
+      "name": "calP"
+    },
+    {
+      "name": "calQ"
+    },
+    {
+      "name": "calR"
+    },
+    {
+      "name": "calS"
+    },
+    {
+      "name": "calT"
+    },
+    {
+      "name": "calU"
+    },
+    {
+      "name": "calV"
+    },
+    {
+      "name": "calW"
+    },
+    {
+      "name": "calX"
+    },
+    {
+      "name": "calY"
+    },
+    {
+      "name": "calZ"
+    },
+    {
+      "name": "mA"
+    },
+    {
+      "name": "va"
+    },
+    {
+      "name": "mB"
+    },
+    {
+      "name": "vb"
+    },
+    {
+      "name": "mC"
+    },
+    {
+      "name": "vc"
+    },
+    {
+      "name": "mD"
+    },
+    {
+      "name": "vd"
+    },
+    {
+      "name": "mE"
+    },
+    {
+      "name": "ve"
+    },
+    {
+      "name": "mF"
+    },
+    {
+      "name": "vf"
+    },
+    {
+      "name": "mG"
+    },
+    {
+      "name": "vg"
+    },
+    {
+      "name": "mH"
+    },
+    {
+      "name": "vh"
+    },
+    {
+      "name": "mI"
+    },
+    {
+      "name": "vi"
+    },
+    {
+      "name": "mJ"
+    },
+    {
+      "name": "vj"
+    },
+    {
+      "name": "mK"
+    },
+    {
+      "name": "vk"
+    },
+    {
+      "name": "mL"
+    },
+    {
+      "name": "vl"
+    },
+    {
+      "name": "mM"
+    },
+    {
+      "name": "vm"
+    },
+    {
+      "name": "mN"
+    },
+    {
+      "name": "vn"
+    },
+    {
+      "name": "mO"
+    },
+    {
+      "name": "vo"
+    },
+    {
+      "name": "mP"
+    },
+    {
+      "name": "vp"
+    },
+    {
+      "name": "mQ"
+    },
+    {
+      "name": "vq"
+    },
+    {
+      "name": "mR"
+    },
+    {
+      "name": "vr"
+    },
+    {
+      "name": "mS"
+    },
+    {
+      "name": "vs"
+    },
+    {
+      "name": "mT"
+    },
+    {
+      "name": "vt"
+    },
+    {
+      "name": "mU"
+    },
+    {
+      "name": "vu"
+    },
+    {
+      "name": "mV"
+    },
+    {
+      "name": "vv"
+    },
+    {
+      "name": "mW"
+    },
+    {
+      "name": "vw"
+    },
+    {
+      "name": "mX"
+    },
+    {
+      "name": "vx"
+    },
+    {
+      "name": "mY"
+    },
+    {
+      "name": "vy"
+    },
+    {
+      "name": "mZ"
+    },
+    {
+      "name": "vz"
+    },
+    {
+      "name": "valpha"
+    },
+    {
+      "name": "vbeta"
+    },
+    {
+      "name": "vgamma"
+    },
+    {
+      "name": "vdelta"
+    },
+    {
+      "name": "vepsi"
+    },
+    {
+      "name": "vvarepsilon"
+    },
+    {
+      "name": "vzeta"
+    },
+    {
+      "name": "veta"
+    },
+    {
+      "name": "vtheta"
+    },
+    {
+      "name": "viota"
+    },
+    {
+      "name": "vkappa"
+    },
+    {
+      "name": "vlambda"
+    },
+    {
+      "name": "vmu"
+    },
+    {
+      "name": "vnu"
+    },
+    {
+      "name": "vxi"
+    },
+    {
+      "name": "vpi"
+    },
+    {
+      "name": "vrho"
+    },
+    {
+      "name": "vsigma"
+    },
+    {
+      "name": "vtau"
+    },
+    {
+      "name": "vupsilon"
+    },
+    {
+      "name": "vphi"
+    },
+    {
+      "name": "vchi"
+    },
+    {
+      "name": "vpsi"
+    },
+    {
+      "name": "vomega"
+    },
+    {
+      "name": "mGamma"
+    },
+    {
+      "name": "mDelta"
+    },
+    {
+      "name": "mTheta"
+    },
+    {
+      "name": "mLambda"
+    },
+    {
+      "name": "mXi"
+    },
+    {
+      "name": "mPi"
+    },
+    {
+      "name": "mSigma"
+    },
+    {
+      "name": "mUpsilon"
+    },
+    {
+      "name": "mPhi"
+    },
+    {
+      "name": "mPsi"
+    },
+    {
+      "name": "mOmega"
+    },
+    {
+      "name": "rb"
+    },
+    {
+      "name": "rB"
+    },
+    {
+      "name": "rC"
+    },
+    {
+      "name": "rD"
+    },
+    {
+      "name": "rf"
+    },
+    {
+      "name": "rF"
+    },
+    {
+      "name": "rH"
+    },
+    {
+      "name": "rL"
+    },
+    {
+      "name": "rN"
+    },
+    {
+      "name": "rt"
+    },
+    {
+      "name": "rU"
+    },
+    {
+      "name": "rGam"
+    },
+    {
+      "name": "rBeta"
+    },
+    {
+      "name": "Bin"
+    },
+    {
+      "name": "eu"
+    },
+    {
+      "name": "iu"
+    },
+    {
+      "name": "LN"
+    },
+    {
+      "name": "IN"
+    },
+    {
+      "name": "Poi"
+    },
+    {
+      "name": "ped",
+      "arg": {
+        "format": "{}",
+        "snippet": "ped{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "ap",
+      "arg": {
+        "format": "{}",
+        "snippet": "ap{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "rd",
+      "unusual": true
+    },
+    {
+      "name": "DIfF",
+      "unusual": true
+    },
+    {
+      "name": "gobblespace",
+      "unusual": true
+    },
+    {
+      "name": "opspace",
+      "unusual": true
+    },
+    {
+      "name": "DiffSpace",
+      "unusual": true
+    },
+    {
+      "name": "deriv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "deriv{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "deriv",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "deriv[${3:order}]{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "pderiv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pderiv{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "pderiv",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pderiv[${3:order}]{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "bias"
+    },
+    {
+      "name": "col"
+    },
+    {
+      "name": "corr"
+    },
+    {
+      "name": "cov"
+    },
+    {
+      "name": "dg"
+    },
+    {
+      "name": "diag"
+    },
+    {
+      "name": "E"
+    },
+    {
+      "name": "etr"
+    },
+    {
+      "name": "ip"
+    },
+    {
+      "name": "kur"
+    },
+    {
+      "name": "MSE"
+    },
+    {
+      "name": "MSFE"
+    },
+    {
+      "name": "OLS"
+    },
+    {
+      "name": "plim"
+    },
+    {
+      "name": "resid"
+    },
+    {
+      "name": "rk"
+    },
+    {
+      "name": "SE"
+    },
+    {
+      "name": "sgn"
+    },
+    {
+      "name": "tr"
+    },
+    {
+      "name": "var"
+    },
+    {
+      "name": "vech"
+    },
+    {
+      "name": "distr"
+    },
+    {
+      "name": "adistr"
+    },
+    {
+      "name": "diff"
+    },
+    {
+      "name": "fdiff"
+    },
+    {
+      "name": "bdiff"
+    },
+    {
+      "name": "eps"
+    },
+    {
+      "name": "epsi"
+    },
+    {
+      "name": "longto"
+    },
+    {
+      "name": "pto"
+    },
+    {
+      "name": "dto"
+    },
+    {
+      "name": "wto"
+    },
+    {
+      "name": "Infmat"
+    },
+    {
+      "name": "Hesmat"
+    },
+    {
+      "name": "bcdot"
+    },
+    {
+      "name": "vones"
+    },
+    {
+      "name": "vzeros"
+    },
+    {
+      "name": "mZeros"
+    },
+    {
+      "name": "e"
+    },
+    {
+      "name": "mply"
+    },
+    {
+      "name": "rW"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

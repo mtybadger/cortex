@@ -1,0 +1,286 @@
+{
+  "deps": [
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "ams-mdbch"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbm",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbm{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "widetriangle",
+      "arg": {
+        "format": "{}",
+        "snippet": "widetriangle{${1:arg}}"
+      }
+    },
+    {
+      "name": "wideparen",
+      "arg": {
+        "format": "{}",
+        "snippet": "wideparen{${1:arg}}"
+      }
+    },
+    {
+      "name": "varGamma"
+    },
+    {
+      "name": "varXi"
+    },
+    {
+      "name": "varPi"
+    },
+    {
+      "name": "varSigma"
+    },
+    {
+      "name": "varPhi"
+    },
+    {
+      "name": "origIota",
+      "unusual": true
+    },
+    {
+      "name": "varIota"
+    },
+    {
+      "name": "origI",
+      "unusual": true
+    },
+    {
+      "name": "origa",
+      "unusual": true
+    },
+    {
+      "name": "origf",
+      "unusual": true
+    },
+    {
+      "name": "origi",
+      "unusual": true
+    },
+    {
+      "name": "origl",
+      "unusual": true
+    },
+    {
+      "name": "origu",
+      "unusual": true
+    },
+    {
+      "name": "origv",
+      "unusual": true
+    },
+    {
+      "name": "origw",
+      "unusual": true
+    },
+    {
+      "name": "origx",
+      "unusual": true
+    },
+    {
+      "name": "origimath",
+      "unusual": true
+    },
+    {
+      "name": "varimath"
+    },
+    {
+      "name": "varbeta"
+    },
+    {
+      "name": "varI"
+    },
+    {
+      "name": "vara"
+    },
+    {
+      "name": "vari"
+    },
+    {
+      "name": "varl"
+    },
+    {
+      "name": "varu"
+    },
+    {
+      "name": "varv"
+    },
+    {
+      "name": "varw"
+    },
+    {
+      "name": "varx"
+    },
+    {
+      "name": "varf"
+    },
+    {
+      "name": "Qoppa"
+    },
+    {
+      "name": "qoppa"
+    },
+    {
+      "name": "Koppa"
+    },
+    {
+      "name": "koppa"
+    },
+    {
+      "name": "Sampi"
+    },
+    {
+      "name": "sampi"
+    },
+    {
+      "name": "Stigma"
+    },
+    {
+      "name": "stigma"
+    },
+    {
+      "name": "varspade"
+    },
+    {
+      "name": "varheart"
+    },
+    {
+      "name": "vardiamond"
+    },
+    {
+      "name": "varclub"
+    },
+    {
+      "name": "steaming"
+    },
+    {
+      "name": "quarternote",
+      "detail": "♩ (\"arevmath wasysym\" command)",
+      "doc": "Music note (sung text sign)"
+    },
+    {
+      "name": "eighthnote",
+      "detail": "♪ (\"arevmath\" command)",
+      "doc": "Eighth note"
+    },
+    {
+      "name": "sixteenthnote"
+    },
+    {
+      "name": "origGamma",
+      "unusual": true
+    },
+    {
+      "name": "origXi",
+      "unusual": true
+    },
+    {
+      "name": "origPi",
+      "unusual": true
+    },
+    {
+      "name": "origSigma",
+      "unusual": true
+    },
+    {
+      "name": "origPhi",
+      "unusual": true
+    },
+    {
+      "name": "yinyang"
+    },
+    {
+      "name": "sadface"
+    },
+    {
+      "name": "smileface"
+    },
+    {
+      "name": "invsmileface"
+    },
+    {
+      "name": "westcross"
+    },
+    {
+      "name": "eastcross"
+    },
+    {
+      "name": "skull"
+    },
+    {
+      "name": "radiation"
+    },
+    {
+      "name": "biohazard"
+    },
+    {
+      "name": "recycle"
+    },
+    {
+      "name": "anchor"
+    },
+    {
+      "name": "swords"
+    },
+    {
+      "name": "warning"
+    },
+    {
+      "name": "pointright"
+    },
+    {
+      "name": "pencil"
+    },
+    {
+      "name": "ballotcheck"
+    },
+    {
+      "name": "ballotx"
+    },
+    {
+      "name": "heavyqtleft"
+    },
+    {
+      "name": "heavyqtright"
+    },
+    {
+      "name": "arrowbullet"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/arevmath#c": [
+      "origletters",
+      "vara",
+      "vari",
+      "varI",
+      "varf",
+      "oldf",
+      "varl",
+      "varu",
+      "varv",
+      "varw",
+      "varGamma",
+      "varXi",
+      "varPi",
+      "varSigma",
+      "varPhi"
+    ]
+  },
+  "args": [
+    "\\usepackage/arevmath#c"
+  ]
+}

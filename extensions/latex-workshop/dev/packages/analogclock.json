@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "initclock"
+    },
+    {
+      "name": "analogclock"
+    },
+    {
+      "name": "clocksizefactor",
+      "arg": {
+        "format": "{}",
+        "snippet": "clocksizefactor{${1:factor}}"
+      }
+    },
+    {
+      "name": "faceclock",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "faceclock{${1:integer}}{${2:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/analogclock#c": [
+      "timeinterval=${1:integer}"
+    ]
+  },
+  "args": [
+    "\\usepackage/analogclock#c"
+  ]
+}

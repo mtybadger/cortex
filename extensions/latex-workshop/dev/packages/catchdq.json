@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "actcodes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "asciidq",
+      "unusual": true
+    },
+    {
+      "name": "asciidqtd",
+      "unusual": true
+    },
+    {
+      "name": "enldq",
+      "unusual": true
+    },
+    {
+      "name": "enrdq",
+      "unusual": true
+    },
+    {
+      "name": "endqtd",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "endqtd{${1:arg}}"
+      }
+    },
+    {
+      "name": "dqtd",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dqtd{${1:arg}}"
+      }
+    },
+    {
+      "name": "dedqtd",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dedqtd{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

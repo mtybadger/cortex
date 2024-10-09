@@ -1,0 +1,129 @@
+{
+  "deps": [
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "soul"
+    },
+    {
+      "name": "fullpage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "LaTeXcentering",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXraggedleft",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXraggedright",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "LaTeXflushleft",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXflushleft",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXcenter",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/manuscript#c": [
+      "cm",
+      "cr"
+    ]
+  },
+  "args": [
+    "\\usepackage/manuscript#c"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fourier"
+    },
+    {
+      "name": "Fourier"
+    },
+    {
+      "name": "laplace"
+    },
+    {
+      "name": "Laplace"
+    },
+    {
+      "name": "dfourier"
+    },
+    {
+      "name": "Dfourier"
+    },
+    {
+      "name": "ztransf"
+    },
+    {
+      "name": "Ztransf"
+    },
+    {
+      "name": "dft",
+      "arg": {
+        "format": "{}",
+        "snippet": "dft{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "DFT",
+      "arg": {
+        "format": "{}",
+        "snippet": "DFT{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "e"
+    },
+    {
+      "name": "im"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "hangingindent",
+      "unusual": true
+    },
+    {
+      "name": "hangingleftmargin",
+      "unusual": true
+    },
+    {
+      "name": "labeledleftmargin",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "hangingpar"
+    },
+    {
+      "name": "hanginglist"
+    },
+    {
+      "name": "compacthang"
+    },
+    {
+      "name": "labeledpar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:widest-label}}{${2:label}}"
+      }
+    },
+    {
+      "name": "labeledlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:widest-label}}"
+      }
+    },
+    {
+      "name": "compactlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:widest-label}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

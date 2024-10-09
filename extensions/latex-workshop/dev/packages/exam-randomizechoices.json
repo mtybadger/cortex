@@ -1,0 +1,148 @@
+{
+  "deps": [
+    {
+      "name": "environ"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgffor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setrandomizerseed",
+      "arg": {
+        "format": "{}",
+        "snippet": "setrandomizerseed{${1:integer}}"
+      }
+    },
+    {
+      "name": "printkeytable"
+    },
+    {
+      "name": "printkeytable",
+      "arg": {
+        "format": "[]",
+        "snippet": "printkeytable[${1:range}]"
+      }
+    },
+    {
+      "name": "keylistquestionname",
+      "arg": {
+        "format": "{}",
+        "snippet": "keylistquestionname{${1:text}}"
+      }
+    },
+    {
+      "name": "keylistkeyname",
+      "arg": {
+        "format": "{}",
+        "snippet": "keylistkeyname{${1:text}}"
+      }
+    },
+    {
+      "name": "savekeylist"
+    },
+    {
+      "name": "savekeylist",
+      "arg": {
+        "format": "[]",
+        "snippet": "savekeylist[${1:macro%cmd}]"
+      }
+    },
+    {
+      "name": "writekeylist",
+      "arg": {
+        "format": "{}",
+        "snippet": "writekeylist{${1:command}}"
+      }
+    },
+    {
+      "name": "writekeylist",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "writekeylist[${2:file}]{${1:command}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "randomizechoices"
+    },
+    {
+      "name": "randomizechoices",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{randomizechoices},\\begin{randomizeoneparchoices},\\begin{randomizecheckboxes},\\begin{randomizeoneparcheckboxes}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "randomizeoneparchoices"
+    },
+    {
+      "name": "randomizeoneparchoices",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{randomizechoices},\\begin{randomizeoneparchoices},\\begin{randomizecheckboxes},\\begin{randomizeoneparcheckboxes}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "randomizecheckboxes"
+    },
+    {
+      "name": "randomizecheckboxes",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{randomizechoices},\\begin{randomizeoneparchoices},\\begin{randomizecheckboxes},\\begin{randomizeoneparcheckboxes}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "randomizeoneparcheckboxes"
+    },
+    {
+      "name": "randomizeoneparcheckboxes",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{randomizechoices},\\begin{randomizeoneparchoices},\\begin{randomizecheckboxes},\\begin{randomizeoneparcheckboxes}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/exam-randomizechoices#c": [
+      "randomize",
+      "norandomize",
+      "keeplast",
+      "nokeeplast",
+      "overload",
+      "nooverload",
+      "debug"
+    ],
+    "\\begin{randomizechoices},\\begin{randomizeoneparchoices},\\begin{randomizecheckboxes},\\begin{randomizeoneparcheckboxes}": [
+      "randomize",
+      "norandomize",
+      "keeplast",
+      "nokeeplast"
+    ]
+  },
+  "args": [
+    "\\usepackage/exam-randomizechoices#c"
+  ]
+}

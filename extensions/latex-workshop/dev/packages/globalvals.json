@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "defVal",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defVal{${1:key%special}}{${2:value}}"
+      }
+    },
+    {
+      "name": "useVal",
+      "arg": {
+        "format": "{}",
+        "snippet": "useVal{${1:key%special}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,128 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "colonEq"
+    },
+    {
+      "name": "pytag",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pytag{${1:tag}}{${2:code}}"
+      }
+    },
+    {
+      "name": "py",
+      "arg": {
+        "format": "{}",
+        "snippet": "py{${1:tag}}"
+      }
+    },
+    {
+      "name": "py*",
+      "arg": {
+        "format": "{}",
+        "snippet": "py*{${1:tag}}"
+      }
+    },
+    {
+      "name": "Py",
+      "arg": {
+        "format": "{}",
+        "snippet": "Py{${1:tag}}"
+      }
+    },
+    {
+      "name": "Py*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Py*{${1:tag}}"
+      }
+    },
+    {
+      "name": "Py*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Py*[${2:space%l}]{${1:tag}}"
+      }
+    },
+    {
+      "name": "Dmath",
+      "arg": {
+        "format": "{}",
+        "snippet": "Dmath{${1:formula}}"
+      }
+    },
+    {
+      "name": "Dmath",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Dmath[${2:options%keyvals}]{${1:formula}}",
+        "keys": [
+          "\\Dmath,\\Dmath*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Dmath*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Dmath*{${1:formula}}"
+      }
+    },
+    {
+      "name": "Dmath*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Dmath*[${2:options%keyvals}]{${1:formula}}",
+        "keys": [
+          "\\Dmath,\\Dmath*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ttTag",
+      "arg": {
+        "format": "{}",
+        "snippet": "ttTag{${1:tag}}"
+      }
+    },
+    {
+      "name": "pglabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pglabel{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\Dmath,\\Dmath*": [
+      "style=${1:cmds}",
+      "number=${1:text}",
+      "labelprefix=${1:prefix}",
+      "label=",
+      "indentstep=",
+      "compact",
+      "compact=${1:number}",
+      "spread=",
+      "frame",
+      "frame=",
+      "framesep=",
+      "breakdepth=${1:number}",
+      "shiftnumber",
+      "holdnumber",
+      "density=",
+      "layout=",
+      "shortskiplimit=",
+      "background=",
+      "color=",
+      "center",
+      "nocenter"
+    ]
+  },
+  "args": []
+}

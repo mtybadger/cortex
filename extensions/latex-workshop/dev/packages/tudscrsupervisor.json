@@ -1,0 +1,249 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "taskform",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "taskform{${1:Ziele%text}}{${2:Schwerpunkte%text}}"
+      }
+    },
+    {
+      "name": "taskform",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "taskform[${3:Parameterliste%keyvals}]{${1:Ziele%text}}{${2:Schwerpunkte%text}}",
+        "keys": [
+          "\\begin{task}#c,\\taskform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "chairman",
+      "arg": {
+        "format": "{}",
+        "snippet": "chairman{${1:Prüfungsausschussvorsitzender}}"
+      }
+    },
+    {
+      "name": "issuedate",
+      "arg": {
+        "format": "{}",
+        "snippet": "issuedate{${1:Ausgabedatum}}"
+      }
+    },
+    {
+      "name": "duedate",
+      "arg": {
+        "format": "{}",
+        "snippet": "duedate{${1:Abgabetermin}}"
+      }
+    },
+    {
+      "name": "evaluationform",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "evaluationform{${1:Aufgabe%text}}{${2:Inhalt%text}}{${3:Bewertung%text}}{${4:Note%text}}"
+      }
+    },
+    {
+      "name": "evaluationform",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "evaluationform[${5:Parameterliste%keyvals}]{${1:Aufgabe%text}}{${2:Inhalt%text}}{${3:Bewertung%text}}{${4:Note%text}}",
+        "keys": [
+          "\\begin{evaluation}#c,\\evaluationform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grade",
+      "arg": {
+        "format": "{}",
+        "snippet": "grade{${1:Note%text}}"
+      }
+    },
+    {
+      "name": "noticeform",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "noticeform{${1:Inhalt%text}}{${2:Schwerpunkte%text}}"
+      }
+    },
+    {
+      "name": "noticeform",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "noticeform[${3:Parameterliste%keyvals}]{${1:Inhalt%text}}{${2:Schwerpunkte%text}}",
+        "keys": [
+          "\\begin{notice}#c,\\noticeform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "contactperson",
+      "arg": {
+        "format": "{}",
+        "snippet": "contactperson{${1:Kontaktperson(${2:en})}}"
+      }
+    },
+    {
+      "name": "office",
+      "arg": {
+        "format": "{}",
+        "snippet": "office{${1:Dienstsitz%text}}"
+      }
+    },
+    {
+      "name": "telephone",
+      "arg": {
+        "format": "{}",
+        "snippet": "telephone{${1:Telefonnummer}}"
+      }
+    },
+    {
+      "name": "telefax",
+      "arg": {
+        "format": "{}",
+        "snippet": "telefax{${1:Telefaxnummer}}"
+      }
+    },
+    {
+      "name": "taskname",
+      "unusual": true
+    },
+    {
+      "name": "tasktext",
+      "unusual": true
+    },
+    {
+      "name": "namesname",
+      "unusual": true
+    },
+    {
+      "name": "issuedatetext",
+      "unusual": true
+    },
+    {
+      "name": "duedatetext",
+      "unusual": true
+    },
+    {
+      "name": "chairmanname",
+      "unusual": true
+    },
+    {
+      "name": "focusname",
+      "unusual": true
+    },
+    {
+      "name": "objectivesname",
+      "unusual": true
+    },
+    {
+      "name": "evaluationname",
+      "unusual": true
+    },
+    {
+      "name": "evaluationtext",
+      "unusual": true
+    },
+    {
+      "name": "contentname",
+      "unusual": true
+    },
+    {
+      "name": "assessmentname",
+      "unusual": true
+    },
+    {
+      "name": "gradetext",
+      "unusual": true
+    },
+    {
+      "name": "noticename",
+      "unusual": true
+    },
+    {
+      "name": "contactpersonname",
+      "unusual": true
+    },
+    {
+      "name": "authorname",
+      "unusual": true
+    },
+    {
+      "name": "contactname",
+      "unusual": true
+    },
+    {
+      "name": "student",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "student{${1:name}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "task"
+    },
+    {
+      "name": "task",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:Parameterliste%keyvals}]",
+        "keys": [
+          "\\begin{task}#c,\\taskform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "evaluation"
+    },
+    {
+      "name": "evaluation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:Parameterliste%keyvals}]",
+        "keys": [
+          "\\begin{evaluation}#c,\\evaluationform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "notice"
+    },
+    {
+      "name": "notice",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:Parameterliste%keyvals}]",
+        "keys": [
+          "\\begin{notice}#c,\\noticeform#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{task}#c,\\taskform#c": [
+      "headline=${1:Überschrift}",
+      "style=${1:Stil}"
+    ],
+    "\\begin{evaluation}#c,\\evaluationform#c": [
+      "headline=${1:Überschrift}",
+      "grade=${1:Note}"
+    ],
+    "\\begin{notice}#c,\\noticeform#c": [
+      "headline=${1:Überschrift}"
+    ]
+  },
+  "args": []
+}

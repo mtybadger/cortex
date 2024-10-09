@@ -1,0 +1,118 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Place*"
+    },
+    {
+      "name": "Place",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Place{${1:fraction1}}{${2:fraction2}}"
+      }
+    },
+    {
+      "name": "ffram",
+      "unusual": true
+    },
+    {
+      "name": "sfram",
+      "unusual": true
+    },
+    {
+      "name": "cnum",
+      "unusual": true
+    },
+    {
+      "name": "flength",
+      "unusual": true
+    },
+    {
+      "name": "slength",
+      "unusual": true
+    },
+    {
+      "name": "ffrac",
+      "unusual": true
+    },
+    {
+      "name": "sfrac",
+      "unusual": true
+    },
+    {
+      "name": "actualheight",
+      "unusual": true
+    },
+    {
+      "name": "initskip",
+      "unusual": true
+    },
+    {
+      "name": "colframsep",
+      "unusual": true
+    },
+    {
+      "name": "rigidbalance",
+      "unusual": true
+    },
+    {
+      "name": "dosplits",
+      "unusual": true
+    },
+    {
+      "name": "splitoff",
+      "unusual": true
+    },
+    {
+      "name": "dobalance",
+      "unusual": true
+    },
+    {
+      "name": "finalbalance",
+      "unusual": true
+    },
+    {
+      "name": "myline",
+      "unusual": true
+    },
+    {
+      "name": "UserDefWidths",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "UserDefWidths{${1:fraction1}}{${2:fraction2}}"
+      }
+    },
+    {
+      "name": "AutoCompute",
+      "unusual": true
+    },
+    {
+      "name": "UsefulLengthsTable",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "fframe"
+    },
+    {
+      "name": "sframe"
+    }
+  ],
+  "keys": {
+    "\\usepackage/parrun#c": [
+      "multicol"
+    ]
+  },
+  "args": [
+    "\\usepackage/parrun#c"
+  ]
+}

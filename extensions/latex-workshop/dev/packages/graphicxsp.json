@@ -1,0 +1,240 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "eso-pic"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bboxOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "bboxOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "llxOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "llxOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "llyOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "llyOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "urxOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "urxOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "uryOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "uryOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "heightOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "heightOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "widthOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "widthOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "csOf",
+      "arg": {
+        "format": "{}",
+        "snippet": "csOf{${1:name%keyvals}}",
+        "keys": [
+          "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "insertEPS",
+      "arg": {
+        "format": "{}",
+        "snippet": "insertEPS{${1:name}}"
+      }
+    },
+    {
+      "name": "insertEPS",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "insertEPS[${2:options%keyvals}]{${1:name}}",
+        "keys": [
+          "\\insertEPS,\\includegraphics",
+          "\\insertEPS"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "previewOn"
+    },
+    {
+      "name": "previewOff"
+    },
+    {
+      "name": "ifpreview",
+      "unusual": true
+    },
+    {
+      "name": "AddToEmbeddedEPSs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddToEmbeddedEPSs{${1:code}}"
+      }
+    },
+    {
+      "name": "setSMask",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setSMask{${1:options}}"
+      }
+    },
+    {
+      "name": "setSMask",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setSMask[${2:group}]{${1:options}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "createImage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:bbox}}{${2:name}}"
+      }
+    },
+    {
+      "name": "createImage",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:options%keyvals}]{${1:bbox}}{${2:name}}",
+        "keys": [
+          "\\begin{createImage}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/graphicxsp#c": [
+      "preview",
+      "dvipsone",
+      "dvips",
+      "showembeds",
+      "!showembeds",
+      "draft",
+      "!draft",
+      "final",
+      "shownonames",
+      "!shownonames"
+    ],
+    "\\embedEPS": [
+      "hiresbb",
+      "transparencyGroup"
+    ],
+    "\\bboxOf#c,\\llxOf#c,\\llyOf#c,\\urxOf#c,\\uryOf#c,\\heightOf#c,\\widthOf#c,\\csOf#c": [
+      "%EPSname"
+    ],
+    "\\begin{createImage}": [
+      "transparencyGroup"
+    ],
+    "\\insertEPS,\\includegraphics": [
+      "name=${1:name}",
+      "transparency={${1:specs}}",
+      "presp={${1:PS code}}",
+      "postsp={${1:PS code}}"
+    ],
+    "\\insertEPS": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/graphicxsp#c"
+  ]
+}

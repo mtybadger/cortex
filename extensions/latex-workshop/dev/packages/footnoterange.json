@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "footnoterange"
+    },
+    {
+      "name": "footnoterange*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -3,6 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+import { DocumentSelector } from 'vscode-languageclient';
 import { Event, EventEmitter, extensions } from 'vscode';
 
 /**
@@ -22,7 +23,7 @@ interface LanguageParticipantContribution {
 
 export interface LanguageParticipants {
 	readonly onDidChange: Event<void>;
-	readonly documentSelector: string[];
+	readonly documentSelector: DocumentSelector;
 	hasLanguage(languageId: string): boolean;
 	useComments(languageId: string): boolean;
 	dispose(): void;

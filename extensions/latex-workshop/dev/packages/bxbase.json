@@ -1,0 +1,246 @@
+{
+  "deps": [
+    {
+      "name": "bxtoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Ux",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ux{${1:コード値}}"
+      }
+    },
+    {
+      "name": "UI",
+      "arg": {
+        "format": "{}",
+        "snippet": "UI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "AJ",
+      "arg": {
+        "format": "{}",
+        "snippet": "AJ{${1:コード値}}"
+      }
+    },
+    {
+      "name": "JI",
+      "arg": {
+        "format": "{}",
+        "snippet": "JI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "KI",
+      "arg": {
+        "format": "{}",
+        "snippet": "KI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxHex",
+      "unusual": true
+    },
+    {
+      "name": "bxRes",
+      "unusual": true
+    },
+    {
+      "name": "bxUcv",
+      "unusual": true
+    },
+    {
+      "name": "bxCheckCounterpart",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxCheckCounterpart{${1:base name}}"
+      }
+    },
+    {
+      "name": "bxEngineTypeX",
+      "unusual": true
+    },
+    {
+      "name": "bxEngineTypeY",
+      "unusual": true
+    },
+    {
+      "name": "bxBDHookBabel",
+      "unusual": true
+    },
+    {
+      "name": "bxAtBeginDocumentBabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxAtBeginDocumentBabel{${1:code}}"
+      }
+    },
+    {
+      "name": "fixcaptionlanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fixcaptionlanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "bxFixCaptionLanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxFixCaptionLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "bxProvideCaptionLanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxProvideCaptionLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "setmainlanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setmainlanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "bxTrivLangDef",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxTrivLangDef{${1:language}}"
+      }
+    },
+    {
+      "name": "bxBDHookUnicode",
+      "unusual": true
+    },
+    {
+      "name": "bxBDHookJisInput",
+      "unusual": true
+    },
+    {
+      "name": "bxFallbackSym",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxFallbackSym{${1:code}}"
+      }
+    },
+    {
+      "name": "bxUx",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxUx{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxUI",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxUI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxAJ",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxAJ{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxJI",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxJI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxKI",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxKI{${1:コード値}}"
+      }
+    },
+    {
+      "name": "bxUHex",
+      "arg": {
+        "format": "{}",
+        "snippet": "bxUHex{${1:hex value}}"
+      }
+    },
+    {
+      "name": "bxUInt",
+      "arg": {
+        "format": "{}",
+        "snippet": "bxUInt{${1:decimal value}}"
+      }
+    },
+    {
+      "name": "safecaret",
+      "unusual": true
+    },
+    {
+      "name": "bxEnableSafeCaret",
+      "unusual": true
+    },
+    {
+      "name": "bxBDHookSafeCaret",
+      "unusual": true
+    },
+    {
+      "name": "bxBDHookUcsFastErrors",
+      "unusual": true
+    },
+    {
+      "name": "usejapanesepdfstring",
+      "unusual": true
+    },
+    {
+      "name": "recordpapersize",
+      "unusual": true
+    },
+    {
+      "name": "dvipdfmxmapline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dvipdfmxmapline{${1:text}}"
+      }
+    },
+    {
+      "name": "dvipdfmxmapfile",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dvipdfmxmapfile{${1:text}}"
+      }
+    },
+    {
+      "name": "pxUpScale",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "withnohyph",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

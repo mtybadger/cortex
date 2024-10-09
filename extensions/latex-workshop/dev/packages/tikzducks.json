@@ -1,0 +1,395 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarypatterns"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "duck"
+    },
+    {
+      "name": "duck",
+      "arg": {
+        "format": "[]",
+        "snippet": "duck[${1:options%keyvals}]",
+        "keys": [
+          "\\duck#c",
+          "\\duck#c,\\randuck#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "picduck"
+    },
+    {
+      "name": "randuck"
+    },
+    {
+      "name": "randuck",
+      "arg": {
+        "format": "[]",
+        "snippet": "randuck[${1:options%keyvals}]",
+        "keys": [
+          "\\duck#c,\\randuck#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "randomhead",
+      "unusual": true
+    },
+    {
+      "name": "randomaccessories",
+      "unusual": true
+    },
+    {
+      "name": "shuffleducks",
+      "unusual": true
+    },
+    {
+      "name": "duckpathbody",
+      "unusual": true
+    },
+    {
+      "name": "duckpathgrumpybill",
+      "unusual": true
+    },
+    {
+      "name": "duckpathbill",
+      "unusual": true
+    },
+    {
+      "name": "duckpathtshirt",
+      "unusual": true
+    },
+    {
+      "name": "duckpathjacket",
+      "unusual": true
+    },
+    {
+      "name": "duckpathcape",
+      "unusual": true
+    },
+    {
+      "name": "duckpathshorthair",
+      "unusual": true
+    },
+    {
+      "name": "duckpathlonghair",
+      "unusual": true
+    },
+    {
+      "name": "duckpathcrazyhair",
+      "unusual": true
+    },
+    {
+      "name": "duckpathrecedinghair",
+      "unusual": true
+    },
+    {
+      "name": "duckpathcrown",
+      "unusual": true
+    },
+    {
+      "name": "duckpathmohican",
+      "unusual": true
+    },
+    {
+      "name": "duckpathmullet",
+      "unusual": true
+    },
+    {
+      "name": "duckpathqueencrown",
+      "unusual": true
+    },
+    {
+      "name": "duckpathkingcrown",
+      "unusual": true
+    },
+    {
+      "name": "duckpathdarthvader",
+      "unusual": true
+    },
+    {
+      "name": "duckpathhorsetail",
+      "unusual": true
+    },
+    {
+      "name": "duckhookbackground",
+      "unusual": true
+    },
+    {
+      "name": "duckhookbody",
+      "unusual": true
+    },
+    {
+      "name": "duckhookclothing",
+      "unusual": true
+    },
+    {
+      "name": "duckhookhair",
+      "unusual": true
+    },
+    {
+      "name": "duckhookhat",
+      "unusual": true
+    },
+    {
+      "name": "duckhookforeground",
+      "unusual": true
+    },
+    {
+      "name": "stripes"
+    },
+    {
+      "name": "stripes",
+      "arg": {
+        "format": "[]",
+        "snippet": "stripes[${1:options%keyvals}]",
+        "keys": [
+          "\\stripes"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\duck#c": [
+      "body=",
+      "head=",
+      "bill=",
+      "eye=",
+      "grumpy",
+      "laughing",
+      "parrot",
+      "longhair",
+      "longhair=",
+      "shorthair",
+      "shorthair=",
+      "parting",
+      "parting=",
+      "crazyhair",
+      "crazyhair=",
+      "recedinghair",
+      "recedinghair=",
+      "mohican",
+      "mohican=",
+      "mullet",
+      "mullet=",
+      "eyebrow",
+      "eyebrow=",
+      "beard",
+      "beard=",
+      "tshirt=",
+      "jacket=",
+      "tie",
+      "tie=",
+      "bowtie",
+      "bowtie=",
+      "aodai",
+      "aodai=",
+      "cape",
+      "cape=",
+      "water",
+      "water=",
+      "alien",
+      "alien=",
+      "hat",
+      "hat=",
+      "tophat",
+      "tophat=",
+      "strawhat",
+      "strawhat=",
+      "ribbon",
+      "ribbon=",
+      "cap",
+      "cap=",
+      "conicalhat",
+      "conicalhat=",
+      "santa",
+      "santa=",
+      "graduate",
+      "graduate=",
+      "tassel",
+      "tassel=",
+      "beret",
+      "beret=",
+      "peakedcap",
+      "peakedcap=",
+      "harlequin",
+      "harlequin=",
+      "niuqelrah",
+      "niuqelrah=",
+      "sailor",
+      "sailor=",
+      "bobblehat",
+      "bobblehat=",
+      "crown",
+      "crown=",
+      "queencrown",
+      "queencrown=",
+      "kingcrown",
+      "kingcrown=",
+      "helmet",
+      "helmet=",
+      "viking",
+      "viking=",
+      "devil",
+      "devil=",
+      "unicorn",
+      "unicorn=",
+      "bunny",
+      "bunny=",
+      "inear=",
+      "sheep",
+      "horsetail",
+      "horsetail=",
+      "witch",
+      "witch=",
+      "magichat",
+      "magichat=",
+      "magicstars",
+      "magicstars=",
+      "magicwand",
+      "glasses",
+      "glasses=",
+      "squareglasses",
+      "squareglasses=",
+      "sunglasses",
+      "sunglasses=",
+      "mask",
+      "mask=",
+      "signpost",
+      "signpost=",
+      "signcolour=",
+      "signback=",
+      "speech",
+      "speech=",
+      "bubblecolour=",
+      "think",
+      "think=",
+      "buttons",
+      "buttons=",
+      "lapel",
+      "lapel=",
+      "book",
+      "book=",
+      "bookcolour=",
+      "cricket",
+      "cricket=",
+      "hockey",
+      "hockey=",
+      "football",
+      "football=",
+      "lightsaber",
+      "lightsaber=",
+      "darthvader",
+      "darthvader=",
+      "torch",
+      "torch=",
+      "prison",
+      "prison=",
+      "crozier",
+      "crozier=",
+      "necklace",
+      "necklace=",
+      "icecream",
+      "icecream=",
+      "flavoura=",
+      "flavourb=",
+      "flavourc=",
+      "chef",
+      "chef=",
+      "rollingpin",
+      "rollingpin=",
+      "cake",
+      "cake=",
+      "pizza",
+      "baguette",
+      "baguette=",
+      "cheese",
+      "cheese=",
+      "milkshake",
+      "milkshake=",
+      "wine",
+      "wine=",
+      "cocktail",
+      "wing",
+      "wing=",
+      "basket",
+      "basket=",
+      "easter",
+      "easter=",
+      "egga=",
+      "eggb=",
+      "eggc=",
+      "stethoscope",
+      "stethoscope=",
+      "neckerchief",
+      "neckerchief=",
+      "scarf",
+      "scarf=",
+      "woggle",
+      "woggle=",
+      "snowduck",
+      "snowduck=",
+      "vampire",
+      "vampire=",
+      "crystalball",
+      "crystalball=",
+      "shovel",
+      "shovel=",
+      "pickaxe",
+      "pickaxe=",
+      "strawbroom",
+      "strawbroom=",
+      "strawbroomstick=",
+      "strawbroomribbon=",
+      "broom",
+      "broom=",
+      "broomstick=",
+      "umbrella",
+      "umbrella=",
+      "umbrellaclosed",
+      "umbrellaclosed=",
+      "handbag",
+      "handbag=",
+      "overleaf",
+      "name=${1:name}",
+      "stripes",
+      "stripes={${1:code}}",
+      "banana",
+      "banana=",
+      "stick",
+      "stick=",
+      "leaf",
+      "leaf="
+    ],
+    "\\duck#c,\\randuck#c": [
+      "scale=${1:factor}",
+      "xshift=",
+      "yshift="
+    ],
+    "\\stripes": [
+      "color=",
+      "distance=${1:number}",
+      "width=${1:number}",
+      "height=${1:number}",
+      "initialx=${1:number}",
+      "initialy=${1:number}",
+      "rotate=${1:degrees}",
+      "emblem="
+    ]
+  },
+  "args": []
+}

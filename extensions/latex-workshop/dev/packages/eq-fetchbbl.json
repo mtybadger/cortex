@@ -1,0 +1,203 @@
+{
+  "deps": [
+    {
+      "name": "exerquiz"
+    },
+    {
+      "name": "fetchbibpes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "qFP",
+      "arg": {
+        "format": "{}",
+        "snippet": "qFP{${1:book ch:vrs}}"
+      }
+    },
+    {
+      "name": "qFP",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "qFP[${2:options%keyvals}]{${1:book ch:vrs}}",
+        "keys": [
+          "\\qFP,\\sFP,\\qFV,\\sFV"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sFP",
+      "arg": {
+        "format": "{}",
+        "snippet": "sFP{${1:book ch:vrs}}"
+      }
+    },
+    {
+      "name": "sFP",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sFP[${2:options%keyvals}]{${1:book ch:vrs}}",
+        "keys": [
+          "\\qFP,\\sFP,\\qFV,\\sFV"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "qFV",
+      "arg": {
+        "format": "{}",
+        "snippet": "qFV{${1:book ch:vrs}}"
+      }
+    },
+    {
+      "name": "qFV",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "qFV[${2:options%keyvals}]{${1:book ch:vrs}}",
+        "keys": [
+          "\\qFP,\\sFP,\\qFV,\\sFV"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sFV",
+      "arg": {
+        "format": "{}",
+        "snippet": "sFV{${1:book ch:vrs}}"
+      }
+    },
+    {
+      "name": "sFV",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sFV[${2:options%keyvals}]{${1:book ch:vrs}}",
+        "keys": [
+          "\\qFP,\\sFP,\\qFV,\\sFV"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "useNumbersOn"
+    },
+    {
+      "name": "useNumbersOff"
+    },
+    {
+      "name": "adjCAB",
+      "arg": {
+        "format": "{}",
+        "snippet": "adjCAB{${1:code}}"
+      }
+    },
+    {
+      "name": "adjCAB",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "adjCAB[${2:hfill code}]{${1:code}}"
+      }
+    },
+    {
+      "name": "adjTBX",
+      "arg": {
+        "format": "{}",
+        "snippet": "adjTBX{${1:code}}"
+      }
+    },
+    {
+      "name": "adjTBX",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "adjTBX[${2:hfill code}]{${1:code}}"
+      }
+    },
+    {
+      "name": "priorRBT",
+      "arg": {
+        "format": "{}",
+        "snippet": "priorRBT{${1:code}}"
+      }
+    },
+    {
+      "name": "priorPsg",
+      "arg": {
+        "format": "{}",
+        "snippet": "priorPsg{${1:code}}"
+      }
+    },
+    {
+      "name": "setRBTWidthTo",
+      "arg": {
+        "format": "{}",
+        "snippet": "setRBTWidthTo{${1:content}}"
+      }
+    },
+    {
+      "name": "setRBTWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "setRBTWidth{${1:width}}"
+      }
+    },
+    {
+      "name": "RBTWidth",
+      "unusual": true
+    },
+    {
+      "name": "CATorTBX",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CATorTBX{${1:arg}}"
+      }
+    },
+    {
+      "name": "eqfQorS",
+      "unusual": true
+    },
+    {
+      "name": "presetMBbl",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "BblPsg"
+    },
+    {
+      "name": "BblVrs"
+    }
+  ],
+  "keys": {
+    "\\qFP,\\sFP,\\qFV,\\sFV": [
+      "abbr=${1|esword,none,long,short|}",
+      "roman",
+      "from=${1|KVJ,KVJ+,ISV|}",
+      "alt=${1:word}",
+      "alt*={${1:word1,word2,...}}",
+      "transl=${1:text}",
+      "from*=${1|KJV,KJV+,ISV|}",
+      "pcolor=",
+      "pformat=${1:format cmds}",
+      "delims=${1:<tok1><tok2>}",
+      "enclosewith=${1:<tok1><tok2>\\quote}",
+      "format=${1:format cmds}",
+      "caps",
+      "showfirst",
+      "shownone",
+      "useperiod",
+      "citeatend",
+      "nocite",
+      "priorref=",
+      "ltxquotes",
+      "replace={${1:find1}}{${2:replace1}}${3:{find2}{replace2}...}",
+      "localdefs={${1:localdefs}}",
+      "typeset=",
+      "typeset*="
+    ]
+  },
+  "args": []
+}

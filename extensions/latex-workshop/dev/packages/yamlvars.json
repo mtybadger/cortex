@@ -1,0 +1,78 @@
+{
+  "deps": [
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "luakeys"
+    },
+    {
+      "name": "penlightplus"
+    }
+  ],
+  "macros": [
+    {
+      "name": "yv",
+      "if": "useyv",
+      "arg": {
+        "format": "{}",
+        "snippet": "yv{${1:var}}"
+      }
+    },
+    {
+      "name": "declareYAMLvarsFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "declareYAMLvarsFile{${1:file}}"
+      }
+    },
+    {
+      "name": "parseYAMLvarsFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "parseYAMLvarsFile{${1:file}}"
+      }
+    },
+    {
+      "name": "resetYAMLvarsspec"
+    },
+    {
+      "name": "AllowUndeclaredYV"
+    },
+    {
+      "name": "ForbidUndeclaredYV"
+    },
+    {
+      "name": "lowercasevarYVon"
+    },
+    {
+      "name": "lowercasevarYVoff"
+    }
+  ],
+  "envs": [
+    {
+      "name": "declareYAMLvars"
+    },
+    {
+      "name": "parseYAMLvars"
+    },
+    {
+      "name": "parseYAMLpdfdata"
+    }
+  ],
+  "keys": {
+    "\\usepackage/YAMLvars#c": [
+      "useyv",
+      "parseCLI",
+      "allowundeclared",
+      "overwritedefs",
+      "debug"
+    ]
+  },
+  "args": [
+    "\\usepackage/YAMLvars#c"
+  ]
+}

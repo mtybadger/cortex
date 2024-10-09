@@ -1,0 +1,54 @@
+{
+  "deps": [
+    {
+      "name": "luacolor"
+    },
+    {
+      "name": "transparent"
+    }
+  ],
+  "macros": [
+    {
+      "name": "colorjamo",
+      "arg": {
+        "format": "{}",
+        "snippet": "colorjamo{${1:text}}"
+      }
+    },
+    {
+      "name": "jamocolorcho",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "jamocolorcho{${1:hex color}}"
+      }
+    },
+    {
+      "name": "jamocolorjung",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "jamocolorjung{${1:hex color}}"
+      }
+    },
+    {
+      "name": "jamocolorjong",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "jamocolorjong{${1:hex color}}"
+      }
+    },
+    {
+      "name": "jamotransparency",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "jamotransparency{${1:opacity}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

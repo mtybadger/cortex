@@ -1,0 +1,90 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "brow"
+    },
+    {
+      "name": "erow"
+    },
+    {
+      "name": "cell",
+      "arg": {
+        "format": "{}",
+        "snippet": "cell{${1:content%text}}"
+      }
+    },
+    {
+      "name": "thead",
+      "arg": {
+        "format": "{}",
+        "snippet": "thead{${1:content%text}}"
+      }
+    },
+    {
+      "name": "tfoot",
+      "arg": {
+        "format": "{}",
+        "snippet": "tfoot{${1:content%text}}"
+      }
+    },
+    {
+      "name": "tbreak",
+      "arg": {
+        "format": "{}",
+        "snippet": "tbreak{${1:content%text}}"
+      }
+    },
+    {
+      "name": "lastrule"
+    },
+    {
+      "name": "alignL"
+    },
+    {
+      "name": "alignC"
+    },
+    {
+      "name": "alignR"
+    },
+    {
+      "name": "nullcell",
+      "arg": {
+        "format": "{}",
+        "snippet": "nullcell{${1:location}}"
+      }
+    },
+    {
+      "name": "spancontent",
+      "arg": {
+        "format": "{}",
+        "snippet": "spancontent{${1:content%text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "calstable"
+    },
+    {
+      "name": "calstable",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:alignment%keyvals}]",
+        "keys": [
+          "\\begin{calstable}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{calstable}": [
+      "n",
+      "l",
+      "c",
+      "r"
+    ]
+  },
+  "args": []
+}

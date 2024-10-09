@@ -1,0 +1,43 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "letltxmacro"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tablefootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablefootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "tablefootnote",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tablefootnote[${2:number}]{${1:text}}"
+      }
+    },
+    {
+      "name": "swtablemakefntext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "swtablemakefntext{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

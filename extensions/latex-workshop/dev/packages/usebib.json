@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "url"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bibinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibinput{${1:bib file}}"
+      }
+    },
+    {
+      "name": "newbibfield",
+      "arg": {
+        "format": "{}",
+        "snippet": "newbibfield{${1:field}}"
+      }
+    },
+    {
+      "name": "newbibignore",
+      "arg": {
+        "format": "{}",
+        "snippet": "newbibignore{${1:type}}"
+      }
+    },
+    {
+      "name": "usebibentry",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "usebibentry{${1:citekey}}{${2:field%keyvals}}",
+        "keys": [
+          "\\usebibentry#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "usebibentryurl",
+      "arg": {
+        "format": "{}",
+        "snippet": "usebibentryurl{${1:citekey}}"
+      }
+    },
+    {
+      "name": "usebibentryurl",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "usebibentryurl[${2:delim}]{${1:citekey}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usebibentry#c": [
+      "title",
+      "year",
+      "note",
+      "isbn"
+    ]
+  },
+  "args": []
+}

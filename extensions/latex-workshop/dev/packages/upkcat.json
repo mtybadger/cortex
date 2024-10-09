@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "ifuptex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "getkcatcode",
+      "arg": {
+        "format": "{}",
+        "snippet": "getkcatcode{${1:jachar}}"
+      }
+    },
+    {
+      "name": "thekcatcode"
+    },
+    {
+      "name": "setkcatcode",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setkcatcode{${1:jachar}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

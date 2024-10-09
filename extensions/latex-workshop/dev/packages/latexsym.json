@@ -1,0 +1,49 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mho",
+      "detail": "℧ (\"amsfonts arevmath\" command)",
+      "doc": "\\mho (wrisym), t \\agemo (wasysym), conductance"
+    },
+    {
+      "name": "Join",
+      "detail": "⨝ (\"amssymb\" command)",
+      "doc": "Join"
+    },
+    {
+      "name": "Box"
+    },
+    {
+      "name": "Diamond"
+    },
+    {
+      "name": "leadsto"
+    },
+    {
+      "name": "sqsubset",
+      "detail": "⊏ (\"amsfonts\" command)",
+      "doc": "Square subset"
+    },
+    {
+      "name": "sqsupset",
+      "detail": "⊐ (\"amsfonts\" command)",
+      "doc": "Square superset"
+    },
+    {
+      "name": "lhd"
+    },
+    {
+      "name": "unlhd"
+    },
+    {
+      "name": "rhd"
+    },
+    {
+      "name": "unrhd"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

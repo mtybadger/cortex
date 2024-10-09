@@ -1,0 +1,83 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "substr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "substr{${1:string}}{${2:index}}{${3:numchar}}"
+      }
+    },
+    {
+      "name": "isdecimal",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "isdecimal{${1:string}}{${2:boolean}}"
+      }
+    },
+    {
+      "name": "isnumeric",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "isnumeric{${1:string}}{${2:boolean}}"
+      }
+    },
+    {
+      "name": "isint",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "isint{${1:string}}{${2:boolean}}"
+      }
+    },
+    {
+      "name": "setstrEnd",
+      "arg": {
+        "format": "{}",
+        "snippet": "setstrEnd{${1:string}}"
+      }
+    },
+    {
+      "name": "strchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "strchar{${1:index}}"
+      }
+    },
+    {
+      "name": "strlen",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "strlen{${1:string}}"
+      }
+    },
+    {
+      "name": "strlenstore",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "strlenstore{${1:string}}{${2:counter}}"
+      }
+    },
+    {
+      "name": "ifstrchareq",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "ifstrchareq{${1:string}}{${2:char index}}{${3:comparison char}}{${4:true}}{${5:false}}"
+      }
+    },
+    {
+      "name": "ifstrleneq",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifstrleneq{${1:string}}{${2:number}}{${3:true}}{${4:false}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "picture"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "alertinfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "alertinfo{${1:text}}"
+      }
+    },
+    {
+      "name": "alertsuccess",
+      "arg": {
+        "format": "{}",
+        "snippet": "alertsuccess{${1:text}}"
+      }
+    },
+    {
+      "name": "alertwarning",
+      "arg": {
+        "format": "{}",
+        "snippet": "alertwarning{${1:text}}"
+      }
+    },
+    {
+      "name": "alerterror",
+      "arg": {
+        "format": "{}",
+        "snippet": "alerterror{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

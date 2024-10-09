@@ -1,0 +1,98 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Alegreya"
+    },
+    {
+      "name": "AlegreyaExtraBold"
+    },
+    {
+      "name": "AlegreyaBlack"
+    },
+    {
+      "name": "AlegreyaMedium"
+    },
+    {
+      "name": "AlegreyaLF"
+    },
+    {
+      "name": "AlegreyaOsF"
+    },
+    {
+      "name": "AlegreyaTLF"
+    },
+    {
+      "name": "AlegreyaTOsF"
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "infigures"
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "textin",
+      "arg": {
+        "format": "{}",
+        "snippet": "textin{${1:text}}"
+      }
+    },
+    {
+      "name": "useosf",
+      "unusual": true
+    },
+    {
+      "name": "Alegreyafamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/Alegreya#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "lf",
+      "oldstyle",
+      "osf",
+      "tabular",
+      "tf",
+      "proportional",
+      "pf",
+      "black",
+      "extrabold",
+      "medium"
+    ]
+  },
+  "args": [
+    "\\usepackage/Alegreya#c"
+  ]
+}

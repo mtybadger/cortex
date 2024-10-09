@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "ltxcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mleftright"
+    },
+    {
+      "name": "mleftrightrestore"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

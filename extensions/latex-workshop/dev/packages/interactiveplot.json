@@ -1,0 +1,89 @@
+{
+  "deps": [
+    {
+      "name": "datetime"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "stack"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "iplot",
+      "arg": {
+        "format": "{}",
+        "snippet": "iplot{${1:function%definition}}"
+      }
+    },
+    {
+      "name": "iplot",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "iplot[${2:options%keyvals}]{${1:function%definition}}",
+        "keys": [
+          "\\iplot"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "iplotdd"
+    },
+    {
+      "name": "iplotdd",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{iplotdd},\\begin{iplotddd}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "iplotddd"
+    },
+    {
+      "name": "iplotddd",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{iplotdd},\\begin{iplotddd}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{iplotdd},\\begin{iplotddd}": [
+      "width=${1:number}",
+      "height=${1:number}"
+    ],
+    "\\iplot": [
+      "var={${1:name,start,end}}",
+      "param={${1:name,value,step,start,end}}",
+      "frange={${1:name,start,end}}",
+      "color=${1|black,white,red,green,blue,cyan,magenta,yellow,dark-gray,gray,light-gray|}",
+      "resolution=${1:resolution}"
+    ]
+  },
+  "args": []
+}

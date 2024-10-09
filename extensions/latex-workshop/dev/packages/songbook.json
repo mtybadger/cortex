@@ -1,0 +1,745 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "conditionals"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "multicol"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CBExcl"
+    },
+    {
+      "name": "OHExcl"
+    },
+    {
+      "name": "WBExcl"
+    },
+    {
+      "name": "WOExcl"
+    },
+    {
+      "name": "CBPageBrk"
+    },
+    {
+      "name": "Ch",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ch{${1:chord}}{${2:syllable}}"
+      }
+    },
+    {
+      "name": "Chr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Chr{${1:chord}}{${2:syllable}}"
+      }
+    },
+    {
+      "name": "ChX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ChX{${1:chord}}{${2:syllable}}"
+      }
+    },
+    {
+      "name": "CSColBrk"
+    },
+    {
+      "name": "makeArtistIndex"
+    },
+    {
+      "name": "artistIndex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "artistIndex{${1:artist}}{${2:title and number%text}}"
+      }
+    },
+    {
+      "name": "makeKeyIndex"
+    },
+    {
+      "name": "keyIndex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyIndex{${1:key and title%text}}{${2:number}}"
+      }
+    },
+    {
+      "name": "makeTitleContents"
+    },
+    {
+      "name": "titleContents",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "titleContents{${1:number}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "makeTitleContentsSkip"
+    },
+    {
+      "name": "titleContentsSkip",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "titleContentsSkip{${1:number}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "makeTitleIndex"
+    },
+    {
+      "name": "titleIndex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "titleIndex{${1:title%text}}{${2:number}}"
+      }
+    },
+    {
+      "name": "NotWOPageBrk"
+    },
+    {
+      "name": "OHContPgFtr"
+    },
+    {
+      "name": "OHContPgHdr"
+    },
+    {
+      "name": "OHPageBrk"
+    },
+    {
+      "name": "SBBridge",
+      "arg": {
+        "format": "{}",
+        "snippet": "SBBridge{${1:bridge}}"
+      }
+    },
+    {
+      "name": "SBEnd",
+      "arg": {
+        "format": "{}",
+        "snippet": "SBEnd{${1:ending%text}}"
+      }
+    },
+    {
+      "name": "SBEnd",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SBEnd[${2:words-only}]{${1:ending%text}}"
+      }
+    },
+    {
+      "name": "SBIntro",
+      "arg": {
+        "format": "{}",
+        "snippet": "SBIntro{${1:intro%text}}"
+      }
+    },
+    {
+      "name": "SBIntro",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SBIntro[${2:words-only}]{${1:intro%text}}"
+      }
+    },
+    {
+      "name": "SBMargNote",
+      "arg": {
+        "format": "{}",
+        "snippet": "SBMargNote{${1:text}}"
+      }
+    },
+    {
+      "name": "SBRef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SBRef{${1:book title%text}}{${2:page or song number}}"
+      }
+    },
+    {
+      "name": "SBem"
+    },
+    {
+      "name": "SBen"
+    },
+    {
+      "name": "STitle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STitle{${1:song title%text}}{${2:key%plain}}"
+      }
+    },
+    {
+      "name": "WBPageBrk"
+    },
+    {
+      "name": "WOPageBrk"
+    },
+    {
+      "name": "CpyRt",
+      "arg": {
+        "format": "{}",
+        "snippet": "CpyRt{${1:copyright info%text}}"
+      }
+    },
+    {
+      "name": "FLineIdx",
+      "arg": {
+        "format": "{}",
+        "snippet": "FLineIdx{${1:first line%text}}"
+      }
+    },
+    {
+      "name": "SBChorusMarkright"
+    },
+    {
+      "name": "SBContinueMark"
+    },
+    {
+      "name": "SBSectionMarkright"
+    },
+    {
+      "name": "SBVerseMarkright"
+    },
+    {
+      "name": "SongMarkboth"
+    },
+    {
+      "name": "STitleMarkboth"
+    },
+    {
+      "name": "ScriptRef",
+      "arg": {
+        "format": "{}",
+        "snippet": "ScriptRef{${1:scripture address}}"
+      }
+    },
+    {
+      "name": "WAndM",
+      "arg": {
+        "format": "{}",
+        "snippet": "WAndM{${1:lyricist and composer}}"
+      }
+    },
+    {
+      "name": "ifSBinSongEnv"
+    },
+    {
+      "name": "SBinSongEnvtrue",
+      "unusual": true
+    },
+    {
+      "name": "SBinSongEnvfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifChordBk"
+    },
+    {
+      "name": "ChordBktrue",
+      "unusual": true
+    },
+    {
+      "name": "ChordBkfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifOverhead"
+    },
+    {
+      "name": "Overheadtrue",
+      "unusual": true
+    },
+    {
+      "name": "Overheadfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifWordBk"
+    },
+    {
+      "name": "WordBktrue",
+      "unusual": true
+    },
+    {
+      "name": "WordBkfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifWordsOnly"
+    },
+    {
+      "name": "WordsOnlytrue",
+      "unusual": true
+    },
+    {
+      "name": "WordsOnlyfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifNotWordsOnly"
+    },
+    {
+      "name": "NotWordsOnlytrue",
+      "unusual": true
+    },
+    {
+      "name": "NotWordsOnlyfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCompactSongMode"
+    },
+    {
+      "name": "CompactSongModetrue",
+      "unusual": true
+    },
+    {
+      "name": "CompactSongModefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSongEject"
+    },
+    {
+      "name": "SongEjecttrue",
+      "unusual": true
+    },
+    {
+      "name": "SongEjectfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCompactAllMode"
+    },
+    {
+      "name": "CompactAllModetrue",
+      "unusual": true
+    },
+    {
+      "name": "CompactAllModefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifExcludeSong"
+    },
+    {
+      "name": "ExcludeSongtrue",
+      "unusual": true
+    },
+    {
+      "name": "ExcludeSongfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifPrintAllSongs"
+    },
+    {
+      "name": "PrintAllSongstrue",
+      "unusual": true
+    },
+    {
+      "name": "PrintAllSongsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSamepageMode"
+    },
+    {
+      "name": "SamepageModetrue"
+    },
+    {
+      "name": "SamepageModefalse"
+    },
+    {
+      "name": "ifSBpaperAfour",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperAfourtrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperAfourfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSBpaperAfive",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperAfivetrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperAfivefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSBpaperBfive",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperBfivetrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperBfivefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSBpaperLtr",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperLtrtrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperLtrfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSBpaperLgl",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperLgltrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperLglfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSBpaperExc",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperExctrue",
+      "unusual": true
+    },
+    {
+      "name": "SBpaperExcfalse",
+      "unusual": true
+    },
+    {
+      "name": "theSBSongCnt",
+      "unusual": true
+    },
+    {
+      "name": "theSBSectionCnt",
+      "unusual": true
+    },
+    {
+      "name": "theSBVerseCnt",
+      "unusual": true
+    },
+    {
+      "name": "HangAmt",
+      "unusual": true
+    },
+    {
+      "name": "LeftMarginSBBracket",
+      "unusual": true
+    },
+    {
+      "name": "LeftMarginSBChorus",
+      "unusual": true
+    },
+    {
+      "name": "LeftMarginSBSection",
+      "unusual": true
+    },
+    {
+      "name": "LeftMarginSBVerse",
+      "unusual": true
+    },
+    {
+      "name": "SBChordRaise",
+      "unusual": true
+    },
+    {
+      "name": "SBRuleRaiseAmount",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAboveSTitle",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterTitleBlk",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterChorus",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterOpGroup",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterSection",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterSBBracket",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterSong",
+      "unusual": true
+    },
+    {
+      "name": "SpaceAfterVerse",
+      "unusual": true
+    },
+    {
+      "name": "SpaceBeforeSBBracket",
+      "unusual": true
+    },
+    {
+      "name": "OHContPgFtrTag",
+      "unusual": true
+    },
+    {
+      "name": "OHContPgHdrTag",
+      "unusual": true
+    },
+    {
+      "name": "SBBaseLang",
+      "unusual": true
+    },
+    {
+      "name": "SBBridgeTag",
+      "unusual": true
+    },
+    {
+      "name": "SBChorusTag",
+      "unusual": true
+    },
+    {
+      "name": "SBContinueTag",
+      "unusual": true
+    },
+    {
+      "name": "SBEndTag",
+      "unusual": true
+    },
+    {
+      "name": "SBIntersyllableRule",
+      "unusual": true
+    },
+    {
+      "name": "SBIntroTag",
+      "unusual": true
+    },
+    {
+      "name": "SBPubDom",
+      "unusual": true
+    },
+    {
+      "name": "SBUnknownTag",
+      "unusual": true
+    },
+    {
+      "name": "SBWAndMTag",
+      "unusual": true
+    },
+    {
+      "name": "ChBassFont",
+      "unusual": true
+    },
+    {
+      "name": "ChBkFont",
+      "unusual": true
+    },
+    {
+      "name": "ChFont",
+      "unusual": true
+    },
+    {
+      "name": "CpyRtFont",
+      "unusual": true
+    },
+    {
+      "name": "CpyRtInfoFont",
+      "unusual": true
+    },
+    {
+      "name": "SBBracketTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBBridgeTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBChorusTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBDefaultFont",
+      "unusual": true
+    },
+    {
+      "name": "SBEndTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBIntroTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBLyricNoteFont",
+      "unusual": true
+    },
+    {
+      "name": "SBMargNoteFont",
+      "unusual": true
+    },
+    {
+      "name": "SBOccursBrktFont",
+      "unusual": true
+    },
+    {
+      "name": "SBOccursTagFont",
+      "unusual": true
+    },
+    {
+      "name": "SBRefFont",
+      "unusual": true
+    },
+    {
+      "name": "SBVerseNumberFont",
+      "unusual": true
+    },
+    {
+      "name": "SBSectionNumberFont",
+      "unusual": true
+    },
+    {
+      "name": "STitleFont",
+      "unusual": true
+    },
+    {
+      "name": "STitleKeyFont",
+      "unusual": true
+    },
+    {
+      "name": "STitleNumberFont",
+      "unusual": true
+    },
+    {
+      "name": "ScriptRefFont",
+      "unusual": true
+    },
+    {
+      "name": "WandMFont",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "SBBracket",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag}}"
+      }
+    },
+    {
+      "name": "SBBracket*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag}}"
+      }
+    },
+    {
+      "name": "SBChorus"
+    },
+    {
+      "name": "SBChorus*"
+    },
+    {
+      "name": "SBExtraKeys",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:song content}}"
+      }
+    },
+    {
+      "name": "SBOccurs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:occurrences}}"
+      }
+    },
+    {
+      "name": "SBOpGroup"
+    },
+    {
+      "name": "SBSection"
+    },
+    {
+      "name": "SBSection*"
+    },
+    {
+      "name": "SBVerse"
+    },
+    {
+      "name": "SBVerse*"
+    },
+    {
+      "name": "song",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "{${1:title%text}}{${2:key%plain}}{${3:copyright%text}}{${4:names}}{${5:scriptureref}}{${6:licensing%text}}"
+      }
+    },
+    {
+      "name": "song",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}",
+        "snippet": "[${7:format string}]{${1:title%text}}{${2:key%plain}}{${3:copyright%text}}{${4:names}}{${5:scriptureref}}{${6:licensing%text}}"
+      }
+    },
+    {
+      "name": "songTranslation",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:language}}{${2:title%text}}{${3:permission%text}}{${4:performer}}"
+      }
+    },
+    {
+      "name": "xlatn",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:title%text}}{${2:permission%text}}{${3:performer}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/songbook#c": [
+      "compactallsongs",
+      "printallsongs",
+      "chordbk",
+      "wordbk",
+      "overhead"
+    ]
+  },
+  "args": [
+    "\\usepackage/songbook#c"
+  ]
+}

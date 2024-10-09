@@ -1,0 +1,191 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "fvextra"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pydatasetfilehandle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatasetfilehandle{${1:filehandle}}"
+      }
+    },
+    {
+      "name": "pydatareleasefilehandle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatareleasefilehandle{${1:filehandle}}"
+      }
+    },
+    {
+      "name": "pydatasetfilename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatasetfilename{${1:file}}"
+      }
+    },
+    {
+      "name": "pydataclosefilename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydataclosefilename{${1:file}}"
+      }
+    },
+    {
+      "name": "pydatasetschemamissing",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatasetschemamissing{${1:missing behavior}}"
+      }
+    },
+    {
+      "name": "pydatasetschemakeytype",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pydatasetschemakeytype{${1:key%plain}}{${2:value type}}"
+      }
+    },
+    {
+      "name": "pydataclearschema",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritemeta",
+      "unusual": true
+    },
+    {
+      "name": "pydataclearmeta",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritedictopen",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritedictclose",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritelistopen",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritelistclose",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritekey",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatawritekey{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "pydatawritevalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatawritevalue{${1:value}}"
+      }
+    },
+    {
+      "name": "pydatawritekeyedefvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pydatawritekeyedefvalue{${1:key%plain}}{${2:value}}"
+      }
+    },
+    {
+      "name": "pydatawritekeyvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pydatawritekeyvalue{${1:key%plain}}{${2:value}}"
+      }
+    },
+    {
+      "name": "pydatasetbuffername",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatasetbuffername{${1:buffername}}"
+      }
+    },
+    {
+      "name": "pydataclearbuffername",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydataclearbuffername{${1:buffername}}"
+      }
+    },
+    {
+      "name": "pydatabuffermdfivesum",
+      "unusual": true
+    },
+    {
+      "name": "pydatawritebuffer",
+      "unusual": true
+    },
+    {
+      "name": "pydatabufferkey",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatabufferkey{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "pydatabuffervalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pydatabuffervalue{${1:value}}"
+      }
+    },
+    {
+      "name": "pydatabufferkeyedefvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pydatabufferkeyedefvalue{${1:key%plain}}{${2:value}}"
+      }
+    },
+    {
+      "name": "pydatabufferkeyvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pydatabufferkeyvalue{${1:key%plain}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pydatawritemlvalue",
+      "unusual": true
+    },
+    {
+      "name": "pydatabuffermlvalue",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

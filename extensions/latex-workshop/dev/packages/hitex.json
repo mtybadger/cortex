@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "HINTversion",
+      "unusual": true
+    },
+    {
+      "name": "HINTminorversion",
+      "unusual": true
+    },
+    {
+      "name": "HINTendlink",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

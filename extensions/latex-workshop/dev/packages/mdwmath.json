@@ -1,0 +1,58 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sqrt*",
+      "arg": {
+        "format": "{}",
+        "snippet": "sqrt*{${1:arg}}"
+      }
+    },
+    {
+      "name": "sqrt*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sqrt*[${2:root}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "sqrtdel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sqrtdel{${1:arg}}"
+      }
+    },
+    {
+      "name": "bitand"
+    },
+    {
+      "name": "bitor"
+    },
+    {
+      "name": "dblor"
+    },
+    {
+      "name": "dbland"
+    },
+    {
+      "name": "bbigg",
+      "unusual": true
+    },
+    {
+      "name": "bbiggl",
+      "unusual": true
+    },
+    {
+      "name": "bbiggr",
+      "unusual": true
+    },
+    {
+      "name": "bbiggm",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

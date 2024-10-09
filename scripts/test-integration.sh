@@ -34,7 +34,7 @@ echo "Storing crash reports into '$VSCODECRASHDIR'."
 echo "Storing log files into '$VSCODELOGSDIR'."
 
 
-# Unit tests
+# Tests standalone (AMD)
 
 echo
 echo "### node.js integration tests"
@@ -67,7 +67,7 @@ kill_app
 echo
 echo "### Colorize tests"
 echo
-npm run test-extension -- -l vscode-colorize-tests
+yarn test-extension -l vscode-colorize-tests
 kill_app
 
 echo
@@ -79,7 +79,7 @@ kill_app
 echo
 echo "### Markdown tests"
 echo
-npm run test-extension -- -l markdown-language-features
+yarn test-extension -l markdown-language-features
 kill_app
 
 echo
@@ -97,25 +97,25 @@ kill_app
 echo
 echo "### Ipynb tests"
 echo
-npm run test-extension -- -l ipynb
+yarn test-extension -l ipynb
 kill_app
 
 echo
 echo "### Notebook Output tests"
 echo
-npm run test-extension -- -l notebook-renderers
+yarn test-extension -l notebook-renderers
 kill_app
 
 echo
 echo "### Configuration editing tests"
 echo
-npm run test-extension -- -l configuration-editing
+yarn test-extension -l configuration-editing
 kill_app
 
 echo
 echo "### GitHub Authentication tests"
 echo
-npm run test-extension -- -l github-authentication
+yarn test-extension -l github-authentication
 kill_app
 
 # Tests standalone (CommonJS)

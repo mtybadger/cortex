@@ -1,0 +1,73 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "refcount"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hereapplies",
+      "arg": {
+        "format": "{}",
+        "snippet": "hereapplies{${1:identifiers}}"
+      }
+    },
+    {
+      "name": "hereapplies",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hereapplies[${2:label}]{${1:identifiers}}"
+      }
+    },
+    {
+      "name": "hereapplies*",
+      "arg": {
+        "format": "{}",
+        "snippet": "hereapplies*{${1:identifiers}}"
+      }
+    },
+    {
+      "name": "hereapplies*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hereapplies*[${2:label}]{${1:identifiers}}"
+      }
+    },
+    {
+      "name": "whereapplies",
+      "arg": {
+        "format": "{}",
+        "snippet": "whereapplies{${1:identifier}}"
+      }
+    },
+    {
+      "name": "whereapplies*",
+      "arg": {
+        "format": "{}",
+        "snippet": "whereapplies*{${1:identifier}}"
+      }
+    },
+    {
+      "name": "hapage",
+      "unusual": true
+    },
+    {
+      "name": "hapages",
+      "unusual": true
+    },
+    {
+      "name": "hadelimiter",
+      "unusual": true
+    },
+    {
+      "name": "halastdelimiter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

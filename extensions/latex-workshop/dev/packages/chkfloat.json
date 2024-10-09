@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/chkfloat#c": [
+      "tolerance=${1:number}"
+    ]
+  },
+  "args": [
+    "\\usepackage/chkfloat#c"
+  ]
+}

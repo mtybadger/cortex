@@ -3,12 +3,12 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { NullExtensionService } from '../../../../services/extensions/common/extensions.js';
+import { NullExtensionService } from 'vs/workbench/services/extensions/common/extensions';
 import { stub } from 'sinon';
-import { NotebookRendererMessagingService } from '../../browser/services/notebookRendererMessagingServiceImpl.js';
+import { NotebookRendererMessagingService } from 'vs/workbench/contrib/notebook/browser/services/notebookRendererMessagingServiceImpl';
 import assert from 'assert';
-import { timeout } from '../../../../../base/common/async.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../base/test/common/utils.js';
+import { timeout } from 'vs/base/common/async';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('NotebookRendererMessaging', () => {
 	let extService: NullExtensionService;

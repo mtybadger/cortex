@@ -1,0 +1,521 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "pgffor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bXInput",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXInput{${1:name}}"
+      }
+    },
+    {
+      "name": "bXInput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bXInput[${2:label}]{${1:name}}"
+      }
+    },
+    {
+      "name": "bXOutput",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXOutput{${1:name}}{${2:preceding node}}"
+      }
+    },
+    {
+      "name": "bXOutput",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXOutput[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXLinkName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLinkName{${1:previous node}}{${2:label}}"
+      }
+    },
+    {
+      "name": "bXLinkName",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXLinkName[${3:distance%l}]{${1:previous node}}{${2:label}}"
+      }
+    },
+    {
+      "name": "bXBloc",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXBloc{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBloc",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXBloc[${4:distance%l}]{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocL",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXBlocL{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocL",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXBlocL[${4:distance%l}]{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXBlocr{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocr",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXBlocr[${4:distance%l}]{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocrL",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXBlocrL{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocrL",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXBlocrL[${4:distance%l}]{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocPotato",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXBlocPotato{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXBlocPotato",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXBlocPotato[${4:distance%l}]{${1:name}}{${2:contents}}{${3:previous node}}"
+      }
+    },
+    {
+      "name": "bXonlyOneBloc",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXonlyOneBloc{${1:input label}}{${2:block label}}{${3:output label}}"
+      }
+    },
+    {
+      "name": "bXonlyOneBloc",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXonlyOneBloc[${4:distance%l}]{${1:input label}}{${2:block label}}{${3:output label}}"
+      }
+    },
+    {
+      "name": "bXComp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXComp{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXComp",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXComp[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXComp*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXComp*{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXComp*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXComp*[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSum",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "bXSum{${1:name}}{${2:previous node}}{${3:a}}{${4:b}}{${5:c}}"
+      }
+    },
+    {
+      "name": "bXSum",
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "bXSum[${6:distance%l}]{${1:name}}{${2:previous node}}{${3:a}}{${4:b}}{${5:c}}"
+      }
+    },
+    {
+      "name": "bXCompa",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXCompa{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompa",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXCompa[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompa*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXCompa*{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompa*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXCompa*[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSuma",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXSuma{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSuma",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXSuma[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSuma*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXSuma*{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSuma*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXSuma*[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXCompb{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompb",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXCompb[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompb*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXCompb*{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompb*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXCompb*[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSumb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXSumb{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSumb",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXSumb[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSumb*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXSumb*{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXSumb*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXSumb*[${3:distance%l}]{${1:name}}{${2:previous node}}"
+      }
+    },
+    {
+      "name": "bXCompSum",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "bXCompSum{${1:name}}{${2:previous node}}{${3:n}}{${4:s}}{${5:w}}{${6:e}}"
+      }
+    },
+    {
+      "name": "bXCompSum",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}",
+        "snippet": "bXCompSum[${7:distance%l}]{${1:name}}{${2:previous node}}{${3:n}}{${4:s}}{${5:w}}{${6:e}}"
+      }
+    },
+    {
+      "name": "bXCompSum*",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "bXCompSum*{${1:name}}{${2:previous node}}{${3:n}}{${4:s}}{${5:w}}{${6:e}}"
+      }
+    },
+    {
+      "name": "bXCompSum*",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}",
+        "snippet": "bXCompSum*[${7:distance%l}]{${1:name}}{${2:previous node}}{${3:n}}{${4:s}}{${5:w}}{${6:e}}"
+      }
+    },
+    {
+      "name": "bXLink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLink{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXLink[${3:label}]{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLinkxy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLinkxy{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLinkxy",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXLinkxy[${3:label}]{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLinkyx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLinkyx{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLinktyx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLinktyx{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXLinktb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLinktb{${1:previous node}}{${2:next node}}"
+      }
+    },
+    {
+      "name": "bXReturn",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bXReturn{${1:previous node}}{${2:next node}}{${3:label}}"
+      }
+    },
+    {
+      "name": "bXReturn",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "bXReturn[${4:distance%l}]{${1:previous node}}{${2:next node}}{${3:label}}"
+      }
+    },
+    {
+      "name": "bXChain",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXChain{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "bXChain",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXChain[${3:distance%l}]{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "bXChainReturn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXChainReturn{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "bXChainReturn",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXChainReturn[${3:distance%l}]{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "bXLoop",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXLoop{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "bXLoop",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXLoop[${3:distance%l}]{${1:previous node}}{${2:list}}"
+      }
+    },
+    {
+      "name": "lastx",
+      "unusual": true
+    },
+    {
+      "name": "bXBranchx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXBranchx{${1:previous node}}{${2:name}}"
+      }
+    },
+    {
+      "name": "bXBranchx",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXBranchx[${3:distance%l}]{${1:previous node}}{${2:name}}"
+      }
+    },
+    {
+      "name": "bXBranchy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bXBranchy{${1:previous node}}{${2:name}}"
+      }
+    },
+    {
+      "name": "bXBranchy",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bXBranchy[${3:distance%l}]{${1:previous node}}{${2:name}}"
+      }
+    },
+    {
+      "name": "bXDefaultLineStyle",
+      "unusual": true
+    },
+    {
+      "name": "bXLineStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXLineStyle{${1:TikZ keys}}"
+      }
+    },
+    {
+      "name": "bXStyleBlocDefault",
+      "unusual": true
+    },
+    {
+      "name": "bXStyleBloc",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXStyleBloc{${1:TikZ keys}}"
+      }
+    },
+    {
+      "name": "bXStyleSumDefault",
+      "unusual": true
+    },
+    {
+      "name": "bXStyleSum",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXStyleSum{${1:TikZ keys}}"
+      }
+    },
+    {
+      "name": "bXLabelStyleDefault",
+      "unusual": true
+    },
+    {
+      "name": "bXLabelStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXLabelStyle{${1:TikZ keys}}"
+      }
+    },
+    {
+      "name": "bXStylePotatoDefault",
+      "unusual": true
+    },
+    {
+      "name": "bXStylePotato",
+      "arg": {
+        "format": "{}",
+        "snippet": "bXStylePotato{${1:TikZ keys}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

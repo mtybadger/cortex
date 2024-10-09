@@ -1,0 +1,44 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "glslistinit",
+      "unusual": true
+    },
+    {
+      "name": "glslistexpandedname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glslistexpandedname{${1:label}}"
+      }
+    },
+    {
+      "name": "indexspace",
+      "unusual": true
+    },
+    {
+      "name": "glslistgroupheaderfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glslistgroupheaderfmt{${1:title%text}}"
+      }
+    },
+    {
+      "name": "glslistnavigationitem",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glslistnavigationitem{${1:navigation items}}"
+      }
+    },
+    {
+      "name": "glslistdottedwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

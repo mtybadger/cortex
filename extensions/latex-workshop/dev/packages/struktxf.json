@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "nat"
+    },
+    {
+      "name": "integer"
+    },
+    {
+      "name": "real"
+    },
+    {
+      "name": "complex"
+    },
+    {
+      "name": "MathItalics"
+    },
+    {
+      "name": "MathNormal"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

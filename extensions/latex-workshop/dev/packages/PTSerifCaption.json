@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/PTSerifCaption#c": [
+      "scaled",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/PTSerifCaption#c"
+  ]
+}

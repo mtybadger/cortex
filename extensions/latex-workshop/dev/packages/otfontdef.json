@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DeclareFontNamingScheme",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareFontNamingScheme{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/otfontdef#c": [
+      "trace"
+    ]
+  },
+  "args": [
+    "\\usepackage/otfontdef#c"
+  ]
+}

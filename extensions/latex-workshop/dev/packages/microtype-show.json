@@ -1,0 +1,83 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifShowGlyphIndex"
+    },
+    {
+      "name": "ShowGlyphIndextrue"
+    },
+    {
+      "name": "ShowGlyphIndexfalse"
+    },
+    {
+      "name": "ifShowMissingGlyphs"
+    },
+    {
+      "name": "ShowMissingGlyphstrue"
+    },
+    {
+      "name": "ShowMissingGlyphsfalse"
+    },
+    {
+      "name": "GlyphScaleFactor"
+    },
+    {
+      "name": "Showbaselinecolor"
+    },
+    {
+      "name": "Showposcolor"
+    },
+    {
+      "name": "Shownegcolor"
+    },
+    {
+      "name": "ShowProtrusion"
+    },
+    {
+      "name": "ShowCharacterInheritance"
+    },
+    {
+      "name": "ShowProtrusionLineGlyph",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShowProtrusionLineGlyph{${1:arg}}"
+      }
+    },
+    {
+      "name": "ShowProtrusionLineIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShowProtrusionLineIndex{${1:arg}}"
+      }
+    },
+    {
+      "name": "ShowDummyLine"
+    },
+    {
+      "name": "ShowProtrusionAll"
+    },
+    {
+      "name": "ShowProtrusionDefined"
+    },
+    {
+      "name": "ShowProtrusionMissing"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

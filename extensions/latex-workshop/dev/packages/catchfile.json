@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "etexcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CatchFileDef",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CatchFileDef{${1:cmd}}{${2:file}}{${3:setup}}"
+      }
+    },
+    {
+      "name": "CatchFileEdef",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CatchFileEdef{${1:cmd}}{${2:file}}{${3:setup}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "etex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "catchfile"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CatchFileBetweenTags",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CatchFileBetweenTags{${1:csname}}{${2:file}}{${3:tag}}"
+      }
+    },
+    {
+      "name": "CatchFileBetweenTags*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CatchFileBetweenTags*{${1:csname}}{${2:file}}{${3:tag}}"
+      }
+    },
+    {
+      "name": "ExecuteMetaData",
+      "arg": {
+        "format": "{}",
+        "snippet": "ExecuteMetaData{${1:tag}}"
+      }
+    },
+    {
+      "name": "ExecuteMetaData",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ExecuteMetaData[${2:file}]{${1:tag}}"
+      }
+    },
+    {
+      "name": "ExecuteMetaData*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ExecuteMetaData*{${1:tag}}"
+      }
+    },
+    {
+      "name": "ExecuteMetaData*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ExecuteMetaData*[${2:file}]{${1:tag}}"
+      }
+    },
+    {
+      "name": "CatchFileBetweenDelims",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "CatchFileBetweenDelims{${1:csname}}{${2:file}}{${3:start delim}}{${4:stop delim}}"
+      }
+    },
+    {
+      "name": "CatchFileBetweenDelims",
+      "arg": {
+        "format": "{}{}{}{}[]",
+        "snippet": "CatchFileBetweenDelims{${1:csname}}{${2:file}}{${3:start delim}}{${4:stop delim}}[${5:setup}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

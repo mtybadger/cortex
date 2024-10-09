@@ -1,0 +1,261 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "algorithmicx"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "fifo-stack"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "tabto"
+    },
+    {
+      "name": "totcount"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryfit"
+    },
+    {
+      "name": "tikzlibrarytikzmark"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Call",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Call{${1:name}}{${2:args}}"
+      }
+    },
+    {
+      "name": "Output"
+    },
+    {
+      "name": "Return"
+    },
+    {
+      "name": "While",
+      "arg": {
+        "format": "{}",
+        "snippet": "While{${1:condition}}"
+      }
+    },
+    {
+      "name": "EndWhile"
+    },
+    {
+      "name": "For",
+      "arg": {
+        "format": "{}",
+        "snippet": "For{${1:condition}}"
+      }
+    },
+    {
+      "name": "ForAll",
+      "arg": {
+        "format": "{}",
+        "snippet": "ForAll{${1:condition}}"
+      }
+    },
+    {
+      "name": "EndFor"
+    },
+    {
+      "name": "Loop"
+    },
+    {
+      "name": "EndLoop"
+    },
+    {
+      "name": "Repeat"
+    },
+    {
+      "name": "Until",
+      "arg": {
+        "format": "{}",
+        "snippet": "Until{${1:condition}}"
+      }
+    },
+    {
+      "name": "If",
+      "arg": {
+        "format": "{}",
+        "snippet": "If{${1:condition}}"
+      }
+    },
+    {
+      "name": "ElsIf",
+      "arg": {
+        "format": "{}",
+        "snippet": "ElsIf{${1:condition}}"
+      }
+    },
+    {
+      "name": "Else"
+    },
+    {
+      "name": "EndIf"
+    },
+    {
+      "name": "Procedure",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Procedure{${1:name}}{${2:parameters}}"
+      }
+    },
+    {
+      "name": "EndProcedure"
+    },
+    {
+      "name": "Function",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Function{${1:name}}{${2:parameters}}"
+      }
+    },
+    {
+      "name": "EndFunction"
+    },
+    {
+      "name": "Require"
+    },
+    {
+      "name": "Ensure"
+    },
+    {
+      "name": "LComment",
+      "arg": {
+        "format": "{}",
+        "snippet": "LComment{${1:text}}"
+      }
+    },
+    {
+      "name": "BeginBox"
+    },
+    {
+      "name": "BeginBox",
+      "arg": {
+        "format": "[]",
+        "snippet": "BeginBox[${1:TikZ options}]"
+      }
+    },
+    {
+      "name": "EndBox"
+    },
+    {
+      "name": "BoxedString",
+      "arg": {
+        "format": "{}",
+        "snippet": "BoxedString{${1:text}}"
+      }
+    },
+    {
+      "name": "BoxedString",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "BoxedString[${2:TikZ options}]{${1:text}}"
+      }
+    },
+    {
+      "name": "algorithmicend",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicdo",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicwhile",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicfor",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicforall",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicloop",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicrepeat",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicuntil",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicprocedure",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicfunction",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicif",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicthen",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicelse",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicrequire",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicensure",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicreturn",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicoutput",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/algpseudocodex#c": [
+      "noEnd",
+      "indLines",
+      "spaceRequire",
+      "italicComments",
+      "rightComments",
+      "commentColor=",
+      "beginComment=${1:text}",
+      "endComment=${1:text}",
+      "beginLComment=${1:text}",
+      "endLComment=${1:text}"
+    ]
+  },
+  "args": [
+    "\\usepackage/algpseudocodex#c"
+  ]
+}

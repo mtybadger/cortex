@@ -1,0 +1,28 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarydecorations"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tikzinputsegmentfirst",
+      "unusual": true
+    },
+    {
+      "name": "tikzinputsegmentlast",
+      "unusual": true
+    },
+    {
+      "name": "tikzinputsegmentsupporta",
+      "unusual": true
+    },
+    {
+      "name": "tikzinputsegmentsupportb",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

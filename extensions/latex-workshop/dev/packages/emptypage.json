@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/emptypage#c": [
+      "odd",
+      "even"
+    ]
+  },
+  "args": [
+    "\\usepackage/emptypage#c"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Cjascale"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -8,9 +8,9 @@ Type=Application
 StartupNotify=false
 StartupWMClass=@@NAME_SHORT@@
 Categories=TextEditor;Development;IDE;
-MimeType=application/x-@@NAME@@-workspace;
+MimeType=text/plain;inode/directory;application/x-@@NAME@@-workspace;
 Actions=new-empty-window;
-Keywords=vscode;
+Keywords=vscodium;codium;vscode;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window

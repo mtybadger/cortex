@@ -3,14 +3,14 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { refineServiceDecorator } from '../../../../platform/instantiation/common/instantiation.js';
-import { Event } from '../../../../base/common/event.js';
-import { Color } from '../../../../base/common/color.js';
-import { IColorTheme, IThemeService, IFileIconTheme, IProductIconTheme } from '../../../../platform/theme/common/themeService.js';
-import { ConfigurationTarget } from '../../../../platform/configuration/common/configuration.js';
-import { isBoolean, isString } from '../../../../base/common/types.js';
-import { IconContribution, IconDefinition } from '../../../../platform/theme/common/iconRegistry.js';
-import { ColorScheme } from '../../../../platform/theme/common/theme.js';
+import { refineServiceDecorator } from 'vs/platform/instantiation/common/instantiation';
+import { Event } from 'vs/base/common/event';
+import { Color } from 'vs/base/common/color';
+import { IColorTheme, IThemeService, IFileIconTheme, IProductIconTheme } from 'vs/platform/theme/common/themeService';
+import { ConfigurationTarget } from 'vs/platform/configuration/common/configuration';
+import { isBoolean, isString } from 'vs/base/common/types';
+import { IconContribution, IconDefinition } from 'vs/platform/theme/common/iconRegistry';
+import { ColorScheme } from 'vs/platform/theme/common/theme';
 
 export const IWorkbenchThemeService = refineServiceDecorator<IThemeService, IWorkbenchThemeService>(IThemeService);
 
@@ -44,70 +44,69 @@ export enum ThemeSettings {
 }
 
 export enum ThemeSettingDefaults {
-	COLOR_THEME_DARK = 'Default Dark Modern',
-	COLOR_THEME_LIGHT = 'Default Light Modern',
-	COLOR_THEME_HC_DARK = 'Default High Contrast',
-	COLOR_THEME_HC_LIGHT = 'Default High Contrast Light',
+	COLOR_THEME_DARK = 'Cortex Dark',
+	COLOR_THEME_LIGHT = 'Cortex Light',
+	COLOR_THEME_HC_DARK = 'Cortex Dark',
+	COLOR_THEME_HC_LIGHT = 'Cortex Light',
 
-	COLOR_THEME_DARK_OLD = 'Default Dark+',
-	COLOR_THEME_LIGHT_OLD = 'Default Light+',
+	COLOR_THEME_DARK_OLD = 'Cortex Dark',
+	COLOR_THEME_LIGHT_OLD = 'Cortex Light',
 
-	FILE_ICON_THEME = 'vs-seti',
-	PRODUCT_ICON_THEME = 'Default',
+	FILE_ICON_THEME = 'cortex-icons',
+	PRODUCT_ICON_THEME = 'cortex-icons',
 }
 
 export const COLOR_THEME_DARK_INITIAL_COLORS = {
-	'activityBar.activeBorder': '#0078d4',
-	'activityBar.background': '#181818',
-	'activityBar.border': '#2b2b2b',
-	'activityBar.foreground': '#d7d7d7',
-	'activityBar.inactiveForeground': '#868686',
-	'editorGroup.border': '#ffffff17',
-	'editorGroupHeader.tabsBackground': '#181818',
-	'editorGroupHeader.tabsBorder': '#2b2b2b',
-	'statusBar.background': '#181818',
-	'statusBar.border': '#2b2b2b',
-	'statusBar.foreground': '#cccccc',
-	'statusBar.noFolderBackground': '#1f1f1f',
-	'tab.activeBackground': '#1f1f1f',
-	'tab.activeBorder': '#1f1f1f',
-	'tab.activeBorderTop': '#0078d4',
-	'tab.activeForeground': '#ffffff',
-	'tab.border': '#2b2b2b',
-	'textLink.foreground': '#4daafc',
-	'titleBar.activeBackground': '#181818',
-	'titleBar.activeForeground': '#cccccc',
-	'titleBar.border': '#2b2b2b',
-	'titleBar.inactiveBackground': '#1f1f1f',
-	'titleBar.inactiveForeground': '#9d9d9d',
-	'welcomePage.tileBackground': '#2b2b2b'
+	'activityBar.activeBorder': '#DEE0EF',
+	'activityBar.background': '#151726',
+	'activityBar.border': '#232534',
+	'activityBar.foreground': '#DEE0EF',
+	'activityBar.inactiveForeground': '#8D8F9E',
+	'editorGroup.border': '#0000',
+	'editorGroupHeader.tabsBackground': '#0000',
+	'editorGroupHeader.tabsBorder': '#0000',
+	'statusBar.background': '#151726',
+	'statusBar.border': '#0000',
+	'statusBar.foreground': '#8D8F9E',
+	'statusBar.noFolderBackground': '#151726',
+	'tab.activeBackground': '#6B6D7C1a',
+	'tab.activeBorder': '#0000',
+	'tab.activeBorderTop': '#0000',
+	'tab.activeForeground': '#DEE0EF',
+	'tab.border': '#0000',
+	'textLink.foreground': '#9ccfd8',
+	'titleBar.activeBackground': '#151726',
+	'titleBar.activeForeground': '#8D8F9E',
+	'titleBar.border': '#1C1E2D',
+	'titleBar.inactiveBackground': '#1C1E2D',
+	'titleBar.inactiveForeground': '#8D8F9E',
+	'welcomePage.tileBackground': '#1C1E2D'
 };
-
 export const COLOR_THEME_LIGHT_INITIAL_COLORS = {
-	'activityBar.activeBorder': '#005FB8',
-	'activityBar.background': '#f8f8f8',
-	'activityBar.border': '#e5e5e5',
-	'activityBar.foreground': '#1f1f1f',
-	'activityBar.inactiveForeground': '#616161',
-	'editorGroup.border': '#e5e5e5',
-	'editorGroupHeader.tabsBackground': '#f8f8f8',
-	'editorGroupHeader.tabsBorder': '#e5e5e5',
-	'statusBar.background': '#f8f8f8',
-	'statusBar.border': '#e5e5e5',
-	'statusBar.foreground': '#3b3b3b',
-	'statusBar.noFolderBackground': '#f8f8f8',
-	'tab.activeBackground': '#ffffff',
-	'tab.activeBorder': '#f8f8f8',
-	'tab.activeBorderTop': '#005fb8',
-	'tab.activeForeground': '#3b3b3b',
-	'tab.border': '#e5e5e5',
-	'textLink.foreground': '#005fb8',
-	'titleBar.activeBackground': '#f8f8f8',
-	'titleBar.activeForeground': '#1e1e1e',
-	'titleBar.border': '#E5E5E5',
-	'titleBar.inactiveBackground': '#f8f8f8',
-	'titleBar.inactiveForeground': '#8b949e',
-	'welcomePage.tileBackground': '#f3f3f3'
+	'activityBar.activeBorder': '#4E5377',
+	'activityBar.background': '#FDFDFE',
+	'activityBar.border': '#D8DAE4',
+	'activityBar.foreground': '#4E5377',
+	'activityBar.inactiveForeground': '#5F6488',
+	'editorGroup.border': '#0000',
+	'editorGroupHeader.tabsBackground': '#0000',
+	'editorGroupHeader.tabsBorder': '#0000',
+	'statusBar.background': '#FDFDFE',
+	'statusBar.border': '#0000',
+	'statusBar.foreground': '#5F6488',
+	'statusBar.noFolderBackground': '#FDFDFE',
+	'tab.activeBackground': '#6e6a860d',
+	'tab.activeBorder': '#0000',
+	'tab.activeBorderTop': '#0000',
+	'tab.activeForeground': '#4E5377',
+	'tab.border': '#0000',
+	'textLink.foreground': '#77AAB3',
+	'titleBar.activeBackground': '#FDFDFE',
+	'titleBar.activeForeground': '#5F6488',
+	'titleBar.border': '#F1F1F4',
+	'titleBar.inactiveBackground': '#F1F1F4',
+	'titleBar.inactiveForeground': '#5F6488',
+	'welcomePage.tileBackground': '#F1F1F4'
 };
 
 export interface IWorkbenchTheme {

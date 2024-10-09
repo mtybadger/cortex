@@ -1,0 +1,74 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bvariations",
+      "unusual": true
+    },
+    {
+      "name": "evariations",
+      "unusual": true
+    },
+    {
+      "name": "c"
+    },
+    {
+      "name": "d"
+    },
+    {
+      "name": "ch"
+    },
+    {
+      "name": "cb"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "db"
+    },
+    {
+      "name": "m"
+    },
+    {
+      "name": "h"
+    },
+    {
+      "name": "filet"
+    },
+    {
+      "name": "l"
+    },
+    {
+      "name": "z"
+    },
+    {
+      "name": "bb"
+    },
+    {
+      "name": "bg"
+    },
+    {
+      "name": "bd"
+    },
+    {
+      "name": "ga"
+    },
+    {
+      "name": "dr"
+    },
+    {
+      "name": "mI"
+    },
+    {
+      "name": "pI"
+    }
+  ],
+  "envs": [
+    {
+      "name": "variations"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,16 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\node#c,\\coordinate#c,\\nodepart#c": [
+      "rectangle ee",
+      "circle ee",
+      "direction ee"
+    ],
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "direction ee arrow=${1:arrow tip name}"
+    ]
+  },
+  "args": []
+}

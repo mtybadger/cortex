@@ -1,0 +1,143 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "rotating"
+    },
+    {
+      "name": "transparent"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setupctable",
+      "arg": {
+        "format": "{}",
+        "snippet": "setupctable{${1:options%keyvals}}",
+        "keys": [
+          "\\setupctable,\\ctable",
+          "\\setupctable"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ctable",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ctable{${1:preamble}}{${2:tnote cmds}}{${3:table}}"
+      }
+    },
+    {
+      "name": "ctable",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "ctable[${4:options%keyvals}]{${1:preamble}}{${2:tnote cmds}}{${3:table}}",
+        "keys": [
+          "\\setupctable,\\ctable",
+          "\\ctable"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "tnote{${1:footnote text}}"
+      }
+    },
+    {
+      "name": "tnote",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tnote[${2:label}]{${1:footnote text}}"
+      }
+    },
+    {
+      "name": "tmark"
+    },
+    {
+      "name": "tmark",
+      "arg": {
+        "format": "[]",
+        "snippet": "tmark[${1:label}]"
+      }
+    },
+    {
+      "name": "NN"
+    },
+    {
+      "name": "FL"
+    },
+    {
+      "name": "ML"
+    },
+    {
+      "name": "LL"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setupctable,\\ctable": [
+      "bgopacity=",
+      "botcap",
+      "captionskip=",
+      "center",
+      "continued",
+      "continued=",
+      "doinside=${1:code}",
+      "figure",
+      "footerwidth=",
+      "framebg=${1:r g b}",
+      "framefg=${1:r g b}",
+      "framerule=",
+      "framesep=",
+      "left",
+      "maxwidth=",
+      "mincapwidth=",
+      "nonotespar",
+      "nosideways",
+      "nostar",
+      "nosuper",
+      "notespar",
+      "pos=",
+      "right",
+      "sidecap",
+      "sideways",
+      "star",
+      "super",
+      "table",
+      "topcap",
+      "width="
+    ],
+    "\\setupctable": [
+      "captionsleft",
+      "captionsright",
+      "captionsinside"
+    ],
+    "\\ctable": [
+      "caption=${1:text}",
+      "cap=${1:short caption text}",
+      "label="
+    ]
+  },
+  "args": []
+}

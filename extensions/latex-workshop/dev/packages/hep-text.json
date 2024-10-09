@@ -1,0 +1,358 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "soulutf8"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "foreign"
+    },
+    {
+      "name": "relsize"
+    },
+    {
+      "name": "enumitem"
+    }
+  ],
+  "macros": [
+    {
+      "name": "vs"
+    },
+    {
+      "name": "no",
+      "arg": {
+        "format": "{}",
+        "snippet": "no{${1:number}}"
+      }
+    },
+    {
+      "name": "software",
+      "arg": {
+        "format": "{}",
+        "snippet": "software{${1:name}}"
+      }
+    },
+    {
+      "name": "software",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "software[${2:version}]{${1:name}}"
+      }
+    },
+    {
+      "name": "online",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "online{${1:URL}}{${2:text%plain}}"
+      }
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "prefix",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "prefix{${1:prefix}}{${2:word%text}}"
+      }
+    },
+    {
+      "name": "subsubparagraph"
+    },
+    {
+      "name": "addendum"
+    },
+    {
+      "name": "Addendum"
+    },
+    {
+      "name": "adhoc"
+    },
+    {
+      "name": "Adhoc"
+    },
+    {
+      "name": "aposteriori"
+    },
+    {
+      "name": "Aposteriori"
+    },
+    {
+      "name": "apriori"
+    },
+    {
+      "name": "Apriori"
+    },
+    {
+      "name": "caveat"
+    },
+    {
+      "name": "Caveat"
+    },
+    {
+      "name": "circa"
+    },
+    {
+      "name": "Circa"
+    },
+    {
+      "name": "curriculum"
+    },
+    {
+      "name": "Curriculum"
+    },
+    {
+      "name": "erratum"
+    },
+    {
+      "name": "Erratum"
+    },
+    {
+      "name": "ibidem"
+    },
+    {
+      "name": "Ibidem"
+    },
+    {
+      "name": "idem"
+    },
+    {
+      "name": "Idem"
+    },
+    {
+      "name": "sic"
+    },
+    {
+      "name": "Sic"
+    },
+    {
+      "name": "viceversa"
+    },
+    {
+      "name": "Viceversa"
+    },
+    {
+      "name": "vitae"
+    },
+    {
+      "name": "Vitae"
+    },
+    {
+      "name": "ala"
+    },
+    {
+      "name": "Ala"
+    },
+    {
+      "name": "visavis"
+    },
+    {
+      "name": "Visavis"
+    },
+    {
+      "name": "ansatz"
+    },
+    {
+      "name": "Ansatz"
+    },
+    {
+      "name": "gedanken"
+    },
+    {
+      "name": "Gedanken"
+    },
+    {
+      "name": "cf"
+    },
+    {
+      "name": "eg"
+    },
+    {
+      "name": "etal"
+    },
+    {
+      "name": "etc"
+    },
+    {
+      "name": "etseq"
+    },
+    {
+      "name": "ibid"
+    },
+    {
+      "name": "ie"
+    },
+    {
+      "name": "loccit"
+    },
+    {
+      "name": "opcit"
+    },
+    {
+      "name": "viz"
+    },
+    {
+      "name": "Cf"
+    },
+    {
+      "name": "Eg"
+    },
+    {
+      "name": "Etal"
+    },
+    {
+      "name": "Etc"
+    },
+    {
+      "name": "Etseq"
+    },
+    {
+      "name": "Ibid"
+    },
+    {
+      "name": "Ie"
+    },
+    {
+      "name": "Loccit"
+    },
+    {
+      "name": "Opcit"
+    },
+    {
+      "name": "Viz"
+    }
+  ],
+  "envs": [
+    {
+      "name": "inlinelist"
+    },
+    {
+      "name": "inlinelist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{inlinelist}#c,\\begin{enumdescript}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "enumdescript"
+    },
+    {
+      "name": "enumdescript",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{inlinelist}#c,\\begin{enumdescript}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/hep-text#c": [
+      "lang=${1:language}"
+    ],
+    "\\begin{inlinelist}#c,\\begin{enumdescript}#c": [
+      "topsep=",
+      "partopsep=",
+      "parsep=",
+      "itemsep=",
+      "leftmargin=",
+      "rightmargin=",
+      "listparindent=",
+      "labelwidth=",
+      "labelsep=",
+      "itemindent=",
+      "label=${1:commands}",
+      "label*=${1:commands}",
+      "ref=${1:commands}",
+      "font=${1:commands}",
+      "format=${1:commands}",
+      "align=${1|left,right,parleft|}",
+      "labelindent=",
+      "left=${1:labelindent}",
+      "left=${1:labelindent} .. ${2:leftmargin}",
+      "widest",
+      "widest=${1:string}",
+      "widest*=${1:integer}",
+      "labelsep*=",
+      "labelindent*=",
+      "start=${1:integer}",
+      "resume",
+      "resume=${1:series name}",
+      "resume*",
+      "resume*=${1:series name}",
+      "series=${1:series name}",
+      "beginpenalty=${1:integer}",
+      "midpenalty=${1:integer}",
+      "endpenalty=${1:integer}",
+      "before=${1:code}",
+      "before*=${1:code}",
+      "after=${1:code}",
+      "after*=${1:code}",
+      "first=${1:code}",
+      "first*=${1:code}",
+      "style=${1|standard,unboxed,nextline,sameline,multiline|}",
+      "noitemsep",
+      "nosep",
+      "wide",
+      "wide=${1:parindent}",
+      "itemjoin=${1:string}",
+      "itemjoin*=${1:string}",
+      "afterlabel=${1:string}",
+      "mode=${1|unboxed,boxed|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/hep-text#c"
+  ]
+}

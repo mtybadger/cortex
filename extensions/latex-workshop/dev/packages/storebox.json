@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "collectbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newstorebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "newstorebox{${1:boxname%cmd}}"
+      }
+    },
+    {
+      "name": "storebox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "storebox{${1:boxname}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "usestorebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "usestorebox{${1:boxname}}"
+      }
+    },
+    {
+      "name": "ifstorebox",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "storebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:boxname}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/storebox#c": [
+      "disable",
+      "enable",
+      "immediate",
+      "delayed"
+    ]
+  },
+  "args": [
+    "\\usepackage/storebox#c"
+  ]
+}

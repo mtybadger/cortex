@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "filemodNumdate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodNumdate{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodNumtime",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodNumtime{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodCmp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "filemodCmp{${1:file1%file}}{${2:file2%file}}{${3:clause1}}{${4:clause2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

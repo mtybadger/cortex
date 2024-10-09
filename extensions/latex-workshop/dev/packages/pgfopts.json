@@ -1,0 +1,44 @@
+{
+  "deps": [
+    {
+      "name": "pgfkeys"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ProcessPgfOptions",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessPgfOptions{${1:path}}"
+      }
+    },
+    {
+      "name": "ProcessPgfOptions*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessPgfOptions*{${1:path}}"
+      }
+    },
+    {
+      "name": "ProcessPgfPackageOptions",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessPgfPackageOptions{${1:path}}"
+      }
+    },
+    {
+      "name": "ProcessPgfPackageOptions*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessPgfPackageOptions*{${1:path}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

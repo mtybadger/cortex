@@ -1,0 +1,17 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "prodi"
+    },
+    {
+      "name": "Prodi"
+    },
+    {
+      "name": "PRODI"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

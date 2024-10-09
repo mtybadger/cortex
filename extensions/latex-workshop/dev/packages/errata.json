@@ -1,0 +1,168 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifmargins",
+      "unusual": true
+    },
+    {
+      "name": "marginstrue",
+      "unusual": true
+    },
+    {
+      "name": "marginsfalse",
+      "unusual": true
+    },
+    {
+      "name": "iffoots",
+      "unusual": true
+    },
+    {
+      "name": "footstrue",
+      "unusual": true
+    },
+    {
+      "name": "footsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifrecord",
+      "unusual": true
+    },
+    {
+      "name": "recordtrue",
+      "unusual": true
+    },
+    {
+      "name": "recordfalse",
+      "unusual": true
+    },
+    {
+      "name": "erratumAdd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "erratumAdd{${1:explanation%text}}{${2:new text%text}}"
+      }
+    },
+    {
+      "name": "erratumAdd",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "erratumAdd[${3:options%keyvals}]{${1:explanation%text}}{${2:new text%text}}"
+      }
+    },
+    {
+      "name": "erratumDelete",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "erratumDelete{${1:explanation%text}}{${2:deleted text%text}}"
+      }
+    },
+    {
+      "name": "erratumDelete",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "erratumDelete[${3:options%keyvals}]{${1:explanation%text}}{${2:deleted text%text}}"
+      }
+    },
+    {
+      "name": "erratumReplace",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "erratumReplace{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
+      }
+    },
+    {
+      "name": "erratumReplace",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "erratumReplace[${4:options%keyvals}]{${1:explanation%text}}{${2:old text%text}}{${3:new text%text}}"
+      }
+    },
+    {
+      "name": "erratumItem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "erratumItem{${1:reference}}{${2:explanation%text}}"
+      }
+    },
+    {
+      "name": "printerrata",
+      "arg": {
+        "format": "{}",
+        "snippet": "printerrata{${1:file}}"
+      }
+    },
+    {
+      "name": "PrintErrata",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintErrata{${1:file}}"
+      }
+    },
+    {
+      "name": "eAdd",
+      "arg": {
+        "format": "{}",
+        "snippet": "eAdd{${1:text}}"
+      }
+    },
+    {
+      "name": "eDelete",
+      "arg": {
+        "format": "{}",
+        "snippet": "eDelete{${1:text}}"
+      }
+    },
+    {
+      "name": "eReplace",
+      "arg": {
+        "format": "{}",
+        "snippet": "eReplace{${1:text}}"
+      }
+    },
+    {
+      "name": "ErratumRef",
+      "unusual": true
+    },
+    {
+      "name": "theerratum",
+      "unusual": true
+    },
+    {
+      "name": "ednotemessage",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "erratum"
+    },
+    {
+      "name": "erratum",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "errata"
+    }
+  ],
+  "keys": {
+    "\\usepackage/errata#c": [
+      "show",
+      "hide",
+      "margins",
+      "foots",
+      "record"
+    ]
+  },
+  "args": [
+    "\\usepackage/errata#c"
+  ]
+}

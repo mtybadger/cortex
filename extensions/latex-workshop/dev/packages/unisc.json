@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "pgfparser"
+    },
+    {
+      "name": "xpatch"
+    }
+  ],
+  "macros": [
+    {
+      "name": "oldscshape"
+    },
+    {
+      "name": "oldtextsc",
+      "arg": {
+        "format": "{}",
+        "snippet": "oldtextsc{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

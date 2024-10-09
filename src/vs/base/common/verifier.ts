@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { isObject } from './types.js';
+import { isObject } from 'vs/base/common/types';
 
 interface IVerifier<T> {
 	verify(value: unknown): T;

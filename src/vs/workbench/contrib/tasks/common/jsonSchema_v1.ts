@@ -3,13 +3,13 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
-import * as Objects from '../../../../base/common/objects.js';
-import { IJSONSchema } from '../../../../base/common/jsonSchema.js';
+import * as nls from 'vs/nls';
+import * as Objects from 'vs/base/common/objects';
+import { IJSONSchema } from 'vs/base/common/jsonSchema';
 
-import { ProblemMatcherRegistry } from './problemMatcher.js';
+import { ProblemMatcherRegistry } from 'vs/workbench/contrib/tasks/common/problemMatcher';
 
-import commonSchema from './jsonSchemaCommon.js';
+import commonSchema from './jsonSchemaCommon';
 
 const schema: IJSONSchema = {
 	oneOf: [

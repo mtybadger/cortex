@@ -1,0 +1,719 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "ae"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "tikzlibrarydecorations"
+    },
+    {
+      "name": "tikzlibraryshadows"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    },
+    {
+      "name": "tikzlibraryfit"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    },
+    {
+      "name": "class-extarticle"
+    },
+    {
+      "name": "geometry"
+    }
+  ],
+  "macros": [
+    {
+      "name": "titlewidth",
+      "unusual": true
+    },
+    {
+      "name": "titlelinewidth",
+      "unusual": true
+    },
+    {
+      "name": "titleroundedcorners",
+      "unusual": true
+    },
+    {
+      "name": "titleinnersep",
+      "unusual": true
+    },
+    {
+      "name": "titletotopverticalspace",
+      "unusual": true
+    },
+    {
+      "name": "titleheight",
+      "unusual": true
+    },
+    {
+      "name": "titlegraphicheight",
+      "unusual": true
+    },
+    {
+      "name": "titleposleft",
+      "unusual": true
+    },
+    {
+      "name": "titleposright",
+      "unusual": true
+    },
+    {
+      "name": "titlepostop",
+      "unusual": true
+    },
+    {
+      "name": "titleposbottom",
+      "unusual": true
+    },
+    {
+      "name": "colwidth",
+      "unusual": true
+    },
+    {
+      "name": "subcolwidth",
+      "unusual": true
+    },
+    {
+      "name": "blocktitleinnersep",
+      "unusual": true
+    },
+    {
+      "name": "blockbodyinnersep",
+      "unusual": true
+    },
+    {
+      "name": "ifBlockHasTitle",
+      "unusual": true
+    },
+    {
+      "name": "BlockHasTitletrue",
+      "unusual": true
+    },
+    {
+      "name": "BlockHasTitlefalse",
+      "unusual": true
+    },
+    {
+      "name": "blockroundedcorners",
+      "unusual": true
+    },
+    {
+      "name": "blocklinewidth",
+      "unusual": true
+    },
+    {
+      "name": "innerblocktitleinnersep",
+      "unusual": true
+    },
+    {
+      "name": "innerblockbodyinnersep",
+      "unusual": true
+    },
+    {
+      "name": "ifInnerblockHasTitle",
+      "unusual": true
+    },
+    {
+      "name": "InnerblockHasTitletrue",
+      "unusual": true
+    },
+    {
+      "name": "InnerblockHasTitlefalse",
+      "unusual": true
+    },
+    {
+      "name": "innerblockroundedcorners",
+      "unusual": true
+    },
+    {
+      "name": "innerblocklinewidth",
+      "unusual": true
+    },
+    {
+      "name": "noteinnersep",
+      "unusual": true
+    },
+    {
+      "name": "ifNoteHasConnection",
+      "unusual": true
+    },
+    {
+      "name": "NoteHasConnectiontrue",
+      "unusual": true
+    },
+    {
+      "name": "NoteHasConnectionfalse",
+      "unusual": true
+    },
+    {
+      "name": "noterotate",
+      "unusual": true
+    },
+    {
+      "name": "noteroundedcorners",
+      "unusual": true
+    },
+    {
+      "name": "notelinewidth",
+      "unusual": true
+    },
+    {
+      "name": "definebackgroundstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definebackgroundstyle{${1:name%specialDef}}{${2:background commands}}"
+      }
+    },
+    {
+      "name": "usebackgroundstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "usebackgroundstyle{${1:background style%keyvals}}",
+        "keys": [
+          "\\usebackgroundstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definetitlestyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "definetitlestyle{${1:name%specialDef}}{${2:options%keyvals}}{${3:title commands}}",
+        "keys": [
+          "\\definetitlestyle,\\maketitle"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "usetitlestyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "usetitlestyle{${1:title style%keyvals}}",
+        "keys": [
+          "\\usetitlestyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "usetitlestyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "usetitlestyle[${2:options}]{${1:title style%keyvals}}",
+        "keys": [
+          "\\usetitlestyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "maketitle",
+      "arg": {
+        "format": "[]",
+        "snippet": "maketitle[${1:options%keyvals}]",
+        "keys": [
+          "\\definetitlestyle,\\maketitle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "institute",
+      "arg": {
+        "format": "{}",
+        "snippet": "institute{${1:institute}}"
+      }
+    },
+    {
+      "name": "titlegraphic",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlegraphic{${1:graphic commands}}"
+      }
+    },
+    {
+      "name": "settitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "settitle{${1:title code}}"
+      }
+    },
+    {
+      "name": "defineblockstyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defineblockstyle{${1:name%specialDef}}{${2:options%keyvals}}{${3:commands}}",
+        "keys": [
+          "\\defineblockstyle,\\block"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "useblockstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "useblockstyle{${1:block style%keyvals}}",
+        "keys": [
+          "\\useblockstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "useblockstyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "useblockstyle[${2:options}]{${1:block style%keyvals}}",
+        "keys": [
+          "\\useblockstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "block",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "block{${1:title}}{${2:text}}"
+      }
+    },
+    {
+      "name": "block",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "block[${3:options%keyvals}]{${1:title}}{${2:text}}",
+        "keys": [
+          "\\defineblockstyle,\\block"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "defineinnerblockstyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defineinnerblockstyle{${1:name%specialDef}}{${2:options%keyvals}}{${3:commands}}",
+        "keys": [
+          "\\defineinnerblockstyle,\\innerblock"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "useinnerblockstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "useinnerblockstyle{${1:innerblock style%keyvals}}",
+        "keys": [
+          "\\useinnerblockstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "useinnerblockstyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "useinnerblockstyle[${2:options}]{${1:innerblock style%keyvals}}",
+        "keys": [
+          "\\useinnerblockstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "innerblock",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "innerblock{${1:heading%text}}{${2:text}}"
+      }
+    },
+    {
+      "name": "innerblock",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "innerblock[${3:options%keyvals}]{${1:heading%text}}{${2:text}}",
+        "keys": [
+          "\\defineinnerblockstyle,\\innerblock"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "coloredbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "coloredbox{${1:text}}"
+      }
+    },
+    {
+      "name": "coloredbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "coloredbox[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\coloredbox"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definenotestyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "definenotestyle{${1:name%specialDef}}{${2:options%keyvals}}{${3:commands}}",
+        "keys": [
+          "\\definenotestyle,\\note"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "usenotestyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "usenotestyle{${1:note style%keyvals}}",
+        "keys": [
+          "\\usenotestyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "usenotestyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "usenotestyle[${2:options}]{${1:note style%keyvals}}",
+        "keys": [
+          "\\usenotestyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "{}",
+        "snippet": "note{${1:text}}"
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "note[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\definenotestyle,\\note"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definecolorpalette",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definecolorpalette{${1:name%specialDef}}{${2:definitions}}"
+      }
+    },
+    {
+      "name": "usecolorpalette",
+      "arg": {
+        "format": "{}",
+        "snippet": "usecolorpalette{${1:color palette%keyvals}}",
+        "keys": [
+          "\\usecolorpalette#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definecolorstyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "definecolorstyle{${1:name%specialDef}}{${2:default palette}}{${3:definitions}}"
+      }
+    },
+    {
+      "name": "usecolorstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "usecolorstyle{${1:color style%keyvals}}",
+        "keys": [
+          "\\usecolorstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "usecolorstyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "usecolorstyle[${2:options}]{${1:color style%keyvals}}",
+        "keys": [
+          "\\usecolorstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definelayouttheme",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definelayouttheme{${1:name%specialDef}}{${2:commands}}"
+      }
+    },
+    {
+      "name": "usetheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "usetheme{${1:theme%keyvals}}",
+        "keys": [
+          "\\usetheme#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "column",
+      "arg": {
+        "format": "{}",
+        "snippet": "column{${1:relative width}}"
+      }
+    },
+    {
+      "name": "subcolumn",
+      "arg": {
+        "format": "{}",
+        "snippet": "subcolumn{${1:relative width}}"
+      }
+    },
+    {
+      "name": "tikzposterlatexaffectionproofon"
+    },
+    {
+      "name": "tikzposterlatexaffectionproofoff"
+    },
+    {
+      "name": "thefigurecounter",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "columns"
+    },
+    {
+      "name": "subcolumns"
+    },
+    {
+      "name": "tikzfigure"
+    },
+    {
+      "name": "tikzfigure",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:caption%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/tikzposter#c": [
+      "12pt",
+      "14pt",
+      "17pt",
+      "20pt",
+      "25pt",
+      "fleqn",
+      "leqno",
+      "a0paper",
+      "a1paper",
+      "a2paper",
+      "landscape",
+      "portrait",
+      "margin=",
+      "innermargin=",
+      "colspace=",
+      "subcolspace=",
+      "blockverticalspace="
+    ],
+    "\\definetitlestyle,\\maketitle": [
+      "width=",
+      "roundedcorners=${1:number}",
+      "linewidth=",
+      "innersep=",
+      "titletotopverticalspace=",
+      "titletoblockverticalspace=",
+      "titlegraphictotitledistance=",
+      "titletextscale=${1:factor}"
+    ],
+    "\\defineblockstyle,\\block": [
+      "titleoffsetx=",
+      "titleoffsety=",
+      "bodyoffsetx=",
+      "bodyoffsety=",
+      "titlewidthscale=${1:factor}",
+      "bodywidthscale=${1:factor}",
+      "titleleft",
+      "titlecenter",
+      "titleright",
+      "bodyverticalshift=",
+      "roundedcorners=${1:number}",
+      "linewidth=",
+      "titleinnersep=",
+      "bodyinnersep="
+    ],
+    "\\defineinnerblockstyle,\\innerblock": [
+      "titlewidth=",
+      "bodywidth=",
+      "titlewidthscale=${1:factor}",
+      "bodywidthscale=${1:factor}",
+      "titleleft",
+      "titlecenter",
+      "titleright",
+      "titleoffsetx=",
+      "titleoffsety=",
+      "bodyoffsetx=",
+      "bodyoffsety=",
+      "roundedcorners=${1:number}",
+      "linewidth=",
+      "titleinnersep=",
+      "bodyinnersep="
+    ],
+    "\\coloredbox": [
+      "width=",
+      "linewidth=",
+      "roundedcorners=${1:number}",
+      "bgcolor=",
+      "fgcolor=",
+      "framecolor="
+    ],
+    "\\definenotestyle,\\note": [
+      "targetoffsetx=",
+      "targetoffsety=",
+      "angle=${1:degrees}",
+      "radius=",
+      "width=",
+      "connection",
+      "rotate=${1:degrees}",
+      "roundedcorners=${1:number}",
+      "linewidth=",
+      "innersep="
+    ],
+    "\\usecolorpalette#c": [
+      "Default",
+      "BlueGrayOrange",
+      "GreenGrayViolet",
+      "PurpleGrayBlue",
+      "BrownBlueOrange",
+      "%tikzpostercolorpalette"
+    ],
+    "\\usecolorstyle#c": [
+      "Default",
+      "Australia",
+      "Britain",
+      "Sweden",
+      "Spain",
+      "Russia",
+      "Denmark",
+      "Germany",
+      "%tikzpostercolorstyle"
+    ],
+    "\\usebackgroundstyle#c": [
+      "Default",
+      "Rays",
+      "VerticalGradation",
+      "BottomVerticalGradation",
+      "Empty",
+      "%tikzposterbackgroundstyle"
+    ],
+    "\\usetitlestyle#c": [
+      "Default",
+      "Basic",
+      "Envelope",
+      "Wave",
+      "VerticalShading",
+      "Filled",
+      "Empty",
+      "%tikzpostertitlestyle"
+    ],
+    "\\useblockstyle#c": [
+      "Default",
+      "Basic",
+      "Minimal",
+      "Envelope",
+      "Corner",
+      "Slide",
+      "TornOut",
+      "%tikzposterblockstyle"
+    ],
+    "\\useinnerblockstyle#c": [
+      "Default",
+      "Table",
+      "Basic",
+      "Minimal",
+      "Envelope",
+      "Corner",
+      "Slide",
+      "TornOut",
+      "%tikzposterinnerblockstyle"
+    ],
+    "\\usenotestyle#c": [
+      "Default",
+      "Corner",
+      "VerticalShading",
+      "Sticky",
+      "%tikzposternotestyle"
+    ],
+    "\\usetheme#c": [
+      "Default",
+      "Rays",
+      "Basic",
+      "Simple",
+      "Envelope",
+      "Wave",
+      "Board",
+      "Autumn",
+      "Desert",
+      "%tikzpostertheme"
+    ]
+  },
+  "args": [
+    "\\documentclass/tikzposter#c"
+  ]
+}

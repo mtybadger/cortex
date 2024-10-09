@@ -1,0 +1,195 @@
+{
+  "deps": [
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "listofitems"
+    }
+  ],
+  "macros": [
+    {
+      "name": "readdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "readdef{${1:file}}{${2:data-macro%cmd}}"
+      }
+    },
+    {
+      "name": "readrecordarray",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "readrecordarray{${1:file}}{${2:array-identifier%cmd}}"
+      }
+    },
+    {
+      "name": "readarray",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
+      }
+    },
+    {
+      "name": "readarray",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "readarray{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
+      }
+    },
+    {
+      "name": "readarray*",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,columns}]"
+      }
+    },
+    {
+      "name": "readarray*",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "readarray*{${1:data-macro}}{${2:array-identifier%cmd}}[${3:-,rows,columns}]"
+      }
+    },
+    {
+      "name": "initarray",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "initarray{${1:array-identifier%cmd}}[${2:rows,columns}]"
+      }
+    },
+    {
+      "name": "initarray",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "initarray{${1:array-identifier%cmd}}[${2:planes,rows,columns}]"
+      }
+    },
+    {
+      "name": "mergearray",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:row,column}]"
+      }
+    },
+    {
+      "name": "mergearray",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "mergearray{${1:from-array-id}}{${2:to-array-id}}[${3:plane,row,column}]"
+      }
+    },
+    {
+      "name": "typesetarray",
+      "arg": {
+        "format": "{}",
+        "snippet": "typesetarray{${1:array-identifier}}"
+      }
+    },
+    {
+      "name": "arraytomacro",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "arraytomacro{${1:array-identifier}}[${3:row,column}]{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "arraytomacro",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "arraytomacro{${1:array-identifier}}[${3:plane,row,column}]{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "setvalue",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "setvalue{${1:array-identifier}}[${3:row,column}]{${2:value}}"
+      }
+    },
+    {
+      "name": "setvalue",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "setvalue{${1:array-identifier}}[${3:plane,row,column}]{${2:value}}"
+      }
+    },
+    {
+      "name": "readarraysepchar",
+      "arg": {
+        "format": "{}",
+        "snippet": "readarraysepchar{${1:parsing-separator-char}}"
+      }
+    },
+    {
+      "name": "readarrayinitvalue",
+      "unusual": true
+    },
+    {
+      "name": "typesetcell",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "typesetcell{${1:arg}}"
+      }
+    },
+    {
+      "name": "typesetplanesepchar",
+      "unusual": true
+    },
+    {
+      "name": "typesetrowsepchar",
+      "unusual": true
+    },
+    {
+      "name": "typesetcolsepchar",
+      "unusual": true
+    },
+    {
+      "name": "nocheckbounds"
+    },
+    {
+      "name": "checkbounds"
+    },
+    {
+      "name": "hypercheckbounds"
+    },
+    {
+      "name": "ifignoreblankreadarrayrecords",
+      "unusual": true
+    },
+    {
+      "name": "ignoreblankreadarrayrecordstrue",
+      "unusual": true
+    },
+    {
+      "name": "ignoreblankreadarrayrecordsfalse",
+      "unusual": true
+    },
+    {
+      "name": "nrows"
+    },
+    {
+      "name": "ncols"
+    },
+    {
+      "name": "nrecords"
+    },
+    {
+      "name": "ArrayRecord"
+    },
+    {
+      "name": "ArrayRecord",
+      "arg": {
+        "format": "[]",
+        "snippet": "ArrayRecord[${1:record}]"
+      }
+    },
+    {
+      "name": "readarraybackslash",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

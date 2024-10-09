@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "epstopdf"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/figlatex#c": [
+      "debug"
+    ],
+    "\\includegraphics": [
+      "subfig=${1:name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/figlatex#c"
+  ]
+}

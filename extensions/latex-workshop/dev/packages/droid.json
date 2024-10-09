@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "droidserif"
+    },
+    {
+      "name": "droidsans"
+    },
+    {
+      "name": "droidsansmono"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

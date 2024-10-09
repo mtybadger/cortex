@@ -1,0 +1,133 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-grad"
+    },
+    {
+      "name": "pst-slpe"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psParrot",
+      "arg": {
+        "format": "{}",
+        "snippet": "psParrot{${1:scale}}"
+      }
+    },
+    {
+      "name": "psBill"
+    },
+    {
+      "name": "psFish"
+    },
+    {
+      "name": "psFish",
+      "arg": {
+        "format": "[]",
+        "snippet": "psFish[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "psLouisXIII"
+    },
+    {
+      "name": "psLouisXIII",
+      "arg": {
+        "format": "[]",
+        "snippet": "psLouisXIII[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "psPulpo"
+    },
+    {
+      "name": "psPulpo",
+      "arg": {
+        "format": "[]",
+        "snippet": "psPulpo[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "Datas",
+      "unusual": true
+    },
+    {
+      "name": "psBranch",
+      "unusual": true
+    },
+    {
+      "name": "psBird"
+    },
+    {
+      "name": "psBird",
+      "arg": {
+        "format": "[]",
+        "snippet": "psBird[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "psLuke"
+    },
+    {
+      "name": "psLuke",
+      "arg": {
+        "format": "[]",
+        "snippet": "psLuke[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "psAnt"
+    },
+    {
+      "name": "psAnt",
+      "arg": {
+        "format": "[]",
+        "snippet": "psAnt[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "psKangaroo",
+      "arg": {
+        "format": "{}",
+        "snippet": "psKangaroo{${1:scale}}"
+      }
+    },
+    {
+      "name": "psKangaroo",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "psKangaroo[${2:options%keyvals}]{${1:scale}}"
+      }
+    },
+    {
+      "name": "psPig",
+      "arg": {
+        "format": "()",
+        "snippet": "psPig(${1:x},${2:y})"
+      }
+    },
+    {
+      "name": "psPig",
+      "arg": {
+        "format": "[]()",
+        "snippet": "psPig[${1:options%keyvals}](${2:x},${3:y})"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

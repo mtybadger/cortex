@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IExtensionDescription } from '../../../platform/extensions/common/extensions.js';
-import { ExtHostAiRelatedInformationShape, IMainContext, MainContext, MainThreadAiRelatedInformationShape } from './extHost.protocol.js';
+import { IExtensionDescription } from 'vs/platform/extensions/common/extensions';
+import { ExtHostAiRelatedInformationShape, IMainContext, MainContext, MainThreadAiRelatedInformationShape } from 'vs/workbench/api/common/extHost.protocol';
 import type { CancellationToken, RelatedInformationProvider, RelatedInformationType, RelatedInformationResult } from 'vscode';
-import { Disposable } from './extHostTypes.js';
+import { Disposable } from 'vs/workbench/api/common/extHostTypes';
 
 export class ExtHostRelatedInformation implements ExtHostAiRelatedInformationShape {
 	private _relatedInformationProviders: Map<number, RelatedInformationProvider> = new Map();

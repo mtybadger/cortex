@@ -1,0 +1,200 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tlwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tlrunningwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlrunningwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tlrunningcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlrunningcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "tltextstart",
+      "arg": {
+        "format": "{}",
+        "snippet": "tltextstart{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tltextstart",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tltextstart[${2:anchor}]{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tltextend",
+      "arg": {
+        "format": "{}",
+        "snippet": "tltextend{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tltextend",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tltextend[${2:anchor}]{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tltextsingle",
+      "arg": {
+        "format": "{}",
+        "snippet": "tltextsingle{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tltext",
+      "arg": {
+        "format": "{}",
+        "snippet": "tltext{${1:font commands}}"
+      }
+    },
+    {
+      "name": "tlmaxdates",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tlmaxdates{${1:start}}{${2:end}}"
+      }
+    },
+    {
+      "name": "tlsince",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlsince{${1:text}}"
+      }
+    },
+    {
+      "name": "tlsetnotshadedfraction",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlsetnotshadedfraction{${1:fraction}}"
+      }
+    },
+    {
+      "name": "tlenablemonths"
+    },
+    {
+      "name": "tldisablemonths"
+    },
+    {
+      "name": "tlenablemarksmo"
+    },
+    {
+      "name": "tlenablemarksyr"
+    },
+    {
+      "name": "tldisablemarksyr"
+    },
+    {
+      "name": "tldisablemarksmo"
+    },
+    {
+      "name": "tlmarkheightmo",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlmarkheightmo{${1:height%l}}"
+      }
+    },
+    {
+      "name": "tlmarkheightyr",
+      "arg": {
+        "format": "{}",
+        "snippet": "tlmarkheightyr{${1:height%l}}"
+      }
+    },
+    {
+      "name": "tlcventry",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "tlcventry{${1:start year}}{${2:end year}}{${3:degree or job title%text}}{${4:institution or employer%text}}{${5:city%text}}{${6:grade%text}}{${7:description%text}}"
+      }
+    },
+    {
+      "name": "tlcventry",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}{}",
+        "snippet": "tlcventry[${8:color}]{${1:start year}}{${2:end year}}{${3:degree or job title%text}}{${4:institution or employer%text}}{${5:city%text}}{${6:grade%text}}{${7:description%text}}"
+      }
+    },
+    {
+      "name": "tllabelcventry",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "tllabelcventry{${1:start year}}{${2:end year}}{${3:label}}{${4:degree or job title%text}}{${5:institution or employer%text}}{${6:city%text}}{${7:grade%text}}{${8:description%text}}"
+      }
+    },
+    {
+      "name": "tllabelcventry",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}{}{}",
+        "snippet": "tllabelcventry[${9:color}]{${1:start year}}{${2:end year}}{${3:label}}{${4:degree or job title%text}}{${5:institution or employer%text}}{${6:city%text}}{${7:grade%text}}{${8:description%text}}"
+      }
+    },
+    {
+      "name": "tldatecventry",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "tldatecventry{${1:year}}{${2:degree or job title%text}}{${3:institution or employer%text}}{${4:city%text}}{${5:grade%text}}{${6:description%text}}"
+      }
+    },
+    {
+      "name": "tldatecventry",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}",
+        "snippet": "tldatecventry[${7:color}]{${1:year}}{${2:degree or job title%text}}{${3:institution or employer%text}}{${4:city%text}}{${5:grade%text}}{${6:description%text}}"
+      }
+    },
+    {
+      "name": "tldatelabelcventry",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "tldatelabelcventry{${1:year}}{${2:label}}{${3:degree or job title%text}}{${4:institution or employer%text}}{${5:city%text}}{${6:grade%text}}{${7:description%text}}"
+      }
+    },
+    {
+      "name": "tldatelabelcventry",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}{}",
+        "snippet": "tldatelabelcventry[${8:color}]{${1:year}}{${2:label}}{${3:degree or job title%text}}{${4:institution or employer%text}}{${5:city%text}}{${6:grade%text}}{${7:description%text}}"
+      }
+    },
+    {
+      "name": "fullcolorwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/moderntimeline#c": [
+      "firstyear=${1:year}",
+      "lastyear=${1:year}",
+      "marksmo=",
+      "marksyr="
+    ]
+  },
+  "args": [
+    "\\usepackage/moderntimeline#c"
+  ]
+}

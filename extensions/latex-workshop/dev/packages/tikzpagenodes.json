@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "ifoddpage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "currentsidemargin"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

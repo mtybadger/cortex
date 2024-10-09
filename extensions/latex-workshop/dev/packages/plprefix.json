@@ -1,0 +1,73 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ThePrefixChar",
+      "unusual": true
+    },
+    {
+      "name": "prefixing"
+    },
+    {
+      "name": "nonprefixing"
+    },
+    {
+      "name": "SetPrefixChar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPrefixChar{${1:char}}"
+      }
+    },
+    {
+      "name": "PrefixMacro",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrefixMacro{${1:char}}"
+      }
+    },
+    {
+      "name": "PrefixingError",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrefixingError{${1:char}}"
+      }
+    },
+    {
+      "name": "Prefix"
+    },
+    {
+      "name": "PlPrIeC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PlPrIeC{${1:arg}}"
+      }
+    },
+    {
+      "name": "dywiz"
+    },
+    {
+      "name": "prefZisZkropka"
+    },
+    {
+      "name": "prefZisZkreska"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/plprefix#c": [
+      "/z",
+      "\"z",
+      "@z",
+      "/r",
+      "\"r",
+      "@r"
+    ]
+  },
+  "args": [
+    "\\usepackage/plprefix#c"
+  ]
+}

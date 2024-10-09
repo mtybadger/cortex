@@ -1,0 +1,153 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "picture"
+    }
+  ],
+  "macros": [
+    {
+      "name": "h",
+      "unusual": true
+    },
+    {
+      "name": "labyrinthset",
+      "arg": {
+        "format": "{}",
+        "snippet": "labyrinthset{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{labyrinth},\\labyrinthset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "putsymbol",
+      "arg": {
+        "format": "(){}",
+        "snippet": "putsymbol(${2:x},${3:y}){${1:symbol}}"
+      }
+    },
+    {
+      "name": "plus",
+      "unusual": true,
+      "detail": "+",
+      "doc": "Plus sign"
+    },
+    {
+      "name": "minus",
+      "unusual": true,
+      "detail": "−",
+      "doc": "Minus sign"
+    },
+    {
+      "name": "ast",
+      "unusual": true,
+      "detail": "∗",
+      "doc": "Asterisk operator (hodge star operator)"
+    },
+    {
+      "name": "labyrinthsolution",
+      "arg": {
+        "format": "(){}",
+        "snippet": "labyrinthsolution(${2:x},${3:y}){${1:solution code}}"
+      }
+    },
+    {
+      "name": "labyrinthsolution",
+      "arg": {
+        "format": "[](){}",
+        "snippet": "labyrinthsolution[${2:options%keyvals}](${3:x},${4:y}){${1:solution code}}",
+        "keys": [
+          "\\labyrinthsolution,\\solutionset,\\autosolution"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solutionset",
+      "arg": {
+        "format": "{}",
+        "snippet": "solutionset{${1:options%keyvals}}",
+        "keys": [
+          "\\labyrinthsolution,\\solutionset,\\autosolution"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "autosolution",
+      "arg": {
+        "format": "()(){}",
+        "snippet": "autosolution(${2:x1},${3:y1})(${4:x2},${5:y2}){${1:first direction}}"
+      }
+    },
+    {
+      "name": "autosolution",
+      "arg": {
+        "format": "[]()(){}",
+        "snippet": "autosolution[${2:options%keyvals}](${3:x1},${4:y1})(${5:x2},${6:y2}){${1:first direction}}",
+        "keys": [
+          "\\labyrinthsolution,\\solutionset,\\autosolution"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solutionpath",
+      "unusual": true
+    },
+    {
+      "name": "truncdiv",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "truncdiv{${1:num1}}{${2:num2}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "labyrinth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:width%plain}}{${2:height%plain}}"
+      }
+    },
+    {
+      "name": "labyrinth",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:options%keyvals}]{${1:width%plain}}{${2:height%plain}}",
+        "keys": [
+          "\\begin{labyrinth},\\labyrinthset"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{labyrinth},\\labyrinthset": [
+      "unit=",
+      "thickness=",
+      "centered"
+    ],
+    "\\labyrinthsolution,\\solutionset,\\autosolution": [
+      "hidden",
+      "thicklines",
+      "up=${1:symbol}",
+      "left=${1:symbol}",
+      "down=${1:symbol}",
+      "right=${1:symbol}",
+      "hcorr=",
+      "vcorr=",
+      "font=${1:font commands}"
+    ]
+  },
+  "args": []
+}

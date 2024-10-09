@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "usym",
+      "arg": {
+        "format": "{}",
+        "snippet": "usym{${1:symbolID}}"
+      }
+    },
+    {
+      "name": "usymH",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "usymH{${1:symbolID}}{${2:height}}"
+      }
+    },
+    {
+      "name": "usymW",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "usymW{${1:symbolID}}{${2:width}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -11,7 +11,6 @@ import { generateCodeChallenge, generateCodeVerifier, randomUUID } from './crypt
 import { BetterTokenStorage, IDidChangeInOtherWindowEvent } from './betterSecretStorage';
 import { LoopbackAuthServer } from './node/authServer';
 import { base64Decode } from './node/buffer';
-import fetch from './node/fetch';
 import { UriEventHandler } from './UriEventHandler';
 import TelemetryReporter from '@vscode/extension-telemetry';
 import { Environment } from '@azure/ms-rest-azure-env';
@@ -806,10 +805,11 @@ export class AzureActiveDirectoryService {
 			let result;
 			let errorMessage: string | undefined;
 			try {
-				result = await fetch(endpoint.toString(), {
+				result = await fetch(endpoint, {
 					method: 'POST',
 					headers: {
-						'Content-Type': 'application/x-www-form-urlencoded'
+						'Content-Type': 'application/x-www-form-urlencoded',
+						'Content-Length': postData.length.toString()
 					},
 					body: postData
 				});

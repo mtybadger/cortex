@@ -1,0 +1,45 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "version"
+    },
+    {
+      "name": "setVersion",
+      "arg": {
+        "format": "{}",
+        "snippet": "setVersion{${1:version number}}"
+      }
+    },
+    {
+      "name": "increaseBuild"
+    },
+    {
+      "name": "versionnumber",
+      "unusual": true
+    },
+    {
+      "name": "buildnumber",
+      "unusual": true
+    },
+    {
+      "name": "outfile",
+      "unusual": true
+    },
+    {
+      "name": "versionfile",
+      "unusual": true
+    },
+    {
+      "name": "versionline",
+      "unusual": true
+    },
+    {
+      "name": "thebuildcounter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

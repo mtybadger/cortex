@@ -1,0 +1,629 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "aliascnt"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "phfMakeTheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "phfMakeTheorem{${1:envname}}{${2:theorem name}}"
+      }
+    },
+    {
+      "name": "phfMakeTheorem",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "phfMakeTheorem[${3:options%keyvals}]{${1:envname}}{${2:theorem name}}",
+        "keys": [
+          "\\phfMakeTheorem"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "phfLoadThmSet",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "phfLoadThmSet{${1:thm options}}{${2:def options}}{${3:thmset name%keyvals}}",
+        "keys": [
+          "\\phfLoadThmSet"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "theoremname",
+      "unusual": true
+    },
+    {
+      "name": "propositionname",
+      "unusual": true
+    },
+    {
+      "name": "lemmaname",
+      "unusual": true
+    },
+    {
+      "name": "corollaryname",
+      "unusual": true
+    },
+    {
+      "name": "conjecturename",
+      "unusual": true
+    },
+    {
+      "name": "remarkname",
+      "unusual": true
+    },
+    {
+      "name": "definitionname",
+      "unusual": true
+    },
+    {
+      "name": "ideaname",
+      "unusual": true
+    },
+    {
+      "name": "questionname",
+      "unusual": true
+    },
+    {
+      "name": "claimname",
+      "unusual": true
+    },
+    {
+      "name": "observationname",
+      "unusual": true
+    },
+    {
+      "name": "problemname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "proofofname",
+      "unusual": true
+    },
+    {
+      "name": "phfMakeProofEnv",
+      "arg": {
+        "format": "{}",
+        "snippet": "phfMakeProofEnv{${1:envname}}"
+      }
+    },
+    {
+      "name": "phfMakeProofEnv",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "phfMakeProofEnv[${2:options%keyvals}]{${1:envname}}",
+        "keys": [
+          "\\phfMakeProofEnv"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "phfPinProofAnchor",
+      "unusual": true
+    },
+    {
+      "name": "noproofref"
+    },
+    {
+      "name": "phfMakeThmheadingEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "phfMakeThmheadingEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "phfMakeThmheadingEnvironment",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "phfMakeThmheadingEnvironment[${2:options%keyvals}]{${1:envname}}",
+        "keys": [
+          "\\phfMakeThmheadingEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "proofrefsize",
+      "unusual": true
+    },
+    {
+      "name": "filledsquare",
+      "unusual": true
+    },
+    {
+      "name": "phfProofrefPageAheadTolerance",
+      "unusual": true
+    },
+    {
+      "name": "phfProofrefPageBackTolerance",
+      "unusual": true
+    },
+    {
+      "name": "proofonname",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "proofonname{${1:label name}}{${2:page ref}}"
+      }
+    },
+    {
+      "name": "thephfthmheadingcounter",
+      "unusual": true
+    },
+    {
+      "name": "thephfthmInternalProofrefCounter",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "thm",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "thm",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "prop",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "prop",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lem",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "lem",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "cor",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "cor",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conj",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "conj",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "rem",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "rem",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "defn",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "defn",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "thm*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "thm*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "prop*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "prop*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lem*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "lem*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "cor*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "cor*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conj*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "conj*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "rem*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "rem*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "defn*",
+      "if": "thmset=shortnames"
+    },
+    {
+      "name": "defn*",
+      "if": "thmset=shortnames",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "idea"
+    },
+    {
+      "name": "idea",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "question"
+    },
+    {
+      "name": "question",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem*"
+    },
+    {
+      "name": "theorem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition*"
+    },
+    {
+      "name": "proposition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma*"
+    },
+    {
+      "name": "lemma*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary*"
+    },
+    {
+      "name": "corollary*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition*"
+    },
+    {
+      "name": "definition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture*"
+    },
+    {
+      "name": "conjecture*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark*"
+    },
+    {
+      "name": "remark*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition*"
+    },
+    {
+      "name": "proposition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "idea*"
+    },
+    {
+      "name": "idea*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "question*"
+    },
+    {
+      "name": "question*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem*"
+    },
+    {
+      "name": "problem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "thmheading",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/phfthm#c": [
+      "thmset=${1|simple,default,shortnames,rich|}",
+      "theoremstyle=${1:theorem style}",
+      "definitionstyle=${1:theorem style}",
+      "sepcounters",
+      "parentcounter=${1:counter}",
+      "proofref={${1:attributes}}",
+      "proofenv",
+      "smallproofs",
+      "qedsymbolblacksquare",
+      "prooftitleitbf",
+      "thmheading",
+      "thmheadingstyle=${1:theorem style}"
+    ],
+    "\\phfMakeTheorem": [
+      "counter=${1:counter}",
+      "aliascounter",
+      "thmstyle=${1:theorem style}",
+      "defnostar",
+      "defstar",
+      "proofref",
+      "proofrefstyle=${1|default,margin,marginbottom,longref|}"
+    ],
+    "\\phfLoadThmSet": [
+      "empty",
+      "simple",
+      "default",
+      "shortnames",
+      "rich"
+    ],
+    "\\phfMakeProofEnv": [
+      "displayenv=${1:envname}",
+      "defaultproofname=${1:title}",
+      "parselabel",
+      "parselabelcmd=${1:macro}",
+      "override",
+      "internalcounter=${1:counter}",
+      "proofofname=${1:macro}"
+    ],
+    "\\phfMakeThmheadingEnvironment": [
+      "thmstyle=${1:theorem style}",
+      "internalcounter=${1:counter}"
+    ]
+  },
+  "args": [
+    "\\usepackage/phfthm#c"
+  ]
+}

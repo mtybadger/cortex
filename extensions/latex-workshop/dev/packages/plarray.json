@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

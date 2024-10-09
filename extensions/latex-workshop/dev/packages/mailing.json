@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "addressfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "addressfile{${1:file}}"
+      }
+    },
+    {
+      "name": "mailingtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "mailingtext{${1:text}}"
+      }
+    },
+    {
+      "name": "makemailing"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "listofitems"
+    }
+  ],
+  "macros": [
+    {
+      "name": "autoaligne",
+      "arg": {
+        "format": "{}",
+        "snippet": "autoaligne{${1:eq1\\\\eq2\\\\...%formula}}"
+      }
+    },
+    {
+      "name": "autoaligne",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "autoaligne[${2:hor_align}]{${1:eq1\\\\eq2\\\\...%formula}}"
+      }
+    },
+    {
+      "name": "autoaligne",
+      "arg": {
+        "format": "[](){}",
+        "snippet": "autoaligne[${2:hor_align}](${3:vert_align}){${1:eq1\\\\eq2\\\\...%formula}}"
+      }
+    },
+    {
+      "name": "egaldevantmembrevide",
+      "unusual": true
+    },
+    {
+      "name": "aavcoeff",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "aavcoeff{${1:value}}"
+      }
+    },
+    {
+      "name": "definirseparateurs",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "definirseparateurs{${1:sep_line}}{${2:sep_members}}{${3:sep_terms}}"
+      }
+    },
+    {
+      "name": "definirespacements",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definirespacements{${1:space_members}}{${2:space_terms}}"
+      }
+    },
+    {
+      "name": "definirespacements",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "definirespacements[${3:dimen1,dimen2}]{${1:space_members}}{${2:space_terms}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

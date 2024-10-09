@@ -1,0 +1,380 @@
+{
+  "deps": [
+    {
+      "name": "todonotes"
+    },
+    {
+      "name": "truncate"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "definechangesauthor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "definechangesauthor[${2:keyvals}]{${1:authorid%specialDef}}",
+        "keys": [
+          "\\definechangesauthor"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definechangesauthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "definechangesauthor{${1:authorid%specialDef}}"
+      }
+    },
+    {
+      "name": "added",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "added[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\added,\\deleted,\\replaced,\\highlight"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "added",
+      "arg": {
+        "format": "{}",
+        "snippet": "added{${1:text}}"
+      }
+    },
+    {
+      "name": "deleted",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "deleted[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\added,\\deleted,\\replaced,\\highlight"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "deleted",
+      "arg": {
+        "format": "{}",
+        "snippet": "deleted{${1:text}}"
+      }
+    },
+    {
+      "name": "replaced",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "replaced[${3:keyvals}]{${1:new%text}}{${2:old%text}}",
+        "keys": [
+          "\\added,\\deleted,\\replaced,\\highlight"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "replaced",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "replaced{${1:new%text}}{${2:old%text}}"
+      }
+    },
+    {
+      "name": "highlight",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "highlight[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\added,\\deleted,\\replaced,\\highlight"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "highlight",
+      "arg": {
+        "format": "{}",
+        "snippet": "highlight{${1:text}}"
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "comment[${2:keyvals}]{${1:text%todo}}",
+        "keys": [
+          "\\comment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "{}",
+        "snippet": "comment{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "listofchanges"
+    },
+    {
+      "name": "listofchanges",
+      "arg": {
+        "format": "[]",
+        "snippet": "listofchanges[${1:keyvals}]",
+        "keys": [
+          "\\listofchanges"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setaddedmarkup",
+      "arg": {
+        "format": "{}",
+        "snippet": "setaddedmarkup{${1:definition}}"
+      }
+    },
+    {
+      "name": "setdeletedmarkup",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdeletedmarkup{${1:definition}}"
+      }
+    },
+    {
+      "name": "sethighlightmarkup",
+      "arg": {
+        "format": "{}",
+        "snippet": "sethighlightmarkup{${1:definition}}"
+      }
+    },
+    {
+      "name": "setcommentmarkup",
+      "arg": {
+        "format": "{}",
+        "snippet": "setcommentmarkup{${1:definition}}"
+      }
+    },
+    {
+      "name": "setauthormarkup",
+      "arg": {
+        "format": "{}",
+        "snippet": "setauthormarkup{${1:definition}}"
+      }
+    },
+    {
+      "name": "setauthormarkupposition",
+      "arg": {
+        "format": "{}",
+        "snippet": "setauthormarkupposition{${1:left/right}}"
+      }
+    },
+    {
+      "name": "setauthormarkuptext",
+      "arg": {
+        "format": "{}",
+        "snippet": "setauthormarkuptext{${1:id/name}}"
+      }
+    },
+    {
+      "name": "setanonymousname",
+      "arg": {
+        "format": "{}",
+        "snippet": "setanonymousname{${1:name}}"
+      }
+    },
+    {
+      "name": "settruncatewidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "settruncatewidth{${1:width}}"
+      }
+    },
+    {
+      "name": "setsummarywidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsummarywidth{${1:width}}"
+      }
+    },
+    {
+      "name": "setsummarytowidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsummarytowidth{${1:text}}"
+      }
+    },
+    {
+      "name": "setsocextension",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsocextension{${1:ext}}"
+      }
+    },
+    {
+      "name": "setlocextension",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlocextension{${1:ext}}"
+      }
+    },
+    {
+      "name": "IfIsInList",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "IfIsInList{${1:arg}}{${2:item1|${5:item2}|...}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "IfIsColored",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IfIsColored{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "IfIsEmpty",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfIsEmpty{${1:arg}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "IfIsAnonymous",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfIsAnonymous{${1:arg}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "IfIsAuthorEmptyAtPosition",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "IfIsAuthorEmptyAtPosition{${1:arg}}{${2:position}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "IfIsAuthorOutputEmpty",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfIsAuthorOutputEmpty{${1:arg}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "listofchangesname",
+      "unusual": true
+    },
+    {
+      "name": "summaryofchangesname",
+      "unusual": true
+    },
+    {
+      "name": "compactsummaryofchangesname",
+      "unusual": true
+    },
+    {
+      "name": "changesaddedname",
+      "unusual": true
+    },
+    {
+      "name": "changesdeletedname",
+      "unusual": true
+    },
+    {
+      "name": "changesreplacedname",
+      "unusual": true
+    },
+    {
+      "name": "changeshighlightname",
+      "unusual": true
+    },
+    {
+      "name": "changescommentname",
+      "unusual": true
+    },
+    {
+      "name": "changesauthorname",
+      "unusual": true
+    },
+    {
+      "name": "changesanonymousname",
+      "unusual": true
+    },
+    {
+      "name": "changesnochanges",
+      "unusual": true
+    },
+    {
+      "name": "changesnoloc",
+      "unusual": true
+    },
+    {
+      "name": "changesnosoc",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/changes#c": [
+      "draft",
+      "final",
+      "commandnameprefix=${1|none,ifneeded,always|}",
+      "markup=${1|default,underlined,bfit,nocolor|}",
+      "addedmarkup=${1|colored,uline,uuline,uwave,dashuline,dotuline,bf,it,sl,em|}",
+      "deletedmarkup=${1|sout,xout,colored,uline,uuline,uwave,dashuline,dotuline,bf,it,sl,em|}",
+      "highlightmarkup=${1|background,uuline,uwave|}",
+      "commentmarkup=${1|todo,margin,footnote,uwave|}",
+      "authormarkup=${1|superscript,subscript,brackets,footnote,none|}",
+      "authormarkupposition=${1|right,left|}",
+      "authormarkuptext=${1|id,name|}",
+      "defaultcolor=",
+      "todonotes={${1:todonotes options}}",
+      "truncate={${1:truncate options}}",
+      "ulem={${1:ulem options}}",
+      "xcolor={${1:xcolor options}}"
+    ],
+    "\\definechangesauthor": [
+      "name=${1:name}",
+      "color="
+    ],
+    "\\added,\\deleted,\\replaced,\\highlight": [
+      "id=",
+      "comment=${1:comment}"
+    ],
+    "\\comment": [
+      "id="
+    ],
+    "\\listofchanges": [
+      "style=${1|list,summary,compactsummary|}",
+      "title=${1:title}",
+      "show=${1|all,added,deleted,replaced,highlight,comment|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/changes#c"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "shellesc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CheckState"
+    },
+    {
+      "name": "RubikRotation",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "RubikRotation[${2:integer}]{${1:sequence}}"
+      }
+    },
+    {
+      "name": "RubikRotation",
+      "arg": {
+        "format": "{}",
+        "snippet": "RubikRotation{${1:sequence}}"
+      }
+    },
+    {
+      "name": "SaveRubikState",
+      "arg": {
+        "format": "{}",
+        "snippet": "SaveRubikState{${1:filename%file}}"
+      }
+    },
+    {
+      "name": "ShowErrors"
+    },
+    {
+      "name": "rubikpercentchar",
+      "unusual": true
+    },
+    {
+      "name": "rubikperlcmd"
+    },
+    {
+      "name": "rubikperlname"
+    },
+    {
+      "name": "rubikrotation",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

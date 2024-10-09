@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "stackengine"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mahjong",
+      "arg": {
+        "format": "{}",
+        "snippet": "mahjong{${1:tile-code}}"
+      }
+    },
+    {
+      "name": "mahjong",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "mahjong[${2:height}]{${1:tile-code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,258 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "sas"
+    },
+    {
+      "name": "longfigure"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Listing",
+      "arg": {
+        "format": "{}",
+        "snippet": "Listing{${1:name}}"
+      }
+    },
+    {
+      "name": "Listing",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Listing[${2:options%keyvals}]{${1:name}}",
+        "keys": [
+          "\\Listing,\\Graphic",
+          "\\Listing"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Graphic",
+      "arg": {
+        "format": "{}",
+        "snippet": "Graphic{${1:name}}"
+      }
+    },
+    {
+      "name": "Graphic",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Graphic[${2:options%keyvals}]{${1:name}}",
+        "keys": [
+          "\\Listing,\\Graphic",
+          "\\Graphic"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SRcaptionfont",
+      "unusual": true
+    },
+    {
+      "name": "SRcaptioncontinuedfont",
+      "unusual": true
+    },
+    {
+      "name": "SRcontinuedname",
+      "unusual": true
+    },
+    {
+      "name": "SRdefaultdests",
+      "unusual": true
+    },
+    {
+      "name": "SRdpi",
+      "unusual": true
+    },
+    {
+      "name": "SRgraphicdir",
+      "unusual": true
+    },
+    {
+      "name": "SRgraphtype",
+      "unusual": true
+    },
+    {
+      "name": "SRlatexdir",
+      "unusual": true
+    },
+    {
+      "name": "SRlatexstyle",
+      "unusual": true
+    },
+    {
+      "name": "SRodsgraphopts",
+      "unusual": true
+    },
+    {
+      "name": "SRintertext",
+      "unusual": true
+    },
+    {
+      "name": "SRlinesize",
+      "unusual": true
+    },
+    {
+      "name": "SRlistingdir",
+      "unusual": true
+    },
+    {
+      "name": "SRmacropath",
+      "unusual": true
+    },
+    {
+      "name": "SRmacroinclude",
+      "unusual": true
+    },
+    {
+      "name": "SRpagesize",
+      "unusual": true
+    },
+    {
+      "name": "SRparindent",
+      "unusual": true
+    },
+    {
+      "name": "SRprogramline",
+      "unusual": true
+    },
+    {
+      "name": "SRprogramname",
+      "unusual": true
+    },
+    {
+      "name": "SRstyle",
+      "unusual": true
+    },
+    {
+      "name": "SRtempfilename",
+      "unusual": true
+    },
+    {
+      "name": "SRverbfont",
+      "unusual": true
+    },
+    {
+      "name": "dosloppy",
+      "unusual": true
+    },
+    {
+      "name": "unsloppy",
+      "unusual": true
+    },
+    {
+      "name": "Boxlisting",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Boxlisting{${1:file name}}"
+      }
+    },
+    {
+      "name": "Boxgraphic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Boxgraphic{${1:file name}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Datastep"
+    },
+    {
+      "name": "Datastep",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{Datastep}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Sascode"
+    },
+    {
+      "name": "Sascode",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{Sascode}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/statrep#c": [
+      "generate",
+      "color",
+      "figname=${1:counter}",
+      "resetby=${1:counter}",
+      "set",
+      "final",
+      "errorshow",
+      "pausing"
+    ],
+    "\\begin{Datastep}": [
+      "program",
+      "display",
+      "first=${1:n}",
+      "last=${1:m}",
+      "fontsize="
+    ],
+    "\\begin{Sascode}": [
+      "store=${1:name}",
+      "program",
+      "display",
+      "fontsize="
+    ],
+    "\\Listing,\\Graphic": [
+      "caption={%|}",
+      "firstobj=",
+      "lastobj=",
+      "objects=",
+      "options=${1|autopage,graph,list,newpage,nopage,onebox,skipfirst,skiplast,table|}",
+      "pattern=",
+      "store=${1:name}",
+      "style=",
+      "type=${1|listing,graph|}"
+    ],
+    "\\Listing": [
+      "dest=",
+      "fontsize=",
+      "linesize=",
+      "pagesize="
+    ],
+    "\\Graphic": [
+      "dpi=",
+      "height=",
+      "scale=",
+      "width="
+    ]
+  },
+  "args": [
+    "\\usepackage/statrep#c"
+  ]
+}

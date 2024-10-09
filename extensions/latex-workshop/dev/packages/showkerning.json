@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/showkerning#c": [
+      "ontop"
+    ]
+  },
+  "args": [
+    "\\usepackage/showkerning#c"
+  ]
+}

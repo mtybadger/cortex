@@ -5,8 +5,8 @@
 
 import assert from 'assert';
 import type { IBufferLine, IBufferCell } from '@xterm/xterm';
-import { convertLinkRangeToBuffer } from '../../browser/terminalLinkHelpers.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../../base/test/common/utils.js';
+import { convertLinkRangeToBuffer } from 'vs/workbench/contrib/terminalContrib/links/browser/terminalLinkHelpers';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('Workbench - Terminal Link Helpers', () => {
 	ensureNoDisposablesAreLeakedInTestSuite();

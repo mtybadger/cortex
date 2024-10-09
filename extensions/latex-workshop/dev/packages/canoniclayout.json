@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pict2e"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "currentfontletters"
+    },
+    {
+      "name": "charactersperpage"
+    },
+    {
+      "name": "CLstartdrawings",
+      "unusual": true
+    },
+    {
+      "name": "CLstopdrawings",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

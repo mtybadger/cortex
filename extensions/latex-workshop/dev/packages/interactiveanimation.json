@@ -1,0 +1,83 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "controlbutton",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "controlbutton{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}",
+        "keys": [
+          "\\controlbutton#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "controlbutton",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "controlbutton[${4:sequence file,start page}]{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}",
+        "keys": [
+          "\\controlbutton#c"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "controlbutton",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "controlbutton[${4:sequence file,start page,end page}]{${1:caption%text}}{${2:target frame}}{${3:options%keyvals}}",
+        "keys": [
+          "\\controlbutton#c"
+        ],
+        "keyPos": 3
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "animation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "aframe",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:frame name}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "aframe",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:frame name}}{${2:imagefile,filepage}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\controlbutton#c": [
+      "X=${2|start,center,end,${1:coord}|}",
+      "Y=${2|start,center,end,${1:coord}|}",
+      "position=${1|left,right,above,below,center,from|}",
+      "width=${1:integer}",
+      "height=${1:integer}",
+      "scale=${1:factor}",
+      "hidden",
+      "transparent",
+      "span=${1:milliseconds}",
+      "keep"
+    ]
+  },
+  "args": []
+}

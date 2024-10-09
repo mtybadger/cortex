@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "bussproofs"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DeduceC",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeduceC{${1:text}}"
+      }
+    },
+    {
+      "name": "straightDeduce"
+    },
+    {
+      "name": "branchDeduce"
+    },
+    {
+      "name": "ddotsDeduce"
+    },
+    {
+      "name": "dotsdDeduce"
+    },
+    {
+      "name": "shortDeduce"
+    },
+    {
+      "name": "alwaysDeduce",
+      "unusual": true
+    },
+    {
+      "name": "LeftLineLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "LeftLineLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "RightLineLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "RightLineLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "LeftSubproofLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "LeftSubproofLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "RightSubproofLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "RightSubproofLabel{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

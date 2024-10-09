@@ -1,0 +1,87 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "marginskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "marginskip{${1:length}}"
+      }
+    },
+    {
+      "name": "clearmargin"
+    },
+    {
+      "name": "softclearmargin"
+    },
+    {
+      "name": "extendmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "extendmargin{${1:length}}"
+      }
+    },
+    {
+      "name": "mparshift",
+      "arg": {
+        "format": "{}",
+        "snippet": "mparshift{${1:length}}"
+      }
+    },
+    {
+      "name": "marginheightadjustment",
+      "unusual": true
+    },
+    {
+      "name": "marginposadjustment",
+      "unusual": true
+    },
+    {
+      "name": "blockmargin"
+    },
+    {
+      "name": "blockmargin",
+      "arg": {
+        "format": "[]",
+        "snippet": "blockmargin[${1:pos}]"
+      }
+    },
+    {
+      "name": "unblockmargin"
+    },
+    {
+      "name": "unblockmargin",
+      "arg": {
+        "format": "[]",
+        "snippet": "unblockmargin[${1:pos}]"
+      }
+    },
+    {
+      "name": "marginphantom",
+      "arg": {
+        "format": "{}",
+        "snippet": "marginphantom{${1:size}}"
+      }
+    },
+    {
+      "name": "marginphantom",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "marginphantom[${2:pos}]{${1:size}}"
+      }
+    },
+    {
+      "name": "dumpmargins",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/marginfix#c": [
+      "ypos"
+    ]
+  },
+  "args": [
+    "\\usepackage/marginfix#c"
+  ]
+}

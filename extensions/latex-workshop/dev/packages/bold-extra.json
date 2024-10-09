@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bold-extra#c": [
+      "cmttb",
+      "cmbtt"
+    ]
+  },
+  "args": [
+    "\\usepackage/bold-extra#c"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "catchfile"
+    }
+  ],
+  "macros": [
+    {
+      "name": "crumbs"
+    },
+    {
+      "name": "subcrumbs"
+    },
+    {
+      "name": "appendwrite",
+      "unusual": true
+    },
+    {
+      "name": "appendtofile",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "appendtofile{${1:file}}{${2:content}}"
+      }
+    },
+    {
+      "name": "crumbection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "crumbection{${1:title}}"
+      }
+    },
+    {
+      "name": "crumbection",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "crumbection[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "subcrumbection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "subcrumbection{${1:title}}"
+      }
+    },
+    {
+      "name": "subcrumbection",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subcrumbection[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "crumb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "crumb{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "subcrumb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "subcrumb{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "thecrumbi",
+      "unusual": true
+    },
+    {
+      "name": "thesubcrumbi",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/crumbs#c": [
+      "dry",
+      "increment"
+    ]
+  },
+  "args": [
+    "\\usepackage/crumbs#c"
+  ]
+}

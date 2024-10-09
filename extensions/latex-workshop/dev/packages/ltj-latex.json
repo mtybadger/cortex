@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "lltjfont"
+    },
+    {
+      "name": "lltjdefs"
+    },
+    {
+      "name": "lltjcore"
+    },
+    {
+      "name": "lltjp-atbegshi"
+    },
+    {
+      "name": "lltjp-geometry"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\lstset,\\lstinline,\\begin{lstlisting},\\lstinputlisting,\\lstMakeShortInline,\\lstdefinelanguage,\\lstdefinestyle": [
+      "vsraw",
+      "vscmd=${1:cmd}",
+      "doubleletterspace="
+    ]
+  },
+  "args": []
+}

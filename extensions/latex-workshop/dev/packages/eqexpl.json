@@ -1,0 +1,113 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "eqexplSetSpace",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexplSetSpace{${1:space%l}}"
+      }
+    },
+    {
+      "name": "eqexplSetIntro",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexplSetIntro{${1:text}}"
+      }
+    },
+    {
+      "name": "eqexplSetDelim",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexplSetDelim{${1:symbol}}"
+      }
+    },
+    {
+      "name": "eqexplSetItemWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexplSetItemWidth{${1:width}}"
+      }
+    },
+    {
+      "name": "eqexplSetItemAlign",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexplSetItemAlign{${1:align%keyvals}}",
+        "keys": [
+          "\\eqexplSetItemAlign"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "{}",
+        "snippet": "item{${1:label}}"
+      }
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "item{${1:label}}[${2:symbol}]"
+      }
+    },
+    {
+      "name": "eqexplDelim",
+      "unusual": true
+    },
+    {
+      "name": "eqexplIntro",
+      "unusual": true
+    },
+    {
+      "name": "eqexplItemAlign",
+      "unusual": true
+    },
+    {
+      "name": "eqexplItemWidth",
+      "unusual": true
+    },
+    {
+      "name": "eqexplSpaceWidth",
+      "unusual": true
+    },
+    {
+      "name": "itemWidth",
+      "unusual": true
+    },
+    {
+      "name": "leftSideWidth",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "eqexpl"
+    },
+    {
+      "name": "eqexpl",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\eqexplSetItemAlign": [
+      "l",
+      "c",
+      "r"
+    ]
+  },
+  "args": []
+}

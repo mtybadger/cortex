@@ -3,34 +3,32 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IDimension } from '../../../../base/browser/dom.js';
-import { Orientation } from '../../../../base/browser/ui/splitview/splitview.js';
-import { Color } from '../../../../base/common/color.js';
-import { Event, IDynamicListEventMultiplexer, type DynamicListEventMultiplexer } from '../../../../base/common/event.js';
-import { DisposableStore, IDisposable, type IReference } from '../../../../base/common/lifecycle.js';
-import { OperatingSystem } from '../../../../base/common/platform.js';
-import { URI } from '../../../../base/common/uri.js';
-import { createDecorator } from '../../../../platform/instantiation/common/instantiation.js';
-import { IKeyMods } from '../../../../platform/quickinput/common/quickInput.js';
-import { IMarkProperties, ITerminalCapabilityImplMap, ITerminalCapabilityStore, ITerminalCommand, TerminalCapability } from '../../../../platform/terminal/common/capabilities/capabilities.js';
-import { IMergedEnvironmentVariableCollection } from '../../../../platform/terminal/common/environmentVariable.js';
-import { IExtensionTerminalProfile, IReconnectionProperties, IShellIntegration, IShellLaunchConfig, ITerminalBackend, ITerminalDimensions, ITerminalLaunchError, ITerminalProfile, ITerminalTabLayoutInfoById, TerminalExitReason, TerminalIcon, TerminalLocation, TerminalShellType, TerminalType, TitleEventSource, WaitOnExitValue } from '../../../../platform/terminal/common/terminal.js';
-import { IColorTheme } from '../../../../platform/theme/common/themeService.js';
-import { IWorkspaceFolder } from '../../../../platform/workspace/common/workspace.js';
-import { EditorInput } from '../../../common/editor/editorInput.js';
-import { IEditableData } from '../../../common/views.js';
-import { ITerminalStatusList } from './terminalStatusList.js';
-import { XtermTerminal } from './xterm/xtermTerminal.js';
-import { IRegisterContributedProfileArgs, IRemoteTerminalAttachTarget, IStartExtensionTerminalRequest, ITerminalConfiguration, ITerminalFont, ITerminalProcessExtHostProxy, ITerminalProcessInfo } from '../common/terminal.js';
+import { IDimension } from 'vs/base/browser/dom';
+import { Orientation } from 'vs/base/browser/ui/splitview/splitview';
+import { Color } from 'vs/base/common/color';
+import { Event, IDynamicListEventMultiplexer, type DynamicListEventMultiplexer } from 'vs/base/common/event';
+import { DisposableStore, IDisposable } from 'vs/base/common/lifecycle';
+import { OperatingSystem } from 'vs/base/common/platform';
+import { URI } from 'vs/base/common/uri';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
+import { IKeyMods } from 'vs/platform/quickinput/common/quickInput';
+import { IMarkProperties, ITerminalCapabilityImplMap, ITerminalCapabilityStore, ITerminalCommand, TerminalCapability } from 'vs/platform/terminal/common/capabilities/capabilities';
+import { IMergedEnvironmentVariableCollection } from 'vs/platform/terminal/common/environmentVariable';
+import { IExtensionTerminalProfile, IReconnectionProperties, IShellIntegration, IShellLaunchConfig, ITerminalBackend, ITerminalDimensions, ITerminalLaunchError, ITerminalProfile, ITerminalTabLayoutInfoById, TerminalExitReason, TerminalIcon, TerminalLocation, TerminalShellType, TerminalType, TitleEventSource, WaitOnExitValue } from 'vs/platform/terminal/common/terminal';
+import { IColorTheme } from 'vs/platform/theme/common/themeService';
+import { IWorkspaceFolder } from 'vs/platform/workspace/common/workspace';
+import { EditorInput } from 'vs/workbench/common/editor/editorInput';
+import { IEditableData } from 'vs/workbench/common/views';
+import { ITerminalStatusList } from 'vs/workbench/contrib/terminal/browser/terminalStatusList';
+import { XtermTerminal } from 'vs/workbench/contrib/terminal/browser/xterm/xtermTerminal';
+import { IRegisterContributedProfileArgs, IRemoteTerminalAttachTarget, IStartExtensionTerminalRequest, ITerminalConfiguration, ITerminalFont, ITerminalProcessExtHostProxy, ITerminalProcessInfo } from 'vs/workbench/contrib/terminal/common/terminal';
 import type { IMarker, ITheme, Terminal as RawXtermTerminal, IBufferRange } from '@xterm/xterm';
-import { ScrollPosition } from './xterm/markNavigationAddon.js';
-import { IContextKeyService } from '../../../../platform/contextkey/common/contextkey.js';
-import { GroupIdentifier } from '../../../common/editor.js';
-import { ACTIVE_GROUP_TYPE, AUX_WINDOW_GROUP_TYPE, SIDE_GROUP_TYPE } from '../../../services/editor/common/editorService.js';
-import type { ICurrentPartialCommand } from '../../../../platform/terminal/common/capabilities/commandDetection/terminalCommand.js';
-import type { IXtermCore } from './xterm-private.js';
-import type { IMenu } from '../../../../platform/actions/common/actions.js';
-import type { Barrier } from '../../../../base/common/async.js';
+import { ScrollPosition } from 'vs/workbench/contrib/terminal/browser/xterm/markNavigationAddon';
+import { IContextKeyService } from 'vs/platform/contextkey/common/contextkey';
+import { GroupIdentifier } from 'vs/workbench/common/editor';
+import { ACTIVE_GROUP_TYPE, AUX_WINDOW_GROUP_TYPE, SIDE_GROUP_TYPE } from 'vs/workbench/services/editor/common/editorService';
+import type { ICurrentPartialCommand } from 'vs/platform/terminal/common/capabilities/commandDetection/terminalCommand';
+import type { IXtermCore } from 'vs/workbench/contrib/terminal/browser/xterm-private';
 
 export const ITerminalService = createDecorator<ITerminalService>('terminalService');
 export const ITerminalConfigurationService = createDecorator<ITerminalConfigurationService>('terminalConfigurationService');
@@ -47,8 +45,6 @@ export interface ITerminalContribution extends IDisposable {
 	layout?(xterm: IXtermTerminal & { raw: RawXtermTerminal }, dimension: IDimension): void;
 	xtermOpen?(xterm: IXtermTerminal & { raw: RawXtermTerminal }): void;
 	xtermReady?(xterm: IXtermTerminal & { raw: RawXtermTerminal }): void;
-
-	handleMouseEvent?(event: MouseEvent): Promise<{ handled: boolean } | void> | { handled: boolean } | void;
 }
 
 /**
@@ -64,11 +60,6 @@ export interface ITerminalInstanceService {
 	 * An event that's fired when a terminal instance is created.
 	 */
 	onDidCreateInstance: Event<ITerminalInstance>;
-
-	/**
-	 * An event that's fired when a new backend is registered.
-	 */
-	onDidRegisterBackend: Event<ITerminalBackend>;
 
 	/**
 	 * Helper function to convert a shell launch config, a profile or undefined into its equivalent
@@ -93,7 +84,7 @@ export interface ITerminalInstanceService {
 	getBackend(remoteAuthority?: string): Promise<ITerminalBackend | undefined>;
 
 	getRegisteredBackends(): IterableIterator<ITerminalBackend>;
-	didRegisterBackend(backend: ITerminalBackend): void;
+	didRegisterBackend(remoteAuthority?: string): void;
 }
 
 export const enum Direction {
@@ -146,7 +137,7 @@ export interface ITerminalGroup {
 	attachToElement(element: HTMLElement): void;
 	addInstance(instance: ITerminalInstance): void;
 	removeInstance(instance: ITerminalInstance): void;
-	moveInstance(instances: ITerminalInstance | ITerminalInstance[], index: number, position: 'before' | 'after'): void;
+	moveInstance(instance: ITerminalInstance, index: number): void;
 	setVisible(visible: boolean): void;
 	layout(width: number, height: number): void;
 	addDisposable(disposable: IDisposable): void;
@@ -494,8 +485,8 @@ export interface ITerminalGroupService extends ITerminalInstanceHost {
 	 * @param source The source instance to move.
 	 * @param target The target instance to move the source instance to.
 	 */
-	moveGroup(source: ITerminalInstance | ITerminalInstance[], target: ITerminalInstance): void;
-	moveGroupToEnd(source: ITerminalInstance | ITerminalInstance[]): void;
+	moveGroup(source: ITerminalInstance, target: ITerminalInstance): void;
+	moveGroupToEnd(source: ITerminalInstance): void;
 
 	moveInstance(source: ITerminalInstance, target: ITerminalInstance, side: 'before' | 'after'): void;
 	unsplitInstance(instance: ITerminalInstance): void;
@@ -635,8 +626,7 @@ export interface ITerminalInstance extends IBaseTerminalInstance {
 	/**
 	 * The position of the terminal.
 	 */
-	target: TerminalLocation | undefined;
-	targetRef: IReference<TerminalLocation | undefined>;
+	target?: TerminalLocation;
 
 	/**
 	 * The id of a persistent process. This is defined if this is a terminal created by a pty host
@@ -866,6 +856,11 @@ export interface ITerminalInstance extends IBaseTerminalInstance {
 	detachProcessAndDispose(reason: TerminalExitReason): Promise<void>;
 
 	/**
+	 * Copies the terminal selection to the clipboard.
+	 */
+	copySelection(asHtml?: boolean, command?: ITerminalCommand): Promise<void>;
+
+	/**
 	 * When the panel is hidden or a terminal in the editor area becomes inactive, reset the focus context key
 	 * to avoid issues like #147180.
 	 */
@@ -879,6 +874,22 @@ export interface ITerminalInstance extends IBaseTerminalInstance {
 	 * @param force Force focus even if there is a selection.
 	 */
 	focusWhenReady(force?: boolean): Promise<void>;
+
+	/**
+	 * Focuses and pastes the contents of the clipboard into the terminal instance.
+	 */
+	paste(): Promise<void>;
+
+	/**
+	 * Focuses and pastes the contents of the selection clipboard into the terminal instance.
+	 */
+	pasteSelection(): Promise<void>;
+
+	/**
+	 * Override the copy on selection feature with a custom value.
+	 * @param value Whether to enable copySelection.
+	 */
+	overrideCopyOnSelection(value: boolean): IDisposable;
 
 	/**
 	 * Send text to the terminal instance. The text is written to the stdin of the underlying pty
@@ -1014,6 +1025,12 @@ export interface ITerminalInstance extends IBaseTerminalInstance {
 	changeColor(color?: string, skipQuickPick?: boolean): Promise<string | undefined>;
 
 	/**
+	 * Triggers a quick pick that displays recent commands or cwds. Selecting one will
+	 * rerun it in the active terminal.
+	 */
+	runRecent(type: 'command' | 'cwd'): Promise<void>;
+
+	/**
 	 * Attempts to detect and kill the process listening on specified port.
 	 * If successful, places commandToRun on the command line
 	 */
@@ -1023,25 +1040,10 @@ export interface ITerminalInstance extends IBaseTerminalInstance {
 	 * Update the parent context key service to use for this terminal instance.
 	 */
 	setParentContextKeyService(parentContextKeyService: IContextKeyService): void;
-
-	/**
-	 * Handles a mouse event for the terminal, this may happen on an anscestor of the terminal
-	 * instance's element.
-	 * @param event The mouse event.
-	 * @param contextMenu The context menu to show if needed.
-	 * @returns Whether the context menu should be suppressed.
-	 */
-	handleMouseEvent(event: MouseEvent, contextMenu: IMenu): Promise<{ cancelContextMenu: boolean } | void>;
-
-	/**
-	 * Pause input events until the provided barrier is resolved.
-	 * @param barrier The barrier to wait for until input events can continue.
-	 */
-	pauseInputEvents(barrier: Barrier): void;
 }
 
 export const enum XtermTerminalConstants {
-	SearchHighlightLimit = 20000
+	SearchHighlightLimit = 1000
 }
 
 export interface IXtermAttachToElementOptions {
@@ -1065,8 +1067,6 @@ export interface IXtermTerminal extends IDisposable {
 
 	readonly onDidChangeSelection: Event<void>;
 	readonly onDidChangeFindResults: Event<{ resultIndex: number; resultCount: number }>;
-	readonly onDidRequestRunCommand: Event<{ command: ITerminalCommand; noNewLine?: boolean }>;
-	readonly onDidRequestCopyAsHtml: Event<{ command: ITerminalCommand }>;
 
 	/**
 	 * Event fired when focus enters (fires with true) or leaves (false) the terminal.
@@ -1150,9 +1150,10 @@ export interface IXtermTerminal extends IDisposable {
 
 	/**
 	 * Copies the terminal selection.
-	 * @param copyAsHtml Whether to copy selection as HTML, defaults to false.
+	 * @param {boolean} copyAsHtml Whether to copy selection as HTML, defaults to false.
 	 */
-	copySelection(copyAsHtml?: boolean, command?: ITerminalCommand): void;
+	copySelection(copyAsHtml?: boolean): void;
+
 	/**
 	 * Focuses the terminal. Warning: {@link ITerminalInstance.focus} should be
 	 * preferred when dealing with terminal instances in order to get

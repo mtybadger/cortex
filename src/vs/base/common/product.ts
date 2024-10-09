@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IStringDictionary } from './collections.js';
-import { PlatformName } from './platform.js';
+import { IStringDictionary } from 'vs/base/common/collections';
+import { PlatformName } from 'vs/base/common/platform';
 
 export interface IBuiltInExtension {
 	readonly name: string;
@@ -56,6 +56,7 @@ export type ExtensionVirtualWorkspaceSupport = {
 
 export interface IProductConfiguration {
 	readonly version: string;
+	readonly release: string;
 	readonly date?: string;
 	readonly quality?: string;
 	readonly commit?: string;
@@ -115,7 +116,6 @@ export interface IProductConfiguration {
 	readonly languageExtensionTips?: readonly string[];
 	readonly trustedExtensionUrlPublicKeys?: IStringDictionary<string[]>;
 	readonly trustedExtensionAuthAccess?: string[] | IStringDictionary<string[]>;
-	readonly inheritAuthAccountPreference?: IStringDictionary<string[]>;
 	readonly trustedExtensionProtocolHandlers?: readonly string[];
 
 	readonly commandPaletteSuggestedCommandIds?: string[];
@@ -161,6 +161,7 @@ export interface IProductConfiguration {
 	readonly tunnelApplicationConfig?: ITunnelApplicationConfig;
 
 	readonly npsSurveyUrl?: string;
+	readonly cesSurveyUrl?: string;
 	readonly surveys?: readonly ISurveyData[];
 
 	readonly checksums?: { [path: string]: string };
@@ -192,8 +193,6 @@ export interface IProductConfiguration {
 	readonly aiGeneratedWorkspaceTrust?: IAiGeneratedWorkspaceTrust;
 	readonly gitHubEntitlement?: IGitHubEntitlement;
 	readonly chatParticipantRegistry?: string;
-
-	readonly emergencyAlertUrl?: string;
 }
 
 export interface ITunnelApplicationConfig {

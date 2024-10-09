@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bguq"
+    },
+    {
+      "name": "bguqwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,76 @@
+{
+  "deps": [
+    {
+      "name": "parseargs"
+    }
+  ],
+  "macros": [
+    {
+      "name": "addtotheorempreheadhook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtotheorempreheadhook{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheorempreheadhook",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addtotheorempreheadhook[${2:envname}]{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheorempostheadhook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtotheorempostheadhook{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheorempostheadhook",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addtotheorempostheadhook[${2:envname}]{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheoremprefoothook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtotheoremprefoothook{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheoremprefoothook",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addtotheoremprefoothook[${2:envname}]{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheorempostfoothook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtotheorempostfoothook{${1:code}}"
+      }
+    },
+    {
+      "name": "addtotheorempostfoothook",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addtotheorempostfoothook[${2:envname}]{${1:code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

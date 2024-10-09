@@ -3,22 +3,20 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable, toDisposable } from '../../../../base/common/lifecycle.js';
-import { IObservable, derived, observableFromEvent, observableValue } from '../../../../base/common/observable.js';
-import './inlineEdit.css';
-import { ICodeEditor } from '../../../browser/editorBrowser.js';
-import { Position } from '../../../common/core/position.js';
-import { IRange, Range } from '../../../common/core/range.js';
-import { ILanguageService } from '../../../common/languages/language.js';
-import { IModelDeltaDecoration, ITextModel, InjectedTextCursorStops } from '../../../common/model.js';
-import { LineDecoration } from '../../../common/viewLayout/lineDecorations.js';
-import { InlineDecorationType } from '../../../common/viewModel.js';
-import { AdditionalLinesWidget, LineData } from '../../inlineCompletions/browser/view/ghostText/ghostTextView.js';
-import { GhostText } from '../../inlineCompletions/browser/model/ghostText.js';
-import { ColumnRange } from '../../inlineCompletions/browser/utils.js';
-import { diffDeleteDecoration, diffLineDeleteDecorationBackgroundWithIndicator } from '../../../browser/widget/diffEditor/registrations.contribution.js';
-import { LineTokens } from '../../../common/tokens/lineTokens.js';
-import { observableCodeEditor } from '../../../browser/observableCodeEditor.js';
+import { Disposable, toDisposable } from 'vs/base/common/lifecycle';
+import { IObservable, derived, observableFromEvent, observableValue } from 'vs/base/common/observable';
+import 'vs/css!./inlineEdit';
+import { ICodeEditor } from 'vs/editor/browser/editorBrowser';
+import { Position } from 'vs/editor/common/core/position';
+import { IRange, Range } from 'vs/editor/common/core/range';
+import { ILanguageService } from 'vs/editor/common/languages/language';
+import { IModelDeltaDecoration, ITextModel, InjectedTextCursorStops } from 'vs/editor/common/model';
+import { LineDecoration } from 'vs/editor/common/viewLayout/lineDecorations';
+import { InlineDecorationType } from 'vs/editor/common/viewModel';
+import { AdditionalLinesWidget, LineData } from 'vs/editor/contrib/inlineCompletions/browser/ghostTextWidget';
+import { GhostText } from 'vs/editor/contrib/inlineCompletions/browser/ghostText';
+import { ColumnRange, applyObservableDecorations } from 'vs/editor/contrib/inlineCompletions/browser/utils';
+import { diffDeleteDecoration, diffLineDeleteDecorationBackgroundWithIndicator } from 'vs/editor/browser/widget/diffEditor/registrations.contribution';
 
 export const INLINE_EDIT_DESCRIPTION = 'inline-edit';
 export interface IGhostTextWidgetModel {
@@ -30,20 +28,17 @@ export interface IGhostTextWidgetModel {
 
 export class GhostTextWidget extends Disposable {
 	private readonly isDisposed = observableValue(this, false);
-	private readonly currentTextModel = observableFromEvent(this, this._editor.onDidChangeModel, () => /** @description editor.model */ this._editor.getModel());
-
-	private readonly _editorObs = observableCodeEditor(this._editor);
+	private readonly currentTextModel = observableFromEvent(this, this.editor.onDidChangeModel, () => /** @description editor.model */ this.editor.getModel());
 
 	constructor(
-		private readonly _editor: ICodeEditor,
+		private readonly editor: ICodeEditor,
 		readonly model: IGhostTextWidgetModel,
 		@ILanguageService private readonly languageService: ILanguageService,
 	) {
 		super();
 
 		this._register(toDisposable(() => { this.isDisposed.set(true, undefined); }));
-
-		this._register(this._editorObs.setDecorations(this.decorations));
+		this._register(applyObservableDecorations(this.editor, this.decorations));
 	}
 
 	private readonly uiState = derived(this, reader => {
@@ -59,6 +54,7 @@ export class GhostTextWidget extends Disposable {
 			return undefined;
 		}
 
+
 		let range = this.model.range?.read(reader);
 		//if range is empty, we want to remove it
 		if (range && range.startLineNumber === range.endLineNumber && range.startColumn === range.endColumn) {
@@ -72,20 +68,13 @@ export class GhostTextWidget extends Disposable {
 		const isPureRemove = ghostText.parts.length === 1 && ghostText.parts[0].lines.every(l => l.length === 0);
 
 		const inlineTexts: { column: number; text: string; preview: boolean }[] = [];
-		const additionalLines: { content: string; decorations: LineDecoration[] }[] = [];
+		const additionalLines: LineData[] = [];
 
 		function addToAdditionalLines(lines: readonly string[], className: string | undefined) {
 			if (additionalLines.length > 0) {
 				const lastLine = additionalLines[additionalLines.length - 1];
 				if (className) {
-					lastLine.decorations.push(
-						new LineDecoration(
-							lastLine.content.length + 1,
-							lastLine.content.length + 1 + lines[0].length,
-							className,
-							InlineDecorationType.Regular
-						)
-					);
+					lastLine.decorations.push(new LineDecoration(lastLine.content.length + 1, lastLine.content.length + 1 + lines[0].length, className, InlineDecorationType.Regular));
 				}
 				lastLine.content += lines[0];
 
@@ -218,16 +207,14 @@ export class GhostTextWidget extends Disposable {
 
 	private readonly additionalLinesWidget = this._register(
 		new AdditionalLinesWidget(
-			this._editor,
+			this.editor,
+			this.languageService.languageIdCodec,
 			derived(reader => {
 				/** @description lines */
 				const uiState = this.uiState.read(reader);
 				return uiState && !uiState.isPureRemove && (uiState.isSingleLine || !uiState.range) ? {
 					lineNumber: uiState.lineNumber,
-					additionalLines: uiState.additionalLines.map(l => ({
-						content: LineTokens.createEmpty(l.content, this.languageService.languageIdCodec),
-						decorations: l.decorations
-					} satisfies LineData)),
+					additionalLines: uiState.additionalLines,
 					minReservedLineCount: uiState.additionalReservedLineCount,
 					targetTextModel: uiState.targetTextModel,
 				} : undefined;

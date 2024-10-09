@@ -1,0 +1,4016 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "amstext"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "aeb-comment"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "web",
+      "if": "email"
+    },
+    {
+      "name": "exerquiz",
+      "if": "email"
+    },
+    {
+      "name": "eso-pic",
+      "if": "fortextbook"
+    },
+    {
+      "name": "web",
+      "if": "links"
+    },
+    {
+      "name": "exerquiz",
+      "if": "links"
+    },
+    {
+      "name": "web",
+      "if": "pdf"
+    },
+    {
+      "name": "web",
+      "if": "online"
+    },
+    {
+      "name": "exerquiz",
+      "if": "online"
+    },
+    {
+      "name": "colortbl",
+      "if": "table"
+    },
+    {
+      "name": "pdfcolmk",
+      "if": "fixpdftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "InitSeedValue",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "writeSeedToSolnFile",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "saveRandomSeed",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "inputRandomSeed",
+      "if": "allowrandomize"
+    },
+    {
+      "name": "useRandomSeed",
+      "if": "allowrandomize",
+      "arg": {
+        "format": "{}",
+        "snippet": "useRandomSeed{${1:number}}"
+      }
+    },
+    {
+      "name": "ifsaveseed",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "saveseedtrue",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "saveseedfalse",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "eFreeze",
+      "if": "allowrandomize"
+    },
+    {
+      "name": "randomi",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "nextrandom",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "setrannum",
+      "if": "allowrandomize",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrannum{${1:count register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "setrandim",
+      "if": "allowrandomize",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrandim{${1:dimen register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "pointless",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "ranval",
+      "if": "allowrandomize",
+      "unusual": true
+    },
+    {
+      "name": "textbookOpts",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "textbookOpts{${1:options%keyvals}}",
+        "keys": [
+          "\\textbookOpts"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "annotPage",
+      "if": "fortextbook"
+    },
+    {
+      "name": "annotThePage",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "annotThePage{${1:format}}"
+      }
+    },
+    {
+      "name": "ANS",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "ANS{${1:answer%text}}"
+      }
+    },
+    {
+      "name": "ANSFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ANSFmt{${1:number}}{${2:text}}"
+      }
+    },
+    {
+      "name": "autoInsSolns",
+      "if": "fortextbook"
+    },
+    {
+      "name": "bGrpANS",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "bGrpANS{${1:answer%text}}"
+      }
+    },
+    {
+      "name": "bpartsmrk",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "chapHeadSolnFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "chapHeadSolnFmt{${1:text}}"
+      }
+    },
+    {
+      "name": "chapterexercisesfalse",
+      "if": "fortextbook"
+    },
+    {
+      "name": "chapterexercisestrue",
+      "if": "fortextbook"
+    },
+    {
+      "name": "chaptersolutions",
+      "if": "fortextbook"
+    },
+    {
+      "name": "chkmarginboxwidth",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "clearBotMargin",
+      "if": "fortextbook"
+    },
+    {
+      "name": "clearTopMargin",
+      "if": "fortextbook"
+    },
+    {
+      "name": "cngMargHeadColorTo",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "cngMargHeadColorTo{${1:color}}"
+      }
+    },
+    {
+      "name": "convertChapHeadToChapters",
+      "if": "fortextbook"
+    },
+    {
+      "name": "currProbHead",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "displayProbNumOnce",
+      "if": "fortextbook"
+    },
+    {
+      "name": "eGrpANS",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "eGrpANS{${1:answer%text}}"
+      }
+    },
+    {
+      "name": "epartsmrk",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "eqedecPointSoln",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "eqedsplyOnlyFrst",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "eqedsplyOnlyFrst{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "eqeGenProbNumfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "eqeGenProbNumtrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "eqeifnext",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "eqeifnext{${1:code}}"
+      }
+    },
+    {
+      "name": "eqepquesitemsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqepquesitemsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqepquesparsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqepquesparsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqepquestopsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqepquestopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqExtArg",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "examenvfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "examenvtrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "examplenoname",
+      "if": "fortextbook"
+    },
+    {
+      "name": "exercisesAtEndOfChapter",
+      "if": "fortextbook"
+    },
+    {
+      "name": "exPrtsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "exPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "fbInsSolnsStyle",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "firstemitfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "firstemittrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "firstPartLtr",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "frstProbNumShownfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "frstProbNumShowntrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ftbFmtChapter",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ftbFmtChapter{${1:text}}"
+      }
+    },
+    {
+      "name": "ftbInputBookAux",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "ftbInputBookAux{${1:file}}"
+      }
+    },
+    {
+      "name": "ftbInputSolnFiles",
+      "if": "fortextbook"
+    },
+    {
+      "name": "ftbInputSolnFiles",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]",
+        "snippet": "ftbInputSolnFiles[${1:file}]"
+      }
+    },
+    {
+      "name": "ftblabel",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ftblabel{${1:label}}"
+      }
+    },
+    {
+      "name": "gobblelabel",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "grpANSDelimiter",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "hangSolWPrtsFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "hangSolWPrtsFmt{${1:num format}}{${2:label format}}"
+      }
+    },
+    {
+      "name": "ifchapterexercises",
+      "if": "fortextbook"
+    },
+    {
+      "name": "ifeqeGenProbNum",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifexamenv",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "iffirstemit",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "iffrstProbNumShown",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifiscarryover",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifisinlineans",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifisinstred",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifismarginans",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifisstudented",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifmarginsonleft",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifshowlsols",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifshowssols",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifWithinANSGrp",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "initChapAfterSolns",
+      "if": "fortextbook"
+    },
+    {
+      "name": "insertpageifcarryover",
+      "if": "fortextbook"
+    },
+    {
+      "name": "insertpageifcarryover",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]",
+        "snippet": "insertpageifcarryover[${1:text}]"
+      }
+    },
+    {
+      "name": "insMargHead",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "insMargHead[${2:mark text%text}]{${1:head text%text}}"
+      }
+    },
+    {
+      "name": "insMargHead",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "insMargHead{${1:head text%text}}"
+      }
+    },
+    {
+      "name": "insMidMarg",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "insMidMarg{${1:content%text}}"
+      }
+    },
+    {
+      "name": "insProbHead",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "insProbHead[${2:mark text%text}]{${1:head text%text}}"
+      }
+    },
+    {
+      "name": "insProbHead",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "insProbHead{${1:head text%text}}"
+      }
+    },
+    {
+      "name": "iscarryoverfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "iscarryovertrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isinlineansfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isinlineanstrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isinstredfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isinstredtrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ismarginansfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ismarginanstrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isstudentedfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "isstudentedtrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "marginsonleftfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "marginsonlefttrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "MarParBoxFmt",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "marparboxwidth",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "marparboxwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "midMargFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "midMargFmt{${1:formatting}}"
+      }
+    },
+    {
+      "name": "mrgDecPt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "mrgDecPt{${1:symbol}}"
+      }
+    },
+    {
+      "name": "mrgDigitFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "mrgDigitFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "mrgNumPrtsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "mrgNumPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "mrgPartFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "mrgPartFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "mrgPrtsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "mrgPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "NewCommentCutFile",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "noProbHeader",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "postChapSolnHead",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "preChapSolnHead",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "probSet",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "probSet{${1:format}}"
+      }
+    },
+    {
+      "name": "resetMargHeadColor",
+      "if": "fortextbook"
+    },
+    {
+      "name": "RestoreCommentCutFile",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "restoreFromChapAfterSolns",
+      "if": "fortextbook"
+    },
+    {
+      "name": "restorelabel",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "restoreLastBotMargin",
+      "if": "fortextbook"
+    },
+    {
+      "name": "restoreLastTopMargin",
+      "if": "fortextbook"
+    },
+    {
+      "name": "restorePageLayout",
+      "if": "fortextbook"
+    },
+    {
+      "name": "saveBasicLayoutParams",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "setBotMargin",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "setBotMargin{${1:content%text}}"
+      }
+    },
+    {
+      "name": "setFullWidthHeader",
+      "if": "fortextbook"
+    },
+    {
+      "name": "setFullWidthLayout",
+      "if": "fortextbook"
+    },
+    {
+      "name": "setMarIndents",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "setMarIndents[${3:formatting}]{${1:num content}}{${2:label content}}"
+      }
+    },
+    {
+      "name": "setMarIndents",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setMarIndents{${1:num content}}{${2:label content}}"
+      }
+    },
+    {
+      "name": "setSolnIndent",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "setSolnIndent[${3:formatting}]{${1:num content}}{${2:label content}}"
+      }
+    },
+    {
+      "name": "setSolnIndent",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setSolnIndent{${1:num content}}{${2:label content}}"
+      }
+    },
+    {
+      "name": "setTopMargin",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "setTopMargin{${1:content%text}}"
+      }
+    },
+    {
+      "name": "showlsolsfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "showlsolstrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "showssolsfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "showssolstrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "solDecPt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "solDecPt{${1:symbol}}"
+      }
+    },
+    {
+      "name": "solnGutter",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "solnsAtEndcomment",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "solNumPrtsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "solNumPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "solPrtsep",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "solPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "solWoPrtsFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "solWoPrtsFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "solWPrtsFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "solWPrtsFmt{${1:num format}}{${2:label format}}"
+      }
+    },
+    {
+      "name": "tballowAllNums",
+      "if": "fortextbook"
+    },
+    {
+      "name": "tbBaseName",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbBotMargin",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbcontinued",
+      "if": "fortextbook"
+    },
+    {
+      "name": "tbfilterOutEvenNums",
+      "if": "fortextbook"
+    },
+    {
+      "name": "tblastpageshipped",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbMakeFinalCalcs",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbMarginHeaderFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tbMarginHeaderFmt{${1:text}}"
+      }
+    },
+    {
+      "name": "tbmarparboxwidth",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbminskipbtnlayers",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbmrgpartwdth",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbplaceMargins",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbPostMarginHeader",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbprbNumFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tbprbNumFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "tbPreMarginHeader",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbSaveBotMargin",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbSaveTopMargin",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbSetupForMargins",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbsolnpartwdth",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbsolWoPrtsFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tbsolWoPrtsFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "tbsolWPrtsFmt",
+      "if": "fortextbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tbsolWPrtsFmt{${1:num format}}{${2:label format}}"
+      }
+    },
+    {
+      "name": "tbSourceFile",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "tbTopMargin",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "theeqquestionnoi",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "theexampleno",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "thisPart",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "toggleInstrAns",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "turnOffFTBShipout",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "turnOffMarAnsOnAnsInline",
+      "if": "fortextbook"
+    },
+    {
+      "name": "turnOnFTBShipout",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "turnOnMarAnsOffAnsInline",
+      "if": "fortextbook"
+    },
+    {
+      "name": "WithinANSGrpfalse",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "WithinANSGrptrue",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "writeallsolutions",
+      "if": "fortextbook",
+      "unusual": true
+    },
+    {
+      "name": "wrtChapSolnHead",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "wrtChapSolnHead{${1:text}}"
+      }
+    },
+    {
+      "name": "aboveexskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "aboveexskip{${1:length}}"
+      }
+    },
+    {
+      "name": "acvspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "acvspace{${1:vspace%l}}"
+      }
+    },
+    {
+      "name": "adjDisplayBelow"
+    },
+    {
+      "name": "adjDisplayBelowPlus"
+    },
+    {
+      "name": "aebshowgraylettersfalse",
+      "unusual": true
+    },
+    {
+      "name": "aebshowgrayletterstrue",
+      "unusual": true
+    },
+    {
+      "name": "allowcircmcfalse",
+      "unusual": true
+    },
+    {
+      "name": "allowcircmctrue",
+      "unusual": true
+    },
+    {
+      "name": "AllowFitItIn"
+    },
+    {
+      "name": "allowRandomizedChoices"
+    },
+    {
+      "name": "allowZeroTotals"
+    },
+    {
+      "name": "altTitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "altTitle{${1:text}}"
+      }
+    },
+    {
+      "name": "aNewPage"
+    },
+    {
+      "name": "annotContStr",
+      "unusual": true
+    },
+    {
+      "name": "answerkeyfalse",
+      "unusual": true
+    },
+    {
+      "name": "answerkeytrue",
+      "unusual": true
+    },
+    {
+      "name": "authorColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "authorColor{${1:color}}"
+      }
+    },
+    {
+      "name": "auto",
+      "unusual": true
+    },
+    {
+      "name": "autoExamName"
+    },
+    {
+      "name": "autotabOn"
+    },
+    {
+      "name": "bChoices"
+    },
+    {
+      "name": "bChoices",
+      "arg": {
+        "format": "[]",
+        "snippet": "bChoices[${1:options%keyvals}]",
+        "keys": [
+          "\\bChoices#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "belowexskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "belowexskip{${1:length}}"
+      }
+    },
+    {
+      "name": "belowexsolnskip",
+      "unusual": true
+    },
+    {
+      "name": "bItemInsert",
+      "arg": {
+        "format": "{}",
+        "snippet": "bItemInsert{${1:content%text}}"
+      }
+    },
+    {
+      "name": "bMatchChoices"
+    },
+    {
+      "name": "bopCoverPageText",
+      "unusual": true
+    },
+    {
+      "name": "bopText",
+      "unusual": true
+    },
+    {
+      "name": "bProbInsert",
+      "arg": {
+        "format": "{}",
+        "snippet": "bProbInsert{${1:content%text}}"
+      }
+    },
+    {
+      "name": "calcFromMarkers",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "calcFromMarkers[${3:formatting}]{${1:name2}}{${2:name3}}"
+      }
+    },
+    {
+      "name": "calcFromMarkers",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "calcFromMarkers{${1:name2}}{${2:name3}}"
+      }
+    },
+    {
+      "name": "calcQsBtwnMarkers",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "calcQsBtwnMarkers[${2:mrk2}]{${1:mrk1}}"
+      }
+    },
+    {
+      "name": "calcQsBtwnMarkers",
+      "arg": {
+        "format": "{}",
+        "snippet": "calcQsBtwnMarkers{${1:mrk1}}"
+      }
+    },
+    {
+      "name": "cfooteqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "cfooteqe{${1:text}}"
+      }
+    },
+    {
+      "name": "cheadeqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "cheadeqe{${1:text}}"
+      }
+    },
+    {
+      "name": "cheadSol",
+      "arg": {
+        "format": "{}",
+        "snippet": "cheadSol{${1:text}}"
+      }
+    },
+    {
+      "name": "chngToNoSolns"
+    },
+    {
+      "name": "ckboxColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "ckboxColor{${1:color}}"
+      }
+    },
+    {
+      "name": "ckcirColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "ckcirColor{${1:color}}"
+      }
+    },
+    {
+      "name": "ckSolnOpt"
+    },
+    {
+      "name": "copyrightyears",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrightyears{${1:years}}"
+      }
+    },
+    {
+      "name": "coverpageSubjectFmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "coverpageSubjectFmt{${1:formatting}}"
+      }
+    },
+    {
+      "name": "coverpageTitleFmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "coverpageTitleFmt{${1:formatting}}"
+      }
+    },
+    {
+      "name": "cpSetSumryWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "cpSetSumryWidth{${1:width}}"
+      }
+    },
+    {
+      "name": "cpSumryGrade",
+      "unusual": true
+    },
+    {
+      "name": "cpSumryHeader",
+      "unusual": true
+    },
+    {
+      "name": "cpSumryPage",
+      "unusual": true
+    },
+    {
+      "name": "cpSumryPts",
+      "unusual": true
+    },
+    {
+      "name": "cpSumryTotal",
+      "unusual": true
+    },
+    {
+      "name": "cqCopiedQues",
+      "unusual": true
+    },
+    {
+      "name": "cqIsActivefalse",
+      "unusual": true
+    },
+    {
+      "name": "cqIsActivetrue",
+      "unusual": true
+    },
+    {
+      "name": "cqQS*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cqQS*{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "cqQS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cqQS{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "cqQSA",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cqQSA{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "cqqsfalse",
+      "unusual": true
+    },
+    {
+      "name": "cqqstrue",
+      "unusual": true
+    },
+    {
+      "name": "cqQSV",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cqQSV{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "cqSAfalse",
+      "unusual": true
+    },
+    {
+      "name": "cqSAtrue",
+      "unusual": true
+    },
+    {
+      "name": "customNaming",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "customNaming{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "defaultInstructions",
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultInstructions{${1:text}}"
+      }
+    },
+    {
+      "name": "defaultTFwidth",
+      "unusual": true
+    },
+    {
+      "name": "displayworkareafalse",
+      "unusual": true
+    },
+    {
+      "name": "displayworkareatrue",
+      "unusual": true
+    },
+    {
+      "name": "DoNotFitItIn"
+    },
+    {
+      "name": "doNotRandomizeChoices"
+    },
+    {
+      "name": "DoNotRecordThisExamfalse",
+      "unusual": true
+    },
+    {
+      "name": "DoNotRecordThisExamtrue",
+      "unusual": true
+    },
+    {
+      "name": "DoNum"
+    },
+    {
+      "name": "duedate",
+      "arg": {
+        "format": "{}",
+        "snippet": "duedate{${1:date}}"
+      }
+    },
+    {
+      "name": "eachLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "eachLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "eAns"
+    },
+    {
+      "name": "eChoices"
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "EmailCourseName",
+      "arg": {
+        "format": "{}",
+        "snippet": "EmailCourseName{${1:text}}"
+      }
+    },
+    {
+      "name": "EmailExamName",
+      "arg": {
+        "format": "{}",
+        "snippet": "EmailExamName{${1:text}}"
+      }
+    },
+    {
+      "name": "EmailSubject",
+      "arg": {
+        "format": "{}",
+        "snippet": "EmailSubject{${1:text}}"
+      }
+    },
+    {
+      "name": "eMatchChoices"
+    },
+    {
+      "name": "emitMessageNearBottom*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "emitMessageNearBottom*[${2:vspace%l}]{${1:text}}"
+      }
+    },
+    {
+      "name": "emitMessageNearBottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "emitMessageNearBottom*{${1:text}}"
+      }
+    },
+    {
+      "name": "emitMessageNearBottom",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "emitMessageNearBottom[${2:vspace%l}]{${1:text}}"
+      }
+    },
+    {
+      "name": "emitMessageNearBottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "emitMessageNearBottom{${1:text}}"
+      }
+    },
+    {
+      "name": "encloseProblemsWith",
+      "arg": {
+        "format": "{}",
+        "snippet": "encloseProblemsWith{${1:envname}}"
+      }
+    },
+    {
+      "name": "endlongTitleText"
+    },
+    {
+      "name": "endshortTitleText"
+    },
+    {
+      "name": "eoeTotalOff"
+    },
+    {
+      "name": "eoeTotalOn"
+    },
+    {
+      "name": "eProbInsert"
+    },
+    {
+      "name": "eqCommentsColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqCommentsColor{${1:color}}"
+      }
+    },
+    {
+      "name": "eqCommentsColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqCommentsColor{${1:color}}"
+      }
+    },
+    {
+      "name": "eqCommentsColorBody",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqCommentsColorBody{${1:color}}"
+      }
+    },
+    {
+      "name": "eqCommentsColorBody",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqCommentsColorBody{${1:color}}"
+      }
+    },
+    {
+      "name": "eqcustomdesignfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqcustomdesigntrue",
+      "unusual": true
+    },
+    {
+      "name": "EQEcalculateAllTotals"
+    },
+    {
+      "name": "eqeCurrProb"
+    },
+    {
+      "name": "eqedbfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqedbtrue",
+      "unusual": true
+    },
+    {
+      "name": "eqEmail",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "eqEmail[${2:eforms params}]{${1:width}}"
+      }
+    },
+    {
+      "name": "eqEmail",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqEmail{${1:width}}"
+      }
+    },
+    {
+      "name": "eqemargin",
+      "unusual": true
+    },
+    {
+      "name": "eqEndExamTotalColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqEndExamTotalColor{${1:color}}"
+      }
+    },
+    {
+      "name": "eqeonlinefalse",
+      "unusual": true
+    },
+    {
+      "name": "eqeonlinetrue",
+      "unusual": true
+    },
+    {
+      "name": "eqequesitemsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqequesitemsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqequeslistparindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqequeslistparindent{${1:length}}"
+      }
+    },
+    {
+      "name": "eqequesparsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqequesparsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqequestopsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqequestopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqeSetExamPageParams",
+      "unusual": true
+    },
+    {
+      "name": "eqeSumryHoriz"
+    },
+    {
+      "name": "eqeSumryVert"
+    },
+    {
+      "name": "eqevtranstotbox",
+      "unusual": true
+    },
+    {
+      "name": "eqexammargin",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "eqexammargin[${2:formatting}]{${1:content}}"
+      }
+    },
+    {
+      "name": "eqexammargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqexammargin{${1:content}}"
+      }
+    },
+    {
+      "name": "eqExamName",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "eqExamName[${2:eforms params}]{${1:width}}"
+      }
+    },
+    {
+      "name": "eqExamName",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqExamName{${1:width}}"
+      }
+    },
+    {
+      "name": "eqExamPageLayout",
+      "unusual": true
+    },
+    {
+      "name": "eqexcoverpagedesign",
+      "unusual": true
+    },
+    {
+      "name": "eqexheader",
+      "unusual": true
+    },
+    {
+      "name": "eqfititin",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqfititin{${1:content}}"
+      }
+    },
+    {
+      "name": "eqforinstrfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqforinstrtrue",
+      "unusual": true
+    },
+    {
+      "name": "eqforpaperfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqforpapertrue",
+      "unusual": true
+    },
+    {
+      "name": "eqfortextbookfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqfortextbooktrue",
+      "unusual": true
+    },
+    {
+      "name": "eqglobalversionfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqglobalversiontrue",
+      "unusual": true
+    },
+    {
+      "name": "eqlocalversionfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqlocalversiontrue",
+      "unusual": true
+    },
+    {
+      "name": "eqobeylocalversionfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqobeylocalversiontrue",
+      "unusual": true
+    },
+    {
+      "name": "eqpanelbox",
+      "unusual": true
+    },
+    {
+      "name": "eqpartsitemsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqpartsitemsep{${1:length}}"
+      }
+    },
+    {
+      "name": "eqSID",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "eqSID[${2:eforms params}]{${1:width}}"
+      }
+    },
+    {
+      "name": "eqSID",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqSID{${1:width}}"
+      }
+    },
+    {
+      "name": "eqsolutionshook",
+      "unusual": true
+    },
+    {
+      "name": "equsecolorfalse",
+      "unusual": true
+    },
+    {
+      "name": "equsecolortrue",
+      "unusual": true
+    },
+    {
+      "name": "eqWLSpacing",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqWLSpacing{${1:length}}"
+      }
+    },
+    {
+      "name": "eqWriteLineColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqWriteLineColor{${1:color}}"
+      }
+    },
+    {
+      "name": "eqwritetomarginsfalse",
+      "unusual": true
+    },
+    {
+      "name": "eqwritetomarginstrue",
+      "unusual": true
+    },
+    {
+      "name": "Exam"
+    },
+    {
+      "name": "examAnsKeyLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "examAnsKeyLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "examEmailLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "examEmailLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "examNameLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "examNameLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "examNum",
+      "arg": {
+        "format": "{}",
+        "snippet": "examNum{${1:number}}"
+      }
+    },
+    {
+      "name": "examSIDLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "examSIDLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "examSolnHeadFmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "examSolnHeadFmt{${1:text}}"
+      }
+    },
+    {
+      "name": "exerSolnHeader",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "exerSolnHeader{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "exerSolnInput",
+      "unusual": true
+    },
+    {
+      "name": "exerSolnsHeadnToc",
+      "unusual": true
+    },
+    {
+      "name": "exlabel"
+    },
+    {
+      "name": "exlabelformat"
+    },
+    {
+      "name": "exlabelformat",
+      "unusual": true
+    },
+    {
+      "name": "exrtnlabelformat"
+    },
+    {
+      "name": "exsllabelformat",
+      "unusual": true
+    },
+    {
+      "name": "exsllabelformatwp",
+      "unusual": true
+    },
+    {
+      "name": "exSolafterDefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "exSolafterDefault{${1:text}}"
+      }
+    },
+    {
+      "name": "ExSolutionsSetfalse",
+      "unusual": true
+    },
+    {
+      "name": "ExSolutionsSettrue",
+      "unusual": true
+    },
+    {
+      "name": "fillin",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "fillin[${3:options%keyvals}]{${1:width}}{${2:answer%text}}",
+        "keys": [
+          "\\fillin,\\fillineol,\\fillineol*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fillin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fillin{${1:width}}{${2:answer%text}}"
+      }
+    },
+    {
+      "name": "fillinColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "fillinColor{${1:color}}"
+      }
+    },
+    {
+      "name": "fillineol*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "fillineol*{${1:phrase%text}}[${3:options%keyvals}]{${2:answer%text}}",
+        "keys": [
+          "\\fillin,\\fillineol,\\fillineol*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "fillineol*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fillineol*{${1:phrase%text}}{${2:answer%text}}"
+      }
+    },
+    {
+      "name": "fillineol",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "fillineol{${1:phrase%text}}[${3:options%keyvals}]{${2:answer%text}}",
+        "keys": [
+          "\\fillin,\\fillineol,\\fillineol*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "fillineol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fillineol{${1:phrase%text}}{${2:answer%text}}"
+      }
+    },
+    {
+      "name": "fillInFormatDefault",
+      "unusual": true
+    },
+    {
+      "name": "fillinWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "fillinWidth{${1:width}}"
+      }
+    },
+    {
+      "name": "fillTypeBlankLine",
+      "unusual": true
+    },
+    {
+      "name": "fillTypeDashLine",
+      "unusual": true
+    },
+    {
+      "name": "fillTypeDefault",
+      "unusual": true
+    },
+    {
+      "name": "fillTypeDots",
+      "unusual": true
+    },
+    {
+      "name": "fillTypeGrid",
+      "unusual": true
+    },
+    {
+      "name": "fillTypeHRule",
+      "unusual": true
+    },
+    {
+      "name": "firstitemfalse",
+      "unusual": true
+    },
+    {
+      "name": "firstitemtrue",
+      "unusual": true
+    },
+    {
+      "name": "firstPageOfExam",
+      "arg": {
+        "format": "{}",
+        "snippet": "firstPageOfExam{${1:exam name}}"
+      }
+    },
+    {
+      "name": "flbaselineskip",
+      "unusual": true
+    },
+    {
+      "name": "flfrstsplitfalse",
+      "unusual": true
+    },
+    {
+      "name": "flfrstsplittrue",
+      "unusual": true
+    },
+    {
+      "name": "flnum",
+      "unusual": true
+    },
+    {
+      "name": "flPageBreakMsg",
+      "arg": {
+        "format": "{}",
+        "snippet": "flPageBreakMsg{${1:text}}"
+      }
+    },
+    {
+      "name": "forceEqualCellsfalse",
+      "unusual": true
+    },
+    {
+      "name": "forceEqualCellstrue",
+      "unusual": true
+    },
+    {
+      "name": "forceNoColor"
+    },
+    {
+      "name": "ForceNoColorfalse",
+      "unusual": true
+    },
+    {
+      "name": "ForceNoColortrue",
+      "unusual": true
+    },
+    {
+      "name": "foritem",
+      "arg": {
+        "format": "{}",
+        "snippet": "foritem{${1:letter}}"
+      }
+    },
+    {
+      "name": "forproblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "forproblem{${1:number}}"
+      }
+    },
+    {
+      "name": "forVersion",
+      "arg": {
+        "format": "{}",
+        "snippet": "forVersion{${1:version letter}}"
+      }
+    },
+    {
+      "name": "fvsizeskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "fvsizeskip{${1:factor}}"
+      }
+    },
+    {
+      "name": "graylettersOff"
+    },
+    {
+      "name": "graylettersOn"
+    },
+    {
+      "name": "gridpgbrkfalse",
+      "unusual": true
+    },
+    {
+      "name": "gridpgbrktrue",
+      "unusual": true
+    },
+    {
+      "name": "iacvspace",
+      "unusual": true
+    },
+    {
+      "name": "ifAB",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifAB{${1:version A text}}{${2:version B text}}"
+      }
+    },
+    {
+      "name": "ifaebshowgrayletters",
+      "unusual": true
+    },
+    {
+      "name": "ifallowcircmc",
+      "unusual": true
+    },
+    {
+      "name": "ifanswerkey",
+      "unusual": true
+    },
+    {
+      "name": "ifcqIsActive",
+      "unusual": true
+    },
+    {
+      "name": "ifcqqs",
+      "unusual": true
+    },
+    {
+      "name": "ifcqSA",
+      "unusual": true
+    },
+    {
+      "name": "ifdisplayworkarea",
+      "unusual": true
+    },
+    {
+      "name": "ifDoNotRecordThisExam",
+      "unusual": true
+    },
+    {
+      "name": "ifeqcustomdesign",
+      "unusual": true
+    },
+    {
+      "name": "ifeqedb",
+      "unusual": true
+    },
+    {
+      "name": "ifeqeonline",
+      "unusual": true
+    },
+    {
+      "name": "ifeqforinstr",
+      "unusual": true
+    },
+    {
+      "name": "ifeqforpaper",
+      "unusual": true
+    },
+    {
+      "name": "ifeqfortextbook",
+      "unusual": true
+    },
+    {
+      "name": "ifeqglobalversion",
+      "unusual": true
+    },
+    {
+      "name": "ifeqlocalversion",
+      "unusual": true
+    },
+    {
+      "name": "ifeqobeylocalversion",
+      "unusual": true
+    },
+    {
+      "name": "ifequsecolor",
+      "unusual": true
+    },
+    {
+      "name": "ifeqwritetomargins",
+      "unusual": true
+    },
+    {
+      "name": "ifExSolutionsSet",
+      "unusual": true
+    },
+    {
+      "name": "iffirstitem",
+      "unusual": true
+    },
+    {
+      "name": "ifflfrstsplit",
+      "unusual": true
+    },
+    {
+      "name": "ifforceEqualCells",
+      "unusual": true
+    },
+    {
+      "name": "ifForceNoColor",
+      "unusual": true
+    },
+    {
+      "name": "ifgridpgbrk",
+      "unusual": true
+    },
+    {
+      "name": "ifisleadin",
+      "unusual": true
+    },
+    {
+      "name": "ifIsRespBox",
+      "unusual": true
+    },
+    {
+      "name": "ifkeepdeclaredvspacing",
+      "unusual": true
+    },
+    {
+      "name": "ifkeyalt",
+      "unusual": true
+    },
+    {
+      "name": "ifmakeExSlLocal",
+      "unusual": true
+    },
+    {
+      "name": "ifmakeQzSlLocal",
+      "unusual": true
+    },
+    {
+      "name": "ifnocorrections",
+      "unusual": true
+    },
+    {
+      "name": "ifNoSolutions",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifNoSolutions{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "ifObeyPTsStar",
+      "unusual": true
+    },
+    {
+      "name": "ifOKToWriteExamData",
+      "unusual": true
+    },
+    {
+      "name": "ifoxfordcomma",
+      "unusual": true
+    },
+    {
+      "name": "ifpreview",
+      "unusual": true
+    },
+    {
+      "name": "ifsolutionsafter",
+      "unusual": true
+    },
+    {
+      "name": "ifsolutionsAtEnd",
+      "unusual": true
+    },
+    {
+      "name": "ifsolutionsonly",
+      "unusual": true
+    },
+    {
+      "name": "ifterminexchanged",
+      "unusual": true
+    },
+    {
+      "name": "iftherearequizsolutions",
+      "unusual": true
+    },
+    {
+      "name": "iftherearesolutions",
+      "unusual": true
+    },
+    {
+      "name": "ifthereissolution",
+      "unusual": true
+    },
+    {
+      "name": "ifuseNumForParts",
+      "unusual": true
+    },
+    {
+      "name": "ifuserectforms",
+      "unusual": true
+    },
+    {
+      "name": "ifVersionA"
+    },
+    {
+      "name": "ifvspacewithsolns",
+      "unusual": true
+    },
+    {
+      "name": "ifwithinparts",
+      "unusual": true
+    },
+    {
+      "name": "ifwithinqsldoc",
+      "unusual": true
+    },
+    {
+      "name": "ifwithinsoldoc",
+      "unusual": true
+    },
+    {
+      "name": "includeexersolutions"
+    },
+    {
+      "name": "insertContAnnot"
+    },
+    {
+      "name": "insertContAnnot",
+      "arg": {
+        "format": "[]",
+        "snippet": "insertContAnnot[${1:vspace%l}]"
+      }
+    },
+    {
+      "name": "instructionsColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "instructionsColor{${1:color}}"
+      }
+    },
+    {
+      "name": "isleadinfalse",
+      "unusual": true
+    },
+    {
+      "name": "isleadintrue",
+      "unusual": true
+    },
+    {
+      "name": "IsRespBoxfalse",
+      "unusual": true
+    },
+    {
+      "name": "IsRespBoxtrue",
+      "unusual": true
+    },
+    {
+      "name": "itemPTsTxt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "itemPTsTxt{${1:text}}"
+      }
+    },
+    {
+      "name": "keepdeclaredvspacingfalse",
+      "unusual": true
+    },
+    {
+      "name": "keepdeclaredvspacingtrue",
+      "unusual": true
+    },
+    {
+      "name": "keyaltfalse",
+      "unusual": true
+    },
+    {
+      "name": "keyalttrue",
+      "unusual": true
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:keywords%text}}"
+      }
+    },
+    {
+      "name": "lastPageOfExam",
+      "arg": {
+        "format": "{}",
+        "snippet": "lastPageOfExam{${1:exam name}}"
+      }
+    },
+    {
+      "name": "leadinitem"
+    },
+    {
+      "name": "leadinitem",
+      "arg": {
+        "format": "[]",
+        "snippet": "leadinitem[${1:h|H}]"
+      }
+    },
+    {
+      "name": "leftmarginPtsEaTxt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "leftmarginPtsEaTxt{${1:text}}"
+      }
+    },
+    {
+      "name": "leftmarginPtsTxt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "leftmarginPtsTxt{${1:text}}"
+      }
+    },
+    {
+      "name": "lfooteqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "lfooteqe{${1:text}}"
+      }
+    },
+    {
+      "name": "lheadeqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "lheadeqe{${1:text}}"
+      }
+    },
+    {
+      "name": "lheadSol",
+      "arg": {
+        "format": "{}",
+        "snippet": "lheadSol{${1:text}}"
+      }
+    },
+    {
+      "name": "linkcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "linkcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "makeExSlLocalfalse",
+      "unusual": true
+    },
+    {
+      "name": "makeExSlLocaltrue",
+      "unusual": true
+    },
+    {
+      "name": "makeQzSlLocalfalse",
+      "unusual": true
+    },
+    {
+      "name": "makeQzSlLocaltrue",
+      "unusual": true
+    },
+    {
+      "name": "makeRoomForProb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "makeRoomForProb{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "maketitledesign",
+      "unusual": true
+    },
+    {
+      "name": "marginpointsboxtext",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "marginpointsboxtext{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "markEndFor",
+      "arg": {
+        "format": "{}",
+        "snippet": "markEndFor{${1:mrk1}}"
+      }
+    },
+    {
+      "name": "markerTotalFmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "markerTotalFmt{${1:formatting}}"
+      }
+    },
+    {
+      "name": "markNumQsFor",
+      "arg": {
+        "format": "{}",
+        "snippet": "markNumQsFor{${1:mrk1}}"
+      }
+    },
+    {
+      "name": "markStartFor",
+      "arg": {
+        "format": "{}",
+        "snippet": "markStartFor{${1:mrk1}}"
+      }
+    },
+    {
+      "name": "nbaselineskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "nbaselineskip{${1:factor}}"
+      }
+    },
+    {
+      "name": "nDoNum"
+    },
+    {
+      "name": "nExam"
+    },
+    {
+      "name": "nocorrectionsfalse",
+      "unusual": true
+    },
+    {
+      "name": "nocorrectionstrue",
+      "unusual": true
+    },
+    {
+      "name": "nolinkcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "nolinkcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "NoPoints"
+    },
+    {
+      "name": "noSolnOpt"
+    },
+    {
+      "name": "NoSolutions"
+    },
+    {
+      "name": "NoSpaceToWork"
+    },
+    {
+      "name": "NoTotals"
+    },
+    {
+      "name": "nOutOfNum"
+    },
+    {
+      "name": "noZeroTotals"
+    },
+    {
+      "name": "nPagesOnExam"
+    },
+    {
+      "name": "nPctDecPts",
+      "unusual": true
+    },
+    {
+      "name": "nQuesInExam"
+    },
+    {
+      "name": "nQuesInExam",
+      "arg": {
+        "format": "[]",
+        "snippet": "nQuesInExam[${1:exam name}]"
+      }
+    },
+    {
+      "name": "numPtsOfProblem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "numPtsOfProblem[${2:exam label}]{${1:prob num}}"
+      }
+    },
+    {
+      "name": "numPtsOfProblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "numPtsOfProblem{${1:prob num}}"
+      }
+    },
+    {
+      "name": "numVersions",
+      "arg": {
+        "format": "{}",
+        "snippet": "numVersions{${1:number}}"
+      }
+    },
+    {
+      "name": "obeyLocalRandomize"
+    },
+    {
+      "name": "ObeyPTsStarfalse",
+      "unusual": true
+    },
+    {
+      "name": "ObeyPTsStartrue",
+      "unusual": true
+    },
+    {
+      "name": "OKToWriteExamDatafalse",
+      "unusual": true
+    },
+    {
+      "name": "OKToWriteExamDatatrue",
+      "unusual": true
+    },
+    {
+      "name": "OnBackOfPage"
+    },
+    {
+      "name": "OnBackOfPage",
+      "arg": {
+        "format": "[]",
+        "snippet": "OnBackOfPage[${1:text}]"
+      }
+    },
+    {
+      "name": "optsFillIn",
+      "arg": {
+        "format": "{}",
+        "snippet": "optsFillIn{${1:eforms params}}"
+      }
+    },
+    {
+      "name": "optsMlTxtFld",
+      "arg": {
+        "format": "{}",
+        "snippet": "optsMlTxtFld{${1:eforms params}}"
+      }
+    },
+    {
+      "name": "OutOfNum"
+    },
+    {
+      "name": "oxfordcommafalse",
+      "unusual": true
+    },
+    {
+      "name": "oxfordcommatrue",
+      "unusual": true
+    },
+    {
+      "name": "panelgap",
+      "unusual": true
+    },
+    {
+      "name": "panelheight",
+      "unusual": true
+    },
+    {
+      "name": "panelwidth",
+      "unusual": true
+    },
+    {
+      "name": "partsformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "partsformat{${1:formatting}}"
+      }
+    },
+    {
+      "name": "partsitemsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partsitemsep{${1:length}}"
+      }
+    },
+    {
+      "name": "partsparsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partsparsep{${1:length}}"
+      }
+    },
+    {
+      "name": "partstabcolsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partstabcolsep{${1:length}}"
+      }
+    },
+    {
+      "name": "partstabrowsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partstabrowsep{${1:length}}"
+      }
+    },
+    {
+      "name": "partstabtopsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partstabtopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "partstopsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "partstopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "percentForPart",
+      "arg": {
+        "format": "{}",
+        "snippet": "percentForPart{${1:exam name}}"
+      }
+    },
+    {
+      "name": "placeAtxy",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "placeAtxy{${1:xdim%l}}{${2:ydim%l}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "placeCoverPageLogo",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "placeCoverPageLogo{${1:hshift%l}}{${2:vshift%l}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "placeMarkerHere",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeMarkerHere{${1:name}}"
+      }
+    },
+    {
+      "name": "pointLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "pointLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "pointsLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "pointsLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "PointsOnBothSides"
+    },
+    {
+      "name": "PointsOnLeft"
+    },
+    {
+      "name": "PointsOnRight"
+    },
+    {
+      "name": "popProblem"
+    },
+    {
+      "name": "postExamSolnHead",
+      "unusual": true
+    },
+    {
+      "name": "prbDecPt",
+      "arg": {
+        "format": "{}",
+        "snippet": "prbDecPt{${1:symbol}}"
+      }
+    },
+    {
+      "name": "prbNumFmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "prbNumFmt{${1:format}}"
+      }
+    },
+    {
+      "name": "prbNumPrtsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "prbNumPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "prbPrtsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "prbPrtsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "preExamSolnHead",
+      "unusual": true
+    },
+    {
+      "name": "previewfalse",
+      "unusual": true
+    },
+    {
+      "name": "previewtrue",
+      "unusual": true
+    },
+    {
+      "name": "priorexsectitle",
+      "unusual": true
+    },
+    {
+      "name": "priorexslinput",
+      "unusual": true
+    },
+    {
+      "name": "priorPageBreakMsg",
+      "arg": {
+        "format": "{}",
+        "snippet": "priorPageBreakMsg{${1:text}}"
+      }
+    },
+    {
+      "name": "priorworkareaCmds",
+      "arg": {
+        "format": "{}",
+        "snippet": "priorworkareaCmds{${1:code}}"
+      }
+    },
+    {
+      "name": "probInMinipage"
+    },
+    {
+      "name": "probInsertSoln",
+      "arg": {
+        "format": "{}",
+        "snippet": "probInsertSoln{${1:content%text}}"
+      }
+    },
+    {
+      "name": "promoteNewPage"
+    },
+    {
+      "name": "promoteNewPage",
+      "arg": {
+        "format": "[]",
+        "snippet": "promoteNewPage[${1:vspace%l}]"
+      }
+    },
+    {
+      "name": "proofingsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "proofingsymbol{${1:symbol}}"
+      }
+    },
+    {
+      "name": "proofingsymbolColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "proofingsymbolColor{${1:color}}"
+      }
+    },
+    {
+      "name": "ptLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "ptLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "PTs",
+      "arg": {
+        "format": "{}",
+        "snippet": "PTs{${1:number}}"
+      }
+    },
+    {
+      "name": "ptsLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "ptsLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "pushProblem"
+    },
+    {
+      "name": "qNewPage"
+    },
+    {
+      "name": "quesNumColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "quesNumColor{${1:color}}"
+      }
+    },
+    {
+      "name": "REF*",
+      "arg": {
+        "format": "{}",
+        "snippet": "REF*{${1:label}}"
+      }
+    },
+    {
+      "name": "REF",
+      "arg": {
+        "format": "{}",
+        "snippet": "REF{${1:label}}"
+      }
+    },
+    {
+      "name": "renameSolnAfterTo",
+      "arg": {
+        "format": "{}",
+        "snippet": "renameSolnAfterTo{${1:text}}"
+      }
+    },
+    {
+      "name": "resetacvspace"
+    },
+    {
+      "name": "resetSolnAfterToDefault"
+    },
+    {
+      "name": "RESTOREPAR",
+      "unusual": true
+    },
+    {
+      "name": "rfooteqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "rfooteqe{${1:text}}"
+      }
+    },
+    {
+      "name": "rheadeqe",
+      "arg": {
+        "format": "{}",
+        "snippet": "rheadeqe{${1:text}}"
+      }
+    },
+    {
+      "name": "rheadSol",
+      "arg": {
+        "format": "{}",
+        "snippet": "rheadSol{${1:text}}"
+      }
+    },
+    {
+      "name": "rowsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "rowsep{${1:length}}"
+      }
+    },
+    {
+      "name": "runExamFooter",
+      "unusual": true
+    },
+    {
+      "name": "runExamHeader",
+      "unusual": true
+    },
+    {
+      "name": "runExamHeaderSol",
+      "unusual": true
+    },
+    {
+      "name": "sameVspace",
+      "unusual": true
+    },
+    {
+      "name": "sectionColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionColor{${1:color}}"
+      }
+    },
+    {
+      "name": "selectVersion",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "selectVersion{${1:number}}{${2:total versions}}"
+      }
+    },
+    {
+      "name": "separationrule",
+      "unusual": true
+    },
+    {
+      "name": "separationruleOff"
+    },
+    {
+      "name": "separationruleOn"
+    },
+    {
+      "name": "ServerRetnMsg",
+      "arg": {
+        "format": "{}",
+        "snippet": "ServerRetnMsg{${1:text}}"
+      }
+    },
+    {
+      "name": "setDefaultfvsizeskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "setDefaultfvsizeskip{${1:factor}}"
+      }
+    },
+    {
+      "name": "setFillLinesFmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "setFillLinesFmt{${1:keyvals}}",
+        "keys": [
+          "\\setFillLinesFmt"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setMClabelsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "setMClabelsep{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "setMClabelsepDefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "setMClabelsepDefault{${1:space cmd}}"
+      }
+    },
+    {
+      "name": "setPartsWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "setPartsWidth{${1:content}}"
+      }
+    },
+    {
+      "name": "setSolnMargins",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setSolnMargins{${1:length}}"
+      }
+    },
+    {
+      "name": "settotalsbox",
+      "unusual": true
+    },
+    {
+      "name": "sExam"
+    },
+    {
+      "name": "shortVersionAtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "shortVersionAtext{${1:text}}"
+      }
+    },
+    {
+      "name": "shortVersionBtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "shortVersionBtext{${1:text}}"
+      }
+    },
+    {
+      "name": "shortwebsubject",
+      "unusual": true
+    },
+    {
+      "name": "showAllAnsAtEnd"
+    },
+    {
+      "name": "solAtEndFormatting",
+      "arg": {
+        "format": "{}",
+        "snippet": "solAtEndFormatting{${1:code}}"
+      }
+    },
+    {
+      "name": "solutionafterExCmds",
+      "arg": {
+        "format": "{}",
+        "snippet": "solutionafterExCmds{${1:code}}"
+      }
+    },
+    {
+      "name": "SolutionsAfter"
+    },
+    {
+      "name": "solutionsafterfalse",
+      "unusual": true
+    },
+    {
+      "name": "solutionsaftertrue",
+      "unusual": true
+    },
+    {
+      "name": "SolutionsAtEnd"
+    },
+    {
+      "name": "solutionsAtEndfalse",
+      "unusual": true
+    },
+    {
+      "name": "solutionsAtEndtrue",
+      "unusual": true
+    },
+    {
+      "name": "solutionsonlyfalse",
+      "unusual": true
+    },
+    {
+      "name": "solutionsonlytrue",
+      "unusual": true
+    },
+    {
+      "name": "SpaceToWork"
+    },
+    {
+      "name": "sqForms"
+    },
+    {
+      "name": "sqLinks"
+    },
+    {
+      "name": "subject",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subject[${2:short subject%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "subject",
+      "arg": {
+        "format": "{}",
+        "snippet": "subject{${1:text}}"
+      }
+    },
+    {
+      "name": "subjectColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "subjectColor{${1:color}}"
+      }
+    },
+    {
+      "name": "SubmitButtonLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "SubmitButtonLabel{${1:text}}"
+      }
+    },
+    {
+      "name": "SubmitInfo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SubmitInfo{${1:URL}}{${2:email%URL}}"
+      }
+    },
+    {
+      "name": "summaryPointTotal",
+      "unusual": true
+    },
+    {
+      "name": "SummaryTotalsOff"
+    },
+    {
+      "name": "SummaryTotalsOn"
+    },
+    {
+      "name": "summaryTotalsTxt",
+      "unusual": true
+    },
+    {
+      "name": "tableadin"
+    },
+    {
+      "name": "terminexchangedfalse",
+      "unusual": true
+    },
+    {
+      "name": "terminexchangedtrue",
+      "unusual": true
+    },
+    {
+      "name": "texorpdfstring",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "texorpdfstring{${1:TEXstring}}{${2:PDFstring}}"
+      }
+    },
+    {
+      "name": "TF",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TF[${2:width}]{${1:answer%text}}"
+      }
+    },
+    {
+      "name": "TF",
+      "arg": {
+        "format": "{}",
+        "snippet": "TF{${1:answer%text}}"
+      }
+    },
+    {
+      "name": "theduedate"
+    },
+    {
+      "name": "theeqpointsthispage",
+      "unusual": true
+    },
+    {
+      "name": "theGrandTotal"
+    },
+    {
+      "name": "themarkerCnt",
+      "unusual": true
+    },
+    {
+      "name": "thepartno",
+      "unusual": true
+    },
+    {
+      "name": "therearequizsolutionsfalse",
+      "unusual": true
+    },
+    {
+      "name": "therearequizsolutionstrue",
+      "unusual": true
+    },
+    {
+      "name": "therearesolutionsfalse",
+      "unusual": true
+    },
+    {
+      "name": "therearesolutionstrue",
+      "unusual": true
+    },
+    {
+      "name": "thereissolutionfalse",
+      "unusual": true
+    },
+    {
+      "name": "thereissolutiontrue",
+      "unusual": true
+    },
+    {
+      "name": "thisterm"
+    },
+    {
+      "name": "title",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "title[${2:short title%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "titleColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "titleColor{${1:color}}"
+      }
+    },
+    {
+      "name": "totalForPart",
+      "arg": {
+        "format": "{}",
+        "snippet": "totalForPart{${1:exam name}}"
+      }
+    },
+    {
+      "name": "totalsboxtext",
+      "unusual": true
+    },
+    {
+      "name": "TotalsOnLeft"
+    },
+    {
+      "name": "TotalsOnRight"
+    },
+    {
+      "name": "trackProblemsOff"
+    },
+    {
+      "name": "trackProblemsOn"
+    },
+    {
+      "name": "turnContAnnotOff"
+    },
+    {
+      "name": "turnContAnnotOn"
+    },
+    {
+      "name": "turnflanskeyOff"
+    },
+    {
+      "name": "turnflanskeyOn"
+    },
+    {
+      "name": "turnflnosolnsOff"
+    },
+    {
+      "name": "turnflnosolnsOn"
+    },
+    {
+      "name": "turnOnRandomize"
+    },
+    {
+      "name": "university",
+      "arg": {
+        "format": "{}",
+        "snippet": "university{${1:university%text}}"
+      }
+    },
+    {
+      "name": "universityColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "universityColor{${1:color}}"
+      }
+    },
+    {
+      "name": "useCheckForProof"
+    },
+    {
+      "name": "useCircForMC"
+    },
+    {
+      "name": "useCircForProof"
+    },
+    {
+      "name": "useCrossForProof"
+    },
+    {
+      "name": "useCustomPartNames"
+    },
+    {
+      "name": "useFillerDefault"
+    },
+    {
+      "name": "useFillerLines"
+    },
+    {
+      "name": "usenLineDimen"
+    },
+    {
+      "name": "useNumForPartsfalse",
+      "unusual": true
+    },
+    {
+      "name": "useNumForPartstrue",
+      "unusual": true
+    },
+    {
+      "name": "useRectForMC"
+    },
+    {
+      "name": "userectformsfalse",
+      "unusual": true
+    },
+    {
+      "name": "userectformstrue",
+      "unusual": true
+    },
+    {
+      "name": "useSavedAlts",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "useSavedAlts[${2:num}]{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedAlts",
+      "arg": {
+        "format": "{}",
+        "snippet": "useSavedAlts{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedAltsAns",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "useSavedAltsAns[${2:num}]{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedAltsAns",
+      "arg": {
+        "format": "{}",
+        "snippet": "useSavedAltsAns{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedAns",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "useSavedAns[${2:num}]{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedAns",
+      "arg": {
+        "format": "{}",
+        "snippet": "useSavedAns{${1:label}}"
+      }
+    },
+    {
+      "name": "useSavedNumAns",
+      "arg": {
+        "format": "{}",
+        "snippet": "useSavedNumAns{${1:label}}"
+      }
+    },
+    {
+      "name": "useUIPartNames"
+    },
+    {
+      "name": "useVspaceDimen"
+    },
+    {
+      "name": "version",
+      "arg": {
+        "format": "{}",
+        "snippet": "version{${1:version}}"
+      }
+    },
+    {
+      "name": "VersionAtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "VersionAtext{${1:text}}"
+      }
+    },
+    {
+      "name": "VersionBtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "VersionBtext{${1:text}}"
+      }
+    },
+    {
+      "name": "vspacewithkeyOff"
+    },
+    {
+      "name": "vspacewithkeyOn"
+    },
+    {
+      "name": "vspacewithsolnsfalse",
+      "unusual": true
+    },
+    {
+      "name": "vspacewithsolnstrue",
+      "unusual": true
+    },
+    {
+      "name": "wdthMlTxtFld",
+      "arg": {
+        "format": "{}",
+        "snippet": "wdthMlTxtFld{${1:length}}"
+      }
+    },
+    {
+      "name": "webArg",
+      "unusual": true
+    },
+    {
+      "name": "webauthor",
+      "unusual": true
+    },
+    {
+      "name": "webcopyrightyears",
+      "unusual": true
+    },
+    {
+      "name": "webemail",
+      "unusual": true
+    },
+    {
+      "name": "webkeywords",
+      "unusual": true
+    },
+    {
+      "name": "webnewpage",
+      "unusual": true
+    },
+    {
+      "name": "websubject",
+      "unusual": true
+    },
+    {
+      "name": "webtitle",
+      "unusual": true
+    },
+    {
+      "name": "webuniversity",
+      "unusual": true
+    },
+    {
+      "name": "webversion",
+      "unusual": true
+    },
+    {
+      "name": "withinpartsfalse",
+      "unusual": true
+    },
+    {
+      "name": "withinpartstrue",
+      "unusual": true
+    },
+    {
+      "name": "withinqsldocfalse",
+      "unusual": true
+    },
+    {
+      "name": "withinqsldoctrue",
+      "unusual": true
+    },
+    {
+      "name": "withinsoldocfalse",
+      "unusual": true
+    },
+    {
+      "name": "withinsoldoctrue",
+      "unusual": true
+    },
+    {
+      "name": "wlVspace",
+      "unusual": true
+    },
+    {
+      "name": "writeAllAnsAtEnd",
+      "unusual": true
+    },
+    {
+      "name": "writeToSolnFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "writeToSolnFile{${1:code}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "afterChapSolns",
+      "if": "fortextbook"
+    },
+    {
+      "name": "carryOverFmt",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:formatting}}"
+      }
+    },
+    {
+      "name": "eqeList",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:label}}"
+      }
+    },
+    {
+      "name": "eqeList",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:width}]{${1:label}}"
+      }
+    },
+    {
+      "name": "eqepartsquestions",
+      "if": "fortextbook"
+    },
+    {
+      "name": "example",
+      "if": "fortextbook"
+    },
+    {
+      "name": "example*",
+      "if": "fortextbook"
+    },
+    {
+      "name": "fullwidthtext",
+      "if": "fortextbook"
+    },
+    {
+      "name": "lsol",
+      "if": "fortextbook"
+    },
+    {
+      "name": "probset",
+      "if": "fortextbook",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    },
+    {
+      "name": "probset",
+      "if": "fortextbook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:margin title%text}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "solnsAtEnd",
+      "if": "fortextbook"
+    },
+    {
+      "name": "ssol",
+      "if": "fortextbook"
+    },
+    {
+      "name": "answers",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:nCols}}"
+      }
+    },
+    {
+      "name": "cq",
+      "unusual": true
+    },
+    {
+      "name": "cq*",
+      "unusual": true
+    },
+    {
+      "name": "eqComments"
+    },
+    {
+      "name": "eqComments",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "eqequestions",
+      "unusual": true
+    },
+    {
+      "name": "exam",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:exam name}}"
+      }
+    },
+    {
+      "name": "exam",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:friendly name%text}]{${1:exam name}}"
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\begin{exercise}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "exercise*"
+    },
+    {
+      "name": "instructions"
+    },
+    {
+      "name": "instructions",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "manswers",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:nCols}}"
+      }
+    },
+    {
+      "name": "panel"
+    },
+    {
+      "name": "panel",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:l|r}]"
+      }
+    },
+    {
+      "name": "parts"
+    },
+    {
+      "name": "parts",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:nCols}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points%keyvals}]",
+        "keys": [
+          "\\begin{problem}#c,\\begin{problem*}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:points%keyvals}][${2:h|H}]",
+        "keys": [
+          "\\begin{problem}#c,\\begin{problem*}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "problem*"
+    },
+    {
+      "name": "problem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points%keyvals}]",
+        "keys": [
+          "\\begin{problem}#c,\\begin{problem*}#c",
+          "\\begin{problem*}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "problem*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:points%keyvals}][${2:h|H}]",
+        "keys": [
+          "\\begin{problem}#c,\\begin{problem*}#c",
+          "\\begin{problem*}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solution"
+    },
+    {
+      "name": "solution",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{solution}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "splitsolution"
+    },
+    {
+      "name": "splitsolution",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    },
+    {
+      "name": "splitsolution",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:width}][${2:depth}]"
+      }
+    },
+    {
+      "name": "workarea",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:depth%l}}"
+      }
+    },
+    {
+      "name": "workarea",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:width}]{${1:depth%l}}"
+      }
+    },
+    {
+      "name": "priorworkarea"
+    },
+    {
+      "name": "vadjForSolnInBx",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/eqexam#c": [
+      "usecustomdesign",
+      "nocustomdesign",
+      "fortextbook",
+      "forinstr",
+      "forstudent",
+      "nomarginwrite",
+      "cfg=${1:basename}",
+      "pointsonleft",
+      "pointsonright",
+      "pointsonboth",
+      "nopoints",
+      "totalsonleft",
+      "totalsonright",
+      "nozerototals",
+      "nototals",
+      "noparttotals",
+      "parttotalsonright",
+      "parttotalsonleft",
+      "noseparationrule",
+      "nosummarytotals",
+      "coverpage",
+      "coverpagesumry=${1|byparts,bypages,none|}",
+      "nospacetowork",
+      "answerkey",
+      "vspacewithsolns",
+      "ftbsolns",
+      "flextended",
+      "useforms",
+      "allowcirc4mc",
+      "online",
+      "pdf",
+      "links",
+      "email",
+      "obeylocalversions",
+      "usexkv",
+      "max=${1:integer}",
+      "rendition=${1:version letter}",
+      "allowrandomize",
+      "forpaper",
+      "forcolorpaper",
+      "forcolorpaper*",
+      "preview",
+      "nosolutions",
+      "nohiddensolutions",
+      "noHiddensolutions",
+      "solutionsafter",
+      "solutionsonly",
+      "proofing",
+      "showgrayletters",
+      "noxcolor",
+      "useclassmaketitle",
+      "bypasspkgpagestyle",
+      "dvipsone",
+      "dvips",
+      "pdftex",
+      "dvipdfm",
+      "dvipdfmx",
+      "xetex",
+      "textures",
+      "natural",
+      "rgb",
+      "cmy",
+      "cmyk",
+      "hsb",
+      "gray",
+      "RGB",
+      "HTML",
+      "HSB",
+      "Gray",
+      "monochrome",
+      "dvipsnames",
+      "dvipsnames*",
+      "svgnames",
+      "svgnames*",
+      "x11names",
+      "x11names*",
+      "table",
+      "fixpdftex",
+      "hyperref",
+      "prologue",
+      "kernelfbox",
+      "xcdraw",
+      "noxcdraw",
+      "fixinclude",
+      "showerrors",
+      "hideerrors"
+    ],
+    "\\textbookOpts": [
+      "instred",
+      "studented",
+      "marginans",
+      "inlineans",
+      "marginsonleft",
+      "ssols",
+      "lsols"
+    ],
+    "\\bChoices#c": [
+      "${1:⟨n⟩}",
+      "nCols=${1:n}",
+      "random",
+      "label="
+    ],
+    "\\begin{exercise}#c": [
+      "${1:⟨counter⟩}",
+      "h",
+      "H",
+      "0"
+    ],
+    "\\begin{problem}#c,\\begin{problem*}#c": [
+      "${1:⟨number⟩}",
+      "*${1:⟨number⟩}"
+    ],
+    "\\begin{problem*}#c": [
+      "${1:⟨number⟩}ea",
+      "*${1:⟨number⟩}ea",
+      "\\auto",
+      "*\\auto"
+    ],
+    "\\begin{solution}#c": [
+      "${1:⟨vspace⟩}",
+      "nLines=${1:n}"
+    ],
+    "\\fillin,\\fillineol,\\fillineol*": [
+      "underline",
+      "u",
+      "b",
+      "boxed",
+      "boxpretext=${1:text}",
+      "parbox",
+      "parbox={[${1:pos}]}",
+      "parbox={[${1:pos}][${2:height}]}",
+      "parbox={[${1:pos}][${2:height}][${3:inner-pos}]}",
+      "hiddenbox",
+      "enclosesoln",
+      "boxsize=${1|tiny,scriptsize,footnotesize,small,normalsize,large,Large,LARGE,huge,Huge|}",
+      "fboxsep=",
+      "fontsize=${1|tiny,scriptsize,footnotesize,small,normalsize,large,Large,LARGE,huge,Huge|}",
+      "color=",
+      "align=${1|l,c,r|}",
+      "defaultalign=${1|l,c,r|}",
+      "format=${1:format cmds}",
+      "fitwidth",
+      "boxcmd=${1:cmd}",
+      "ulcmd=${1:cmd}",
+      "lift=",
+      "autolift",
+      "addtoautolift="
+    ],
+    "\\setFillLinesFmt": [
+      "fltype=${1|line,dash,dots,blank,grid|}",
+      "align=${1|default,left|}",
+      "bgcolor=",
+      "bgonly",
+      "bgonly*",
+      "equalcells",
+      "color=",
+      "gridtype=${1|line,dash,dots|}",
+      "linegap=",
+      "numbers=${1|none,left,right|}",
+      "numbersep=",
+      "numfmt=${1:code}",
+      "outlineonly",
+      "outlineonly*",
+      "topline"
+    ]
+  },
+  "args": [
+    "\\usepackage/eqexam#c"
+  ]
+}

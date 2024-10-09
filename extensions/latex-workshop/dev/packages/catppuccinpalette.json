@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/catppuccinpalette#c": [
+      "style=${1|latte,frappe,macchiato,mocha|}",
+      "textcolor",
+      "pagecolor",
+      "styleAll"
+    ]
+  },
+  "args": [
+    "\\usepackage/catppuccinpalette#c"
+  ]
+}

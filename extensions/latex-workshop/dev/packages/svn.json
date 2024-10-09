@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "SVNDate"
+    },
+    {
+      "name": "SVNRawDate"
+    },
+    {
+      "name": "SVNTime"
+    },
+    {
+      "name": "SVNempty"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

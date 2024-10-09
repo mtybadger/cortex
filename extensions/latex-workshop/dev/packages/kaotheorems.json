@@ -1,0 +1,151 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "thmtools"
+    },
+    {
+      "name": "tcolorbox",
+      "if": "framed"
+    },
+    {
+      "name": "tcolorboxlibrarymost",
+      "if": "framed"
+    },
+    {
+      "name": "tcolorbox",
+      "if": "framed=true"
+    },
+    {
+      "name": "tcolorboxlibrarymost",
+      "if": "framed=true"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assumption"
+    },
+    {
+      "name": "assumption",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/kaotheorems#c": [
+      "framed",
+      "background=",
+      "theorembackground=",
+      "propositionbackground=",
+      "lemmabackground=",
+      "corollarybackground=",
+      "definitionbackground=",
+      "assumptionbackground=",
+      "remarkbackground=",
+      "examplebackground=",
+      "exercisebackground="
+    ],
+    "\\theoremstyle#c": [
+      "kaoplain",
+      "kaodefinition",
+      "kaoassumption",
+      "kaoremark",
+      "kaoexample",
+      "kaoexercise"
+    ]
+  },
+  "args": [
+    "\\usepackage/kaotheorems#c"
+  ]
+}

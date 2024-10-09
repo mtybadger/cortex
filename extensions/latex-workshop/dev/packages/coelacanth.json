@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "liningnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "liningnums{${1:text}}"
+      }
+    },
+    {
+      "name": "tabularnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabularnums{${1:text}}"
+      }
+    },
+    {
+      "name": "proportionalnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "proportionalnums{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/coelacanth#c": [
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "nf",
+      "lf",
+      "oldstyle",
+      "osf",
+      "tabular",
+      "t",
+      "proportional",
+      "p",
+      "l",
+      "el",
+      "sb",
+      "h"
+    ]
+  },
+  "args": [
+    "\\usepackage/coelacanth#c"
+  ]
+}

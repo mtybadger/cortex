@@ -1,0 +1,195 @@
+{
+  "deps": [
+    {
+      "name": "xtemplate"
+    }
+  ],
+  "macros": [
+    {
+      "name": "task"
+    },
+    {
+      "name": "task",
+      "arg": {
+        "format": "[]",
+        "snippet": "task[${1:label text}]"
+      }
+    },
+    {
+      "name": "task",
+      "arg": {
+        "format": "[]()",
+        "snippet": "task[${1:label text}](${2:cols})"
+      }
+    },
+    {
+      "name": "task",
+      "arg": {
+        "format": "()",
+        "snippet": "task(${1:cols})"
+      }
+    },
+    {
+      "name": "task*"
+    },
+    {
+      "name": "task*",
+      "arg": {
+        "format": "[]",
+        "snippet": "task*[${1:label text}]"
+      }
+    },
+    {
+      "name": "task*",
+      "arg": {
+        "format": "[]()",
+        "snippet": "task*[${1:label text}](${2:cols})"
+      }
+    },
+    {
+      "name": "task*",
+      "arg": {
+        "format": "()",
+        "snippet": "task*(${1:cols})"
+      }
+    },
+    {
+      "name": "startnewitemline"
+    },
+    {
+      "name": "settasks",
+      "arg": {
+        "format": "{}",
+        "snippet": "settasks{${1:keyvals}}",
+        "keys": [
+          "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "NewTasksEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "NewTasksEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "NewTasksEnvironment",
+      "arg": {
+        "format": "[]{}[]()",
+        "snippet": "NewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})",
+        "keys": [
+          "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "RenewTasksEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "RenewTasksEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "RenewTasksEnvironment",
+      "arg": {
+        "format": "[]{}[]()",
+        "snippet": "RenewTasksEnvironment[${2:keyvals}]{${1:envname}}[${3:separator}](${4:cols})",
+        "keys": [
+          "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tasksifmeasuringTF",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tasksifmeasuringTF{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "tasksifmeasuringT",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tasksifmeasuringT{${1:true}}"
+      }
+    },
+    {
+      "name": "tasksifmeasuringF",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tasksifmeasuringF{${1:false}}"
+      }
+    },
+    {
+      "name": "tasklabel",
+      "unusual": true
+    },
+    {
+      "name": "thetask",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "tasks"
+    },
+    {
+      "name": "tasks",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:keyvals}]",
+        "keys": [
+          "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tasks",
+      "arg": {
+        "format": "[]()",
+        "snippet": "[${1:keyvals}](${2:cols})",
+        "keys": [
+          "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tasks",
+      "arg": {
+        "format": "()",
+        "snippet": "(${1:cols})"
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{tasks},\\settasks,\\NewTasksEnvironment,\\RenewTasksEnvironment": [
+      "style=${1|itemize,enumerate|}",
+      "label-format=${1:code}",
+      "label=${1:code}",
+      "ref=${1:code}",
+      "label-width=",
+      "label-offset=",
+      "item-format=${1:code}",
+      "item-indent=",
+      "column-sep=",
+      "label-align=${1|left,right,center|}",
+      "before-skip=",
+      "after-skip=",
+      "after-item-skip=",
+      "resume",
+      "start=${1:integer}",
+      "counter=${1:counter}",
+      "debug"
+    ]
+  },
+  "args": []
+}

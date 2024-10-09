@@ -1,0 +1,405 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "pgffor"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "bbding"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "answer",
+      "arg": {
+        "format": "{}",
+        "snippet": "answer{${1:correct answer%text}}"
+      }
+    },
+    {
+      "name": "answer",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "answer[${2:comparison type%keyvals}]{${1:correct answer%text}}",
+        "keys": [
+          "\\answer,\\answer*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "answer*",
+      "arg": {
+        "format": "{}",
+        "snippet": "answer*{${1:correct answer%text}}"
+      }
+    },
+    {
+      "name": "answer*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "answer*[${2:comparison type%keyvals}]{${1:correct answer%text}}",
+        "keys": [
+          "\\answer,\\answer*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "whenRight"
+    },
+    {
+      "name": "whenWrong"
+    },
+    {
+      "name": "correct"
+    },
+    {
+      "name": "incorrect"
+    },
+    {
+      "name": "feedback"
+    },
+    {
+      "name": "dref",
+      "arg": {
+        "format": "{}",
+        "snippet": "dref{${1:label}}"
+      }
+    },
+    {
+      "name": "dref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dref[${2:text}]{${1:label}}"
+      }
+    },
+    {
+      "name": "dref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "dref*{${1:label}}"
+      }
+    },
+    {
+      "name": "dref*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dref*[${2:text}]{${1:label}}"
+      }
+    },
+    {
+      "name": "qref",
+      "arg": {
+        "format": "{}",
+        "snippet": "qref{${1:label}}"
+      }
+    },
+    {
+      "name": "qref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "qref[${2:text}]{${1:label}}"
+      }
+    },
+    {
+      "name": "qref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "qref*{${1:label}}"
+      }
+    },
+    {
+      "name": "qref*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "qref*[${2:text}]{${1:label}}"
+      }
+    },
+    {
+      "name": "Qref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Qref{${1:question number}}"
+      }
+    },
+    {
+      "name": "Qref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Qref[${2:text}]{${1:question number}}"
+      }
+    },
+    {
+      "name": "Qref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Qref*{${1:question number}}"
+      }
+    },
+    {
+      "name": "Qref*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Qref*[${2:text}]{${1:question number}}"
+      }
+    },
+    {
+      "name": "quiz",
+      "arg": {
+        "format": "{}",
+        "snippet": "quiz{${1:title%text}}"
+      }
+    },
+    {
+      "name": "quiz",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quiz[${2:URL}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "quiz*",
+      "arg": {
+        "format": "{}",
+        "snippet": "quiz*{${1:title%text}}"
+      }
+    },
+    {
+      "name": "quiz*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quiz*[${2:URL}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "BreadCrumbs",
+      "arg": {
+        "format": "{}",
+        "snippet": "BreadCrumbs{${1:navigation spec%URL}}"
+      }
+    },
+    {
+      "name": "BreadCrumb",
+      "arg": {
+        "format": "{}",
+        "snippet": "BreadCrumb{${1:breadcrumb}}"
+      }
+    },
+    {
+      "name": "Department",
+      "arg": {
+        "format": "{}",
+        "snippet": "Department{${1:department%text}}"
+      }
+    },
+    {
+      "name": "DepartmentURL",
+      "arg": {
+        "format": "{}",
+        "snippet": "DepartmentURL{${1:URL}}"
+      }
+    },
+    {
+      "name": "Institution",
+      "arg": {
+        "format": "{}",
+        "snippet": "Institution{${1:institution%text}}"
+      }
+    },
+    {
+      "name": "InstitutionURL",
+      "arg": {
+        "format": "{}",
+        "snippet": "InstitutionURL{${1:URL}}"
+      }
+    },
+    {
+      "name": "QuizzesURL",
+      "arg": {
+        "format": "{}",
+        "snippet": "QuizzesURL{${1:URL}}"
+      }
+    },
+    {
+      "name": "UnitCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "UnitCode{${1:unit code}}"
+      }
+    },
+    {
+      "name": "UnitName",
+      "arg": {
+        "format": "{}",
+        "snippet": "UnitName{${1:unit name%text}}"
+      }
+    },
+    {
+      "name": "UnitURL",
+      "arg": {
+        "format": "{}",
+        "snippet": "UnitURL{${1:URL}}"
+      }
+    },
+    {
+      "name": "DisplayAsImage",
+      "arg": {
+        "format": "{}",
+        "snippet": "DisplayAsImage{${1:csname}}"
+      }
+    },
+    {
+      "name": "DisplayAsImage",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DisplayAsImage[${2:options}]{${1:csname}}"
+      }
+    },
+    {
+      "name": "thechoice",
+      "unusual": true
+    },
+    {
+      "name": "thediscussion",
+      "unusual": true
+    },
+    {
+      "name": "thequestion",
+      "unusual": true
+    },
+    {
+      "name": "thequiz",
+      "unusual": true
+    },
+    {
+      "name": "webquiz",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "webquiz{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "AddIniFileKeyValue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddIniFileKeyValue{${1:arg}}"
+      }
+    },
+    {
+      "name": "AddIniFileValue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AddIniFileValue{${1:key%plain}}{${2:value}}"
+      }
+    },
+    {
+      "name": "inifile",
+      "unusual": true
+    },
+    {
+      "name": "AddEntry",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddEntry{${1:key%plain}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "question"
+    },
+    {
+      "name": "choice"
+    },
+    {
+      "name": "discussion"
+    },
+    {
+      "name": "quizindex"
+    },
+    {
+      "name": "choice"
+    },
+    {
+      "name": "choice",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{choice}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dicussion"
+    },
+    {
+      "name": "dicussion",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:short heading%text}]"
+      }
+    },
+    {
+      "name": "dicussion",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:short heading%text}][${2:heading%text}]"
+      }
+    },
+    {
+      "name": "quizindex"
+    }
+  ],
+  "keys": {
+    "\\documentclass/webquiz#c": [
+      "fixedorder",
+      "randomorder",
+      "hidesidemenu",
+      "sidemenu",
+      "language=${1:language}",
+      "onepage",
+      "separatepages",
+      "pst2pdf",
+      "separatepages",
+      "showsidemenu",
+      "theme=${1|blue,darkblue,darkred,default,earthy,fresh,light,lively,muted,sleek,spring,vibrant|}",
+      "tikz"
+    ],
+    "\\answer,\\answer*": [
+      "complex",
+      "integer",
+      "lowercase",
+      "number",
+      "string"
+    ],
+    "\\begin{choice}": [
+      "single",
+      "multiple",
+      "columns=${1:integer}"
+    ]
+  },
+  "args": [
+    "\\documentclass/webquiz#c"
+  ]
+}

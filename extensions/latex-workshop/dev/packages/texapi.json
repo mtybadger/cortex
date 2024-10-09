@@ -1,0 +1,123 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "texapiversion",
+      "unusual": true
+    },
+    {
+      "name": "texenginenumber",
+      "unusual": true
+    },
+    {
+      "name": "formatnumber",
+      "unusual": true
+    },
+    {
+      "name": "priminput",
+      "unusual": true
+    },
+    {
+      "name": "primunexpanded",
+      "unusual": true
+    },
+    {
+      "name": "emptycs",
+      "unusual": true
+    },
+    {
+      "name": "spacecs",
+      "unusual": true
+    },
+    {
+      "name": "spacechar",
+      "unusual": true
+    },
+    {
+      "name": "gobbleone",
+      "unusual": true
+    },
+    {
+      "name": "gobbletwo",
+      "unusual": true
+    },
+    {
+      "name": "gobblethree",
+      "unusual": true
+    },
+    {
+      "name": "gobblefour",
+      "unusual": true
+    },
+    {
+      "name": "gobblefive",
+      "unusual": true
+    },
+    {
+      "name": "gobblesix",
+      "unusual": true
+    },
+    {
+      "name": "gobbleseven",
+      "unusual": true
+    },
+    {
+      "name": "gobbleeight",
+      "unusual": true
+    },
+    {
+      "name": "gobblenine",
+      "unusual": true
+    },
+    {
+      "name": "reverse",
+      "unusual": true
+    },
+    {
+      "name": "iffxnextnospace<token><true>"
+    },
+    {
+      "name": "setcatcodes",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setcatcodes{${1:<list>}}"
+      }
+    },
+    {
+      "name": "restorecatcodes",
+      "unusual": true
+    },
+    {
+      "name": "dofornoempty",
+      "unusual": true
+    },
+    {
+      "name": "resumefor",
+      "unusual": true
+    },
+    {
+      "name": "newfornoempty",
+      "unusual": true
+    },
+    {
+      "name": "firstoftwo",
+      "unusual": true
+    },
+    {
+      "name": "secondoftwo",
+      "unusual": true
+    },
+    {
+      "name": "breakdofor",
+      "unusual": true
+    },
+    {
+      "name": "pausedofor",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

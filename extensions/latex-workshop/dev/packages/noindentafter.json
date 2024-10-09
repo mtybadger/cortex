@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xpatch"
+    }
+  ],
+  "macros": [
+    {
+      "name": "NoIndentAfterEnv",
+      "arg": {
+        "format": "{}",
+        "snippet": "NoIndentAfterEnv{${1:envname}}"
+      }
+    },
+    {
+      "name": "NoIndentAfterCmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "NoIndentAfterCmd{${1:cmd}}"
+      }
+    },
+    {
+      "name": "NoIndentAfterThis"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

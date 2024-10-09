@@ -1,0 +1,100 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "readpsbardata",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "readpsbardata{${1:macro%cmd}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "readpsbardata",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "readpsbardata[${3:options%keyvals}]{${1:macro%cmd}}{${2:filename%file}}",
+        "keys": [
+          "\\readpsbardata#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "psbarchart",
+      "arg": {
+        "format": "{}",
+        "snippet": "psbarchart{${1:data macro}}"
+      }
+    },
+    {
+      "name": "psbarchart",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "psbarchart[${2:options%keyvals}]{${1:data macro}}",
+        "keys": [
+          "\\psbarchart#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "newpsbarstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newpsbarstyle{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "psbarlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "psbarlabel{${1:label}}"
+      }
+    },
+    {
+      "name": "psbarlabelsep",
+      "unusual": true
+    },
+    {
+      "name": "psbarscale",
+      "arg": {
+        "format": "(){}",
+        "snippet": "psbarscale(${2:scale}){${1:PostScript code}}"
+      }
+    },
+    {
+      "name": "setbarstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setbarstyle{${1:style}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\readpsbardata#c": [
+      "header"
+    ],
+    "\\psbarchart#c": [
+      "chartstyle=${1|cluster,stack,block|}",
+      "barstyle={${1:style list}}",
+      "barcolsep=${1:factor}",
+      "barsep=${1:factor}",
+      "barlabelrot=${1:degrees}",
+      "orientation=${1|vertical,horizontal|}"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "contracard"
+    },
+    {
+      "name": "imakeidx",
+      "if": "enableidx"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\documentclass/contracard#c": [
+      "small",
+      "medium",
+      "large",
+      "a7paper",
+      "draft",
+      "showcountafter",
+      "showcountbefore",
+      "enableidx"
+    ]
+  },
+  "args": [
+    "\\documentclass/contracard#c"
+  ]
+}

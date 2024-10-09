@@ -1,0 +1,97 @@
+{
+  "deps": [
+    {
+      "name": "eqparbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "longitem"
+    },
+    {
+      "name": "longitem",
+      "arg": {
+        "format": "[]",
+        "snippet": "longitem[${1:label}]"
+      }
+    },
+    {
+      "name": "eqlistinit",
+      "unusual": true
+    },
+    {
+      "name": "eqliststarinit",
+      "unusual": true
+    },
+    {
+      "name": "eqlistinitpar",
+      "unusual": true
+    },
+    {
+      "name": "eqlistlabel",
+      "unusual": true
+    },
+    {
+      "name": "eqlistauto",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqlistauto{${1:max length%l}}"
+      }
+    },
+    {
+      "name": "eqlistnoauto"
+    }
+  ],
+  "envs": [
+    {
+      "name": "eqlist"
+    },
+    {
+      "name": "eqlist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:code}]"
+      }
+    },
+    {
+      "name": "eqlist*"
+    },
+    {
+      "name": "eqlist*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:code}]"
+      }
+    },
+    {
+      "name": "Eqlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag}}"
+      }
+    },
+    {
+      "name": "Eqlist",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:code}]{${1:tag}}"
+      }
+    },
+    {
+      "name": "Eqlist*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag}}"
+      }
+    },
+    {
+      "name": "Eqlist*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:code}]{${1:tag}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

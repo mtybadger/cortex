@@ -1,0 +1,24 @@
+{
+  "deps": [
+    {
+      "name": "lscape"
+    },
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "pdflscape",
+      "if": "pdflscape"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lscapeenhanced#c": [
+      "pdflscape"
+    ]
+  },
+  "args": [
+    "\\usepackage/lscapeenhanced#c"
+  ]
+}

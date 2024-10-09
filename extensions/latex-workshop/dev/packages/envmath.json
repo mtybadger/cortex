@@ -1,0 +1,105 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MultiLineIndent",
+      "unusual": true
+    },
+    {
+      "name": "MultiLineStarIndent",
+      "unusual": true
+    },
+    {
+      "name": "SystemColSep",
+      "unusual": true
+    },
+    {
+      "name": "SystemBraceSep",
+      "unusual": true
+    },
+    {
+      "name": "SystemStarIndent",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "Equation"
+    },
+    {
+      "name": "Equation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "equation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "equation*"
+    },
+    {
+      "name": "MultiLine"
+    },
+    {
+      "name": "MultiLine",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "MultiLine*"
+    },
+    {
+      "name": "System"
+    },
+    {
+      "name": "System",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "System*"
+    },
+    {
+      "name": "EqSystem"
+    },
+    {
+      "name": "EqSystem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "EqSystem*"
+    },
+    {
+      "name": "EqSystem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/envmath#c": [
+      "RedefEquation",
+      "StdEquation",
+      "RedefBrackets",
+      "StdBrackets",
+      "Standard"
+    ]
+  },
+  "args": [
+    "\\usepackage/envmath#c"
+  ]
+}

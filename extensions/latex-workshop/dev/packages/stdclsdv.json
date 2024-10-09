@@ -1,0 +1,108 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ifSCDknownclass",
+      "unusual": true
+    },
+    {
+      "name": "SCDknownclasstrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDknownclassfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSCDchapter",
+      "unusual": true
+    },
+    {
+      "name": "SCDchaptertrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDchapterfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSCDpart",
+      "unusual": true
+    },
+    {
+      "name": "SCDparttrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDpartfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSCDsection",
+      "unusual": true
+    },
+    {
+      "name": "SCDsectiontrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDsectionfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifSCDnodivs",
+      "unusual": true
+    },
+    {
+      "name": "SCDnodivstrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDnodivsfalse",
+      "unusual": true
+    },
+    {
+      "name": "SCDquit",
+      "unusual": true
+    },
+    {
+      "name": "SCDCheckCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SCDCheckCommand{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "SCDCheckCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "SCDCheckCommand{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "SCDCheckCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "SCDCheckCommand{${1:cmd}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "ifSCDSameDefinition",
+      "unusual": true
+    },
+    {
+      "name": "SCDSameDefinitiontrue",
+      "unusual": true
+    },
+    {
+      "name": "SCDSameDefinitionfalse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

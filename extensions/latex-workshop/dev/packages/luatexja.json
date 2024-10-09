@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "luatexja-core"
+    },
+    {
+      "name": "luatexja-compat"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LuaTeXjaversion",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/luatexja#c": [
+      "disablejfam"
+    ]
+  },
+  "args": [
+    "\\usepackage/luatexja#c"
+  ]
+}

@@ -11,12 +11,12 @@ function code() {
 	cd $ROOT
 
 	# Sync built-in extensions
-	npm run download-builtin-extensions
+	yarn download-builtin-extensions
 
 	NODE=$(node build/lib/node.js)
 	if [ ! -e $NODE ];then
 		# Load remote node
-		npm run gulp node
+		yarn gulp node
 	fi
 
 	NODE=$(node build/lib/node.js)

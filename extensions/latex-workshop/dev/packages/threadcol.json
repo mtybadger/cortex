@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setthreadname",
+      "arg": {
+        "format": "{}",
+        "snippet": "setthreadname{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

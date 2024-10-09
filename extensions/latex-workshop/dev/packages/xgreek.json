@@ -1,0 +1,141 @@
+{
+  "deps": [
+    {
+      "name": "xelistings",
+      "if": "listings"
+    }
+  ],
+  "macros": [
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "anwtonos"
+    },
+    {
+      "name": "katwtonos"
+    },
+    {
+      "name": "koppa"
+    },
+    {
+      "name": "sampi"
+    },
+    {
+      "name": "Digamma"
+    },
+    {
+      "name": "ddigamma"
+    },
+    {
+      "name": "anoteleia"
+    },
+    {
+      "name": "euro",
+      "detail": "€",
+      "doc": "Euro sign"
+    },
+    {
+      "name": "permill"
+    },
+    {
+      "name": "stigma"
+    },
+    {
+      "name": "greeknumeral",
+      "arg": {
+        "format": "{}",
+        "snippet": "greeknumeral{${1:number}}"
+      }
+    },
+    {
+      "name": "Greeknumeral",
+      "arg": {
+        "format": "{}",
+        "snippet": "Greeknumeral{${1:number}}"
+      }
+    },
+    {
+      "name": "atticnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "atticnum{${1:number}}"
+      }
+    },
+    {
+      "name": "setlanguage",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlanguage{${1:language%keyvals}}",
+        "keys": [
+          "\\setlanguage#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "grtoday"
+    },
+    {
+      "name": "Grtoday"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xgreek#c": [
+      "monogreek",
+      "polygreek",
+      "ancientgreek",
+      "stigma",
+      "noindentfirst",
+      "nonumeralsign",
+      "listings"
+    ],
+    "\\setlanguage#c": [
+      "monogreek",
+      "polygreek",
+      "ancientgreek",
+      "american"
+    ]
+  },
+  "args": [
+    "\\usepackage/xgreek#c"
+  ]
+}

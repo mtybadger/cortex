@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "aeb_pro"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setStampPath",
+      "arg": {
+        "format": "{}",
+        "snippet": "setStampPath{${1:path%definition}}"
+      }
+    },
+    {
+      "name": "definePath",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definePath{${1:cmd}}{${2:path%definition}}"
+      }
+    },
+    {
+      "name": "predocassemJS",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

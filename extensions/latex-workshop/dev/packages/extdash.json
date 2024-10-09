@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Hyphdash"
+    },
+    {
+      "name": "Hyphdash*"
+    },
+    {
+      "name": "Endash"
+    },
+    {
+      "name": "Endash*"
+    },
+    {
+      "name": "Emdash"
+    },
+    {
+      "name": "Emdash*"
+    },
+    {
+      "name": "Halfspace"
+    },
+    {
+      "name": "Halfspace*"
+    },
+    {
+      "name": "HyphOrDash",
+      "unusual": true
+    },
+    {
+      "name": "BarOrDash",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/extdash#c": [
+      "allowbreakbefore",
+      "wordspacearound",
+      "nospacearound",
+      "shortcuts",
+      "shortemdash",
+      "cyremdash"
+    ]
+  },
+  "args": [
+    "\\usepackage/extdash#c"
+  ]
+}

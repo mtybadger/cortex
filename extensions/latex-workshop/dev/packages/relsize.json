@@ -1,0 +1,95 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "relsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "relsize{${1:number}}"
+      }
+    },
+    {
+      "name": "larger"
+    },
+    {
+      "name": "larger",
+      "arg": {
+        "format": "[]",
+        "snippet": "larger[${1:number}]"
+      }
+    },
+    {
+      "name": "smaller"
+    },
+    {
+      "name": "smaller",
+      "arg": {
+        "format": "[]",
+        "snippet": "smaller[${1:number}]"
+      }
+    },
+    {
+      "name": "relscale",
+      "arg": {
+        "format": "{}",
+        "snippet": "relscale{${1:scale factor}}"
+      }
+    },
+    {
+      "name": "textlarger",
+      "arg": {
+        "format": "{}",
+        "snippet": "textlarger{${1:text}}"
+      }
+    },
+    {
+      "name": "textlarger",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textlarger[${2:number}]{${1:text}}"
+      }
+    },
+    {
+      "name": "textsmaller",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsmaller{${1:text}}"
+      }
+    },
+    {
+      "name": "textsmaller",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsmaller[${2:number}]{${1:text}}"
+      }
+    },
+    {
+      "name": "textscale",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textscale{${1:scale factor}}{${2:text}}"
+      }
+    },
+    {
+      "name": "mathsmaller"
+    },
+    {
+      "name": "mathlarger"
+    },
+    {
+      "name": "RSsmallest",
+      "unusual": true
+    },
+    {
+      "name": "RSlargest",
+      "unusual": true
+    },
+    {
+      "name": "RSpercentTolerance",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

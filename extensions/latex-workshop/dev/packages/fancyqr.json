@@ -1,0 +1,125 @@
+{
+  "deps": [
+    {
+      "name": "pict2e"
+    },
+    {
+      "name": "qrcode"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fancyqr",
+      "arg": {
+        "format": "{}",
+        "snippet": "fancyqr{${1:URL}}"
+      }
+    },
+    {
+      "name": "fancyqr",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fancyqr[${2:options%keyvals}]{${1:URL}}",
+        "keys": [
+          "\\fancyqr,\\fancyqrset,\\fancyqr*",
+          "\\fancyqr,\\fancyqrset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fancyqr*",
+      "arg": {
+        "format": "{}",
+        "snippet": "fancyqr*{${1:URL}}"
+      }
+    },
+    {
+      "name": "fancyqr*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fancyqr*[${2:options%keyvals}]{${1:URL}}",
+        "keys": [
+          "\\fancyqr,\\fancyqrset,\\fancyqr*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fancyqrset",
+      "arg": {
+        "format": "{}",
+        "snippet": "fancyqrset{${1:options%keyvals}}",
+        "keys": [
+          "\\fancyqr,\\fancyqrset,\\fancyqr*",
+          "\\fancyqr,\\fancyqrset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "FancyQrDoNotPrintSquare",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FancyQrDoNotPrintSquare{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "FancyQrRoundCut"
+    },
+    {
+      "name": "FancyQrHardCut"
+    },
+    {
+      "name": "FancyQrLoad",
+      "arg": {
+        "format": "{}",
+        "snippet": "FancyQrLoad{${1:style-name%keyvals}}",
+        "keys": [
+          "\\FancyQrLoad"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "FancyQrLoadDefault"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\fancyqr,\\fancyqrset,\\fancyqr*": [
+      "image=${1:graphics code}",
+      "image padding=${1:number}",
+      "image x padding=${1:number}",
+      "image y padding=${1:number}",
+      "gradient",
+      "color=",
+      "l color=",
+      "left color=",
+      "r color=",
+      "right color=",
+      "gradient angle=${1:degrees}",
+      "random color=${1:colors}",
+      "width=",
+      "size=",
+      "height=",
+      "level=${1|L,M,Q,H|}",
+      "version=",
+      "tight",
+      "padding"
+    ],
+    "\\fancyqr,\\fancyqrset": [
+      "link",
+      "nolink"
+    ],
+    "\\FancyQrLoad": [
+      "flat",
+      "frame",
+      "blobs",
+      "glitch",
+      "dots",
+      "default"
+    ]
+  },
+  "args": []
+}

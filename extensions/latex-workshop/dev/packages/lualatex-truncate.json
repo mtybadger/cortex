@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "truncate"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "letltxmacro"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lualatex-truncate#c": [
+      "breakwords",
+      "breakall",
+      "hyphenate",
+      "fit"
+    ]
+  },
+  "args": [
+    "\\usepackage/lualatex-truncate#c"
+  ]
+}

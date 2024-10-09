@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "almendra"
+    },
+    {
+      "name": "almendrafamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/almendra#c": [
+      "scaled=${1:factor}",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/almendra#c"
+  ]
+}

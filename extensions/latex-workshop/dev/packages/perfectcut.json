@@ -1,0 +1,181 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "scalerel"
+    },
+    {
+      "name": "mathstyle",
+      "if": "mathstyle"
+    }
+  ],
+  "macros": [
+    {
+      "name": "perfectcut",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "perfectcut{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "perfectbra",
+      "arg": {
+        "format": "{}",
+        "snippet": "perfectbra{${1:arg}}"
+      }
+    },
+    {
+      "name": "perfectket",
+      "arg": {
+        "format": "{}",
+        "snippet": "perfectket{${1:arg}}"
+      }
+    },
+    {
+      "name": "perfectcase",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "perfectcase{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "perfectbrackets",
+      "arg": {
+        "format": "{}",
+        "snippet": "perfectbrackets{${1:arg}}"
+      }
+    },
+    {
+      "name": "perfectparens",
+      "arg": {
+        "format": "{}",
+        "snippet": "perfectparens{${1:arg}}"
+      }
+    },
+    {
+      "name": "perfectunary",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "perfectunary{${1:option%keyvals}}{${2:delim1}}{${3:delim2}}{${4:arg}}",
+        "keys": [
+          "\\perfectunary,\\perfectbinary"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "perfectbinary",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "perfectbinary{${1:option%keyvals}}{${2:delim1}}{${3:delim2}}{${4:delim3}}{${5:arg1}}{${6:arg2}}",
+        "keys": [
+          "\\perfectunary,\\perfectbinary"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cutbarskip",
+      "unusual": true
+    },
+    {
+      "name": "cutangleskip",
+      "unusual": true
+    },
+    {
+      "name": "cutangleouterskip",
+      "unusual": true
+    },
+    {
+      "name": "cutinterbarskip",
+      "unusual": true
+    },
+    {
+      "name": "nthleft",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthleft{${1:n}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "nthmiddle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthmiddle{${1:n}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "nthright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthright{${1:n}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "lenleft",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lenleft{${1:length}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "lenmiddle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lenmiddle{${1:length}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "lenright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lenright{${1:length}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "reallenleft",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "reallenleft{${1:length}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "reallenmiddle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "reallenmiddle{${1:length}}{${2:delim}}"
+      }
+    },
+    {
+      "name": "reallenright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "reallenright{${1:length}}{${2:delim}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/perfectcut#c": [
+      "nomathstyle",
+      "mathstyle",
+      "realVert",
+      "fixxits"
+    ],
+    "\\perfectunary,\\perfectbinary": [
+      "IncreaseHeight",
+      "CurrentHeight",
+      "CurrentHeightPlusOne"
+    ]
+  },
+  "args": [
+    "\\usepackage/perfectcut#c"
+  ]
+}

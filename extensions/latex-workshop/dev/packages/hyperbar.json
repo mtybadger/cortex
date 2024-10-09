@@ -1,0 +1,112 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BarcodeField",
+      "arg": {
+        "format": "{}",
+        "snippet": "BarcodeField{${1:label}}"
+      }
+    },
+    {
+      "name": "BarcodeField",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "BarcodeField[${2:options%keyvals}]{${1:label}}",
+        "keys": [
+          "\\BarcodeField"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "qBarcodeFld",
+      "unusual": true
+    },
+    {
+      "name": "DefaultOptionsofBarcode",
+      "unusual": true
+    },
+    {
+      "name": "LayoutBarcodeField",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "LayoutBarcodeField{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "MakeBarcodeField",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MakeBarcodeField{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\BarcodeField": [
+      "qr",
+      "datamatrix",
+      "pdf417",
+      "symwidth=",
+      "symfactor=${1|1,2,3,4|}",
+      "ecc=${1:integer}",
+      "tsv={${1:field1,field2,...}}",
+      "accesskey",
+      "align=${1|0,1,2|}",
+      "altname",
+      "backgroundcolor=",
+      "bordercolor=",
+      "bordersep=",
+      "borderwidth=",
+      "calculate",
+      "charsize=",
+      "checkboxsymbol",
+      "checked",
+      "color=",
+      "combo",
+      "default",
+      "disabled",
+      "format",
+      "height=",
+      "hidden",
+      "keystroke",
+      "mappingname",
+      "maxlen",
+      "menulength",
+      "multiline",
+      "name",
+      "onblur",
+      "onchange",
+      "onclick",
+      "ondbclick",
+      "onfocus",
+      "onkeydown",
+      "onkeypress",
+      "onkeyup",
+      "onmousedown",
+      "onmousemove",
+      "onmouseout",
+      "onmouseover",
+      "onmouseup",
+      "onselect",
+      "password",
+      "popdown",
+      "radio",
+      "radiosymbol",
+      "readonly",
+      "rotation",
+      "tabkey",
+      "validate",
+      "value",
+      "width="
+    ]
+  },
+  "args": []
+}

@@ -6,9 +6,10 @@
 import {
 	window, languages, Uri, Disposable, commands, QuickPickItem,
 	extensions, workspace, Extension, WorkspaceFolder, QuickPickItemKind,
-	ThemeIcon, TextDocument, LanguageStatusSeverity, l10n, DocumentSelector
+	ThemeIcon, TextDocument, LanguageStatusSeverity, l10n
 } from 'vscode';
 import { JSONLanguageStatus, JSONSchemaSettings } from './jsonClient';
+import { DocumentSelector } from 'vscode-languageclient';
 
 type ShowSchemasInput = {
 	schemas: string[];
@@ -197,7 +198,7 @@ export function createLanguageStatusItem(documentSelector: DocumentSelector, sta
 				statusItem.command = {
 					command: '_json.showAssociatedSchemaList',
 					title: l10n.t('Show Schemas'),
-					arguments: [{ schemas, uri: document.uri.toString() } satisfies ShowSchemasInput]
+					arguments: [{ schemas, uri: document.uri.toString() } as ShowSchemasInput]
 				};
 			} catch (e) {
 				statusItem.text = l10n.t('Unable to compute used schemas: {0}', e.message);

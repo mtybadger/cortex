@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "includexmp",
+      "arg": {
+        "format": "{}",
+        "snippet": "includexmp{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

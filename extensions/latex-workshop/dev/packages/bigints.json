@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bigint"
+    },
+    {
+      "name": "bigints"
+    },
+    {
+      "name": "bigintss"
+    },
+    {
+      "name": "bigintsss"
+    },
+    {
+      "name": "bigintssss"
+    },
+    {
+      "name": "bigoint"
+    },
+    {
+      "name": "bigoints"
+    },
+    {
+      "name": "bigointss"
+    },
+    {
+      "name": "bigointsss"
+    },
+    {
+      "name": "bigointssss"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

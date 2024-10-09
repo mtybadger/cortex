@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "athnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "athnum{${1:number}}"
+      }
+    },
+    {
+      "name": "greekfontencoding",
+      "unusual": true
+    },
+    {
+      "name": "ensuregreek",
+      "arg": {
+        "format": "{}",
+        "snippet": "ensuregreek{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,100 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BLACKJOKER"
+    },
+    {
+      "name": "blackjoker"
+    },
+    {
+      "name": "hmC"
+    },
+    {
+      "name": "hmD"
+    },
+    {
+      "name": "hmH"
+    },
+    {
+      "name": "hmS"
+    },
+    {
+      "name": "hmtcfont"
+    },
+    {
+      "name": "JOKER"
+    },
+    {
+      "name": "joker"
+    },
+    {
+      "name": "REDJOKER"
+    },
+    {
+      "name": "redjoker"
+    },
+    {
+      "name": "romanindex",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "romanindex{${1:number}}"
+      }
+    },
+    {
+      "name": "tarottrump",
+      "arg": {
+        "format": "{}",
+        "snippet": "tarottrump{${1:number}}"
+      }
+    },
+    {
+      "name": "trump",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "trump{${1:rank}}{${2:suit}}"
+      }
+    },
+    {
+      "name": "trumpblank",
+      "arg": {
+        "format": "{}",
+        "snippet": "trumpblank{${1:text}}"
+      }
+    },
+    {
+      "name": "trumpx",
+      "arg": {
+        "format": "{}",
+        "snippet": "trumpx{${1:rank}}"
+      }
+    },
+    {
+      "name": "unitrump",
+      "arg": {
+        "format": "{}",
+        "snippet": "unitrump{${1:<rank><${2:suit}>}}"
+      }
+    },
+    {
+      "name": "WHITEJOKER"
+    },
+    {
+      "name": "whitejoker"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

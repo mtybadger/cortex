@@ -1,0 +1,149 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "appdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "appdef{${1:command}}{${2:code}}"
+      }
+    },
+    {
+      "name": "botrule"
+    },
+    {
+      "name": "colrule"
+    },
+    {
+      "name": "doi",
+      "arg": {
+        "format": "{}",
+        "snippet": "doi{${1:DOI}}"
+      }
+    },
+    {
+      "name": "doibase",
+      "unusual": true
+    },
+    {
+      "name": "flushing"
+    },
+    {
+      "name": "frstrut",
+      "unusual": true
+    },
+    {
+      "name": "fullinterlineskip",
+      "unusual": true
+    },
+    {
+      "name": "gappdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gappdef{${1:command}}{${2:code}}"
+      }
+    },
+    {
+      "name": "href",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "href{${1:URL}}{${2:text%plain}}"
+      }
+    },
+    {
+      "name": "intertabularlinepenalty",
+      "unusual": true
+    },
+    {
+      "name": "loopuntil",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "loopuntil{${1:arg}}"
+      }
+    },
+    {
+      "name": "loopwhile",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "loopwhile{${1:arg}}"
+      }
+    },
+    {
+      "name": "lrstrut",
+      "unusual": true
+    },
+    {
+      "name": "oneapage",
+      "unusual": true
+    },
+    {
+      "name": "phantomsection",
+      "unusual": true
+    },
+    {
+      "name": "prepdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "prepdef{${1:command}}{${2:code}}"
+      }
+    },
+    {
+      "name": "say",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "say{${1:cmd}}"
+      }
+    },
+    {
+      "name": "saythe",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "saythe{${1:count}}"
+      }
+    },
+    {
+      "name": "tableftsep",
+      "unusual": true
+    },
+    {
+      "name": "tabmidsep",
+      "unusual": true
+    },
+    {
+      "name": "tabrightsep",
+      "unusual": true
+    },
+    {
+      "name": "toprule"
+    },
+    {
+      "name": "traceoutput",
+      "unusual": true
+    },
+    {
+      "name": "tracingplain",
+      "unusual": true
+    },
+    {
+      "name": "triggerpar",
+      "unusual": true
+    },
+    {
+      "name": "url",
+      "arg": {
+        "format": "{}",
+        "snippet": "url{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

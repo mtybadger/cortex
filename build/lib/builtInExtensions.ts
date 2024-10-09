@@ -15,6 +15,8 @@ import * as fancyLog from 'fancy-log';
 import * as ansiColors from 'ansi-colors';
 import { Stream } from 'stream';
 
+const mkdirp = require('mkdirp');
+
 export interface IExtensionDefinition {
 	name: string;
 	version: string;
@@ -68,9 +70,7 @@ function isUpToDate(extension: IExtensionDefinition): boolean {
 }
 
 function getExtensionDownloadStream(extension: IExtensionDefinition) {
-	const galleryServiceUrl = productjson.extensionsGallery?.serviceUrl;
-	return (galleryServiceUrl ? ext.fromMarketplace(galleryServiceUrl, extension) : ext.fromGithub(extension))
-		.pipe(rename(p => p.dirname = `${extension.name}/${p.dirname}`));
+	return ext.fromGithub(extension).pipe(rename(p => p.dirname = `${extension.name}/${p.dirname}`));
 }
 
 export function getExtensionStream(extension: IExtensionDefinition) {
@@ -145,7 +145,7 @@ function readControlFile(): IControlFile {
 }
 
 function writeControlFile(control: IControlFile): void {
-	fs.mkdirSync(path.dirname(controlFilePath), { recursive: true });
+	mkdirp.sync(path.dirname(controlFilePath));
 	fs.writeFileSync(controlFilePath, JSON.stringify(control, null, 2));
 }
 

@@ -1,0 +1,546 @@
+{
+  "deps": [
+    {
+      "name": "xetex"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "bidi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "textarab",
+      "arg": {
+        "format": "{}",
+        "snippet": "textarab{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textarab",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textarab[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textfarsi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfarsi{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textfarsi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textfarsi[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "texturdu",
+      "arg": {
+        "format": "{}",
+        "snippet": "texturdu{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "texturdu",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "texturdu[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textsindhi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsindhi{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textsindhi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textsindhi[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textpashto",
+      "arg": {
+        "format": "{}",
+        "snippet": "textpashto{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textpashto",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textpashto[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textottoman",
+      "arg": {
+        "format": "{}",
+        "snippet": "textottoman{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textottoman",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textottoman[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textkurdish",
+      "arg": {
+        "format": "{}",
+        "snippet": "textkurdish{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textkurdish",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textkurdish[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textkashmiri",
+      "arg": {
+        "format": "{}",
+        "snippet": "textkashmiri{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textkashmiri",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textkashmiri[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textmalay",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmalay{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textmalay",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textmalay[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textuighur",
+      "arg": {
+        "format": "{}",
+        "snippet": "textuighur{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textuighur",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textuighur[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textmaghribi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmaghribi{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textmaghribi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textmaghribi[${2:option%keyvals}]{${1:text%definition}}",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textLR",
+      "arg": {
+        "format": "{}",
+        "snippet": "textLR{${1:text}}"
+      }
+    },
+    {
+      "name": "aemph",
+      "arg": {
+        "format": "{}",
+        "snippet": "aemph{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "arabicfont"
+    },
+    {
+      "name": "SetTranslitConvention",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTranslitConvention{${1:type%keyvals}}",
+        "keys": [
+          "\\SetTranslitConvention#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetTranslitStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTranslitStyle{${1:style commands}}"
+      }
+    },
+    {
+      "name": "UC"
+    },
+    {
+      "name": "textarabic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textarabic{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textarabic",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textarabic[${2:option%keyvals}]{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textjawi",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textjawi{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textjawi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textjawi[${2:option%keyvals}]{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textpersian",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textpersian{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textpersian",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textpersian[${2:option%keyvals}]{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textturk",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textturk{${1:text%definition}}"
+      }
+    },
+    {
+      "name": "textturk",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textturk[${2:option%keyvals}]{${1:text%definition}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "arab"
+    },
+    {
+      "name": "arab",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "farsi"
+    },
+    {
+      "name": "farsi",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "urdu"
+    },
+    {
+      "name": "urdu",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sindhi"
+    },
+    {
+      "name": "sindhi",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pashto"
+    },
+    {
+      "name": "pashto",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ottoman"
+    },
+    {
+      "name": "ottoman",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "kurdish"
+    },
+    {
+      "name": "kurdish",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "kashmiri"
+    },
+    {
+      "name": "kashmiri",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "malay"
+    },
+    {
+      "name": "malay",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "uighur"
+    },
+    {
+      "name": "uighur",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "maghribi"
+    },
+    {
+      "name": "maghribi",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Arabic",
+      "unusual": true
+    },
+    {
+      "name": "Arabic",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option}]"
+      }
+    },
+    {
+      "name": "jawi",
+      "unusual": true
+    },
+    {
+      "name": "jawi",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option}]"
+      }
+    },
+    {
+      "name": "persion",
+      "unusual": true
+    },
+    {
+      "name": "persion",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option}]"
+      }
+    },
+    {
+      "name": "turk",
+      "unusual": true
+    },
+    {
+      "name": "turk",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/arabxetex#c": [
+      "fullvoc",
+      "voc",
+      "novoc",
+      "trans",
+      "utf",
+      "mirrorpunct"
+    ],
+    "\\textarab,\\textfarsi,\\texturdu,\\textsindhi,\\textpashto,\\textottoman,\\textkurdish,\\textkashmiri,\\textmalay,\\textuighur,\\textmaghribi,\\begin{arab},\\begin{farsi},\\begin{urdu},\\begin{sindhi},\\begin{pashto},\\begin{ottoman},\\begin{kurdish},\\begin{kashmiri},\\begin{malay},\\begin{uighur},\\begin{maghribi}": [
+      "novoc",
+      "voc",
+      "fullvoc",
+      "trans",
+      "utf"
+    ],
+    "\\SetTranslitConvention#c": [
+      "dmg",
+      "loc"
+    ]
+  },
+  "args": [
+    "\\usepackage/arabxetex#c"
+  ]
+}

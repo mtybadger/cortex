@@ -1,0 +1,132 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "spheresystem",
+      "arg": {
+        "format": "{}",
+        "snippet": "spheresystem{${1:integer}}"
+      }
+    },
+    {
+      "name": "spheresystem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spheresystem[${2:options}]{${1:integer}}"
+      }
+    },
+    {
+      "name": "spherelayer",
+      "arg": {
+        "format": "{}",
+        "snippet": "spherelayer{${1:integer}}"
+      }
+    },
+    {
+      "name": "spherelayer",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spherelayer[${2:options}]{${1:integer}}"
+      }
+    },
+    {
+      "name": "spherefill",
+      "arg": {
+        "format": "{}",
+        "snippet": "spherefill{${1:integer}}"
+      }
+    },
+    {
+      "name": "spherefill",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spherefill[${2:options}]{${1:integer}}"
+      }
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "proposition{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "proposition[${5:options}]{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "propositionintersect",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "propositionintersect{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "propositionintersect",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "propositionintersect[${5:options}]{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "spherepos",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "spherepos{${1:angle}}{${2:integer}}{${3:TikZ code}}"
+      }
+    },
+    {
+      "name": "spherepos",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "spherepos[${4:options}]{${1:angle}}{${2:integer}}{${3:TikZ code}}"
+      }
+    },
+    {
+      "name": "sphereintersect",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sphereintersect{${1:integer}}{${2:TikZ code}}"
+      }
+    },
+    {
+      "name": "sphereintersect",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "sphereintersect[${3:options}]{${1:integer}}{${2:TikZ code}}"
+      }
+    },
+    {
+      "name": "propositionplot",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "propositionplot{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "propositionplot",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "propositionplot[${5:options}]{${1:angle}}{${2:integer}}{${3:width}}{${4:length}}"
+      }
+    },
+    {
+      "name": "sphereplot",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sphereplot{${1:integer}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

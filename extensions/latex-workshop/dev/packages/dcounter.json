@@ -1,0 +1,36 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DeclareDynamicCounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareDynamicCounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "countstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "countstyle{${1:counter}}"
+      }
+    },
+    {
+      "name": "countstyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "countstyle[${2:list of counters}]{${1:counter}}"
+      }
+    },
+    {
+      "name": "DynamicCount",
+      "arg": {
+        "format": "{}",
+        "snippet": "DynamicCount{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

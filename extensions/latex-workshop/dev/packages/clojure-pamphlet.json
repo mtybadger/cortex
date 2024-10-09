@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "getchunk",
+      "arg": {
+        "format": "{}",
+        "snippet": "getchunk{${1:name}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "chunk",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

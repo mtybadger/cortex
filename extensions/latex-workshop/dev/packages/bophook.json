@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "PageLayout",
+      "arg": {
+        "format": "{}",
+        "snippet": "PageLayout{${1:code}}"
+      }
+    },
+    {
+      "name": "AtBeginPage",
+      "arg": {
+        "format": "{}",
+        "snippet": "AtBeginPage{${1:code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

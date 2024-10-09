@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "pgffor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\foreach#c": [
+      "xparser={${1:arg spec}}{${2:foreach value}}",
+      "xparser Om",
+      "no separator",
+      "normal list"
+    ]
+  },
+  "args": []
+}

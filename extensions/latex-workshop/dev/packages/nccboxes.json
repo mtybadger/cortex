@@ -1,0 +1,155 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "jhbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "jhbox{${1:prototype}}{${2:text}}"
+      }
+    },
+    {
+      "name": "jhbox",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "jhbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}",
+        "keys": [
+          "\\jhbox"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "jvbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "jvbox{${1:prototype}}{${2:text}}"
+      }
+    },
+    {
+      "name": "jvbox",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "jvbox{${1:prototype}}[${3:pos%keyvals}]{${2:text}}",
+        "keys": [
+          "\\jvbox,\\jparbox"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "jparbox",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "jparbox{${1:prototype}}{${2:text}}{${3:width}}"
+      }
+    },
+    {
+      "name": "jparbox",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "jparbox{${1:prototype}}[${4:pos%keyvals}]{${2:width}}{${3:text}}",
+        "keys": [
+          "\\jvbox,\\jparbox"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "addbox",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "addbox{${1:height-adjust%l}}{${2:depth-adjust%l}}{${3:text}}"
+      }
+    },
+    {
+      "name": "pbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "pbox{${1:body%text}}"
+      }
+    },
+    {
+      "name": "pbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pbox[${2:pos}]{${1:body%text}}"
+      }
+    },
+    {
+      "name": "picbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "picbox{${1:picture code}}"
+      }
+    },
+    {
+      "name": "Strutletter"
+    },
+    {
+      "name": "tstrut"
+    },
+    {
+      "name": "bstrut"
+    },
+    {
+      "name": "tbstrut"
+    },
+    {
+      "name": "Strutstretch"
+    },
+    {
+      "name": "cbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "cbox{${1:body%text}}"
+      }
+    },
+    {
+      "name": "cbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cbox[${2:pos}]{${1:body%text}}"
+      }
+    },
+    {
+      "name": "cbox*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cbox*{${1:body%text}}"
+      }
+    },
+    {
+      "name": "cbox*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cbox*[${2:pos}]{${1:body%text}}"
+      }
+    },
+    {
+      "name": "cboxstyle"
+    },
+    {
+      "name": "tc",
+      "arg": {
+        "format": "{}",
+        "snippet": "tc{${1:field%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\jhbox": [
+      "l",
+      "c",
+      "r",
+      "s"
+    ],
+    "\\jvbox,\\jparbox": [
+      "t",
+      "c",
+      "b"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,64 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "infwarerr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "engord",
+      "arg": {
+        "format": "{}",
+        "snippet": "engord{${1:counter}}"
+      }
+    },
+    {
+      "name": "engordnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "engordnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "engordletters",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "engordletters{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "engorderror",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "engorderror{${1:number}}"
+      }
+    },
+    {
+      "name": "ifengordraise",
+      "unusual": true
+    },
+    {
+      "name": "engordraisetrue",
+      "unusual": true
+    },
+    {
+      "name": "engordraisefalse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/engord#c": [
+      "normal",
+      "raise"
+    ]
+  },
+  "args": [
+    "\\usepackage/engord#c"
+  ]
+}

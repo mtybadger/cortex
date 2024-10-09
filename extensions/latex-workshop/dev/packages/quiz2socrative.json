@@ -1,0 +1,302 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfmath"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "moresize"
+    },
+    {
+      "name": "listofitems"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryshapes.misc"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibraryfit"
+    }
+  ],
+  "macros": [
+    {
+      "name": "socrativeMC",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "socrativeMC{${1:testo della domanda%text}}{${2:lista delle risposte%text}}"
+      }
+    },
+    {
+      "name": "socrativeMC",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "socrativeMC{${1:testo della domanda%text}}{${2:lista delle risposte%text}}[${3:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeMC",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "socrativeMC[${3:larghezza%l}]{${1:testo della domanda%text}}{${2:lista delle risposte%text}}"
+      }
+    },
+    {
+      "name": "socrativeMC",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "socrativeMC[${3:larghezza%l}]{${1:testo della domanda%text}}{${2:lista delle risposte%text}}[${4:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeTwoMC",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "socrativeTwoMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}"
+      }
+    },
+    {
+      "name": "socrativeTwoMC",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "socrativeTwoMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}[${4:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeTwoMC",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "socrativeTwoMC[${4:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}"
+      }
+    },
+    {
+      "name": "socrativeTwoMC",
+      "arg": {
+        "format": "[]{}{}{}[]",
+        "snippet": "socrativeTwoMC[${4:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}[${5:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeThreeMC",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "socrativeThreeMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}"
+      }
+    },
+    {
+      "name": "socrativeThreeMC",
+      "arg": {
+        "format": "{}{}{}{}[]",
+        "snippet": "socrativeThreeMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}[${5:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeThreeMC",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "socrativeThreeMC[${5:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}"
+      }
+    },
+    {
+      "name": "socrativeThreeMC",
+      "arg": {
+        "format": "[]{}{}{}{}[]",
+        "snippet": "socrativeThreeMC[${5:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}[${6:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeFourMC",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "socrativeFourMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}"
+      }
+    },
+    {
+      "name": "socrativeFourMC",
+      "arg": {
+        "format": "{}{}{}{}{}[]",
+        "snippet": "socrativeFourMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}[${6:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeFourMC",
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "socrativeFourMC[${6:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}"
+      }
+    },
+    {
+      "name": "socrativeFourMC",
+      "arg": {
+        "format": "[]{}{}{}{}{}[]",
+        "snippet": "socrativeFourMC[${6:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}[${7:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeFiveMC",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "socrativeFiveMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}{${6:risposta5%text}}"
+      }
+    },
+    {
+      "name": "socrativeFiveMC",
+      "arg": {
+        "format": "{}{}{}{}{}{}[]",
+        "snippet": "socrativeFiveMC{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}{${6:risposta5%text}}[${7:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeFiveMC",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}",
+        "snippet": "socrativeFiveMC[${7:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}{${6:risposta5%text}}"
+      }
+    },
+    {
+      "name": "socrativeFiveMC",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}[]",
+        "snippet": "socrativeFiveMC[${7:larghezza%l}]{${1:testo della domanda%text}}{${2:risposta1%text}}{${3:risposta2%text}}{${4:risposta3%text}}{${5:risposta4%text}}{${6:risposta5%text}}[${8:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeTF",
+      "arg": {
+        "format": "{}",
+        "snippet": "socrativeTF{${1:testo della domanda%text}}"
+      }
+    },
+    {
+      "name": "socrativeTF",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "socrativeTF{${1:testo della domanda%text}}[${2:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeTF",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "socrativeTF[${2:larghezza%l}]{${1:testo della domanda%text}}"
+      }
+    },
+    {
+      "name": "socrativeTF",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "socrativeTF[${2:larghezza%l}]{${1:testo della domanda%text}}[${3:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeSA",
+      "arg": {
+        "format": "{}",
+        "snippet": "socrativeSA{${1:testo della domanda%text}}"
+      }
+    },
+    {
+      "name": "socrativeSA",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "socrativeSA{${1:testo della domanda%text}}[${2:soluzione%text}]"
+      }
+    },
+    {
+      "name": "socrativeSA",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "socrativeSA[${2:larghezza%l}]{${1:testo della domanda%text}}"
+      }
+    },
+    {
+      "name": "socrativeSA",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "socrativeSA[${2:larghezza%l}]{${1:testo della domanda%text}}[${3:soluzione%text}]"
+      }
+    },
+    {
+      "name": "hideBorder"
+    },
+    {
+      "name": "showBorder"
+    },
+    {
+      "name": "showSolution"
+    },
+    {
+      "name": "hideSolution"
+    },
+    {
+      "name": "useNumbers",
+      "unusual": true
+    },
+    {
+      "name": "useLetters",
+      "unusual": true
+    },
+    {
+      "name": "useEnglish",
+      "unusual": true
+    },
+    {
+      "name": "useItalian",
+      "unusual": true
+    },
+    {
+      "name": "usePdf",
+      "unusual": true
+    },
+    {
+      "name": "useSocrative",
+      "unusual": true
+    },
+    {
+      "name": "therispostaCorrente",
+      "unusual": true
+    },
+    {
+      "name": "therispostaGiusta",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/quiz2socrative#c": [
+      "pdfQuiz",
+      "socrativeQuiz",
+      "numbers",
+      "letters",
+      "italian",
+      "english"
+    ]
+  },
+  "args": [
+    "\\usepackage/quiz2socrative#c"
+  ]
+}

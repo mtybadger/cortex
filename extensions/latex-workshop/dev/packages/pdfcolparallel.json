@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "parallel"
+    },
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "pdfcol"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pdfcolparallel#c": [
+      "Verbose",
+      "OldStyleNums",
+      "RaiseNums",
+      "ItalicNums",
+      "RomanNums",
+      "SeparatedFootnotes"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfcolparallel#c"
+  ]
+}

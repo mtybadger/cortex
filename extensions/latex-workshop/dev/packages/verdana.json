@@ -1,0 +1,13 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/verdana#c": [
+      "nofligs"
+    ]
+  },
+  "args": [
+    "\\usepackage/verdana#c"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sectiondot",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectiondot{${1:level}}"
+      }
+    },
+    {
+      "name": "sectionpunct",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sectionpunct{${1:level}}{${2:punctuation}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,87 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "antani"
+    },
+    {
+      "name": "antani",
+      "arg": {
+        "format": "[]",
+        "snippet": "antani[${1:num}]"
+      }
+    },
+    {
+      "name": "antani",
+      "arg": {
+        "format": "[][]",
+        "snippet": "antani[${1:num}][${2:num}]"
+      }
+    },
+    {
+      "name": "antani",
+      "arg": {
+        "format": "[]",
+        "snippet": "antani[${1:num-num}]"
+      }
+    },
+    {
+      "name": "antani",
+      "arg": {
+        "format": "[][]",
+        "snippet": "antani[${1:num-num}][${2:num-num}]"
+      }
+    },
+    {
+      "name": "antani*"
+    },
+    {
+      "name": "antani*",
+      "arg": {
+        "format": "[]",
+        "snippet": "antani*[${1:num}]"
+      }
+    },
+    {
+      "name": "antani*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "antani*[${1:num}][${2:num}]"
+      }
+    },
+    {
+      "name": "antani*",
+      "arg": {
+        "format": "[]",
+        "snippet": "antani*[${1:num-num}]"
+      }
+    },
+    {
+      "name": "antani*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "antani*[${1:num-num}][${2:num-num}]"
+      }
+    },
+    {
+      "name": "antanidef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "antanidef{${1:cmd}}{${2:num}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/antanilipsum#c": [
+      "par",
+      "nopar",
+      "numbers",
+      "index"
+    ]
+  },
+  "args": [
+    "\\usepackage/antanilipsum#c"
+  ]
+}

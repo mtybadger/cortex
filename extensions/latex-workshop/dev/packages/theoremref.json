@@ -1,0 +1,36 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "thlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "thlabel{${1:key}}"
+      }
+    },
+    {
+      "name": "thref",
+      "arg": {
+        "format": "{}",
+        "snippet": "thref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "thnameref",
+      "arg": {
+        "format": "{}",
+        "snippet": "thnameref{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/theoremref#c": [
+      "lowercase",
+      "reftex"
+    ]
+  },
+  "args": [
+    "\\usepackage/theoremref#c"
+  ]
+}

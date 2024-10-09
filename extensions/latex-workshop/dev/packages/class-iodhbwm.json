@@ -1,0 +1,501 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "scrlfile"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "class-scrreprt"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "lmodern"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "scrhack"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarymost"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "scrlayer-scrpage"
+    },
+    {
+      "name": "siunitx"
+    },
+    {
+      "name": "cleveref"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "auxhook"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "iodhbwm-templates",
+      "if": "load-dhbw-templates"
+    },
+    {
+      "name": "iodhbwm-templates",
+      "if": "load-dhbw-templates=true"
+    },
+    {
+      "name": "biblatex",
+      "if": "add-bibliography"
+    },
+    {
+      "name": "biblatex",
+      "if": "add-bibliography=true"
+    },
+    {
+      "name": "biblatex",
+      "if": "add-bibliography-"
+    },
+    {
+      "name": "blindtext",
+      "if": "debug"
+    },
+    {
+      "name": "lipsum",
+      "if": "debug"
+    },
+    {
+      "name": "blindtext",
+      "if": "debug=true"
+    },
+    {
+      "name": "lipsum",
+      "if": "debug=true"
+    },
+    {
+      "name": "colortbl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "captionsenglish",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "if": "language=english",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "if": "mainlanguage=english",
+      "unusual": true
+    },
+    {
+      "name": "captionsngerman",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "datengerman",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "extrasngerman",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "noextrasngerman",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "dq",
+      "if": "language=ngerman"
+    },
+    {
+      "name": "ntosstrue",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "ntossfalse",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "mdqon",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "mdqoff",
+      "if": "language=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "captionsngerman",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "datengerman",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "extrasngerman",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "noextrasngerman",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "dq",
+      "if": "mainlanguage=ngerman"
+    },
+    {
+      "name": "ntosstrue",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "ntossfalse",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "mdqon",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    },
+    {
+      "name": "mdqoff",
+      "if": "mainlanguage=ngerman",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/iodhbwm#c": [
+      "load-preamble",
+      "load-dhbw-templates",
+      "add-tocs-to-toc",
+      "language=${1:language}",
+      "mainlanguage=${1:language}",
+      "print-",
+      "print",
+      "auto-intro-pages=${1|none,custom,default,all|}",
+      "add-bibliography",
+      "add-bibliography-",
+      "bib-file=${1:bib file}",
+      "biblatex/style=${1:style}",
+      "biblatex/bibstyle=${1:bibstyle}",
+      "biblatex/citestyle=${1:citestyle}",
+      "debug"
+    ]
+  },
+  "args": [
+    "\\documentclass/iodhbwm#c"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "perispwmeni",
+      "unusual": true
+    },
+    {
+      "name": "tildeOFF"
+    },
+    {
+      "name": "tildeON"
+    },
+    {
+      "name": "loy"
+    },
+    {
+      "name": "Coy"
+    },
+    {
+      "name": "coy"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": ""
+    }
+  ],
+  "envs": [
+    {
+      "name": "greektonoi"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

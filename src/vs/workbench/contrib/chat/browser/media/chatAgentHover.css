@@ -44,8 +44,6 @@
 
 .chat-agent-hover.verifiedPublisher .extension-verified-publisher {
 	display: flex;
-	align-items: start;
-	margin-top: 1px;
 }
 
 .chat-agent-hover .chat-agent-hover-warning .codicon {

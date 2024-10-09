@@ -1,0 +1,824 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "translations"
+    },
+    {
+      "name": "fontspec",
+      "if": "musejazz"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "useleadsheetslibraries",
+      "arg": {
+        "format": "{}",
+        "snippet": "useleadsheetslibraries{${1:list of libraries%keyvals}}",
+        "keys": [
+          "\\useleadsheetslibraries#c,\\useleadsheetslibrary#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "useleadsheetslibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "useleadsheetslibrary{${1:library%keyvals}}",
+        "keys": [
+          "\\useleadsheetslibraries#c,\\useleadsheetslibrary#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "musix",
+      "unusual": true
+    },
+    {
+      "name": "textmusix",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textmusix{${1:text}}"
+      }
+    },
+    {
+      "name": "musicsymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "musicsymbol{${1:symbol}}"
+      }
+    },
+    {
+      "name": "musicsymbol",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "musicsymbol[${2:raise%l}]{${1:symbol}}"
+      }
+    },
+    {
+      "name": "sharp",
+      "detail": "♯",
+      "doc": "\\# (oz), music sharp sign, infix bag count"
+    },
+    {
+      "name": "flat",
+      "detail": "♭",
+      "doc": "Musical flat"
+    },
+    {
+      "name": "doublesharp"
+    },
+    {
+      "name": "doubleflat"
+    },
+    {
+      "name": "natural",
+      "detail": "♮",
+      "doc": "Music natural"
+    },
+    {
+      "name": "trebleclef"
+    },
+    {
+      "name": "bassclef"
+    },
+    {
+      "name": "altoclef"
+    },
+    {
+      "name": "allabreve"
+    },
+    {
+      "name": "meterC"
+    },
+    {
+      "name": "wholerest"
+    },
+    {
+      "name": "halfrest"
+    },
+    {
+      "name": "quarterrest"
+    },
+    {
+      "name": "eighthrest"
+    },
+    {
+      "name": "sixteenthrest"
+    },
+    {
+      "name": "Break"
+    },
+    {
+      "name": "normalbar"
+    },
+    {
+      "name": "leftrepeat"
+    },
+    {
+      "name": "rightrepeat"
+    },
+    {
+      "name": "leftrightrepeat"
+    },
+    {
+      "name": "doublebar"
+    },
+    {
+      "name": "stopbar"
+    },
+    {
+      "name": "normalbarwidth",
+      "unusual": true
+    },
+    {
+      "name": "thickbarwidth",
+      "unusual": true
+    },
+    {
+      "name": "interbarwidth",
+      "unusual": true
+    },
+    {
+      "name": "meter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "meter{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "chordname",
+      "arg": {
+        "format": "{}",
+        "snippet": "chordname{${1:chord}}"
+      }
+    },
+    {
+      "name": "writechord",
+      "arg": {
+        "format": "{}",
+        "snippet": "writechord{${1:chord}}"
+      }
+    },
+    {
+      "name": "setchords",
+      "arg": {
+        "format": "{}",
+        "snippet": "setchords{${1:options%keyvals}}",
+        "keys": [
+          "\\setchords"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "musejazz",
+      "unusual": true
+    },
+    {
+      "name": "setleadsheets",
+      "arg": {
+        "format": "{}",
+        "snippet": "setleadsheets{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{song},\\setleadsheets"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "capo"
+    },
+    {
+      "name": "newversetype",
+      "arg": {
+        "format": "{}",
+        "snippet": "newversetype{${1:envname}}"
+      }
+    },
+    {
+      "name": "newversetype",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "newversetype{${1:envname}}[${2:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "newversetype*",
+      "arg": {
+        "format": "{}",
+        "snippet": "newversetype*{${1:envname}}"
+      }
+    },
+    {
+      "name": "newversetype*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "newversetype*{${1:envname}}[${2:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "provideversetype",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "provideversetype{${1:envname}}"
+      }
+    },
+    {
+      "name": "provideversetype",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "provideversetype{${1:envname}}[${2:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "provideversetype*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "provideversetype*{${1:envname}}"
+      }
+    },
+    {
+      "name": "provideversetype*",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "provideversetype*{${1:envname}}[${2:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "chord",
+      "arg": {
+        "format": "{}",
+        "snippet": "chord{${1:chord}}"
+      }
+    },
+    {
+      "name": "chord*",
+      "arg": {
+        "format": "{}",
+        "snippet": "chord*{${1:chord}}"
+      }
+    },
+    {
+      "name": "definesongtitletemplate",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definesongtitletemplate{${1:name}}{${2:code}}"
+      }
+    },
+    {
+      "name": "definesongproperty",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "definesongproperty{${1:property}}"
+      }
+    },
+    {
+      "name": "copysongproperty",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "copysongproperty{${1:from}}{${2:to}}"
+      }
+    },
+    {
+      "name": "songproperty",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "songproperty{${1:property}}"
+      }
+    },
+    {
+      "name": "printsongpropertylist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "printsongpropertylist{${1:property}}{${2:between two}}{${3:between more}}{${4:between last two}}"
+      }
+    },
+    {
+      "name": "printsongpropertylist",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "printsongpropertylist[${5:code}]{${1:property}}{${2:between two}}{${3:between more}}{${4:between last two}}"
+      }
+    },
+    {
+      "name": "usesongpropertylist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "usesongpropertylist{${1:property}}{${2:between}}"
+      }
+    },
+    {
+      "name": "usesongpropertylist",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "usesongpropertylist[${3:code}]{${1:property}}{${2:between}}"
+      }
+    },
+    {
+      "name": "forsongpropertylist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "forsongpropertylist{${1:property}}{${2:code}}"
+      }
+    },
+    {
+      "name": "ifsongproperty",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifsongproperty{${1:property}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifanysongproperty",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifanysongproperty{${1:properties}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifallsongproperties",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifallsongproperties{${1:properties}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifsongpropertiesequal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifsongpropertiesequal{${1:property1}}{${2:property2}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "ifsongpropertyequal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifsongpropertyequal{${1:property1}}{${2:property2}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "ifsongmeasuring",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifsongmeasuring{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "expandcode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "expandcode{${1:code}}"
+      }
+    },
+    {
+      "name": "defineversetypetemplate",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defineversetypetemplate{${1:name}}{${2:begin code}}{${3:end code}}"
+      }
+    },
+    {
+      "name": "verselabel",
+      "unusual": true
+    },
+    {
+      "name": "verselabelformat",
+      "unusual": true
+    },
+    {
+      "name": "verseafterlabel",
+      "unusual": true
+    },
+    {
+      "name": "versename",
+      "unusual": true
+    },
+    {
+      "name": "versenumber",
+      "unusual": true
+    },
+    {
+      "name": "ifversestarred",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifversestarred{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "ifversenumbered",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifversenumbered{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "ifversenamed",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifversenamed{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "ifobeylines",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifobeylines{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "includeleadsheet",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeleadsheet{${1:file}}"
+      }
+    },
+    {
+      "name": "includeleadsheet",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includeleadsheet[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\includeleadsheet,\\includeleadsheet*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "includeleadsheet*",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeleadsheet*{${1:file}}"
+      }
+    },
+    {
+      "name": "includeleadsheet*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includeleadsheet*[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\includeleadsheet,\\includeleadsheet*"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "song",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:properties}}"
+      }
+    },
+    {
+      "name": "song",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:properties}}",
+        "keys": [
+          "\\begin{song},\\setleadsheets"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "verse"
+    },
+    {
+      "name": "verse",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*",
+          "\\begin{verse}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "verse*"
+    },
+    {
+      "name": "verse*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "chorus"
+    },
+    {
+      "name": "chorus",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "chorus*"
+    },
+    {
+      "name": "chorus*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "intro"
+    },
+    {
+      "name": "intro",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "intro*"
+    },
+    {
+      "name": "intro*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "outro"
+    },
+    {
+      "name": "outro",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "interlude"
+    },
+    {
+      "name": "interlude",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bridge"
+    },
+    {
+      "name": "bridge",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "info"
+    },
+    {
+      "name": "info",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solo"
+    },
+    {
+      "name": "solo",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solo*"
+    },
+    {
+      "name": "solo*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/leadsheets#c": [
+      "full",
+      "minimal",
+      "musicsymbols",
+      "chords",
+      "musejazz",
+      "songs",
+      "external"
+    ],
+    "\\useleadsheetslibraries#c,\\useleadsheetslibrary#c": [
+      "musicsymbols",
+      "chords",
+      "musejazz",
+      "songs",
+      "external"
+    ],
+    "\\setchords": [
+      "format={${1:code}}",
+      "sharp={${1:code}}",
+      "flat={${1:code}}",
+      "double-sharp={${1:code}}",
+      "double-flat={${1:code}}",
+      "aug={${1:code}}",
+      "half-dim={${1:code}}",
+      "full-dim={${1:code}}",
+      "dim={${1:code}}",
+      "add={${1:code}}",
+      "sus={${1:code}}",
+      "major={${1:code}}",
+      "minor={${1:code}}",
+      "major-seven={${1:code}}",
+      "major-nine={${1:code}}",
+      "input-notation=${1|german,english|}",
+      "output-notation=${1|german,english|}",
+      "german-B={${1:code}}",
+      "german-H={${1:code}}"
+    ],
+    "\\begin{song},\\setleadsheets": [
+      "title-template=${1:template name}",
+      "chord-cs=${1:command}",
+      "song-format={${1:code}}",
+      "text-format={${1:code}}",
+      "before-song={${1:code}}",
+      "after-song={${1:code}}",
+      "after-title={${1:code}}",
+      "print-tags={${1:list of tags}}",
+      "add-to-reset={${1:list of counters}}",
+      "obey-lines",
+      "bar-shortcuts",
+      "disable-measuring",
+      "capo-nr-format=${1|arabic,roman,Roman|}",
+      "capo-nr={${1:code}}",
+      "smash-chords",
+      "smash-next-chord",
+      "empty-chord-dim=",
+      "align-chords=${1:col}",
+      "print-chords",
+      "remember-chords",
+      "transpose=${1:number}",
+      "enharmonic=${1|sharp,flat|}",
+      "transpose-capo",
+      "verses-format={${1:code}}",
+      "verses-label-format={${1:code}}",
+      "verses-after-label={${1:code}}",
+      "chords/format={${1:code}}",
+      "chords/sharp={${1:code}}",
+      "chords/flat={${1:code}}",
+      "chords/double-sharp={${1:code}}",
+      "chords/double-flat={${1:code}}",
+      "chords/aug={${1:code}}",
+      "chords/half-dim={${1:code}}",
+      "chords/full-dim={${1:code}}",
+      "chords/dim={${1:code}}",
+      "chords/add={${1:code}}",
+      "chords/sus={${1:code}}",
+      "chords/major={${1:code}}",
+      "chords/minor={${1:code}}",
+      "chords/major-seven={${1:code}}",
+      "chords/major-nine={${1:code}}",
+      "chords/input-notation=${1|german,english|}",
+      "chords/output-notation=${1|german,english|}",
+      "chords/german-B={${1:code}}",
+      "chords/german-H={${1:code}}",
+      "verse/format={${1:code}}",
+      "verse/label-format={${1:code}}",
+      "verse/class={${1:class name}}",
+      "verse/after-label={${1:code}}",
+      "verse/name=${1:name}",
+      "verse/template=${1:template}",
+      "verse/numbered",
+      "verse/named",
+      "verse/recall-chords={${1:env-class}}"
+    ],
+    "\\begin{verse},\\begin{verse*},\\begin{chorus},\\begin{chorus*},\\begin{intro},\\begin{intro*},\\begin{outro},\\begin{interlude},\\begin{bridge},\\begin{info},\\begin{solo},\\begin{solo*},\\newversetype,\\newversetype*,\\provideversetype,\\provideversetype*": [
+      "format={${1:code}}",
+      "label-format={${1:code}}",
+      "class={${1:class name}}",
+      "after-label={${1:code}}",
+      "name=${1:name}",
+      "template=${1:template}",
+      "numbered",
+      "named",
+      "recall-chords={${1:env-class}}"
+    ],
+    "\\begin{verse}": [
+      "type=${1:type}"
+    ],
+    "\\includeleadsheet,\\includeleadsheet*": [
+      "gobble-preamble"
+    ]
+  },
+  "args": [
+    "\\usepackage/leadsheets#c"
+  ]
+}

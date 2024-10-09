@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/DejaVuSerif#c": [
+      "scaled",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/DejaVuSerif#c"
+  ]
+}

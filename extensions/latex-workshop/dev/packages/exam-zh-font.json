@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "filehook"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bm",
+      "arg": {
+        "format": "{}",
+        "snippet": "bm{${1:arg}}"
+      }
+    },
+    {
+      "name": "square"
+    },
+    {
+      "name": "blacksquare"
+    },
+    {
+      "name": "checkmark",
+      "detail": "✓ (\"amsfonts\" command)",
+      "doc": "\\ballotcheck (arevmath), tick, check mark"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\examsetup,\\ExamPrintAnswerSet": [
+      "font=${1|newcm,lm,times,termes,stix,xits,libertinus,garamond,pala,none|}",
+      "math-font=${1|newcm,lm,termes,stix,xits,libertinus,cambria,garamond,pala,asana,none|}"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,203 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ipxmfamily"
+    },
+    {
+      "name": "ipxgfamily"
+    },
+    {
+      "name": "textipxm",
+      "arg": {
+        "format": "{}",
+        "snippet": "textipxm{${1:text}}"
+      }
+    },
+    {
+      "name": "textipxg",
+      "arg": {
+        "format": "{}",
+        "snippet": "textipxg{${1:text}}"
+      }
+    },
+    {
+      "name": "CJKipxmfamily"
+    },
+    {
+      "name": "CJKipxgfamily"
+    },
+    {
+      "name": "textCJKipxm",
+      "arg": {
+        "format": "{}",
+        "snippet": "textCJKipxm{${1:text}}"
+      }
+    },
+    {
+      "name": "textCJKipxg",
+      "arg": {
+        "format": "{}",
+        "snippet": "textCJKipxg{${1:text}}"
+      }
+    },
+    {
+      "name": "ipxmsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "ipxmsymbol{${1:Unicode point}}"
+      }
+    },
+    {
+      "name": "ipxgsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "ipxgsymbol{${1:Unicode point}}"
+      }
+    },
+    {
+      "name": "CJKUsymbol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CJKUsymbol{${1:CJK family}}{${2:Unicode point}}"
+      }
+    },
+    {
+      "name": "ipxmReferenceMark"
+    },
+    {
+      "name": "ipxmCommandKey"
+    },
+    {
+      "name": "ipxmReturnKey"
+    },
+    {
+      "name": "ipxmVisibleSpace"
+    },
+    {
+      "name": "ipxmvarSquare"
+    },
+    {
+      "name": "ipxmSquare"
+    },
+    {
+      "name": "ipxmvarTriangle"
+    },
+    {
+      "name": "ipxmTriangle"
+    },
+    {
+      "name": "ipxmvarTriangleDown"
+    },
+    {
+      "name": "ipxmTriangleDown"
+    },
+    {
+      "name": "ipxmvarLozenge"
+    },
+    {
+      "name": "ipxmLozenge"
+    },
+    {
+      "name": "ipxmCircle"
+    },
+    {
+      "name": "ipxmBullsEye"
+    },
+    {
+      "name": "ipxmvarCircle"
+    },
+    {
+      "name": "ipxmSun"
+    },
+    {
+      "name": "ipxmCloud"
+    },
+    {
+      "name": "ipxmUmbrella"
+    },
+    {
+      "name": "ipxmSnowman"
+    },
+    {
+      "name": "ipxmvarStar"
+    },
+    {
+      "name": "ipxmStar"
+    },
+    {
+      "name": "ipxmPhone"
+    },
+    {
+      "name": "ipxmGoteMark"
+    },
+    {
+      "name": "ipxmSenteMark"
+    },
+    {
+      "name": "ipxmRightHand"
+    },
+    {
+      "name": "ipxmSpade"
+    },
+    {
+      "name": "ipxmHeart"
+    },
+    {
+      "name": "ipxmDiamond"
+    },
+    {
+      "name": "ipxmClub"
+    },
+    {
+      "name": "ipxmvarSpade"
+    },
+    {
+      "name": "ipxmvarHeart"
+    },
+    {
+      "name": "ipxmvarDiamond"
+    },
+    {
+      "name": "ipxmvarClub"
+    },
+    {
+      "name": "ipxmvarSnowman"
+    },
+    {
+      "name": "ipxmBlackSnowman"
+    },
+    {
+      "name": "ipxmCheckmark"
+    },
+    {
+      "name": "ipxmPostalMark"
+    },
+    {
+      "name": "ipxmGeta"
+    },
+    {
+      "name": "ipxmPostal"
+    },
+    {
+      "name": "ipxmvarPostal"
+    },
+    {
+      "name": "ipxmvarPostalMark"
+    },
+    {
+      "name": "ipxmUta"
+    },
+    {
+      "name": "extendipaextypeI",
+      "unusual": true
+    },
+    {
+      "name": "noextendipaextypeI",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

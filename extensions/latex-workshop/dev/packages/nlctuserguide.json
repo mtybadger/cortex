@@ -1,0 +1,5687 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "fontawesome"
+    },
+    {
+      "name": "twemojis"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "upquote"
+    },
+    {
+      "name": "hologo"
+    },
+    {
+      "name": "varioref"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tcolorboxlibrarylistings"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "mfirstuc"
+    },
+    {
+      "name": "glossaries-extra"
+    },
+    {
+      "name": "attachfile"
+    },
+    {
+      "name": "xr-hyper",
+      "if": "xr"
+    },
+    {
+      "name": "glossaries-accsupp",
+      "if": "accsupp"
+    },
+    {
+      "name": "glossaries-prefix",
+      "if": "prefix"
+    },
+    {
+      "name": "glossaries-babel",
+      "if": "translate=babel"
+    },
+    {
+      "name": "glossaries-extra-bib2gls"
+    },
+    {
+      "name": "glossaries-extra-stylemods"
+    },
+    {
+      "name": "glossary-mcols"
+    },
+    {
+      "name": "glossary-bookindex"
+    },
+    {
+      "name": "glossary-topic"
+    },
+    {
+      "name": "glossary-longextra"
+    }
+  ],
+  "macros": [
+    {
+      "name": "printabbreviations",
+      "if": "abbreviations"
+    },
+    {
+      "name": "printabbreviations",
+      "if": "abbreviations",
+      "arg": {
+        "format": "[]",
+        "snippet": "printabbreviations[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printunsrtabbreviations",
+      "if": "abbreviations",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtabbreviations",
+      "if": "abbreviations",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtabbreviations[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "abbreviationsname",
+      "if": "abbreviations",
+      "unusual": true
+    },
+    {
+      "name": "glsshowaccsupp",
+      "if": "debug=showaccsupp",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsshowaccsupp{${1:options}}{${2:tag}}{${3:replacement text}}"
+      }
+    },
+    {
+      "name": "printnumbers",
+      "if": "numbers"
+    },
+    {
+      "name": "printnumbers",
+      "if": "numbers",
+      "arg": {
+        "format": "[]",
+        "snippet": "printnumbers[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "glsxtrnewnumber",
+      "if": "numbers",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsxtrnewnumber{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "glsxtrnewnumber",
+      "if": "numbers",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "glsxtrnewnumber[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "printunsrtnumbers",
+      "if": "numbers",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtnumbers",
+      "if": "numbers",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtnumbers[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "glsxtrpostdescnumber",
+      "if": "numbers",
+      "unusual": true
+    },
+    {
+      "name": "newterm",
+      "if": "index",
+      "arg": {
+        "format": "{}",
+        "snippet": "newterm{${1:term}}"
+      }
+    },
+    {
+      "name": "newterm",
+      "if": "index",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "newterm[${2:options%keyvals}]{${1:term}}"
+      }
+    },
+    {
+      "name": "printindex",
+      "if": "index"
+    },
+    {
+      "name": "printindex",
+      "if": "index",
+      "arg": {
+        "format": "[]",
+        "snippet": "printindex[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printunsrtindex",
+      "if": "index",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtindex",
+      "if": "index",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtindex[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "glsxtrpostdescindex",
+      "if": "index",
+      "unusual": true
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronym"
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronym",
+      "arg": {
+        "format": "[]",
+        "snippet": "printacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronym",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronym",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronym=true"
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronym=true",
+      "arg": {
+        "format": "[]",
+        "snippet": "printacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronym=true",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronym=true",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronyms"
+    },
+    {
+      "name": "printacronyms",
+      "if": "acronyms",
+      "arg": {
+        "format": "[]",
+        "snippet": "printacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronyms",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtacronyms",
+      "if": "acronyms",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtacronyms[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "newentry",
+      "if": "shortcuts=other",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newentry{${1:label}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=other",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=other",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=other",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newnum{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=other",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newnum[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newentry",
+      "if": "shortcuts=acother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newentry{${1:label}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=acother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=acother",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=acother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newnum{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=acother",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newnum[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newentry",
+      "if": "shortcuts=abother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newentry{${1:label}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=abother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=abother",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=abother",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newnum{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=abother",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newnum[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newentry",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newentry{${1:label}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newnum{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newnum[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newabbr{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=all",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newabbr[${4:options%keyvals}]{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newentry",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newentry{${1:label}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newnum{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newnum",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newnum[${3:options%keyvals}]{${1:label}}{${2:number}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newabbr{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=true",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newabbr[${4:options%keyvals}]{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=abbreviations",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newabbr{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=abbreviations",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newabbr[${4:options%keyvals}]{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=abbr",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newabbr{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "if": "shortcuts=abbr",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newabbr[${4:options%keyvals}]{${1:label}}{${2:short}}{${3:long}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyLanguage",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyLanguage",
+      "if": "xindy",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "GlsSetXdyLanguage[${2:glossary type}]{${1:language}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyCodePage",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyCodePage{${1:code}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyCounters",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyCounters{${1:counter list}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyAttribute",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyAttribute{${1:name}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyLocation",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddXdyLocation{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyLocation",
+      "if": "xindy",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "GlsAddXdyLocation[${3:prefix-location}]{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyLocationClassOrder",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyLocationClassOrder{${1:location names}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyMinRangeLength",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyMinRangeLength{${1:integer}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyFirstLetterAfterDigits",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyFirstLetterAfterDigits{${1:letter}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyNumberGroupOrder",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyNumberGroupOrder{${1:relative location}}"
+      }
+    },
+    {
+      "name": "GlsAddLetterGroup",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddLetterGroup{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "GlsAddSortRule",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddSortRule{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyAlphabet",
+      "if": "xindy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GlsAddXdyAlphabet{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "GlsAddXdyStyle",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsAddXdyStyle{${1:xindy style}}"
+      }
+    },
+    {
+      "name": "GlsSetXdyStyles",
+      "if": "xindy",
+      "arg": {
+        "format": "{}",
+        "snippet": "GlsSetXdyStyles{${1:xindy styles}}"
+      }
+    },
+    {
+      "name": "actext",
+      "arg": {
+        "format": "{}",
+        "snippet": "actext{${1:acronym}}"
+      }
+    },
+    {
+      "name": "aliasref",
+      "arg": {
+        "format": "{}",
+        "snippet": "aliasref{${1:label}}"
+      }
+    },
+    {
+      "name": "app",
+      "arg": {
+        "format": "{}",
+        "snippet": "app{${1:application}}"
+      }
+    },
+    {
+      "name": "app",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "app{${1:application}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "appdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "appdef{${1:application}}"
+      }
+    },
+    {
+      "name": "appfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "appfmt{${1:application}}"
+      }
+    },
+    {
+      "name": "apptext",
+      "arg": {
+        "format": "{}",
+        "snippet": "apptext{${1:application}}"
+      }
+    },
+    {
+      "name": "araracont"
+    },
+    {
+      "name": "araraline",
+      "arg": {
+        "format": "{}",
+        "snippet": "araraline{${1:arara code}}"
+      }
+    },
+    {
+      "name": "banned"
+    },
+    {
+      "name": "BibTeX"
+    },
+    {
+      "name": "blog",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "blog{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "booktitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "booktitle{${1:text}}"
+      }
+    },
+    {
+      "name": "cbeg",
+      "arg": {
+        "format": "{}",
+        "snippet": "cbeg{${1:envname}}"
+      }
+    },
+    {
+      "name": "cend",
+      "arg": {
+        "format": "{}",
+        "snippet": "cend{${1:envname}}"
+      }
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:class}}"
+      }
+    },
+    {
+      "name": "cls",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "cls{${1:class}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "clsfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsfmt{${1:class%plain}}"
+      }
+    },
+    {
+      "name": "clsoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsoptfmt{${1:class-option}}"
+      }
+    },
+    {
+      "name": "clstext",
+      "arg": {
+        "format": "{}",
+        "snippet": "clstext{${1:class}}"
+      }
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmddef*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cmddef*[${2:options%keyvals}]{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmddef*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmddef*{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmddef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cmddef[${2:options%keyvals}]{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmddef",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmddef{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmddefsyntax",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cmddefsyntax{${1:keyvals}}{${2:csname}}"
+      }
+    },
+    {
+      "name": "cmdmod",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmdmod{${1:arg}}"
+      }
+    },
+    {
+      "name": "cmdmod",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "cmdmod{${1:arg}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "code",
+      "arg": {
+        "format": "{}",
+        "snippet": "code{${1:code}}"
+      }
+    },
+    {
+      "name": "codebackslash"
+    },
+    {
+      "name": "codepar"
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "{}",
+        "snippet": "comment{${1:text}}"
+      }
+    },
+    {
+      "name": "common"
+    },
+    {
+      "name": "conditionsyntax"
+    },
+    {
+      "name": "conno"
+    },
+    {
+      "name": "conyes"
+    },
+    {
+      "name": "csfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "csfmt{${1:csname}}"
+      }
+    },
+    {
+      "name": "csmetafmt",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "csmetafmt{${1:cmd-prefix}}{${2:meta-text}}{${3:cmd-suffix}}"
+      }
+    },
+    {
+      "name": "csmetametafmt",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "csmetametafmt{${1:cmd-prefix}}{${2:meta-text1}}{${3:separator}}{${4:meta-text2}}{${5:cmd-suffix}}"
+      }
+    },
+    {
+      "name": "csoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "csoptfmt{${1:cmd-option}}"
+      }
+    },
+    {
+      "name": "ctanmirror",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctanmirror{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctanmirrordocnofn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctanmirrordocnofn{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctanmirrornofn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctanmirrornofn{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctanpkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctanpkg{${1:package}}"
+      }
+    },
+    {
+      "name": "CTANpkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "CTANpkg{${1:package}}"
+      }
+    },
+    {
+      "name": "ctanpkgmirror",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctanpkgmirror{${1:package}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctanref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctanref{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctansupportmirror",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ctansupportmirror{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "ctr",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctr{${1:counter}}"
+      }
+    },
+    {
+      "name": "ctr",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ctr{${1:counter}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "ctrdef*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctrdef*{${1:counter}}"
+      }
+    },
+    {
+      "name": "ctrdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctrdef{${1:counter}}"
+      }
+    },
+    {
+      "name": "ctrfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctrfmt{${1:counter}}"
+      }
+    },
+    {
+      "name": "ctrtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctrtext{${1:counter}}"
+      }
+    },
+    {
+      "name": "dash"
+    },
+    {
+      "name": "dcolon"
+    },
+    {
+      "name": "dcomma"
+    },
+    {
+      "name": "defsemanticcmd",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "defsemanticcmd[${4:color}]{${1:cmd}}{${2:font-cmd}}{${3:prefix}}"
+      }
+    },
+    {
+      "name": "defsemanticcmd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defsemanticcmd{${1:cmd}}{${2:font-cmd}}{${3:prefix}}"
+      }
+    },
+    {
+      "name": "defval",
+      "arg": {
+        "format": "{}",
+        "snippet": "defval{${1:value}}"
+      }
+    },
+    {
+      "name": "deprecated"
+    },
+    {
+      "name": "dequals"
+    },
+    {
+      "name": "desc",
+      "arg": {
+        "format": "{}",
+        "snippet": "desc{${1:description%text}}"
+      }
+    },
+    {
+      "name": "dfullstop"
+    },
+    {
+      "name": "dhyphen"
+    },
+    {
+      "name": "dickimawhref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dickimawhref{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "dickimawhrefnofn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dickimawhrefnofn{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "docref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "docref{${1:link text%text}}{${2:PDF-file}}"
+      }
+    },
+    {
+      "name": "dsb"
+    },
+    {
+      "name": "dunderscore",
+      "unusual": true
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "env",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "env{${1:envname}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "envdef*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "envdef*[${2:options%keyvals}]{${1:envname}}"
+      }
+    },
+    {
+      "name": "envdef*",
+      "arg": {
+        "format": "{}",
+        "snippet": "envdef*{${1:envname}}"
+      }
+    },
+    {
+      "name": "envdef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "envdef[${2:options%keyvals}]{${1:envname}}"
+      }
+    },
+    {
+      "name": "envdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "envdef{${1:envname}}"
+      }
+    },
+    {
+      "name": "envfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "envfmt{${1:envname}}"
+      }
+    },
+    {
+      "name": "envtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "envtext{${1:envname}}"
+      }
+    },
+    {
+      "name": "eTeX"
+    },
+    {
+      "name": "exampleref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "exampleref*{${1:label}}"
+      }
+    },
+    {
+      "name": "Exampleref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Exampleref*{${1:label}}"
+      }
+    },
+    {
+      "name": "exampleref",
+      "arg": {
+        "format": "{}",
+        "snippet": "exampleref{${1:label}}"
+      }
+    },
+    {
+      "name": "Exampleref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Exampleref{${1:label}}"
+      }
+    },
+    {
+      "name": "examplesref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "examplesref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Examplesref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Examplesref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "examplesref",
+      "arg": {
+        "format": "{}",
+        "snippet": "examplesref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Examplesref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Examplesref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "ext",
+      "arg": {
+        "format": "{}",
+        "snippet": "ext{${1:extension}}"
+      }
+    },
+    {
+      "name": "ext",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ext{${1:extension}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "exttext",
+      "arg": {
+        "format": "{}",
+        "snippet": "exttext{${1:extension}}"
+      }
+    },
+    {
+      "name": "faqitem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "faqitem{${1:item}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "faqpage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "faqpage{${1:category}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "faqspkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "faqspkg{${1:package}}"
+      }
+    },
+    {
+      "name": "field",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "field{${1:field}}{${2:entries}}"
+      }
+    },
+    {
+      "name": "figureref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "figureref*{${1:label}}"
+      }
+    },
+    {
+      "name": "Figureref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Figureref*{${1:label}}"
+      }
+    },
+    {
+      "name": "figureref",
+      "arg": {
+        "format": "{}",
+        "snippet": "figureref{${1:label}}"
+      }
+    },
+    {
+      "name": "Figureref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Figureref{${1:label}}"
+      }
+    },
+    {
+      "name": "figuresref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "figuresref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Figuresref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Figuresref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "figuresref",
+      "arg": {
+        "format": "{}",
+        "snippet": "figuresref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Figuresref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Figuresref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:file}}"
+      }
+    },
+    {
+      "name": "filedef",
+      "arg": {
+        "format": "{}",
+        "snippet": "filedef{${1:file}}"
+      }
+    },
+    {
+      "name": "filefmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "filefmt{${1:file}}"
+      }
+    },
+    {
+      "name": "fnsym",
+      "arg": {
+        "format": "{}",
+        "snippet": "fnsym{${1:num}}"
+      }
+    },
+    {
+      "name": "fnsym*",
+      "arg": {
+        "format": "{}",
+        "snippet": "fnsym*{${1:num}}"
+      }
+    },
+    {
+      "name": "fnsymtext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fnsymtext{${1:num}}{${2:text}}"
+      }
+    },
+    {
+      "name": "gabbr",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gabbr{${1:abbrev-name}}{${2:short}}{${3:long}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gacr",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gacr{${1:acronym}}{${2:short}}{${3:long}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gallery",
+      "arg": {
+        "format": "{}",
+        "snippet": "gallery{${1:link text%text}}"
+      }
+    },
+    {
+      "name": "gallerypage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gallerypage{${1:page-name%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "galleryref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "galleryref{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "gallerytopic",
+      "arg": {
+        "format": "{}",
+        "snippet": "gallerytopic{${1:package}}"
+      }
+    },
+    {
+      "name": "galleryurl",
+      "arg": {
+        "format": "{}",
+        "snippet": "galleryurl{${1:URL-path%URL}}"
+      }
+    },
+    {
+      "name": "gapp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gapp{${1:application-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcls",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcls{${1:class-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gclsboolopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gclsboolopt{${1:class-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gclsopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gclsopt{${1:class-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcmd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcmd{${1:cmd-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcmdmeta",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gcmdmeta{${1:cmd-prefix}}{${2:meta-text}}{${3:cmd-suffix}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcmdmetameta",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "gcmdmetameta{${1:cmd-prefix}}{${2:meta-text1}}{${3:separator}}{${4:meta-text2}}{${5:cmd-suffix}}{${6:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcmds",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcmds{${1:cmd-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcmdsp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcmdsp{${1:cmd-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcond",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcond{${1:cmd-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcsboolopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcsboolopt{${1:cmd-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gcsopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gcsopt{${1:cmd-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gctr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gctr{${1:counter-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "genv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "genv{${1:env-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gext{${1:extension-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gfile",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gfile{${1:file-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gfilemeta",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gfilemeta{${1:file-prefix}}{${2:meta-text}}{${3:file-suffix}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gfilemetameta",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "gfilemetameta{${1:file-prefix}}{${2:meta-text1}}{${3:separator}}{${4:meta-text2}}{${5:file-suffix}}{${6:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gidx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gidx{${1:name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gidxpl",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gidxpl{${1:name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "glongswitch",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glongswitch{${1:switch-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "glongswitchpunc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glongswitchpunc{${1:switch-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "glsbibwriteentry",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsbibwriteentry{${1:entry}}{${2:entry-label}}{${3:desc-cmds}}"
+      }
+    },
+    {
+      "name": "glscmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "glscmd{${1:csname}}"
+      }
+    },
+    {
+      "name": "glscsname",
+      "arg": {
+        "format": "{}",
+        "snippet": "glscsname{${1:label}}"
+      }
+    },
+    {
+      "name": "glscsname",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "glscsname[${2:options}]{${1:label}}"
+      }
+    },
+    {
+      "name": "gmod",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gmod{${1:modifier-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gopt{${1:option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "goptval",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "goptval{${1:option}}{${2:value}}{${3:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gpkg",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gpkg{${1:package-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gpunc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gpunc{${1:punc-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gpunccmd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "gpunccmd{${1:punc-name}}{${2:symbol}}{${3:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gshortswitch",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gshortswitch{${1:switch-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gshortswitchpunc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gshortswitchpunc{${1:switch-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gstyboolopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gstyboolopt{${1:package-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gstyopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gstyopt{${1:package-option-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gterm",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gterm{${1:term-name}}{${2:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gtermabbr",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gtermabbr{${1:term-name}}{${2:short}}{${3:long}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "gtermacr",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "gtermacr{${1:acronym}}{${2:short}}{${3:long}}{${4:desc-cmds}}"
+      }
+    },
+    {
+      "name": "htmlavailable"
+    },
+    {
+      "name": "icon",
+      "arg": {
+        "format": "{}",
+        "snippet": "icon{${1:name}}"
+      }
+    },
+    {
+      "name": "icontext",
+      "arg": {
+        "format": "{}",
+        "snippet": "icontext{${1:name}}"
+      }
+    },
+    {
+      "name": "idx",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "idx[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "Idx",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Idx[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "idx",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "idx[${2:options%keyvals}]{${1:label}}[${3:insert}]"
+      }
+    },
+    {
+      "name": "Idx",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "Idx[${2:options%keyvals}]{${1:label}}[${3:insert}]"
+      }
+    },
+    {
+      "name": "idx",
+      "arg": {
+        "format": "{}",
+        "snippet": "idx{${1:label}}"
+      }
+    },
+    {
+      "name": "Idx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Idx{${1:label}}"
+      }
+    },
+    {
+      "name": "idx",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "idx{${1:label}}[${2:insert}]"
+      }
+    },
+    {
+      "name": "Idx",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Idx{${1:label}}[${2:insert}]"
+      }
+    },
+    {
+      "name": "idxc",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "idxc[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "idxc",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "idxc[${2:options%keyvals}]{${1:label}}[${3:insert}]"
+      }
+    },
+    {
+      "name": "idxc",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxc{${1:label}}"
+      }
+    },
+    {
+      "name": "idxc",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "idxc{${1:label}}[${2:insert}]"
+      }
+    },
+    {
+      "name": "idxf",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "idxf[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "idxf",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxf{${1:label}}"
+      }
+    },
+    {
+      "name": "idxn",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "idxn[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "idxn",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxn{${1:label}}"
+      }
+    },
+    {
+      "name": "idxpl",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "idxpl[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "Idxpl",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Idxpl[${2:options%keyvals}]{${1:label}}"
+      }
+    },
+    {
+      "name": "idxpl",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "idxpl[${2:options%keyvals}]{${1:label}}[${3:insert}]"
+      }
+    },
+    {
+      "name": "Idxpl",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "Idxpl[${2:options%keyvals}]{${1:label}}[${3:insert}]"
+      }
+    },
+    {
+      "name": "idxpl",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxpl{${1:label}}"
+      }
+    },
+    {
+      "name": "Idxpl",
+      "arg": {
+        "format": "{}",
+        "snippet": "Idxpl{${1:label}}"
+      }
+    },
+    {
+      "name": "idxpl",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "idxpl{${1:label}}[${2:insert}]"
+      }
+    },
+    {
+      "name": "Idxpl",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Idxpl{${1:label}}[${2:insert}]"
+      }
+    },
+    {
+      "name": "ifnlctdownloadlinks",
+      "unusual": true
+    },
+    {
+      "name": "inapp",
+      "arg": {
+        "format": "{}",
+        "snippet": "inapp{${1:application}}"
+      }
+    },
+    {
+      "name": "inclass",
+      "arg": {
+        "format": "{}",
+        "snippet": "inclass{${1:class}}"
+      }
+    },
+    {
+      "name": "initval",
+      "arg": {
+        "format": "{}",
+        "snippet": "initval{${1:value}}"
+      }
+    },
+    {
+      "name": "initvalcs",
+      "arg": {
+        "format": "{}",
+        "snippet": "initvalcs{${1:csname}}"
+      }
+    },
+    {
+      "name": "initvalempty"
+    },
+    {
+      "name": "initvalopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "initvalopt{${1:option-name}}{${2:text%plain}}"
+      }
+    },
+    {
+      "name": "initvalref",
+      "arg": {
+        "format": "{}",
+        "snippet": "initvalref{${1:label}}"
+      }
+    },
+    {
+      "name": "initvalvaries"
+    },
+    {
+      "name": "inlineglsdef",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlineglsdef[${2:type}]{${1:label}}"
+      }
+    },
+    {
+      "name": "inlineglsdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineglsdef{${1:label}}"
+      }
+    },
+    {
+      "name": "inlineidxdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineidxdef{${1:entry}}"
+      }
+    },
+    {
+      "name": "Inlineidxdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "Inlineidxdef{${1:entry}}"
+      }
+    },
+    {
+      "name": "inlineidxfdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineidxfdef{${1:entry}}"
+      }
+    },
+    {
+      "name": "inlineidxpdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineidxpdef{${1:entry}}"
+      }
+    },
+    {
+      "name": "inlineoptdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineoptdef{${1:option-name}}"
+      }
+    },
+    {
+      "name": "inlineoptdef",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlineoptdef[${2:type}]{${1:option-name}}"
+      }
+    },
+    {
+      "name": "inlinepkgdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlinepkgdef{${1:package}}"
+      }
+    },
+    {
+      "name": "inlinepkgdef",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlinepkgdef[${2:type}]{${1:package}}"
+      }
+    },
+    {
+      "name": "inlineswitchdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlineswitchdef{${1:switch}}"
+      }
+    },
+    {
+      "name": "inpackage",
+      "arg": {
+        "format": "{}",
+        "snippet": "inpackage{${1:package}}"
+      }
+    },
+    {
+      "name": "itemtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "itemtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "keyvallist"
+    },
+    {
+      "name": "listofexamples"
+    },
+    {
+      "name": "longargfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "longargfmt{${1:arg}}"
+      }
+    },
+    {
+      "name": "longswitch"
+    },
+    {
+      "name": "LuaLaTeX"
+    },
+    {
+      "name": "LuaTeX"
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "margm",
+      "arg": {
+        "format": "{}",
+        "snippet": "margm{${1:arg}}"
+      }
+    },
+    {
+      "name": "menu",
+      "arg": {
+        "format": "{}",
+        "snippet": "menu{${1:item1,item2,...%text}}"
+      }
+    },
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "metafilefmt",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "metafilefmt{${1:file-prefix}}{${2:meta-text}}{${3:file-suffix}}"
+      }
+    },
+    {
+      "name": "MikTeX"
+    },
+    {
+      "name": "mirrorsamplefile",
+      "arg": {
+        "format": "{}",
+        "snippet": "mirrorsamplefile{${1:file}}"
+      }
+    },
+    {
+      "name": "name",
+      "arg": {
+        "format": "{}",
+        "snippet": "name{${1:name}}"
+      }
+    },
+    {
+      "name": "nlctcloseparen"
+    },
+    {
+      "name": "nlctclosesqbracket"
+    },
+    {
+      "name": "nlctdownloadlinksfalse"
+    },
+    {
+      "name": "nlctdownloadlinkstrue"
+    },
+    {
+      "name": "nlctopenparen"
+    },
+    {
+      "name": "nlctopensqbracket"
+    },
+    {
+      "name": "no"
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "{}",
+        "snippet": "note{${1:text}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oargm",
+      "arg": {
+        "format": "{}",
+        "snippet": "oargm{${1:arg}}"
+      }
+    },
+    {
+      "name": "opt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt{${1:option}}"
+      }
+    },
+    {
+      "name": "opt",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "opt{${1:option}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "optdefsyntax",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optdefsyntax{${1:keyvals}}{${2:option}}"
+      }
+    },
+    {
+      "name": "opteqvalref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "opteqvalref{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "optfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "optfmt{${1:option}}"
+      }
+    },
+    {
+      "name": "option",
+      "arg": {
+        "format": "{}",
+        "snippet": "option{${1:option}}"
+      }
+    },
+    {
+      "name": "optiondef*",
+      "arg": {
+        "format": "{}",
+        "snippet": "optiondef*{${1:option}}"
+      }
+    },
+    {
+      "name": "optiondef",
+      "arg": {
+        "format": "{}",
+        "snippet": "optiondef{${1:option}}"
+      }
+    },
+    {
+      "name": "options",
+      "arg": {
+        "format": "{}",
+        "snippet": "options{${1:opt1,opt2}}"
+      }
+    },
+    {
+      "name": "optionsor",
+      "arg": {
+        "format": "{}",
+        "snippet": "optionsor{${1:opt1,opt2}}"
+      }
+    },
+    {
+      "name": "optionsto",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optionsto{${1:opt1}}{${2:opt2}}"
+      }
+    },
+    {
+      "name": "optionvaldef*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optionvaldef*{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "optionvaldef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optionvaldef{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "opttext",
+      "arg": {
+        "format": "{}",
+        "snippet": "opttext{${1:option}}"
+      }
+    },
+    {
+      "name": "optval",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optval{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "optvalm",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optvalm{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "optvalref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "optvalref{${1:option}}{${2:value}}"
+      }
+    },
+    {
+      "name": "parent",
+      "arg": {
+        "format": "{}",
+        "snippet": "parent{${1:parent}}"
+      }
+    },
+    {
+      "name": "pdfLaTeX"
+    },
+    {
+      "name": "pdfTeX"
+    },
+    {
+      "name": "phyperref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "phyperref{${1:label}}{${2:text}}"
+      }
+    },
+    {
+      "name": "pkgdef*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pkgdef*[${2:options%keyvals}]{${1:package}}"
+      }
+    },
+    {
+      "name": "pkgdef*",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgdef*{${1:package}}"
+      }
+    },
+    {
+      "name": "pkgdef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pkgdef[${2:options%keyvals}]{${1:package}}"
+      }
+    },
+    {
+      "name": "pkgdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgdef{${1:package}}"
+      }
+    },
+    {
+      "name": "plabel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "plabel[${2:text}]{${1:label}}"
+      }
+    },
+    {
+      "name": "plabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "plabel{${1:label}}"
+      }
+    },
+    {
+      "name": "pref",
+      "arg": {
+        "format": "{}",
+        "snippet": "pref{${1:label}}"
+      }
+    },
+    {
+      "name": "printicons"
+    },
+    {
+      "name": "printsummary"
+    },
+    {
+      "name": "prono"
+    },
+    {
+      "name": "providedby",
+      "arg": {
+        "format": "{}",
+        "snippet": "providedby{${1:file}}"
+      }
+    },
+    {
+      "name": "proyes"
+    },
+    {
+      "name": "qt",
+      "arg": {
+        "format": "{}",
+        "snippet": "qt{${1:text}}"
+      }
+    },
+    {
+      "name": "qtdocref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "qtdocref{${1:link text%text}}{${2:PDF-file}}"
+      }
+    },
+    {
+      "name": "qtt",
+      "arg": {
+        "format": "{}",
+        "snippet": "qtt{${1:text}}"
+      }
+    },
+    {
+      "name": "sectionref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionref*{${1:label}}"
+      }
+    },
+    {
+      "name": "Sectionref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Sectionref*{${1:label}}"
+      }
+    },
+    {
+      "name": "sectionref",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionref{${1:label}}"
+      }
+    },
+    {
+      "name": "Sectionref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Sectionref{${1:label}}"
+      }
+    },
+    {
+      "name": "sectionsref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionsref*{${1:label}}"
+      }
+    },
+    {
+      "name": "Sectionsref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Sectionsref*{${1:label}}"
+      }
+    },
+    {
+      "name": "sectionsref",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionsref{${1:label}}"
+      }
+    },
+    {
+      "name": "Sectionsref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Sectionsref{${1:label}}"
+      }
+    },
+    {
+      "name": "settabcolsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "settabcolsep{${1:length}}"
+      }
+    },
+    {
+      "name": "shortargfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "shortargfmt{${1:arg}}"
+      }
+    },
+    {
+      "name": "starredcs",
+      "arg": {
+        "format": "{}",
+        "snippet": "starredcs{${1:csname}}"
+      }
+    },
+    {
+      "name": "sty",
+      "arg": {
+        "format": "{}",
+        "snippet": "sty{${1:package}}"
+      }
+    },
+    {
+      "name": "sty",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sty{${1:package}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "styfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "styfmt{${1:package%plain}}"
+      }
+    },
+    {
+      "name": "styoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "styoptfmt{${1:package-option}}"
+      }
+    },
+    {
+      "name": "stytext",
+      "arg": {
+        "format": "{}",
+        "snippet": "stytext{${1:package}}"
+      }
+    },
+    {
+      "name": "switch",
+      "arg": {
+        "format": "{}",
+        "snippet": "switch{${1:switch}}"
+      }
+    },
+    {
+      "name": "switch",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "switch{${1:switch}}[${2:suffix}]"
+      }
+    },
+    {
+      "name": "switchdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "switchdef{${1:switch}}"
+      }
+    },
+    {
+      "name": "switchtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "switchtext{${1:switch}}"
+      }
+    },
+    {
+      "name": "sym",
+      "arg": {
+        "format": "{}",
+        "snippet": "sym{${1:symname}}"
+      }
+    },
+    {
+      "name": "syntax",
+      "arg": {
+        "format": "{}",
+        "snippet": "syntax{${1:arg}}"
+      }
+    },
+    {
+      "name": "tablefnmark",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablefnmark{${1:mark}}"
+      }
+    },
+    {
+      "name": "tablefns",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablefns{${1:text}}"
+      }
+    },
+    {
+      "name": "tablefntext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tablefntext{${1:mark}}{${2:text}}"
+      }
+    },
+    {
+      "name": "tableref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableref*{${1:label}}"
+      }
+    },
+    {
+      "name": "Tableref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Tableref*{${1:label}}"
+      }
+    },
+    {
+      "name": "tableref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableref{${1:label}}"
+      }
+    },
+    {
+      "name": "Tableref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Tableref{${1:label}}"
+      }
+    },
+    {
+      "name": "tablesref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablesref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Tablesref*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Tablesref*{${1:labellist}}"
+      }
+    },
+    {
+      "name": "tablesref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablesref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "Tablesref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Tablesref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "texdocref",
+      "arg": {
+        "format": "{}",
+        "snippet": "texdocref{${1:URL-path%URL}}"
+      }
+    },
+    {
+      "name": "texfaq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "texfaq{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "TeXLive"
+    },
+    {
+      "name": "texseref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "texseref{${1:URL-path%URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "tugboat",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "tugboat{${1:title%text}}{${2:year}}{${3:volume}}{${4:number}}{${5:pdf}}"
+      }
+    },
+    {
+      "name": "unlimited"
+    },
+    {
+      "name": "urlfootref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "urlfootref{${1:URL}}{${2:link text%text}}"
+      }
+    },
+    {
+      "name": "XeLaTeX"
+    },
+    {
+      "name": "XeTeX"
+    },
+    {
+      "name": "yes"
+    },
+    {
+      "name": "createexample",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "createexample{${1:preamble code%text}}{${2:document code%text}}"
+      }
+    },
+    {
+      "name": "createexample",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "createexample[${3:options%keyvals}]{${1:preamble code%text}}{${2:document code%text}}",
+        "keys": [
+          "\\createexample,\\createexample*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "createexample*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "createexample*{${1:preamble code%text}}{${2:document code%text}}"
+      }
+    },
+    {
+      "name": "createexample*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "createexample*[${3:options%keyvals}]{${1:preamble code%text}}{${2:document code%text}}",
+        "keys": [
+          "\\createexample,\\createexample*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "nlctuserguidegls",
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctuserguidegls{${1:commands}}"
+      }
+    },
+    {
+      "name": "nlctuserguidegls",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "nlctuserguidegls[${2:bib2gls options%keyvals}]{${1:commands}}",
+        "keys": [
+          "\\nlctuserguidegls"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printabbrs"
+    },
+    {
+      "name": "printabbrs",
+      "arg": {
+        "format": "[]",
+        "snippet": "printabbrs[${1:options%keyvals}]",
+        "keys": [
+          "\\printabbrs,\\printcommonoptions,\\printterms,\\printuserguideindex"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printcommonoptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "printcommonoptions{${1:label}}"
+      }
+    },
+    {
+      "name": "printcommonoptions",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "printcommonoptions[${2:options%keyvals}]{${1:label}}",
+        "keys": [
+          "\\printabbrs,\\printcommonoptions,\\printterms,\\printuserguideindex"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printterms"
+    },
+    {
+      "name": "printterms",
+      "arg": {
+        "format": "[]",
+        "snippet": "printterms[${1:options%keyvals}]",
+        "keys": [
+          "\\printabbrs,\\printcommonoptions,\\printterms,\\printuserguideindex"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printuserguideindex"
+    },
+    {
+      "name": "printuserguideindex",
+      "arg": {
+        "format": "[]",
+        "snippet": "printuserguideindex[${1:options%keyvals}]",
+        "keys": [
+          "\\printabbrs,\\printcommonoptions,\\printterms,\\printuserguideindex"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "abbrpostnamehook",
+      "unusual": true
+    },
+    {
+      "name": "acrpostnamehook",
+      "unusual": true
+    },
+    {
+      "name": "addtoexamplepreamble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtoexamplepreamble{${1:arg1}}"
+      }
+    },
+    {
+      "name": "addtolistofexamples",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addtolistofexamples{${1:arg1}}"
+      }
+    },
+    {
+      "name": "advantagefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "advantagefmt{${1:text}}"
+      }
+    },
+    {
+      "name": "altdocref",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "altdocref{${1:text}}{${2:PDF-file}}{${3:html}}"
+      }
+    },
+    {
+      "name": "appnotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "appnotefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "asteriskmarker",
+      "unusual": true
+    },
+    {
+      "name": "badcodedesc",
+      "unusual": true
+    },
+    {
+      "name": "badcodesym",
+      "unusual": true
+    },
+    {
+      "name": "badcodetext",
+      "unusual": true
+    },
+    {
+      "name": "banned",
+      "unusual": true
+    },
+    {
+      "name": "banneddesc",
+      "unusual": true
+    },
+    {
+      "name": "bannedsym",
+      "unusual": true
+    },
+    {
+      "name": "bannedtext",
+      "unusual": true
+    },
+    {
+      "name": "bibglslocationgroup",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bibglslocationgroup{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "bibglslocationgroupsep",
+      "unusual": true
+    },
+    {
+      "name": "bibglsothergroup",
+      "unusual": true
+    },
+    {
+      "name": "bibglsothergroup",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bibglsothergroup{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "bibglsothergrouptitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bibglsothergrouptitle{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "boxtitleshift",
+      "unusual": true
+    },
+    {
+      "name": "childoptval",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "childoptval{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "childsummarypar",
+      "unusual": true
+    },
+    {
+      "name": "clsdef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "clsdef[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "clsdef{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsdefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "clsdefcounter",
+      "unusual": true
+    },
+    {
+      "name": "clsentryname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "clsentryname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "clstitle",
+      "unusual": true
+    },
+    {
+      "name": "cmddefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "cmddefbookmarkleveloffset",
+      "unusual": true
+    },
+    {
+      "name": "cmddefcounter",
+      "unusual": true
+    },
+    {
+      "name": "cmddefmodifierhandler",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cmddefmodifierhandler{${1:arg1}}"
+      }
+    },
+    {
+      "name": "cmdfont",
+      "unusual": true
+    },
+    {
+      "name": "cmdnotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cmdnotefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "cmdtitle",
+      "unusual": true
+    },
+    {
+      "name": "codedesc",
+      "unusual": true
+    },
+    {
+      "name": "codefont",
+      "unusual": true
+    },
+    {
+      "name": "codesym",
+      "unusual": true
+    },
+    {
+      "name": "codetext",
+      "unusual": true
+    },
+    {
+      "name": "counterdesc",
+      "unusual": true
+    },
+    {
+      "name": "countersym",
+      "unusual": true
+    },
+    {
+      "name": "countertext",
+      "unusual": true
+    },
+    {
+      "name": "createexamplefirstline",
+      "unusual": true
+    },
+    {
+      "name": "createtarget",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "createtarget{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "csfmtcolourfont",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "csfmtcolourfont{${1:arg1}}"
+      }
+    },
+    {
+      "name": "csfmtfont",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "csfmtfont{${1:arg1}}"
+      }
+    },
+    {
+      "name": "ctrdefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "currentcounter",
+      "unusual": true
+    },
+    {
+      "name": "currentcounterlevel",
+      "unusual": true
+    },
+    {
+      "name": "currentsyntax",
+      "unusual": true
+    },
+    {
+      "name": "daggermarker",
+      "unusual": true
+    },
+    {
+      "name": "defaultoptdefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "definitiondesc",
+      "unusual": true
+    },
+    {
+      "name": "definitionsym",
+      "unusual": true
+    },
+    {
+      "name": "definitiontext",
+      "unusual": true
+    },
+    {
+      "name": "deprecatedbanned",
+      "unusual": true
+    },
+    {
+      "name": "deprecateddesc",
+      "unusual": true
+    },
+    {
+      "name": "deprecatedorbannedfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "deprecatedorbannedfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "deprecatedsym",
+      "unusual": true
+    },
+    {
+      "name": "deprecatedtext",
+      "unusual": true
+    },
+    {
+      "name": "disadvantagefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "disadvantagefmt{${1:text}}"
+      }
+    },
+    {
+      "name": "doubledaggermarker",
+      "unusual": true
+    },
+    {
+      "name": "entrycountprehook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "entrycountprehook{${1:arg1}}"
+      }
+    },
+    {
+      "name": "entrydefsection",
+      "unusual": true
+    },
+    {
+      "name": "entrysec",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "entrysec[${2:opt}]{${1:arg1}}"
+      }
+    },
+    {
+      "name": "entrysec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "entrysec{${1:arg1}}"
+      }
+    },
+    {
+      "name": "entryskip",
+      "unusual": true
+    },
+    {
+      "name": "enventryname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "enventryname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "envtitle",
+      "unusual": true
+    },
+    {
+      "name": "exampleattachpdficon",
+      "unusual": true
+    },
+    {
+      "name": "exampleattachtexicon",
+      "unusual": true
+    },
+    {
+      "name": "exampledownloadpdficon",
+      "unusual": true
+    },
+    {
+      "name": "exampledownloadtexicon",
+      "unusual": true
+    },
+    {
+      "name": "Examplename",
+      "unusual": true
+    },
+    {
+      "name": "examplename",
+      "unusual": true
+    },
+    {
+      "name": "Examplerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "examplerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "examplesdir",
+      "unusual": true
+    },
+    {
+      "name": "Examplesrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "examplesrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "extfmt",
+      "unusual": true
+    },
+    {
+      "name": "Figurerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "figurerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "Figuresrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "figuresrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "filedownloadlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filedownloadlink{${1:arg1}}"
+      }
+    },
+    {
+      "name": "filedownloadsubpath",
+      "unusual": true
+    },
+    {
+      "name": "filetag",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filetag{${1:arg1}}"
+      }
+    },
+    {
+      "name": "filteremptylocation",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filteremptylocation{${1:arg1}}"
+      }
+    },
+    {
+      "name": "florettemarker",
+      "unusual": true
+    },
+    {
+      "name": "fmtorcode",
+      "unusual": true
+    },
+    {
+      "name": "fmtorcode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fmtorcode{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "fnsymmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fnsymmark{${1:arg1}}"
+      }
+    },
+    {
+      "name": "fnsymmarker",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fnsymmarker{${1:arg1}}"
+      }
+    },
+    {
+      "name": "gathermodifiers",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "gathermodifiers{${1:arg1}}"
+      }
+    },
+    {
+      "name": "genericsummaryentryoption",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "genericsummaryentryoption{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "getinitordefval",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getinitordefval{${1:arg1}}"
+      }
+    },
+    {
+      "name": "glsaddterm",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glsaddterm{${1:arg1}}"
+      }
+    },
+    {
+      "name": "glsbibwritefield",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsbibwritefield{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "glsxtrchapterlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrfigurelocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrparagraphlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrsectionlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrsubparagraphlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrsubsectionlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrsubsubsectionlocfmt",
+      "unusual": true
+    },
+    {
+      "name": "glsxtrtablelocfmt",
+      "unusual": true
+    },
+    {
+      "name": "goptmetaval",
+      "unusual": true
+    },
+    {
+      "name": "hashmarker",
+      "unusual": true
+    },
+    {
+      "name": "ifnlctattachpdf",
+      "unusual": true
+    },
+    {
+      "name": "ifnotdefaultstatus",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifnotdefaultstatus{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "ifshowsummarysubgroupheaders",
+      "unusual": true
+    },
+    {
+      "name": "ifshowsummarytopgroupheaders",
+      "unusual": true
+    },
+    {
+      "name": "importantdesc",
+      "unusual": true
+    },
+    {
+      "name": "importantsym",
+      "unusual": true
+    },
+    {
+      "name": "importanttext",
+      "unusual": true
+    },
+    {
+      "name": "informationdesc",
+      "unusual": true
+    },
+    {
+      "name": "informationsym",
+      "unusual": true
+    },
+    {
+      "name": "informationtext",
+      "unusual": true
+    },
+    {
+      "name": "initcodeenv",
+      "unusual": true
+    },
+    {
+      "name": "initordefval",
+      "unusual": true
+    },
+    {
+      "name": "initvalnotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "initvalnotefmt{${1:text}}"
+      }
+    },
+    {
+      "name": "inlineoptionvaldef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "inlineoptionvaldef{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "keyeqvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyeqvalue{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "keyeqvaluem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyeqvaluem{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "linkedentryname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "linkedentryname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "listofexampleslabel",
+      "unusual": true
+    },
+    {
+      "name": "listofexamplesname",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupencapchapter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "locationgroupencapchapter{${1:arg1}}"
+      }
+    },
+    {
+      "name": "locationgroupencapparagraph",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupencapsection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupencapsubparagraph",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupencapsubsection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupencapsubsubsection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerchapter",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerfigure",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerfigures",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerpage",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerpages",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkerparagraph",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkersection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkersubparagraph",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkersubsection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkersubsubsection",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkertable",
+      "unusual": true
+    },
+    {
+      "name": "locationgroupmarkertables",
+      "unusual": true
+    },
+    {
+      "name": "lozengemarker",
+      "unusual": true
+    },
+    {
+      "name": "maindef",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "maindef[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "maindef",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "maindef{${1:arg}}"
+      }
+    },
+    {
+      "name": "mainfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mainfmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "mainglsadd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "mainglsadd{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "mainglsaddcounter",
+      "unusual": true
+    },
+    {
+      "name": "mainmatteronly",
+      "unusual": true
+    },
+    {
+      "name": "menufmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "menufmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "menusep",
+      "unusual": true
+    },
+    {
+      "name": "metaboolean",
+      "unusual": true
+    },
+    {
+      "name": "metametafilefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "metametafilefmt{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+      }
+    },
+    {
+      "name": "nlctattachpdffalse",
+      "unusual": true
+    },
+    {
+      "name": "nlctattachpdftrue",
+      "unusual": true
+    },
+    {
+      "name": "nlctdefaultafter",
+      "unusual": true
+    },
+    {
+      "name": "nlctdocatnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctdocatnum{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctdocsymbolgrouplabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "nlctdocsymbolgrouplabel{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "nlctdocsymbolgrouptitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "nlctdocsymbolgrouptitle{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "nlctdownloadlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctdownloadlink{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctexampledisablecmds",
+      "unusual": true
+    },
+    {
+      "name": "nlctexampleenvtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "nlctexamplefilebasename",
+      "unusual": true
+    },
+    {
+      "name": "nlctexampleimagelist",
+      "unusual": true
+    },
+    {
+      "name": "nlctexamplelets",
+      "unusual": true
+    },
+    {
+      "name": "nlctexampletag",
+      "unusual": true
+    },
+    {
+      "name": "nlctexampletagattachfont",
+      "unusual": true
+    },
+    {
+      "name": "nlctexampletitlebox",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "nlctexampletitlebox[${2:opt}]{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctexampletitlebox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctexampletitlebox{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctexampletitlefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctexampletitlefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctexampletitlefont",
+      "unusual": true
+    },
+    {
+      "name": "nlctguideindexinitpostnamehooks",
+      "unusual": true
+    },
+    {
+      "name": "nlctmodifierglslist",
+      "unusual": true
+    },
+    {
+      "name": "nlctmodifierlist",
+      "unusual": true
+    },
+    {
+      "name": "nlctmodifiertag",
+      "unusual": true
+    },
+    {
+      "name": "nlctnovref",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguidebibextrapreamble",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguidecustomentryaliases",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguideextrarules",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguideignoredpuncrules",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguideletterrules",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguideloadgls",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctuserguideloadgls{${1:arg1}}"
+      }
+    },
+    {
+      "name": "nlctuserguidepreletterrules",
+      "unusual": true
+    },
+    {
+      "name": "nlctuserguidepuncrules",
+      "unusual": true
+    },
+    {
+      "name": "nlctusevref",
+      "unusual": true
+    },
+    {
+      "name": "novaluesettingdesc",
+      "unusual": true
+    },
+    {
+      "name": "novaluesettingsym",
+      "unusual": true
+    },
+    {
+      "name": "novaluesettingtext",
+      "unusual": true
+    },
+    {
+      "name": "optdefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "optionlistitemformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "optionlistitemformat{${1:arg1}}"
+      }
+    },
+    {
+      "name": "optionlistprefix",
+      "unusual": true
+    },
+    {
+      "name": "optionlisttag",
+      "unusual": true
+    },
+    {
+      "name": "optionlisttags",
+      "unusual": true
+    },
+    {
+      "name": "optiontag",
+      "unusual": true
+    },
+    {
+      "name": "optionvaluedesc",
+      "unusual": true
+    },
+    {
+      "name": "optionvaluesym",
+      "unusual": true
+    },
+    {
+      "name": "optionvaluetext",
+      "unusual": true
+    },
+    {
+      "name": "optnotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "optnotefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "optvaldefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "optvaldefcounter",
+      "unusual": true
+    },
+    {
+      "name": "optvalrefeq",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "optvalrefeq{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "pdflongswitch",
+      "unusual": true
+    },
+    {
+      "name": "pilcrowmarker",
+      "unusual": true
+    },
+    {
+      "name": "pkgdefbookmarklevel",
+      "unusual": true
+    },
+    {
+      "name": "pkgdefcounter",
+      "unusual": true
+    },
+    {
+      "name": "pkgentryname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgentryname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "pkgnotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgnotefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "pkgtitle",
+      "unusual": true
+    },
+    {
+      "name": "printcommandoptions",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printcommandoptions{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "printcommandoptionsprocesshook",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printcommandoptionsprocesshook{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "printcommonoptionsprocesshook",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printcommonoptionsprocesshook{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "providedbyfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "providedbyfmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "referencemarker",
+      "unusual": true
+    },
+    {
+      "name": "refslistlastsep",
+      "unusual": true
+    },
+    {
+      "name": "refslistsep",
+      "unusual": true
+    },
+    {
+      "name": "resultdesc",
+      "unusual": true
+    },
+    {
+      "name": "resultsym",
+      "unusual": true
+    },
+    {
+      "name": "resulttext",
+      "unusual": true
+    },
+    {
+      "name": "rootsummarypar",
+      "unusual": true
+    },
+    {
+      "name": "seclocfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "seclocfmt{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "sectionmarker",
+      "unusual": true
+    },
+    {
+      "name": "Sectionrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "sectionrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "Sectionsrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "sectionsrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "setcounterlevels",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setcounterlevels{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "setexamplefontsize",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setexamplefontsize{${1:arg1}}"
+      }
+    },
+    {
+      "name": "setexamplepreamble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setexamplepreamble{${1:arg}}"
+      }
+    },
+    {
+      "name": "settermshook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "settermshook{${1:arg1}}"
+      }
+    },
+    {
+      "name": "settingstitle",
+      "unusual": true
+    },
+    {
+      "name": "setupcodeenvfmts",
+      "unusual": true
+    },
+    {
+      "name": "setwidestnamehook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setwidestnamehook{${1:arg1}}"
+      }
+    },
+    {
+      "name": "showsummarysubgroupheadersfalse",
+      "unusual": true
+    },
+    {
+      "name": "showsummarysubgroupheaderstrue",
+      "unusual": true
+    },
+    {
+      "name": "showsummarytopgroupheadersfalse",
+      "unusual": true
+    },
+    {
+      "name": "showsummarytopgroupheaderstrue",
+      "unusual": true
+    },
+    {
+      "name": "sidenote",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sidenote{${1:arg1}}"
+      }
+    },
+    {
+      "name": "starmarker",
+      "unusual": true
+    },
+    {
+      "name": "statusbannedsym",
+      "unusual": true
+    },
+    {
+      "name": "statusbannedtext",
+      "unusual": true
+    },
+    {
+      "name": "statusdefaultsym",
+      "unusual": true
+    },
+    {
+      "name": "statusdefaulttext",
+      "unusual": true
+    },
+    {
+      "name": "statusdeprecatedbannedsym",
+      "unusual": true
+    },
+    {
+      "name": "statusdeprecatedbannedtext",
+      "unusual": true
+    },
+    {
+      "name": "statusdeprecatedsym",
+      "unusual": true
+    },
+    {
+      "name": "statusdeprecatedtext",
+      "unusual": true
+    },
+    {
+      "name": "statushook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "statushook{${1:arg1}}"
+      }
+    },
+    {
+      "name": "statussym",
+      "unusual": true
+    },
+    {
+      "name": "statustext",
+      "unusual": true
+    },
+    {
+      "name": "summaryentryclass",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentryclass{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentryclassbookmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "summaryentryclassbookmark{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "summaryentryclassoption",
+      "unusual": true
+    },
+    {
+      "name": "summaryentrycommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentrycommand{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentrycommandoption",
+      "unusual": true
+    },
+    {
+      "name": "summaryentryenvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentryenvironment{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentryenvironmentoption",
+      "unusual": true
+    },
+    {
+      "name": "summaryentryoption",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentryoption{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentryoptionvalue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentryoptionvalue{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentrypackage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryentrypackage{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryentrypackagebookmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "summaryentrypackagebookmark{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "summaryentrypackageoption",
+      "unusual": true
+    },
+    {
+      "name": "summaryentryskip",
+      "unusual": true
+    },
+    {
+      "name": "summaryhook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryhook{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summaryhookdoskip",
+      "unusual": true
+    },
+    {
+      "name": "summaryloc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summaryloc{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summarylocfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summarylocfmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summarylocfont",
+      "unusual": true
+    },
+    {
+      "name": "summarylocwidth",
+      "unusual": true
+    },
+    {
+      "name": "summarynotefmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summarynotefmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "summarypar",
+      "unusual": true
+    },
+    {
+      "name": "summarypredesc",
+      "unusual": true
+    },
+    {
+      "name": "summarysec",
+      "unusual": true
+    },
+    {
+      "name": "summarysecnumdepth",
+      "unusual": true
+    },
+    {
+      "name": "summarysubitemindent",
+      "unusual": true
+    },
+    {
+      "name": "summarysubsec",
+      "unusual": true
+    },
+    {
+      "name": "summarysubsecnumdepth",
+      "unusual": true
+    },
+    {
+      "name": "summarytagfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "summarytagfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "symboldefinitions",
+      "unusual": true
+    },
+    {
+      "name": "symbolentry",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "symbolentry{${1:arg1}}"
+      }
+    },
+    {
+      "name": "tablefnfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tablefnfmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "Tablerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "tablerefprefix",
+      "unusual": true
+    },
+    {
+      "name": "Tablesrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "tablesrefprefix",
+      "unusual": true
+    },
+    {
+      "name": "tagsep",
+      "unusual": true
+    },
+    {
+      "name": "targetorhyperlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "targetorhyperlink{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "terminaldesc",
+      "unusual": true
+    },
+    {
+      "name": "terminalsym",
+      "unusual": true
+    },
+    {
+      "name": "terminaltext",
+      "unusual": true
+    },
+    {
+      "name": "termslocfmt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "termslocfmt{${1:arg1}}"
+      }
+    },
+    {
+      "name": "texmeta",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "texmeta{${1:arg}}"
+      }
+    },
+    {
+      "name": "theexample",
+      "unusual": true
+    },
+    {
+      "name": "thispackage",
+      "unusual": true
+    },
+    {
+      "name": "thispackagename",
+      "unusual": true
+    },
+    {
+      "name": "tick",
+      "unusual": true
+    },
+    {
+      "name": "toggleoffsettingdesc",
+      "unusual": true
+    },
+    {
+      "name": "toggleoffsettingsym",
+      "unusual": true
+    },
+    {
+      "name": "toggleoffsettingtext",
+      "unusual": true
+    },
+    {
+      "name": "toggleonsettingdesc",
+      "unusual": true
+    },
+    {
+      "name": "toggleonsettingsym",
+      "unusual": true
+    },
+    {
+      "name": "toggleonsettingtext",
+      "unusual": true
+    },
+    {
+      "name": "transcriptdesc",
+      "unusual": true
+    },
+    {
+      "name": "transcriptsym",
+      "unusual": true
+    },
+    {
+      "name": "transcripttext",
+      "unusual": true
+    },
+    {
+      "name": "unicodedesc",
+      "unusual": true
+    },
+    {
+      "name": "unicodesym",
+      "unusual": true
+    },
+    {
+      "name": "unicodetext",
+      "unusual": true
+    },
+    {
+      "name": "valuesettingdesc",
+      "unusual": true
+    },
+    {
+      "name": "valuesettingsym",
+      "unusual": true
+    },
+    {
+      "name": "valuesettingtext",
+      "unusual": true
+    },
+    {
+      "name": "vdoubleasteriskmarker",
+      "unusual": true
+    },
+    {
+      "name": "warningdesc",
+      "unusual": true
+    },
+    {
+      "name": "warningsym",
+      "unusual": true
+    },
+    {
+      "name": "warningtext",
+      "unusual": true
+    },
+    {
+      "name": "xrsectionref",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "xrsectionref{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "printsymbols"
+    },
+    {
+      "name": "printsymbols",
+      "arg": {
+        "format": "[]",
+        "snippet": "printsymbols[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "glsxtrnewsymbol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsxtrnewsymbol{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "glsxtrnewsymbol",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "glsxtrnewsymbol[${3:options%keyvals}]{${1:label}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "printunsrtsymbols",
+      "unusual": true
+    },
+    {
+      "name": "printunsrtsymbols",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printunsrtsymbols[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "glsxtrpostdescsymbol",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "itemdesc"
+    },
+    {
+      "name": "deflist"
+    },
+    {
+      "name": "warning"
+    },
+    {
+      "name": "warning",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "important"
+    },
+    {
+      "name": "important",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "information"
+    },
+    {
+      "name": "information",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pinnedbox"
+    },
+    {
+      "name": "pinnedbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "defnbox"
+    },
+    {
+      "name": "defnbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "settingsbox"
+    },
+    {
+      "name": "settingsbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "terminal"
+    },
+    {
+      "name": "transcript"
+    },
+    {
+      "name": "codebox"
+    },
+    {
+      "name": "codebox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "codebox*"
+    },
+    {
+      "name": "codebox*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "badcodebox"
+    },
+    {
+      "name": "unicodebox"
+    },
+    {
+      "name": "compactcodebox"
+    },
+    {
+      "name": "compactcodebox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "compactcodebox*"
+    },
+    {
+      "name": "compactcodebox*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "resultbox"
+    },
+    {
+      "name": "resultbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "coderesult"
+    },
+    {
+      "name": "coderesult",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "coderesult*"
+    },
+    {
+      "name": "coderesult*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "unicoderesult"
+    },
+    {
+      "name": "unicoderesult*"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:title%text}}{${2:label}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/nlctuserguide#c": [
+      "xr",
+      "vref",
+      "novref",
+      "atsymgroup",
+      "noatsymgroup",
+      "deephierarchy",
+      "debug=${1|false,true,showtargets,showaccsupp,showwrgloss,all|}",
+      "savewrites",
+      "hyperfirst",
+      "writeglslabels",
+      "writeglslabelnames",
+      "toc",
+      "numberline",
+      "section=${1:section unit}",
+      "ucmark",
+      "numberedsection=${1|false,nolabel,autolabel|}",
+      "savenumberlist",
+      "entrycounter",
+      "counterwithin=${1:counter}",
+      "subentrycounter",
+      "style=${1:style-name}",
+      "nonumberlist",
+      "seeautonumberlist",
+      "counter=${1:counter}",
+      "nopostdot",
+      "nogroupskip",
+      "seenoindex=${1|error,warn,ignore|}",
+      "esclocations",
+      "indexonlyfirst",
+      "sanitizesort",
+      "sort=${1|none,clear,def,use,standard|}",
+      "order=${1|word,letter|}",
+      "automake=${1|false,delayed,immediate,makegloss,lite|}",
+      "automakegloss",
+      "automakeglosslite",
+      "disablemakegloss",
+      "restoremakegloss",
+      "nohypertypes={${1:list}}",
+      "nomain",
+      "numbers",
+      "index",
+      "noglossaryindex",
+      "acronyms",
+      "acronymlists={${1:value}}",
+      "shortcuts=${1|acronyms,acro,ac,abbreviations,abbr,acother,abother,other,all,true,none,false|}",
+      "mfirstuc=${1|expanded,unexpanded|}",
+      "kernelglossredefs={${1:value}}",
+      "showtargets=${1|left,right,innerleft,innerright,annoteleft,annoteright|}",
+      "postdot",
+      "postpunc=${1|comma,dot,none|}",
+      "prefix",
+      "accsupp",
+      "undefaction=${1|warn,error|}",
+      "indexcrossrefs",
+      "autoseeindex",
+      "record=${1|off,only,nameref,hybrid|}",
+      "bibglsaux=${1:basename}",
+      "equations",
+      "docdef=${1|false,true,restricted,atom|}",
+      "nomissingglstext",
+      "abbreviations",
+      "nowarn",
+      "nolangwarn",
+      "noredefwarn",
+      "translate=${1|true,false,babel|}",
+      "notranslate",
+      "nolong",
+      "nolist",
+      "notree",
+      "nostyles",
+      "makeindex",
+      "xindy",
+      "xindygloss",
+      "xindynoglsnumbers",
+      "acronym",
+      "languages=${1:language}"
+    ],
+    "\\newabbreviation#c,\\newabbr#c": [
+      "access=${1:text}",
+      "textaccess=${1:text}",
+      "pluralaccess=${1:text}",
+      "firstaccess=${1:text}",
+      "firstpluralaccess=${1:text}",
+      "shortaccess=${1:text}",
+      "shortpluralaccess=${1:text}",
+      "longaccess=${1:text}",
+      "longpluralaccess=${1:text}"
+    ],
+    "\\createexample,\\createexample*": [
+      "fontsize=${1|8,9,10,11,12,14,17,20|}",
+      "class=${1:class}",
+      "pagestyle=${1:pagestyle}",
+      "graphicsopts={${1:graphics options}}",
+      "pages=${1:pages}",
+      "pagesep=",
+      "tex={${1:tex cmds}}",
+      "arara={${1:arara cmds}}",
+      "description={${1:text}}",
+      "title={${1:text}}",
+      "label="
+    ],
+    "\\nlctuserguidegls": [
+      "charset=${1:encoding name}",
+      "interpret-preamble",
+      "write-preamble",
+      "set-widest",
+      "entry-type-aliases={${1:keyvals}}",
+      "unknown-entry-alias=${1:value}",
+      "action=${1|define,copy,define or copy|}",
+      "src={${1:list}}",
+      "selection=${1|recorded and deps,recorded and deps and see,recorded and deps and see not also,recorded no deps,recorded and ancestors,deps but not recorded,ancestors but not recorded,selected before,all|}",
+      "match={${1:keyvals}}",
+      "match-op=${1|and,or|}",
+      "not-match={${1:keyvals}}",
+      "match-action=${1|filter,add|}",
+      "limit=${1:number}",
+      "save-child-count",
+      "save-sibling-count",
+      "save-root-ancestor",
+      "flatten",
+      "flatten-lonely=${1|false,presort,postsort|}",
+      "flatten-lonely-rule=${1|only unrecorded parents,discard unrecorded,no discard|}",
+      "strip-missing-parents",
+      "missing-parents=${1|strip,warn,create|}",
+      "missing-parent-category=${2|same as child,same as base,no value,false,${1:label}|}",
+      "group-level=${6|{${1:n}},{>${2:n}},{>=${3:n}},{<${4:n}},{<=${5:n}},all|}",
+      "merge-small-groups",
+      "merge-small-groups=${1:n}",
+      "master=${1:name}",
+      "master-resources={${1:list}}",
+      "interpret-label-fields",
+      "labelify={${1:list}}",
+      "labelify-replace={${1:list}}",
+      "label-prefix=${1:prefix}",
+      "duplicate-label-suffix=${1:suffix}",
+      "record-label-prefix=${1:tag}",
+      "cs-label-prefix=${1:tag}",
+      "ext-prefixes={${1:list}}",
+      "prefix-only-existing",
+      "save-original-id=${2|false,true,${1:field}|}",
+      "save-original-id-action=${1|always,no override,changed override,changes,diff|}",
+      "save-definition-index",
+      "save-use-index",
+      "dependency-fields={${1:list}}",
+      "group=${1:label}",
+      "category=${2|false,same as entry,same as original entry,same as base,same as type,${1:label}|}",
+      "type=${2|false,same as entry,same as original entry,same as base,same as category,same as parent,${1:label}|}",
+      "trigger-type=${1:type}",
+      "progenitor-type=${1:type}",
+      "progeny-type=${1:type}",
+      "adopted-parent-field=${1:field}",
+      "abbreviation-name-fallback=${1:field}",
+      "ignore-fields={${1:list}}",
+      "field-aliases={${1:keyvals}}",
+      "replicate-fields={${1:keyvals}}",
+      "replicate-override",
+      "replicate-missing-field-action=${1|skip,fallback,empty|}",
+      "counter=${1:value}",
+      "copy-action-group-field=${1:value}",
+      "copy-alias-to-see",
+      "save-from-see=${1:value}",
+      "save-from-seealso=${1:value}",
+      "save-from-alias=${1:value}",
+      "save-crossref-tail=${1:value}",
+      "save-original-entrytype=${1:value}",
+      "save-original-entrytype-action=${1|always,no override,changed override,changed,diff,changed no override|}",
+      "post-description-dot=${1|none,all,check|}",
+      "strip-trailing-nopost=${1|true,false|}",
+      "check-end-punctuation={${1:list}}",
+      "sort-label-list={${1:list}}",
+      "prune-xr",
+      "prune-see-match={${1:keyvals}}",
+      "prune-see-op=${1|and,or|}",
+      "prune-seealso-match={${1:keyvals}}",
+      "prune-seealso-op=${1|and,or|}",
+      "prune-iterations=${1:number}",
+      "bibtex-contributor-fields={${1:list}}",
+      "contributor-order=${1|surname,von,forenames|}",
+      "encapsulate-fields={${1:keyvals}}",
+      "encapsulate-fields*={${1:keyvals}}",
+      "format-integer-fields={${1:keyvals}}",
+      "format-decimal-fields={${1:keyvals}}",
+      "interpret-fields={${1:list}}",
+      "interpret-fields-action=${1|replace,replace non empty|}",
+      "hex-unicode-fields={${1:list}}",
+      "date-time-fields={${1:list}}",
+      "date-fields={${1:list}}",
+      "time-fields={${1:list}}",
+      "date-time-field-format=${1:value}",
+      "date-field-format=${1:value}",
+      "time-field-format=${1:value}",
+      "date-time-field-locale=${1:value}",
+      "date-field-locale=${1:value}",
+      "time-field-locale=${1:value}",
+      "prefix-fields={${1:list}}",
+      "append-prefix-field=${1|none,space,space or nbsp|}",
+      "append-prefix-field-cs=${1:cs}",
+      "append-prefix-field-exceptions=${1:sequence}",
+      "append-prefix-field-cs-exceptions=${1:sequence}",
+      "append-prefix-field-nbsp-match=${1:pattern}",
+      "no-case-change-cs={${1:list}}",
+      "word-boundaries={${1:list}}",
+      "short-case-change=${1|white space,cs space,dash,nbsp|}",
+      "long-case-change=${1|white space,cs space,dash,nbsp|}",
+      "name-case-change=${1|white space,cs space,dash,nbsp|}",
+      "description-case-change=${1|white space,cs space,dash,nbsp|}",
+      "field-case-change={${1:keyvals}}",
+      "short-plural-suffix=${1:suffix}",
+      "dual-short-plural-suffix=${1:suffix}",
+      "save-locations=${1|false,true,see,see not also,alias only|}",
+      "save-loclist",
+      "save-primary-locations=${1|false,retain,default format,start,remove|}",
+      "save-principal-locations=${1|false,retain,default format,start,remove|}",
+      "primary-location-formats={${1:list}}",
+      "principal-location-formats={${1:list}}",
+      "primary-loc-counters=${1|combine,match,split|}",
+      "principal-loc-counters=${1|combine,match,split|}",
+      "min-loc-range=${1:value}",
+      "max-loc-diff=${1:integer}",
+      "suffixF=${1:value}",
+      "suffixFF=${1:value}",
+      "compact-ranges=${1:value}",
+      "see=${1|omit,before,after|}",
+      "seealso=${1|omit,before,after|}",
+      "alias=${1|omit,before,after|}",
+      "alias-loc=${1|keep,transfer,omit|}",
+      "loc-prefix=${1:value}",
+      "loc-prefix-def=${1|global,local,individual|}",
+      "loc-suffix=${1:value}",
+      "loc-suffix-def=${1|global,local,individual|}",
+      "loc-counters={${1:list}}",
+      "save-index-counter=${1:value}",
+      "supplemental-locations=${1:basename}",
+      "supplemental-selection=${1:value}",
+      "supplemental-category=${1:value}",
+      "sort=${1:value}",
+      "shuffle=${1:seed}",
+      "sort-field=${1:field}",
+      "missing-sort-fallback=${1:field}",
+      "custom-sort-fallbacks={${1:keyvals}}",
+      "entry-sort-fallback=${1:field}",
+      "abbreviation-sort-fallback=${1:field}",
+      "symbol-sort-fallback=${1:field}",
+      "bibtexentry-sort-fallback=${1:field}",
+      "field-concat-sep=${1:separator}",
+      "trim-sort",
+      "sort-replace={${1:list}}",
+      "sort-rule=${1:value}",
+      "break-at=${1|word,character,sentence,upper-notlower,upper-upper,upper-notlower-word,upper-upper-word,none|}",
+      "break-marker=${1:marker}",
+      "break-at-match={${1:keyvals}}",
+      "break-at-match-op=${1|and,or|}",
+      "break-at-not-match={${1:keyvals}}",
+      "sort-number-pad=${1:number}",
+      "sort-pad-plus=${1:marker}",
+      "sort-pad-minus=${1:marker}",
+      "identical-sort-action=${2|none,def,use,id,original id,${1:field}|}",
+      "sort-suffix=${2|none,non-unique,${1:field}|}",
+      "sort-suffix-marker=${1:marker}",
+      "encapsulate-sort=${1:csname}",
+      "strength=${1|primary,secondary,tertiary,identical|}",
+      "decomposition=${1|canonical,full,none|}",
+      "letter-number-rule=${1|before letter,after letter,between,first,last|}",
+      "letter-number-punc-rule=${1|punc-space-first,punc-space-last,space-punc-first,space-punc-last,space-first-punc-last,punc-first-space-last,punc-first-space-zero,punc-last-space-zero,punc-first-space-zero-match-next,punc-last-space-zero-match-next|}",
+      "numeric-sort-pattern=${1:value}",
+      "numeric-locale=${2|locale,doc,${1:lang-tag}|}",
+      "date-sort-locale=${2|locale,doc,${1:lang-tag}|}",
+      "date-sort-format=${2|default,short,medium,long,full,${1:pattern}|}",
+      "group-formation=${1|default,codepoint,unicode category,unicode script,unicode category and script|}",
+      "secondary=${1:value}",
+      "secondary-match={${1:keyvals}}",
+      "secondary-not-match={${1:keyvals}}",
+      "secondary-match-op=${1|and,or|}",
+      "secondary-match-action=${1|filter,add|}",
+      "secondary-missing-sort-fallback=${1:field}",
+      "secondary-trim-sort",
+      "secondary-sort-replace={${1:list}}",
+      "secondary-sort-rule=${1:value}",
+      "secondary-break-at=${1|word,character,sentence,upper-notlower,upper-upper,upper-notlower-word,upper-upper-word,none|}",
+      "secondary-break-marker=${1:marker}",
+      "secondary-break-at-match={${1:keyvals}}",
+      "secondary-break-at-match-op=${1|and,or|}",
+      "secondary-break-at-not-match={${1:keyvals}}",
+      "secondary-sort-number-pad=${1:number}",
+      "secondary-sort-pad-plus=${1:marker}",
+      "secondary-sort-pad-minus=${1:marker}",
+      "secondary-identical-sort-action=${2|none,def,use,id,original id,${1:field}|}",
+      "secondary-sort-suffix=${2|none,non-unique,${1:field}|}",
+      "secondary-sort-suffix-marker=${1:marker}",
+      "secondary-strength=${1|primary,secondary,tertiary,identical|}",
+      "secondary-decomposition=${1|canonical,full,none|}",
+      "secondary-letter-number-rule=${1|before letter,after letter,between,first,last|}",
+      "secondary-letter-number-punc-rule=${1|punc-space-first,punc-space-last,space-punc-first,space-punc-last,space-first-punc-last,punc-first-space-last,punc-first-space-zero,punc-last-space-zero,punc-first-space-zero-match-next,punc-last-space-zero-match-next|}",
+      "secondary-numeric-sort-pattern=${1:value}",
+      "secondary-numeric-locale=${2|locale,doc,${1:lang-tag}|}",
+      "secondary-date-sort-locale=${2|locale,doc,${1:lang-tag}|}",
+      "secondary-date-sort-format=${2|default,short,medium,long,full,${1:pattern}|}",
+      "secondary-group-formation=${1|default,codepoint,unicode category,unicode script,unicode category and script|}",
+      "dual-prefix=${1:prefix}",
+      "primary-dual-dependency",
+      "combine-dual-locations=${1|false,both,dual,primary,dual retain principal,primary retain principal|}",
+      "dual-type=${2|false,same as entry,same as original entry,same as base,same as primary,same as parent,same as category,${1:label}|}",
+      "dual-category=${2|false,same as entry,same as original entry,same as base,same as primary,same as type,${1:label}|}",
+      "dual-counter=${1:value}",
+      "dual-short-case-change=${1|white space,cs space,dash,nbsp|}",
+      "dual-long-case-change=${1|white space,cs space,dash,nbsp|}",
+      "dual-field=${1:value}",
+      "dual-date-time-field-format=${1:value}",
+      "dual-date-field-format=${1:value}",
+      "dual-time-field-format=${1:value}",
+      "dual-date-time-field-locale=${1:value}",
+      "dual-date-field-locale=${1:value}",
+      "date-time-field-locale=${1:value}",
+      "dual-sort=${1:value}",
+      "dual-sort-field=${1:value}",
+      "dual-missing-sort-fallback=${1:field}",
+      "dual-trim-sort",
+      "dual-sort-replace={${1:list}}",
+      "dual-sort-rule=${1:value}",
+      "dual-break-at=${1|word,character,sentence,upper-notlower,upper-upper,upper-notlower-word,upper-upper-word,none|}",
+      "dual-break-marker=${1:marker}",
+      "dual-break-at-match={${1:keyvals}}",
+      "dual-break-at-match-op=${1|and,or|}",
+      "dual-break-at-not-match={${1:keyvals}}",
+      "dual-sort-number-pad=${1:number}",
+      "dual-sort-pad-plus=${1:marker}",
+      "dual-sort-pad-minus=${1:marker}",
+      "dual-identical-sort-action=${2|none,def,use,id,original id,${1:field}|}",
+      "dual-sort-suffix=${2|none,non-unique,${1:field}|}",
+      "dual-sort-suffix-marker=${1:marker}",
+      "dual-strength=${1|primary,secondary,tertiary,identical|}",
+      "dual-decomposition=${1|canonical,full,none|}",
+      "dual-letter-number-rule=${1|before letter,after letter,between,first,last|}",
+      "dual-letter-number-punc-rule=${1|punc-space-first,punc-space-last,space-punc-first,space-punc-last,space-first-punc-last,punc-first-space-last,punc-first-space-zero,punc-last-space-zero,punc-first-space-zero-match-next,punc-last-space-zero-match-next|}",
+      "dual-numeric-sort-pattern=${1:value}",
+      "dual-numeric-locale=${2|locale,doc,${1:lang-tag}|}",
+      "dual-date-sort-locale=${2|locale,doc,${1:lang-tag}|}",
+      "dual-date-sort-format=${2|default,short,medium,long,full,${1:pattern}|}",
+      "dual-group-formation=${1|default,codepoint,unicode category,unicode script,unicode category and script|}",
+      "dual-entry-map={{${1:list1}},{${2:list2}}}",
+      "dual-abbrv-map={{${1:list1}},{${2:list2}}}",
+      "dual-abbrventry-map={{${1:list1}},{${2:list2}}}",
+      "dual-symbol-map={{${1:list1}},{${2:list2}}}",
+      "dual-indexentry-map={{${1:list1}},{${2:list2}}}",
+      "dual-indexsymbol-map={{${1:list1}},{${2:list2}}}",
+      "dual-indexabbrv-map={{${1:list1}},{${2:list2}}}",
+      "dual-entry-backlink",
+      "dual-abbrv-backlink",
+      "dual-symbol-backlink",
+      "dual-abbrventry-backlink",
+      "dual-entryabbrv-backlink",
+      "dual-indexentry-backlink",
+      "dual-indexsymbol-backlink",
+      "dual-indexabbrv-backlink",
+      "dual-backlink",
+      "tertiary-prefix=${1:prefix}",
+      "tertiary-type=${1:value}",
+      "tertiary-category=${1:value}",
+      "compound-options-global",
+      "compound-dependent",
+      "compound-add-hierarchy",
+      "compound-has-records",
+      "compound-adjust-name=${1|false,unique,once|}",
+      "compound-main-type=${2|same as entry,same as original entry,same as base,same as category,same as parent,${1:label}|}",
+      "compound-other-type=${2|same as main,same as entry,same as original entry,same as base,same as category,same as parent,${1:label}|}",
+      "compound-type-override",
+      "compound-write-def=${1|none,all,ref|}"
+    ],
+    "\\printabbrs,\\printcommonoptions,\\printterms,\\printuserguideindex": [
+      "title=",
+      "toctitle=",
+      "style=",
+      "numberedsection=${1|false,nolabel,autolabel|}",
+      "nonumberlist",
+      "nogroupskip",
+      "nopostdot",
+      "entrycounter",
+      "subentrycounter",
+      "sort=${1|word,letter,standard,use,def,nocase,case|}",
+      "target",
+      "targetnameprefix=${1:prefix}",
+      "prefix=${1:prefix}",
+      "label=",
+      "groups",
+      "leveloffset=${1:<n> or ++<n>}"
+    ],
+    "\\begin{warning},\\begin{important},\\begin{information},\\begin{pinnedbox},\\begin{defnbox},\\begin{settingsbox},\\begin{codebox},\\begin{codebox*},\\begin{compactcodebox},\\begin{compactcodebox*},\\begin{resultbox},\\begin{coderesult},\\begin{coderesult*}": [
+      "title=${1:text}",
+      "notitle",
+      "adjusted title=${1:text}",
+      "adjust text=${1:text}",
+      "squeezed title=${1:text}",
+      "squeezed title*=${1:text}",
+      "titlebox=${1|visible,invisible|}",
+      "detach title",
+      "attach title",
+      "attach title to upper=${1:text}",
+      "subtitle style={${1:options}}",
+      "upperbox=${1|visible,invisible|}",
+      "visible",
+      "invisible",
+      "saveto=${1:file name}",
+      "lowerbox=${1|visible,invisible,ignore|}",
+      "savelowerto=${1:file name}",
+      "lower separated",
+      "savedelimiter=${1:name}",
+      "colframe=",
+      "colback=",
+      "title filled",
+      "colbacktitle=",
+      "colupper=",
+      "collower=",
+      "coltext=",
+      "coltitle=",
+      "fontupper=${1:text}",
+      "fontlower=${1:text}",
+      "fonttitle=${1:text}",
+      "halign=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign upper=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign lower=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign title=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "flushleft upper",
+      "center upper",
+      "flushright upper",
+      "flushleft lower",
+      "center lower",
+      "flushright lower",
+      "flushleft title",
+      "center title",
+      "flushright title",
+      "valign=${1|top,center,bottom,scale,scale*|}",
+      "valign upper=${1|top,center,bottom,scale,scale*|}",
+      "valign lower=${1|top,center,bottom,scale,scale*|}",
+      "valign scale limit=${1:number}",
+      "width=",
+      "text width=",
+      "add to width=",
+      "toprule=",
+      "bottomrule=",
+      "leftrule=",
+      "rightrule=",
+      "titlerule=",
+      "boxrule=",
+      "arc=",
+      "circular arc",
+      "bean arc",
+      "octogon arc",
+      "arc is angular",
+      "arc is curved",
+      "outer arc=",
+      "auto outer arc",
+      "boxsep=",
+      "left=",
+      "left*=",
+      "lefttitle=",
+      "leftupper=",
+      "leftlower=",
+      "right=",
+      "right*=",
+      "righttitle=",
+      "rightupper=",
+      "rightlower=",
+      "top=",
+      "toptitle=",
+      "bottom=",
+      "bottomtitle=",
+      "middle=",
+      "size=${1|normal,title,small,fbox,tight,minimal|}",
+      "oversize",
+      "oversize=",
+      "toggle left and right=${1|none,forced,evenpage|}",
+      "sharp corners",
+      "sharp corners=${1|northwest,northeast,southwest,southeast,north,south,east,west,downhill,uphill,all|}",
+      "rounded corners",
+      "rounded corners=${1|northwest,northeast,southwest,southeast,north,south,east,west,downhill,uphill,all|}",
+      "sharpish corners",
+      "opacityframe=${1:fraction}",
+      "opacityback=${1:fraction}",
+      "opacitybacktitle=${1:fraction}",
+      "opacityfill=${1:fraction}",
+      "opacityupper=${1:fraction}",
+      "opacitylower=${1:fraction}",
+      "opacitytext=${1:fraction}",
+      "opacitytitle=${1:fraction}",
+      "natural height",
+      "height=",
+      "height plus=",
+      "height from=${1:min} to ${2:max}",
+      "text height=",
+      "add to height=",
+      "add to natural height=",
+      "height fill",
+      "height fill=${1|true,false,maximum|}",
+      "inherit height",
+      "inherit height=${1:fraction}",
+      "square",
+      "space=${1:fraction}",
+      "space to upper",
+      "space to lower",
+      "space to both",
+      "space to=${1:macro}",
+      "split=${1:fraction}",
+      "equal height group=${1:id}",
+      "minimum for equal height group=${1:id:length}",
+      "minimum for current equal height group=",
+      "use height from group",
+      "use height from group=${1:id}",
+      "before title={${1:code}}",
+      "after title={${1:code}}",
+      "before upper={${1:code}}",
+      "before upper*={${1:code}}",
+      "after upper={${1:code}}",
+      "after upper*={${1:code}}",
+      "before lower={${1:code}}",
+      "before lower*={${1:code}}",
+      "after lower={${1:code}}",
+      "after lower*={${1:code}}",
+      "text fill=",
+      "tabulars={${1:preamble}}",
+      "tabulars*={${1:code}}{${2:preamble}}",
+      "tabularx={${1:preamble}}",
+      "tabularx*={${1:code}}{${2:preamble}}",
+      "tikz upper",
+      "tikz upper={${1:TikZ options}}",
+      "tikz lower",
+      "tikz lower={${1:TikZ options}}",
+      "tikznode upper",
+      "tikznode upper={${1:TikZ options}}",
+      "tikznode lower",
+      "tikznode lower={${1:TikZ options}}",
+      "tikznode",
+      "tikznode={${1:TikZ options}}",
+      "varwidth upper",
+      "varwidth upper=",
+      "overlay={${1:code}}",
+      "no overlay",
+      "overlay broken={${1:code}}",
+      "overlay unbroken={${1:code}}",
+      "overlay first={${1:code}}",
+      "overlay middle={${1:code}}",
+      "overlay last={${1:code}}",
+      "overlay unbroken and first={${1:code}}",
+      "overlay middle and last={${1:code}}",
+      "overlay unbroken and last={${1:code}}",
+      "overlay first and middle={${1:code}}",
+      "floatplacement=${1:values}",
+      "float",
+      "float=${1:values}",
+      "float*",
+      "float*=${1:values}",
+      "nofloat",
+      "every float={${1:code}}",
+      "before float={${1:code}}",
+      "after float={${1:code}}",
+      "before={${1:code}}",
+      "after={${1:code}}",
+      "nobeforeafter",
+      "force nobeforeafter",
+      "before skip balanced=${1:glue}",
+      "after skip balanced=${1:glue}",
+      "beforeafter skip balanced=${1:glue}",
+      "before skip=",
+      "after skip=",
+      "beforeafter skip=",
+      "left skip=",
+      "right skip=",
+      "leftright skip=",
+      "parskip",
+      "noparskip",
+      "autoparskip",
+      "baseline=",
+      "box align=${1|bottom,top,center,base|}",
+      "ignore nobreak",
+      "before nobreak={${1:code}}",
+      "parfillskip restore",
+      "enlarge top initially by=",
+      "enlarge bottom finally by=",
+      "enlarge top at break by=",
+      "enlarge bottom at break by=",
+      "enlarge top by=",
+      "enlarge bottom by=",
+      "enlarge left by=",
+      "enlarge right by=",
+      "enlarge by=",
+      "grow to left by=",
+      "grow to right by=",
+      "grow sidewards by=",
+      "flush left",
+      "flush right",
+      "center",
+      "toggle enlargement=${1|none,forced,evenpage|}",
+      "spread inwards",
+      "spread inwards=",
+      "spread outwards",
+      "spread outwards=",
+      "move upwards",
+      "move upwards=",
+      "move upwards*",
+      "move upwards*=",
+      "fill downwards",
+      "fill downwards=",
+      "spread upwards",
+      "spread upwards=",
+      "spread upwards*",
+      "spread upwards*=",
+      "spread sidewards",
+      "spread sidewards=",
+      "spread",
+      "spread=",
+      "spread downwards",
+      "spread downwards=",
+      "shrink tight",
+      "extrude left by=",
+      "extrude right by=",
+      "extrude top by=",
+      "extrude bottom by=",
+      "extrude by=",
+      "every box/.style={${1:options}}",
+      "every box on layer 1/.style={${1:options}}",
+      "every box on layer 2/.style={${1:options}}",
+      "every box on layer 3/.style={${1:options}}",
+      "every box on layer 4/.style={${1:options}}",
+      "capture=${1|minipage,hbox,fitbox|}",
+      "hbox",
+      "minipage",
+      "parbox",
+      "hyphenationfix",
+      "tempfile=${1:file name}",
+      "phantom={${1:code}}",
+      "nophantom",
+      "label=",
+      "phantomlabel=",
+      "label type=${1:type}",
+      "no label type",
+      "step=${1:counter}",
+      "step and label={${1:counter}}{${2:marker}}",
+      "list entry=${1:text}",
+      "list text=${1:text}",
+      "add to list={${1:list}}{${2:type}}",
+      "nameref=${1:text}",
+      "hypertarget=${1:marker}",
+      "bookmark=${1:text}",
+      "bookmark*={${1:options}}{${2:text}}",
+      "index=${1:entry}",
+      "index*={${1:name}}{${2:entry}}",
+      "check odd page",
+      "if odd page={${1:odd options}}{${2:even options}}",
+      "if odd page or oneside={${1:odd options}}{${2:even options}}",
+      "if odd page*={${1:odd options}}{${2:even options}}",
+      "if odd page or oneside*={${1:odd options}}{${2:even options}}",
+      "shield externalize",
+      "external=${1:file name}",
+      "remake",
+      "remake",
+      "reset",
+      "code={${1:code}}",
+      "IfBlankTF={${1:token list}}{${2:true}}{${3:false}}",
+      "IfBlankT={${1:token list}}{${2:true}}",
+      "IfBlankF={${1:token list}}{${2:false}}",
+      "IfEmptyTF={${1:token list}}{${2:true}}{${3:false}}",
+      "IfEmptyT={${1:token list}}{${2:true}}",
+      "IfEmptyF={${1:token list}}{${2:false}}",
+      "IfNoValueTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfNoValueT={${1:arg}}{${2:true}}",
+      "IfNoValueF={${1:arg}}{${2:false}}",
+      "IfValueTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfValueT={${1:arg}}{${2:true}}",
+      "IfValueF={${1:arg}}{${2:false}}",
+      "IfBooleanTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfBooleanT={${1:arg}}{${2:true}}",
+      "IfBooleanF={${1:arg}}{${2:false}}",
+      "void",
+      "nirvana",
+      "blend before title=${1|colon,dash,colon hang,dash hang|}",
+      "blend before title code={${1:code}}",
+      "sidebyside",
+      "sidebyside align=${1|center,top,bottom,center seam,top seam,bottom seam|}",
+      "sidebyside gap=",
+      "lefthand width=",
+      "righthand width=",
+      "lefthand ratio=${1:fraction}",
+      "righthand ratio=${1:fraction}",
+      "sidebyside adapt=${1|none,left,right,both|}",
+      "sidebyside switch",
+      "verbatim ignore percent",
+      "record=${1:content}",
+      "no recording",
+      "skin=${1:name}",
+      "skin first=${1:name}",
+      "skin middle=${1:name}",
+      "skin last=${1:name}",
+      "graphical environment=${1:envname}",
+      "frame engine=${1|standard,path,pathjigsaw,pathfirst,pathfirstjigsaw,pathmiddle,pathmiddlejigsaw,pathlast,pathlastjigsaw,freelance,spartan,empty|}",
+      "interior titled engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "interior engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "segmentation engine=${1|standard,path,freelance,spartan,empty|}",
+      "title engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "geometry nodes",
+      "frame code={${1:code}}",
+      "frame empty",
+      "interior titled code={${1:code}}",
+      "interior titled empty",
+      "interior code={${1:code}}",
+      "interior empty",
+      "segmentation code={${1:code}}",
+      "segmentation empty",
+      "title code={${1:code}}",
+      "title empty",
+      "skin first is subskin of={${1:base skin}}{${2:options}}",
+      "skin middle is subskin of={${1:base skin}}{${2:options}}",
+      "skin last is subskin of={${1:base skin}}{${2:options}}",
+      "",
+      "frame style={${1:TikZ options}}",
+      "frame style image=${1:file name}",
+      "frame style tile={${1:graphics options}}{${2:file}}",
+      "frame hidden",
+      "interior style={${1:TikZ options}}",
+      "interior style image=${1:file name}",
+      "interior style tile={${1:graphics options}}{${2:file}}",
+      "interior hidden",
+      "segmentation style={${1:TikZ options}}",
+      "segmentation hidden",
+      "title style={${1:TikZ options}}",
+      "title style image=${1:file name}",
+      "title style tile={${1:graphics options}}{${2:file}}",
+      "title hidden",
+      "titlerule style={${1:TikZ options}}",
+      "tcb fill frame",
+      "tcb fill interior",
+      "tcb fill title",
+      "attach boxed title to top left",
+      "attach boxed title to top left={${1:boxtitle options}}",
+      "attach boxed title to top text left",
+      "attach boxed title to top text left={${1:boxtitle options}}",
+      "attach boxed title to top center",
+      "attach boxed title to top center={${1:boxtitle options}}",
+      "attach boxed title to top right",
+      "attach boxed title to top right={${1:boxtitle options}}",
+      "attach boxed title to top text right",
+      "attach boxed title to top text right={${1:boxtitle options}}",
+      "attach boxed title to bottom left",
+      "attach boxed title to bottom left={${1:boxtitle options}}",
+      "attach boxed title to bottom text left",
+      "attach boxed title to bottom text left={${1:boxtitle options}}",
+      "attach boxed title to bottom center",
+      "attach boxed title to bottom center={${1:boxtitle options}}",
+      "attach boxed title to bottom right",
+      "attach boxed title to bottom right={${1:boxtitle options}}",
+      "attach boxed title to bottom text right",
+      "attach boxed title to bottom text right={${1:boxtitle options}}",
+      "attach boxed title to top",
+      "attach boxed title to top={${1:boxtitle options}}",
+      "attach boxed title to top*",
+      "attach boxed title to top*={${1:boxtitle options}}",
+      "attach boxed title to bottom",
+      "attach boxed title to bottom={${1:boxtitle options}}",
+      "attach boxed title to bottom*",
+      "attach boxed title to bottom*={${1:boxtitle options}}",
+      "flip title",
+      "flip title={${1:boxtitle options}}",
+      "boxed title size=${1|title,standard,copy|}",
+      "boxed title style={${1:options}}",
+      "no boxed title style",
+      "hbox boxed title",
+      "minipage boxed title",
+      "minipage boxed title=",
+      "minipage boxed title*",
+      "minipage boxed title*=",
+      "tikznode boxed title={${1:TikZ options}}",
+      "varwidth boxed title",
+      "varwidth boxed title=",
+      "varwidth boxed title*",
+      "varwidth boxed title*=",
+      "watermark text=${1:text}",
+      "watermark text on=${1:part} is ${2:text}",
+      "watermark graphics=${1:file name}",
+      "watermark graphics on=${1:part} is ${2:file}",
+      "watermark tikz={${1:code}}",
+      "watermark tikz on=${1:part} is ${2:code}",
+      "no watermark",
+      "watermark opacity=${1:fraction}",
+      "watermark zoom=${1:fraction}",
+      "watermark shrink=${1:fraction}",
+      "watermark overzoom=${1:fraction}",
+      "watermark stretch=${1:fraction}",
+      "watermark color=",
+      "clip watermark",
+      "clip title",
+      "clip upper",
+      "clip lower",
+      "borderline={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "no borderline",
+      "show bounding box",
+      "show bounding box=",
+      "borderline north={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline south={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline east={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline west={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline horizontal={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline vertical={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "no shadow",
+      "drop shadow",
+      "drop shadow=",
+      "drop fuzzy shadow",
+      "drop fuzzy shadow=",
+      "drop midday shadow",
+      "drop midday shadow=",
+      "drop fuzzy midday shadow",
+      "drop fuzzy midday shadow=",
+      "halo",
+      "halo=${1:size} with ${2:color}",
+      "fuzzy halo",
+      "fuzzy halo=${1:size} with ${2:color}",
+      "drop shadow southeast",
+      "drop shadow southeast=",
+      "drop shadow south",
+      "drop shadow south=",
+      "drop shadow southwest",
+      "drop shadow southwest=",
+      "drop shadow west",
+      "drop shadow west=",
+      "drop shadow northwest",
+      "drop shadow northwest=",
+      "drop shadow north",
+      "drop shadow north=",
+      "drop shadow northeast",
+      "drop shadow northeast=",
+      "drop shadow east",
+      "drop shadow east=",
+      "drop fuzzy shadow southeast",
+      "drop fuzzy shadow southeast=",
+      "drop fuzzy shadow south",
+      "drop fuzzy shadow south=",
+      "drop fuzzy shadow southwest",
+      "drop fuzzy shadow southwest=",
+      "drop fuzzy shadow west",
+      "drop fuzzy shadow west=",
+      "drop fuzzy shadow northwest",
+      "drop fuzzy shadow northwest=",
+      "drop fuzzy shadow north",
+      "drop fuzzy shadow north=",
+      "drop fuzzy shadow northeast",
+      "drop fuzzy shadow northeast=",
+      "drop fuzzy shadow east",
+      "drop fuzzy shadow east=",
+      "drop lifted shadow",
+      "drop lifted shadow=",
+      "drop small lifted shadow",
+      "drop small lifted shadow=",
+      "drop large lifted shadow",
+      "drop large lifted shadow=",
+      "shadow={${1:xshift}}{${2:yshift}}{${3:offset}}{${4:TikZ options}}",
+      "fuzzy shadow={${1:xshift}}{${2:yshift}}{${3:offset}}{${4:step}}{${5:TikZ options}}",
+      "smart shadow arc",
+      "lifted shadow={${1:xshift}}{${2:yshift}}{${3:bend}}{${4:step}}{${5:TikZ options}}",
+      "tikz={${1:TikZ options}}",
+      "tikz reset",
+      "at begin tikz={${1:TikZ code}}",
+      "at begin tikz reset",
+      "at end tikz={${1:TikZ code}}",
+      "at end tikz reset",
+      "rotate=${1:angle}",
+      "scale=${1:fraction}",
+      "remember",
+      "remember as=${1:name}",
+      "underlay={${1:code}}",
+      "no underlay",
+      "underlay broken={${1:code}}",
+      "underlay unbroken={${1:code}}",
+      "no underlay unbroken",
+      "underlay first={${1:code}}",
+      "no underlay first",
+      "underlay middle={${1:code}}",
+      "no underlay middle",
+      "underlay last={${1:code}}",
+      "no underlay last",
+      "underlay boxed title={${1:code}}",
+      "no underlay boxed title",
+      "underlay unbroken and first={${1:code}}",
+      "underlay middle and last={${1:code}}",
+      "underlay unbroken and last={${1:code}}",
+      "underlay first and middle={${1:code}}",
+      "finish={${1:code}}",
+      "no finish",
+      "finish broken={${1:code}}",
+      "finish unbroken={${1:code}}",
+      "no finish unbroken",
+      "finish first={${1:code}}",
+      "no finish first",
+      "finish middle={${1:code}}",
+      "no finish middle",
+      "finish last={${1:code}}",
+      "no finish last",
+      "finish unbroken and first={${1:code}}",
+      "finish middle and last={${1:code}}",
+      "finish unbroken and last={${1:code}}",
+      "finish first and middle={${1:code}}",
+      "hyperref=${1:marker}",
+      "hyperref interior=${1:marker}",
+      "hyperref title=${1:marker}",
+      "hyperref node={${1:marker}}{${2:node}}",
+      "hyperlink=${1:marker}",
+      "hyperlink interior=${1:marker}",
+      "hyperlink title=${1:marker}",
+      "hyperlink node={${1:marker}}{${2:node}}",
+      "hyperurl=${1:URL}",
+      "hyperurl interior=${1:URL}",
+      "hyperurl title=${1:URL}",
+      "hyperurl node={${1:URL}}{${2:node}}",
+      "hyperurl*={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* interior={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* title={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* node={${1:hyperref options}}{${2:URL}}{${3:node}}",
+      "draftmode",
+      "standard",
+      "standard jigsaw",
+      "enhanced",
+      "enhanced standard",
+      "blank",
+      "enhanced jigsaw",
+      "enhanced standard jigsaw",
+      "marker",
+      "bicolor",
+      "colbacklower=",
+      "opacitybacklower=${1:fraction}",
+      "overlaplower=",
+      "bicolor jigsaw",
+      "tile",
+      "beamer",
+      "widget",
+      "empty",
+      "blanker",
+      "blankest",
+      "spartan",
+      "draft",
+      "freelance",
+      "extend freelance={${1:options}}",
+      "extend freelancefirst={${1:options}}",
+      "extend freelancemiddle={${1:options}}",
+      "extend freelancelast={${1:options}}",
+      "only=<${1:overlay spec}>{${2:options}}",
+      "hide=<${1:overlay spec}>",
+      "beamer hidden/.style={${1:options}}",
+      "alert=<${1:overlay spec}>",
+      "beamer alerted/.style={${1:options}}",
+      "",
+      "breakable",
+      "breakable=${1|true,false,unlimited|}",
+      "unbreakable",
+      "enforce breakable",
+      "title after break=${1:text}",
+      "notitle after break",
+      "adjusted title after break=${1:text}",
+      "lines before break=${1:number}",
+      "break at=${1:length1/length2/...}",
+      "enlargepage=${1:length1/length2/...}",
+      "enlargepage flexible=",
+      "compress page",
+      "compress page=${1|all,baselineskip,none|}",
+      "shrink break goal=",
+      "use color stack",
+      "toprule at break=",
+      "bottomrule at break=",
+      "topsep at break=",
+      "bottomsep at break=",
+      "pad before break=",
+      "pad before break*=",
+      "pad after break=",
+      "pad at break=",
+      "pad at break*=",
+      "height fixed for=${1|none,first,middle,last,first and middle,middle and last,all|}",
+      "vfill before first",
+      "segmentation at break",
+      "extras={${1:options}}",
+      "no extras",
+      "extras broken={${1:options}}",
+      "extras unbroken={${1:options}}",
+      "no extras unbroken",
+      "extras first={${1:options}}",
+      "no extras first",
+      "extras middle={${1:options}}",
+      "no extras middle",
+      "extras last={${1:options}}",
+      "no extras last",
+      "extras unbroken and first={${1:options}}",
+      "extras middle and last={${1:options}}",
+      "extras unbroken and last={${1:options}}",
+      "extras first and middle={${1:options}}",
+      "extras title after break={${1:options}}",
+      "no extras title after break"
+    ]
+  },
+  "args": [
+    "\\usepackage/nlctuserguide#c"
+  ]
+}

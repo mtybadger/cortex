@@ -1,0 +1,191 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "filecontentsprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "filecontentsprint{${1:macro}}"
+      }
+    },
+    {
+      "name": "FCDprintenvname"
+    },
+    {
+      "name": "FCDprintenvoptions"
+    },
+    {
+      "name": "filecontentsprintviascan",
+      "arg": {
+        "format": "{}",
+        "snippet": "filecontentsprintviascan{${1:macro}}"
+      }
+    },
+    {
+      "name": "filecontentsexec",
+      "arg": {
+        "format": "{}",
+        "snippet": "filecontentsexec{${1:code}}"
+      }
+    },
+    {
+      "name": "filecontentsheremacro"
+    },
+    {
+      "name": "filecontentsdef",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsdef",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsgdef",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsgdef",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsdefstarred",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsdefstarred",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsgdefstarred",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsgdefstarred",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsdefmacro",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsdefmacro",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsgdefmacro",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsgdefmacro",
+      "unusual": true
+    },
+    {
+      "name": "filecontentshere",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentshere",
+      "unusual": true
+    },
+    {
+      "name": "filecontentsherestarred",
+      "unusual": true
+    },
+    {
+      "name": "endfilecontentsherestarred",
+      "unusual": true
+    },
+    {
+      "name": "FCDtabtofile",
+      "unusual": true
+    },
+    {
+      "name": "FCDtabtomacro",
+      "unusual": true
+    },
+    {
+      "name": "FCDformfeedtofile",
+      "unusual": true
+    },
+    {
+      "name": "FCDformfeedtomacro",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "filecontentsdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsdef*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsgdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsgdef*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsdefstarred",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsgdefstarred",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:file}}{${2:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsdefmacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentsgdefmacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "filecontentshere",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:file}}"
+      }
+    },
+    {
+      "name": "filecontentshere*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:file}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

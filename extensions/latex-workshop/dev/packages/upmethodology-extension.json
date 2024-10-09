@@ -1,0 +1,124 @@
+{
+  "deps": [
+    {
+      "name": "upmethodology-p-common"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Ifdefined",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ifdefined{${1:arg}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Ifelsedefined",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Ifelsedefined{${1:arg}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "Ifundefined",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ifundefined{${1:arg}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Ifelseundefined",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Ifelseundefined{${1:arg}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "Get",
+      "arg": {
+        "format": "{}",
+        "snippet": "Get{${1:variable}}"
+      }
+    },
+    {
+      "name": "GetLang",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GetLang{${1:variable}}{${2:language}}"
+      }
+    },
+    {
+      "name": "Set",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Set{${1:variable}}{${2:name}}"
+      }
+    },
+    {
+      "name": "Set",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Set[${3:language}]{${1:variable}}{${2:name}}"
+      }
+    },
+    {
+      "name": "Append",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Append{${1:variable}}{${2:text}}"
+      }
+    },
+    {
+      "name": "Append",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Append[${3:language}]{${1:variable}}{${2:text}}"
+      }
+    },
+    {
+      "name": "Unset",
+      "arg": {
+        "format": "{}",
+        "snippet": "Unset{${1:variable}}"
+      }
+    },
+    {
+      "name": "Unset",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Unset[${2:language}]{${1:variable}}"
+      }
+    },
+    {
+      "name": "DeclareCopyright",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "DeclareCopyright{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
+      }
+    },
+    {
+      "name": "DeclareCopyright",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "DeclareCopyright[${5:language}]{${1:extname}}{${2:year}}{${3:copyrighter}}{${4:text}}"
+      }
+    },
+    {
+      "name": "Put",
+      "arg": {
+        "format": "(){}",
+        "snippet": "Put(${2:x},${3:y}){${1:stuff}}"
+      }
+    },
+    {
+      "name": "UseExtension",
+      "arg": {
+        "format": "{}",
+        "snippet": "UseExtension{${1:extname}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

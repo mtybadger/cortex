@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "fp-basic"
+    },
+    {
+      "name": "fp-snap"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "calc",
+      "if": "calc"
+    },
+    {
+      "name": "pgf",
+      "if": "pgfmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adjcalcset",
+      "arg": {
+        "format": "{}",
+        "snippet": "adjcalcset{${1:options%keyvals}}",
+        "keys": [
+          "\\adjcalcset,\\usepackage/adjcalc#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "adjsetlength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adjsetlength{${1:length macro}}{${2:length}}"
+      }
+    },
+    {
+      "name": "adjaddtolength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adjaddtolength{${1:length macro}}{${2:length}}"
+      }
+    },
+    {
+      "name": "adjsetcounter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adjsetcounter{${1:counter}}{${2:integer}}"
+      }
+    },
+    {
+      "name": "adjaddtocounter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adjaddtocounter{${1:counter}}{${2:integer}}"
+      }
+    },
+    {
+      "name": "adjsetlengthdefault",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adjsetlengthdefault{${1:length macro}}{${2:length}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\adjcalcset,\\usepackage/adjcalc#c": [
+      "etex",
+      "calc",
+      "pgfmath",
+      "overwrite",
+      "defaultunit=${1:unit}"
+    ],
+    "\\usepackage/adjcalc#c": [
+      "none"
+    ]
+  },
+  "args": [
+    "\\adjcalcset,\\usepackage/adjcalc#c",
+    "\\usepackage/adjcalc#c"
+  ]
+}

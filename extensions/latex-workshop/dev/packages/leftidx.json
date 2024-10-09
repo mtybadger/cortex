@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "leftidx",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "leftidx{${1:left indices}}{${2:symbol}}{${3:right indices}}"
+      }
+    },
+    {
+      "name": "ltrans",
+      "arg": {
+        "format": "{}",
+        "snippet": "ltrans{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

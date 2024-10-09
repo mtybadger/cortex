@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "mafr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "entete",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "entete{${1:left%text}}{${2:center%text}}{${3:right%text}}"
+      }
+    },
+    {
+      "name": "squnumber",
+      "unusual": true
+    },
+    {
+      "name": "sque",
+      "unusual": true
+    },
+    {
+      "name": "squ"
+    },
+    {
+      "name": "quenumber",
+      "unusual": true
+    },
+    {
+      "name": "que"
+    },
+    {
+      "name": "qsq"
+    },
+    {
+      "name": "exenumber",
+      "unusual": true
+    },
+    {
+      "name": "exe"
+    },
+    {
+      "name": "droite"
+    }
+  ],
+  "envs": [
+    {
+      "name": "juxtapose"
+    },
+    {
+      "name": "juxtapose",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

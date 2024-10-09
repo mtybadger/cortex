@@ -1,0 +1,96 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setpstgraph",
+      "arg": {
+        "format": "{}",
+        "snippet": "setpstgraph{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{pstgraph},\\setpstgraph"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pstlabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pstlabel{${1:x-label}}{${2:y-label}}"
+      }
+    },
+    {
+      "name": "pstfileplot",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstfileplot{${1:file}}"
+      }
+    },
+    {
+      "name": "pstfileplot",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pstfileplot[${2:pstricks options}]{${1:file}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pstgraph",
+      "arg": {
+        "format": "()",
+        "snippet": "(${1:x0},${2:y0})"
+      }
+    },
+    {
+      "name": "pstgraph",
+      "arg": {
+        "format": "[]()",
+        "snippet": "[${1:options%keyvals}](${2:x0},${3:y0})",
+        "keys": [
+          "\\begin{pstgraph},\\setpstgraph"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{pstgraph},\\setpstgraph": [
+      "xmin=${1:number}",
+      "xmax=${1:number}",
+      "ymin=${1:number}",
+      "ymax=${1:number}",
+      "xgriddiv=${1:number}",
+      "ygriddiv=${1:number}",
+      "gridstyle=${1:style}",
+      "gridcolor=",
+      "gridwidth=",
+      "xticksize=${1:number}",
+      "yticksize=${1:number}",
+      "xtagsep=${1:number}",
+      "ytagsep=${1:number}",
+      "xtagformat=${1:format commands}",
+      "ytagformat=${1:format commands}",
+      "xlabel=${1:text}",
+      "ylabel=${1:text}",
+      "xlabelsep=${1:number}",
+      "ylabelsep=${1:number}",
+      "framewidth=",
+      "framecolor="
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,2 @@
+#!/bin/sh
+$LATEXWORKSHOP_DOCKER_PATH run -i --rm -w "$(pwd)" -v "$(pwd):$(pwd)" $LATEXWORKSHOP_DOCKER_LATEX synctex "$@"

@@ -1,0 +1,197 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "ucs",
+      "if": "utf8x"
+    },
+    {
+      "name": "ifpdf",
+      "if": "cmap"
+    },
+    {
+      "name": "cmap",
+      "if": "cmap"
+    },
+    {
+      "name": "varioref-vi",
+      "if": "varioref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "captionsvietnam",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "dateUSenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "datevietnam",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "headpagename",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "Abreve"
+    },
+    {
+      "name": "abreve"
+    },
+    {
+      "name": "ABREVE"
+    },
+    {
+      "name": "Acircumflex"
+    },
+    {
+      "name": "acircumflex"
+    },
+    {
+      "name": "ACIRCUMFLEX"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "Ecircumflex"
+    },
+    {
+      "name": "ecircumflex"
+    },
+    {
+      "name": "ECIRCUMFLEX"
+    },
+    {
+      "name": "guillemotleft"
+    },
+    {
+      "name": "guillemotright"
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "h",
+      "arg": {
+        "format": "{}",
+        "snippet": "h{${1:arg}}"
+      }
+    },
+    {
+      "name": "Ocircumflex"
+    },
+    {
+      "name": "ocircumflex"
+    },
+    {
+      "name": "OCIRCUMFLEX"
+    },
+    {
+      "name": "OHORN"
+    },
+    {
+      "name": "ohorn"
+    },
+    {
+      "name": "Ohorn"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "UHORN"
+    },
+    {
+      "name": "uhorn"
+    },
+    {
+      "name": "Uhorn"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/vietnam#c": [
+      "viscii",
+      "tcvn",
+      "vps",
+      "mviscii",
+      "noinputenc",
+      "nocaptions",
+      "utf8",
+      "utf8x",
+      "varioref",
+      "cmap"
+    ]
+  },
+  "args": [
+    "\\usepackage/vietnam#c"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "oblivoir-xl"
+    },
+    {
+      "name": "moreverb",
+      "if": "moreverb"
+    },
+    {
+      "name": "lwarp",
+      "if": "lwarp"
+    },
+    {
+      "name": "xob-lwarp",
+      "if": "lwarp"
+    },
+    {
+      "name": "amsmath",
+      "if": "amsmath"
+    },
+    {
+      "name": "xob-amssymb",
+      "if": "amsmath"
+    },
+    {
+      "name": "bookmark",
+      "if": "bookmark"
+    },
+    {
+      "name": "ob-nokoreanappendix",
+      "if": "nokorean"
+    },
+    {
+      "name": "polyglossia",
+      "if": "polyglossia"
+    },
+    {
+      "name": "babel",
+      "if": "babelhangul"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifLuaOrXeTeX",
+      "unusual": true
+    },
+    {
+      "name": "MSNormalSize",
+      "if": "ms"
+    },
+    {
+      "name": "sethangulfont",
+      "if": "polyglossia",
+      "arg": {
+        "format": "{}",
+        "snippet": "sethangulfont{${1:font name}}"
+      }
+    },
+    {
+      "name": "sethangulfont",
+      "if": "polyglossia",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sethangulfont{${1:font name}}[${2:font features}]"
+      }
+    },
+    {
+      "name": "hangulfont",
+      "if": "polyglossia",
+      "unusual": true
+    },
+    {
+      "name": "hangulfonttt",
+      "if": "polyglossia",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/oblivoir#c": [
+      "cjk",
+      "dhucs",
+      "fontspec={${1:fontspec options}}",
+      "hyperref={${1:hyperref options}}",
+      "xcolor={${1:xcolor options}}"
+    ]
+  },
+  "args": [
+    "\\documentclass/oblivoir#c"
+  ]
+}

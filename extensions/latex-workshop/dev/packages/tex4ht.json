@@ -1,0 +1,471 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AnchorLabel"
+    },
+    {
+      "name": "BlockElementEnd",
+      "arg": {
+        "format": "{}",
+        "snippet": "BlockElementEnd{${1:name}}"
+      }
+    },
+    {
+      "name": "BlockElementStart",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "BlockElementStart{${1:name}}{${2:additional-attributes}}"
+      }
+    },
+    {
+      "name": "ConfigureEnv",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "ConfigureEnv{${1:envname}}{${2:before-env}}{${3:after-env}}{${4:before-list}}{${5:after-list}}"
+      }
+    },
+    {
+      "name": "ConfigureList",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "ConfigureList{${1:list-name}}{${2:before-list}}{${3:after-list}}{${4:before-label}}{${5:after-label}}"
+      }
+    },
+    {
+      "name": "ConfigureMark",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConfigureMark{${1:unit-name}}{${2:print-section-number}}"
+      }
+    },
+    {
+      "name": "ConfigureToc",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "ConfigureToc{${1:unit-name}}{${2:before-unit-number}}{${3:before-content}}{${4:before-page-number}}{${5:at-end}}"
+      }
+    },
+    {
+      "name": "ContCutAt",
+      "arg": {
+        "format": "{}",
+        "snippet": "ContCutAt{${1:section-type}}"
+      }
+    },
+    {
+      "name": "Css",
+      "arg": {
+        "format": "{}",
+        "snippet": "Css{${1:CSS code}}"
+      }
+    },
+    {
+      "name": "CssFile",
+      "arg": {
+        "format": "[]",
+        "snippet": "CssFile[${1:list of CSS files}]"
+      }
+    },
+    {
+      "name": "CutAt",
+      "arg": {
+        "format": "{}",
+        "snippet": "CutAt{${1:at-unit,until-unit1,until-unit2,...}}"
+      }
+    },
+    {
+      "name": "EndCss"
+    },
+    {
+      "name": "EndCssFile"
+    },
+    {
+      "name": "EndHPage"
+    },
+    {
+      "name": "EndJavaScript"
+    },
+    {
+      "name": "EndLink"
+    },
+    {
+      "name": "EndNoFonts"
+    },
+    {
+      "name": "EndP"
+    },
+    {
+      "name": "EndPicture"
+    },
+    {
+      "name": "EndPreamble"
+    },
+    {
+      "name": "HCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "HCode{${1:markup}}"
+      }
+    },
+    {
+      "name": "HPage",
+      "arg": {
+        "format": "{}",
+        "snippet": "HPage{${1:anchor}}"
+      }
+    },
+    {
+      "name": "HtmlParOff"
+    },
+    {
+      "name": "HtmlParOn"
+    },
+    {
+      "name": "ifOption",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifOption{${1:option}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifTag",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifTag{${1:label}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "IgnoreIndent"
+    },
+    {
+      "name": "IgnorePar"
+    },
+    {
+      "name": "InlineElementEnd",
+      "arg": {
+        "format": "{}",
+        "snippet": "InlineElementEnd{${1:name}}"
+      }
+    },
+    {
+      "name": "InlineElementStart",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InlineElementStart{${1:name}}{${2:additional-attributes}}"
+      }
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "LikeRef",
+      "arg": {
+        "format": "{}",
+        "snippet": "LikeRef{${1:label}}"
+      }
+    },
+    {
+      "name": "Link",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Link[${3:target-file args}]{${1:target-loc}}{${2:cur-loc}}"
+      }
+    },
+    {
+      "name": "Link",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Link{${1:target-loc}}{${2:cur-loc}}"
+      }
+    },
+    {
+      "name": "LinkCommand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "LinkCommand{${1:cmd}}{${2:def}}"
+      }
+    },
+    {
+      "name": "NewConfigure",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "NewConfigure{${1:name}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "NewConfigure",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewConfigure{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "NewLogicalBlock",
+      "arg": {
+        "format": "{}",
+        "snippet": "NewLogicalBlock{${1:name}}"
+      }
+    },
+    {
+      "name": "NewSection",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewSection{${1:cmd}}{${2:mark-for-toc}}"
+      }
+    },
+    {
+      "name": "NextPictureFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "NextPictureFile{${1:filename%file}}"
+      }
+    },
+    {
+      "name": "NoFonts"
+    },
+    {
+      "name": "NoLink",
+      "arg": {
+        "format": "{}",
+        "snippet": "NoLink{${1:section-name}}"
+      }
+    },
+    {
+      "name": "PauseCutAt",
+      "arg": {
+        "format": "{}",
+        "snippet": "PauseCutAt{${1:section-type}}"
+      }
+    },
+    {
+      "name": "Picture*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Picture*[${2:replacement-for-text-browsers}]{${1:file-name attributes}}"
+      }
+    },
+    {
+      "name": "Picture*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Picture*{${1:file-name attributes}}"
+      }
+    },
+    {
+      "name": "Picture",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Picture[${2:replacement-for-textual-browser}]{${1:file-name attributes}}"
+      }
+    },
+    {
+      "name": "Picture",
+      "arg": {
+        "format": "{}",
+        "snippet": "Picture{${1:file-name attributes}}"
+      }
+    },
+    {
+      "name": "PictureFile"
+    },
+    {
+      "name": "Preamble",
+      "arg": {
+        "format": "{}",
+        "snippet": "Preamble{${1:TeX4ht options}}"
+      }
+    },
+    {
+      "name": "RecallEndP"
+    },
+    {
+      "name": "RecallHtmlPar"
+    },
+    {
+      "name": "Ref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ref{${1:label}}"
+      }
+    },
+    {
+      "name": "SaveEndP"
+    },
+    {
+      "name": "SaveHtmlPar"
+    },
+    {
+      "name": "ScriptCommand",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ScriptCommand{${1:command}}{${2:prefix}}{${3:postfix}}"
+      }
+    },
+    {
+      "name": "ScriptEnv",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ScriptEnv{${1:environment}}{${2:prefix}}{${3:postfix}}"
+      }
+    },
+    {
+      "name": "SetBlockProperty",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SetBlockProperty{${1:name}}{${2:attribute-name}}{${3:value}}"
+      }
+    },
+    {
+      "name": "SetTag",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTag{${1:name}}"
+      }
+    },
+    {
+      "name": "ShowIndent"
+    },
+    {
+      "name": "ShowPar"
+    },
+    {
+      "name": "ShowRefstepAnchor"
+    },
+    {
+      "name": "SkipRefstepAnchor"
+    },
+    {
+      "name": "TableOfContents"
+    },
+    {
+      "name": "tableofcontents",
+      "arg": {
+        "format": "[]",
+        "snippet": "tableofcontents[${1:unit1,unit2,...}]"
+      }
+    },
+    {
+      "name": "TableOfContents",
+      "arg": {
+        "format": "[]",
+        "snippet": "TableOfContents[${1:unit1,unit2,...}]"
+      }
+    },
+    {
+      "name": "Tag",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Tag{${1:label}}{${2:content}}"
+      }
+    },
+    {
+      "name": "Tg<markup>"
+    },
+    {
+      "name": "TitleCount"
+    },
+    {
+      "name": "TitleMark"
+    },
+    {
+      "name": "TocAt",
+      "arg": {
+        "format": "{}",
+        "snippet": "TocAt{${1:section-type1,section-type2,...}}"
+      }
+    },
+    {
+      "name": "TocCount"
+    },
+    {
+      "name": "VerbMath",
+      "arg": {
+        "format": "{}",
+        "snippet": "VerbMath{${1:envname}}"
+      }
+    },
+    {
+      "name": "fixmathjaxtoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "fixmathjaxtoc{${1:math cmd%cmd}}"
+      }
+    },
+    {
+      "name": "NewConfigureOO",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NewConfigureOO{${1:configname}}"
+      }
+    },
+    {
+      "name": "ConfigureOO",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConfigureOO{${1:configname}}{${2:configuration}}"
+      }
+    },
+    {
+      "name": "xeuniregisterchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xeuniregisterchar{${1:char-code}}"
+      }
+    },
+    {
+      "name": "xeuniunregisterchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xeuniunregisterchar{${1:char-code}}"
+      }
+    },
+    {
+      "name": "xeuniregisterblock",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xeuniregisterblock{${1:char-code1}}{${2:char-code2}}"
+      }
+    },
+    {
+      "name": "xeuniregisterblockhex",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xeuniregisterblockhex{${1:hex-num1}}{${2:hex-num2}}"
+      }
+    },
+    {
+      "name": "xeuniblockdef",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xeuniblockdef{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "xeuniuseblock",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xeuniuseblock{${1:block-name}}"
+      }
+    },
+    {
+      "name": "xenunidelblock",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xenunidelblock{${1:block-name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cellrefs",
+      "if": "cellrefs",
+      "unusual": true
+    },
+    {
+      "name": "theexceltexCounterC",
+      "unusual": true
+    },
+    {
+      "name": "theexceltexCounterT",
+      "unusual": true
+    },
+    {
+      "name": "inccell",
+      "arg": {
+        "format": "{}",
+        "snippet": "inccell{${1:file!sheet!cell}}"
+      }
+    },
+    {
+      "name": "inctab",
+      "arg": {
+        "format": "{}",
+        "snippet": "inctab{${1:file!sheet!cell1!cell2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/exceltex#c": [
+      "cellrefs"
+    ]
+  },
+  "args": [
+    "\\usepackage/exceltex#c"
+  ]
+}

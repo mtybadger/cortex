@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ShowCharInBox",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShowCharInBox{${1:character}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

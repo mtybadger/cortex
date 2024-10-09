@@ -1,0 +1,135 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "ctablestack"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CatcodeTableIniTeX",
+      "unusual": true
+    },
+    {
+      "name": "CatcodeTableString",
+      "unusual": true
+    },
+    {
+      "name": "CatcodeTableLaTeX",
+      "unusual": true
+    },
+    {
+      "name": "CatcodeTableLaTeXAtLetter",
+      "unusual": true
+    },
+    {
+      "name": "CatcodeTableOther",
+      "unusual": true
+    },
+    {
+      "name": "CatcodeTableExpl",
+      "unusual": true
+    },
+    {
+      "name": "SetCatcodeRange",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SetCatcodeRange{${1:start}}{${2:end}}{${3:catcode}}"
+      }
+    },
+    {
+      "name": "EndCatcodeRegime",
+      "unusual": true
+    },
+    {
+      "name": "PushCatcodeTableNumStack",
+      "unusual": true
+    },
+    {
+      "name": "PopCatcodeTableNumStack",
+      "unusual": true
+    },
+    {
+      "name": "newluatexcatcodetable",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newluatexcatcodetable{${1:catcodetable%cmd}}"
+      }
+    },
+    {
+      "name": "setcatcodetable",
+      "unusual": true
+    },
+    {
+      "name": "setluatexcatcodetable",
+      "unusual": true
+    },
+    {
+      "name": "RequireLuaModule",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RequireLuaModule{${1:file}}"
+      }
+    },
+    {
+      "name": "RequireLuaModule",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "RequireLuaModule{${1:file}}[${2:info}]"
+      }
+    },
+    {
+      "name": "newluatexattribute",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newluatexattribute{${1:attribute}}"
+      }
+    },
+    {
+      "name": "setluatexattribute",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setluatexattribute{${1:attribute}}{${2:value}}"
+      }
+    },
+    {
+      "name": "unsetluatexattribute",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "unsetluatexattribute{${1:attribute}}"
+      }
+    },
+    {
+      "name": "luatexluaescapestring",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luatexluaescapestring{${1:TeX code}}"
+      }
+    },
+    {
+      "name": "luatexlatelua",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luatexlatelua{${1:lua code}}"
+      }
+    },
+    {
+      "name": "luatexscantextokens",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

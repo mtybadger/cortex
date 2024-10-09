@@ -1,0 +1,231 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshadows"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "tikzlibraryshapes.symbols"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarymath"
+    },
+    {
+      "name": "tikzlibrarydecorations.text"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "worldflag",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "worldflag[${2:options%keyvals}]{${1:flag code}}",
+        "keys": [
+          "\\worldflag,\\flagsdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "flagsdefault",
+      "arg": {
+        "format": "[]",
+        "snippet": "flagsdefault[${1:options%keyvals}]",
+        "keys": [
+          "\\worldflag,\\flagsdefault",
+          "\\flagsdefault"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "framecode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "framecode{${1:code}}"
+      }
+    },
+    {
+      "name": "flagvariant",
+      "unusual": true
+    },
+    {
+      "name": "flagwidth",
+      "unusual": true
+    },
+    {
+      "name": "flaglength",
+      "unusual": true
+    },
+    {
+      "name": "flagframe",
+      "unusual": true
+    },
+    {
+      "name": "framecolor",
+      "unusual": true
+    },
+    {
+      "name": "stretchfactor",
+      "unusual": true
+    },
+    {
+      "name": "hstripesII",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "hstripesII{${1:color1%color}}{${2:color2%color}}"
+      }
+    },
+    {
+      "name": "hstripesIII",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "hstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
+      }
+    },
+    {
+      "name": "hstripesIV",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "hstripesIV{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}{${4:color4%color}}"
+      }
+    },
+    {
+      "name": "vstripesII",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "vstripesII{${1:color1%color}}{${2:color2%color}}"
+      }
+    },
+    {
+      "name": "vstripesIII",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "vstripesIII{${1:color1%color}}{${2:color2%color}}{${3:color3%color}}"
+      }
+    },
+    {
+      "name": "hbar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "hbar{${1:color}}{${2:ycoord}}{${3:width}}"
+      }
+    },
+    {
+      "name": "vbar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "vbar{${1:color}}{${2:xcoord}}{${3:width}}"
+      }
+    },
+    {
+      "name": "chevron",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "chevron{${1:color}}{${2:xcoord}}"
+      }
+    },
+    {
+      "name": "starV",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "starV{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
+      }
+    },
+    {
+      "name": "starVI",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "starVI{${1:color}}{${2:coord}}{${3:radius}}{${4:angle}}"
+      }
+    },
+    {
+      "name": "starn",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "starn{${1:color}}{${2:coord}}{${3:outer radius}}{${4:inner radius}}{${5:angle}}"
+      }
+    },
+    {
+      "name": "moon",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "moon{${1:color}}{${2:coord1}}{${3:radius1}}{${4:coord2}}{${5:radius2}}"
+      }
+    },
+    {
+      "name": "unionjack",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "unionjack{${1:xcoord1}}{${2:ycoord1}}{${3:xcoord2}}{${4:ycoord2}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "flagdescription",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:aspectratio}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\worldflag,\\flagsdefault": [
+      "width=",
+      "length=",
+      "framewidth=",
+      "framecolor=",
+      "stretch=${1:number}",
+      "grid",
+      "noemblem",
+      "emblem",
+      "emblemdefault",
+      "variant=${1:number}"
+    ],
+    "\\flagsdefault": [
+      "rotate=${1:degrees}",
+      "turn=${1:degrees}",
+      "hang=${1:degrees}"
+    ]
+  },
+  "args": []
+}

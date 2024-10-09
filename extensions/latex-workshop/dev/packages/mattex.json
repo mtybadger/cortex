@@ -1,0 +1,141 @@
+{
+  "deps": [
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "siunitx"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "collcell"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Mset",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "Mset{${1:varname}}{${2:significand}}{${3:error}}{${4:exponent}}"
+      }
+    },
+    {
+      "name": "Mset",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Mset{${1:varname}}{${2:significand}}{${3:error}}"
+      }
+    },
+    {
+      "name": "Mset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Mset{${1:varname}}{${2:significand}}"
+      }
+    },
+    {
+      "name": "Mval",
+      "arg": {
+        "format": "{}",
+        "snippet": "Mval{${1:varname}}"
+      }
+    },
+    {
+      "name": "Merr",
+      "arg": {
+        "format": "{}",
+        "snippet": "Merr{${1:varname}}"
+      }
+    },
+    {
+      "name": "Mnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "Mnum{${1:varname}}"
+      }
+    },
+    {
+      "name": "MSI",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MSI{${1:varname}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "M",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "M{${1:varname}}"
+      }
+    },
+    {
+      "name": "Mvallit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Mvallit{${1:varname}}"
+      }
+    },
+    {
+      "name": "Merrlit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Merrlit{${1:varname}}"
+      }
+    },
+    {
+      "name": "preparematrix",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "preparematrix{${1:varname}}{${2:rows}}{${3:columns}}"
+      }
+    },
+    {
+      "name": "usematrix"
+    },
+    {
+      "name": "header"
+    },
+    {
+      "name": "noheader"
+    },
+    {
+      "name": "mtdirectory",
+      "unusual": true
+    },
+    {
+      "name": "tabMval",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tabMval{${1:varname}}"
+      }
+    },
+    {
+      "name": "tabMnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tabMnum{${1:varname}}"
+      }
+    },
+    {
+      "name": "tabMerr",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tabMerr{${1:varname}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

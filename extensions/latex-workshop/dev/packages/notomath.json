@@ -1,0 +1,263 @@
+{
+  "deps": [
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "noto-serif"
+    },
+    {
+      "name": "noto-sans"
+    },
+    {
+      "name": "newtxmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BIA",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIB",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIC",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BID",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIE",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIF",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIG",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIH",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BII",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIJ",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIK",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIL",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIM",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIN",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIO",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIP",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIQ",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIR",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIS",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIT",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIU",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIV",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIW",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIX",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIY",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIZ",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIa",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIb",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIc",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BId",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIe",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIf",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIg",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIh",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIi",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIj",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIk",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIl",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIm",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIn",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIo",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIp",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIq",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIr",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIs",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIt",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIu",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIv",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIw",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIx",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIy",
+      "if": "useBImacros"
+    },
+    {
+      "name": "BIz",
+      "if": "useBImacros"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/notomath#c": [
+      "scaled=${1:factor}",
+      "sfdefault",
+      "proportional",
+      "pf",
+      "oldstyle",
+      "osf",
+      "mono",
+      "varbb",
+      "vvarbb",
+      "upint",
+      "noamssymbols",
+      "slantedGreek",
+      "frenchmath",
+      "nosymbolsc",
+      "subscriptcorrection",
+      "timesmathacc",
+      "uprightscript",
+      "smallerops",
+      "useBImacros",
+      "noOT1"
+    ]
+  },
+  "args": [
+    "\\usepackage/notomath#c"
+  ]
+}

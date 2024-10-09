@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import './symbolIcons.css';
-import { localize } from '../../../../nls.js';
-import { foreground, registerColor } from '../../../../platform/theme/common/colorRegistry.js';
+import 'vs/css!./symbolIcons';
+import { localize } from 'vs/nls';
+import { foreground, registerColor } from 'vs/platform/theme/common/colorRegistry';
 
 export const SYMBOL_ICON_ARRAY_FOREGROUND = registerColor('symbolIcon.arrayForeground', foreground, localize('symbolIcon.arrayForeground', 'The foreground color for array symbols. These symbols appear in the outline, breadcrumb, and suggest widget.'));
 

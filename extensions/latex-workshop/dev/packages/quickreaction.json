@@ -1,0 +1,65 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarymatrix"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    }
+  ],
+  "macros": [
+    {
+      "name": "quickarrow"
+    },
+    {
+      "name": "quickarrow",
+      "arg": {
+        "format": "[]",
+        "snippet": "quickarrow[${1:above}]"
+      }
+    },
+    {
+      "name": "quickarrow",
+      "arg": {
+        "format": "[][]",
+        "snippet": "quickarrow[${1:above}][${2:below}]"
+      }
+    },
+    {
+      "name": "fixrow",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "quickreaction"
+    },
+    {
+      "name": "quickreaction",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:opt1}]"
+      }
+    },
+    {
+      "name": "quickreaction",
+      "unusual": true,
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:opt1}][${2:opt2}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/quickreaction#c": [
+      "iupac"
+    ]
+  },
+  "args": [
+    "\\usepackage/quickreaction#c"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "medmath",
+      "arg": {
+        "format": "{}",
+        "snippet": "medmath{${1:formula}}"
+      }
+    },
+    {
+      "name": "medop",
+      "arg": {
+        "format": "{}",
+        "snippet": "medop{${1:operator}}"
+      }
+    },
+    {
+      "name": "medint",
+      "arg": {
+        "format": "{}",
+        "snippet": "medint{${1:operator}}"
+      }
+    },
+    {
+      "name": "medintcorr",
+      "arg": {
+        "format": "{}",
+        "snippet": "medintcorr{${1:length}}"
+      }
+    },
+    {
+      "name": "mfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mfrac{${1:num}}{${2:den}}"
+      }
+    },
+    {
+      "name": "mbinom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mbinom{${1:above}}{${2:below}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "medsize"
+    },
+    {
+      "name": "mmatrix"
+    }
+  ],
+  "keys": {
+    "\\usepackage/medmath#c": [
+      "bare",
+      "base",
+      "all"
+    ]
+  },
+  "args": [
+    "\\usepackage/medmath#c"
+  ]
+}

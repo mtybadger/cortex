@@ -1,0 +1,16 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\zref#c": [
+      "anchor",
+      "url"
+    ]
+  },
+  "args": []
+}

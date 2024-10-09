@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sTeX"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { KeybindingsRegistry, KeybindingWeight } from '../../../../platform/keybinding/common/keybindingsRegistry.js';
-import { ITerminalGroupService } from './terminal.js';
+import { KeybindingsRegistry, KeybindingWeight } from 'vs/platform/keybinding/common/keybindingsRegistry';
+import { ITerminalGroupService } from 'vs/workbench/contrib/terminal/browser/terminal';
 
 export function setupTerminalCommands(): void {
 	registerOpenTerminalAtIndexCommands();

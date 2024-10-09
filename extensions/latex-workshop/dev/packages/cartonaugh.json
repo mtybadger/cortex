@@ -1,0 +1,148 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarymatrix"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "autoterms",
+      "arg": {
+        "format": "[]",
+        "snippet": "autoterms[${1:content}]"
+      }
+    },
+    {
+      "name": "indeterminants",
+      "arg": {
+        "format": "{}",
+        "snippet": "indeterminants{${1:cells}}"
+      }
+    },
+    {
+      "name": "manualterms",
+      "arg": {
+        "format": "{}",
+        "snippet": "manualterms{${1:contents}}"
+      }
+    },
+    {
+      "name": "maxterms",
+      "arg": {
+        "format": "{}",
+        "snippet": "maxterms{${1:cells}}"
+      }
+    },
+    {
+      "name": "minterms",
+      "arg": {
+        "format": "{}",
+        "snippet": "minterms{${1:cells}}"
+      }
+    },
+    {
+      "name": "terms",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "terms{${1:cells}}{${2:content}}"
+      }
+    },
+    {
+      "name": "implicant",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "implicant{${1:NWcell}}{${2:SEcell}}"
+      }
+    },
+    {
+      "name": "implicant",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "implicant{${1:NWcell}}{${2:SEcell}}[${3:submaps}]"
+      }
+    },
+    {
+      "name": "implicantedge",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "implicantedge{${1:NWpart_NWcell}}{${2:NWpart_SEcell}}{${3:SEpart_NWcell}}{${4:SEpart_SEcell}}"
+      }
+    },
+    {
+      "name": "implicantedge",
+      "arg": {
+        "format": "{}{}{}{}[]",
+        "snippet": "implicantedge{${1:NWpart_NWcell}}{${2:NWpart_SEcell}}{${3:SEpart_NWcell}}{${4:SEpart_SEcell}}[${5:submaps}]"
+      }
+    },
+    {
+      "name": "implicantcorner",
+      "arg": {
+        "format": "[]",
+        "snippet": "implicantcorner[${1:submaps}]"
+      }
+    },
+    {
+      "name": "implicantspread",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "implicantspread{${1:inner%l}}{${2:outer%l}}"
+      }
+    },
+    {
+      "name": "resetimplicantspread"
+    },
+    {
+      "name": "changecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "changecolor{${1:color}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "cartonaugh"
+    },
+    {
+      "name": "cartonaugh",
+      "arg": {
+        "format": "[][][][][][]",
+        "snippet": "[${1:Xsize}][${2:Ysize}][${3:Zsize}][${4:Xlabel}][${5:Ylabel}][${6:Zlabel}]"
+      }
+    },
+    {
+      "name": "cartonaugh",
+      "unusual": true,
+      "arg": {
+        "format": "[][][][][][][]",
+        "snippet": "[${1:Xsize}][${2:Ysize}][${3:Zsize}][${4:Xlabel}][${5:Ylabel}][${6:Zlabel}][${7:submap_sep_type}]"
+      }
+    },
+    {
+      "name": "cartonaugh",
+      "unusual": true,
+      "arg": {
+        "format": "*[][][][][][][]",
+        "snippet": "*[${1:Xsize}][${2:Ysize}][${3:Zsize}][${4:Xlabel}][${5:Ylabel}][${6:Zlabel}][${7:submap_sep_type}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

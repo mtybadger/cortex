@@ -3,16 +3,17 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { localize } from '../../../../nls.js';
-import { fromNow } from '../../../../base/common/date.js';
-import { isLinuxSnap } from '../../../../base/common/platform.js';
-import { IClipboardService } from '../../../../platform/clipboard/common/clipboardService.js';
-import { AbstractDialogHandler, IConfirmation, IConfirmationResult, IPrompt, IAsyncPromptResult } from '../../../../platform/dialogs/common/dialogs.js';
-import { ILogService } from '../../../../platform/log/common/log.js';
-import { INativeHostService } from '../../../../platform/native/common/native.js';
-import { IProductService } from '../../../../platform/product/common/productService.js';
-import { process } from '../../../../base/parts/sandbox/electron-sandbox/globals.js';
-import { getActiveWindow } from '../../../../base/browser/dom.js';
+import { localize } from 'vs/nls';
+import { fromNow } from 'vs/base/common/date';
+import { isLinuxSnap } from 'vs/base/common/platform';
+import { IClipboardService } from 'vs/platform/clipboard/common/clipboardService';
+import { AbstractDialogHandler, IConfirmation, IConfirmationResult, IPrompt, IAsyncPromptResult } from 'vs/platform/dialogs/common/dialogs';
+import { ILogService } from 'vs/platform/log/common/log';
+import { INativeHostService } from 'vs/platform/native/common/native';
+import { IProductService } from 'vs/platform/product/common/productService';
+import { process } from 'vs/base/parts/sandbox/electron-sandbox/globals';
+import { getReleaseString } from 'vs/workbench/common/release';
+import { getActiveWindow } from 'vs/base/browser/dom';
 
 export class NativeDialogHandler extends AbstractDialogHandler {
 
@@ -78,6 +79,7 @@ export class NativeDialogHandler extends AbstractDialogHandler {
 		}
 
 		const osProps = await this.nativeHostService.getOSProperties();
+		const releaseString = getReleaseString();
 
 		const detailString = (useAgo: boolean): string => {
 			return localize({ key: 'aboutDetail', comment: ['Electron, Chromium, Node.js and V8 are product names that need no translation'] },
@@ -91,7 +93,7 @@ export class NativeDialogHandler extends AbstractDialogHandler {
 				process.versions['node'],
 				process.versions['v8'],
 				`${osProps.type} ${osProps.arch} ${osProps.release}${isLinuxSnap ? ' snap' : ''}`
-			);
+			).replace('\n', `\n${releaseString} ${this.productService.release || 'Unknown'}\n`);
 		};
 
 		const detail = detailString(true);

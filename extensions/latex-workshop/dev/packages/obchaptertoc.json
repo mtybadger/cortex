@@ -1,0 +1,79 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "chaptertoc"
+    },
+    {
+      "name": "ifChapterTOCafterskip",
+      "unusual": true
+    },
+    {
+      "name": "ChapterTOCafterskiptrue"
+    },
+    {
+      "name": "ChapterTOCafterskipfalse"
+    },
+    {
+      "name": "chaptertocmaxlevel",
+      "arg": {
+        "format": "{}",
+        "snippet": "chaptertocmaxlevel{${1:section level}}"
+      }
+    },
+    {
+      "name": "ChapterTOCFormat",
+      "arg": {
+        "format": "{}",
+        "snippet": "ChapterTOCFormat{${1:commands}}"
+      }
+    },
+    {
+      "name": "chaptertocfont",
+      "unusual": true
+    },
+    {
+      "name": "chaptertocsecfont",
+      "unusual": true
+    },
+    {
+      "name": "TOCFormatsameas",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TOCFormatsameas{${1:section-level1}}{${2:section-level2}}{${3:properties}}"
+      }
+    },
+    {
+      "name": "thetocmarker",
+      "unusual": true
+    },
+    {
+      "name": "normalchangetocdepth",
+      "unusual": true
+    },
+    {
+      "name": "afterchaptertocskip",
+      "unusual": true
+    },
+    {
+      "name": "theobchaptocmaxdepth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/obchaptertoc#c": [
+      "level=${1:section level}"
+    ]
+  },
+  "args": [
+    "\\usepackage/obchaptertoc#c"
+  ]
+}

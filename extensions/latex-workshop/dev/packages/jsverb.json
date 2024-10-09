@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ttyen"
+    },
+    {
+      "name": "ttbslash"
+    },
+    {
+      "name": "BS"
+    },
+    {
+      "name": "verbatimleftmargin",
+      "unusual": true
+    },
+    {
+      "name": "verbatimsize"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/jsverb#c": [
+      "yen"
+    ]
+  },
+  "args": [
+    "\\usepackage/jsverb#c"
+  ]
+}

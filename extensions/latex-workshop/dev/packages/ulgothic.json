@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ulgothic#c": [
+      "scaled",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/ulgothic#c"
+  ]
+}

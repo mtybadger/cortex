@@ -1,0 +1,110 @@
+{
+  "deps": [
+    {
+      "name": "newfloat"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "colortbl"
+    },
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [
+    {
+      "name": "firstcase",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "firstcase{${1:letter}}{${2:definition%formula}}{${3:explanation%text}}"
+      }
+    },
+    {
+      "name": "otherform",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "otherform{${1:definition%formula}}{${2:explanation%text}}"
+      }
+    },
+    {
+      "name": "nonterm",
+      "arg": {
+        "format": "{}",
+        "snippet": "nonterm{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "gralt"
+    },
+    {
+      "name": "nontermsubtil",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nontermsubtil{${1:arg}}"
+      }
+    },
+    {
+      "name": "firstcasesubtil",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "firstcasesubtil{${1:arg}}{${2:definition%formula}}{${3:explanation%text}}"
+      }
+    },
+    {
+      "name": "downplay"
+    },
+    {
+      "name": "highlight"
+    },
+    {
+      "name": "lochighlight",
+      "arg": {
+        "format": "{}",
+        "snippet": "lochighlight{${1:text}}"
+      }
+    },
+    {
+      "name": "rowstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rowstyle{${1:style code}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "grammar"
+    },
+    {
+      "name": "grammar",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:caption%text}][${2:pos}]"
+      }
+    },
+    {
+      "name": "grammar",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "[${1:caption%text}][${2:pos}][${3:label}]"
+      }
+    },
+    {
+      "name": "floatgrammar",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/formal-grammar#c": [
+      "center"
+    ]
+  },
+  "args": [
+    "\\usepackage/formal-grammar#c"
+  ]
+}

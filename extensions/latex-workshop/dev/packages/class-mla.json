@@ -1,0 +1,216 @@
+{
+  "deps": [
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "fullpage"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "newtxtext"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "hanging"
+    },
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "float"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "enotez"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "microtype",
+      "if": "microtype"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mladate"
+    },
+    {
+      "name": "professor",
+      "arg": {
+        "format": "{}",
+        "snippet": "professor{${1:professor}}"
+      }
+    },
+    {
+      "name": "course",
+      "arg": {
+        "format": "{}",
+        "snippet": "course{${1:course%text}}"
+      }
+    },
+    {
+      "name": "makemlaheader",
+      "unusual": true
+    },
+    {
+      "name": "openrangeformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "openrangeformat{${1:arg}}"
+      }
+    },
+    {
+      "name": "openrangemark",
+      "unusual": true
+    },
+    {
+      "name": "mlanamedash",
+      "unusual": true
+    },
+    {
+      "name": "headlesscite",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "headlesscite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "headlesscite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "headlesscite[${2:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "headlesscite",
+      "arg": {
+        "format": "{}",
+        "snippet": "headlesscite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "headlessfullcite",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "headlessfullcite[${2:prenote}][${3:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "headlessfullcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "headlessfullcite[${2:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "headlessfullcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "headlessfullcite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "titleandsubtitle",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "titleandsubtitle[${2:prenote}][${3:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "titleandsubtitle",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "titleandsubtitle[${2:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "titleandsubtitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "titleandsubtitle{${1:bibid}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "noindent",
+      "unusual": true
+    },
+    {
+      "name": "blockquote"
+    },
+    {
+      "name": "paper"
+    },
+    {
+      "name": "notes"
+    },
+    {
+      "name": "mlanotes"
+    },
+    {
+      "name": "workscited"
+    }
+  ],
+  "keys": {
+    "\\documentclass/mla#c": [
+      "mla7",
+      "mla8",
+      "mla8alt",
+      "nofigures",
+      "nonotes",
+      "microtype",
+      "nopaperheader",
+      "nopageheader",
+      "noheaders",
+      "plainheadings",
+      "fullpage"
+    ],
+    "\\usepackage/biblatex#c,\\ExecuteBibliographyOptions#c": [
+      "annotation",
+      "showlocation",
+      "longdash",
+      "noremoteinfo",
+      "isan",
+      "ismn",
+      "isrn",
+      "issn",
+      "firstlonghand",
+      "nofullfootnote",
+      "mancitepar",
+      "footnoterulestrict",
+      "mladraft"
+    ]
+  },
+  "args": [
+    "\\documentclass/mla#c",
+    "\\usepackage/biblatex#c,\\ExecuteBibliographyOptions#c"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fullpage#c": [
+      "in",
+      "cm",
+      "plain",
+      "empty",
+      "headings",
+      "myheadings"
+    ]
+  },
+  "args": [
+    "\\usepackage/fullpage#c"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "kake",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "kake{${1:multiplicand}}{${2:multiplier}}{${3:product}}"
+      }
+    },
+    {
+      "name": "wari",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "wari{${1:dividend}}{${2:divisor}}{${3:quotient}}"
+      }
+    },
+    {
+      "name": "musi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "musi{${1:holes}}{${2:distance from right}}"
+      }
+    },
+    {
+      "name": "sen"
+    },
+    {
+      "name": "bubunsen",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bubunsen{${1:length}}{${2:distance from right}}"
+      }
+    },
+    {
+      "name": "eaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "eaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "noneaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "noneaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "halfeaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "halfeaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "halfnoneaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "halfnoneaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "hhalfeaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "hhalfeaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "hhalfnoneaten",
+      "arg": {
+        "format": "{}",
+        "snippet": "hhalfnoneaten{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "musiwidth",
+      "unusual": true
+    },
+    {
+      "name": "musiheight",
+      "unusual": true
+    },
+    {
+      "name": "musidepth",
+      "unusual": true
+    },
+    {
+      "name": "musihgap",
+      "unusual": true
+    },
+    {
+      "name": "musivgap",
+      "unusual": true
+    },
+    {
+      "name": "musirule",
+      "unusual": true
+    },
+    {
+      "name": "musiopsymbol",
+      "unusual": true
+    },
+    {
+      "name": "musiwarikakko",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "musikui"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

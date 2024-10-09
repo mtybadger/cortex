@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "biblicenseintrotext",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/biblatex-license#c": [
+      "license=${1|short,full,off|}",
+      "url",
+      "link",
+      "introtext={${1:text}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/biblatex-license#c"
+  ]
+}

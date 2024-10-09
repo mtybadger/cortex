@@ -1,0 +1,791 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "cmap"
+    },
+    {
+      "name": "fourier"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "doc"
+    },
+    {
+      "name": "dox"
+    },
+    {
+      "name": "upquote"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "class-scrbook",
+      "if": "book"
+    },
+    {
+      "name": "class-scrreprt",
+      "if": "report"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifnlctdocinlinetitle",
+      "unusual": true
+    },
+    {
+      "name": "ifwidecs",
+      "unusual": true
+    },
+    {
+      "name": "ifwbprompt",
+      "unusual": true
+    },
+    {
+      "name": "letterheading",
+      "arg": {
+        "format": "{}",
+        "snippet": "letterheading{${1:text}}"
+      }
+    },
+    {
+      "name": "nlctdocmarginfmt"
+    },
+    {
+      "name": "nlctdocmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctdocmargin{${1:text}}"
+      }
+    },
+    {
+      "name": "nlctdocmarginwide",
+      "arg": {
+        "format": "{}",
+        "snippet": "nlctdocmarginwide{${1:text}}"
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "mgroup",
+      "arg": {
+        "format": "{}",
+        "snippet": "mgroup{${1:arg}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:arg}}"
+      }
+    },
+    {
+      "name": "PrintChanges"
+    },
+    {
+      "name": "RecordChanges"
+    },
+    {
+      "name": "main",
+      "arg": {
+        "format": "{}",
+        "snippet": "main{${1:num}}"
+      }
+    },
+    {
+      "name": "usage",
+      "arg": {
+        "format": "{}",
+        "snippet": "usage{${1:num}}"
+      }
+    },
+    {
+      "name": "nlctdocmainencap",
+      "unusual": true
+    },
+    {
+      "name": "nlctdochyperencap",
+      "unusual": true
+    },
+    {
+      "name": "SpecialPageIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialPageIndex{${1:arg}}"
+      }
+    },
+    {
+      "name": "see",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "see{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "macrowidth",
+      "unusual": true
+    },
+    {
+      "name": "importantfmt",
+      "unusual": true
+    },
+    {
+      "name": "importantsymbolfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "importantsymbolfont{${1:text}}"
+      }
+    },
+    {
+      "name": "importantpar"
+    },
+    {
+      "name": "importantsymbol"
+    },
+    {
+      "name": "defsbox",
+      "unusual": true
+    },
+    {
+      "name": "defwidth",
+      "unusual": true
+    },
+    {
+      "name": "tmpwidth",
+      "unusual": true
+    },
+    {
+      "name": "tmpheight",
+      "unusual": true
+    },
+    {
+      "name": "idxmarker",
+      "unusual": true
+    },
+    {
+      "name": "doidxmarker",
+      "unusual": true
+    },
+    {
+      "name": "appfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "appfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "iapp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "iapp{${1:arg}}"
+      }
+    },
+    {
+      "name": "app",
+      "arg": {
+        "format": "{}",
+        "snippet": "app{${1:arg}}"
+      }
+    },
+    {
+      "name": "qt",
+      "arg": {
+        "format": "{}",
+        "snippet": "qt{${1:text}}"
+      }
+    },
+    {
+      "name": "termdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "termdef{${1:text}}"
+      }
+    },
+    {
+      "name": "term",
+      "arg": {
+        "format": "{}",
+        "snippet": "term{${1:text}}"
+      }
+    },
+    {
+      "name": "iterm",
+      "arg": {
+        "format": "{}",
+        "snippet": "iterm{${1:text}}"
+      }
+    },
+    {
+      "name": "tableref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableref{${1:label}}"
+      }
+    },
+    {
+      "name": "Tableref",
+      "arg": {
+        "format": "{}",
+        "snippet": "Tableref{${1:label}}"
+      }
+    },
+    {
+      "name": "dequals",
+      "unusual": true
+    },
+    {
+      "name": "dcomma",
+      "unusual": true
+    },
+    {
+      "name": "dhyphen",
+      "unusual": true
+    },
+    {
+      "name": "idxmarkedfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "idxmarkedfont{${1:arg}}"
+      }
+    },
+    {
+      "name": "ics",
+      "arg": {
+        "format": "{}",
+        "snippet": "ics{${1:arg}}"
+      }
+    },
+    {
+      "name": "csmeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "csmeta{${1:arg}}"
+      }
+    },
+    {
+      "name": "csmetameta",
+      "arg": {
+        "format": "{}",
+        "snippet": "csmetameta{${1:arg}}"
+      }
+    },
+    {
+      "name": "csoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "csoptfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "icsopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "icsopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "csopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "csopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "pkgoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgoptfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ipkgopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "ipkgopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "ideprecatedpkgopt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ideprecatedpkgopt[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "pkgopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "deprecatedpkgopt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "deprecatedpkgopt[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "pkgoptval",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgoptval{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsoptfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsoptfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "iclsopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "iclsopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "ideprecatedclsopt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ideprecatedclsopt[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsopt{${1:arg}}"
+      }
+    },
+    {
+      "name": "deprecatedclsopt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "deprecatedclsopt[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsoptval",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsoptval{${1:arg}}"
+      }
+    },
+    {
+      "name": "filetypefmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "filetypefmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ifiletype",
+      "arg": {
+        "format": "{}",
+        "snippet": "ifiletype{${1:arg}}"
+      }
+    },
+    {
+      "name": "filetype",
+      "arg": {
+        "format": "{}",
+        "snippet": "filetype{${1:arg}}"
+      }
+    },
+    {
+      "name": "styfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "styfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "isty",
+      "arg": {
+        "format": "{}",
+        "snippet": "isty{${1:arg}}"
+      }
+    },
+    {
+      "name": "sty",
+      "arg": {
+        "format": "{}",
+        "snippet": "sty{${1:arg}}"
+      }
+    },
+    {
+      "name": "clsfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "clsfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "icls",
+      "arg": {
+        "format": "{}",
+        "snippet": "icls{${1:arg}}"
+      }
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:arg}}"
+      }
+    },
+    {
+      "name": "envfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "envfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ienv",
+      "arg": {
+        "format": "{}",
+        "snippet": "ienv{${1:arg}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:arg}}"
+      }
+    },
+    {
+      "name": "ctrfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctrfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ictr",
+      "arg": {
+        "format": "{}",
+        "snippet": "ictr{${1:arg}}"
+      }
+    },
+    {
+      "name": "ctr",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctr{${1:arg}}"
+      }
+    },
+    {
+      "name": "boolfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "boolfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ibool",
+      "arg": {
+        "format": "{}",
+        "snippet": "ibool{${1:arg}}"
+      }
+    },
+    {
+      "name": "bool",
+      "arg": {
+        "format": "{}",
+        "snippet": "bool{${1:arg}}"
+      }
+    },
+    {
+      "name": "bstfmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "bstfmt{${1:text}}"
+      }
+    },
+    {
+      "name": "ibst",
+      "arg": {
+        "format": "{}",
+        "snippet": "ibst{${1:arg}}"
+      }
+    },
+    {
+      "name": "bst",
+      "arg": {
+        "format": "{}",
+        "snippet": "bst{${1:arg}}"
+      }
+    },
+    {
+      "name": "menu",
+      "arg": {
+        "format": "{}",
+        "snippet": "menu{${1:text}}"
+      }
+    },
+    {
+      "name": "ctandoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctandoc{${1:text}}"
+      }
+    },
+    {
+      "name": "theexample"
+    },
+    {
+      "name": "examplename",
+      "unusual": true
+    },
+    {
+      "name": "toTop"
+    },
+    {
+      "name": "oldlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "oldlabel{${1:label}}"
+      }
+    },
+    {
+      "name": "sectionref",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionref{${1:text}}"
+      }
+    },
+    {
+      "name": "xrsectionref",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "xrsectionref{${1:filename%file}}{${2:arg}}{${3:text}}"
+      }
+    },
+    {
+      "name": "qtdocref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "qtdocref{${1:filename%file}}{${2:text}}"
+      }
+    },
+    {
+      "name": "docref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "docref{${1:filename%file}}{${2:text}}"
+      }
+    },
+    {
+      "name": "altdocref",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "altdocref{${1:filename1%file}}{${2:filename2%file}}{${3:text}}"
+      }
+    },
+    {
+      "name": "urlref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "urlref{${1:URL}}{${2:text}}"
+      }
+    },
+    {
+      "name": "urlfootref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "urlfootref{${1:URL}}{${2:text}}"
+      }
+    },
+    {
+      "name": "submenu",
+      "arg": {
+        "format": "{}",
+        "snippet": "submenu{${1:text}}"
+      }
+    },
+    {
+      "name": "listofexamples"
+    },
+    {
+      "name": "nlcthlangle"
+    },
+    {
+      "name": "nlcthrangle"
+    },
+    {
+      "name": "aargh"
+    },
+    {
+      "name": "promptsymbol",
+      "unusual": true
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    }
+  ],
+  "envs": [
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label%plain}]"
+      }
+    },
+    {
+      "name": "important"
+    },
+    {
+      "name": "prompt"
+    },
+    {
+      "name": "display"
+    },
+    {
+      "name": "labelledbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:label%plain}}"
+      }
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:title%text}}{${2:label}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/nlctdoc#c": [
+      "article",
+      "book",
+      "report",
+      "a5paper",
+      "normalmp",
+      "inlinetitle",
+      "widecs",
+      "wbprompt"
+    ]
+  },
+  "args": [
+    "\\documentclass/nlctdoc#c"
+  ]
+}

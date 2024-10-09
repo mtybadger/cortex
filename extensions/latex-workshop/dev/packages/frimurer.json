@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "textfrimurer",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfrimurer{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "frimurer"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

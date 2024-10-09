@@ -1,0 +1,109 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "spectralextralight"
+    },
+    {
+      "name": "spectrallight"
+    },
+    {
+      "name": "spectralmedium"
+    },
+    {
+      "name": "spectralsemibold"
+    },
+    {
+      "name": "spectralextrabold"
+    },
+    {
+      "name": "liningnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "liningnums{${1:text}}"
+      }
+    },
+    {
+      "name": "tabularnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabularnums{${1:text}}"
+      }
+    },
+    {
+      "name": "proportionalnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "proportionalnums{${1:text}}"
+      }
+    },
+    {
+      "name": "swshape"
+    },
+    {
+      "name": "textsw",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsw{${1:text}}"
+      }
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/spectral#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "lf",
+      "oldstyle",
+      "osf",
+      "tabular",
+      "t",
+      "proportional",
+      "p",
+      "medium",
+      "m",
+      "light",
+      "l",
+      "el",
+      "extralight",
+      "semibold",
+      "sb",
+      "extrabold",
+      "eb"
+    ]
+  },
+  "args": [
+    "\\usepackage/spectral#c"
+  ]
+}

@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { URI } from '../../../../base/common/uri.js';
-import { extractSelection, withSelection } from '../../common/opener.js';
+import { URI } from 'vs/base/common/uri';
+import { extractSelection, withSelection } from 'vs/platform/opener/common/opener';
 
 suite('extractSelection', () => {
 

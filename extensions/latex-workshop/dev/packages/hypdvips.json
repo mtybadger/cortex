@@ -1,0 +1,299 @@
+{
+  "deps": [
+    {
+      "name": "atveryend"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "attachfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "attachfile{${1:file}}"
+      }
+    },
+    {
+      "name": "attachfile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "attachfile[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\attachfile"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bmstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bmstyle{${1:level}}{${2:style%keyvals}}",
+        "keys": [
+          "\\bmstyle#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "backrefcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "backrefcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "embeddedcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "embeddedcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "footnotecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "footnotecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "tablenotecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablenotecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "backrefbordercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "backrefbordercolor{${1:R G B}}"
+      }
+    },
+    {
+      "name": "embeddedbordercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "embeddedbordercolor{${1:R G B}}"
+      }
+    },
+    {
+      "name": "footnotebordercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "footnotebordercolor{${1:R G B}}"
+      }
+    },
+    {
+      "name": "tablenotebordercolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablenotebordercolor{${1:R G B}}"
+      }
+    },
+    {
+      "name": "embedfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "embedfile{${1:file}}"
+      }
+    },
+    {
+      "name": "embedfile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "embedfile[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\embedfile"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "evenboxesstring",
+      "arg": {
+        "format": "{}",
+        "snippet": "evenboxesstring{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "file{${1:file}}{${2:description}}"
+      }
+    },
+    {
+      "name": "goto",
+      "arg": {
+        "format": "{}",
+        "snippet": "goto{${1:text}}"
+      }
+    },
+    {
+      "name": "goto",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "goto[${2:options%keyvals}]{${1:text}}"
+      }
+    },
+    {
+      "name": "gotoparent",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gotoparent{${1:destination}}{${2:text}}"
+      }
+    },
+    {
+      "name": "listofattachments"
+    },
+    {
+      "name": "loaformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "loaformat{${1:ID}}{${2:type}}{${3:file}}{${4:options}}"
+      }
+    },
+    {
+      "name": "odest",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "odest{${1:name}}{${2:offset%l}}"
+      }
+    },
+    {
+      "name": "openaction",
+      "arg": {
+        "format": "{}",
+        "snippet": "openaction{${1:action}}"
+      }
+    },
+    {
+      "name": "pagelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "pagelabel{${1:pagelabel}}"
+      }
+    },
+    {
+      "name": "pagelabel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pagelabel[${2:page}]{${1:pagelabel}}"
+      }
+    },
+    {
+      "name": "runattachment",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runattachment{${1:ID}}{${2:text}}"
+      }
+    },
+    {
+      "name": "currentpoint",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "currentpoint{${1:linewidth}}"
+      }
+    },
+    {
+      "name": "debug",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "debug{${1:warning%text}}"
+      }
+    },
+    {
+      "name": "point",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hypdvips#c": [
+      "autoauthor",
+      "autotitle",
+      "detailedbr",
+      "emptypagelabels",
+      "evenboxes",
+      "fish",
+      "flip",
+      "fullbookmarks",
+      "german",
+      "hypertnotes",
+      "JavaScript",
+      "loabr",
+      "lofbr",
+      "lotbr",
+      "Mac",
+      "mirror",
+      "nlwarning",
+      "openmessage",
+      "quadpoints",
+      "showdests",
+      "smallfootnotes",
+      "tocbr"
+    ],
+    "\\attachfile": [
+      "anncreated=${1:LaTeX time}",
+      "annmodified=${1:LaTeX time}",
+      "author=${1:author}",
+      "checksum=${1:checksum}",
+      "color=${1:<r> <g> <b>}",
+      "created=${1:date}",
+      "creator=${1:creator}",
+      "description=${1:text}",
+      "filetype=${1:filetype}",
+      "flags=${1:postscript integer}",
+      "icon=${1|graph,pushpin,paperclip,tag|}",
+      "iconfilename=${1:file name}",
+      "mimetype=${1:mimtype}",
+      "modified=${1:date}",
+      "name=${1:file name}",
+      "opacity=${1:factor}",
+      "overprint",
+      "rect=${1:<llx> <lly> <urx> <ury>}",
+      "resourcefork=${1:file name}",
+      "size=${1:number}",
+      "subject=${1:text}",
+      "text=${1:text}",
+      "timezone=${1:offset}"
+    ],
+    "\\bmstyle#c": [
+      "bold",
+      "italic",
+      "color={${1:<r> <g> <b>}}"
+    ],
+    "\\embedfile": [
+      "checksum=${1:checksum}",
+      "created=${1:date}",
+      "creator=${1:creator}",
+      "description=${1:text}",
+      "filetype=${1:filetype}",
+      "mimetype=${1:mimtype}",
+      "modified=${1:date}",
+      "name=${1:file name}",
+      "resourcefork=${1:file name}",
+      "size=${1:number}",
+      "dest=${1:destination}",
+      "filename=${1:file name}",
+      "id=${1:id}",
+      "newwindow",
+      "target="
+    ]
+  },
+  "args": [
+    "\\usepackage/hypdvips#c"
+  ]
+}

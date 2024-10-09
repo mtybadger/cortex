@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "pdfescape"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "StringEncodingConvert",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "StringEncodingConvert{${1:cmd}}{${2:string}}{${3:from}}{${4:to}}"
+      }
+    },
+    {
+      "name": "StringEncodingSuccessFailure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "StringEncodingSuccessFailure{${1:success}}{${2:failure}}"
+      }
+    },
+    {
+      "name": "StringEncodingConvertTest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "StringEncodingConvertTest{${1:cmd}}{${2:string}}{${3:from}}{${4:to}}{${5:success}}{${6:failure}}"
+      }
+    },
+    {
+      "name": "StringEncodingList",
+      "unusual": true
+    },
+    {
+      "name": "StringEncodingLoad",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "StringEncodingLoad{${1:enc file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

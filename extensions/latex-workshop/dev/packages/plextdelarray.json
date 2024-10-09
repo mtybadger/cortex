@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "plextarray"
+    },
+    {
+      "name": "delarray"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "luakeysdebug",
+      "arg": {
+        "format": "{}",
+        "snippet": "luakeysdebug{${1:kv-string}}"
+      }
+    },
+    {
+      "name": "luakeysdebug",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "luakeysdebug[${2:options%keyvals}]{${1:kv-string}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

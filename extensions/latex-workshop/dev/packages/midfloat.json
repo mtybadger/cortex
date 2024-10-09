@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "stripsep",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "strip"
+    },
+    {
+      "name": "strip",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:top skip/bottom skip}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,65 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifpdfcolAvailable",
+      "unusual": true
+    },
+    {
+      "name": "pdfcolErrorNoStacks",
+      "unusual": true
+    },
+    {
+      "name": "pdfcolInitStack",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfcolInitStack{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfcolIfStackExists",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pdfcolIfStackExists{${1:name}}{${2:then}}{${3:else}}"
+      }
+    },
+    {
+      "name": "pdfcolSwitchStack",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfcolSwitchStack{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfcolSetCurrentColor",
+      "unusual": true
+    },
+    {
+      "name": "pdfcolSetCurrent",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfcolSetCurrent{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

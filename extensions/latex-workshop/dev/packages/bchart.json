@@ -1,0 +1,91 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bcbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "bcbar{${1:number}}"
+      }
+    },
+    {
+      "name": "bcbar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bcbar[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\bcbar"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bcskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "bcskip{${1:length}}"
+      }
+    },
+    {
+      "name": "bcxlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "bcxlabel{${1:label}}"
+      }
+    },
+    {
+      "name": "bclabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "bclabel{${1:label}}"
+      }
+    },
+    {
+      "name": "bcfontstyle",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "bchart",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{bchart}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{bchart}": [
+      "max=${1:number}",
+      "min=${1:number}",
+      "step=",
+      "steps=",
+      "plain",
+      "unit=",
+      "width=",
+      "scale="
+    ],
+    "\\bcbar": [
+      "text=",
+      "color=",
+      "plain",
+      "value=",
+      "label="
+    ]
+  },
+  "args": []
+}

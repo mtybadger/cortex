@@ -1,0 +1,395 @@
+{
+  "deps": [
+    {
+      "name": "soul"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "tikzlibrarytikzmark"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    },
+    {
+      "name": "tikzlibrarybabel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SurlignerFormule",
+      "arg": {
+        "format": "{}",
+        "snippet": "SurlignerFormule{${1:formula}}"
+      }
+    },
+    {
+      "name": "SurlignerFormule",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "SurlignerFormule{${1:formula}}<${2:options TikZ}>",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SurlignerFormule",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SurlignerFormule[${2:clés%keyvals}]{${1:formula}}",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerFormule",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "SurlignerFormule[${2:clés%keyvals}]{${1:formula}}<${3:options TikZ}>",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerFormule*",
+      "arg": {
+        "format": "{}",
+        "snippet": "SurlignerFormule*{${1:formula}}"
+      }
+    },
+    {
+      "name": "SurlignerFormule*",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "SurlignerFormule*{${1:formula}}<${2:options TikZ}>",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SurlignerFormule*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SurlignerFormule*[${2:clés%keyvals}]{${1:formula}}",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerFormule*",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "SurlignerFormule*[${2:clés%keyvals}]{${1:formula}}<${3:options TikZ}>",
+        "keys": [
+          "\\SurlignerFormule,\\SurlignerFormule*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerTexte",
+      "arg": {
+        "format": "{}",
+        "snippet": "SurlignerTexte{${1:text}}"
+      }
+    },
+    {
+      "name": "SurlignerTexte",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "SurlignerTexte{${1:text}}<${2:options TikZ}>",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SurlignerTexte",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SurlignerTexte[${2:clés%keyvals}]{${1:text}}",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerTexte",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "SurlignerTexte[${2:clés%keyvals}]{${1:text}}<${3:options TikZ}>",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerTexte*",
+      "arg": {
+        "format": "{}",
+        "snippet": "SurlignerTexte*{${1:text}}"
+      }
+    },
+    {
+      "name": "SurlignerTexte*",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "SurlignerTexte*{${1:text}}<${2:options TikZ}>",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SurlignerTexte*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SurlignerTexte*[${2:clés%keyvals}]{${1:text}}",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SurlignerTexte*",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "SurlignerTexte*[${2:clés%keyvals}]{${1:text}}<${3:options TikZ}>",
+        "keys": [
+          "\\SurlignerTexte,\\SurlignerTexte*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightFormula",
+      "arg": {
+        "format": "{}",
+        "snippet": "HighlightFormula{${1:formula}}"
+      }
+    },
+    {
+      "name": "HighlightFormula",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "HighlightFormula{${1:formula}}<${2:TikZ options}>"
+      }
+    },
+    {
+      "name": "HighlightFormula",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HighlightFormula[${2:keyvals}]{${1:formula}}",
+        "keys": [
+          "\\HighlightFormula,\\HighlightFormula*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightFormula",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "HighlightFormula[${2:keyvals}]{${1:formula}}<${3:TikZ options}>",
+        "keys": [
+          "\\HighlightFormula,\\HighlightFormula*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightFormula*",
+      "arg": {
+        "format": "{}",
+        "snippet": "HighlightFormula*{${1:formula}}"
+      }
+    },
+    {
+      "name": "HighlightFormula*",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "HighlightFormula*{${1:formula}}<${2:TikZ options}>"
+      }
+    },
+    {
+      "name": "HighlightFormula*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HighlightFormula*[${2:keyvals}]{${1:formula}}",
+        "keys": [
+          "\\HighlightFormula,\\HighlightFormula*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightFormula*",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "HighlightFormula*[${2:keyvals}]{${1:formula}}<${3:TikZ options}>",
+        "keys": [
+          "\\HighlightFormula,\\HighlightFormula*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightText",
+      "arg": {
+        "format": "{}",
+        "snippet": "HighlightText{${1:text}}"
+      }
+    },
+    {
+      "name": "HighlightText",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "HighlightText{${1:text}}<${2:TikZ options}>"
+      }
+    },
+    {
+      "name": "HighlightText",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HighlightText[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\HighlightText,\\HighlightText*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightText",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "HighlightText[${2:keyvals}]{${1:text}}<${3:TikZ options}>",
+        "keys": [
+          "\\HighlightText,\\HighlightText*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightText*",
+      "arg": {
+        "format": "{}",
+        "snippet": "HighlightText*{${1:text}}"
+      }
+    },
+    {
+      "name": "HighlightText*",
+      "arg": {
+        "format": "{}<>",
+        "snippet": "HighlightText*{${1:text}}<${2:TikZ options}>"
+      }
+    },
+    {
+      "name": "HighlightText*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HighlightText*[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\HighlightText,\\HighlightText*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HighlightText*",
+      "arg": {
+        "format": "[]{}<>",
+        "snippet": "HighlightText*[${2:keyvals}]{${1:text}}<${3:TikZ options}>",
+        "keys": [
+          "\\HighlightText,\\HighlightText*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "genhighlightpar",
+      "arg": {
+        "format": "{}",
+        "snippet": "genhighlightpar{${1:text}}"
+      }
+    },
+    {
+      "name": "genhighlightpar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "genhighlightpar[${2:color}]{${1:text}}"
+      }
+    },
+    {
+      "name": "genhighlightpar*",
+      "arg": {
+        "format": "{}",
+        "snippet": "genhighlightpar*{${1:text}}"
+      }
+    },
+    {
+      "name": "genhighlightpar*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "genhighlightpar*[${2:color}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/highlightx#c": [
+      "nobabel"
+    ],
+    "\\SurlignerFormule,\\SurlignerFormule*": [
+      "Fond=",
+      "Bord=",
+      "Texte=",
+      "Offset="
+    ],
+    "\\SurlignerTexte,\\SurlignerTexte*": [
+      "Fond=",
+      "Bord=",
+      "Opacite=${1:factor}",
+      "Offset="
+    ],
+    "\\HighlightFormula,\\HighlightFormula*": [
+      "bg=",
+      "border=",
+      "text=",
+      "offset="
+    ],
+    "\\HighlightText,\\HighlightText*": [
+      "bg=",
+      "border=",
+      "opacity=${1:factor}",
+      "offset="
+    ]
+  },
+  "args": [
+    "\\usepackage/highlightx#c"
+  ]
+}

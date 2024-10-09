@@ -1,0 +1,2801 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "aa"
+    },
+    {
+      "name": "AA"
+    },
+    {
+      "name": "above"
+    },
+    {
+      "name": "abovedisplayshortskip"
+    },
+    {
+      "name": "abovedisplayskip"
+    },
+    {
+      "name": "active"
+    },
+    {
+      "name": "adjdemerits"
+    },
+    {
+      "name": "advance"
+    },
+    {
+      "name": "advancepageno"
+    },
+    {
+      "name": "ae"
+    },
+    {
+      "name": "AE"
+    },
+    {
+      "name": "aleph",
+      "detail": "ℵ",
+      "doc": "Aleph, hebrew"
+    },
+    {
+      "name": "allocationnumber",
+      "unusual": true
+    },
+    {
+      "name": "allowbreak"
+    },
+    {
+      "name": "amalg",
+      "detail": "⨿",
+      "doc": "Amalgamation or coproduct"
+    },
+    {
+      "name": "angle",
+      "detail": "∠",
+      "doc": "Angle"
+    },
+    {
+      "name": "arccos"
+    },
+    {
+      "name": "arcsin"
+    },
+    {
+      "name": "arctan"
+    },
+    {
+      "name": "arg"
+    },
+    {
+      "name": "arrowvert"
+    },
+    {
+      "name": "Arrowvert"
+    },
+    {
+      "name": "ast",
+      "detail": "∗",
+      "doc": "Asterisk operator (hodge star operator)"
+    },
+    {
+      "name": "asymp",
+      "detail": "≍",
+      "doc": "Asymptotically equal to"
+    },
+    {
+      "name": "atop"
+    },
+    {
+      "name": "b",
+      "arg": {
+        "format": "{}",
+        "snippet": "b{${1:o}}"
+      }
+    },
+    {
+      "name": "backslash",
+      "detail": "\\",
+      "doc": "Reverse solidus"
+    },
+    {
+      "name": "badness"
+    },
+    {
+      "name": "baselineskip"
+    },
+    {
+      "name": "batchmode"
+    },
+    {
+      "name": "begingroup"
+    },
+    {
+      "name": "beginsection"
+    },
+    {
+      "name": "belowdisplayshortskip"
+    },
+    {
+      "name": "belowdisplayskip"
+    },
+    {
+      "name": "bf"
+    },
+    {
+      "name": "bffam"
+    },
+    {
+      "name": "bgroup"
+    },
+    {
+      "name": "big"
+    },
+    {
+      "name": "Big"
+    },
+    {
+      "name": "bigbreak"
+    },
+    {
+      "name": "bigcirc"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigl"
+    },
+    {
+      "name": "Bigl"
+    },
+    {
+      "name": "bigm"
+    },
+    {
+      "name": "Bigm"
+    },
+    {
+      "name": "bigodot",
+      "detail": "⨀",
+      "doc": "N-ary circled dot operator"
+    },
+    {
+      "name": "bigoplus",
+      "detail": "⨁",
+      "doc": "N-ary circled plus operator"
+    },
+    {
+      "name": "bigotimes",
+      "detail": "⨂",
+      "doc": "N-ary circled times operator"
+    },
+    {
+      "name": "bigr"
+    },
+    {
+      "name": "Bigr"
+    },
+    {
+      "name": "bigskip"
+    },
+    {
+      "name": "bigskipamount"
+    },
+    {
+      "name": "bigsqcup",
+      "detail": "⨆",
+      "doc": "N-ary square union operator"
+    },
+    {
+      "name": "bigtriangledown",
+      "detail": "▽",
+      "doc": "Big down triangle, open"
+    },
+    {
+      "name": "bigtriangleup",
+      "detail": "△",
+      "doc": "\\triangle (amsfonts), \\vartriangle (amssymb), big up triangle, open"
+    },
+    {
+      "name": "biguplus",
+      "detail": "⨄",
+      "doc": "N-ary union operator with plus"
+    },
+    {
+      "name": "bigvee",
+      "detail": "⋁",
+      "doc": "Logical and operator"
+    },
+    {
+      "name": "bigwedge",
+      "detail": "⋀",
+      "doc": "Logical or operator"
+    },
+    {
+      "name": "binoppenalty"
+    },
+    {
+      "name": "bmod"
+    },
+    {
+      "name": "bordermatrix",
+      "arg": {
+        "format": "{}",
+        "snippet": "bordermatrix{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "bot",
+      "detail": "⊥",
+      "doc": "Up tack, bottom"
+    },
+    {
+      "name": "botmark"
+    },
+    {
+      "name": "bowtie",
+      "detail": "⋈",
+      "doc": "\\lrtimes (txfonts), bowtie"
+    },
+    {
+      "name": "boxmaxdepth"
+    },
+    {
+      "name": "brace"
+    },
+    {
+      "name": "braceld",
+      "unusual": true
+    },
+    {
+      "name": "bracelu",
+      "unusual": true
+    },
+    {
+      "name": "bracerd",
+      "unusual": true
+    },
+    {
+      "name": "braceru",
+      "unusual": true
+    },
+    {
+      "name": "bracevert"
+    },
+    {
+      "name": "brack"
+    },
+    {
+      "name": "break"
+    },
+    {
+      "name": "brokenpenalty"
+    },
+    {
+      "name": "bullet"
+    },
+    {
+      "name": "bye"
+    },
+    {
+      "name": "c",
+      "arg": {
+        "format": "{}",
+        "snippet": "c{${1:o}}"
+      }
+    },
+    {
+      "name": "cal"
+    },
+    {
+      "name": "cases",
+      "arg": {
+        "format": "{}",
+        "snippet": "cases{${1:contents}}"
+      }
+    },
+    {
+      "name": "catcode"
+    },
+    {
+      "name": "cdotp",
+      "detail": "·",
+      "doc": "\\cdot, \\centerdot, b: middle dot"
+    },
+    {
+      "name": "centerline",
+      "arg": {
+        "format": "{}",
+        "snippet": "centerline{${1:text}}"
+      }
+    },
+    {
+      "name": "choose"
+    },
+    {
+      "name": "clap",
+      "arg": {
+        "format": "{}",
+        "snippet": "clap{${1:text}}"
+      }
+    },
+    {
+      "name": "cleaders"
+    },
+    {
+      "name": "cleartabs"
+    },
+    {
+      "name": "clubpenalty"
+    },
+    {
+      "name": "clubsuit",
+      "detail": "♣",
+      "doc": "Club suit symbol"
+    },
+    {
+      "name": "colon"
+    },
+    {
+      "name": "columns"
+    },
+    {
+      "name": "cong",
+      "detail": "≅",
+      "doc": "Congruent with"
+    },
+    {
+      "name": "coprod",
+      "detail": "∐",
+      "doc": "Coproduct operator"
+    },
+    {
+      "name": "copyright"
+    },
+    {
+      "name": "cos"
+    },
+    {
+      "name": "cosh"
+    },
+    {
+      "name": "cot"
+    },
+    {
+      "name": "coth"
+    },
+    {
+      "name": "cr"
+    },
+    {
+      "name": "crcr"
+    },
+    {
+      "name": "csc"
+    },
+    {
+      "name": "csname"
+    },
+    {
+      "name": "d",
+      "arg": {
+        "format": "{}",
+        "snippet": "d{${1:o}}"
+      }
+    },
+    {
+      "name": "dag"
+    },
+    {
+      "name": "dagger",
+      "detail": "†",
+      "doc": "Dagger relation"
+    },
+    {
+      "name": "dashv",
+      "detail": "⊣ (\"amssymb\" command)",
+      "doc": "Left tack, non-theorem, does not yield, (dash and vertical)"
+    },
+    {
+      "name": "day"
+    },
+    {
+      "name": "ddag"
+    },
+    {
+      "name": "ddagger",
+      "detail": "‡",
+      "doc": "Double dagger relation"
+    },
+    {
+      "name": "deadcycles"
+    },
+    {
+      "name": "def"
+    },
+    {
+      "name": "defaulthyphenchar"
+    },
+    {
+      "name": "defaultskewchar"
+    },
+    {
+      "name": "deg"
+    },
+    {
+      "name": "delimiterfactor"
+    },
+    {
+      "name": "delimitershortfall"
+    },
+    {
+      "name": "det"
+    },
+    {
+      "name": "diamond"
+    },
+    {
+      "name": "diamondsuit",
+      "detail": "♢",
+      "doc": "Diamond suit symbol"
+    },
+    {
+      "name": "dim"
+    },
+    {
+      "name": "discretionary",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "discretionary{${1:pre-break text}}{${2:post-break text}}{${3:no-break text}}"
+      }
+    },
+    {
+      "name": "displayindent"
+    },
+    {
+      "name": "displaylimits"
+    },
+    {
+      "name": "displaylines",
+      "arg": {
+        "format": "{}",
+        "snippet": "displaylines{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "displaywidowpenalty"
+    },
+    {
+      "name": "displaywidth"
+    },
+    {
+      "name": "do"
+    },
+    {
+      "name": "dospecials"
+    },
+    {
+      "name": "dosupereject"
+    },
+    {
+      "name": "doteq",
+      "detail": "≐",
+      "doc": "\\dotequal (wrisym), equals, single dot above"
+    },
+    {
+      "name": "dotfill"
+    },
+    {
+      "name": "dots"
+    },
+    {
+      "name": "doublehyphendemerits"
+    },
+    {
+      "name": "downarrow",
+      "detail": "↓",
+      "doc": "Downward arrow"
+    },
+    {
+      "name": "Downarrow",
+      "detail": "⇓",
+      "doc": "Down double arrow"
+    },
+    {
+      "name": "downbracefill"
+    },
+    {
+      "name": "dump"
+    },
+    {
+      "name": "edef"
+    },
+    {
+      "name": "egroup"
+    },
+    {
+      "name": "eject"
+    },
+    {
+      "name": "ell",
+      "detail": "ℓ",
+      "doc": "Cursive small l"
+    },
+    {
+      "name": "else"
+    },
+    {
+      "name": "emergencystretch"
+    },
+    {
+      "name": "empty"
+    },
+    {
+      "name": "emptyset"
+    },
+    {
+      "name": "end"
+    },
+    {
+      "name": "endcsname"
+    },
+    {
+      "name": "endgraf"
+    },
+    {
+      "name": "endgroup"
+    },
+    {
+      "name": "endinput"
+    },
+    {
+      "name": "endinsert"
+    },
+    {
+      "name": "endline"
+    },
+    {
+      "name": "endlinechar"
+    },
+    {
+      "name": "enskip"
+    },
+    {
+      "name": "enspace"
+    },
+    {
+      "name": "eqalign",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqalign{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "eqalignno",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqalignno{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "eqno",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqno{${1:eqn num}}"
+      }
+    },
+    {
+      "name": "errhelp"
+    },
+    {
+      "name": "errmessage",
+      "arg": {
+        "format": "{}",
+        "snippet": "errmessage{${1:token list}}"
+      }
+    },
+    {
+      "name": "errorcontextlines"
+    },
+    {
+      "name": "errorstopmode"
+    },
+    {
+      "name": "escapechar"
+    },
+    {
+      "name": "everycr"
+    },
+    {
+      "name": "everydisplay"
+    },
+    {
+      "name": "everyhbox"
+    },
+    {
+      "name": "everyjob"
+    },
+    {
+      "name": "everymath"
+    },
+    {
+      "name": "everypar"
+    },
+    {
+      "name": "everyvbox"
+    },
+    {
+      "name": "exhyphenpenalty"
+    },
+    {
+      "name": "exp"
+    },
+    {
+      "name": "expandafter"
+    },
+    {
+      "name": "fam"
+    },
+    {
+      "name": "fi"
+    },
+    {
+      "name": "filbreak"
+    },
+    {
+      "name": "finalhyphendemerits"
+    },
+    {
+      "name": "firstmark"
+    },
+    {
+      "name": "fivebf"
+    },
+    {
+      "name": "fivei"
+    },
+    {
+      "name": "fiverm"
+    },
+    {
+      "name": "fivesy"
+    },
+    {
+      "name": "flat",
+      "detail": "♭",
+      "doc": "Musical flat"
+    },
+    {
+      "name": "floatingpenalty"
+    },
+    {
+      "name": "fmtname"
+    },
+    {
+      "name": "fmtversion"
+    },
+    {
+      "name": "folio"
+    },
+    {
+      "name": "font"
+    },
+    {
+      "name": "footins"
+    },
+    {
+      "name": "footline"
+    },
+    {
+      "name": "footnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "footnote{${1:mark}}{${2:text}}"
+      }
+    },
+    {
+      "name": "footnoterule"
+    },
+    {
+      "name": "footstrut"
+    },
+    {
+      "name": "frenchspacing"
+    },
+    {
+      "name": "frown",
+      "detail": "⌢",
+      "doc": "\\smallfrown, frown (down curve)"
+    },
+    {
+      "name": "futurelet"
+    },
+    {
+      "name": "gcd"
+    },
+    {
+      "name": "gdef"
+    },
+    {
+      "name": "ge"
+    },
+    {
+      "name": "gets"
+    },
+    {
+      "name": "gg",
+      "detail": "≫",
+      "doc": "Much greater than, type 2"
+    },
+    {
+      "name": "global"
+    },
+    {
+      "name": "globaldefs"
+    },
+    {
+      "name": "goodbreak"
+    },
+    {
+      "name": "H",
+      "arg": {
+        "format": "{}",
+        "snippet": "H{${1:o}}"
+      }
+    },
+    {
+      "name": "halign",
+      "arg": {
+        "format": "{}",
+        "snippet": "halign{${1:⟨preamble⟩ \\cr ⟨row⟩ \\cr ... ⟨row⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "hang"
+    },
+    {
+      "name": "hangafter"
+    },
+    {
+      "name": "hangindent"
+    },
+    {
+      "name": "hbadness"
+    },
+    {
+      "name": "hbar"
+    },
+    {
+      "name": "hbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "hbox{${1:horizontal mode material%text}}"
+      }
+    },
+    {
+      "name": "headline"
+    },
+    {
+      "name": "heartsuit",
+      "detail": "♡",
+      "doc": "Heart suit symbol"
+    },
+    {
+      "name": "hfil"
+    },
+    {
+      "name": "hfill"
+    },
+    {
+      "name": "hfilneg"
+    },
+    {
+      "name": "hfuzz"
+    },
+    {
+      "name": "hglue"
+    },
+    {
+      "name": "hideskip"
+    },
+    {
+      "name": "hidewidth"
+    },
+    {
+      "name": "hoffset"
+    },
+    {
+      "name": "holdinginserts"
+    },
+    {
+      "name": "hom"
+    },
+    {
+      "name": "hookleftarrow",
+      "detail": "↩",
+      "doc": "Left arrow-hooked"
+    },
+    {
+      "name": "hookrightarrow",
+      "detail": "↪",
+      "doc": "Right arrow-hooked"
+    },
+    {
+      "name": "hphantom",
+      "arg": {
+        "format": "{}",
+        "snippet": "hphantom{${1:text}}"
+      }
+    },
+    {
+      "name": "hrule"
+    },
+    {
+      "name": "hrulefill"
+    },
+    {
+      "name": "hsize"
+    },
+    {
+      "name": "hskip"
+    },
+    {
+      "name": "hss"
+    },
+    {
+      "name": "hyphenation",
+      "arg": {
+        "format": "{}",
+        "snippet": "hyphenation{${1:space separated words}}"
+      }
+    },
+    {
+      "name": "hyphenpenalty"
+    },
+    {
+      "name": "i"
+    },
+    {
+      "name": "ialign",
+      "arg": {
+        "format": "{}",
+        "snippet": "ialign{${1:⟨preamble⟩ \\cr ⟨row⟩ \\cr ... ⟨row⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "if"
+    },
+    {
+      "name": "ifcase"
+    },
+    {
+      "name": "ifcat"
+    },
+    {
+      "name": "ifdim"
+    },
+    {
+      "name": "ifeof"
+    },
+    {
+      "name": "iff"
+    },
+    {
+      "name": "iffalse"
+    },
+    {
+      "name": "ifhbox"
+    },
+    {
+      "name": "ifhmode"
+    },
+    {
+      "name": "ifinner"
+    },
+    {
+      "name": "ifmmode"
+    },
+    {
+      "name": "ifnum"
+    },
+    {
+      "name": "ifodd"
+    },
+    {
+      "name": "iftrue"
+    },
+    {
+      "name": "ifvbox"
+    },
+    {
+      "name": "ifvmode"
+    },
+    {
+      "name": "ifvoid"
+    },
+    {
+      "name": "ifx"
+    },
+    {
+      "name": "ignorespaces"
+    },
+    {
+      "name": "Im",
+      "detail": "ℑ",
+      "doc": "\\mathfrak{i} (eufrak), imaginary part"
+    },
+    {
+      "name": "imath",
+      "detail": "𝚤",
+      "doc": "Mathematical italic small dotless i"
+    },
+    {
+      "name": "immediate"
+    },
+    {
+      "name": "indent"
+    },
+    {
+      "name": "inf"
+    },
+    {
+      "name": "insert"
+    },
+    {
+      "name": "insertpenalties"
+    },
+    {
+      "name": "int",
+      "detail": "∫",
+      "doc": "Integral operator"
+    },
+    {
+      "name": "interdisplaylinepenalty"
+    },
+    {
+      "name": "interfootnotelinepenalty"
+    },
+    {
+      "name": "interlinepenalty"
+    },
+    {
+      "name": "intop",
+      "unusual": true
+    },
+    {
+      "name": "it"
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "{}",
+        "snippet": "item{${1:mark}}"
+      }
+    },
+    {
+      "name": "itemitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "itemitem{${1:mark}}"
+      }
+    },
+    {
+      "name": "itfam"
+    },
+    {
+      "name": "j"
+    },
+    {
+      "name": "jmath",
+      "detail": "𝚥",
+      "doc": "Mathematical italic small dotless j"
+    },
+    {
+      "name": "jobname"
+    },
+    {
+      "name": "joinrel"
+    },
+    {
+      "name": "jot"
+    },
+    {
+      "name": "ker"
+    },
+    {
+      "name": "l"
+    },
+    {
+      "name": "L"
+    },
+    {
+      "name": "land"
+    },
+    {
+      "name": "langle",
+      "detail": "⟨",
+      "doc": "Mathematical left angle bracket"
+    },
+    {
+      "name": "language"
+    },
+    {
+      "name": "lastbox"
+    },
+    {
+      "name": "lastkern"
+    },
+    {
+      "name": "lastpenalty"
+    },
+    {
+      "name": "lastskip"
+    },
+    {
+      "name": "lbrace",
+      "detail": "{",
+      "doc": "\\lbrace, left curly bracket"
+    },
+    {
+      "name": "lbrack",
+      "detail": "[",
+      "doc": "Left square bracket"
+    },
+    {
+      "name": "lceil",
+      "detail": "⌈",
+      "doc": "Left ceiling"
+    },
+    {
+      "name": "ldotp"
+    },
+    {
+      "name": "le"
+    },
+    {
+      "name": "leaders"
+    },
+    {
+      "name": "leavevmode"
+    },
+    {
+      "name": "left"
+    },
+    {
+      "name": "leftarrowfill"
+    },
+    {
+      "name": "leftharpoondown",
+      "detail": "↽",
+      "doc": "Left harpoon-down"
+    },
+    {
+      "name": "leftharpoonup",
+      "detail": "↼",
+      "doc": "Left harpoon-up"
+    },
+    {
+      "name": "lefthyphenmin"
+    },
+    {
+      "name": "leftline",
+      "arg": {
+        "format": "{}",
+        "snippet": "leftline{${1:text}}"
+      }
+    },
+    {
+      "name": "leftrightarrow",
+      "detail": "↔",
+      "doc": "\\rel (oz), left right arrow, relation"
+    },
+    {
+      "name": "leftskip"
+    },
+    {
+      "name": "leqalignno",
+      "arg": {
+        "format": "{}",
+        "snippet": "leqalignno{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "leqno",
+      "arg": {
+        "format": "{}",
+        "snippet": "leqno{${1:eqn num}}"
+      }
+    },
+    {
+      "name": "let"
+    },
+    {
+      "name": "lfloor",
+      "detail": "⌊",
+      "doc": "Left floor"
+    },
+    {
+      "name": "lg"
+    },
+    {
+      "name": "lgroup"
+    },
+    {
+      "name": "lhook",
+      "unusual": true
+    },
+    {
+      "name": "lim"
+    },
+    {
+      "name": "liminf"
+    },
+    {
+      "name": "limits"
+    },
+    {
+      "name": "limsup"
+    },
+    {
+      "name": "line",
+      "arg": {
+        "format": "{}",
+        "snippet": "line{${1:text}}"
+      }
+    },
+    {
+      "name": "linepenalty"
+    },
+    {
+      "name": "lineskip"
+    },
+    {
+      "name": "lineskiplimit"
+    },
+    {
+      "name": "ll",
+      "detail": "≪",
+      "doc": "Much less than, type 2"
+    },
+    {
+      "name": "llap",
+      "arg": {
+        "format": "{}",
+        "snippet": "llap{${1:text}}"
+      }
+    },
+    {
+      "name": "lmoustache",
+      "detail": "⎰",
+      "doc": "? \\lmoustache, upper left or lower right curly bracket section"
+    },
+    {
+      "name": "ln"
+    },
+    {
+      "name": "lnot"
+    },
+    {
+      "name": "log"
+    },
+    {
+      "name": "loggingall"
+    },
+    {
+      "name": "long"
+    },
+    {
+      "name": "longleftarrow",
+      "detail": "⟵",
+      "doc": "Long leftwards arrow"
+    },
+    {
+      "name": "Longleftarrow",
+      "detail": "⟸",
+      "doc": "\\impliedby (amsmath), long leftwards double arrow"
+    },
+    {
+      "name": "longleftrightarrow",
+      "detail": "⟷",
+      "doc": "Long left right arrow"
+    },
+    {
+      "name": "Longleftrightarrow",
+      "detail": "⟺",
+      "doc": "\\iff (oz), long left right double arrow"
+    },
+    {
+      "name": "longmapsto",
+      "detail": "⟼",
+      "doc": "Long rightwards arrow from bar"
+    },
+    {
+      "name": "longrightarrow",
+      "detail": "⟶",
+      "doc": "Long rightwards arrow"
+    },
+    {
+      "name": "Longrightarrow",
+      "detail": "⟹",
+      "doc": "\\implies (amsmath), long rightwards double arrow"
+    },
+    {
+      "name": "loop"
+    },
+    {
+      "name": "looseness"
+    },
+    {
+      "name": "lor"
+    },
+    {
+      "name": "lowercase",
+      "arg": {
+        "format": "{}",
+        "snippet": "lowercase{${1:token list}}"
+      }
+    },
+    {
+      "name": "lq"
+    },
+    {
+      "name": "mag"
+    },
+    {
+      "name": "magstephalf"
+    },
+    {
+      "name": "makefootline"
+    },
+    {
+      "name": "makeheadline"
+    },
+    {
+      "name": "mapsto",
+      "detail": "↦",
+      "doc": "Maps to, rightward, maplet"
+    },
+    {
+      "name": "mapstochar",
+      "unusual": true
+    },
+    {
+      "name": "mark",
+      "arg": {
+        "format": "{}",
+        "snippet": "mark{${1:mark text}}"
+      }
+    },
+    {
+      "name": "mathbin"
+    },
+    {
+      "name": "mathchoice",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "mathchoice{${1:math1}}{${2:math2}}{${3:math3}}{${4:math4}}"
+      }
+    },
+    {
+      "name": "mathclose"
+    },
+    {
+      "name": "mathhexbox"
+    },
+    {
+      "name": "mathinner"
+    },
+    {
+      "name": "mathop"
+    },
+    {
+      "name": "mathopen"
+    },
+    {
+      "name": "mathord"
+    },
+    {
+      "name": "mathpalette",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathpalette{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "mathpunct"
+    },
+    {
+      "name": "mathrel"
+    },
+    {
+      "name": "mathstrut"
+    },
+    {
+      "name": "mathsurround"
+    },
+    {
+      "name": "matrix",
+      "arg": {
+        "format": "{}",
+        "snippet": "matrix{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "max"
+    },
+    {
+      "name": "maxdeadcycles"
+    },
+    {
+      "name": "maxdepth"
+    },
+    {
+      "name": "maxdimen"
+    },
+    {
+      "name": "meaning"
+    },
+    {
+      "name": "medbreak"
+    },
+    {
+      "name": "medmuskip"
+    },
+    {
+      "name": "medskip"
+    },
+    {
+      "name": "medskipamount"
+    },
+    {
+      "name": "message",
+      "arg": {
+        "format": "{}",
+        "snippet": "message{${1:token list%text}}"
+      }
+    },
+    {
+      "name": "midinsert"
+    },
+    {
+      "name": "min"
+    },
+    {
+      "name": "mit"
+    },
+    {
+      "name": "models",
+      "detail": "⊧",
+      "doc": "Models (vertical, short double dash)"
+    },
+    {
+      "name": "month"
+    },
+    {
+      "name": "mp",
+      "detail": "∓",
+      "doc": "Minus-or-plus sign"
+    },
+    {
+      "name": "mscount",
+      "unusual": true
+    },
+    {
+      "name": "nabla",
+      "detail": "∇",
+      "doc": "Nabla, del, hamilton operator"
+    },
+    {
+      "name": "narrower"
+    },
+    {
+      "name": "natural",
+      "detail": "♮",
+      "doc": "Music natural"
+    },
+    {
+      "name": "ne",
+      "detail": "≠",
+      "doc": "\\ne, r: not equal"
+    },
+    {
+      "name": "nearrow",
+      "detail": "↗",
+      "doc": "Ne pointing arrow"
+    },
+    {
+      "name": "negthinspace"
+    },
+    {
+      "name": "newbox"
+    },
+    {
+      "name": "newcount"
+    },
+    {
+      "name": "newdimen"
+    },
+    {
+      "name": "newfam"
+    },
+    {
+      "name": "newhelp"
+    },
+    {
+      "name": "newif"
+    },
+    {
+      "name": "newinsert"
+    },
+    {
+      "name": "newlanguage"
+    },
+    {
+      "name": "newlinechar"
+    },
+    {
+      "name": "newmuskip"
+    },
+    {
+      "name": "newread"
+    },
+    {
+      "name": "newskip"
+    },
+    {
+      "name": "newtoks"
+    },
+    {
+      "name": "newwrite"
+    },
+    {
+      "name": "ni",
+      "detail": "∋",
+      "doc": "\\owns, contains, variant"
+    },
+    {
+      "name": "noalign",
+      "arg": {
+        "format": "{}",
+        "snippet": "noalign{${1:material}}"
+      }
+    },
+    {
+      "name": "noboundary"
+    },
+    {
+      "name": "nobreak"
+    },
+    {
+      "name": "noexpand"
+    },
+    {
+      "name": "nointerlineskip"
+    },
+    {
+      "name": "nolimits"
+    },
+    {
+      "name": "nonfrenchspacing"
+    },
+    {
+      "name": "nonscript"
+    },
+    {
+      "name": "nonstopmode"
+    },
+    {
+      "name": "nopagenumbers"
+    },
+    {
+      "name": "normalbaselines"
+    },
+    {
+      "name": "normalbaselineskip"
+    },
+    {
+      "name": "normalbottom"
+    },
+    {
+      "name": "normallineskip"
+    },
+    {
+      "name": "normallineskiplimit"
+    },
+    {
+      "name": "not",
+      "detail": " ̸",
+      "doc": "Combining long solidus overlay"
+    },
+    {
+      "name": "null"
+    },
+    {
+      "name": "nulldelimiterspace"
+    },
+    {
+      "name": "nullfont"
+    },
+    {
+      "name": "nwarrow",
+      "detail": "↖ (\"amssymb\" command)",
+      "doc": "Nw pointing arrow"
+    },
+    {
+      "name": "o"
+    },
+    {
+      "name": "O"
+    },
+    {
+      "name": "oalign"
+    },
+    {
+      "name": "obeylines"
+    },
+    {
+      "name": "obeyspaces"
+    },
+    {
+      "name": "odot",
+      "detail": "⊙",
+      "doc": "Middle dot in circle"
+    },
+    {
+      "name": "oe"
+    },
+    {
+      "name": "OE"
+    },
+    {
+      "name": "of"
+    },
+    {
+      "name": "offinterlineskip"
+    },
+    {
+      "name": "oint",
+      "detail": "∮",
+      "doc": "Contour integral operator"
+    },
+    {
+      "name": "ointop",
+      "unusual": true
+    },
+    {
+      "name": "oldstyle"
+    },
+    {
+      "name": "ominus",
+      "detail": "⊖",
+      "doc": "Minus sign in circle"
+    },
+    {
+      "name": "omit"
+    },
+    {
+      "name": "ooalign"
+    },
+    {
+      "name": "oplus",
+      "detail": "⊕",
+      "doc": "Plus sign in circle"
+    },
+    {
+      "name": "or"
+    },
+    {
+      "name": "Orb",
+      "unusual": true
+    },
+    {
+      "name": "oslash",
+      "detail": "⊘",
+      "doc": "Solidus in circle"
+    },
+    {
+      "name": "otimes",
+      "detail": "⊗",
+      "doc": "Multiply sign in circle"
+    },
+    {
+      "name": "outer"
+    },
+    {
+      "name": "output"
+    },
+    {
+      "name": "outputpenalty"
+    },
+    {
+      "name": "over"
+    },
+    {
+      "name": "overfullrule"
+    },
+    {
+      "name": "overleftarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "overleftarrow{${1:text%plain}}"
+      },
+      "detail": "x⃖ (\"wrisym\" command)",
+      "doc": "\\overleftarrow, combining left arrow above"
+    },
+    {
+      "name": "overrightarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "overrightarrow{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "owns"
+    },
+    {
+      "name": "P"
+    },
+    {
+      "name": "pagebody"
+    },
+    {
+      "name": "pagecontents"
+    },
+    {
+      "name": "pagedepth"
+    },
+    {
+      "name": "pagefilllstretch"
+    },
+    {
+      "name": "pagefillstretch"
+    },
+    {
+      "name": "pagefilstretch"
+    },
+    {
+      "name": "pagegoal"
+    },
+    {
+      "name": "pageinsert"
+    },
+    {
+      "name": "pageno"
+    },
+    {
+      "name": "pageshrink"
+    },
+    {
+      "name": "pagestretch"
+    },
+    {
+      "name": "pagetotal"
+    },
+    {
+      "name": "par"
+    },
+    {
+      "name": "parallel",
+      "detail": "∥",
+      "doc": "Parallel"
+    },
+    {
+      "name": "parfillskip"
+    },
+    {
+      "name": "parindent"
+    },
+    {
+      "name": "parshape"
+    },
+    {
+      "name": "parskip"
+    },
+    {
+      "name": "patterns",
+      "arg": {
+        "format": "{}",
+        "snippet": "patterns{${1:patterns}}"
+      }
+    },
+    {
+      "name": "pausing"
+    },
+    {
+      "name": "perp",
+      "detail": "⟂",
+      "doc": "Perpendicular"
+    },
+    {
+      "name": "phantom",
+      "arg": {
+        "format": "{}",
+        "snippet": "phantom{${1:text}}"
+      }
+    },
+    {
+      "name": "plainoutput"
+    },
+    {
+      "name": "pmatrix",
+      "arg": {
+        "format": "{}",
+        "snippet": "pmatrix{${1:⟨line⟩ \\cr ... ⟨line⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "pmod"
+    },
+    {
+      "name": "postdisplaypenalty"
+    },
+    {
+      "name": "Pr"
+    },
+    {
+      "name": "prec",
+      "detail": "≺",
+      "doc": "Precedes"
+    },
+    {
+      "name": "preceq",
+      "detail": "⪯",
+      "doc": "Precedes above single-line equals sign"
+    },
+    {
+      "name": "predisplaypenalty"
+    },
+    {
+      "name": "predisplaysize"
+    },
+    {
+      "name": "pretolerance"
+    },
+    {
+      "name": "prevdepth"
+    },
+    {
+      "name": "prevgraf"
+    },
+    {
+      "name": "proclaim"
+    },
+    {
+      "name": "propto",
+      "detail": "∝",
+      "doc": "\\varpropto (amssymb), is proportional to"
+    },
+    {
+      "name": "qquad"
+    },
+    {
+      "name": "quad"
+    },
+    {
+      "name": "raggedbottom"
+    },
+    {
+      "name": "rangle",
+      "detail": "⟩",
+      "doc": "Mathematical right angle bracket"
+    },
+    {
+      "name": "rbrace",
+      "detail": "}",
+      "doc": "\\rbrace, right curly bracket"
+    },
+    {
+      "name": "rbrack",
+      "detail": "]",
+      "doc": "Right square bracket"
+    },
+    {
+      "name": "rceil",
+      "detail": "⌉",
+      "doc": "Right ceiling"
+    },
+    {
+      "name": "Re",
+      "detail": "ℜ",
+      "doc": "\\mathfrak{r} (eufrak), real part"
+    },
+    {
+      "name": "relax"
+    },
+    {
+      "name": "relbar",
+      "unusual": true
+    },
+    {
+      "name": "Relbar",
+      "unusual": true
+    },
+    {
+      "name": "relpenalty"
+    },
+    {
+      "name": "removelastskip"
+    },
+    {
+      "name": "repeat"
+    },
+    {
+      "name": "rfloor",
+      "detail": "⌋",
+      "doc": "Right floor"
+    },
+    {
+      "name": "rgroup"
+    },
+    {
+      "name": "rhook",
+      "unusual": true
+    },
+    {
+      "name": "rightarrowfill"
+    },
+    {
+      "name": "rightharpoondown",
+      "detail": "⇁",
+      "doc": "Right harpoon-down"
+    },
+    {
+      "name": "rightharpoonup",
+      "detail": "⇀",
+      "doc": "Right harpoon-up"
+    },
+    {
+      "name": "righthyphenmin"
+    },
+    {
+      "name": "rightleftharpoons",
+      "detail": "⇌",
+      "doc": "\\equilibrium (wrisym), right harpoon over left"
+    },
+    {
+      "name": "rightline",
+      "arg": {
+        "format": "{}",
+        "snippet": "rightline{${1:text}}"
+      }
+    },
+    {
+      "name": "rightskip"
+    },
+    {
+      "name": "rlap",
+      "arg": {
+        "format": "{}",
+        "snippet": "rlap{${1:text}}"
+      }
+    },
+    {
+      "name": "rm"
+    },
+    {
+      "name": "rmoustache",
+      "detail": "⎱",
+      "doc": "? \\rmoustache, upper right or lower left curly bracket section"
+    },
+    {
+      "name": "root"
+    },
+    {
+      "name": "rootbox",
+      "unusual": true
+    },
+    {
+      "name": "rq"
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "sb",
+      "arg": {
+        "format": "{}",
+        "snippet": "sb{${1:subscript}}"
+      }
+    },
+    {
+      "name": "scriptscriptstyle"
+    },
+    {
+      "name": "scriptspace"
+    },
+    {
+      "name": "scriptstyle"
+    },
+    {
+      "name": "scrollmode"
+    },
+    {
+      "name": "searrow",
+      "detail": "↘",
+      "doc": "Se pointing arrow"
+    },
+    {
+      "name": "sec"
+    },
+    {
+      "name": "settabs"
+    },
+    {
+      "name": "sevenbf"
+    },
+    {
+      "name": "seveni"
+    },
+    {
+      "name": "sevenrm"
+    },
+    {
+      "name": "sevensy"
+    },
+    {
+      "name": "sharp",
+      "detail": "♯",
+      "doc": "\\# (oz), music sharp sign, infix bag count"
+    },
+    {
+      "name": "showboxbreadth"
+    },
+    {
+      "name": "showboxdepth"
+    },
+    {
+      "name": "showhyphens",
+      "arg": {
+        "format": "{}",
+        "snippet": "showhyphens{${1:space separated words}}"
+      }
+    },
+    {
+      "name": "showlists"
+    },
+    {
+      "name": "sim",
+      "detail": "∼",
+      "doc": "Similar to, tilde operator"
+    },
+    {
+      "name": "simeq",
+      "detail": "≃",
+      "doc": "Similar, equals"
+    },
+    {
+      "name": "sin"
+    },
+    {
+      "name": "sinh"
+    },
+    {
+      "name": "sl"
+    },
+    {
+      "name": "slash"
+    },
+    {
+      "name": "slfam"
+    },
+    {
+      "name": "smallbreak"
+    },
+    {
+      "name": "smallint"
+    },
+    {
+      "name": "smallskip"
+    },
+    {
+      "name": "smallskipamount"
+    },
+    {
+      "name": "smash",
+      "arg": {
+        "format": "{}",
+        "snippet": "smash{${1:text}}"
+      }
+    },
+    {
+      "name": "smile",
+      "detail": "⌣",
+      "doc": "\\smallsmile, smile (up curve)"
+    },
+    {
+      "name": "sp",
+      "arg": {
+        "format": "{}",
+        "snippet": "sp{${1:superscript}}"
+      }
+    },
+    {
+      "name": "space"
+    },
+    {
+      "name": "spacefactor"
+    },
+    {
+      "name": "spaceskip"
+    },
+    {
+      "name": "spadesuit",
+      "detail": "♠",
+      "doc": "Spades suit symbol"
+    },
+    {
+      "name": "span"
+    },
+    {
+      "name": "special",
+      "arg": {
+        "format": "{}",
+        "snippet": "special{${1:code}}"
+      }
+    },
+    {
+      "name": "splitbotmark"
+    },
+    {
+      "name": "splitfirstmark"
+    },
+    {
+      "name": "splitmaxdepth"
+    },
+    {
+      "name": "splittopskip"
+    },
+    {
+      "name": "sqcap",
+      "detail": "⊓",
+      "doc": "Square intersection"
+    },
+    {
+      "name": "sqcup",
+      "detail": "⊔",
+      "doc": "Square union"
+    },
+    {
+      "name": "sqsubseteq",
+      "detail": "⊑",
+      "doc": "Square subset, equals"
+    },
+    {
+      "name": "sqsupseteq",
+      "detail": "⊒",
+      "doc": "Square superset, equals"
+    },
+    {
+      "name": "ss"
+    },
+    {
+      "name": "star",
+      "detail": "⋆",
+      "doc": "Small star, filled, low"
+    },
+    {
+      "name": "strut"
+    },
+    {
+      "name": "strutbox"
+    },
+    {
+      "name": "subseteq",
+      "detail": "⊆",
+      "doc": "Subset, equals"
+    },
+    {
+      "name": "succ",
+      "detail": "≻",
+      "doc": "Succeeds"
+    },
+    {
+      "name": "succeq",
+      "detail": "⪰",
+      "doc": "Succeeds above single-line equals sign"
+    },
+    {
+      "name": "sup"
+    },
+    {
+      "name": "supereject"
+    },
+    {
+      "name": "supseteq",
+      "detail": "⊇",
+      "doc": "Superset, equals"
+    },
+    {
+      "name": "surd"
+    },
+    {
+      "name": "swarrow",
+      "detail": "↙",
+      "doc": "Sw pointing arrow"
+    },
+    {
+      "name": "t",
+      "arg": {
+        "format": "{}",
+        "snippet": "t{${1:oo}}"
+      }
+    },
+    {
+      "name": "tabalign"
+    },
+    {
+      "name": "tabs",
+      "unusual": true
+    },
+    {
+      "name": "tabsdone",
+      "unusual": true
+    },
+    {
+      "name": "tabskip"
+    },
+    {
+      "name": "tabsyet",
+      "unusual": true
+    },
+    {
+      "name": "tan"
+    },
+    {
+      "name": "tanh"
+    },
+    {
+      "name": "tenbf"
+    },
+    {
+      "name": "tenex"
+    },
+    {
+      "name": "teni"
+    },
+    {
+      "name": "tenit"
+    },
+    {
+      "name": "tenrm"
+    },
+    {
+      "name": "tensl"
+    },
+    {
+      "name": "tensy"
+    },
+    {
+      "name": "tentt"
+    },
+    {
+      "name": "TeX"
+    },
+    {
+      "name": "textindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "textindent{${1:mark}}"
+      }
+    },
+    {
+      "name": "textstyle"
+    },
+    {
+      "name": "the"
+    },
+    {
+      "name": "thickmuskip"
+    },
+    {
+      "name": "thinmuskip"
+    },
+    {
+      "name": "thinspace"
+    },
+    {
+      "name": "time"
+    },
+    {
+      "name": "to"
+    },
+    {
+      "name": "tolerance"
+    },
+    {
+      "name": "top",
+      "detail": "⊤",
+      "doc": "Down tack, top"
+    },
+    {
+      "name": "topglue"
+    },
+    {
+      "name": "topins"
+    },
+    {
+      "name": "topinsert"
+    },
+    {
+      "name": "topmark"
+    },
+    {
+      "name": "topskip"
+    },
+    {
+      "name": "tracingall"
+    },
+    {
+      "name": "tracingcommands"
+    },
+    {
+      "name": "tracinglostchars"
+    },
+    {
+      "name": "tracingmacros"
+    },
+    {
+      "name": "tracingonline"
+    },
+    {
+      "name": "tracingoutput"
+    },
+    {
+      "name": "tracingpages"
+    },
+    {
+      "name": "tracingparagraphs"
+    },
+    {
+      "name": "tracingrestores"
+    },
+    {
+      "name": "tracingstats"
+    },
+    {
+      "name": "triangle"
+    },
+    {
+      "name": "triangleleft",
+      "detail": "◁ (\"amssymb wasysym\" command)",
+      "doc": "\\dres (oz), \\lefttriangle (wrisym), (large) left triangle, open; domain restriction"
+    },
+    {
+      "name": "triangleright",
+      "detail": "▷ (\"amssymb wasysym\" command)",
+      "doc": "\\rres (oz), \\righttriangle (wrisym), (large) right triangle, open; range restriction"
+    },
+    {
+      "name": "tt"
+    },
+    {
+      "name": "ttfam"
+    },
+    {
+      "name": "ttraggedright"
+    },
+    {
+      "name": "u",
+      "arg": {
+        "format": "{}",
+        "snippet": "u{${1:o}}"
+      }
+    },
+    {
+      "name": "uchyph"
+    },
+    {
+      "name": "underbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "underbar{${1:text}}"
+      },
+      "detail": " ̱",
+      "doc": "Combining macron below"
+    },
+    {
+      "name": "unkern"
+    },
+    {
+      "name": "unpenalty"
+    },
+    {
+      "name": "unskip"
+    },
+    {
+      "name": "uparrow",
+      "detail": "↑",
+      "doc": "Upward arrow"
+    },
+    {
+      "name": "Uparrow",
+      "detail": "⇑",
+      "doc": "Up double arrow"
+    },
+    {
+      "name": "upbracefill"
+    },
+    {
+      "name": "updownarrow",
+      "detail": "↕",
+      "doc": "Up and down arrow"
+    },
+    {
+      "name": "Updownarrow",
+      "detail": "⇕",
+      "doc": "Up and down double arrow"
+    },
+    {
+      "name": "uplus",
+      "detail": "⊎",
+      "doc": "\\buni (oz), plus sign in union"
+    },
+    {
+      "name": "uppercase",
+      "arg": {
+        "format": "{}",
+        "snippet": "uppercase{${1:token list%text}}"
+      }
+    },
+    {
+      "name": "v",
+      "arg": {
+        "format": "{}",
+        "snippet": "v{${1:o}}"
+      }
+    },
+    {
+      "name": "vadjust",
+      "arg": {
+        "format": "{}",
+        "snippet": "vadjust{${1:vertical mode material}}"
+      }
+    },
+    {
+      "name": "valign",
+      "arg": {
+        "format": "{}",
+        "snippet": "valign{${1:⟨preamble⟩ \\cr ⟨column⟩ \\cr ... ⟨column⟩ \\cr}}"
+      }
+    },
+    {
+      "name": "vbadness"
+    },
+    {
+      "name": "vbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "vbox{${1:vertical mode material}}"
+      }
+    },
+    {
+      "name": "vcenter",
+      "arg": {
+        "format": "{}",
+        "snippet": "vcenter{${1:vertical mode material}}"
+      }
+    },
+    {
+      "name": "vdash",
+      "detail": "⊢",
+      "doc": "Right tack, proves, implies, yields, (vertical and dash)"
+    },
+    {
+      "name": "vdots",
+      "detail": "⋮",
+      "doc": "Vertical ellipsis"
+    },
+    {
+      "name": "vert",
+      "detail": "|",
+      "doc": "\\vert, vertical bar"
+    },
+    {
+      "name": "Vert",
+      "detail": "‖",
+      "doc": "\\vert, double vertical bar"
+    },
+    {
+      "name": "vfil"
+    },
+    {
+      "name": "vfill"
+    },
+    {
+      "name": "vfilneg"
+    },
+    {
+      "name": "vfootnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "vfootnote{${1:mark}}{${2:text}}"
+      }
+    },
+    {
+      "name": "vfuzz"
+    },
+    {
+      "name": "vglue"
+    },
+    {
+      "name": "voffset"
+    },
+    {
+      "name": "vphantom",
+      "arg": {
+        "format": "{}",
+        "snippet": "vphantom{${1:text}}"
+      }
+    },
+    {
+      "name": "vrule"
+    },
+    {
+      "name": "vsize"
+    },
+    {
+      "name": "vskip"
+    },
+    {
+      "name": "vss"
+    },
+    {
+      "name": "vtop",
+      "arg": {
+        "format": "{}",
+        "snippet": "vtop{${1:vertical mode material}}"
+      }
+    },
+    {
+      "name": "widowpenalty"
+    },
+    {
+      "name": "wlog",
+      "arg": {
+        "format": "{}",
+        "snippet": "wlog{${1:token list%text}}"
+      }
+    },
+    {
+      "name": "wp",
+      "detail": "℘ (\"amssymb\" command)",
+      "doc": "Weierstrass p"
+    },
+    {
+      "name": "wr",
+      "detail": "≀ (\"amssymb\" command)",
+      "doc": "Wreath product"
+    },
+    {
+      "name": "xdef"
+    },
+    {
+      "name": "xleaders"
+    },
+    {
+      "name": "xspaceskip"
+    },
+    {
+      "name": "year"
+    },
+    {
+      "name": "*",
+      "unusual": true
+    },
+    {
+      "name": ">",
+      "unusual": true
+    },
+    {
+      "name": "big",
+      "arg": {
+        "format": "()",
+        "snippet": "big(${1:%<..%>\\big})"
+      }
+    },
+    {
+      "name": "big",
+      "arg": {
+        "format": "[]",
+        "snippet": "big[${1:..\\big}]"
+      }
+    },
+    {
+      "name": "big",
+      "arg": {
+        "format": "||",
+        "snippet": "big|${1:..\\big}|"
+      }
+    },
+    {
+      "name": "Big",
+      "arg": {
+        "format": "()",
+        "snippet": "Big(${1:%<..%>\\Big})"
+      }
+    },
+    {
+      "name": "Big",
+      "arg": {
+        "format": "[]",
+        "snippet": "Big[${1:..\\Big}]"
+      }
+    },
+    {
+      "name": "Big",
+      "arg": {
+        "format": "||",
+        "snippet": "Big|${1:..\\Big}|"
+      }
+    },
+    {
+      "name": "bigl",
+      "arg": {
+        "format": "()",
+        "snippet": "bigl(${1:%<..%>\\bigr})"
+      }
+    },
+    {
+      "name": "bigl",
+      "arg": {
+        "format": "[]",
+        "snippet": "bigl[${1:..\\bigr}]"
+      }
+    },
+    {
+      "name": "Bigl",
+      "arg": {
+        "format": "()",
+        "snippet": "Bigl(${1:%<..%>\\Bigr})"
+      }
+    },
+    {
+      "name": "Bigl",
+      "arg": {
+        "format": "[]",
+        "snippet": "Bigl[${1:..\\Bigr}]"
+      }
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "int_",
+      "arg": {
+        "format": "{}^{}",
+        "snippet": "int_{${1:min}}^{${2:max}}"
+      }
+    },
+    {
+      "name": "lim_",
+      "arg": {
+        "format": "{}",
+        "snippet": "lim_{${1:min}}"
+      }
+    },
+    {
+      "name": "prod_",
+      "arg": {
+        "format": "{}^{}",
+        "snippet": "prod_{${1:min}}^{${2:max}}"
+      }
+    },
+    {
+      "name": "sum_",
+      "arg": {
+        "format": "{}^{}",
+        "snippet": "sum_{${1:min}}^{${2:max}}"
+      }
+    },
+    {
+      "name": "beginL"
+    },
+    {
+      "name": "beginR"
+    },
+    {
+      "name": "detokenize",
+      "arg": {
+        "format": "{}",
+        "snippet": "detokenize{${1:text}}"
+      }
+    },
+    {
+      "name": "endL"
+    },
+    {
+      "name": "endR"
+    },
+    {
+      "name": "eTeXrevision"
+    },
+    {
+      "name": "eTeXversion"
+    },
+    {
+      "name": "everyeof"
+    },
+    {
+      "name": "currentgrouplevel"
+    },
+    {
+      "name": "currentgrouptype"
+    },
+    {
+      "name": "currentiflevel"
+    },
+    {
+      "name": "currentiftype"
+    },
+    {
+      "name": "currentifbranch"
+    },
+    {
+      "name": "ifcsname"
+    },
+    {
+      "name": "interactionmode"
+    },
+    {
+      "name": "lastlinefit"
+    },
+    {
+      "name": "lastnodetype"
+    },
+    {
+      "name": "middle"
+    },
+    {
+      "name": "numexpr"
+    },
+    {
+      "name": "parshapedimen"
+    },
+    {
+      "name": "parshapeindent"
+    },
+    {
+      "name": "parshapelength"
+    },
+    {
+      "name": "predisplaydirection"
+    },
+    {
+      "name": "protected"
+    },
+    {
+      "name": "scantokens",
+      "arg": {
+        "format": "{}",
+        "snippet": "scantokens{${1:text}}"
+      }
+    },
+    {
+      "name": "showgroups"
+    },
+    {
+      "name": "showtokens",
+      "arg": {
+        "format": "{}",
+        "snippet": "showtokens{${1:text}}"
+      }
+    },
+    {
+      "name": "TeXXeTstate"
+    },
+    {
+      "name": "tracingassigns"
+    },
+    {
+      "name": "tracinggroups"
+    },
+    {
+      "name": "tracingifs"
+    },
+    {
+      "name": "tracingscantokens"
+    },
+    {
+      "name": "unexpanded",
+      "arg": {
+        "format": "{}",
+        "snippet": "unexpanded{${1:text}}"
+      }
+    },
+    {
+      "name": "unless"
+    },
+    {
+      "name": "dimexpr"
+    },
+    {
+      "name": "glueexpr"
+    },
+    {
+      "name": "muexpr"
+    },
+    {
+      "name": "gluestretch"
+    },
+    {
+      "name": "glueshrink"
+    },
+    {
+      "name": "gluestretchorder"
+    },
+    {
+      "name": "glueshrinkorder"
+    },
+    {
+      "name": "interlinepenalties"
+    },
+    {
+      "name": "clubpenalties"
+    },
+    {
+      "name": "widowpenalties"
+    },
+    {
+      "name": "displaywidowpenalties"
+    },
+    {
+      "name": "tracingnesting"
+    },
+    {
+      "name": "savingvdiscards"
+    },
+    {
+      "name": "savinghyphcodes"
+    },
+    {
+      "name": "showifs"
+    },
+    {
+      "name": "pagediscards"
+    },
+    {
+      "name": "splitdiscards"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

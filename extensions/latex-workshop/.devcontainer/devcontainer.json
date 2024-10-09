@@ -1,0 +1,5 @@
+{
+	"name": "Node.js 16 & TeX Live Base",
+	"dockerFile": "stable/Dockerfile",
+	"extensions": []
+}

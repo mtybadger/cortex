@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "lscape"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

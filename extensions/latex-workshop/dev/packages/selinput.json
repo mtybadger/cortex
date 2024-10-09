@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "kvsetkeys"
+    },
+    {
+      "name": "stringenc"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SelectInputEncodingList",
+      "arg": {
+        "format": "{}",
+        "snippet": "SelectInputEncodingList{${1:encoding list}}"
+      }
+    },
+    {
+      "name": "SelectInputMappings",
+      "arg": {
+        "format": "{}",
+        "snippet": "SelectInputMappings{${1:mapping pairs}}"
+      }
+    },
+    {
+      "name": "SelectInputDefineMapping",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SelectInputDefineMapping{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/selinput#c": [
+      "warning",
+      "ucs",
+      "utf8=${1:file name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/selinput#c"
+  ]
+}

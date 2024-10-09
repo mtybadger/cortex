@@ -1,0 +1,37 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MF"
+    },
+    {
+      "name": "MP"
+    },
+    {
+      "name": "MT"
+    },
+    {
+      "name": "textffm",
+      "arg": {
+        "format": "{}",
+        "snippet": "textffm{${1:text}}"
+      }
+    },
+    {
+      "name": "textffmw",
+      "arg": {
+        "format": "{}",
+        "snippet": "textffmw{${1:text}}"
+      }
+    },
+    {
+      "name": "ffmfamily"
+    },
+    {
+      "name": "ffmwfamily"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

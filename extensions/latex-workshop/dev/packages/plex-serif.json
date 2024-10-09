@@ -1,0 +1,58 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "plexserif"
+    },
+    {
+      "name": "plexseriflgr"
+    },
+    {
+      "name": "plexseriffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/plex-serif#c": [
+      "scale=${1:factor}",
+      "type1",
+      "thin",
+      "t",
+      "extralight",
+      "el",
+      "light",
+      "l",
+      "text",
+      "tx",
+      "textmd",
+      "txmd",
+      "medium",
+      "m",
+      "semibold",
+      "sb"
+    ]
+  },
+  "args": [
+    "\\usepackage/plex-serif#c"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "iddots"
+    },
+    {
+      "name": "MDoprekern",
+      "unusual": true
+    },
+    {
+      "name": "MDodotkern",
+      "unusual": true
+    },
+    {
+      "name": "MDopostkern",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

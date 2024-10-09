@@ -1,0 +1,234 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "longtable"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "rotating"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "ellipsis"
+    },
+    {
+      "name": "pgf"
+    },
+    {
+      "name": "pgfplots"
+    },
+    {
+      "name": "pgfplotstable"
+    },
+    {
+      "name": "pgfplotslibrarydateplot"
+    },
+    {
+      "name": "pgfcalendar",
+      "if": "graph"
+    },
+    {
+      "name": "tikzlibrarycalendar",
+      "if": "graph"
+    },
+    {
+      "name": "tikzlibraryexternal",
+      "if": "graph"
+    },
+    {
+      "name": "colortbl"
+    },
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "row"
+    },
+    {
+      "name": "dmlbsetdate",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dmlbsetdate{${1:YYYY}}{${2:MM}}{${3:DD}}"
+      }
+    },
+    {
+      "name": "dmlbsetdate",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "dmlbsetdate{${1:YYYY}}{${2:MM}}{${3:DD}}[${4:rel path}]"
+      }
+    },
+    {
+      "name": "QQQ",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "QQQ{${1:time}}{${2:blood glucose}}{${3:insulin}}{${4:carbohydrates}}{${5:protein}}{${6:fat}}{${7:remarks%text}}"
+      }
+    },
+    {
+      "name": "QQQ",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}{}",
+        "snippet": "QQQ[${8:date}]{${1:time}}{${2:blood glucose}}{${3:insulin}}{${4:carbohydrates}}{${5:protein}}{${6:fat}}{${7:remarks%text}}"
+      }
+    },
+    {
+      "name": "autoFileInput",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "autoFileInput{${1:rel path}}"
+      }
+    },
+    {
+      "name": "calcmaxrows",
+      "unusual": true
+    },
+    {
+      "name": "changestrut",
+      "unusual": true
+    },
+    {
+      "name": "Day",
+      "unusual": true
+    },
+    {
+      "name": "Month",
+      "unusual": true
+    },
+    {
+      "name": "rowstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rowstyle{${1:style commands}}"
+      }
+    },
+    {
+      "name": "TwoDigits",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TwoDigits{${1:num}}"
+      }
+    },
+    {
+      "name": "writeperiods",
+      "unusual": true
+    },
+    {
+      "name": "Year",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dmlb#c": [
+      "graph"
+    ]
+  },
+  "args": [
+    "\\usepackage/dmlb#c"
+  ]
+}

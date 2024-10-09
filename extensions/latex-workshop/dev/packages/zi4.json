@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "upquote"
+    }
+  ],
+  "macros": [
+    {
+      "name": "altzero"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/zi4#c": [
+      "scaled=${1:factor}",
+      "hyphenate",
+      "mono",
+      "nott",
+      "noupquote",
+      "var0",
+      "var1",
+      "varqu",
+      "narrow",
+      "spacing=",
+      "stretch=",
+      "shrink=",
+      "extrasp="
+    ]
+  },
+  "args": [
+    "\\usepackage/zi4#c"
+  ]
+}

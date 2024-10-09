@@ -1,0 +1,100 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CoverPageSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "CoverPageSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\CoverPageSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "BibTeX"
+    },
+    {
+      "name": "CPTitleFont",
+      "unusual": true
+    },
+    {
+      "name": "CPAuthorFont",
+      "unusual": true
+    },
+    {
+      "name": "CPInstituteFont",
+      "unusual": true
+    },
+    {
+      "name": "CPInSourceFont",
+      "unusual": true
+    },
+    {
+      "name": "CPCopyrightFont",
+      "unusual": true
+    },
+    {
+      "name": "CoverPageHeader",
+      "unusual": true
+    },
+    {
+      "name": "CoverPageBody",
+      "unusual": true
+    },
+    {
+      "name": "CoverPageFooter",
+      "unusual": true
+    },
+    {
+      "name": "CoverPageFooterLogo",
+      "unusual": true
+    },
+    {
+      "name": "CPProcessBibEntry",
+      "unusual": true
+    },
+    {
+      "name": "CPPublisherCheck",
+      "unusual": true
+    },
+    {
+      "name": "CoverPageFooterInfo",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CoverPage#c": [
+      "german",
+      "english",
+      "twoside",
+      "nobib"
+    ],
+    "\\CoverPageSetup": [
+      "title=${1:text}",
+      "author=${1:text}",
+      "institute=${1:text}",
+      "insource=${1:text}",
+      "copyright=${1:text}",
+      "year=${1:year}",
+      "publisher=${1|Springer,Kluwer,SPIE,IEEE|}",
+      "booktitle=${1:text}",
+      "journal=${1:text}"
+    ]
+  },
+  "args": [
+    "\\usepackage/CoverPage#c"
+  ]
+}

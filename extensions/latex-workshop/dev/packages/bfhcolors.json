@@ -1,0 +1,24 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bfhcolors#c": [
+      "coated",
+      "colormode=${1|4CU,4CC,RGB,SW,1C|}",
+      "RGB",
+      "cmyk",
+      "gray"
+    ]
+  },
+  "args": [
+    "\\usepackage/bfhcolors#c"
+  ]
+}

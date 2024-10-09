@@ -1,0 +1,247 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "showexpl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BDefaboveskip",
+      "unusual": true
+    },
+    {
+      "name": "BDefbelowskip",
+      "unusual": true
+    },
+    {
+      "name": "BDefinlineskip",
+      "unusual": true
+    },
+    {
+      "name": "boxdef",
+      "unusual": true
+    },
+    {
+      "name": "bs"
+    },
+    {
+      "name": "CAny"
+    },
+    {
+      "name": "cAny"
+    },
+    {
+      "name": "CIIIAny"
+    },
+    {
+      "name": "ciiiAny"
+    },
+    {
+      "name": "Coord",
+      "arg": {
+        "format": "{}",
+        "snippet": "Coord{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "coord",
+      "arg": {
+        "format": "{}",
+        "snippet": "coord{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "CoordIII",
+      "arg": {
+        "format": "{}",
+        "snippet": "CoordIII{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "coordiii",
+      "arg": {
+        "format": "{}",
+        "snippet": "coordiii{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "Coordn"
+    },
+    {
+      "name": "coordn"
+    },
+    {
+      "name": "Coordx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Coordx{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "coordx",
+      "arg": {
+        "format": "{}",
+        "snippet": "coordx{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "Coordy",
+      "arg": {
+        "format": "{}",
+        "snippet": "Coordy{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "coordy",
+      "arg": {
+        "format": "{}",
+        "snippet": "coordy{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "Coordz",
+      "arg": {
+        "format": "{}",
+        "snippet": "Coordz{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "coordz",
+      "arg": {
+        "format": "{}",
+        "snippet": "coordz{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "HLOFF"
+    },
+    {
+      "name": "HLON"
+    },
+    {
+      "name": "Larg",
+      "arg": {
+        "format": "{}",
+        "snippet": "Larg{${1:arg}}"
+      }
+    },
+    {
+      "name": "Larga",
+      "arg": {
+        "format": "{}",
+        "snippet": "Larga{${1:arg}}"
+      }
+    },
+    {
+      "name": "Largb",
+      "arg": {
+        "format": "{}",
+        "snippet": "Largb{${1:arg}}"
+      }
+    },
+    {
+      "name": "Largr",
+      "arg": {
+        "format": "{}",
+        "snippet": "Largr{${1:arg}}"
+      }
+    },
+    {
+      "name": "Largs",
+      "arg": {
+        "format": "{}",
+        "snippet": "Largs{${1:arg}}"
+      }
+    },
+    {
+      "name": "LBEG",
+      "arg": {
+        "format": "{}",
+        "snippet": "LBEG{${1:envname}}"
+      }
+    },
+    {
+      "name": "lcb"
+    },
+    {
+      "name": "Lcs",
+      "arg": {
+        "format": "{}",
+        "snippet": "Lcs{${1:csname}}"
+      }
+    },
+    {
+      "name": "LcsStar",
+      "arg": {
+        "format": "{}",
+        "snippet": "LcsStar{${1:csname}}"
+      }
+    },
+    {
+      "name": "LEND",
+      "arg": {
+        "format": "{}",
+        "snippet": "LEND{${1:envname}}"
+      }
+    },
+    {
+      "name": "lrb"
+    },
+    {
+      "name": "lsb"
+    },
+    {
+      "name": "nxLcs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nxLcs{${1:csname}}"
+      }
+    },
+    {
+      "name": "OptArg*",
+      "arg": {
+        "format": "{}",
+        "snippet": "OptArg*{${1:arg}}"
+      }
+    },
+    {
+      "name": "OptArg",
+      "arg": {
+        "format": "{}",
+        "snippet": "OptArg{${1:arg}}"
+      }
+    },
+    {
+      "name": "OptArgs"
+    },
+    {
+      "name": "rcb"
+    },
+    {
+      "name": "rrb"
+    },
+    {
+      "name": "rsb"
+    }
+  ],
+  "envs": [
+    {
+      "name": "BCmd"
+    },
+    {
+      "name": "BCmd*"
+    },
+    {
+      "name": "BDef"
+    },
+    {
+      "name": "BDef*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

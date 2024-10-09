@@ -1,0 +1,81 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgfplots"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "signchart",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "signchart{${1:values}}{${2:signs}}"
+      }
+    },
+    {
+      "name": "signchart",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "signchart[${3:options%keyvals}]{${1:values}}{${2:signs}}",
+        "keys": [
+          "\\signchart"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "signHeightKey",
+      "unusual": true
+    },
+    {
+      "name": "valNorthSouthKey",
+      "unusual": true
+    },
+    {
+      "name": "valSepKey",
+      "unusual": true
+    },
+    {
+      "name": "signChartWidth",
+      "unusual": true
+    },
+    {
+      "name": "signHeight",
+      "unusual": true
+    },
+    {
+      "name": "valNorthSouth",
+      "unusual": true
+    },
+    {
+      "name": "valSep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/signchart#c": [
+      "signunder",
+      "valunder"
+    ],
+    "\\signchart": [
+      "height=",
+      "valanchor=${1:anchor name}",
+      "valsep=",
+      "width=",
+      "arrows=${1:arrow style}"
+    ]
+  },
+  "args": [
+    "\\usepackage/signchart#c"
+  ]
+}

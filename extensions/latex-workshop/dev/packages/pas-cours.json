@@ -1,0 +1,811 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "numprint"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "ifplatform"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "auto-pst-pdf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "patronprismereg"
+    },
+    {
+      "name": "patronprismereg",
+      "arg": {
+        "format": "[]",
+        "snippet": "patronprismereg[${1:options%keyvals}]",
+        "keys": [
+          "\\patronprismereg,\\pasPatronprismereg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPatronprismereg",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPatronprismereg[${1:options%keyvals}]",
+        "keys": [
+          "\\patronprismereg,\\pasPatronprismereg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "patronpyramreg"
+    },
+    {
+      "name": "patronpyramreg",
+      "arg": {
+        "format": "[]",
+        "snippet": "patronpyramreg[${1:options%keyvals}]",
+        "keys": [
+          "\\patronpyramreg,\\pasPatronpyramreg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPatronpyramreg",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPatronpyramreg[${1:options%keyvals}]",
+        "keys": [
+          "\\patronpyramreg,\\pasPatronpyramreg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "patroncone"
+    },
+    {
+      "name": "patroncone",
+      "arg": {
+        "format": "[]",
+        "snippet": "patroncone[${1:options%keyvals}]",
+        "keys": [
+          "\\patroncone,\\pasPatroncone"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPatroncone",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPatroncone[${1:options%keyvals}]",
+        "keys": [
+          "\\patroncone,\\pasPatroncone"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "patroncylindre"
+    },
+    {
+      "name": "patroncylindre",
+      "arg": {
+        "format": "[]",
+        "snippet": "patroncylindre[${1:options%keyvals}]",
+        "keys": [
+          "\\patroncylindre,\\pasPatroncylindre"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPatroncylindre",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPatroncylindre[${1:options%keyvals}]",
+        "keys": [
+          "\\patroncylindre,\\pasPatroncylindre"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "patronpave"
+    },
+    {
+      "name": "patronpave",
+      "arg": {
+        "format": "[]",
+        "snippet": "patronpave[${1:options%keyvals}]",
+        "keys": [
+          "\\patronpave,\\pasPatronpave"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPatronpave",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPatronpave[${1:options%keyvals}]",
+        "keys": [
+          "\\patronpave,\\pasPatronpave"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "prismereg"
+    },
+    {
+      "name": "prismereg",
+      "arg": {
+        "format": "[]",
+        "snippet": "prismereg[${1:options%keyvals}]",
+        "keys": [
+          "\\prismereg,\\pasPrismereg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPrismereg",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPrismereg[${1:options%keyvals}]",
+        "keys": [
+          "\\prismereg,\\pasPrismereg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pyramreg"
+    },
+    {
+      "name": "pyramreg",
+      "arg": {
+        "format": "[]",
+        "snippet": "pyramreg[${1:options%keyvals}]",
+        "keys": [
+          "\\pyramreg,\\pasPyramreg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasPyramreg",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasPyramreg[${1:options%keyvals}]",
+        "keys": [
+          "\\pyramreg,\\pasPyramreg"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "boule"
+    },
+    {
+      "name": "boule",
+      "arg": {
+        "format": "[]",
+        "snippet": "boule[${1:options%keyvals}]",
+        "keys": [
+          "\\boule,\\pasBoule"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasBoule",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasBoule[${1:options%keyvals}]",
+        "keys": [
+          "\\boule,\\pasBoule"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cone"
+    },
+    {
+      "name": "cone",
+      "arg": {
+        "format": "[]",
+        "snippet": "cone[${1:options%keyvals}]",
+        "keys": [
+          "\\cone,\\pasCone"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasCone",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasCone[${1:options%keyvals}]",
+        "keys": [
+          "\\cone,\\pasCone"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cylindre"
+    },
+    {
+      "name": "cylindre",
+      "arg": {
+        "format": "[]",
+        "snippet": "cylindre[${1:options%keyvals}]",
+        "keys": [
+          "\\cylindre,\\pasCylindre"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasCylindre",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "pasCylindre[${1:options%keyvals}]",
+        "keys": [
+          "\\cylindre,\\pasCylindre"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cube"
+    },
+    {
+      "name": "cube",
+      "arg": {
+        "format": "[]",
+        "snippet": "cube[${1:options%keyvals}]",
+        "keys": [
+          "\\cube,\\pasCube"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasCube",
+      "arg": {
+        "format": "[]",
+        "snippet": "pasCube[${1:options%keyvals}]",
+        "keys": [
+          "\\cube,\\pasCube"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:text}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "env[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\env,\\pasEnv,\\begin{pasbox}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasEnv",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pasEnv[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\env,\\pasEnv,\\begin{pasbox}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "breakbox"
+    },
+    {
+      "name": "chap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "chap{${1:title}}{${2:subtitle%text}}"
+      }
+    },
+    {
+      "name": "chap",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "chap[${3:options%keyvals}]{${1:title}}{${2:subtitle%text}}",
+        "keys": [
+          "\\chap,\\pasChap"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pasChap",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pasChap[${3:options%keyvals}]{${1:title}}{${2:subtitle%text}}",
+        "keys": [
+          "\\chap,\\pasChap"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "definmot",
+      "arg": {
+        "format": "{}",
+        "snippet": "definmot{${1:text}}"
+      }
+    },
+    {
+      "name": "itemclass",
+      "arg": {
+        "format": "{}",
+        "snippet": "itemclass{${1:color}}"
+      }
+    },
+    {
+      "name": "bonus",
+      "arg": {
+        "format": "{}",
+        "snippet": "bonus{${1:titre%text}}"
+      }
+    },
+    {
+      "name": "bonus*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bonus*{${1:titre%text}}"
+      }
+    },
+    {
+      "name": "titreFONT",
+      "unusual": true
+    },
+    {
+      "name": "tocFONT",
+      "unusual": true
+    },
+    {
+      "name": "prerequisBox",
+      "unusual": true
+    },
+    {
+      "name": "imgPrerequis",
+      "unusual": true
+    },
+    {
+      "name": "largeurimgPrerequis",
+      "unusual": true
+    },
+    {
+      "name": "imageBox",
+      "unusual": true
+    },
+    {
+      "name": "largeurimageBox",
+      "unusual": true
+    },
+    {
+      "name": "aretenirBox",
+      "unusual": true
+    },
+    {
+      "name": "attentionBox",
+      "unusual": true
+    },
+    {
+      "name": "thebonus",
+      "unusual": true
+    },
+    {
+      "name": "graphsuite",
+      "if": "calculs"
+    },
+    {
+      "name": "graphsuite",
+      "if": "calculs",
+      "arg": {
+        "format": "[]",
+        "snippet": "graphsuite[${1:options%keyvals}]",
+        "keys": [
+          "\\graphsuite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "executGiac",
+      "if": "calculs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "executGiac{${1:code}}"
+      }
+    },
+    {
+      "name": "graphsuite",
+      "if": "xcas"
+    },
+    {
+      "name": "graphsuite",
+      "if": "xcas",
+      "arg": {
+        "format": "[]",
+        "snippet": "graphsuite[${1:options%keyvals}]",
+        "keys": [
+          "\\graphsuite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "executGiac",
+      "if": "xcas",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "executGiac{${1:code}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "ant",
+      "unusual": true
+    },
+    {
+      "name": "pasbox"
+    },
+    {
+      "name": "pasbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\env,\\pasEnv,\\begin{pasbox}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "prerequis"
+    },
+    {
+      "name": "aretenir"
+    },
+    {
+      "name": "aretenir",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:factor}]"
+      }
+    },
+    {
+      "name": "warning"
+    },
+    {
+      "name": "warning",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{warning}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "attention"
+    },
+    {
+      "name": "attention",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:factor}]"
+      }
+    },
+    {
+      "name": "ifactors",
+      "if": "calculs"
+    },
+    {
+      "name": "ifactorstable",
+      "if": "calculs"
+    },
+    {
+      "name": "fracsimplify",
+      "if": "calculs"
+    },
+    {
+      "name": "exprsimplify",
+      "if": "calculs"
+    },
+    {
+      "name": "xcas",
+      "if": "calculs"
+    },
+    {
+      "name": "ifactors",
+      "if": "xcas"
+    },
+    {
+      "name": "ifactorstable",
+      "if": "xcas"
+    },
+    {
+      "name": "fracsimplify",
+      "if": "xcas"
+    },
+    {
+      "name": "exprsimplify",
+      "if": "xcas"
+    },
+    {
+      "name": "xcas",
+      "if": "xcas"
+    }
+  ],
+  "keys": {
+    "\\usepackage/pas-cours#c": [
+      "ant",
+      "everytoc",
+      "noitemstyle",
+      "noeffect",
+      "notitlebreak",
+      "calculs",
+      "xcas"
+    ],
+    "\\patronprismereg,\\pasPatronprismereg": [
+      "n=${1:integer}",
+      "r=${1:rayon}",
+      "h=${1:hauteur}",
+      "pos=",
+      "legende"
+    ],
+    "\\patronpyramreg,\\pasPatronpyramreg": [
+      "n=${1:integer}",
+      "r=${1:rayon}",
+      "h=${1:hauteur}",
+      "legende"
+    ],
+    "\\patroncone,\\pasPatroncone": [
+      "r=${1:rayon}",
+      "h=${1:hauteur}",
+      "legende"
+    ],
+    "\\patroncylindre,\\pasPatroncylindre": [
+      "r=${1:rayon}",
+      "h=${1:hauteur}",
+      "legende"
+    ],
+    "\\patronpave,\\pasPatronpave": [
+      "a=${1:number}",
+      "b=${1:number}",
+      "c=${1:number}",
+      "pos=${1|1,2,3,4|}",
+      "legende",
+      "codages"
+    ],
+    "\\prismereg,\\pasPrismereg": [
+      "n=${1:integer}",
+      "bordercolor=",
+      "incolor=",
+      "coefopaq=${1:opacity}",
+      "axe",
+      "axecolor=",
+      "hauteur=",
+      "rayon=",
+      "incl=${1:coeff}",
+      "legende",
+      "rotat=${1:degrees}",
+      "name"
+    ],
+    "\\pyramreg,\\pasPyramreg": [
+      "n=${1:integer}",
+      "bordercolor=",
+      "incolor=",
+      "coefopaq=${1:opacity}",
+      "centre=${1:name}",
+      "poscentre=${1:node pos}",
+      "sommet=${1:name}",
+      "posommet=${1:node pos}",
+      "scalecentre=${1:factor}",
+      "axe",
+      "axecolor=",
+      "name",
+      "hauteur=",
+      "rayon=",
+      "incl=${1:coeff}",
+      "legende",
+      "rotat=${1:degrees}"
+    ],
+    "\\boule,\\pasBoule": [
+      "border",
+      "bordercolor=",
+      "incolor=",
+      "coefopaq=${1:opacity}",
+      "centre=${1:name}",
+      "poscentre=${1:node pos}",
+      "scale=${1:factor}",
+      "name",
+      "legende",
+      "greenwich",
+      "greenwichcolor=",
+      "greenwichlegende",
+      "grandcercle",
+      "equateurlegende",
+      "exemplecoord",
+      "exemplecoordcolor=",
+      "exemplecoordname=${1:name}"
+    ],
+    "\\cone,\\pasCone": [
+      "bordercolor=",
+      "incolor=",
+      "incl=${1:coeff}",
+      "hauteur=",
+      "coefopaq=${1:opacity}",
+      "rayon=",
+      "centre=${1:name}",
+      "poscentre=${1:node pos}",
+      "sommet=${1:name}",
+      "posommet=${1:node pos}",
+      "scalecentre=${1:factor}",
+      "name",
+      "axe",
+      "axecolor=",
+      "legende"
+    ],
+    "\\cylindre,\\pasCylindre": [
+      "bordercolor=",
+      "incolor=",
+      "incl=${1:coeff}",
+      "hauteur=",
+      "coefopaq=${1:opacity}",
+      "rayon=",
+      "centrehaut=${1:name}",
+      "poscentrehaut=${1:node pos}",
+      "centrebas=${1:name}",
+      "poscentrebas=${1:node pos}",
+      "scalecentre=${1:factor}",
+      "name",
+      "axe",
+      "axecolor=",
+      "legende",
+      "rectgener"
+    ],
+    "\\cube,\\pasCube": [
+      "bordercolor=",
+      "incolor=",
+      "angle=${1:degrees}",
+      "scale=${1:factor}",
+      "coefopaq=${1:opacity}",
+      "prof=${1:profondeur}",
+      "name",
+      "legende"
+    ],
+    "\\env,\\pasEnv,\\begin{pasbox}": [
+      "degrade",
+      "pluriel",
+      "num",
+      "notitle",
+      "notitlebreak",
+      "endsymb",
+      "toc",
+      "notoc",
+      "effect",
+      "style=${1|defi,prop,thm,demo,nota,ex,act,rem,meth|}",
+      "name=${1:name}",
+      "title=${1:title}",
+      "symb=${1:symbol}"
+    ],
+    "\\chap,\\pasChap": [
+      "autonum",
+      "num=${1:numéro}",
+      "color=",
+      "pos=${1|left,right|}",
+      "nonewpage"
+    ],
+    "\\begin{warning}": [
+      "scale=${1:factor}",
+      "img=${1:imagefile}",
+      "margins=",
+      "draw=",
+      "bg",
+      "bgcolor="
+    ],
+    "\\graphsuite": [
+      "xmin=${1:number}",
+      "xmax=${1:number}",
+      "ymin=${1:number}",
+      "ymax=${1:number}",
+      "nmax=${1:number}",
+      "grid",
+      "gridcolor=",
+      "gridstyle={${1:TikZ options}}",
+      "gridxstep=${1:number}",
+      "gridystep=${1:number}",
+      "nograd",
+      "function={${1:function}}",
+      "colorfunction=",
+      "u=${1:first value}",
+      "colorconstruction=",
+      "styleconstruction={${1:TikZ options}}",
+      "xmin=${1:number}",
+      "xmax=${1:number}",
+      "ymin=${1:number}",
+      "ymax=${1:number}",
+      "nmax=${1:number}",
+      "grid",
+      "gridcolor=",
+      "gridstyle={${1:TikZ options}}",
+      "gridxstep=${1:number}",
+      "gridystep=${1:number}",
+      "nograd",
+      "function={${1:function}}",
+      "colorfunction=",
+      "u=${1:first value}",
+      "colorconstruction=",
+      "styleconstruction={${1:TikZ options}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pas-cours#c"
+  ]
+}

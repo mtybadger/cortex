@@ -1,0 +1,371 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "barj"
+    },
+    {
+      "name": "barlambda"
+    },
+    {
+      "name": "emgma"
+    },
+    {
+      "name": "engma"
+    },
+    {
+      "name": "enya"
+    },
+    {
+      "name": "epsi"
+    },
+    {
+      "name": "esh"
+    },
+    {
+      "name": "eth"
+    },
+    {
+      "name": "fj"
+    },
+    {
+      "name": "flap"
+    },
+    {
+      "name": "glottal"
+    },
+    {
+      "name": "hausab"
+    },
+    {
+      "name": "hausaB"
+    },
+    {
+      "name": "hausad"
+    },
+    {
+      "name": "hausaD"
+    },
+    {
+      "name": "hausak"
+    },
+    {
+      "name": "hausaK"
+    },
+    {
+      "name": "hookB"
+    },
+    {
+      "name": "hookb"
+    },
+    {
+      "name": "hookd"
+    },
+    {
+      "name": "hookD"
+    },
+    {
+      "name": "hookh"
+    },
+    {
+      "name": "hookK"
+    },
+    {
+      "name": "hookk"
+    },
+    {
+      "name": "ibar"
+    },
+    {
+      "name": "omicron"
+    },
+    {
+      "name": "openo"
+    },
+    {
+      "name": "palpha"
+    },
+    {
+      "name": "pbeta"
+    },
+    {
+      "name": "pchi"
+    },
+    {
+      "name": "pdelta"
+    },
+    {
+      "name": "pepsilon"
+    },
+    {
+      "name": "peta"
+    },
+    {
+      "name": "pgamma"
+    },
+    {
+      "name": "piota"
+    },
+    {
+      "name": "pkappa"
+    },
+    {
+      "name": "plambda"
+    },
+    {
+      "name": "planck"
+    },
+    {
+      "name": "pmu"
+    },
+    {
+      "name": "pnu"
+    },
+    {
+      "name": "pomega"
+    },
+    {
+      "name": "pomicron"
+    },
+    {
+      "name": "pphi"
+    },
+    {
+      "name": "ppi"
+    },
+    {
+      "name": "ppsi"
+    },
+    {
+      "name": "prho"
+    },
+    {
+      "name": "psigma"
+    },
+    {
+      "name": "ptau"
+    },
+    {
+      "name": "ptheta"
+    },
+    {
+      "name": "pupsilon"
+    },
+    {
+      "name": "pwedge"
+    },
+    {
+      "name": "pxi"
+    },
+    {
+      "name": "pzeta"
+    },
+    {
+      "name": "rbar"
+    },
+    {
+      "name": "revD"
+    },
+    {
+      "name": "riota"
+    },
+    {
+      "name": "rotc"
+    },
+    {
+      "name": "roth"
+    },
+    {
+      "name": "rotm"
+    },
+    {
+      "name": "rotOmega"
+    },
+    {
+      "name": "rotr"
+    },
+    {
+      "name": "rotvara"
+    },
+    {
+      "name": "rotw"
+    },
+    {
+      "name": "roty"
+    },
+    {
+      "name": "schwa"
+    },
+    {
+      "name": "taild"
+    },
+    {
+      "name": "thorn"
+    },
+    {
+      "name": "ubar"
+    },
+    {
+      "name": "udesc"
+    },
+    {
+      "name": "upbar"
+    },
+    {
+      "name": "vara"
+    },
+    {
+      "name": "varg"
+    },
+    {
+      "name": "vari"
+    },
+    {
+      "name": "varomega"
+    },
+    {
+      "name": "varopeno"
+    },
+    {
+      "name": "varU"
+    },
+    {
+      "name": "varu"
+    },
+    {
+      "name": "vod"
+    },
+    {
+      "name": "voicedh"
+    },
+    {
+      "name": "yogh"
+    },
+    {
+      "name": "acarc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "acarc{${1:accent}}{${2:letter}}"
+      }
+    },
+    {
+      "name": "acbar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "acbar{${1:accent}}{${2:letter}}"
+      }
+    },
+    {
+      "name": "hill",
+      "arg": {
+        "format": "{}",
+        "snippet": "hill{${1:letter}}"
+      }
+    },
+    {
+      "name": "labvel",
+      "arg": {
+        "format": "{}",
+        "snippet": "labvel{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "od",
+      "arg": {
+        "format": "{}",
+        "snippet": "od{${1:letter}}"
+      }
+    },
+    {
+      "name": "ohill",
+      "arg": {
+        "format": "{}",
+        "snippet": "ohill{${1:letter}}"
+      }
+    },
+    {
+      "name": "rc",
+      "arg": {
+        "format": "{}",
+        "snippet": "rc{${1:letter}}"
+      }
+    },
+    {
+      "name": "ssc",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssc{${1:text}}"
+      }
+    },
+    {
+      "name": "syl",
+      "arg": {
+        "format": "{}",
+        "snippet": "syl{${1:letter}}"
+      }
+    },
+    {
+      "name": "td",
+      "arg": {
+        "format": "{}",
+        "snippet": "td{${1:letter}}"
+      }
+    },
+    {
+      "name": "uplett",
+      "arg": {
+        "format": "{}",
+        "snippet": "uplett{${1:letter}}"
+      }
+    },
+    {
+      "name": "ut",
+      "arg": {
+        "format": "{}",
+        "snippet": "ut{${1:letter}}"
+      }
+    },
+    {
+      "name": "hideheight",
+      "unusual": true
+    },
+    {
+      "name": "onalign",
+      "arg": {
+        "format": "{}",
+        "snippet": "onalign{${1:arg}}"
+      }
+    },
+    {
+      "name": "overchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "overchar{${1:accent}}{${2:char}}{${3:ht-factor}}"
+      }
+    },
+    {
+      "name": "pc",
+      "unusual": true
+    },
+    {
+      "name": "pcchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pcchar{${1:char}}"
+      }
+    },
+    {
+      "name": "textpc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textpc{${1:char}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

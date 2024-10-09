@@ -1,0 +1,64 @@
+{
+  "deps": [
+    {
+      "name": "pgfkeys"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pdfmarginpar",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfmarginpar{${1:text}}"
+      }
+    },
+    {
+      "name": "pdfmarginpar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pdfmarginpar[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\pdfmarginpar#c,\\pdfmarginparset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pdfmarginparset",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfmarginparset{${1:options%keyvals}}",
+        "keys": [
+          "\\pdfmarginpar#c,\\pdfmarginparset#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\pdfmarginpar#c,\\pdfmarginparset#c": [
+      "Name=${1|Comment,Key,Note,Help,NewParagraph,Paragraph,Insert,none|}",
+      "Comment",
+      "Key",
+      "Note",
+      "Help",
+      "NewParagraph",
+      "Paragraph",
+      "Insert",
+      "Open",
+      "color=[${1:R G B}]",
+      "opacity=${1:factor}",
+      "Subject={${1:subject}}",
+      "voffset=",
+      "hoffset=",
+      "Subtype=Text",
+      "Subtype/Other=${1:pdf name}",
+      "caption=${1:text}",
+      "width=",
+      "height=",
+      "depth="
+    ]
+  },
+  "args": []
+}

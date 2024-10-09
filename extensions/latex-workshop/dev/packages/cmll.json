@@ -1,0 +1,112 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "relsize",
+      "if": "emu"
+    }
+  ],
+  "macros": [
+    {
+      "name": "biginvampemu",
+      "if": "emu"
+    },
+    {
+      "name": "bigwithemu",
+      "if": "emu"
+    },
+    {
+      "name": "invampemu",
+      "if": "emu"
+    },
+    {
+      "name": "biginvamp"
+    },
+    {
+      "name": "bigparr"
+    },
+    {
+      "name": "bigwith"
+    },
+    {
+      "name": "Bot"
+    },
+    {
+      "name": "coh"
+    },
+    {
+      "name": "incoh"
+    },
+    {
+      "name": "invamp"
+    },
+    {
+      "name": "multimapboth"
+    },
+    {
+      "name": "multimapinv",
+      "detail": "⟜ (\"txfonts\" command)",
+      "doc": "Left multimap"
+    },
+    {
+      "name": "nmultimap"
+    },
+    {
+      "name": "nmultimapboth"
+    },
+    {
+      "name": "nmultimapinv"
+    },
+    {
+      "name": "oc"
+    },
+    {
+      "name": "parr"
+    },
+    {
+      "name": "Perp"
+    },
+    {
+      "name": "scoh"
+    },
+    {
+      "name": "shift"
+    },
+    {
+      "name": "shneg"
+    },
+    {
+      "name": "shpos"
+    },
+    {
+      "name": "simbot"
+    },
+    {
+      "name": "simperp"
+    },
+    {
+      "name": "sincoh"
+    },
+    {
+      "name": "with"
+    },
+    {
+      "name": "wn"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cmll#c": [
+      "cm",
+      "ss",
+      "euler",
+      "emu",
+      "auto"
+    ]
+  },
+  "args": [
+    "\\usepackage/cmll#c"
+  ]
+}

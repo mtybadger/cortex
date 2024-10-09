@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/showhyphenation#c": [
+      "make",
+      "ontop",
+      "lime"
+    ]
+  },
+  "args": [
+    "\\usepackage/showhyphenation#c"
+  ]
+}

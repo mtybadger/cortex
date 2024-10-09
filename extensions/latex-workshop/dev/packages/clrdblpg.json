@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/clrdblpg#c": [
+      "style=${1:page style}"
+    ]
+  },
+  "args": [
+    "\\usepackage/clrdblpg#c"
+  ]
+}

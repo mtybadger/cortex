@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "pgffrcs"
+    },
+    {
+      "name": "pgfkeys"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfset{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "ifpgfpicture",
+      "unusual": true
+    },
+    {
+      "name": "pgfpicturetrue",
+      "unusual": true
+    },
+    {
+      "name": "pgfpicturefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifpgfsysanimationsupported",
+      "unusual": true
+    },
+    {
+      "name": "pgfsysanimationsupportedtrue",
+      "unusual": true
+    },
+    {
+      "name": "pgfsysanimationsupportedfalse",
+      "unusual": true
+    },
+    {
+      "name": "pgfsysdriver",
+      "unusual": true
+    },
+    {
+      "name": "ifpgfsyssoftpathmovetorelevant",
+      "unusual": true
+    },
+    {
+      "name": "pgfsyssoftpathmovetorelevanttrue",
+      "unusual": true
+    },
+    {
+      "name": "pgfsyssoftpathmovetorelevantfalse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pgfsys#c": [
+      "dvisvgm"
+    ]
+  },
+  "args": [
+    "\\usepackage/pgfsys#c"
+  ]
+}

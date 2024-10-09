@@ -1,0 +1,236 @@
+{
+  "deps": [
+    {
+      "name": "filemod-expmin"
+    }
+  ],
+  "macros": [
+    {
+      "name": "filemodprint",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodprint{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodprintdate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodprintdate{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodprinttime",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodprinttime{${1:file}}"
+      }
+    },
+    {
+      "name": "thefilemod",
+      "unusual": true
+    },
+    {
+      "name": "thefilemoddate",
+      "unusual": true
+    },
+    {
+      "name": "thefilemodtime",
+      "unusual": true
+    },
+    {
+      "name": "thefilemod",
+      "unusual": true
+    },
+    {
+      "name": "filemodsep",
+      "unusual": true
+    },
+    {
+      "name": "Filemodtoday",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Filemodtoday{${1:file}}"
+      }
+    },
+    {
+      "name": "FilemodToday",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FilemodToday{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodnumdate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodnumdate{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodnumtime",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodnumtime{${1:file}}"
+      }
+    },
+    {
+      "name": "Filemodgetnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Filemodgetnum{${1:file}}"
+      }
+    },
+    {
+      "name": "filemodcmp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "filemodcmp{${1:file1%file}}{${2:file2%file}}{${3:clause1}}{${4:clause2}}"
+      }
+    },
+    {
+      "name": "filemodcmp",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "filemodcmp[${6:num}]{${1:file1%file}}{${2:file2%file}}{${3:clause1}}{${4:clause2}}{${5:clause3}}"
+      }
+    },
+    {
+      "name": "Filemodcmp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "Filemodcmp{${1:file1%file}}{${2:file2%file}}{${3:clause1}}{${4:clause2}}"
+      }
+    },
+    {
+      "name": "Filemodcmp",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "Filemodcmp[${6:num}]{${1:file1%file}}{${2:file2%file}}{${3:clause1}}{${4:clause2}}{${5:clause3}}"
+      }
+    },
+    {
+      "name": "FilemodCmp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FilemodCmp{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "FilemodCmp",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "FilemodCmp[${3:num}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "filemodoptdefault",
+      "unusual": true
+    },
+    {
+      "name": "filemodnewest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "filemodnewest{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "filemodnewest",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "filemodnewest[${3:num}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "filemodoldest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "filemodoldest{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "filemodoldest",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "filemodoldest[${3:num}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "Filemodnewest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Filemodnewest{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "Filemodnewest",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Filemodnewest[${3:num}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "Filemodoldest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Filemodoldest{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "Filemodoldest",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Filemodoldest[${3:num}]{${1:file1%file}}{${2:file2%file}}"
+      }
+    },
+    {
+      "name": "filemodparse",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "filemodparse{${1:macro}}{${2:file}}"
+      }
+    },
+    {
+      "name": "filemodnotexists",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filemodnotexists{${1:macro}}"
+      }
+    },
+    {
+      "name": "filemodZ",
+      "unusual": true
+    },
+    {
+      "name": "filemodz",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

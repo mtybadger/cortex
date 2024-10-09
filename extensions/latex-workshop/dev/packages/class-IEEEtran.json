@@ -1,0 +1,1468 @@
+{
+  "deps": [
+    {
+      "name": "newtxmath",
+      "if": "comsoc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifCLASSOPTIONonecolumn",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONonecolumntrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONonecolumnfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONtwocolumn",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtwocolumntrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtwocolumnfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONoneside",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONonesidetrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONonesidefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONtwoside",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtwosidetrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtwosidefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONfinal",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONfinaltrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONfinalfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONdraft",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdrafttrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdraftfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONdraftcls",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdraftclstrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdraftclsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONdraftclsnofoot",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdraftclsnofoottrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONdraftclsnofootfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONpeerreview",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpeerreviewtrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpeerreviewfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONpeerreviewca",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpeerreviewcatrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpeerreviewcafalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONjournal",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONjournaltrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONjournalfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONconference",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONconferencetrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONconferencefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONtechnote",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtechnotetrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtechnotefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONnofonttune",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONnofonttunetrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONnofonttunefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONcaptionsoff",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcaptionsofftrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcaptionsofffalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONcomsoc",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcomsoctrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcomsocfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONcompsoc",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcompsoctrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONcompsocfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONtransmag",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtransmagtrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONtransmagfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSOPTIONromanappendices",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONromanappendicestrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONromanappendicesfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifCLASSINFOpdf",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOpdftrue",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOpdffalse",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINPUTbaselinestretch",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINPUTinnersidemargin",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINPUToutersidemargin",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINPUTtoptextmargin",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINPUTbottomtextmargin",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOnormalsizebaselineskip",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOnormalsizeunitybaselineskip",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOpaperwidth",
+      "unusual": true
+    },
+    {
+      "name": "CLASSINFOpaperheight",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpaper",
+      "unusual": true
+    },
+    {
+      "name": "CLASSOPTIONpt",
+      "unusual": true
+    },
+    {
+      "name": "IEEEoverridecommandlockouts"
+    },
+    {
+      "name": "IEEEmembership",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEmembership{${1:membership%text}}"
+      }
+    },
+    {
+      "name": "IEEEauthorblockN",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEauthorblockN{${1:name}}"
+      }
+    },
+    {
+      "name": "IEEEauthorblockA",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEauthorblockA{${1:affiliation%text}}"
+      }
+    },
+    {
+      "name": "IEEEcompsocitemizethanks",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEcompsocitemizethanks{${1:text}}"
+      }
+    },
+    {
+      "name": "IEEEcompsocthanksitem"
+    },
+    {
+      "name": "IEEEpubid",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEpubid{${1:ID}}"
+      }
+    },
+    {
+      "name": "IEEEpubidadjcol"
+    },
+    {
+      "name": "IEEEspecialpapernotice",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEspecialpapernotice{${1:notice%text}}"
+      }
+    },
+    {
+      "name": "IEEEaftertitletext",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEaftertitletext{${1:text}}"
+      }
+    },
+    {
+      "name": "IEEEkeywordsname",
+      "unusual": true
+    },
+    {
+      "name": "IEEEtitleabstractindextext",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEtitleabstractindextext{${1:text}}"
+      }
+    },
+    {
+      "name": "IEEEdisplaynontitleabstractindextext"
+    },
+    {
+      "name": "IEEEpeerreviewmaketitle"
+    },
+    {
+      "name": "IEEEraisesectionheading",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEraisesectionheading{${1:section declaration%text}}"
+      }
+    },
+    {
+      "name": "appendix",
+      "arg": {
+        "format": "[]",
+        "snippet": "appendix[${1:title%text}]"
+      }
+    },
+    {
+      "name": "appendices"
+    },
+    {
+      "name": "IEEEtriggeratref",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEtriggeratref{${1:number}}"
+      }
+    },
+    {
+      "name": "IEEEtriggercmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEtriggercmd{${1:commands}}"
+      }
+    },
+    {
+      "name": "citedash",
+      "unusual": true
+    },
+    {
+      "name": "citepunct",
+      "unusual": true
+    },
+    {
+      "name": "IEEEbibitemsep",
+      "unusual": true
+    },
+    {
+      "name": "IEEEcompsocdiamondline",
+      "unusual": true
+    },
+    {
+      "name": "IEEEdisplayinfolinespercolumn",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedisableglobal",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedisabletitlecmds",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizevspace",
+      "unusual": true
+    },
+    {
+      "name": "IEEEtitletopspace",
+      "unusual": true
+    },
+    {
+      "name": "IEEEtitletopspaceextra",
+      "unusual": true
+    },
+    {
+      "name": "ivIEEEquantizevspace",
+      "unusual": true
+    },
+    {
+      "name": "pdfstringdefPreHook",
+      "unusual": true
+    },
+    {
+      "name": "sublargesize",
+      "unusual": true
+    },
+    {
+      "name": "theHsection",
+      "unusual": true
+    },
+    {
+      "name": "theIEEEbiography",
+      "unusual": true
+    },
+    {
+      "name": "theparagraphdis",
+      "unusual": true
+    },
+    {
+      "name": "thesectiondis",
+      "unusual": true
+    },
+    {
+      "name": "thesubsectiondis",
+      "unusual": true
+    },
+    {
+      "name": "thesubsubsectiondis",
+      "unusual": true
+    },
+    {
+      "name": "IEEEauthorrefmark",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEauthorrefmark{${1:mark}}"
+      }
+    },
+    {
+      "name": "IEEEPARstart",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEPARstart{${1:letter}}{${2:text%plain}}"
+      }
+    },
+    {
+      "name": "IEEEPARstartCAPSTYLE",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartDROPDEPTH",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartDROPLINES",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartFONTSTYLE",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartHEIGHTTEXT",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartHOFFSET",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartITLCORRECT",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartMINPAGELINES",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartSEP",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartWORDCAPSTYLE",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartWORDFONTSTYLE",
+      "unusual": true
+    },
+    {
+      "name": "IEEEproofindentspace",
+      "unusual": true
+    },
+    {
+      "name": "IEEEproofname",
+      "unusual": true
+    },
+    {
+      "name": "IEEEQED"
+    },
+    {
+      "name": "IEEEQEDhere"
+    },
+    {
+      "name": "IEEEQEDhereeqn"
+    },
+    {
+      "name": "IEEEQEDclosed",
+      "unusual": true
+    },
+    {
+      "name": "IEEEQEDopen",
+      "unusual": true
+    },
+    {
+      "name": "IEEEQEDoff",
+      "unusual": true
+    },
+    {
+      "name": "IEEEsetlabelwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEsetlabelwidth{${1:argument}}"
+      }
+    },
+    {
+      "name": "IEEEilabelindentA",
+      "unusual": true
+    },
+    {
+      "name": "IEEEilabelindentB",
+      "unusual": true
+    },
+    {
+      "name": "IEEEilabelindent",
+      "unusual": true
+    },
+    {
+      "name": "IEEEelabelindent",
+      "unusual": true
+    },
+    {
+      "name": "IEEEdlabelindent",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindent",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactori",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactorii",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactoriii",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactoriv",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactorv",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactorvi",
+      "unusual": true
+    },
+    {
+      "name": "IEEElabelindentfactor",
+      "unusual": true
+    },
+    {
+      "name": "IEEEiednormlabelsep",
+      "unusual": true
+    },
+    {
+      "name": "IEEEiedmathlabelsep",
+      "unusual": true
+    },
+    {
+      "name": "IEEEiedtopsep",
+      "unusual": true
+    },
+    {
+      "name": "IEEEiedlistdecl",
+      "unusual": true
+    },
+    {
+      "name": "ifIEEEnolabelindentfactor",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnolabelindentfactortrue",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnolabelindentfactorfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifIEEEnocalcleftmargin",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnocalcleftmargintrue",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnocalcleftmarginfalse",
+      "unusual": true
+    },
+    {
+      "name": "IEEEusemathlabelsep"
+    },
+    {
+      "name": "IEEEiedlabeljustifyl"
+    },
+    {
+      "name": "IEEEiedlabeljustifyc"
+    },
+    {
+      "name": "IEEEiedlabeljustifyr"
+    },
+    {
+      "name": "IEEEeqnarraynumspace"
+    },
+    {
+      "name": "IEEEeqnarraydefcol",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IEEEeqnarraydefcol{${1:col id}}{${2:predef%definition}}{${3:postdef%definition}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraydefcolsep",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEeqnarraydefcolsep{${1:colsep id}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "yesnumber"
+    },
+    {
+      "name": "IEEEyesnumber"
+    },
+    {
+      "name": "IEEEyesnumber*"
+    },
+    {
+      "name": "IEEEyessubnumber"
+    },
+    {
+      "name": "IEEEyessubnumber*"
+    },
+    {
+      "name": "IEEEnonumber"
+    },
+    {
+      "name": "IEEEnonumber*"
+    },
+    {
+      "name": "IEEEnosubnumber"
+    },
+    {
+      "name": "IEEEnosubnumber*"
+    },
+    {
+      "name": "theIEEEsubequation"
+    },
+    {
+      "name": "theIEEEsubequationdis",
+      "unusual": true
+    },
+    {
+      "name": "theequationdis",
+      "unusual": true
+    },
+    {
+      "name": "theHequation",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarraymathstyle",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarraytextstyle",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarraydecl",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarrayboxdecl",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnormaljot",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarraystrutsize",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEeqnarraystrutsize{${1:height}}{${2:depth}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraystrutsize",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "IEEEeqnarraystrutsize{${1:height}}{${2:depth}}[${3:decl}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarraystrutsizeadd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEeqnarraystrutsizeadd{${1:height}}{${2:depth}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraystrutsizeadd",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "IEEEeqnarraystrutsizeadd{${1:height}}{${2:depth}}[${3:decl}]"
+      }
+    },
+    {
+      "name": "IEEEstrut"
+    },
+    {
+      "name": "IEEEstrut",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEstrut[${1:height}]"
+      }
+    },
+    {
+      "name": "IEEEstrut",
+      "arg": {
+        "format": "[][]",
+        "snippet": "IEEEstrut[${1:height}][${2:depth}]"
+      }
+    },
+    {
+      "name": "IEEEstrut",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "IEEEstrut[${1:height}][${2:depth}][${3:decl}]"
+      }
+    },
+    {
+      "name": "ifIEEEvisiblestruts",
+      "unusual": true
+    },
+    {
+      "name": "IEEEvisiblestrutstrue",
+      "unusual": true
+    },
+    {
+      "name": "IEEEvisiblestrutsfalse",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarraystrutmode"
+    },
+    {
+      "name": "IEEEeqnarraymulticol",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IEEEeqnarraymulticol{${1:num cols}}{${2:col type}}{${3:text}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayomit"
+    },
+    {
+      "name": "IEEEeqnarrayvrule"
+    },
+    {
+      "name": "IEEEeqnarrayvrule",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarrayvrule[${1:thickness%l}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayseprow"
+    },
+    {
+      "name": "IEEEeqnarrayseprow",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarrayseprow[${1:height}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayseprow",
+      "arg": {
+        "format": "[][]",
+        "snippet": "IEEEeqnarrayseprow[${1:height}][${2:decl}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayseprowcut"
+    },
+    {
+      "name": "IEEEeqnarrayseprowcut",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarrayseprowcut[${1:height}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayseprowcut",
+      "arg": {
+        "format": "[][]",
+        "snippet": "IEEEeqnarrayseprowcut[${1:height}][${2:decl}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayrulerow"
+    },
+    {
+      "name": "IEEEeqnarrayrulerow",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarrayrulerow[${1:thickness%l}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarraydblrulerow"
+    },
+    {
+      "name": "IEEEeqnarraydblrulerow",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarraydblrulerow[${1:thickness%l}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarraydblrulerow",
+      "arg": {
+        "format": "[][]",
+        "snippet": "IEEEeqnarraydblrulerow[${1:thickness%l}][${2:spacing}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarraydblrulerowcut"
+    },
+    {
+      "name": "IEEEeqnarraydblrulerowcut",
+      "arg": {
+        "format": "[]",
+        "snippet": "IEEEeqnarraydblrulerowcut[${1:thickness%l}]"
+      }
+    },
+    {
+      "name": "IEEEeqnarraydblrulerowcut",
+      "arg": {
+        "format": "[][]",
+        "snippet": "IEEEeqnarraydblrulerowcut[${1:thickness%l}][${2:spacing}]"
+      }
+    },
+    {
+      "name": "bstctlcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "bstctlcite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "bstctlcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bstctlcite[${2:aux spec}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "IEEEnoauxwrite",
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEnoauxwrite{${1:commands}}"
+      }
+    },
+    {
+      "name": "IEEEcalcleftmargin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEcalcleftmargin{${1:width}}"
+      }
+    },
+    {
+      "name": "IEEEdefaultfootersampletext",
+      "unusual": true
+    },
+    {
+      "name": "IEEEdefaultheadersampletext",
+      "unusual": true
+    },
+    {
+      "name": "IEEEdefaultsampletext",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnormalcatcodes",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnormalcatcodesnum",
+      "unusual": true
+    },
+    {
+      "name": "IEEEnormalcatcodespunct",
+      "unusual": true
+    },
+    {
+      "name": "IEEEPARstartletwidth",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedlength",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedlengthdiff",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedlengthint",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedtextheightdiff",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizedtextheightlpc",
+      "unusual": true
+    },
+    {
+      "name": "IEEEquantizelength",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IEEEquantizelength{${1:mode}}{${2:unit}}{${3:length}}"
+      }
+    },
+    {
+      "name": "IEEEquantizetextheight",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "IEEEquantizetextheight[${2:unit}]{${1:mode}}"
+      }
+    },
+    {
+      "name": "IEEEquantizetextheight",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IEEEquantizetextheight{${1:mode}}"
+      }
+    },
+    {
+      "name": "IEEEsetfootermargin",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "IEEEsetfootermargin[${3:footer sample}][${4:text sample}]{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetfootermargin",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "IEEEsetfootermargin[${3:footer sample}]{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetfootermargin",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsetfootermargin{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetheadermargin",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "IEEEsetheadermargin[${3:header sample}][${4:text sample}]{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetheadermargin",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "IEEEsetheadermargin[${3:header sample}]{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetheadermargin",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsetheadermargin{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsetsidemargin",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsetsidemargin{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsettextheight",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "IEEEsettextheight[${3:mode}]{${1:top margin}}{${2:bottom margin}}"
+      }
+    },
+    {
+      "name": "IEEEsettextheight",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsettextheight{${1:top margin}}{${2:bottom margin}}"
+      }
+    },
+    {
+      "name": "IEEEsettextwidth",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsettextwidth{${1:inner margin}}{${2:outer margin}}"
+      }
+    },
+    {
+      "name": "IEEEsettopmargin",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "IEEEsettopmargin[${3:sample text}]{${1:mode}}{${2:margin}}"
+      }
+    },
+    {
+      "name": "IEEEsettopmargin",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IEEEsettopmargin{${1:mode}}{${2:margin}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "IEEEkeywords"
+    },
+    {
+      "name": "IEEEbiography",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "IEEEbiography",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:graphics commands}]{${1:name}}"
+      }
+    },
+    {
+      "name": "IEEEbiographynophoto",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "IEEEproof"
+    },
+    {
+      "name": "IEEEproof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "enumerate",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "itemize",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "description",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "IEEEenumerate",
+      "unusual": true
+    },
+    {
+      "name": "IEEEenumerate",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "IEEEitemize",
+      "unusual": true
+    },
+    {
+      "name": "IEEEitemize",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "IEEEdescription",
+      "unusual": true
+    },
+    {
+      "name": "IEEEdescription",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:decl}]"
+      }
+    },
+    {
+      "name": "LaTeXenumerate",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXitemize",
+      "unusual": true
+    },
+    {
+      "name": "LaTeXdescription",
+      "unusual": true
+    },
+    {
+      "name": "IEEEeqnarray",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarray",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarray*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarray*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox",
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox*",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarraybox*",
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm*",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxm*",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:decl}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt*",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:decl}][${3:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "IEEEeqnarrayboxt*",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}",
+        "snippet": "[${2:decl}][${3:pos}][${4:width}]{${1:cols}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/IEEEtran#c": [
+      "9pt",
+      "10pt",
+      "11pt",
+      "12pt",
+      "conference",
+      "journal",
+      "technote",
+      "peerreview",
+      "peerreviewca",
+      "draft",
+      "draftcls",
+      "draftclsnofoot",
+      "final",
+      "letterpaper",
+      "a4paper",
+      "cspaper",
+      "oneside",
+      "twoside",
+      "onecolumn",
+      "twocolumn",
+      "comsoc",
+      "compsoc",
+      "transmag",
+      "romanappendices",
+      "captionsoff",
+      "nofonttune"
+    ],
+    "\\bibliographystyle#c": [
+      "IEEEtran"
+    ]
+  },
+  "args": [
+    "\\documentclass/IEEEtran#c"
+  ]
+}

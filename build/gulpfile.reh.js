@@ -28,10 +28,9 @@ const fs = require('fs');
 const glob = require('glob');
 const { compileBuildTask } = require('./gulpfile.compile');
 const { compileExtensionsBuildTask, compileExtensionMediaBuildTask } = require('./gulpfile.extensions');
-const { vscodeWebResourceIncludes, createVSCodeWebFileContentMapper } = require('./gulpfile.vscode.web');
+const { vscodeWebEntryPoints, vscodeWebResourceIncludes, createVSCodeWebFileContentMapper } = require('./gulpfile.vscode.web');
 const cp = require('child_process');
 const log = require('fancy-log');
-const buildfile = require('./buildfile');
 
 const REPO_ROOT = path.dirname(__dirname);
 const commit = getVersion(REPO_ROOT);
@@ -42,7 +41,6 @@ const REMOTE_FOLDER = path.join(REPO_ROOT, 'remote');
 
 const BUILD_TARGETS = [
 	{ platform: 'win32', arch: 'x64' },
-	{ platform: 'win32', arch: 'arm64' },
 	{ platform: 'darwin', arch: 'x64' },
 	{ platform: 'darwin', arch: 'arm64' },
 	{ platform: 'linux', arch: 'x64' },
@@ -54,7 +52,7 @@ const BUILD_TARGETS = [
 	{ platform: 'linux', arch: 'alpine' },
 ];
 
-const serverResourceIncludes = [
+const serverResources = [
 
 	// NLS
 	'out-build/nls.messages.json',
@@ -64,78 +62,70 @@ const serverResourceIncludes = [
 	'out-build/vs/base/node/ps.sh',
 
 	// Terminal shell integration
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration.ps1',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/CodeTabExpansion.psm1',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/GitTabExpansion.psm1',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration-env.zsh',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration-profile.zsh',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/shellIntegration-login.zsh',
-	'out-build/vs/workbench/contrib/terminal/common/scripts/fish_xdg_data/fish/vendor_conf.d/shellIntegration.fish',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration.ps1',
+	'out-build/vs/workbench/contrib/terminal/browser/media/CodeTabExpansion.psm1',
+	'out-build/vs/workbench/contrib/terminal/browser/media/GitTabExpansion.psm1',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration-env.zsh',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration-profile.zsh',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration-rc.zsh',
+	'out-build/vs/workbench/contrib/terminal/browser/media/shellIntegration-login.zsh',
+	'out-build/vs/workbench/contrib/terminal/browser/media/fish_xdg_data/fish/vendor_conf.d/shellIntegration.fish',
 
-];
-
-const serverResourceExcludes = [
-	'!out-build/vs/**/{electron-sandbox,electron-main,electron-utility}/**',
-	'!out-build/vs/editor/standalone/**',
-	'!out-build/vs/workbench/**/*-tb.png',
 	'!**/test/**'
 ];
 
-const serverResources = [
-	...serverResourceIncludes,
-	...serverResourceExcludes
-];
+const serverWithWebResources = [
 
-const serverWithWebResourceIncludes = [
-	...serverResourceIncludes,
-	'out-build/vs/code/browser/workbench/*.html',
+	// Include all of server...
+	...serverResources,
+
+	// ...and all of web
 	...vscodeWebResourceIncludes
 ];
 
-const serverWithWebResourceExcludes = [
-	...serverResourceExcludes,
-	'!out-build/vs/code/**/*-dev.html'
+const serverEntryPoints = [
+	{
+		name: 'vs/server/node/server.main',
+		exclude: ['vs/css']
+	},
+	{
+		name: 'vs/server/node/server.cli',
+		exclude: ['vs/css']
+	},
+	{
+		name: 'vs/workbench/api/node/extensionHostProcess',
+		exclude: ['vs/css']
+	},
+	{
+		name: 'vs/platform/files/node/watcher/watcherMain',
+		exclude: ['vs/css']
+	},
+	{
+		name: 'vs/platform/terminal/node/ptyHostMain',
+		exclude: ['vs/css']
+	}
 ];
-
-const serverWithWebResources = [
-	...serverWithWebResourceIncludes,
-	...serverWithWebResourceExcludes
-];
-const serverEntryPoints = buildfile.codeServer;
-
-const webEntryPoints = [
-	buildfile.workerEditor,
-	buildfile.workerExtensionHost,
-	buildfile.workerNotebook,
-	buildfile.workerLanguageDetection,
-	buildfile.workerLocalFileSearch,
-	buildfile.workerOutputLinks,
-	buildfile.workerBackgroundTokenization,
-	buildfile.keyboardMaps,
-	buildfile.codeWeb
-].flat();
 
 const serverWithWebEntryPoints = [
 
 	// Include all of server
 	...serverEntryPoints,
 
-	// Include all of web
-	...webEntryPoints,
-].flat();
+	// Include workbench web
+	...vscodeWebEntryPoints
+];
 
-const bootstrapEntryPoints = [
+const commonJSEntryPoints = [
 	'out-build/server-main.js',
 	'out-build/server-cli.js',
-	'out-build/bootstrap-fork.js'
+	'out-build/bootstrap-fork.js',
 ];
 
 function getNodeVersion() {
-	const npmrc = fs.readFileSync(path.join(REPO_ROOT, 'remote', '.npmrc'), 'utf8');
-	const nodeVersion = /^target="(.*)"$/m.exec(npmrc)[1];
-	const internalNodeVersion = /^ms_build_id="(.*)"$/m.exec(npmrc)[1];
+	const yarnrc = fs.readFileSync(path.join(REPO_ROOT, 'remote', '.yarnrc'), 'utf8');
+	const nodeVersion = /^target "(.*)"$/m.exec(yarnrc)[1];
+	const internalNodeVersion = /^ms_build_id "(.*)"$/m.exec(yarnrc)[1];
 	return { nodeVersion, internalNodeVersion };
 }
 
@@ -305,10 +295,11 @@ function packageTask(type, platform, arch, sourceFolderName, destinationFolderNa
 		}
 
 		const name = product.nameShort;
+		const release = packageJson.release;
 
 		let packageJsonContents;
 		const packageJsonStream = gulp.src(['remote/package.json'], { base: 'remote' })
-			.pipe(json({ name, version, dependencies: undefined, optionalDependencies: undefined, type: 'module' }))
+			.pipe(json({ name, version, release, dependencies: undefined, optionalDependencies: undefined }))
 			.pipe(es.through(function (file) {
 				packageJsonContents = file.contents.toString();
 				this.emit('data', file);
@@ -316,7 +307,7 @@ function packageTask(type, platform, arch, sourceFolderName, destinationFolderNa
 
 		let productJsonContents;
 		const productJsonStream = gulp.src(['product.json'], { base: '.' })
-			.pipe(json({ commit, date: readISODate('out-build'), version }))
+			.pipe(json({ commit, date: readISODate('out-build'), version, release }))
 			.pipe(es.through(function (file) {
 				productJsonContents = file.contents.toString();
 				this.emit('data', file);
@@ -327,10 +318,10 @@ function packageTask(type, platform, arch, sourceFolderName, destinationFolderNa
 		const jsFilter = util.filter(data => !data.isDirectory() && /\.js$/.test(data.path));
 
 		const productionDependencies = getProductionDependencies(REMOTE_FOLDER);
-		const dependenciesSrc = productionDependencies.map(d => path.relative(REPO_ROOT, d)).map(d => [`${d}/**`, `!${d}/**/{test,tests}/**`, `!${d}/.bin/**`]).flat();
+		const dependenciesSrc = productionDependencies.map(d => path.relative(REPO_ROOT, d.path)).map(d => [`${d}/**`, `!${d}/**/{test,tests}/**`, `!${d}/.bin/**`]).flat();
 		const deps = gulp.src(dependenciesSrc, { base: 'remote', dot: true })
 			// filter out unnecessary files, no source maps in server build
-			.pipe(filter(['**', '!**/package-lock.json', '!**/*.js.map']))
+			.pipe(filter(['**', '!**/package-lock.json', '!**/yarn.lock', '!**/*.js.map']))
 			.pipe(util.cleanNodeModules(path.join(__dirname, '.moduleignore')))
 			.pipe(util.cleanNodeModules(path.join(__dirname, `.moduleignore.${process.platform}`)))
 			.pipe(jsFilter)
@@ -414,7 +405,7 @@ function packageTask(type, platform, arch, sourceFolderName, destinationFolderNa
 		}
 
 		result = inlineMeta(result, {
-			targetPaths: bootstrapEntryPoints,
+			targetPaths: commonJSEntryPoints,
 			packageJsonFn: () => packageJsonContents,
 			productJsonFn: () => productJsonContents
 		});
@@ -433,26 +424,41 @@ function tweakProductForServerWeb(product) {
 }
 
 ['reh', 'reh-web'].forEach(type => {
-	const bundleTask = task.define(`bundle-vscode-${type}`, task.series(
+	const optimizeTask = task.define(`optimize-vscode-${type}`, task.series(
 		util.rimraf(`out-vscode-${type}`),
-		optimize.bundleTask(
+		optimize.optimizeTask(
 			{
 				out: `out-vscode-${type}`,
-				esm: {
+				amd: {
 					src: 'out-build',
-					entryPoints: [
-						...(type === 'reh' ? serverEntryPoints : serverWithWebEntryPoints),
-						...bootstrapEntryPoints
-					],
+					entryPoints: (type === 'reh' ? serverEntryPoints : serverWithWebEntryPoints).flat(),
+					otherSources: [],
 					resources: type === 'reh' ? serverResources : serverWithWebResources,
+					loaderConfig: optimize.loaderConfig(),
+					inlineAmdImages: true,
+					bundleInfo: undefined,
 					fileContentMapper: createVSCodeWebFileContentMapper('.build/extensions', type === 'reh-web' ? tweakProductForServerWeb(product) : product)
+				},
+				commonJS: {
+					src: 'out-build',
+					entryPoints: commonJSEntryPoints,
+					platform: 'node',
+					external: [
+						'minimist',
+						// We cannot inline `product.json` from here because
+						// it is being changed during build time at a later
+						// point in time (such as `checksums`)
+						// We have a manual step to inline these later.
+						'../product.json',
+						'../package.json'
+					]
 				}
 			}
 		)
 	));
 
 	const minifyTask = task.define(`minify-vscode-${type}`, task.series(
-		bundleTask,
+		optimizeTask,
 		util.rimraf(`out-vscode-${type}-min`),
 		optimize.minifyTask(`out-vscode-${type}`, `https://main.vscode-cdn.net/sourcemaps/${commit}/core`)
 	));
@@ -478,7 +484,7 @@ function tweakProductForServerWeb(product) {
 				compileBuildTask,
 				compileExtensionsBuildTask,
 				compileExtensionMediaBuildTask,
-				minified ? minifyTask : bundleTask,
+				minified ? minifyTask : optimizeTask,
 				serverTaskCI
 			));
 			gulp.task(serverTask);

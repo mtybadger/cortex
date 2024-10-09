@@ -1,0 +1,162 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "bfhfonts"
+    },
+    {
+      "name": "bfhlogo"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibraryposter"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "bfhcolors"
+    },
+    {
+      "name": "qrcode"
+    },
+    {
+      "name": "bfhmodule"
+    }
+  ],
+  "macros": [
+    {
+      "name": "authorandname",
+      "unusual": true
+    },
+    {
+      "name": "contentheight"
+    },
+    {
+      "name": "contentwidth"
+    },
+    {
+      "name": "footer",
+      "arg": {
+        "format": "{}",
+        "snippet": "footer{${1:text}}"
+      }
+    },
+    {
+      "name": "footergraphics",
+      "arg": {
+        "format": "{}",
+        "snippet": "footergraphics{${1:graphics code}}"
+      }
+    },
+    {
+      "name": "footerhsep"
+    },
+    {
+      "name": "footerqrcode*",
+      "arg": {
+        "format": "{}",
+        "snippet": "footerqrcode*{${1:URL}}"
+      }
+    },
+    {
+      "name": "footerqrcode",
+      "arg": {
+        "format": "{}",
+        "snippet": "footerqrcode{${1:URL}}"
+      }
+    },
+    {
+      "name": "inst",
+      "arg": {
+        "format": "{}",
+        "snippet": "inst{${1:arg}}"
+      }
+    },
+    {
+      "name": "institute",
+      "arg": {
+        "format": "{}",
+        "snippet": "institute{${1:institute%text}}"
+      }
+    },
+    {
+      "name": "raggedfooter",
+      "unusual": true
+    },
+    {
+      "name": "raggedtitle",
+      "unusual": true
+    },
+    {
+      "name": "titlegraphic",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlegraphic{${1:graphics code}}"
+      }
+    },
+    {
+      "name": "BFHarraystretch",
+      "unusual": true
+    },
+    {
+      "name": "BFHarrayrulewidth",
+      "unusual": true
+    },
+    {
+      "name": "setupBfhTabular"
+    }
+  ],
+  "envs": [
+    {
+      "name": "bfhTabular",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:preamble}}"
+      }
+    },
+    {
+      "name": "bfhTabular",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:preamble}}"
+      }
+    },
+    {
+      "name": "bfhTblr",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:preamble}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\posterbox,\\begin{posterboxenv}": [
+      "BFH-plain",
+      "BFH-inner",
+      "BFH-abstract",
+      "BFH-colored",
+      "BFH-framed",
+      "BFH-framed-inner",
+      "BFH-colored-inner"
+    ]
+  },
+  "args": []
+}

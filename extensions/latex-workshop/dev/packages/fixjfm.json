@@ -1,0 +1,84 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fixjfmspacing"
+    },
+    {
+      "name": "UseStandardCJKTextFontCommands"
+    },
+    {
+      "name": "UseFixJFMCJKTextFontCommands"
+    },
+    {
+      "name": "SetFixJFMSpacingShrink",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetFixJFMSpacingShrink{${1:length}}"
+      }
+    },
+    {
+      "name": "SetFixJFMSpacingStretch",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetFixJFMSpacingStretch{${1:length}}"
+      }
+    },
+    {
+      "name": "DeclareFixJFMCJKTextFontCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareFixJFMCJKTextFontCommand{${1:cmd}}{${2:font cmds}}"
+      }
+    },
+    {
+      "name": "DeclareStandardCJKTextFontCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareStandardCJKTextFontCommand{${1:cmd}}{${2:font cmds}}"
+      }
+    },
+    {
+      "name": "AppendToUseXCJKTextFontCommands",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AppendToUseXCJKTextFontCommands{${1:cmd}}{${2:font cmds}}"
+      }
+    },
+    {
+      "name": "FixJFMSpacing"
+    },
+    {
+      "name": "fixjfmparindent"
+    },
+    {
+      "name": "FixJFMParindent"
+    },
+    {
+      "name": "EveryparPreHook"
+    },
+    {
+      "name": "EveryparPostHook"
+    },
+    {
+      "name": "ifUseFixJFMCJKTextFontCommands",
+      "unusual": true
+    },
+    {
+      "name": "ifUseStandardCJKTextFontCommands",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

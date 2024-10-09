@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
+import * as nls from 'vs/nls';
 
 // Import the effects we need
-import { registerColor } from '../colorUtils.js';
+import { registerColor } from 'vs/platform/theme/common/colorUtils';
 
 // Import the colors we need
-import { contrastBorder, activeContrastBorder } from './baseColors.js';
-import { selectForeground, selectBackground } from './inputColors.js';
-import { listActiveSelectionBackground, listActiveSelectionForeground } from './listColors.js';
+import { contrastBorder, activeContrastBorder } from 'vs/platform/theme/common/colors/baseColors';
+import { selectForeground, selectBackground } from 'vs/platform/theme/common/colors/inputColors';
+import { listActiveSelectionBackground, listActiveSelectionForeground } from 'vs/platform/theme/common/colors/listColors';
 
 
 export const menuBorder = registerColor('menu.border',

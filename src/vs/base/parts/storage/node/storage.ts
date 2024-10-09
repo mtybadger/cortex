@@ -4,12 +4,12 @@
  *--------------------------------------------------------------------------------------------*/
 
 import * as fs from 'fs';
-import { timeout } from '../../../common/async.js';
-import { Event } from '../../../common/event.js';
-import { mapToString, setToString } from '../../../common/map.js';
-import { basename } from '../../../common/path.js';
-import { Promises } from '../../../node/pfs.js';
-import { IStorageDatabase, IStorageItemsChangeEvent, IUpdateRequest } from '../common/storage.js';
+import { timeout } from 'vs/base/common/async';
+import { Event } from 'vs/base/common/event';
+import { mapToString, setToString } from 'vs/base/common/map';
+import { basename } from 'vs/base/common/path';
+import { Promises } from 'vs/base/node/pfs';
+import { IStorageDatabase, IStorageItemsChangeEvent, IUpdateRequest } from 'vs/base/parts/storage/common/storage';
 import type { Database, Statement } from '@vscode/sqlite3';
 
 interface IDatabaseConnection {
@@ -309,7 +309,12 @@ export class SQLiteStorageDatabase implements IStorageDatabase {
 	private doConnect(path: string): Promise<IDatabaseConnection> {
 		return new Promise((resolve, reject) => {
 			import('@vscode/sqlite3').then(sqlite3 => {
-				const ctor = (this.logger.isTracing ? sqlite3.default.verbose().Database : sqlite3.default.Database);
+				// ESM-comment-begin
+				const ctor = (this.logger.isTracing ? sqlite3.verbose().Database : sqlite3.Database);
+				// ESM-comment-end
+				// ESM-uncomment-begin
+				// const ctor = (this.logger.isTracing ? sqlite3.default.verbose().Database : sqlite3.default.Database);
+				// ESM-uncomment-end
 				const connection: IDatabaseConnection = {
 					db: new ctor(path, (error: (Error & { code?: string }) | null) => {
 						if (error) {

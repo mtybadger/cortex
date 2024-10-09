@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "chemformula"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/chemformula-ru#c": [
+      "cosh2ch",
+      "ch2Ch"
+    ]
+  },
+  "args": [
+    "\\usepackage/chemformula-ru#c"
+  ]
+}

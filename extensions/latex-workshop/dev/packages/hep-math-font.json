@@ -1,0 +1,191 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amstext"
+    },
+    {
+      "name": "fixmath"
+    },
+    {
+      "name": "textalpha"
+    },
+    {
+      "name": "substitutefont"
+    },
+    {
+      "name": "exscale"
+    },
+    {
+      "name": "bm"
+    },
+    {
+      "name": "MnSymbol",
+      "if": "symbols=minion"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifxetexorluatex",
+      "unusual": true
+    },
+    {
+      "name": "xetexorluatextrue",
+      "unusual": true
+    },
+    {
+      "name": "xetexorluatexfalse",
+      "unusual": true
+    },
+    {
+      "name": "Alpha"
+    },
+    {
+      "name": "Beta"
+    },
+    {
+      "name": "Epsilon"
+    },
+    {
+      "name": "Zeta"
+    },
+    {
+      "name": "Eta"
+    },
+    {
+      "name": "Iota"
+    },
+    {
+      "name": "Kappa"
+    },
+    {
+      "name": "Mu"
+    },
+    {
+      "name": "Nu"
+    },
+    {
+      "name": "Omicron"
+    },
+    {
+      "name": "Rho"
+    },
+    {
+      "name": "Tau"
+    },
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "omicron"
+    },
+    {
+      "name": "finalsigma"
+    },
+    {
+      "name": "digamma"
+    },
+    {
+      "name": "Digamma"
+    },
+    {
+      "name": "stigma"
+    },
+    {
+      "name": "varstigma"
+    },
+    {
+      "name": "koppa"
+    },
+    {
+      "name": "Koppa"
+    },
+    {
+      "name": "qoppa"
+    },
+    {
+      "name": "Qoppa"
+    },
+    {
+      "name": "Stigma"
+    },
+    {
+      "name": "Sampi"
+    },
+    {
+      "name": "sampi"
+    },
+    {
+      "name": "pisymbol",
+      "unusual": true
+    },
+    {
+      "name": "rhosymbol",
+      "unusual": true
+    },
+    {
+      "name": "thetasymbol",
+      "unusual": true
+    },
+    {
+      "name": "epsilonsymbol",
+      "unusual": true
+    },
+    {
+      "name": "phisymbol",
+      "unusual": true
+    },
+    {
+      "name": "varbeta"
+    },
+    {
+      "name": "betasymbol",
+      "unusual": true
+    },
+    {
+      "name": "varkappa"
+    },
+    {
+      "name": "kappasymbol",
+      "unusual": true
+    },
+    {
+      "name": "Thetasymbol",
+      "unusual": true
+    },
+    {
+      "name": "mathsftext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mathsftext{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hep-math-font#c": [
+      "symbols=${1|ams,true,minion,false|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/hep-math-font#c"
+  ]
+}

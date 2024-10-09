@@ -1,0 +1,855 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "thestring",
+      "unusual": true
+    },
+    {
+      "name": "theresult",
+      "unusual": true
+    },
+    {
+      "name": "Treatments",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "Treatments{${1:U-mode}}{${2:l-mode}}{${3:p-mode}}{${4:n-mode}}{${5:s-mode}}{${6:b-mode}}"
+      }
+    },
+    {
+      "name": "defaultTreatments",
+      "unusual": true
+    },
+    {
+      "name": "encodetoken",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "encodetoken{${1:token}}"
+      }
+    },
+    {
+      "name": "encodetoken",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "encodetoken[${2:index}]{${1:token}}"
+      }
+    },
+    {
+      "name": "decodetoken",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "decodetoken{${1:token}}"
+      }
+    },
+    {
+      "name": "decodetoken",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "decodetoken[${2:index}]{${1:token}}"
+      }
+    },
+    {
+      "name": "substring",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "substring{${1:string}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "substring",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "substring[${4:mode%keyvals}]{${1:string}}{${2:min}}{${3:max}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "caseupper",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "caseupper{${1:string}}"
+      }
+    },
+    {
+      "name": "caseupper",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "caseupper[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "caselower",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "caselower{${1:string}}"
+      }
+    },
+    {
+      "name": "caselower",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "caselower[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solelyuppercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "solelyuppercase{${1:string}}"
+      }
+    },
+    {
+      "name": "solelyuppercase",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "solelyuppercase[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "solelylowercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "solelylowercase{${1:string}}"
+      }
+    },
+    {
+      "name": "solelylowercase",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "solelylowercase[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "changecase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "changecase{${1:string}}"
+      }
+    },
+    {
+      "name": "changecase",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "changecase[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "noblanks",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "noblanks{${1:string}}"
+      }
+    },
+    {
+      "name": "noblanks",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "noblanks[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "nosymbolsnumerals",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nosymbolsnumerals{${1:string}}"
+      }
+    },
+    {
+      "name": "nosymbolsnumerals",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "nosymbolsnumerals[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "alphabetic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "alphabetic{${1:string}}"
+      }
+    },
+    {
+      "name": "alphabetic",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "alphabetic[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "capitalize",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalize{${1:string}}"
+      }
+    },
+    {
+      "name": "capitalize",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "capitalize[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "capitalizewords",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalizewords{${1:string}}"
+      }
+    },
+    {
+      "name": "capitalizewords",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "capitalizewords[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "capitalizetitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalizetitle{${1:string}}"
+      }
+    },
+    {
+      "name": "capitalizetitle",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "capitalizetitle[${2:mode%keyvals}]{${1:string}}"
+      }
+    },
+    {
+      "name": "addlcword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addlcword{${1:word}}"
+      }
+    },
+    {
+      "name": "addlcwords",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addlcwords{${1:word1 word2 word3 . . . }}"
+      }
+    },
+    {
+      "name": "resetlcwords",
+      "unusual": true
+    },
+    {
+      "name": "reversestring",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "reversestring{${1:string}}"
+      }
+    },
+    {
+      "name": "reversestring",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "reversestring[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "convertchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "convertchar{${1:string}}{${2:from-char}}{${3:to-string}}"
+      }
+    },
+    {
+      "name": "convertchar",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "convertchar[${4:mode%keyvals}]{${1:string}}{${2:from-char}}{${3:to-string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "convertword",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "convertword{${1:string}}{${2:from-string}}{${3:to-string}}"
+      }
+    },
+    {
+      "name": "convertword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "convertword[${4:mode%keyvals}]{${1:string}}{${2:from-string}}{${3:to-string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rotateword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rotateword{${1:string}}"
+      }
+    },
+    {
+      "name": "rotateword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rotateword[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "removeword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "removeword{${1:string}}"
+      }
+    },
+    {
+      "name": "removeword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "removeword[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "getnextword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getnextword{${1:string}}"
+      }
+    },
+    {
+      "name": "getnextword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "getnextword[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "getaword",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getaword{${1:string}}{${2:n}}"
+      }
+    },
+    {
+      "name": "getaword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "getaword[${3:mode%keyvals}]{${1:string}}{${2:n}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rotateleadingspaces",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rotateleadingspaces{${1:string}}"
+      }
+    },
+    {
+      "name": "rotateleadingspaces",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "rotateleadingspaces[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "removeleadingspaces",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "removeleadingspaces{${1:string}}"
+      }
+    },
+    {
+      "name": "removeleadingspaces",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "removeleadingspaces[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "stringencode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stringencode{${1:string}}"
+      }
+    },
+    {
+      "name": "stringencode",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stringencode[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "stringdecode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stringdecode{${1:string}}"
+      }
+    },
+    {
+      "name": "stringdecode",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stringdecode[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gobblechar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "gobblechar{${1:string}}"
+      }
+    },
+    {
+      "name": "gobblechar",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gobblechar[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\gobblechar,\\gobblechars,\\retokenize"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gobblechars",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gobblechars{${1:string}}{${2:n}}"
+      }
+    },
+    {
+      "name": "gobblechars",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "gobblechars[${3:mode%keyvals}]{${1:string}}{${2:n}}",
+        "keys": [
+          "\\gobblechar,\\gobblechars,\\retokenize"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "retokenize",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "retokenize{${1:string}}"
+      }
+    },
+    {
+      "name": "retokenize",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "retokenize[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\gobblechar,\\gobblechars,\\retokenize"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "stringlength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stringlength{${1:string}}"
+      }
+    },
+    {
+      "name": "stringlength",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stringlength[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "findchars",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "findchars{${1:string}}{${2:match-char}}"
+      }
+    },
+    {
+      "name": "findchars",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "findchars[${3:mode%keyvals}]{${1:string}}{${2:match-char}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "findwords",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "findwords{${1:string}}{${2:match-string}}"
+      }
+    },
+    {
+      "name": "findwords",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "findwords[${3:mode%keyvals}]{${1:string}}{${2:match-string}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "whereischar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "whereischar{${1:string}}{${2:match-char}}"
+      }
+    },
+    {
+      "name": "whereischar",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "whereischar[${3:mode%keyvals}]{${1:string}}{${2:match-char}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "whereisword",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "whereisword{${1:string}}{${2:match-string}}"
+      }
+    },
+    {
+      "name": "whereisword",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "whereisword[${3:mode%keyvals}]{${1:string}}{${2:match-string}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "wordcount",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "wordcount{${1:string}}"
+      }
+    },
+    {
+      "name": "wordcount",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "wordcount[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "getargs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getargs{${1:string}}"
+      }
+    },
+    {
+      "name": "getargs",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "getargs[${2:mode%keyvals}]{${1:string}}",
+        "keys": [
+          "\\getargs"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "isnextbyte",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "isnextbyte{${1:match-byte}}{${2:string}}"
+      }
+    },
+    {
+      "name": "isnextbyte",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "isnextbyte[${3:mode%keyvals}]{${1:match-byte}}{${2:string}}",
+        "keys": [
+          "\\isnextbyte"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "testmatchingchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "testmatchingchar{${1:string}}{${2:n}}{${3:match-char}}"
+      }
+    },
+    {
+      "name": "testcapitalized",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testcapitalized{${1:string}}"
+      }
+    },
+    {
+      "name": "testuncapitalized",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testuncapitalized{${1:string}}"
+      }
+    },
+    {
+      "name": "testleadingalpha",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testleadingalpha{${1:string}}"
+      }
+    },
+    {
+      "name": "testuppercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testuppercase{${1:string}}"
+      }
+    },
+    {
+      "name": "testsolelyuppercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testsolelyuppercase{${1:string}}"
+      }
+    },
+    {
+      "name": "testlowercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testlowercase{${1:string}}"
+      }
+    },
+    {
+      "name": "testsolelylowercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testsolelylowercase{${1:string}}"
+      }
+    },
+    {
+      "name": "testalphabetic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "testalphabetic{${1:string}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\substring,\\caseupper,\\caselower,\\solelyuppercase,\\solelylowercase,\\changecase,\\noblanks,\\nosymbolsnumerals,\\alphabetic,\\capitalize,\\capitalizewords,\\reversestring,\\convertchar,\\convertword,\\rotateword,\\removeword,\\getnextword,\\getaword,\\rotateleadingspaces,\\removeleadingspaces,\\stringencode,\\stringdecode": [
+      "v",
+      "q",
+      "e"
+    ],
+    "\\gobblechar,\\gobblechars,\\retokenize": [
+      "v",
+      "q"
+    ],
+    "\\stringlength,\\findchars,\\findwords,\\whereischar,\\whereisword,\\wordcount": [
+      "v",
+      "q"
+    ],
+    "\\getargs": [
+      "q",
+      "e"
+    ],
+    "\\isnextbyte": [
+      "v",
+      "q",
+      "e"
+    ]
+  },
+  "args": []
+}

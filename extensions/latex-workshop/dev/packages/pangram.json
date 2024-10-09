@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pangram"
+    },
+    {
+      "name": "pangram",
+      "arg": {
+        "format": "[]",
+        "snippet": "pangram[${1:options%keyvals}]",
+        "keys": [
+          "\\pangram,\\PangramSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PangramSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "PangramSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\pangram,\\PangramSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "NewPangramClass",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewPangramClass{${1:text class}}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\pangram,\\PangramSetup": [
+      "textclass=${1:text-class}",
+      "sizes={${1:size1,size2,...}}",
+      "linegap=",
+      "tagskip=",
+      "tagfont=${1:font commands}",
+      "font=${1:font commands}",
+      "before=${1:code}",
+      "after=${1:code}"
+    ]
+  },
+  "args": []
+}

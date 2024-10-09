@@ -1,0 +1,115 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "greekshape",
+      "unusual": true
+    },
+    {
+      "name": "enablesubscriptcorrection"
+    },
+    {
+      "name": "disablesubscriptcorrection"
+    },
+    {
+      "name": "heavymath"
+    },
+    {
+      "name": "mathbscr",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbscr{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathbcal",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbcal{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "varGamma"
+    },
+    {
+      "name": "varDelta"
+    },
+    {
+      "name": "varTheta"
+    },
+    {
+      "name": "varLambda"
+    },
+    {
+      "name": "varXi"
+    },
+    {
+      "name": "varPi"
+    },
+    {
+      "name": "varSigma"
+    },
+    {
+      "name": "varUpsilon"
+    },
+    {
+      "name": "varPhi"
+    },
+    {
+      "name": "varPsi"
+    },
+    {
+      "name": "varOmega"
+    },
+    {
+      "name": "comp"
+    },
+    {
+      "name": "setdif"
+    },
+    {
+      "name": "cupprod"
+    },
+    {
+      "name": "capprod"
+    },
+    {
+      "name": "varkappa"
+    },
+    {
+      "name": "widebar",
+      "arg": {
+        "format": "{}",
+        "snippet": "widebar{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathtime#c": [
+      "slantedgreek",
+      "uprightgreek",
+      "nobold",
+      "cmbold",
+      "mtbold",
+      "heavybold",
+      "nosubscriptcorrection",
+      "subscriptcorrection",
+      "cmcal",
+      "lucidacal",
+      "mtplusscr",
+      "mtpluscal",
+      "lucidascr",
+      "noTS1",
+      "OT1",
+      "T1",
+      "LY1",
+      "errorshow",
+      "warningshow",
+      "nofontinfo"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathtime#c"
+  ]
+}

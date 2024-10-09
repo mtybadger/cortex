@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsbsy"
+    },
+    {
+      "name": "subdepth"
+    },
+    {
+      "name": "exscale"
+    }
+  ],
+  "macros": [
+    {
+      "name": "R"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "Cpx"
+    },
+    {
+      "name": "Q"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

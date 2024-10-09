@@ -3,31 +3,31 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Registry } from '../../platform/registry/common/platform.js';
-import { localize, localize2 } from '../../nls.js';
-import { MenuRegistry, MenuId, registerAction2 } from '../../platform/actions/common/actions.js';
-import { IConfigurationRegistry, Extensions as ConfigurationExtensions, ConfigurationScope } from '../../platform/configuration/common/configurationRegistry.js';
-import { KeyMod, KeyCode } from '../../base/common/keyCodes.js';
-import { isLinux, isMacintosh, isWindows } from '../../base/common/platform.js';
-import { ConfigureRuntimeArgumentsAction, ToggleDevToolsAction, ReloadWindowWithExtensionsDisabledAction, OpenUserDataFolderAction } from './actions/developerActions.js';
-import { ZoomResetAction, ZoomOutAction, ZoomInAction, CloseWindowAction, SwitchWindowAction, QuickSwitchWindowAction, NewWindowTabHandler, ShowPreviousWindowTabHandler, ShowNextWindowTabHandler, MoveWindowTabToNewWindowHandler, MergeWindowTabsHandlerHandler, ToggleWindowTabsBarHandler } from './actions/windowActions.js';
-import { ContextKeyExpr } from '../../platform/contextkey/common/contextkey.js';
-import { KeybindingsRegistry, KeybindingWeight } from '../../platform/keybinding/common/keybindingsRegistry.js';
-import { CommandsRegistry } from '../../platform/commands/common/commands.js';
-import { ServicesAccessor } from '../../platform/instantiation/common/instantiation.js';
-import { IsMacContext } from '../../platform/contextkey/common/contextkeys.js';
-import { INativeHostService } from '../../platform/native/common/native.js';
-import { IJSONContributionRegistry, Extensions as JSONExtensions } from '../../platform/jsonschemas/common/jsonContributionRegistry.js';
-import { IJSONSchema } from '../../base/common/jsonSchema.js';
-import { InstallShellScriptAction, UninstallShellScriptAction } from './actions/installActions.js';
-import { EditorsVisibleContext, SingleEditorGroupsContext } from '../common/contextkeys.js';
-import { TELEMETRY_SETTING_ID } from '../../platform/telemetry/common/telemetry.js';
-import { IConfigurationService } from '../../platform/configuration/common/configuration.js';
-import { ShutdownReason } from '../services/lifecycle/common/lifecycle.js';
-import { NativeWindow } from './window.js';
-import { ModifierKeyEmitter } from '../../base/browser/dom.js';
-import { applicationConfigurationNodeBase, securityConfigurationNodeBase } from '../common/configuration.js';
-import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from '../../platform/window/electron-sandbox/window.js';
+import { Registry } from 'vs/platform/registry/common/platform';
+import { localize, localize2 } from 'vs/nls';
+import { MenuRegistry, MenuId, registerAction2 } from 'vs/platform/actions/common/actions';
+import { IConfigurationRegistry, Extensions as ConfigurationExtensions, ConfigurationScope } from 'vs/platform/configuration/common/configurationRegistry';
+import { KeyMod, KeyCode } from 'vs/base/common/keyCodes';
+import { isLinux, isMacintosh, isWindows } from 'vs/base/common/platform';
+import { ConfigureRuntimeArgumentsAction, ToggleDevToolsAction, ReloadWindowWithExtensionsDisabledAction, OpenUserDataFolderAction } from 'vs/workbench/electron-sandbox/actions/developerActions';
+import { ZoomResetAction, ZoomOutAction, ZoomInAction, CloseWindowAction, SwitchWindowAction, QuickSwitchWindowAction, NewWindowTabHandler, ShowPreviousWindowTabHandler, ShowNextWindowTabHandler, MoveWindowTabToNewWindowHandler, MergeWindowTabsHandlerHandler, ToggleWindowTabsBarHandler } from 'vs/workbench/electron-sandbox/actions/windowActions';
+import { ContextKeyExpr } from 'vs/platform/contextkey/common/contextkey';
+import { KeybindingsRegistry, KeybindingWeight } from 'vs/platform/keybinding/common/keybindingsRegistry';
+import { CommandsRegistry } from 'vs/platform/commands/common/commands';
+import { ServicesAccessor } from 'vs/platform/instantiation/common/instantiation';
+import { IsMacContext } from 'vs/platform/contextkey/common/contextkeys';
+import { INativeHostService } from 'vs/platform/native/common/native';
+import { IJSONContributionRegistry, Extensions as JSONExtensions } from 'vs/platform/jsonschemas/common/jsonContributionRegistry';
+import { IJSONSchema } from 'vs/base/common/jsonSchema';
+import { InstallShellScriptAction, UninstallShellScriptAction } from 'vs/workbench/electron-sandbox/actions/installActions';
+import { EditorsVisibleContext, SingleEditorGroupsContext } from 'vs/workbench/common/contextkeys';
+import { TELEMETRY_SETTING_ID } from 'vs/platform/telemetry/common/telemetry';
+import { IConfigurationService } from 'vs/platform/configuration/common/configuration';
+import { ShutdownReason } from 'vs/workbench/services/lifecycle/common/lifecycle';
+import { NativeWindow } from 'vs/workbench/electron-sandbox/window';
+import { ModifierKeyEmitter } from 'vs/base/browser/dom';
+import { applicationConfigurationNodeBase, securityConfigurationNodeBase } from 'vs/workbench/common/configuration';
+import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from 'vs/platform/window/electron-sandbox/window';
 
 // Actions
 (function registerActions(): void {
@@ -235,13 +235,6 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from '../../platform/window/electron-s
 				'scope': ConfigurationScope.APPLICATION,
 				'description': localize('titleBarStyle', "Adjust the appearance of the window title bar to be native by the OS or custom. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply."),
 			},
-			'window.experimentalControlOverlay': {
-				'type': 'boolean',
-				'included': isLinux,
-				'markdownDescription': localize('window.experimentalControlOverlay', "Show the native window controls when {0} is set to `custom` (Linux only).", '`#window.titleBarStyle#`'),
-				'default': true,
-				'scope': ConfigurationScope.APPLICATION,
-			},
 			'window.customTitleBarVisibility': {
 				'type': 'string',
 				'enum': ['auto', 'windowed', 'never'],
@@ -252,7 +245,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from '../../platform/window/electron-s
 				],
 				'default': isLinux ? 'never' : 'auto',
 				'scope': ConfigurationScope.APPLICATION,
-				'markdownDescription': localize('window.customTitleBarVisibility', "Adjust when the custom title bar should be shown. The custom title bar can be hidden when in full screen mode with `windowed`. The custom title bar can only be hidden in non full screen mode with `never` when {0} is set to `native`.", '`#window.titleBarStyle#`'),
+				'markdownDescription': localize('window.customTitleBarVisibility', "Adjust when the custom title bar should be shown. The custom title bar can be hidden when in full screen mode with `windowed`. The custom title bar can only be hidden in none full screen mode with `never` when {0} is set to `native`.", '`#window.titleBarStyle#`'),
 			},
 			'window.dialogStyle': {
 				'type': 'string',
@@ -295,7 +288,7 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from '../../platform/window/electron-s
 			'telemetry.enableCrashReporter': {
 				'type': 'boolean',
 				'description': localize('telemetry.enableCrashReporting', "Enable crash reports to be collected. This helps us improve stability. \nThis option requires restart to take effect."),
-				'default': true,
+				'default': false,
 				'tags': ['usesOnlineServices', 'telemetry'],
 				'markdownDeprecationMessage': localize('enableCrashReporterDeprecated', "If this setting is false, no telemetry will be sent regardless of the new setting's value. Deprecated due to being combined into the {0} setting.", `\`#${TELEMETRY_SETTING_ID}#\``),
 			}
@@ -400,11 +393,11 @@ import { MAX_ZOOM_LEVEL, MIN_ZOOM_LEVEL } from '../../platform/window/electron-s
 			},
 			'disable-chromium-sandbox': {
 				type: 'boolean',
-				description: localize('argv.disableChromiumSandbox', "Disables the Chromium sandbox. This is useful when running VS Code as elevated on Linux and running under Applocker on Windows.")
+				description: localize('argv.disableChromiumSandbox', "Disables the Chromium sandbox. This is useful when running Cortex as elevated on Linux and running under Applocker on Windows.")
 			},
 			'use-inmemory-secretstorage': {
 				type: 'boolean',
-				description: localize('argv.useInMemorySecretStorage', "Ensures that an in-memory store will be used for secret storage instead of using the OS's credential store. This is often used when running VS Code extension tests or when you're experiencing difficulties with the credential store.")
+				description: localize('argv.useInMemorySecretStorage', "Ensures that an in-memory store will be used for secret storage instead of using the OS's credential store. This is often used when running Cortex extension tests or when you're experiencing difficulties with the credential store.")
 			}
 		}
 	};

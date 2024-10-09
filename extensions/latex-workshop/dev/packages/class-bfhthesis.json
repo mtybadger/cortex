@@ -1,0 +1,93 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "class-scrbook"
+    },
+    {
+      "name": "bfhlayout"
+    }
+  ],
+  "macros": [
+    {
+      "name": "advisor",
+      "arg": {
+        "format": "{}",
+        "snippet": "advisor{${1:name}}"
+      }
+    },
+    {
+      "name": "coadvisor",
+      "arg": {
+        "format": "{}",
+        "snippet": "coadvisor{${1:name}}"
+      }
+    },
+    {
+      "name": "projectpartner",
+      "arg": {
+        "format": "{}",
+        "snippet": "projectpartner{${1:name}}"
+      }
+    },
+    {
+      "name": "expert",
+      "arg": {
+        "format": "{}",
+        "snippet": "expert{${1:name}}"
+      }
+    },
+    {
+      "name": "degreeprogram",
+      "arg": {
+        "format": "{}",
+        "snippet": "degreeprogram{${1:name%text}}"
+      }
+    },
+    {
+      "name": "doade",
+      "unusual": true
+    },
+    {
+      "name": "doafr",
+      "unusual": true
+    },
+    {
+      "name": "doaen",
+      "unusual": true
+    },
+    {
+      "name": "setupSignature",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setupSignature{${1:text}}"
+      }
+    },
+    {
+      "name": "SignatureBox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SignatureBox{${1:text}}"
+      }
+    },
+    {
+      "name": "declarationOfAuthorship",
+      "unusual": true
+    },
+    {
+      "name": "declarationOfAuthorship",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "declarationOfAuthorship[${1:text}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

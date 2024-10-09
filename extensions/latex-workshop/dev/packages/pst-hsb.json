@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psparametricplotHSB",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "psparametricplotHSB{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
+      }
+    },
+    {
+      "name": "psparametricplotHSB",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "psparametricplotHSB[${4:options%keyvals}]{${1:tmin}}{${2:tmax}}{${3:function%definition}}"
+      }
+    },
+    {
+      "name": "pslineHSB",
+      "arg": {
+        "format": "()()",
+        "snippet": "pslineHSB(${1:x1},${2:y1})(${3:x2},${4:y2})"
+      }
+    },
+    {
+      "name": "pslineHSB",
+      "arg": {
+        "format": "[]()()",
+        "snippet": "pslineHSB[${1:options%keyvals}](${2:x1},${3:y1})(${4:x2},${5:y2})"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

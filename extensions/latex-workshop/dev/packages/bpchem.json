@@ -1,0 +1,257 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BPChem",
+      "arg": {
+        "format": "{}",
+        "snippet": "BPChem{${1:compound}}"
+      }
+    },
+    {
+      "name": "IUPAC",
+      "arg": {
+        "format": "{}",
+        "snippet": "IUPAC{${1:compound%definition}}"
+      }
+    },
+    {
+      "name": "CNlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "CNlabel{${1:label%specialDef}}"
+      }
+    },
+    {
+      "name": "CNlabelnoref",
+      "arg": {
+        "format": "{}",
+        "snippet": "CNlabelnoref{${1:label%specialDef}}"
+      }
+    },
+    {
+      "name": "CNref",
+      "arg": {
+        "format": "{}",
+        "snippet": "CNref{${1:label%keyvals}}",
+        "keys": [
+          "\\CNref#c,\\CNrefsub#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CNlabelsub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CNlabelsub{${1:label%specialDef}}{${2:sublabel}}"
+      }
+    },
+    {
+      "name": "CNlabelsubnoref",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CNlabelsubnoref{${1:label%specialDef}}{${2:sublabel}}"
+      }
+    },
+    {
+      "name": "CNrefsub",
+      "arg": {
+        "format": "{}",
+        "snippet": "CNrefsub{${1:label%keyvals}}",
+        "keys": [
+          "\\CNref#c,\\CNrefsub#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "HNMR"
+    },
+    {
+      "name": "CNMR"
+    },
+    {
+      "name": "cis"
+    },
+    {
+      "name": "trans"
+    },
+    {
+      "name": "bpalpha"
+    },
+    {
+      "name": "bpbeta"
+    },
+    {
+      "name": "bpDelta"
+    },
+    {
+      "name": "hapto",
+      "arg": {
+        "format": "{}",
+        "snippet": "hapto{${1:number}}"
+      }
+    },
+    {
+      "name": "allowhyphens",
+      "unusual": true
+    },
+    {
+      "name": "BPCadjustsub",
+      "unusual": true
+    },
+    {
+      "name": "BPCadjustsuper",
+      "unusual": true
+    },
+    {
+      "name": "BPCdelta",
+      "unusual": true
+    },
+    {
+      "name": "BPClensub",
+      "unusual": true
+    },
+    {
+      "name": "BPClensuper",
+      "unusual": true
+    },
+    {
+      "name": "BPCSetup",
+      "unusual": true
+    },
+    {
+      "name": "BPCSetupCat",
+      "unusual": true
+    },
+    {
+      "name": "BPCsub",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BPCsub{${1:arg}}"
+      }
+    },
+    {
+      "name": "BPCsubbs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BPCsubbs{${1:arg}}"
+      }
+    },
+    {
+      "name": "BPCsuper",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BPCsuper{${1:arg}}"
+      }
+    },
+    {
+      "name": "BPCsuperbs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BPCsuperbs{${1:arg}}"
+      }
+    },
+    {
+      "name": "BreakHyph",
+      "unusual": true
+    },
+    {
+      "name": "DoBPChem",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DoBPChem{${1:arg}}"
+      }
+    },
+    {
+      "name": "DoIUPAC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DoIUPAC{${1:arg}}"
+      }
+    },
+    {
+      "name": "dreh",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dreh{${1:arg}}"
+      }
+    },
+    {
+      "name": "ifusecbgreek",
+      "unusual": true
+    },
+    {
+      "name": "lookforsub",
+      "unusual": true
+    },
+    {
+      "name": "lookforsuper",
+      "unusual": true
+    },
+    {
+      "name": "MB",
+      "unusual": true
+    },
+    {
+      "name": "MultiBreak",
+      "unusual": true
+    },
+    {
+      "name": "next",
+      "unusual": true
+    },
+    {
+      "name": "Prep",
+      "unusual": true
+    },
+    {
+      "name": "talpha",
+      "unusual": true
+    },
+    {
+      "name": "tbeta",
+      "unusual": true
+    },
+    {
+      "name": "theBPCno",
+      "unusual": true
+    },
+    {
+      "name": "theBPCnoa",
+      "unusual": true
+    },
+    {
+      "name": "usecbgreekfalse",
+      "unusual": true
+    },
+    {
+      "name": "usecbgreektrue",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bpchem": [
+      "cbgreek"
+    ],
+    "\\CNref#c,\\CNrefsub#c": [
+      "%bpchemlabel"
+    ]
+  },
+  "args": [
+    "\\usepackage/bpchem"
+  ]
+}

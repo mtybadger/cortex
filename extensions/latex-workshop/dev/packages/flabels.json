@@ -1,0 +1,123 @@
+{
+  "deps": [
+    {
+      "name": "color",
+      "if": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setbgcompany",
+      "if": "color",
+      "arg": {
+        "format": "{}",
+        "snippet": "setbgcompany{${1:color}}"
+      }
+    },
+    {
+      "name": "setfgcompany",
+      "if": "color",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfgcompany{${1:color}}"
+      }
+    },
+    {
+      "name": "setbglabel",
+      "if": "color",
+      "arg": {
+        "format": "{}",
+        "snippet": "setbglabel{${1:color}}"
+      }
+    },
+    {
+      "name": "setfglabel",
+      "if": "color",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfglabel{${1:color}}"
+      }
+    },
+    {
+      "name": "narrowlabels"
+    },
+    {
+      "name": "widelabels"
+    },
+    {
+      "name": "fullheight"
+    },
+    {
+      "name": "normalheight"
+    },
+    {
+      "name": "company",
+      "arg": {
+        "format": "{}",
+        "snippet": "company{${1:name}}"
+      }
+    },
+    {
+      "name": "thenumberauxlines",
+      "unusual": true
+    },
+    {
+      "name": "auxlinedistance",
+      "arg": {
+        "format": "{}",
+        "snippet": "auxlinedistance{${1:length}}"
+      }
+    },
+    {
+      "name": "companylabelheight"
+    },
+    {
+      "name": "ylowercompany"
+    },
+    {
+      "name": "yuppercompany"
+    },
+    {
+      "name": "extratopmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "extratopmargin{${1:length}}"
+      }
+    },
+    {
+      "name": "hspaceinterlabel"
+    },
+    {
+      "name": "labeltextmargin"
+    },
+    {
+      "name": "emptylabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "emptylabel{${1:number}}"
+      }
+    },
+    {
+      "name": "labeltext",
+      "arg": {
+        "format": "{}",
+        "snippet": "labeltext{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/flabels#c": [
+      "leitz",
+      "fullheight",
+      "narrow",
+      "color",
+      "a4paper",
+      "nice",
+      "nohole"
+    ]
+  },
+  "args": [
+    "\\usepackage/flabels#c"
+  ]
+}

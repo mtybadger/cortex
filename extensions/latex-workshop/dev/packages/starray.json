@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/starray#c": [
+      "prefix=${1:prefix}",
+      "msg-err=${1|none,strict,syntax,reference,all|}",
+      "msg-suppress=${1|none,reference,syntax,strict,all|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/starray#c"
+  ]
+}

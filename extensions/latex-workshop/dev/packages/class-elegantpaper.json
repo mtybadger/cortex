@@ -1,0 +1,431 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "indentfirst"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "abstract"
+    },
+    {
+      "name": "hologo"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "newtxtext"
+    },
+    {
+      "name": "helvet"
+    },
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "appendix"
+    },
+    {
+      "name": "footmisc"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "ctex",
+      "if": "lang=cn"
+    },
+    {
+      "name": "xeCJK",
+      "if": "lang=cn"
+    },
+    {
+      "name": "ctex",
+      "if": "cn"
+    },
+    {
+      "name": "xeCJK",
+      "if": "cn"
+    },
+    {
+      "name": "mtpro2",
+      "if": "math=mtpro2"
+    },
+    {
+      "name": "mtpro2",
+      "if": "mtpro2"
+    },
+    {
+      "name": "newtxmath",
+      "if": "math=newtx"
+    },
+    {
+      "name": "esint",
+      "if": "math=newtx"
+    },
+    {
+      "name": "newtxmath",
+      "if": "newtx"
+    },
+    {
+      "name": "esint",
+      "if": "newtx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "songti",
+      "if": "lang=cn"
+    },
+    {
+      "name": "heiti",
+      "if": "lang=cn"
+    },
+    {
+      "name": "kaishu",
+      "if": "lang=cn"
+    },
+    {
+      "name": "fangsong",
+      "if": "lang=cn"
+    },
+    {
+      "name": "songti",
+      "if": "cn"
+    },
+    {
+      "name": "heiti",
+      "if": "cn"
+    },
+    {
+      "name": "kaishu",
+      "if": "cn"
+    },
+    {
+      "name": "fangsong",
+      "if": "cn"
+    },
+    {
+      "name": "prodop",
+      "if": "math=newtx",
+      "unusual": true
+    },
+    {
+      "name": "sumop",
+      "if": "math=newtx",
+      "unusual": true
+    },
+    {
+      "name": "prodop",
+      "if": "newtx",
+      "unusual": true
+    },
+    {
+      "name": "sumop",
+      "if": "newtx",
+      "unusual": true
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "figref",
+      "arg": {
+        "format": "{}",
+        "snippet": "figref{${1:label}}"
+      }
+    },
+    {
+      "name": "institute",
+      "arg": {
+        "format": "{}",
+        "snippet": "institute{${1:institute%text}}"
+      }
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:keywords%text}}"
+      }
+    },
+    {
+      "name": "tabref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabref{${1:label}}"
+      }
+    },
+    {
+      "name": "version",
+      "arg": {
+        "format": "{}",
+        "snippet": "version{${1:version}}"
+      }
+    },
+    {
+      "name": "cfs",
+      "unusual": true
+    },
+    {
+      "name": "citshape",
+      "unusual": true
+    },
+    {
+      "name": "cnormal",
+      "unusual": true
+    },
+    {
+      "name": "ebibname",
+      "unusual": true
+    },
+    {
+      "name": "ekv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ekv{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "IfEmpty",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IfEmpty{${1:arg}}"
+      }
+    },
+    {
+      "name": "updatetext",
+      "unusual": true
+    },
+    {
+      "name": "versiontext",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "note"
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "case"
+    },
+    {
+      "name": "case",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/elegantpaper#c": [
+      "lang=${1|cn,en|}",
+      "math=${1|newtx,mtpro2,cm|}",
+      "citestyle=${1:style}",
+      "bibstyle=${1:style}",
+      "bibend=${1|biber,bibtex|}",
+      "chinesefont=${1|ctexfont,founder,nofont|}",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ],
+    "\\begin{enumerate}#c,\\begin{itemize}#c,\\begin{description}#c,\\begin{enumerate*}#c,\\begin{itemize*}#c,\\begin{description*}#c": [
+      "A",
+      "a",
+      "I",
+      "i",
+      "1"
+    ]
+  },
+  "args": [
+    "\\documentclass/elegantpaper#c"
+  ]
+}

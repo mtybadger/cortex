@@ -1,0 +1,89 @@
+{
+  "deps": [
+    {
+      "name": "zref-savepos"
+    },
+    {
+      "name": "zref-thepage"
+    },
+    {
+      "name": "zref-abspage"
+    },
+    {
+      "name": "zref-user"
+    },
+    {
+      "name": "zref-pagelayout"
+    },
+    {
+      "name": "xsim"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FigPut",
+      "arg": {
+        "format": "{}",
+        "snippet": "FigPut{${1:fig_name,fig_ht}}"
+      }
+    },
+    {
+      "name": "FigPut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "FigPut{${1:fig_name,fig_ht}}[${2:options}]"
+      }
+    },
+    {
+      "name": "SetInnerMargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetInnerMargin{${1:length}}"
+      }
+    },
+    {
+      "name": "SetOuterMargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetOuterMargin{${1:length}}"
+      }
+    },
+    {
+      "name": "NeverSkip"
+    },
+    {
+      "name": "AllowSkip"
+    },
+    {
+      "name": "LoadFigureCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "LoadFigureCode{${1:file}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "figput",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:fig_name,fig_ht}}"
+      }
+    },
+    {
+      "name": "figput",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:fig_name,fig_ht}}[${2:options}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

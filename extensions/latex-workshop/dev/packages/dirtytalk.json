@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "say",
+      "arg": {
+        "format": "{}",
+        "snippet": "say{${1:quotation%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dirtytalk#c": [
+      "left=${1:symbol}",
+      "right=${1:symbol}",
+      "leftsub=${1:symbol}",
+      "rightsub=${1:symbol}"
+    ]
+  },
+  "args": [
+    "\\usepackage/dirtytalk#c"
+  ]
+}

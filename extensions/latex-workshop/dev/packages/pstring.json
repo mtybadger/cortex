@@ -1,0 +1,147 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "pgfcore"
+    },
+    {
+      "name": "pstricks",
+      "if": "pstricks"
+    },
+    {
+      "name": "pst-node",
+      "if": "pstricks"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pstr",
+      "if": "pstricks",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstr{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "pstr",
+      "if": "pstricks",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pstr[${2:raise%l}]{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "pstr",
+      "if": "pstricks",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "pstr[${2:raise%l}][${3:nodesep%l}]{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "pstrSetLabelStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetLabelStyle{${1:style cmds}}"
+      }
+    },
+    {
+      "name": "pstrSetArrowColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetArrowColor{${1:color}}"
+      }
+    },
+    {
+      "name": "pstrSetArrowLineWidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetArrowLineWidth{${1:width}}"
+      }
+    },
+    {
+      "name": "pstrSetArrowAngle",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetArrowAngle{${1:angle}}"
+      }
+    },
+    {
+      "name": "pstrSetArrowLabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetArrowLabel{${1:label}}"
+      }
+    },
+    {
+      "name": "pstrSetArrowLineStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstrSetArrowLineStyle{${1:line style%keyvals}}",
+        "keys": [
+          "\\pstrSetArrowLineStyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Pstr",
+      "arg": {
+        "format": "{}",
+        "snippet": "Pstr{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "Pstr",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Pstr[${2:raise%l}]{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "Pstr",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "Pstr[${2:raise%l}][${3:nodesep%l}]{${1:string spec%formula}}"
+      }
+    },
+    {
+      "name": "nd",
+      "unusual": true
+    },
+    {
+      "name": "arrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "arrow{${1:source}}{${2:target}}{${3:angle}}{${4:label}}{${5:linecolor}}{${6:linestyle}}"
+      }
+    },
+    {
+      "name": "txt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "txt{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pstring#c": [
+      "pstricks",
+      "pgf"
+    ],
+    "\\pstrSetArrowLineStyle#c": [
+      "solid",
+      "dotted",
+      "dashed",
+      "none"
+    ]
+  },
+  "args": [
+    "\\usepackage/pstring#c"
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ensuregreek",
+      "arg": {
+        "format": "{}",
+        "snippet": "ensuregreek{${1:text}}"
+      }
+    },
+    {
+      "name": "greekscript"
+    },
+    {
+      "name": "textAlpha"
+    },
+    {
+      "name": "textBeta"
+    },
+    {
+      "name": "textGamma"
+    },
+    {
+      "name": "textDelta"
+    },
+    {
+      "name": "textEpsilon"
+    },
+    {
+      "name": "textZeta"
+    },
+    {
+      "name": "textEta"
+    },
+    {
+      "name": "textTheta"
+    },
+    {
+      "name": "textIota"
+    },
+    {
+      "name": "textKappa"
+    },
+    {
+      "name": "textLambda"
+    },
+    {
+      "name": "textMu"
+    },
+    {
+      "name": "textNu"
+    },
+    {
+      "name": "textXi"
+    },
+    {
+      "name": "textOmicron"
+    },
+    {
+      "name": "textPi"
+    },
+    {
+      "name": "textRho"
+    },
+    {
+      "name": "textSigma"
+    },
+    {
+      "name": "textTau"
+    },
+    {
+      "name": "textUpsilon"
+    },
+    {
+      "name": "textPhi"
+    },
+    {
+      "name": "textChi"
+    },
+    {
+      "name": "textPsi"
+    },
+    {
+      "name": "textOmega"
+    },
+    {
+      "name": "textalpha"
+    },
+    {
+      "name": "textbeta"
+    },
+    {
+      "name": "textgamma"
+    },
+    {
+      "name": "textdelta"
+    },
+    {
+      "name": "textepsilon"
+    },
+    {
+      "name": "textzeta"
+    },
+    {
+      "name": "texteta"
+    },
+    {
+      "name": "texttheta"
+    },
+    {
+      "name": "textiota"
+    },
+    {
+      "name": "textkappa"
+    },
+    {
+      "name": "textlambda"
+    },
+    {
+      "name": "textmu"
+    },
+    {
+      "name": "textnu"
+    },
+    {
+      "name": "textxi"
+    },
+    {
+      "name": "textomicron"
+    },
+    {
+      "name": "textpi"
+    },
+    {
+      "name": "textrho"
+    },
+    {
+      "name": "textsigma"
+    },
+    {
+      "name": "textfinalsigma"
+    },
+    {
+      "name": "textautosigma"
+    },
+    {
+      "name": "texttau"
+    },
+    {
+      "name": "textupsilon"
+    },
+    {
+      "name": "textphi"
+    },
+    {
+      "name": "textchi"
+    },
+    {
+      "name": "textpsi"
+    },
+    {
+      "name": "textomega"
+    },
+    {
+      "name": "textpentedeka"
+    },
+    {
+      "name": "textpentehekaton"
+    },
+    {
+      "name": "textpenteqilioi"
+    },
+    {
+      "name": "textpentemurioi"
+    },
+    {
+      "name": "textstigma"
+    },
+    {
+      "name": "textvarstigma"
+    },
+    {
+      "name": "textKoppa"
+    },
+    {
+      "name": "textkoppa"
+    },
+    {
+      "name": "textqoppa"
+    },
+    {
+      "name": "textQoppa"
+    },
+    {
+      "name": "textStigma"
+    },
+    {
+      "name": "textSampi"
+    },
+    {
+      "name": "textsampi"
+    },
+    {
+      "name": "textanoteleia"
+    },
+    {
+      "name": "texterotimatiko"
+    },
+    {
+      "name": "textdigamma"
+    },
+    {
+      "name": "textDigamma"
+    },
+    {
+      "name": "textdexiakeraia"
+    },
+    {
+      "name": "textaristerikeraia"
+    },
+    {
+      "name": "textmicro"
+    },
+    {
+      "name": "textvarsigma",
+      "unusual": true
+    },
+    {
+      "name": "textstigmagreek",
+      "unusual": true
+    },
+    {
+      "name": "textkoppagreek",
+      "unusual": true
+    },
+    {
+      "name": "textKoppagreek",
+      "unusual": true
+    },
+    {
+      "name": "textStigmagreek",
+      "unusual": true
+    },
+    {
+      "name": "textSampigreek",
+      "unusual": true
+    },
+    {
+      "name": "textsampigreek",
+      "unusual": true
+    },
+    {
+      "name": "textdigammagreek",
+      "unusual": true
+    },
+    {
+      "name": "textDigammagreek",
+      "unusual": true
+    },
+    {
+      "name": "textmugreek",
+      "unusual": true
+    },
+    {
+      "name": "textnumeralsigngreek",
+      "unusual": true
+    },
+    {
+      "name": "textnumeralsignlowergreek",
+      "unusual": true
+    },
+    {
+      "name": "accdialytika",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytika{${1:arg}}"
+      }
+    },
+    {
+      "name": "acctonos",
+      "arg": {
+        "format": "{}",
+        "snippet": "acctonos{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "prosgegrammeni"
+    },
+    {
+      "name": "ypogegrammeni"
+    },
+    {
+      "name": "accdialytikaperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdialytikatonos",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikatonos{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdialytikavaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiavaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaoxia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaoxia{${1:a}}"
+      }
+    },
+    {
+      "name": "accpsiliperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsiliperispomeni{${1:a}}"
+      }
+    },
+    {
+      "name": "accpsilioxia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilioxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilivaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilivaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accinvertedbrevebelow",
+      "arg": {
+        "format": "{}",
+        "snippet": "accinvertedbrevebelow{${1:arg}}"
+      }
+    },
+    {
+      "name": "textsubarch",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubarch{${1:arg}}"
+      }
+    },
+    {
+      "name": "accbrevebelow",
+      "arg": {
+        "format": "{}",
+        "snippet": "accbrevebelow{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiavaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accoxia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accoxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaoxia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaoxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilioxia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilioxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilivaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilivaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsiliperispomeni",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsiliperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "textsemicolon"
+    },
+    {
+      "name": "<",
+      "unusual": true
+    },
+    {
+      "name": ">",
+      "unusual": true
+    },
+    {
+      "name": "textbetasymbol",
+      "unusual": true
+    },
+    {
+      "name": "textthetasymbol",
+      "unusual": true
+    },
+    {
+      "name": "textphisymbol",
+      "unusual": true
+    },
+    {
+      "name": "textpisymbol",
+      "unusual": true
+    },
+    {
+      "name": "textkappasymbol",
+      "unusual": true
+    },
+    {
+      "name": "textrhosymbol",
+      "unusual": true
+    },
+    {
+      "name": "textThetasymbol",
+      "unusual": true
+    },
+    {
+      "name": "textepsilonsymbol",
+      "unusual": true
+    },
+    {
+      "name": "textvarbeta",
+      "unusual": true
+    },
+    {
+      "name": "textvarkappa",
+      "unusual": true
+    },
+    {
+      "name": "textvarTheta",
+      "unusual": true
+    },
+    {
+      "name": "textvartheta",
+      "unusual": true
+    },
+    {
+      "name": "textvarpi",
+      "unusual": true
+    },
+    {
+      "name": "textvarrho",
+      "unusual": true
+    },
+    {
+      "name": "textvarepsilon",
+      "unusual": true
+    },
+    {
+      "name": "textvarphi",
+      "unusual": true
+    },
+    {
+      "name": "textvarbeta",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarkappa",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarTheta",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvartheta",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarpi",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarrho",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarepsilon",
+      "if": "normalize-symbols"
+    },
+    {
+      "name": "textvarphi",
+      "if": "normalize-symbols"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/textalpha#c": [
+      "normalize-symbols",
+      "keep-semicolon"
+    ]
+  },
+  "args": [
+    "\\usepackage/textalpha#c"
+  ]
+}

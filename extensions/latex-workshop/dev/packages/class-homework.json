@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "class-einfart"
+    },
+    {
+      "name": "ProjLib"
+    },
+    {
+      "name": "lastpage"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pretitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "pretitle{${1:text}}"
+      }
+    },
+    {
+      "name": "ManualNumbering",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ManualNumbering{${1:envname}}{${2:number}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "answer"
+    },
+    {
+      "name": "answer",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "solution"
+    },
+    {
+      "name": "solution",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

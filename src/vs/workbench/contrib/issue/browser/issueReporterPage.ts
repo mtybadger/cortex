@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { escape } from '../../../../base/common/strings.js';
-import { localize } from '../../../../nls.js';
+import { escape } from 'vs/base/common/strings';
+import { localize } from 'vs/nls';
 
 const sendSystemInfoLabel = escape(localize('sendSystemInfo', "Include my system information"));
 const sendProcessInfoLabel = escape(localize('sendProcessInfo', "Include my currently running processes"));
@@ -16,11 +16,11 @@ const reviewGuidanceLabel = localize( // intentionally not escaped because of it
 	{
 		key: 'reviewGuidanceLabel',
 		comment: [
-			'{Locked="<a href=\"https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions\" target=\"_blank\">"}',
+			'{Locked="<a href=\"https://github.com/VSCodium/vscodium/wiki/Submitting-Bugs-and-Suggestions\" target=\"_blank\">"}',
 			'{Locked="</a>"}'
 		]
 	},
-	'Before you report an issue here please <a href="https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions" target="_blank">review the guidance we provide</a>.'
+	'Before you report an issue here please <a href="https://github.com/VSCodium/vscodium/wiki/Submitting-Bugs-and-Suggestions" target="_blank">review the guidance we provide</a>.'
 );
 
 export default (): string => `
@@ -94,7 +94,7 @@ export default (): string => `
 				<span id="ext-loading" hidden></span>
 				<span class="ext-parens" hidden>(</span><a href="#" class="showInfo" id="extension-id">${escape(localize('show', "show"))}</a><span class="ext-parens" hidden>)</span>
 			</label>
-			<pre class="block-info" id="extension-data" placeholder="${escape(localize('extensionData', "Extension does not have additional data to include."))}" style="white-space: pre-wrap; user-select: text;">
+			<pre class="block-info" id="extension-data" placeholder="${escape(localize('extensionData', "Extension does not have additional data to include."))}" style="white-space: pre-wrap;">
 				<!-- To be dynamically filled -->
 			</pre>
 		</div>
@@ -107,7 +107,7 @@ export default (): string => `
 			</label>
 			<div class="block-info hidden">
 				<!-- To be dynamically filled -->
-		</div>
+			</div>
 		</div>
 		<div class="block block-process">
 			<input class="sendData" aria-label="${sendProcessInfoLabel}" type="checkbox" id="includeProcessInfo" checked/>

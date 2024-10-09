@@ -1,0 +1,24 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "futfamily"
+    },
+    {
+      "name": "textfut",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfut{${1:arg}}"
+      }
+    },
+    {
+      "name": "Fthorn"
+    },
+    {
+      "name": "Fng"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,49 @@
+{
+  "deps": [
+    {
+      "name": "cnltx-base"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "catchfile"
+    }
+  ],
+  "macros": [
+    {
+      "name": "listsilentcmds"
+    },
+    {
+      "name": "listsilentenvs"
+    },
+    {
+      "name": "listbibfilekeys",
+      "arg": {
+        "format": "{}",
+        "snippet": "listbibfilekeys{${1:file}}"
+      }
+    },
+    {
+      "name": "listbibfiletypes",
+      "arg": {
+        "format": "{}",
+        "snippet": "listbibfiletypes{${1:file}}"
+      }
+    },
+    {
+      "name": "listbibfileentries",
+      "arg": {
+        "format": "{}",
+        "snippet": "listbibfileentries{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setcnltx#c": [
+      "list-sep=${1:separator}"
+    ]
+  },
+  "args": []
+}

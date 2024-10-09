@@ -8,7 +8,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-async function* getPackageLockFiles(dir) {
+async function* getYarnLockFiles(dir) {
 	const files = await fs.readdir(dir);
 
 	for (const file of files) {
@@ -16,8 +16,8 @@ async function* getPackageLockFiles(dir) {
 		const stat = await fs.stat(fullPath);
 
 		if (stat.isDirectory()) {
-			yield* getPackageLockFiles(fullPath);
-		} else if (file === 'package-lock.json') {
+			yield* getYarnLockFiles(fullPath);
+		} else if (file === 'yarn.lock') {
 			yield fullPath;
 		}
 	}
@@ -32,7 +32,7 @@ async function setup(url, file) {
 async function main(url, dir) {
 	const root = dir ?? process.cwd();
 
-	for await (const file of getPackageLockFiles(root)) {
+	for await (const file of getYarnLockFiles(root)) {
 		console.log(`Enabling custom NPM registry: ${path.relative(root, file)}`);
 		await setup(url, file);
 	}

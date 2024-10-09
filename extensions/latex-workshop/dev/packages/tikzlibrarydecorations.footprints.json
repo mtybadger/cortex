@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarydecorations"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

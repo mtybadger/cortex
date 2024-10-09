@@ -1,0 +1,185 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlings-addons"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bug"
+    },
+    {
+      "name": "bug",
+      "arg": {
+        "format": "[]",
+        "snippet": "bug[${1:options%keyvals}]",
+        "keys": [
+          "\\bug#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bughookbackground",
+      "unusual": true
+    },
+    {
+      "name": "bughookbelly",
+      "unusual": true
+    },
+    {
+      "name": "bughookbody",
+      "unusual": true
+    },
+    {
+      "name": "bughookforeground",
+      "unusual": true
+    },
+    {
+      "name": "tikzlinghookbackground",
+      "unusual": true
+    },
+    {
+      "name": "tikzlinghookbelly",
+      "unusual": true
+    },
+    {
+      "name": "tikzlinghookbody",
+      "unusual": true
+    },
+    {
+      "name": "tikzlinghookforeground",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\bug#c": [
+      "body=",
+      "antennas=",
+      "eye=",
+      "pupil=",
+      "mouth=",
+      "arms=",
+      "wings=",
+      "feet=",
+      "back",
+      "3D",
+      "contour",
+      "contour=",
+      "hat",
+      "hat=",
+      "tophat",
+      "tophat=",
+      "beret",
+      "beret=",
+      "strawhat",
+      "strawhat=",
+      "ribbon",
+      "ribbon=",
+      "harlequin",
+      "harlequin=",
+      "niuqelrah",
+      "niuqelrah=",
+      "witch",
+      "witch=",
+      "magichat",
+      "magichat=",
+      "magicstars",
+      "magicstars=",
+      "crown",
+      "crown=",
+      "queencrown",
+      "queencrown=",
+      "kingcrown",
+      "kingcrown=",
+      "santa",
+      "santa=",
+      "chef",
+      "chef=",
+      "graduate",
+      "graduate=",
+      "tassel",
+      "tassel=",
+      "alien",
+      "alien=",
+      "book",
+      "book=",
+      "bookcolour=",
+      "signpost",
+      "signpost=",
+      "signcolour=",
+      "signback=",
+      "speech",
+      "speech=",
+      "bubblecolour=",
+      "think",
+      "think=",
+      "pizza",
+      "cheese",
+      "cheese=",
+      "baguette",
+      "baguette=",
+      "cake",
+      "cake=",
+      "icecream",
+      "icecream=",
+      "flavoura=",
+      "flavourb=",
+      "flavourc=",
+      "milkshake",
+      "milkshake=",
+      "wine",
+      "wine=",
+      "cricket",
+      "cricket=",
+      "hockey",
+      "hockey=",
+      "football",
+      "football=",
+      "crystalball",
+      "crystalball=",
+      "magicwand",
+      "rollingpin",
+      "rollingpin=",
+      "lightsaber",
+      "lightsaber=",
+      "torch",
+      "torch=",
+      "basket",
+      "basket=",
+      "easter",
+      "easter=",
+      "egga=",
+      "eggb=",
+      "eggc=",
+      "crozier",
+      "crozier=",
+      "shovel",
+      "shovel=",
+      "pickaxe",
+      "pickaxe=",
+      "strawbroom",
+      "strawbroom=",
+      "strawbroomstick",
+      "strawbroomstick=",
+      "strawbroomribbon",
+      "strawbroomribbon=",
+      "broom",
+      "broom=",
+      "broomstick",
+      "broomstick=",
+      "umbrella",
+      "umbrella=",
+      "umbrellaclosed",
+      "umbrellaclosed=",
+      "handbag",
+      "handbag=",
+      "cocktail"
+    ]
+  },
+  "args": []
+}

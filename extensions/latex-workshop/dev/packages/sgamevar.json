@@ -1,0 +1,134 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gamestretch"
+    },
+    {
+      "name": "sgcolsep"
+    },
+    {
+      "name": "sglabelsep"
+    },
+    {
+      "name": "ifirpawcgl",
+      "unusual": true
+    },
+    {
+      "name": "irpawcgltrue"
+    },
+    {
+      "name": "irpawcglfalse"
+    },
+    {
+      "name": "ifirplwcgl",
+      "unusual": true
+    },
+    {
+      "name": "irplwcgltrue"
+    },
+    {
+      "name": "irplwcglfalse"
+    },
+    {
+      "name": "ifgamemath",
+      "unusual": true
+    },
+    {
+      "name": "gamemathtrue"
+    },
+    {
+      "name": "gamemathfalse"
+    },
+    {
+      "name": "ifgamevalign",
+      "unusual": true
+    },
+    {
+      "name": "gamevaligntrue"
+    },
+    {
+      "name": "gamevalignfalse"
+    },
+    {
+      "name": "ifssual",
+      "unusual": true
+    },
+    {
+      "name": "ssualtrue"
+    },
+    {
+      "name": "ssualfalse"
+    },
+    {
+      "name": "sglinecolor"
+    },
+    {
+      "name": "sgtextcolor"
+    }
+  ],
+  "envs": [
+    {
+      "name": "game",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:rows}}{${2:columns}}"
+      }
+    },
+    {
+      "name": "game",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:game label}]"
+      }
+    },
+    {
+      "name": "game",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}]"
+      }
+    },
+    {
+      "name": "game",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}][${5:game label}]"
+      }
+    },
+    {
+      "name": "game*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:rows}}{${2:columns}}"
+      }
+    },
+    {
+      "name": "game*",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:game label}]"
+      }
+    },
+    {
+      "name": "game*",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}]"
+      }
+    },
+    {
+      "name": "game*",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "{${1:rows}}{${2:columns}}[${3:row label}][${4:column label}][${5:game label}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

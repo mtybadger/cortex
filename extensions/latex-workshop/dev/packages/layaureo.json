@@ -1,0 +1,24 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/layaureo#c": [
+      "binding=",
+      "big"
+    ]
+  },
+  "args": [
+    "\\usepackage/layaureo#c"
+  ]
+}

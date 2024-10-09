@@ -1,0 +1,292 @@
+{
+  "deps": [
+    {
+      "name": "amsfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "A"
+    },
+    {
+      "name": "B"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "D"
+    },
+    {
+      "name": "E"
+    },
+    {
+      "name": "F"
+    },
+    {
+      "name": "G"
+    },
+    {
+      "name": "H"
+    },
+    {
+      "name": "I"
+    },
+    {
+      "name": "J"
+    },
+    {
+      "name": "K"
+    },
+    {
+      "name": "L"
+    },
+    {
+      "name": "M"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "O"
+    },
+    {
+      "name": "P"
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "T"
+    },
+    {
+      "name": "U"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "W"
+    },
+    {
+      "name": "X"
+    },
+    {
+      "name": "Y"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "calA"
+    },
+    {
+      "name": "calB"
+    },
+    {
+      "name": "calC"
+    },
+    {
+      "name": "calD"
+    },
+    {
+      "name": "calE"
+    },
+    {
+      "name": "calF"
+    },
+    {
+      "name": "calG"
+    },
+    {
+      "name": "calH"
+    },
+    {
+      "name": "calI"
+    },
+    {
+      "name": "calJ"
+    },
+    {
+      "name": "calK"
+    },
+    {
+      "name": "calL"
+    },
+    {
+      "name": "calM"
+    },
+    {
+      "name": "calN"
+    },
+    {
+      "name": "calO"
+    },
+    {
+      "name": "calP"
+    },
+    {
+      "name": "calQ"
+    },
+    {
+      "name": "calR"
+    },
+    {
+      "name": "calS"
+    },
+    {
+      "name": "calT"
+    },
+    {
+      "name": "calU"
+    },
+    {
+      "name": "calV"
+    },
+    {
+      "name": "calW"
+    },
+    {
+      "name": "calX"
+    },
+    {
+      "name": "calY"
+    },
+    {
+      "name": "calZ"
+    },
+    {
+      "name": "prob"
+    },
+    {
+      "name": "prob",
+      "arg": {
+        "format": "[]",
+        "snippet": "prob[${1:letter}]"
+      }
+    },
+    {
+      "name": "probX",
+      "arg": {
+        "format": "{}",
+        "snippet": "probX{${1:event%formula}}"
+      }
+    },
+    {
+      "name": "probX",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "probX[${2:letter}]{${1:event%formula}}"
+      }
+    },
+    {
+      "name": "cprobX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cprobX{${1:event%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "cprobX",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cprobX[${3:letter}]{${1:event%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "EX",
+      "arg": {
+        "format": "{}",
+        "snippet": "EX{${1:arg}}"
+      }
+    },
+    {
+      "name": "EX",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "EX[${2:letter}]{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "cEX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cEX{${1:arg%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "cEX",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cEX[${3:letter}]{${1:arg%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "Var"
+    },
+    {
+      "name": "Var",
+      "arg": {
+        "format": "[]",
+        "snippet": "Var[${1:subscript%formula}]"
+      }
+    },
+    {
+      "name": "VarX",
+      "arg": {
+        "format": "{}",
+        "snippet": "VarX{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "VarX",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "VarX[${2:subscript%formula}]{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "cVarX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cVarX{${1:arg%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "cVarX",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cVarX[${3:subscript%formula}]{${1:arg%formula}}{${2:condition%formula}}"
+      }
+    },
+    {
+      "name": "eqlaw"
+    },
+    {
+      "name": "tolaw"
+    },
+    {
+      "name": "qvar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "qvar{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "cqvar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cqvar{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

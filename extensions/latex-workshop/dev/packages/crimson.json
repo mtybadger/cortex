@@ -1,0 +1,44 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "crimson"
+    },
+    {
+      "name": "crimsonsemibold"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/crimson#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "semibold",
+      "sb",
+      "bold"
+    ]
+  },
+  "args": [
+    "\\usepackage/crimson#c"
+  ]
+}

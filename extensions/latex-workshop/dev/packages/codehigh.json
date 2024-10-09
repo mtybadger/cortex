@@ -1,0 +1,178 @@
+{
+  "deps": [
+    {
+      "name": "catchfile"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "ninecolors"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CodeHigh",
+      "arg": {
+        "format": "{}",
+        "snippet": "CodeHigh{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{codehigh},\\begin{demohigh},\\CodeHigh,\\dochighinput"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dochighinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "dochighinput{${1:file}}"
+      }
+    },
+    {
+      "name": "dochighinput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dochighinput[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\begin{codehigh},\\begin{demohigh},\\CodeHigh,\\dochighinput"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fakeverb",
+      "arg": {
+        "format": "{}",
+        "snippet": "fakeverb{${1:verbatim content%definition}}"
+      }
+    },
+    {
+      "name": "NewCodeHighEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewCodeHighEnv{${1:envname}}{${2:options%keyvals}}"
+      }
+    },
+    {
+      "name": "NewCodeHighInput",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewCodeHighInput{${1:command}}{${2:options%keyvals}}"
+      }
+    },
+    {
+      "name": "AddCodeHighRule",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "AddCodeHighRule{${1:type}}{${2:name}}{${3:regex%definition}}"
+      }
+    },
+    {
+      "name": "AddCodeHighRule",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "AddCodeHighRule[${4:language}]{${1:type}}{${2:name}}{${3:regex%definition}}"
+      }
+    },
+    {
+      "name": "SetCodeHighStyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetCodeHighStyle{${1:type}}{${2:color}}"
+      }
+    },
+    {
+      "name": "SetCodeHighStyle",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "SetCodeHighStyle[${3:theme}]{${1:type}}{${2:color}}"
+      }
+    },
+    {
+      "name": "GetCodeHighStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "GetCodeHighStyle{${1:type}}"
+      }
+    },
+    {
+      "name": "GetCodeHighStyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "GetCodeHighStyle[${2:theme}]{${1:type}}"
+      }
+    },
+    {
+      "name": "SetCodeHighTracing",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetCodeHighTracing{${1:options%keyvals}}",
+        "keys": [
+          "\\SetCodeHighTracing"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "codehigh"
+    },
+    {
+      "name": "codehigh",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{codehigh},\\begin{demohigh},\\CodeHigh,\\dochighinput"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "demohigh"
+    },
+    {
+      "name": "demohigh",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{codehigh},\\begin{demohigh},\\CodeHigh,\\dochighinput"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{codehigh},\\begin{demohigh},\\CodeHigh,\\dochighinput": [
+      "language=${1|latex,latex/latex2,latex/latex3,latex/math,latex/table|}",
+      "style/main=",
+      "style/code=",
+      "style/demo=",
+      "boxsep=",
+      "lite",
+      "long",
+      "demo",
+      "theme=${1:theme}"
+    ],
+    "\\SetCodeHighTracing": [
+      "+code",
+      "-code",
+      "+demo",
+      "-demo",
+      "+parser",
+      "-parser",
+      "all",
+      "none"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,514 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "datatool"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newperson",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newperson{${1:full name}}{${2:familiar name}}{${3:gender}}"
+      }
+    },
+    {
+      "name": "newperson",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newperson[${4:label}]{${1:full name}}{${2:familiar name}}{${3:gender}}"
+      }
+    },
+    {
+      "name": "malelabels",
+      "unusual": true
+    },
+    {
+      "name": "femalelabels",
+      "unusual": true
+    },
+    {
+      "name": "addmalelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "addmalelabel{${1:identifier}}"
+      }
+    },
+    {
+      "name": "addfemalelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "addfemalelabel{${1:identifier}}"
+      }
+    },
+    {
+      "name": "thepeople"
+    },
+    {
+      "name": "removeperson"
+    },
+    {
+      "name": "removeperson",
+      "arg": {
+        "format": "[]",
+        "snippet": "removeperson[${1:label}]"
+      }
+    },
+    {
+      "name": "removeallpeople"
+    },
+    {
+      "name": "removepeople",
+      "arg": {
+        "format": "{}",
+        "snippet": "removepeople{${1:list}}"
+      }
+    },
+    {
+      "name": "personfullname"
+    },
+    {
+      "name": "personfullname",
+      "arg": {
+        "format": "[]",
+        "snippet": "personfullname[${1:label}]"
+      }
+    },
+    {
+      "name": "personname"
+    },
+    {
+      "name": "personname",
+      "arg": {
+        "format": "[]",
+        "snippet": "personname[${1:label}]"
+      }
+    },
+    {
+      "name": "personpronoun"
+    },
+    {
+      "name": "personpronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "personpronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "personobjpronoun"
+    },
+    {
+      "name": "personobjpronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "personobjpronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "personpossadj"
+    },
+    {
+      "name": "personpossadj",
+      "arg": {
+        "format": "[]",
+        "snippet": "personpossadj[${1:label}]"
+      }
+    },
+    {
+      "name": "personposspronoun"
+    },
+    {
+      "name": "personposspronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "personposspronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "personchild"
+    },
+    {
+      "name": "personchild",
+      "arg": {
+        "format": "[]",
+        "snippet": "personchild[${1:label}]"
+      }
+    },
+    {
+      "name": "personparent"
+    },
+    {
+      "name": "personparent",
+      "arg": {
+        "format": "[]",
+        "snippet": "personparent[${1:label}]"
+      }
+    },
+    {
+      "name": "personsibling"
+    },
+    {
+      "name": "personsibling",
+      "arg": {
+        "format": "[]",
+        "snippet": "personsibling[${1:label}]"
+      }
+    },
+    {
+      "name": "Personpronoun"
+    },
+    {
+      "name": "Personpronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personpronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "Personobjpronoun"
+    },
+    {
+      "name": "Personobjpronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personobjpronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "Personpossadj"
+    },
+    {
+      "name": "Personpossadj",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personpossadj[${1:label}]"
+      }
+    },
+    {
+      "name": "Personposspronoun"
+    },
+    {
+      "name": "Personposspronoun",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personposspronoun[${1:label}]"
+      }
+    },
+    {
+      "name": "Personchild"
+    },
+    {
+      "name": "Personchild",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personchild[${1:label}]"
+      }
+    },
+    {
+      "name": "Personparent"
+    },
+    {
+      "name": "Personparent",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personparent[${1:label}]"
+      }
+    },
+    {
+      "name": "Personsibling"
+    },
+    {
+      "name": "Personsibling",
+      "arg": {
+        "format": "[]",
+        "snippet": "Personsibling[${1:label}]"
+      }
+    },
+    {
+      "name": "peoplefullname"
+    },
+    {
+      "name": "peoplename"
+    },
+    {
+      "name": "peoplepronoun"
+    },
+    {
+      "name": "Peoplepronoun"
+    },
+    {
+      "name": "peopleobjpronoun"
+    },
+    {
+      "name": "Peopleobjpronoun"
+    },
+    {
+      "name": "peoplepossadj"
+    },
+    {
+      "name": "Peoplepossadj"
+    },
+    {
+      "name": "peopleposspronoun"
+    },
+    {
+      "name": "Peopleposspronoun"
+    },
+    {
+      "name": "peoplechild"
+    },
+    {
+      "name": "Peoplechild"
+    },
+    {
+      "name": "peopleparent"
+    },
+    {
+      "name": "Peopleparent"
+    },
+    {
+      "name": "peoplesibling"
+    },
+    {
+      "name": "Peoplesibling"
+    },
+    {
+      "name": "ifpersonexists",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifpersonexists{${1:label}}{${2:true case}}{${3:false case}}"
+      }
+    },
+    {
+      "name": "ifmale",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifmale{${1:label}}{${2:true case}}{${3:false case}}"
+      }
+    },
+    {
+      "name": "iffemale",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "iffemale{${1:label}}{${2:true case}}{${3:false case}}"
+      }
+    },
+    {
+      "name": "ifallmale",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifallmale{${1:true case}}{${2:false case}}"
+      }
+    },
+    {
+      "name": "ifallmale",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ifallmale[${3:label list}]{${1:true case}}{${2:false case}}"
+      }
+    },
+    {
+      "name": "ifallfemale",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifallfemale{${1:true case}}{${2:false case}}"
+      }
+    },
+    {
+      "name": "ifallfemale",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ifallfemale[${3:label list}]{${1:true case}}{${2:false case}}"
+      }
+    },
+    {
+      "name": "ifmalelabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifmalelabel{${1:identifier}}{${2:true case}}{${3:false case}}"
+      }
+    },
+    {
+      "name": "iffemalelabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "iffemalelabel{${1:identifier}}{${2:true case}}{${3:false case}}"
+      }
+    },
+    {
+      "name": "malename",
+      "unusual": true
+    },
+    {
+      "name": "femalename",
+      "unusual": true
+    },
+    {
+      "name": "getpersongender",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getpersongender{${1:cmd}}{${2:label}}"
+      }
+    },
+    {
+      "name": "getpersonname",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getpersonname{${1:cmd}}{${2:label}}"
+      }
+    },
+    {
+      "name": "getpersonfullname",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "getpersonfullname{${1:cmd}}{${2:label}}"
+      }
+    },
+    {
+      "name": "andname",
+      "unusual": true
+    },
+    {
+      "name": "femalechild",
+      "unusual": true
+    },
+    {
+      "name": "femalechildren",
+      "unusual": true
+    },
+    {
+      "name": "femaleobjpronoun",
+      "unusual": true
+    },
+    {
+      "name": "femaleparent",
+      "unusual": true
+    },
+    {
+      "name": "femalepossadj",
+      "unusual": true
+    },
+    {
+      "name": "femaleposspronoun",
+      "unusual": true
+    },
+    {
+      "name": "femalepronoun",
+      "unusual": true
+    },
+    {
+      "name": "femalesibling",
+      "unusual": true
+    },
+    {
+      "name": "femalesiblings",
+      "unusual": true
+    },
+    {
+      "name": "malechild",
+      "unusual": true
+    },
+    {
+      "name": "malechildren",
+      "unusual": true
+    },
+    {
+      "name": "maleobjpronoun",
+      "unusual": true
+    },
+    {
+      "name": "maleparent",
+      "unusual": true
+    },
+    {
+      "name": "malepossadj",
+      "unusual": true
+    },
+    {
+      "name": "maleposspronoun",
+      "unusual": true
+    },
+    {
+      "name": "malepronoun",
+      "unusual": true
+    },
+    {
+      "name": "malesibling",
+      "unusual": true
+    },
+    {
+      "name": "malesiblings",
+      "unusual": true
+    },
+    {
+      "name": "persongender",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "persongender{${1:label}}"
+      }
+    },
+    {
+      "name": "personlastsep",
+      "unusual": true
+    },
+    {
+      "name": "personsep",
+      "unusual": true
+    },
+    {
+      "name": "pluralchild",
+      "unusual": true
+    },
+    {
+      "name": "pluralobjpronoun",
+      "unusual": true
+    },
+    {
+      "name": "pluralparent",
+      "unusual": true
+    },
+    {
+      "name": "pluralpossadj",
+      "unusual": true
+    },
+    {
+      "name": "pluralposspronoun",
+      "unusual": true
+    },
+    {
+      "name": "pluralpronoun",
+      "unusual": true
+    },
+    {
+      "name": "pluralsibling",
+      "unusual": true
+    },
+    {
+      "name": "theperson",
+      "unusual": true
+    },
+    {
+      "name": "twopeoplesep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

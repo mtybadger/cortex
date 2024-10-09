@@ -1,0 +1,626 @@
+{
+  "deps": [
+    {
+      "name": "tudscrbase"
+    },
+    {
+      "name": "scrextend"
+    },
+    {
+      "name": "newunicodechar"
+    },
+    {
+      "name": "mathastext"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cdfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "cdfont{${1:Schriftart}}"
+      }
+    },
+    {
+      "name": "textcd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textcd{${1:Schriftart}}{${2:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontln"
+    },
+    {
+      "name": "textcdln",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdln{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontrn"
+    },
+    {
+      "name": "textcdrn",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdrn{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontsn"
+    },
+    {
+      "name": "textcdsn",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdsn{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontbn"
+    },
+    {
+      "name": "textcdbn",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdbn{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontxn"
+    },
+    {
+      "name": "textcdxn",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdxn{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontli"
+    },
+    {
+      "name": "textcdli",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdli{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontri"
+    },
+    {
+      "name": "textcdri",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdri{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontsi"
+    },
+    {
+      "name": "textcdsi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdsi{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontbi"
+    },
+    {
+      "name": "textcdbi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdbi{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "cdfontxi"
+    },
+    {
+      "name": "textcdxi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcdxi{${1:Text%text}}"
+      }
+    },
+    {
+      "name": "upGamma",
+      "detail": "Γ",
+      "doc": "\\gamma (-slantedgreek), \\mathrm{\\gamma}, capital gamma, greek"
+    },
+    {
+      "name": "itGamma"
+    },
+    {
+      "name": "upDelta",
+      "detail": "Δ",
+      "doc": "\\delta (-slantedgreek), \\mathrm{\\delta}, capital delta, greek"
+    },
+    {
+      "name": "itDelta"
+    },
+    {
+      "name": "upTheta",
+      "detail": "Θ",
+      "doc": "\\theta (-slantedgreek), \\mathrm{\\theta}, capital theta, greek"
+    },
+    {
+      "name": "itTheta"
+    },
+    {
+      "name": "upLambda",
+      "detail": "Λ",
+      "doc": "\\lambda (-slantedgreek), \\mathrm{\\lambda}, capital lambda, greek"
+    },
+    {
+      "name": "itLambda"
+    },
+    {
+      "name": "upXi",
+      "detail": "Ξ",
+      "doc": "\\xi (-slantedgreek), \\mathrm{\\xi}, capital xi, greek"
+    },
+    {
+      "name": "itXi"
+    },
+    {
+      "name": "upPi",
+      "detail": "Π",
+      "doc": "\\pi (-slantedgreek), \\mathrm{\\pi}, capital pi, greek"
+    },
+    {
+      "name": "itPi"
+    },
+    {
+      "name": "upSigma",
+      "detail": "Σ",
+      "doc": "\\sigma (-slantedgreek), \\mathrm{\\sigma}, capital sigma, greek"
+    },
+    {
+      "name": "itSigma"
+    },
+    {
+      "name": "upUpsilon",
+      "detail": "ϒ",
+      "doc": "\\mathrm{\\upsilon}, greek upsilon with hook symbol"
+    },
+    {
+      "name": "itUpsilon"
+    },
+    {
+      "name": "upPhi",
+      "detail": "Φ",
+      "doc": "\\phi (-slantedgreek), \\mathrm{\\phi}, capital phi, greek"
+    },
+    {
+      "name": "itPhi"
+    },
+    {
+      "name": "upPsi",
+      "detail": "Ψ",
+      "doc": "\\psi (-slantedgreek), \\mathrm{\\psi}, capital psi, greek"
+    },
+    {
+      "name": "itPsi"
+    },
+    {
+      "name": "upOmega",
+      "detail": "Ω",
+      "doc": "\\omega (-slantedgreek), \\mathrm{\\omega}, capital omega, greek"
+    },
+    {
+      "name": "itOmega"
+    },
+    {
+      "name": "upalpha",
+      "detail": "α",
+      "doc": "\\mathrm{\\alpha} (omlmathrm), \\alphaup (kpfonts mathdesign), \\upalpha (upgreek), alpha, greek"
+    },
+    {
+      "name": "italpha"
+    },
+    {
+      "name": "upbeta",
+      "detail": "β",
+      "doc": "\\mathrm{\\beta} (omlmathrm), \\betaup (kpfonts mathdesign), \\upbeta (upgreek), beta, greek"
+    },
+    {
+      "name": "itbeta"
+    },
+    {
+      "name": "upgamma",
+      "detail": "γ",
+      "doc": "\\mathrm{\\gamma} (omlmathrm), \\gammaup (kpfonts mathdesign), \\upgamma (upgreek), gamma, greek"
+    },
+    {
+      "name": "itgamma"
+    },
+    {
+      "name": "updelta",
+      "detail": "δ",
+      "doc": "\\mathrm{\\delta} (omlmathrm), \\deltaup (kpfonts mathdesign), \\updelta (upgreek), delta, greek"
+    },
+    {
+      "name": "itdelta"
+    },
+    {
+      "name": "upepsilon",
+      "detail": "ε",
+      "doc": "\\mathrm{\\varepsilon} (omlmathrm), \\varepsilonup (kpfonts mathdesign), \\upepsilon (upgreek), rounded epsilon, greek"
+    },
+    {
+      "name": "itepsilon"
+    },
+    {
+      "name": "upvarepsilon",
+      "detail": "ϵ",
+      "doc": "\\mathrm{\\epsilon} (omlmathrm), \\epsilonup (kpfonts mathdesign), greek lunate epsilon symbol"
+    },
+    {
+      "name": "itvarepsilon"
+    },
+    {
+      "name": "upzeta",
+      "detail": "ζ",
+      "doc": "\\mathrm{\\zeta} (omlmathrm), \\zetaup (kpfonts mathdesign), \\upzeta (upgreek), zeta, greek"
+    },
+    {
+      "name": "itzeta"
+    },
+    {
+      "name": "upeta",
+      "detail": "η",
+      "doc": "\\mathrm{\\eta} (omlmathrm), \\etaup (kpfonts mathdesign), \\upeta (upgreek), eta, greek"
+    },
+    {
+      "name": "iteta"
+    },
+    {
+      "name": "uptheta",
+      "detail": "θ",
+      "doc": "\\mathrm{\\theta} (omlmathrm), \\thetaup (kpfonts mathdesign), straight theta, \\uptheta (upgreek), theta, greek"
+    },
+    {
+      "name": "ittheta"
+    },
+    {
+      "name": "upvartheta",
+      "detail": "ϑ",
+      "doc": "\\mathrm{\\vartheta} (omlmathrm), \\varthetaup (kpfonts mathdesign), curly or open theta"
+    },
+    {
+      "name": "itvartheta"
+    },
+    {
+      "name": "upiota",
+      "detail": "ι",
+      "doc": "\\mathrm{\\iota} (omlmathrm), \\iotaup (kpfonts mathdesign), \\upiota (upgreek), iota, greek"
+    },
+    {
+      "name": "itiota"
+    },
+    {
+      "name": "upkappa",
+      "detail": "κ",
+      "doc": "\\mathrm{\\kappa} (omlmathrm), \\kappaup (kpfonts mathdesign), \\upkappa (upgreek), kappa, greek"
+    },
+    {
+      "name": "itkappa"
+    },
+    {
+      "name": "uplambda",
+      "detail": "λ",
+      "doc": "\\mathrm{\\lambda} (omlmathrm), \\lambdaup (kpfonts mathdesign), \\uplambda (upgreek), lambda, greek"
+    },
+    {
+      "name": "itlambda"
+    },
+    {
+      "name": "upmu",
+      "detail": "μ",
+      "doc": "\\mathrm{\\mu} (omlmathrm), \\muup (kpfonts mathdesign), \\upmu (upgreek), mu, greek"
+    },
+    {
+      "name": "itmu"
+    },
+    {
+      "name": "upnu",
+      "detail": "ν",
+      "doc": "\\mathrm{\\nu} (omlmathrm), \\nuup (kpfonts mathdesign), \\upnu (upgreek), nu, greek"
+    },
+    {
+      "name": "itnu"
+    },
+    {
+      "name": "upxi",
+      "detail": "ξ",
+      "doc": "\\mathrm{\\xi} (omlmathrm), \\xiup (kpfonts mathdesign), \\upxi (upgreek), xi, greek"
+    },
+    {
+      "name": "itxi"
+    },
+    {
+      "name": "uppi",
+      "detail": "π",
+      "doc": "\\mathrm{\\pi} (omlmathrm), \\piup (kpfonts mathdesign), \\uppi (upgreek), pi, greek"
+    },
+    {
+      "name": "itpi"
+    },
+    {
+      "name": "upvarpi",
+      "detail": "ϖ",
+      "doc": "\\mathrm{\\varpi} (omlmathrm), \\varpiup (kpfonts mathdesign), greek pi symbol (pomega)"
+    },
+    {
+      "name": "itvarpi"
+    },
+    {
+      "name": "uprho",
+      "detail": "ρ",
+      "doc": "\\mathrm{\\rho} (omlmathrm), \\rhoup (kpfonts mathdesign), \\uprho (upgreek), rho, greek"
+    },
+    {
+      "name": "itrho"
+    },
+    {
+      "name": "upvarrho",
+      "detail": "ϱ",
+      "doc": "\\mathrm{\\varrho} (omlmathrm), \\varrhoup (kpfonts mathdesign), greek rho symbol (round)"
+    },
+    {
+      "name": "itvarrho"
+    },
+    {
+      "name": "upsigma",
+      "detail": "σ",
+      "doc": "\\mathrm{\\sigma} (omlmathrm), \\sigmaup (kpfonts mathdesign), \\upsigma (upgreek), sigma, greek"
+    },
+    {
+      "name": "itsigma"
+    },
+    {
+      "name": "upvarsigma",
+      "detail": "ς",
+      "doc": "\\mathrm{\\varsigma} (omlmathrm), \\varsigmaup (kpfonts mathdesign), \\upvarsigma (upgreek), terminal sigma, greek"
+    },
+    {
+      "name": "itvarsigma"
+    },
+    {
+      "name": "uptau",
+      "detail": "τ",
+      "doc": "\\mathrm{\\tau} (omlmathrm), \\tauup (kpfonts mathdesign), \\uptau (upgreek), tau, greek"
+    },
+    {
+      "name": "ittau"
+    },
+    {
+      "name": "upupsilon",
+      "detail": "υ",
+      "doc": "\\mathrm{\\upsilon} (omlmathrm), \\upsilonup (kpfonts mathdesign), \\upupsilon (upgreek), upsilon, greek"
+    },
+    {
+      "name": "itupsilon"
+    },
+    {
+      "name": "upphi",
+      "detail": "ϕ",
+      "doc": "\\mathrm{\\phi} (omlmathrm), \\phiup (kpfonts mathdesign), greek phi symbol (straight)"
+    },
+    {
+      "name": "itphi"
+    },
+    {
+      "name": "upvarphi",
+      "detail": "φ",
+      "doc": "\\mathrm{\\varphi} (omlmathrm), \\varphiup (kpfonts mathdesign), \\upvarphi (upgreek), curly or open phi, greek"
+    },
+    {
+      "name": "itvarphi"
+    },
+    {
+      "name": "upchi",
+      "detail": "χ",
+      "doc": "\\mathrm{\\chi} (omlmathrm), \\chiup (kpfonts mathdesign), \\upchi (upgreek), chi, greek"
+    },
+    {
+      "name": "itchi"
+    },
+    {
+      "name": "uppsi",
+      "detail": "ψ",
+      "doc": "\\mathrm{\\psi} (omlmathrm), \\psiup (kpfonts mathdesign), \\uppsi (upgreek), psi, greek"
+    },
+    {
+      "name": "itpsi"
+    },
+    {
+      "name": "upomega",
+      "detail": "ω",
+      "doc": "\\mathrm{\\omega} (omlmathrm), \\omegaup (kpfonts mathdesign), \\upomega (upgreek), omega, greek"
+    },
+    {
+      "name": "itomega"
+    },
+    {
+      "name": "otherGamma",
+      "unusual": true
+    },
+    {
+      "name": "otherDelta",
+      "unusual": true
+    },
+    {
+      "name": "otherTheta",
+      "unusual": true
+    },
+    {
+      "name": "otherLambda",
+      "unusual": true
+    },
+    {
+      "name": "otherXi",
+      "unusual": true
+    },
+    {
+      "name": "otherPi",
+      "unusual": true
+    },
+    {
+      "name": "otherSigma",
+      "unusual": true
+    },
+    {
+      "name": "otherUpsilon",
+      "unusual": true
+    },
+    {
+      "name": "otherPhi",
+      "unusual": true
+    },
+    {
+      "name": "otherPsi",
+      "unusual": true
+    },
+    {
+      "name": "otherOmega",
+      "unusual": true
+    },
+    {
+      "name": "otheralpha",
+      "unusual": true
+    },
+    {
+      "name": "otherbeta",
+      "unusual": true
+    },
+    {
+      "name": "othergamma",
+      "unusual": true
+    },
+    {
+      "name": "otherdelta",
+      "unusual": true
+    },
+    {
+      "name": "otherepsilon",
+      "unusual": true
+    },
+    {
+      "name": "othervarepsilon",
+      "unusual": true
+    },
+    {
+      "name": "otherzeta",
+      "unusual": true
+    },
+    {
+      "name": "othereta",
+      "unusual": true
+    },
+    {
+      "name": "othertheta",
+      "unusual": true
+    },
+    {
+      "name": "othervartheta",
+      "unusual": true
+    },
+    {
+      "name": "otheriota",
+      "unusual": true
+    },
+    {
+      "name": "otherkappa",
+      "unusual": true
+    },
+    {
+      "name": "otherlambda",
+      "unusual": true
+    },
+    {
+      "name": "othermu",
+      "unusual": true
+    },
+    {
+      "name": "othernu",
+      "unusual": true
+    },
+    {
+      "name": "otherxi",
+      "unusual": true
+    },
+    {
+      "name": "otherpi",
+      "unusual": true
+    },
+    {
+      "name": "othervarpi",
+      "unusual": true
+    },
+    {
+      "name": "otherrho",
+      "unusual": true
+    },
+    {
+      "name": "othervarrho",
+      "unusual": true
+    },
+    {
+      "name": "othersigma",
+      "unusual": true
+    },
+    {
+      "name": "othervarsigma",
+      "unusual": true
+    },
+    {
+      "name": "othertau",
+      "unusual": true
+    },
+    {
+      "name": "otherupsilon",
+      "unusual": true
+    },
+    {
+      "name": "otherphi",
+      "unusual": true
+    },
+    {
+      "name": "othervarphi",
+      "unusual": true
+    },
+    {
+      "name": "otherchi",
+      "unusual": true
+    },
+    {
+      "name": "otherpsi",
+      "unusual": true
+    },
+    {
+      "name": "otheromega",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\TUDoptions#c": [
+      "cdfont=${1:Einstellung}",
+      "cdoldfont=${1|true,false,nodin,din,onlydin|}",
+      "fontsize=",
+      "relspacing=${1:Ein-Aus-Wert}",
+      "ttfont=${1:Einstellung}",
+      "cdmath=${1:Ein-Aus-Wert}",
+      "slantedgreek=${1:Ein-Aus-Wert}",
+      "tudscrver=${1:Version}"
+    ]
+  },
+  "args": []
+}

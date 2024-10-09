@@ -1,0 +1,134 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tableur",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableur{${1:colonnes}}"
+      }
+    },
+    {
+      "name": "tableur",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tableur[${2:nombre de lignes}]{${1:colonnes}}"
+      }
+    },
+    {
+      "name": "tableur*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableur*{${1:col1/dim1,col2/dim2,...}}"
+      }
+    },
+    {
+      "name": "tableur*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tableur*[${2:nombre de lignes}]{${1:col1/dim1,col2/dim2,...}}"
+      }
+    },
+    {
+      "name": "tabcolwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabcolwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tabnumlinewidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabnumlinewidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tablineheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "tablineheight{${1:height}}"
+      }
+    },
+    {
+      "name": "helvbx"
+    },
+    {
+      "name": "celtxt",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "celtxt{${1:colonne}}{${2:ligne}}{${3:texte}}"
+      }
+    },
+    {
+      "name": "celtxt",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "celtxt[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}",
+        "keys": [
+          "\\celtxt,\\celtxt*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "celtxt*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "celtxt*{${1:colonne}}{${2:ligne}}{${3:texte}}"
+      }
+    },
+    {
+      "name": "celtxt*",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "celtxt*[${4:options%keyvals}]{${1:colonne}}{${2:ligne}}{${3:texte}}",
+        "keys": [
+          "\\celtxt,\\celtxt*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "selecCell",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "selecCell{${1:colonne}}{${2:ligne}}"
+      }
+    },
+    {
+      "name": "multiSelec",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "multiSelec{${1:colonnes}}{${2:lignes}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\celtxt,\\celtxt*": [
+      "align=${1|center,left,right|}",
+      "c",
+      "l",
+      "r",
+      "ajust",
+      "width=",
+      "color=",
+      "font=${1:font commands}"
+    ]
+  },
+  "args": []
+}

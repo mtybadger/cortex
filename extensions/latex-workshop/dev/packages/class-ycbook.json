@@ -1,0 +1,140 @@
+{
+  "deps": [
+    {
+      "name": "class-mwbk"
+    },
+    {
+      "name": "titletoc"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "adjustbox"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "placeins"
+    },
+    {
+      "name": "changepage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fancytoc"
+    },
+    {
+      "name": "traditionaltoc"
+    },
+    {
+      "name": "coloredheadline",
+      "arg": {
+        "format": "{}",
+        "snippet": "coloredheadline{${1:color}}"
+      }
+    },
+    {
+      "name": "coloredfootline",
+      "arg": {
+        "format": "{}",
+        "snippet": "coloredfootline{${1:color}}"
+      }
+    },
+    {
+      "name": "twopagepicture",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "twopagepicture{${1:placement}}{${2:l or p}}{${3:imagefile}}{${4:caption%text}}"
+      }
+    },
+    {
+      "name": "twopagepicturen",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "twopagepicturen{${1:placement}}{${2:l or p}}{${3:imagefile}}{${4:caption%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/ycbook#c": [
+      "chapterrule",
+      "sectionrule",
+      "chaptercentered",
+      "chapterleft",
+      "chapterright",
+      "nochaptercentered",
+      "nochapterleft",
+      "nochapterright",
+      "sansserifnotes",
+      "nodots",
+      "nofootnoterule",
+      "traditionalfootnote",
+      "a4paper",
+      "a5paper",
+      "a6paper",
+      "b4paper",
+      "b5paper",
+      "b6paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "wide",
+      "withmarginpar",
+      "withoutmarginpar",
+      "10pt",
+      "10dd",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "openright",
+      "openany",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib",
+      "rmheadings",
+      "sfheadings",
+      "floatssmall",
+      "floatsnormalsize",
+      "authortitle",
+      "titleauthor",
+      "indentfirst",
+      "noindentfirst"
+    ],
+    "\\pagestyle#c,\\thispagestyle#c": [
+      "headingsbeforeplain",
+      "myheadingsbeforeplain",
+      "uheadings",
+      "myuheadings",
+      "headingsnodot",
+      "uheadingsnodot",
+      "headingsbeforeplainnodot"
+    ]
+  },
+  "args": [
+    "\\documentclass/ycbook#c"
+  ]
+}

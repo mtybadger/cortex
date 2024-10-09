@@ -1,0 +1,58 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sudoku",
+      "arg": {
+        "format": "{}",
+        "snippet": "sudoku{${1:file}}"
+      }
+    },
+    {
+      "name": "cluefont",
+      "arg": {
+        "format": "{}",
+        "snippet": "cluefont{${1:font-cmd}}"
+      }
+    },
+    {
+      "name": "cellsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "cellsize{${1:length}}"
+      }
+    },
+    {
+      "name": "writepuzzle",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}{}",
+        "snippet": "writepuzzle{${1:line1}}{${2:line2}}{${3:line3}}{${4:line4}}{${5:line5}}{${6:line6}}{${7:line7}}{${8:line8}}{${9:line9}}"
+      }
+    },
+    {
+      "name": "puzzlefile"
+    },
+    {
+      "name": "sudpuzznewline"
+    },
+    {
+      "name": "istchar",
+      "unusual": true
+    },
+    {
+      "name": "restchars",
+      "unusual": true
+    },
+    {
+      "name": "splitoff",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "splitoff{${1:string}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

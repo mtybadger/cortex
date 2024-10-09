@@ -1,0 +1,175 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setfistrum",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfistrum{${1:options%keyvals}}",
+        "keys": [
+          "\\usepackage/fistrum#c,\\setfistrum#c",
+          "\\setfistrum#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fistrum"
+    },
+    {
+      "name": "fistrum",
+      "arg": {
+        "format": "[]",
+        "snippet": "fistrum[${1:par range}]"
+      }
+    },
+    {
+      "name": "fistrum",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fistrum[${1:par range}][${2:sentence range}]"
+      }
+    },
+    {
+      "name": "fistrum*"
+    },
+    {
+      "name": "fistrum*",
+      "arg": {
+        "format": "[]",
+        "snippet": "fistrum*[${1:par range}]"
+      }
+    },
+    {
+      "name": "fistrum*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fistrum*[${1:par range}][${2:sentence range}]"
+      }
+    },
+    {
+      "name": "unpackfistrum"
+    },
+    {
+      "name": "unpackfistrum",
+      "arg": {
+        "format": "[]",
+        "snippet": "unpackfistrum[${1:par range}]"
+      }
+    },
+    {
+      "name": "unpackfistrum",
+      "arg": {
+        "format": "[][]",
+        "snippet": "unpackfistrum[${1:par range}][${2:sentence range}]"
+      }
+    },
+    {
+      "name": "unpackfistrum*"
+    },
+    {
+      "name": "unpackfistrum*",
+      "arg": {
+        "format": "[]",
+        "snippet": "unpackfistrum*[${1:par range}]"
+      }
+    },
+    {
+      "name": "unpackfistrum*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "unpackfistrum*[${1:par range}][${2:sentence range}]"
+      }
+    },
+    {
+      "name": "fistrumexp"
+    },
+    {
+      "name": "SetFistrumText",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetFistrumText{${1:name}}"
+      }
+    },
+    {
+      "name": "SetFistrumDefault",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetFistrumDefault{${1:range}}"
+      }
+    },
+    {
+      "name": "NewFistrumPar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NewFistrumPar{${1:paragraph}}"
+      }
+    },
+    {
+      "name": "SetFistrumLanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetFistrumLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "fistrumPar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fistrumPar{${1:num}}"
+      }
+    },
+    {
+      "name": "fistrumRestoreParList",
+      "unusual": true
+    },
+    {
+      "name": "fistrumRestoreSentenceList",
+      "unusual": true
+    },
+    {
+      "name": "fistrumRestoreAll",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fistrum#c,\\setfistrum#c": [
+      "nopar",
+      "text=${1|fistrum-la,fistrum-es|}",
+      "language=${1:language}",
+      "auto-lang",
+      "default-range=${1:num1-num2}"
+    ],
+    "\\setfistrum#c": [
+      "par-before=${1:tokens}",
+      "par-begin=${1:tokens}",
+      "par-sep=${1:tokens}",
+      "par-end=${1:tokens}",
+      "par-after=${1:tokens}",
+      "sentence-before=${1:tokens}",
+      "sentence-begin=${1:tokens}",
+      "sentence-sep=${1:tokens}",
+      "sentence-end=${1:tokens}",
+      "sentence-after=${1:tokens}",
+      "par-before*=${1:tokens}",
+      "par-begin*=${1:tokens}",
+      "par-sep*=${1:tokens}",
+      "par-end*=${1:tokens}",
+      "par-after*=${1:tokens}",
+      "sentence-before*=${1:tokens}",
+      "sentence-begin*=${1:tokens}",
+      "sentence-sep*=${1:tokens}",
+      "sentence-end*=${1:tokens}",
+      "sentence-after*=${1:tokens}"
+    ]
+  },
+  "args": [
+    "\\usepackage/fistrum#c,\\setfistrum#c"
+  ]
+}

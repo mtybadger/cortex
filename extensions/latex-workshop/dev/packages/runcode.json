@@ -1,0 +1,1258 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "morewrites"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarymany"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "textgreek"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "minted"
+    },
+    {
+      "name": "listings",
+      "if": "listings"
+    }
+  ],
+  "macros": [
+    {
+      "name": "runExtCode",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}"
+      }
+    },
+    {
+      "name": "runExtCode",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "runExtCode{${1:program}}{${2:source file%file}}{${3:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "showCode",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showCode{${1:lang}}{${2:source file%file}}"
+      }
+    },
+    {
+      "name": "showCode",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "showCode{${1:lang}}{${2:source file%file}}[${3:first line}]"
+      }
+    },
+    {
+      "name": "showCode",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "showCode{${1:lang}}{${2:source file%file}}[${3:first line}][${4:last line}]"
+      }
+    },
+    {
+      "name": "includeOutput",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeOutput{${1:output file%file}}"
+      }
+    },
+    {
+      "name": "includeOutput",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "includeOutput{${1:output file%file}}[${2:type%keyvals}]",
+        "keys": [
+          "\\includeOutput"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "inln",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "inln{${1:program}}{${2:code%definition}}"
+      }
+    },
+    {
+      "name": "inln",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "inln{${1:program}}{${2:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inln",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "inln{${1:program}}{${2:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inln",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "inln{${1:program}}{${2:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "showChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showChunk{${1:language}}{${2:source file%file}}"
+      }
+    },
+    {
+      "name": "showChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}]"
+      }
+    },
+    {
+      "name": "showChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "showChunk{${1:language}}{${2:source file%file}}[${3:chunk id}][${4:begin mark}][${5:end mark}]"
+      }
+    },
+    {
+      "name": "runCodeIncOut",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runCodeIncOut{${1:program}}{${2:source file%file}}"
+      }
+    },
+    {
+      "name": "runCodeIncOut",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runCodeIncOut",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runCodeIncOut",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runCodeIncOut{${1:program}}{${2:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runCodeIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runR{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runR{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}",
+        "snippet": "runRIncOut{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]",
+        "keys": [
+          "\\runRIncOut"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[][][]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runRIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlnR{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnR{${1:code%definition}}[${2:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnR{${1:code%definition}}[${2:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inlnR{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[][]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[][][]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runJulia",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runJulia{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runJulia",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runJulia{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runJulia",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runJulia",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runJulia[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "{}",
+        "snippet": "runJuliaIncOut{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "runJuliaIncOut{${1:source file%file}}[${2:run|cache}]"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "runJuliaIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]",
+        "keys": [
+          "\\runJuliaIncOut"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "runJuliaIncOut[${2:server spec}]{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runJuliaIncOut",
+      "arg": {
+        "format": "[]{}[][][]",
+        "snippet": "runJuliaIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runJuliaIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlnJulia{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnJulia{${1:code%definition}}[${2:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnJulia{${1:code%definition}}[${2:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inlnJulia{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlnJulia[${2:server spec}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnJulia[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnJulia",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "inlnJulia[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runJuliaChunk{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runJuliaChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "[]{}{}[][]",
+        "snippet": "runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+      }
+    },
+    {
+      "name": "runJuliaChunk",
+      "arg": {
+        "format": "[]{}{}[][][]",
+        "snippet": "runJuliaChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runMatlab",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runMatlab{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runMatlab",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runMatlab{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlab",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runMatlab",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runMatlab[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "{}",
+        "snippet": "runMatlabIncOut{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "runMatlabIncOut{${1:source file%file}}[${2:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "runMatlabIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]",
+        "keys": [
+          "\\runMatlabIncOut"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "runMatlabIncOut[${2:server spec}]{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runMatlabIncOut",
+      "arg": {
+        "format": "[]{}[][][]",
+        "snippet": "runMatlabIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runMatlabIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlnMatlab{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnMatlab{${1:code%definition}}[${2:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnMatlab{${1:code%definition}}[${2:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inlnMatlab{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlnMatlab[${2:server spec}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnMatlab",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "inlnMatlab[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runMatlabChunk{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runMatlabChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "[]{}{}[][]",
+        "snippet": "runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+      }
+    },
+    {
+      "name": "runMatlabChunk",
+      "arg": {
+        "format": "[]{}{}[][][]",
+        "snippet": "runMatlabChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runR{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runR{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runR",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runR[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}",
+        "snippet": "runRIncOut{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "runRIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]",
+        "keys": [
+          "\\runRIncOut"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runRIncOut",
+      "arg": {
+        "format": "[]{}[][][]",
+        "snippet": "runRIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runRIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlnR{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnR{${1:code%definition}}[${2:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnR{${1:code%definition}}[${2:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inlnR{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnR",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "inlnR[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runRChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[][]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+      }
+    },
+    {
+      "name": "runRChunk",
+      "arg": {
+        "format": "[]{}{}[][][]",
+        "snippet": "runRChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runPython",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runPython{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runPython",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runPython{${1:source file%file}}{${2:output file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runPython",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "runPython",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runPython[${3:server spec}]{${1:source file%file}}{${2:output file%file}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "{}",
+        "snippet": "runPythonIncOut{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "runPythonIncOut{${1:source file%file}}[${2:run|cache}]"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}]"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "runPythonIncOut{${1:source file%file}}[${2:run|cache}][${3:output file%file}][${4:type%keyvals}]",
+        "keys": [
+          "\\runPythonIncOut"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "runPythonIncOut[${2:server spec}]{${1:source file%file}}"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runPythonIncOut",
+      "arg": {
+        "format": "[]{}[][][]",
+        "snippet": "runPythonIncOut[${2:server spec}]{${1:source file%file}}[${3:run|cache}][${4:output file%file}][${5:type%keyvals}]",
+        "keys": [
+          "\\runPythonIncOut"
+        ],
+        "keyPos": 4
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlnPython{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnPython{${1:code%definition}}[${2:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inlnPython{${1:code%definition}}[${2:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inlnPython{${1:code%definition}}[${2:output file%file}][${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "inlnPython[${2:server spec}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnPython[${2:server spec}]{${1:code%definition}}[${3:vbox|inline}]"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}]"
+      }
+    },
+    {
+      "name": "inlnPython",
+      "arg": {
+        "format": "[]{}[][]",
+        "snippet": "inlnPython[${2:server spec}]{${1:code%definition}}[${3:output file%file}][${4:vbox|inline}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runPythonChunk{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "{}{}[][]",
+        "snippet": "runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|cache}][${4:output file%file}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "{}{}[][][]",
+        "snippet": "runPythonChunk{${1:source file%file}}{${2:chunk id}}[${3:run|${6:cache}][${4:output file%file}][${5:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "[]{}{}[][]",
+        "snippet": "runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|cache}][${5:output file%file}]"
+      }
+    },
+    {
+      "name": "runPythonChunk",
+      "arg": {
+        "format": "[]{}{}[][][]",
+        "snippet": "runPythonChunk[${3:server spec}]{${1:source file%file}}{${2:chunk id}}[${4:run|${7:cache}][${5:output file%file}][${6:vbox}|inline}]"
+      }
+    },
+    {
+      "name": "runPythonBatch",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "runPythonBatch{${1:code%definition}}{${2:output file%file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/runcode#c": [
+      "run",
+      "cache",
+      "nominted",
+      "minted",
+      "listings",
+      "fvextra",
+      "reducedspace",
+      "nohup",
+      "R",
+      "julia",
+      "matlab",
+      "python",
+      "stopserver"
+    ],
+    "\\includeOutput": [
+      "vbox",
+      "tex",
+      "inline"
+    ],
+    "\\runCodeIncOut": [
+      "vbox",
+      "tex",
+      "inline"
+    ],
+    "\\runRIncOut": [
+      "vbox",
+      "tex",
+      "inline",
+      "vbox",
+      "tex",
+      "inline"
+    ],
+    "\\runJuliaIncOut": [
+      "vbox",
+      "tex",
+      "inline"
+    ],
+    "\\runMatlabIncOut": [
+      "vbox",
+      "tex",
+      "inline"
+    ],
+    "\\runPythonIncOut": [
+      "vbox",
+      "tex",
+      "inline"
+    ]
+  },
+  "args": [
+    "\\usepackage/runcode#c"
+  ]
+}

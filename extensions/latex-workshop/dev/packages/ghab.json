@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "biditools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "darghab",
+      "arg": {
+        "format": "{}",
+        "snippet": "darghab{${1:text}}"
+      }
+    },
+    {
+      "name": "darghab",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "darghab[${2:width}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

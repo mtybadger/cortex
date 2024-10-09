@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/penlight#c": [
+      "pl",
+      "stringx",
+      "format",
+      "func",
+      "import"
+    ]
+  },
+  "args": [
+    "\\usepackage/penlight#c"
+  ]
+}

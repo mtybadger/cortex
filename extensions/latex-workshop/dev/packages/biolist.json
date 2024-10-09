@@ -1,0 +1,42 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "SEM",
+      "arg": {
+        "format": "{}",
+        "snippet": "SEM{${1:name}}"
+      }
+    },
+    {
+      "name": "SEM*",
+      "arg": {
+        "format": "{}",
+        "snippet": "SEM*{${1:name}}"
+      }
+    },
+    {
+      "name": "DOUBLE",
+      "unusual": true
+    },
+    {
+      "name": "VDVID",
+      "unusual": true
+    },
+    {
+      "name": "theSEMEYSTVO",
+      "unusual": true
+    },
+    {
+      "name": "theSEMVID",
+      "unusual": true
+    },
+    {
+      "name": "theVID",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

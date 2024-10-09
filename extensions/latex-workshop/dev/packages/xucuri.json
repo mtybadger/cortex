@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "xucr"
+    },
+    {
+      "name": "fxucr",
+      "unusual": true
+    },
+    {
+      "name": "pxucr",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "xucr"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "progressbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "progressbar{${1:number}}"
+      }
+    },
+    {
+      "name": "progressbar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "progressbar[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\progressbar,\\progressbarchange"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "progressbarchange",
+      "arg": {
+        "format": "{}",
+        "snippet": "progressbarchange{${1:options%keyvals}}",
+        "keys": [
+          "\\progressbar,\\progressbarchange"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\progressbar,\\progressbarchange": [
+      "heightr=",
+      "heighta=",
+      "roundnessr=",
+      "roundnessa=",
+      "width=",
+      "borderwidth=",
+      "subdivisions=",
+      "tickswidth=",
+      "ticksheight=",
+      "linecolor=",
+      "tickscolor=",
+      "emptycolor=",
+      "filledcolor="
+    ]
+  },
+  "args": []
+}

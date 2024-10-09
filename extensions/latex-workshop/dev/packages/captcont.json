@@ -1,0 +1,59 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "caption*",
+      "arg": {
+        "format": "{}",
+        "snippet": "caption*{${1:text}}"
+      }
+    },
+    {
+      "name": "caption*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "caption*[${2:short text%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "captcont*",
+      "arg": {
+        "format": "{}",
+        "snippet": "captcont*{${1:text}}"
+      }
+    },
+    {
+      "name": "captcont*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "captcont*[${2:short text%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "captcont",
+      "arg": {
+        "format": "{}",
+        "snippet": "captcont{${1:text}}"
+      }
+    },
+    {
+      "name": "captcont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "captcont[${2:short text%text}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/captcont#c": [
+      "figbotcap",
+      "figtopcap",
+      "tabbotcap",
+      "tabtopcap"
+    ]
+  },
+  "args": [
+    "\\usepackage/captcont#c"
+  ]
+}

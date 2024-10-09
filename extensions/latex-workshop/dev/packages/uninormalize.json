@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "luatexbase"
+    },
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/uninormalize#c": [
+      "nodes",
+      "buffer",
+      "debug"
+    ]
+  },
+  "args": [
+    "\\usepackage/uninormalize#c"
+  ]
+}

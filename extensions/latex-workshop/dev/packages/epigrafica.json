@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "pxfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "trademark"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

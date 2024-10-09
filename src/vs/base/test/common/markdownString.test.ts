@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { MarkdownString } from '../../common/htmlContent.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { MarkdownString } from 'vs/base/common/htmlContent';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('MarkdownString', () => {
 

@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "Row"
+    },
+    {
+      "name": "Row",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{Row},\\begin{row}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Cell"
+    },
+    {
+      "name": "row",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:num of cols}}{${2:num of cells}}"
+      }
+    },
+    {
+      "name": "row",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:options%keyvals}]{${1:num of cols}}{${2:num of cells}}"
+      }
+    },
+    {
+      "name": "cell",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:num of cols}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{Row},\\begin{row}": [
+      "cellsep="
+    ]
+  },
+  "args": []
+}

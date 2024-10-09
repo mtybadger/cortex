@@ -1,0 +1,72 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "librecaslon"
+    },
+    {
+      "name": "librecaslonLF"
+    },
+    {
+      "name": "librecaslonOsF"
+    },
+    {
+      "name": "librecaslonTLF"
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "textin",
+      "arg": {
+        "format": "{}",
+        "snippet": "textin{${1:text}}"
+      }
+    },
+    {
+      "name": "infigures"
+    },
+    {
+      "name": "useosf",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/librecaslon#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "lf",
+      "oldstyle",
+      "osf"
+    ]
+  },
+  "args": [
+    "\\usepackage/librecaslon#c"
+  ]
+}

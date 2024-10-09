@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "xltxtra"
+    },
+    {
+      "name": "xunicode"
+    },
+    {
+      "name": "misccorr",
+      "if": "mis"
+    }
+  ],
+  "macros": [
+    {
+      "name": "flqq"
+    },
+    {
+      "name": "frqq"
+    },
+    {
+      "name": "glqq"
+    },
+    {
+      "name": "grqq"
+    },
+    {
+      "name": "cyrdash"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xecyr#c": [
+      "noext",
+      "mis"
+    ]
+  },
+  "args": [
+    "\\usepackage/xecyr#c"
+  ]
+}

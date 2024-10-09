@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "texnames"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifundefined",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ifundefined{${1:csname}}"
+      }
+    },
+    {
+      "name": "CMR",
+      "unusual": true
+    },
+    {
+      "name": "CWEB",
+      "unusual": true
+    },
+    {
+      "name": "emdash",
+      "unusual": true
+    },
+    {
+      "name": "FWEB",
+      "unusual": true
+    },
+    {
+      "name": "ndash",
+      "unusual": true
+    },
+    {
+      "name": "PLOT",
+      "unusual": true
+    },
+    {
+      "name": "POSTSCRIPT",
+      "unusual": true
+    },
+    {
+      "name": "PS",
+      "unusual": true
+    },
+    {
+      "name": "tubissue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tubissue{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "TUB",
+      "unusual": true
+    },
+    {
+      "name": "WEB",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

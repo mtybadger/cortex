@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:short name}]{${1:name}}"
+      }
+    },
+    {
+      "name": "emails",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/amsaddr#c": [
+      "foot"
+    ]
+  },
+  "args": [
+    "\\usepackage/amsaddr#c"
+  ]
+}

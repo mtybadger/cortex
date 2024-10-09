@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathserif",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathserif{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/sansmathfonts#c": [
+      "notmath",
+      "onlytext",
+      "onlymath",
+      "nottext",
+      "I"
+    ]
+  },
+  "args": [
+    "\\usepackage/sansmathfonts#c"
+  ]
+}

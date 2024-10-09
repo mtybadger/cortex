@@ -1,0 +1,457 @@
+{
+  "deps": [
+    {
+      "name": "needspace"
+    },
+    {
+      "name": "shortvrb"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:arg}}"
+      }
+    },
+    {
+      "name": "aarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "aarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "sarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "sarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg{${1:package}}"
+      }
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:class}}"
+      }
+    },
+    {
+      "name": "lib",
+      "arg": {
+        "format": "{}",
+        "snippet": "lib{${1:library}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "opt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt{${1:option}}"
+      }
+    },
+    {
+      "name": "optpar",
+      "arg": {
+        "format": "{}",
+        "snippet": "optpar{${1:option}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:file}}"
+      }
+    },
+    {
+      "name": "pkgstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pkgstyle{${1:text}}"
+      }
+    },
+    {
+      "name": "clsstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "clsstyle{${1:text}}"
+      }
+    },
+    {
+      "name": "libstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "libstyle{${1:text}}"
+      }
+    },
+    {
+      "name": "envstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "envstyle{${1:text}}"
+      }
+    },
+    {
+      "name": "optstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "optstyle{${1:text}}"
+      }
+    },
+    {
+      "name": "filestyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "filestyle{${1:text}}"
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:cmd}}"
+      }
+    },
+    {
+      "name": "Key",
+      "arg": {
+        "format": "{}",
+        "snippet": "Key{${1:keyname}}"
+      }
+    },
+    {
+      "name": "macrodescstyle",
+      "unusual": true
+    },
+    {
+      "name": "keydescstyle",
+      "unusual": true
+    },
+    {
+      "name": "macroargsstyle",
+      "unusual": true
+    },
+    {
+      "name": "envcodestyle",
+      "unusual": true
+    },
+    {
+      "name": "verbstyle",
+      "unusual": true
+    },
+    {
+      "name": "metastyle",
+      "unusual": true
+    },
+    {
+      "name": "margstyle",
+      "unusual": true
+    },
+    {
+      "name": "Optional",
+      "unusual": true
+    },
+    {
+      "name": "optional",
+      "unusual": true
+    },
+    {
+      "name": "optionalstyle",
+      "unusual": true
+    },
+    {
+      "name": "optionalon",
+      "unusual": true
+    },
+    {
+      "name": "optionaloff",
+      "unusual": true
+    },
+    {
+      "name": "oargstyle",
+      "unusual": true
+    },
+    {
+      "name": "pargstyle",
+      "unusual": true
+    },
+    {
+      "name": "aargstyle",
+      "unusual": true
+    },
+    {
+      "name": "sargstyle",
+      "unusual": true
+    },
+    {
+      "name": "descindent",
+      "unusual": true
+    },
+    {
+      "name": "beforedescskip",
+      "unusual": true
+    },
+    {
+      "name": "afterdescskip",
+      "unusual": true
+    },
+    {
+      "name": "descsep",
+      "unusual": true
+    },
+    {
+      "name": "AlsoMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "AlsoMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "DescribeMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "DescribeScript",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeScript{${1:script}}"
+      }
+    },
+    {
+      "name": "DescribeKey",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeKey{${1:keyname}}"
+      }
+    },
+    {
+      "name": "MakeShortMacroArgs",
+      "arg": {
+        "format": "{}",
+        "snippet": "MakeShortMacroArgs{${1:\\char}}"
+      }
+    },
+    {
+      "name": "DeleteShortMacroArgs",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeleteShortMacroArgs{${1:\\char}}"
+      }
+    },
+    {
+      "name": "Macro",
+      "arg": {
+        "format": "{}",
+        "snippet": "Macro{${1:macro}}"
+      }
+    },
+    {
+      "name": "MacroArgs",
+      "arg": {
+        "format": "{}",
+        "snippet": "MacroArgs{${1:args}}"
+      }
+    },
+    {
+      "name": "DescribeMacrosTabcolsep",
+      "unusual": true
+    },
+    {
+      "name": "DescribeLength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DescribeLength{${1:length macro}}{${2:default value}}"
+      }
+    },
+    {
+      "name": "DescribeEnv",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeEnv{${1:envname}}"
+      }
+    },
+    {
+      "name": "descbox",
+      "unusual": true
+    },
+    {
+      "name": "PrintMacroName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintMacroName{${1:macro}}"
+      }
+    },
+    {
+      "name": "PrintKeyName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintKeyName{${1:keyname}}"
+      }
+    },
+    {
+      "name": "PrintLengthName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintLengthName{${1:length macro}}"
+      }
+    },
+    {
+      "name": "PrintEnvName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PrintEnvName{${1:\\begin}}{${2:envname}}"
+      }
+    },
+    {
+      "name": "PrintEnvName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PrintEnvName{${1:\\end}}{${2:envname}}"
+      }
+    },
+    {
+      "name": "PrintMacros",
+      "unusual": true
+    },
+    {
+      "name": "PrintLength",
+      "unusual": true
+    },
+    {
+      "name": "PrintEnv",
+      "unusual": true
+    },
+    {
+      "name": "PrintSubEnv",
+      "unusual": true
+    },
+    {
+      "name": "bslash"
+    },
+    {
+      "name": "percent",
+      "detail": "%",
+      "doc": "Percent sign"
+    },
+    {
+      "name": "braceleft"
+    },
+    {
+      "name": "braceright"
+    },
+    {
+      "name": "codeline",
+      "arg": {
+        "format": "{}",
+        "snippet": "codeline{${1:arg}}"
+      }
+    },
+    {
+      "name": "codelinebefore",
+      "unusual": true
+    },
+    {
+      "name": "codelineafter",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "DescribeMacros"
+    },
+    {
+      "name": "DescribeKeys"
+    },
+    {
+      "name": "DescribeMacrosTab",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "DescribeEnv",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:envname}}"
+      }
+    },
+    {
+      "name": "codequote"
+    },
+    {
+      "name": "macroquote"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "bibleref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bibleref-xidx": [
+      "verses",
+      "noverses",
+      "chapters",
+      "nochapters",
+      "default",
+      "jerusalem",
+      "anglosaxon",
+      "JEH",
+      "MHRA",
+      "NTG",
+      "MLA",
+      "chicago",
+      "text"
+    ]
+  },
+  "args": [
+    "\\usepackage/bibleref-xidx"
+  ]
+}

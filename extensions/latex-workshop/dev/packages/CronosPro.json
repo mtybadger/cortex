@@ -1,0 +1,54 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "CronosPro-FontDef"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "smallfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "smallfrac{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "slantfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "slantfrac{${1:numerator}}{${2:denominator}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CronosPro#c": [
+      "scale=${1:factor}",
+      "slides",
+      "noopticals",
+      "opticals",
+      "smallfamily",
+      "medfamily",
+      "normalsize",
+      "nonormalsize",
+      "textosf",
+      "textlf",
+      "osf",
+      "lf",
+      "footnotefigures",
+      "loosequotes"
+    ]
+  },
+  "args": [
+    "\\usepackage/CronosPro#c"
+  ]
+}

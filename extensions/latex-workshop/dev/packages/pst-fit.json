@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-tools"
+    },
+    {
+      "name": "pstricks-add"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

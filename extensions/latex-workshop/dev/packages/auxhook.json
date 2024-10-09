@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AddLineBeginMainAux",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddLineBeginMainAux{${1:line}}"
+      }
+    },
+    {
+      "name": "AddLineBeginPartAux",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddLineBeginPartAux{${1:line}}"
+      }
+    },
+    {
+      "name": "AddLineBeginAux",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddLineBeginAux{${1:line}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

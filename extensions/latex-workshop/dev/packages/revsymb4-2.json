@@ -1,0 +1,121 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "agt"
+    },
+    {
+      "name": "alt"
+    },
+    {
+      "name": "altprecsim"
+    },
+    {
+      "name": "altsuccsim"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Biglb"
+    },
+    {
+      "name": "biglb"
+    },
+    {
+      "name": "Bigrb"
+    },
+    {
+      "name": "bigrb"
+    },
+    {
+      "name": "dddot"
+    },
+    {
+      "name": "gtrsim",
+      "detail": "≳ (\"amssymb\" command)",
+      "doc": "\\apprge (wasysym), \\greatertilde (wrisym), greater, similar"
+    },
+    {
+      "name": "lambdabar"
+    },
+    {
+      "name": "lesssim",
+      "detail": "≲ (\"amssymb\" command)",
+      "doc": "\\apprle (wasysym), \\lesstilde (wrisym), less, similar"
+    },
+    {
+      "name": "loarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "loarrow{${1:arg}}"
+      }
+    },
+    {
+      "name": "mathfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathfrak{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "openone"
+    },
+    {
+      "name": "overstar",
+      "arg": {
+        "format": "{}",
+        "snippet": "overstar{${1:arg}}"
+      }
+    },
+    {
+      "name": "precsim",
+      "detail": "≾ (\"amssymb\" command)",
+      "doc": "\\precedestilde (wrisym), precedes, similar"
+    },
+    {
+      "name": "roarrow",
+      "arg": {
+        "format": "{}",
+        "snippet": "roarrow{${1:arg}}"
+      }
+    },
+    {
+      "name": "succsim",
+      "detail": "≿ (\"amssymb\" command)",
+      "doc": "\\succeedstilde (wrisym), succeeds, similar"
+    },
+    {
+      "name": "tensor",
+      "arg": {
+        "format": "{}",
+        "snippet": "tensor{${1:arg}}"
+      }
+    },
+    {
+      "name": "triangleq",
+      "detail": "≜ (\"amssymb\" command)",
+      "doc": "\\varsdef (oz), triangle, equals"
+    },
+    {
+      "name": "vereq",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "vereq{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

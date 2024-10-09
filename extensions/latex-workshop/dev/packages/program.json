@@ -1,0 +1,1056 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "A",
+      "arg": {
+        "format": "{}",
+        "snippet": "A{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "ABORT"
+    },
+    {
+      "name": "ACTIONEQ"
+    },
+    {
+      "name": "ACTIONS"
+    },
+    {
+      "name": "aeq",
+      "unusual": true
+    },
+    {
+      "name": "AND"
+    },
+    {
+      "name": "AR"
+    },
+    {
+      "name": "ARRAY"
+    },
+    {
+      "name": "ATEACH"
+    },
+    {
+      "name": "AWAIT"
+    },
+    {
+      "name": "B",
+      "arg": {
+        "format": "{}",
+        "snippet": "B{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "BAR"
+    },
+    {
+      "name": "BarDonefalse",
+      "unusual": true
+    },
+    {
+      "name": "BarDonetrue",
+      "unusual": true
+    },
+    {
+      "name": "barsymbol",
+      "unusual": true
+    },
+    {
+      "name": "Bbb",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Bbb{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "bdiv"
+    },
+    {
+      "name": "BEGIN"
+    },
+    {
+      "name": "bfvariables"
+    },
+    {
+      "name": "bigcaps"
+    },
+    {
+      "name": "bigseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "bigseq{${1:sequence}}"
+      }
+    },
+    {
+      "name": "bigset",
+      "arg": {
+        "format": "{}",
+        "snippet": "bigset{${1:left|right}}"
+      }
+    },
+    {
+      "name": "bigsqcap",
+      "detail": "⨅ (\"txfonts\" command)",
+      "doc": "N-ary square intersection operator"
+    },
+    {
+      "name": "bigsub",
+      "arg": {
+        "format": "[]",
+        "snippet": "bigsub[${1:arg1/arg2|arg3}]"
+      }
+    },
+    {
+      "name": "bigsubseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "bigsubseq{${1:sequence}}"
+      }
+    },
+    {
+      "name": "bij"
+    },
+    {
+      "name": "bitand"
+    },
+    {
+      "name": "bitexor"
+    },
+    {
+      "name": "bitnot"
+    },
+    {
+      "name": "bitor"
+    },
+    {
+      "name": "BODY"
+    },
+    {
+      "name": "boldsub",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "boldsub{${1:letter}}{${2:subscript%formula}}"
+      }
+    },
+    {
+      "name": "boldsubm",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "boldsubm{${1:letter}}{${2:subscript%formula}}"
+      }
+    },
+    {
+      "name": "boldsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "boldsymbol{${1:arg}}"
+      }
+    },
+    {
+      "name": "boldvar",
+      "arg": {
+        "format": "{}",
+        "snippet": "boldvar{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "br",
+      "unusual": true
+    },
+    {
+      "name": "bstar"
+    },
+    {
+      "name": "C",
+      "arg": {
+        "format": "{}",
+        "snippet": "C{${1:text}}"
+      }
+    },
+    {
+      "name": "CALL"
+    },
+    {
+      "name": "CASES",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CASES{${1:arg}}"
+      }
+    },
+    {
+      "name": "choice"
+    },
+    {
+      "name": "closexp",
+      "unusual": true
+    },
+    {
+      "name": "COMMENT",
+      "arg": {
+        "format": "{}",
+        "snippet": "COMMENT{${1:text}}"
+      }
+    },
+    {
+      "name": "concat"
+    },
+    {
+      "name": "d",
+      "arg": {
+        "format": "{}",
+        "snippet": "d{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "dashes",
+      "unusual": true
+    },
+    {
+      "name": "ddiv"
+    },
+    {
+      "name": "deq"
+    },
+    {
+      "name": "dgreat"
+    },
+    {
+      "name": "dgreq"
+    },
+    {
+      "name": "DIV"
+    },
+    {
+      "name": "dleq"
+    },
+    {
+      "name": "dless"
+    },
+    {
+      "name": "dminus"
+    },
+    {
+      "name": "dmult"
+    },
+    {
+      "name": "dneq"
+    },
+    {
+      "name": "DO"
+    },
+    {
+      "name": "dplus"
+    },
+    {
+      "name": "e",
+      "arg": {
+        "format": "{}",
+        "snippet": "e{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "edf"
+    },
+    {
+      "name": "EDIT"
+    },
+    {
+      "name": "EDITPARENT"
+    },
+    {
+      "name": "ELSE"
+    },
+    {
+      "name": "ELSF"
+    },
+    {
+      "name": "ELSIF"
+    },
+    {
+      "name": "END"
+    },
+    {
+      "name": "ENDACTION"
+    },
+    {
+      "name": "ENDACTIONS"
+    },
+    {
+      "name": "ENDCALL"
+    },
+    {
+      "name": "ENDEDIT"
+    },
+    {
+      "name": "ENDEXP"
+    },
+    {
+      "name": "ENDFILL"
+    },
+    {
+      "name": "ENDFUNCT"
+    },
+    {
+      "name": "ENDJOIN"
+    },
+    {
+      "name": "ENDMATCH"
+    },
+    {
+      "name": "ENDPROC"
+    },
+    {
+      "name": "ENDREP"
+    },
+    {
+      "name": "ENDVAR"
+    },
+    {
+      "name": "EOR"
+    },
+    {
+      "name": "EQ"
+    },
+    {
+      "name": "eqnarrayqed",
+      "unusual": true
+    },
+    {
+      "name": "eqnqed",
+      "unusual": true
+    },
+    {
+      "name": "EQspace",
+      "unusual": true
+    },
+    {
+      "name": "EQsymbol",
+      "unusual": true
+    },
+    {
+      "name": "EQT"
+    },
+    {
+      "name": "EXIT"
+    },
+    {
+      "name": "exor"
+    },
+    {
+      "name": "EXP"
+    },
+    {
+      "name": "f",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "f{${1:arg}}"
+      }
+    },
+    {
+      "name": "false"
+    },
+    {
+      "name": "fdiv"
+    },
+    {
+      "name": "feq"
+    },
+    {
+      "name": "ffun"
+    },
+    {
+      "name": "fgreat"
+    },
+    {
+      "name": "fgreq"
+    },
+    {
+      "name": "FI"
+    },
+    {
+      "name": "FILL"
+    },
+    {
+      "name": "finj"
+    },
+    {
+      "name": "fleq"
+    },
+    {
+      "name": "fless"
+    },
+    {
+      "name": "fminus"
+    },
+    {
+      "name": "fmult"
+    },
+    {
+      "name": "fneq"
+    },
+    {
+      "name": "FOENO"
+    },
+    {
+      "name": "FOR"
+    },
+    {
+      "name": "FOREACH"
+    },
+    {
+      "name": "fplus"
+    },
+    {
+      "name": "fullstop"
+    },
+    {
+      "name": "FUNCT"
+    },
+    {
+      "name": "grefstepcounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "grefstepcounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "gt"
+    },
+    {
+      "name": "IF"
+    },
+    {
+      "name": "ifBarDone",
+      "unusual": true
+    },
+    {
+      "name": "IFMATCH"
+    },
+    {
+      "name": "ifMathsModeStrings",
+      "unusual": true
+    },
+    {
+      "name": "ifMmode",
+      "unusual": true
+    },
+    {
+      "name": "ifNumberPrograms",
+      "unusual": true
+    },
+    {
+      "name": "ifTHEN",
+      "unusual": true
+    },
+    {
+      "name": "ifVBarOutsideProgram",
+      "unusual": true
+    },
+    {
+      "name": "ifwasinmmode",
+      "unusual": true
+    },
+    {
+      "name": "im"
+    },
+    {
+      "name": "implies"
+    },
+    {
+      "name": "intersect"
+    },
+    {
+      "name": "JOIN"
+    },
+    {
+      "name": "join"
+    },
+    {
+      "name": "keyword",
+      "arg": {
+        "format": "{}",
+        "snippet": "keyword{${1:word}}"
+      }
+    },
+    {
+      "name": "lar"
+    },
+    {
+      "name": "last"
+    },
+    {
+      "name": "ldiv"
+    },
+    {
+      "name": "LE"
+    },
+    {
+      "name": "lequ"
+    },
+    {
+      "name": "lgreat"
+    },
+    {
+      "name": "lgreq"
+    },
+    {
+      "name": "LIKE"
+    },
+    {
+      "name": "LLAC"
+    },
+    {
+      "name": "llapm",
+      "arg": {
+        "format": "{}",
+        "snippet": "llapm{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "llapr",
+      "arg": {
+        "format": "{}",
+        "snippet": "llapr{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "lleq"
+    },
+    {
+      "name": "lless"
+    },
+    {
+      "name": "lminus"
+    },
+    {
+      "name": "lmult"
+    },
+    {
+      "name": "lneq",
+      "detail": "⪇ (\"amssymb\" command)",
+      "doc": "Less-than and single-line not equal to"
+    },
+    {
+      "name": "lowundertext",
+      "arg": {
+        "format": "{}",
+        "snippet": "lowundertext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "lplus"
+    },
+    {
+      "name": "lt"
+    },
+    {
+      "name": "MathsModeStringsfalse",
+      "unusual": true
+    },
+    {
+      "name": "MathsModeStringstrue",
+      "unusual": true
+    },
+    {
+      "name": "Mmodefalse",
+      "unusual": true
+    },
+    {
+      "name": "Mmodetrue",
+      "unusual": true
+    },
+    {
+      "name": "MOD"
+    },
+    {
+      "name": "modbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "modbar{${1:arg}}"
+      }
+    },
+    {
+      "name": "myroman",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "myroman{${1:arg}}"
+      }
+    },
+    {
+      "name": "NIOJ"
+    },
+    {
+      "name": "normalbaroutside"
+    },
+    {
+      "name": "NOT"
+    },
+    {
+      "name": "NULL"
+    },
+    {
+      "name": "nullset"
+    },
+    {
+      "name": "NumberProgramsfalse"
+    },
+    {
+      "name": "NumberProgramstrue"
+    },
+    {
+      "name": "OD"
+    },
+    {
+      "name": "ONEOF"
+    },
+    {
+      "name": "openexp",
+      "unusual": true
+    },
+    {
+      "name": "operatorname",
+      "arg": {
+        "format": "{}",
+        "snippet": "operatorname{${1:name}}"
+      }
+    },
+    {
+      "name": "OR"
+    },
+    {
+      "name": "origbar",
+      "unusual": true
+    },
+    {
+      "name": "overset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "overset{${1:superscript}}{${2:argument}}"
+      }
+    },
+    {
+      "name": "p",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "p{${1:arg}}"
+      }
+    },
+    {
+      "name": "P",
+      "arg": {
+        "format": "{}",
+        "snippet": "P{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "pBbb",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pBbb{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "pfun"
+    },
+    {
+      "name": "pick"
+    },
+    {
+      "name": "pinj"
+    },
+    {
+      "name": "pop"
+    },
+    {
+      "name": "powerset"
+    },
+    {
+      "name": "powersetbox",
+      "unusual": true
+    },
+    {
+      "name": "powersetsymbol",
+      "unusual": true
+    },
+    {
+      "name": "PROC"
+    },
+    {
+      "name": "progbox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "progbox{${1:content}}"
+      }
+    },
+    {
+      "name": "prognumstyle",
+      "unusual": true
+    },
+    {
+      "name": "programnewpage",
+      "unusual": true
+    },
+    {
+      "name": "programsize",
+      "unusual": true
+    },
+    {
+      "name": "proof"
+    },
+    {
+      "name": "psur"
+    },
+    {
+      "name": "push"
+    },
+    {
+      "name": "Q",
+      "arg": {
+        "format": "{}",
+        "snippet": "Q{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "QE"
+    },
+    {
+      "name": "qed"
+    },
+    {
+      "name": "qedsymbol",
+      "unusual": true
+    },
+    {
+      "name": "qtab"
+    },
+    {
+      "name": "R",
+      "arg": {
+        "format": "{}",
+        "snippet": "R{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "rar"
+    },
+    {
+      "name": "rcomment",
+      "arg": {
+        "format": "{}",
+        "snippet": "rcomment{${1:text}}"
+      }
+    },
+    {
+      "name": "rdots"
+    },
+    {
+      "name": "rel"
+    },
+    {
+      "name": "REP"
+    },
+    {
+      "name": "restoretab"
+    },
+    {
+      "name": "rmtiny",
+      "unusual": true
+    },
+    {
+      "name": "S",
+      "arg": {
+        "format": "{}",
+        "snippet": "S{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "safeat",
+      "unusual": true
+    },
+    {
+      "name": "savetab"
+    },
+    {
+      "name": "sbs"
+    },
+    {
+      "name": "scriptvar",
+      "arg": {
+        "format": "||",
+        "snippet": "scriptvar|${1:text}|"
+      }
+    },
+    {
+      "name": "scriptvariablefont",
+      "unusual": true
+    },
+    {
+      "name": "seq",
+      "arg": {
+        "format": "{}",
+        "snippet": "seq{${1:sequence}}"
+      }
+    },
+    {
+      "name": "set",
+      "arg": {
+        "format": "{}",
+        "snippet": "set{${1:left|right}}"
+      }
+    },
+    {
+      "name": "sfvariables"
+    },
+    {
+      "name": "SKIP"
+    },
+    {
+      "name": "SLE"
+    },
+    {
+      "name": "snugbox",
+      "unusual": true
+    },
+    {
+      "name": "STEP"
+    },
+    {
+      "name": "sub",
+      "arg": {
+        "format": "[]",
+        "snippet": "sub[${1:arg1/arg2|arg3}]"
+      }
+    },
+    {
+      "name": "subseq",
+      "arg": {
+        "format": "{}",
+        "snippet": "subseq{${1:sequence}}"
+      }
+    },
+    {
+      "name": "succeqstar"
+    },
+    {
+      "name": "succstar"
+    },
+    {
+      "name": "T",
+      "arg": {
+        "format": "{}",
+        "snippet": "T{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "t",
+      "arg": {
+        "format": "{}",
+        "snippet": "t{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "tab"
+    },
+    {
+      "name": "textqed",
+      "unusual": true
+    },
+    {
+      "name": "textvcenter",
+      "unusual": true
+    },
+    {
+      "name": "tfun"
+    },
+    {
+      "name": "THEN"
+    },
+    {
+      "name": "THENfalse",
+      "unusual": true
+    },
+    {
+      "name": "THENtrue",
+      "unusual": true
+    },
+    {
+      "name": "theprogramline",
+      "unusual": true
+    },
+    {
+      "name": "tinj"
+    },
+    {
+      "name": "tl",
+      "unusual": true
+    },
+    {
+      "name": "TO"
+    },
+    {
+      "name": "true"
+    },
+    {
+      "name": "tsur"
+    },
+    {
+      "name": "tw"
+    },
+    {
+      "name": "twoline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "twoline{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "TYPEDEF"
+    },
+    {
+      "name": "undertext",
+      "arg": {
+        "format": "{}",
+        "snippet": "undertext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "union"
+    },
+    {
+      "name": "untab"
+    },
+    {
+      "name": "utdots"
+    },
+    {
+      "name": "VAR"
+    },
+    {
+      "name": "var"
+    },
+    {
+      "name": "variable",
+      "unusual": true
+    },
+    {
+      "name": "variablefont",
+      "unusual": true
+    },
+    {
+      "name": "variablefontend",
+      "unusual": true
+    },
+    {
+      "name": "VBarOutsideProgramfalse",
+      "unusual": true
+    },
+    {
+      "name": "VBarOutsideProgramtrue",
+      "unusual": true
+    },
+    {
+      "name": "w",
+      "arg": {
+        "format": "{}",
+        "snippet": "w{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "wasinmmodefalse",
+      "unusual": true
+    },
+    {
+      "name": "wasinmmodetrue",
+      "unusual": true
+    },
+    {
+      "name": "wfle"
+    },
+    {
+      "name": "wflt"
+    },
+    {
+      "name": "WHERE"
+    },
+    {
+      "name": "WHILE"
+    },
+    {
+      "name": "WITHIN"
+    },
+    {
+      "name": "WP"
+    },
+    {
+      "name": "www",
+      "arg": {
+        "format": "{}",
+        "snippet": "www{${1:URL}}"
+      }
+    },
+    {
+      "name": "x",
+      "arg": {
+        "format": "{}",
+        "snippet": "x{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "y",
+      "arg": {
+        "format": "{}",
+        "snippet": "y{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "Z",
+      "arg": {
+        "format": "{}",
+        "snippet": "Z{${1:subscript%formula}}"
+      }
+    },
+    {
+      "name": "z",
+      "arg": {
+        "format": "{}",
+        "snippet": "z{${1:subscript%formula}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Cases"
+    },
+    {
+      "name": "cases"
+    },
+    {
+      "name": "program"
+    },
+    {
+      "name": "programbox"
+    },
+    {
+      "name": "romanenumerate"
+    },
+    {
+      "name": "smallprogram"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

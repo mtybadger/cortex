@@ -1,0 +1,232 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "attach",
+      "arg": {
+        "format": "[]",
+        "snippet": "attach[${1:name}]"
+      }
+    },
+    {
+      "name": "DDDannot",
+      "arg": {
+        "format": "{}",
+        "snippet": "DDDannot{${1:name}}"
+      }
+    },
+    {
+      "name": "DDDcontext",
+      "arg": {
+        "format": "{}",
+        "snippet": "DDDcontext{${1:name}}"
+      }
+    },
+    {
+      "name": "DDDview",
+      "arg": {
+        "format": "[][]",
+        "snippet": "DDDview[${1:view name}][${2:keyvals}]",
+        "keys": [
+          "\\DDDview"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "defaultpageactions",
+      "arg": {
+        "format": "[]",
+        "snippet": "defaultpageactions[${1:additional action specs}]"
+      }
+    },
+    {
+      "name": "defaultpageduration",
+      "arg": {
+        "format": "[]",
+        "snippet": "defaultpageduration[${1:duration}]"
+      }
+    },
+    {
+      "name": "defaultpagerotate",
+      "arg": {
+        "format": "[]",
+        "snippet": "defaultpagerotate[${1:rotation spec}]"
+      }
+    },
+    {
+      "name": "dljavascript",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dljavascript[${2:name}]{${1:script%definition}}"
+      }
+    },
+    {
+      "name": "duplexdisplay"
+    },
+    {
+      "name": "fullscreen"
+    },
+    {
+      "name": "hlink",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hlink[${2:action spec}]{${1:text}}"
+      }
+    },
+    {
+      "name": "initpageattributes",
+      "unusual": true
+    },
+    {
+      "name": "lininglinks"
+    },
+    {
+      "name": "nolininglinks"
+    },
+    {
+      "name": "openaction",
+      "arg": {
+        "format": "[]",
+        "snippet": "openaction[${1:action spec}]"
+      }
+    },
+    {
+      "name": "pageactions",
+      "arg": {
+        "format": "[]",
+        "snippet": "pageactions[${1:additional action specs}]"
+      }
+    },
+    {
+      "name": "pageattributes",
+      "unusual": true
+    },
+    {
+      "name": "pageduration",
+      "arg": {
+        "format": "[]",
+        "snippet": "pageduration[${1:duration}]"
+      }
+    },
+    {
+      "name": "pagerotate",
+      "arg": {
+        "format": "[]",
+        "snippet": "pagerotate[${1:rotation spec}]"
+      }
+    },
+    {
+      "name": "pdfaction",
+      "arg": {
+        "format": "[]",
+        "snippet": "pdfaction[${1:action spec}]"
+      }
+    },
+    {
+      "name": "render",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "render[${2:name}][${3:options%keyvals}]{${1:appearance}}",
+        "keys": [
+          "\\render"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "render",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "render[${2:name}]{${1:appearance}}"
+      }
+    },
+    {
+      "name": "renditionautoplay"
+    },
+    {
+      "name": "RM",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "RM[${2:name}][${3:options%keyvals}]{${1:appearance}}",
+        "keys": [
+          "\\RM"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "RM",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "RM[${2:name}]{${1:appearance}}"
+      }
+    },
+    {
+      "name": "sdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sdef{${1:string%definition}}{${2:body}}"
+      }
+    },
+    {
+      "name": "showattached"
+    },
+    {
+      "name": "showoutlines"
+    },
+    {
+      "name": "transition",
+      "arg": {
+        "format": "[]",
+        "snippet": "transition[${1:transition spec}]"
+      }
+    },
+    {
+      "name": "transitions",
+      "arg": {
+        "format": "[]",
+        "snippet": "transitions[${1:transition spec}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\DDDview": [
+      "projection=${1|perspective,ortho|}",
+      "scale=${1:factor}",
+      "FOV=${1:number 0-180}",
+      "background=${1:OpTeX color}",
+      "rendermode=${1|Solid,SolidWireframe,Transparent,TransparentWireframe,BoundingBox,TransparentBoundingBox,Wireframe,ShadedWireframe,Vertices,ShadedVertices,Illustration,SolidOutline,ShadedIllustration|}",
+      "lighting=${1|White,Day,Night,Hard,Primary,Blue,Red,Cube,CAD,Headlamp|}",
+      "method=${1|media9,manual,u3d|}",
+      "u3dpath=${1:path}",
+      "coo=${1:x y z}",
+      "roo=${1:number}",
+      "c2c=${1:x y z}"
+    ],
+    "\\render": [
+      "controls",
+      "volume=${1:number 0-100}",
+      "repeat=${1:integer}",
+      "background=${1:OpTeX color}",
+      "opacity=${1:factor}",
+      "aactions=\\renditionautoplay",
+      "name=${1:string}"
+    ],
+    "\\RM": [
+      "activation=${1|explicit,auto|}",
+      "deactivation=${1|explicit,auto|}",
+      "toolbar",
+      "views={${1:name1,name2,...}}",
+      "scripts={${1:name1,name2,...}}",
+      "name=${1:string}",
+      "background=${1:OpTeX color}"
+    ]
+  },
+  "args": []
+}

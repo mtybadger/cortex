@@ -1,0 +1,72 @@
+{
+  "deps": [
+    {
+      "name": "xetex"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "graphics"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "xcolor",
+      "if": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "NewSpotColorSpace",
+      "arg": {
+        "format": "{}",
+        "snippet": "NewSpotColorSpace{${1:name}}"
+      }
+    },
+    {
+      "name": "AddSpotColor",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "AddSpotColor{${1:colorspace}}{${2:color}}{${3:pdf name}}{${4:specification}}"
+      }
+    },
+    {
+      "name": "SpotSpace"
+    },
+    {
+      "name": "SetPageColorSpace",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPageColorSpace{${1:colorspace}}"
+      }
+    },
+    {
+      "name": "SpotColor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SpotColor{${1:color}}{${2:number}}"
+      }
+    },
+    {
+      "name": "SetPageColorResource",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPageColorResource{${1:resource}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xespotcolor#c": [
+      "hks",
+      "pantone",
+      "xcolor"
+    ]
+  },
+  "args": [
+    "\\usepackage/xespotcolor#c"
+  ]
+}

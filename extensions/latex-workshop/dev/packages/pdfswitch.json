@@ -1,0 +1,53 @@
+{
+  "deps": [
+    {
+      "name": "ae"
+    },
+    {
+      "name": "aeguill"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "thumbpdf"
+    },
+    {
+      "name": "backref",
+      "if": "backref"
+    },
+    {
+      "name": "backref",
+      "if": "pagebackref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pdfswitch#c": [
+      "nocolor",
+      "backref",
+      "pagebackref",
+      "noborder",
+      "plainpages"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfswitch#c"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "firstleftmark"
+    },
+    {
+      "name": "lastrightmark"
+    },
+    {
+      "name": "firstrightmark"
+    },
+    {
+      "name": "lastleftmark"
+    },
+    {
+      "name": "extramarks",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "extramarks{${1:left-mark%text}}{${2:right-mark%text}}"
+      }
+    },
+    {
+      "name": "firstleftxmark"
+    },
+    {
+      "name": "firstrightxmark"
+    },
+    {
+      "name": "topleftxmark"
+    },
+    {
+      "name": "toprightxmark"
+    },
+    {
+      "name": "lastleftxmark"
+    },
+    {
+      "name": "lastrightxmark"
+    },
+    {
+      "name": "firstxmark"
+    },
+    {
+      "name": "lastxmark"
+    },
+    {
+      "name": "topxmark"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

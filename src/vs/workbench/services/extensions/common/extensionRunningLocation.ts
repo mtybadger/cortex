@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { ExtensionHostKind } from './extensionHostKind.js';
+import { ExtensionHostKind } from 'vs/workbench/services/extensions/common/extensionHostKind';
 
 export class LocalProcessRunningLocation {
 	public readonly kind = ExtensionHostKind.LocalProcess;

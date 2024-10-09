@@ -1,0 +1,13 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usetheme/tamu#c": [
+      "onlycurpagenum",
+      "infolines",
+      "secheader"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,139 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "subcaption"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "panel",
+      "arg": {
+        "format": "{}",
+        "snippet": "panel{${1:width}}"
+      }
+    },
+    {
+      "name": "graphic",
+      "arg": {
+        "format": "{}",
+        "snippet": "graphic{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "graphic",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "graphic[${2:width}]{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "graphics",
+      "arg": {
+        "format": "{}",
+        "snippet": "graphics{${1:file path}}"
+      }
+    },
+    {
+      "name": "figurehspace",
+      "unusual": true
+    },
+    {
+      "name": "figurevspace",
+      "unusual": true
+    },
+    {
+      "name": "panelhspace",
+      "unusual": true
+    },
+    {
+      "name": "panelvspace",
+      "unusual": true
+    },
+    {
+      "name": "tablehspace",
+      "unusual": true
+    },
+    {
+      "name": "tablevspace",
+      "unusual": true
+    },
+    {
+      "name": "tikzsetnextfilename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzsetnextfilename{${1:imagefile}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "figures",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width%plain}}"
+      }
+    },
+    {
+      "name": "figures",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:alignment}]{${1:width%plain}}"
+      }
+    },
+    {
+      "name": "panels",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width%plain}}"
+      }
+    },
+    {
+      "name": "panels",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:alignment}]{${1:width%plain}}"
+      }
+    },
+    {
+      "name": "tables",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width%plain}}"
+      }
+    },
+    {
+      "name": "tables",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:alignment}]{${1:width%plain}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/hep-float#c": [
+      "manualplacement"
+    ]
+  },
+  "args": [
+    "\\usepackage/hep-float#c"
+  ]
+}

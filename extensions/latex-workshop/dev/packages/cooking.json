@@ -1,0 +1,90 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ingredient",
+      "arg": {
+        "format": "{}",
+        "snippet": "ingredient{${1:ingredient%text}}"
+      }
+    },
+    {
+      "name": "energy",
+      "arg": {
+        "format": "{}",
+        "snippet": "energy{${1:energy}}"
+      }
+    },
+    {
+      "name": "sidedish",
+      "arg": {
+        "format": "{}",
+        "snippet": "sidedish{${1:sidedish%text}}"
+      }
+    },
+    {
+      "name": "hint",
+      "arg": {
+        "format": "{}",
+        "snippet": "hint{${1:text}}"
+      }
+    },
+    {
+      "name": "preparationtime",
+      "arg": {
+        "format": "{}",
+        "snippet": "preparationtime{${1:text}}"
+      }
+    },
+    {
+      "name": "modification",
+      "arg": {
+        "format": "{}",
+        "snippet": "modification{${1:text}}"
+      }
+    },
+    {
+      "name": "recipemargin",
+      "unusual": true
+    },
+    {
+      "name": "ingredientfont",
+      "unusual": true
+    },
+    {
+      "name": "recipeendhook",
+      "unusual": true
+    },
+    {
+      "name": "recipetitlefont",
+      "unusual": true
+    },
+    {
+      "name": "recipetitle",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "recipe",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/cooking#c": [
+      "bf",
+      "it",
+      "nopage",
+      "newpage"
+    ],
+    "\\pagestyle#c,\\thispagestyle#c": [
+      "recipe"
+    ]
+  },
+  "args": [
+    "\\usepackage/cooking#c"
+  ]
+}

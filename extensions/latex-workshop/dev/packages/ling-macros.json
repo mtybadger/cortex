@@ -1,0 +1,503 @@
+{
+  "deps": [
+    {
+      "name": "gb4e"
+    },
+    {
+      "name": "stmaryrd"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "pbox"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "upgreek"
+    },
+    {
+      "name": "relsize"
+    }
+  ],
+  "macros": [
+    {
+      "name": "nl"
+    },
+    {
+      "name": "m",
+      "arg": {
+        "format": "{}",
+        "snippet": "m{${1:text}}"
+      }
+    },
+    {
+      "name": "mc",
+      "arg": {
+        "format": "{}",
+        "snippet": "mc{${1:text}}"
+      }
+    },
+    {
+      "name": "mb"
+    },
+    {
+      "name": "ol",
+      "arg": {
+        "format": "{}",
+        "snippet": "ol{${1:text}}"
+      }
+    },
+    {
+      "name": "alert",
+      "arg": {
+        "format": "{}",
+        "snippet": "alert{${1:text}}"
+      }
+    },
+    {
+      "name": "term",
+      "arg": {
+        "format": "{}",
+        "snippet": "term{${1:text}}"
+      }
+    },
+    {
+      "name": "ix",
+      "arg": {
+        "format": "{}",
+        "snippet": "ix{${1:subscript}}"
+      }
+    },
+    {
+      "name": "ux",
+      "arg": {
+        "format": "{}",
+        "snippet": "ux{${1:subscript}}"
+      }
+    },
+    {
+      "name": "superx",
+      "arg": {
+        "format": "{}",
+        "snippet": "superx{${1:supscript}}"
+      }
+    },
+    {
+      "name": "bex"
+    },
+    {
+      "name": "fex"
+    },
+    {
+      "name": "bxl"
+    },
+    {
+      "name": "fxl"
+    },
+    {
+      "name": "ben"
+    },
+    {
+      "name": "fen"
+    },
+    {
+      "name": "bit"
+    },
+    {
+      "name": "fit"
+    },
+    {
+      "name": "underlying",
+      "arg": {
+        "format": "{}",
+        "snippet": "underlying{${1:input}}"
+      }
+    },
+    {
+      "name": "becomes"
+    },
+    {
+      "name": "spoken",
+      "arg": {
+        "format": "{}",
+        "snippet": "spoken{${1:output}}"
+      }
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "spot"
+    },
+    {
+      "name": "syll"
+    },
+    {
+      "name": "fmleft"
+    },
+    {
+      "name": "fmright"
+    },
+    {
+      "name": "fmat",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fmat{${1:left}}{${2:right}}"
+      }
+    },
+    {
+      "name": "prule",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "prule{${1:underlying form}}{${2:spoken form}}{${3:environment}}"
+      }
+    },
+    {
+      "name": "iparule",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "iparule{${1:underlying form}}{${2:spoken form}}{${3:environment}}"
+      }
+    },
+    {
+      "name": "pruleset",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "pruleset{${1:underlying form}}{${2:spoken form}}{${3:text}}{${4:environment}}"
+      }
+    },
+    {
+      "name": "iparuleset",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "iparuleset{${1:underlying form}}{${2:spoken form}}{${3:text}}{${4:environment}}"
+      }
+    },
+    {
+      "name": "head",
+      "arg": {
+        "format": "{}",
+        "snippet": "head{${1:arg}}"
+      }
+    },
+    {
+      "name": "xbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "xbar{${1:arg}}"
+      }
+    },
+    {
+      "name": "lv"
+    },
+    {
+      "name": "feat",
+      "arg": {
+        "format": "{}",
+        "snippet": "feat{${1:feature}}"
+      }
+    },
+    {
+      "name": "textfeat",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfeat{${1:feature}}"
+      }
+    },
+    {
+      "name": "dcopy",
+      "arg": {
+        "format": "{}",
+        "snippet": "dcopy{${1:text}}"
+      }
+    },
+    {
+      "name": "mroot",
+      "arg": {
+        "format": "{}",
+        "snippet": "mroot{${1:text}}"
+      }
+    },
+    {
+      "name": "ufeat",
+      "arg": {
+        "format": "{}",
+        "snippet": "ufeat{${1:feature}}"
+      }
+    },
+    {
+      "name": "unv",
+      "arg": {
+        "format": "{}",
+        "snippet": "unv{${1:feature}}"
+      }
+    },
+    {
+      "name": "readas",
+      "arg": {
+        "format": "{}",
+        "snippet": "readas{${1:arg}}"
+      }
+    },
+    {
+      "name": "lam",
+      "arg": {
+        "format": "{}",
+        "snippet": "lam{${1:variable}}"
+      }
+    },
+    {
+      "name": "lamd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lamd{${1:variable}}{${2:type}}"
+      }
+    },
+    {
+      "name": "all",
+      "arg": {
+        "format": "{}",
+        "snippet": "all{${1:variable}}"
+      }
+    },
+    {
+      "name": "some",
+      "arg": {
+        "format": "{}",
+        "snippet": "some{${1:variable}}"
+      }
+    },
+    {
+      "name": "no",
+      "arg": {
+        "format": "{}",
+        "snippet": "no{${1:variable}}"
+      }
+    },
+    {
+      "name": "ddet",
+      "arg": {
+        "format": "{}",
+        "snippet": "ddet{${1:variable}}"
+      }
+    },
+    {
+      "name": "pri"
+    },
+    {
+      "name": "type",
+      "arg": {
+        "format": "{}",
+        "snippet": "type{${1:types}}"
+      }
+    },
+    {
+      "name": "uptype",
+      "arg": {
+        "format": "{}",
+        "snippet": "uptype{${1:types}}"
+      }
+    },
+    {
+      "name": "set",
+      "arg": {
+        "format": "{}",
+        "snippet": "set{${1:set}}"
+      }
+    },
+    {
+      "name": "varset",
+      "arg": {
+        "format": "{}",
+        "snippet": "varset{${1:set}}"
+      }
+    },
+    {
+      "name": "cvarset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvarset{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "funcnote",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "funcnote{${1:name}}{${2:domain}}{${3:range}}{${4:input-var}}{${5:rule}}"
+      }
+    },
+    {
+      "name": "fleft"
+    },
+    {
+      "name": "func",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "func{${1:domain}}{${2:range}}"
+      }
+    },
+    {
+      "name": "fright"
+    },
+    {
+      "name": "scopebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "scopebox{${1:expression}}"
+      }
+    },
+    {
+      "name": "innerscopebox",
+      "arg": {
+        "format": "{}",
+        "snippet": "innerscopebox{${1:expression}}"
+      }
+    },
+    {
+      "name": "den",
+      "arg": {
+        "format": "{}",
+        "snippet": "den{${1:arg}}"
+      }
+    },
+    {
+      "name": "dena",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dena{${1:arg}}{${2:assignment}}"
+      }
+    },
+    {
+      "name": "denac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "denac{${1:arg}}{${2:context}}"
+      }
+    },
+    {
+      "name": "denamod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "denamod{${1:arg}}{${2:assignment}}{${3:modification}}"
+      }
+    },
+    {
+      "name": "denacmod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "denacmod{${1:arg}}{${2:context}}{${3:modification}}"
+      }
+    },
+    {
+      "name": "denol",
+      "arg": {
+        "format": "{}",
+        "snippet": "denol{${1:arg}}"
+      }
+    },
+    {
+      "name": "denola",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "denola{${1:arg}}{${2:assignment}}"
+      }
+    },
+    {
+      "name": "denolac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "denolac{${1:arg}}{${2:context}}"
+      }
+    },
+    {
+      "name": "denolamod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "denolamod{${1:arg}}{${2:assignment}}{${3:modification}}"
+      }
+    },
+    {
+      "name": "denolacmod",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "denolacmod{${1:arg}}{${2:context}}{${3:modification}}"
+      }
+    },
+    {
+      "name": "lessthanten"
+    },
+    {
+      "name": "tenormore"
+    },
+    {
+      "name": "bexskip",
+      "unusual": true
+    },
+    {
+      "name": "bxlskip",
+      "unusual": true
+    },
+    {
+      "name": "bexsep",
+      "unusual": true
+    },
+    {
+      "name": "bxlsep",
+      "unusual": true
+    },
+    {
+      "name": "bexindent",
+      "unusual": true
+    },
+    {
+      "name": "bxlindent",
+      "unusual": true
+    },
+    {
+      "name": "fexskip",
+      "unusual": true
+    },
+    {
+      "name": "fxlskip",
+      "unusual": true
+    },
+    {
+      "name": "bexlabel",
+      "unusual": true
+    },
+    {
+      "name": "bxllabel",
+      "unusual": true
+    },
+    {
+      "name": "featuresize",
+      "unusual": true
+    },
+    {
+      "name": "prulewidth",
+      "unusual": true
+    },
+    {
+      "name": "environset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "environset{${1:arg}}"
+      }
+    },
+    {
+      "name": "scopewidth",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "context"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

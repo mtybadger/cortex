@@ -1,0 +1,254 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "aialso",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "aialso{${1:before}}{${2:separator}}"
+      }
+    },
+    {
+      "name": "aialsostrings",
+      "unusual": true
+    },
+    {
+      "name": "aibibcite",
+      "unusual": true
+    },
+    {
+      "name": "aibibindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "aibibindex{${1:pages}}"
+      }
+    },
+    {
+      "name": "aibibpage",
+      "arg": {
+        "format": "{}",
+        "snippet": "aibibpage{${1:page}}"
+      }
+    },
+    {
+      "name": "aicite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aicite[${2:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "aicite",
+      "arg": {
+        "format": "{}",
+        "snippet": "aicite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "aiexplicit",
+      "unusual": true
+    },
+    {
+      "name": "aifilename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "aifilename{${1:file}}"
+      }
+    },
+    {
+      "name": "aifirst",
+      "arg": {
+        "format": "{}",
+        "snippet": "aifirst{${1:author name}}"
+      }
+    },
+    {
+      "name": "aifirstpage",
+      "arg": {
+        "format": "{}",
+        "snippet": "aifirstpage{${1:page}}"
+      }
+    },
+    {
+      "name": "aiinbibflag",
+      "unusual": true
+    },
+    {
+      "name": "aimaxauthors",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aimaxauthors[${2:trunc}]{${1:max}}"
+      }
+    },
+    {
+      "name": "aimaxauthors",
+      "arg": {
+        "format": "{}",
+        "snippet": "aimaxauthors{${1:max}}"
+      }
+    },
+    {
+      "name": "aimention",
+      "arg": {
+        "format": "{}",
+        "snippet": "aimention{${1:author name}}"
+      }
+    },
+    {
+      "name": "ainame",
+      "arg": {
+        "format": "{}",
+        "snippet": "ainame{${1:text}}"
+      }
+    },
+    {
+      "name": "ainamefmt",
+      "arg": {
+        "format": "{}",
+        "snippet": "ainamefmt{${1:fmt spec}}"
+      }
+    },
+    {
+      "name": "ainocite",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ainocite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ainocompressflag",
+      "unusual": true
+    },
+    {
+      "name": "aionly",
+      "arg": {
+        "format": "{}",
+        "snippet": "aionly{${1:bibid}}"
+      }
+    },
+    {
+      "name": "aioptions",
+      "unusual": true
+    },
+    {
+      "name": "aipages",
+      "arg": {
+        "format": "{}",
+        "snippet": "aipages{${1:pages}}"
+      }
+    },
+    {
+      "name": "aipagetypeorder",
+      "arg": {
+        "format": "{}",
+        "snippet": "aipagetypeorder{${1:order}}"
+      }
+    },
+    {
+      "name": "airep",
+      "arg": {
+        "format": "{}",
+        "snippet": "airep{${1:author name}}"
+      }
+    },
+    {
+      "name": "aisee",
+      "arg": {
+        "format": "{}",
+        "snippet": "aisee{${1:string}}"
+      }
+    },
+    {
+      "name": "aiseestring",
+      "unusual": true
+    },
+    {
+      "name": "aisize",
+      "unusual": true
+    },
+    {
+      "name": "aistyle",
+      "unusual": true
+    },
+    {
+      "name": "aitop",
+      "arg": {
+        "format": "{}",
+        "snippet": "aitop{${1:author name}}"
+      }
+    },
+    {
+      "name": "aitwostring",
+      "unusual": true
+    },
+    {
+      "name": "aitwosuffix",
+      "arg": {
+        "format": "{}",
+        "snippet": "aitwosuffix{${1:string}}"
+      }
+    },
+    {
+      "name": "authorindexstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "authorindexstyle{${1:style}}"
+      }
+    },
+    {
+      "name": "bibindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibindex{${1:pages}}"
+      }
+    },
+    {
+      "name": "bibpage",
+      "unusual": true
+    },
+    {
+      "name": "citationpage",
+      "unusual": true
+    },
+    {
+      "name": "pagetypeorder",
+      "unusual": true
+    },
+    {
+      "name": "printauthorindex"
+    },
+    {
+      "name": "theaipage",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "theauthorindex"
+    }
+  ],
+  "keys": {
+    "\\usepackage/authorindex#c": [
+      "all",
+      "avoideditors",
+      "biblabels",
+      "editors",
+      "firstabbrev",
+      "fullname",
+      "lastname",
+      "miniindex",
+      "nocompress",
+      "normal",
+      "onlyauthors",
+      "onlyfirst",
+      "pages",
+      "small",
+      "withbib"
+    ]
+  },
+  "args": [
+    "\\usepackage/authorindex#c"
+  ]
+}

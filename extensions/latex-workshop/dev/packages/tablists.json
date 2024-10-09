@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "makecell"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tabenumitem"
+    },
+    {
+      "name": "notabenumitem"
+    },
+    {
+      "name": "noitem"
+    },
+    {
+      "name": "skipitem"
+    },
+    {
+      "name": "tabenumsep"
+    },
+    {
+      "name": "tabenumindent"
+    },
+    {
+      "name": "subtabenumitem"
+    },
+    {
+      "name": "subitem"
+    },
+    {
+      "name": "restorelistitem"
+    }
+  ],
+  "envs": [
+    {
+      "name": "tabenum"
+    },
+    {
+      "name": "tabenum",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:format}]"
+      }
+    },
+    {
+      "name": "subtabenum"
+    },
+    {
+      "name": "subtabenum",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:format}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

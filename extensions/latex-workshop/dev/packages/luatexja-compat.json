@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "luatexja-core"
+    }
+  ],
+  "macros": [
+    {
+      "name": "euc"
+    },
+    {
+      "name": "kuten"
+    },
+    {
+      "name": "jis"
+    },
+    {
+      "name": "sjis"
+    },
+    {
+      "name": "ucs"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

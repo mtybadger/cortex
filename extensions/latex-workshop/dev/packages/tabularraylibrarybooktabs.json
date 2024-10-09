@@ -1,0 +1,125 @@
+{
+  "deps": [
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "toprule"
+    },
+    {
+      "name": "toprule",
+      "arg": {
+        "format": "[]",
+        "snippet": "toprule[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "midrule"
+    },
+    {
+      "name": "midrule",
+      "arg": {
+        "format": "[]",
+        "snippet": "midrule[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "cmidrule",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmidrule{${1:i-j}}"
+      }
+    },
+    {
+      "name": "cmidrule",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cmidrule[${2:options%keyvals}]{${1:i-j}}"
+      }
+    },
+    {
+      "name": "bottomrule"
+    },
+    {
+      "name": "bottomrule",
+      "arg": {
+        "format": "[]",
+        "snippet": "bottomrule[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "cmidrulemore",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmidrulemore{${1:i-j}}"
+      }
+    },
+    {
+      "name": "cmidrulemore",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cmidrulemore[${2:options%keyvals}]{${1:i-j}}"
+      }
+    },
+    {
+      "name": "morecmidrules"
+    },
+    {
+      "name": "specialrule",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "specialrule{${1:options%keyvals}}{${2:belowsep}}{${3:abovesep}}"
+      }
+    },
+    {
+      "name": "addrowspace"
+    },
+    {
+      "name": "addrowspace",
+      "arg": {
+        "format": "[]",
+        "snippet": "addrowspace[${1:space%l}]"
+      }
+    },
+    {
+      "name": "addlinespace"
+    },
+    {
+      "name": "addlinespace",
+      "arg": {
+        "format": "[]",
+        "snippet": "addlinespace[${1:space%l}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "booktabs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:preamble}}"
+      }
+    },
+    {
+      "name": "longtabs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:preamble}}"
+      }
+    },
+    {
+      "name": "talltabs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:preamble}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

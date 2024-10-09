@@ -1,0 +1,69 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "polyglossia"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Ezhuthu"
+    },
+    {
+      "name": "Joy"
+    },
+    {
+      "name": "Karuna"
+    },
+    {
+      "name": "Keraleeyam"
+    },
+    {
+      "name": "Kutty"
+    },
+    {
+      "name": "Meera"
+    },
+    {
+      "name": "Panmana"
+    },
+    {
+      "name": "Rachana"
+    },
+    {
+      "name": "Sundar"
+    },
+    {
+      "name": "Uroob"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/rit-fonts#c": [
+      "path=${1:file path}",
+      "extn=${1:extension}",
+      "RM=${1:font name}",
+      "SF=${1:font name}",
+      "ScaleRM=${1:factor}",
+      "ScaleSF=${1:factor}",
+      "ScaleDS=${1:factor}",
+      "ScaleHW=${1:factor}",
+      "osf",
+      "oldstyle",
+      "lf",
+      "lining",
+      "df={${1:font features}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/rit-fonts#c"
+  ]
+}

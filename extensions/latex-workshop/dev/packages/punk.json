@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "punkfamily"
+    },
+    {
+      "name": "textpunk",
+      "arg": {
+        "format": "{}",
+        "snippet": "textpunk{${1:text}}"
+      }
+    },
+    {
+      "name": "textpunksl",
+      "arg": {
+        "format": "{}",
+        "snippet": "textpunksl{${1:text}}"
+      }
+    },
+    {
+      "name": "textpunkbf",
+      "arg": {
+        "format": "{}",
+        "snippet": "textpunkbf{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,352 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "class-book"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "alttitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "alttitle{${1:text}}"
+      }
+    },
+    {
+      "name": "IDnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "IDnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "course",
+      "arg": {
+        "format": "{}",
+        "snippet": "course{${1:course%text}}"
+      }
+    },
+    {
+      "name": "cycle",
+      "arg": {
+        "format": "{}",
+        "snippet": "cycle{${1:cycle}}"
+      }
+    },
+    {
+      "name": "courseorganizer"
+    },
+    {
+      "name": "courseorganizer",
+      "arg": {
+        "format": "{}",
+        "snippet": "courseorganizer{${1:name}}"
+      }
+    },
+    {
+      "name": "AcademicYear",
+      "arg": {
+        "format": "{}",
+        "snippet": "AcademicYear{${1:year}}"
+      }
+    },
+    {
+      "name": "advisor",
+      "arg": {
+        "format": "{}",
+        "snippet": "advisor{${1:name}}"
+      }
+    },
+    {
+      "name": "coadvisor",
+      "arg": {
+        "format": "{}",
+        "snippet": "coadvisor{${1:name}}"
+      }
+    },
+    {
+      "name": "customcoadvisorlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "customcoadvisorlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "director",
+      "arg": {
+        "format": "{}",
+        "snippet": "director{${1:name}}"
+      }
+    },
+    {
+      "name": "customdirectorlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "customdirectorlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "examdate",
+      "arg": {
+        "format": "{}",
+        "snippet": "examdate{${1:date}}"
+      }
+    },
+    {
+      "name": "examiner",
+      "arg": {
+        "format": "{}",
+        "snippet": "examiner{${1:name}}"
+      }
+    },
+    {
+      "name": "examiner",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "examiner[${2:role}]{${1:name}}"
+      }
+    },
+    {
+      "name": "thesistype",
+      "arg": {
+        "format": "{}",
+        "snippet": "thesistype{${1:type%text}}"
+      }
+    },
+    {
+      "name": "ISBN",
+      "arg": {
+        "format": "{}",
+        "snippet": "ISBN{${1:ISBN}}"
+      }
+    },
+    {
+      "name": "copyyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyyear{${1:year}}"
+      }
+    },
+    {
+      "name": "copyrightstatement",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrightstatement{${1:text}}"
+      }
+    },
+    {
+      "name": "versiondate",
+      "arg": {
+        "format": "{}",
+        "snippet": "versiondate{${1:date}}"
+      }
+    },
+    {
+      "name": "website",
+      "arg": {
+        "format": "{}",
+        "snippet": "website{${1:URL}}"
+      }
+    },
+    {
+      "name": "authoremail",
+      "arg": {
+        "format": "{}",
+        "snippet": "authoremail{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "reviewer",
+      "arg": {
+        "format": "{}",
+        "snippet": "reviewer{${1:name}}"
+      }
+    },
+    {
+      "name": "reviewerlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "reviewerlabel{${1:text}}"
+      }
+    },
+    {
+      "name": "dedication",
+      "arg": {
+        "format": "{}",
+        "snippet": "dedication{${1:text}}"
+      }
+    },
+    {
+      "name": "eu"
+    },
+    {
+      "name": "iu"
+    },
+    {
+      "name": "der",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "der{${1:func}}{${2:vars}}"
+      }
+    },
+    {
+      "name": "pder",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pder{${1:func}}{${2:vars}}"
+      }
+    },
+    {
+      "name": "rb",
+      "arg": {
+        "format": "{}",
+        "snippet": "rb{${1:subscript}}"
+      }
+    },
+    {
+      "name": "rp",
+      "arg": {
+        "format": "{}",
+        "snippet": "rp{${1:superscript}}"
+      }
+    },
+    {
+      "name": "tb",
+      "arg": {
+        "format": "{}",
+        "snippet": "tb{${1:subscript}}"
+      }
+    },
+    {
+      "name": "tp",
+      "arg": {
+        "format": "{}",
+        "snippet": "tp{${1:superscript}}"
+      }
+    },
+    {
+      "name": "un",
+      "arg": {
+        "format": "{}",
+        "snippet": "un{${1:units%formula}}"
+      }
+    },
+    {
+      "name": "g"
+    },
+    {
+      "name": "degree",
+      "unusual": true
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "celsius",
+      "unusual": true
+    },
+    {
+      "name": "A"
+    },
+    {
+      "name": "angstrom",
+      "unusual": true
+    },
+    {
+      "name": "micro"
+    },
+    {
+      "name": "ohm"
+    },
+    {
+      "name": "di"
+    },
+    {
+      "name": "x"
+    }
+  ],
+  "envs": [
+    {
+      "name": "abstract"
+    },
+    {
+      "name": "abstract",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:title%text}]"
+      }
+    },
+    {
+      "name": "acknowledgments"
+    },
+    {
+      "name": "acknowledgments",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:title%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/unifith#c": [
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "layout=${1|a5paper,b5paper|}",
+      "draft",
+      "oneside",
+      "twoside",
+      "binding=",
+      "noexaminfo",
+      "nodefaultfont",
+      "romandiff",
+      "fem"
+    ]
+  },
+  "args": [
+    "\\documentclass/unifith#c"
+  ]
+}

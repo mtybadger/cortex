@@ -1,0 +1,202 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Subleftmargini",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginii",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginiii",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginiv",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginv",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginvi",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginvii",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginviii",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginix",
+      "unusual": true
+    },
+    {
+      "name": "Subleftmarginx",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumi",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumii",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumiii",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumiv",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumv",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumvi",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumvii",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumviii",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumix",
+      "unusual": true
+    },
+    {
+      "name": "theSubnumx",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumi",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumii",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumiii",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumiv",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumv",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumvi",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumvii",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumviii",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumix",
+      "unusual": true
+    },
+    {
+      "name": "labelSubnumx",
+      "unusual": true
+    },
+    {
+      "name": "Lplabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Lplabel{${1:text}}"
+      }
+    },
+    {
+      "name": "Rplabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Rplabel{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Sublist",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:label}}{${2:spacing}}"
+      }
+    },
+    {
+      "name": "Subnum"
+    },
+    {
+      "name": "Lautolist"
+    },
+    {
+      "name": "Lautolist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:longest label}]"
+      }
+    },
+    {
+      "name": "Rautolist"
+    },
+    {
+      "name": "Rautolist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:longest label}]"
+      }
+    },
+    {
+      "name": "Lpolylist"
+    },
+    {
+      "name": "Lpolylist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:longest label}]"
+      }
+    },
+    {
+      "name": "Rpolylist"
+    },
+    {
+      "name": "Rpolylist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:longest label}]"
+      }
+    },
+    {
+      "name": "characters"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

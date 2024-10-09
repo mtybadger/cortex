@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "pst-node"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psChromaticityDiagram"
+    },
+    {
+      "name": "psChromaticityDiagram",
+      "arg": {
+        "format": "[]",
+        "snippet": "psChromaticityDiagram[${1:options%keyvals}]",
+        "keys": [
+          "\\psChromaticityDiagram"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pstCIEcontour"
+    },
+    {
+      "name": "pstCIEcontour",
+      "arg": {
+        "format": "[]",
+        "snippet": "pstCIEcontour[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "pstPlanck"
+    },
+    {
+      "name": "pstPlanck",
+      "arg": {
+        "format": "[]",
+        "snippet": "pstPlanck[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "txCIEdictBegin",
+      "unusual": true
+    },
+    {
+      "name": "CIEdefaultYear",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\psChromaticityDiagram": [
+      "gamma=${1:number}",
+      "contrast=${1:number}",
+      "ColorSpace=${1|Adobe,CIE,ColorMatch,NTSC,Pal-Secam,ProPhoto,SMPTE,sRGB|}",
+      "datas=${1:name}",
+      "primaries",
+      "trianglecolor=",
+      "bgcolor=",
+      "textcolor=",
+      "Planck",
+      "showcontour",
+      "Tfontsize=",
+      "unit=${1:number}",
+      "PSfont=${1:font name}",
+      "fontscale=${1:scale in pts}"
+    ]
+  },
+  "args": []
+}

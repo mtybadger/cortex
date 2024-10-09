@@ -1,0 +1,75 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Next"
+    },
+    {
+      "name": "NNext"
+    },
+    {
+      "name": "Last"
+    },
+    {
+      "name": "LLast"
+    },
+    {
+      "name": "nextx",
+      "if": "expex"
+    },
+    {
+      "name": "anextx",
+      "if": "expex"
+    },
+    {
+      "name": "lastx",
+      "if": "expex"
+    },
+    {
+      "name": "blastx",
+      "if": "expex"
+    },
+    {
+      "name": "bblastx",
+      "if": "expex"
+    },
+    {
+      "name": "printtmpcounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printtmpcounter{${1:value}}"
+      }
+    },
+    {
+      "name": "settmpcounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "settmpcounter{${1:value}}"
+      }
+    },
+    {
+      "name": "thetmpcounter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/nnext#c": [
+      "linguex",
+      "expex",
+      "noparens"
+    ]
+  },
+  "args": [
+    "\\usepackage/nnext#c"
+  ]
+}

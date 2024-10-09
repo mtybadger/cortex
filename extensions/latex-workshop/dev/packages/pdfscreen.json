@@ -1,0 +1,584 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "comment"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "shortvrb"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsbsy"
+    },
+    {
+      "name": "truncate"
+    },
+    {
+      "name": "fancybox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "arg",
+      "if": "code",
+      "arg": {
+        "format": "{}",
+        "snippet": "arg{${1:arg}}"
+      }
+    },
+    {
+      "name": "Arg",
+      "if": "code"
+    },
+    {
+      "name": "oarg",
+      "if": "code"
+    },
+    {
+      "name": "Oarg",
+      "if": "code"
+    },
+    {
+      "name": "emblema",
+      "arg": {
+        "format": "{}",
+        "snippet": "emblema{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "urlid",
+      "arg": {
+        "format": "{}",
+        "snippet": "urlid{${1:URL}}"
+      }
+    },
+    {
+      "name": "screensize",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "screensize{${1:height}}{${2:width}}"
+      }
+    },
+    {
+      "name": "margins",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "margins{${1:left}}{${2:right}}{${3:top}}{${4:bottom}}"
+      }
+    },
+    {
+      "name": "addButton",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addButton{${1:length}}{${2:text}}"
+      }
+    },
+    {
+      "name": "Acrobatmenu",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Acrobatmenu{${1:text}}{${2:button code}}"
+      }
+    },
+    {
+      "name": "imageButton",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "imageButton{${1:width}}{${2:height}}{${3:imagefile}}"
+      }
+    },
+    {
+      "name": "panelwidth",
+      "unusual": true
+    },
+    {
+      "name": "overlay",
+      "arg": {
+        "format": "{}",
+        "snippet": "overlay{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "backgroundcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "backgroundcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "paneloverlay",
+      "arg": {
+        "format": "{}",
+        "snippet": "paneloverlay{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "overlayempty"
+    },
+    {
+      "name": "paneloverlayempty"
+    },
+    {
+      "name": "changeoverlay"
+    },
+    {
+      "name": "bottombuttons"
+    },
+    {
+      "name": "nobottombuttons"
+    },
+    {
+      "name": "topbuttons"
+    },
+    {
+      "name": "notopbuttons"
+    },
+    {
+      "name": "realnormalsize"
+    },
+    {
+      "name": "realsmall"
+    },
+    {
+      "name": "realfootnotesize"
+    },
+    {
+      "name": "realscriptsize"
+    },
+    {
+      "name": "realtiny"
+    },
+    {
+      "name": "reallarge"
+    },
+    {
+      "name": "realLarge"
+    },
+    {
+      "name": "realLARGE"
+    },
+    {
+      "name": "realhuge"
+    },
+    {
+      "name": "realHuge",
+      "unusual": true
+    },
+    {
+      "name": "notesname"
+    },
+    {
+      "name": "pagedissolve",
+      "arg": {
+        "format": "{}",
+        "snippet": "pagedissolve{${1:option}}"
+      }
+    },
+    {
+      "name": "AddToOverlay",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AddToOverlay{${1:code}}"
+      }
+    },
+    {
+      "name": "affname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "affname{${1:arg}}"
+      }
+    },
+    {
+      "name": "Black",
+      "unusual": true
+    },
+    {
+      "name": "btl",
+      "unusual": true
+    },
+    {
+      "name": "buttonbox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "buttonbox{${1:arg}}"
+      }
+    },
+    {
+      "name": "buttonwidth",
+      "unusual": true
+    },
+    {
+      "name": "calfactor",
+      "unusual": true
+    },
+    {
+      "name": "change",
+      "unusual": true
+    },
+    {
+      "name": "ContPage",
+      "unusual": true
+    },
+    {
+      "name": "DBlack",
+      "unusual": true
+    },
+    {
+      "name": "divname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "divname{${1:arg}}"
+      }
+    },
+    {
+      "name": "emailid",
+      "arg": {
+        "format": "{}",
+        "snippet": "emailid{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "FBlack",
+      "unusual": true
+    },
+    {
+      "name": "InitLayout",
+      "unusual": true
+    },
+    {
+      "name": "LBlack",
+      "unusual": true
+    },
+    {
+      "name": "LLX",
+      "unusual": true
+    },
+    {
+      "name": "LLY",
+      "unusual": true
+    },
+    {
+      "name": "marginbottom",
+      "unusual": true
+    },
+    {
+      "name": "marginleft",
+      "unusual": true
+    },
+    {
+      "name": "marginright",
+      "unusual": true
+    },
+    {
+      "name": "marginsize",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "marginsize{${1:left}}{${2:right}}{${3:top}}{${4:bottom}}"
+      }
+    },
+    {
+      "name": "margintop",
+      "unusual": true
+    },
+    {
+      "name": "NavigationPanel",
+      "unusual": true
+    },
+    {
+      "name": "overlayheight",
+      "unusual": true
+    },
+    {
+      "name": "overlaywidth",
+      "unusual": true
+    },
+    {
+      "name": "panel",
+      "unusual": true
+    },
+    {
+      "name": "panelclosename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelclosename{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelcontentsname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelcontentsname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelfont",
+      "unusual": true
+    },
+    {
+      "name": "panelfullscreenname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelfullscreenname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelgobackname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelgobackname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelheight",
+      "unusual": true
+    },
+    {
+      "name": "panelhomepagename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelhomepagename{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelofname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelofname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelpagename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelpagename{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panelquitname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panelquitname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "paneltitlepagename",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "paneltitlepagename{${1:arg1}}"
+      }
+    },
+    {
+      "name": "panlabstractname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "panlabstractname{${1:arg1}}"
+      }
+    },
+    {
+      "name": "PDFBox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PDFBox{${1:arg}}"
+      }
+    },
+    {
+      "name": "PDFSout",
+      "unusual": true
+    },
+    {
+      "name": "pfill",
+      "unusual": true
+    },
+    {
+      "name": "rtl",
+      "unusual": true
+    },
+    {
+      "name": "ScreenLastPage",
+      "unusual": true
+    },
+    {
+      "name": "scrNormalButton",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "scrNormalButton{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "scrShadowButton",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "scrShadowButton{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "Sectionformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Sectionformat{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "shorttitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "shorttitle{${1:arg}}"
+      }
+    },
+    {
+      "name": "smallbuttonwidth",
+      "unusual": true
+    },
+    {
+      "name": "ST",
+      "unusual": true
+    },
+    {
+      "name": "st",
+      "unusual": true
+    },
+    {
+      "name": "Textmarginbottom",
+      "unusual": true
+    },
+    {
+      "name": "Textmarginleft",
+      "unusual": true
+    },
+    {
+      "name": "Textmarginright",
+      "unusual": true
+    },
+    {
+      "name": "Textmargintop",
+      "unusual": true
+    },
+    {
+      "name": "thedriver",
+      "unusual": true
+    },
+    {
+      "name": "theNUM",
+      "unusual": true
+    },
+    {
+      "name": "theoverlay",
+      "unusual": true
+    },
+    {
+      "name": "thepanel",
+      "unusual": true
+    },
+    {
+      "name": "theslide",
+      "unusual": true
+    },
+    {
+      "name": "theslideoverlay",
+      "unusual": true
+    },
+    {
+      "name": "URX",
+      "unusual": true
+    },
+    {
+      "name": "URY",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "decl",
+      "if": "code"
+    },
+    {
+      "name": "slide"
+    },
+    {
+      "name": "screen"
+    },
+    {
+      "name": "print"
+    }
+  ],
+  "keys": {
+    "\\usepackage/pdfscreen#c": [
+      "screen",
+      "print",
+      "panelleft",
+      "panelright",
+      "nopanel",
+      "paneltoc",
+      "sectionbreak",
+      "code",
+      "pdftex",
+      "dvips",
+      "dvipsone",
+      "dvipdf",
+      "dvipdfm",
+      "dviwindo",
+      "ps2pdf",
+      "vtex",
+      "bluelace",
+      "chocolate",
+      "palegreen",
+      "orange",
+      "gray",
+      "blue",
+      "nocfg",
+      "english",
+      "french",
+      "dutch",
+      "czech",
+      "norsk",
+      "nynorsk",
+      "slovak",
+      "portuges",
+      "spanish",
+      "swedish",
+      "danish",
+      "polish",
+      "russian",
+      "german",
+      "slovene",
+      "catalan"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfscreen#c"
+  ]
+}

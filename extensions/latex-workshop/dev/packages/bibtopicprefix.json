@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "scrlfile"
+    },
+    {
+      "name": "bibtopic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bibprefix"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

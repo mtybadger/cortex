@@ -19,11 +19,11 @@ const util = require("./util");
 const fancyLog = require("fancy-log");
 const ansiColors = require("ansi-colors");
 const os = require("os");
+const ts = require("typescript");
 const File = require("vinyl");
 const task = require("./task");
 const index_1 = require("./mangle/index");
 const postcss_1 = require("./postcss");
-const ts = require("typescript");
 const watch = require('./watch');
 // --- gulp-tsb: compile and transpile --------------------------------
 const reporter = (0, reporter_1.createReporter)();
@@ -52,7 +52,7 @@ function createCompile(src, { build, emitError, transpileOnly, preserveEnglish }
     const compilation = tsb.create(projectPath, overrideOptions, {
         verbose: false,
         transpileOnly: Boolean(transpileOnly),
-        transpileWithSwc: typeof transpileOnly !== 'boolean' && transpileOnly.esbuild
+        transpileWithSwc: typeof transpileOnly !== 'boolean' && transpileOnly.swc
     }, err => reporter(err));
     function pipeline(token) {
         const bom = require('gulp-bom');
@@ -88,9 +88,9 @@ function createCompile(src, { build, emitError, transpileOnly, preserveEnglish }
     pipeline.projectPath = projectPath;
     return pipeline;
 }
-function transpileTask(src, out, esbuild) {
+function transpileTask(src, out, swc) {
     const task = () => {
-        const transpile = createCompile(src, { build: false, emitError: true, transpileOnly: { esbuild }, preserveEnglish: false });
+        const transpile = createCompile(src, { build: false, emitError: true, transpileOnly: { swc }, preserveEnglish: false });
         const srcPipe = gulp.src(`${src}/**`, { base: `${src}` });
         return srcPipe
             .pipe(transpile())
@@ -110,28 +110,7 @@ function compileTask(src, out, build, options = {}) {
         if (src === 'src') {
             generator.execute();
         }
-        // mangle: TypeScript to TypeScript
-        let mangleStream = es.through();
-        if (build && !options.disableMangle) {
-            let ts2tsMangler = new index_1.Mangler(compile.projectPath, (...data) => fancyLog(ansiColors.blue('[mangler]'), ...data), { mangleExports: true, manglePrivateFields: true });
-            const newContentsByFileName = ts2tsMangler.computeNewFileContents(new Set(['saveState']));
-            mangleStream = es.through(async function write(data) {
-                const tsNormalPath = ts.normalizePath(data.path);
-                const newContents = (await newContentsByFileName).get(tsNormalPath);
-                if (newContents !== undefined) {
-                    data.contents = Buffer.from(newContents.out);
-                    data.sourceMap = newContents.sourceMap && JSON.parse(newContents.sourceMap);
-                }
-                this.push(data);
-            }, async function end() {
-                // free resources
-                (await newContentsByFileName).clear();
-                this.push(null);
-                ts2tsMangler = undefined;
-            });
-        }
         return srcPipe
-            .pipe(mangleStream)
             .pipe(generator.stream)
             .pipe(compile())
             .pipe(gulp.dest(out));
@@ -139,11 +118,11 @@ function compileTask(src, out, build, options = {}) {
     task.taskName = `compile-${path.basename(src)}`;
     return task;
 }
-function watchTask(out, build, srcPath = 'src') {
+function watchTask(out, build) {
     const task = () => {
-        const compile = createCompile(srcPath, { build, emitError: false, transpileOnly: false, preserveEnglish: false });
-        const src = gulp.src(`${srcPath}/**`, { base: srcPath });
-        const watchSrc = watch(`${srcPath}/**`, { base: srcPath, readDelay: 200 });
+        const compile = createCompile('src', { build, emitError: false, transpileOnly: false, preserveEnglish: false });
+        const src = gulp.src('src/**', { base: 'src' });
+        const watchSrc = watch('src/**', { base: 'src', readDelay: 200 });
         const generator = new MonacoGenerator(true);
         generator.execute();
         return watchSrc

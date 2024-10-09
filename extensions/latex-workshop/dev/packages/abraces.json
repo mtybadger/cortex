@@ -1,0 +1,276 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "{}",
+        "snippet": "aoverbrace{${1:stuff}}"
+      }
+    },
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "{}^{}_{}",
+        "snippet": "aoverbrace{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "{}[]^{}_{}",
+        "snippet": "aoverbrace{${1:stuff}}[${4:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aoverbrace[${2:brace spec}]{${1:stuff}}"
+      }
+    },
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "[]{}^{}_{}",
+        "snippet": "aoverbrace[${4:brace spec}]{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aoverbrace",
+      "arg": {
+        "format": "[]{}[]^{}_{}",
+        "snippet": "aoverbrace[${4:brace spec}]{${1:stuff}}[${5:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "{}",
+        "snippet": "aunderbrace{${1:stuff}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "{}^{}_{}",
+        "snippet": "aunderbrace{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "{}[]^{}_{}",
+        "snippet": "aunderbrace{${1:stuff}}[${4:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aunderbrace[${2:brace spec}]{${1:stuff}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "[]{}^{}_{}",
+        "snippet": "aunderbrace[${4:brace spec}]{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "aunderbrace",
+      "arg": {
+        "format": "[]{}[]^{}_{}",
+        "snippet": "aunderbrace[${4:brace spec}]{${1:stuff}}[${5:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      }
+    },
+    {
+      "name": "newbracespec",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newbracespec{${1:char}}{${2:brace spec}}"
+      }
+    },
+    {
+      "name": "bracecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "bracecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "overbrace",
+      "if": "overload",
+      "arg": {
+        "format": "{}^{}_{}",
+        "snippet": "overbrace{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏞",
+      "doc": "Top curly bracket (mathematical use)"
+    },
+    {
+      "name": "overbrace",
+      "if": "overload",
+      "arg": {
+        "format": "{}[]^{}_{}",
+        "snippet": "overbrace{${1:stuff}}[${4:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏞",
+      "doc": "Top curly bracket (mathematical use)"
+    },
+    {
+      "name": "overbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "overbrace[${2:brace spec}]{${1:stuff}}"
+      },
+      "detail": "⏞",
+      "doc": "Top curly bracket (mathematical use)"
+    },
+    {
+      "name": "overbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}^{}_{}",
+        "snippet": "overbrace[${4:brace spec}]{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏞",
+      "doc": "Top curly bracket (mathematical use)"
+    },
+    {
+      "name": "overbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}[]^{}_{}",
+        "snippet": "overbrace[${4:brace spec}]{${1:stuff}}[${5:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏞",
+      "doc": "Top curly bracket (mathematical use)"
+    },
+    {
+      "name": "underbrace",
+      "if": "overload",
+      "arg": {
+        "format": "{}^{}_{}",
+        "snippet": "underbrace{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏟",
+      "doc": "Bottom curly bracket (mathematical use)"
+    },
+    {
+      "name": "underbrace",
+      "if": "overload",
+      "arg": {
+        "format": "{}[]^{}_{}",
+        "snippet": "underbrace{${1:stuff}}[${4:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏟",
+      "doc": "Bottom curly bracket (mathematical use)"
+    },
+    {
+      "name": "underbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "underbrace[${2:brace spec}]{${1:stuff}}"
+      },
+      "detail": "⏟",
+      "doc": "Bottom curly bracket (mathematical use)"
+    },
+    {
+      "name": "underbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}^{}_{}",
+        "snippet": "underbrace[${4:brace spec}]{${1:stuff}}^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏟",
+      "doc": "Bottom curly bracket (mathematical use)"
+    },
+    {
+      "name": "underbrace",
+      "if": "overload",
+      "arg": {
+        "format": "[]{}[]^{}_{}",
+        "snippet": "underbrace[${4:brace spec}]{${1:stuff}}[${5:script spec}]^{${2:upper script}}_{${3:lower script}}"
+      },
+      "detail": "⏟",
+      "doc": "Bottom curly bracket (mathematical use)"
+    },
+    {
+      "name": "bracescript",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bracescript{${1:arg}}"
+      }
+    },
+    {
+      "name": "bracefil",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bracefil{${1:arg}}"
+      }
+    },
+    {
+      "name": "aupbracefill",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "aupbracefill{${1:arg}}"
+      }
+    },
+    {
+      "name": "adownbracefill",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "adownbracefill{${1:arg}}"
+      }
+    },
+    {
+      "name": "downbracketend",
+      "unusual": true
+    },
+    {
+      "name": "downbracketend",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "downbracketend[${1:opt}]"
+      }
+    },
+    {
+      "name": "upbracketend",
+      "unusual": true
+    },
+    {
+      "name": "upbracketend",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "upbracketend[${1:opt}]"
+      }
+    },
+    {
+      "name": "genbrace",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "genbrace{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/abraces#c": [
+      "overload"
+    ]
+  },
+  "args": [
+    "\\usepackage/abraces#c"
+  ]
+}

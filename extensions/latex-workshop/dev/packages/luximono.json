@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/luximono#c": [
+      "scaled",
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/luximono#c"
+  ]
+}

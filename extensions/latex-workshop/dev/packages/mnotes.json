@@ -1,0 +1,127 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "soul"
+    },
+    {
+      "name": "marginnote"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "ifoddpage"
+    },
+    {
+      "name": "sidenotes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "MNOTE",
+      "arg": {
+        "format": "{}",
+        "snippet": "MNOTE{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "MNOTE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "MNOTE[${2:TikZ options}]{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "Mnewauthor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Mnewauthor{${1:name}}{${2:TikZ options}}"
+      }
+    },
+    {
+      "name": "Mnewauthor",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Mnewauthor[${3:initials}]{${1:name}}{${2:TikZ options}}"
+      }
+    },
+    {
+      "name": "HideMNOTES"
+    },
+    {
+      "name": "ShowMNOTES"
+    },
+    {
+      "name": "ReverseMNConnect"
+    },
+    {
+      "name": "mnotespaperwidth",
+      "unusual": true
+    },
+    {
+      "name": "MNOTEWIDTH",
+      "unusual": true
+    },
+    {
+      "name": "MNCOLOUR",
+      "unusual": true
+    },
+    {
+      "name": "MNFONT",
+      "unusual": true
+    },
+    {
+      "name": "MNOTEon",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MNOTEon{${1:text}}"
+      }
+    },
+    {
+      "name": "MNOTEon",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "MNOTEon[${2:TikZ options}]{${1:text}}"
+      }
+    },
+    {
+      "name": "mnoteseastlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mnoteseastlink{${1:TikZ options}}"
+      }
+    },
+    {
+      "name": "mnoteswestlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mnoteswestlink{${1:TikZ options}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mnotes#c": [
+      "scale",
+      "scale=${1:factor}",
+      "mnwidth=",
+      "boxcolour=",
+      "hide",
+      "sidenotes",
+      "basic",
+      "reverseconnect",
+      "centre",
+      "fontsize=${1:number}"
+    ]
+  },
+  "args": [
+    "\\usepackage/mnotes#c"
+  ]
+}

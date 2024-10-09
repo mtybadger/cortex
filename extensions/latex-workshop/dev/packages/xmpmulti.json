@@ -1,0 +1,45 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "multiinclude",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "multiinclude[${2:<default overlay specification>}][${3:options%keyvals}]{${1:base file name%file}}",
+        "keys": [
+          "\\multiinclude"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "multiinclude",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "multiinclude[${2:<default overlay specification>}]{${1:base file name%file}}"
+      }
+    },
+    {
+      "name": "multiinclude",
+      "arg": {
+        "format": "{}",
+        "snippet": "multiinclude{${1:base file name%file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\multiinclude": [
+      "pause=${1:command}",
+      "graphics=${1:graphicx options}",
+      "format=${1:extension}",
+      "start=${1:number}",
+      "end=${1:number}"
+    ]
+  },
+  "args": []
+}

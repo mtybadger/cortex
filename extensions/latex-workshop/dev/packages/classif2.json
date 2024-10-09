@@ -1,0 +1,152 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Comm"
+    },
+    {
+      "name": "EmptyName",
+      "arg": {
+        "format": "{}",
+        "snippet": "EmptyName{${1:name%text}}"
+      }
+    },
+    {
+      "name": "INCL",
+      "arg": {
+        "format": "{}",
+        "snippet": "INCL{${1:footnote%text}}"
+      }
+    },
+    {
+      "name": "LevelName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "LevelName{${1:level}}{${2:name%text}}"
+      }
+    },
+    {
+      "name": "Numerate",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Numerate[${2:cmd}]{${1:counter}}"
+      }
+    },
+    {
+      "name": "Numerate",
+      "arg": {
+        "format": "{}",
+        "snippet": "Numerate{${1:counter}}"
+      }
+    },
+    {
+      "name": "Reset",
+      "arg": {
+        "format": "{}",
+        "snippet": "Reset{${1:counter}}"
+      }
+    },
+    {
+      "name": "Digitsfalse",
+      "unusual": true
+    },
+    {
+      "name": "Digitstrue",
+      "unusual": true
+    },
+    {
+      "name": "Globalfalse",
+      "unusual": true
+    },
+    {
+      "name": "Globaltrue",
+      "unusual": true
+    },
+    {
+      "name": "Hidefalse",
+      "unusual": true
+    },
+    {
+      "name": "Hidetrue",
+      "unusual": true
+    },
+    {
+      "name": "ifDigits",
+      "unusual": true
+    },
+    {
+      "name": "ifGlobal",
+      "unusual": true
+    },
+    {
+      "name": "ifHide",
+      "unusual": true
+    },
+    {
+      "name": "ifNumbers",
+      "unusual": true
+    },
+    {
+      "name": "IHOOK",
+      "unusual": true
+    },
+    {
+      "name": "Level",
+      "unusual": true
+    },
+    {
+      "name": "Numbersfalse",
+      "unusual": true
+    },
+    {
+      "name": "Numberstrue",
+      "unusual": true
+    },
+    {
+      "name": "theGlobalLevel",
+      "unusual": true
+    },
+    {
+      "name": "theLevel",
+      "unusual": true
+    },
+    {
+      "name": "theLeveli",
+      "unusual": true
+    },
+    {
+      "name": "theLevelii",
+      "unusual": true
+    },
+    {
+      "name": "theLeveliii",
+      "unusual": true
+    },
+    {
+      "name": "theLeveliv",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "classif",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:level}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/classif2#c": [
+      "nonames",
+      "names"
+    ]
+  },
+  "args": [
+    "\\usepackage/classif2#c"
+  ]
+}

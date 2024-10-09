@@ -1,0 +1,375 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-ovl"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "powerdot-default"
+    },
+    {
+      "name": "pdfbase",
+      "if": "clock"
+    },
+    {
+      "name": "pdfbase",
+      "if": "clock=true"
+    },
+    {
+      "name": "powerdot-aggie",
+      "if": "style=aggie"
+    },
+    {
+      "name": "powerdot-BerlinFU",
+      "if": "style=BerlinFU"
+    },
+    {
+      "name": "powerdot-bframe",
+      "if": "style=bframe"
+    },
+    {
+      "name": "powerdot-ciment",
+      "if": "style=ciment"
+    },
+    {
+      "name": "powerdot-elcolors",
+      "if": "style=elcolors"
+    },
+    {
+      "name": "powerdot-fyma",
+      "if": "style=fyma"
+    },
+    {
+      "name": "powerdot-horatio",
+      "if": "style=horatio"
+    },
+    {
+      "name": "powerdot-husky",
+      "if": "style=husky"
+    },
+    {
+      "name": "powerdot-ikeda",
+      "if": "style=ikeda"
+    },
+    {
+      "name": "powerdot-jefka",
+      "if": "style=jefka"
+    },
+    {
+      "name": "powerdot-klope",
+      "if": "style=klope"
+    },
+    {
+      "name": "powerdot-paintings",
+      "if": "style=paintings"
+    },
+    {
+      "name": "powerdot-pazik",
+      "if": "style=pazik"
+    },
+    {
+      "name": "powerdot-sailor",
+      "if": "style=sailor"
+    },
+    {
+      "name": "powerdot-simple",
+      "if": "style=simple"
+    },
+    {
+      "name": "powerdot-tuliplab",
+      "if": "style=tuliplab"
+    },
+    {
+      "name": "powerdot-tycja",
+      "if": "style=tycja"
+    },
+    {
+      "name": "powerdot-upen",
+      "if": "style=upen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pdsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\pdsetup",
+          "\\pdsetup,\\maketitle,\\begin{titleslide},\\begin{basic},\\begin{wideslide},\\begin{slide},\\begin{sectionslide},\\begin{sectionwideslide},\\section"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "maketitle",
+      "arg": {
+        "format": "[]",
+        "snippet": "maketitle[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "pause"
+    },
+    {
+      "name": "pause",
+      "arg": {
+        "format": "[]",
+        "snippet": "pause[${1:number}]"
+      }
+    },
+    {
+      "name": "item<overlays>"
+    },
+    {
+      "name": "item",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "item[${1:label}]<${2:overlays}>"
+      }
+    },
+    {
+      "name": "onslide",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "onslide{${1:overlays}}{${2:text}}"
+      }
+    },
+    {
+      "name": "onslide*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "onslide*{${1:overlays}}{${2:text}}"
+      }
+    },
+    {
+      "name": "tableofcontents",
+      "arg": {
+        "format": "[]",
+        "snippet": "tableofcontents[${1:options%keyvals}]",
+        "keys": [
+          "\\tableofcontents"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "slidewidth"
+    },
+    {
+      "name": "slideheight"
+    },
+    {
+      "name": "thenote",
+      "unusual": true
+    },
+    {
+      "name": "theslide",
+      "unusual": true
+    },
+    {
+      "name": "twocolumn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "twocolumn{${1:left%text}}{${2:right%text}}"
+      }
+    },
+    {
+      "name": "twocolumn",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "twocolumn[${3:options%keyvals}]{${1:left%text}}{${2:right%text}}",
+        "keys": [
+          "\\twocolumn"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pddefinetemplate",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pddefinetemplate{${1:envname}}{${2:options}}{${3:commands}}"
+      }
+    },
+    {
+      "name": "pddefinetemplate",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "pddefinetemplate[${4:basis}]{${1:envname}}{${2:options}}{${3:commands}}"
+      }
+    },
+    {
+      "name": "pdifsetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pdifsetup{${1:desired}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "pdbookmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "pdbookmark{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "pdcontentsline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pdcontentsline{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "enumerate",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:type=0|1,}][${2:enumitem options}]"
+      }
+    },
+    {
+      "name": "itemize",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:type=0|1}][${2:enumitem options}]"
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "emptyslide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "pauseslide",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/powerdot#c": [
+      "mode=${1|present,print,handout|}",
+      "nohandoutpagebreaks",
+      "nohandoutframes",
+      "paper=${1|screen,a4paper,letterpaper,smartboard,169|}",
+      "orient=${1|landscape,portrait|}",
+      "display=${1|slides,slidesnotes,notes|}",
+      "size=${1|8pt,9pt,10pt,11pt,12pt,14pt,17pt,20pt|}",
+      "style=${1:style name}",
+      "fleqn",
+      "leqno",
+      "nopsheader",
+      "hlentries",
+      "hlsections",
+      "pauseslide",
+      "clock"
+    ],
+    "\\pdsetup": [
+      "theslide=${1:code}",
+      "thenote=${1:code}",
+      "counters={${1:counter1,counter2,...}}",
+      "list={${1:enumitem options}}",
+      "enumerate={${1:enumitem options}}",
+      "itemize={${1:enumitem options}}",
+      "clockformat=${1:format}",
+      "clockrefresh=${1:milliseconds}"
+    ],
+    "\\pdsetup,\\maketitle,\\begin{titleslide},\\begin{basic},\\begin{wideslide},\\begin{slide},\\begin{sectionslide},\\begin{sectionwideslide},\\section": [
+      "palette=${1:palette name}",
+      "lf=${1:text}",
+      "cf=${1:text}",
+      "rf=${1:text}",
+      "trans=${1:transition}",
+      "method=${1|normal,direct,file|}",
+      "logohook=${1|tl,t,tr,r,Br,br,b,bl,Bl,l,B,c|}",
+      "logopos={${1:width,height}}",
+      "logocmd={${1:code}}",
+      "randomdots",
+      "dmindots=${1:integer}",
+      "dmaxdots=${1:integer}",
+      "dminsize=",
+      "dmaxsize=",
+      "dminwidth=",
+      "dmaxwidth=",
+      "dminheight=",
+      "dmaxheight=",
+      "dbright=${1:integer}",
+      "dprop={${1:pstricks options}}"
+    ],
+    "\\begin{titleslide},\\begin{basic},\\begin{wideslide},\\begin{slide},\\begin{sectionslide},\\begin{sectionwideslide},\\section": [
+      "toc=${1:TOC entry}",
+      "bm=${1:bookmark entry}"
+    ],
+    "\\section": [
+      "tocsection=${1|true,false,hidden|}",
+      "slide",
+      "template=${1:template name}"
+    ],
+    "\\tableofcontents": [
+      "type=${1|0,1|}",
+      "content=${1|all,sections,currentsection,future,futuresections|}"
+    ],
+    "\\twocolumn": [
+      "lineheight=",
+      "lineprop={${1:pstricks options}}",
+      "lfrheight=",
+      "lfrprop={${1:pstricks options}}",
+      "rfrheight=",
+      "rfrprop={${1:pstricks options}}",
+      "lcolwidth=",
+      "rcolwidth=",
+      "frsep=",
+      "colsep=",
+      "topsep=",
+      "bottomsep=",
+      "indent="
+    ]
+  },
+  "args": [
+    "\\documentclass/powerdot#c"
+  ]
+}

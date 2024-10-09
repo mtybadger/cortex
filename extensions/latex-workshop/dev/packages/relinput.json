@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "stack"
+    }
+  ],
+  "macros": [
+    {
+      "name": "relinput",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "relinput{${1:part}}{${2:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

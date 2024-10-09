@@ -1,0 +1,72 @@
+{
+  "deps": [
+    {
+      "name": "soulutf8"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ulposdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ulposdef{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "ulposdef",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "ulposdef{${1:cmd}}[${3:options%keyvals}]{${2:definition}}",
+        "keys": [
+          "\\ulposdef"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "ifulstarttype",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifulstarttype{${1:type}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifulendtype",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifulendtype{${1:type}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ulstarttype"
+    },
+    {
+      "name": "ulendtype"
+    },
+    {
+      "name": "ulpostolerance",
+      "unusual": true
+    },
+    {
+      "name": "ulwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\ulposdef": [
+      "xoffset=",
+      "xoffset-start=",
+      "xoffset-end=",
+      "gap=",
+      "gap-start=",
+      "gap-end=",
+      "hyphens=${1|include,exclude|}",
+      "overdraw"
+    ]
+  },
+  "args": []
+}

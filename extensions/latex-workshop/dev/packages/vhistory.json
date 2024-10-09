@@ -1,0 +1,94 @@
+{
+  "deps": [
+    {
+      "name": "ltxtable"
+    },
+    {
+      "name": "sets"
+    }
+  ],
+  "macros": [
+    {
+      "name": "vhEntry",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "vhEntry{${1:version}}{${2:date}}{${3:author1|${5:author2}|...}}{${4:changes%text}}"
+      }
+    },
+    {
+      "name": "vhCurrentVersion"
+    },
+    {
+      "name": "vhCurrentDate"
+    },
+    {
+      "name": "vhAllAuthorsSet"
+    },
+    {
+      "name": "vhListAllAuthors"
+    },
+    {
+      "name": "vhListAllAuthorsLong"
+    },
+    {
+      "name": "vhListAllAuthorsLongWithAbbrev"
+    },
+    {
+      "name": "vhAbbrevSeparator",
+      "unusual": true
+    },
+    {
+      "name": "vhAbbrevLeft",
+      "unusual": true
+    },
+    {
+      "name": "vhAbbrevRight",
+      "unusual": true
+    },
+    {
+      "name": "vhAuthorColWidth",
+      "unusual": true
+    },
+    {
+      "name": "vhChangeColWidth",
+      "unusual": true
+    },
+    {
+      "name": "vhhistoryname",
+      "unusual": true
+    },
+    {
+      "name": "vhversionname",
+      "unusual": true
+    },
+    {
+      "name": "vhdatename",
+      "unusual": true
+    },
+    {
+      "name": "vhauthorname",
+      "unusual": true
+    },
+    {
+      "name": "vhchangename",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "versionhistory"
+    }
+  ],
+  "keys": {
+    "\\usepackage/vhistory#c": [
+      "nochapter",
+      "tocentry",
+      "owncaptions",
+      "tablegrid",
+      "omittable"
+    ]
+  },
+  "args": [
+    "\\usepackage/vhistory#c"
+  ]
+}

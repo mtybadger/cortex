@@ -1,0 +1,64 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "bm"
+    }
+  ],
+  "macros": [
+    {
+      "name": "maybebmsf",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybebmsf{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "maybebm",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybebm{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "maybeitrm",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybeitrm{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "maybeitsubscript",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybeitsubscript{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "maybeit",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybeit{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "mayberm",
+      "arg": {
+        "format": "{}",
+        "snippet": "mayberm{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "maybesf",
+      "arg": {
+        "format": "{}",
+        "snippet": "maybesf{${1:expr%formula}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

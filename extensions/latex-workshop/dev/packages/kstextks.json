@@ -1,0 +1,534 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "kssim"
+    },
+    {
+      "name": "textkssharp"
+    },
+    {
+      "name": "textksamp"
+    },
+    {
+      "name": "textksasterisk"
+    },
+    {
+      "name": "textksat"
+    },
+    {
+      "name": "textkssecsign"
+    },
+    {
+      "name": "textksreferencemark"
+    },
+    {
+      "name": "textksstarwhite"
+    },
+    {
+      "name": "textksstarblack"
+    },
+    {
+      "name": "textkscirclewhite"
+    },
+    {
+      "name": "textkscircleblack"
+    },
+    {
+      "name": "textksdblcircle"
+    },
+    {
+      "name": "textksdiamondwhite"
+    },
+    {
+      "name": "textksdiamondblack"
+    },
+    {
+      "name": "textkssquarewhite"
+    },
+    {
+      "name": "textkssquareblack"
+    },
+    {
+      "name": "textkstrianglewhite"
+    },
+    {
+      "name": "textkstriangleblack"
+    },
+    {
+      "name": "textksinvtrianglewhite"
+    },
+    {
+      "name": "textksinvtriangleblack"
+    },
+    {
+      "name": "textksrightarrow"
+    },
+    {
+      "name": "textksleftarrow"
+    },
+    {
+      "name": "textksuparrow"
+    },
+    {
+      "name": "textksdownarrow"
+    },
+    {
+      "name": "textksleftrightarrow"
+    },
+    {
+      "name": "textksequalsign"
+    },
+    {
+      "name": "textkslefttrianglewhite"
+    },
+    {
+      "name": "textkslefttriangleblack"
+    },
+    {
+      "name": "textksrighttrianglewhite"
+    },
+    {
+      "name": "textksrighttriangleblack"
+    },
+    {
+      "name": "textksspadewhite"
+    },
+    {
+      "name": "textksspadeblack"
+    },
+    {
+      "name": "textksheartwhite"
+    },
+    {
+      "name": "textksheartblack"
+    },
+    {
+      "name": "textkscloverwhite"
+    },
+    {
+      "name": "textkscloverblack"
+    },
+    {
+      "name": "textksframedcircle"
+    },
+    {
+      "name": "textksframeddiamond"
+    },
+    {
+      "name": "textksframedsquare"
+    },
+    {
+      "name": "textksfirstquartermoon"
+    },
+    {
+      "name": "textkslastquartermoon"
+    },
+    {
+      "name": "textkscheckedrectangle"
+    },
+    {
+      "name": "textkssquarehorstripe"
+    },
+    {
+      "name": "textkssquarevertstripe"
+    },
+    {
+      "name": "textkssquareslashstripe"
+    },
+    {
+      "name": "textkssquarebackslashstripe"
+    },
+    {
+      "name": "textkssquarecrossstripe"
+    },
+    {
+      "name": "textkssquarediagcrossstripe"
+    },
+    {
+      "name": "textkshotspring"
+    },
+    {
+      "name": "textkstelephonewhite"
+    },
+    {
+      "name": "textkstelephoneblack"
+    },
+    {
+      "name": "textksfingerarrowleft"
+    },
+    {
+      "name": "textksfingerarrowright"
+    },
+    {
+      "name": "textkspilcrow"
+    },
+    {
+      "name": "textksdagger"
+    },
+    {
+      "name": "textksdbldagger"
+    },
+    {
+      "name": "textksupdownarrow"
+    },
+    {
+      "name": "textksrightuparrow"
+    },
+    {
+      "name": "textksleftdownarrow"
+    },
+    {
+      "name": "textksleftuparrow"
+    },
+    {
+      "name": "textksrightdownarrow"
+    },
+    {
+      "name": "textksflat"
+    },
+    {
+      "name": "textksquarternote"
+    },
+    {
+      "name": "textkseighthnote"
+    },
+    {
+      "name": "textkssixteenthnote"
+    },
+    {
+      "name": "textksksmark"
+    },
+    {
+      "name": "textkscorpmark"
+    },
+    {
+      "name": "textksnumbermark"
+    },
+    {
+      "name": "textkscomark"
+    },
+    {
+      "name": "textkstrademark"
+    },
+    {
+      "name": "textksammark"
+    },
+    {
+      "name": "textkspmmark"
+    },
+    {
+      "name": "textkstelmark"
+    },
+    {
+      "name": "textksregisteredmark"
+    },
+    {
+      "name": "textksfeminimeordinalindicatormark"
+    },
+    {
+      "name": "textksmasculineordinalindicatormark"
+    },
+    {
+      "name": "textkspostalcodemark"
+    },
+    {
+      "name": "textksinterrobang"
+    },
+    {
+      "name": "textksasterim"
+    },
+    {
+      "name": "textkscopyright"
+    },
+    {
+      "name": "textkslongvowelmark"
+    },
+    {
+      "name": "textkstriangularcolon"
+    },
+    {
+      "name": "textkswavedash"
+    },
+    {
+      "name": "textksvertcomma"
+    },
+    {
+      "name": "textksvertfullstop"
+    },
+    {
+      "name": "textkscdotsingle"
+    },
+    {
+      "name": "textkscdotdouble"
+    },
+    {
+      "name": "textkshalfellipsis"
+    },
+    {
+      "name": "textksleftparenthesis"
+    },
+    {
+      "name": "textksrightparenthesis"
+    },
+    {
+      "name": "textksleftbracket"
+    },
+    {
+      "name": "textksrightbracket"
+    },
+    {
+      "name": "textksleftbrace"
+    },
+    {
+      "name": "textksrightbrace"
+    },
+    {
+      "name": "textksleftsinglequote"
+    },
+    {
+      "name": "textksrightsinglequote"
+    },
+    {
+      "name": "textksleftquote"
+    },
+    {
+      "name": "textksrightquote"
+    },
+    {
+      "name": "textksleftrbracket"
+    },
+    {
+      "name": "textksrightrbracket"
+    },
+    {
+      "name": "textksleftbbracket"
+    },
+    {
+      "name": "textksrightbbracket"
+    },
+    {
+      "name": "textksdblleftbbracket"
+    },
+    {
+      "name": "textksdblrightbbracket"
+    },
+    {
+      "name": "textksleftcbracket"
+    },
+    {
+      "name": "textksrightcbracket"
+    },
+    {
+      "name": "textksdblleftcbracket"
+    },
+    {
+      "name": "textksdblrightcbracket"
+    },
+    {
+      "name": "textksleftBracket"
+    },
+    {
+      "name": "textksrightBracket"
+    },
+    {
+      "name": "textksdegreecelcius"
+    },
+    {
+      "name": "textksdegreefahrenheit"
+    },
+    {
+      "name": "textksmalesign"
+    },
+    {
+      "name": "textksfemalesign"
+    },
+    {
+      "name": "textksdegree",
+      "if": "units"
+    },
+    {
+      "name": "textksminute",
+      "if": "units"
+    },
+    {
+      "name": "textkssecond",
+      "if": "units"
+    },
+    {
+      "name": "textksmicroliter",
+      "if": "units"
+    },
+    {
+      "name": "textksmilliliter",
+      "if": "units"
+    },
+    {
+      "name": "textksdeciliter",
+      "if": "units"
+    },
+    {
+      "name": "textksliter",
+      "if": "units"
+    },
+    {
+      "name": "textkskiloliter",
+      "if": "units"
+    },
+    {
+      "name": "textkscenticube",
+      "if": "units"
+    },
+    {
+      "name": "textkscubicmillimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkscubiccentimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkscubicmeter",
+      "if": "units"
+    },
+    {
+      "name": "textkscubickilometer",
+      "if": "units"
+    },
+    {
+      "name": "textksfemtometer",
+      "if": "units"
+    },
+    {
+      "name": "textksnanometer",
+      "if": "units"
+    },
+    {
+      "name": "textksmicrometer",
+      "if": "units"
+    },
+    {
+      "name": "textksmillimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkscentimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkskilometer",
+      "if": "units"
+    },
+    {
+      "name": "textkssquaremillimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkssquarecentimeter",
+      "if": "units"
+    },
+    {
+      "name": "textkssquaremeter",
+      "if": "units"
+    },
+    {
+      "name": "textkssquarekilometer",
+      "if": "units"
+    },
+    {
+      "name": "textkshectare",
+      "if": "units"
+    },
+    {
+      "name": "textksmicrogram",
+      "if": "units"
+    },
+    {
+      "name": "textksmilligram",
+      "if": "units"
+    },
+    {
+      "name": "textkskilogram",
+      "if": "units"
+    },
+    {
+      "name": "textkskiloton",
+      "if": "units"
+    },
+    {
+      "name": "textkscalorie",
+      "if": "units"
+    },
+    {
+      "name": "textkskilocalorie",
+      "if": "units"
+    },
+    {
+      "name": "textksdecibel",
+      "if": "units"
+    },
+    {
+      "name": "textksmeterpersecond",
+      "if": "units"
+    },
+    {
+      "name": "textksmeterpersecondsquared",
+      "if": "units"
+    },
+    {
+      "name": "textkspicosecond",
+      "if": "units"
+    },
+    {
+      "name": "textksnanosecond",
+      "if": "units"
+    },
+    {
+      "name": "textksmicrosecond",
+      "if": "units"
+    },
+    {
+      "name": "textksmillisecond",
+      "if": "units"
+    },
+    {
+      "name": "textkshertz",
+      "if": "units"
+    },
+    {
+      "name": "textkskilohertz",
+      "if": "units"
+    },
+    {
+      "name": "textksmegahertz",
+      "if": "units"
+    },
+    {
+      "name": "textksgigahertz",
+      "if": "units"
+    },
+    {
+      "name": "textksterahertz",
+      "if": "units"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/kstextks#c": [
+      "hcr",
+      "symfont=${1:font}",
+      "units",
+      "useonly={${1:name1,...}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/kstextks#c"
+  ]
+}

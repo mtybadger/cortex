@@ -1,0 +1,104 @@
+{
+  "deps": [
+    {
+      "name": "atbegshi"
+    },
+    {
+      "name": "picture"
+    },
+    {
+      "name": "zref-abspage"
+    },
+    {
+      "name": "zref-lastpage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "flagcont"
+    },
+    {
+      "name": "flagend"
+    },
+    {
+      "name": "flagword"
+    },
+    {
+      "name": "preflagword"
+    },
+    {
+      "name": "postflagword"
+    },
+    {
+      "name": "contsep"
+    },
+    {
+      "name": "contdrop"
+    },
+    {
+      "name": "ifcontmargin",
+      "unusual": true
+    },
+    {
+      "name": "contmarginfalse",
+      "unusual": true
+    },
+    {
+      "name": "contmargintrue",
+      "unusual": true
+    },
+    {
+      "name": "ifcontword",
+      "unusual": true
+    },
+    {
+      "name": "contwordfalse",
+      "unusual": true
+    },
+    {
+      "name": "contwordtrue",
+      "unusual": true
+    },
+    {
+      "name": "ifcontallpages",
+      "unusual": true
+    },
+    {
+      "name": "contallpagesfalse",
+      "unusual": true
+    },
+    {
+      "name": "contallpagestrue",
+      "unusual": true
+    },
+    {
+      "name": "contgo"
+    },
+    {
+      "name": "contstop"
+    },
+    {
+      "name": "FirstWordBox",
+      "unusual": true
+    },
+    {
+      "name": "NextWordBox",
+      "unusual": true
+    },
+    {
+      "name": "LastWordBox",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/continue#c": [
+      "margin",
+      "word",
+      "allpages"
+    ]
+  },
+  "args": [
+    "\\usepackage/continue#c"
+  ]
+}

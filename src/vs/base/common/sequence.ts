@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Emitter, Event } from './event.js';
+import { Emitter, Event } from 'vs/base/common/event';
 
 export interface ISplice<T> {
 	readonly start: number;

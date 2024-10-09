@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "faktor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "faktor{${1:left expr}}{${2:right expr}}"
+      }
+    },
+    {
+      "name": "faktor",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "faktor[${3:stylecmd}]{${1:left expr}}{${2:right expr}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

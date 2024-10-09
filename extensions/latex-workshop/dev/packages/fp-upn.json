@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "fp"
+    },
+    {
+      "name": "defpattern"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FPupn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FPupn{${1:variable%cmd}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

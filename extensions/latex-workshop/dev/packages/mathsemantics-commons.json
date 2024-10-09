@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

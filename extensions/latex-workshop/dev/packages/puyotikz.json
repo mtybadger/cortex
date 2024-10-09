@@ -1,0 +1,93 @@
+{
+  "deps": [
+    {
+      "name": "pythontex"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "puyosmallscale"
+    },
+    {
+      "name": "puyobigscale"
+    },
+    {
+      "name": "puyoboard",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "puyoboard{${1:board string}}{${2:next puyos string}}"
+      }
+    },
+    {
+      "name": "puyoboard",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "puyoboard[${3:options%keyvals}]{${1:board string}}{${2:next puyos string}}",
+        "keys": [
+          "\\puyoboard,\\puyogrid"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "puyomarker",
+      "arg": {
+        "format": "{}",
+        "snippet": "puyomarker{${1:marker string}}"
+      }
+    },
+    {
+      "name": "puyogrid",
+      "arg": {
+        "format": "{}",
+        "snippet": "puyogrid{${1:board string}}"
+      }
+    },
+    {
+      "name": "puyogrid",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "puyogrid[${2:options%keyvals}]{${1:board string}}",
+        "keys": [
+          "\\puyoboard,\\puyogrid"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "puyocolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "puyocolor{${1:name}}{${2:r,g,b}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "puyotikz"
+    },
+    {
+      "name": "puyotikz",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:scale}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\puyoboard,\\puyogrid": [
+      "ncols=${1:number}",
+      "nrows=${1:number}",
+      "nhidrows=${1:number}",
+      "showlabels=${1|True,False|}"
+    ]
+  },
+  "args": []
+}

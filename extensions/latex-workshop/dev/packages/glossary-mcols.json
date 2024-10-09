@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "glossary-tree"
+    }
+  ],
+  "macros": [
+    {
+      "name": "indexspace",
+      "unusual": true
+    },
+    {
+      "name": "glsmcols",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

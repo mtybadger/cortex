@@ -1,0 +1,223 @@
+{
+  "deps": [
+    {
+      "name": "xintkernel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xintiNum",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiNum{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintDouble",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDouble{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintHalf",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintHalf{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintInc",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintInc{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintDec",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDec{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintDSL",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDSL{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintDSR",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDSR{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintDSRr",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDSRr{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintFDg",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintFDg{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintLDg",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintLDg{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiSgn",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiiSgn{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiOpp",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiiOpp{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiAbs",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiiAbs{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiAdd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiAdd{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiCmp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiCmp{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiSub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiSub{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiMul",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiMul{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiSqr",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiiSqr{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiPow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiPow{${1:base}}{${2:power}}"
+      }
+    },
+    {
+      "name": "xintiiFac",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintiiFac{${1:integer}}"
+      }
+    },
+    {
+      "name": "xintiiDivision",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiDivision{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiQuo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiQuo{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiRem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiRem{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiDivRound",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiDivRound{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiDivTrunc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiDivTrunc{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiModTrunc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiModTrunc{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiDivMod",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiDivMod{${1:integer1}}{${2:integer2}}"
+      }
+    },
+    {
+      "name": "xintiiDivFloor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiDivFloor{${1:quotient}}{${2:remainder}}"
+      }
+    },
+    {
+      "name": "xintiiMod",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintiiMod{${1:integer}}{${2:modulus}}"
+      }
+    },
+    {
+      "name": "xintNum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xintNum{${1:integer}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

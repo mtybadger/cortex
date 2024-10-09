@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Copyright (c) Cortex. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
@@ -93,7 +93,7 @@ function darwinBundleDocumentTypes(types: { [name: string]: string | string[] },
 			ostypes: ['TEXT', 'utxt', 'TUTX', '****'],
 			extensions: Array.isArray(extensions) ? extensions : [extensions],
 			iconFile: 'resources/darwin/' + icon + '.icns'
-		};
+		} as DarwinDocumentType;
 	});
 }
 
@@ -103,8 +103,8 @@ export const config = {
 	version: electronVersion,
 	tag: product.electronRepository ? `v${electronVersion}-${msBuildId}` : undefined,
 	productAppName: product.nameLong,
-	companyName: 'Microsoft Corporation',
-	copyright: 'Copyright (C) 2024 Microsoft. All rights reserved',
+	companyName: 'Cortex',
+	copyright: 'Copyright (C) 2024 Cortex. All rights reserved',
 	darwinIcon: 'resources/darwin/code.icns',
 	darwinBundleIdentifier: product.darwinBundleIdentifier,
 	darwinApplicationCategoryType: 'public.app-category.developer-tools',

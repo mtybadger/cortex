@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luabidi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "<",
+      "unusual": true
+    },
+    {
+      "name": "cjhebfamily",
+      "unusual": true
+    },
+    {
+      "name": "cjLR",
+      "arg": {
+        "format": "{}",
+        "snippet": "cjLR{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "cjRL",
+      "arg": {
+        "format": "{}",
+        "snippet": "cjRL{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "dottedcircle",
+      "detail": "◌",
+      "doc": "Dotted circle"
+    },
+    {
+      "name": "endofword",
+      "unusual": true
+    },
+    {
+      "name": "textcjheb",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcjheb{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "zeronojoin",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "cjhebrew"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

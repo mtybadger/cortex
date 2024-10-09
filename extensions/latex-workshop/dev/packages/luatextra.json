@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "fixltx2e"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "luatexbase"
+    },
+    {
+      "name": "metalogo"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

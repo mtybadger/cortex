@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { CancellationToken, CancellationTokenSource } from './cancellation.js';
-import { BugIndicatingError, CancellationError } from './errors.js';
-import { Emitter, Event } from './event.js';
-import { Disposable, DisposableMap, DisposableStore, IDisposable, MutableDisposable, toDisposable } from './lifecycle.js';
-import { extUri as defaultExtUri, IExtUri } from './resources.js';
-import { URI } from './uri.js';
-import { setTimeout0 } from './platform.js';
-import { MicrotaskDelay } from './symbols.js';
-import { Lazy } from './lazy.js';
+import { CancellationToken, CancellationTokenSource } from 'vs/base/common/cancellation';
+import { BugIndicatingError, CancellationError } from 'vs/base/common/errors';
+import { Emitter, Event } from 'vs/base/common/event';
+import { Disposable, DisposableMap, DisposableStore, IDisposable, MutableDisposable, toDisposable } from 'vs/base/common/lifecycle';
+import { extUri as defaultExtUri, IExtUri } from 'vs/base/common/resources';
+import { URI } from 'vs/base/common/uri';
+import { setTimeout0 } from 'vs/base/common/platform';
+import { MicrotaskDelay } from './symbols';
+import { Lazy } from 'vs/base/common/lazy';
 
 export function isThenable<T>(obj: unknown): obj is Promise<T> {
 	return !!obj && typeof (obj as unknown as Promise<T>).then === 'function';
@@ -1158,13 +1158,6 @@ export interface IThrottledWorkerOptions {
 	 * delay before processing the next round of chunks when chunk size exceeds limits
 	 */
 	throttleDelay: number;
-
-	/**
-	 * When enabled will guarantee that two distinct calls to `work()` are not executed
-	 * without throttle delay between them.
-	 * Otherwise if the worker isn't currently throttling it will execute work immediately.
-	 */
-	waitThrottleDelayBetweenWorkUnits?: boolean;
 }
 
 /**
@@ -1180,7 +1173,6 @@ export class ThrottledWorker<T> extends Disposable {
 
 	private readonly throttler = this._register(new MutableDisposable<RunOnceScheduler>());
 	private disposed = false;
-	private lastExecutionTime = 0;
 
 	constructor(
 		private options: IThrottledWorkerOptions,
@@ -1233,41 +1225,30 @@ export class ThrottledWorker<T> extends Disposable {
 			this.pendingWork.push(unit);
 		}
 
-		const timeSinceLastExecution = Date.now() - this.lastExecutionTime;
-
-		if (!this.throttler.value && (!this.options.waitThrottleDelayBetweenWorkUnits || timeSinceLastExecution >= this.options.throttleDelay)) {
-			// Work directly if we are not throttling and we are not
-			// enforced to throttle between `work()` calls.
+		// If not throttled, start working directly
+		// Otherwise, when the throttle delay has
+		// past, pending work will be worked again.
+		if (!this.throttler.value) {
 			this.doWork();
-		} else if (!this.throttler.value && this.options.waitThrottleDelayBetweenWorkUnits) {
-			// Otherwise, schedule the throttler to work.
-			this.scheduleThrottler(Math.max(this.options.throttleDelay - timeSinceLastExecution, 0));
-		} else {
-			// Otherwise, our work will be picked up by the running throttler
 		}
 
 		return true; // work accepted
 	}
 
 	private doWork(): void {
-		this.lastExecutionTime = Date.now();
 
 		// Extract chunk to handle and handle it
 		this.handler(this.pendingWork.splice(0, this.options.maxWorkChunkSize));
 
 		// If we have remaining work, schedule it after a delay
 		if (this.pendingWork.length > 0) {
-			this.scheduleThrottler();
+			this.throttler.value = new RunOnceScheduler(() => {
+				this.throttler.clear();
+
+				this.doWork();
+			}, this.options.throttleDelay);
+			this.throttler.value.schedule();
 		}
-	}
-
-	private scheduleThrottler(delay = this.options.throttleDelay): void {
-		this.throttler.value = new RunOnceScheduler(() => {
-			this.throttler.clear();
-
-			this.doWork();
-		}, delay);
-		this.throttler.value.schedule();
 	}
 
 	override dispose(): void {
@@ -1314,7 +1295,7 @@ export let _runWhenIdle: (targetWindow: IdleApi, callback: (idle: IdleDeadline) 
 
 (function () {
 	if (typeof globalThis.requestIdleCallback !== 'function' || typeof globalThis.cancelIdleCallback !== 'function') {
-		_runWhenIdle = (_targetWindow, runner, timeout?) => {
+		_runWhenIdle = (_targetWindow, runner) => {
 			setTimeout0(() => {
 				if (disposed) {
 					return;
@@ -1353,7 +1334,7 @@ export let _runWhenIdle: (targetWindow: IdleApi, callback: (idle: IdleDeadline) 
 			};
 		};
 	}
-	runWhenGlobalIdle = (runner, timeout) => _runWhenIdle(globalThis, runner, timeout);
+	runWhenGlobalIdle = (runner) => _runWhenIdle(globalThis, runner);
 })();
 
 export abstract class AbstractIdleValue<T> {

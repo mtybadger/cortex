@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "varioref",
+      "if": "varioref"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "FPfigure"
+    },
+    {
+      "name": "FPtable"
+    }
+  ],
+  "keys": {
+    "\\usepackage/fltpage#c": [
+      "german",
+      "varioref",
+      "closeFloats",
+      "leftFloats",
+      "rightFloats",
+      "CaptionAfterwards",
+      "CaptionBefore",
+      "draft",
+      "oneside",
+      "twoside",
+      "noSeparatorLine",
+      "noHints"
+    ]
+  },
+  "args": [
+    "\\usepackage/fltpage#c"
+  ]
+}

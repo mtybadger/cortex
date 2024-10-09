@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fnbelowfloat"
+    },
+    {
+      "name": "fnunderfloat"
+    },
+    {
+      "name": "setbaselinefloat"
+    },
+    {
+      "name": "setbaselinefixed"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,420 @@
+{
+  "deps": [
+    {
+      "name": "class-memoir",
+      "if": "memoir"
+    },
+    {
+      "name": "class-book",
+      "if": "book"
+    },
+    {
+      "name": "class-ltxdockit",
+      "if": "ltxdockit"
+    },
+    {
+      "name": "class-scrartcl",
+      "if": "scrartcl"
+    },
+    {
+      "name": "class-scrbook",
+      "if": "scrbook"
+    },
+    {
+      "name": "class-scrreprt",
+      "if": "scrreprt"
+    },
+    {
+      "name": "class-scrlttr2",
+      "if": "scrlttr2"
+    },
+    {
+      "name": "class-ltxdoc",
+      "if": "ltxdoc"
+    },
+    {
+      "name": "class-report",
+      "if": "report"
+    },
+    {
+      "name": "class-ltxguide",
+      "if": "ltxguide"
+    },
+    {
+      "name": "class-ltxguidex",
+      "if": "ltxguidex"
+    },
+    {
+      "name": "class-l3doc",
+      "if": "l3doc"
+    },
+    {
+      "name": "makeidx",
+      "if": "index"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ProduceFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "ProduceFile{${1:file}}"
+      }
+    },
+    {
+      "name": "ProduceFile",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ProduceFile{${1:file}}[${2:file name}]"
+      }
+    },
+    {
+      "name": "ProduceFile",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "ProduceFile{${1:file}}[${2:file name}][${3:file version}]"
+      }
+    },
+    {
+      "name": "ProduceFile",
+      "arg": {
+        "format": "{}[][][]",
+        "snippet": "ProduceFile{${1:file}}[${2:file name}][${3:file version}][${4:file date}]"
+      }
+    },
+    {
+      "name": "FileSource"
+    },
+    {
+      "name": "FileName"
+    },
+    {
+      "name": "FileVersion"
+    },
+    {
+      "name": "FileDate"
+    },
+    {
+      "name": "CloseFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "CloseFile{${1:file}}"
+      }
+    },
+    {
+      "name": "CodeFont",
+      "arg": {
+        "format": "{}",
+        "snippet": "CodeFont{${1:font specs}}"
+      }
+    },
+    {
+      "name": "LineNumber",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "LineNumber{${1:envname}}{${2:font specs}}{${3:width}}"
+      }
+    },
+    {
+      "name": "LineNumber",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "LineNumber{${1:envname}}{${2:font specs}}{${3:width}}[${4:number}]"
+      }
+    },
+    {
+      "name": "Header",
+      "arg": {
+        "format": "{}",
+        "snippet": "Header{${1:text}}"
+      }
+    },
+    {
+      "name": "AddBlankLine"
+    },
+    {
+      "name": "TabSize",
+      "arg": {
+        "format": "{}",
+        "snippet": "TabSize{${1:number}}"
+      }
+    },
+    {
+      "name": "Gobble",
+      "arg": {
+        "format": "{}",
+        "snippet": "Gobble{${1:number}}"
+      }
+    },
+    {
+      "name": "BoxTolerance",
+      "arg": {
+        "format": "{}",
+        "snippet": "BoxTolerance{${1:dimen%l}}"
+      }
+    },
+    {
+      "name": "DescribeMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "DefineMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "DescribeEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "DefineEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineEnvironment{${1:envname}}"
+      }
+    },
+    {
+      "name": "DescribeIndexFont",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeIndexFont{${1:font specs}}"
+      }
+    },
+    {
+      "name": "DefineIndexFont",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineIndexFont{${1:font specs}}"
+      }
+    },
+    {
+      "name": "PrintMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintMacro{${1:macro}}"
+      }
+    },
+    {
+      "name": "DocStripMarginpar"
+    },
+    {
+      "name": "IgnorePrefix",
+      "arg": {
+        "format": "{}",
+        "snippet": "IgnorePrefix{${1:macro prefix}}"
+      }
+    },
+    {
+      "name": "PrintPrefix",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintPrefix{${1:macro prefix}}"
+      }
+    },
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:arg}}"
+      }
+    },
+    {
+      "name": "bslash"
+    },
+    {
+      "name": "StopHere",
+      "arg": {
+        "format": "{}",
+        "snippet": "StopHere{${1:code}}"
+      }
+    },
+    {
+      "name": "DangerousEnvironment",
+      "arg": {
+        "format": "{}",
+        "snippet": "DangerousEnvironment{${1:envname list}}"
+      }
+    },
+    {
+      "name": "StartIgnore"
+    },
+    {
+      "name": "StopIgnore"
+    },
+    {
+      "name": "CodeInput"
+    },
+    {
+      "name": "CodeOutput"
+    },
+    {
+      "name": "NewExample",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "NewExample{${1:envname}}{${2:code input}}{${3:code output}}{${4:immediate execution}}"
+      }
+    },
+    {
+      "name": "NewExample",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "NewExample[${5:options%keyvals}]{${1:envname}}{${2:code input}}{${3:code output}}{${4:immediate execution}}",
+        "keys": [
+          "\\NewExample,\\RenewExample"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "RenewExample",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "RenewExample{${1:envname}}{${2:code input}}{${3:code output}}{${4:immediate execution}}"
+      }
+    },
+    {
+      "name": "RenewExample",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "RenewExample[${5:options%keyvals}]{${1:envname}}{${2:code input}}{${3:code output}}{${4:immediate execution}}",
+        "keys": [
+          "\\NewExample,\\RenewExample"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "eTeXOff"
+    },
+    {
+      "name": "eTeXOn"
+    },
+    {
+      "name": "ShortVerb",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShortVerb{${1:character}}"
+      }
+    },
+    {
+      "name": "UndoShortVerb"
+    },
+    {
+      "name": "ShortCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShortCode{${1:character}}"
+      }
+    },
+    {
+      "name": "ShortCode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ShortCode[${2:example name}]{${1:character}}"
+      }
+    },
+    {
+      "name": "UndoShortCode"
+    },
+    {
+      "name": "VerbBreak",
+      "arg": {
+        "format": "{}",
+        "snippet": "VerbBreak{${1:character}}"
+      }
+    },
+    {
+      "name": "UndoVerbBreak"
+    },
+    {
+      "name": "VerbCommand",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "VerbCommand{${1:escape}}{${2:left brace}}{${3:right brace}}"
+      }
+    },
+    {
+      "name": "UndoVerbCommand"
+    },
+    {
+      "name": "CodeEscape",
+      "arg": {
+        "format": "{}",
+        "snippet": "CodeEscape{${1:character}}"
+      }
+    },
+    {
+      "name": "UndoCodeEscape"
+    },
+    {
+      "name": "AtChar",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "code"
+    },
+    {
+      "name": "code*"
+    },
+    {
+      "name": "invisible"
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example*"
+    }
+  ],
+  "keys": {
+    "\\documentclass/codedoc#c": [
+      "autoclose",
+      "index",
+      "noheader",
+      "obeystop",
+      "tracing0",
+      "tracing1",
+      "tracing2",
+      "${1:class name}"
+    ],
+    "\\NewExample,\\RenewExample": [
+      "numbered",
+      "continuous",
+      "visibleEOL"
+    ]
+  },
+  "args": [
+    "\\documentclass/codedoc#c"
+  ]
+}

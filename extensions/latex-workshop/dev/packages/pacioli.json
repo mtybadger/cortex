@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cpcfamily"
+    },
+    {
+      "name": "textcpc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcpc{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

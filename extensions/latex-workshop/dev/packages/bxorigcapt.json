@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bxDebug",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxDebug{${1:message}}"
+      }
+    },
+    {
+      "name": "bxorigcaptDeprecateCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bxorigcaptDeprecateCommand{${1:csname1,csname2,...}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bxorigcapt#c": [
+      "main",
+      "${1:language}",
+      "warn",
+      "nowarn"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxorigcapt#c"
+  ]
+}

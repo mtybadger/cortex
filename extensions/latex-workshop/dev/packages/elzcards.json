@@ -1,0 +1,266 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BusinessCard",
+      "arg": {
+        "format": "{}",
+        "snippet": "BusinessCard{${1:front side%text}}"
+      }
+    },
+    {
+      "name": "BusinessCard",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "BusinessCard{${1:front side%text}}[${2:back side%text}]"
+      }
+    },
+    {
+      "name": "IndexCard",
+      "arg": {
+        "format": "{}",
+        "snippet": "IndexCard{${1:front side%text}}"
+      }
+    },
+    {
+      "name": "IndexCard",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "IndexCard{${1:front side%text}}[${2:back side%text}]"
+      }
+    },
+    {
+      "name": "FlashCard",
+      "arg": {
+        "format": "{}",
+        "snippet": "FlashCard{${1:front side%text}}"
+      }
+    },
+    {
+      "name": "FlashCard",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "FlashCard{${1:front side%text}}[${2:back side%text}]"
+      }
+    },
+    {
+      "name": "CurrentIC"
+    },
+    {
+      "name": "CurrentFC"
+    },
+    {
+      "name": "TotalIC"
+    },
+    {
+      "name": "TotalFC"
+    },
+    {
+      "name": "MakeBC"
+    },
+    {
+      "name": "MakeBC",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeBC[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MakeBC*"
+    },
+    {
+      "name": "MakeBC*",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeBC*[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MakeIC"
+    },
+    {
+      "name": "MakeIC",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeIC[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MakeIC*"
+    },
+    {
+      "name": "MakeIC*",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeIC*[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MakeFC"
+    },
+    {
+      "name": "MakeFC",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeFC[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MakeFC*"
+    },
+    {
+      "name": "MakeFC*",
+      "arg": {
+        "format": "[]",
+        "snippet": "MakeFC*[${1:options%keyvals}]",
+        "keys": [
+          "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Transverse"
+    },
+    {
+      "name": "NoTransverse"
+    },
+    {
+      "name": "BCdim",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "BCdim{${1:h-size}}{${2:v-size}}"
+      }
+    },
+    {
+      "name": "ICdim",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ICdim{${1:h-size}}{${2:v-size}}"
+      }
+    },
+    {
+      "name": "FCdim",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FCdim{${1:h-size}}{${2:v-size}}"
+      }
+    },
+    {
+      "name": "CardGap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CardGap{${1:h-gap}}{${2:v-gap}}"
+      }
+    },
+    {
+      "name": "AutoGapInner"
+    },
+    {
+      "name": "AutoGapTotal"
+    },
+    {
+      "name": "NoAutoGap"
+    },
+    {
+      "name": "CropCrosses"
+    },
+    {
+      "name": "CropSegments"
+    },
+    {
+      "name": "CropLines"
+    },
+    {
+      "name": "CropDots"
+    },
+    {
+      "name": "NoCropMarks"
+    },
+    {
+      "name": "SegmentLength",
+      "arg": {
+        "format": "{}",
+        "snippet": "SegmentLength{${1:length}}"
+      }
+    },
+    {
+      "name": "LineThickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "LineThickness{${1:thickness}}"
+      }
+    },
+    {
+      "name": "DotSize",
+      "arg": {
+        "format": "{}",
+        "snippet": "DotSize{${1:size}}"
+      }
+    },
+    {
+      "name": "CropColor",
+      "arg": {
+        "format": "{}",
+        "snippet": "CropColor{${1:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\MakeBC,\\MakeBC*,\\MakeIC,\\MakeIC*,\\MakeFC,\\MakeFC*": [
+      "order=${1:num1 num2 ...}",
+      "transverse",
+      "no transverse",
+      "rows=${1:number}",
+      "columns=${1:number}",
+      "hsize=",
+      "vsize=",
+      "hgap=",
+      "vgap=",
+      "autogap inner",
+      "autogap total",
+      "no autogap",
+      "crosses",
+      "segments",
+      "lines",
+      "dots",
+      "no marks",
+      "segment length=",
+      "line thickness=",
+      "dot size=",
+      "crop color="
+    ]
+  },
+  "args": []
+}

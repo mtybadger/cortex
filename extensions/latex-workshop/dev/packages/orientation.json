@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "everypage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setportrait"
+    },
+    {
+      "name": "setlandscape"
+    },
+    {
+      "name": "setupsidedown"
+    },
+    {
+      "name": "setcounterlandscape"
+    },
+    {
+      "name": "thispageportrait"
+    },
+    {
+      "name": "thispagelandscape"
+    },
+    {
+      "name": "thispageupsidedown"
+    },
+    {
+      "name": "thispagecounterlandscape"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

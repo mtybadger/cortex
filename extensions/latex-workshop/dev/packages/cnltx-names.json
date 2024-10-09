@@ -1,0 +1,70 @@
+{
+  "deps": [
+    {
+      "name": "cnltx-base"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newfirstformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "newfirstformat{${1:cmd}}"
+      }
+    },
+    {
+      "name": "writename",
+      "arg": {
+        "format": "{}",
+        "snippet": "writename{${1:text}}"
+      }
+    },
+    {
+      "name": "defnameformat",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "defnameformat{${1:format name}}{${2:first}}{${3:middle}}{${4:last}}"
+      }
+    },
+    {
+      "name": "writenameformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "writenameformat{${1:format name}}"
+      }
+    },
+    {
+      "name": "name",
+      "arg": {
+        "format": "{}",
+        "snippet": "name{${1:text}}"
+      }
+    },
+    {
+      "name": "name*",
+      "arg": {
+        "format": "{}",
+        "snippet": "name*{${1:text}}"
+      }
+    },
+    {
+      "name": "nameformat"
+    },
+    {
+      "name": "namefirstformat"
+    },
+    {
+      "name": "resetname"
+    },
+    {
+      "name": "newname",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newname{${1:cmd}}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

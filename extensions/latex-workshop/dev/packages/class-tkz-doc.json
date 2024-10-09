@@ -1,0 +1,567 @@
+{
+  "deps": [
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarydecorations.shapes"
+    },
+    {
+      "name": "tikzlibrarydecorations.text"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathreplacing"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    },
+    {
+      "name": "tikzlibrarydecorations.markings"
+    },
+    {
+      "name": "tikzlibraryshadows"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "footmisc"
+    },
+    {
+      "name": "framed"
+    },
+    {
+      "name": "eso-pic"
+    },
+    {
+      "name": "scrlayer-scrpage"
+    },
+    {
+      "name": "datetime"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "cellspace"
+    },
+    {
+      "name": "multicol"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ActivBoxName",
+      "unusual": true
+    },
+    {
+      "name": "addbs",
+      "arg": {
+        "format": "{}",
+        "snippet": "addbs{${1:text}}"
+      }
+    },
+    {
+      "name": "BS"
+    },
+    {
+      "name": "bslash"
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:cmd}}"
+      }
+    },
+    {
+      "name": "cn",
+      "arg": {
+        "format": "{}",
+        "snippet": "cn{${1:csname}}"
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "defoffile",
+      "arg": {
+        "format": "{}",
+        "snippet": "defoffile{${1:definition}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "fn",
+      "arg": {
+        "format": "{}",
+        "snippet": "fn{${1:file}}"
+      }
+    },
+    {
+      "name": "Iaccent",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Iaccent{${1:csname}}{${2:accents}}"
+      }
+    },
+    {
+      "name": "Iarg",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Iarg{${1:csname}}{${2:args}}"
+      }
+    },
+    {
+      "name": "IargEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IargEnv{${1:envname}}{${2:args}}"
+      }
+    },
+    {
+      "name": "IargName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IargName{${1:csname}}{${2:args}}"
+      }
+    },
+    {
+      "name": "IargNameEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IargNameEnv{${1:envname}}{${2:args}}"
+      }
+    },
+    {
+      "name": "Ienv",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ienv{${1:envname}}"
+      }
+    },
+    {
+      "name": "Ilib",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ilib{${1:library}}"
+      }
+    },
+    {
+      "name": "Imacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "Imacro{${1:csname}}"
+      }
+    },
+    {
+      "name": "Iopt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Iopt{${1:csname}}{${2:opts}}"
+      }
+    },
+    {
+      "name": "IoptEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IoptEnv{${1:envname}}{${2:opts}}"
+      }
+    },
+    {
+      "name": "IoptName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IoptName{${1:csname}}{${2:opts}}"
+      }
+    },
+    {
+      "name": "IoptNameEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IoptNameEnv{${1:envname}}{${2:opts}}"
+      }
+    },
+    {
+      "name": "Istyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Istyle{${1:csname}}{${2:styles}}"
+      }
+    },
+    {
+      "name": "IstyleEnv",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IstyleEnv{${1:csname}}{${2:styles}}"
+      }
+    },
+    {
+      "name": "LATEX"
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "NameDist",
+      "arg": {
+        "format": "{}",
+        "snippet": "NameDist{${1:distribution}}"
+      }
+    },
+    {
+      "name": "NameFonct",
+      "arg": {
+        "format": "{}",
+        "snippet": "NameFonct{${1:function}}"
+      }
+    },
+    {
+      "name": "NameLib",
+      "arg": {
+        "format": "{}",
+        "snippet": "NameLib{${1:library}}"
+      }
+    },
+    {
+      "name": "nameoffile",
+      "arg": {
+        "format": "{}",
+        "snippet": "nameoffile{${1:file}}"
+      }
+    },
+    {
+      "name": "NamePack",
+      "arg": {
+        "format": "{}",
+        "snippet": "NamePack{${1:package}}"
+      }
+    },
+    {
+      "name": "NameSys",
+      "arg": {
+        "format": "{}",
+        "snippet": "NameSys{${1:os}}"
+      }
+    },
+    {
+      "name": "nodeshadowedone",
+      "arg": {
+        "format": "(){}",
+        "snippet": "nodeshadowedone(${2:x},${3:y}){${1:arg}}"
+      }
+    },
+    {
+      "name": "ntt"
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "ooarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "ooarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "opt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt{${1:option}}"
+      }
+    },
+    {
+      "name": "PackageName",
+      "unusual": true
+    },
+    {
+      "name": "PackageVersion",
+      "unusual": true
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:arg}}"
+      }
+    },
+    {
+      "name": "pdf"
+    },
+    {
+      "name": "PGF"
+    },
+    {
+      "name": "pgfname"
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg{${1:package}}"
+      }
+    },
+    {
+      "name": "presentation"
+    },
+    {
+      "name": "restorelastnode",
+      "unusual": true
+    },
+    {
+      "name": "savelastnode",
+      "unusual": true
+    },
+    {
+      "name": "SectionFontStyle",
+      "unusual": true
+    },
+    {
+      "name": "TAline",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TAline{${1:args}}{${2:text1}}{${3:text2}}"
+      }
+    },
+    {
+      "name": "tbody"
+    },
+    {
+      "name": "TEX"
+    },
+    {
+      "name": "thead"
+    },
+    {
+      "name": "thecnt",
+      "unusual": true
+    },
+    {
+      "name": "TIKZ"
+    },
+    {
+      "name": "tikzname"
+    },
+    {
+      "name": "titleinframe",
+      "unusual": true
+    },
+    {
+      "name": "tkz"
+    },
+    {
+      "name": "tkzAttention",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tkzAttention{${1:text}}{${2:skip}}{${3:color}}"
+      }
+    },
+    {
+      "name": "tkzBomb"
+    },
+    {
+      "name": "tkzbox",
+      "unusual": true
+    },
+    {
+      "name": "tkzcname",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzcname{${1:csname}}"
+      }
+    },
+    {
+      "name": "tkzdft"
+    },
+    {
+      "name": "tkzHand"
+    },
+    {
+      "name": "tkzHandBomb"
+    },
+    {
+      "name": "tkzhname",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzhname{${1:csname}}"
+      }
+    },
+    {
+      "name": "tkzimp",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzimp{${1:text}}"
+      }
+    },
+    {
+      "name": "tkzname",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzname{${1:text}}"
+      }
+    },
+    {
+      "name": "tkzNameDist",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzNameDist{${1:distribution}}"
+      }
+    },
+    {
+      "name": "tkzNameEnv",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzNameEnv{${1:envname}}"
+      }
+    },
+    {
+      "name": "tkzNameMacro",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzNameMacro{${1:cmd}}"
+      }
+    },
+    {
+      "name": "tkzNamePack",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzNamePack{${1:package}}"
+      }
+    },
+    {
+      "name": "tkzNameSys",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzNameSys{${1:os}}"
+      }
+    },
+    {
+      "name": "tkzSetUpColors",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzSetUpColors[${1:keyvals}]",
+        "keys": [
+          "\\tkzSetUpColors"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzsubf",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tkzsubf{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "tkzTitleFrame",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzTitleFrame{${1:text}}"
+      }
+    },
+    {
+      "name": "tkzTwoBomb"
+    },
+    {
+      "name": "TMline",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TMline{${1:csname}}{${2:text1}}{${3:text2}}"
+      }
+    },
+    {
+      "name": "TOenvline",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TOenvline{${1:opts}}{${2:text1}}{${3:text2}}"
+      }
+    },
+    {
+      "name": "TOline",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "TOline{${1:args}}{${2:text1}}{${3:text2}}"
+      }
+    },
+    {
+      "name": "var",
+      "arg": {
+        "format": "{}",
+        "snippet": "var{${1:arg}}"
+      }
+    },
+    {
+      "name": "vara",
+      "arg": {
+        "format": "{}",
+        "snippet": "vara{${1:arg}}"
+      }
+    },
+    {
+      "name": "varp",
+      "arg": {
+        "format": "{}",
+        "snippet": "varp{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "NewEnvBox",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:envname}}"
+      }
+    },
+    {
+      "name": "NewMacroBox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:csname}}{${2:suffix}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/tkz-doc#c": [
+      "cadre"
+    ],
+    "\\tkzSetUpColors": [
+      "background=",
+      "text="
+    ]
+  },
+  "args": [
+    "\\documentclass/tkz-doc#c"
+  ]
+}

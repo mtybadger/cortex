@@ -1,0 +1,394 @@
+{
+  "deps": [
+    {
+      "name": "adjustbox"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "fp"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "twoopt"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "grffile"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "geometry"
+    }
+  ],
+  "macros": [
+    {
+      "name": "note",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "note{${1:height}}{${2:text}}"
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "note[${3:alignment%keyvals}]{${1:height}}{${2:text}}",
+        "keys": [
+          "\\note"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bnote{${1:height}}{${2:text}}"
+      }
+    },
+    {
+      "name": "cnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cnote{${1:height}}{${2:text}}"
+      }
+    },
+    {
+      "name": "tnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tnote{${1:height}}{${2:text}}"
+      }
+    },
+    {
+      "name": "sourcedoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "sourcedoc{${1:file%file}}"
+      }
+    },
+    {
+      "name": "pagegrid"
+    },
+    {
+      "name": "pagegrid",
+      "arg": {
+        "format": "[]",
+        "snippet": "pagegrid[${1:TikZ settings}]"
+      }
+    },
+    {
+      "name": "pagegrid",
+      "arg": {
+        "format": "[][]",
+        "snippet": "pagegrid[${1:TikZ settings}][${2:steps}]"
+      }
+    },
+    {
+      "name": "gsetlength",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gsetlength{${1:length macro}}{${2:length}}"
+      }
+    },
+    {
+      "name": "thenote",
+      "unusual": true
+    },
+    {
+      "name": "resettrim",
+      "unusual": true
+    },
+    {
+      "name": "resettrim",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "resettrim[${1:length}]"
+      }
+    },
+    {
+      "name": "ssout",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssout{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "page",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:page number}}"
+      }
+    },
+    {
+      "name": "page",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:page number}}",
+        "keys": [
+          "\\begin{page}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "leftnotes"
+    },
+    {
+      "name": "rightnotes"
+    },
+    {
+      "name": "insertpage"
+    },
+    {
+      "name": "insertpage",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "listofnotes",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/pdfreview#c": [
+      "grid",
+      "twocolumn",
+      "notenumbers",
+      "inline",
+      "withnotesonly",
+      "staggered",
+      "scaletopage=${1:factor}",
+      "gridcolor=",
+      "bodywidth=${1:factor}",
+      "trim=",
+      "trimshift=",
+      "bodyframe=",
+      "sourcedoc=${1:file name}",
+      "pageoffset=${1:integer}",
+      "alignnotes=${1|t,b,c|}",
+      "notesbg=",
+      "important=",
+      "notesframe=",
+      "notesep=",
+      "fontsize=${1:fontsize csname}",
+      "maxscale=${1:integer}",
+      "insertpagemargin="
+    ],
+    "\\note": [
+      "b",
+      "c",
+      "t"
+    ],
+    "\\begin{page}": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}",
+      "intent",
+      "maskarray",
+      "ocobjnum",
+      "ocobjref",
+      "resetcolor",
+      "resolution",
+      "xmpfile",
+      "Trim=",
+      "Viewport=",
+      "Clip=",
+      "Clip*=",
+      "rndcorners=",
+      "margin=",
+      "margin*=",
+      "padding=",
+      "padding*=",
+      "vspace=",
+      "vspace*=",
+      "min width=",
+      "max width=",
+      "min height=",
+      "max height=",
+      "min totalheight=",
+      "max totalheight=",
+      "min size={${1:width}}{${2:height}}",
+      "max size={${1:width}}{${2:height}}",
+      "min totalsize={${1:width}}{${2:totalheight}}",
+      "max totalsize={${1:width}}{${2:totalheight}}",
+      "warn width",
+      "warn width=",
+      "scale={${1:h-factor}}{${2:v-factor}}",
+      "reflect",
+      "fbox",
+      "fbox=",
+      "frame",
+      "frame=",
+      "cfbox=",
+      "cframe=",
+      "rndframe=",
+      "rndcornersbox",
+      "rndfbox",
+      "valign=${1|T,M,B,t,m,b|}",
+      "raise=",
+      "set height=",
+      "set depth=",
+      "set vsize={${1:height}}{${2:depth}}",
+      "center",
+      "center=",
+      "right",
+      "right=",
+      "left",
+      "left=",
+      "inner",
+      "inner=",
+      "outer",
+      "outer=",
+      "pagecenter",
+      "pagecenter=",
+      "pageleftalign",
+      "pageleftalign=",
+      "pagerightalign",
+      "pagerightalign=",
+      "pageinner",
+      "pageinner=",
+      "pageouter",
+      "pageouter=",
+      "textareacenter",
+      "textareacenter=",
+      "textarealeftalign",
+      "textarealeftalign=",
+      "textarearightalign",
+      "textarearightalign=",
+      "textareainner",
+      "textareainner=",
+      "textareaouter",
+      "textareaouter=",
+      "noindent",
+      "leavevmode",
+      "lap=",
+      "rlap",
+      "llap",
+      "clap",
+      "color=",
+      "color*=${1:color macro}",
+      "fgcolor=",
+      "fgcolor*=${1:color macro}",
+      "bgcolor=",
+      "bgcolor*=${1:color macro}",
+      "bgimage=",
+      "bgimage*=",
+      "fgimage=",
+      "fgimage*=",
+      "background=",
+      "background*=",
+      "foreground=",
+      "foreground*=",
+      "dpi=${1:number}",
+      "pxdim=",
+      "minipage=",
+      "varwidth=",
+      "tabular=[${1:position}]{${2:col spec}}",
+      "tabular*=[${1:position}]{${2:width}}{${3:col spec}}",
+      "array=[${1:position}]{${2:col spec}}",
+      "stack",
+      "stack=",
+      "innerenv=${1:envname}",
+      "innercode={${1:begin code}}{${2:end code}}",
+      "caption=",
+      "captionabove=",
+      "captionbelow=",
+      "label=",
+      "figure",
+      "figure=${1:placement}",
+      "float=",
+      "nofloat=${1:float type}",
+      "rotate=",
+      "env=",
+      "addcode={${1:code before}}{${2:code after}}",
+      "Addcode={${1:code before}}{${2:code after}}",
+      "appcode=${1:code after}",
+      "precode=${1:code before}",
+      "Precode={${1:code before}}",
+      "execute=${1:code}",
+      "Execute=${1:code}",
+      "phantom",
+      "phantom=${1|h,v|}",
+      "gobble",
+      "discard",
+      "content=${1:new content}",
+      "gstore=${1:box register}",
+      "gstore*=${1:box register}",
+      "gstore width=${1:length register}",
+      "gstore height=${1:length register}",
+      "gstore depth=${1:length register}",
+      "gstore totalheight=${1:length register}",
+      "gstore sizes=",
+      "process"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfreview#c"
+  ]
+}

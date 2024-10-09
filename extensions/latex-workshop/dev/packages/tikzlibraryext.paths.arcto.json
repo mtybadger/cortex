@@ -1,0 +1,11 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "every arc to/.style={${1:TikZ keys}}"
+    ]
+  },
+  "args": []
+}

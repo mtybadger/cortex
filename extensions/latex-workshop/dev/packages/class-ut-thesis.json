@@ -1,0 +1,87 @@
+{
+  "deps": [
+    {
+      "name": "class-book"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "setspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "degree",
+      "arg": {
+        "format": "{}",
+        "snippet": "degree{${1:degree%text}}"
+      }
+    },
+    {
+      "name": "gradyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "gradyear{${1:year}}"
+      }
+    },
+    {
+      "name": "department",
+      "arg": {
+        "format": "{}",
+        "snippet": "department{${1:department%text}}"
+      }
+    },
+    {
+      "name": "department",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "department[${2:pre text%text}]{${1:department%text}}"
+      }
+    },
+    {
+      "name": "copyrighttext",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrighttext{${1:text}}"
+      }
+    },
+    {
+      "name": "headerstyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "headerstyle{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "dedication"
+    },
+    {
+      "name": "acknowledgements"
+    }
+  ],
+  "keys": {
+    "\\documentclass/ut-thesis#c": [
+      "10pt",
+      "11pt",
+      "12pt",
+      "singlespacing",
+      "onehalfspacing",
+      "doublespacing",
+      "equalmargins",
+      "unequalmargins",
+      "oneside",
+      "twoside",
+      "narrowmargins",
+      "normalmargins",
+      "widemargins",
+      "extrawidemargins"
+    ]
+  },
+  "args": [
+    "\\documentclass/ut-thesis#c"
+  ]
+}

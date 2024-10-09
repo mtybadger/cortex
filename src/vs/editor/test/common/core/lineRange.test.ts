@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../base/test/common/utils.js';
-import { LineRange, LineRangeSet } from '../../../common/core/lineRange.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { LineRange, LineRangeSet } from 'vs/editor/common/core/lineRange';
 
 suite('LineRange', () => {
 

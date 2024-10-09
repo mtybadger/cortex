@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "vowel"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

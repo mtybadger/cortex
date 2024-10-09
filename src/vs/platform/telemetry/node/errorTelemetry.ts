@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { isCancellationError, isSigPipeError, onUnexpectedError, setUnexpectedErrorHandler } from '../../../base/common/errors.js';
-import BaseErrorTelemetry from '../common/errorTelemetry.js';
+import { isCancellationError, isSigPipeError, onUnexpectedError, setUnexpectedErrorHandler } from 'vs/base/common/errors';
+import BaseErrorTelemetry from 'vs/platform/telemetry/common/errorTelemetry';
 
 export default class ErrorTelemetry extends BaseErrorTelemetry {
 	protected override installErrorListeners(): void {

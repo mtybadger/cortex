@@ -1,0 +1,38 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tinos"
+    },
+    {
+      "name": "tinosfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tinos#c": [
+      "scaled=${1:factor}",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/tinos#c"
+  ]
+}

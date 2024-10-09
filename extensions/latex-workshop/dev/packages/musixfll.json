@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "longledgerlines"
+    },
+    {
+      "name": "autoledgerlines"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

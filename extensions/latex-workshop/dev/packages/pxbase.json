@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "bxbase"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

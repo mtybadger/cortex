@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycircuits.logic.US"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "circuit logic CDH"
+    ]
+  },
+  "args": []
+}

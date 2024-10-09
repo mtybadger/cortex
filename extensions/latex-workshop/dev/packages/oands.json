@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "oandsfamily"
+    },
+    {
+      "name": "textoands",
+      "arg": {
+        "format": "{}",
+        "snippet": "textoands{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

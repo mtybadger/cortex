@@ -1,0 +1,101 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mdash"
+    },
+    {
+      "name": "ndash"
+    },
+    {
+      "name": "qd"
+    },
+    {
+      "name": "xd"
+    },
+    {
+      "name": "ldq"
+    },
+    {
+      "name": "rdq"
+    },
+    {
+      "name": "lsq"
+    },
+    {
+      "name": "rsq"
+    },
+    {
+      "name": "bul"
+    },
+    {
+      "name": "vsp"
+    },
+    {
+      "name": "pdc"
+    },
+    {
+      "name": "vrt"
+    },
+    {
+      "name": "cir"
+    },
+    {
+      "name": "til"
+    },
+    {
+      "name": "bsl"
+    },
+    {
+      "name": "cwm"
+    },
+    {
+      "name": "qq",
+      "arg": {
+        "format": "{}",
+        "snippet": "qq{${1:text}}"
+      }
+    },
+    {
+      "name": "q",
+      "arg": {
+        "format": "{}",
+        "snippet": "q{${1:text}}"
+      }
+    },
+    {
+      "name": "supsize"
+    },
+    {
+      "name": "tsup",
+      "arg": {
+        "format": "{}",
+        "snippet": "tsup{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "tsub",
+      "arg": {
+        "format": "{}",
+        "snippet": "tsub{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "textprimechar",
+      "unusual": true
+    },
+    {
+      "name": "tprime"
+    },
+    {
+      "name": "lara",
+      "arg": {
+        "format": "{}",
+        "snippet": "lara{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,176 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "WarningsOff"
+    },
+    {
+      "name": "WarningsOff",
+      "arg": {
+        "format": "[]",
+        "snippet": "WarningsOff[${1:list}]"
+      }
+    },
+    {
+      "name": "WarningsOff*"
+    },
+    {
+      "name": "ErrorsOff"
+    },
+    {
+      "name": "ErrorsOff",
+      "arg": {
+        "format": "[]",
+        "snippet": "ErrorsOff[${1:list}]"
+      }
+    },
+    {
+      "name": "ErrorsOff*"
+    },
+    {
+      "name": "WarningsOn"
+    },
+    {
+      "name": "WarningsOn",
+      "arg": {
+        "format": "[]",
+        "snippet": "WarningsOn[${1:list}]"
+      }
+    },
+    {
+      "name": "ErrorsOn"
+    },
+    {
+      "name": "ErrorsOn",
+      "arg": {
+        "format": "[]",
+        "snippet": "ErrorsOn[${1:list}]"
+      }
+    },
+    {
+      "name": "WarningFilter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "WarningFilter{${1:package}}{${2:message}}"
+      }
+    },
+    {
+      "name": "WarningFilter",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "WarningFilter[${3:family}]{${1:package}}{${2:message}}"
+      }
+    },
+    {
+      "name": "ErrorFilter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ErrorFilter{${1:package}}{${2:message}}"
+      }
+    },
+    {
+      "name": "ErrorFilter",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ErrorFilter[${3:family}]{${1:package}}{${2:message}}"
+      }
+    },
+    {
+      "name": "ActivateWarningFilters"
+    },
+    {
+      "name": "ActivateWarningFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "ActivateWarningFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "ActivateErrorFilters"
+    },
+    {
+      "name": "ActivateErrorFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "ActivateErrorFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "DeactivateWarningFilters"
+    },
+    {
+      "name": "DeactivateWarningFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "DeactivateWarningFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "DeactivateErrorFilters"
+    },
+    {
+      "name": "DeactivateErrorFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "DeactivateErrorFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "ActivateFilters"
+    },
+    {
+      "name": "ActivateFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "ActivateFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "DeactivateFilters"
+    },
+    {
+      "name": "DeactivateFilters",
+      "arg": {
+        "format": "[]",
+        "snippet": "DeactivateFilters[${1:list}]"
+      }
+    },
+    {
+      "name": "WarningFilter*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "WarningFilter*{${1:name}}{${2:message}}"
+      }
+    },
+    {
+      "name": "WarningFilter*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "WarningFilter*[${3:family}]{${1:name}}{${2:message}}"
+      }
+    },
+    {
+      "name": "ErrorFilter*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ErrorFilter*{${1:name}}{${2:message}}"
+      }
+    },
+    {
+      "name": "ErrorFilter*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ErrorFilter*[${3:family}]{${1:name}}{${2:message}}"
+      }
+    },
+    {
+      "name": "SafeMode"
+    },
+    {
+      "name": "BoldMode"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

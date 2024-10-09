@@ -3,19 +3,19 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as arrays from '../../../base/common/arrays.js';
-import { IMarkdownString } from '../../../base/common/htmlContent.js';
-import { IJSONSchema } from '../../../base/common/jsonSchema.js';
-import * as objects from '../../../base/common/objects.js';
-import * as platform from '../../../base/common/platform.js';
-import { ScrollbarVisibility } from '../../../base/common/scrollable.js';
-import { Constants } from '../../../base/common/uint.js';
-import { FontInfo } from './fontInfo.js';
-import { EDITOR_MODEL_DEFAULTS } from '../core/textModelDefaults.js';
-import { USUAL_WORD_SEPARATORS } from '../core/wordHelper.js';
-import * as nls from '../../../nls.js';
-import { AccessibilitySupport } from '../../../platform/accessibility/common/accessibility.js';
-import { IConfigurationPropertySchema } from '../../../platform/configuration/common/configurationRegistry.js';
+import * as arrays from 'vs/base/common/arrays';
+import { IMarkdownString } from 'vs/base/common/htmlContent';
+import { IJSONSchema } from 'vs/base/common/jsonSchema';
+import * as objects from 'vs/base/common/objects';
+import * as platform from 'vs/base/common/platform';
+import { ScrollbarVisibility } from 'vs/base/common/scrollable';
+import { Constants } from 'vs/base/common/uint';
+import { FontInfo } from 'vs/editor/common/config/fontInfo';
+import { EDITOR_MODEL_DEFAULTS } from 'vs/editor/common/core/textModelDefaults';
+import { USUAL_WORD_SEPARATORS } from 'vs/editor/common/core/wordHelper';
+import * as nls from 'vs/nls';
+import { AccessibilitySupport } from 'vs/platform/accessibility/common/accessibility';
+import { IConfigurationPropertySchema } from 'vs/platform/configuration/common/configurationRegistry';
 
 //#region typed options
 
@@ -574,13 +574,6 @@ export interface IEditorOptions {
 	 */
 	occurrencesHighlight?: 'off' | 'singleFile' | 'multiFile';
 	/**
-	 * Controls delay for occurrences highlighting
-	 * Defaults to 250.
-	 * Minimum value is 0
-	 * Maximum value is 2000
-	 */
-	occurrencesHighlightDelay?: number;
-	/**
 	 * Show code lens
 	 * Defaults to true.
 	 */
@@ -641,11 +634,6 @@ export interface IEditorOptions {
 	 * Defaults to 'always'.
 	 */
 	matchBrackets?: 'never' | 'near' | 'always';
-	/**
-	 * Enable experimental rendering using WebGPU.
-	 * Defaults to 'off'.
-	 */
-	experimentalGpuAcceleration?: 'on' | 'off';
 	/**
 	 * Enable experimental whitespace rendering.
 	 * Defaults to 'svg'.
@@ -754,11 +742,6 @@ export interface IEditorOptions {
 	 * When enabled, this shows a preview of the drop location and triggers an `onDropIntoEditor` event.
 	 */
 	dropIntoEditor?: IDropIntoEditorOptions;
-
-	/**
-	 * Sets whether the new experimental edit context should be used instead of the text area.
-	 */
-	experimentalEditContextEnabled?: boolean;
 
 	/**
 	 * Controls support for changing how content is pasted into the editor.
@@ -1494,10 +1477,7 @@ export const enum TextEditorCursorBlinkingStyle {
 	Solid = 5
 }
 
-/**
- * @internal
- */
-export function cursorBlinkingStyleFromString(cursorBlinkingStyle: 'blink' | 'smooth' | 'phase' | 'expand' | 'solid'): TextEditorCursorBlinkingStyle {
+function _cursorBlinkingStyleFromString(cursorBlinkingStyle: 'blink' | 'smooth' | 'phase' | 'expand' | 'solid'): TextEditorCursorBlinkingStyle {
 	switch (cursorBlinkingStyle) {
 		case 'blink': return TextEditorCursorBlinkingStyle.Blink;
 		case 'smooth': return TextEditorCursorBlinkingStyle.Smooth;
@@ -1555,10 +1535,7 @@ export function cursorStyleToString(cursorStyle: TextEditorCursorStyle): 'line' 
 	}
 }
 
-/**
- * @internal
- */
-export function cursorStyleFromString(cursorStyle: 'line' | 'block' | 'underline' | 'line-thin' | 'block-outline' | 'underline-thin'): TextEditorCursorStyle {
+function _cursorStyleFromString(cursorStyle: 'line' | 'block' | 'underline' | 'line-thin' | 'block-outline' | 'underline-thin'): TextEditorCursorStyle {
 	switch (cursorStyle) {
 		case 'line': return TextEditorCursorStyle.Line;
 		case 'block': return TextEditorCursorStyle.Block;
@@ -2822,7 +2799,7 @@ export type EditorLightbulbOptions = Readonly<Required<IEditorLightbulbOptions>>
 class EditorLightbulb extends BaseEditorOption<EditorOption.lightbulb, IEditorLightbulbOptions, EditorLightbulbOptions> {
 
 	constructor() {
-		const defaults: EditorLightbulbOptions = { enabled: ShowLightbulbIconMode.OnCode };
+		const defaults: EditorLightbulbOptions = { enabled: ShowLightbulbIconMode.On };
 		super(
 			EditorOption.lightbulb, 'lightbulb', defaults,
 			{
@@ -2961,12 +2938,6 @@ export interface IEditorInlayHintsOptions {
 	 * Defaults to false.
 	 */
 	padding?: boolean;
-
-	/**
-	 * Maximum length for inlay hints per line
-	 * Set to 0 to have an unlimited length.
-	 */
-	maximumLength?: number;
 }
 
 /**
@@ -2977,7 +2948,7 @@ export type EditorInlayHintsOptions = Readonly<Required<IEditorInlayHintsOptions
 class EditorInlayHints extends BaseEditorOption<EditorOption.inlayHints, IEditorInlayHintsOptions, EditorInlayHintsOptions> {
 
 	constructor() {
-		const defaults: EditorInlayHintsOptions = { enabled: 'on', fontSize: 0, fontFamily: '', padding: false, maximumLength: 43 };
+		const defaults: EditorInlayHintsOptions = { enabled: 'on', fontSize: 0, fontFamily: '', padding: false };
 		super(
 			EditorOption.inlayHints, 'inlayHints', defaults,
 			{
@@ -3007,11 +2978,6 @@ class EditorInlayHints extends BaseEditorOption<EditorOption.inlayHints, IEditor
 					type: 'boolean',
 					default: defaults.padding,
 					description: nls.localize('inlayHints.padding', "Enables the padding around the inlay hints in the editor.")
-				},
-				'editor.inlayHints.maximumLength': {
-					type: 'number',
-					default: defaults.maximumLength,
-					markdownDescription: nls.localize('inlayHints.maximumLength', "Maximum overall length of inlay hints, for a single line, before they get truncated by the editor. Set to `0` to never truncate")
 				}
 			}
 		);
@@ -3029,8 +2995,7 @@ class EditorInlayHints extends BaseEditorOption<EditorOption.inlayHints, IEditor
 			enabled: stringSet<'on' | 'off' | 'offUnlessPressed' | 'onUnlessPressed'>(input.enabled, this.defaultValue.enabled, ['on', 'off', 'offUnlessPressed', 'onUnlessPressed']),
 			fontSize: EditorIntOption.clampedInt(input.fontSize, this.defaultValue.fontSize, 0, 100),
 			fontFamily: EditorStringOption.string(input.fontFamily, this.defaultValue.fontFamily),
-			padding: boolean(input.padding, this.defaultValue.padding),
-			maximumLength: EditorIntOption.clampedInt(input.maximumLength, this.defaultValue.maximumLength, 0, Number.MAX_SAFE_INTEGER),
+			padding: boolean(input.padding, this.defaultValue.padding)
 		};
 	}
 }
@@ -4138,8 +4103,6 @@ export interface IInlineSuggestOptions {
 
 	showToolbar?: 'always' | 'onHover' | 'never';
 
-	syntaxHighlightingEnabled?: boolean;
-
 	suppressSuggestions?: boolean;
 
 	/**
@@ -4169,8 +4132,7 @@ class InlineEditorSuggest extends BaseEditorOption<EditorOption.inlineSuggest, I
 			showToolbar: 'onHover',
 			suppressSuggestions: false,
 			keepOnBlur: false,
-			fontFamily: 'default',
-			syntaxHighlightingEnabled: false,
+			fontFamily: 'default'
 		};
 
 		super(
@@ -4191,11 +4153,6 @@ class InlineEditorSuggest extends BaseEditorOption<EditorOption.inlineSuggest, I
 						nls.localize('inlineSuggest.showToolbar.never', "Never show the inline suggestion toolbar."),
 					],
 					description: nls.localize('inlineSuggest.showToolbar', "Controls when to show the inline suggestion toolbar."),
-				},
-				'editor.inlineSuggest.syntaxHighlightingEnabled': {
-					type: 'boolean',
-					default: defaults.syntaxHighlightingEnabled,
-					description: nls.localize('inlineSuggest.syntaxHighlightingEnabled', "Controls whether to show syntax highlighting for inline suggestions in the editor."),
 				},
 				'editor.inlineSuggest.suppressSuggestions': {
 					type: 'boolean',
@@ -4222,8 +4179,7 @@ class InlineEditorSuggest extends BaseEditorOption<EditorOption.inlineSuggest, I
 			showToolbar: stringSet(input.showToolbar, this.defaultValue.showToolbar, ['always', 'onHover', 'never']),
 			suppressSuggestions: boolean(input.suppressSuggestions, this.defaultValue.suppressSuggestions),
 			keepOnBlur: boolean(input.keepOnBlur, this.defaultValue.keepOnBlur),
-			fontFamily: EditorStringOption.string(input.fontFamily, this.defaultValue.fontFamily),
-			syntaxHighlightingEnabled: boolean(input.syntaxHighlightingEnabled, this.defaultValue.syntaxHighlightingEnabled),
+			fontFamily: EditorStringOption.string(input.fontFamily, this.defaultValue.fontFamily)
 		};
 	}
 }
@@ -5396,9 +5352,7 @@ export const enum EditorOption {
 	domReadOnly,
 	dragAndDrop,
 	dropIntoEditor,
-	experimentalEditContextEnabled,
 	emptySelectionClipboard,
-	experimentalGpuAcceleration,
 	experimentalWhitespaceRendering,
 	extraEditorClassName,
 	fastScrollSensitivity,
@@ -5443,7 +5397,6 @@ export const enum EditorOption {
 	multiCursorPaste,
 	multiCursorLimit,
 	occurrencesHighlight,
-	occurrencesHighlightDelay,
 	overviewRulerBorder,
 	overviewRulerLanes,
 	padding,
@@ -5709,7 +5662,7 @@ export const EditorOptions = {
 		EditorOption.cursorBlinking, 'cursorBlinking',
 		TextEditorCursorBlinkingStyle.Blink, 'blink',
 		['blink', 'smooth', 'phase', 'expand', 'solid'],
-		cursorBlinkingStyleFromString,
+		_cursorBlinkingStyleFromString,
 		{ description: nls.localize('cursorBlinking', "Control the cursor animation style.") }
 	)),
 	cursorSmoothCaretAnimation: register(new EditorStringEnumOption(
@@ -5729,7 +5682,7 @@ export const EditorOptions = {
 		EditorOption.cursorStyle, 'cursorStyle',
 		TextEditorCursorStyle.Line, 'line',
 		['line', 'block', 'underline', 'line-thin', 'block-outline', 'underline-thin'],
-		cursorStyleFromString,
+		_cursorStyleFromString,
 		{ description: nls.localize('cursorStyle', "Controls the cursor style.") }
 	)),
 	cursorSurroundingLines: register(new EditorIntOption(
@@ -5769,28 +5722,7 @@ export const EditorOptions = {
 	)),
 	emptySelectionClipboard: register(new EditorEmptySelectionClipboard()),
 	dropIntoEditor: register(new EditorDropIntoEditor()),
-	experimentalEditContextEnabled: register(new EditorBooleanOption(
-		EditorOption.experimentalEditContextEnabled, 'experimentalEditContextEnabled', false,
-		{
-			description: nls.localize('experimentalEditContextEnabled', "Sets whether the new experimental edit context should be used instead of the text area."),
-			included: platform.isChrome || platform.isEdge || platform.isNative
-		}
-	)),
 	stickyScroll: register(new EditorStickyScroll()),
-	experimentalGpuAcceleration: register(new EditorStringEnumOption(
-		EditorOption.experimentalGpuAcceleration, 'experimentalGpuAcceleration',
-		'off' as 'off' | 'on',
-		['off', 'on'] as const,
-		undefined
-		// TODO: Uncomment when we want to expose the setting to VS Code users
-		// {
-		// 	enumDescriptions: [
-		// 		nls.localize('experimentalGpuAcceleration.off', "Use regular DOM-based rendering."),
-		// 		nls.localize('experimentalGpuAcceleration.on', "Use GPU acceleration."),
-		// 	],
-		// 	description: nls.localize('experimentalGpuAcceleration', "Controls whether to use the (very) experimental GPU acceleration to render the editor.")
-		// }
-	)),
 	experimentalWhitespaceRendering: register(new EditorStringEnumOption(
 		EditorOption.experimentalWhitespaceRendering, 'experimentalWhitespaceRendering',
 		'svg' as 'svg' | 'font' | 'off',
@@ -5977,14 +5909,6 @@ export const EditorOptions = {
 				nls.localize('occurrencesHighlight.multiFile', "Experimental: Highlights occurrences across all valid open files.")
 			],
 			markdownDescription: nls.localize('occurrencesHighlight', "Controls whether occurrences should be highlighted across open files.")
-		}
-	)),
-	occurrencesHighlightDelay: register(new EditorIntOption(
-		EditorOption.occurrencesHighlightDelay, 'occurrencesHighlightDelay',
-		250, 0, 2000,
-		{
-			description: nls.localize('occurrencesHighlightDelay', "Controls the delay in milliseconds after which occurrences are highlighted."),
-			tags: ['experimental']
 		}
 	)),
 	overviewRulerBorder: register(new EditorBooleanOption(
@@ -6248,8 +6172,8 @@ export const EditorOptions = {
 	)),
 	wordWrap: register(new EditorStringEnumOption(
 		EditorOption.wordWrap, 'wordWrap',
-		'off' as 'off' | 'on' | 'wordWrapColumn' | 'bounded',
-		['off', 'on', 'wordWrapColumn', 'bounded'] as const,
+		'on' as 'on' | 'off' | 'wordWrapColumn' | 'bounded',
+		['on', 'off', 'wordWrapColumn', 'bounded'] as const,
 		{
 			markdownEnumDescriptions: [
 				nls.localize('wordWrap.off', "Lines will never wrap."),

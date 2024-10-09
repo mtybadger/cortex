@@ -1,0 +1,31 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ActiveUnderscore",
+      "unusual": true
+    },
+    {
+      "name": "normalUnderscoreDef",
+      "unusual": true
+    },
+    {
+      "name": "BreakableUnderscore",
+      "unusual": true
+    },
+    {
+      "name": "UnderscoreCommands",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/underscore#c": [
+      "nohyphen",
+      "strings"
+    ]
+  },
+  "args": [
+    "\\usepackage/underscore#c"
+  ]
+}

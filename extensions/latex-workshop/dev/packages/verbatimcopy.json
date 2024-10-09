@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setOutputDir",
+      "arg": {
+        "format": "{}",
+        "snippet": "setOutputDir{${1:directory%definition}}"
+      }
+    },
+    {
+      "name": "VerbatimCopy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "VerbatimCopy{${1:input file%file}}{${2:output file%file}}"
+      }
+    },
+    {
+      "name": "VCverbaction",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "VCverbaction{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/verbatimcopy#c": [
+      "compatibility",
+      "enquotefilenames"
+    ]
+  },
+  "args": [
+    "\\usepackage/verbatimcopy#c"
+  ]
+}

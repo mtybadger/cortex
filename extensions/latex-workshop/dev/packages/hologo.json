@@ -1,0 +1,233 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "kvsetkeys"
+    },
+    {
+      "name": "kvdefinekeys"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hologo",
+      "arg": {
+        "format": "{}",
+        "snippet": "hologo{${1:logo%keyvals}}",
+        "keys": [
+          "\\hologo#c,\\Hologo#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Hologo",
+      "arg": {
+        "format": "{}",
+        "snippet": "Hologo{${1:logo%keyvals}}",
+        "keys": [
+          "\\hologo#c,\\Hologo#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hologoSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "hologoSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\hologoSetup,\\hologoLogoSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hologoLogoSetup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "hologoLogoSetup{${1:logo}}{${2:options%keyvals}}",
+        "keys": [
+          "\\hologoSetup,\\hologoLogoSetup",
+          "\\hologoLogoSetup"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "hologoDriverSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "hologoDriverSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\hologoDriverSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hologoFontSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "hologoFontSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\hologoFontSetup,\\hologoLogoFontSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hologoLogoFontSetup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "hologoLogoFontSetup{${1:logo}}{${2:options%keyvals}}",
+        "keys": [
+          "\\hologoFontSetup,\\hologoLogoFontSetup"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "hologoVariant",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "hologoVariant{${1:name}}{${2:variant}}"
+      }
+    },
+    {
+      "name": "HologoVariant",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "HologoVariant{${1:name}}{${2:variant}}"
+      }
+    },
+    {
+      "name": "hologoList",
+      "unusual": true
+    },
+    {
+      "name": "hologoEntry",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "hologoEntry{${1:logo}}{${2:variant}}{${3:since}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\hologo#c,\\Hologo#c": [
+      "(La)TeX",
+      "AmSLaTeX",
+      "AmSTeX",
+      "biber",
+      "BibTeX",
+      "BibTeX",
+      "BibTeX",
+      "BibTeX8",
+      "ConTeXt",
+      "ConTeXt",
+      "ConTeXt",
+      "emTeX",
+      "eTeX",
+      "ExTeX",
+      "HanTheThanh",
+      "iniTeX",
+      "KOMAScript",
+      "La",
+      "LaTeX",
+      "LaTeX2e",
+      "LaTeX3",
+      "LaTeXe",
+      "LaTeXML",
+      "LaTeXTeX",
+      "LuaLaTeX",
+      "LuaTeX",
+      "LyX",
+      "METAFONT",
+      "MetaFun",
+      "METAPOST",
+      "MetaPost",
+      "MiKTeX",
+      "NTS",
+      "OzMF",
+      "OzMP",
+      "OzTeX",
+      "OzTtH",
+      "PCTeX",
+      "pdfTeX",
+      "pdfLaTeX",
+      "PiC",
+      "PiCTeX",
+      "plainTeX",
+      "plainTeX",
+      "plainTeX",
+      "plainTeX",
+      "SageTeX",
+      "SLiTeX",
+      "SLiTeX",
+      "SLiTeX",
+      "SLiTeX",
+      "SliTeX",
+      "SliTeX",
+      "SliTeX",
+      "SliTeX",
+      "teTeX",
+      "TeX",
+      "TeX4ht",
+      "TTH",
+      "virTeX",
+      "VTeX",
+      "Xe",
+      "XeLaTeX",
+      "XeTeX"
+    ],
+    "\\hologoSetup,\\hologoLogoSetup": [
+      "break",
+      "hyphenbreak",
+      "spacebreak",
+      "discretionarybreak"
+    ],
+    "\\hologoLogoSetup": [
+      "variant=${1:string}"
+    ],
+    "\\hologoDriverSetup": [
+      "pdftex",
+      "luatex",
+      "dvipdfm",
+      "dvipdfmx",
+      "dvips",
+      "dvipsone",
+      "xdvi",
+      "xetex",
+      "vtex",
+      "driverfallback=${1:driver}"
+    ],
+    "\\hologoFontSetup,\\hologoLogoFontSetup": [
+      "general=${1:font commands}",
+      "bibsf",
+      "rm",
+      "sc",
+      "sf",
+      "sy",
+      "logo"
+    ]
+  },
+  "args": []
+}

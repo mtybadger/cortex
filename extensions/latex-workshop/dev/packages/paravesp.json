@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ParaSpaceAbove",
+      "arg": {
+        "format": "{}",
+        "snippet": "ParaSpaceAbove{${1:length}}"
+      }
+    },
+    {
+      "name": "ParaSpaceBelow",
+      "arg": {
+        "format": "{}",
+        "snippet": "ParaSpaceBelow{${1:length}}"
+      }
+    },
+    {
+      "name": "IssueParaSpace"
+    },
+    {
+      "name": "IgnoreSpaceAboveNextPara"
+    },
+    {
+      "name": "CancelIgnoreSpaceAboveNextPara",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

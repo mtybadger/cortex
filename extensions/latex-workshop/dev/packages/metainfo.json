@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "typesetmetainfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "typesetmetainfo{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

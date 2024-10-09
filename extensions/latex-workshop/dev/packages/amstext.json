@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "amsgen"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

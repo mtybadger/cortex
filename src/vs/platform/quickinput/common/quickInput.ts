@@ -3,18 +3,18 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { CancellationToken } from '../../../base/common/cancellation.js';
-import { Event } from '../../../base/common/event.js';
-import { createDecorator } from '../../instantiation/common/instantiation.js';
-import { IQuickAccessController } from './quickAccess.js';
-import { IMatch } from '../../../base/common/filters.js';
-import { IItemAccessor } from '../../../base/common/fuzzyScorer.js';
-import { ResolvedKeybinding } from '../../../base/common/keybindings.js';
-import { IDisposable } from '../../../base/common/lifecycle.js';
-import { Schemas } from '../../../base/common/network.js';
-import Severity from '../../../base/common/severity.js';
-import { URI } from '../../../base/common/uri.js';
-import { IMarkdownString } from '../../../base/common/htmlContent.js';
+import { CancellationToken } from 'vs/base/common/cancellation';
+import { Event } from 'vs/base/common/event';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
+import { IQuickAccessController } from 'vs/platform/quickinput/common/quickAccess';
+import { IMatch } from 'vs/base/common/filters';
+import { IItemAccessor } from 'vs/base/common/fuzzyScorer';
+import { ResolvedKeybinding } from 'vs/base/common/keybindings';
+import { IDisposable } from 'vs/base/common/lifecycle';
+import { Schemas } from 'vs/base/common/network';
+import Severity from 'vs/base/common/severity';
+import { URI } from 'vs/base/common/uri';
+import { IMarkdownString } from 'vs/base/common/htmlContent';
 
 export interface IQuickPickItemHighlights {
 	label?: IMatch[];
@@ -80,11 +80,6 @@ export interface IPickOptions<T extends IQuickPickItem> {
 	 * an optional string to show as the title of the quick input
 	 */
 	title?: string;
-
-	/**
-	 * the value to prefill in the input box
-	 */
-	value?: string;
 
 	/**
 	 * an optional string to show as placeholder in the input box to guide the user what she picks on
@@ -423,7 +418,7 @@ export enum QuickPickFocus {
 /**
  * Represents a quick pick control that allows the user to select an item from a list of options.
  */
-export interface IQuickPick<T extends IQuickPickItem, O extends { useSeparators: boolean } = { useSeparators: false }> extends IQuickInput {
+export interface IQuickPick<T extends IQuickPickItem> extends IQuickInput {
 
 	/**
 	 * The type of the quick input.
@@ -510,7 +505,7 @@ export interface IQuickPick<T extends IQuickPickItem, O extends { useSeparators:
 	/**
 	 * The items to be displayed in the quick pick.
 	 */
-	items: O extends { useSeparators: true } ? ReadonlyArray<T | IQuickPickSeparator> : ReadonlyArray<T>;
+	items: ReadonlyArray<T | IQuickPickSeparator>;
 
 	/**
 	 * Whether multiple items can be selected. If so, checkboxes will be rendered.
@@ -876,8 +871,7 @@ export interface IQuickInputService {
 	/**
 	 * Provides raw access to the quick pick controller.
 	 */
-	createQuickPick<T extends IQuickPickItem>(options: { useSeparators: true }): IQuickPick<T, { useSeparators: true }>;
-	createQuickPick<T extends IQuickPickItem>(options?: { useSeparators: boolean }): IQuickPick<T, { useSeparators: false }>;
+	createQuickPick<T extends IQuickPickItem>(): IQuickPick<T>;
 
 	/**
 	 * Provides raw access to the input box controller.

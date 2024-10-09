@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { memoize } from './decorators.js';
+import { memoize } from 'vs/base/common/decorators';
 
 export interface ILink {
 	readonly label: string;

@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "dhucs"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "GrEmphFont",
+      "unusual": true
+    },
+    {
+      "name": "GrEmphHanjaFont",
+      "unusual": true
+    },
+    {
+      "name": "regremph"
+    },
+    {
+      "name": "ungremph"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dhucs-gremph#c": [
+      "bfemph",
+      "gremphhangul=${1:font}",
+      "gremphhanja=${1:font}"
+    ]
+  },
+  "args": [
+    "\\usepackage/dhucs-gremph#c"
+  ]
+}

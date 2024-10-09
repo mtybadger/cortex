@@ -1,0 +1,477 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "pgf"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ssmoveto",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssmoveto{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssmove",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssmove{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssdrop",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdrop{${1:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssdrop",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ssdrop[${2:options%keyvals}]{${1:mathcode%formula}}",
+        "keys": [
+          "\\ssdrop,\\ssdropextension"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ssdropbull",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdropbull{${1:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssdropboxed",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdropboxed{${1:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssdropcircled",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdropcircled{${1:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssname",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssname{${1:name}}"
+      }
+    },
+    {
+      "name": "ssgoto",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssgoto{${1:name}}"
+      }
+    },
+    {
+      "name": "ssbeginprefixcontext"
+    },
+    {
+      "name": "ssendprefixcontext"
+    },
+    {
+      "name": "ssprefix",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssprefix{${1:prefix}}"
+      }
+    },
+    {
+      "name": "ssresetprefix"
+    },
+    {
+      "name": "ssabsgoto"
+    },
+    {
+      "name": "ssdroplabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdroplabel{${1:label}}"
+      }
+    },
+    {
+      "name": "ssdroplabel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ssdroplabel[${2:options%keyvals}]{${1:label}}",
+        "keys": [
+          "\\ssdroplabel"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ssdropextension"
+    },
+    {
+      "name": "ssdropextension",
+      "arg": {
+        "format": "[]",
+        "snippet": "ssdropextension[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "ssstroke"
+    },
+    {
+      "name": "ssstroke",
+      "arg": {
+        "format": "[]",
+        "snippet": "ssstroke[${1:options%keyvals}]",
+        "keys": [
+          "\\ssstroke,\\ssline,\\ssarrow,\\ssvoidline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sscurve",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sscurve{${1:curve value}}"
+      }
+    },
+    {
+      "name": "ssdashedstroke",
+      "unusual": true
+    },
+    {
+      "name": "ssdashedcurve",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdashedcurve{${1:curve value}}"
+      }
+    },
+    {
+      "name": "ssdottedstroke",
+      "unusual": true
+    },
+    {
+      "name": "ssdottedcurve",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ssdottedcurve{${1:curve value}}"
+      }
+    },
+    {
+      "name": "ssarrowhead"
+    },
+    {
+      "name": "ssarrowhead",
+      "arg": {
+        "format": "[]",
+        "snippet": "ssarrowhead[${1:arrow style}]"
+      }
+    },
+    {
+      "name": "ssinversearrowhead"
+    },
+    {
+      "name": "ssinversearrowhead",
+      "arg": {
+        "format": "[]",
+        "snippet": "ssinversearrowhead[${1:arrow style}]"
+      }
+    },
+    {
+      "name": "ssline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssline{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssline",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ssline[${3:options%keyvals}]{${1:x}}{${2:y}}",
+        "keys": [
+          "\\ssstroke,\\ssline,\\ssarrow,\\ssvoidline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sscurvedline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "sscurvedline{${1:curve value}}{${2:x}}{${3:y}}"
+      }
+    },
+    {
+      "name": "ssdashedline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssdashedline{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "sscurveddashedline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "sscurveddashedline{${1:curve value}}{${2:x}}{${3:y}}"
+      }
+    },
+    {
+      "name": "ssarrow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssarrow",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ssarrow[${3:options%keyvals}]{${1:x}}{${2:y}}",
+        "keys": [
+          "\\ssstroke,\\ssline,\\ssarrow,\\ssvoidline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sscurvedarrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "sscurvedarrow{${1:curve value}}{${2:x}}{${3:y}}"
+      }
+    },
+    {
+      "name": "ssdashedarrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssdashedarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "sscurveddashedarrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "sscurveddashedarrow{${1:curve value}}{${2:x}}{${3:y}}"
+      }
+    },
+    {
+      "name": "ssvoidline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssvoidline{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssvoidline",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ssvoidline[${3:options%keyvals}]{${1:x}}{${2:y}}",
+        "keys": [
+          "\\ssstroke,\\ssline,\\ssarrow,\\ssvoidline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ssvoidarrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssvoidarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssinversevoidarrow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ssinversevoidarrow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "ssbullstring",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ssbullstring{${1:x}}{${2:y}}{${3:n}}"
+      }
+    },
+    {
+      "name": "ssinfbullstring",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ssinfbullstring{${1:x}}{${2:y}}{${3:n}}"
+      }
+    },
+    {
+      "name": "ssgrayout"
+    },
+    {
+      "name": "ssgrayout",
+      "arg": {
+        "format": "[]",
+        "snippet": "ssgrayout[${1:color}]"
+      }
+    },
+    {
+      "name": "ssconncolor",
+      "unusual": true
+    },
+    {
+      "name": "sslabelcolor",
+      "unusual": true
+    },
+    {
+      "name": "ssplacecolor",
+      "unusual": true
+    },
+    {
+      "name": "sseqxstart",
+      "unusual": true
+    },
+    {
+      "name": "sseqystart",
+      "unusual": true
+    },
+    {
+      "name": "sseqbox",
+      "unusual": true
+    },
+    {
+      "name": "ssplace",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ssplace{${1:x}}{${2:y}}{${3:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssplaceboxed",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ssplaceboxed{${1:x}}{${2:y}}{${3:mathcode%formula}}"
+      }
+    },
+    {
+      "name": "ssplacecircled",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ssplacecircled{${1:x}}{${2:y}}{${3:mathcode%formula}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "sseq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:x-range}}{${2:y-range}}"
+      }
+    },
+    {
+      "name": "sseq",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:options%keyvals}]{${1:x-range}}{${2:y-range}}",
+        "keys": [
+          "\\begin{sseq}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/luasseq#c": [
+      "debug"
+    ],
+    "\\begin{sseq}": [
+      "grid=${1|none,crossword,go,dots,chess|}",
+      "gridstroke=",
+      "gapsize=",
+      "xgapsize=",
+      "ygapsize=",
+      "entrysize=",
+      "labels=${2|none,numbers,{${1:x1;x2;...}}|}",
+      "xlabels=${2|none,numbers,{${1:x1;x2;...}}|}",
+      "ylabels=${2|none,numbers,{${1:x1;x2;...}}|}",
+      "labelstep=${1:integer}",
+      "xlabelstep=${1:integer}",
+      "ylabelstep=${1:integer}",
+      "leak=",
+      "xleak=",
+      "yleak=",
+      "arrows=${1:arrow type}",
+      "packing=${1|auto,horizontal,vertical,diagonal|}"
+    ],
+    "\\ssdrop,\\ssdropextension": [
+      "circled",
+      "boxed",
+      "color=",
+      "name=${1:name}"
+    ],
+    "\\ssdroplabel": [
+      "color=",
+      "pos=${1|U,LU,L,LD,D,RD,R,RU|}",
+      "U",
+      "LU",
+      "L",
+      "LD",
+      "D",
+      "RD",
+      "R",
+      "RU"
+    ],
+    "\\ssstroke,\\ssline,\\ssarrow,\\ssvoidline": [
+      "color=",
+      "curve=${1:value}",
+      "dashed",
+      "dashed=${1:dashing type}",
+      "dotted",
+      "dotted=${1:dashing type}",
+      "arrowfrom",
+      "arrowfrom=${1:dashing type}",
+      "arrowto",
+      "arrowto=${1:dashing type}",
+      "void"
+    ]
+  },
+  "args": [
+    "\\usepackage/luasseq#c"
+  ]
+}

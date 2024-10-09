@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { parse as parseUrl, Url } from 'url';
-import { isBoolean } from '../../../base/common/types.js';
+import { isBoolean } from 'vs/base/common/types';
 
 export type Agent = any;
 
@@ -45,10 +45,20 @@ export async function getProxyAgent(rawRequestURL: string, env: typeof process.e
 	};
 
 	if (requestURL.protocol === 'http:') {
-		const { default: mod } = await import('http-proxy-agent');
+		// ESM-comment-begin
+		const mod = await import('http-proxy-agent');
+		// ESM-comment-end
+		// ESM-uncomment-begin
+		// const mod = (await import('http-proxy-agent')).default;
+		// ESM-uncomment-end
 		return new mod.HttpProxyAgent(proxyURL, opts);
 	} else {
-		const { default: mod } = await import('https-proxy-agent');
+		// ESM-comment-begin
+		const mod = await import('https-proxy-agent');
+		// ESM-comment-end
+		// ESM-uncomment-begin
+		// const mod = (await import('https-proxy-agent')).default;
+		// ESM-uncomment-end
 		return new mod.HttpsProxyAgent(proxyURL, opts);
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "reset"
+    },
+    {
+      "name": "numboxsize",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "ntabbing"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

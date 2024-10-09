@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "beamerthememetropolis"
+    },
+    {
+      "name": "pgfornament-han"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarydecorations"
+    },
+    {
+      "name": "tikzlibrarydecorations.markings"
+    },
+    {
+      "name": "cncolours"
+    },
+    {
+      "name": "needspace"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

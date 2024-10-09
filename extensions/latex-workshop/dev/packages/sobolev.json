@@ -1,0 +1,136 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "H",
+      "arg": {
+        "format": "{}",
+        "snippet": "H{${1:sup%formula}}"
+      }
+    },
+    {
+      "name": "H",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "H{${1:sup%formula}}[${2:sub%formula}]"
+      }
+    },
+    {
+      "name": "Hdiv"
+    },
+    {
+      "name": "Hdiv",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hdiv[${1:sub%formula}]"
+      }
+    },
+    {
+      "name": "L",
+      "arg": {
+        "format": "{}",
+        "snippet": "L{${1:sup%formula}}"
+      }
+    },
+    {
+      "name": "W",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "W{${1:sup1%formula}}{${2:sup2%formula}}"
+      }
+    },
+    {
+      "name": "D"
+    },
+    {
+      "name": "Norm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Norm{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "Norm",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Norm{${1:arg%formula}}[${2:sub%formula}]"
+      }
+    },
+    {
+      "name": "SemiNorm",
+      "arg": {
+        "format": "{}",
+        "snippet": "SemiNorm{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "SemiNorm",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "SemiNorm{${1:arg%formula}}[${2:sub%formula}]"
+      }
+    },
+    {
+      "name": "Scalar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Scalar{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "Scalar",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "Scalar{${1:arg1%formula}}{${2:arg2%formula}}[${3:sub%formula}]"
+      }
+    },
+    {
+      "name": "Crochet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Crochet{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "Crochet",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "Crochet{${1:arg1%formula}}{${2:arg2%formula}}[${3:sub%formula}]"
+      }
+    },
+    {
+      "name": "DefaultSet",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefaultSet{${1:symbol%formula}}"
+      }
+    },
+    {
+      "name": "NoDefaultSet",
+      "unusual": true
+    },
+    {
+      "name": "HAccent",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "HAccent{${1:arg}}"
+      }
+    },
+    {
+      "name": "Lbar",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/sobolev#c": [
+      "DivAsExponent",
+      "DivInBrackets"
+    ]
+  },
+  "args": [
+    "\\usepackage/sobolev#c"
+  ]
+}

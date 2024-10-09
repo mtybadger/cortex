@@ -12,20 +12,20 @@ export class ActiveLineMarker {
 		this._update(previous && (previous.codeElement || previous.element));
 	}
 
-	private _update(before: HTMLElement | undefined) {
+	_update(before: HTMLElement | undefined) {
 		this._unmarkActiveElement(this._current);
 		this._markActiveElement(before);
 		this._current = before;
 	}
 
-	private _unmarkActiveElement(element: HTMLElement | undefined) {
+	_unmarkActiveElement(element: HTMLElement | undefined) {
 		if (!element) {
 			return;
 		}
 		element.classList.toggle('code-active-line', false);
 	}
 
-	private _markActiveElement(element: HTMLElement | undefined) {
+	_markActiveElement(element: HTMLElement | undefined) {
 		if (!element) {
 			return;
 		}

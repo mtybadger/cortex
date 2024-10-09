@@ -1,0 +1,38 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "euro",
+      "detail": "€",
+      "doc": "Euro sign"
+    },
+    {
+      "name": "sanseuro",
+      "unusual": true
+    },
+    {
+      "name": "serifeuro",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/euroitc#c": [
+      "sans",
+      "serif",
+      "scaled",
+      "scaled=${1:factor}",
+      "bolder"
+    ]
+  },
+  "args": [
+    "\\usepackage/euroitc#c"
+  ]
+}

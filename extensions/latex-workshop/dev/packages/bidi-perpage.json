@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ResetCounterPerPage",
+      "arg": {
+        "format": "{}",
+        "snippet": "ResetCounterPerPage{${1:counter}}"
+      }
+    },
+    {
+      "name": "ResetCounterPerPage",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ResetCounterPerPage[${2:opt}]{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

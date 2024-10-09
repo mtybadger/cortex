@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "otfontdef"
+    },
+    {
+      "name": "fltpoint"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CronosPro-FontDef#c": [
+      "slides",
+      "opticals",
+      "noopticals",
+      "smallfamily",
+      "medfamily",
+      "normalsize",
+      "nonormalsize"
+    ]
+  },
+  "args": [
+    "\\usepackage/CronosPro-FontDef#c"
+  ]
+}

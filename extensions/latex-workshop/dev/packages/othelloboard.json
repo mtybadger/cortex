@@ -1,0 +1,258 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "pict2e"
+    },
+    {
+      "name": "stringstrings"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "dotmarkings"
+    },
+    {
+      "name": "othelloarrayfirstrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarrayfirstrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarraysecondrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarraysecondrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarraythirdrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarraythirdrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarrayfourthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarrayfourthrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarrayfifthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarrayfifthrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarraysixthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarraysixthrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarrayseventhrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarrayseventhrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "othelloarrayeighthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "othelloarrayeighthrow{${1:num1}}{${2:num2}}{${3:num3}}{${4:num4}}{${5:num5}}{${6:num6}}{${7:num7}}{${8:num8}}"
+      }
+    },
+    {
+      "name": "annotationsfirstrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationsfirstrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationssecondrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationssecondrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationsthirdrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationsthirdrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationsfourthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationsfourthrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationsfifthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationsfifthrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationssixthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationssixthrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationsseventhrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationsseventhrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "annotationseighthrow",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}",
+        "snippet": "annotationseighthrow{${1:txt1}}{${2:txt2}}{${3:txt3}}{${4:txt4}}{${5:txt5}}{${6:txt6}}{${7:txt7}}{${8:txt8}}"
+      }
+    },
+    {
+      "name": "posannotation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "posannotation{${1:square name}}{${2:annotation string}}"
+      }
+    },
+    {
+      "name": "drawtranscript",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawtranscript{${1:longstring}}"
+      }
+    },
+    {
+      "name": "drawboardfromstring",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawboardfromstring{${1:longstring}}"
+      }
+    },
+    {
+      "name": "blackdiamond",
+      "unusual": true
+    },
+    {
+      "name": "blackdisc",
+      "unusual": true
+    },
+    {
+      "name": "countblackdiscs",
+      "unusual": true
+    },
+    {
+      "name": "countwhitediscs",
+      "unusual": true
+    },
+    {
+      "name": "gridrefs",
+      "unusual": true
+    },
+    {
+      "name": "othelloannotation",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "othelloannotation{${1:num}}{${2:text}}"
+      }
+    },
+    {
+      "name": "othellodiscfromstring",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "othellodiscfromstring{${1:arg}}"
+      }
+    },
+    {
+      "name": "othellodisc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "othellodisc{${1:arg}}"
+      }
+    },
+    {
+      "name": "othellogrid",
+      "unusual": true
+    },
+    {
+      "name": "othellonormaltext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "othellonormaltext{${1:text}}"
+      }
+    },
+    {
+      "name": "othellowhitetext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "othellowhitetext{${1:text}}"
+      }
+    },
+    {
+      "name": "resetalldisccolours",
+      "unusual": true
+    },
+    {
+      "name": "scalefactor",
+      "unusual": true
+    },
+    {
+      "name": "whitediamond",
+      "unusual": true
+    },
+    {
+      "name": "whitedisc",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "othelloboard",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:scale}}"
+      }
+    },
+    {
+      "name": "othelloboardnorefs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:scale}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

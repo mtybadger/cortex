@@ -1,0 +1,407 @@
+{
+  "deps": [
+    {
+      "name": "algorithmicx"
+    },
+    {
+      "name": "algpseudocode"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "pgfmath"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Statep",
+      "arg": {
+        "format": "{}",
+        "snippet": "Statep{${1:text}}"
+      }
+    },
+    {
+      "name": "Statep",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Statep{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "If",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "If{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "EndIf",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndIf[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Else",
+      "arg": {
+        "format": "[]",
+        "snippet": "Else[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Elsif",
+      "arg": {
+        "format": "{}",
+        "snippet": "Elsif{${1:text}}"
+      }
+    },
+    {
+      "name": "Elsif",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Elsif{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Switch",
+      "arg": {
+        "format": "{}",
+        "snippet": "Switch{${1:expression}}"
+      }
+    },
+    {
+      "name": "Switch",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Switch{${1:expression}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "EndSwitch"
+    },
+    {
+      "name": "EndSwitch",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndSwitch[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Case",
+      "arg": {
+        "format": "{}",
+        "snippet": "Case{${1:constant-list}}"
+      }
+    },
+    {
+      "name": "Case",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Case{${1:constant-list}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "EndCase"
+    },
+    {
+      "name": "EndCase",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndCase[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Otherwise"
+    },
+    {
+      "name": "Otherwise",
+      "arg": {
+        "format": "[]",
+        "snippet": "Otherwise[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "EndOtherwise"
+    },
+    {
+      "name": "EndOtherwise",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndOtherwise[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "For",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "For{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "EndFor",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndFor[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "ForEach",
+      "arg": {
+        "format": "{}",
+        "snippet": "ForEach{${1:text}}"
+      }
+    },
+    {
+      "name": "ForEach",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ForEach{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "ForAll",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "ForAll{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "While",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "While{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "EndWhile",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndWhile[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Repeat",
+      "arg": {
+        "format": "[]",
+        "snippet": "Repeat[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Until",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Until{${1:text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "Loop",
+      "arg": {
+        "format": "[]",
+        "snippet": "Loop[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "EndLoop",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndLoop[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "To"
+    },
+    {
+      "name": "DownTo"
+    },
+    {
+      "name": "Step"
+    },
+    {
+      "name": "Continue"
+    },
+    {
+      "name": "Break"
+    },
+    {
+      "name": "True"
+    },
+    {
+      "name": "False"
+    },
+    {
+      "name": "Nil"
+    },
+    {
+      "name": "Id",
+      "arg": {
+        "format": "{}",
+        "snippet": "Id{${1:identifier}}"
+      }
+    },
+    {
+      "name": "Read"
+    },
+    {
+      "name": "Write"
+    },
+    {
+      "name": "Procedure",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "Procedure{${1:name}}{${2:params}}[${3:comment%text}]"
+      }
+    },
+    {
+      "name": "EndProcedure",
+      "arg": {
+        "format": "[]",
+        "snippet": "EndProcedure[${1:comment%text}]"
+      }
+    },
+    {
+      "name": "Function",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "Function{${1:name}}{${2:params}}[${3:comment%text}]"
+      }
+    },
+    {
+      "name": "Commentl",
+      "arg": {
+        "format": "{}",
+        "snippet": "Commentl{${1:text}}"
+      }
+    },
+    {
+      "name": "CommentIn",
+      "arg": {
+        "format": "{}",
+        "snippet": "CommentIn{${1:text}}"
+      }
+    },
+    {
+      "name": "AlgSet",
+      "arg": {
+        "format": "{}",
+        "snippet": "AlgSet{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{algorithmic},\\Statep,\\If,\\EndIf,\\Else,\\Elsif,\\Switch,\\EndSwitch,\\Case,\\EndCase,\\Otherwise,\\EndOtherwise,\\For,\\EndFor,\\ForEach,\\ForAll,\\While,\\EndWhile,\\Repeat,\\Until,\\Loop,\\EndLoop,\\Procedure,\\EndProcedure,\\Function,\\Call,\\Comment,\\Commentl,\\CommentIn,\\AlgSet"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CommentSymbol",
+      "unusual": true
+    },
+    {
+      "name": "CommentSymbolRight",
+      "unusual": true
+    },
+    {
+      "name": "AlgLanguageSet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AlgLanguageSet{${1:language}}{${2:keyword assignments}}"
+      }
+    },
+    {
+      "name": "SetKeyword",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetKeyword{${1:keyword}}{${2:value}}"
+      }
+    },
+    {
+      "name": "SetKeyword",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "SetKeyword[${3:language}]{${1:keyword}}{${2:value}}"
+      }
+    },
+    {
+      "name": "Keyword",
+      "arg": {
+        "format": "{}",
+        "snippet": "Keyword{${1:keyword}}"
+      }
+    },
+    {
+      "name": "Keyword",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Keyword[${2:language}]{${1:keyword}}"
+      }
+    },
+    {
+      "name": "Constant",
+      "arg": {
+        "format": "{}",
+        "snippet": "Constant{${1:name}}"
+      }
+    },
+    {
+      "name": "Module",
+      "arg": {
+        "format": "{}",
+        "snippet": "Module{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/algxpar#c": [
+      "brazilian",
+      "language=${1|english,brazilian|}",
+      "noend"
+    ],
+    "\\begin{algorithmic},\\Statep,\\If,\\EndIf,\\Else,\\Elsif,\\Switch,\\EndSwitch,\\Case,\\EndCase,\\Otherwise,\\EndOtherwise,\\For,\\EndFor,\\ForEach,\\ForAll,\\While,\\EndWhile,\\Repeat,\\Until,\\Loop,\\EndLoop,\\Procedure,\\EndProcedure,\\Function,\\Call,\\Comment,\\Commentl,\\CommentIn,\\AlgSet": [
+      "language=${1|english,brazilian|}",
+      "noend",
+      "end",
+      "keywords={${1:assignments}}",
+      "algorithmic indent=",
+      "comment symbol=${1:symbol}",
+      "comment symbol right=${1:symbol}",
+      "text font=${1:font commands}",
+      "comment font=${1:font commands}",
+      "keyword font=${1:font commands}",
+      "constant font=${1:font commands}",
+      "module font=${1:font commands}",
+      "text color=",
+      "comment color=",
+      "keyword color=",
+      "constant color=",
+      "module color=",
+      "text style=${1:style}",
+      "comment style=${1:style}",
+      "comment separator width=",
+      "statement indent=",
+      "parameter indent=",
+      "comment width=${1:auto|nice|⟨width⟩}",
+      "show boxes"
+    ]
+  },
+  "args": [
+    "\\usepackage/algxpar#c"
+  ]
+}

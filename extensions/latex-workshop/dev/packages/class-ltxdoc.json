@@ -1,0 +1,144 @@
+{
+  "deps": [
+    {
+      "name": "doc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:command}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "DocInclude",
+      "arg": {
+        "format": "{}",
+        "snippet": "DocInclude{${1:file}}"
+      }
+    },
+    {
+      "name": "aalph",
+      "arg": {
+        "format": "{}",
+        "snippet": "aalph{${1:counter}}"
+      }
+    },
+    {
+      "name": "docincludeaux",
+      "unusual": true
+    },
+    {
+      "name": "MaintainedBy",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MaintainedBy{${1:arg}}"
+      }
+    },
+    {
+      "name": "MaintainedByLaTeXTeam",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MaintainedByLaTeXTeam{${1:arg}}"
+      }
+    },
+    {
+      "name": "url",
+      "arg": {
+        "format": "{}",
+        "snippet": "url{${1:URL}}"
+      }
+    },
+    {
+      "name": "currentfile",
+      "unusual": true
+    },
+    {
+      "name": "filekey",
+      "unusual": true
+    },
+    {
+      "name": "filesep",
+      "unusual": true
+    },
+    {
+      "name": "LuaTeX"
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:class}}"
+      }
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg{${1:package}}"
+      }
+    },
+    {
+      "name": "enquote",
+      "arg": {
+        "format": "{}",
+        "snippet": "enquote{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/ltxdoc#c": [
+      "nocfg",
+      "doc2",
+      "a4paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ]
+  },
+  "args": [
+    "\\documentclass/ltxdoc#c"
+  ]
+}

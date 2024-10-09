@@ -1,0 +1,330 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "longint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "longint{${1:bottom}}{${2:top}}{${3:expr}}"
+      }
+    },
+    {
+      "name": "longoint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "longoint{${1:bottom}}{${2:top}}{${3:expr}}"
+      }
+    },
+    {
+      "name": "longiint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "longiint{${1:bottom}}{${2:top}}{${3:expr}}"
+      }
+    },
+    {
+      "name": "longoiint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "longoiint{${1:bottom}}{${2:top}}{${3:expr}}"
+      }
+    },
+    {
+      "name": "iint",
+      "detail": "∬ (\"amsmath fourier esint wasysym\" command)",
+      "doc": "Double integral operator"
+    },
+    {
+      "name": "iiint",
+      "detail": "∭ (\"amsmath fourier esint wasysym\" command)",
+      "doc": "Triple integral operator"
+    },
+    {
+      "name": "iiiint",
+      "detail": "⨌ (\"amsmath esint\" command)",
+      "doc": "Quadruple integral operator"
+    },
+    {
+      "name": "oiint",
+      "detail": "∯ (\"esint wasysym fourier\" command)",
+      "doc": "\\dbloint (wrisym), double contour integral operator"
+    },
+    {
+      "name": "oiiint",
+      "detail": "∰ (\"txfonts fourier\" command)",
+      "doc": "Triple contour integral operator"
+    },
+    {
+      "name": "ointctrclockwise",
+      "detail": "∳ (\"esint\" command)",
+      "doc": "\\cntclockoint (wrisym), contour integral, anticlockwise"
+    },
+    {
+      "name": "ointclockwise"
+    },
+    {
+      "name": "varointclockwise",
+      "detail": "∲ (\"esint\" command)",
+      "doc": "\\clockoint (wrisym), contour integral, clockwise"
+    },
+    {
+      "name": "varointctrclockwise"
+    },
+    {
+      "name": "sqint",
+      "detail": "⨖ (\"esint\" command)",
+      "doc": "\\sqrint (wrisym), quaternion integral operator"
+    },
+    {
+      "name": "sqiint"
+    },
+    {
+      "name": "pointint",
+      "detail": "⨕",
+      "doc": "Integral around a point operator"
+    },
+    {
+      "name": "npolint",
+      "detail": "⨔",
+      "doc": "Line integration not including the pole"
+    },
+    {
+      "name": "scpolint",
+      "detail": "⨓",
+      "doc": "Line integration with semicircular path around pole"
+    },
+    {
+      "name": "rppolint",
+      "detail": "⨒",
+      "doc": "Line integration with rectangular path around pole"
+    },
+    {
+      "name": "cirfnint",
+      "detail": "⨐",
+      "doc": "Circulation function"
+    },
+    {
+      "name": "intclockwise",
+      "detail": "∱",
+      "doc": "Clockwise integral"
+    },
+    {
+      "name": "awint",
+      "detail": "⨑",
+      "doc": "Anticlockwise integration"
+    },
+    {
+      "name": "fint",
+      "detail": "⨏ (\"esint wrisym\" command)",
+      "doc": "Integral average with slash"
+    },
+    {
+      "name": "barint"
+    },
+    {
+      "name": "doublebarint"
+    },
+    {
+      "name": "xint"
+    },
+    {
+      "name": "landupint"
+    },
+    {
+      "name": "landdownint"
+    },
+    {
+      "name": "intlarhk",
+      "detail": "⨗",
+      "doc": "Integral with leftwards arrow with hook"
+    },
+    {
+      "name": "upint",
+      "detail": "⨛",
+      "doc": "Integral with overbar"
+    },
+    {
+      "name": "downint"
+    },
+    {
+      "name": "sumint",
+      "detail": "⨋",
+      "doc": "Summation with integral"
+    },
+    {
+      "name": "intcap",
+      "detail": "⨙",
+      "doc": "Integral with intersection"
+    },
+    {
+      "name": "intcup",
+      "detail": "⨚",
+      "doc": "Integral with union"
+    },
+    {
+      "name": "varidotsint"
+    },
+    {
+      "name": "idotsint"
+    },
+    {
+      "name": "uprightintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightiiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightiiiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightointop",
+      "unusual": true
+    },
+    {
+      "name": "uprightoiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightoiiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightointctrclockwiseop",
+      "unusual": true
+    },
+    {
+      "name": "uprightointclockwiseop",
+      "unusual": true
+    },
+    {
+      "name": "varuprightointclockwiseop",
+      "unusual": true
+    },
+    {
+      "name": "varuprightointctrclockwiseop",
+      "unusual": true
+    },
+    {
+      "name": "uprightsqintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightsqiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightpointintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightnpolintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightscpolintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightrppolintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightcirfnintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightintclockwiseop",
+      "unusual": true
+    },
+    {
+      "name": "uprightawintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightfintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightbarintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightdoublebarintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightxintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlandupintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlanddownintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightintlarhkop",
+      "unusual": true
+    },
+    {
+      "name": "uprightupintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightdownintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightidotsintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightsumintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightintcupop",
+      "unusual": true
+    },
+    {
+      "name": "uprightintcapop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlongintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlongointop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlongiintop",
+      "unusual": true
+    },
+    {
+      "name": "uprightlongoiintop",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cmupint#c": [
+      "displaylimits",
+      "limits",
+      "nolimits"
+    ]
+  },
+  "args": [
+    "\\usepackage/cmupint#c"
+  ]
+}

@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { strictEqual } from 'assert';
-import { getUNCHost } from '../../node/unc.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../common/utils.js';
+import { getUNCHost } from 'vs/base/node/unc';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('UNC', () => {
 

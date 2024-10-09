@@ -1,0 +1,106 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "robotomonoThin",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotomonoThin{${1:text}}"
+      }
+    },
+    {
+      "name": "robotomonoLight",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotomonoLight{${1:text}}"
+      }
+    },
+    {
+      "name": "robotomonoRegular",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotomonoRegular{${1:text}}"
+      }
+    },
+    {
+      "name": "robotomonoMedium",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotomonoMedium{${1:text}}"
+      }
+    },
+    {
+      "name": "robotomonoBold",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotomonoBold{${1:text}}"
+      }
+    },
+    {
+      "name": "robotomono"
+    },
+    {
+      "name": "robotomonoregular",
+      "unusual": true
+    },
+    {
+      "name": "robotomonomedium",
+      "unusual": true
+    },
+    {
+      "name": "robotomonothin",
+      "unusual": true
+    },
+    {
+      "name": "robotomonolight",
+      "unusual": true
+    },
+    {
+      "name": "robotomonobold",
+      "unusual": true
+    },
+    {
+      "name": "robotomonolgr",
+      "unusual": true
+    },
+    {
+      "name": "robotomonofamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/roboto-mono#c": [
+      "scale=${1:factor}",
+      "type1",
+      "medium",
+      "bold",
+      "black",
+      "thin",
+      "light",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/roboto-mono#c"
+  ]
+}

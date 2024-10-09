@@ -1,0 +1,34 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "testhyphens"
+    },
+    {
+      "name": "breakafterword",
+      "unusual": true
+    },
+    {
+      "name": "getlastline",
+      "unusual": true
+    },
+    {
+      "name": "nomorelines",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "checkhyphens"
+    },
+    {
+      "name": "checkhyphens",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:left-right}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

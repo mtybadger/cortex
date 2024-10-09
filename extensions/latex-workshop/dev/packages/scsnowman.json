@@ -1,0 +1,117 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "scsnowman"
+    },
+    {
+      "name": "scsnowman",
+      "arg": {
+        "format": "[]",
+        "snippet": "scsnowman[${1:options%keyvals}]",
+        "keys": [
+          "\\scsnowman#c,\\scsnowmandefault#c,\\scsnowmannumeral#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "scsnowmandefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "scsnowmandefault{${1:keyvals}}",
+        "keys": [
+          "\\scsnowman#c,\\scsnowmandefault#c,\\scsnowmannumeral#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "scsnowmannumeral",
+      "arg": {
+        "format": "{}",
+        "snippet": "scsnowmannumeral{${1:number}}"
+      }
+    },
+    {
+      "name": "scsnowmannumeral",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "scsnowmannumeral[${2:options%keyvals}]{${1:number}}",
+        "keys": [
+          "\\scsnowman#c,\\scsnowmandefault#c,\\scsnowmannumeral#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "usescsnowmanlibrary",
+      "arg": {
+        "format": "{}",
+        "snippet": "usescsnowmanlibrary{${1:library%file}}"
+      }
+    },
+    {
+      "name": "makeitemsnowman",
+      "unusual": true
+    },
+    {
+      "name": "makeitemother",
+      "unusual": true
+    },
+    {
+      "name": "makeqedsnowman",
+      "unusual": true
+    },
+    {
+      "name": "makeqedother",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\scsnowman#c,\\scsnowmandefault#c,\\scsnowmannumeral#c": [
+      "scale=${1:factor}",
+      "adjustbaseline",
+      "body",
+      "body=",
+      "eyes",
+      "eyes=",
+      "mouth",
+      "mouth=",
+      "nose",
+      "nose=",
+      "sweat",
+      "sweat=",
+      "arms",
+      "arms=",
+      "hat",
+      "hat=",
+      "muffler",
+      "muffler=",
+      "buttons",
+      "buttons=",
+      "snow",
+      "snow=",
+      "note",
+      "note=",
+      "broom",
+      "broom=",
+      "shape=",
+      "mouthshape=${1|smile,tight,frown|}",
+      "mikan=",
+      "leaf="
+    ],
+    "\\pagenumbering#c": [
+      "enumsnowman"
+    ]
+  },
+  "args": []
+}

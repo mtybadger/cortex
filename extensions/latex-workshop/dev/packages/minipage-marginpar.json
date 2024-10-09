@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "minipagewithmarginpars",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width}}"
+      }
+    },
+    {
+      "name": "minipagewithmarginpars",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:position}]{${1:width}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

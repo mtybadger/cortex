@@ -1,0 +1,818 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryintersections"
+    },
+    {
+      "name": "tikzlibrarypatterns"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "xltabular"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "adjustbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tsFullSymbology",
+      "unusual": true
+    },
+    {
+      "name": "tsSymbol",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tsSymbol[${2:width}]{${1:symbol name}}"
+      }
+    },
+    {
+      "name": "maintrack"
+    },
+    {
+      "name": "secondarytrack"
+    },
+    {
+      "name": "sidetrack",
+      "unusual": true
+    },
+    {
+      "name": "tracklabel"
+    },
+    {
+      "name": "bufferstop",
+      "arg": {
+        "format": "[]",
+        "snippet": "bufferstop[${1:options%keyvals}]",
+        "keys": [
+          "\\bufferstop#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trackclosure"
+    },
+    {
+      "name": "turnout",
+      "arg": {
+        "format": "[]",
+        "snippet": "turnout[${1:options%keyvals}]",
+        "keys": [
+          "\\turnout#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "crossing",
+      "arg": {
+        "format": "[]",
+        "snippet": "crossing[${1:options%keyvals}]",
+        "keys": [
+          "\\crossing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "slipturnout",
+      "arg": {
+        "format": "[]",
+        "snippet": "slipturnout[${1:options%keyvals}]",
+        "keys": [
+          "\\slipturnout#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "derailer",
+      "arg": {
+        "format": "[]",
+        "snippet": "derailer[${1:options%keyvals}]",
+        "keys": [
+          "\\derailer#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "parkedvehicles",
+      "arg": {
+        "format": "[]",
+        "snippet": "parkedvehicles[${1:options%keyvals}]",
+        "keys": [
+          "\\parkedvehicles#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shunting",
+      "arg": {
+        "format": "[]",
+        "snippet": "shunting[${1:options%keyvals}]",
+        "keys": [
+          "\\shunting#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "train",
+      "arg": {
+        "format": "[]",
+        "snippet": "train[${1:options%keyvals}]",
+        "keys": [
+          "\\train#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "signal",
+      "arg": {
+        "format": "[]",
+        "snippet": "signal[${1:options%keyvals}]",
+        "keys": [
+          "\\signal#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "distantsignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "distantsignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "speedsignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "speedsignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c",
+          "\\speedsignal#c,\\speedsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "speedsign",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "speedsign[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c",
+          "\\speedsignal#c,\\speedsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "blocksignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "blocksignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "routesignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "routesignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c",
+          "\\routesignal#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shuntsignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "shuntsignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c",
+          "\\shuntsignal#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shuntlimit",
+      "arg": {
+        "format": "[]",
+        "snippet": "shuntlimit[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "berthsignal",
+      "arg": {
+        "format": "[]",
+        "snippet": "berthsignal[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "berthsign",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "berthsign[${1:options%keyvals}]",
+        "keys": [
+          "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "viewpoint",
+      "arg": {
+        "format": "[]",
+        "snippet": "viewpoint[${1:options%keyvals}]",
+        "keys": [
+          "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "clearingpoint",
+      "arg": {
+        "format": "[]",
+        "snippet": "clearingpoint[${1:options%keyvals}]",
+        "keys": [
+          "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c",
+          "\\clearingpoint#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "standardclearing",
+      "arg": {
+        "format": "[]",
+        "snippet": "standardclearing[${1:options%keyvals}]",
+        "keys": [
+          "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c",
+          "\\standardclearing#c,\\blockclearing#c,\\routeclearing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "blockclearing",
+      "arg": {
+        "format": "[]",
+        "snippet": "blockclearing[${1:options%keyvals}]",
+        "keys": [
+          "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c",
+          "\\standardclearing#c,\\blockclearing#c,\\routeclearing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "routeclearing",
+      "arg": {
+        "format": "[]",
+        "snippet": "routeclearing[${1:options%keyvals}]",
+        "keys": [
+          "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c",
+          "\\standardclearing#c,\\blockclearing#c,\\routeclearing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "brakingpoint",
+      "arg": {
+        "format": "[]",
+        "snippet": "brakingpoint[${1:options%keyvals}]",
+        "keys": [
+          "\\brakingpoint#c,\\movementauthority#c,\\dangerpoint#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "movementauthority",
+      "arg": {
+        "format": "[]",
+        "snippet": "movementauthority[${1:options%keyvals}]",
+        "keys": [
+          "\\brakingpoint#c,\\movementauthority#c,\\dangerpoint#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dangerpoint",
+      "arg": {
+        "format": "[]",
+        "snippet": "dangerpoint[${1:options%keyvals}]",
+        "keys": [
+          "\\brakingpoint#c,\\movementauthority#c,\\dangerpoint#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "route",
+      "arg": {
+        "format": "[]",
+        "snippet": "route[${1:options%keyvals}]",
+        "keys": [
+          "\\route#c,\\directioncontrol#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "directioncontrol",
+      "arg": {
+        "format": "[]",
+        "snippet": "directioncontrol[${1:options%keyvals}]",
+        "keys": [
+          "\\route#c,\\directioncontrol#c",
+          "\\directioncontrol#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "balise",
+      "arg": {
+        "format": "[]",
+        "snippet": "balise[${1:options%keyvals}]",
+        "keys": [
+          "\\balise#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "transmitter",
+      "arg": {
+        "format": "[]",
+        "snippet": "transmitter[${1:options%keyvals}]",
+        "keys": [
+          "\\transmitter#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trackloop",
+      "arg": {
+        "format": "[]",
+        "snippet": "trackloop[${1:options%keyvals}]",
+        "keys": [
+          "\\trackloop#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "platform",
+      "arg": {
+        "format": "[]",
+        "snippet": "platform[${1:options%keyvals}]",
+        "keys": [
+          "\\platform#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "levelcrossing",
+      "arg": {
+        "format": "[]",
+        "snippet": "levelcrossing[${1:options%keyvals}]",
+        "keys": [
+          "\\levelcrossing#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bridge",
+      "arg": {
+        "format": "[]",
+        "snippet": "bridge[${1:options%keyvals}]",
+        "keys": [
+          "\\bridge#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "interlocking"
+    },
+    {
+      "name": "hump"
+    },
+    {
+      "name": "pylon",
+      "arg": {
+        "format": "[]",
+        "snippet": "pylon[${1:options%keyvals}]",
+        "keys": [
+          "\\pylon#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "distantpoweroff",
+      "arg": {
+        "format": "[]",
+        "snippet": "distantpoweroff[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "poweroff",
+      "arg": {
+        "format": "[]",
+        "snippet": "poweroff[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "poweron",
+      "arg": {
+        "format": "[]",
+        "snippet": "poweron[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "distantpantographdown",
+      "arg": {
+        "format": "[]",
+        "snippet": "distantpantographdown[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pantographdown",
+      "arg": {
+        "format": "[]",
+        "snippet": "pantographdown[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pantographup",
+      "arg": {
+        "format": "[]",
+        "snippet": "pantographup[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "wirelimit",
+      "arg": {
+        "format": "[]",
+        "snippet": "wirelimit[${1:options%keyvals}]",
+        "keys": [
+          "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trackdistance"
+    },
+    {
+      "name": "berth",
+      "arg": {
+        "format": "[]",
+        "snippet": "berth[${1:options%keyvals}]",
+        "keys": [
+          "\\berth#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "measureline"
+    },
+    {
+      "name": "hectometer",
+      "arg": {
+        "format": "[]",
+        "snippet": "hectometer[${1:options%keyvals}]",
+        "keys": [
+          "\\hectometer#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trackmarking",
+      "arg": {
+        "format": "[]",
+        "snippet": "trackmarking[${1:color%plain}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\tikzset#c": [
+      "traffic practice=${1|left,right|}"
+    ],
+    "\\bufferstop#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "friction=",
+      "foreground="
+    ],
+    "\\turnout#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "branch=${1|left,right|}",
+      "operation=${1|manual|}",
+      "fouling point",
+      "points=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\crossing#c": [
+      "branch=${1|left,right|}",
+      "fouling point",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\slipturnout#c": [
+      "branch=${1|left,right|}",
+      "slip=${1|double,none,left,right|}",
+      "operation=${1|manual|}",
+      "fouling point",
+      "forward points=${1|left,right|}",
+      "backwards points=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\derailer#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "branch=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\parkedvehicles#c": [
+      "length=",
+      "label at={${1:(x,y)}}",
+      "label align=${1|left,right|}",
+      "foreground=",
+      "background="
+    ],
+    "\\shunting#c": [
+      "face=${1|forward,backward|}",
+      "movement",
+      "forward",
+      "backward",
+      "operation=${1|manual,automatic|}",
+      "bend left at={${1:(x,y)}}",
+      "bend right at={${1:(x,y)}}",
+      "label at={${1:(x,y)}}",
+      "label align=${1|left,right|}",
+      "foreground=",
+      "background="
+    ],
+    "\\train#c": [
+      "face=${1|forward,backward|}",
+      "run=${1|slow,normal,fast|}",
+      "forward",
+      "backward",
+      "length=",
+      "operation=${1|manual,automatic|}",
+      "ghost",
+      "bend left at={${1:(x,y)}}",
+      "bend right at={${1:(x,y)}}",
+      "shift label={${1:(x,y)}}",
+      "label align=${1|left,right|}",
+      "foreground=",
+      "background="
+    ],
+    "\\signal#c": [
+      "distant",
+      "speed type",
+      "block",
+      "route",
+      "shunt limit",
+      "shunting",
+      "berth",
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "speed=",
+      "distant speed=",
+      "locked",
+      "position=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground=",
+      "rotate=${1:degrees}"
+    ],
+    "\\distantsignal#c,\\speedsignal#c,\\speedsign#c,\\blocksignal#c,\\routesignal#c,\\shuntsignal#c,\\shuntlimit#c,\\berthsignal#c,\\berthsign#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "position=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground=",
+      "rotate=${1:degrees}"
+    ],
+    "\\speedsignal#c,\\speedsign#c": [
+      "speed="
+    ],
+    "\\routesignal#c": [
+      "speed=",
+      "locked"
+    ],
+    "\\shuntsignal#c": [
+      "locked"
+    ],
+    "\\viewpoint#c,\\clearingpoint#c,\\standardclearing#c,\\blockclearing#c,\\routeclearing#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "position=${1|left,right|}",
+      "foreground=",
+      "rotate=${1:degrees}"
+    ],
+    "\\clearingpoint#c": [
+      "standard",
+      "block",
+      "route",
+      "shift label={${1:(x,y)}}"
+    ],
+    "\\standardclearing#c,\\blockclearing#c,\\routeclearing#c": [
+      "shift label={${1:(x,y)}}"
+    ],
+    "\\brakingpoint#c,\\movementauthority#c,\\dangerpoint#c": [
+      "face=${1|forward,backward,bidirectional|}",
+      "forward",
+      "backward",
+      "bidirectional",
+      "position=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\route#c,\\directioncontrol#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "background="
+    ],
+    "\\directioncontrol#c": [
+      "bidirectional"
+    ],
+    "\\balise#c": [
+      "face=${1|forward,backward|}",
+      "forward",
+      "backward",
+      "switched",
+      "shift label={${1:(x,y)}}",
+      "foreground=",
+      "along={${1:list of integers}}",
+      "oppose={${1:list of integers}}",
+      "along switched={${1:list of integers}}",
+      "oppose switched={${1:list of integers}}",
+      "index"
+    ],
+    "\\transmitter#c": [
+      "face=${1|forward,backward,bidirectional|}",
+      "type=${1|balise,loop|}",
+      "forward",
+      "backward",
+      "bidirectional",
+      "position=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\trackloop#c": [
+      "position=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "foreground="
+    ],
+    "\\platform#c": [
+      "side=${1|left,right,both|}",
+      "length=",
+      "width=",
+      "foreground="
+    ],
+    "\\levelcrossing#c": [
+      "barrier=${1|none,semi,full|}",
+      "side=${1|both,left,right|}",
+      "road width=",
+      "width=",
+      "no road",
+      "foreground="
+    ],
+    "\\bridge#c": [
+      "length=",
+      "width=",
+      "shift left=",
+      "shift right=",
+      "side=${1|both,left,right|}",
+      "foreground=",
+      "background=",
+      "no background"
+    ],
+    "\\pylon#c": [
+      "side=${1|right,left,both|}",
+      "foreground=",
+      "background="
+    ],
+    "\\distantpoweroff#c,\\poweroff#c,\\poweron#c,\\distantpantographdown#c,\\pantographdown#c,\\pantographup#c,\\wirelimit#c": [
+      "face=${1|forward,backward,bidirectional|}",
+      "forward",
+      "backward",
+      "bidirectional",
+      "position=${1|left,right|}",
+      "signal color=",
+      "shift label={${1:(x,y)}}",
+      "foreground=",
+      "background="
+    ],
+    "\\berth#c": [
+      "face=${1|forward,backward,bidirectional|}",
+      "forward",
+      "backward",
+      "bidirectional",
+      "length=",
+      "position=${1|left,right|}",
+      "foreground="
+    ],
+    "\\hectometer#c": [
+      "hectometer base={${1:(x,y)}}",
+      "orientation=${1|left,right|}",
+      "shift label={${1:(x,y)}}",
+      "hectometer color="
+    ]
+  },
+  "args": []
+}

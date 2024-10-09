@@ -1,0 +1,102 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarydecorations"
+    },
+    {
+      "name": "tikzlibrarydecorations.markings"
+    },
+    {
+      "name": "tikzlibrarymath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "imagelabelset",
+      "arg": {
+        "format": "{}",
+        "snippet": "imagelabelset{${1:options%keyvals}}",
+        "keys": [
+          "\\imagelabelset"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "annotationimage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:options%keyvals}}{${2:imagefile}}",
+        "keys": [
+          "\\begin{annotationimage}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{annotationimage}": [
+      "bb=",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=",
+      "trim=",
+      "angle=",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=",
+      "clip",
+      "draft",
+      "type=",
+      "ext=",
+      "read=",
+      "command=",
+      "quiet",
+      "page=",
+      "interpolate",
+      "decodearray="
+    ],
+    "\\imagelabelset": [
+      "coarse grid color=",
+      "fine grid color=",
+      "image label font=",
+      "image label distance=",
+      "image label back=",
+      "image label text=",
+      "coordinate label font=",
+      "coordinate label distance=",
+      "coordinate label back=",
+      "coordinate label text=",
+      "annotation font=",
+      "arrow distance=",
+      "border thickness=",
+      "arrow thickness=",
+      "tip size=",
+      "outer dist="
+    ]
+  },
+  "args": []
+}

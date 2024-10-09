@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "marvosym"
+    }
+  ],
+  "macros": [
+    {
+      "name": "affil",
+      "arg": {
+        "format": "{}",
+        "snippet": "affil{${1:keyvals}}",
+        "keys": [
+          "\\affil#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "affilstyle",
+      "arg": {
+        "format": "[]",
+        "snippet": "affilstyle[${1:keyvals}]",
+        "keys": [
+          "\\affilstyle#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\author#c": [
+      "name={${1:name1,name2,...}}",
+      "mail={${1:email1,email2,...}}",
+      "phone={${1:num1,num2,...}}",
+      "url={${1:URL1,URL2,...}}",
+      "affil={${1:affil1,affil2,...}}",
+      "note={${1:note1,note2,...}"
+    ],
+    "\\affil#c": [
+      "id=${1:id}",
+      "div=${1:text}",
+      "org=${1:text}",
+      "addr=${1:text}",
+      "street=${1:text}",
+      "landmark=${1:text}",
+      "pincode=${1:text}",
+      "postbox=${1:text}",
+      "city=${1:text}",
+      "state=${1:text}",
+      "country=${1:text}"
+    ],
+    "\\affilstyle#c": [
+      "authfont=${1:font commands}",
+      "affilfont=${1:font commands}",
+      "mailfont=${1:font commands}",
+      "urlfont=${1:font commands}",
+      "phonefont=${1:font commands}",
+      "notefont=${1:font commands}",
+      "notenum=${1|alpha,fnsym,roman|}",
+      "authspace=",
+      "affilspace=",
+      "affilnum=${1|alpha,Alpha,roman,Roman|}"
+    ]
+  },
+  "args": []
+}

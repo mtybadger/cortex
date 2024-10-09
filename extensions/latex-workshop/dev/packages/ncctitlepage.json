@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "textarea"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "titlepage*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

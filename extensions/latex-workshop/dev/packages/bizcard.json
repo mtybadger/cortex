@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "geometry"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "bizcard"
+    }
+  ],
+  "keys": {
+    "\\usepackage/bizcard#c": [
+      "none",
+      "frame",
+      "star",
+      "flat"
+    ]
+  },
+  "args": [
+    "\\usepackage/bizcard#c"
+  ]
+}

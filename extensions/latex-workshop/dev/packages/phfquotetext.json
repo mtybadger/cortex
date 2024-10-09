@@ -1,0 +1,28 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "quotetextfont",
+      "unusual": true
+    },
+    {
+      "name": "quotetextstart",
+      "unusual": true
+    },
+    {
+      "name": "quotetextend",
+      "unusual": true
+    },
+    {
+      "name": "quotetextcatcodedefs",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "quotetext"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

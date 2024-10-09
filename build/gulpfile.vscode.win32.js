@@ -16,6 +16,7 @@ const pkg = require('../package.json');
 const product = require('../product.json');
 const vfs = require('vinyl-fs');
 const rcedit = require('rcedit');
+const mkdirp = require('mkdirp');
 
 const repoPath = path.dirname(__dirname);
 const buildPath = (/** @type {string} */ arch) => path.join(path.dirname(repoPath), `VSCode-win32-${arch}`);
@@ -74,7 +75,7 @@ function buildWin32Setup(arch, target) {
 
 		const sourcePath = buildPath(arch);
 		const outputPath = setupDir(arch, target);
-		fs.mkdirSync(outputPath, { recursive: true });
+		mkdirp.sync(outputPath);
 
 		const originalProductJsonPath = path.join(sourcePath, 'resources/app/product.json');
 		const productJsonPath = path.join(outputPath, 'product.json');
@@ -87,8 +88,8 @@ function buildWin32Setup(arch, target) {
 			NameLong: product.nameLong,
 			NameShort: product.nameShort,
 			DirName: product.win32DirName,
-			Version: pkg.version,
-			RawVersion: pkg.version.replace(/-\w+$/, ''),
+			Version: `${pkg.version}.${pkg.release}`,
+			RawVersion: `${pkg.version.replace(/-\w+$/, '')}.${pkg.release}`,
 			NameVersion: product.win32NameVersion + (target === 'user' ? ' (User)' : ''),
 			ExeBasename: product.nameShort,
 			RegValueName: product.win32RegValueName,

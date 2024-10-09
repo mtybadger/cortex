@@ -23,12 +23,7 @@ steps:
 
   - script: |
       set -e
-      npm ci
-    workingDirectory: build
-    displayName: Install /build dependencies
-
-  - script: |
-      set -e
+      (cd build ; yarn)
       AZURE_TENANT_ID="$(AZURE_TENANT_ID)" \
       AZURE_CLIENT_ID="$(AZURE_CLIENT_ID)" \
       AZURE_CLIENT_SECRET="$(AZURE_CLIENT_SECRET)" \

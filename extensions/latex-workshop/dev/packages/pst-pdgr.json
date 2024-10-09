@@ -1,0 +1,157 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "pst-tree"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "affectedstyle"
+    },
+    {
+      "name": "affectedbgcolor"
+    },
+    {
+      "name": "affectedfgcolor"
+    },
+    {
+      "name": "pstPerson",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstPerson{${1:id}}"
+      }
+    },
+    {
+      "name": "pstPerson",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pstPerson[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "pstAbortion",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstAbortion{${1:id}}"
+      }
+    },
+    {
+      "name": "pstAbortion",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pstAbortion[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "pstChildless",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstChildless{${1:id}}"
+      }
+    },
+    {
+      "name": "pstChildless",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pstChildless[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "pstRelationship",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pstRelationship{${1:nodeA}}{${2:nodeB}}"
+      }
+    },
+    {
+      "name": "pstRelationship",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pstRelationship[${3:options%keyvals}]{${1:nodeA}}{${2:nodeB}}"
+      }
+    },
+    {
+      "name": "pstDescent",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pstDescent{${1:parent}}{${2:child}}"
+      }
+    },
+    {
+      "name": "pstDescent",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pstDescent[${3:options%keyvals}]{${1:parent}}{${2:child}}"
+      }
+    },
+    {
+      "name": "pstTwins",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "pstTwins{${1:parent}}{${2:twin node}}{${3:left twin}}{${4:right twin}}"
+      }
+    },
+    {
+      "name": "TpstPerson",
+      "arg": {
+        "format": "{}",
+        "snippet": "TpstPerson{${1:id}}"
+      }
+    },
+    {
+      "name": "TpstPerson",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TpstPerson[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "TpstAbortion",
+      "arg": {
+        "format": "{}",
+        "snippet": "TpstAbortion{${1:id}}"
+      }
+    },
+    {
+      "name": "TpstAbortion",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TpstAbortion[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "TpstChildless",
+      "arg": {
+        "format": "{}",
+        "snippet": "TpstChildless{${1:id}}"
+      }
+    },
+    {
+      "name": "TpstChildless",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TpstChildless[${2:options%keyvals}]{${1:id}}"
+      }
+    },
+    {
+      "name": "ncAngles",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ncAngles{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

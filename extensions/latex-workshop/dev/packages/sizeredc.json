@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "epic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "changeunitlength",
+      "arg": {
+        "format": "{}",
+        "snippet": "changeunitlength{${1:length}}"
+      }
+    },
+    {
+      "name": "ifsizereduction",
+      "unusual": true
+    },
+    {
+      "name": "reducedsizepicture"
+    },
+    {
+      "name": "reducedsizepicture",
+      "arg": {
+        "format": "[]",
+        "snippet": "reducedsizepicture[${1:unit length}]"
+      }
+    },
+    {
+      "name": "sizereductionfalse",
+      "unusual": true
+    },
+    {
+      "name": "sizereductiontrue",
+      "unusual": true
+    },
+    {
+      "name": "substfontsize",
+      "unusual": true
+    },
+    {
+      "name": "thicklines"
+    },
+    {
+      "name": "thinlines"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

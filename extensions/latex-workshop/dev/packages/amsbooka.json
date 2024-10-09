@@ -1,0 +1,34 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "barefootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "barefootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "partauthor",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "inchapterbibliography",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:widest label}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/amsbooka#c": [
+      "rhchapnum",
+      "rhchapsec"
+    ]
+  },
+  "args": [
+    "\\usepackage/amsbooka#c"
+  ]
+}

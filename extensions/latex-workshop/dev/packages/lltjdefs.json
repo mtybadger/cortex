@@ -1,0 +1,64 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mcdefault",
+      "unusual": true
+    },
+    {
+      "name": "gtdefault",
+      "unusual": true
+    },
+    {
+      "name": "jttdefault",
+      "unusual": true
+    },
+    {
+      "name": "kanjiencodingdefault",
+      "unusual": true
+    },
+    {
+      "name": "kanjifamilydefault",
+      "unusual": true
+    },
+    {
+      "name": "kanjiseriesdefault",
+      "unusual": true
+    },
+    {
+      "name": "kanjishapedefault",
+      "unusual": true
+    },
+    {
+      "name": "textmc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textmc{${1:text}}"
+      }
+    },
+    {
+      "name": "textgt",
+      "arg": {
+        "format": "{}",
+        "snippet": "textgt{${1:text}}"
+      }
+    },
+    {
+      "name": "mathmc",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathmc{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathgt",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathgt{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

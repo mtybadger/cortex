@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "stackrel",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "stackrel[${3:sub}]{${1:above}}{${2:rel}}"
+      }
+    },
+    {
+      "name": "stackbin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "stackbin{${1:above}}{${2:bin}}"
+      }
+    },
+    {
+      "name": "stackbin",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "stackbin[${3:sub}]{${1:above}}{${2:bin}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

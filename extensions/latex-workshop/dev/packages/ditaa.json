@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ditaacaption",
+      "unusual": true
+    },
+    {
+      "name": "ditaadir",
+      "unusual": true
+    },
+    {
+      "name": "ditaafigwidth",
+      "unusual": true
+    },
+    {
+      "name": "ditaafile",
+      "unusual": true
+    },
+    {
+      "name": "ditaastem",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "ditaa",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:caption%text}}{${2:name}}"
+      }
+    },
+    {
+      "name": "ditaa",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:width}]{${1:caption%text}}{${2:name}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/ditaa#c": [
+      "imagepath=${1:path}"
+    ]
+  },
+  "args": [
+    "\\usepackage/ditaa#c"
+  ]
+}

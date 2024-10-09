@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Lazy } from '../../common/lazy.js';
-import { FileAccess } from '../../common/network.js';
-import { URI } from '../../common/uri.js';
+import { Lazy } from 'vs/base/common/lazy';
+import { FileAccess } from 'vs/base/common/network';
+import { URI } from 'vs/base/common/uri';
 
 declare const __readFileInTests: (path: string) => Promise<string>;
 declare const __writeFileInTests: (path: string, contents: string) => Promise<void>;
@@ -44,7 +44,7 @@ export class SnapshotContext {
 			throw new Error('currentTest.file is not set, please open an issue with the test you\'re trying to run');
 		}
 
-		const src = URI.joinPath(FileAccess.asFileUri(''), '../src');
+		const src = FileAccess.asFileUri('');
 		const parts = test.file.split(/[/\\]/g);
 
 		this.namePrefix = sanitizeName(test.fullTitle()) + '.';

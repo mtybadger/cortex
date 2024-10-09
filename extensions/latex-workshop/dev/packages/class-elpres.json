@@ -1,0 +1,218 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "mathptmx",
+      "if": "tmrfont"
+    },
+    {
+      "name": "courier",
+      "if": "tmrfont"
+    },
+    {
+      "name": "helvet",
+      "if": "helvetfont"
+    },
+    {
+      "name": "courier",
+      "if": "helvetfont"
+    },
+    {
+      "name": "colortbl",
+      "if": "table"
+    },
+    {
+      "name": "pdfcolmk",
+      "if": "fixpdftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "distance",
+      "arg": {
+        "format": "{}",
+        "snippet": "distance{${1:number}}"
+      }
+    },
+    {
+      "name": "auvimm",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "auvimm{${1:text}}{${2:media file%file}}"
+      }
+    },
+    {
+      "name": "fromlinktext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fromlinktext{${1:text}}{${2:link label}}"
+      }
+    },
+    {
+      "name": "totargettext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "totargettext{${1:text}}{${2:link label}}"
+      }
+    },
+    {
+      "name": "slidetitlecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "slidetitlecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "pagenrconst"
+    },
+    {
+      "name": "fontna",
+      "unusual": true
+    },
+    {
+      "name": "screenformat",
+      "unusual": true
+    },
+    {
+      "name": "navigation",
+      "unusual": true
+    },
+    {
+      "name": "abstand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "abstand{${1:number}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "psli"
+    },
+    {
+      "name": "psli",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "rsli"
+    },
+    {
+      "name": "citemize"
+    },
+    {
+      "name": "cenumerate"
+    },
+    {
+      "name": "cdescription"
+    }
+  ],
+  "keys": {
+    "\\documentclass/elpres#c": [
+      "nofonts",
+      "tmrfont",
+      "helvetfont",
+      "cmfont",
+      "sansfont",
+      "4x3",
+      "16x9",
+      "16x10",
+      "navisymb",
+      "bulletsymb",
+      "ballsymb",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib",
+      "dvips",
+      "xdvi",
+      "dvipdf",
+      "dvipdfm",
+      "dvipdfmx",
+      "luatex",
+      "pdftex",
+      "dvipsone",
+      "dviwindo",
+      "emtex",
+      "dviwin",
+      "oztex",
+      "textures",
+      "pctexps",
+      "pctexwin",
+      "pctexhp",
+      "pctex32",
+      "truetex",
+      "tcidvi",
+      "vtex",
+      "xetex",
+      "dvisvgm",
+      "natural",
+      "rgb",
+      "cmy",
+      "cmyk",
+      "hsb",
+      "gray",
+      "RGB",
+      "HTML",
+      "HSB",
+      "Gray",
+      "monochrome",
+      "dvipsnames",
+      "dvipsnames*",
+      "svgnames",
+      "svgnames*",
+      "x11names",
+      "x11names*",
+      "table",
+      "fixpdftex",
+      "hyperref",
+      "prologue",
+      "kernelfbox",
+      "xcdraw",
+      "noxcdraw",
+      "fixinclude",
+      "showerrors",
+      "hideerrors"
+    ]
+  },
+  "args": [
+    "\\documentclass/elpres#c"
+  ]
+}

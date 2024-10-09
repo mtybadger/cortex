@@ -4,8 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { hash, hashAsync, StringSHA1 } from '../../common/hash.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../common/utils.js';
+import { sha1Hex } from 'vs/base/browser/hash';
+import { hash, StringSHA1 } from 'vs/base/common/hash';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('Hash', () => {
 	test('string', () => {
@@ -82,7 +83,7 @@ suite('Hash', () => {
 		assert.strictEqual(actual, expected);
 
 		// Test with crypto.subtle
-		actual = await hashAsync(str);
+		actual = await sha1Hex(str);
 		assert.strictEqual(actual, expected);
 	}
 

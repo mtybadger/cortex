@@ -1,0 +1,221 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "MFUsentencecase",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUsentencecase{${1:text}}"
+      }
+    },
+    {
+      "name": "makefirstuc",
+      "arg": {
+        "format": "{}",
+        "snippet": "makefirstuc{${1:text}}"
+      }
+    },
+    {
+      "name": "xmakefirstuc",
+      "arg": {
+        "format": "{}",
+        "snippet": "xmakefirstuc{${1:text}}"
+      }
+    },
+    {
+      "name": "emakefirstuc",
+      "arg": {
+        "format": "{}",
+        "snippet": "emakefirstuc{${1:text}}"
+      }
+    },
+    {
+      "name": "glsmakefirstuc",
+      "arg": {
+        "format": "{}",
+        "snippet": "glsmakefirstuc{${1:text}}"
+      }
+    },
+    {
+      "name": "MFUexcl",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUexcl{${1:cmd}}"
+      }
+    },
+    {
+      "name": "MFUskippunc",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUskippunc{${1:content%text}}"
+      }
+    },
+    {
+      "name": "MFUblocker",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUblocker{${1:cmd}}"
+      }
+    },
+    {
+      "name": "MFUaddmap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFUaddmap{${1:cmd1%cmd}}{${2:cmd2%cmd}}"
+      }
+    },
+    {
+      "name": "capitalisewords",
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalisewords{${1:text}}"
+      }
+    },
+    {
+      "name": "capitalisewords*",
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalisewords*{${1:text}}"
+      }
+    },
+    {
+      "name": "xcapitalisewords",
+      "arg": {
+        "format": "{}",
+        "snippet": "xcapitalisewords{${1:text}}"
+      }
+    },
+    {
+      "name": "xcapitalisewords*",
+      "arg": {
+        "format": "{}",
+        "snippet": "xcapitalisewords*{${1:text}}"
+      }
+    },
+    {
+      "name": "ecapitalisewords",
+      "arg": {
+        "format": "{}",
+        "snippet": "ecapitalisewords{${1:text}}"
+      }
+    },
+    {
+      "name": "ecapitalisewords*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ecapitalisewords*{${1:text}}"
+      }
+    },
+    {
+      "name": "MFUwordbreak",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUwordbreak{${1:puncutation}}"
+      }
+    },
+    {
+      "name": "MFUcapword",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUcapword{${1:text}}"
+      }
+    },
+    {
+      "name": "ifMFUhyphen",
+      "unusual": true
+    },
+    {
+      "name": "MFUhyphencapword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUhyphencapword{${1:text}}"
+      }
+    },
+    {
+      "name": "MFUhyphentrue",
+      "unusual": true
+    },
+    {
+      "name": "MFUhyphenfalse",
+      "unusual": true
+    },
+    {
+      "name": "MFUcapwordfirstuc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUcapwordfirstuc{${1:word%text}}"
+      }
+    },
+    {
+      "name": "capitalisefmtwords",
+      "arg": {
+        "format": "{}",
+        "snippet": "capitalisefmtwords{${1:text}}"
+      }
+    },
+    {
+      "name": "xcapitalisefmtwords",
+      "arg": {
+        "format": "{}",
+        "snippet": "xcapitalisefmtwords{${1:text}}"
+      }
+    },
+    {
+      "name": "ecapitalisefmtwords",
+      "arg": {
+        "format": "{}",
+        "snippet": "ecapitalisefmtwords{${1:text}}"
+      }
+    },
+    {
+      "name": "MFUnocap",
+      "arg": {
+        "format": "{}",
+        "snippet": "MFUnocap{${1:word%text}}"
+      }
+    },
+    {
+      "name": "gMFUnocap",
+      "arg": {
+        "format": "{}",
+        "snippet": "gMFUnocap{${1:word%text}}"
+      }
+    },
+    {
+      "name": "MFUclear"
+    },
+    {
+      "name": "MFUsaveatend",
+      "unusual": true
+    },
+    {
+      "name": "MFUsave",
+      "unusual": true
+    },
+    {
+      "name": "mfirstucMakeUppercase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mfirstucMakeUppercase{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mfirstuc#c": [
+      "expanded",
+      "unexpanded",
+      "grabfirst"
+    ]
+  },
+  "args": [
+    "\\usepackage/mfirstuc#c"
+  ]
+}

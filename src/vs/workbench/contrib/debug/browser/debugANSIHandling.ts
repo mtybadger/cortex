@@ -3,28 +3,25 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Color, RGBA } from '../../../../base/common/color.js';
-import { isDefined } from '../../../../base/common/types.js';
-import { editorHoverBackground, listActiveSelectionBackground, listFocusBackground, listInactiveFocusBackground, listInactiveSelectionBackground } from '../../../../platform/theme/common/colorRegistry.js';
-import { registerThemingParticipant } from '../../../../platform/theme/common/themeService.js';
-import { IWorkspaceFolder } from '../../../../platform/workspace/common/workspace.js';
-import { PANEL_BACKGROUND, SIDE_BAR_BACKGROUND } from '../../../common/theme.js';
-import { ansiColorIdentifiers } from '../../terminal/common/terminalColorRegistry.js';
-import { ILinkDetector } from './linkDetector.js';
+import { LinkDetector } from 'vs/workbench/contrib/debug/browser/linkDetector';
+import { RGBA, Color } from 'vs/base/common/color';
+import { IThemeService } from 'vs/platform/theme/common/themeService';
+import { ansiColorIdentifiers } from 'vs/workbench/contrib/terminal/common/terminalColorRegistry';
+import { IWorkspaceFolder } from 'vs/platform/workspace/common/workspace';
 
 /**
  * @param text The content to stylize.
  * @returns An {@link HTMLSpanElement} that contains the potentially stylized text.
  */
-export function handleANSIOutput(text: string, linkDetector: ILinkDetector, workspaceFolder: IWorkspaceFolder | undefined): HTMLSpanElement {
+export function handleANSIOutput(text: string, linkDetector: LinkDetector, themeService: IThemeService, workspaceFolder: IWorkspaceFolder | undefined): HTMLSpanElement {
 
 	const root: HTMLSpanElement = document.createElement('span');
 	const textLength: number = text.length;
 
 	let styleNames: string[] = [];
-	let customFgColor: RGBA | string | undefined;
-	let customBgColor: RGBA | string | undefined;
-	let customUnderlineColor: RGBA | string | undefined;
+	let customFgColor: RGBA | undefined;
+	let customBgColor: RGBA | undefined;
+	let customUnderlineColor: RGBA | undefined;
 	let colorsInverted: boolean = false;
 	let currentPos: number = 0;
 	let buffer: string = '';
@@ -119,7 +116,7 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
 	 * @param color Color to change to. If `undefined` or not provided,
 	 * will clear current color without adding a new one.
 	 */
-	function changeColor(colorType: 'foreground' | 'background' | 'underline', color?: RGBA | string): void {
+	function changeColor(colorType: 'foreground' | 'background' | 'underline', color?: RGBA | undefined): void {
 		if (colorType === 'foreground') {
 			customFgColor = color;
 		} else if (colorType === 'background') {
@@ -138,7 +135,7 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
 	 * [] flag to make sure it is appropriate to turn ON or OFF (if it is already inverted don't call
 	 */
 	function reverseForegroundAndBackgroundColors(): void {
-		const oldFgColor = customFgColor;
+		const oldFgColor: RGBA | undefined = customFgColor;
 		changeColor('foreground', customBgColor);
 		changeColor('background', oldFgColor);
 	}
@@ -337,8 +334,12 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
 		} else if (colorNumber >= 0 && colorNumber <= 15) {
 			if (colorType === 'underline') {
 				// for underline colors we just decode the 0-15 color number to theme color, set and return
+				const theme = themeService.getColorTheme();
 				const colorName = ansiColorIdentifiers[colorNumber];
-				changeColor(colorType, `--vscode-debug-ansi-${colorName}`);
+				const color = theme.getColor(colorName);
+				if (color) {
+					changeColor(colorType, color.rgba);
+				}
 				return;
 			}
 			// Need to map to one of the four basic color ranges (30-37, 90-97, 40-47, 100-107)
@@ -363,6 +364,7 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
 	 * nothing.
 	 */
 	function setBasicColor(styleCode: number): void {
+		const theme = themeService.getColorTheme();
 		let colorType: 'foreground' | 'background' | undefined;
 		let colorIndex: number | undefined;
 
@@ -382,7 +384,10 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
 
 		if (colorIndex !== undefined && colorType) {
 			const colorName = ansiColorIdentifiers[colorIndex];
-			changeColor(colorType, `--vscode-debug-ansi-${colorName.replaceAll('.', '-')}`);
+			const color = theme.getColor(colorName);
+			if (color) {
+				changeColor(colorType, color.rgba);
+			}
 		}
 	}
 }
@@ -391,7 +396,7 @@ export function handleANSIOutput(text: string, linkDetector: ILinkDetector, work
  * @param root The {@link HTMLElement} to append the content to.
  * @param stringContent The text content to be appended.
  * @param cssClasses The list of CSS styles to apply to the text content.
- * @param linkDetector The {@link ILinkDetector} responsible for generating links from {@param stringContent}.
+ * @param linkDetector The {@link LinkDetector} responsible for generating links from {@param stringContent}.
  * @param customTextColor If provided, will apply custom color with inline style.
  * @param customBackgroundColor If provided, will apply custom backgroundColor with inline style.
  * @param customUnderlineColor If provided, will apply custom textDecorationColor with inline style.
@@ -400,11 +405,11 @@ export function appendStylizedStringToContainer(
 	root: HTMLElement,
 	stringContent: string,
 	cssClasses: string[],
-	linkDetector: ILinkDetector,
+	linkDetector: LinkDetector,
 	workspaceFolder: IWorkspaceFolder | undefined,
-	customTextColor?: RGBA | string,
-	customBackgroundColor?: RGBA | string,
-	customUnderlineColor?: RGBA | string,
+	customTextColor?: RGBA,
+	customBackgroundColor?: RGBA,
+	customUnderlineColor?: RGBA
 ): void {
 	if (!root || !stringContent) {
 		return;
@@ -415,17 +420,16 @@ export function appendStylizedStringToContainer(
 	container.className = cssClasses.join(' ');
 	if (customTextColor) {
 		container.style.color =
-			typeof customTextColor === 'string' ? `var(${customTextColor})` : Color.Format.CSS.formatRGB(new Color(customTextColor));
+			Color.Format.CSS.formatRGB(new Color(customTextColor));
 	}
 	if (customBackgroundColor) {
 		container.style.backgroundColor =
-			typeof customBackgroundColor === 'string' ? `var(${customBackgroundColor})` : Color.Format.CSS.formatRGB(new Color(customBackgroundColor));
+			Color.Format.CSS.formatRGB(new Color(customBackgroundColor));
 	}
 	if (customUnderlineColor) {
 		container.style.textDecorationColor =
-			typeof customUnderlineColor === 'string' ? `var(${customUnderlineColor})` : Color.Format.CSS.formatRGB(new Color(customUnderlineColor));
+			Color.Format.CSS.formatRGB(new Color(customUnderlineColor));
 	}
-
 	root.appendChild(container);
 }
 
@@ -467,30 +471,3 @@ export function calcANSI8bitColor(colorNumber: number): RGBA | undefined {
 		return;
 	}
 }
-
-registerThemingParticipant((theme, collector) => {
-	const areas = [
-		{ selector: '.monaco-workbench .sidebar, .monaco-workbench .auxiliarybar', bg: theme.getColor(SIDE_BAR_BACKGROUND) },
-		{ selector: '.monaco-workbench .panel', bg: theme.getColor(PANEL_BACKGROUND) },
-		{ selector: '.monaco-workbench .monaco-list-row.selected', bg: theme.getColor(listInactiveSelectionBackground) },
-		{ selector: '.monaco-workbench .monaco-list-row.focused', bg: theme.getColor(listInactiveFocusBackground) },
-		{ selector: '.monaco-workbench .monaco-list:focus .monaco-list-row.focused', bg: theme.getColor(listFocusBackground) },
-		{ selector: '.monaco-workbench .monaco-list:focus .monaco-list-row.selected', bg: theme.getColor(listActiveSelectionBackground) },
-		{ selector: '.debug-hover-widget', bg: theme.getColor(editorHoverBackground) },
-	];
-
-	for (const { selector, bg } of areas) {
-		const content = ansiColorIdentifiers
-			.map(color => {
-				const actual = theme.getColor(color);
-				if (!actual) { return undefined; }
-				// this uses the default contrast ratio of 4 (from the terminal),
-				// we may want to make this configurable in the future, but this is
-				// good to keep things sane to start with.
-				return `--vscode-debug-ansi-${color.replaceAll('.', '-')}:${bg ? bg.ensureConstrast(actual, 4) : actual}`;
-			})
-			.filter(isDefined);
-
-		collector.addRule(`${selector} { ${content.join(';')} }`);
-	}
-});

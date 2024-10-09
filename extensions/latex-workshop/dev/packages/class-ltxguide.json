@@ -1,0 +1,122 @@
+{
+  "deps": [
+    {
+      "name": "shortvrb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "clsguide"
+    },
+    {
+      "name": "usrguide"
+    },
+    {
+      "name": "fntguide"
+    },
+    {
+      "name": "cfgguide"
+    },
+    {
+      "name": "cyrguide"
+    },
+    {
+      "name": "modguide"
+    },
+    {
+      "name": "sourcecode"
+    },
+    {
+      "name": "LaTeXbook"
+    },
+    {
+      "name": "LaTeXcomp"
+    },
+    {
+      "name": "LaTeXGcomp"
+    },
+    {
+      "name": "LaTeXWcomp"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "ctan"
+    },
+    {
+      "name": "eg"
+    },
+    {
+      "name": "ie"
+    },
+    {
+      "name": "SLiTeX"
+    },
+    {
+      "name": "m",
+      "arg": {
+        "format": "{}",
+        "snippet": "m{${1:arg}}"
+      }
+    },
+    {
+      "name": "arg",
+      "arg": {
+        "format": "{}",
+        "snippet": "arg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "NFSS"
+    },
+    {
+      "name": "AmS"
+    },
+    {
+      "name": "AmSLaTeX"
+    },
+    {
+      "name": "NEWfeature",
+      "arg": {
+        "format": "{}",
+        "snippet": "NEWfeature{${1:text}}"
+      }
+    },
+    {
+      "name": "NEWdescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "NEWdescription{${1:text}}"
+      }
+    },
+    {
+      "name": "URL",
+      "arg": {
+        "format": "{}",
+        "snippet": "URL{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "decl"
+    },
+    {
+      "name": "decl",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:date}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "fp-basic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FPpascal",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FPpascal{${1:variable%cmd}}{${2:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

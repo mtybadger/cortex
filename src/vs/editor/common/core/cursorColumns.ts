@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { CharCode } from '../../../base/common/charCode.js';
-import * as strings from '../../../base/common/strings.js';
+import { CharCode } from 'vs/base/common/charCode';
+import * as strings from 'vs/base/common/strings';
 
 /**
  * A column in a position is the gap between two adjacent characters. The methods here
@@ -128,7 +128,7 @@ export class CursorColumns {
 	 * @see {@link CursorColumns}
 	 */
 	public static nextIndentTabStop(visibleColumn: number, indentSize: number): number {
-		return CursorColumns.nextRenderTabStop(visibleColumn, indentSize);
+		return visibleColumn + indentSize - visibleColumn % indentSize;
 	}
 
 	/**
@@ -144,6 +144,6 @@ export class CursorColumns {
 	 * @see {@link CursorColumns}
 	 */
 	public static prevIndentTabStop(column: number, indentSize: number): number {
-		return CursorColumns.prevRenderTabStop(column, indentSize);
+		return Math.max(0, column - 1 - (column - 1) % indentSize);
 	}
 }

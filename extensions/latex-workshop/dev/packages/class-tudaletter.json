@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "scrletter"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "tudacolors"
+    },
+    {
+      "name": "tudafonts"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "tudarules"
+    },
+    {
+      "name": "pdfx",
+      "if": "pdfa"
+    },
+    {
+      "name": "pdfx",
+      "if": "pdfa=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Metadata",
+      "arg": {
+        "format": "{}",
+        "snippet": "Metadata{${1:keyvals}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/tudaletter#c": [
+      "logo",
+      "premium",
+      "accentcolor=",
+      "firstpagenumber",
+      "raggedright",
+      "pdfa",
+      "logofile=${1:imagefile}",
+      "headrule",
+      "textwidth=${1|wide,narrow|}"
+    ]
+  },
+  "args": [
+    "\\documentclass/tudaletter#c"
+  ]
+}

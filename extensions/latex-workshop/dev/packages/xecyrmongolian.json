@@ -1,0 +1,75 @@
+{
+  "deps": [
+    {
+      "name": "luahyphenrules"
+    }
+  ],
+  "macros": [
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "Useg",
+      "arg": {
+        "format": "{}",
+        "snippet": "Useg{${1:integer}}"
+      }
+    },
+    {
+      "name": "useg",
+      "arg": {
+        "format": "{}",
+        "snippet": "useg{${1:integer}}"
+      }
+    },
+    {
+      "name": "mongmonth"
+    },
+    {
+      "name": "nousegalph"
+    },
+    {
+      "name": "usegalph"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

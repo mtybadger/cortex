@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "isotope",
+      "arg": {
+        "format": "{}",
+        "snippet": "isotope{${1:name%formula}}"
+      }
+    },
+    {
+      "name": "isotope",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isotope[${2:nucleon num%formula}]{${1:name%formula}}"
+      }
+    },
+    {
+      "name": "isotope",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "isotope[${2:nucleon num%formula}][${3:atomic num%formula}]{${1:name%formula}}"
+      }
+    },
+    {
+      "name": "isotopestyle",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

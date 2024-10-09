@@ -1,0 +1,118 @@
+{
+  "deps": [
+    {
+      "name": "soul"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ColTextColor",
+      "unusual": true
+    },
+    {
+      "name": "ColSubTextColor",
+      "unusual": true
+    },
+    {
+      "name": "zapf",
+      "unusual": true
+    },
+    {
+      "name": "Allergens",
+      "arg": {
+        "format": "{}",
+        "snippet": "Allergens{${1:text}}"
+      }
+    },
+    {
+      "name": "Entry",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Entry{${1:left%text}}{${2:right%text}}"
+      }
+    },
+    {
+      "name": "Entrycount",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Entrycount{${1:left%text}}{${2:right%text}}"
+      }
+    },
+    {
+      "name": "Expl",
+      "arg": {
+        "format": "{}",
+        "snippet": "Expl{${1:text}}"
+      }
+    },
+    {
+      "name": "ColSubText",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ColSubText{${1:text}}"
+      }
+    },
+    {
+      "name": "ColText",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ColText{${1:text}}"
+      }
+    },
+    {
+      "name": "themenucount",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "Group",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:heading%text}}"
+      }
+    },
+    {
+      "name": "Group*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:heading%text}}"
+      }
+    },
+    {
+      "name": "menugroup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:heading1%text}}{${2:heading2%text}}"
+      }
+    },
+    {
+      "name": "menugroup*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:heading1%text}}{${2:heading2%text}}"
+      }
+    },
+    {
+      "name": "menugroupsc",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:heading1%text}}{${2:heading2%text}}"
+      }
+    },
+    {
+      "name": "menugroupsc*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:heading1%text}}{${2:heading2%text}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

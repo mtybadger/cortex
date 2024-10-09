@@ -1,0 +1,144 @@
+{
+  "deps": [
+    {
+      "name": "newvbtm"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newtabverbatim",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "newtabverbatim{${1:envname}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "newtabverbatim",
+      "arg": {
+        "format": "{}[]{}{}{}{}",
+        "snippet": "newtabverbatim{${1:envname}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "newtabverbatim",
+      "arg": {
+        "format": "{}[][]{}{}{}{}",
+        "snippet": "newtabverbatim{${1:envname}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewtabverbatim",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "renewtabverbatim{${1:envname}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewtabverbatim",
+      "arg": {
+        "format": "{}[]{}{}{}{}",
+        "snippet": "renewtabverbatim{${1:envname}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewtabverbatim",
+      "arg": {
+        "format": "{}[][]{}{}{}{}",
+        "snippet": "renewtabverbatim{${1:envname}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "VVBbegintab",
+      "unusual": true
+    },
+    {
+      "name": "VVBendtab",
+      "unusual": true
+    },
+    {
+      "name": "VVBprintFF",
+      "unusual": true
+    },
+    {
+      "name": "VVBprintFFas",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "VVBprintFFas{${1:string}}"
+      }
+    },
+    {
+      "name": "VVBbreakatFF",
+      "unusual": true
+    },
+    {
+      "name": "VVBbreakatFFonly",
+      "unusual": true
+    },
+    {
+      "name": "VVBnonverb",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "VVBnonverb{${1:\\character}}"
+      }
+    },
+    {
+      "name": "VVBnonverbmath",
+      "unusual": true
+    },
+    {
+      "name": "VVBnonverbmath",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "VVBnonverbmath[${1:\\character}]"
+      }
+    },
+    {
+      "name": "newverbatiminput",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "newverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "newverbatiminput",
+      "arg": {
+        "format": "{}[]{}{}{}{}",
+        "snippet": "newverbatiminput{${1:cmd}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "newverbatiminput",
+      "arg": {
+        "format": "{}[][]{}{}{}{}",
+        "snippet": "newverbatiminput{${1:cmd}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewverbatiminput",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "renewverbatiminput{${1:cmd}}{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewverbatiminput",
+      "arg": {
+        "format": "{}[]{}{}{}{}",
+        "snippet": "renewverbatiminput{${1:cmd}}[${6:args}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    },
+    {
+      "name": "renewverbatiminput",
+      "arg": {
+        "format": "{}[][]{}{}{}{}",
+        "snippet": "renewverbatiminput{${1:cmd}}[${6:args}][${7:default}]{${2:beg-def-outer}}{${3:beg-def-inner}}{${4:end-def-inner}}{${5:end-def-outer}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

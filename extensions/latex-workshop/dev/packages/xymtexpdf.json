@@ -1,0 +1,78 @@
+{
+  "deps": [
+    {
+      "name": "epic"
+    },
+    {
+      "name": "chemstr"
+    },
+    {
+      "name": "carom"
+    },
+    {
+      "name": "hetarom"
+    },
+    {
+      "name": "hetaromh"
+    },
+    {
+      "name": "lowcycle"
+    },
+    {
+      "name": "ccycle"
+    },
+    {
+      "name": "hcycle"
+    },
+    {
+      "name": "aliphat"
+    },
+    {
+      "name": "locant"
+    },
+    {
+      "name": "polymers"
+    },
+    {
+      "name": "methylen"
+    },
+    {
+      "name": "fusering"
+    },
+    {
+      "name": "sizeredc"
+    },
+    {
+      "name": "steroid"
+    },
+    {
+      "name": "lewisstruc"
+    },
+    {
+      "name": "bondcolor"
+    },
+    {
+      "name": "assurelatexmode"
+    },
+    {
+      "name": "xymtx-pdf"
+    },
+    {
+      "name": "chmst-pdf"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xymtexpdf#c": [
+      "pdf",
+      "dvipdfm",
+      "pdftex",
+      "ps",
+      "dvips"
+    ]
+  },
+  "args": [
+    "\\usepackage/xymtexpdf#c"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "processkeyvalues",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "processkeyvalues{${1:keyvals}}{${2:macro}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

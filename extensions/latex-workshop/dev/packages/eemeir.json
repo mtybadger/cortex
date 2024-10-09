@@ -1,0 +1,119 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "E"
+    },
+    {
+      "name": "E*"
+    },
+    {
+      "name": "Em"
+    },
+    {
+      "name": "Em*"
+    },
+    {
+      "name": "Eir"
+    },
+    {
+      "name": "Eir*"
+    },
+    {
+      "name": "Eirs"
+    },
+    {
+      "name": "Eirs*"
+    },
+    {
+      "name": "swapgender"
+    },
+    {
+      "name": "swapgender",
+      "arg": {
+        "format": "[]",
+        "snippet": "swapgender[${1:person}]"
+      }
+    },
+    {
+      "name": "newwordpair",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
+      }
+    },
+    {
+      "name": "renewwordpair",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "renewwordpair{${1:command}}{${2:male%text}}{${3:female%text}}"
+      }
+    },
+    {
+      "name": "ifmale"
+    },
+    {
+      "name": "male",
+      "detail": "♂ (\"wasysym\" command)",
+      "doc": "\\mars (mathabx), \\boy (mathabx), mars, male"
+    },
+    {
+      "name": "male",
+      "arg": {
+        "format": "[]",
+        "snippet": "male[${1:person}]"
+      },
+      "detail": "♂ (\"wasysym\" command)",
+      "doc": "\\mars (mathabx), \\boy (mathabx), mars, male"
+    },
+    {
+      "name": "female",
+      "detail": "♀ (\"wasysym\" command)",
+      "doc": "\\venus (mathabx), \\girl (mathabx), venus, female"
+    },
+    {
+      "name": "female",
+      "arg": {
+        "format": "[]",
+        "snippet": "female[${1:person}]"
+      },
+      "detail": "♀ (\"wasysym\" command)",
+      "doc": "\\venus (mathabx), \\girl (mathabx), venus, female"
+    },
+    {
+      "name": "askforgender"
+    },
+    {
+      "name": "askforgender",
+      "arg": {
+        "format": "[]",
+        "snippet": "askforgender[${1:person}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "swapgender"
+    },
+    {
+      "name": "swapgender",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:person}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/eemeir#c": [
+      "male",
+      "female"
+    ]
+  },
+  "args": [
+    "\\usepackage/eemeir#c"
+  ]
+}

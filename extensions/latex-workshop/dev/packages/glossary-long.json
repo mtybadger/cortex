@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "longtable"
+    }
+  ],
+  "macros": [
+    {
+      "name": "glsdescwidth",
+      "unusual": true
+    },
+    {
+      "name": "glspagelistwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

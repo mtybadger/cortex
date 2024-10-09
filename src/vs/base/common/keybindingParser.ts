@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { KeyCodeUtils, ScanCodeUtils } from './keyCodes.js';
-import { KeyCodeChord, ScanCodeChord, Keybinding, Chord } from './keybindings.js';
+import { KeyCodeUtils, ScanCodeUtils } from 'vs/base/common/keyCodes';
+import { KeyCodeChord, ScanCodeChord, Keybinding, Chord } from 'vs/base/common/keybindings';
 
 export class KeybindingParser {
 

@@ -1,0 +1,40 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "makeindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "makeindex{${1:name}}"
+      }
+    },
+    {
+      "name": "printindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "printindex{${1:name}}"
+      }
+    },
+    {
+      "name": "Printindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Printindex{${1:name}}{${2:title}}"
+      }
+    },
+    {
+      "name": "indexcomment",
+      "arg": {
+        "format": "{}",
+        "snippet": "indexcomment{${1:text}}"
+      }
+    },
+    {
+      "name": "theindexcomment",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

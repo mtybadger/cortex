@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "formatCap",
+      "unusual": true
+    },
+    {
+      "name": "RCap",
+      "arg": {
+        "format": "{}",
+        "snippet": "RCap{${1:letter}}"
+      }
+    },
+    {
+      "name": "HCap",
+      "arg": {
+        "format": "{}",
+        "snippet": "HCap{${1:letter}}"
+      }
+    },
+    {
+      "name": "DCap",
+      "arg": {
+        "format": "{}",
+        "snippet": "DCap{${1:letter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

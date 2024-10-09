@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "parseOpt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "parseOpt{${1:openchar}}{${2:closechar}}{${3:yes}}{${4:no}}"
+      }
+    },
+    {
+      "name": "parseMand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "parseMand{${1:code}}"
+      }
+    },
+    {
+      "name": "parseFlag",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "parseFlag{${1:flagchar}}{${2:yes}}{${3:no}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

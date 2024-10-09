@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as glob from '../../../../base/common/glob.js';
+import * as glob from 'vs/base/common/glob';
 
 
 export class IgnoreFile {

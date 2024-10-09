@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "zref-abspage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fullwidthsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "fullwidthsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{fullwidth},\\fullwidthsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "fullwidth"
+    },
+    {
+      "name": "fullwidth",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{fullwidth},\\fullwidthsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{fullwidth},\\fullwidthsetup": [
+      "width=",
+      "skipabove=",
+      "skipbelow=",
+      "leftmargin=",
+      "rightmargin=",
+      "innertopmargin=",
+      "innerbottommargin=",
+      "outermargin=",
+      "innermargin=",
+      "splittopskip=",
+      "splitbottomskip=",
+      "twosidemode",
+      "needspace=",
+      "footnotedistance="
+    ]
+  },
+  "args": []
+}

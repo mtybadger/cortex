@@ -1,0 +1,162 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "curvethrough",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "curvethrough{${1:spec}}"
+      }
+    },
+    {
+      "name": "curvethrough",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "curvethrough[${2:options}]{${1:spec}}"
+      }
+    },
+    {
+      "name": "pgfpathhobby",
+      "unusual": true
+    },
+    {
+      "name": "pgfpathhobby",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfpathhobby{${1:options}}"
+      }
+    },
+    {
+      "name": "pgfpathhobbypt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfpathhobbypt{${1:pgf point spec}}"
+      }
+    },
+    {
+      "name": "pgfpathhobbypt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfpathhobbypt{${1:pgf point spec}}{${2:options}}"
+      }
+    },
+    {
+      "name": "pgfpathhobbyptparams",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfpathhobbyptparams{${1:options}}"
+      }
+    },
+    {
+      "name": "pgfpathhobbyend",
+      "unusual": true
+    },
+    {
+      "name": "pgfplothanderhobby",
+      "unusual": true
+    },
+    {
+      "name": "pgfplothandlerclosedhobby",
+      "unusual": true
+    },
+    {
+      "name": "pgfplothandlerquickhobby",
+      "unusual": true
+    },
+    {
+      "name": "hobbyinit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "hobbyinit{${1:moveto}}{${2:curveto}}{${3:close}}"
+      }
+    },
+    {
+      "name": "hobbyaddpoint",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbyaddpoint{${1:options}}"
+      }
+    },
+    {
+      "name": "hobbysetparams",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbysetparams{${1:options}}"
+      }
+    },
+    {
+      "name": "hobbygenpath",
+      "unusual": true
+    },
+    {
+      "name": "hobbygenifnecpath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbygenifnecpath{${1:name}}"
+      }
+    },
+    {
+      "name": "hobbyusepath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbyusepath{${1:options}}"
+      }
+    },
+    {
+      "name": "hobbysavepath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbysavepath{${1:name}}"
+      }
+    },
+    {
+      "name": "hobbyrestorepath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbyrestorepath{${1:name}}"
+      }
+    },
+    {
+      "name": "hobbyshowpath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hobbyshowpath{${1:name}}"
+      }
+    },
+    {
+      "name": "hobbygenusepath",
+      "unusual": true
+    },
+    {
+      "name": "hobbyclearpath",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c,\\path#c,\\draw#c,\\fill#c,\\filldraw#c,\\pattern#c,\\shade#c,\\shadedraw#c,\\clip#c": [
+      "use Hobby shortcut",
+      "use quick Hobby shortcut"
+    ],
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c": [
+      "hobby",
+      "closed hobby",
+      "quick hobby"
+    ]
+  },
+  "args": []
+}

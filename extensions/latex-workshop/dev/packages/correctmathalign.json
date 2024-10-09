@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/correctmathalign#c": [
+      "latexorg",
+      "fleqn"
+    ]
+  },
+  "args": [
+    "\\usepackage/correctmathalign#c"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xfrac"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "beamerthemehohenheim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hoversion",
+      "unusual": true
+    },
+    {
+      "name": "insertmylogo",
+      "unusual": true
+    },
+    {
+      "name": "mylogo",
+      "arg": {
+        "format": "{}",
+        "snippet": "mylogo{${1:graphics code}}"
+      }
+    },
+    {
+      "name": "sectionpage"
+    },
+    {
+      "name": "sectionpage",
+      "arg": {
+        "format": "[]",
+        "snippet": "sectionpage[${1:options%keyvals}]",
+        "keys": [
+          "\\sectionpage#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printframelist"
+    },
+    {
+      "name": "HohenheimLogoKlein",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "HohenheimLogoKlein{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "HohenheimLogoLang",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "HohenheimLogoLang{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "inserthotpwolang",
+      "unusual": true
+    },
+    {
+      "name": "inserthotpwokurz",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "inserthotpwokurz{${1:content%text}}"
+      }
+    },
+    {
+      "name": "inserthotp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "inserthotp{${1:content%text}}"
+      }
+    },
+    {
+      "name": "HohenheimFancyTitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "HohenheimFancyTitle{${1:text}}"
+      }
+    },
+    {
+      "name": "thetgpostercount",
+      "if": "poster=true",
+      "unusual": true
+    },
+    {
+      "name": "insertemail",
+      "if": "poster=true",
+      "unusual": true
+    },
+    {
+      "name": "posteremail",
+      "if": "poster=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "posteremail{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "insertwebsite",
+      "if": "poster=true",
+      "unusual": true
+    },
+    {
+      "name": "posterwebsite",
+      "if": "poster=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "posterwebsite{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "posterblock",
+      "if": "poster=true",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title%text}}"
+      }
+    },
+    {
+      "name": "outerretainblock",
+      "if": "poster=true"
+    }
+  ],
+  "keys": {
+    "\\usepackage/hobete#c": [
+      "poster",
+      "framelist front=${1:code}",
+      "framelist back=${1:code}"
+    ],
+    "\\sectionpage#c": [
+      "plain"
+    ]
+  },
+  "args": [
+    "\\usepackage/hobete#c"
+  ]
+}

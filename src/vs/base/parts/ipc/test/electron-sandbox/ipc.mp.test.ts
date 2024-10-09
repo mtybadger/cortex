@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { Client as MessagePortClient } from '../../browser/ipc.mp.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../test/common/utils.js';
+import { Client as MessagePortClient } from 'vs/base/parts/ipc/browser/ipc.mp';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('IPC, MessagePorts', () => {
 

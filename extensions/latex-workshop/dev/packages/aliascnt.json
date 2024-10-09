@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newaliascnt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newaliascnt{${1:aliascnt}}{${2:origcnt}}"
+      }
+    },
+    {
+      "name": "aliascntresetthe",
+      "arg": {
+        "format": "{}",
+        "snippet": "aliascntresetthe{${1:aliascnt}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

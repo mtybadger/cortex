@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "inversepath",
+      "arg": {
+        "format": "{}",
+        "snippet": "inversepath{${1:path}}"
+      }
+    },
+    {
+      "name": "inversepath*",
+      "arg": {
+        "format": "{}",
+        "snippet": "inversepath*{${1:path}}"
+      }
+    },
+    {
+      "name": "absolutepath",
+      "arg": {
+        "format": "{}",
+        "snippet": "absolutepath{${1:path}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

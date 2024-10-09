@@ -3,30 +3,26 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import './viewCursors.css';
-import { FastDomNode, createFastDomNode } from '../../../../base/browser/fastDomNode.js';
-import { IntervalTimer, TimeoutTimer } from '../../../../base/common/async.js';
-import { ViewPart } from '../../view/viewPart.js';
-import { IViewCursorRenderData, ViewCursor, CursorPlurality } from './viewCursor.js';
-import { TextEditorCursorBlinkingStyle, TextEditorCursorStyle, EditorOption } from '../../../common/config/editorOptions.js';
-import { Position } from '../../../common/core/position.js';
+import 'vs/css!./viewCursors';
+import { FastDomNode, createFastDomNode } from 'vs/base/browser/fastDomNode';
+import { IntervalTimer, TimeoutTimer } from 'vs/base/common/async';
+import { ViewPart } from 'vs/editor/browser/view/viewPart';
+import { IViewCursorRenderData, ViewCursor, CursorPlurality } from 'vs/editor/browser/viewParts/viewCursors/viewCursor';
+import { TextEditorCursorBlinkingStyle, TextEditorCursorStyle, EditorOption } from 'vs/editor/common/config/editorOptions';
+import { Position } from 'vs/editor/common/core/position';
 import {
 	editorCursorBackground, editorCursorForeground,
 	editorMultiCursorPrimaryForeground, editorMultiCursorPrimaryBackground,
 	editorMultiCursorSecondaryForeground, editorMultiCursorSecondaryBackground
-} from '../../../common/core/editorColorRegistry.js';
-import { RenderingContext, RestrictedRenderingContext } from '../../view/renderingContext.js';
-import { ViewContext } from '../../../common/viewModel/viewContext.js';
-import * as viewEvents from '../../../common/viewEvents.js';
-import { registerThemingParticipant } from '../../../../platform/theme/common/themeService.js';
-import { isHighContrast } from '../../../../platform/theme/common/theme.js';
-import { CursorChangeReason } from '../../../common/cursorEvents.js';
-import { WindowIntervalTimer, getWindow } from '../../../../base/browser/dom.js';
+} from 'vs/editor/common/core/editorColorRegistry';
+import { RenderingContext, RestrictedRenderingContext } from 'vs/editor/browser/view/renderingContext';
+import { ViewContext } from 'vs/editor/common/viewModel/viewContext';
+import * as viewEvents from 'vs/editor/common/viewEvents';
+import { registerThemingParticipant } from 'vs/platform/theme/common/themeService';
+import { isHighContrast } from 'vs/platform/theme/common/theme';
+import { CursorChangeReason } from 'vs/editor/common/cursorEvents';
+import { WindowIntervalTimer, getWindow } from 'vs/base/browser/dom';
 
-/**
- * View cursors is a view part responsible for rendering the primary cursor and
- * any secondary cursors that are currently active.
- */
 export class ViewCursors extends ViewPart {
 
 	static readonly BLINK_INTERVAL = 500;
@@ -35,7 +31,6 @@ export class ViewCursors extends ViewPart {
 	private _cursorBlinking: TextEditorCursorBlinkingStyle;
 	private _cursorStyle: TextEditorCursorStyle;
 	private _cursorSmoothCaretAnimation: 'off' | 'explicit' | 'on';
-	private _experimentalEditContextEnabled: boolean;
 	private _selectionIsEmpty: boolean;
 	private _isComposingInput: boolean;
 
@@ -61,7 +56,6 @@ export class ViewCursors extends ViewPart {
 		this._cursorBlinking = options.get(EditorOption.cursorBlinking);
 		this._cursorStyle = options.get(EditorOption.cursorStyle);
 		this._cursorSmoothCaretAnimation = options.get(EditorOption.cursorSmoothCaretAnimation);
-		this._experimentalEditContextEnabled = options.get(EditorOption.experimentalEditContextEnabled);
 		this._selectionIsEmpty = true;
 		this._isComposingInput = false;
 
@@ -116,7 +110,6 @@ export class ViewCursors extends ViewPart {
 		this._cursorBlinking = options.get(EditorOption.cursorBlinking);
 		this._cursorStyle = options.get(EditorOption.cursorStyle);
 		this._cursorSmoothCaretAnimation = options.get(EditorOption.cursorSmoothCaretAnimation);
-		this._experimentalEditContextEnabled = options.get(EditorOption.experimentalEditContextEnabled);
 
 		this._updateBlinking();
 		this._updateDomClassName();
@@ -225,8 +218,7 @@ export class ViewCursors extends ViewPart {
 	// ---- blinking logic
 
 	private _getCursorBlinking(): TextEditorCursorBlinkingStyle {
-		// TODO: Remove the following if statement when experimental edit context is made default sole implementation
-		if (this._isComposingInput && !this._experimentalEditContextEnabled) {
+		if (this._isComposingInput) {
 			// avoid double cursors
 			return TextEditorCursorBlinkingStyle.Hidden;
 		}

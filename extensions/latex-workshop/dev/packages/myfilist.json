@@ -1,0 +1,103 @@
+{
+  "deps": [
+    {
+      "name": "readprov"
+    }
+  ],
+  "macros": [
+    {
+      "name": "EmptyFileList"
+    },
+    {
+      "name": "EmptyFileList",
+      "arg": {
+        "format": "[]",
+        "snippet": "EmptyFileList[${1:file list}]"
+      }
+    },
+    {
+      "name": "ListInfos"
+    },
+    {
+      "name": "ListInfos",
+      "arg": {
+        "format": "[]",
+        "snippet": "ListInfos[${1:filename.txt}]"
+      }
+    },
+    {
+      "name": "ListGenerator"
+    },
+    {
+      "name": "NoStopListInfos"
+    },
+    {
+      "name": "VarListInfos"
+    },
+    {
+      "name": "VarListInfos",
+      "arg": {
+        "format": "[]",
+        "snippet": "VarListInfos[${1:filename.txt}]"
+      }
+    },
+    {
+      "name": "WriteFileInfosTo",
+      "arg": {
+        "format": "{}",
+        "snippet": "WriteFileInfosTo{${1:txt file}}"
+      }
+    },
+    {
+      "name": "ReadListFileInfos",
+      "arg": {
+        "format": "{}",
+        "snippet": "ReadListFileInfos{${1:tex file list}}"
+      }
+    },
+    {
+      "name": "ReadListFileInfos",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ReadListFileInfos[${2:txt file}]{${1:tex file list}}"
+      }
+    },
+    {
+      "name": "UseFindUtility"
+    },
+    {
+      "name": "FindReadListFileInfos",
+      "arg": {
+        "format": "{}",
+        "snippet": "FindReadListFileInfos{${1:tex file list}}"
+      }
+    },
+    {
+      "name": "FindReadListFileInfos",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "FindReadListFileInfos[${2:txt file}]{${1:tex file list}}"
+      }
+    },
+    {
+      "name": "FileListRemark",
+      "arg": {
+        "format": "{}",
+        "snippet": "FileListRemark{${1:file}}"
+      }
+    },
+    {
+      "name": "FileListRemark",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "FileListRemark[${2:info}]{${1:file}}"
+      }
+    },
+    {
+      "name": "NoBottomLines"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,73 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "supfigures",
+      "unusual": true
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "textsup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsup{${1:text}}"
+      }
+    },
+    {
+      "name": "textsuperior",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperior{${1:text}}"
+      }
+    },
+    {
+      "name": "nunitotabular"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/nunito#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "lining",
+      "oldstyle",
+      "tabular",
+      "mainfont",
+      "black",
+      "extrabold",
+      "semibold",
+      "bold",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/nunito#c"
+  ]
+}

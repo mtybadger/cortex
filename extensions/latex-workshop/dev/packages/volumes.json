@@ -1,0 +1,115 @@
+{
+  "deps": [
+    {
+      "name": "nowtoaux"
+    }
+  ],
+  "macros": [
+    {
+      "name": "allvolumescommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "allvolumescommand{${1:commands}}"
+      }
+    },
+    {
+      "name": "alwaysinclude",
+      "arg": {
+        "format": "{}",
+        "snippet": "alwaysinclude{${1:file}}"
+      }
+    },
+    {
+      "name": "ifnumber",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifnumber{${1:arg}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "onlyvolume"
+    },
+    {
+      "name": "onlyvolume",
+      "arg": {
+        "format": "[]",
+        "snippet": "onlyvolume[${1:number}]"
+      }
+    },
+    {
+      "name": "thenumberofvolumes",
+      "unusual": true
+    },
+    {
+      "name": "thevolume",
+      "unusual": true
+    },
+    {
+      "name": "voladdtolof",
+      "arg": {
+        "format": "{}",
+        "snippet": "voladdtolof{${1:text}}"
+      }
+    },
+    {
+      "name": "voladdtolot",
+      "arg": {
+        "format": "{}",
+        "snippet": "voladdtolot{${1:text}}"
+      }
+    },
+    {
+      "name": "voladdtotoc",
+      "arg": {
+        "format": "{}",
+        "snippet": "voladdtotoc{${1:text}}"
+      }
+    },
+    {
+      "name": "volume"
+    },
+    {
+      "name": "volumecommand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "volumecommand{${1:number}}{${2:commands}}"
+      }
+    },
+    {
+      "name": "volumelist",
+      "unusual": true
+    },
+    {
+      "name": "volumename",
+      "arg": {
+        "format": "{}",
+        "snippet": "volumename{${1:text}}"
+      }
+    },
+    {
+      "name": "volumeone",
+      "unusual": true
+    },
+    {
+      "name": "volumethree",
+      "unusual": true
+    },
+    {
+      "name": "volumetwo",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/volumes#c": [
+      "manual",
+      "tocall",
+      "lofall",
+      "lotall"
+    ]
+  },
+  "args": [
+    "\\usepackage/volumes#c"
+  ]
+}

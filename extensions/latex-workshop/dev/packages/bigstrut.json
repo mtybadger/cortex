@@ -1,0 +1,30 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bigstrut"
+    },
+    {
+      "name": "bigstrut",
+      "arg": {
+        "format": "[]",
+        "snippet": "bigstrut[${1:option%keyvals}]",
+        "keys": [
+          "\\bigstrut"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bigstrutjot"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\bigstrut": [
+      "t",
+      "b"
+    ]
+  },
+  "args": []
+}

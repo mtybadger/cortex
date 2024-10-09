@@ -1,0 +1,84 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/src/**/*.js"
+            ],
+            "debugWebviews": true,
+            "preLaunchTask": "task-watch-all"
+        },
+        {
+            "name": "Unit Tests",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/test/fixtures/unittest",
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionTestsPath=${workspaceFolder}/out/test/units/index"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/src/**/*.js",
+                "${workspaceFolder}/out/test/**/*.js"
+            ],
+            "preLaunchTask": "task-watch-all",
+            "env": {
+                "LATEXWORKSHOP_UNIT": ""
+            }
+        },
+        {
+            "name": "Test testground",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/test/fixtures/testground",
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionTestsPath=${workspaceFolder}/out/test/suites/index"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/src/**/*.js",
+                "${workspaceFolder}/out/test/**/*.js"
+            ],
+            "preLaunchTask": "task-watch-all",
+            "env": {
+                "LATEXWORKSHOP_SUITE": ""
+            }
+        },
+        {
+            "name": "Test multiroot",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "${workspaceFolder}/test/fixtures/multiroot/resource.code-workspace",
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionTestsPath=${workspaceFolder}/out/test/suites/index"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/src/**/*.js",
+                "${workspaceFolder}/out/test/**/*.js"
+            ],
+            "preLaunchTask": "task-watch-all",
+            "env": {
+                "LATEXWORKSHOP_SUITE": ""
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

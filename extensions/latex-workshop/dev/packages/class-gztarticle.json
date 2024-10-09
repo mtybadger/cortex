@@ -1,0 +1,2812 @@
+{
+  "deps": [
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "class-book"
+    },
+    {
+      "name": "standalone"
+    },
+    {
+      "name": "datatool"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "kpfonts"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "longtable"
+    },
+    {
+      "name": "adjustbox"
+    },
+    {
+      "name": "mwe"
+    },
+    {
+      "name": "zref-totpages"
+    },
+    {
+      "name": "zref-xr"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "textcase"
+    },
+    {
+      "name": "epigraph"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "nccparskip"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "varioref"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "rsfso"
+    },
+    {
+      "name": "esvect"
+    },
+    {
+      "name": "translator"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "eurosym"
+    },
+    {
+      "name": "iflang"
+    },
+    {
+      "name": "etoc"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "datetime"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarybabel"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "pgfplots"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tcolorboxlibraryhooks"
+    },
+    {
+      "name": "tcolorboxlibrarytheorems"
+    },
+    {
+      "name": "tcolorboxlibrarylistingsutf8"
+    },
+    {
+      "name": "tikzpagenodes"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "thmtools"
+    },
+    {
+      "name": "placeins"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "glossaries"
+    },
+    {
+      "name": "cleveref"
+    },
+    {
+      "name": "titleps"
+    }
+  ],
+  "macros": [
+    {
+      "name": "title",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "title[${2:option%keyvals}]{${1:text}}",
+        "keys": [
+          "\\title,\\subtitle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subtitle[${2:option%keyvals}]{${1:text}}",
+        "keys": [
+          "\\title,\\subtitle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:options%keyvals}]{${1:Nom,Prénom}}",
+        "keys": [
+          "\\author"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "acknowledgements",
+      "arg": {
+        "format": "{}",
+        "snippet": "acknowledgements{${1:remerciements%text}}"
+      }
+    },
+    {
+      "name": "printauthorsdetails"
+    },
+    {
+      "name": "academicsignature",
+      "arg": {
+        "format": "{}",
+        "snippet": "academicsignature{${1:signature%text}}"
+      }
+    },
+    {
+      "name": "question",
+      "arg": {
+        "format": "{}",
+        "snippet": "question{${1:question%text}}"
+      },
+      "detail": "?",
+      "doc": "Question mark"
+    },
+    {
+      "name": "gztlocaltableofcontents"
+    },
+    {
+      "name": "smf"
+    },
+    {
+      "name": "smf*"
+    },
+    {
+      "name": "gzt"
+    },
+    {
+      "name": "gzt*"
+    },
+    {
+      "name": "cad"
+    },
+    {
+      "name": "cad*"
+    },
+    {
+      "name": "Cad"
+    },
+    {
+      "name": "Cad*"
+    },
+    {
+      "name": "surname",
+      "arg": {
+        "format": "{}",
+        "snippet": "surname{${1:nom de famille}}"
+      }
+    },
+    {
+      "name": "century",
+      "arg": {
+        "format": "{}",
+        "snippet": "century{${1:numéro}}"
+      }
+    },
+    {
+      "name": "century*",
+      "arg": {
+        "format": "{}",
+        "snippet": "century*{${1:numéro}}"
+      }
+    },
+    {
+      "name": "aside",
+      "arg": {
+        "format": "{}",
+        "snippet": "aside{${1:text}}"
+      }
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "D"
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "K"
+    },
+    {
+      "name": "cotan"
+    },
+    {
+      "name": "arccos"
+    },
+    {
+      "name": "arcsin"
+    },
+    {
+      "name": "arctan"
+    },
+    {
+      "name": "ch"
+    },
+    {
+      "name": "sh"
+    },
+    {
+      "name": "tanh"
+    },
+    {
+      "name": "log"
+    },
+    {
+      "name": "lg"
+    },
+    {
+      "name": "newtheorem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "newtheorem[${2:options%keyvals}]{${1:envname}}",
+        "keys": [
+          "\\newtheorem"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gztverb",
+      "arg": {
+        "format": "{}",
+        "snippet": "gztverb{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "insertbibimage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "insertbibimage{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "frenchsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "frenchsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\frenchsetup,\\frenchbsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "AddThinSpaceBeforeFootnotes",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "at"
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "AutoSpaceBeforeFDP",
+      "unusual": true
+    },
+    {
+      "name": "boi"
+    },
+    {
+      "name": "bname",
+      "arg": {
+        "format": "{}",
+        "snippet": "bname{${1:text}}"
+      }
+    },
+    {
+      "name": "bsc",
+      "arg": {
+        "format": "{}",
+        "snippet": "bsc{${1:text}}"
+      }
+    },
+    {
+      "name": "CaptionSeparator",
+      "unusual": true
+    },
+    {
+      "name": "captionsfrench",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "circonflexe"
+    },
+    {
+      "name": "dateacadian",
+      "unusual": true
+    },
+    {
+      "name": "datefrench",
+      "unusual": true
+    },
+    {
+      "name": "DecimalMathComma"
+    },
+    {
+      "name": "degre",
+      "unusual": true
+    },
+    {
+      "name": "degres"
+    },
+    {
+      "name": "descindentFB",
+      "unusual": true
+    },
+    {
+      "name": "dotFFN",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "extrasfrench",
+      "unusual": true
+    },
+    {
+      "name": "FBcolonspace"
+    },
+    {
+      "name": "FBdatebox",
+      "unusual": true
+    },
+    {
+      "name": "FBdatespace",
+      "unusual": true
+    },
+    {
+      "name": "FBeverylineguill",
+      "unusual": true
+    },
+    {
+      "name": "FBfigtabshape",
+      "unusual": true
+    },
+    {
+      "name": "FBfnindent",
+      "unusual": true
+    },
+    {
+      "name": "FBFrenchFootnotesfalse",
+      "unusual": true
+    },
+    {
+      "name": "FBFrenchFootnotestrue",
+      "unusual": true
+    },
+    {
+      "name": "FBFrenchSuperscriptstrue",
+      "unusual": true
+    },
+    {
+      "name": "FBGlobalLayoutFrenchtrue",
+      "unusual": true
+    },
+    {
+      "name": "FBgspchar",
+      "unusual": true
+    },
+    {
+      "name": "FBguillopen",
+      "unusual": true
+    },
+    {
+      "name": "FBguillspace"
+    },
+    {
+      "name": "FBInnerGuillSinglefalse",
+      "unusual": true
+    },
+    {
+      "name": "FBInnerGuillSingletrue",
+      "unusual": true
+    },
+    {
+      "name": "FBListItemsAsParfalse",
+      "unusual": true
+    },
+    {
+      "name": "FBListItemsAsPartrue",
+      "unusual": true
+    },
+    {
+      "name": "FBLowercaseSuperscriptstrue",
+      "unusual": true
+    },
+    {
+      "name": "FBmedkern",
+      "unusual": true
+    },
+    {
+      "name": "FBPartNameFulltrue",
+      "unusual": true
+    },
+    {
+      "name": "FBsetspaces",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "FBsetspaces[${5:language}]{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
+      }
+    },
+    {
+      "name": "FBsetspaces",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "FBsetspaces{${1:type}}{${2:width}}{${3:stretch}}{${4:shrink}}"
+      }
+    },
+    {
+      "name": "FBSmallCapsFigTabCaptionstrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardEnumerateEnvtrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardItemizeEnvtrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardItemLabelstrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardLayouttrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardListSpacingtrue",
+      "unusual": true
+    },
+    {
+      "name": "FBStandardListstrue",
+      "unusual": true
+    },
+    {
+      "name": "FBsupR",
+      "unusual": true
+    },
+    {
+      "name": "FBsupS",
+      "unusual": true
+    },
+    {
+      "name": "FBtextellipsis",
+      "unusual": true
+    },
+    {
+      "name": "FBthickkern",
+      "unusual": true
+    },
+    {
+      "name": "FBthinspace"
+    },
+    {
+      "name": "FBthousandsep",
+      "unusual": true
+    },
+    {
+      "name": "FBWarning",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FBWarning{${1:message%text}}"
+      }
+    },
+    {
+      "name": "fg"
+    },
+    {
+      "name": "fgi",
+      "unusual": true
+    },
+    {
+      "name": "fgii",
+      "unusual": true
+    },
+    {
+      "name": "fprimo)"
+    },
+    {
+      "name": "frenchdate",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "frenchdate{${1:day}}{${2:month}}{${3:year}}"
+      }
+    },
+    {
+      "name": "FrenchEnumerate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FrenchEnumerate{${1:arg}}"
+      }
+    },
+    {
+      "name": "FrenchFootnotes",
+      "unusual": true
+    },
+    {
+      "name": "FrenchLabelItem",
+      "unusual": true
+    },
+    {
+      "name": "frenchpartfirst",
+      "unusual": true
+    },
+    {
+      "name": "frenchpartsecond",
+      "unusual": true
+    },
+    {
+      "name": "FrenchPopularEnumerate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "FrenchPopularEnumerate{${1:arg}}"
+      }
+    },
+    {
+      "name": "frenchtoday"
+    },
+    {
+      "name": "Frlabelitemi",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemi",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemii",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemii",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemiii",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemiii",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemiv",
+      "unusual": true
+    },
+    {
+      "name": "Frlabelitemiv",
+      "unusual": true
+    },
+    {
+      "name": "frquote",
+      "arg": {
+        "format": "{}",
+        "snippet": "frquote{${1:text}}"
+      }
+    },
+    {
+      "name": "fup",
+      "arg": {
+        "format": "{}",
+        "snippet": "fup{${1:text}}"
+      }
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "ieme"
+    },
+    {
+      "name": "iemes"
+    },
+    {
+      "name": "ier"
+    },
+    {
+      "name": "iere"
+    },
+    {
+      "name": "ieres"
+    },
+    {
+      "name": "iers"
+    },
+    {
+      "name": "ifFBAutoSpaceFootnotes",
+      "unusual": true
+    },
+    {
+      "name": "ifFBCompactItemize",
+      "unusual": true
+    },
+    {
+      "name": "ifFBCustomiseFigTabCaptions",
+      "unusual": true
+    },
+    {
+      "name": "ifFBfrench",
+      "unusual": true
+    },
+    {
+      "name": "ifFBFrenchFootnotes",
+      "unusual": true
+    },
+    {
+      "name": "ifFBFrenchSuperscripts",
+      "unusual": true
+    },
+    {
+      "name": "ifFBGlobalLayoutFrench",
+      "unusual": true
+    },
+    {
+      "name": "ifFBIndentFirst",
+      "unusual": true
+    },
+    {
+      "name": "ifFBINGuillSpace",
+      "unusual": true
+    },
+    {
+      "name": "ifFBListItemsAsPar",
+      "unusual": true
+    },
+    {
+      "name": "ifFBListOldLayout",
+      "unusual": true
+    },
+    {
+      "name": "ifFBLowercaseSuperscripts",
+      "unusual": true
+    },
+    {
+      "name": "ifFBLuaTeX",
+      "unusual": true
+    },
+    {
+      "name": "ifFBOldFigTabCaptions",
+      "unusual": true
+    },
+    {
+      "name": "ifFBOriginalTypewriter",
+      "unusual": true
+    },
+    {
+      "name": "ifFBPartNameFull",
+      "unusual": true
+    },
+    {
+      "name": "ifFBReduceListSpacing",
+      "unusual": true
+    },
+    {
+      "name": "ifFBShowOptions",
+      "unusual": true
+    },
+    {
+      "name": "ifFBSmallCapsFigTabCaptions",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardEnumerateEnv",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardItemizeEnv",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardItemLabels",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardLayout",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardLists",
+      "unusual": true
+    },
+    {
+      "name": "ifFBStandardListSpacing",
+      "unusual": true
+    },
+    {
+      "name": "ifFBSuppressWarning",
+      "unusual": true
+    },
+    {
+      "name": "ifFBThinColonSpace",
+      "unusual": true
+    },
+    {
+      "name": "ifFBThinSpaceInFrenchNumbers",
+      "unusual": true
+    },
+    {
+      "name": "ifFBunicode",
+      "unusual": true
+    },
+    {
+      "name": "ifFBXeTeX",
+      "unusual": true
+    },
+    {
+      "name": "ifLaTeXe",
+      "unusual": true
+    },
+    {
+      "name": "kernFFN",
+      "unusual": true
+    },
+    {
+      "name": "labelindentFB",
+      "unusual": true
+    },
+    {
+      "name": "labelwidthFB",
+      "unusual": true
+    },
+    {
+      "name": "leftmarginFB",
+      "unusual": true
+    },
+    {
+      "name": "listfigurename",
+      "unusual": true
+    },
+    {
+      "name": "listindentFB",
+      "unusual": true
+    },
+    {
+      "name": "No"
+    },
+    {
+      "name": "no"
+    },
+    {
+      "name": "NoAutoSpaceBeforeFDP",
+      "unusual": true
+    },
+    {
+      "name": "NoAutoSpacing"
+    },
+    {
+      "name": "NoEveryParQuote",
+      "unusual": true
+    },
+    {
+      "name": "noextrasfrench",
+      "unusual": true
+    },
+    {
+      "name": "nombre",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nombre{${1:arg}}"
+      }
+    },
+    {
+      "name": "nos"
+    },
+    {
+      "name": "Nos"
+    },
+    {
+      "name": "og"
+    },
+    {
+      "name": "ogi",
+      "unusual": true
+    },
+    {
+      "name": "ogii",
+      "unusual": true
+    },
+    {
+      "name": "parindentFFN",
+      "unusual": true
+    },
+    {
+      "name": "partfirst",
+      "unusual": true
+    },
+    {
+      "name": "partfirst",
+      "unusual": true
+    },
+    {
+      "name": "partnameord",
+      "unusual": true
+    },
+    {
+      "name": "partsecond",
+      "unusual": true
+    },
+    {
+      "name": "partsecond",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "primo"
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "quarto"
+    },
+    {
+      "name": "rmfamilyFB",
+      "unusual": true
+    },
+    {
+      "name": "secundo"
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyFB",
+      "unusual": true
+    },
+    {
+      "name": "StandardFootnotes",
+      "unusual": true
+    },
+    {
+      "name": "StandardMathComma"
+    },
+    {
+      "name": "tertio"
+    },
+    {
+      "name": "tild"
+    },
+    {
+      "name": "ttfamilyFB",
+      "unusual": true
+    },
+    {
+      "name": "up",
+      "arg": {
+        "format": "{}",
+        "snippet": "up{${1:text}}"
+      }
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "bookadvertisement",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bookadvertisement[${2:opt}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "bookadvertisement",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bookadvertisement{${1:bibid}}"
+      }
+    },
+    {
+      "name": "classdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "classdesigner{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "classdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "classdesigner[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "classmaintainer",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "classmaintainer{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "classmaintainer",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "classmaintainer[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "editor",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "editor{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "editor",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "editor[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "editorial",
+      "unusual": true
+    },
+    {
+      "name": "editorial",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "editorial[${1:opt}]"
+      }
+    },
+    {
+      "name": "editorinchief",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "editorinchief{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "editorinchief",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "editorinchief[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "email",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "fontdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fontdesigner{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "fontdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "fontdesigner[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "fontdesignertext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontdesignertext{${1:text}}"
+      }
+    },
+    {
+      "name": "graphicdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "graphicdesigner{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "graphicdesigner",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "graphicdesigner[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "gztarticlecl",
+      "unusual": true
+    },
+    {
+      "name": "gztcl",
+      "unusual": true
+    },
+    {
+      "name": "gztfiledate",
+      "unusual": true
+    },
+    {
+      "name": "gztfileversion",
+      "unusual": true
+    },
+    {
+      "name": "interviewee",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "interviewee{${1:arg}}"
+      }
+    },
+    {
+      "name": "interviewee",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "interviewee[${2:opt}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "issuesetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "issuesetup{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "journalsetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "journalsetup{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "moralreportsetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "moralreportsetup{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "president",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "president{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "president",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "president[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "presidentmessage",
+      "unusual": true
+    },
+    {
+      "name": "printertext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printertext{${1:text}}"
+      }
+    },
+    {
+      "name": "printminibios",
+      "unusual": true
+    },
+    {
+      "name": "printminibios*",
+      "unusual": true
+    },
+    {
+      "name": "secretary",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "secretary{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "secretary",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "secretary[${4:opt}]{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "specialeditionsetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "specialeditionsetup{${1:keyvals}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "gztfigure"
+    },
+    {
+      "name": "gztfigure",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gztfigure*"
+    },
+    {
+      "name": "gztfigure*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gzttable"
+    },
+    {
+      "name": "gzttable",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gzttable*"
+    },
+    {
+      "name": "gzttable*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gztframe"
+    },
+    {
+      "name": "gztframe",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "gztframe*"
+    },
+    {
+      "name": "gztframe*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "theoreme"
+    },
+    {
+      "name": "theoreme",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "theoreme*"
+    },
+    {
+      "name": "theoreme*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "theorem*"
+    },
+    {
+      "name": "theorem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "corollaire"
+    },
+    {
+      "name": "corollaire",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "corollaire*"
+    },
+    {
+      "name": "corollaire*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "corollary*"
+    },
+    {
+      "name": "corollary*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "conjecture*"
+    },
+    {
+      "name": "conjecture*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "proposition*"
+    },
+    {
+      "name": "proposition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "lemme"
+    },
+    {
+      "name": "lemme",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "lemme*"
+    },
+    {
+      "name": "lemme*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "lemma*"
+    },
+    {
+      "name": "lemma*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "axiome"
+    },
+    {
+      "name": "axiome",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "axiome*"
+    },
+    {
+      "name": "axiome*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "axiom*"
+    },
+    {
+      "name": "axiom*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "definition*"
+    },
+    {
+      "name": "definition*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "remarque"
+    },
+    {
+      "name": "remarque",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "remarque*"
+    },
+    {
+      "name": "remarque*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "remark*"
+    },
+    {
+      "name": "remark*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "exemple"
+    },
+    {
+      "name": "exemple",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "exemple*"
+    },
+    {
+      "name": "exemple*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "example*"
+    },
+    {
+      "name": "example*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "notation"
+    },
+    {
+      "name": "notation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "notation*"
+    },
+    {
+      "name": "notation*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "preuve"
+    },
+    {
+      "name": "preuve",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "proof"
+    },
+    {
+      "name": "proof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "gztcode"
+    },
+    {
+      "name": "gztcode",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{gztcode}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "descriptionFB"
+    },
+    {
+      "name": "enumerateFB"
+    },
+    {
+      "name": "itemizeFB"
+    },
+    {
+      "name": "listFB",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:symbol}}"
+      }
+    },
+    {
+      "name": "listORI",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:symbol}}"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "authorsinstructions",
+      "unusual": true
+    },
+    {
+      "name": "bookreview",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:opt}]{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "bookreview",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:keyvals}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\title,\\subtitle": [
+      "short=${1:(sous-)titre court}"
+    ],
+    "\\author": [
+      "affiliation={${1:affiliation(s)}}",
+      "photo=${1:imagefile}",
+      "email=${1:email}",
+      "webpage=${1:URL}",
+      "minibio={${1:biographie express}}"
+    ],
+    "\\begin{gztfigure},\\begin{gztfigure*},\\begin{gzttable},\\begin{gzttable*},\\begin{gztframe},\\begin{gztframe*}": [
+      "title=${1:titre}",
+      "label=",
+      "copyright=${1:titulaire}"
+    ],
+    "\\newtheorem": [
+      "frenchtitle=${1:titre récurrent en français}",
+      "englishtitle=${1:titre récurrent en anglais}",
+      "style=${1|theorem,definition,proof|}"
+    ],
+    "\\begin{gztcode}": [
+      "title=${1:text}",
+      "notitle",
+      "adjusted title=${1:text}",
+      "adjust text=${1:text}",
+      "squeezed title=${1:text}",
+      "squeezed title*=${1:text}",
+      "titlebox=${1|visible,invisible|}",
+      "detach title",
+      "attach title",
+      "attach title to upper=${1:text}",
+      "subtitle style={${1:options}}",
+      "upperbox=${1|visible,invisible|}",
+      "visible",
+      "invisible",
+      "saveto=${1:file name}",
+      "lowerbox=${1|visible,invisible,ignore|}",
+      "savelowerto=${1:file name}",
+      "lower separated",
+      "savedelimiter=${1:name}",
+      "colframe=",
+      "colback=",
+      "title filled",
+      "colbacktitle=",
+      "colupper=",
+      "collower=",
+      "coltext=",
+      "coltitle=",
+      "fontupper=${1:text}",
+      "fontlower=${1:text}",
+      "fonttitle=${1:text}",
+      "halign=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign upper=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign lower=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "halign title=${1|justify,left,flush left,right,flush right,center,flush center|}",
+      "flushleft upper",
+      "center upper",
+      "flushright upper",
+      "flushleft lower",
+      "center lower",
+      "flushright lower",
+      "flushleft title",
+      "center title",
+      "flushright title",
+      "valign=${1|top,center,bottom,scale,scale*|}",
+      "valign upper=${1|top,center,bottom,scale,scale*|}",
+      "valign lower=${1|top,center,bottom,scale,scale*|}",
+      "valign scale limit=${1:number}",
+      "width=",
+      "text width=",
+      "add to width=",
+      "toprule=",
+      "bottomrule=",
+      "leftrule=",
+      "rightrule=",
+      "titlerule=",
+      "boxrule=",
+      "arc=",
+      "circular arc",
+      "bean arc",
+      "octogon arc",
+      "arc is angular",
+      "arc is curved",
+      "outer arc=",
+      "auto outer arc",
+      "boxsep=",
+      "left=",
+      "left*=",
+      "lefttitle=",
+      "leftupper=",
+      "leftlower=",
+      "right=",
+      "right*=",
+      "righttitle=",
+      "rightupper=",
+      "rightlower=",
+      "top=",
+      "toptitle=",
+      "bottom=",
+      "bottomtitle=",
+      "middle=",
+      "size=${1|normal,title,small,fbox,tight,minimal|}",
+      "oversize",
+      "oversize=",
+      "toggle left and right=${1|none,forced,evenpage|}",
+      "sharp corners",
+      "sharp corners=${1|northwest,northeast,southwest,southeast,north,south,east,west,downhill,uphill,all|}",
+      "rounded corners",
+      "rounded corners=${1|northwest,northeast,southwest,southeast,north,south,east,west,downhill,uphill,all|}",
+      "sharpish corners",
+      "opacityframe=${1:fraction}",
+      "opacityback=${1:fraction}",
+      "opacitybacktitle=${1:fraction}",
+      "opacityfill=${1:fraction}",
+      "opacityupper=${1:fraction}",
+      "opacitylower=${1:fraction}",
+      "opacitytext=${1:fraction}",
+      "opacitytitle=${1:fraction}",
+      "natural height",
+      "height=",
+      "height plus=",
+      "height from=${1:min} to ${2:max}",
+      "text height=",
+      "add to height=",
+      "add to natural height=",
+      "height fill",
+      "height fill=${1|true,false,maximum|}",
+      "inherit height",
+      "inherit height=${1:fraction}",
+      "square",
+      "space=${1:fraction}",
+      "space to upper",
+      "space to lower",
+      "space to both",
+      "space to=${1:macro}",
+      "split=${1:fraction}",
+      "equal height group=${1:id}",
+      "minimum for equal height group=${1:id:length}",
+      "minimum for current equal height group=",
+      "use height from group",
+      "use height from group=${1:id}",
+      "before title={${1:code}}",
+      "after title={${1:code}}",
+      "before upper={${1:code}}",
+      "before upper*={${1:code}}",
+      "after upper={${1:code}}",
+      "after upper*={${1:code}}",
+      "before lower={${1:code}}",
+      "before lower*={${1:code}}",
+      "after lower={${1:code}}",
+      "after lower*={${1:code}}",
+      "text fill=",
+      "tabulars={${1:preamble}}",
+      "tabulars*={${1:code}}{${2:preamble}}",
+      "tabularx={${1:preamble}}",
+      "tabularx*={${1:code}}{${2:preamble}}",
+      "tikz upper",
+      "tikz upper={${1:TikZ options}}",
+      "tikz lower",
+      "tikz lower={${1:TikZ options}}",
+      "tikznode upper",
+      "tikznode upper={${1:TikZ options}}",
+      "tikznode lower",
+      "tikznode lower={${1:TikZ options}}",
+      "tikznode",
+      "tikznode={${1:TikZ options}}",
+      "varwidth upper",
+      "varwidth upper=",
+      "overlay={${1:code}}",
+      "no overlay",
+      "overlay broken={${1:code}}",
+      "overlay unbroken={${1:code}}",
+      "overlay first={${1:code}}",
+      "overlay middle={${1:code}}",
+      "overlay last={${1:code}}",
+      "overlay unbroken and first={${1:code}}",
+      "overlay middle and last={${1:code}}",
+      "overlay unbroken and last={${1:code}}",
+      "overlay first and middle={${1:code}}",
+      "floatplacement=${1:values}",
+      "float",
+      "float=${1:values}",
+      "float*",
+      "float*=${1:values}",
+      "nofloat",
+      "every float={${1:code}}",
+      "before float={${1:code}}",
+      "after float={${1:code}}",
+      "before={${1:code}}",
+      "after={${1:code}}",
+      "nobeforeafter",
+      "force nobeforeafter",
+      "before skip balanced=${1:glue}",
+      "after skip balanced=${1:glue}",
+      "beforeafter skip balanced=${1:glue}",
+      "before skip=",
+      "after skip=",
+      "beforeafter skip=",
+      "left skip=",
+      "right skip=",
+      "leftright skip=",
+      "parskip",
+      "noparskip",
+      "autoparskip",
+      "baseline=",
+      "box align=${1|bottom,top,center,base|}",
+      "ignore nobreak",
+      "before nobreak={${1:code}}",
+      "parfillskip restore",
+      "enlarge top initially by=",
+      "enlarge bottom finally by=",
+      "enlarge top at break by=",
+      "enlarge bottom at break by=",
+      "enlarge top by=",
+      "enlarge bottom by=",
+      "enlarge left by=",
+      "enlarge right by=",
+      "enlarge by=",
+      "grow to left by=",
+      "grow to right by=",
+      "grow sidewards by=",
+      "flush left",
+      "flush right",
+      "center",
+      "toggle enlargement=${1|none,forced,evenpage|}",
+      "spread inwards",
+      "spread inwards=",
+      "spread outwards",
+      "spread outwards=",
+      "move upwards",
+      "move upwards=",
+      "move upwards*",
+      "move upwards*=",
+      "fill downwards",
+      "fill downwards=",
+      "spread upwards",
+      "spread upwards=",
+      "spread upwards*",
+      "spread upwards*=",
+      "spread sidewards",
+      "spread sidewards=",
+      "spread",
+      "spread=",
+      "spread downwards",
+      "spread downwards=",
+      "shrink tight",
+      "extrude left by=",
+      "extrude right by=",
+      "extrude top by=",
+      "extrude bottom by=",
+      "extrude by=",
+      "every box/.style={${1:options}}",
+      "every box on layer 1/.style={${1:options}}",
+      "every box on layer 2/.style={${1:options}}",
+      "every box on layer 3/.style={${1:options}}",
+      "every box on layer 4/.style={${1:options}}",
+      "capture=${1|minipage,hbox,fitbox|}",
+      "hbox",
+      "minipage",
+      "parbox",
+      "hyphenationfix",
+      "tempfile=${1:file name}",
+      "phantom={${1:code}}",
+      "nophantom",
+      "label=",
+      "phantomlabel=",
+      "label type=${1:type}",
+      "no label type",
+      "step=${1:counter}",
+      "step and label={${1:counter}}{${2:marker}}",
+      "list entry=${1:text}",
+      "list text=${1:text}",
+      "add to list={${1:list}}{${2:type}}",
+      "nameref=${1:text}",
+      "hypertarget=${1:marker}",
+      "bookmark=${1:text}",
+      "bookmark*={${1:options}}{${2:text}}",
+      "index=${1:entry}",
+      "index*={${1:name}}{${2:entry}}",
+      "check odd page",
+      "if odd page={${1:odd options}}{${2:even options}}",
+      "if odd page or oneside={${1:odd options}}{${2:even options}}",
+      "if odd page*={${1:odd options}}{${2:even options}}",
+      "if odd page or oneside*={${1:odd options}}{${2:even options}}",
+      "shield externalize",
+      "external=${1:file name}",
+      "remake",
+      "remake",
+      "reset",
+      "code={${1:code}}",
+      "IfBlankTF={${1:token list}}{${2:true}}{${3:false}}",
+      "IfBlankT={${1:token list}}{${2:true}}",
+      "IfBlankF={${1:token list}}{${2:false}}",
+      "IfEmptyTF={${1:token list}}{${2:true}}{${3:false}}",
+      "IfEmptyT={${1:token list}}{${2:true}}",
+      "IfEmptyF={${1:token list}}{${2:false}}",
+      "IfNoValueTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfNoValueT={${1:arg}}{${2:true}}",
+      "IfNoValueF={${1:arg}}{${2:false}}",
+      "IfValueTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfValueT={${1:arg}}{${2:true}}",
+      "IfValueF={${1:arg}}{${2:false}}",
+      "IfBooleanTF={${1:arg}}{${2:true}}{${3:false}}",
+      "IfBooleanT={${1:arg}}{${2:true}}",
+      "IfBooleanF={${1:arg}}{${2:false}}",
+      "void",
+      "nirvana",
+      "blend before title=${1|colon,dash,colon hang,dash hang|}",
+      "blend before title code={${1:code}}",
+      "sidebyside",
+      "sidebyside align=${1|center,top,bottom,center seam,top seam,bottom seam|}",
+      "sidebyside gap=",
+      "lefthand width=",
+      "righthand width=",
+      "lefthand ratio=${1:fraction}",
+      "righthand ratio=${1:fraction}",
+      "sidebyside adapt=${1|none,left,right,both|}",
+      "sidebyside switch",
+      "verbatim ignore percent",
+      "record=${1:content}",
+      "no recording",
+      "skin=${1:name}",
+      "skin first=${1:name}",
+      "skin middle=${1:name}",
+      "skin last=${1:name}",
+      "graphical environment=${1:envname}",
+      "frame engine=${1|standard,path,pathjigsaw,pathfirst,pathfirstjigsaw,pathmiddle,pathmiddlejigsaw,pathlast,pathlastjigsaw,freelance,spartan,empty|}",
+      "interior titled engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "interior engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "segmentation engine=${1|standard,path,freelance,spartan,empty|}",
+      "title engine=${1|standard,path,pathfirst,pathmiddle,pathlast,freelance,spartan,empty|}",
+      "geometry nodes",
+      "frame code={${1:code}}",
+      "frame empty",
+      "interior titled code={${1:code}}",
+      "interior titled empty",
+      "interior code={${1:code}}",
+      "interior empty",
+      "segmentation code={${1:code}}",
+      "segmentation empty",
+      "title code={${1:code}}",
+      "title empty",
+      "skin first is subskin of={${1:base skin}}{${2:options}}",
+      "skin middle is subskin of={${1:base skin}}{${2:options}}",
+      "skin last is subskin of={${1:base skin}}{${2:options}}",
+      "",
+      "frame style={${1:TikZ options}}",
+      "frame style image=${1:file name}",
+      "frame style tile={${1:graphics options}}{${2:file}}",
+      "frame hidden",
+      "interior style={${1:TikZ options}}",
+      "interior style image=${1:file name}",
+      "interior style tile={${1:graphics options}}{${2:file}}",
+      "interior hidden",
+      "segmentation style={${1:TikZ options}}",
+      "segmentation hidden",
+      "title style={${1:TikZ options}}",
+      "title style image=${1:file name}",
+      "title style tile={${1:graphics options}}{${2:file}}",
+      "title hidden",
+      "titlerule style={${1:TikZ options}}",
+      "tcb fill frame",
+      "tcb fill interior",
+      "tcb fill title",
+      "attach boxed title to top left",
+      "attach boxed title to top left={${1:boxtitle options}}",
+      "attach boxed title to top text left",
+      "attach boxed title to top text left={${1:boxtitle options}}",
+      "attach boxed title to top center",
+      "attach boxed title to top center={${1:boxtitle options}}",
+      "attach boxed title to top right",
+      "attach boxed title to top right={${1:boxtitle options}}",
+      "attach boxed title to top text right",
+      "attach boxed title to top text right={${1:boxtitle options}}",
+      "attach boxed title to bottom left",
+      "attach boxed title to bottom left={${1:boxtitle options}}",
+      "attach boxed title to bottom text left",
+      "attach boxed title to bottom text left={${1:boxtitle options}}",
+      "attach boxed title to bottom center",
+      "attach boxed title to bottom center={${1:boxtitle options}}",
+      "attach boxed title to bottom right",
+      "attach boxed title to bottom right={${1:boxtitle options}}",
+      "attach boxed title to bottom text right",
+      "attach boxed title to bottom text right={${1:boxtitle options}}",
+      "attach boxed title to top",
+      "attach boxed title to top={${1:boxtitle options}}",
+      "attach boxed title to top*",
+      "attach boxed title to top*={${1:boxtitle options}}",
+      "attach boxed title to bottom",
+      "attach boxed title to bottom={${1:boxtitle options}}",
+      "attach boxed title to bottom*",
+      "attach boxed title to bottom*={${1:boxtitle options}}",
+      "flip title",
+      "flip title={${1:boxtitle options}}",
+      "boxed title size=${1|title,standard,copy|}",
+      "boxed title style={${1:options}}",
+      "no boxed title style",
+      "hbox boxed title",
+      "minipage boxed title",
+      "minipage boxed title=",
+      "minipage boxed title*",
+      "minipage boxed title*=",
+      "tikznode boxed title={${1:TikZ options}}",
+      "varwidth boxed title",
+      "varwidth boxed title=",
+      "varwidth boxed title*",
+      "varwidth boxed title*=",
+      "watermark text=${1:text}",
+      "watermark text on=${1:part} is ${2:text}",
+      "watermark graphics=${1:file name}",
+      "watermark graphics on=${1:part} is ${2:file}",
+      "watermark tikz={${1:code}}",
+      "watermark tikz on=${1:part} is ${2:code}",
+      "no watermark",
+      "watermark opacity=${1:fraction}",
+      "watermark zoom=${1:fraction}",
+      "watermark shrink=${1:fraction}",
+      "watermark overzoom=${1:fraction}",
+      "watermark stretch=${1:fraction}",
+      "watermark color=",
+      "clip watermark",
+      "clip title",
+      "clip upper",
+      "clip lower",
+      "borderline={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "no borderline",
+      "show bounding box",
+      "show bounding box=",
+      "borderline north={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline south={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline east={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline west={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline horizontal={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "borderline vertical={${1:width}}{${2:offset}}{${3:TikZ options}}",
+      "no shadow",
+      "drop shadow",
+      "drop shadow=",
+      "drop fuzzy shadow",
+      "drop fuzzy shadow=",
+      "drop midday shadow",
+      "drop midday shadow=",
+      "drop fuzzy midday shadow",
+      "drop fuzzy midday shadow=",
+      "halo",
+      "halo=${1:size} with ${2:color}",
+      "fuzzy halo",
+      "fuzzy halo=${1:size} with ${2:color}",
+      "drop shadow southeast",
+      "drop shadow southeast=",
+      "drop shadow south",
+      "drop shadow south=",
+      "drop shadow southwest",
+      "drop shadow southwest=",
+      "drop shadow west",
+      "drop shadow west=",
+      "drop shadow northwest",
+      "drop shadow northwest=",
+      "drop shadow north",
+      "drop shadow north=",
+      "drop shadow northeast",
+      "drop shadow northeast=",
+      "drop shadow east",
+      "drop shadow east=",
+      "drop fuzzy shadow southeast",
+      "drop fuzzy shadow southeast=",
+      "drop fuzzy shadow south",
+      "drop fuzzy shadow south=",
+      "drop fuzzy shadow southwest",
+      "drop fuzzy shadow southwest=",
+      "drop fuzzy shadow west",
+      "drop fuzzy shadow west=",
+      "drop fuzzy shadow northwest",
+      "drop fuzzy shadow northwest=",
+      "drop fuzzy shadow north",
+      "drop fuzzy shadow north=",
+      "drop fuzzy shadow northeast",
+      "drop fuzzy shadow northeast=",
+      "drop fuzzy shadow east",
+      "drop fuzzy shadow east=",
+      "drop lifted shadow",
+      "drop lifted shadow=",
+      "drop small lifted shadow",
+      "drop small lifted shadow=",
+      "drop large lifted shadow",
+      "drop large lifted shadow=",
+      "shadow={${1:xshift}}{${2:yshift}}{${3:offset}}{${4:TikZ options}}",
+      "fuzzy shadow={${1:xshift}}{${2:yshift}}{${3:offset}}{${4:step}}{${5:TikZ options}}",
+      "smart shadow arc",
+      "lifted shadow={${1:xshift}}{${2:yshift}}{${3:bend}}{${4:step}}{${5:TikZ options}}",
+      "tikz={${1:TikZ options}}",
+      "tikz reset",
+      "at begin tikz={${1:TikZ code}}",
+      "at begin tikz reset",
+      "at end tikz={${1:TikZ code}}",
+      "at end tikz reset",
+      "rotate=${1:angle}",
+      "scale=${1:fraction}",
+      "remember",
+      "remember as=${1:name}",
+      "underlay={${1:code}}",
+      "no underlay",
+      "underlay broken={${1:code}}",
+      "underlay unbroken={${1:code}}",
+      "no underlay unbroken",
+      "underlay first={${1:code}}",
+      "no underlay first",
+      "underlay middle={${1:code}}",
+      "no underlay middle",
+      "underlay last={${1:code}}",
+      "no underlay last",
+      "underlay boxed title={${1:code}}",
+      "no underlay boxed title",
+      "underlay unbroken and first={${1:code}}",
+      "underlay middle and last={${1:code}}",
+      "underlay unbroken and last={${1:code}}",
+      "underlay first and middle={${1:code}}",
+      "finish={${1:code}}",
+      "no finish",
+      "finish broken={${1:code}}",
+      "finish unbroken={${1:code}}",
+      "no finish unbroken",
+      "finish first={${1:code}}",
+      "no finish first",
+      "finish middle={${1:code}}",
+      "no finish middle",
+      "finish last={${1:code}}",
+      "no finish last",
+      "finish unbroken and first={${1:code}}",
+      "finish middle and last={${1:code}}",
+      "finish unbroken and last={${1:code}}",
+      "finish first and middle={${1:code}}",
+      "hyperref=${1:marker}",
+      "hyperref interior=${1:marker}",
+      "hyperref title=${1:marker}",
+      "hyperref node={${1:marker}}{${2:node}}",
+      "hyperlink=${1:marker}",
+      "hyperlink interior=${1:marker}",
+      "hyperlink title=${1:marker}",
+      "hyperlink node={${1:marker}}{${2:node}}",
+      "hyperurl=${1:URL}",
+      "hyperurl interior=${1:URL}",
+      "hyperurl title=${1:URL}",
+      "hyperurl node={${1:URL}}{${2:node}}",
+      "hyperurl*={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* interior={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* title={${1:hyperref options}}{${2:URL}}",
+      "hyperurl* node={${1:hyperref options}}{${2:URL}}{${3:node}}",
+      "draftmode",
+      "standard",
+      "standard jigsaw",
+      "enhanced",
+      "enhanced standard",
+      "blank",
+      "enhanced jigsaw",
+      "enhanced standard jigsaw",
+      "marker",
+      "bicolor",
+      "colbacklower=",
+      "opacitybacklower=${1:fraction}",
+      "overlaplower=",
+      "bicolor jigsaw",
+      "tile",
+      "beamer",
+      "widget",
+      "empty",
+      "blanker",
+      "blankest",
+      "spartan",
+      "draft",
+      "freelance",
+      "extend freelance={${1:options}}",
+      "extend freelancefirst={${1:options}}",
+      "extend freelancemiddle={${1:options}}",
+      "extend freelancelast={${1:options}}",
+      "only=<${1:overlay spec}>{${2:options}}",
+      "hide=<${1:overlay spec}>",
+      "beamer hidden/.style={${1:options}}",
+      "alert=<${1:overlay spec}>",
+      "beamer alerted/.style={${1:options}}",
+      "",
+      "separator sign=${1:sign}",
+      "separator sign colon",
+      "separator sign dash",
+      "separator sign none",
+      "description delimiters=",
+      "description delimiters parenthesis",
+      "description delimiters none",
+      "description color",
+      "description color=",
+      "description font",
+      "description font=${1:text}",
+      "description formatter",
+      "description formatter=${1:macro}",
+      "terminator sign=${1:sign}",
+      "terminator sign colon",
+      "terminator sign dash",
+      "terminator sign none",
+      "label separator=${1:separator}",
+      "theorem full label supplement={${1:style}}",
+      "theorem label supplement={${1:style}}",
+      "theorem hanging indent=",
+      "theorem name and number",
+      "theorem number and name",
+      "theorem name",
+      "theorem number",
+      "theorem={${1:display name}}{${2:counter}}{${3:title}}{${4:marker}}",
+      "highlight math style={${1:options}}",
+      "math upper",
+      "math lower",
+      "math",
+      "ams equation upper",
+      "ams equation lower",
+      "ams equation",
+      "ams equation* upper",
+      "ams equation* lower",
+      "ams equation*",
+      "ams align upper",
+      "ams align lower",
+      "ams align",
+      "ams align* upper",
+      "ams align* lower",
+      "ams align*",
+      "ams gather upper",
+      "ams gather lower",
+      "ams gather",
+      "ams gather* upper",
+      "ams gather* lower",
+      "ams gather*",
+      "ams nodisplayskip upper",
+      "ams nodisplayskip lower",
+      "ams nodisplayskip",
+      "theorem style=${1|standard,change standard,plain,break,plain apart,change,change break,change apart,margin,margin break,margin apart|}",
+      "",
+      "breakable",
+      "breakable=${1|true,false,unlimited|}",
+      "unbreakable",
+      "enforce breakable",
+      "title after break=${1:text}",
+      "notitle after break",
+      "adjusted title after break=${1:text}",
+      "lines before break=${1:number}",
+      "break at=${1:length1/length2/...}",
+      "enlargepage=${1:length1/length2/...}",
+      "enlargepage flexible=",
+      "compress page",
+      "compress page=${1|all,baselineskip,none|}",
+      "shrink break goal=",
+      "use color stack",
+      "toprule at break=",
+      "bottomrule at break=",
+      "topsep at break=",
+      "bottomsep at break=",
+      "pad before break=",
+      "pad before break*=",
+      "pad after break=",
+      "pad at break=",
+      "pad at break*=",
+      "height fixed for=${1|none,first,middle,last,first and middle,middle and last,all|}",
+      "vfill before first",
+      "segmentation at break",
+      "extras={${1:options}}",
+      "no extras",
+      "extras broken={${1:options}}",
+      "extras unbroken={${1:options}}",
+      "no extras unbroken",
+      "extras first={${1:options}}",
+      "no extras first",
+      "extras middle={${1:options}}",
+      "no extras middle",
+      "extras last={${1:options}}",
+      "no extras last",
+      "extras unbroken and first={${1:options}}",
+      "extras middle and last={${1:options}}",
+      "extras unbroken and last={${1:options}}",
+      "extras first and middle={${1:options}}",
+      "extras title after break={${1:options}}",
+      "no extras title after break",
+      "",
+      "before title app={${1:code}}",
+      "before title pre={${1:code}}",
+      "after title app={${1:code}}",
+      "after title pre={${1:code}}",
+      "before upper app={${1:code}}",
+      "before upper pre={${1:code}}",
+      "after upper app={${1:code}}",
+      "after upper pre={${1:code}}",
+      "before lower app={${1:code}}",
+      "before lower pre={${1:code}}",
+      "after lower app={${1:code}}",
+      "after lower pre={${1:code}}",
+      "before app={${1:code}}",
+      "before pre={${1:code}}",
+      "after app={${1:code}}",
+      "after pre={${1:code}}",
+      "before float app={${1:code}}",
+      "before float pre={${1:code}}",
+      "after float app={${1:code}}",
+      "after float pre={${1:code}}",
+      "overlay app={${1:code}}",
+      "overlay pre={${1:code}}",
+      "overlay unbroken app={${1:code}}",
+      "overlay unbroken pre={${1:code}}",
+      "overlay first app={${1:code}}",
+      "overlay first pre={${1:code}}",
+      "overlay middle app={${1:code}}",
+      "overlay middle pre={${1:code}}",
+      "overlay last app={${1:code}}",
+      "overlay last pre={${1:code}}",
+      "overlay broken app={${1:code}}",
+      "overlay broken pre={${1:code}}",
+      "overlay unbroken and first app={${1:code}}",
+      "overlay unbroken and first pre={${1:code}}",
+      "overlay middle and last app={${1:code}}",
+      "overlay middle and last pre={${1:code}}",
+      "overlay unbroken and last app={${1:code}}",
+      "overlay unbroken and last pre={${1:code}}",
+      "overlay first and middle app={${1:code}}",
+      "overlay first and middle pre={${1:code}}",
+      "watermark text app=${1:text}",
+      "watermark text pre=${1:text}",
+      "watermark text app on=${1:part} is ${2:text}",
+      "watermark text pre on=${1:part} is ${2:text}",
+      "watermark graphics app=${1:file name}",
+      "watermark graphics pre=${1:file name}",
+      "watermark graphics app on=${1:part} is ${2:file}",
+      "watermark graphics pre on=${1:part} is ${2:file}",
+      "watermark tikz app={${1:code}}",
+      "watermark tikz pre={${1:code}}",
+      "watermark tikz app on=${1:part} is ${2:code}",
+      "watermark tikz pre on=${1:part} is ${2:code}",
+      "underlay pre={${1:code}}",
+      "underlay unbroken pre={${1:code}}",
+      "underlay first pre={${1:code}}",
+      "underlay middle pre={${1:code}}",
+      "underlay last pre={${1:code}}",
+      "underlay boxed title pre={${1:code}}",
+      "underlay broken pre={${1:code}}",
+      "underlay unbroken and first pre={${1:code}}",
+      "underlay middle and last pre={${1:code}}",
+      "underlay unbroken and last pre={${1:code}}",
+      "underlay first and middle pre={${1:code}}",
+      "finish pre={${1:code}}",
+      "finish unbroken pre={${1:code}}",
+      "finish first pre={${1:code}}",
+      "finish middle pre={${1:code}}",
+      "finish last pre={${1:code}}",
+      "finish broken pre={${1:code}}",
+      "finish unbroken and first pre={${1:code}}",
+      "finish middle and last pre={${1:code}}",
+      "finish unbroken and last pre={${1:code}}",
+      "finish first and middle pre={${1:code}}",
+      "frame code app={${1:code}}",
+      "frame code pre={${1:code}}",
+      "interior titled code app={${1:code}}",
+      "interior titled code pre={${1:code}}",
+      "interior code app={${1:code}}",
+      "interior code pre={${1:code}}",
+      "segmentation code app={${1:code}}",
+      "segmentation code pre={${1:code}}",
+      "title code app={${1:code}}",
+      "title code pre={${1:code}}",
+      "extras pre={${1:options}}",
+      "extras unbroken pre={${1:options}}",
+      "extras first pre={${1:options}}",
+      "extras middle pre={${1:options}}",
+      "extras last pre={${1:options}}",
+      "extras broken pre={${1:options}}",
+      "extras unbroken and first pre={${1:options}}",
+      "extras middle and last pre={${1:options}}",
+      "extras unbroken and last pre={${1:options}}",
+      "extras first and middle pre={${1:options}}",
+      "listing options app={${1:options}}",
+      "listing options pre={${1:options}}",
+      "minted options app={${1:options}}",
+      "minted options pre={${1:options}}",
+      "",
+      "verbatim",
+      "",
+      "listing options={${1:listings options}}",
+      "no listing options",
+      "listing style=${1:style}",
+      "listing inputencoding=${1:encoding}",
+      "listing remove caption",
+      "every listing line=${1:text}",
+      "every listing line*=${1:text}",
+      "listing utf8=${1:encoding}",
+      "minted language=${1:programming lang}",
+      "minted options={${1:minted options}}",
+      "default minted options={${1:minted options}}",
+      "minted style=${1:style}",
+      "listing engine=${1|listings,minted|}",
+      "listing file=${1:file name}",
+      "listing and text",
+      "text and listing",
+      "listing only",
+      "text only",
+      "comment=${1:text}",
+      "comment only",
+      "image comment={${1:graphics options}}{${2:file}}",
+      "tcbimage comment=${1:file name}",
+      "pdf comment",
+      "pdf comment=${1:file name}",
+      "pdf extension=${1:extension}",
+      "comment style={${1:options}}",
+      "listing and comment",
+      "comment and listing",
+      "listing side text",
+      "text side listing",
+      "listing outside text",
+      "text outside listing",
+      "listing side comment",
+      "comment side listing",
+      "listing outside comment",
+      "comment outside listing",
+      "listing above text",
+      "listing above* text",
+      "text above listing",
+      "text above* listing",
+      "listing above comment",
+      "listing above* comment",
+      "comment above listing",
+      "comment above* listing",
+      "no process",
+      "process code={${1:code}}",
+      "run system command=${1:system command}",
+      "compilable listing",
+      "run pdflatex=${1:arguments}",
+      "run pdflatex",
+      "run xelatex=${1:arguments}",
+      "run xelatex",
+      "run lualatex=${1:arguments}",
+      "run lualatex",
+      "run makeindex=${1:arguments}",
+      "run makeindex",
+      "run bibtex=${1:arguments}",
+      "run bibtex",
+      "run biber=${1:arguments}",
+      "run biber",
+      "run arara=${1:arguments}",
+      "run arara",
+      "run latex=${1:arguments}",
+      "run latex",
+      "run dvips=${1:arguments}",
+      "run dvips",
+      "run ps2pdf=${1:arguments}",
+      "run ps2pdf",
+      "freeze file=${1:file}",
+      "freeze none",
+      "freeze extension=${1:text}",
+      "freeze pdf",
+      "freeze png",
+      "freeze jpg",
+      "externalize listing=${1:name}",
+      "externalize listing!=${1:name}"
+    ],
+    "\\frenchsetup,\\frenchbsetup": [
+      "ShowOptions",
+      "StandardLayout",
+      "GlobalLayoutFrench",
+      "IndentFirst",
+      "PartNameFull",
+      "ListItemsAsPar",
+      "StandardListSpacing",
+      "StandardItemizeEnv",
+      "StandardEnumerateEnv",
+      "StandardItemLabels",
+      "ItemLabels=",
+      "ItemLabeli=",
+      "ItemLabelii=",
+      "ItemLabeliii=",
+      "ItemLabeliv=",
+      "StandardLists",
+      "ListOldLayout",
+      "FrenchFootnotes",
+      "AutoSpaceFootnotes",
+      "AutoSpacePunctuation",
+      "ThinColonSpace",
+      "OriginalTypewriter",
+      "UnicodeNoBreakSpaces",
+      "og=",
+      "fg=",
+      "INGuillSpace",
+      "EveryParGuill=${1|open,close,none|}",
+      "EveryLineGuill=${1|open,close,none|}",
+      "InnerGuillSingle",
+      "ThinSpaceInFrenchNumbers",
+      "SmallCapsFigTabCaptions",
+      "CustomiseFigTabCaptions",
+      "OldFigTabCaptions",
+      "FrenchSuperscripts",
+      "LowercaseSuperscripts",
+      "SuppressWarning"
+    ]
+  },
+  "args": []
+}

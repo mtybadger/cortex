@@ -1,0 +1,52 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "trivcjtypesetting"
+    },
+    {
+      "name": "japanese",
+      "unusual": true
+    },
+    {
+      "name": "Schinese",
+      "unusual": true
+    },
+    {
+      "name": "Tchinese",
+      "unusual": true
+    },
+    {
+      "name": "chinese",
+      "unusual": true
+    },
+    {
+      "name": "interCJskip",
+      "unusual": true
+    },
+    {
+      "name": "interXCJskip",
+      "unusual": true
+    },
+    {
+      "name": "nbs",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "japanese"
+    },
+    {
+      "name": "Schinese"
+    },
+    {
+      "name": "Tchinese"
+    },
+    {
+      "name": "chinese"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "ifnextok"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "titlecap",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlecap{${1:rich text%text}}"
+      }
+    },
+    {
+      "name": "titlecap",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "titlecap[${2:option}]{${1:rich text%text}}"
+      }
+    },
+    {
+      "name": "Addlcwords",
+      "arg": {
+        "format": "{}",
+        "snippet": "Addlcwords{${1:space-separated word list}}"
+      }
+    },
+    {
+      "name": "Resetlcwords"
+    },
+    {
+      "name": "textnc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textnc{${1:text}}"
+      }
+    },
+    {
+      "name": "converttilde",
+      "unusual": true
+    },
+    {
+      "name": "noatinsidetc",
+      "unusual": true
+    },
+    {
+      "name": "usestringstringsnames",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

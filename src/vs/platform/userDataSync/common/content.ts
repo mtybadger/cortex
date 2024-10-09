@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { JSONPath } from '../../../base/common/json.js';
-import { setProperty } from '../../../base/common/jsonEdit.js';
-import { FormattingOptions } from '../../../base/common/jsonFormatter.js';
+import { JSONPath } from 'vs/base/common/json';
+import { setProperty } from 'vs/base/common/jsonEdit';
+import { FormattingOptions } from 'vs/base/common/jsonFormatter';
 
 
 export function edit(content: string, originalPath: JSONPath, value: any, formattingOptions: FormattingOptions): string {

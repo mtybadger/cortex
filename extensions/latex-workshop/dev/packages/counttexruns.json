@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "thecounttexruns"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/counttexruns#c": [
+      "extension=${1:file ext}"
+    ]
+  },
+  "args": [
+    "\\usepackage/counttexruns#c"
+  ]
+}

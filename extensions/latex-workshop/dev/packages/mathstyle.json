@@ -1,0 +1,74 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathstyle",
+      "unusual": true
+    },
+    {
+      "name": "mathstyledenom",
+      "unusual": true
+    },
+    {
+      "name": "currentmathstyle",
+      "unusual": true
+    },
+    {
+      "name": "fracstyle",
+      "unusual": true
+    },
+    {
+      "name": "genfrac",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "genfrac{${1:left-delim}}{${2:right-delim}}{${3:thickness%l}}{${4:mathstyle}}{${5:numerator}}{${6:denominator}}"
+      }
+    },
+    {
+      "name": "dfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dfrac{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "tfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tfrac{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "binom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "binom{${1:above}}{${2:below}}"
+      }
+    },
+    {
+      "name": "tbinom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tbinom{${1:above}}{${2:below}}"
+      }
+    },
+    {
+      "name": "dbinom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dbinom{${1:above}}{${2:below}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathstyle#c": [
+      "mathactivechars",
+      "activechars",
+      "noactivechars"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathstyle#c"
+  ]
+}

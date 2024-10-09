@@ -14,12 +14,12 @@ import * as util from './util';
 import * as fancyLog from 'fancy-log';
 import * as ansiColors from 'ansi-colors';
 import * as os from 'os';
+import ts = require('typescript');
 import * as File from 'vinyl';
 import * as task from './task';
 import { Mangler } from './mangle/index';
 import { RawSourceMap } from 'source-map';
 import { gulpPostcss } from './postcss';
-import ts = require('typescript');
 const watch = require('./watch');
 
 
@@ -45,7 +45,7 @@ function getTypeScriptCompilerOptions(src: string): ts.CompilerOptions {
 interface ICompileTaskOptions {
 	readonly build: boolean;
 	readonly emitError: boolean;
-	readonly transpileOnly: boolean | { esbuild: boolean };
+	readonly transpileOnly: boolean | { swc: boolean };
 	readonly preserveEnglish: boolean;
 }
 
@@ -63,7 +63,7 @@ function createCompile(src: string, { build, emitError, transpileOnly, preserveE
 	const compilation = tsb.create(projectPath, overrideOptions, {
 		verbose: false,
 		transpileOnly: Boolean(transpileOnly),
-		transpileWithSwc: typeof transpileOnly !== 'boolean' && transpileOnly.esbuild
+		transpileWithSwc: typeof transpileOnly !== 'boolean' && transpileOnly.swc
 	}, err => reporter(err));
 
 	function pipeline(token?: util.ICancellationToken) {
@@ -105,11 +105,11 @@ function createCompile(src: string, { build, emitError, transpileOnly, preserveE
 	return pipeline;
 }
 
-export function transpileTask(src: string, out: string, esbuild: boolean): task.StreamTask {
+export function transpileTask(src: string, out: string, swc: boolean): task.StreamTask {
 
 	const task = () => {
 
-		const transpile = createCompile(src, { build: false, emitError: true, transpileOnly: { esbuild }, preserveEnglish: false });
+		const transpile = createCompile(src, { build: false, emitError: true, transpileOnly: { swc }, preserveEnglish: false });
 		const srcPipe = gulp.src(`${src}/**`, { base: `${src}` });
 
 		return srcPipe
@@ -136,31 +136,7 @@ export function compileTask(src: string, out: string, build: boolean, options: {
 			generator.execute();
 		}
 
-		// mangle: TypeScript to TypeScript
-		let mangleStream = es.through();
-		if (build && !options.disableMangle) {
-			let ts2tsMangler = new Mangler(compile.projectPath, (...data) => fancyLog(ansiColors.blue('[mangler]'), ...data), { mangleExports: true, manglePrivateFields: true });
-			const newContentsByFileName = ts2tsMangler.computeNewFileContents(new Set(['saveState']));
-			mangleStream = es.through(async function write(data: File & { sourceMap?: RawSourceMap }) {
-				type TypeScriptExt = typeof ts & { normalizePath(path: string): string };
-				const tsNormalPath = (<TypeScriptExt>ts).normalizePath(data.path);
-				const newContents = (await newContentsByFileName).get(tsNormalPath);
-				if (newContents !== undefined) {
-					data.contents = Buffer.from(newContents.out);
-					data.sourceMap = newContents.sourceMap && JSON.parse(newContents.sourceMap);
-				}
-				this.push(data);
-			}, async function end() {
-				// free resources
-				(await newContentsByFileName).clear();
-
-				this.push(null);
-				(<any>ts2tsMangler) = undefined;
-			});
-		}
-
 		return srcPipe
-			.pipe(mangleStream)
 			.pipe(generator.stream)
 			.pipe(compile())
 			.pipe(gulp.dest(out));
@@ -170,13 +146,13 @@ export function compileTask(src: string, out: string, build: boolean, options: {
 	return task;
 }
 
-export function watchTask(out: string, build: boolean, srcPath: string = 'src'): task.StreamTask {
+export function watchTask(out: string, build: boolean): task.StreamTask {
 
 	const task = () => {
-		const compile = createCompile(srcPath, { build, emitError: false, transpileOnly: false, preserveEnglish: false });
+		const compile = createCompile('src', { build, emitError: false, transpileOnly: false, preserveEnglish: false });
 
-		const src = gulp.src(`${srcPath}/**`, { base: srcPath });
-		const watchSrc = watch(`${srcPath}/**`, { base: srcPath, readDelay: 200 });
+		const src = gulp.src('src/**', { base: 'src' });
+		const watchSrc = watch('src/**', { base: 'src', readDelay: 200 });
 
 		const generator = new MonacoGenerator(true);
 		generator.execute();

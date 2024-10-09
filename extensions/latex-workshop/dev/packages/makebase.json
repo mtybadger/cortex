@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "makebase",
+      "arg": {
+        "format": "{}",
+        "snippet": "makebase{${1:counter}}"
+      }
+    },
+    {
+      "name": "makebase",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "makebase[${2:base}]{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

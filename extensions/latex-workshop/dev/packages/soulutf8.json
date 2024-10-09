@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "soul"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/soulutf8#c": [
+      "capsdefault"
+    ]
+  },
+  "args": [
+    "\\usepackage/soulutf8#c"
+  ]
+}

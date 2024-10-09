@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "biblatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "printGitLog"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gitlog#c": [
+      "title=${1:log title}",
+      "date",
+      "nodate",
+      "write",
+      "nowrite",
+      "bibfile=${1:file name}",
+      "github=${1:repository path}",
+      "bitbucket=${1:repository path}"
+    ]
+  },
+  "args": [
+    "\\usepackage/gitlog#c"
+  ]
+}

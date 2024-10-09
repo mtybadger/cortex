@@ -1,0 +1,16 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "shuffle",
+      "detail": "⧢",
+      "doc": "Shuffle product"
+    },
+    {
+      "name": "cshuffle"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

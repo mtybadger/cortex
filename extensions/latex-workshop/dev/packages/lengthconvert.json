@@ -1,0 +1,66 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Convert",
+      "arg": {
+        "format": "{}",
+        "snippet": "Convert{${1:length}}"
+      }
+    },
+    {
+      "name": "Convert",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Convert[${2:options%keyvals}]{${1:length}}",
+        "keys": [
+          "\\Convert,\\Convertsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Convertsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "Convertsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\Convert,\\Convertsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\Convert,\\Convertsetup": [
+      "unit=${1|pt,pc,in,bp,cm,mm,dd,cc,sp|}",
+      "pt",
+      "pc",
+      "in",
+      "bp",
+      "cm",
+      "mm",
+      "dd",
+      "cc",
+      "sp",
+      "point",
+      "pica",
+      "inch",
+      "big-point",
+      "centimeter",
+      "millimeter",
+      "didot-point",
+      "cicero",
+      "scaled-point",
+      "use-siunitx",
+      "precision=${1:integer}",
+      "number-only"
+    ]
+  },
+  "args": []
+}

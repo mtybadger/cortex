@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "longtable",
+      "if": "longtable"
+    },
+    {
+      "name": "ltabptch",
+      "if": "longtable"
+    },
+    {
+      "name": "longtable",
+      "if": "nolongtablepatch"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "edtable",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:table envname}}{${2:preamble}}"
+      }
+    },
+    {
+      "name": "edtable",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[$ or $$%plain]{${1:array envname}}{${2:preamble}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

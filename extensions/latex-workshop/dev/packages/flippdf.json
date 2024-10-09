@@ -1,0 +1,24 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FlipPDF"
+    },
+    {
+      "name": "UnFlipPDF"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/flippdf#c": [
+      "off"
+    ]
+  },
+  "args": [
+    "\\usepackage/flippdf#c"
+  ]
+}

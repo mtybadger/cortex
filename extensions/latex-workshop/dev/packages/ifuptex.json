@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "ifptex"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

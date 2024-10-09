@@ -1,0 +1,37 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tcdigitoldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "tcdigitoldstyle{${1:digits}}"
+      }
+    },
+    {
+      "name": "tcohm"
+    },
+    {
+      "name": "tcperthousand"
+    },
+    {
+      "name": "tccelsius"
+    },
+    {
+      "name": "tccentigrade",
+      "unusual": true
+    },
+    {
+      "name": "tcdegree"
+    },
+    {
+      "name": "tcpertenthousand"
+    },
+    {
+      "name": "tcmu"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

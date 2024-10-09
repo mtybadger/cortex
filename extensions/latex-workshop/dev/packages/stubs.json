@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "textpos"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "stubs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "stubs{${1:width}}{${2:text front%text}}"
+      }
+    },
+    {
+      "name": "stubs",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "stubs{${1:width}}[${3:text back%text}]{${2:text front%text}}"
+      }
+    },
+    {
+      "name": "stubs",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "stubs[${3:number}]{${1:width}}{${2:text front%text}}"
+      }
+    },
+    {
+      "name": "stubs",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "stubs[${3:number}]{${1:width}}[${4:text back%text}]{${2:text front%text}}"
+      }
+    },
+    {
+      "name": "stublmargin",
+      "unusual": true
+    },
+    {
+      "name": "stubrmargin",
+      "unusual": true
+    },
+    {
+      "name": "stubbmargin",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/stubs#c": [
+      "addmargin"
+    ]
+  },
+  "args": [
+    "\\usepackage/stubs#c"
+  ]
+}

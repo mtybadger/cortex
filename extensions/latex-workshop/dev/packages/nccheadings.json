@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "partmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "partmark{${1:text}}"
+      }
+    },
+    {
+      "name": "sectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionmark{${1:text}}"
+      }
+    },
+    {
+      "name": "subsectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "subsectionmark{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "marvosym"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "paperclip"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

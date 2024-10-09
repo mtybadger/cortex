@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../base/test/common/utils.js';
-import { merge } from '../../common/snippetsMerge.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { merge } from 'vs/platform/userDataSync/common/snippetsMerge';
 
 const tsSnippet1 = `{
 

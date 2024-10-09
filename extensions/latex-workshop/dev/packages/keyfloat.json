@@ -1,0 +1,858 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "subcaption"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "rotating"
+    },
+    {
+      "name": "placeins"
+    },
+    {
+      "name": "wrapfig"
+    }
+  ],
+  "macros": [
+    {
+      "name": "keyfig",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyfig{${1:keyvals}}{${2:imagefile}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfig",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyfig[${3:loc}]{${1:keyvals}}{${2:imagefile}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfig*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyfig*{${1:keyvals}}{${2:imagefile}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfig*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyfig*[${3:loc}]{${1:keyvals}}{${2:imagefile}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keytab",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keytab{${1:keyvals}}{${2:tabular contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keytab",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keytab[${3:loc}]{${1:keyvals}}{${2:tabular contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keytab*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keytab*{${1:keyvals}}{${2:tabular contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keytab*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keytab*[${3:loc}]{${1:keyvals}}{${2:tabular contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyflt",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "keyflt{${1:float type}}{${2:keyvals}}{${3:contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyflt",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "keyflt[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keyflt*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "keyflt*{${1:float type}}{${2:keyvals}}{${3:contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyflt*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "keyflt*[${4:loc}]{${1:float type}}{${2:keyvals}}{${3:contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keyfigbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyfigbox{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfigbox",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyfigbox[${3:loc}]{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfigbox*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyfigbox*{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfigbox*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyfigbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyparbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyparbox{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyparbox",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyparbox[${3:loc}]{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyparbox*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keyparbox*{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyparbox*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "keyparbox*[${3:loc}]{${1:keyvals}}{${2:box contents}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "KFLTtightframe",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KFLTtightframe{${1:contents}}"
+      }
+    },
+    {
+      "name": "KFLTlooseframe",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "KFLTlooseframe{${1:contents}}"
+      }
+    },
+    {
+      "name": "KFLTtightframewidth",
+      "unusual": true
+    },
+    {
+      "name": "KFLTlooseframewidth",
+      "unusual": true
+    },
+    {
+      "name": "KFLTimageboxwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "keyfigure",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfigure",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:loc}]{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfigure",
+      "unusual": true,
+      "arg": {
+        "format": "*{}",
+        "snippet": "*{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keyfigure",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}",
+        "snippet": "*[${2:loc}]{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keytable",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keytable",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:loc}]{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keytable",
+      "unusual": true,
+      "arg": {
+        "format": "*{}",
+        "snippet": "*{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "keytable",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}",
+        "snippet": "*[${2:loc}]{${1:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfloat",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:float type}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfloat",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:loc}]{${1:float type}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keyfloat",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}",
+        "snippet": "*{${1:float type}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keyfloat",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}",
+        "snippet": "*[${3:loc}]{${1:float type}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keyfloats",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:num cols}}"
+      }
+    },
+    {
+      "name": "keyfloats",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:num cols}}[${2:keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "{${1:num cols}}{${2:keyvals}}[${3:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:loc}]{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "[${3:loc}]{${1:num cols}}{${2:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}",
+        "snippet": "*{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}[]",
+        "snippet": "*{${1:num cols}}{${2:keyvals}}[${3:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}",
+        "snippet": "*[${3:loc}]{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfigs",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}[]",
+        "snippet": "*[${3:loc}]{${1:num cols}}{${2:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c",
+          "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "{${1:num cols}}{${2:keyvals}}[${3:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:loc}]{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "[${3:loc}]{${1:num cols}}{${2:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}",
+        "snippet": "*{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}[]",
+        "snippet": "*{${1:num cols}}{${2:keyvals}}[${3:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}",
+        "snippet": "*[${3:loc}]{${1:num cols}}{${2:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubtabs",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}[]",
+        "snippet": "*[${3:loc}]{${1:num cols}}{${2:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:float type}}{${2:num cols}}{${3:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "{${1:float type}}{${2:num cols}}{${3:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "[${4:loc}]{${1:float type}}{${2:num cols}}{${3:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "arg": {
+        "format": "[]{}{}{}[]",
+        "snippet": "[${4:loc}]{${1:float type}}{${2:num cols}}{${3:keyvals}}[${5:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}{}",
+        "snippet": "*{${1:float type}}{${2:num cols}}{${3:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "unusual": true,
+      "arg": {
+        "format": "*{}{}{}[]",
+        "snippet": "*{${1:float type}}{${2:num cols}}{${3:keyvals}}[${4:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}{}",
+        "snippet": "*[${4:loc}]{${1:float type}}{${2:num cols}}{${3:keyvals}}",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "keysubfloats",
+      "unusual": true,
+      "arg": {
+        "format": "*[]{}{}{}[]",
+        "snippet": "*[${4:loc}]{${1:float type}}{${2:num cols}}{${3:keyvals}}[${5:shared keyvals}]",
+        "keys": [
+          "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c"
+        ],
+        "keyPos": 3
+      }
+    },
+    {
+      "name": "keywrap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:width}}{${2:keyfloat}}"
+      }
+    },
+    {
+      "name": "marginfigure"
+    },
+    {
+      "name": "marginfigure",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:offset%l}]"
+      }
+    },
+    {
+      "name": "margintable"
+    },
+    {
+      "name": "margintable",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:offset%l}]"
+      }
+    },
+    {
+      "name": "figurehere",
+      "unusual": true
+    },
+    {
+      "name": "tablehere",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c,\\begin{keysubfigs}#c,\\begin{keysubtabs}#c,\\begin{keysubfloats}#c": [
+      "c={${1:caption}}",
+      "cstar={${1:caption}}",
+      "sc={${1:short caption}}",
+      "cont",
+      "l=",
+      "t={${1:text}}",
+      "tc={${1:text}}",
+      "tl={${1:text}}",
+      "tr={${1:text}}"
+    ],
+    "\\keyfig#c,\\keyfig*#c,\\keytab#c,\\keytab*#c,\\keyflt#c,\\keyflt*#c,\\keyfigbox#c,\\keyfigbox*#c,\\keyparbox#c,\\keyparbox*#c,\\begin{keyfigure}#c,\\begin{keytable}#c,\\begin{keyfloat}#c,\\begin{keyfloats}#c": [
+      "lw=${1:factor}",
+      "w=",
+      "h=",
+      "kar",
+      "s=${1:factor}",
+      "r=${1:degrees}",
+      "f",
+      "ft",
+      "stretch=${1:factor}",
+      "mo=",
+      "wn=${1:integer}",
+      "wp=${1|r,l,i,o,R,L,I,O|}",
+      "wo=",
+      "wlw=${1:factor}",
+      "ww=",
+      "va="
+    ],
+    "\\keyfig#c,\\keyfig*#c,\\keyfigbox#c,\\keyfigbox*#c,\\begin{keyfigure}#c,\\begin{keysubfigs}#c": [
+      "ap=${1:author prefix}",
+      "aup=${1:author prefix}",
+      "af=${1:first name}",
+      "auf=${1:first name}",
+      "al=${1:last name}",
+      "aul=${1:last name}",
+      "as=${1:author suffix}",
+      "aus=${1:author suffix}"
+    ]
+  },
+  "args": []
+}

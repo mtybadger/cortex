@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/antpolt#c": [
+      "regular",
+      "light"
+    ]
+  },
+  "args": [
+    "\\usepackage/antpolt#c"
+  ]
+}

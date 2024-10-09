@@ -1,0 +1,140 @@
+{
+  "deps": [
+    {
+      "name": "chemstr"
+    },
+    {
+      "name": "hetarom"
+    },
+    {
+      "name": "hetaromh"
+    },
+    {
+      "name": "methylen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adddbcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "adddbcolor{${1:suffix}}{${2:skelbcolor}}"
+      }
+    },
+    {
+      "name": "addskbcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addskbcolor{${1:suffix}}{${2:skelbcolor}}"
+      }
+    },
+    {
+      "name": "black"
+    },
+    {
+      "name": "blackx",
+      "arg": {
+        "format": "{}",
+        "snippet": "blackx{${1:content}}"
+      }
+    },
+    {
+      "name": "blue"
+    },
+    {
+      "name": "bluex",
+      "arg": {
+        "format": "{}",
+        "snippet": "bluex{${1:content}}"
+      }
+    },
+    {
+      "name": "cyan"
+    },
+    {
+      "name": "cyanx",
+      "arg": {
+        "format": "{}",
+        "snippet": "cyanx{${1:content}}"
+      }
+    },
+    {
+      "name": "green"
+    },
+    {
+      "name": "greenx",
+      "arg": {
+        "format": "{}",
+        "snippet": "greenx{${1:content}}"
+      }
+    },
+    {
+      "name": "magenta"
+    },
+    {
+      "name": "magentax",
+      "arg": {
+        "format": "{}",
+        "snippet": "magentax{${1:content}}"
+      }
+    },
+    {
+      "name": "red"
+    },
+    {
+      "name": "redx",
+      "arg": {
+        "format": "{}",
+        "snippet": "redx{${1:content}}"
+      }
+    },
+    {
+      "name": "replaceSKbond",
+      "arg": {
+        "format": "()(){}{}",
+        "snippet": "replaceSKbond(${3:xstart},${4:ystart})(${5:xslope},${6:yslope}){${1:bdlength}}{${2:skelbcolor}}"
+      }
+    },
+    {
+      "name": "replaceSKbond",
+      "arg": {
+        "format": "[]()(){}{}",
+        "snippet": "replaceSKbond[${3:thickness}](${4:xstart},${5:ystart})(${6:xslope},${7:yslope}){${1:bdlength}}{${2:skelbcolor}}"
+      }
+    },
+    {
+      "name": "thinLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "white"
+    },
+    {
+      "name": "whitex",
+      "arg": {
+        "format": "{}",
+        "snippet": "whitex{${1:content}}"
+      }
+    },
+    {
+      "name": "xymcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xymcolor{${1:color}}{${2:content}}"
+      }
+    },
+    {
+      "name": "yellow"
+    },
+    {
+      "name": "yellowx",
+      "arg": {
+        "format": "{}",
+        "snippet": "yellowx{${1:content}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

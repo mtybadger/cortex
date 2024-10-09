@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "leftfullpage"
+    },
+    {
+      "name": "fullpage"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

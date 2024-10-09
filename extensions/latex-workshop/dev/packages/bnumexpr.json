@@ -1,0 +1,113 @@
+{
+  "deps": [
+    {
+      "name": "xintbinhex"
+    },
+    {
+      "name": "xintcore"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bnumeval",
+      "arg": {
+        "format": "{}",
+        "snippet": "bnumeval{${1:integer-expr list}}"
+      }
+    },
+    {
+      "name": "evaltohex",
+      "arg": {
+        "format": "{}",
+        "snippet": "evaltohex{${1:hex-expr list}}"
+      }
+    },
+    {
+      "name": "bnumsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "bnumsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\bnumsetup,\\bnumexprsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bnumhextodec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bnumhextodec{${1:hex integer}}"
+      }
+    },
+    {
+      "name": "bnumprintone",
+      "unusual": true
+    },
+    {
+      "name": "bnumprintonetohex",
+      "unusual": true
+    },
+    {
+      "name": "bnumprintonesep",
+      "unusual": true
+    },
+    {
+      "name": "bnumdefinfix",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "bnumdefinfix{${1:operator}}{${2:macro}}{${3:L-prec}}{${4:R-prec}}"
+      }
+    },
+    {
+      "name": "bnumdefpostfix",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bnumdefpostfix{${1:operator}}{${2:macro}}{${3:L-prec}}"
+      }
+    },
+    {
+      "name": "BNErestorecatcodes",
+      "unusual": true
+    },
+    {
+      "name": "bnumexpro",
+      "unusual": true
+    },
+    {
+      "name": "bnebareeval",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bnebareeval{${1:expr}}"
+      }
+    },
+    {
+      "name": "XINTfstop",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bnumexpr#c": [
+      "custom"
+    ],
+    "\\bnumsetup,\\bnumexprsetup": [
+      "add=${1:macro}",
+      "sub=${1:macro}",
+      "mul=${1:macro}",
+      "divround=${1:macro}",
+      "div=${1:macro}",
+      "mod=${1:macro}",
+      "pow=${1:macro}",
+      "fac=${1:macro}",
+      "opp=${1:macro}"
+    ]
+  },
+  "args": [
+    "\\usepackage/bnumexpr#c"
+  ]
+}

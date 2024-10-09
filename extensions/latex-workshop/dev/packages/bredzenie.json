@@ -1,0 +1,31 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bredzenie",
+      "arg": {
+        "format": "{}",
+        "snippet": "bredzenie{${1:m-n}}"
+      }
+    },
+    {
+      "name": "BredzenieSep",
+      "unusual": true
+    },
+    {
+      "name": "BredzenieHyphen",
+      "unusual": true
+    },
+    {
+      "name": "BredzenieDash",
+      "unusual": true
+    },
+    {
+      "name": "BredzenieNbsp",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,80 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "glsinlineseparator",
+      "unusual": true
+    },
+    {
+      "name": "glsinlinesubseparator",
+      "unusual": true
+    },
+    {
+      "name": "glsinlineparentchildseparator",
+      "unusual": true
+    },
+    {
+      "name": "glspostinline",
+      "unusual": true
+    },
+    {
+      "name": "glsinlinenameformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsinlinenameformat{${1:label}}{${2:name}}"
+      }
+    },
+    {
+      "name": "glsinlineifhaschildren",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsinlineifhaschildren{${1:label}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "glsinlinesubnameformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsinlinesubnameformat{${1:label}}{${2:name}}"
+      }
+    },
+    {
+      "name": "glsinlineemptydescformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsinlineemptydescformat{${1:symbol}}{${2:location list}}"
+      }
+    },
+    {
+      "name": "glsinlinedescformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsinlinedescformat{${1:description}}{${2:symbol}}{${3:location list}}"
+      }
+    },
+    {
+      "name": "glsinlinesubdescformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsinlinesubdescformat{${1:description}}{${2:symbol}}{${3:location list}}"
+      }
+    },
+    {
+      "name": "glsinlinepostchild",
+      "unusual": true
+    },
+    {
+      "name": "glsinlinedopostchild",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

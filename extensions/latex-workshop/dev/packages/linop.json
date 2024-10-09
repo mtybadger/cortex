@@ -1,0 +1,112 @@
+{
+  "deps": [
+    {
+      "name": "bm"
+    }
+  ],
+  "macros": [
+    {
+      "name": "op",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "op{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "op",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "op[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "op*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "op*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "op*",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "op*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "hc",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "hc{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "hc",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "hc[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "hc*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "hc*{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "hc*",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "hc*[${5:spacing}]{${1:operator}}{${2:sub}}{${3:sup}}{${4:supsup}}"
+      }
+    },
+    {
+      "name": "linopconjugate",
+      "unusual": true
+    },
+    {
+      "name": "linopspacewide",
+      "unusual": true
+    },
+    {
+      "name": "linopspacewidehc",
+      "unusual": true
+    },
+    {
+      "name": "linopstyle",
+      "unusual": true
+    },
+    {
+      "name": "linopstylewide",
+      "unusual": true
+    },
+    {
+      "name": "linopsubscript",
+      "unusual": true
+    },
+    {
+      "name": "linopsuperscript",
+      "unusual": true
+    },
+    {
+      "name": "linopsuperscripthc",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/linop#c": [
+      "bold",
+      "bmbold",
+      "wide",
+      "nohat",
+      "star",
+      "compact",
+      "square"
+    ]
+  },
+  "args": [
+    "\\usepackage/linop#c"
+  ]
+}

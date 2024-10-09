@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "uplatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setupzhkinsokuwith",
+      "arg": {
+        "format": "{}",
+        "snippet": "setupzhkinsokuwith{${1:encoding}}"
+      }
+    },
+    {
+      "name": "DisableOTLatinVariableSlotsKinsoku"
+    },
+    {
+      "name": "EnableOTLatinVariableSlotsKinsoku"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

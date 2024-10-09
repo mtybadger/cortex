@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pcolbegin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pcolbegin{${1:alignment%keyvals}}{${2:pattern}}",
+        "keys": [
+          "\\pcolbegin#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pcolend"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\pcolbegin#c": [
+      "l",
+      "c",
+      "r"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,62 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "showlabels",
+      "arg": {
+        "format": "{}",
+        "snippet": "showlabels{${1:cmd name}}"
+      }
+    },
+    {
+      "name": "showlabels",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "showlabels[${2:format cmds}]{${1:cmd name}}"
+      }
+    },
+    {
+      "name": "showlabelsinline"
+    },
+    {
+      "name": "showlabelsmarginal"
+    },
+    {
+      "name": "showlabelsfont",
+      "unusual": true
+    },
+    {
+      "name": "showlabelsetlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "showlabelsetlabel{${1:arg}}"
+      }
+    },
+    {
+      "name": "showlabeltype",
+      "unusual": true
+    },
+    {
+      "name": "showlabelrefline",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/showlabels#c": [
+      "outer",
+      "inner",
+      "left",
+      "right",
+      "marginal",
+      "inline",
+      "nolabel",
+      "draft",
+      "final"
+    ]
+  },
+  "args": [
+    "\\usepackage/showlabels#c"
+  ]
+}

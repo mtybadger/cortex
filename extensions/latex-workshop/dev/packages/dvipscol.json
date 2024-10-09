@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "nogroupcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "nogroupcolor{${1:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,243 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sfer"
+    },
+    {
+      "name": "sfer",
+      "arg": {
+        "format": "[]",
+        "snippet": "sfer[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqk"
+    },
+    {
+      "name": "sqk",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqk[${1:sub}]"
+      }
+    },
+    {
+      "name": "squ"
+    },
+    {
+      "name": "squ",
+      "arg": {
+        "format": "[]",
+        "snippet": "squ[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqd"
+    },
+    {
+      "name": "sqd",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqd[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqc"
+    },
+    {
+      "name": "sqc",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqc[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqs"
+    },
+    {
+      "name": "sqs",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqs[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqt"
+    },
+    {
+      "name": "sqt",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqt[${1:sub}]"
+      }
+    },
+    {
+      "name": "sqb"
+    },
+    {
+      "name": "sqb",
+      "arg": {
+        "format": "[]",
+        "snippet": "sqb[${1:sub}]"
+      }
+    },
+    {
+      "name": "slep"
+    },
+    {
+      "name": "slep",
+      "arg": {
+        "format": "[]",
+        "snippet": "slep[${1:sub}]"
+      }
+    },
+    {
+      "name": "sle"
+    },
+    {
+      "name": "sle",
+      "arg": {
+        "format": "[]",
+        "snippet": "sle[${1:sub}]"
+      }
+    },
+    {
+      "name": "slmu"
+    },
+    {
+      "name": "slmu",
+      "arg": {
+        "format": "[]",
+        "snippet": "slmu[${1:sub}]"
+      }
+    },
+    {
+      "name": "sltau"
+    },
+    {
+      "name": "sltau",
+      "arg": {
+        "format": "[]",
+        "snippet": "sltau[${1:sub}]"
+      }
+    },
+    {
+      "name": "slneu"
+    },
+    {
+      "name": "slneu",
+      "arg": {
+        "format": "[]",
+        "snippet": "slneu[${1:sub}]"
+      }
+    },
+    {
+      "name": "Hu"
+    },
+    {
+      "name": "Hu",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hu[${1:sub}]"
+      }
+    },
+    {
+      "name": "Hd"
+    },
+    {
+      "name": "Hd",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hd[${1:sub}]"
+      }
+    },
+    {
+      "name": "Ho"
+    },
+    {
+      "name": "Ho",
+      "arg": {
+        "format": "[]",
+        "snippet": "Ho[${1:sub}]"
+      }
+    },
+    {
+      "name": "Hou"
+    },
+    {
+      "name": "Hou",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hou[${1:sub}]"
+      }
+    },
+    {
+      "name": "Hod"
+    },
+    {
+      "name": "Hod",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hod[${1:sub}]"
+      }
+    },
+    {
+      "name": "No"
+    },
+    {
+      "name": "No",
+      "arg": {
+        "format": "[]",
+        "snippet": "No[${1:sub}]"
+      }
+    },
+    {
+      "name": "Co"
+    },
+    {
+      "name": "Co",
+      "arg": {
+        "format": "[]",
+        "snippet": "Co[${1:sub}]"
+      }
+    },
+    {
+      "name": "Cop"
+    },
+    {
+      "name": "Cop",
+      "arg": {
+        "format": "[]",
+        "snippet": "Cop[${1:sub}]"
+      }
+    },
+    {
+      "name": "Com"
+    },
+    {
+      "name": "Com",
+      "arg": {
+        "format": "[]",
+        "snippet": "Com[${1:sub}]"
+      }
+    },
+    {
+      "name": "tbeta"
+    },
+    {
+      "name": "go"
+    },
+    {
+      "name": "Wo"
+    },
+    {
+      "name": "Zo"
+    },
+    {
+      "name": "pho"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

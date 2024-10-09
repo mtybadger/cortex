@@ -1,0 +1,39 @@
+{
+  "deps": [
+    {
+      "name": "beamerbaseoptions"
+    },
+    {
+      "name": "beamerbaserequires"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "inputenc",
+      "if": "utf8"
+    },
+    {
+      "name": "hyperref",
+      "if": "hyperref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/beamerbasearticle#c": [
+      "utf8",
+      "hyperref",
+      "noxcolor",
+      "notheorems",
+      "noamsthm",
+      "noamssymb",
+      "nokeywords",
+      "envcountsect",
+      "activeospeccharacters"
+    ]
+  },
+  "args": [
+    "\\usepackage/beamerbasearticle#c"
+  ]
+}

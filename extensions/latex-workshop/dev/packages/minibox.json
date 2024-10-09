@@ -1,0 +1,49 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "minibox",
+      "arg": {
+        "format": "{}",
+        "snippet": "minibox{${1:text}}"
+      }
+    },
+    {
+      "name": "minibox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "minibox[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\minibox,\\miniboxsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "miniboxsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "miniboxsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\minibox,\\miniboxsetup"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\minibox,\\miniboxsetup": [
+      "frame",
+      "rule=",
+      "pad=",
+      "l",
+      "c",
+      "r",
+      "b",
+      "m",
+      "t"
+    ]
+  },
+  "args": []
+}

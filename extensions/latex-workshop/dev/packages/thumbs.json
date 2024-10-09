@@ -1,0 +1,137 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "atbegshi"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "picture"
+    },
+    {
+      "name": "alphalph"
+    },
+    {
+      "name": "pageslts"
+    },
+    {
+      "name": "pagecolor"
+    },
+    {
+      "name": "rerunfilecheck"
+    },
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "atveryend"
+    }
+  ],
+  "macros": [
+    {
+      "name": "thumbsinfo",
+      "if": "verbose"
+    },
+    {
+      "name": "thumbsinfo",
+      "if": "verbose=true"
+    },
+    {
+      "name": "addthumb",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "addthumb{${1:title%plain}}{${2:display text}}{${3:color}}{${4:background color}}"
+      }
+    },
+    {
+      "name": "addtitlethumb",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "addtitlethumb{${1:title%plain}}{${2:display text}}{${3:color}}{${4:background color}}{${5:label}}"
+      }
+    },
+    {
+      "name": "stopthumb"
+    },
+    {
+      "name": "continuethumb"
+    },
+    {
+      "name": "thumbsoverview",
+      "arg": {
+        "format": "{}",
+        "snippet": "thumbsoverview{${1:mark%text}}"
+      }
+    },
+    {
+      "name": "thumbsoverviewback",
+      "arg": {
+        "format": "{}",
+        "snippet": "thumbsoverviewback{${1:mark%text}}"
+      }
+    },
+    {
+      "name": "thumbsoverviewverso",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "thumbsoverviewverso{${1:mark%text}}"
+      }
+    },
+    {
+      "name": "thumbsoverviewdouble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "thumbsoverviewdouble{${1:mark%text}}"
+      }
+    },
+    {
+      "name": "thumbnewcolumn"
+    },
+    {
+      "name": "addthumbsoverviewtocontents",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addthumbsoverviewtocontents{${1:level}}{${2:entry%text}}"
+      }
+    },
+    {
+      "name": "thumbsnophantom"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/thumbs#c": [
+      "linefill=${1|line,dots|}",
+      "minheight=",
+      "height=${1|auto|}",
+      "width=${1|auto|}",
+      "distance=",
+      "topthumbmargin=",
+      "bottomthumbmargin=",
+      "eventxtindent=",
+      "oddtxtexdent=",
+      "evenmarkindent=",
+      "oddmarkexdent=",
+      "evenprintvoffset=",
+      "thumblink=${1|none,title,page,titleandpage,line,rule|}",
+      "nophantomsection",
+      "ignorehoffset",
+      "ignorevoffset",
+      "verbose",
+      "draft",
+      "hidethumbs"
+    ]
+  },
+  "args": [
+    "\\usepackage/thumbs#c"
+  ]
+}

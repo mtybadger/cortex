@@ -1,0 +1,534 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "esvect"
+    },
+    {
+      "name": "mleftright"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "ibrackets",
+      "if": "ibrackets"
+    },
+    {
+      "name": "decimalcomma",
+      "if": "decimalcomma"
+    }
+  ],
+  "macros": [
+    {
+      "name": "abs",
+      "arg": {
+        "format": "{}",
+        "snippet": "abs{${1:arg}}"
+      }
+    },
+    {
+      "name": "adj"
+    },
+    {
+      "name": "arccot"
+    },
+    {
+      "name": "arcosh"
+    },
+    {
+      "name": "arcoth"
+    },
+    {
+      "name": "arcsch"
+    },
+    {
+      "name": "arrowvect"
+    },
+    {
+      "name": "arsech"
+    },
+    {
+      "name": "arsinh"
+    },
+    {
+      "name": "artanh"
+    },
+    {
+      "name": "Aut"
+    },
+    {
+      "name": "bigO"
+    },
+    {
+      "name": "bigo"
+    },
+    {
+      "name": "boldvect"
+    },
+    {
+      "name": "boldvectcommand",
+      "unusual": true
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "cmmathcal",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cmmathcal{${1:letter}}"
+      }
+    },
+    {
+      "name": "codim"
+    },
+    {
+      "name": "coker"
+    },
+    {
+      "name": "Conv"
+    },
+    {
+      "name": "Cov"
+    },
+    {
+      "name": "cov"
+    },
+    {
+      "name": "csch"
+    },
+    {
+      "name": "curl"
+    },
+    {
+      "name": "dcap"
+    },
+    {
+      "name": "dcup"
+    },
+    {
+      "name": "di"
+    },
+    {
+      "name": "divg"
+    },
+    {
+      "name": "dlim"
+    },
+    {
+      "name": "dprod"
+    },
+    {
+      "name": "ds"
+    },
+    {
+      "name": "dsum"
+    },
+    {
+      "name": "e"
+    },
+    {
+      "name": "E"
+    },
+    {
+      "name": "End"
+    },
+    {
+      "name": "eqdef",
+      "detail": "≝",
+      "doc": "Equals by definition"
+    },
+    {
+      "name": "eqdef*"
+    },
+    {
+      "name": "erf"
+    },
+    {
+      "name": "F"
+    },
+    {
+      "name": "grad"
+    },
+    {
+      "name": "hlbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "hlbar{${1:arg}}"
+      }
+    },
+    {
+      "name": "hvec",
+      "arg": {
+        "format": "{}",
+        "snippet": "hvec{${1:arg}}"
+      }
+    },
+    {
+      "name": "hvect",
+      "arg": {
+        "format": "{}",
+        "snippet": "hvect{${1:arg}}"
+      }
+    },
+    {
+      "name": "id"
+    },
+    {
+      "name": "Id"
+    },
+    {
+      "name": "iif"
+    },
+    {
+      "name": "im"
+    },
+    {
+      "name": "itpi",
+      "unusual": true
+    },
+    {
+      "name": "K"
+    },
+    {
+      "name": "lb"
+    },
+    {
+      "name": "lbar",
+      "arg": {
+        "format": "{}",
+        "snippet": "lbar{${1:arg}}"
+      }
+    },
+    {
+      "name": "lcm"
+    },
+    {
+      "name": "lfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lfrac{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "lito"
+    },
+    {
+      "name": "mathbfsfit",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbfsfit{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "MathFamily",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MathFamily{${1:char}}{${2:num}}"
+      }
+    },
+    {
+      "name": "MathIt",
+      "arg": {
+        "format": "{}",
+        "snippet": "MathIt{${1:char}}"
+      }
+    },
+    {
+      "name": "MathNormal",
+      "arg": {
+        "format": "{}",
+        "snippet": "MathNormal{${1:chars}}"
+      }
+    },
+    {
+      "name": "MathNumbers",
+      "arg": {
+        "format": "{}",
+        "snippet": "MathNumbers{${1:chars}}"
+      }
+    },
+    {
+      "name": "MathProba",
+      "arg": {
+        "format": "{}",
+        "snippet": "MathProba{${1:chars}}"
+      }
+    },
+    {
+      "name": "mathset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mathset{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "MathUp",
+      "arg": {
+        "format": "{}",
+        "snippet": "MathUp{${1:char}}"
+      }
+    },
+    {
+      "name": "mathup",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathup{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mul"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "norm",
+      "arg": {
+        "format": "{}",
+        "snippet": "norm{${1:arg}}"
+      }
+    },
+    {
+      "name": "oldIm",
+      "unusual": true
+    },
+    {
+      "name": "oldRe",
+      "unusual": true
+    },
+    {
+      "name": "onlymathC",
+      "unusual": true
+    },
+    {
+      "name": "P"
+    },
+    {
+      "name": "Par"
+    },
+    {
+      "name": "pifonts",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pifonts{${1:options%keyvals}}",
+        "keys": [
+          "\\pifonts,\\pinumber"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pinormal",
+      "unusual": true
+    },
+    {
+      "name": "pinumber"
+    },
+    {
+      "name": "pinumber",
+      "arg": {
+        "format": "[]",
+        "snippet": "pinumber[${1:option%keyvals}]",
+        "keys": [
+          "\\pifonts,\\pinumber"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pow{${1:expr}}{${2:exponent}}"
+      }
+    },
+    {
+      "name": "probastyle",
+      "unusual": true
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "rank"
+    },
+    {
+      "name": "Re",
+      "detail": "ℜ",
+      "doc": "\\mathfrak{r} (eufrak), real part"
+    },
+    {
+      "name": "Res"
+    },
+    {
+      "name": "rot"
+    },
+    {
+      "name": "sech"
+    },
+    {
+      "name": "sgn"
+    },
+    {
+      "name": "sinc"
+    },
+    {
+      "name": "spa"
+    },
+    {
+      "name": "then"
+    },
+    {
+      "name": "tr"
+    },
+    {
+      "name": "txt",
+      "arg": {
+        "format": "{}",
+        "snippet": "txt{${1:text}}"
+      }
+    },
+    {
+      "name": "unbr",
+      "arg": {
+        "format": "{}",
+        "snippet": "unbr{${1:arg}}"
+      }
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "var"
+    },
+    {
+      "name": "Var"
+    },
+    {
+      "name": "vect",
+      "arg": {
+        "format": "{}",
+        "snippet": "vect{${1:arg}}"
+      }
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "Zu"
+    },
+    {
+      "name": "systemsep",
+      "unusual": true
+    },
+    {
+      "name": "systemstretch",
+      "unusual": true
+    },
+    {
+      "name": "changecol"
+    },
+    {
+      "name": "bslash",
+      "unusual": true
+    },
+    {
+      "name": "upDelta",
+      "unusual": true,
+      "detail": "Δ",
+      "doc": "\\delta (-slantedgreek), \\mathrm{\\delta}, capital delta, greek"
+    },
+    {
+      "name": "opDelta"
+    },
+    {
+      "name": "opdelta"
+    }
+  ],
+  "envs": [
+    {
+      "name": "system"
+    },
+    {
+      "name": "system",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:cols}]"
+      }
+    },
+    {
+      "name": "spmatrix"
+    },
+    {
+      "name": "mathcols"
+    }
+  ],
+  "keys": {
+    "\\usepackage/mismath#c": [
+      "ibrackets",
+      "decimalcomma",
+      "nofunction",
+      "otherReIm",
+      "classicReIm",
+      "fixamsmath",
+      "donotfixamsmathbugs",
+      "allowspaces",
+      "disallowspaces",
+      "legacycolonsymbols",
+      "intlimits",
+      "nointlimits",
+      "sumlimits",
+      "nosumlimits",
+      "namelimits",
+      "nonamelimits",
+      "leqno",
+      "reqno",
+      "centertags",
+      "tbtags",
+      "cmex10",
+      "fleqn",
+      "alignedleftspaceyes",
+      "alignedleftspaceno",
+      "alignedleftspaceyesifneg"
+    ],
+    "\\pifonts,\\pinumber": [
+      "lgrmath=${1:font name}",
+      "fontspec=${1:font name}",
+      "upgreek=${1|Euler,Symbol|}",
+      "mathdesign",
+      "fourier",
+      "kpfonts",
+      "pxfonts",
+      "txfonts"
+    ]
+  },
+  "args": [
+    "\\usepackage/mismath#c"
+  ]
+}

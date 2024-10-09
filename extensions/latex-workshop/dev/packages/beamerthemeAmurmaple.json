@@ -1,0 +1,170 @@
+{
+  "deps": [
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "pgfpages"
+    },
+    {
+      "name": "fontawesome5"
+    },
+    {
+      "name": "luamesh"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibraryquotes"
+    },
+    {
+      "name": "tikzlibraryangles"
+    },
+    {
+      "name": "tikzlibraryautomata"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "boxalert",
+      "arg": {
+        "format": "{}",
+        "snippet": "boxalert{${1:text}}"
+      }
+    },
+    {
+      "name": "boxalert<overlay specification>",
+      "arg": {
+        "format": "{}",
+        "snippet": "boxalert<overlay specification>{${1:text}}"
+      }
+    },
+    {
+      "name": "collaboration",
+      "arg": {
+        "format": "{}",
+        "snippet": "collaboration{${1:collaboration%text}}"
+      }
+    },
+    {
+      "name": "framesection",
+      "arg": {
+        "format": "{}",
+        "snippet": "framesection{${1:text}}"
+      }
+    },
+    {
+      "name": "mail",
+      "arg": {
+        "format": "{}",
+        "snippet": "mail{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "sepframe"
+    },
+    {
+      "name": "sepframe",
+      "arg": {
+        "format": "[]",
+        "snippet": "sepframe[${1:options%keyvals}]",
+        "keys": [
+          "\\sepframe"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "thanksframe",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thanksframe[${2:graphic}]{${1:title}}"
+      }
+    },
+    {
+      "name": "thanksframe",
+      "arg": {
+        "format": "{}",
+        "snippet": "thanksframe{${1:title}}"
+      }
+    },
+    {
+      "name": "webpage",
+      "arg": {
+        "format": "{}",
+        "snippet": "webpage{${1:URL}}"
+      }
+    },
+    {
+      "name": "theamurmapletoc",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "information"
+    },
+    {
+      "name": "information",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:title%text}]"
+      }
+    },
+    {
+      "name": "quotation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:author(${2:s})}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:title complement%text}]"
+      }
+    },
+    {
+      "name": "boxalertenv",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usetheme/Amurmaple#c": [
+      "nogauge",
+      "nomail",
+      "delaunay",
+      "amurmapleblue",
+      "amurmaplegreen",
+      "amurmapleblack",
+      "sidebarwidth=",
+      "sidebar",
+      "toplogo",
+      "leftframetitle",
+      "rule",
+      "rulecolor="
+    ],
+    "\\sepframe": [
+      "title={${1:text}}",
+      "image={${1:graphics code}}"
+    ]
+  },
+  "args": []
+}

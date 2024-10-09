@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbscr",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbscr{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/BOONDOX-uprscr#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/BOONDOX-uprscr#c"
+  ]
+}

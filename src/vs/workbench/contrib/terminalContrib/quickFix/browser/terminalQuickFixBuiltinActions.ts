@@ -3,12 +3,12 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { URI } from '../../../../../base/common/uri.js';
-import { localize } from '../../../../../nls.js';
-import { ITerminalQuickFixInternalOptions, ITerminalCommandMatchResult, ITerminalQuickFixTerminalCommandAction, TerminalQuickFixActionInternal, TerminalQuickFixType } from './quickFix.js';
+import { URI } from 'vs/base/common/uri';
+import { localize } from 'vs/nls';
+import { ITerminalQuickFixInternalOptions, ITerminalCommandMatchResult, ITerminalQuickFixTerminalCommandAction, TerminalQuickFixActionInternal, TerminalQuickFixType } from 'vs/workbench/contrib/terminalContrib/quickFix/browser/quickFix';
 
 export const GitCommandLineRegex = /git/;
-export const GitFastForwardPullOutputRegex = /and can be fast-forwarded/;
+export const GitPullOutputRegex = /and can be fast-forwarded/;
 export const GitPushCommandLineRegex = /git\s+push/;
 export const GitTwoDashesRegex = /error: did you mean `--(.+)` \(with two dashes\)\?/;
 export const GitSimilarOutputRegex = /(?:(most similar commands? (is|are)))/;
@@ -61,13 +61,13 @@ export function gitSimilar(): ITerminalQuickFixInternalOptions {
 	};
 }
 
-export function gitFastForwardPull(): ITerminalQuickFixInternalOptions {
+export function gitPull(): ITerminalQuickFixInternalOptions {
 	return {
-		id: 'Git Fast Forward Pull',
+		id: 'Git Pull',
 		type: 'internal',
 		commandLineMatcher: GitCommandLineRegex,
 		outputMatcher: {
-			lineMatcher: GitFastForwardPullOutputRegex,
+			lineMatcher: GitPullOutputRegex,
 			anchor: 'bottom',
 			offset: 0,
 			length: 8
@@ -76,7 +76,7 @@ export function gitFastForwardPull(): ITerminalQuickFixInternalOptions {
 		getQuickFixes: (matchResult: ITerminalCommandMatchResult) => {
 			return {
 				type: TerminalQuickFixType.TerminalCommand,
-				id: 'Git Fast Forward Pull',
+				id: 'Git Pull',
 				terminalCommand: `git pull`,
 				shouldExecute: true,
 				source: QuickFixSource.Builtin

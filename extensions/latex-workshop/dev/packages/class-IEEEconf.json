@@ -1,0 +1,83 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "mathptmx"
+    },
+    {
+      "name": "helvet"
+    },
+    {
+      "name": "courier"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "titlesec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "callout",
+      "arg": {
+        "format": "{}",
+        "snippet": "callout{${1:text}}"
+      }
+    },
+    {
+      "name": "dobeforekey",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dobeforekey{${1:bibid}}{${2:commands}}"
+      }
+    },
+    {
+      "name": "extrareflistcode",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "affiliation"
+    }
+  ],
+  "keys": {
+    "\\documentclass/IEEEconf#c": [
+      "latex8",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ]
+  },
+  "args": [
+    "\\documentclass/IEEEconf#c"
+  ]
+}

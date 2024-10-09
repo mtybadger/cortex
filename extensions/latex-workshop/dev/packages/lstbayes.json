@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\lstloadlanguages#c": [
+      "BUGS",
+      "JAGS",
+      "Stan"
+    ],
+    "\\lstset,\\lstinline,\\begin{lstlisting},\\lstinputlisting,\\lstMakeShortInline": [
+      "language=BUGS",
+      "language=JAGS",
+      "language=Stan"
+    ]
+  },
+  "args": []
+}

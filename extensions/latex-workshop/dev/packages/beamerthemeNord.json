@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usetheme/Nord#c": [
+      "style=${1|light,dark|}"
+    ]
+  },
+  "args": []
+}

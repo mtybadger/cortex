@@ -1,6 +1,6 @@
 {
   "name": "vscode-api-tests",
-  "description": "API tests for VS Code",
+  "description": "API tests for Cortex",
   "version": "0.0.1",
   "publisher": "vscode",
   "license": "MIT",
@@ -47,6 +47,7 @@
     "telemetry",
     "terminalDataWriteEvent",
     "terminalDimensions",
+    "terminalShellIntegration",
     "testObserver",
     "textSearchProvider",
     "timeline",

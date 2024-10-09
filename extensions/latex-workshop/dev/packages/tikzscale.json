@@ -1,0 +1,104 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "letltxmacro"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfmathsetglobalmacro",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathsetglobalmacro{${1:cmd}}{${2:math expr}}"
+      }
+    },
+    {
+      "name": "ifTikzLibraryLoaded",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifTikzLibraryLoaded{${1:library}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "ifExternalizationLoaded",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifExternalizationLoaded{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "ifedefequal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifedefequal{${1:expr1}}{${2:expr2}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "edocsvlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "edocsvlist{${1:csvlist}}"
+      }
+    },
+    {
+      "name": "eforcsvlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "eforcsvlist{${1:handler}}{${2:csvlist}}"
+      }
+    },
+    {
+      "name": "forgrouplist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "forgrouplist{${1:handler}}{${2:grouplist}}"
+      }
+    },
+    {
+      "name": "grouplistbreak",
+      "unusual": true
+    },
+    {
+      "name": "eforgrouplist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "eforgrouplist{${1:handler}}{${2:grouplist}}"
+      }
+    },
+    {
+      "name": "IfNoValueOrSplitEmptyTF",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfNoValueOrSplitEmptyTF{${1:arg}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "maxTestIterations",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

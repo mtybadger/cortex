@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hvfloat-fps#c": [
+      "figure=${1:float pos}",
+      "table=${1:float pos}",
+      "all=${1:float pos}"
+    ]
+  },
+  "args": [
+    "\\usepackage/hvfloat-fps#c"
+  ]
+}

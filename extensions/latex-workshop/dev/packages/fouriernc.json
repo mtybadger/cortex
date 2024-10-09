@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "fourier"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fouriernc#c": [
+      "sloped"
+    ]
+  },
+  "args": [
+    "\\usepackage/fouriernc#c"
+  ]
+}

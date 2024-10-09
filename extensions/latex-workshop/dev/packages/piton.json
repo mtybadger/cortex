@@ -1,0 +1,464 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "luatexbase"
+    },
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "footnote",
+      "if": "footnote"
+    },
+    {
+      "name": "footnote",
+      "if": "footnote=true"
+    },
+    {
+      "name": "footnotehyper",
+      "if": "footnotehyper"
+    },
+    {
+      "name": "footnotehyper",
+      "if": "footnotehyper=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "piton",
+      "arg": {
+        "format": "{}",
+        "snippet": "piton{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "PitonInputFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "PitonInputFile{${1:file}}"
+      }
+    },
+    {
+      "name": "PitonInputFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PitonInputFile[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\PitonInputFile,\\PitonInputFileTF,\\PitonInputFileT,\\PitonInputFileF"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PitonInputFileTF",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PitonInputFileTF{${1:file}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileTF",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "PitonInputFileTF[${4:options%keyvals}]{${1:file}}{${2:true code}}{${3:false code}}",
+        "keys": [
+          "\\PitonInputFile,\\PitonInputFileTF,\\PitonInputFileT,\\PitonInputFileF"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PitonInputFileT",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PitonInputFileT{${1:file}}{${2:true code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileT",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "PitonInputFileT[${3:options%keyvals}]{${1:file}}{${2:true code}}",
+        "keys": [
+          "\\PitonInputFile,\\PitonInputFileTF,\\PitonInputFileT,\\PitonInputFileF"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PitonInputFileF",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PitonInputFileF{${1:file}}{${2:false code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileF",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "PitonInputFileF[${3:options%keyvals}]{${1:file}}{${2:false code}}",
+        "keys": [
+          "\\PitonInputFile,\\PitonInputFileTF,\\PitonInputFileT,\\PitonInputFileF"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PitonInputFile<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PitonInputFile<overlay spec>{${1:file}}"
+      }
+    },
+    {
+      "name": "PitonInputFile<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PitonInputFile<overlay spec>[${2:options%keyvals}]{${1:file}}"
+      }
+    },
+    {
+      "name": "PitonInputFileTF<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PitonInputFileTF<overlay spec>{${1:file}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileTF<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "PitonInputFileTF<overlay spec>[${4:options%keyvals}]{${1:file}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileT<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PitonInputFileT<overlay spec>{${1:file}}{${2:true code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileT<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "PitonInputFileT<overlay spec>[${3:options%keyvals}]{${1:file}}{${2:true code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileF<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PitonInputFileF<overlay spec>{${1:file}}{${2:false code}}"
+      }
+    },
+    {
+      "name": "PitonInputFileF<overlay spec>",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "PitonInputFileF<overlay spec>[${3:options%keyvals}]{${1:file}}{${2:false code}}"
+      }
+    },
+    {
+      "name": "PitonOptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "PitonOptions{${1:options%keyvals}}",
+        "keys": [
+          "\\PitonOptions",
+          "\\PitonOptions,\\begin{Piton}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetPitonStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPitonStyle{${1:options%keyvals}}",
+        "keys": [
+          "\\SetPitonStyle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetPitonStyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SetPitonStyle[${2:language}]{${1:options%keyvals}}",
+        "keys": [
+          "\\SetPitonStyle"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "PitonStyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PitonStyle{${1:style%keyvals}}{${2:text%plain}}",
+        "keys": [
+          "\\PitonStyle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PitonClearUserFunctions"
+    },
+    {
+      "name": "PitonClearUserFunctions",
+      "arg": {
+        "format": "[]",
+        "snippet": "PitonClearUserFunctions[${1:languages}]"
+      }
+    },
+    {
+      "name": "NewPitonEnvironment",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "NewPitonEnvironment{${1:envname}}{${2:xargs}}{${3:begdef}}{${4:enddef}}"
+      }
+    },
+    {
+      "name": "NewPitonLanguage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewPitonLanguage{${1:language}}{${2:keyvals}}",
+        "keys": [
+          "\\NewPitonLanguage"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SetPitonIdentifier",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetPitonIdentifier{${1:id1,id2,...}}{${2:code}}"
+      }
+    },
+    {
+      "name": "SetPitonIdentifier",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "SetPitonIdentifier[${3:language}]{${1:id1,id2,...}}{${2:code}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Piton"
+    },
+    {
+      "name": "Piton",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{Piton}",
+          "\\PitonOptions,\\begin{Piton}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/piton#c": [
+      "footnote",
+      "footnotehyper",
+      "beamer"
+    ],
+    "\\PitonInputFile,\\PitonInputFileTF,\\PitonInputFileT,\\PitonInputFileF": [
+      "first-line=${1:integer}",
+      "last-line=${1:integer}",
+      "begin-range=${1:content}",
+      "end-range=${1:content}",
+      "range=${1:content}",
+      "marker/include-lines"
+    ],
+    "\\PitonOptions": [
+      "comment-latex=${1:string}",
+      "math-comments",
+      "detected-commands={${1:csname1,csname2,...}}",
+      "line-numbers/absolute",
+      "marker={${1:options}}",
+      "marker/beginning=${1:spec}",
+      "marker/end=${1:spec}",
+      "begin-escape=${1:character}",
+      "end-escape=${1:character}",
+      "begin-escape-math=${1:character}",
+      "end-escape-math=${1:character}",
+      "path={${1:list of paths}}"
+    ],
+    "\\begin{Piton}": [
+      "line-numbers/start"
+    ],
+    "\\PitonOptions,\\begin{Piton}": [
+      "language=",
+      "gobble=${1:integer}",
+      "auto-gobble",
+      "tabs-auto-gobble",
+      "env-gobble",
+      "line-numbers",
+      "line-numbers={${1:options}}",
+      "line-numbers/skip-empty-lines",
+      "line-numbers/label-empty-lines",
+      "line-numbers/resume",
+      "line-numbers/sep=",
+      "splittable",
+      "splittable=${1:integer}",
+      "background-color=",
+      "prompt-background-color=",
+      "width=",
+      "left-margin=",
+      "tab-size=${1:integer}",
+      "show-spaces",
+      "show-spaces-in-strings",
+      "break-lines-in-Piton",
+      "break-lines-in-piton",
+      "break-lines",
+      "indent-broken-lines",
+      "end-of-broken-line=${1:symbol}",
+      "continuation-symbol=${1:symbol}",
+      "continuation-symbol-on-indentation=${1:symbol}",
+      "write=${1:file}",
+      "path-write=${1:path}",
+      "split-on-empty-lines",
+      "split-separation=${1:code}"
+    ],
+    "\\SetPitonStyle": [
+      "Number=${1:formatting}",
+      "String.Short=${1:formatting}",
+      "String.Long=${1:formatting}",
+      "String=${1:formatting}",
+      "String.Doc=${1:formatting}",
+      "String.Interpol=${1:formatting}",
+      "Interpol.Inside=${1:formatting}",
+      "Operator=${1:formatting}",
+      "Operator.Word=${1:formatting}",
+      "Name.Builtin=${1:formatting}",
+      "Name.Decorator=${1:formatting}",
+      "Name.Namespace=${1:formatting}",
+      "Name.Class=${1:formatting}",
+      "Name.Function=${1:formatting}",
+      "UserFunction=${1:formatting}",
+      "Exception=${1:formatting}",
+      "InitialValues=${1:formatting}",
+      "Comment=${1:formatting}",
+      "Comment.LaTeX=${1:formatting}",
+      "Keyword.Constant=${1:formatting}",
+      "Keyword=${1:formatting}",
+      "Name.Type=${1:formatting}",
+      "Name.Field=${1:formatting}",
+      "Name.Constructor=${1:formatting}",
+      "Name.Module=${1:formatting}",
+      "TypeParameter=${1:formatting}",
+      "Preproc=${1:formatting}",
+      "Name.Table=${1:formatting}",
+      "Directive=${1:formatting}",
+      "FormattingType=${1:formatting}",
+      "Comment.Math=${1:formatting}",
+      "Discard=${1:formatting}",
+      "Identifier=${1:formatting}",
+      "Keyword2=${1:formatting}",
+      "Keyword3=${1:formatting}",
+      "Keyword4=${1:formatting}",
+      "Keyword5=${1:formatting}",
+      "Keyword6=${1:formatting}",
+      "Keyword7=${1:formatting}",
+      "Keyword8=${1:formatting}",
+      "Keyword9=${1:formatting}",
+      "ParseAgain.noCR=${1:formatting}",
+      "ParseAgain=${1:formatting}",
+      "Prompt=${1:formatting}",
+      "Tag=${1:formatting}"
+    ],
+    "\\PitonStyle": [
+      "Number",
+      "String.Short",
+      "String.Long",
+      "String",
+      "String.Doc",
+      "String.Interpol",
+      "Interpol.Inside",
+      "Operator",
+      "Operator.Word",
+      "Name.Builtin",
+      "Name.Decorator",
+      "Name.Namespace",
+      "Name.Class",
+      "Name.Function",
+      "UserFunction",
+      "Exception",
+      "InitialValues",
+      "Comment",
+      "Comment.LaTeX",
+      "Keyword.Constant",
+      "Keyword",
+      "Name.Type",
+      "Name.Field",
+      "Name.Constructor",
+      "Name.Module",
+      "TypeParameter",
+      "Preproc",
+      "Name.Table",
+      "Directive",
+      "FormattingType",
+      "Comment.Math",
+      "Discard",
+      "Identifier",
+      "Keyword2",
+      "Keyword3",
+      "Keyword4",
+      "Keyword5",
+      "Keyword6",
+      "Keyword7",
+      "Keyword8",
+      "Keyword9",
+      "ParseAgain.noCR",
+      "ParseAgain",
+      "Prompt",
+      "Tag"
+    ],
+    "\\NewPitonLanguage": [
+      "morekeywords={${1:list of keywords}}",
+      "morekeywords=[${1:number}]{${2:list of keywords}}",
+      "otherkeywords={${1:keywords}}",
+      "sensitive",
+      "keywordsprefix=${1:prefix}",
+      "moretexcs={${1:list of csnames}}",
+      "moretexcs=[${1:class number}]{${2:list of csnames}}",
+      "morestring=${1:delimiter}",
+      "morestring=[${1:b|d|m|s}]${2:delimiter}",
+      "morecomment=${1:delimiter(s)}",
+      "morecomment=[${1:i|l|s|n}]${2:delimiter(s)}",
+      "moredelim=[${1:type}][${2:style}]${3:delimiters}",
+      "moredelim=*[${1:type}][${2:style}]${3:delimiters}",
+      "moredelim=**[${1:type}][${2:style}]${3:delimiters}",
+      "moredirectives={${1:list of compiler directives}}",
+      "tag=${1:<char1><char2>}",
+      "alsodigit={${1:character sequence}}",
+      "alsoletter={${1:character sequence}}",
+      "alsoother={${1:character sequence}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/piton#c"
+  ]
+}

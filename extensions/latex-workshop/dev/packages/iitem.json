@@ -1,0 +1,50 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "iitem"
+    },
+    {
+      "name": "iitem",
+      "arg": {
+        "format": "[]",
+        "snippet": "iitem[${1:label}]"
+      }
+    },
+    {
+      "name": "iiitem"
+    },
+    {
+      "name": "iiitem",
+      "arg": {
+        "format": "[]",
+        "snippet": "iiitem[${1:label}]"
+      }
+    },
+    {
+      "name": "ivtem"
+    },
+    {
+      "name": "ivtem",
+      "arg": {
+        "format": "[]",
+        "snippet": "ivtem[${1:label}]"
+      }
+    },
+    {
+      "name": "theiitemcounter",
+      "unusual": true
+    },
+    {
+      "name": "theiiitemcounter",
+      "unusual": true
+    },
+    {
+      "name": "theivtemcounter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

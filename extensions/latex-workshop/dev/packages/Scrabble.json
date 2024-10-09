@@ -1,0 +1,201 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgf"
+    },
+    {
+      "name": "pgffor"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "listofitems"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ScrabbleBoard"
+    },
+    {
+      "name": "ScrabbleBoard",
+      "arg": {
+        "format": "[]",
+        "snippet": "ScrabbleBoard[${1:keys%keyvals}]",
+        "keys": [
+          "\\ScrabbleBoard,\\begin{EnvScrabble}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ScrabbleBoard<language>"
+    },
+    {
+      "name": "ScrabbleBoard<language>",
+      "arg": {
+        "format": "[]",
+        "snippet": "ScrabbleBoard<language>[${1:keys%keyvals}]"
+      }
+    },
+    {
+      "name": "PlateauScrabble"
+    },
+    {
+      "name": "PlateauScrabble",
+      "arg": {
+        "format": "[]",
+        "snippet": "PlateauScrabble[${1:clés%keyvals}]",
+        "keys": [
+          "\\PlateauScrabble,\\begin{EnvScrabbleFR}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PlateauScrabble<langue>"
+    },
+    {
+      "name": "PlateauScrabble<langue>",
+      "arg": {
+        "format": "[]",
+        "snippet": "PlateauScrabble<langue>[${1:clés%keyvals}]"
+      }
+    },
+    {
+      "name": "ScrabblePutWord",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ScrabblePutWord{${1:letters}}{${2:x,y}}"
+      }
+    },
+    {
+      "name": "ScrabblePutWord",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ScrabblePutWord[${3:orientation%keyvals}]{${1:letters}}{${2:x,y}}",
+        "keys": [
+          "\\ScrabblePutWord,\\ScrabblePlaceMot"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ScrabblePlaceMot",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ScrabblePlaceMot{${1:lettres}}{${2:x,y}}"
+      }
+    },
+    {
+      "name": "ScrabblePlaceMot",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ScrabblePlaceMot[${3:orientation%keyvals}]{${1:lettres}}{${2:x,y}}",
+        "keys": [
+          "\\ScrabblePutWord,\\ScrabblePlaceMot"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "EnvScrabble"
+    },
+    {
+      "name": "EnvScrabble",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:keys%keyvals}]",
+        "keys": [
+          "\\ScrabbleBoard,\\begin{EnvScrabble}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "EnvScrabble",
+      "arg": {
+        "format": "<>",
+        "snippet": "<${1:language}>"
+      }
+    },
+    {
+      "name": "EnvScrabble",
+      "arg": {
+        "format": "<>[]",
+        "snippet": "<${2:language}>[${1:keys%keyvals}]",
+        "keys": [
+          "\\ScrabbleBoard,\\begin{EnvScrabble}"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "EnvScrabbleFR"
+    },
+    {
+      "name": "EnvScrabbleFR",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:clés%keyvals}]",
+        "keys": [
+          "\\PlateauScrabble,\\begin{EnvScrabbleFR}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "EnvScrabbleFR",
+      "arg": {
+        "format": "<>",
+        "snippet": "<${1:language}>"
+      }
+    },
+    {
+      "name": "EnvScrabbleFR",
+      "arg": {
+        "format": "<>[]",
+        "snippet": "<${2:language}>[${1:clés%keyvals}]",
+        "keys": [
+          "\\PlateauScrabble,\\begin{EnvScrabbleFR}"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "keys": {
+    "\\ScrabbleBoard,\\begin{EnvScrabble}": [
+      "Scale=${1:factor}",
+      "ScaleLabels=${1:factor}",
+      "Border",
+      "Labels",
+      "Help"
+    ],
+    "\\PlateauScrabble,\\begin{EnvScrabbleFR}": [
+      "Echelle=${1:factor}",
+      "EchelleLabels=${1:factor}",
+      "Cadre",
+      "Labels",
+      "Aide"
+    ],
+    "\\ScrabblePutWord,\\ScrabblePlaceMot": [
+      "H",
+      "V"
+    ]
+  },
+  "args": []
+}

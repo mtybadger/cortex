@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tracefnt#c": [
+      "errorshow",
+      "warningshow",
+      "infoshow",
+      "loading",
+      "debugshow",
+      "pausing"
+    ]
+  },
+  "args": [
+    "\\usepackage/tracefnt#c"
+  ]
+}

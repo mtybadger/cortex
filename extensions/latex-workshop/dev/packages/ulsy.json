@@ -1,0 +1,26 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "odplus"
+    },
+    {
+      "name": "blitza"
+    },
+    {
+      "name": "blitzb"
+    },
+    {
+      "name": "blitzc"
+    },
+    {
+      "name": "blitzd"
+    },
+    {
+      "name": "blitze"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

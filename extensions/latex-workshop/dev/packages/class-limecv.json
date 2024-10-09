@@ -1,0 +1,530 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "parskip"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryfit"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibrarymatrix"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "fontawesome5"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cvSetLanguage",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvSetLanguage{${1:language}}"
+      }
+    },
+    {
+      "name": "cvID",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "cvID{${1:first name}}{${2:last name}}{${3:imagefile}}{${4:job position}}"
+      }
+    },
+    {
+      "name": "cvContactAddress",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvContactAddress{${1:address}}"
+      }
+    },
+    {
+      "name": "cvContactEmail",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactEmail{${1:link%URL}}{${2:email address}}"
+      }
+    },
+    {
+      "name": "cvContactPhone",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvContactPhone{${1:phone number}}"
+      }
+    },
+    {
+      "name": "cvContactWebsite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactWebsite{${1:URL}}{${2:link text}}"
+      }
+    },
+    {
+      "name": "cvContactGithub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactGithub{${1:URL}}{${2:username}}"
+      }
+    },
+    {
+      "name": "cvContactGitlab",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactGitlab{${1:URL}}{${2:username}}"
+      }
+    },
+    {
+      "name": "cvContactLinkedin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactLinkedin{${1:URL}}{${2:username}}"
+      }
+    },
+    {
+      "name": "cvContactTwitter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactTwitter{${1:URL}}{${2:username}}"
+      }
+    },
+    {
+      "name": "cvContactKeybase",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvContactKeybase{${1:URL}}{${2:fingerprint}}"
+      }
+    },
+    {
+      "name": "cvLanguage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvLanguage{${1:language}}{${2:skill level}}"
+      }
+    },
+    {
+      "name": "cvInterestsPersonal"
+    },
+    {
+      "name": "cvInterestsProfessional"
+    },
+    {
+      "name": "cvInterest",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvInterest{${1:icon}}{${2:interest}}"
+      }
+    },
+    {
+      "name": "cvProject",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvProject{${1:name}}{${2:description%text}}"
+      }
+    },
+    {
+      "name": "cvProject",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cvProject[${3:options%keyvals}]{${1:name}}{${2:description%text}}",
+        "keys": [
+          "\\cvProject"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cvItem",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvItem{${1:details%text}}"
+      }
+    },
+    {
+      "name": "cvSkillTwo",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "cvSkillTwo{${1:skill-level1}}{${2:skill1}}{${3:skill-level2}}{${4:skill2}}"
+      }
+    },
+    {
+      "name": "cvSkillOne",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvSkillOne{${1:skill-level}}{${2:skill}}"
+      }
+    },
+    {
+      "name": "cvAddReference",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvAddReference{${1:keyvals}}",
+        "keys": [
+          "\\cvAddReference,\\cvAddReference*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cvAddReference*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvAddReference*{${1:keyvals}}",
+        "keys": [
+          "\\cvAddReference,\\cvAddReference*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cvBeneficiary",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvBeneficiary{${1:keyvals}}",
+        "keys": [
+          "\\cvBeneficiary"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cvFullName"
+    },
+    {
+      "name": "cvColSep",
+      "unusual": true
+    },
+    {
+      "name": "cvNodeSep",
+      "unusual": true
+    },
+    {
+      "name": "cvTimeDotDiameter",
+      "unusual": true
+    },
+    {
+      "name": "cvMargin",
+      "unusual": true
+    },
+    {
+      "name": "cvSideWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvMainWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvTimeDotSep",
+      "unusual": true
+    },
+    {
+      "name": "cvStartEndSep",
+      "unusual": true
+    },
+    {
+      "name": "cvItemSep",
+      "unusual": true
+    },
+    {
+      "name": "cvTableSepWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvCoverLetterHeight",
+      "unusual": true
+    },
+    {
+      "name": "cvCoverLetterWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvPictureWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvProgressAreaWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvProgressAreaHeight",
+      "unusual": true
+    },
+    {
+      "name": "cvSectionSep",
+      "unusual": true
+    },
+    {
+      "name": "cvSectionSBSep",
+      "unusual": true
+    },
+    {
+      "name": "cvTitleLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvTitleLineSpacing",
+      "unusual": true
+    },
+    {
+      "name": "cvProjectDetailsSep",
+      "unusual": true
+    },
+    {
+      "name": "cvInterestDetailsSep",
+      "unusual": true
+    },
+    {
+      "name": "cvContactItemSep",
+      "unusual": true
+    },
+    {
+      "name": "cvCoverLetterLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvCoverLetterPositionSpacing",
+      "unusual": true
+    },
+    {
+      "name": "cvSBSectionLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvCoverLetterLineSpacing",
+      "unusual": true
+    },
+    {
+      "name": "cvIDNameSep",
+      "unusual": true
+    },
+    {
+      "name": "cvPositionSep",
+      "unusual": true
+    },
+    {
+      "name": "cvSkillSep",
+      "unusual": true
+    },
+    {
+      "name": "cvHeaderIconWidth",
+      "unusual": true
+    },
+    {
+      "name": "cvComma",
+      "unusual": true
+    },
+    {
+      "name": "ifnodedefined",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifnodedefined{${1:node name}}{${2:true code}}{${3:false code}}"
+      }
+    },
+    {
+      "name": "globalcolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "globalcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "faVcard",
+      "unusual": true
+    },
+    {
+      "name": "kright",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "kright{${1:arg}}"
+      }
+    },
+    {
+      "name": "kleft",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "kleft{${1:arg}}"
+      }
+    },
+    {
+      "name": "extract",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "extract{${1:n}}{${2:string}}"
+      }
+    },
+    {
+      "name": "cvList",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "cvList{${1:envname}}{${2:name}}{${3:icon}}"
+      }
+    },
+    {
+      "name": "cvContactTemplate",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cvContactTemplate[${3:opt}]{${1:arg1}}{${2:arg2}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "cvSidebar"
+    },
+    {
+      "name": "cvSidebar*"
+    },
+    {
+      "name": "cvProfile"
+    },
+    {
+      "name": "cvContact"
+    },
+    {
+      "name": "cvLanguages"
+    },
+    {
+      "name": "cvInterests"
+    },
+    {
+      "name": "cvProjects"
+    },
+    {
+      "name": "cvMainContent"
+    },
+    {
+      "name": "cvMainContent*",
+      "unusual": true
+    },
+    {
+      "name": "cvEducation"
+    },
+    {
+      "name": "cvExperience"
+    },
+    {
+      "name": "cvSkills"
+    },
+    {
+      "name": "cvReferences"
+    },
+    {
+      "name": "cvCoverLetter"
+    }
+  ],
+  "keys": {
+    "\\documentclass/limecv#c": [
+      "print",
+      "path=${1:file path}",
+      "sansfont=${1:font name}",
+      "monofont=${1:font name}"
+    ],
+    "\\cvSetLanguage#c": [
+      "chinese",
+      "dutch",
+      "english",
+      "french",
+      "german",
+      "italian",
+      "spanish"
+    ],
+    "\\cvProject": [
+      "image=${1:imagefile}",
+      "link=${1:URL}",
+      "width=",
+      "height="
+    ],
+    "\\cvAddReference,\\cvAddReference*": [
+      "name=",
+      "company=",
+      "position=",
+      "address line 1=",
+      "address line 2=",
+      "address line 3=",
+      "mobile phone=",
+      "work phone=",
+      "email="
+    ],
+    "\\cvBeneficiary": [
+      "name=",
+      "position=",
+      "company=",
+      "address line 1=",
+      "address line 2=",
+      "address line 3="
+    ],
+    "\\tikzset#c": [
+      "interesticon/.style={${1:TikZ styles}}",
+      "interesttext/.style={${1:TikZ styles}}",
+      "eventdottext/.style={${1:TikZ styles}}",
+      "invisibletimedot/.style={${1:TikZ styles}}",
+      "timedot/.style={${1:TikZ styles}}",
+      "eventdot/.style={${1:TikZ styles}}",
+      "contactIcon/.style={${1:TikZ styles}}",
+      "contactText/.style={${1:TikZ styles}}",
+      "headerIcon/.style={${1:TikZ styles}}",
+      "skillLevel/.style={${1:TikZ styles}}",
+      "languageText/.style={${1:TikZ styles}}",
+      "skillText/.style={${1:TikZ styles}}",
+      "progressArea/.style={${1:TikZ styles}}",
+      "progressBar/.style={${1:TikZ styles}}",
+      "sectionTitle/.style={${1:TikZ styles}}",
+      "sectionEduText/.style={${1:TikZ styles}}"
+    ]
+  },
+  "args": [
+    "\\documentclass/limecv#c"
+  ]
+}

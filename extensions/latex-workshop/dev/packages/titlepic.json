@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "titlepic",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlepic{${1:graphics code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/titlepic#c": [
+      "tt",
+      "tc",
+      "cc"
+    ]
+  },
+  "args": [
+    "\\usepackage/titlepic#c"
+  ]
+}

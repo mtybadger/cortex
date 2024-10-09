@@ -1,0 +1,14 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "weva"
+    },
+    {
+      "name": "euros"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

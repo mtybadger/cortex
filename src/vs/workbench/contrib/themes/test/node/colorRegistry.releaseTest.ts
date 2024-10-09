@@ -4,21 +4,22 @@
  *--------------------------------------------------------------------------------------------*/
 
 import * as fs from 'fs';
-import { Registry } from '../../../../../platform/registry/common/platform.js';
-import { IColorRegistry, Extensions, ColorContribution, asCssVariableName } from '../../../../../platform/theme/common/colorRegistry.js';
-import { asTextOrError } from '../../../../../platform/request/common/request.js';
-import * as pfs from '../../../../../base/node/pfs.js';
-import * as path from '../../../../../base/common/path.js';
+import { Registry } from 'vs/platform/registry/common/platform';
+import { IColorRegistry, Extensions, ColorContribution, asCssVariableName } from 'vs/platform/theme/common/colorRegistry';
+import { asTextOrError } from 'vs/platform/request/common/request';
+import * as pfs from 'vs/base/node/pfs';
+import * as path from 'vs/base/common/path';
 import assert from 'assert';
-import { CancellationToken } from '../../../../../base/common/cancellation.js';
-import { RequestService } from '../../../../../platform/request/node/requestService.js';
-import { TestConfigurationService } from '../../../../../platform/configuration/test/common/testConfigurationService.js';
+import { CancellationToken } from 'vs/base/common/cancellation';
+import { RequestService } from 'vs/platform/request/node/requestService';
+import { TestConfigurationService } from 'vs/platform/configuration/test/common/testConfigurationService';
 // eslint-disable-next-line local/code-import-patterns
-import '../../../../workbench.desktop.main.js';
-import { NullLogService } from '../../../../../platform/log/common/log.js';
-import { mock } from '../../../../../base/test/common/mock.js';
-import { INativeEnvironmentService } from '../../../../../platform/environment/common/environment.js';
-import { FileAccess } from '../../../../../base/common/network.js';
+import 'vs/workbench/workbench.desktop.main';
+import { NullLogService } from 'vs/platform/log/common/log';
+import { mock } from 'vs/base/test/common/mock';
+import { INativeEnvironmentService } from 'vs/platform/environment/common/environment';
+import { FileAccess } from 'vs/base/common/network';
+import { TestLoggerService } from 'vs/workbench/test/common/workbenchTestServices';
 
 interface ColorInfo {
 	description: string;
@@ -91,7 +92,7 @@ suite('Color Registry', function () {
 
 		const docUrl = 'https://raw.githubusercontent.com/microsoft/vscode-docs/main/api/references/theme-color.md';
 
-		const reqContext = await new RequestService(new TestConfigurationService(), environmentService, new NullLogService()).request({ url: docUrl }, CancellationToken.None);
+		const reqContext = await new RequestService(new TestConfigurationService(), environmentService, new NullLogService(), new TestLoggerService()).request({ url: docUrl }, CancellationToken.None);
 		const content = (await asTextOrError(reqContext))!;
 
 		const expression = /-\s*\`([\w\.]+)\`: (.*)/g;

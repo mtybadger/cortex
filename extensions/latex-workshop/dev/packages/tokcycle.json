@@ -1,0 +1,383 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tokcycle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "tokcycle{${1:character code}}{${2:group-content code}}{${3:macro code}}{${4:space code}}{${5:token input}}"
+      }
+    },
+    {
+      "name": "expandedtokcycle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "expandedtokcycle{${1:character code}}{${2:group-content code}}{${3:macro code}}{${4:space code}}{${5:token input}}"
+      }
+    },
+    {
+      "name": "tokencycle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "tokencycle{${1:character code}}{${2:group-content code}}{${3:macro code}}{${4:space code}}"
+      }
+    },
+    {
+      "name": "endtokencycle",
+      "unusual": true
+    },
+    {
+      "name": "tokcyclexpress",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tokcyclexpress{${1:token input}}"
+      }
+    },
+    {
+      "name": "expandedtokcyclexpress",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "expandedtokcyclexpress{${1:token input}}"
+      }
+    },
+    {
+      "name": "tokencyclexpress",
+      "unusual": true
+    },
+    {
+      "name": "endtokencyclexpress",
+      "unusual": true
+    },
+    {
+      "name": "tokcycleenvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "tokcycleenvironment{${1:command}}{${2:character code}}{${3:group-content code}}{${4:macro code}}{${5:space code}}"
+      }
+    },
+    {
+      "name": "xtokcycleenvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "xtokcycleenvironment{${1:command}}{${2:character code}}{${3:group-content code}}{${4:macro code}}{${5:space code}}{${6:begin code}}{${7:end code}}"
+      }
+    },
+    {
+      "name": "tcafterenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tcafterenv{${1:code}}"
+      }
+    },
+    {
+      "name": "Characterdirective",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Characterdirective{${1:code}}"
+      }
+    },
+    {
+      "name": "Groupdirective",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Groupdirective{${1:code}}"
+      }
+    },
+    {
+      "name": "Macrodirective",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Macrodirective{${1:code}}"
+      }
+    },
+    {
+      "name": "Spacedirective",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Spacedirective{${1:code}}"
+      }
+    },
+    {
+      "name": "resetCharacterdirective",
+      "unusual": true
+    },
+    {
+      "name": "resetGroupdirective",
+      "unusual": true
+    },
+    {
+      "name": "resetMacrodirective",
+      "unusual": true
+    },
+    {
+      "name": "resetSpacedirective",
+      "unusual": true
+    },
+    {
+      "name": "resettokcycle",
+      "unusual": true
+    },
+    {
+      "name": "cytoks",
+      "unusual": true
+    },
+    {
+      "name": "addcytoks",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addcytoks{${1:tokens}}"
+      }
+    },
+    {
+      "name": "addcytoks",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addcytoks[${2:<integer> or x}]{${1:tokens}}"
+      }
+    },
+    {
+      "name": "ifstripgrouping",
+      "unusual": true
+    },
+    {
+      "name": "stripgroupingtrue",
+      "unusual": true
+    },
+    {
+      "name": "stripgroupingfalse",
+      "unusual": true
+    },
+    {
+      "name": "processtoks",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "processtoks{${1:tokens}}"
+      }
+    },
+    {
+      "name": "groupedcytoks",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "groupedcytoks{${1:code}}"
+      }
+    },
+    {
+      "name": "stripimplicitgroupingcase",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "stripimplicitgroupingcase{0, 1, or -1}"
+      }
+    },
+    {
+      "name": "tcpopuntil"
+    },
+    {
+      "name": "ifspacepopped",
+      "unusual": true
+    },
+    {
+      "name": "spacepoppedtrue",
+      "unusual": true
+    },
+    {
+      "name": "spacepoppedfalse",
+      "unusual": true
+    },
+    {
+      "name": "tcpush",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tcpush{${1:code}}"
+      }
+    },
+    {
+      "name": "tcpush",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tcpush[${2:<integer> or x}]{${1:code}}"
+      }
+    },
+    {
+      "name": "tcpushgroup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tcpushgroup{${1:code}}"
+      }
+    },
+    {
+      "name": "tcpushgroup",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tcpushgroup[${2:<integer> or x}]{${1:code}}"
+      }
+    },
+    {
+      "name": "truncategroup",
+      "unusual": true
+    },
+    {
+      "name": "truncategroupiftokis",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "truncategroupiftokis{${1:token}}{${2:false code}}"
+      }
+    },
+    {
+      "name": "truncatecycle",
+      "unusual": true
+    },
+    {
+      "name": "truncatecycleiftokis",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "truncatecycleiftokis{${1:token}}{${2:false code}}"
+      }
+    },
+    {
+      "name": "settcEscapechar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "settcEscapechar{${1:escape token}}"
+      }
+    },
+    {
+      "name": "ifactivetok",
+      "unusual": true
+    },
+    {
+      "name": "activetoktrue",
+      "unusual": true
+    },
+    {
+      "name": "activetokfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifactivetokunexpandable",
+      "unusual": true
+    },
+    {
+      "name": "activetokunexpandabletrue",
+      "unusual": true
+    },
+    {
+      "name": "activetokunexpandablefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifactivechar",
+      "unusual": true
+    },
+    {
+      "name": "activechartrue",
+      "unusual": true
+    },
+    {
+      "name": "activecharfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifimplicittok",
+      "unusual": true
+    },
+    {
+      "name": "implicittoktrue",
+      "unusual": true
+    },
+    {
+      "name": "implicittokfalse",
+      "unusual": true
+    },
+    {
+      "name": "tcsptoken",
+      "unusual": true
+    },
+    {
+      "name": "theactivespace",
+      "unusual": true
+    },
+    {
+      "name": "ifcatSIX",
+      "unusual": true
+    },
+    {
+      "name": "catSIXtrue",
+      "unusual": true
+    },
+    {
+      "name": "catSIXfalse",
+      "unusual": true
+    },
+    {
+      "name": "implicitsixtok",
+      "unusual": true
+    },
+    {
+      "name": "tctestifcon",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tctestifcon{${1:TeX if condition}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "tctestifx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tctestifx{${1:\\ifx comparison tokens}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "tctestifnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tctestifnum{${1:\\ifnum condition}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "aftertokcycle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "aftertokcycle{${1:actions}}"
+      }
+    },
+    {
+      "name": "tcendgroup",
+      "unusual": true
+    },
+    {
+      "name": "settcGrouping",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

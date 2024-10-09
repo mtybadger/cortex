@@ -1,0 +1,829 @@
+{
+  "deps": [
+    {
+      "name": "crop"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "flushend"
+    },
+    {
+      "name": "stfloats"
+    },
+    {
+      "name": "rotating"
+    },
+    {
+      "name": "chngpage"
+    },
+    {
+      "name": "totcount"
+    },
+    {
+      "name": "fix-cm"
+    },
+    {
+      "name": "natbib"
+    },
+    {
+      "name": "wrapfig"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "subfloat"
+    },
+    {
+      "name": "anyfontsize"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "footnote"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "mathrsfs"
+    },
+    {
+      "name": "algorithm"
+    },
+    {
+      "name": "algorithmicx"
+    },
+    {
+      "name": "algpseudocode"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarysvg.path"
+    }
+  ],
+  "macros": [
+    {
+      "name": "abstract",
+      "arg": {
+        "format": "{}",
+        "snippet": "abstract{${1:text}}"
+      }
+    },
+    {
+      "name": "accepted",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "accepted{${1:date}}{${2:number}}{${3:year}}"
+      }
+    },
+    {
+      "name": "access",
+      "arg": {
+        "format": "{}",
+        "snippet": "access{${1:access text%text}}"
+      }
+    },
+    {
+      "name": "addappheadtotoc"
+    },
+    {
+      "name": "address",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "address[${2:sequence}]{${1:address}}"
+      }
+    },
+    {
+      "name": "address",
+      "arg": {
+        "format": "{}",
+        "snippet": "address{${1:address}}"
+      }
+    },
+    {
+      "name": "appendicestocpagenum"
+    },
+    {
+      "name": "appendixheaderoff"
+    },
+    {
+      "name": "appendixheaderon"
+    },
+    {
+      "name": "appendixpage"
+    },
+    {
+      "name": "appendixpagename"
+    },
+    {
+      "name": "appendixpageoff"
+    },
+    {
+      "name": "appendixpageon"
+    },
+    {
+      "name": "appendixtitleoff"
+    },
+    {
+      "name": "appendixtitleon"
+    },
+    {
+      "name": "appendixtitletocoff"
+    },
+    {
+      "name": "appendixtitletocon"
+    },
+    {
+      "name": "appendixtocname"
+    },
+    {
+      "name": "appendixtocoff"
+    },
+    {
+      "name": "appendixtocon"
+    },
+    {
+      "name": "appnotes",
+      "arg": {
+        "format": "{}",
+        "snippet": "appnotes{${1:text}}"
+      }
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:address num,$\\ast$}]{${1:name}}"
+      }
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:address num}]{${1:name}}"
+      }
+    },
+    {
+      "name": "authormark",
+      "arg": {
+        "format": "{}",
+        "snippet": "authormark{${1:code}}"
+      }
+    },
+    {
+      "name": "botrule"
+    },
+    {
+      "name": "boxedtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "boxedtext{${1:text}}"
+      }
+    },
+    {
+      "name": "city",
+      "arg": {
+        "format": "{}",
+        "snippet": "city{${1:city}}"
+      }
+    },
+    {
+      "name": "copyrightyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrightyear{${1:year}}"
+      }
+    },
+    {
+      "name": "corresp",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "corresp[$\\ast$]{${1:author info}}"
+      }
+    },
+    {
+      "name": "corresp",
+      "arg": {
+        "format": "{}",
+        "snippet": "corresp{${1:author info}}"
+      }
+    },
+    {
+      "name": "country",
+      "arg": {
+        "format": "{}",
+        "snippet": "country{${1:country}}"
+      }
+    },
+    {
+      "name": "DOI",
+      "arg": {
+        "format": "{}",
+        "snippet": "DOI{${1:DOI}}"
+      }
+    },
+    {
+      "name": "editor",
+      "arg": {
+        "format": "{}",
+        "snippet": "editor{${1:name}}"
+      }
+    },
+    {
+      "name": "firstpage",
+      "arg": {
+        "format": "{}",
+        "snippet": "firstpage{${1:number}}"
+      }
+    },
+    {
+      "name": "journaltitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "journaltitle{${1:title%text}}"
+      }
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:keyword1,keyword2,...}}"
+      }
+    },
+    {
+      "name": "midrule"
+    },
+    {
+      "name": "noappendicestocpagenum"
+    },
+    {
+      "name": "ORCID",
+      "arg": {
+        "format": "{}",
+        "snippet": "ORCID{${1:ORCID}}"
+      }
+    },
+    {
+      "name": "orgaddress",
+      "arg": {
+        "format": "{}",
+        "snippet": "orgaddress{${1:address}}"
+      }
+    },
+    {
+      "name": "orgdiv",
+      "arg": {
+        "format": "{}",
+        "snippet": "orgdiv{${1:text}}"
+      }
+    },
+    {
+      "name": "orgname",
+      "arg": {
+        "format": "{}",
+        "snippet": "orgname{${1:name}}"
+      }
+    },
+    {
+      "name": "postcode",
+      "arg": {
+        "format": "{}",
+        "snippet": "postcode{${1:postcode}}"
+      }
+    },
+    {
+      "name": "pubyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "pubyear{${1:year}}"
+      }
+    },
+    {
+      "name": "received",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "received{${1:date}}{${2:number}}{${3:year}}"
+      }
+    },
+    {
+      "name": "restoreapp"
+    },
+    {
+      "name": "revised",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "revised{${1:date}}{${2:number}}{${3:year}}"
+      }
+    },
+    {
+      "name": "setthesection"
+    },
+    {
+      "name": "setthesubsection"
+    },
+    {
+      "name": "state",
+      "arg": {
+        "format": "{}",
+        "snippet": "state{${1:state}}"
+      }
+    },
+    {
+      "name": "street",
+      "arg": {
+        "format": "{}",
+        "snippet": "street{${1:street}}"
+      }
+    },
+    {
+      "name": "subtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "title",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "title[${2:short title%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "titlemark",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlemark{${1:code}}"
+      }
+    },
+    {
+      "name": "toprule"
+    },
+    {
+      "name": "aboveskipchk",
+      "unusual": true
+    },
+    {
+      "name": "absection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "absection{${1:text}}"
+      }
+    },
+    {
+      "name": "addressandsep",
+      "unusual": true
+    },
+    {
+      "name": "addresscommasep",
+      "unusual": true
+    },
+    {
+      "name": "application",
+      "unusual": true
+    },
+    {
+      "name": "authbiotextfont",
+      "unusual": true
+    },
+    {
+      "name": "authorandsep",
+      "unusual": true
+    },
+    {
+      "name": "authorcommasep",
+      "unusual": true
+    },
+    {
+      "name": "backmatter",
+      "unusual": true
+    },
+    {
+      "name": "classname",
+      "unusual": true
+    },
+    {
+      "name": "clearemptydoublepage",
+      "unusual": true
+    },
+    {
+      "name": "croppaperheight",
+      "unusual": true
+    },
+    {
+      "name": "croppaperwidth",
+      "unusual": true
+    },
+    {
+      "name": "Croppdfheight",
+      "unusual": true
+    },
+    {
+      "name": "Croppdfwidth",
+      "unusual": true
+    },
+    {
+      "name": "dbond",
+      "unusual": true
+    },
+    {
+      "name": "defcase",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defcase{${1:number}}{${2:case}}"
+      }
+    },
+    {
+      "name": "dropfromtop",
+      "unusual": true
+    },
+    {
+      "name": "enumargs",
+      "unusual": true
+    },
+    {
+      "name": "evensideskip",
+      "unusual": true
+    },
+    {
+      "name": "extraspace",
+      "unusual": true
+    },
+    {
+      "name": "frontmatter",
+      "unusual": true
+    },
+    {
+      "name": "history",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "history{${1:text}}"
+      }
+    },
+    {
+      "name": "historycommasep",
+      "unusual": true
+    },
+    {
+      "name": "iflastpagegiven",
+      "unusual": true
+    },
+    {
+      "name": "IsBleedSet",
+      "unusual": true
+    },
+    {
+      "name": "IsCropSet",
+      "unusual": true
+    },
+    {
+      "name": "issue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "issue{${1:issue}}"
+      }
+    },
+    {
+      "name": "IsTrimSet",
+      "unusual": true
+    },
+    {
+      "name": "itemargs",
+      "unusual": true
+    },
+    {
+      "name": "keywordsname",
+      "unusual": true
+    },
+    {
+      "name": "lastmodifieddate",
+      "unusual": true
+    },
+    {
+      "name": "lastpagegivenfalse",
+      "unusual": true
+    },
+    {
+      "name": "lastpagegiventrue",
+      "unusual": true
+    },
+    {
+      "name": "mainmatter",
+      "unusual": true
+    },
+    {
+      "name": "medline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "medline{${1:text}}"
+      }
+    },
+    {
+      "name": "myswitch",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "myswitch{${1:number}}"
+      }
+    },
+    {
+      "name": "oddsideskip",
+      "unusual": true
+    },
+    {
+      "name": "opensquare",
+      "unusual": true
+    },
+    {
+      "name": "rotatecenter",
+      "unusual": true
+    },
+    {
+      "name": "rotateendcenter",
+      "unusual": true
+    },
+    {
+      "name": "rotdimen",
+      "unusual": true
+    },
+    {
+      "name": "rotfinish",
+      "unusual": true
+    },
+    {
+      "name": "rotl",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rotl{${1:dimen%l}}"
+      }
+    },
+    {
+      "name": "rotr",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rotr{${1:dimen%l}}"
+      }
+    },
+    {
+      "name": "rotstart",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rotstart{${1:arg1}}"
+      }
+    },
+    {
+      "name": "sbond",
+      "unusual": true
+    },
+    {
+      "name": "secsize",
+      "unusual": true
+    },
+    {
+      "name": "SetBleed",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetBleed{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "SetCrop",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetCrop{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "setlastpage",
+      "unusual": true
+    },
+    {
+      "name": "SetTrim",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetTrim{${1:width}}{${2:height}}"
+      }
+    },
+    {
+      "name": "sffamilyfont",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontbold",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontbolditalic",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontcn",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontcnbold",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontcnbolditalic",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontcnitalic",
+      "unusual": true
+    },
+    {
+      "name": "sffamilyfontitalic",
+      "unusual": true
+    },
+    {
+      "name": "subsecsize",
+      "unusual": true
+    },
+    {
+      "name": "subsubsecsize",
+      "unusual": true
+    },
+    {
+      "name": "tablesize",
+      "unusual": true
+    },
+    {
+      "name": "tbond",
+      "unusual": true
+    },
+    {
+      "name": "tempdime",
+      "unusual": true
+    },
+    {
+      "name": "temptbox",
+      "unusual": true
+    },
+    {
+      "name": "textcolon",
+      "unusual": true
+    },
+    {
+      "name": "thefirstpage",
+      "unusual": true
+    },
+    {
+      "name": "thelastpage",
+      "unusual": true
+    },
+    {
+      "name": "themyaddcount",
+      "unusual": true
+    },
+    {
+      "name": "themyauthcount",
+      "unusual": true
+    },
+    {
+      "name": "themyhistorycount",
+      "unusual": true
+    },
+    {
+      "name": "thepagerange",
+      "unusual": true
+    },
+    {
+      "name": "titlepagewd",
+      "unusual": true
+    },
+    {
+      "name": "Trimpdfheight",
+      "unusual": true
+    },
+    {
+      "name": "Trimpdfwidth",
+      "unusual": true
+    },
+    {
+      "name": "versionnumber",
+      "unusual": true
+    },
+    {
+      "name": "vol",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "vol{${1:volume}}"
+      }
+    },
+    {
+      "name": "wraplines",
+      "unusual": true
+    },
+    {
+      "name": "writelastpage",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "appendices"
+    },
+    {
+      "name": "subappendices"
+    },
+    {
+      "name": "tablenotes"
+    },
+    {
+      "name": "unlist"
+    },
+    {
+      "name": "methods",
+      "unusual": true
+    },
+    {
+      "name": "processtable",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/oup-authoring-template#c": [
+      "namedate",
+      "draft",
+      "b4paper",
+      "centre",
+      "crop",
+      "nocrop",
+      "info",
+      "noinfo",
+      "final",
+      "unnumsec",
+      "webpdf",
+      "modern",
+      "traditional",
+      "contemporary",
+      "large",
+      "medium",
+      "small",
+      "toc",
+      "title",
+      "titletoc",
+      "header",
+      "page"
+    ],
+    "\\theoremstyle#c": [
+      "thmstyleone",
+      "thmstyletwo",
+      "thmstylethree",
+      "thmstylefour"
+    ]
+  },
+  "args": [
+    "\\documentclass/oup-authoring-template#c"
+  ]
+}

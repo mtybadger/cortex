@@ -1,0 +1,900 @@
+{
+  "deps": [
+    {
+      "name": "chemstr"
+    },
+    {
+      "name": "carom"
+    },
+    {
+      "name": "ccycle"
+    }
+  ],
+  "macros": [
+    {
+      "name": "androstane",
+      "arg": {
+        "format": "{}",
+        "snippet": "androstane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "androstane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "androstane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "androstanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "androstanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "androstanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "androstanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "androstanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "androstanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "androstanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "androstanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestane",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "campestanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "campestanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "campestanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholane",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestane",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "cholestanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cholestanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cholestanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostane",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "ergostanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "ergostanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ergostanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estrane",
+      "arg": {
+        "format": "{}",
+        "snippet": "estrane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estrane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "estrane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estranealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "estranealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estranealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "estranealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estranebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "estranebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "estranebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "estranebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostan",
+      "arg": {
+        "format": "{}",
+        "snippet": "furostan{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostan",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "furostan[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostanalpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "furostanalpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostanalpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "furostanalpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostanbeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "furostanbeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furostanbeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "furostanbeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonane",
+      "arg": {
+        "format": "{}",
+        "snippet": "gonane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gonane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "gonanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gonanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "gonanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "gonanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gonanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastane",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "poriferastanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "poriferastanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "poriferastanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnane",
+      "arg": {
+        "format": "{}",
+        "snippet": "pregnane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pregnane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "pregnanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pregnanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "pregnanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pregnanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pregnanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyranoseChairi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyranoseChairi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyranoseChairi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyranoseChairi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyranoseChairii",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyranoseChairii{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyranoseChairii",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyranoseChairii[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostan",
+      "arg": {
+        "format": "{}",
+        "snippet": "spirostan{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostan",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spirostan[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostanalpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "spirostanalpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostanalpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spirostanalpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostanbeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "spirostanbeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostanbeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spirostanbeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostannor",
+      "arg": {
+        "format": "{}",
+        "snippet": "spirostannor{${1:subslist}}"
+      }
+    },
+    {
+      "name": "spirostannor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "spirostannor[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidChain",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidChain{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidChain",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidChain[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidShortChain",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidShortChain{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidShortChain",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidShortChain[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidethylchain",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidethylchain{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidethylchain",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidethylchain[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidfuros",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidfuros{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidfuros",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidfuros[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidshortchain",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidshortchain{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidshortchain",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidshortchain[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidspiro",
+      "arg": {
+        "format": "{}",
+        "snippet": "steroidspiro{${1:subslist}}"
+      }
+    },
+    {
+      "name": "steroidspiro",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "steroidspiro[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanE",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastanE{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanE",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastanE[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastane",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastaneAlpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastaneAlpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastaneAlpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastaneAlpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastaneBeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastaneBeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastaneBeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastaneBeta[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanealpha",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastanealpha{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanealpha",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastanealpha[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanebeta",
+      "arg": {
+        "format": "{}",
+        "snippet": "stigmastanebeta{${1:subslist}}"
+      }
+    },
+    {
+      "name": "stigmastanebeta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "stigmastanebeta[${2:bondlist}]{${1:subslist}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,27 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cprotectinside",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cprotectinside{${1:delimiter}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "cprotectinsideAppend",
+      "unusual": true
+    },
+    {
+      "name": "cprotectinsideReexec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cprotectinsideReexec{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

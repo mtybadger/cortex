@@ -32,8 +32,8 @@ const embeddedSvgsNotValid = l10n.t("Embedded SVGs are not a valid image source.
 const dataUrlsNotValid = l10n.t("Data URLs are not a valid image source.");
 const relativeUrlRequiresHttpsRepository = l10n.t("Relative image URLs require a repository with HTTPS protocol to be specified in the package.json.");
 const relativeBadgeUrlRequiresHttpsRepository = l10n.t("Relative badge URLs require a repository with HTTPS protocol to be specified in this package.json.");
-const apiProposalNotListed = l10n.t("This proposal cannot be used because for this extension the product defines a fixed set of API proposals. You can test your extension but before publishing you MUST reach out to the VS Code team.");
-const bumpEngineForImplicitActivationEvents = l10n.t("This activation event can be removed for extensions targeting engine version ^1.75 as VS Code will generate these automatically from your package.json contribution declarations.");
+const apiProposalNotListed = l10n.t("This proposal cannot be used because for this extension the product defines a fixed set of API proposals. You can test your extension but before publishing you MUST reach out to the Cortex team.");
+const bumpEngineForImplicitActivationEvents = l10n.t("This activation event can be removed for extensions targeting engine version ^1.75 as Cortex will generate these automatically from your package.json contribution declarations.");
 const starActivation = l10n.t("Using '*' activation is usually a bad idea as it impacts performance.");
 const parsingErrorHeader = l10n.t("Error parsing the when-clause:");
 
@@ -290,7 +290,7 @@ export class ExtensionLinter {
 
 			const text = document.getText();
 			if (!this.markdownIt) {
-				this.markdownIt = new ((await import('markdown-it')).default);
+				this.markdownIt = new (await import('markdown-it'));
 			}
 			const tokens = this.markdownIt.parse(text, {});
 			const tokensAndPositions: TokenAndPosition[] = (function toTokensAndPositions(this: ExtensionLinter, tokens: MarkdownItType.Token[], begin = 0, end = text.length): TokenAndPosition[] {

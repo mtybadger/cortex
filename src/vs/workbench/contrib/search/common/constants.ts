@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { RawContextKey } from '../../../../platform/contextkey/common/contextkey.js';
+import { RawContextKey } from 'vs/platform/contextkey/common/contextkey';
 
 export const enum SearchCommandIds {
 	FindInFilesActionId = 'workbench.action.findInFiles',
@@ -77,5 +77,6 @@ export const SearchContext = {
 	ViewHasFilePatternKey: new RawContextKey<boolean>('viewHasFilePattern', false),
 	ViewHasSomeCollapsibleKey: new RawContextKey<boolean>('viewHasSomeCollapsibleResult', false),
 	InTreeViewKey: new RawContextKey<boolean>('inTreeView', false),
+	AIResultsVisibleKey: new RawContextKey<boolean>('AIResultsVisibleKey', false),
 	hasAIResultProvider: new RawContextKey<boolean>('hasAIResultProviderKey', false),
 };

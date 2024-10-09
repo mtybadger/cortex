@@ -1,0 +1,255 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "testidxGermanOn",
+      "unusual": true
+    },
+    {
+      "name": "testidxGermanOff",
+      "unusual": true
+    },
+    {
+      "name": "testidxStripAccents",
+      "unusual": true
+    },
+    {
+      "name": "testidxNoStripAccents",
+      "unusual": true
+    },
+    {
+      "name": "testidxSanitizeOn",
+      "unusual": true
+    },
+    {
+      "name": "testidxSanitizeOff",
+      "unusual": true
+    },
+    {
+      "name": "testidxshowmarkstrue",
+      "unusual": true
+    },
+    {
+      "name": "testidxshowmarksfalse",
+      "unusual": true
+    },
+    {
+      "name": "iftestidxverbose",
+      "unusual": true
+    },
+    {
+      "name": "testidxverbosetrue",
+      "unusual": true
+    },
+    {
+      "name": "testidxverbosefalse",
+      "unusual": true
+    },
+    {
+      "name": "iftestidxdiglyphs",
+      "unusual": true
+    },
+    {
+      "name": "testidxdiglyphstrue",
+      "unusual": true
+    },
+    {
+      "name": "testidxdiglyphsfalse",
+      "unusual": true
+    },
+    {
+      "name": "iftestidxprefix",
+      "unusual": true
+    },
+    {
+      "name": "testidxprefixtrue",
+      "unusual": true
+    },
+    {
+      "name": "testidxprefixfalse",
+      "unusual": true
+    },
+    {
+      "name": "testidx"
+    },
+    {
+      "name": "testidx",
+      "arg": {
+        "format": "[]",
+        "snippet": "testidx[${1:blocks}]"
+      }
+    },
+    {
+      "name": "tstidxmaxblocks"
+    },
+    {
+      "name": "tstidxprefixblock",
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxprefixblock{${1:n}}"
+      }
+    },
+    {
+      "name": "tstindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "tstindex{${1:text}}"
+      }
+    },
+    {
+      "name": "tstidxmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxopenmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxclosemarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxsubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxopensubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxclosesubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxsubsubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxopensubsubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxclosesubsubmarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxseemarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxsubseemarker",
+      "unusual": true
+    },
+    {
+      "name": "tstidxsubseesep",
+      "unusual": true
+    },
+    {
+      "name": "tstidxencapi",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxencapi{${1:location}}"
+      }
+    },
+    {
+      "name": "tstidxencapii",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxencapii{${1:location}}"
+      }
+    },
+    {
+      "name": "tstidxencapiii",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxencapiii{${1:location}}"
+      }
+    },
+    {
+      "name": "tstidxSetSeeEncap",
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxSetSeeEncap{${1:encap name}}"
+      }
+    },
+    {
+      "name": "tstidxSetSeeAlsoEncap",
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxSetSeeAlsoEncap{${1:encap name}}"
+      }
+    },
+    {
+      "name": "tstidxtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "tstidxtext{${1:text}}"
+      }
+    },
+    {
+      "name": "tstidxquote",
+      "unusual": true
+    },
+    {
+      "name": "tstidxactual",
+      "unusual": true
+    },
+    {
+      "name": "tstidxlevel",
+      "unusual": true
+    },
+    {
+      "name": "tstidxencap",
+      "unusual": true
+    },
+    {
+      "name": "tstidxopenrange",
+      "unusual": true
+    },
+    {
+      "name": "tstidxcloserange",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/testidx#c": [
+      "ascii",
+      "noascii",
+      "german",
+      "ngerman",
+      "nogerman",
+      "stripaccents",
+      "nostripaccents",
+      "sanitize",
+      "nosanitize",
+      "showmarks",
+      "hidemarks",
+      "noshowmarks",
+      "verbose",
+      "noverbose",
+      "notestencaps",
+      "testencaps",
+      "prefix",
+      "noprefix",
+      "diglyphs",
+      "nodiglyphs"
+    ]
+  },
+  "args": [
+    "\\usepackage/testidx#c"
+  ]
+}

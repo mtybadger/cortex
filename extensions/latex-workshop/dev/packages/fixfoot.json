@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DeclareFixedFootnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareFixedFootnote{${1:cmd}}{${2:text}}"
+      }
+    },
+    {
+      "name": "DeclareFixedFootnote*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareFixedFootnote*{${1:cmd}}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Alif"
+    },
+    {
+      "name": "Ayn"
+    },
+    {
+      "name": "U",
+      "arg": {
+        "format": "{}",
+        "snippet": "U{${1:arg}}"
+      }
+    },
+    {
+      "name": "D",
+      "arg": {
+        "format": "{}",
+        "snippet": "D{${1:arg}}"
+      }
+    },
+    {
+      "name": "T",
+      "arg": {
+        "format": "{}",
+        "snippet": "T{${1:arg}}"
+      }
+    },
+    {
+      "name": "lhook",
+      "unusual": true
+    },
+    {
+      "name": "rhook",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

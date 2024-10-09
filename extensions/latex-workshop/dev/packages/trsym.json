@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "TransformHoriz"
+    },
+    {
+      "name": "InversTransformHoriz"
+    },
+    {
+      "name": "TransformVert"
+    },
+    {
+      "name": "InversTransformVert"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

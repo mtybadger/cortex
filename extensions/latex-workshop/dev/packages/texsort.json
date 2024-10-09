@@ -1,0 +1,112 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sortlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sortlist{${1:list}}"
+      }
+    },
+    {
+      "name": "to",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "to{${1:list name}}"
+      }
+    },
+    {
+      "name": "sep",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sep{${1:char}}"
+      }
+    },
+    {
+      "name": "compresslist",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "compresslist{${1:list}}"
+      }
+    },
+    {
+      "name": "initarray",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "initarray{${1:list}}{${2:array}}"
+      }
+    },
+    {
+      "name": "outarray",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "outarray{${1:array}}{${2:step}}"
+      }
+    },
+    {
+      "name": "setarrayitem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setarrayitem{${1:array}}{${2:index}}{${3:value}}"
+      }
+    },
+    {
+      "name": "getarraylenght",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getarraylenght{${1:array}}"
+      }
+    },
+    {
+      "name": "setarraylenght",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setarraylenght{${1:array}}{${2:value}}"
+      }
+    },
+    {
+      "name": "upheap",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "upheap{${1:array}}{${2:index}}"
+      }
+    },
+    {
+      "name": "insertheapelem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "insertheapelem{${1:array}}{${2:value}}"
+      }
+    },
+    {
+      "name": "downheap",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "downheap{${1:array}}{${2:index}}"
+      }
+    },
+    {
+      "name": "sortlistarray",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sortlistarray{${1:array}}{${2:sorted array}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

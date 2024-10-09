@@ -1,0 +1,66 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "usestyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "usestyle{${1:pygments style}}"
+      }
+    },
+    {
+      "name": "pygment",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pygment{${1:language}}{${2:code%definition}}"
+      }
+    },
+    {
+      "name": "includecode",
+      "arg": {
+        "format": "{}",
+        "snippet": "includecode{${1:file}}"
+      }
+    },
+    {
+      "name": "includecode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includecode[${2:language}]{${1:file}}"
+      }
+    },
+    {
+      "name": "proglang",
+      "unusual": true
+    },
+    {
+      "name": "lexercommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "lexercommand{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pygmented",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:language}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

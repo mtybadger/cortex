@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\includegraphics": [
+      "rviewport=${1:llx lly urx ury}"
+    ]
+  },
+  "args": []
+}

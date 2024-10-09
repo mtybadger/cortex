@@ -1,0 +1,91 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DescribeRoutine",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeRoutine{${1:name}}"
+      }
+    },
+    {
+      "name": "routinestring",
+      "unusual": true
+    },
+    {
+      "name": "routineheadname",
+      "unusual": true
+    },
+    {
+      "name": "DescribeVariable",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeVariable{${1:name}}"
+      }
+    },
+    {
+      "name": "variablestring",
+      "unusual": true
+    },
+    {
+      "name": "variableheadname",
+      "unusual": true
+    },
+    {
+      "name": "Describe",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Describe{${1:head}}{${2:flag}}{${3:name}}"
+      }
+    },
+    {
+      "name": "PrintMfpName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintMfpName{${1:name}}"
+      }
+    },
+    {
+      "name": "SpecialMainMfpIndex",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SpecialMainMfpIndex{${1:name}}{${2:string}}{${3:heading}}"
+      }
+    },
+    {
+      "name": "SpecialMfpIndex",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SpecialMfpIndex{${1:name}}{${2:string}}{${3:heading}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "routine",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro}}"
+      }
+    },
+    {
+      "name": "variable",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:variable}}"
+      }
+    },
+    {
+      "name": "Code",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:head}}{${2:flag}}{${3:name}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

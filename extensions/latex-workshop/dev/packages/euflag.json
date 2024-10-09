@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "euflag"
+    },
+    {
+      "name": "euflag",
+      "arg": {
+        "format": "[]",
+        "snippet": "euflag[${1:baseline%l}]"
+      }
+    },
+    {
+      "name": "eustar",
+      "unusual": true
+    },
+    {
+      "name": "makestars",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/euflag#c": [
+      "baseline"
+    ]
+  },
+  "args": [
+    "\\usepackage/euflag#c"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "deps": [
+    {
+      "name": "environ"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "A"
+    },
+    {
+      "name": "AFFICHER"
+    },
+    {
+      "name": "AFFICHERCALCUL"
+    },
+    {
+      "name": "ALLANTDE"
+    },
+    {
+      "name": "ALORS"
+    },
+    {
+      "name": "DEBUTALGORITHME"
+    },
+    {
+      "name": "DEBUTPOUR"
+    },
+    {
+      "name": "DEBUTSI"
+    },
+    {
+      "name": "DEBUTSINON"
+    },
+    {
+      "name": "DEBUTSINON"
+    },
+    {
+      "name": "DEBUTTANTQUE"
+    },
+    {
+      "name": "ESTDUTYPE"
+    },
+    {
+      "name": "FINALGORITHME"
+    },
+    {
+      "name": "FINPOUR"
+    },
+    {
+      "name": "FINSI"
+    },
+    {
+      "name": "FINSINON"
+    },
+    {
+      "name": "FINTANTQUE"
+    },
+    {
+      "name": "FONCTION"
+    },
+    {
+      "name": "LINE"
+    },
+    {
+      "name": "LIRE"
+    },
+    {
+      "name": "NODE"
+    },
+    {
+      "name": "POUR"
+    },
+    {
+      "name": "PRENDLAVALEUR"
+    },
+    {
+      "name": "SI"
+    },
+    {
+      "name": "SINON"
+    },
+    {
+      "name": "TANTQUE"
+    },
+    {
+      "name": "VARIABLES"
+    },
+    {
+      "name": "smalgobox",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "smalgobox{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "algobox"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

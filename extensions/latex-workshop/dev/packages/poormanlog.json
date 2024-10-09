@@ -1,0 +1,24 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "PMLogZ",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PMLogZ{9-digit-number}"
+      }
+    },
+    {
+      "name": "PMPowTen",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PMPowTen{9-digit-number}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

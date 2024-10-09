@@ -1,0 +1,151 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sustyle"
+    },
+    {
+      "name": "swashQ"
+    },
+    {
+      "name": "textlf",
+      "arg": {
+        "format": "{}",
+        "snippet": "textlf{${1:text}}"
+      }
+    },
+    {
+      "name": "textosf",
+      "arg": {
+        "format": "{}",
+        "snippet": "textosf{${1:text}}"
+      }
+    },
+    {
+      "name": "textosfI",
+      "arg": {
+        "format": "{}",
+        "snippet": "textosfI{${1:text}}"
+      }
+    },
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "useosf",
+      "unusual": true
+    },
+    {
+      "name": "useosfI",
+      "unusual": true
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/garamondx#c": [
+      "babel",
+      "sups",
+      "swashQ",
+      "scaled",
+      "scaled=${1:factor}",
+      "osf",
+      "osfI"
+    ]
+  },
+  "args": [
+    "\\usepackage/garamondx#c"
+  ]
+}

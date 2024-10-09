@@ -3,12 +3,12 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable } from '../../../base/common/lifecycle.js';
-import { localize } from '../../../nls.js';
-import { IEnvironmentService } from '../../environment/common/environment.js';
-import { ILogService, ILogger, ILoggerService, LogLevel } from '../../log/common/log.js';
-import { IProductService } from '../../product/common/productService.js';
-import { ITelemetryAppender, isLoggingOnly, supportsTelemetry, telemetryLogId, validateTelemetryData } from './telemetryUtils.js';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { localize } from 'vs/nls';
+import { IEnvironmentService } from 'vs/platform/environment/common/environment';
+import { ILogService, ILogger, ILoggerService, LogLevel } from 'vs/platform/log/common/log';
+import { IProductService } from 'vs/platform/product/common/productService';
+import { ITelemetryAppender, isLoggingOnly, supportsTelemetry, telemetryLogId, validateTelemetryData } from 'vs/platform/telemetry/common/telemetryUtils';
 
 export class TelemetryLogAppender extends Disposable implements ITelemetryAppender {
 
@@ -38,8 +38,8 @@ export class TelemetryLogAppender extends Disposable implements ITelemetryAppend
 		}
 	}
 
-	flush(): Promise<void> {
-		return Promise.resolve();
+	flush(): Promise<any> {
+		return Promise.resolve(undefined);
 	}
 
 	log(eventName: string, data: any): void {

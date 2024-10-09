@@ -3,10 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { mainWindow } from '../../../../base/browser/window.js';
-import { isRemoteDiagnosticError, SystemInfo } from '../../../../platform/diagnostics/common/diagnostics.js';
-import { OldIssueType } from '../../../../platform/issue/common/issue.js';
-import { ISettingSearchResult, IssueReporterExtensionData, IssueType } from '../common/issue.js';
+import { mainWindow } from 'vs/base/browser/window';
+import { isRemoteDiagnosticError, SystemInfo } from 'vs/platform/diagnostics/common/diagnostics';
+import { OldIssueType } from 'vs/platform/issue/common/issue';
+import { ISettingSearchResult, IssueReporterExtensionData, IssueType } from 'vs/workbench/contrib/issue/common/issue';
 
 export interface IssueReporterData {
 	issueType: IssueType | OldIssueType;
@@ -91,7 +91,7 @@ Type: <b>${this.getIssueTypeTitle()}</b>
 
 ${this._data.issueDescription}
 ${this.getExtensionVersion()}
-VS Code version: ${this._data.versionInfo && this._data.versionInfo.vscodeVersion}
+VSCodium version: ${this._data.versionInfo && this._data.versionInfo.vscodeVersion}
 OS version: ${this._data.versionInfo && this._data.versionInfo.os}
 Modes:${modes.length ? ' ' + modes.join(', ') : ''}
 ${this.getRemoteOSes()}

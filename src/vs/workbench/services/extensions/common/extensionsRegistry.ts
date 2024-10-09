@@ -3,20 +3,20 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
-import { onUnexpectedError } from '../../../../base/common/errors.js';
-import { IJSONSchema } from '../../../../base/common/jsonSchema.js';
-import Severity from '../../../../base/common/severity.js';
-import { EXTENSION_IDENTIFIER_PATTERN } from '../../../../platform/extensionManagement/common/extensionManagement.js';
-import { Extensions, IJSONContributionRegistry } from '../../../../platform/jsonschemas/common/jsonContributionRegistry.js';
-import { Registry } from '../../../../platform/registry/common/platform.js';
-import { IMessage } from './extensions.js';
-import { IExtensionDescription, EXTENSION_CATEGORIES, ExtensionIdentifierSet } from '../../../../platform/extensions/common/extensions.js';
-import { ExtensionKind } from '../../../../platform/environment/common/environment.js';
-import { productSchemaId } from '../../../../platform/product/common/productService.js';
-import { ImplicitActivationEvents, IActivationEventsGenerator } from '../../../../platform/extensionManagement/common/implicitActivationEvents.js';
-import { IDisposable } from '../../../../base/common/lifecycle.js';
-import { allApiProposals } from '../../../../platform/extensions/common/extensionsApiProposals.js';
+import * as nls from 'vs/nls';
+import { onUnexpectedError } from 'vs/base/common/errors';
+import { IJSONSchema } from 'vs/base/common/jsonSchema';
+import Severity from 'vs/base/common/severity';
+import { EXTENSION_IDENTIFIER_PATTERN } from 'vs/platform/extensionManagement/common/extensionManagement';
+import { Extensions, IJSONContributionRegistry } from 'vs/platform/jsonschemas/common/jsonContributionRegistry';
+import { Registry } from 'vs/platform/registry/common/platform';
+import { IMessage } from 'vs/workbench/services/extensions/common/extensions';
+import { IExtensionDescription, EXTENSION_CATEGORIES, ExtensionIdentifierSet } from 'vs/platform/extensions/common/extensions';
+import { ExtensionKind } from 'vs/platform/environment/common/environment';
+import { productSchemaId } from 'vs/platform/product/common/productService';
+import { ImplicitActivationEvents, IActivationEventsGenerator } from 'vs/platform/extensionManagement/common/implicitActivationEvents';
+import { IDisposable } from 'vs/base/common/lifecycle';
+import { allApiProposals } from 'vs/platform/extensions/common/extensionsApiProposals';
 
 const schemaRegistry = Registry.as<IJSONContributionRegistry>(Extensions.JSONContribution);
 
@@ -176,21 +176,21 @@ export const schema: IJSONSchema = {
 			properties: {
 				'vscode': {
 					type: 'string',
-					description: nls.localize('vscode.extension.engines.vscode', 'For VS Code extensions, specifies the VS Code version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum VS Code version of 0.10.5.'),
+					description: nls.localize('vscode.extension.engines.vscode', 'For Cortex extensions, specifies the Cortex version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum Cortex version of 0.10.5.'),
 					default: '^1.22.0',
 				}
 			}
 		},
 		publisher: {
-			description: nls.localize('vscode.extension.publisher', 'The publisher of the VS Code extension.'),
+			description: nls.localize('vscode.extension.publisher', 'The publisher of the Cortex extension.'),
 			type: 'string'
 		},
 		displayName: {
-			description: nls.localize('vscode.extension.displayName', 'The display name for the extension used in the VS Code gallery.'),
+			description: nls.localize('vscode.extension.displayName', 'The display name for the extension used in the Cortex gallery.'),
 			type: 'string'
 		},
 		categories: {
-			description: nls.localize('vscode.extension.categories', 'The categories used by the VS Code gallery to categorize the extension.'),
+			description: nls.localize('vscode.extension.categories', 'The categories used by the Cortex gallery to categorize the extension.'),
 			type: 'array',
 			uniqueItems: true,
 			items: {
@@ -207,10 +207,10 @@ export const schema: IJSONSchema = {
 		},
 		galleryBanner: {
 			type: 'object',
-			description: nls.localize('vscode.extension.galleryBanner', 'Banner used in the VS Code marketplace.'),
+			description: nls.localize('vscode.extension.galleryBanner', 'Banner used in the Cortex marketplace.'),
 			properties: {
 				color: {
-					description: nls.localize('vscode.extension.galleryBanner.color', 'The banner color on the VS Code marketplace page header.'),
+					description: nls.localize('vscode.extension.galleryBanner.color', 'The banner color on the Cortex marketplace page header.'),
 					type: 'string'
 				},
 				theme: {
@@ -221,11 +221,11 @@ export const schema: IJSONSchema = {
 			}
 		},
 		contributes: {
-			description: nls.localize('vscode.extension.contributes', 'All contributions of the VS Code extension represented by this package.'),
+			description: nls.localize('vscode.extension.contributes', 'All contributions of the Cortex extension represented by this package.'),
 			type: 'object',
 			properties: {
 				// extensions will fill in
-			} as any as { [key: string]: any },
+			} as { [key: string]: any },
 			default: {}
 		},
 		preview: {
@@ -255,7 +255,7 @@ export const schema: IJSONSchema = {
 			]
 		},
 		activationEvents: {
-			description: nls.localize('vscode.extension.activationEvents', 'Activation events for the VS Code extension.'),
+			description: nls.localize('vscode.extension.activationEvents', 'Activation events for the Cortex extension.'),
 			type: 'array',
 			items: {
 				type: 'string',
@@ -392,12 +392,12 @@ export const schema: IJSONSchema = {
 					},
 					{
 						label: 'onLanguageModelTool',
-						body: 'onLanguageModelTool:${1:toolId}',
+						body: 'onLanguageModelTool:${1:toolName}',
 						description: nls.localize('vscode.extension.activationEvents.onLanguageModelTool', 'An activation event emitted when the specified language model tool is invoked.'),
 					},
 					{
 						label: '*',
-						description: nls.localize('vscode.extension.activationEvents.star', 'An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.'),
+						description: nls.localize('vscode.extension.activationEvents.star', 'An activation event emitted on Cortex startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.'),
 						body: '*'
 					}
 				],
@@ -569,11 +569,11 @@ export const schema: IJSONSchema = {
 			type: 'object',
 			properties: {
 				'vscode:prepublish': {
-					description: nls.localize('vscode.extension.scripts.prepublish', 'Script executed before the package is published as a VS Code extension.'),
+					description: nls.localize('vscode.extension.scripts.prepublish', 'Script executed before the package is published as a Cortex extension.'),
 					type: 'string'
 				},
 				'vscode:uninstall': {
-					description: nls.localize('vscode.extension.scripts.uninstall', 'Uninstall hook for VS Code extension. Script that gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.'),
+					description: nls.localize('vscode.extension.scripts.uninstall', 'Uninstall hook for Cortex extension. Script that gets executed when the extension is completely uninstalled from Cortex which is when Cortex is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.'),
 					type: 'string'
 				}
 			}

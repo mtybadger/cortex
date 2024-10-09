@@ -8,7 +8,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path = require("path");
 const child_process_1 = require("child_process");
 const fs_1 = require("fs");
-const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+const yarn = process.platform === 'win32' ? 'yarn.cmd' : 'yarn';
 const rootDir = path.resolve(__dirname, '..', '..');
 function runProcess(command, args = []) {
     return new Promise((resolve, reject) => {
@@ -28,15 +28,15 @@ async function exists(subdir) {
 }
 async function ensureNodeModules() {
     if (!(await exists('node_modules'))) {
-        await runProcess(npm, ['ci']);
+        await runProcess(yarn);
     }
 }
 async function getElectron() {
-    await runProcess(npm, ['run', 'electron']);
+    await runProcess(yarn, ['electron']);
 }
 async function ensureCompiled() {
     if (!(await exists('out'))) {
-        await runProcess(npm, ['run', 'compile']);
+        await runProcess(yarn, ['compile']);
     }
 }
 async function main() {

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "mathtime"
+    }
+  ],
+  "macros": [
+    {
+      "name": "uprightupcasegreek"
+    },
+    {
+      "name": "italicupcasegreek"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

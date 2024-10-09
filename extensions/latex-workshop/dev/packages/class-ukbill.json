@@ -1,0 +1,285 @@
+{
+  "deps": [
+    {
+      "name": "class-memoir"
+    },
+    {
+      "name": "hyphenat"
+    },
+    {
+      "name": "paralist"
+    },
+    {
+      "name": "textpos"
+    },
+    {
+      "name": "ccicons"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "changepage"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "lettrine"
+    }
+  ],
+  "macros": [
+    {
+      "name": "drafter",
+      "arg": {
+        "format": "{}",
+        "snippet": "drafter{${1:name}}"
+      }
+    },
+    {
+      "name": "printdrafter"
+    },
+    {
+      "name": "billcopyright",
+      "arg": {
+        "format": "{}",
+        "snippet": "billcopyright{${1:text}}"
+      }
+    },
+    {
+      "name": "printbillcopyright"
+    },
+    {
+      "name": "publishedby",
+      "arg": {
+        "format": "{}",
+        "snippet": "publishedby{${1:name}}"
+      }
+    },
+    {
+      "name": "printpublishedby"
+    },
+    {
+      "name": "billtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "billtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "printbilltitle"
+    },
+    {
+      "name": "billto",
+      "arg": {
+        "format": "{}",
+        "snippet": "billto{${1:text}}"
+      }
+    },
+    {
+      "name": "printbillto"
+    },
+    {
+      "name": "humanrights",
+      "arg": {
+        "format": "{}",
+        "snippet": "humanrights{${1:text}}"
+      }
+    },
+    {
+      "name": "printhumanrights"
+    },
+    {
+      "name": "exptitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "exptitle{${1:text}}"
+      }
+    },
+    {
+      "name": "printexptitle"
+    },
+    {
+      "name": "exptext",
+      "arg": {
+        "format": "{}",
+        "snippet": "exptext{${1:text}}"
+      }
+    },
+    {
+      "name": "printexptext"
+    },
+    {
+      "name": "billnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "billnum{${1:number}}"
+      }
+    },
+    {
+      "name": "printbillnum"
+    },
+    {
+      "name": "whereas",
+      "arg": {
+        "format": "{}",
+        "snippet": "whereas{${1:text}}"
+      }
+    },
+    {
+      "name": "printwhereas"
+    },
+    {
+      "name": "billday",
+      "arg": {
+        "format": "{}",
+        "snippet": "billday{${1:day}}"
+      }
+    },
+    {
+      "name": "printbillday"
+    },
+    {
+      "name": "billmonth",
+      "arg": {
+        "format": "{}",
+        "snippet": "billmonth{${1:month}}"
+      }
+    },
+    {
+      "name": "printbillmonth"
+    },
+    {
+      "name": "billyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "billyear{${1:year}}"
+      }
+    },
+    {
+      "name": "printbillyear"
+    },
+    {
+      "name": "startschedule"
+    },
+    {
+      "name": "schedule",
+      "arg": {
+        "format": "{}",
+        "snippet": "schedule{${1:title}}"
+      }
+    },
+    {
+      "name": "schdpart",
+      "arg": {
+        "format": "{}",
+        "snippet": "schdpart{${1:title}}"
+      }
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "numstat"
+    },
+    {
+      "name": "alphstat"
+    },
+    {
+      "name": "romstat"
+    },
+    {
+      "name": "twoalphstat"
+    },
+    {
+      "name": "nostat"
+    }
+  ],
+  "keys": {
+    "\\documentclass/ukbill#c": [
+      "private"
+    ]
+  },
+  "args": [
+    "\\documentclass/ukbill#c"
+  ]
+}

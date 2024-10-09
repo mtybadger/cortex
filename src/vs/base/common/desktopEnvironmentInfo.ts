@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { env } from './process.js';
+import { env } from 'vs/base/common/process';
 
 // Define the enumeration for Desktop Environments
 enum DesktopEnvironment {

@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathfrak{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/esstixfrak#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/esstixfrak#c"
+  ]
+}

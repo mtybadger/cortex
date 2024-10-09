@@ -1,0 +1,54 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newrvwrite",
+      "arg": {
+        "format": "{}",
+        "snippet": "newrvwrite{${1:name}}"
+      }
+    },
+    {
+      "name": "rvwrite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rvwrite{${1:write name}}{${2:code%definition}}"
+      }
+    },
+    {
+      "name": "ervwrite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ervwrite{${1:write name}}{${2:code%definition}}"
+      }
+    },
+    {
+      "name": "dlrchr"
+    },
+    {
+      "name": "hshchr"
+    },
+    {
+      "name": "bslchr"
+    },
+    {
+      "name": "lbrchr"
+    },
+    {
+      "name": "rbrchr"
+    },
+    {
+      "name": "tldchr"
+    },
+    {
+      "name": "ampchr"
+    },
+    {
+      "name": "rvtwrite",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

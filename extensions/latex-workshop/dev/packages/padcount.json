@@ -1,0 +1,31 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "padnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "padnum{${1:content}}"
+      }
+    },
+    {
+      "name": "setpadnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setpadnum{${1:number of digits}}"
+      }
+    },
+    {
+      "name": "setpadchar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setpadchar{${1:character}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

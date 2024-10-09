@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newunicodechar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newunicodechar{${1:char}}{${2:definition}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

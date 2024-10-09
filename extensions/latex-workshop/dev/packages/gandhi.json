@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gandhi"
+    },
+    {
+      "name": "gandhisans"
+    },
+    {
+      "name": "gandhifamily",
+      "unusual": true
+    },
+    {
+      "name": "gandhisffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gandhi#c": [
+      "scaled=${1:factor}",
+      "sf",
+      "rm",
+      "sfdefault",
+      "type1",
+      "osf",
+      "oldstyle",
+      "lf",
+      "lining",
+      "proportional",
+      "p",
+      "tabular",
+      "t"
+    ]
+  },
+  "args": [
+    "\\usepackage/gandhi#c"
+  ]
+}

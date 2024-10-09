@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "makeidx"
+    },
+    {
+      "name": "xesearch"
+    }
+  ],
+  "macros": [
+    {
+      "name": "IndexList",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IndexList{${1:name}}{${2:list of entries}}"
+      }
+    },
+    {
+      "name": "IndexList*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IndexList*{${1:name}}{${2:list of entries}}"
+      }
+    },
+    {
+      "name": "StopIndexList",
+      "arg": {
+        "format": "{}",
+        "snippet": "StopIndexList{${1:lists}}"
+      }
+    },
+    {
+      "name": "StopIndex"
+    },
+    {
+      "name": "NoIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "NoIndex{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xeindex#c": [
+      "mark"
+    ]
+  },
+  "args": [
+    "\\usepackage/xeindex#c"
+  ]
+}

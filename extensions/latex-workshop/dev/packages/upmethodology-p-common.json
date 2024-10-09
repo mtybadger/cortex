@@ -1,0 +1,101 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "ifpdf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "arakhneorg"
+    },
+    {
+      "name": "upmcurrentlang"
+    },
+    {
+      "name": "ifupmlang",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifupmlang{${1:language}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Ifnotempty",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ifnotempty{${1:arg}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Ifempty",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ifempty{${1:arg}}{${2:code}}"
+      }
+    },
+    {
+      "name": "Ifelseempty",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Ifelseempty{${1:arg}}{${2:code}}"
+      }
+    },
+    {
+      "name": "newpageintoc"
+    },
+    {
+      "name": "ifupmbookformat",
+      "unusual": true
+    },
+    {
+      "name": "upmbookformattrue",
+      "unusual": true
+    },
+    {
+      "name": "upmbookformatfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifupmreportformat",
+      "unusual": true
+    },
+    {
+      "name": "upmreportformattrue",
+      "unusual": true
+    },
+    {
+      "name": "upmreportformatfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifupmarticleformat",
+      "unusual": true
+    },
+    {
+      "name": "upmarticleformattrue",
+      "unusual": true
+    },
+    {
+      "name": "upmarticleformatfalse",
+      "unusual": true
+    },
+    {
+      "name": "setpdfcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "setpdfcolor{${1:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

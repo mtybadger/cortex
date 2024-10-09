@@ -1,0 +1,39 @@
+{
+  "deps": [
+    {
+      "name": "biblatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "printbibitembibliography"
+    },
+    {
+      "name": "printgeneratedbibitemseparator",
+      "unusual": true
+    },
+    {
+      "name": "ignorespacesaftertitlecase",
+      "unusual": true
+    },
+    {
+      "name": "nolinkurl",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nolinkurl{${1:URL}}"
+      }
+    },
+    {
+      "name": "utffriendlydetokenize",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "utffriendlydetokenize{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

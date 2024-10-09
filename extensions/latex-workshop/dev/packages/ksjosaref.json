@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "refcount"
+    }
+  ],
+  "macros": [
+    {
+      "name": "josaref",
+      "arg": {
+        "format": "{}",
+        "snippet": "josaref{${1:label}}"
+      }
+    },
+    {
+      "name": "josaref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "josaref[${2:type}]{${1:label}}"
+      }
+    },
+    {
+      "name": "josaref",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "josaref[${2:type}][${3:delim%keyvals}]{${1:label}}",
+        "keys": [
+          "\\josaref#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "ref",
+      "if": "refcmd",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ref[${2:type}]{${1:label}}"
+      }
+    },
+    {
+      "name": "ref",
+      "if": "refcmd",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "ref[${2:type}][${3:delim}]{${1:label}}"
+      }
+    },
+    {
+      "name": "josarefcmds"
+    },
+    {
+      "name": "nojosarefcmds"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ksjosaref#c": [
+      "refcmd"
+    ],
+    "\\josaref#c": [
+      "paren",
+      "bracket",
+      "left=${1:delim}",
+      "right=${1:delim}"
+    ]
+  },
+  "args": [
+    "\\usepackage/ksjosaref#c"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/courierten#c": [
+      "scaled=${2|${1:factor},MatchLowercase|}",
+      "lining",
+      "tabular",
+      "mainfont",
+      "bold",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/courierten#c"
+  ]
+}

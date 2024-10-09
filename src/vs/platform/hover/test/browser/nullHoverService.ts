@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable } from '../../../../base/common/lifecycle.js';
-import type { IHoverService } from '../../browser/hover.js';
+import { Disposable } from 'vs/base/common/lifecycle';
+import type { IHoverService } from 'vs/platform/hover/browser/hover';
 
 export const NullHoverService: IHoverService = {
 	_serviceBrand: undefined,

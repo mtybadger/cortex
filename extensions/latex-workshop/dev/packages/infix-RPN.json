@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "infixtoRPN",
+      "arg": {
+        "format": "{}",
+        "snippet": "infixtoRPN{${1:infix expr}}"
+      }
+    },
+    {
+      "name": "RPN"
+    },
+    {
+      "name": "DeclareNewPSOperator",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareNewPSOperator{${1:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

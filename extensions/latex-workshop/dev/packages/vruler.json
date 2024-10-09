@@ -1,0 +1,96 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setvruler",
+      "arg": {
+        "format": "[][]",
+        "snippet": "setvruler[${1:scale}][${2:initcount}]"
+      }
+    },
+    {
+      "name": "setvruler",
+      "arg": {
+        "format": "[][][][][][][][][]",
+        "snippet": "setvruler[${1:scale}][${2:initcount}][${3:step}][${4:digits}][${5:mode}][${6:odd-hshift}][${7:even-hshift}][${8:vshift}][${9:height}]"
+      }
+    },
+    {
+      "name": "unsetvruler"
+    },
+    {
+      "name": "rulercount"
+    },
+    {
+      "name": "VrulerDefined",
+      "unusual": true
+    },
+    {
+      "name": "EntryVruler",
+      "unusual": true
+    },
+    {
+      "name": "fillzeros",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fillzeros[${2:width}]{${1:number}}"
+      }
+    },
+    {
+      "name": "makevruler",
+      "unusual": true,
+      "arg": {
+        "format": "[][][][][]",
+        "snippet": "makevruler[${1:scale}][${2:initcount}][${3:step}][${4:digits}][${5:height}]"
+      }
+    },
+    {
+      "name": "SET",
+      "unusual": true,
+      "arg": {
+        "format": "[][][][][][][][][]",
+        "snippet": "SET[${1:scale}][${2:initcount}][${3:step}][${4:digits}][${5:mode}][${6:odd-hshift}][${7:even-hshift}][${8:vshift}][${9:height}]"
+      }
+    },
+    {
+      "name": "toksone",
+      "unusual": true
+    },
+    {
+      "name": "tokstwo",
+      "unusual": true
+    },
+    {
+      "name": "toksthree",
+      "unusual": true
+    },
+    {
+      "name": "toksfour",
+      "unusual": true
+    },
+    {
+      "name": "toksfive",
+      "unusual": true
+    },
+    {
+      "name": "push",
+      "unusual": true
+    },
+    {
+      "name": "pop",
+      "unusual": true
+    },
+    {
+      "name": "popnil",
+      "unusual": true
+    },
+    {
+      "name": "STKcount",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

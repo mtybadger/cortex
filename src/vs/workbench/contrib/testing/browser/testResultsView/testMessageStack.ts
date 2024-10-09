@@ -3,18 +3,18 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable } from '../../../../../base/common/lifecycle.js';
-import { ICodeEditor } from '../../../../../editor/browser/editorBrowser.js';
-import { IInstantiationService } from '../../../../../platform/instantiation/common/instantiation.js';
-import { AnyStackFrame, CallStackFrame, CallStackWidget } from '../../../debug/browser/callStackWidget.js';
-import { ITestMessageStackFrame } from '../../common/testTypes.js';
+import { Emitter } from 'vs/base/common/event';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { ICodeEditor } from 'vs/editor/browser/editorBrowser';
+import { IInstantiationService } from 'vs/platform/instantiation/common/instantiation';
+import { AnyStackFrame, CallStackFrame, CallStackWidget } from 'vs/workbench/contrib/debug/browser/callStackWidget';
+import { ITestMessageStackFrame } from 'vs/workbench/contrib/testing/common/testTypes';
 
 export class TestResultStackWidget extends Disposable {
 	private readonly widget: CallStackWidget;
+	private readonly changeStackFrameEmitter = this._register(new Emitter<ITestMessageStackFrame>());
 
-	public get onDidScroll() {
-		return this.widget.onDidScroll;
-	}
+	public readonly onDidChangeStackFrame = this.changeStackFrameEmitter.event;
 
 	constructor(
 		private readonly container: HTMLElement,
@@ -28,10 +28,6 @@ export class TestResultStackWidget extends Disposable {
 			container,
 			containingEditor,
 		));
-	}
-
-	public collapseAll() {
-		this.widget.collapseAll();
 	}
 
 	public update(messageFrame: AnyStackFrame, stack: ITestMessageStackFrame[]) {

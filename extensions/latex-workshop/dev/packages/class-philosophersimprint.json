@@ -1,0 +1,224 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "mathpazo"
+    },
+    {
+      "name": "courier"
+    },
+    {
+      "name": "helvet"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "trajan"
+    },
+    {
+      "name": "flushend"
+    }
+  ],
+  "macros": [
+    {
+      "name": "HUGE"
+    },
+    {
+      "name": "affiliation",
+      "arg": {
+        "format": "{}",
+        "snippet": "affiliation{${1:affiliation}}"
+      }
+    },
+    {
+      "name": "author",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "author[${2:short names}]{${1:names}}"
+      }
+    },
+    {
+      "name": "copyrightinfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrightinfo{${1:info%text}}"
+      }
+    },
+    {
+      "name": "copyrightlicense",
+      "arg": {
+        "format": "{}",
+        "snippet": "copyrightlicense{${1:license}}"
+      }
+    },
+    {
+      "name": "journalnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "journalnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "journalvolume",
+      "arg": {
+        "format": "{}",
+        "snippet": "journalvolume{${1:number}}"
+      }
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:keyword1,keyword2,...%text}}"
+      }
+    },
+    {
+      "name": "subject",
+      "arg": {
+        "format": "{}",
+        "snippet": "subject{${1:subject%text}}"
+      }
+    },
+    {
+      "name": "title",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "title[${2:short title%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "titleimage",
+      "arg": {
+        "format": "{}",
+        "snippet": "titleimage{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "Hwithstroke"
+    },
+    {
+      "name": "hwithstroke"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textogonekcentered",
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/philosophersimprint#c": [
+      "titleimage",
+      "notitleimage",
+      "trajantitle",
+      "notrajantitle",
+      "nosc",
+      "noosf",
+      "slantedGreek",
+      "noBBpl",
+      "flushend",
+      "noflushend",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ]
+  },
+  "args": [
+    "\\documentclass/philosophersimprint#c"
+  ]
+}

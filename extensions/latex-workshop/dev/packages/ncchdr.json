@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "nccheadings"
+    },
+    {
+      "name": "nccfancyhdr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "lefttitlemark",
+      "if": "title"
+    },
+    {
+      "name": "titlemark",
+      "if": "title"
+    },
+    {
+      "name": "righttitlemark",
+      "if": "title"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ncchdr#c": [
+      "empty",
+      "plain",
+      "myheadings",
+      "headings",
+      "title"
+    ]
+  },
+  "args": [
+    "\\usepackage/ncchdr#c"
+  ]
+}

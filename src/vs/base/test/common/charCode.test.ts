@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { CharCode } from '../../common/charCode.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { CharCode } from 'vs/base/common/charCode';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('CharCode', () => {
 	ensureNoDisposablesAreLeakedInTestSuite();

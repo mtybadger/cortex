@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "ftnright"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { BrowserWindowConstructorOptions, HandlerDetails, WebContents } from 'electron';
-import { Event } from '../../../base/common/event.js';
-import { IAuxiliaryWindow } from './auxiliaryWindow.js';
-import { createDecorator } from '../../instantiation/common/instantiation.js';
+import { Event } from 'vs/base/common/event';
+import { IAuxiliaryWindow } from 'vs/platform/auxiliaryWindow/electron-main/auxiliaryWindow';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
 
 export const IAuxiliaryWindowsMainService = createDecorator<IAuxiliaryWindowsMainService>('auxiliaryWindowsMainService');
 

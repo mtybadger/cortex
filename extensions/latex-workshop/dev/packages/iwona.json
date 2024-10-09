@@ -1,0 +1,17 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/iwona#c": [
+      "regular",
+      "light",
+      "condensed",
+      "mathnoalias",
+      "math"
+    ]
+  },
+  "args": [
+    "\\usepackage/iwona#c"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "deps": [
+    {
+      "name": "amsgen"
+    },
+    {
+      "name": "dcounter"
+    }
+  ],
+  "macros": [
+    {
+      "name": "qedsymbol"
+    },
+    {
+      "name": "qed"
+    },
+    {
+      "name": "qed*"
+    },
+    {
+      "name": "qef"
+    },
+    {
+      "name": "blackqed",
+      "if": "blackqed"
+    },
+    {
+      "name": "blackqedsymbol",
+      "if": "blackqed"
+    },
+    {
+      "name": "whiteqed",
+      "if": "whiteqed"
+    },
+    {
+      "name": "whiteqedsymbol",
+      "if": "whiteqed"
+    },
+    {
+      "name": "newtheoremtype",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "newtheoremtype{${1:type}}{${2:title style}}{${3:comment style}}{${4:body style}}"
+      }
+    },
+    {
+      "name": "renewtheoremtype",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "renewtheoremtype{${1:type}}{${2:title style}}{${3:comment style}}{${4:body style}}"
+      }
+    },
+    {
+      "name": "liketheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "liketheorem{${1:title%text}}{${2:number}}"
+      }
+    },
+    {
+      "name": "liketheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "liketheorem{${1:title%text}}{${2:number}}[${3:comment%text}]"
+      }
+    },
+    {
+      "name": "liketheorem*",
+      "arg": {
+        "format": "{}",
+        "snippet": "liketheorem*{${1:title%text}}"
+      }
+    },
+    {
+      "name": "liketheorem*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "liketheorem*{${1:title%text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "likeremark",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "likeremark{${1:title%text}}{${2:number}}"
+      }
+    },
+    {
+      "name": "likeremark",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "likeremark{${1:title%text}}{${2:number}}[${3:comment%text}]"
+      }
+    },
+    {
+      "name": "likeremark*",
+      "arg": {
+        "format": "{}",
+        "snippet": "likeremark*{${1:title%text}}"
+      }
+    },
+    {
+      "name": "likeremark*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "likeremark*{${1:title%text}}[${2:comment%text}]"
+      }
+    },
+    {
+      "name": "newtheorem",
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "newtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
+      }
+    },
+    {
+      "name": "newtheorem*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newtheorem*{${1:envname}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "newtheorem*",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "renewtheorem{${1:envname}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "renewtheorem{${1:envname}}{${2:title%text}}[${3:type}]"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "renewtheorem{${1:envname}}[${3:counter}]{${2:title%text}}[${4:type}]"
+      }
+    },
+    {
+      "name": "renewtheorem*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "renewtheorem*{${1:envname}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "renewtheorem*",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "renewtheorem*{${1:envname}}{${2:title%text}}[${3:type}]"
+      }
+    },
+    {
+      "name": "TheoremBreakStyle"
+    },
+    {
+      "name": "TheoremNoBreakStyle"
+    },
+    {
+      "name": "breakafterheader"
+    },
+    {
+      "name": "nobreakafterheader"
+    },
+    {
+      "name": "apar"
+    },
+    {
+      "name": "apar",
+      "arg": {
+        "format": "[]",
+        "snippet": "apar[${1:title%text}]"
+      }
+    },
+    {
+      "name": "TheoremCommentDelimiters",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TheoremCommentDelimiters{${1:left}}{${2:right}}"
+      }
+    },
+    {
+      "name": "AfterTheoremHeaderChar",
+      "arg": {
+        "format": "{}",
+        "snippet": "AfterTheoremHeaderChar{${1:char}}"
+      }
+    },
+    {
+      "name": "AfterTheoremHeaderSkip",
+      "arg": {
+        "format": "{}",
+        "snippet": "AfterTheoremHeaderSkip{${1:skip cmd}}"
+      }
+    },
+    {
+      "name": "ProofStyleParameters",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProofStyleParameters{${1:style}}{${2:title%text}}"
+      }
+    },
+    {
+      "name": "AparStyleParameters",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "AparStyleParameters{${1:style}}{${2:prefix}}{${3:suffix}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "proof"
+    },
+    {
+      "name": "proof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:of-theorem}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/nccthm#c": [
+      "whiteqed",
+      "blackqed",
+      "noindent",
+      "indent",
+      "nomargin",
+      "margin"
+    ]
+  },
+  "args": [
+    "\\usepackage/nccthm#c"
+  ]
+}

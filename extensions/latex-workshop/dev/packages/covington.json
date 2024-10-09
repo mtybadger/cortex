@@ -1,0 +1,664 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "varwidth"
+    }
+  ],
+  "macros": [
+    {
+      "name": "twodias",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "twodias{${1:upper diac}}{${2:lower diac}}{${3:char}}"
+      }
+    },
+    {
+      "name": "acm",
+      "arg": {
+        "format": "{}",
+        "snippet": "acm{${1:arg}}"
+      }
+    },
+    {
+      "name": "grm",
+      "arg": {
+        "format": "{}",
+        "snippet": "grm{${1:arg}}"
+      }
+    },
+    {
+      "name": "cim",
+      "arg": {
+        "format": "{}",
+        "snippet": "cim{${1:arg}}"
+      }
+    },
+    {
+      "name": "SetDiaOffset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SetDiaOffset{${1:length}}"
+      }
+    },
+    {
+      "name": "twoacc",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "twoacc[${1:upper|lower}]"
+      }
+    },
+    {
+      "name": "exampleno"
+    },
+    {
+      "name": "exampleno*"
+    },
+    {
+      "name": "covchapexsep",
+      "unusual": true
+    },
+    {
+      "name": "setexampleoptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "setexampleoptions{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\setexampleoptions",
+          "\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "examplenumbersep",
+      "unusual": true
+    },
+    {
+      "name": "subexamplenumbersep",
+      "unusual": true
+    },
+    {
+      "name": "exampleind",
+      "unusual": true
+    },
+    {
+      "name": "expreamble",
+      "arg": {
+        "format": "{}",
+        "snippet": "expreamble{${1:text}}"
+      }
+    },
+    {
+      "name": "expostamble",
+      "arg": {
+        "format": "{}",
+        "snippet": "expostamble{${1:text}}"
+      }
+    },
+    {
+      "name": "subexpreamble",
+      "arg": {
+        "format": "{}",
+        "snippet": "subexpreamble{${1:text}}"
+      }
+    },
+    {
+      "name": "subexpostamble",
+      "arg": {
+        "format": "{}",
+        "snippet": "subexpostamble{${1:text}}"
+      }
+    },
+    {
+      "name": "covexnumber",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "covexnumber{${1:arg}}"
+      }
+    },
+    {
+      "name": "covexnumberfn",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "covexnumberfn{${1:arg}}"
+      }
+    },
+    {
+      "name": "covsubexnumber",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "covsubexnumber{${1:arg}}"
+      }
+    },
+    {
+      "name": "covexamplefs",
+      "unusual": true
+    },
+    {
+      "name": "covexamplenofs",
+      "unusual": true
+    },
+    {
+      "name": "expreamblefs",
+      "unusual": true
+    },
+    {
+      "name": "subexpreamblefs",
+      "unusual": true
+    },
+    {
+      "name": "expostamblefs",
+      "unusual": true
+    },
+    {
+      "name": "subexpostamblefs",
+      "unusual": true
+    },
+    {
+      "name": "thecovfnex",
+      "unusual": true
+    },
+    {
+      "name": "pxref",
+      "arg": {
+        "format": "{}",
+        "snippet": "pxref{${1:label}}"
+      }
+    },
+    {
+      "name": "ownexcounterprep",
+      "unusual": true
+    },
+    {
+      "name": "digloss",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "digloss{${1:glossline1}}{${2:glossline2}}{${3:translation}}"
+      }
+    },
+    {
+      "name": "digloss",
+      "arg": {
+        "format": "{}[]{}[]{}",
+        "snippet": "digloss{${1:glossline1}}[${4:comment1}]{${2:glossline2}}[${5:comment2}]{${3:translation}}"
+      }
+    },
+    {
+      "name": "digloss",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "digloss[${4:options%keyvals}]{${1:glossline1}}{${2:glossline2}}{${3:translation}}",
+        "keys": [
+          "\\digloss,\\trigloss,\\setglossoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "digloss",
+      "arg": {
+        "format": "[]{}[]{}[]{}",
+        "snippet": "digloss[${4:options%keyvals}]{${1:glossline1}}[${5:comment1}]{${2:glossline2}}[${6:comment2}]{${3:translation}}",
+        "keys": [
+          "\\digloss,\\trigloss,\\setglossoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trigloss",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "trigloss{${1:glossline1}}{${2:glossline2}}{${3:glossline3}}{${4:translation}}"
+      }
+    },
+    {
+      "name": "trigloss",
+      "arg": {
+        "format": "{}[]{}[]{}[]{}",
+        "snippet": "trigloss{${1:glossline1}}[${5:comment1}]{${2:glossline2}}[${6:comment2}]{${3:glossline3}}[${7:comment3}]{${4:translation}}"
+      }
+    },
+    {
+      "name": "trigloss",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "trigloss[${5:options%keyvals}]{${1:glossline1}}{${2:glossline2}}{${3:glossline3}}{${4:translation}}",
+        "keys": [
+          "\\digloss,\\trigloss,\\setglossoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "trigloss",
+      "arg": {
+        "format": "[]{}[]{}[]{}[]{}",
+        "snippet": "trigloss[${5:options%keyvals}]{${1:glossline1}}[${6:comment1}]{${2:glossline2}}[${7:comment2}]{${3:glossline3}}[${8:comment3}]{${4:translation}}",
+        "keys": [
+          "\\digloss,\\trigloss,\\setglossoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setglossoptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "setglossoptions{${1:options%keyvals}}",
+        "keys": [
+          "\\digloss,\\trigloss,\\setglossoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "glosswidth",
+      "unusual": true
+    },
+    {
+      "name": "glosssep",
+      "unusual": true
+    },
+    {
+      "name": "gll",
+      "unusual": true
+    },
+    {
+      "name": "glll",
+      "unusual": true
+    },
+    {
+      "name": "xgll",
+      "unusual": true
+    },
+    {
+      "name": "xglll",
+      "unusual": true
+    },
+    {
+      "name": "xgle",
+      "unusual": true
+    },
+    {
+      "name": "glt",
+      "unusual": true
+    },
+    {
+      "name": "gln",
+      "unusual": true
+    },
+    {
+      "name": "glot",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glot{${1:translation}}"
+      }
+    },
+    {
+      "name": "glot",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "glot[${2:judgment marker}]{${1:translation}}"
+      }
+    },
+    {
+      "name": "glosspreamble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glosspreamble{${1:text}}"
+      }
+    },
+    {
+      "name": "glend",
+      "unusual": true
+    },
+    {
+      "name": "glosslinetrans",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glosslinetrans{${1:text}}"
+      }
+    },
+    {
+      "name": "covenquote",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "covenquote{${1:text}}"
+      }
+    },
+    {
+      "name": "glosslinepreamble",
+      "unusual": true
+    },
+    {
+      "name": "glosslinepostamble",
+      "unusual": true
+    },
+    {
+      "name": "psr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "psr{${1:constituent}}{${2:sub-constituents}}"
+      }
+    },
+    {
+      "name": "fs",
+      "arg": {
+        "format": "{}",
+        "snippet": "fs{${1:contents}}"
+      }
+    },
+    {
+      "name": "lfs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lfs{${1:label%plain}}{${2:contents}}"
+      }
+    },
+    {
+      "name": "drs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "drs{${1:variables}}{${2:contents}}"
+      }
+    },
+    {
+      "name": "sdrs",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "sdrs{${1:above-text%text}}{${2:variables}}{${3:contents}}"
+      }
+    },
+    {
+      "name": "negdrs",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "negdrs{${1:variables}}{${2:contents}}"
+      }
+    },
+    {
+      "name": "ifdrs",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifdrs{${1:variables1}}{${2:contents1}}{${3:variables2}}{${4:contents2}}"
+      }
+    },
+    {
+      "name": "alifdrs",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "alifdrs{${1:variables1}}{${2:contents1}}{${3:variables2}}{${4:contents2}}"
+      }
+    },
+    {
+      "name": "reflistindent",
+      "unusual": true
+    },
+    {
+      "name": "reflistitemsep",
+      "unusual": true
+    },
+    {
+      "name": "reflistparsep",
+      "unusual": true
+    },
+    {
+      "name": "sentence",
+      "arg": {
+        "format": "{}",
+        "snippet": "sentence{${1:text}}"
+      }
+    },
+    {
+      "name": "sentencefs",
+      "unusual": true
+    },
+    {
+      "name": "lexp",
+      "arg": {
+        "format": "{}",
+        "snippet": "lexp{${1:word}}"
+      }
+    },
+    {
+      "name": "lcon",
+      "arg": {
+        "format": "{}",
+        "snippet": "lcon{${1:concept}}"
+      }
+    },
+    {
+      "name": "lmean",
+      "arg": {
+        "format": "{}",
+        "snippet": "lmean{${1:meaning}}"
+      }
+    },
+    {
+      "name": "either",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "either{${1:top}}{${2:bottom}}"
+      }
+    },
+    {
+      "name": "twoaccsep",
+      "unusual": true
+    },
+    {
+      "name": "glosspwidth",
+      "unusual": true
+    },
+    {
+      "name": "thecovex",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "covexample",
+      "unusual": true
+    },
+    {
+      "name": "covexample",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "examples",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "covexamples",
+      "unusual": true
+    },
+    {
+      "name": "covexamples",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "subexamples"
+    },
+    {
+      "name": "subexamples",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "covsubexamples",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:option%keyvals}]",
+        "keys": [
+          "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions",
+          "\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:name}]"
+      }
+    },
+    {
+      "name": "covexercise",
+      "unusual": true
+    },
+    {
+      "name": "covexercise",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:name}]"
+      }
+    },
+    {
+      "name": "reflist"
+    }
+  ],
+  "keys": {
+    "\\usepackage/covington#c": [
+      "force",
+      "keeplayout",
+      "noglossbreaks",
+      "owncounter",
+      "fnexamplecounter=${1|main,own,own-reset|}"
+    ],
+    "\\begin{example},\\begin{covexample},\\begin{examples},\\begin{covexamples},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions": [
+      "fs={${1:font settings}}",
+      "fsno={${1:font settings}}",
+      "judge={${1:text}}",
+      "*",
+      "?",
+      "*?",
+      "??",
+      "fsjudge={${1:font settings}}",
+      "leftmargin=",
+      "addnumbersep=",
+      "judgewidth={${1:text}}",
+      "addjudgesep=",
+      "numberformat={${1:template}}",
+      "fnnumberformat={${1:template}}"
+    ],
+    "\\begin{example},\\begin{covexample},\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions": [
+      "preamble={${1:text}}",
+      "postamble={${1:text}}",
+      "fspreamble={${1:font settings}}",
+      "fspostamble={${1:font settings}}"
+    ],
+    "\\begin{example},\\begin{covexample},\\setexampleoptions": [
+      "postamble*={${1:text}}"
+    ],
+    "\\begin{subexamples},\\begin{covsubexamples},\\setexampleoptions": [
+      "fssubpreamble={${1:font settings}}",
+      "fssubpostamble={${1:font settings}}",
+      "addsubnumbersep=",
+      "subnumberformat={${1:template}}",
+      "subjudge={${1:text}}",
+      "subpreamble={${1:text}}",
+      "subpostamble={${1:text}}"
+    ],
+    "\\digloss,\\trigloss,\\setglossoptions": [
+      "ex",
+      "tlr",
+      "tlr*",
+      "fsi={${1:font settings}}",
+      "fsii={${1:font settings}}",
+      "fsiii={${1:font settings}}",
+      "fstl={${1:font settings}}",
+      "enquotetl",
+      "addlinesepi=",
+      "addlinesepii=",
+      "addlinesepiii=",
+      "judge={${1:text}}",
+      "fsjudge={${1:font settings}}",
+      "addjudgesep=",
+      "preamble={${1:text}}",
+      "postamble={${1:text}}",
+      "fspreamble={${1:font settings}}",
+      "fspostamble={${1:font settings}}",
+      "glosswidth=",
+      "glosssep=",
+      "glosscommentwidth=",
+      "fscomments={${1:font settings}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/covington#c"
+  ]
+}

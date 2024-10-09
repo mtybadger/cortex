@@ -1,0 +1,96 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifptex"
+    },
+    {
+      "name": "ifuptex"
+    },
+    {
+      "name": "ifnativeuptex"
+    },
+    {
+      "name": "ifptexng"
+    },
+    {
+      "name": "ifstrictptex"
+    },
+    {
+      "name": "ifstrictuptex"
+    },
+    {
+      "name": "ifstrictptexng"
+    },
+    {
+      "name": "ifstrictplatex"
+    },
+    {
+      "name": "ifstrictuplatex"
+    },
+    {
+      "name": "ifporuplatex"
+    },
+    {
+      "name": "RequirepTeX"
+    },
+    {
+      "name": "RequireStrictpTeX"
+    },
+    {
+      "name": "RequireupTeX"
+    },
+    {
+      "name": "RequireStrictupTeX"
+    },
+    {
+      "name": "RequireNativeupTeX"
+    },
+    {
+      "name": "RequirepTeXng"
+    },
+    {
+      "name": "RequireStrictpTeXng"
+    },
+    {
+      "name": "RequireStrictpLaTeX"
+    },
+    {
+      "name": "RequireStrictupLaTeX"
+    },
+    {
+      "name": "RequirepOrupLaTeX"
+    },
+    {
+      "name": "upTeXguessedversion"
+    },
+    {
+      "name": "RequireupTeXAtLeast",
+      "arg": {
+        "format": "{}",
+        "snippet": "RequireupTeXAtLeast{${1:version}}"
+      }
+    },
+    {
+      "name": "RequireNativeupTeXAtLeast",
+      "arg": {
+        "format": "{}",
+        "snippet": "RequireNativeupTeXAtLeast{${1:version}}"
+      }
+    },
+    {
+      "name": "RequireStrictupLaTeXAtLeast",
+      "arg": {
+        "format": "{}",
+        "snippet": "RequireStrictupLaTeXAtLeast{${1:version}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "hsetup"
+    }
+  ],
+  "macros": [
+    {
+      "name": "barlength",
+      "arg": {
+        "format": "{}",
+        "snippet": "barlength{${1:length}}"
+      }
+    },
+    {
+      "name": "heading"
+    },
+    {
+      "name": "heading",
+      "arg": {
+        "format": "[]",
+        "snippet": "heading[${1:text}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hhead#c": [
+      "private",
+      "signit",
+      "bruni",
+      "test",
+      "english",
+      "german",
+      "french"
+    ]
+  },
+  "args": [
+    "\\usepackage/hhead#c"
+  ]
+}

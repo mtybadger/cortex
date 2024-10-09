@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "venturis"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

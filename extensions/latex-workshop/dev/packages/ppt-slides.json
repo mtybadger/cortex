@@ -1,0 +1,380 @@
+{
+  "deps": [
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "href-ul"
+    },
+    {
+      "name": "pagecolor"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "qrcode"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzpagenodes"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "crumbs"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "seqsplit"
+    },
+    {
+      "name": "geometry",
+      "if": "template"
+    },
+    {
+      "name": "textpos",
+      "if": "template"
+    },
+    {
+      "name": "libertine",
+      "if": "template"
+    },
+    {
+      "name": "microtype",
+      "if": "template"
+    },
+    {
+      "name": "anyfontsize",
+      "if": "template"
+    },
+    {
+      "name": "multicol",
+      "if": "template"
+    },
+    {
+      "name": "fontsize",
+      "if": "template"
+    },
+    {
+      "name": "changepage",
+      "if": "template"
+    },
+    {
+      "name": "soul",
+      "if": "template"
+    },
+    {
+      "name": "lastpage",
+      "if": "template"
+    },
+    {
+      "name": "fancyhdr",
+      "if": "template"
+    },
+    {
+      "name": "geometry",
+      "if": "template=9x6"
+    },
+    {
+      "name": "textpos",
+      "if": "template=9x6"
+    },
+    {
+      "name": "libertine",
+      "if": "template=9x6"
+    },
+    {
+      "name": "microtype",
+      "if": "template=9x6"
+    },
+    {
+      "name": "anyfontsize",
+      "if": "template=9x6"
+    },
+    {
+      "name": "multicol",
+      "if": "template=9x6"
+    },
+    {
+      "name": "fontsize",
+      "if": "template=9x6"
+    },
+    {
+      "name": "changepage",
+      "if": "template=9x6"
+    },
+    {
+      "name": "soul",
+      "if": "template=9x6"
+    },
+    {
+      "name": "lastpage",
+      "if": "template=9x6"
+    },
+    {
+      "name": "fancyhdr",
+      "if": "template=9x6"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pptLeft",
+      "if": "template",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptLeft{${1:text}}"
+      }
+    },
+    {
+      "name": "pptRight",
+      "if": "template",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptRight{${1:text}}"
+      }
+    },
+    {
+      "name": "pptLeft",
+      "if": "template=9x6",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptLeft{${1:text}}"
+      }
+    },
+    {
+      "name": "pptRight",
+      "if": "template=9x6",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptRight{${1:text}}"
+      }
+    },
+    {
+      "name": "pptBanner",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptBanner{${1:text}}"
+      }
+    },
+    {
+      "name": "pptBanner",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptBanner[${2:color}]{${1:text}}"
+      }
+    },
+    {
+      "name": "pptChapter",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptChapter{${1:title}}"
+      }
+    },
+    {
+      "name": "pptChapter",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptChapter[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "pptSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptSection{${1:title}}"
+      }
+    },
+    {
+      "name": "pptSection",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptSection[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "pptHeader",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptHeader{${1:text}}"
+      }
+    },
+    {
+      "name": "pptTitle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pptTitle{${1:title%text}}{${2:subtitle%text}}"
+      }
+    },
+    {
+      "name": "pptToc"
+    },
+    {
+      "name": "pptToc",
+      "arg": {
+        "format": "[]",
+        "snippet": "pptToc[${1:text}]"
+      }
+    },
+    {
+      "name": "pptQuote",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pptQuote{${1:imagefile}}{${2:quote%text}}{${3:author}}"
+      }
+    },
+    {
+      "name": "pptQuote",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "pptQuote[${4:name}]{${1:imagefile}}{${2:quote%text}}{${3:author}}"
+      }
+    },
+    {
+      "name": "pptPic",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pptPic{${1:width factor}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "pptPin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pptPin{${1:text}}"
+      }
+    },
+    {
+      "name": "pptPin",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptPin[${2:right|left}]{${1:text}}"
+      }
+    },
+    {
+      "name": "pptThought",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptThought{${1:text}}"
+      }
+    },
+    {
+      "name": "pptSnippet",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pptSnippet{${1:file}}"
+      }
+    },
+    {
+      "name": "pptSnippet",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptSnippet[${2:before code}]{${1:file}}"
+      }
+    },
+    {
+      "name": "pptQR",
+      "arg": {
+        "format": "{}",
+        "snippet": "pptQR{${1:URL}}"
+      }
+    },
+    {
+      "name": "pptQR",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptQR[${2:height}]{${1:URL}}"
+      }
+    },
+    {
+      "name": "pptPinQR",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pptPinQR{${1:URL}}"
+      }
+    },
+    {
+      "name": "pptPinQR",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pptPinQR[${2:right|left}]{${1:URL}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pptMiddle"
+    },
+    {
+      "name": "pptWideOne"
+    },
+    {
+      "name": "pptWide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numCols}}"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/ppt-slides#c": [
+      "template=9x6",
+      "scheme=${1|light,dark,light-mono,dark-mono|}",
+      "directory=${1:directory}",
+      "nominutes"
+    ]
+  },
+  "args": [
+    "\\usepackage/ppt-slides#c"
+  ]
+}

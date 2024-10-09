@@ -1,0 +1,1150 @@
+{
+  "deps": [
+    {
+      "name": "amstext"
+    }
+  ],
+  "macros": [
+    {
+      "name": "allbut",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "allbut[${3:subscript}]{${1:index}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "allbut",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "allbut{${1:index}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "allbutlastand",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "allbutlastand[${3:subscript}]{${1:index}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "allbutlastand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "allbutlastand{${1:index}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "allcomponents",
+      "arg": {
+        "format": "{}",
+        "snippet": "allcomponents{${1:arg}}"
+      }
+    },
+    {
+      "name": "allMs"
+    },
+    {
+      "name": "allMsbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allMsbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allMsbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allMsbut{${1:index}}"
+      }
+    },
+    {
+      "name": "allmus"
+    },
+    {
+      "name": "allmusbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allmusbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allmusbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allmusbut{${1:index}}"
+      }
+    },
+    {
+      "name": "allNs"
+    },
+    {
+      "name": "allNsbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allNsbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allNsbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allNsbut{${1:index}}"
+      }
+    },
+    {
+      "name": "allWs"
+    },
+    {
+      "name": "allWsbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allWsbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allWsbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allWsbut{${1:index}}"
+      }
+    },
+    {
+      "name": "allXs"
+    },
+    {
+      "name": "allXsbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allXsbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allXsbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allXsbut{${1:index}}"
+      }
+    },
+    {
+      "name": "allYs"
+    },
+    {
+      "name": "allYsbut",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "allYsbut[${2:subscript}]{${1:index}}"
+      }
+    },
+    {
+      "name": "allYsbut",
+      "arg": {
+        "format": "{}",
+        "snippet": "allYsbut{${1:index}}"
+      }
+    },
+    {
+      "name": "alphaP"
+    },
+    {
+      "name": "alphaS"
+    },
+    {
+      "name": "Am"
+    },
+    {
+      "name": "Apm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Apm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Apm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Apm{${1:sub}}"
+      }
+    },
+    {
+      "name": "As"
+    },
+    {
+      "name": "At"
+    },
+    {
+      "name": "Bm"
+    },
+    {
+      "name": "Bpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Bpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Bpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "Bs"
+    },
+    {
+      "name": "Bt"
+    },
+    {
+      "name": "compressibilitysymbol",
+      "unusual": true
+    },
+    {
+      "name": "cP"
+    },
+    {
+      "name": "cPpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cPpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "cPpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "cPpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "cPs"
+    },
+    {
+      "name": "cPt"
+    },
+    {
+      "name": "cV"
+    },
+    {
+      "name": "cVpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cVpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "cVpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "cVpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "cVs"
+    },
+    {
+      "name": "cVt"
+    },
+    {
+      "name": "dbar"
+    },
+    {
+      "name": "DeclareSubscrSymbol",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DeclareSubscrSymbol{${1:csname}}{${2:symbol%formula}}{${3:subscript%formula}}"
+      }
+    },
+    {
+      "name": "Deltaf",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltaf{${1:arg}}"
+      }
+    },
+    {
+      "name": "Deltafus",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltafus{${1:arg}}"
+      }
+    },
+    {
+      "name": "Deltamix",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltamix{${1:arg}}"
+      }
+    },
+    {
+      "name": "Deltarxn",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltarxn{${1:arg}}"
+      }
+    },
+    {
+      "name": "Deltasub",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltasub{${1:arg}}"
+      }
+    },
+    {
+      "name": "Deltavap",
+      "arg": {
+        "format": "{}",
+        "snippet": "Deltavap{${1:arg}}"
+      }
+    },
+    {
+      "name": "Em"
+    },
+    {
+      "name": "Epm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Epm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Epm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Epm{${1:sub}}"
+      }
+    },
+    {
+      "name": "Es"
+    },
+    {
+      "name": "Et"
+    },
+    {
+      "name": "excess"
+    },
+    {
+      "name": "expansivitysymbol",
+      "unusual": true
+    },
+    {
+      "name": "FE"
+    },
+    {
+      "name": "FEpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "FEpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "FEpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "FEpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "FEs"
+    },
+    {
+      "name": "FEt"
+    },
+    {
+      "name": "Fm"
+    },
+    {
+      "name": "fmix"
+    },
+    {
+      "name": "formation"
+    },
+    {
+      "name": "Fpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Fpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Fpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Fpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "fpure"
+    },
+    {
+      "name": "FR"
+    },
+    {
+      "name": "FRpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "FRpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "FRpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "FRpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "FRs"
+    },
+    {
+      "name": "FRt"
+    },
+    {
+      "name": "Fs"
+    },
+    {
+      "name": "fsat"
+    },
+    {
+      "name": "fstd"
+    },
+    {
+      "name": "Ft"
+    },
+    {
+      "name": "fusion"
+    },
+    {
+      "name": "gammamol"
+    },
+    {
+      "name": "gammarat"
+    },
+    {
+      "name": "GE"
+    },
+    {
+      "name": "GEpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "GEpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "GEpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "GEpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "GEs"
+    },
+    {
+      "name": "GEt"
+    },
+    {
+      "name": "Gm"
+    },
+    {
+      "name": "Gpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Gpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Gpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Gpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "GR"
+    },
+    {
+      "name": "GRpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "GRpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "GRpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "GRpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "GRs"
+    },
+    {
+      "name": "GRt"
+    },
+    {
+      "name": "Gs"
+    },
+    {
+      "name": "Gt",
+      "detail": "⪢ (\"wrisym\" command)",
+      "doc": "\\ggg (mathabx -amssymb), double nested greater-than"
+    },
+    {
+      "name": "HE"
+    },
+    {
+      "name": "heatcapacitysymbol",
+      "unusual": true
+    },
+    {
+      "name": "Henrymol"
+    },
+    {
+      "name": "Henryrat"
+    },
+    {
+      "name": "HEpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HEpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "HEpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "HEpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "HEs"
+    },
+    {
+      "name": "HEt"
+    },
+    {
+      "name": "Hm"
+    },
+    {
+      "name": "Hpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Hpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Hpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Hpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Hpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Hpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "Hpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Hpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "HR"
+    },
+    {
+      "name": "HRpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "HRpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "HRpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "HRpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "HRs"
+    },
+    {
+      "name": "HRt"
+    },
+    {
+      "name": "Hs"
+    },
+    {
+      "name": "Ht"
+    },
+    {
+      "name": "IG"
+    },
+    {
+      "name": "IGM"
+    },
+    {
+      "name": "IS"
+    },
+    {
+      "name": "Jacobian",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "Jacobian{${1:func1}}{${2:func2}}{${3:var1}}{${4:var2}}"
+      }
+    },
+    {
+      "name": "kappaS"
+    },
+    {
+      "name": "kappaT"
+    },
+    {
+      "name": "Lm"
+    },
+    {
+      "name": "Lpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Lpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Lpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Lpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "Ls"
+    },
+    {
+      "name": "Lt",
+      "detail": "⪡ (\"wrisym\" command)",
+      "doc": "\\lll (mathabx -amssymb), double nested less-than"
+    },
+    {
+      "name": "mixing"
+    },
+    {
+      "name": "Mm"
+    },
+    {
+      "name": "Mpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Mpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Mpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Mpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "Ms"
+    },
+    {
+      "name": "Mt"
+    },
+    {
+      "name": "ncomponents"
+    },
+    {
+      "name": "Nt"
+    },
+    {
+      "name": "Partial*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Partial*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "Partial",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Partial{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialBigg*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialBigg*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "Partialbigg*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Partialbigg*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialBigg",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialBigg{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "Partialbigg",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Partialbigg{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialClose",
+      "unusual": true
+    },
+    {
+      "name": "PartialEmptyClose",
+      "unusual": true
+    },
+    {
+      "name": "PartialMixSecond*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecond*{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "PartialMixSecond",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecond{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "PartialMixSecondBigg*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecondBigg*{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "PartialMixSecondbigg*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecondbigg*{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "PartialMixSecondBigg",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecondBigg{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "PartialMixSecondbigg",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "PartialMixSecondbigg{${1:function}}{${2:var1}}{${3:var2}}{${4:sub}}"
+      }
+    },
+    {
+      "name": "partialmolar",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "partialmolar{${1:symbol}}[${3:sup}]{${2:sub}}"
+      }
+    },
+    {
+      "name": "partialmolar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "partialmolar{${1:symbol}}{${2:sub}}"
+      }
+    },
+    {
+      "name": "PartialOpen",
+      "unusual": true
+    },
+    {
+      "name": "PartialSecond*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecond*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialSecond",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecond{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialSecondBigg*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecondBigg*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialSecondbigg*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecondbigg*{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialSecondBigg",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecondBigg{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "PartialSecondbigg",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PartialSecondbigg{${1:function}}{${2:variable}}{${3:sub}}"
+      }
+    },
+    {
+      "name": "phimix"
+    },
+    {
+      "name": "phipure"
+    },
+    {
+      "name": "phisat"
+    },
+    {
+      "name": "prodall",
+      "arg": {
+        "format": "{}",
+        "snippet": "prodall{${1:sub}}"
+      }
+    },
+    {
+      "name": "Psat"
+    },
+    {
+      "name": "Pstd"
+    },
+    {
+      "name": "Pvap"
+    },
+    {
+      "name": "Qm"
+    },
+    {
+      "name": "Qs"
+    },
+    {
+      "name": "Qt"
+    },
+    {
+      "name": "reaction"
+    },
+    {
+      "name": "residual"
+    },
+    {
+      "name": "sat"
+    },
+    {
+      "name": "SE"
+    },
+    {
+      "name": "SEpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SEpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "SEpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "SEpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "SEs"
+    },
+    {
+      "name": "SEt"
+    },
+    {
+      "name": "Sm"
+    },
+    {
+      "name": "Spm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Spm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Spm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Spm{${1:sub}}"
+      }
+    },
+    {
+      "name": "square"
+    },
+    {
+      "name": "SR"
+    },
+    {
+      "name": "SRpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SRpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "SRpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "SRpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "SRs"
+    },
+    {
+      "name": "SRt"
+    },
+    {
+      "name": "Ss"
+    },
+    {
+      "name": "St"
+    },
+    {
+      "name": "std"
+    },
+    {
+      "name": "sublimation"
+    },
+    {
+      "name": "sumall",
+      "arg": {
+        "format": "{}",
+        "snippet": "sumall{${1:sub}}"
+      }
+    },
+    {
+      "name": "sumallbutlast",
+      "arg": {
+        "format": "{}",
+        "snippet": "sumallbutlast{${1:sub}}"
+      }
+    },
+    {
+      "name": "UE"
+    },
+    {
+      "name": "UEpm"
+    },
+    {
+      "name": "UEs"
+    },
+    {
+      "name": "UEt"
+    },
+    {
+      "name": "Um"
+    },
+    {
+      "name": "Upm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Upm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Upm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Upm{${1:sub}}"
+      }
+    },
+    {
+      "name": "UR"
+    },
+    {
+      "name": "URpm"
+    },
+    {
+      "name": "URs"
+    },
+    {
+      "name": "URt"
+    },
+    {
+      "name": "Us"
+    },
+    {
+      "name": "Ut"
+    },
+    {
+      "name": "vaporization"
+    },
+    {
+      "name": "VE"
+    },
+    {
+      "name": "VEpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "VEpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "VEpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "VEpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "VEs"
+    },
+    {
+      "name": "VEt"
+    },
+    {
+      "name": "Vm"
+    },
+    {
+      "name": "Vpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Vpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "Vpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "Vpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "VR"
+    },
+    {
+      "name": "VRpm",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "VRpm[${2:sup}]{${1:sub}}"
+      }
+    },
+    {
+      "name": "VRpm",
+      "arg": {
+        "format": "{}",
+        "snippet": "VRpm{${1:sub}}"
+      }
+    },
+    {
+      "name": "VRs"
+    },
+    {
+      "name": "VRt"
+    },
+    {
+      "name": "Vs"
+    },
+    {
+      "name": "Vt"
+    },
+    {
+      "name": "Wm"
+    },
+    {
+      "name": "Ws"
+    },
+    {
+      "name": "Wt"
+    }
+  ],
+  "envs": [
+    {
+      "name": "thermobar"
+    },
+    {
+      "name": "thermobraces"
+    },
+    {
+      "name": "thermobrackets"
+    },
+    {
+      "name": "thermoNOsubscripts"
+    },
+    {
+      "name": "thermoparentheses"
+    },
+    {
+      "name": "thermoplain"
+    },
+    {
+      "name": "thermosubscripts"
+    }
+  ],
+  "keys": {
+    "\\usepackage/thermodynamics#c": [
+      "bar",
+      "Bejan",
+      "braces",
+      "brackets",
+      "CBK",
+      "delta",
+      "EEAGHaN",
+      "EEFGHAn",
+      "EEFGHAn",
+      "EEFGHan",
+      "EEFGHaN",
+      "ElliottLira",
+      "EUAGHan",
+      "EUAGHaN",
+      "EUAGHAn",
+      "EUAGHAN",
+      "EUFGHAn",
+      "EUFGHAN",
+      "EUFGHan",
+      "EUFGHaN",
+      "EUHAGan",
+      "EUHAGaN",
+      "extensive-plain",
+      "extensive-superscript",
+      "intensive-lowercase",
+      "intensive-plain",
+      "Koretsky",
+      "moles-index",
+      "moles-range",
+      "MSBB",
+      "nosubscripts",
+      "parentheses",
+      "plain-derivatives",
+      "Prausnitz",
+      "Sandler",
+      "subscripts",
+      "SVNAS",
+      "TesterModell",
+      "Thompson"
+    ]
+  },
+  "args": [
+    "\\usepackage/thermodynamics#c"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "eghostguarded",
+      "arg": {
+        "format": "{}",
+        "snippet": "eghostguarded{${1:text}}"
+      }
+    },
+    {
+      "name": "jghostguarded",
+      "arg": {
+        "format": "{}",
+        "snippet": "jghostguarded{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

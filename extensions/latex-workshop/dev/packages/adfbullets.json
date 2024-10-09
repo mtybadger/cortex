@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "pifont"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adfbullet",
+      "arg": {
+        "format": "{}",
+        "snippet": "adfbullet{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

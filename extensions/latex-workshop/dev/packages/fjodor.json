@@ -1,0 +1,24 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fjodor#c": [
+      "fjodor",
+      "katajev",
+      "hese",
+      "puskin",
+      "ernest",
+      "viktor",
+      "remark",
+      "tehnicar",
+      "ulro",
+      "aristotel",
+      "jaeger",
+      "tesla"
+    ]
+  },
+  "args": [
+    "\\usepackage/fjodor#c"
+  ]
+}

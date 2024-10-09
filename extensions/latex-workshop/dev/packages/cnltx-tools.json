@@ -1,0 +1,161 @@
+{
+  "deps": [
+    {
+      "name": "cnltx-base"
+    },
+    {
+      "name": "accsupp"
+    },
+    {
+      "name": "cnltx-translations"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cnltxacronym",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cnltxacronym{${1:string}}{${2:acronym}}"
+      }
+    },
+    {
+      "name": "newabbr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newabbr{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newabbr*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newabbr*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "renewabbr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "renewabbr{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "renewabbr*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "renewabbr*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "defabbr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defabbr{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "defabbr*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defabbr*{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "cnltxlatin",
+      "arg": {
+        "format": "{}",
+        "snippet": "cnltxlatin{${1:abbreviation}}"
+      }
+    },
+    {
+      "name": "ie"
+    },
+    {
+      "name": "eg"
+    },
+    {
+      "name": "cf"
+    },
+    {
+      "name": "etc"
+    },
+    {
+      "name": "vs"
+    },
+    {
+      "name": "zB"
+    },
+    {
+      "name": "ZB"
+    },
+    {
+      "name": "usw"
+    },
+    {
+      "name": "usf"
+    },
+    {
+      "name": "uswusf"
+    },
+    {
+      "name": "bzw"
+    },
+    {
+      "name": "dsh"
+    },
+    {
+      "name": "Dsh"
+    },
+    {
+      "name": "vgl"
+    },
+    {
+      "name": "Vgl"
+    },
+    {
+      "name": "cnltxtimeformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "cnltxtimeformat{${1:abbreviation}}"
+      }
+    },
+    {
+      "name": "PM"
+    },
+    {
+      "name": "AM"
+    },
+    {
+      "name": "BC"
+    },
+    {
+      "name": "AD"
+    },
+    {
+      "name": "nohyperpage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nohyperpage{${1:arg}}"
+      }
+    },
+    {
+      "name": "texorpdfstring",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "texorpdfstring{${1:TEXstring}}{${2:PDFstring}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setcnltx#c": [
+      "acronym-format={${1:definition}}",
+      "name-format={${1:formatting cmds}}",
+      "last-name-format={${1:formatting cmds}}",
+      "first-name-format={${1:formatting cmds}}"
+    ]
+  },
+  "args": []
+}

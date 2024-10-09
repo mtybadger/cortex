@@ -1,0 +1,125 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ra"
+    },
+    {
+      "name": "ra",
+      "arg": {
+        "format": "[]",
+        "snippet": "ra[${1:label}]"
+      }
+    },
+    {
+      "name": "la"
+    },
+    {
+      "name": "la",
+      "arg": {
+        "format": "[]",
+        "snippet": "la[${1:label}]"
+      }
+    },
+    {
+      "name": "mapsto",
+      "detail": "↦",
+      "doc": "Maps to, rightward, maplet"
+    },
+    {
+      "name": "lmapsto"
+    },
+    {
+      "name": "inj"
+    },
+    {
+      "name": "inj",
+      "arg": {
+        "format": "[]",
+        "snippet": "inj[${1:label}]"
+      }
+    },
+    {
+      "name": "linj"
+    },
+    {
+      "name": "linj",
+      "arg": {
+        "format": "[]",
+        "snippet": "linj[${1:label}]"
+      }
+    },
+    {
+      "name": "surj"
+    },
+    {
+      "name": "surj",
+      "arg": {
+        "format": "[]",
+        "snippet": "surj[${1:label}]"
+      }
+    },
+    {
+      "name": "lsurj"
+    },
+    {
+      "name": "lsurj",
+      "arg": {
+        "format": "[]",
+        "snippet": "lsurj[${1:label}]"
+      }
+    },
+    {
+      "name": "isom"
+    },
+    {
+      "name": "lisom"
+    },
+    {
+      "name": "lra"
+    },
+    {
+      "name": "lra",
+      "arg": {
+        "format": "[]",
+        "snippet": "lra[${1:label}]"
+      }
+    },
+    {
+      "name": "ppf"
+    },
+    {
+      "name": "ppf",
+      "arg": {
+        "format": "[]",
+        "snippet": "ppf[${1:label}]"
+      }
+    },
+    {
+      "name": "lppf"
+    },
+    {
+      "name": "lppf",
+      "arg": {
+        "format": "[]",
+        "snippet": "lppf[${1:label}]"
+      }
+    },
+    {
+      "name": "smapsto"
+    },
+    {
+      "name": "lsmapsto"
+    },
+    {
+      "name": "oldmapsto"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

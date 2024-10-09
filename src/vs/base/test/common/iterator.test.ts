@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { Iterable } from '../../common/iterator.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { Iterable } from 'vs/base/common/iterator';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('Iterable', function () {
 

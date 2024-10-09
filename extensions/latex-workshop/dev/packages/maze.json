@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "maze",
+      "arg": {
+        "format": "{}",
+        "snippet": "maze{${1:size}}"
+      }
+    },
+    {
+      "name": "maze",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "maze{${1:size}}[${2:seed}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

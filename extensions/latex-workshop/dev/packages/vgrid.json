@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "everypage"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "ifoddpage"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

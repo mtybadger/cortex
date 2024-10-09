@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "thm-patch"
+    },
+    {
+      "name": "aliasctr"
+    },
+    {
+      "name": "parseargs"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Autoref",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Autoref{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,110 @@
+{
+  "deps": [
+    {
+      "name": "footmisc"
+    },
+    {
+      "name": "flushend"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "qrcode"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "tikzlibrarysvg.path"
+    }
+  ],
+  "macros": [
+    {
+      "name": "osdafootnote"
+    },
+    {
+      "name": "osdafootnote",
+      "arg": {
+        "format": "[]",
+        "snippet": "osdafootnote[${1:options%keyvals}]",
+        "keys": [
+          "\\usepackage/osda#c,\\osdafootnote#c,\\osdanotice#c,\\osdaset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "osdanotice"
+    },
+    {
+      "name": "osdanotice",
+      "arg": {
+        "format": "[]",
+        "snippet": "osdanotice[${1:options%keyvals}]",
+        "keys": [
+          "\\usepackage/osda#c,\\osdafootnote#c,\\osdanotice#c,\\osdaset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "osdaset",
+      "arg": {
+        "format": "{}",
+        "snippet": "osdaset{${1:options%keyvals}}",
+        "keys": [
+          "\\usepackage/osda#c,\\osdafootnote#c,\\osdanotice#c,\\osdaset#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/osda#c,\\osdafootnote#c,\\osdanotice#c,\\osdaset#c": [
+      "auto",
+      "${1:year}",
+      "cc-by",
+      "cc-by-sa",
+      "cc-by-nc-sa",
+      "cc-by-nc-nd",
+      "arXiv",
+      "cc0",
+      "paper/url=${1:URL}",
+      "paper/doi=${1:DOI}",
+      "url=${1:URL}",
+      "doi=${1:DOI}",
+      "license/long=${1:long name}",
+      "license/short=${1:short name}",
+      "license/version=${1:version}",
+      "license/url=${1:URL}",
+      "proceedings/title=${1:title}",
+      "proceedings/startpage=${1:number}",
+      "proceedings/endpage=${1:number}",
+      "pages={${1:startpage}}{${2:endpage}}",
+      "workshop/counter=${1:number}",
+      "workshop/longname=${1:name}",
+      "workshop/acronym=${1:acronym}",
+      "location/city=${1:city}",
+      "location/country=${1:country}",
+      "date/month=${1:month}",
+      "date/day=${1:day}",
+      "date/year=${1:year}",
+      "hostconference/longname=${1:name}",
+      "hostconference/acronym=${1:acronym}"
+    ]
+  },
+  "args": [
+    "\\usepackage/osda#c,\\osdafootnote#c,\\osdanotice#c,\\osdaset#c"
+  ]
+}

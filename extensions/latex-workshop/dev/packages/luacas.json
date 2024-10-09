@@ -1,0 +1,164 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "mathtools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fetch",
+      "arg": {
+        "format": "{}",
+        "snippet": "fetch{${1:name}}"
+      }
+    },
+    {
+      "name": "store",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "store{${1:name}}[${2:alt-name}]"
+      }
+    },
+    {
+      "name": "print",
+      "arg": {
+        "format": "{}",
+        "snippet": "print{${1:expr}}"
+      }
+    },
+    {
+      "name": "print*",
+      "arg": {
+        "format": "{}",
+        "snippet": "print*{${1:expr}}"
+      }
+    },
+    {
+      "name": "vprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "vprint{${1:expr}}"
+      }
+    },
+    {
+      "name": "vprint*",
+      "arg": {
+        "format": "{}",
+        "snippet": "vprint*{${1:expr}}"
+      }
+    },
+    {
+      "name": "lprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "lprint{${1:expr}}"
+      }
+    },
+    {
+      "name": "lprint",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "lprint{${1:expr}}[${2:low,upp}]"
+      }
+    },
+    {
+      "name": "parseforest",
+      "arg": {
+        "format": "{}",
+        "snippet": "parseforest{${1:expr}}"
+      }
+    },
+    {
+      "name": "parseforest*",
+      "arg": {
+        "format": "{}",
+        "snippet": "parseforest*{${1:expr}}"
+      }
+    },
+    {
+      "name": "forestresult"
+    },
+    {
+      "name": "parseshrub",
+      "arg": {
+        "format": "{}",
+        "snippet": "parseshrub{${1:expr}}"
+      }
+    },
+    {
+      "name": "parseshrub*",
+      "arg": {
+        "format": "{}",
+        "snippet": "parseshrub*{${1:expr}}"
+      }
+    },
+    {
+      "name": "shrubresult"
+    },
+    {
+      "name": "whatis",
+      "arg": {
+        "format": "{}",
+        "snippet": "whatis{${1:expr}}"
+      }
+    },
+    {
+      "name": "printshrub",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printshrub{${1:expr}}"
+      }
+    },
+    {
+      "name": "printshrub*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printshrub*{${1:expr}}"
+      }
+    },
+    {
+      "name": "printtree",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printtree{${1:expr}}"
+      }
+    },
+    {
+      "name": "printtree*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printtree*{${1:expr}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "CAS"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

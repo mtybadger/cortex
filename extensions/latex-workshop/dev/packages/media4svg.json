@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "pdfbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "includemedia",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "includemedia{${1:poster text%text}}{${2:imagefile}}"
+      }
+    },
+    {
+      "name": "includemedia",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "includemedia[${3:options%keyvals}]{${1:poster text%text}}{${2:imagefile}}",
+        "keys": [
+          "\\includemedia,\\usepackage/media4svg#c",
+          "\\includemedia"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\includemedia,\\usepackage/media4svg#c": [
+      "draft",
+      "final",
+      "autoplay",
+      "loop",
+      "controls",
+      "mimetype=${1:mime type}",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "muted",
+      "scale=${1:factor}",
+      "url",
+      "embed",
+      "youtube",
+      "vimeo"
+    ],
+    "\\includemedia": [
+      "id=${1:label}",
+      "time=${1:time offset}"
+    ]
+  },
+  "args": [
+    "\\includemedia,\\usepackage/media4svg#c"
+  ]
+}

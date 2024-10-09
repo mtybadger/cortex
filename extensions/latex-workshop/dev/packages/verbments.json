@@ -1,0 +1,83 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "framed"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "calc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "plset",
+      "arg": {
+        "format": "{}",
+        "snippet": "plset{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{pyglist},\\plset"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "listofpyglistings"
+    },
+    {
+      "name": "listofpyglistingsname",
+      "arg": {
+        "format": "{}",
+        "snippet": "listofpyglistingsname{${1:name%text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pyglist"
+    },
+    {
+      "name": "pyglist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{pyglist},\\plset"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{pyglist},\\plset": [
+      "abovecaptionskip=",
+      "belowcaptionskip=",
+      "bgcolor=",
+      "caption={${1:text}}",
+      "captionbgcolor=",
+      "captionfont=${1:font commands}",
+      "encoding=${1:encoding}",
+      "fontsize=",
+      "fvset={${1:fancyvrb options}}",
+      "gobble=${1:integer}",
+      "language=${1:language}",
+      "label=",
+      "listingname=${1:name}",
+      "listingnamefont=${1:font commands}",
+      "mathescape",
+      "numbers=${1|none,left,right|}",
+      "numbersep=",
+      "showspaces",
+      "style=${1:Pygments style}",
+      "texcl"
+    ]
+  },
+  "args": []
+}

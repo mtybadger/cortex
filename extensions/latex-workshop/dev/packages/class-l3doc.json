@@ -1,0 +1,632 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "doc"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "alphalph"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "colortbl"
+    },
+    {
+      "name": "hologo"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "trace"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "underscore"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "lmodern"
+    },
+    {
+      "name": "hypdoc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pdfstringnewline",
+      "unusual": true
+    },
+    {
+      "name": "eTeX"
+    },
+    {
+      "name": "IniTeX"
+    },
+    {
+      "name": "Lua"
+    },
+    {
+      "name": "LuaTeX"
+    },
+    {
+      "name": "pdfTeX"
+    },
+    {
+      "name": "XeTeX"
+    },
+    {
+      "name": "pTeX"
+    },
+    {
+      "name": "upTeX"
+    },
+    {
+      "name": "epTeX"
+    },
+    {
+      "name": "eupTeX"
+    },
+    {
+      "name": "ConTeXt"
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cmd[${2:options%keyvals}]{${1:macro%cmd}}",
+        "keys": [
+          "\\cmd#c,\\cs#c,\\tn#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cs[${2:options%keyvals}]{${1:csname}}",
+        "keys": [
+          "\\cmd#c,\\cs#c,\\tn#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tn",
+      "arg": {
+        "format": "{}",
+        "snippet": "tn{${1:csname}}"
+      }
+    },
+    {
+      "name": "tn",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tn[${2:options%keyvals}]{${1:csname}}",
+        "keys": [
+          "\\cmd#c,\\cs#c,\\tn#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Arg",
+      "arg": {
+        "format": "{}",
+        "snippet": "Arg{${1:arg}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "parg",
+      "arg": {
+        "format": "{}",
+        "snippet": "parg{${1:arg}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:file}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg{${1:package}}"
+      }
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:class}}"
+      }
+    },
+    {
+      "name": "EnableDocumentation"
+    },
+    {
+      "name": "EnableImplementation"
+    },
+    {
+      "name": "DisableDocumentation"
+    },
+    {
+      "name": "DisableImplementation"
+    },
+    {
+      "name": "CodedocExplain"
+    },
+    {
+      "name": "CodedocExplainEXP"
+    },
+    {
+      "name": "CodedocExplainREXP"
+    },
+    {
+      "name": "CodedocExplainTF"
+    },
+    {
+      "name": "testfile",
+      "unusual": true
+    },
+    {
+      "name": "testfile*",
+      "unusual": true
+    },
+    {
+      "name": "MacroLongFont",
+      "unusual": true
+    },
+    {
+      "name": "TestFiles",
+      "arg": {
+        "format": "{}",
+        "snippet": "TestFiles{${1:list of files%file}}"
+      }
+    },
+    {
+      "name": "UnitTested"
+    },
+    {
+      "name": "TestMissing",
+      "arg": {
+        "format": "{}",
+        "snippet": "TestMissing{${1:explanation%text}}"
+      }
+    },
+    {
+      "name": "DescribeOption",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeOption{${1:option}}"
+      }
+    },
+    {
+      "name": "DescribeOption",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeOption[${2:options}]{${1:option}}"
+      }
+    },
+    {
+      "name": "PrintDescribeOption",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeOption{${1:option}}"
+      }
+    },
+    {
+      "name": "PrintOptionName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintOptionName{${1:option}}"
+      }
+    },
+    {
+      "name": "manual",
+      "unusual": true
+    },
+    {
+      "name": "dbend"
+    },
+    {
+      "name": "NB",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NB{${1:tag%text}}{${2:comments%text}}"
+      }
+    },
+    {
+      "name": "TemplateArgument",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TemplateArgument{${1:arg no}}{${2:meaning}}"
+      }
+    },
+    {
+      "name": "TemplateSemantics"
+    },
+    {
+      "name": "TemplateKey",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "TemplateKey{${1:key name}}{${2:type}}{${3:description%text}}{${4:default value}}"
+      }
+    },
+    {
+      "name": "InstanceKey",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InstanceKey{${1:key name}}{${2:value}}"
+      }
+    },
+    {
+      "name": "InstanceSemantics"
+    },
+    {
+      "name": "DocInputAgain",
+      "unusual": true
+    },
+    {
+      "name": "DocInclude",
+      "arg": {
+        "format": "{}",
+        "snippet": "DocInclude{${1:file}}"
+      }
+    },
+    {
+      "name": "currentfile",
+      "unusual": true
+    },
+    {
+      "name": "filesep",
+      "unusual": true
+    },
+    {
+      "name": "docincludeaux",
+      "unusual": true
+    },
+    {
+      "name": "filekey",
+      "unusual": true
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [
+    {
+      "name": "documentation"
+    },
+    {
+      "name": "implementation"
+    },
+    {
+      "name": "function",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:function%cmd}}"
+      }
+    },
+    {
+      "name": "function",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:type%keyvals}]{${1:function%cmd}}",
+        "keys": [
+          "\\begin{function}#c,\\begin{variable}#c,\\begin{macro}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "variable",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "variable",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:variable%cmd}}",
+        "keys": [
+          "\\begin{function}#c,\\begin{variable}#c,\\begin{macro}#c",
+          "\\begin{variable}#c,\\begin{macro}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "macro",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro1,macro2,...%cmd}}"
+      }
+    },
+    {
+      "name": "macro",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:macro1,macro2,...%cmd}}",
+        "keys": [
+          "\\begin{function}#c,\\begin{variable}#c,\\begin{macro}#c",
+          "\\begin{variable}#c,\\begin{macro}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "syntax"
+    },
+    {
+      "name": "texnote"
+    },
+    {
+      "name": "arguments"
+    },
+    {
+      "name": "optionenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:option}}"
+      }
+    },
+    {
+      "name": "optionenv",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options}]{${1:option}}"
+      }
+    },
+    {
+      "name": "danger"
+    },
+    {
+      "name": "ddanger"
+    },
+    {
+      "name": "NOTE",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:tag%text}}"
+      }
+    },
+    {
+      "name": "TemplateInterfaceDescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:template type name}}"
+      }
+    },
+    {
+      "name": "TemplateDescription",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:template type name}}{${2:name}}"
+      }
+    },
+    {
+      "name": "InstanceDescription",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:template type name}}{${2:instance name}}{${3:template name}}"
+      }
+    },
+    {
+      "name": "InstanceDescription",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "[${4:text for key colwidth}]{${1:template type name}}{${2:instance name}}{${3:template name}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/l3doc#c": [
+      "full",
+      "onlydoc",
+      "check",
+      "checktest",
+      "kernel",
+      "stdmodule",
+      "lm-default",
+      "cs-break",
+      "cs-break-nohyphen",
+      "show-notes",
+      "hide-notes",
+      "a4paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ],
+    "\\cmd#c,\\cs#c,\\tn#c": [
+      "index=${1:name}",
+      "no-index",
+      "module=${1:module}",
+      "replace"
+    ],
+    "\\begin{function}#c,\\begin{variable}#c,\\begin{macro}#c": [
+      "EXP",
+      "rEXP",
+      "TF",
+      "pTF",
+      "noTF",
+      "added=${1:date}",
+      "updated=${1:date}",
+      "deprecated",
+      "no-user-doc",
+      "label=",
+      "verb",
+      "module="
+    ],
+    "\\begin{variable}#c,\\begin{macro}#c": [
+      "int"
+    ]
+  },
+  "args": [
+    "\\documentclass/l3doc#c"
+  ]
+}

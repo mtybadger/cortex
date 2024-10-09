@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "bxghost-lib"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bxghost#c": [
+      "verb",
+      "noverb"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxghost#c"
+  ]
+}

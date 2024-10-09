@@ -1,0 +1,488 @@
+{
+  "deps": [
+    {
+      "name": "url"
+    },
+    {
+      "name": "pcatcode"
+    },
+    {
+      "name": "ifoption"
+    },
+    {
+      "name": "rkeyval"
+    },
+    {
+      "name": "textcmds"
+    },
+    {
+      "name": "mathscinet"
+    },
+    {
+      "name": "backref",
+      "if": "backrefs"
+    },
+    {
+      "name": "hyperref",
+      "if": "msc-links"
+    },
+    {
+      "name": "amsbst",
+      "if": "bibtex-style"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bib",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bib{${1:citekey}}{${2:type}}{${3:fields%keyvals}}",
+        "keys": [
+          "\\bib,\\bib*"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "bib*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bib*{${1:citekey%plain}}{${2:type}}{${3:fields%keyvals}}",
+        "keys": [
+          "\\bib,\\bib*"
+        ],
+        "keyPos": 2
+      }
+    },
+    {
+      "name": "bibselect",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibselect{${1:.ltb files%file}}"
+      }
+    },
+    {
+      "name": "bibselect*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibselect*{${1:.ltb files%file}}"
+      }
+    },
+    {
+      "name": "resetbiblist",
+      "arg": {
+        "format": "{}",
+        "snippet": "resetbiblist{${1:widest label}}"
+      }
+    },
+    {
+      "name": "bibname"
+    },
+    {
+      "name": "MR",
+      "arg": {
+        "format": "{}",
+        "snippet": "MR{${1:number}}"
+      }
+    },
+    {
+      "name": "cite",
+      "arg": {
+        "format": "{}*{}",
+        "snippet": "cite{${1:bibid}}*{${2:postfix%text}}"
+      }
+    },
+    {
+      "name": "citelist",
+      "arg": {
+        "format": "{}",
+        "snippet": "citelist{${1:cite commands}}"
+      }
+    },
+    {
+      "name": "cites",
+      "arg": {
+        "format": "{}",
+        "snippet": "cites{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ycite",
+      "arg": {
+        "format": "{}",
+        "snippet": "ycite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ycites",
+      "arg": {
+        "format": "{}",
+        "snippet": "ycites{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ocite",
+      "arg": {
+        "format": "{}",
+        "snippet": "ocite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ocites",
+      "arg": {
+        "format": "{}",
+        "snippet": "ocites{${1:bibid}}"
+      }
+    },
+    {
+      "name": "citeauthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "citeauthor{${1:bibid}}"
+      }
+    },
+    {
+      "name": "citeauthory",
+      "arg": {
+        "format": "{}",
+        "snippet": "citeauthory{${1:bibid}}"
+      }
+    },
+    {
+      "name": "fullcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "fullcite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "fullocite",
+      "arg": {
+        "format": "{}",
+        "snippet": "fullocite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "DefineName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DefineName{${1:citekey%plain}}{${2:name}}"
+      }
+    },
+    {
+      "name": "DefineJournal",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "DefineJournal{${1:citekey%plain}}{${2:issn}}{${3:shortjournal}}{${4:journal}}"
+      }
+    },
+    {
+      "name": "DefinePublisher",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "DefinePublisher{${1:citekey%plain}}{${2:shortpublisher}}{${3:publisher}}{${4:address}}"
+      }
+    },
+    {
+      "name": "parenthesize",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "parenthesize{${1:text}}"
+      }
+    },
+    {
+      "name": "bibquotes",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bibquotes{${1:text}}"
+      }
+    },
+    {
+      "name": "voltext",
+      "unusual": true
+    },
+    {
+      "name": "issuetext",
+      "unusual": true
+    },
+    {
+      "name": "editiontext",
+      "unusual": true
+    },
+    {
+      "name": "DashPages",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DashPages{${1:page ranges}}"
+      }
+    },
+    {
+      "name": "nopunct",
+      "unusual": true
+    },
+    {
+      "name": "PrintPrimary",
+      "unusual": true
+    },
+    {
+      "name": "PrintAuthors",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintAuthors{${1:authors}}"
+      }
+    },
+    {
+      "name": "PrintEditorsA",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintEditorsA{${1:editors}}"
+      }
+    },
+    {
+      "name": "PrintEditorsB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintEditorsB{${1:editors}}"
+      }
+    },
+    {
+      "name": "PrintEditorsC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintEditorsC{${1:editors}}"
+      }
+    },
+    {
+      "name": "PrintTranslatorsA",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintTranslatorsA{${1:translators}}"
+      }
+    },
+    {
+      "name": "PrintTranslatorsB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintTranslatorsB{${1:translators}}"
+      }
+    },
+    {
+      "name": "PrintTranslatorsC",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintTranslatorsC{${1:translators}}"
+      }
+    },
+    {
+      "name": "sameauthors",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sameauthors{${1:name}}"
+      }
+    },
+    {
+      "name": "bysame",
+      "unusual": true
+    },
+    {
+      "name": "Plural",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Plural{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "SingularPlural",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SingularPlural{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "PrintReviews",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintReviews{${1:review numbers}}"
+      }
+    },
+    {
+      "name": "BibField",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "BibField{${1:field}}"
+      }
+    },
+    {
+      "name": "IfEmptyBibField",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfEmptyBibField{${1:field}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "PrintEdition",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintEdition{${1:edition}}"
+      }
+    },
+    {
+      "name": "CardinalNumeric",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CardinalNumeric{${1:arg}}"
+      }
+    },
+    {
+      "name": "PrintDate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDate{${1:date}}"
+      }
+    },
+    {
+      "name": "PrintYear",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintYear{${1:year}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "bibchapter"
+    },
+    {
+      "name": "bibchapter",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "bibdiv"
+    },
+    {
+      "name": "bibdiv",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "biblist"
+    },
+    {
+      "name": "biblist",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:before-code}]"
+      }
+    },
+    {
+      "name": "biblist",
+      "arg": {
+        "format": "*{}",
+        "snippet": "*{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "biblist",
+      "arg": {
+        "format": "[]*{}",
+        "snippet": "[${2:before-code}]*{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "bibsection"
+    },
+    {
+      "name": "bibsection",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/amsrefs#c": [
+      "alphabetic",
+      "shortalphabetic",
+      "author-year",
+      "y2k",
+      "non-compressed-cites",
+      "non-sorted-cites",
+      "abbrev",
+      "initials",
+      "short-journals",
+      "short-months",
+      "short-publishers",
+      "backrefs",
+      "bibtex-style",
+      "citation-order",
+      "lite",
+      "msc-links",
+      "nobysame"
+    ],
+    "\\bib,\\bib*": [
+      "accessdate={${1:date}}",
+      "address={${1:address}}",
+      "booktitle={${1:title}}",
+      "date={${1:date}}",
+      "edition={${1:edition}}",
+      "eprint={${1:eprint info}}",
+      "hyphenation={${1:language}}",
+      "journal={${1:journal}}",
+      "label={${1:label}}",
+      "language={${1:language}}",
+      "note={${1:text}}",
+      "number={${1:issue number}}",
+      "organization={${1:organization}}",
+      "pages={${1:page range}}",
+      "part={${1:part}}",
+      "publisher={${1:publisher}}",
+      "series={${1:series}}",
+      "status={${1:text}}",
+      "subtitle={${1:subtitle}}",
+      "title={${1:title}}",
+      "type={${1:thesis type}}",
+      "volume={${1:volume number}}",
+      "xref={${1:citekey}}",
+      "author={${1:name}}",
+      "editor={${1:name}}",
+      "translator={${1:name}}",
+      "isbn={${1:isbn}}",
+      "issn={${1:issn}}",
+      "review={${1:review number}}",
+      "book={${1:keyvals}}",
+      "conference={${1:keyvals}}",
+      "contribution={${1:keyvals}}",
+      "partial={${1:keyvals}}",
+      "reprint={${1:keyvals}}",
+      "translation={${1:keyvals}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/amsrefs#c"
+  ]
+}

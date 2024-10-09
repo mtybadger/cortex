@@ -3,19 +3,18 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Emitter } from '../../base/common/event.js';
-import { URI, UriComponents } from '../../base/common/uri.js';
-import { IURITransformer } from '../../base/common/uriIpc.js';
-import { IFileChange } from '../../platform/files/common/files.js';
-import { ILogService } from '../../platform/log/common/log.js';
-import { createURITransformer } from '../../workbench/api/node/uriTransformer.js';
-import { RemoteAgentConnectionContext } from '../../platform/remote/common/remoteAgentEnvironment.js';
-import { DiskFileSystemProvider } from '../../platform/files/node/diskFileSystemProvider.js';
-import { posix, delimiter } from '../../base/common/path.js';
-import { IServerEnvironmentService } from './serverEnvironmentService.js';
-import { AbstractDiskFileSystemProviderChannel, AbstractSessionFileWatcher, ISessionFileWatcher } from '../../platform/files/node/diskFileSystemProviderServer.js';
-import { IRecursiveWatcherOptions } from '../../platform/files/common/watcher.js';
-import { IConfigurationService } from '../../platform/configuration/common/configuration.js';
+import { Emitter } from 'vs/base/common/event';
+import { URI, UriComponents } from 'vs/base/common/uri';
+import { IURITransformer } from 'vs/base/common/uriIpc';
+import { IFileChange } from 'vs/platform/files/common/files';
+import { ILogService } from 'vs/platform/log/common/log';
+import { createURITransformer } from 'vs/workbench/api/node/uriTransformer';
+import { RemoteAgentConnectionContext } from 'vs/platform/remote/common/remoteAgentEnvironment';
+import { DiskFileSystemProvider } from 'vs/platform/files/node/diskFileSystemProvider';
+import { posix, delimiter } from 'vs/base/common/path';
+import { IServerEnvironmentService } from 'vs/server/node/serverEnvironmentService';
+import { AbstractDiskFileSystemProviderChannel, AbstractSessionFileWatcher, ISessionFileWatcher } from 'vs/platform/files/node/diskFileSystemProviderServer';
+import { IRecursiveWatcherOptions } from 'vs/platform/files/common/watcher';
 
 export class RemoteAgentFileSystemProviderChannel extends AbstractDiskFileSystemProviderChannel<RemoteAgentConnectionContext> {
 
@@ -23,8 +22,7 @@ export class RemoteAgentFileSystemProviderChannel extends AbstractDiskFileSystem
 
 	constructor(
 		logService: ILogService,
-		private readonly environmentService: IServerEnvironmentService,
-		private readonly configurationService: IConfigurationService
+		private readonly environmentService: IServerEnvironmentService
 	) {
 		super(new DiskFileSystemProvider(logService), logService);
 
@@ -54,7 +52,7 @@ export class RemoteAgentFileSystemProviderChannel extends AbstractDiskFileSystem
 	//#region File Watching
 
 	protected createSessionFileWatcher(uriTransformer: IURITransformer, emitter: Emitter<IFileChange[] | string>): ISessionFileWatcher {
-		return new SessionFileWatcher(uriTransformer, emitter, this.logService, this.environmentService, this.configurationService);
+		return new SessionFileWatcher(uriTransformer, emitter, this.logService, this.environmentService);
 	}
 
 	//#endregion
@@ -66,8 +64,7 @@ class SessionFileWatcher extends AbstractSessionFileWatcher {
 		uriTransformer: IURITransformer,
 		sessionEmitter: Emitter<IFileChange[] | string>,
 		logService: ILogService,
-		environmentService: IServerEnvironmentService,
-		configurationService: IConfigurationService
+		environmentService: IServerEnvironmentService
 	) {
 		super(uriTransformer, sessionEmitter, logService, environmentService);
 	}

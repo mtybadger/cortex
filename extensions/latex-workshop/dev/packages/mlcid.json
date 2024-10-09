@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CIDK",
+      "arg": {
+        "format": "{}",
+        "snippet": "CIDK{${1:number}}"
+      }
+    },
+    {
+      "name": "CIDC",
+      "arg": {
+        "format": "{}",
+        "snippet": "CIDC{${1:number}}"
+      }
+    },
+    {
+      "name": "CIDT",
+      "arg": {
+        "format": "{}",
+        "snippet": "CIDT{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    }
+  ],
+  "macros": [
+    {
+      "name": "AltOverlayMode",
+      "unusual": true
+    },
+    {
+      "name": "thepsoverlaybox",
+      "unusual": true
+    },
+    {
+      "name": "psoverlaybox",
+      "unusual": true
+    },
+    {
+      "name": "endpsoverlaybox",
+      "unusual": true
+    },
+    {
+      "name": "psoverlay",
+      "arg": {
+        "format": "{}",
+        "snippet": "psoverlay{${1:number}}"
+      }
+    },
+    {
+      "name": "psputoverlaybox",
+      "arg": {
+        "format": "{}",
+        "snippet": "psputoverlaybox{${1:number}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "psoverlaybox"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

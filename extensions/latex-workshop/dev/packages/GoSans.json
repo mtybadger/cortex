@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gomedium"
+    },
+    {
+      "name": "gobold"
+    },
+    {
+      "name": "gofamily",
+      "unusual": true
+    },
+    {
+      "name": "golgr",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/GoSans#c": [
+      "scaled=${1:factor}",
+      "type1",
+      "medium",
+      "default",
+      "sfdefault"
+    ]
+  },
+  "args": [
+    "\\usepackage/GoSans#c"
+  ]
+}

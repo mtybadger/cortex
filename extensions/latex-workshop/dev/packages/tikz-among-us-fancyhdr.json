@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "tikz-among-us"
+    },
+    {
+      "name": "fancyhdr"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

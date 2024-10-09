@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "textpgoth",
+      "arg": {
+        "format": "{}",
+        "snippet": "textpgoth{${1:text}}"
+      }
+    },
+    {
+      "name": "pgothfamily"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

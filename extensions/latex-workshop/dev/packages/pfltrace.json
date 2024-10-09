@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    },
+    {
+      "name": "fltrace"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newcalcunit",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newcalcunit{${1:unit}}{${2:length}}"
+      }
+    },
+    {
+      "name": "DeclareCalcUnit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareCalcUnit{${1:unit}}{${2:length}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

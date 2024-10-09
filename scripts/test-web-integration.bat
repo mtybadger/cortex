@@ -9,7 +9,7 @@ IF "%~1" == "" (
 	set EXT_PATH=%CD:\=/%/extensions
 
 	:: Download nodejs executable for remote
-	call npm run gulp node
+	call yarn gulp node
 ) else (
 	set AUTHORITY=%1
 	set EXT_PATH=%2
@@ -26,10 +26,8 @@ if "%VSCODE_REMOTE_SERVER_PATH%"=="" (
 )
 
 if not exist ".\test\integration\browser\out\index.js" (
-	pushd test\integration\browser
-	call npm run compile
-	popd
-	call npm run playwright-install
+	call yarn --cwd test/integration/browser compile
+	call yarn playwright-install
 )
 
 

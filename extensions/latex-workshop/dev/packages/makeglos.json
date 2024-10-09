@@ -1,0 +1,45 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "printglossary"
+    },
+    {
+      "name": "glossaryname"
+    },
+    {
+      "name": "glossaryintro"
+    },
+    {
+      "name": "gsee",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gsee{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "galso",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "galso{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "theglossary"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

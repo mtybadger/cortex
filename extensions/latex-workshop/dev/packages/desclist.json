@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "desclist",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:prefix}}{${2:suffix}}"
+      }
+    },
+    {
+      "name": "desclist",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "{${1:prefix}}{${2:suffix}}[${3:prototype}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

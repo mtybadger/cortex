@@ -1,0 +1,149 @@
+{
+  "deps": [
+    {
+      "name": "mdwtab"
+    }
+  ],
+  "macros": [
+    {
+      "name": "eqnumber"
+    },
+    {
+      "name": "eqnumber",
+      "arg": {
+        "format": "[]",
+        "snippet": "eqnumber[${1:text%plain}]"
+      }
+    },
+    {
+      "name": "eqaopenskip",
+      "unusual": true
+    },
+    {
+      "name": "eqacloseskip",
+      "unusual": true
+    },
+    {
+      "name": "eqacolskip",
+      "unusual": true
+    },
+    {
+      "name": "eqainskip",
+      "unusual": true
+    },
+    {
+      "name": "eqastyle",
+      "unusual": true
+    },
+    {
+      "name": "newmatrix",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newmatrix{${1:envname}}{${2:genmatrix args}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "eqnarray",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:cols}]"
+      }
+    },
+    {
+      "name": "eqnarray*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:cols}]"
+      }
+    },
+    {
+      "name": "eqlines"
+    },
+    {
+      "name": "eqlines*"
+    },
+    {
+      "name": "eqnalign"
+    },
+    {
+      "name": "eqnalign",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:cols}]"
+      }
+    },
+    {
+      "name": "spliteqn"
+    },
+    {
+      "name": "spliteqn*"
+    },
+    {
+      "name": "subsplit"
+    },
+    {
+      "name": "pmatrix"
+    },
+    {
+      "name": "dmatrix",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:ldelim}}{${2:rdelim}}"
+      }
+    },
+    {
+      "name": "smatrix"
+    },
+    {
+      "name": "smatrix*"
+    },
+    {
+      "name": "spmatrix"
+    },
+    {
+      "name": "spmatrix*"
+    },
+    {
+      "name": "sdmatrix",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:ldelim}}{${2:rdelim}}"
+      }
+    },
+    {
+      "name": "sdmatrix*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:ldelim}}{${2:rdelim}}"
+      }
+    },
+    {
+      "name": "genmatrix",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "{${1:matrix-style}}{${2:outer-style}}{${3:spacing}}{${4:ldelim}}{${5:rdelim}}"
+      }
+    },
+    {
+      "name": "script"
+    },
+    {
+      "name": "script",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:cols}]"
+      }
+    },
+    {
+      "name": "cases"
+    },
+    {
+      "name": "smcases"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,115 @@
+{
+  "deps": [
+    {
+      "name": "marginnote"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "soul"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    }
+  ],
+  "macros": [
+    {
+      "name": "skp"
+    },
+    {
+      "name": "skp",
+      "arg": {
+        "format": "[]",
+        "snippet": "skp[${1:number}]"
+      }
+    },
+    {
+      "name": "del",
+      "arg": {
+        "format": "{}",
+        "snippet": "del{${1:phrase%text}}"
+      }
+    },
+    {
+      "name": "yel",
+      "arg": {
+        "format": "{}",
+        "snippet": "yel{${1:phrase%text}}"
+      }
+    },
+    {
+      "name": "yel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "yel[${2:comment%text}]{${1:phrase%text}}"
+      }
+    },
+    {
+      "name": "add",
+      "arg": {
+        "format": "{}",
+        "snippet": "add{${1:phrase%text}}"
+      }
+    },
+    {
+      "name": "rep",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rep{${1:phrase%text}}{${2:replacement}}"
+      }
+    },
+    {
+      "name": "com",
+      "arg": {
+        "format": "{}",
+        "snippet": "com{${1:comment%text}}"
+      }
+    },
+    {
+      "name": "hilite",
+      "arg": {
+        "format": "{}",
+        "snippet": "hilite{${1:phrase%text}}"
+      }
+    },
+    {
+      "name": "hilite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hilite[${2:options%keyvals}]{${1:phrase%text}}",
+        "keys": [
+          "\\hilite#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/proofread#c": [
+      "onehalfspacing",
+      "doublespacing",
+      "corrected",
+      "uncorrected",
+      "frame"
+    ],
+    "\\hilite#c": [
+      "fill=",
+      "draw=",
+      "opacity=",
+      "fill opacity=",
+      "draw opacity=",
+      "line width="
+    ]
+  },
+  "args": [
+    "\\usepackage/proofread#c"
+  ]
+}

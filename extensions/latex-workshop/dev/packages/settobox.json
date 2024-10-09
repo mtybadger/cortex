@@ -1,0 +1,85 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "settoboxwidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "settoboxwidth{${1:length}}{${2:box}}"
+      }
+    },
+    {
+      "name": "settoboxheight",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "settoboxheight{${1:length}}{${2:box}}"
+      }
+    },
+    {
+      "name": "settoboxdepth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "settoboxdepth{${1:length}}{${2:box}}"
+      }
+    },
+    {
+      "name": "settoboxtotalheight",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "settoboxtotalheight{${1:length}}{${2:box}}"
+      }
+    },
+    {
+      "name": "setboxwidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxwidth{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxheight",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxheight{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxdepth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxdepth{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxmoveleft",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxmoveleft{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxmoveright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxmoveright{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxlower",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxlower{${1:box}}{${2:length-expr}}"
+      }
+    },
+    {
+      "name": "setboxright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setboxright{${1:box}}{${2:length-expr}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

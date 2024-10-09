@@ -226,15 +226,12 @@ pub struct ServeWebArgs {
 
 #[derive(Args, Debug, Clone)]
 pub struct CommandShellArgs {
-	#[clap(flatten)]
-	pub server_args: BaseServerArgs,
-
 	/// Listen on a socket instead of stdin/stdout.
 	#[clap(long)]
 	pub on_socket: bool,
 	/// Listen on a host/port instead of stdin/stdout.
-	#[clap(long, num_args = 0..=2, default_missing_value = "0")]
-	pub on_port: Vec<u16>,
+	#[clap(long, num_args = 0..=1, default_missing_value = "0")]
+	pub on_port: Option<u16>,
 	/// Listen on a host/port instead of stdin/stdout.
 	#[clap[long]]
 	pub on_host: Option<String>,
@@ -641,9 +638,6 @@ pub struct ExistingTunnelArgs {
 
 #[derive(Args, Debug, Clone, Default)]
 pub struct TunnelServeArgs {
-	#[clap(flatten)]
-	pub server_args: BaseServerArgs,
-
 	/// Optional details to connect to an existing tunnel
 	#[clap(flatten, next_help_heading = Some("ADVANCED OPTIONS"))]
 	pub tunnel: ExistingTunnelArgs,
@@ -667,10 +661,7 @@ pub struct TunnelServeArgs {
 	/// If set, the user accepts the server license terms and the server will be started without a user prompt.
 	#[clap(long)]
 	pub accept_server_license_terms: bool,
-}
 
-#[derive(Args, Debug, Clone, Default)]
-pub struct BaseServerArgs {
 	/// Requests that extensions be preloaded and installed on connecting servers.
 	#[clap(long)]
 	pub install_extension: Vec<String>,
@@ -684,8 +675,8 @@ pub struct BaseServerArgs {
 	pub extensions_dir: Option<String>,
 }
 
-impl BaseServerArgs {
-	pub fn apply_to(&self, csa: &mut CodeServerArgs) {
+impl TunnelServeArgs {
+	pub fn apply_to_server_args(&self, csa: &mut CodeServerArgs) {
 		csa.install_extensions
 			.extend_from_slice(&self.install_extension);
 

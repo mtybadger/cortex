@@ -1,0 +1,68 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "numberpt",
+      "arg": {
+        "format": "{}",
+        "snippet": "numberpt{${1:counter}}"
+      }
+    },
+    {
+      "name": "Numberpt",
+      "arg": {
+        "format": "{}",
+        "snippet": "Numberpt{${1:counter}}"
+      }
+    },
+    {
+      "name": "NumberPt",
+      "arg": {
+        "format": "{}",
+        "snippet": "NumberPt{${1:counter}}"
+      }
+    },
+    {
+      "name": "NumberPt*",
+      "arg": {
+        "format": "{}",
+        "snippet": "NumberPt*{${1:counter}}"
+      }
+    },
+    {
+      "name": "NUMBERPT",
+      "arg": {
+        "format": "{}",
+        "snippet": "NUMBERPT{${1:counter}}"
+      }
+    },
+    {
+      "name": "NumberPTcatorze",
+      "unusual": true
+    },
+    {
+      "name": "NumberPTquatorze",
+      "unusual": true
+    },
+    {
+      "name": "NumberPTdezasseis",
+      "unusual": true
+    },
+    {
+      "name": "NumberPTdezasseis",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/numberpt#c": [
+      "catorze",
+      "quatorze",
+      "dezesseis",
+      "dezasseis"
+    ]
+  },
+  "args": [
+    "\\usepackage/numberpt#c"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sumline"
+    },
+    {
+      "name": "sumline",
+      "arg": {
+        "format": "[]",
+        "snippet": "sumline[${1:space-above%l}]"
+      }
+    },
+    {
+      "name": "sumline",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sumline[${1:space-above%l}][${2:space-below%l}]"
+      }
+    },
+    {
+      "name": "resetsumline"
+    },
+    {
+      "name": "leeg",
+      "arg": {
+        "format": "{}",
+        "snippet": "leeg{${1:text}}"
+      }
+    },
+    {
+      "name": "checkfcolumns",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "checkfcolumns{${1:num1}}{${2:num2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fcolumn#c": [
+      "red",
+      "strict"
+    ]
+  },
+  "args": [
+    "\\usepackage/fcolumn#c"
+  ]
+}

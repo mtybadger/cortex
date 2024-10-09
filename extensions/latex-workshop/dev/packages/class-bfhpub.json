@@ -1,0 +1,165 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "bfhlayout"
+    }
+  ],
+  "macros": [
+    {
+      "name": "enableHeadLineLogo",
+      "if": "type=factsheet"
+    },
+    {
+      "name": "enableHeadLineLogo*",
+      "if": "type=factsheet"
+    },
+    {
+      "name": "disableHeadlineLogo",
+      "if": "type=factsheet"
+    },
+    {
+      "name": "coadvisorname",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "advisorname",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "projectpartnername",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "expertname",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "projectstartdatename",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "studysubmissiondatename",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "reportsubmissiondatename",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "presentationdatename",
+      "if": "type=projectproposal",
+      "unusual": true
+    },
+    {
+      "name": "advisor",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "advisor{${1:name}}"
+      }
+    },
+    {
+      "name": "coadvisor",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "coadvisor{${1:name}}"
+      }
+    },
+    {
+      "name": "projectpartner",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "projectpartner{${1:name}}"
+      }
+    },
+    {
+      "name": "expert",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "expert{${1:name}}"
+      }
+    },
+    {
+      "name": "projectstartdate",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "projectstartdate{${1:date}}"
+      }
+    },
+    {
+      "name": "studysubmissiondate",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "studysubmissiondate{${1:date}}"
+      }
+    },
+    {
+      "name": "reportsubmissiondate",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "reportsubmissiondate{${1:date}}"
+      }
+    },
+    {
+      "name": "presentationdate",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "presentationdate{${1:date}}"
+      }
+    },
+    {
+      "name": "DisplayCompetenceRatingChart",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "{}",
+        "snippet": "DisplayCompetenceRatingChart{${1:name1=val1,name2=val2,...}}"
+      }
+    },
+    {
+      "name": "DisplayCompetenceRatingChart",
+      "if": "type=projectproposal",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DisplayCompetenceRatingChart[${2:options%keyvals}]{${1:name1=val1,name2=val2,...}}",
+        "keys": [
+          "\\DisplayCompetenceRatingChart"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "ProjectDescription",
+      "if": "type=projectproposal"
+    }
+  ],
+  "keys": {
+    "\\DisplayCompetenceRatingChart": [
+      "radius=",
+      "max-weight=${1:integer}",
+      "color="
+    ]
+  },
+  "args": []
+}

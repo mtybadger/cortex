@@ -1,0 +1,63 @@
+{
+  "deps": [
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "dsarchitectural"
+    },
+    {
+      "name": "dsbiological"
+    },
+    {
+      "name": "dschemical"
+    },
+    {
+      "name": "dsagricultural"
+    },
+    {
+      "name": "dsheraldical"
+    },
+    {
+      "name": "dsjuridical"
+    },
+    {
+      "name": "dsliterary"
+    },
+    {
+      "name": "dsmathematical"
+    },
+    {
+      "name": "dsrailways"
+    },
+    {
+      "name": "dstechnical"
+    },
+    {
+      "name": "dsmilitary"
+    },
+    {
+      "name": "dsaeronautical"
+    },
+    {
+      "name": "dscommercial"
+    },
+    {
+      "name": "dsmedical"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/dictsym#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\documentclass/dictsym#c"
+  ]
+}

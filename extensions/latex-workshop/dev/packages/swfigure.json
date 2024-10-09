@@ -1,0 +1,584 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "wrapfig2"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "DFimage[${3:mode}]{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "DFimage[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "DFimage[${3:mode}]{${1:imagefile}}{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}[]",
+        "snippet": "DFimage[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}[${5:label}]"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}[]()<>",
+        "snippet": "DFimage[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}[${5:label}](${7:height coor})<${6:line corr}>"
+      }
+    },
+    {
+      "name": "cleartoeven",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cleartoeven{${1:number}}"
+      }
+    },
+    {
+      "name": "cleartopage",
+      "unusual": true
+    },
+    {
+      "name": "CompStrings",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CompStrings{${1:string1}}{${2:string2}}"
+      }
+    },
+    {
+      "name": "DFcaption",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DFcaption[${2:lof entry%text}]{${1:caption%text}}"
+      }
+    },
+    {
+      "name": "DFcaption",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "DFcaption[${2:lof entry%text}]{${1:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "DFcaption",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DFcaption{${1:caption%text}}"
+      }
+    },
+    {
+      "name": "DFcaption",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "DFcaption{${1:caption%text}}[${2:label}]"
+      }
+    },
+    {
+      "name": "DFcaptionP",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DFcaptionP[${2:lof entry%text}]{${1:caption%text}}"
+      }
+    },
+    {
+      "name": "DFcaptionP",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "DFcaptionP[${2:lof entry%text}]{${1:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "DFcaptionP",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DFcaptionP{${1:caption%text}}"
+      }
+    },
+    {
+      "name": "DFcaptionP",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "DFcaptionP{${1:caption%text}}[${2:label}]"
+      }
+    },
+    {
+      "name": "DFhalfheight",
+      "unusual": true
+    },
+    {
+      "name": "DFhalfwidth",
+      "unusual": true
+    },
+    {
+      "name": "DFheight",
+      "unusual": true
+    },
+    {
+      "name": "DFheight",
+      "unusual": true
+    },
+    {
+      "name": "DFscalefactor",
+      "unusual": true
+    },
+    {
+      "name": "DFwidth",
+      "unusual": true
+    },
+    {
+      "name": "DisplayModeList",
+      "unusual": true
+    },
+    {
+      "name": "externalmargin",
+      "unusual": true
+    },
+    {
+      "name": "FigSpace",
+      "unusual": true
+    },
+    {
+      "name": "fptest",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "fptest{${1:test}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "FScaptionShift",
+      "unusual": true
+    },
+    {
+      "name": "FSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "FSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "FSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "FSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "FSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "FSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "FSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FSfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "FSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "FSfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "HSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "HSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "HSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "HSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "HSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "HSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "HSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "HSfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "HSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "HSfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "internalmargin",
+      "unusual": true
+    },
+    {
+      "name": "NFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "NFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "NFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "NFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "NFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "NFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "NFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NFfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "NFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "NFfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "RFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "RFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "RFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "RFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "RFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "RFfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "RFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RFfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "RFfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "RFfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "RFx",
+      "unusual": true
+    },
+    {
+      "name": "RFy",
+      "unusual": true
+    },
+    {
+      "name": "SetList",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetList{${1:cmd}}{${2:item1,item2,...}}"
+      }
+    },
+    {
+      "name": "spreadwidth",
+      "unusual": true
+    },
+    {
+      "name": "SWcaptionShift",
+      "unusual": true
+    },
+    {
+      "name": "SWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "SWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "SWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "SWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "SWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "SWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "SWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SWfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "SWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "SWfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "TestList",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "TestList{${1:list}}{${2:string}}{${3:true}}{${4:false}}"
+      }
+    },
+    {
+      "name": "THfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "THfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "THfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "THfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "THfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "THfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "THfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "THfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "THfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "THfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "TScaptionwidth",
+      "unusual": true
+    },
+    {
+      "name": "TWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "TWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "TWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "TWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "TWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "TWfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "TWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TWfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "TWfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "TWfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    },
+    {
+      "name": "VSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "VSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "VSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]",
+        "snippet": "VSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "VSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]()<>",
+        "snippet": "VSfigure{${1:imagefile}}[${3:lof entry%text}]{${2:caption%text}}[${4:label}](${6:height coor})<${5:line corr}>"
+      }
+    },
+    {
+      "name": "VSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "VSfigure{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "VSfigure",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "VSfigure{${1:imagefile}}{${2:caption%text}}[${3:label}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:mode}]{${1:imagefile}}{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "[${3:mode}]{${1:imagefile}}{${2:caption%text}}[${4:label}]"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}[]",
+        "snippet": "[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}[${5:label}]"
+      }
+    },
+    {
+      "name": "DFimage",
+      "arg": {
+        "format": "[]{}[]{}[]()<>",
+        "snippet": "[${3:mode}]{${1:imagefile}}[${4:lof entry%text}]{${2:caption%text}}[${5:label}](${7:height coor})<${6:line corr}>"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

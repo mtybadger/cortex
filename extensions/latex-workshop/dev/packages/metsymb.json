@@ -1,0 +1,149 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "zerookta"
+    },
+    {
+      "name": "oneokta"
+    },
+    {
+      "name": "twooktas"
+    },
+    {
+      "name": "threeoktas"
+    },
+    {
+      "name": "fouroktas"
+    },
+    {
+      "name": "fiveoktas"
+    },
+    {
+      "name": "sixoktas"
+    },
+    {
+      "name": "sevenoktas"
+    },
+    {
+      "name": "eightoktas"
+    },
+    {
+      "name": "nineoktas"
+    },
+    {
+      "name": "cirrus"
+    },
+    {
+      "name": "cirrocumulus"
+    },
+    {
+      "name": "cirrostratus"
+    },
+    {
+      "name": "altocumulus"
+    },
+    {
+      "name": "altostratus"
+    },
+    {
+      "name": "nimbostratus"
+    },
+    {
+      "name": "stratocumulus"
+    },
+    {
+      "name": "stratus"
+    },
+    {
+      "name": "cumulus"
+    },
+    {
+      "name": "cumulonimbus"
+    },
+    {
+      "name": "clI"
+    },
+    {
+      "name": "clII"
+    },
+    {
+      "name": "clIII"
+    },
+    {
+      "name": "clIV"
+    },
+    {
+      "name": "clV"
+    },
+    {
+      "name": "clVI"
+    },
+    {
+      "name": "clVII"
+    },
+    {
+      "name": "clVIII"
+    },
+    {
+      "name": "clIX"
+    },
+    {
+      "name": "cmI"
+    },
+    {
+      "name": "cmII"
+    },
+    {
+      "name": "cmIII"
+    },
+    {
+      "name": "cmIV"
+    },
+    {
+      "name": "cmV"
+    },
+    {
+      "name": "cmVI"
+    },
+    {
+      "name": "cmVII"
+    },
+    {
+      "name": "cmVIII"
+    },
+    {
+      "name": "cmIX"
+    },
+    {
+      "name": "chI"
+    },
+    {
+      "name": "chII"
+    },
+    {
+      "name": "chIII"
+    },
+    {
+      "name": "chIV"
+    },
+    {
+      "name": "chV"
+    },
+    {
+      "name": "chVI"
+    },
+    {
+      "name": "chVII"
+    },
+    {
+      "name": "chVIII"
+    },
+    {
+      "name": "chIX"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

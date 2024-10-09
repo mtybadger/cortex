@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sabonfamily"
+    },
+    {
+      "name": "textsabon",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsabon{${1:text}}"
+      }
+    },
+    {
+      "name": "itscshape"
+    },
+    {
+      "name": "textitsc",
+      "arg": {
+        "format": "{}",
+        "snippet": "textitsc{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lsabon#c": [
+      "scaled=${1:factor}",
+      "rmdefault",
+      "normdefault"
+    ]
+  },
+  "args": [
+    "\\usepackage/lsabon#c"
+  ]
+}

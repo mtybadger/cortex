@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "appendmask",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "appendmask[${2:prefix}]{${1:key%plain}}[${3:values}]"
+      }
+    },
+    {
+      "name": "ifinmask",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]{}{}",
+        "snippet": "ifinmask[${4:prefix}]{${1:key%plain}}[${5:values}]{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "clearmask",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xkeymask#c": [
+      "prefix=${1:prefix}"
+    ]
+  },
+  "args": [
+    "\\usepackage/xkeymask#c"
+  ]
+}

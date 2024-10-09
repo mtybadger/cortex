@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "termlabel",
+      "unusual": true
+    },
+    {
+      "name": "termlabelfont",
+      "unusual": true
+    },
+    {
+      "name": "termindent",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "termlist"
+    },
+    {
+      "name": "termlist*"
+    },
+    {
+      "name": "term"
+    },
+    {
+      "name": "term*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

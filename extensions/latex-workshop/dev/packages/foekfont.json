@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "foekfamily"
+    },
+    {
+      "name": "foek",
+      "arg": {
+        "format": "{}",
+        "snippet": "foek{${1:text}}"
+      }
+    },
+    {
+      "name": "madsfoek"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

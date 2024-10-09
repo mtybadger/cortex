@@ -1,0 +1,13 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dsfont#c": [
+      "sans"
+    ]
+  },
+  "args": [
+    "\\usepackage/dsfont#c"
+  ]
+}

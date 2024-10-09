@@ -147,7 +147,6 @@ export interface LogOptions {
 	readonly author?: string;
 	readonly refNames?: string[];
 	readonly maxParents?: number;
-	readonly skip?: number;
 }
 
 export interface CommitOptions {
@@ -184,7 +183,7 @@ export interface InitOptions {
 export interface RefQuery {
 	readonly contains?: string;
 	readonly count?: number;
-	readonly pattern?: string | string[];
+	readonly pattern?: string;
 	readonly sort?: 'alphabetically' | 'committerdate';
 }
 
@@ -409,7 +408,5 @@ export const enum GitErrorCodes {
 	EmptyCommitMessage = 'EmptyCommitMessage',
 	BranchFastForwardRejected = 'BranchFastForwardRejected',
 	BranchNotYetBorn = 'BranchNotYetBorn',
-	TagConflict = 'TagConflict',
-	CherryPickEmpty = 'CherryPickEmpty',
-	CherryPickConflict = 'CherryPickConflict'
+	TagConflict = 'TagConflict'
 }

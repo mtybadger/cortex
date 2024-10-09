@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "emoji"
+    },
+    {
+      "name": "natbib"
+    }
+  ],
+  "macros": [
+    {
+      "name": "emojicite",
+      "arg": {
+        "format": "{}",
+        "snippet": "emojicite{${1:key,emoji}}"
+      }
+    },
+    {
+      "name": "emojicitep",
+      "arg": {
+        "format": "{}",
+        "snippet": "emojicitep{${1:key,emoji}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

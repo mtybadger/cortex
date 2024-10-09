@@ -1,0 +1,308 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "courier"
+    }
+  ],
+  "macros": [
+    {
+      "name": "realauthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "realauthor{${1:name}}"
+      }
+    },
+    {
+      "name": "address",
+      "arg": {
+        "format": "{}",
+        "snippet": "address{${1:address}}"
+      }
+    },
+    {
+      "name": "agent",
+      "arg": {
+        "format": "{}",
+        "snippet": "agent{${1:name}}"
+      }
+    },
+    {
+      "name": "coverpage"
+    },
+    {
+      "name": "nicholl"
+    },
+    {
+      "name": "fadein"
+    },
+    {
+      "name": "intslug",
+      "arg": {
+        "format": "{}",
+        "snippet": "intslug{${1:description%text}}"
+      }
+    },
+    {
+      "name": "intslug",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "intslug[${2:time}]{${1:description%text}}"
+      }
+    },
+    {
+      "name": "extslug",
+      "arg": {
+        "format": "{}",
+        "snippet": "extslug{${1:description%text}}"
+      }
+    },
+    {
+      "name": "extslug",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "extslug[${2:time}]{${1:description%text}}"
+      }
+    },
+    {
+      "name": "intextslug",
+      "arg": {
+        "format": "{}",
+        "snippet": "intextslug{${1:description%text}}"
+      }
+    },
+    {
+      "name": "intextslug",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "intextslug[${2:time}]{${1:description%text}}"
+      }
+    },
+    {
+      "name": "extintslug",
+      "arg": {
+        "format": "{}",
+        "snippet": "extintslug{${1:description%text}}"
+      }
+    },
+    {
+      "name": "extintslug",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "extintslug[${2:time}]{${1:description%text}}"
+      }
+    },
+    {
+      "name": "paren",
+      "arg": {
+        "format": "{}",
+        "snippet": "paren{${1:text}}"
+      }
+    },
+    {
+      "name": "dialbreak",
+      "arg": {
+        "format": "{}",
+        "snippet": "dialbreak{${1:character name}}"
+      }
+    },
+    {
+      "name": "dialbreak",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dialbreak[${2:directions%text}]{${1:character name}}"
+      }
+    },
+    {
+      "name": "titbreak"
+    },
+    {
+      "name": "centretitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "centretitle{${1:text}}"
+      }
+    },
+    {
+      "name": "intercut"
+    },
+    {
+      "name": "pov"
+    },
+    {
+      "name": "revert"
+    },
+    {
+      "name": "fadeout"
+    },
+    {
+      "name": "theend"
+    },
+    {
+      "name": "addrseplen",
+      "unusual": true
+    },
+    {
+      "name": "addrwidth",
+      "unusual": true
+    },
+    {
+      "name": "byskip",
+      "unusual": true
+    },
+    {
+      "name": "bytext",
+      "unusual": true
+    },
+    {
+      "name": "contd",
+      "unusual": true
+    },
+    {
+      "name": "dialfix",
+      "unusual": true
+    },
+    {
+      "name": "dialgutter",
+      "unusual": true
+    },
+    {
+      "name": "dialnametab",
+      "unusual": true
+    },
+    {
+      "name": "dialtab",
+      "unusual": true
+    },
+    {
+      "name": "dialwidth",
+      "unusual": true
+    },
+    {
+      "name": "exttext",
+      "unusual": true
+    },
+    {
+      "name": "fadeintext",
+      "unusual": true
+    },
+    {
+      "name": "fadeouttext",
+      "unusual": true
+    },
+    {
+      "name": "intercuttext",
+      "unusual": true
+    },
+    {
+      "name": "inttext",
+      "unusual": true
+    },
+    {
+      "name": "more",
+      "unusual": true
+    },
+    {
+      "name": "parentab",
+      "unusual": true
+    },
+    {
+      "name": "parenwidth",
+      "unusual": true
+    },
+    {
+      "name": "placesep",
+      "unusual": true
+    },
+    {
+      "name": "punctchar",
+      "unusual": true
+    },
+    {
+      "name": "sccentre",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "sccentre{${1:text}}"
+      }
+    },
+    {
+      "name": "sepintext",
+      "unusual": true
+    },
+    {
+      "name": "scflushright",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "scflushright{${1:text}}"
+      }
+    },
+    {
+      "name": "slugspace",
+      "unusual": true
+    },
+    {
+      "name": "slug",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "slug{${1:pretext}}{${2:description%text}}"
+      }
+    },
+    {
+      "name": "slug",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "slug[${3:time}]{${1:pretext}}{${2:description%text}}"
+      }
+    },
+    {
+      "name": "thirty",
+      "unusual": true
+    },
+    {
+      "name": "titheadskip",
+      "unusual": true
+    },
+    {
+      "name": "titleovertext",
+      "unusual": true
+    },
+    {
+      "name": "titskip",
+      "unusual": true
+    },
+    {
+      "name": "widthgutter",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "dialogue",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:character name}}"
+      }
+    },
+    {
+      "name": "dialogue",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:directions%text}]{${1:character name}}"
+      }
+    },
+    {
+      "name": "titleover"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

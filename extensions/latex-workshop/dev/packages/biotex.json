@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "textopo"
+    },
+    {
+      "name": "texshade"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BioTeX"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/biotex#c": [
+      "monochrome",
+      "debugshow",
+      "setpagesize",
+      "nosetpagesize",
+      "dvips",
+      "xdvi",
+      "dvipdf",
+      "dvipdfm",
+      "dvipdfmx",
+      "pdftex",
+      "luatex",
+      "dvisvgm",
+      "xetex",
+      "dvipsone",
+      "dviwindo",
+      "emtex",
+      "dviwin",
+      "oztex",
+      "textures",
+      "pctexps",
+      "pctexwin",
+      "pctexhp",
+      "pctex32",
+      "truetex",
+      "tcidvi",
+      "vtex",
+      "dvipsnames",
+      "nodvipsnames",
+      "usenames"
+    ]
+  },
+  "args": [
+    "\\usepackage/biotex#c"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "marginnote",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "marginnote[${2:left}]{${1:right}}"
+      }
+    },
+    {
+      "name": "marginnote",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "marginnote[${2:left}]{${1:right}}[${3:voffset%l}]"
+      }
+    },
+    {
+      "name": "marginnotetextwidth",
+      "unusual": true
+    },
+    {
+      "name": "marginnotevadjust",
+      "unusual": true
+    },
+    {
+      "name": "raggedleftmarginnote",
+      "unusual": true
+    },
+    {
+      "name": "raggedrightmarginnote",
+      "unusual": true
+    },
+    {
+      "name": "marginfont",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/marginnote#c": [
+      "verbose",
+      "quiet",
+      "fulladjust",
+      "heightadjust",
+      "depthadjust",
+      "noadjust",
+      "parboxrestore",
+      "noparboxrestore"
+    ]
+  },
+  "args": [
+    "\\usepackage/marginnote#c"
+  ]
+}

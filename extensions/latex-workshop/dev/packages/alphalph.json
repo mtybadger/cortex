@@ -1,0 +1,46 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AlphAlph",
+      "arg": {
+        "format": "{}",
+        "snippet": "AlphAlph{${1:number}}"
+      }
+    },
+    {
+      "name": "alphalph",
+      "arg": {
+        "format": "{}",
+        "snippet": "alphalph{${1:number}}"
+      }
+    },
+    {
+      "name": "newalphalph",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newalphalph{${1:cmd}}{${2:symbols provider}}{${3:num of symbols}}"
+      }
+    },
+    {
+      "name": "newalphalph",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "newalphalph{${1:cmd}}[${4:method%keyvals}]{${2:symbols provider}}{${3:num of symbols}}",
+        "keys": [
+          "\\newalphalph"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\newalphalph": [
+      "alph",
+      "wrap",
+      "mult"
+    ]
+  },
+  "args": []
+}

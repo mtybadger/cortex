@@ -3,13 +3,10 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { URI } from '../../../../base/common/uri.js';
-import { IClipboardService } from '../../common/clipboardService.js';
+import { URI } from 'vs/base/common/uri';
+import { IClipboardService } from 'vs/platform/clipboard/common/clipboardService';
 
 export class TestClipboardService implements IClipboardService {
-	readImage(): Promise<Uint8Array> {
-		throw new Error('Method not implemented.');
-	}
 
 	_serviceBrand: undefined;
 

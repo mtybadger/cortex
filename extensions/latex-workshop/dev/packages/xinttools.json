@@ -1,0 +1,350 @@
+{
+  "deps": [
+    {
+      "name": "xintkernel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xintgodef",
+      "unusual": true
+    },
+    {
+      "name": "xintgoodef",
+      "unusual": true
+    },
+    {
+      "name": "xintgfdef",
+      "unusual": true
+    },
+    {
+      "name": "xintRevWithBraces",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintRevWithBraces{${1:list}}"
+      }
+    },
+    {
+      "name": "xintRevWithBracesNoExpand",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintRevWithBracesNoExpand{${1:list}}"
+      }
+    },
+    {
+      "name": "xintZapFirstSpaces",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintZapFirstSpaces{${1:content}}"
+      }
+    },
+    {
+      "name": "xintZapLastSpaces",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintZapLastSpaces{${1:content}}"
+      }
+    },
+    {
+      "name": "xintZapSpaces",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintZapSpaces{${1:content}}"
+      }
+    },
+    {
+      "name": "xintZapSpacesB",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintZapSpacesB{${1:content}}"
+      }
+    },
+    {
+      "name": "xintCSVtoList",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintCSVtoList{${1:csv list}}"
+      }
+    },
+    {
+      "name": "xintCSVtoListNoExpand",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintCSVtoListNoExpand{${1:csv list}}"
+      }
+    },
+    {
+      "name": "xintCSVtoListNonStripped",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xintCSVtoListNonStripped{${1:csv list}}"
+      }
+    },
+    {
+      "name": "xintCSVtoListNonStrippedNoExpand",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "xintCSVtoListNonStrippedNoExpand{${1:csv list}}"
+      }
+    },
+    {
+      "name": "xintNthElt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintNthElt{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintNthEltNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintNthEltNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintNthOnePy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintNthOnePy{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintNthOnePyNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintNthOnePyNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintKeep",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintKeep{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintKeepNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintKeepNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintKeepUnbraced",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintKeepUnbraced{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintKeepUnbracedNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintKeepUnbracedNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintTrim",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintTrim{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintTrimNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintTrimNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintTrimUnbraced",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintTrimUnbraced{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintTrimUnbracedNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintTrimUnbracedNoExpand{${1:integer}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintListWithSep",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintListWithSep{${1:sep}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintListWithSepNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintListWithSepNoExpand{${1:sep}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintApply",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintApply{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintApplyNoExpand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintApplyNoExpand{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintApplyUnbraced",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintApplyUnbraced{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintApplyUnbracedNoExpand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintApplyUnbracedNoExpand{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintSeq",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintSeq{${1:start-integer}}{${2:stop-integer}}"
+      }
+    },
+    {
+      "name": "xintSeq",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "xintSeq[${3:step}]{${1:start-integer}}{${2:stop-integer}}"
+      }
+    },
+    {
+      "name": "xintloop",
+      "unusual": true
+    },
+    {
+      "name": "xintbreakloop",
+      "unusual": true
+    },
+    {
+      "name": "xintbreakloopanddo",
+      "unusual": true
+    },
+    {
+      "name": "xintloopskiptonext",
+      "unusual": true
+    },
+    {
+      "name": "xintiloop",
+      "unusual": true
+    },
+    {
+      "name": "xintiloopindex",
+      "unusual": true
+    },
+    {
+      "name": "xintbracediloopindex",
+      "unusual": true
+    },
+    {
+      "name": "xintouteriloopindex",
+      "unusual": true
+    },
+    {
+      "name": "xintbracedouteriloopindex",
+      "unusual": true
+    },
+    {
+      "name": "xintbreakiloop",
+      "unusual": true
+    },
+    {
+      "name": "xintbreakiloopanddo",
+      "unusual": true
+    },
+    {
+      "name": "xintiloopskiptonext",
+      "unusual": true
+    },
+    {
+      "name": "xintiloopskipandredo",
+      "unusual": true
+    },
+    {
+      "name": "xintApplyInline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintApplyInline{${1:macro}}{${2:list}}"
+      }
+    },
+    {
+      "name": "xintifForFirst",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintifForFirst{${1:YES branch}}{${2:NO branch}}"
+      }
+    },
+    {
+      "name": "xintifForLast",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xintifForLast{${1:YES branch}}{${2:NO branch}}"
+      }
+    },
+    {
+      "name": "xintBreakFor"
+    },
+    {
+      "name": "xintBreakForAndDo",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintBreakForAndDo{${1:code}}"
+      }
+    },
+    {
+      "name": "xintegers",
+      "unusual": true
+    },
+    {
+      "name": "xintintegers"
+    },
+    {
+      "name": "xintdimensions"
+    },
+    {
+      "name": "xintrationals"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\xintAssign": [
+      "g",
+      "e",
+      "x",
+      "o",
+      "go",
+      "oo",
+      "goo",
+      "f",
+      "gf"
+    ],
+    "\\xintAssignArray,\\xintDigitsOf": [
+      "o",
+      "oo",
+      "f"
+    ]
+  },
+  "args": []
+}

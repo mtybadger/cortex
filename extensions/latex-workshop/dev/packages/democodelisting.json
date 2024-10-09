@@ -1,0 +1,246 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    },
+    {
+      "name": "scontents"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DisplayCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "DisplayCode{${1:st-name}}"
+      }
+    },
+    {
+      "name": "DisplayCode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DisplayCode[${2:options%keyvals}]{${1:st-name}}",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DemoCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "DemoCode{${1:st-name}}"
+      }
+    },
+    {
+      "name": "DemoCode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DemoCode[${2:options%keyvals}]{${1:st-name}}",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DemoCode",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "DemoCode{${1:st-name}}[${2:length}]"
+      }
+    },
+    {
+      "name": "DemoCode",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "DemoCode[${2:options%keyvals}]{${1:st-name}}[${3:length}]",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "TabbedDemoCode",
+      "arg": {
+        "format": "{}",
+        "snippet": "TabbedDemoCode{${1:st-name}}"
+      }
+    },
+    {
+      "name": "TabbedDemoCode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TabbedDemoCode[${2:options%keyvals}]{${1:st-name}}",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "TabbedDemoCode",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]",
+        "snippet": "TabbedDemoCode{${1:st-name}}[${2:length}]"
+      }
+    },
+    {
+      "name": "TabbedDemoCode",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "TabbedDemoCode[${2:options%keyvals}]{${1:st-name}}[${3:length}]",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setdclisting",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdclisting{${1:options%keyvals}}",
+        "keys": [
+          "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setdcpar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setdcpar{${1:options}}"
+      }
+    },
+    {
+      "name": "DisplayCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DisplayCodeB{${1:st-name}}"
+      }
+    },
+    {
+      "name": "DisplayCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DisplayCodeB[${2:options}]{${1:st-name}}"
+      }
+    },
+    {
+      "name": "DemoCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DemoCodeB{${1:st-name}}"
+      }
+    },
+    {
+      "name": "DemoCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DemoCodeB[${2:options}]{${1:st-name}}"
+      }
+    },
+    {
+      "name": "TabbedDemoCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TabbedDemoCodeB{${1:st-name}}"
+      }
+    },
+    {
+      "name": "TabbedDemoCodeB",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TabbedDemoCodeB[${2:options}]{${1:st-name}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "stcode"
+    },
+    {
+      "name": "stcode",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{stcode}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "verbsc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:options}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{stcode}": [
+      "st=${1:st-name}",
+      "store-env=${1:st-name}",
+      "print-env",
+      "write-env=${1:file.ext}",
+      "write-out=${1:file.ext}",
+      "overwrite",
+      "force-eol"
+    ],
+    "\\DisplayCode,\\DemoCode,\\TabbedDemoCode,\\setdclisting": [
+      "settexcs={${1:list of csnames}}",
+      "texcs={${1:list of csnames}}",
+      "texcsstyle=${1:font commands}",
+      "settexcs2={${1:list of csnames}}",
+      "texcs2={${1:list of csnames}}",
+      "texcs2style=${1:font commands}",
+      "settexcs3={${1:list of csnames}}",
+      "texcs3={${1:list of csnames}}",
+      "texcs3style=${1:font commands}",
+      "setkeywd={${1:list of csnames}}",
+      "keywd={${1:list of keywords}}",
+      "keywdstyle=${1:font commands}",
+      "setkeywd2={${1:list of keywords}}",
+      "keywd2={${1:list of keywords}}",
+      "keywd2style=${1:font commands}",
+      "setkeywd3={${1:list of keywords}}",
+      "keywd3={${1:list of keywords}}",
+      "keywd3style=${1:font commands}",
+      "setemph={${1:identifier list}}",
+      "emph={${1:identifier list}}",
+      "emphstyle=${1:font commands}",
+      "setemph2={${1:identifier list}}",
+      "emph2={${1:identifier list}}",
+      "emph2style=${1:font commands}",
+      "setemph3={${1:identifier list}}",
+      "emph3={${1:identifier list}}",
+      "emph3style=${1:font commands}",
+      "stringstyle=${1:font commands}",
+      "commentstyle=${1:font commands}",
+      "bckgndcolor=",
+      "rulecolor=",
+      "numbers=${1|none,left|}",
+      "numberstyle=${1:font commands}",
+      "codeprefix=${1:prefix}",
+      "resultprefix=${1:prefix}"
+    ]
+  },
+  "args": []
+}

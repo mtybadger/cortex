@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "eucal"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbold",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbold{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/jamtimes#c": [
+      "scaled=${1:factor}",
+      "sfscaled=${1:factor}",
+      "amsfontsscaled=${1:factor}",
+      "sffamily=${1:family}",
+      "ttfamily=${1:family}"
+    ]
+  },
+  "args": [
+    "\\usepackage/jamtimes#c"
+  ]
+}

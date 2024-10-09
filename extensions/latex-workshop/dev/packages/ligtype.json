@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "nolig",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nolig{${1:string}}{${2:string with |}}"
+      }
+    },
+    {
+      "name": "keeplig",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "keeplig{${1:string}}{${2:string with |}}"
+      }
+    },
+    {
+      "name": "ligtypeon"
+    },
+    {
+      "name": "ligtypeoff"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ligtype#c": [
+      "noshortf",
+      "allshortf",
+      "makemarks",
+      "kerntest",
+      "nodefault",
+      "liglist",
+      "connotes"
+    ]
+  },
+  "args": [
+    "\\usepackage/ligtype#c"
+  ]
+}

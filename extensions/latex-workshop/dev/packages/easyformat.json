@@ -1,0 +1,17 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cir"
+    },
+    {
+      "name": "enableeasyformat"
+    },
+    {
+      "name": "disableeasyformat"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

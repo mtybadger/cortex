@@ -1,0 +1,54 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MFfieldtemplate",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFfieldtemplate{${1:field}}{${2:template}}"
+      }
+    },
+    {
+      "name": "MFfieldtemplate",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "MFfieldtemplate[${3:fill-element}]{${1:field}}{${2:template}}"
+      }
+    },
+    {
+      "name": "MFfillelement"
+    },
+    {
+      "name": "MFspace"
+    },
+    {
+      "name": "MFenspace"
+    },
+    {
+      "name": "MFotherspace"
+    },
+    {
+      "name": "MFleftinfield",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFleftinfield{${1:text}}{${2:field}}"
+      }
+    },
+    {
+      "name": "MFrightinfield",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MFrightinfield{${1:text}}{${2:field}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/monofill#c": [
+      "fake-undefined"
+    ]
+  },
+  "args": [
+    "\\usepackage/monofill#c"
+  ]
+}

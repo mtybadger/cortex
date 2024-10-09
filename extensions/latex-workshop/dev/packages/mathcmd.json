@@ -1,0 +1,87 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Int"
+    },
+    {
+      "name": "Sum",
+      "arg": {
+        "format": "{}",
+        "snippet": "Sum{${1:above,below}}"
+      }
+    },
+    {
+      "name": "SUM",
+      "arg": {
+        "format": "{}",
+        "snippet": "SUM{${1:below}}"
+      }
+    },
+    {
+      "name": "DerTot",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DerTot{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "DerPar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DerPar{${1:func}}{${2:var}}"
+      }
+    },
+    {
+      "name": "DerNorm",
+      "arg": {
+        "format": "{}",
+        "snippet": "DerNorm{${1:arg}}"
+      }
+    },
+    {
+      "name": "TendsTo"
+    },
+    {
+      "name": "TendsTo",
+      "arg": {
+        "format": "[]",
+        "snippet": "TendsTo[${1:sub}]"
+      }
+    },
+    {
+      "name": "Grad"
+    },
+    {
+      "name": "Div"
+    },
+    {
+      "name": "Rot"
+    },
+    {
+      "name": "ProdVett"
+    },
+    {
+      "name": "UnderDot",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "UnderDot{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathcmd#c": [
+      "ThreeSubscrSum",
+      "TwoSubscrSum",
+      "ProdVettWedge",
+      "ProdVettTimes",
+      "VectOpStr",
+      "VectOpSymb"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathcmd#c"
+  ]
+}

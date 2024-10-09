@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "marathi"
+    },
+    {
+      "name": "glossaries"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "printacronyms"
+    },
+    {
+      "name": "printacronyms",
+      "arg": {
+        "format": "[]",
+        "snippet": "printacronyms[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/chhaya#c": [
+      "समरेखा=${1:font name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/chhaya#c"
+  ]
+}

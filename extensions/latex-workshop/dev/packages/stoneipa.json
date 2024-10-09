@@ -1,0 +1,65 @@
+{
+  "deps": [
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "newunicodechar"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sipafont"
+    },
+    {
+      "name": "sipaalternatefont"
+    },
+    {
+      "name": "sipachoosephoneticchar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sipachoosephoneticchar{${1:char1}}{${2:char2}}"
+      }
+    },
+    {
+      "name": "sipachoosealternatechar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sipachoosealternatechar{${1:char1}}{${2:char2}}"
+      }
+    },
+    {
+      "name": "sipasetup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sipasetup{${1:glyph}}{${2:char}}"
+      }
+    },
+    {
+      "name": "sipaalternatesetup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sipaalternatesetup{${1:glyph}}{${2:char}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/stoneipa#c": [
+      "fontname=${1:font name}",
+      "scfontname=${1:font name}",
+      "phoneticfontname=${1:font name}",
+      "alternatefontname=${1:font name}",
+      "noalternatescaling"
+    ]
+  },
+  "args": [
+    "\\usepackage/stoneipa#c"
+  ]
+}

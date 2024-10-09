@@ -1,0 +1,168 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "makecommand",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "makecommand{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+      }
+    },
+    {
+      "name": "makecommand",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "makecommand{${1:cmd}}[${3:args}]{${2:def}}"
+      }
+    },
+    {
+      "name": "makecommand",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "makecommand{${1:cmd}}{${2:def}}"
+      }
+    },
+    {
+      "name": "makecommand*",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "makecommand*{${1:cmd}}[${3:args}][${4:default}]{${2:def}}"
+      }
+    },
+    {
+      "name": "makecommand*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "makecommand*{${1:cmd}}[${3:args}]{${2:def}}"
+      }
+    },
+    {
+      "name": "makecommand*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "makecommand*{${1:cmd}}{${2:def}}"
+      }
+    },
+    {
+      "name": "provideenvironment",
+      "arg": {
+        "format": "{}[][]{}{}",
+        "snippet": "provideenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "provideenvironment",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "provideenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "provideenvironment",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "provideenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "provideenvironment*",
+      "arg": {
+        "format": "{}[][]{}{}",
+        "snippet": "provideenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "provideenvironment*",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "provideenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "provideenvironment*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "provideenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment",
+      "arg": {
+        "format": "{}[][]{}{}",
+        "snippet": "makeenvironment{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "makeenvironment{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "makeenvironment{${1:envname}}{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment*",
+      "arg": {
+        "format": "{}[][]{}{}",
+        "snippet": "makeenvironment*{${1:envname}}[${4:args}][${5:default}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment*",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "makeenvironment*{${1:envname}}[${4:args}]{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "makeenvironment*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "makeenvironment*{${1:envname}}{${2:begdef}}{${3:enddef}}"
+      }
+    },
+    {
+      "name": "providelength",
+      "arg": {
+        "format": "{}",
+        "snippet": "providelength{${1:cmd}}"
+      }
+    },
+    {
+      "name": "makelength",
+      "arg": {
+        "format": "{}",
+        "snippet": "makelength{${1:cmd}}"
+      }
+    },
+    {
+      "name": "providecounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "providecounter{${1:counter name}}"
+      }
+    },
+    {
+      "name": "makecounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "makecounter{${1:counter name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/makecmds#c": [
+      "warn"
+    ]
+  },
+  "args": [
+    "\\usepackage/makecmds#c"
+  ]
+}

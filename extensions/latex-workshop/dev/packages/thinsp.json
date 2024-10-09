@@ -1,0 +1,34 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "stretchthinspace"
+    },
+    {
+      "name": "stretchnegthinspace"
+    },
+    {
+      "name": "stretchthinthinspace"
+    },
+    {
+      "name": "thinthinspace"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/thinsp#c": [
+      "nothinspace",
+      "thinspace",
+      "nothinthinspace",
+      "thinthinspace",
+      "nonegthinspace",
+      "negthinspace",
+      "onethird",
+      "onehalf",
+      "twothirds"
+    ]
+  },
+  "args": [
+    "\\usepackage/thinsp#c"
+  ]
+}

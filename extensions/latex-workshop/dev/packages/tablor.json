@@ -1,0 +1,257 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "ifpdf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "initablor"
+    },
+    {
+      "name": "initablor",
+      "arg": {
+        "format": "[]",
+        "snippet": "initablor[${1:préfixe}]"
+      }
+    },
+    {
+      "name": "nettoyer"
+    },
+    {
+      "name": "nettoyer",
+      "arg": {
+        "format": "[]",
+        "snippet": "nettoyer[${1:préfixe}]"
+      }
+    },
+    {
+      "name": "ech",
+      "arg": {
+        "format": "{}",
+        "snippet": "ech{${1:nombre}}"
+      }
+    },
+    {
+      "name": "tv"
+    },
+    {
+      "name": "tvbis"
+    },
+    {
+      "name": "coultab",
+      "arg": {
+        "format": "{}",
+        "snippet": "coultab{${1:color}}"
+      }
+    },
+    {
+      "name": "dresse",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dresse{${1:color}}{${2:nom}}"
+      }
+    },
+    {
+      "name": "dressetoile",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dressetoile{${1:color}}{${2:nom}}"
+      }
+    },
+    {
+      "name": "executGiacmp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "executGiacmp{${1:file}}"
+      }
+    },
+    {
+      "name": "couleurtab",
+      "unusual": true
+    },
+    {
+      "name": "cp",
+      "unusual": true
+    },
+    {
+      "name": "cat",
+      "unusual": true
+    },
+    {
+      "name": "echod",
+      "unusual": true
+    },
+    {
+      "name": "echelle",
+      "unusual": true
+    },
+    {
+      "name": "echof",
+      "unusual": true
+    },
+    {
+      "name": "nomtravail",
+      "unusual": true
+    },
+    {
+      "name": "rem",
+      "unusual": true
+    },
+    {
+      "name": "theTVn",
+      "unusual": true
+    },
+    {
+      "name": "theTVnbis",
+      "unusual": true
+    },
+    {
+      "name": "editeur",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "TV"
+    },
+    {
+      "name": "TSq"
+    },
+    {
+      "name": "TVS"
+    },
+    {
+      "name": "TVZ"
+    },
+    {
+      "name": "TVI"
+    },
+    {
+      "name": "TVIex"
+    },
+    {
+      "name": "TVapp"
+    },
+    {
+      "name": "TVIapp"
+    },
+    {
+      "name": "TVPC"
+    },
+    {
+      "name": "TVP"
+    },
+    {
+      "name": "TSa"
+    },
+    {
+      "name": "TS"
+    },
+    {
+      "name": "TSc"
+    },
+    {
+      "name": "TS*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TV*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TSq*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVS*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVZ*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVI*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVIex*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVapp*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVIapp*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVPC*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TVP*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    },
+    {
+      "name": "TSc*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:numéro}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/tablor#c": [
+      "xcas",
+      "windows"
+    ]
+  },
+  "args": [
+    "\\usepackage/tablor#c"
+  ]
+}

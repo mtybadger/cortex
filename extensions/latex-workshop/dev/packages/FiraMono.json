@@ -1,0 +1,62 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "firamonooldstyle"
+    },
+    {
+      "name": "firamonolining"
+    },
+    {
+      "name": "firamonomedium"
+    },
+    {
+      "name": "sufigures"
+    },
+    {
+      "name": "firamonolgr",
+      "unusual": true
+    },
+    {
+      "name": "firamonofamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/FiraMono#c": [
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "type1",
+      "lining",
+      "lf",
+      "oldstyle",
+      "osf",
+      "nomap",
+      "medium",
+      "mb"
+    ]
+  },
+  "args": [
+    "\\usepackage/FiraMono#c"
+  ]
+}

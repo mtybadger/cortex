@@ -1,0 +1,208 @@
+{
+  "deps": [
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PuzzleDefineCell",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PuzzleDefineCell{${1:key%plain}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "PuzzleDefineColorCell",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PuzzleDefineColorCell{${1:key%plain}}{${2:color}}"
+      }
+    },
+    {
+      "name": "Frame",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "Frame{${1:llx}}{${2:lly}}{${3:width%plain}}{${4:height%plain}}{${5:text}}"
+      }
+    },
+    {
+      "name": "Clue",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Clue{${1:number}}{${2:word%text}}{${3:clue%text}}"
+      }
+    },
+    {
+      "name": "PuzzleLetters",
+      "arg": {
+        "format": "{}",
+        "snippet": "PuzzleLetters{${1:letters}}"
+      }
+    },
+    {
+      "name": "PuzzleNumbers",
+      "arg": {
+        "format": "{}",
+        "snippet": "PuzzleNumbers{${1:numbers}}"
+      }
+    },
+    {
+      "name": "Word",
+      "arg": {
+        "format": "{}",
+        "snippet": "Word{${1:word%text}}"
+      }
+    },
+    {
+      "name": "PuzzleSolution"
+    },
+    {
+      "name": "PuzzleSolution",
+      "arg": {
+        "format": "[]",
+        "snippet": "PuzzleSolution[${1:true or false}]"
+      }
+    },
+    {
+      "name": "PuzzleUnitlength",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleBlackBox",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleFont",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleNumberFont",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleClueFont",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleWordsText",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleLettersText",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleUnsolved",
+      "unusual": true
+    },
+    {
+      "name": "PuzzlePutNumber",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PuzzlePutNumber{${1:x}}{${2:y}}{${3:number}}"
+      }
+    },
+    {
+      "name": "PuzzleHook",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleLineThickness",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleThickline",
+      "unusual": true
+    },
+    {
+      "name": "PuzzlePre",
+      "unusual": true
+    },
+    {
+      "name": "PuzzlePost",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleCluePre ",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleCluePost",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleContent",
+      "unusual": true
+    },
+    {
+      "name": "PuzzleSolutionContent",
+      "unusual": true
+    },
+    {
+      "name": "SudokuLinethickness",
+      "unusual": true
+    },
+    {
+      "name": "KakuroNumberFont",
+      "unusual": true
+    },
+    {
+      "name": "KakuroHintType",
+      "unusual": true
+    },
+    {
+      "name": "KakuroNumberFont",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "Puzzle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:columns}}{${2:rows}}"
+      }
+    },
+    {
+      "name": "PuzzleClues",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:text}}"
+      }
+    },
+    {
+      "name": "PuzzleWords",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:word length}}"
+      }
+    },
+    {
+      "name": "Sudoku"
+    },
+    {
+      "name": "Kakuro",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:columns}}{${2:rows}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/cwpuzzle#c": [
+      "numbered",
+      "nocenter",
+      "unboxed",
+      "normalsize",
+      "small",
+      "large",
+      "german",
+      "ngerman"
+    ]
+  },
+  "args": [
+    "\\usepackage/cwpuzzle#c"
+  ]
+}

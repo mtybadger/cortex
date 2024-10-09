@@ -1,0 +1,54 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "gmhypertarget",
+      "arg": {
+        "format": "{}",
+        "snippet": "gmhypertarget{${1:text}}"
+      }
+    },
+    {
+      "name": "gmhypertarget",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gmhypertarget[${2:label}]{${1:text}}"
+      }
+    },
+    {
+      "name": "gmiflink",
+      "arg": {
+        "format": "{}",
+        "snippet": "gmiflink{${1:text}}"
+      }
+    },
+    {
+      "name": "gmiflink",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gmiflink[${2:target name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "gmifref",
+      "arg": {
+        "format": "{}",
+        "snippet": "gmifref{${1:text}}"
+      }
+    },
+    {
+      "name": "gmifref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "gmifref[${2:label}]{${1:text}}"
+      }
+    },
+    {
+      "name": "theGMhlabel",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

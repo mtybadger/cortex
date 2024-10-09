@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { CharacterPair } from '../../../../common/languages/languageConfiguration.js';
+import { CharacterPair } from 'vs/editor/common/languages/languageConfiguration';
 
 const standardBracketRules: CharacterPair[] = [
 	['{', '}'],

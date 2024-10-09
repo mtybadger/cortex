@@ -1,0 +1,83 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "tagpdf"
+    },
+    {
+      "name": "accsupp",
+      "if": "accsupp"
+    }
+  ],
+  "macros": [
+    {
+      "name": "iftagpdfopt",
+      "unusual": true
+    },
+    {
+      "name": "tagpdfopttrue",
+      "unusual": true
+    },
+    {
+      "name": "tagpdfoptfalse",
+      "unusual": true
+    },
+    {
+      "name": "doreplacement",
+      "arg": {
+        "format": "{}",
+        "snippet": "doreplacement{${1:true or false}}"
+      }
+    },
+    {
+      "name": "auxiliaryspace",
+      "unusual": true
+    },
+    {
+      "name": "wrap",
+      "arg": {
+        "format": "{}",
+        "snippet": "wrap{${1:arg}}"
+      }
+    },
+    {
+      "name": "wrapml",
+      "arg": {
+        "format": "{}",
+        "snippet": "wrapml{${1:arg}}"
+      }
+    },
+    {
+      "name": "wrapmlstar",
+      "arg": {
+        "format": "{}",
+        "snippet": "wrapmlstar{${1:arg}}"
+      }
+    },
+    {
+      "name": "wrapmlalt",
+      "arg": {
+        "format": "{}",
+        "snippet": "wrapmlalt{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/axessibility#c": [
+      "accsupp",
+      "tagpdf"
+    ]
+  },
+  "args": [
+    "\\usepackage/axessibility#c"
+  ]
+}

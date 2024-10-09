@@ -1,0 +1,130 @@
+{
+  "deps": [
+    {
+      "name": "chemstr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adamantane",
+      "arg": {
+        "format": "{}",
+        "snippet": "adamantane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "BackGroundColor",
+      "unusual": true
+    },
+    {
+      "name": "bicycheph",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bicycheph[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "bicycheph",
+      "arg": {
+        "format": "{}",
+        "snippet": "bicycheph{${1:subslist}}"
+      }
+    },
+    {
+      "name": "bicychepv",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bicychepv[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "bicychepv",
+      "arg": {
+        "format": "{}",
+        "snippet": "bicychepv{${1:subslist}}"
+      }
+    },
+    {
+      "name": "bornane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "bornane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "bornane",
+      "arg": {
+        "format": "{}",
+        "snippet": "bornane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "chair",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "chair[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "chair",
+      "arg": {
+        "format": "{}",
+        "snippet": "chair{${1:subslist}}"
+      }
+    },
+    {
+      "name": "chairi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "chairi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "chairi",
+      "arg": {
+        "format": "{}",
+        "snippet": "chairi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cyclobutane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cyclobutane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "frontthicktothinfalse",
+      "unusual": true
+    },
+    {
+      "name": "frontthicktothintrue",
+      "unusual": true
+    },
+    {
+      "name": "hadamantane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hadamantane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "hadamantane",
+      "arg": {
+        "format": "{}",
+        "snippet": "hadamantane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "iffrontthicktothin",
+      "unusual": true
+    },
+    {
+      "name": "thinLineWidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

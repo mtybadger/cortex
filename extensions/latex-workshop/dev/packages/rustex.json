@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "RusTeX"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

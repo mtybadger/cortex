@@ -1,0 +1,648 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fourier-orns"
+    }
+  ],
+  "macros": [
+    {
+      "name": "blacksquare"
+    },
+    {
+      "name": "blacktriangleleft",
+      "detail": "◀ (\"wasysym\" command)",
+      "doc": "\\blacktriangleleft (fourier -mathabx), (large) left triangle, filled"
+    },
+    {
+      "name": "blacktriangleright",
+      "detail": "▶ (\"wasysym\" command)",
+      "doc": "\\blacktriangleright (fourier -mathabx), (large) right triangle, filled"
+    },
+    {
+      "name": "complement",
+      "detail": "∁ (\"amssymb fourier\" command)",
+      "doc": "Complement sign"
+    },
+    {
+      "name": "curvearrowleft",
+      "detail": "↶ (\"amssymb fourier\" command)",
+      "doc": "Left curved arrow"
+    },
+    {
+      "name": "curvearrowright",
+      "detail": "↷ (\"amssymb fourier\" command)",
+      "doc": "Right curved arrow"
+    },
+    {
+      "name": "geqslant",
+      "detail": "⩾ (\"amssymb fourier\" command)",
+      "doc": "Greater-than or slanted equal to"
+    },
+    {
+      "name": "hslash",
+      "detail": "ℏ (\"amssymb fourier arevmath\" command)",
+      "doc": "=\\hbar (wrisym), #\\hbar, planck's h over 2pi"
+    },
+    {
+      "name": "iiint",
+      "detail": "∭ (\"amsmath fourier esint wasysym\" command)",
+      "doc": "Triple integral operator"
+    },
+    {
+      "name": "iint",
+      "detail": "∬ (\"amsmath fourier esint wasysym\" command)",
+      "doc": "Double integral operator"
+    },
+    {
+      "name": "intercal",
+      "detail": "⊺ (\"amssymb fourier\" command)",
+      "doc": "Intercal"
+    },
+    {
+      "name": "leftleftarrows",
+      "detail": "⇇ (\"amssymb fourier\" command)",
+      "doc": "Two left arrows"
+    },
+    {
+      "name": "leqslant",
+      "detail": "⩽ (\"amssymb fourier\" command)",
+      "doc": "Less-than or slanted equal to"
+    },
+    {
+      "name": "llbracket"
+    },
+    {
+      "name": "lvert"
+    },
+    {
+      "name": "lVert"
+    },
+    {
+      "name": "nexists",
+      "detail": "∄ (\"amssymb fourier\" command)",
+      "doc": "\\nexi (oz), negated exists"
+    },
+    {
+      "name": "ngeqslant"
+    },
+    {
+      "name": "nleqslant"
+    },
+    {
+      "name": "notowns"
+    },
+    {
+      "name": "nparallel",
+      "detail": "∦ (\"amssymb fourier\" command)",
+      "doc": "Not parallel"
+    },
+    {
+      "name": "nparallelslant"
+    },
+    {
+      "name": "nvDash",
+      "detail": "⊭ (\"amssymb fourier\" command)",
+      "doc": "Not vertical, double dash"
+    },
+    {
+      "name": "oiiint",
+      "detail": "∰ (\"txfonts fourier\" command)",
+      "doc": "Triple contour integral operator"
+    },
+    {
+      "name": "oiint",
+      "detail": "∯ (\"esint wasysym fourier\" command)",
+      "doc": "\\dbloint (wrisym), double contour integral operator"
+    },
+    {
+      "name": "otheralpha"
+    },
+    {
+      "name": "otherbeta"
+    },
+    {
+      "name": "otherchi"
+    },
+    {
+      "name": "otherDelta"
+    },
+    {
+      "name": "otherdelta"
+    },
+    {
+      "name": "otherepsilon"
+    },
+    {
+      "name": "othereta"
+    },
+    {
+      "name": "otherGamma"
+    },
+    {
+      "name": "othergamma"
+    },
+    {
+      "name": "otheriota"
+    },
+    {
+      "name": "otherkappa"
+    },
+    {
+      "name": "otherLambda"
+    },
+    {
+      "name": "otherlambda"
+    },
+    {
+      "name": "othermu"
+    },
+    {
+      "name": "othernu"
+    },
+    {
+      "name": "otherOmega"
+    },
+    {
+      "name": "otheromega"
+    },
+    {
+      "name": "otherPhi"
+    },
+    {
+      "name": "otherphi"
+    },
+    {
+      "name": "otherPi"
+    },
+    {
+      "name": "otherpi"
+    },
+    {
+      "name": "otherPsi"
+    },
+    {
+      "name": "otherpsi"
+    },
+    {
+      "name": "otherrho"
+    },
+    {
+      "name": "otherSigma"
+    },
+    {
+      "name": "othersigma"
+    },
+    {
+      "name": "othertau"
+    },
+    {
+      "name": "otherTheta"
+    },
+    {
+      "name": "othertheta"
+    },
+    {
+      "name": "otherUpsilon"
+    },
+    {
+      "name": "otherupsilon"
+    },
+    {
+      "name": "othervarepsilon"
+    },
+    {
+      "name": "othervarkappa"
+    },
+    {
+      "name": "othervarphi"
+    },
+    {
+      "name": "othervarpi"
+    },
+    {
+      "name": "othervarrho"
+    },
+    {
+      "name": "othervarsigma"
+    },
+    {
+      "name": "othervartheta"
+    },
+    {
+      "name": "othervarvarpi"
+    },
+    {
+      "name": "othervarvarrho"
+    },
+    {
+      "name": "otherXi"
+    },
+    {
+      "name": "otherxi"
+    },
+    {
+      "name": "otherzeta"
+    },
+    {
+      "name": "parallelslant"
+    },
+    {
+      "name": "rightrightarrows",
+      "detail": "⇉ (\"amssymb fourier\" command)",
+      "doc": "Two right arrows"
+    },
+    {
+      "name": "rrbracket"
+    },
+    {
+      "name": "rvert"
+    },
+    {
+      "name": "rVert"
+    },
+    {
+      "name": "slashint"
+    },
+    {
+      "name": "smallsetminus",
+      "detail": "∖ (\"amssymb fourier\" command)",
+      "doc": "Small set minus (cf. reverse solidus)"
+    },
+    {
+      "name": "square"
+    },
+    {
+      "name": "subsetneqq",
+      "detail": "⫋ (\"amssymb\" command)",
+      "doc": "Subset of above not equal to"
+    },
+    {
+      "name": "thething"
+    },
+    {
+      "name": "varkappa"
+    },
+    {
+      "name": "varkappa"
+    },
+    {
+      "name": "varpartialdiff"
+    },
+    {
+      "name": "varsubsetneq"
+    },
+    {
+      "name": "varvarpi"
+    },
+    {
+      "name": "varvarrho"
+    },
+    {
+      "name": "varvarrho"
+    },
+    {
+      "name": "vDash",
+      "detail": "⊨ (\"amssymb fourier\" command)",
+      "doc": "True (vertical, double dash)"
+    },
+    {
+      "name": "VERT"
+    },
+    {
+      "name": "widearc",
+      "arg": {
+        "format": "{}",
+        "snippet": "widearc{${1:arg}}"
+      }
+    },
+    {
+      "name": "wideOarc",
+      "arg": {
+        "format": "{}",
+        "snippet": "wideOarc{${1:arg}}"
+      }
+    },
+    {
+      "name": "wideparen",
+      "arg": {
+        "format": "{}",
+        "snippet": "wideparen{${1:arg}}"
+      }
+    },
+    {
+      "name": "widering",
+      "arg": {
+        "format": "{}",
+        "snippet": "widering{${1:arg}}"
+      }
+    },
+    {
+      "name": "xswordsdown"
+    },
+    {
+      "name": "xswordsup"
+    },
+    {
+      "name": "iintop",
+      "unusual": true
+    },
+    {
+      "name": "iiintop",
+      "unusual": true
+    },
+    {
+      "name": "oiintop",
+      "unusual": true
+    },
+    {
+      "name": "oiiintop",
+      "unusual": true
+    },
+    {
+      "name": "slashintop",
+      "unusual": true
+    },
+    {
+      "name": "blackseries",
+      "if": "expert"
+    },
+    {
+      "name": "lining",
+      "if": "expert"
+    },
+    {
+      "name": "oldstyle",
+      "if": "expert"
+    },
+    {
+      "name": "sbseries",
+      "if": "expert"
+    },
+    {
+      "name": "scishape",
+      "if": "expert"
+    },
+    {
+      "name": "superieures",
+      "if": "expert"
+    },
+    {
+      "name": "textblack",
+      "if": "expert",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblack{${1:text}}"
+      }
+    },
+    {
+      "name": "textsb",
+      "if": "expert",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsb{${1:text}}"
+      }
+    },
+    {
+      "name": "textsci",
+      "if": "expert",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsci{${1:text}}"
+      }
+    },
+    {
+      "name": "texttitle",
+      "if": "expert",
+      "arg": {
+        "format": "{}",
+        "snippet": "texttitle{${1:text}}"
+      }
+    },
+    {
+      "name": "titleshape",
+      "if": "expert"
+    },
+    {
+      "name": "blackseries",
+      "if": "oldstyle"
+    },
+    {
+      "name": "lining",
+      "if": "oldstyle"
+    },
+    {
+      "name": "oldstyle",
+      "if": "oldstyle"
+    },
+    {
+      "name": "sbseries",
+      "if": "oldstyle"
+    },
+    {
+      "name": "scishape",
+      "if": "oldstyle"
+    },
+    {
+      "name": "superieures",
+      "if": "oldstyle"
+    },
+    {
+      "name": "textblack",
+      "if": "oldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblack{${1:text}}"
+      }
+    },
+    {
+      "name": "textsb",
+      "if": "oldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsb{${1:text}}"
+      }
+    },
+    {
+      "name": "textsci",
+      "if": "oldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsci{${1:text}}"
+      }
+    },
+    {
+      "name": "texttitle",
+      "if": "oldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "texttitle{${1:text}}"
+      }
+    },
+    {
+      "name": "titleshape",
+      "if": "oldstyle"
+    },
+    {
+      "name": "blackseries",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "lining",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "oldstyle",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "sbseries",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "scishape",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "superieures",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "textblack",
+      "if": "fulloldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblack{${1:text}}"
+      }
+    },
+    {
+      "name": "textsb",
+      "if": "fulloldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsb{${1:text}}"
+      }
+    },
+    {
+      "name": "textsci",
+      "if": "fulloldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsci{${1:text}}"
+      }
+    },
+    {
+      "name": "texttitle",
+      "if": "fulloldstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "texttitle{${1:text}}"
+      }
+    },
+    {
+      "name": "titleshape",
+      "if": "fulloldstyle"
+    },
+    {
+      "name": "SetFourierSpace",
+      "if": "widespace",
+      "unusual": true
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fourier#c": [
+      "widespace",
+      "poorman",
+      "expert",
+      "oldstyle",
+      "fulloldstyle",
+      "sloped",
+      "upright"
+    ]
+  },
+  "args": [
+    "\\usepackage/fourier#c"
+  ]
+}

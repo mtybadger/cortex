@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "xintexpr"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "mathtools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SetMathEnvironmentSinglespace",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetMathEnvironmentSinglespace{${1:factor}}"
+      }
+    },
+    {
+      "name": "RestoreMathEnvironmentLeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "RestoreMathEnvironmentLeading{${1:envname}}"
+      }
+    },
+    {
+      "name": "SetTextEnvironmentSinglespace",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetTextEnvironmentSinglespace{${1:factor}}"
+      }
+    },
+    {
+      "name": "RestoreTextEnvironmentLeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "RestoreTextEnvironmentLeading{${1:envname}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/zhlineskip#c": [
+      "bodytextleadingratio=${1:number}",
+      "footnoteleadingratio=${1:number}",
+      "restoremathleading",
+      "UseMSWordMultipleLineSpacing",
+      "MSWordLineSpacingMultiple=${1:number}",
+      "MSWordSinglespaceRatio=${1:number}"
+    ]
+  },
+  "args": [
+    "\\usepackage/zhlineskip#c"
+  ]
+}

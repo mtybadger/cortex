@@ -1,0 +1,86 @@
+{
+  "deps": [
+    {
+      "name": "yfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SetHeaderName",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetHeaderName{${1:text}}"
+      }
+    },
+    {
+      "name": "SetPaperLocation",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPaperLocation{${1:text}}"
+      }
+    },
+    {
+      "name": "SetPaperName",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPaperName{${1:text}}"
+      }
+    },
+    {
+      "name": "SetPaperPrice",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPaperPrice{${1:text}}"
+      }
+    },
+    {
+      "name": "SetPaperSlogan",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPaperSlogan{${1:text}}"
+      }
+    },
+    {
+      "name": "byline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "byline{${1:headline%text}}{${2:author}}"
+      }
+    },
+    {
+      "name": "closearticle"
+    },
+    {
+      "name": "currentissue",
+      "arg": {
+        "format": "{}",
+        "snippet": "currentissue{${1:number}}"
+      }
+    },
+    {
+      "name": "currentvolume",
+      "arg": {
+        "format": "{}",
+        "snippet": "currentvolume{${1:number}}"
+      }
+    },
+    {
+      "name": "headline",
+      "arg": {
+        "format": "{}",
+        "snippet": "headline{${1:text}}"
+      }
+    },
+    {
+      "name": "theissue",
+      "unusual": true
+    },
+    {
+      "name": "thevolume",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "attachandlink",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "attachandlink{${1:file}}{${2:description%text}}{${3:link text%text}}"
+      }
+    },
+    {
+      "name": "attachandlink",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "attachandlink[${4:filespec}]{${1:file}}{${2:description%text}}{${3:link text%text}}"
+      }
+    },
+    {
+      "name": "attachandlink",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "attachandlink{${1:file}}[${4:mime-type}]{${2:description%text}}{${3:link text%text}}"
+      }
+    },
+    {
+      "name": "attachandlink",
+      "arg": {
+        "format": "[]{}[]{}{}",
+        "snippet": "attachandlink[${4:filespec}]{${1:file}}[${5:mime-type}]{${2:description%text}}{${3:link text%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

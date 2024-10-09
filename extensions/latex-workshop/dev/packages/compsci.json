@@ -1,0 +1,315 @@
+{
+  "deps": [
+    {
+      "name": "abbrevs"
+    },
+    {
+      "name": "alltt"
+    },
+    {
+      "name": "lips"
+    },
+    {
+      "name": "moredefs"
+    },
+    {
+      "name": "relsize"
+    },
+    {
+      "name": "shortvrb"
+    },
+    {
+      "name": "slemph"
+    },
+    {
+      "name": "titles"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "bst",
+      "arg": {
+        "format": "{}",
+        "snippet": "bst{${1:bibstyle}}"
+      }
+    },
+    {
+      "name": "package",
+      "arg": {
+        "format": "{}",
+        "snippet": "package{${1:package}}"
+      }
+    },
+    {
+      "name": "cat",
+      "arg": {
+        "format": "{}",
+        "snippet": "cat{${1:category}}"
+      }
+    },
+    {
+      "name": "class",
+      "arg": {
+        "format": "{}",
+        "snippet": "class{${1:class}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:file}}"
+      }
+    },
+    {
+      "name": "ext",
+      "arg": {
+        "format": "{}",
+        "snippet": "ext{${1:extension}}"
+      }
+    },
+    {
+      "name": "caveat",
+      "arg": {
+        "format": "{}",
+        "snippet": "caveat{${1:warning text%text}}"
+      }
+    },
+    {
+      "name": "todo",
+      "arg": {
+        "format": "{}",
+        "snippet": "todo{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "code",
+      "arg": {
+        "format": "{}",
+        "snippet": "code{${1:verbatim text%definition}}"
+      }
+    },
+    {
+      "name": "typeset",
+      "arg": {
+        "format": "{}",
+        "snippet": "typeset{${1:text}}"
+      }
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "option",
+      "arg": {
+        "format": "{}",
+        "snippet": "option{${1:option}}"
+      }
+    },
+    {
+      "name": "program",
+      "arg": {
+        "format": "{}",
+        "snippet": "program{${1:program}}"
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:cmd}}"
+      }
+    },
+    {
+      "name": "cmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmd{${1:cmd}}"
+      }
+    },
+    {
+      "name": "cname",
+      "arg": {
+        "format": "{}",
+        "snippet": "cname{${1:csname}}"
+      }
+    },
+    {
+      "name": "marg",
+      "arg": {
+        "format": "{}",
+        "snippet": "marg{${1:arg}}"
+      }
+    },
+    {
+      "name": "oarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "oarg{${1:arg}}"
+      }
+    },
+    {
+      "name": "meta",
+      "arg": {
+        "format": "{}",
+        "snippet": "meta{${1:arg}}"
+      }
+    },
+    {
+      "name": "newprogram",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newprogram{${1:cmd}}{${2:initial}}"
+      }
+    },
+    {
+      "name": "newprogram",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newprogram{${1:cmd}}{${2:initial}}[${3:subsequent}]"
+      }
+    },
+    {
+      "name": "ProcessDTXFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "ProcessDTXFile{${1:file name%file}}"
+      }
+    },
+    {
+      "name": "AddToCheckSum",
+      "arg": {
+        "format": "{}",
+        "snippet": "AddToCheckSum{${1:number}}"
+      }
+    },
+    {
+      "name": "BibTeX"
+    },
+    {
+      "name": "filename",
+      "unusual": true
+    },
+    {
+      "name": "IfCitations",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IfCitations{${1:arg}}"
+      }
+    },
+    {
+      "name": "IfJustLoadInformation",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IfJustLoadInformation{${1:arg}}"
+      }
+    },
+    {
+      "name": "MakePercentComment",
+      "unusual": true
+    },
+    {
+      "name": "MakePercentIgnore",
+      "unusual": true
+    },
+    {
+      "name": "TMFontProgram",
+      "unusual": true
+    },
+    {
+      "name": "Frankenstein"
+    },
+    {
+      "name": "monster"
+    },
+    {
+      "name": "ALaTeX"
+    },
+    {
+      "name": "ctan"
+    },
+    {
+      "name": "kpse"
+    },
+    {
+      "name": "gemacs"
+    },
+    {
+      "name": "auctex"
+    },
+    {
+      "name": "nts"
+    },
+    {
+      "name": "MakeIndex"
+    },
+    {
+      "name": "etex"
+    },
+    {
+      "name": "LaTeXiii"
+    },
+    {
+      "name": "idvi"
+    }
+  ],
+  "envs": [
+    {
+      "name": "warning"
+    },
+    {
+      "name": "todoenv"
+    },
+    {
+      "name": "typesetexample"
+    },
+    {
+      "name": "codeexample"
+    },
+    {
+      "name": "codeexample*"
+    },
+    {
+      "name": "codeexamplex"
+    },
+    {
+      "name": "bothexample"
+    },
+    {
+      "name": "bothexample*"
+    },
+    {
+      "name": "splitexample"
+    },
+    {
+      "name": "splitexample*"
+    }
+  ],
+  "keys": {
+    "\\usepackage/compsci#c": [
+      "hyperlatex"
+    ]
+  },
+  "args": [
+    "\\usepackage/compsci#c"
+  ]
+}

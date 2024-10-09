@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ltjlistingsvsstdcmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "ltjlistingsvsstdcmd{${1:arg}}"
+      }
+    },
+    {
+      "name": "CatcodeTableLTJlistings",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\lstset,\\lstinline,\\begin{lstlisting},\\lstinputlisting,\\lstMakeShortInline,\\lstdefinelanguage,\\lstdefinestyle": [
+      "vsraw",
+      "vscmd=${1:cmd}",
+      "doubleletterspace="
+    ]
+  },
+  "args": []
+}

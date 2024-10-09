@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "scrbase"
+    },
+    {
+      "name": "scrlfile"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "tocbasic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "TOCclone",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TOCclone{${1:source ext}}{${2:destination ext}}"
+      }
+    },
+    {
+      "name": "TOCclone",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "TOCclone[${3:list heading}]{${1:source ext}}{${2:destination ext}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

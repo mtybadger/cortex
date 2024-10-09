@@ -1,0 +1,58 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "thepagecolor"
+    },
+    {
+      "name": "thepagecolornone"
+    },
+    {
+      "name": "newpagecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "newpagecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "restorepagecolor"
+    },
+    {
+      "name": "backgroundpagecolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "backgroundpagecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "newbackgroundpagecolor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "newbackgroundpagecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "restorebackgroundpagecolor",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pagecolor#c": [
+      "pagecolor=",
+      "nopagecolor"
+    ]
+  },
+  "args": [
+    "\\usepackage/pagecolor#c"
+  ]
+}

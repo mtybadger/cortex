@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibraryfpu"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tikzmath",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzmath{${1:statements}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "evaluate={${1:statements}}"
+    ]
+  },
+  "args": []
+}

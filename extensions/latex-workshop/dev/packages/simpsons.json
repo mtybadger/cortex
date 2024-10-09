@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Left"
+    },
+    {
+      "name": "Lisa"
+    },
+    {
+      "name": "Homer"
+    },
+    {
+      "name": "Bart"
+    },
+    {
+      "name": "Marge"
+    },
+    {
+      "name": "Maggie"
+    },
+    {
+      "name": "Burns"
+    },
+    {
+      "name": "SNPP"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

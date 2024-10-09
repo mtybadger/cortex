@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

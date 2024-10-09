@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbcal",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbcal{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pxtx-cal#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pxtx-cal#c"
+  ]
+}

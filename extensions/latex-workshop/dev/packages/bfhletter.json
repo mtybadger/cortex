@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "scrletter"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "bfhcolors"
+    },
+    {
+      "name": "translations"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "bfhfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "raggedsignature"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

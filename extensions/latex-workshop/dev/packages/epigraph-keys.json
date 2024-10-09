@@ -1,0 +1,113 @@
+{
+  "deps": [
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "conditionals"
+    },
+    {
+      "name": "microtype"
+    }
+  ],
+  "macros": [
+    {
+      "name": "epigraph",
+      "arg": {
+        "format": "{}",
+        "snippet": "epigraph{${1:text}}"
+      }
+    },
+    {
+      "name": "epigraph",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "epigraph[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\epigraph,\\qitem"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "qitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "qitem{${1:text}}"
+      }
+    },
+    {
+      "name": "qitem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "qitem[${2:keyvals}]{${1:text}}",
+        "keys": [
+          "\\epigraph,\\qitem"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "beforeepigraphskip",
+      "unusual": true
+    },
+    {
+      "name": "afterepigraphskip",
+      "unusual": true
+    },
+    {
+      "name": "epigraphtextindent",
+      "unusual": true
+    },
+    {
+      "name": "epigraphauthorsourceindent",
+      "unusual": true
+    },
+    {
+      "name": "epigraphtextwidth",
+      "unusual": true
+    },
+    {
+      "name": "epigraphstyle",
+      "unusual": true
+    },
+    {
+      "name": "epigraphdash",
+      "unusual": true
+    },
+    {
+      "name": "epigraphquotefont",
+      "unusual": true
+    },
+    {
+      "name": "epigraphtranslationfont",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "epigraphs"
+    }
+  ],
+  "keys": {
+    "\\epigraph,\\qitem": [
+      "author={${1:author}}",
+      "source={${1:source}}",
+      "translation={${1:translation text}}",
+      "etc={${1:text}}",
+      "after skip=",
+      "before skip=",
+      "author and source indent=",
+      "text indent=",
+      "width=",
+      "style=${1:font commands}",
+      "quote style=${1:font commands}",
+      "translation style=${1:font commands}",
+      "dash={${1:dash code}}"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/rsfso#c": [
+      "scaled=${1:factor}",
+      "scr"
+    ]
+  },
+  "args": [
+    "\\usepackage/rsfso#c"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "deps": [
+    {
+      "name": "class-a0poster"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "relsize"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibraryshapes.misc"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "fontawesome"
+    },
+    {
+      "name": "sfmath"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "FiraSans"
+    },
+    {
+      "name": "helvet",
+      "if": "helvet"
+    }
+  ],
+  "macros": [
+    {
+      "name": "highlight",
+      "arg": {
+        "format": "{}",
+        "snippet": "highlight{${1:text}}"
+      }
+    },
+    {
+      "name": "colheight",
+      "unusual": true
+    },
+    {
+      "name": "colwidth",
+      "unusual": true
+    },
+    {
+      "name": "coltextwidth",
+      "unusual": true
+    },
+    {
+      "name": "colsep",
+      "unusual": true
+    },
+    {
+      "name": "boxheight",
+      "unusual": true
+    },
+    {
+      "name": "boxlinewidth",
+      "unusual": true
+    },
+    {
+      "name": "posterbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "posterbox{${1:title%text}}{${2:contents%text}}"
+      }
+    },
+    {
+      "name": "doubleposterbox",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "doubleposterbox{${1:title1%text}}{${2:contents1%text}}{${3:title2%text}}{${4:contents2%text}}"
+      }
+    },
+    {
+      "name": "doubleposterbox",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "doubleposterbox[${5:height}]{${1:title1%text}}{${2:contents1%text}}{${3:title2%text}}{${4:contents2%text}}"
+      }
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "thenumcols",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "postercolumn"
+    }
+  ],
+  "keys": {
+    "\\documentclass/modernposter#c": [
+      "hlcolor=${1:HTML color}",
+      "logo=${1:imagefile}",
+      "helvet"
+    ]
+  },
+  "args": [
+    "\\documentclass/modernposter#c"
+  ]
+}

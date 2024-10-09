@@ -1,0 +1,83 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "calshape"
+    },
+    {
+      "name": "textcal",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcal{${1:text}}"
+      }
+    },
+    {
+      "name": "uishape"
+    },
+    {
+      "name": "textui",
+      "arg": {
+        "format": "{}",
+        "snippet": "textui{${1:text}}"
+      }
+    },
+    {
+      "name": "scslshape"
+    },
+    {
+      "name": "textscsl",
+      "arg": {
+        "format": "{}",
+        "snippet": "textscsl{${1:text}}"
+      }
+    },
+    {
+      "name": "sbseries"
+    },
+    {
+      "name": "textsb",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsb{${1:text}}"
+      }
+    },
+    {
+      "name": "Stigma",
+      "unusual": true
+    },
+    {
+      "name": "k",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "trademark"
+    },
+    {
+      "name": "tao",
+      "unusual": true
+    },
+    {
+      "name": "Qoppa",
+      "unusual": true
+    },
+    {
+      "name": "Sampi",
+      "unusual": true
+    },
+    {
+      "name": "Stigma",
+      "unusual": true
+    },
+    {
+      "name": "VarQoppa",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

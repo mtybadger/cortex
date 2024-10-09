@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "showcmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "showcmd{${1:cmd}}"
+      }
+    },
+    {
+      "name": "showcs",
+      "arg": {
+        "format": "{}",
+        "snippet": "showcs{${1:csname}}"
+      }
+    },
+    {
+      "name": "showenv",
+      "arg": {
+        "format": "{}",
+        "snippet": "showenv{${1:envname}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

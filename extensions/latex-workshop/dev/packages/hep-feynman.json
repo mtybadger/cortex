@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "tikz-feynman"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,12 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c,\\node#c": [
+      "swig hsplit={${1:options}}",
+      "swig vsplit={${1:options}}"
+    ]
+  },
+  "args": []
+}

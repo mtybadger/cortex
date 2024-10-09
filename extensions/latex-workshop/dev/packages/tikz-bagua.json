@@ -1,0 +1,189 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "bitset"
+    },
+    {
+      "name": "xintexpr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "taiji"
+    },
+    {
+      "name": "taiji",
+      "arg": {
+        "format": "[]",
+        "snippet": "taiji[${1:scale}]"
+      }
+    },
+    {
+      "name": "taiji*"
+    },
+    {
+      "name": "taiji*",
+      "arg": {
+        "format": "[]",
+        "snippet": "taiji*[${1:scale}]"
+      }
+    },
+    {
+      "name": "xtaiji"
+    },
+    {
+      "name": "xtaiji",
+      "arg": {
+        "format": "[]",
+        "snippet": "xtaiji[${1:scale}]"
+      }
+    },
+    {
+      "name": "xtaiji*"
+    },
+    {
+      "name": "xtaiji*",
+      "arg": {
+        "format": "[]",
+        "snippet": "xtaiji*[${1:scale}]"
+      }
+    },
+    {
+      "name": "drawliangyi",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "drawliangyi{0 or 1}"
+      }
+    },
+    {
+      "name": "drawliangyi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "drawliangyi[${1:yshift}]{0 or 1}"
+      }
+    },
+    {
+      "name": "liangyi",
+      "arg": {
+        "format": "{}",
+        "snippet": "liangyi{0 or 1}"
+      }
+    },
+    {
+      "name": "liangyi",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "liangyi{0 or 1}[${1:scale}]"
+      }
+    },
+    {
+      "name": "sixiang",
+      "arg": {
+        "format": "{}",
+        "snippet": "sixiang{${1:binary}}"
+      }
+    },
+    {
+      "name": "sixiang",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sixiang{${1:binary}}[${2:scale}]"
+      }
+    },
+    {
+      "name": "sixiang*",
+      "arg": {
+        "format": "{}",
+        "snippet": "sixiang*{${1:decimal}}"
+      }
+    },
+    {
+      "name": "sixiang*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "sixiang*{${1:decimal}}[${2:scale}]"
+      }
+    },
+    {
+      "name": "bagua",
+      "arg": {
+        "format": "{}",
+        "snippet": "bagua{${1:binary}}"
+      }
+    },
+    {
+      "name": "bagua",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "bagua{${1:binary}}[${2:scale}]"
+      }
+    },
+    {
+      "name": "bagua*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bagua*{${1:decimal}}"
+      }
+    },
+    {
+      "name": "bagua*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "bagua*{${1:decimal}}[${2:scale}]"
+      }
+    },
+    {
+      "name": "Bagua",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bagua{${1:binary}}"
+      }
+    },
+    {
+      "name": "Bagua",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Bagua{${1:binary}}[${2:scale}]"
+      }
+    },
+    {
+      "name": "Bagua",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Bagua[${2:8}]{${1:octal}}"
+      }
+    },
+    {
+      "name": "Bagua",
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "Bagua[${2:8}]{${1:octal}}[${3:scale}]"
+      }
+    },
+    {
+      "name": "Bagua*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bagua*{${1:decimal}}"
+      }
+    },
+    {
+      "name": "Bagua*",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "Bagua*{${1:decimal}}[${2:scale}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

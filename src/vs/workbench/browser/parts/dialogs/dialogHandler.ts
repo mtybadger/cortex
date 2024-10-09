@@ -3,23 +3,24 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { localize } from '../../../../nls.js';
-import { IConfirmation, IConfirmationResult, IInputResult, ICheckbox, IInputElement, ICustomDialogOptions, IInput, AbstractDialogHandler, DialogType, IPrompt, IAsyncPromptResult } from '../../../../platform/dialogs/common/dialogs.js';
-import { ILayoutService } from '../../../../platform/layout/browser/layoutService.js';
-import { ILogService } from '../../../../platform/log/common/log.js';
-import Severity from '../../../../base/common/severity.js';
-import { Dialog, IDialogResult } from '../../../../base/browser/ui/dialog/dialog.js';
-import { DisposableStore } from '../../../../base/common/lifecycle.js';
-import { StandardKeyboardEvent } from '../../../../base/browser/keyboardEvent.js';
-import { EventHelper } from '../../../../base/browser/dom.js';
-import { IKeybindingService } from '../../../../platform/keybinding/common/keybinding.js';
-import { IProductService } from '../../../../platform/product/common/productService.js';
-import { IClipboardService } from '../../../../platform/clipboard/common/clipboardService.js';
-import { fromNow } from '../../../../base/common/date.js';
-import { IInstantiationService } from '../../../../platform/instantiation/common/instantiation.js';
-import { MarkdownRenderer } from '../../../../editor/browser/widget/markdownRenderer/browser/markdownRenderer.js';
-import { defaultButtonStyles, defaultCheckboxStyles, defaultDialogStyles, defaultInputBoxStyles } from '../../../../platform/theme/browser/defaultStyles.js';
-import { ResultKind } from '../../../../platform/keybinding/common/keybindingResolver.js';
+import { localize } from 'vs/nls';
+import { IConfirmation, IConfirmationResult, IInputResult, ICheckbox, IInputElement, ICustomDialogOptions, IInput, AbstractDialogHandler, DialogType, IPrompt, IAsyncPromptResult } from 'vs/platform/dialogs/common/dialogs';
+import { ILayoutService } from 'vs/platform/layout/browser/layoutService';
+import { ILogService } from 'vs/platform/log/common/log';
+import Severity from 'vs/base/common/severity';
+import { Dialog, IDialogResult } from 'vs/base/browser/ui/dialog/dialog';
+import { DisposableStore } from 'vs/base/common/lifecycle';
+import { StandardKeyboardEvent } from 'vs/base/browser/keyboardEvent';
+import { EventHelper } from 'vs/base/browser/dom';
+import { IKeybindingService } from 'vs/platform/keybinding/common/keybinding';
+import { IProductService } from 'vs/platform/product/common/productService';
+import { IClipboardService } from 'vs/platform/clipboard/common/clipboardService';
+import { fromNow } from 'vs/base/common/date';
+import { IInstantiationService } from 'vs/platform/instantiation/common/instantiation';
+import { MarkdownRenderer } from 'vs/editor/browser/widget/markdownRenderer/browser/markdownRenderer';
+import { defaultButtonStyles, defaultCheckboxStyles, defaultDialogStyles, defaultInputBoxStyles } from 'vs/platform/theme/browser/defaultStyles';
+import { ResultKind } from 'vs/platform/keybinding/common/keybindingResolver';
+import { getReleaseString } from 'vs/workbench/common/release';
 
 export class BrowserDialogHandler extends AbstractDialogHandler {
 
@@ -77,13 +78,15 @@ export class BrowserDialogHandler extends AbstractDialogHandler {
 
 	async about(): Promise<void> {
 		const detailString = (useAgo: boolean): string => {
+			const releaseString = getReleaseString();
+
 			return localize('aboutDetail',
 				"Version: {0}\nCommit: {1}\nDate: {2}\nBrowser: {3}",
 				this.productService.version || 'Unknown',
 				this.productService.commit || 'Unknown',
 				this.productService.date ? `${this.productService.date}${useAgo ? ' (' + fromNow(new Date(this.productService.date), true) + ')' : ''}` : 'Unknown',
 				navigator.userAgent
-			);
+			).replace('\n', `\n${releaseString} ${this.productService.release || 'Unknown'}\n`);
 		};
 
 		const detail = detailString(true);

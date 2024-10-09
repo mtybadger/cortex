@@ -1,0 +1,173 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cursive"
+    },
+    {
+      "name": "textcursive",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcursive{${1:text}}"
+      }
+    },
+    {
+      "name": "calseries"
+    },
+    {
+      "name": "textcal",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcal{${1:text}}"
+      }
+    },
+    {
+      "name": "ftseries"
+    },
+    {
+      "name": "textft",
+      "arg": {
+        "format": "{}",
+        "snippet": "textft{${1:text}}"
+      }
+    },
+    {
+      "name": "wideseries"
+    },
+    {
+      "name": "textwide",
+      "arg": {
+        "format": "{}",
+        "snippet": "textwide{${1:text}}"
+      }
+    },
+    {
+      "name": "acadshape"
+    },
+    {
+      "name": "textacad",
+      "arg": {
+        "format": "{}",
+        "snippet": "textacad{${1:text}}"
+      }
+    },
+    {
+      "name": "seyes",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "seyes{${1:text}}"
+      }
+    },
+    {
+      "name": "seyesThickness",
+      "unusual": true
+    },
+    {
+      "name": "seyesDefault",
+      "unusual": true
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [
+    {
+      "name": "cursive"
+    },
+    {
+      "name": "calseries"
+    },
+    {
+      "name": "ftseries"
+    },
+    {
+      "name": "wideseries"
+    },
+    {
+      "name": "acadshape"
+    }
+  ],
+  "keys": {
+    "\\usepackage/frcursive#c": [
+      "OT1",
+      "default"
+    ]
+  },
+  "args": [
+    "\\usepackage/frcursive#c"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "intcalc"
+    },
+    {
+      "name": "bigintcalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fibnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "fibnum{${1:index}}"
+      }
+    },
+    {
+      "name": "fibnumPreCalc",
+      "arg": {
+        "format": "{}",
+        "snippet": "fibnumPreCalc{${1:index}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

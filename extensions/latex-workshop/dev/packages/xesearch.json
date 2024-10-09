@@ -1,0 +1,130 @@
+{
+  "deps": [
+    {
+      "name": "xetex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SearchList",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SearchList{${1:name}}{${2:replacement text}}{${3:list of words}}"
+      }
+    },
+    {
+      "name": "SearchList*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "SearchList*{${1:name}}{${2:replacement text}}{${3:list of words}}"
+      }
+    },
+    {
+      "name": "StopList",
+      "arg": {
+        "format": "{}",
+        "snippet": "StopList{${1:list of lists}}"
+      }
+    },
+    {
+      "name": "AddToList",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AddToList{${1:name}}{${2:list of words}}"
+      }
+    },
+    {
+      "name": "AddToList*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AddToList*{${1:name}}{${2:list of words}}"
+      }
+    },
+    {
+      "name": "MakeBoundary",
+      "arg": {
+        "format": "{}",
+        "snippet": "MakeBoundary{${1:characters}}"
+      }
+    },
+    {
+      "name": "UndoBoundary",
+      "arg": {
+        "format": "{}",
+        "snippet": "UndoBoundary{${1:characters}}"
+      }
+    },
+    {
+      "name": "StartSearching"
+    },
+    {
+      "name": "StopSearching"
+    },
+    {
+      "name": "SortByLength",
+      "arg": {
+        "format": "{}",
+        "snippet": "SortByLength{${1:pPsS}}"
+      }
+    },
+    {
+      "name": "SortByLength*",
+      "arg": {
+        "format": "{}",
+        "snippet": "SortByLength*{${1:pPsS}}"
+      }
+    },
+    {
+      "name": "DoNotSort",
+      "arg": {
+        "format": "{}",
+        "snippet": "DoNotSort{${1:pPsS}}"
+      }
+    },
+    {
+      "name": "SearchAll",
+      "arg": {
+        "format": "{}",
+        "snippet": "SearchAll{${1:pPsS}}"
+      }
+    },
+    {
+      "name": "SearchOnlyOne",
+      "arg": {
+        "format": "{}",
+        "snippet": "SearchOnlyOne{${1:pPsS}}"
+      }
+    },
+    {
+      "name": "SearchOrder",
+      "arg": {
+        "format": "{}",
+        "snippet": "SearchOrder{${1:order and inhibitions}}"
+      }
+    },
+    {
+      "name": "PrefixFound"
+    },
+    {
+      "name": "SuffixFound"
+    },
+    {
+      "name": "AffixFound"
+    },
+    {
+      "name": "PatchOutput"
+    },
+    {
+      "name": "NormalOutput"
+    },
+    {
+      "name": "PatchTracing"
+    },
+    {
+      "name": "NormalTracing"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

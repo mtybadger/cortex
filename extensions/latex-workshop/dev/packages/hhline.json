@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "hhline",
+      "arg": {
+        "format": "{}",
+        "snippet": "hhline{${1:colspec}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../base/test/common/utils.js';
-import { DebugModel, Expression } from '../../common/debugModel.js';
-import { createMockDebugModel } from './mockDebugModel.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { DebugModel, Expression } from 'vs/workbench/contrib/debug/common/debugModel';
+import { createMockDebugModel } from 'vs/workbench/contrib/debug/test/browser/mockDebugModel';
 
 // Expressions
 

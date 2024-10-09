@@ -1,0 +1,63 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "insdljs"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SimpleTextField",
+      "arg": {
+        "format": "{}",
+        "snippet": "SimpleTextField{${1:id}}"
+      }
+    },
+    {
+      "name": "SimpleTextFieldReadonly",
+      "arg": {
+        "format": "{}",
+        "snippet": "SimpleTextFieldReadonly{${1:id}}"
+      }
+    },
+    {
+      "name": "SimpleGET",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}"
+      }
+    },
+    {
+      "name": "SimpleGET",
+      "arg": {
+        "format": "{}{}{}{}[]",
+        "snippet": "SimpleGET{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}[${5:target}]"
+      }
+    },
+    {
+      "name": "SimplePOST",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}"
+      }
+    },
+    {
+      "name": "SimplePOST",
+      "arg": {
+        "format": "{}{}{}{}{}{}[]",
+        "snippet": "SimplePOST{${1:id}}{${2:label}}{${3:URL}}{${4:keypath}}{${5:factory}}{${6:errors}}[${7:target}]"
+      }
+    },
+    {
+      "name": "ErrorField"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

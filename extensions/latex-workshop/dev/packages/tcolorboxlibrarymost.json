@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "tcolorboxlibrarymany"
+    },
+    {
+      "name": "tcolorboxlibrarylistingsutf8"
+    },
+    {
+      "name": "tcolorboxlibraryexternal"
+    },
+    {
+      "name": "tcolorboxlibrarymagazine"
+    },
+    {
+      "name": "tcolorboxlibraryvignette"
+    },
+    {
+      "name": "tcolorboxlibraryposter"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

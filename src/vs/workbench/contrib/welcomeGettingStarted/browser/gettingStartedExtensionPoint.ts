@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { localize } from '../../../../nls.js';
-import { IWalkthrough } from '../../../../platform/extensions/common/extensions.js';
-import { ExtensionsRegistry } from '../../../services/extensions/common/extensionsRegistry.js';
+import { localize } from 'vs/nls';
+import { IWalkthrough } from 'vs/platform/extensions/common/extensions';
+import { ExtensionsRegistry } from 'vs/workbench/services/extensions/common/extensionsRegistry';
 
 const titleTranslated = localize('title', "Title");
 
@@ -159,7 +159,7 @@ export const walkthroughsExtensionPoint = ExtensionsRegistry.registerExtensionPo
 									defaultSnippets: [
 										{
 											label: 'onCommand',
-											description: localize('walkthroughs.steps.completionEvents.onCommand', 'Check off step when a given command is executed anywhere in VS Code.'),
+											description: localize('walkthroughs.steps.completionEvents.onCommand', 'Check off step when a given command is executed anywhere in Cortex.'),
 											body: 'onCommand:${1:commandId}'
 										},
 										{

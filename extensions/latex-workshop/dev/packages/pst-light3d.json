@@ -1,0 +1,43 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PstLightThreeDGraphic",
+      "arg": {
+        "format": "{}",
+        "snippet": "PstLightThreeDGraphic{${1:graphic}}"
+      }
+    },
+    {
+      "name": "PstLightThreeDGraphic",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PstLightThreeDGraphic[${2:options%keyvals}]{${1:graphic}}"
+      }
+    },
+    {
+      "name": "PstLightThreeDText",
+      "arg": {
+        "format": "{}",
+        "snippet": "PstLightThreeDText{${1:text}}"
+      }
+    },
+    {
+      "name": "PstLightThreeDText",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PstLightThreeDText[${2:options%keyvals}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

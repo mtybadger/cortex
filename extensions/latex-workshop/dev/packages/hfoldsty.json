@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "fix-cm",
+      "if": "fix-cm"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newstylenums",
+      "arg": {
+        "format": "{}",
+        "snippet": "newstylenums{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hfoldsty#c": [
+      "oldstylett",
+      "newstylett",
+      "origtt",
+      "fix-cm"
+    ]
+  },
+  "args": [
+    "\\usepackage/hfoldsty#c"
+  ]
+}

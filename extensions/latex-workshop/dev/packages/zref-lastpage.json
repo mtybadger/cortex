@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "zref-abspage"
+    },
+    {
+      "name": "atveryend"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ziflastpage",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ziflastpage{${1:label}}{${2:true}}{${3:false}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

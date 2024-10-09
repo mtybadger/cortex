@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathfrak{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathbfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbfrak{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/BOONDOX-frak#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/BOONDOX-frak#c"
+  ]
+}

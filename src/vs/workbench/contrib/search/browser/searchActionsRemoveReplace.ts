@@ -3,31 +3,31 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { ITreeNavigator } from '../../../../base/browser/ui/tree/tree.js';
-import * as nls from '../../../../nls.js';
-import { IConfigurationService } from '../../../../platform/configuration/common/configuration.js';
-import { ServicesAccessor } from '../../../../platform/instantiation/common/instantiation.js';
-import { getSelectionKeyboardEvent, WorkbenchCompressibleAsyncDataTree } from '../../../../platform/list/browser/listService.js';
-import { IViewsService } from '../../../services/views/common/viewsService.js';
-import { searchRemoveIcon, searchReplaceIcon } from './searchIcons.js';
-import { SearchView } from './searchView.js';
-import * as Constants from '../common/constants.js';
-import { IReplaceService } from './replace.js';
-import { arrayContainsElementOrParent, FileMatch, FolderMatch, Match, MatchInNotebook, RenderableMatch, SearchResult, TextSearchResult } from './searchModel.js';
-import { IEditorService } from '../../../services/editor/common/editorService.js';
-import { ISearchConfiguration, ISearchConfigurationProperties } from '../../../services/search/common/search.js';
-import { IUriIdentityService } from '../../../../platform/uriIdentity/common/uriIdentity.js';
-import { ContextKeyExpr } from '../../../../platform/contextkey/common/contextkey.js';
-import { Action2, MenuId, registerAction2 } from '../../../../platform/actions/common/actions.js';
-import { KeybindingWeight } from '../../../../platform/keybinding/common/keybindingsRegistry.js';
-import { KeyCode, KeyMod } from '../../../../base/common/keyCodes.js';
-import { category, getElementsToOperateOn, getSearchView, shouldRefocus } from './searchActionsBase.js';
-import { equals } from '../../../../base/common/arrays.js';
+import { ITreeNavigator } from 'vs/base/browser/ui/tree/tree';
+import * as nls from 'vs/nls';
+import { IConfigurationService } from 'vs/platform/configuration/common/configuration';
+import { ServicesAccessor } from 'vs/platform/instantiation/common/instantiation';
+import { getSelectionKeyboardEvent, WorkbenchCompressibleObjectTree } from 'vs/platform/list/browser/listService';
+import { IViewsService } from 'vs/workbench/services/views/common/viewsService';
+import { searchRemoveIcon, searchReplaceIcon } from 'vs/workbench/contrib/search/browser/searchIcons';
+import { SearchView } from 'vs/workbench/contrib/search/browser/searchView';
+import * as Constants from 'vs/workbench/contrib/search/common/constants';
+import { IReplaceService } from 'vs/workbench/contrib/search/browser/replace';
+import { arrayContainsElementOrParent, FileMatch, FolderMatch, Match, MatchInNotebook, RenderableMatch, SearchResult } from 'vs/workbench/contrib/search/browser/searchModel';
+import { IEditorService } from 'vs/workbench/services/editor/common/editorService';
+import { ISearchConfiguration, ISearchConfigurationProperties } from 'vs/workbench/services/search/common/search';
+import { IUriIdentityService } from 'vs/platform/uriIdentity/common/uriIdentity';
+import { ContextKeyExpr } from 'vs/platform/contextkey/common/contextkey';
+import { Action2, MenuId, registerAction2 } from 'vs/platform/actions/common/actions';
+import { KeybindingWeight } from 'vs/platform/keybinding/common/keybindingsRegistry';
+import { KeyCode, KeyMod } from 'vs/base/common/keyCodes';
+import { category, getElementsToOperateOn, getSearchView, shouldRefocus } from 'vs/workbench/contrib/search/browser/searchActionsBase';
+import { equals } from 'vs/base/common/arrays';
 
 
 //#region Interfaces
 export interface ISearchActionContext {
-	readonly viewer: WorkbenchCompressibleAsyncDataTree<SearchResult, RenderableMatch>;
+	readonly viewer: WorkbenchCompressibleObjectTree<RenderableMatch>;
 	readonly element: RenderableMatch;
 }
 
@@ -81,7 +81,7 @@ registerAction2(class RemoveAction extends Action2 {
 		});
 	}
 
-	async run(accessor: ServicesAccessor, context: ISearchActionContext | undefined): Promise<void> {
+	run(accessor: ServicesAccessor, context: ISearchActionContext | undefined): void {
 		const viewsService = accessor.get(IViewsService);
 		const configurationService = accessor.get(IConfigurationService);
 		const searchView = getSearchView(viewsService);
@@ -113,7 +113,7 @@ registerAction2(class RemoveAction extends Action2 {
 		let nextFocusElement;
 		const shouldRefocusMatch = shouldRefocus(elementsToRemove, focusElement);
 		if (focusElement && shouldRefocusMatch) {
-			nextFocusElement = await getElementToFocusAfterRemoved(viewer, focusElement, elementsToRemove);
+			nextFocusElement = getElementToFocusAfterRemoved(viewer, focusElement, elementsToRemove);
 		}
 
 		const searchResult = searchView.searchResult;
@@ -122,11 +122,9 @@ registerAction2(class RemoveAction extends Action2 {
 			searchResult.batchRemove(elementsToRemove);
 		}
 
-		await searchView.refreshTreePromiseSerializer; // wait for refreshTree to finish
-
 		if (focusElement && shouldRefocusMatch) {
 			if (!nextFocusElement) {
-				nextFocusElement = await getLastNodeFromSameType(viewer, focusElement);
+				nextFocusElement = getLastNodeFromSameType(viewer, focusElement);
 			}
 
 			if (nextFocusElement && !arrayContainsElementOrParent(nextFocusElement, elementsToRemove)) {
@@ -255,13 +253,13 @@ registerAction2(class ReplaceAllInFolderAction extends Action2 {
 
 //#region Helpers
 
-async function performReplace(accessor: ServicesAccessor,
-	context: ISearchActionContext | undefined) {
+function performReplace(accessor: ServicesAccessor,
+	context: ISearchActionContext | undefined): void {
 	const configurationService = accessor.get(IConfigurationService);
 	const viewsService = accessor.get(IViewsService);
 
 	const viewlet: SearchView | undefined = getSearchView(viewsService);
-	const viewer: WorkbenchCompressibleAsyncDataTree<SearchResult, RenderableMatch> | undefined = context?.viewer ?? viewlet?.getControl();
+	const viewer: WorkbenchCompressibleObjectTree<RenderableMatch> | undefined = context?.viewer ?? viewlet?.getControl();
 
 	if (!viewer) {
 		return;
@@ -281,20 +279,18 @@ async function performReplace(accessor: ServicesAccessor,
 	}
 	let nextFocusElement;
 	if (focusElement) {
-		nextFocusElement = await getElementToFocusAfterRemoved(viewer, focusElement, elementsToReplace);
+		nextFocusElement = getElementToFocusAfterRemoved(viewer, focusElement, elementsToReplace);
 	}
 
 	const searchResult = viewlet?.searchResult;
 
 	if (searchResult) {
-		await searchResult.batchReplace(elementsToReplace);
+		searchResult.batchReplace(elementsToReplace);
 	}
-
-	await viewlet?.refreshTreePromiseSerializer; // wait for refreshTree to finish
 
 	if (focusElement) {
 		if (!nextFocusElement) {
-			nextFocusElement = await getLastNodeFromSameType(viewer, focusElement);
+			nextFocusElement = getLastNodeFromSameType(viewer, focusElement);
 		}
 
 		if (nextFocusElement) {
@@ -348,18 +344,9 @@ function compareLevels(elem1: RenderableMatch, elem2: RenderableMatch) {
 			return -1;
 		}
 
-	} else if (elem2 instanceof FolderMatch) {
-		// FolderMatch
-		if (elem2 instanceof TextSearchResult) {
-			return -1;
-		} else if (elem2 instanceof FolderMatch) {
-			return 0;
-		} else {
-			return 1;
-		}
 	} else {
-		// textSearchResult
-		if (elem2 instanceof TextSearchResult) {
+		// FolderMatch
+		if (elem2 instanceof FolderMatch) {
 			return 0;
 		} else {
 			return 1;
@@ -370,17 +357,17 @@ function compareLevels(elem1: RenderableMatch, elem2: RenderableMatch) {
 /**
  * Returns element to focus after removing the given element
  */
-export async function getElementToFocusAfterRemoved(viewer: WorkbenchCompressibleAsyncDataTree<SearchResult, RenderableMatch>, element: RenderableMatch, elementsToRemove: RenderableMatch[]): Promise<RenderableMatch | undefined> {
+export function getElementToFocusAfterRemoved(viewer: WorkbenchCompressibleObjectTree<RenderableMatch>, element: RenderableMatch, elementsToRemove: RenderableMatch[]): RenderableMatch | undefined {
 	const navigator: ITreeNavigator<any> = viewer.navigate(element);
 	if (element instanceof FolderMatch) {
 		while (!!navigator.next() && (!(navigator.current() instanceof FolderMatch) || arrayContainsElementOrParent(navigator.current(), elementsToRemove))) { }
 	} else if (element instanceof FileMatch) {
 		while (!!navigator.next() && (!(navigator.current() instanceof FileMatch) || arrayContainsElementOrParent(navigator.current(), elementsToRemove))) {
-			await viewer.expand(navigator.current());
+			viewer.expand(navigator.current());
 		}
 	} else {
 		while (navigator.next() && (!(navigator.current() instanceof Match) || arrayContainsElementOrParent(navigator.current(), elementsToRemove))) {
-			await viewer.expand(navigator.current());
+			viewer.expand(navigator.current());
 		}
 	}
 	return navigator.current();
@@ -389,24 +376,16 @@ export async function getElementToFocusAfterRemoved(viewer: WorkbenchCompressibl
 /***
  * Finds the last element in the tree with the same type as `element`
  */
-export async function getLastNodeFromSameType(viewer: WorkbenchCompressibleAsyncDataTree<SearchResult, RenderableMatch>, element: RenderableMatch): Promise<RenderableMatch | undefined> {
+export function getLastNodeFromSameType(viewer: WorkbenchCompressibleObjectTree<RenderableMatch>, element: RenderableMatch): RenderableMatch | undefined {
 	let lastElem: RenderableMatch | null = viewer.lastVisibleElement ?? null;
 
 	while (lastElem) {
 		const compareVal = compareLevels(element, lastElem);
 		if (compareVal === -1) {
-			const expanded = await viewer.expand(lastElem);
-			if (!expanded) {
-				return lastElem;
-			}
+			viewer.expand(lastElem);
 			lastElem = viewer.lastVisibleElement;
 		} else if (compareVal === 1) {
-			const potentialLastElem = viewer.getParentElement(lastElem);
-			if (potentialLastElem instanceof SearchResult) {
-				break;
-			} else {
-				lastElem = potentialLastElem;
-			}
+			lastElem = viewer.getParentElement(lastElem);
 		} else {
 			return lastElem;
 		}

@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "texapi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "yaxversion",
+      "unusual": true
+    },
+    {
+      "name": "setparameterlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setparameterlist{${1:parameters}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "setparameterlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "setparameterlist{${1:parameters}}[${3:optional macro}]{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "endval",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

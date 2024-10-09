@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "bxtoolbox"
+    },
+    {
+      "name": "everyhook"
+    }
+  ],
+  "macros": [
+    {
+      "name": "useparheadparenindent"
+    },
+    {
+      "name": "nouseparheadparenindent"
+    },
+    {
+      "name": "uselineheadparenindent"
+    },
+    {
+      "name": "nouselineheadparenindent"
+    },
+    {
+      "name": "usedialogueparenindent"
+    },
+    {
+      "name": "nousedialogueparenindent"
+    },
+    {
+      "name": "parheadparenindentamount",
+      "arg": {
+        "format": "{}",
+        "snippet": "parheadparenindentamount{${1:real number}}"
+      }
+    },
+    {
+      "name": "lineheadparenindentamount",
+      "arg": {
+        "format": "{}",
+        "snippet": "lineheadparenindentamount{${1:real number}}"
+      }
+    },
+    {
+      "name": "lineheadforceindentamount",
+      "arg": {
+        "format": "{}",
+        "snippet": "lineheadforceindentamount{${1:real number}}"
+      }
+    },
+    {
+      "name": "dialogueparenindentamount",
+      "arg": {
+        "format": "{}",
+        "snippet": "dialogueparenindentamount{${1:real number}}"
+      }
+    },
+    {
+      "name": "prnind"
+    },
+    {
+      "name": "prnind",
+      "arg": {
+        "format": "[]",
+        "snippet": "prnind[${1:real number}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bxjaprnind#c": [
+      "force"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxjaprnind#c"
+  ]
+}

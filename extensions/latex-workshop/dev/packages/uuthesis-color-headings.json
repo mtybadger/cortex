@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "rgb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mainheadingtext",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mainheadingtext{${1:text}}{${2:formatting}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

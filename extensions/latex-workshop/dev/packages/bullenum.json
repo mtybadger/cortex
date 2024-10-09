@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "bullcntr"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "bullenum"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

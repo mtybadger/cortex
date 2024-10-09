@@ -1,0 +1,11 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "docmute"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

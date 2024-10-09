@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "projlib-language"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "blindtext"
+    },
+    {
+      "name": "blindtext",
+      "arg": {
+        "format": "[]",
+        "snippet": "blindtext[${1:number}]"
+      }
+    },
+    {
+      "name": "DNF"
+    },
+    {
+      "name": "DNF<text>"
+    },
+    {
+      "name": "DNF*"
+    },
+    {
+      "name": "DNF*<text>"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/projlib-draft#c": [
+      "draft",
+      "fast",
+      "no report page"
+    ]
+  },
+  "args": [
+    "\\usepackage/projlib-draft#c"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pagecont#c": [
+      "first",
+      "savefile=${1:file name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pagecont#c"
+  ]
+}

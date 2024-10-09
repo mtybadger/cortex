@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "dccpaper-base"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\documentclass/idcc#c": [
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "24",
+      "abstract",
+      "lightning",
+      "poster",
+      "practice",
+      "research",
+      "workshop"
+    ]
+  },
+  "args": [
+    "\\documentclass/idcc#c"
+  ]
+}

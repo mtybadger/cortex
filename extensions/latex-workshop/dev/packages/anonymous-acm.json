@@ -1,0 +1,69 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "authoranon",
+      "arg": {
+        "format": "{}",
+        "snippet": "authoranon{${1:author information%text}}"
+      }
+    },
+    {
+      "name": "textanon",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textanon{${1:text}}{${2:placeholder}}"
+      }
+    },
+    {
+      "name": "linkanon",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "linkanon{${1:URL}}{${2:display link%plain}}"
+      }
+    },
+    {
+      "name": "textlinkanon",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textlinkanon{${1:URL}}{${2:text%plain}}"
+      }
+    },
+    {
+      "name": "citeanon",
+      "arg": {
+        "format": "{}",
+        "snippet": "citeanon{${1:bibid}}"
+      }
+    },
+    {
+      "name": "citeanon",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citeanon[${2:add. text}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "ifAnonCondition",
+      "unusual": true
+    },
+    {
+      "name": "AnonConditiontrue",
+      "unusual": true
+    },
+    {
+      "name": "AnonConditionfalse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/anonymous-acm#c": [
+      "true",
+      "false"
+    ]
+  },
+  "args": [
+    "\\usepackage/anonymous-acm#c"
+  ]
+}

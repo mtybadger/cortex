@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "mathsemantics-commons"
+    },
+    {
+      "name": "mathsemantics-syntax"
+    },
+    {
+      "name": "mathsemantics-abbreviations"
+    },
+    {
+      "name": "mathsemantics-names"
+    },
+    {
+      "name": "mathsemantics-semantic"
+    },
+    {
+      "name": "mathsemantics-manifolds"
+    },
+    {
+      "name": "mathsemantics-optimization"
+    }
+  ],
+  "macros": [
+    {
+      "name": "C",
+      "if": "shortbb"
+    },
+    {
+      "name": "K",
+      "if": "shortbb"
+    },
+    {
+      "name": "N",
+      "if": "shortbb"
+    },
+    {
+      "name": "Q",
+      "if": "shortbb"
+    },
+    {
+      "name": "R",
+      "if": "shortbb"
+    },
+    {
+      "name": "Z",
+      "if": "shortbb"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathsemantics#c": [
+      "shortbb"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathsemantics#c"
+  ]
+}

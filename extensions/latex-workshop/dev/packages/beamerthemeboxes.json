@@ -1,0 +1,43 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "addheadboxtemplate",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addheadboxtemplate{${1:beamer color}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "addheadbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addheadbox{${1:beamer color}}{${2:box template}}"
+      }
+    },
+    {
+      "name": "addfootboxtemplate",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addfootboxtemplate{${1:beamer color}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "addfootbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addfootbox{${1:beamer color}}{${2:box template}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/boxes": [
+      "headheight=",
+      "footheight="
+    ]
+  },
+  "args": []
+}

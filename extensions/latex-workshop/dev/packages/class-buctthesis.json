@@ -1,0 +1,512 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "class-ctexbook"
+    },
+    {
+      "name": "xeCJK"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "titletoc"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "siunitx"
+    },
+    {
+      "name": "mhchem"
+    },
+    {
+      "name": "float"
+    },
+    {
+      "name": "longtable"
+    },
+    {
+      "name": "threeparttable"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "subcaption"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "bicaption"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "textpos"
+    },
+    {
+      "name": "xeCJKfntef"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "gbt7714"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "pdfpages"
+    },
+    {
+      "name": "footmisc"
+    },
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "fgruler",
+      "if": "debugger"
+    },
+    {
+      "name": "lineno",
+      "if": "debugger"
+    },
+    {
+      "name": "fgruler",
+      "if": "debugger=true"
+    },
+    {
+      "name": "lineno",
+      "if": "debugger=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "buctsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "buctsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\buctsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "makecover"
+    },
+    {
+      "name": "makecover",
+      "arg": {
+        "format": "[]",
+        "snippet": "makecover[${1:imagefile}]"
+      }
+    },
+    {
+      "name": "makedeclare"
+    },
+    {
+      "name": "makedeclare",
+      "arg": {
+        "format": "[]",
+        "snippet": "makedeclare[${1:imagefile}]"
+      }
+    },
+    {
+      "name": "taskinfo"
+    },
+    {
+      "name": "taskinfo*"
+    },
+    {
+      "name": "taskitem"
+    },
+    {
+      "name": "tableofcontentsEN"
+    },
+    {
+      "name": "listofdesignfigures"
+    },
+    {
+      "name": "echapter",
+      "arg": {
+        "format": "{}",
+        "snippet": "echapter{${1:title}}"
+      }
+    },
+    {
+      "name": "esection",
+      "arg": {
+        "format": "{}",
+        "snippet": "esection{${1:title}}"
+      }
+    },
+    {
+      "name": "esubsection",
+      "arg": {
+        "format": "{}",
+        "snippet": "esubsection{${1:title}}"
+      }
+    },
+    {
+      "name": "esubsubsection",
+      "arg": {
+        "format": "{}",
+        "snippet": "esubsubsection{${1:title}}"
+      }
+    },
+    {
+      "name": "bichapter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bichapter{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bichapter",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bichapter[${3:short title}]{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisection",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bisection{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisection",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bisection[${3:short title}]{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisubsection",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bisubsection{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisubsection",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bisubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisubsubsection",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bisubsubsection{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "bisubsubsection",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "bisubsubsection[${3:short title}]{${1:title}}{${2:English title%title}}"
+      }
+    },
+    {
+      "name": "dcaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "dcaption{${1:text}}"
+      }
+    },
+    {
+      "name": "inlinecite",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlinecite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "bfhei",
+      "unusual": true
+    },
+    {
+      "name": "bfsong",
+      "unusual": true
+    },
+    {
+      "name": "equationname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "cabstract"
+    },
+    {
+      "name": "eabstract"
+    },
+    {
+      "name": "taskbook"
+    },
+    {
+      "name": "taskbook",
+      "arg": {
+        "format": "*",
+        "snippet": "*"
+      }
+    },
+    {
+      "name": "bibenumerate"
+    },
+    {
+      "name": "denotation"
+    },
+    {
+      "name": "denotation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    },
+    {
+      "name": "foreword"
+    },
+    {
+      "name": "dfigure"
+    },
+    {
+      "name": "dfigure",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:placement}]"
+      }
+    },
+    {
+      "name": "conclusion"
+    },
+    {
+      "name": "translation"
+    },
+    {
+      "name": "acknowledgement"
+    },
+    {
+      "name": "achievements"
+    },
+    {
+      "name": "resume"
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "assumption"
+    },
+    {
+      "name": "assumption",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "property"
+    },
+    {
+      "name": "property",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof"
+    },
+    {
+      "name": "proof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/buctthesis#c": [
+      "type=${1|bachelor,master,doctor|}",
+      "submit",
+      "openright",
+      "openany",
+      "debugger",
+      "GBK",
+      "UTF8",
+      "zhmap=${1|true,false,zhmCJK|}",
+      "zihao=${1|-4,5,false|}",
+      "heading",
+      "sub3section",
+      "sub4section",
+      "scheme=${1|chinese,plain|}",
+      "linespread=${1:number}",
+      "fontset=${1|adobe,fandol,founder,mac,macnew,macold,ubuntu,windows,none|}",
+      "punct=${1|quanjiao,banjiao,kaiming,CCT,plain|}",
+      "space=${1|true,false,auto|}",
+      "autoindent=",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "openright",
+      "openany",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ],
+    "\\buctsetup": [
+      "ChineseTitle={${1:中文标题}}",
+      "ChineseTitleLineA=",
+      "ChineseTitleLineB=",
+      "EnglishTitle={${1:English title}}",
+      "author={${1:中文名}}",
+      "class={${1:class}}",
+      "studentid={${1:id number}}",
+      "school={${1:学院}}",
+      "major={${1:专业}}",
+      "supervisor={${1:导师姓名, 教授}}",
+      "msupervisor={${1:导师姓名, 教授}}",
+      "ChineseKeywords={${1:关键词 1, 关键词 2}}",
+      "EnglishKeywords={${1:keyword1,keyword2,...}}",
+      "date={${1:date}}"
+    ]
+  },
+  "args": [
+    "\\documentclass/buctthesis#c"
+  ]
+}

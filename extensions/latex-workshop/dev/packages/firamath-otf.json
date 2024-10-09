@@ -1,0 +1,858 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "xfakebold",
+      "if": "fakebold"
+    },
+    {
+      "name": "xfakebold",
+      "if": "fakebold=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "acwgapcirclearrow",
+      "detail": "⟲",
+      "doc": "Anticlockwise gapped circle arrow"
+    },
+    {
+      "name": "angdnr",
+      "detail": "⦟",
+      "doc": "Acute angle"
+    },
+    {
+      "name": "annuity",
+      "arg": {
+        "format": "{}",
+        "snippet": "annuity{${1:arg}}"
+      },
+      "detail": "x⃧",
+      "doc": "Combining annuity symbol"
+    },
+    {
+      "name": "bardownharpoonleft",
+      "detail": "⥡ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb left from bar"
+    },
+    {
+      "name": "bardownharpoonright",
+      "detail": "⥝ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb right from bar"
+    },
+    {
+      "name": "barleftarrow",
+      "detail": "⇤ (\"wrisym\" command)",
+      "doc": "Leftwards arrow to bar"
+    },
+    {
+      "name": "barleftarrowrightarrowbar"
+    },
+    {
+      "name": "barovernorthwestarrow",
+      "detail": "↸",
+      "doc": "North west arrow to long bar"
+    },
+    {
+      "name": "barrightharpoondown",
+      "detail": "⥟ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb down from bar"
+    },
+    {
+      "name": "barrightharpoonup",
+      "detail": "⥛ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb up from bar"
+    },
+    {
+      "name": "baruparrow",
+      "detail": "⤒ (\"wrisym\" command)",
+      "doc": "Upwards arrow to bar"
+    },
+    {
+      "name": "blackcircleulquadwhite",
+      "detail": "◕",
+      "doc": "Circle with all but upper left quadrant black"
+    },
+    {
+      "name": "blackinwhitesquare",
+      "detail": "▣",
+      "doc": "White square containing black small square"
+    },
+    {
+      "name": "blacklefthalfcircle",
+      "detail": "◖ (\"wasysym\" command)",
+      "doc": "Left half black circle"
+    },
+    {
+      "name": "blackpointerleft",
+      "detail": "◄",
+      "doc": "Black left-pointing pointer"
+    },
+    {
+      "name": "blackpointerright",
+      "detail": "►",
+      "doc": "Black right-pointing pointer"
+    },
+    {
+      "name": "blackrighthalfcircle",
+      "detail": "◗ (\"wasysym\" command)",
+      "doc": "Right half black circle"
+    },
+    {
+      "name": "blacksmiley",
+      "detail": "☻ (\"wasysym\" command)",
+      "doc": "\\invsmileface (arevmath), black smiling face"
+    },
+    {
+      "name": "blocklefthalf",
+      "detail": "▌",
+      "doc": "Left half block"
+    },
+    {
+      "name": "blocklowhalf",
+      "detail": "▄",
+      "doc": "Lower half block"
+    },
+    {
+      "name": "blockrighthalf",
+      "detail": "▐",
+      "doc": "Right half block"
+    },
+    {
+      "name": "blockuphalf",
+      "detail": "▀",
+      "doc": "Upper half block"
+    },
+    {
+      "name": "botsemicircle",
+      "detail": "◡",
+      "doc": "Lower half circle"
+    },
+    {
+      "name": "boxbar",
+      "detail": "◫ (\"stmaryrd txfonts\" command)",
+      "doc": "Vertical bar in box"
+    },
+    {
+      "name": "bullseye",
+      "detail": "◎",
+      "doc": "\\circledcirc (amssymb), bullseye"
+    },
+    {
+      "name": "circlebottomhalfblack",
+      "detail": "◒",
+      "doc": "Circle, filled bottom half"
+    },
+    {
+      "name": "circlelefthalfblack",
+      "detail": "◐ (\"wasysym\" command)",
+      "doc": "Circle, filled left half [harvey ball]"
+    },
+    {
+      "name": "circlellquad",
+      "detail": "◵",
+      "doc": "White circle with lower left quadrant"
+    },
+    {
+      "name": "circlelrquad",
+      "detail": "◶",
+      "doc": "White circle with lower right quadrant"
+    },
+    {
+      "name": "circleonleftarrow",
+      "detail": "⬰",
+      "doc": "Left arrow with small circle"
+    },
+    {
+      "name": "circleonrightarrow",
+      "detail": "⇴",
+      "doc": "Right arrow with small circle"
+    },
+    {
+      "name": "circlerighthalfblack",
+      "detail": "◑ (\"wasysym\" command)",
+      "doc": "Circle, filled right half"
+    },
+    {
+      "name": "circletophalfblack",
+      "detail": "◓",
+      "doc": "Circle, filled top half"
+    },
+    {
+      "name": "circleulquad",
+      "detail": "◴",
+      "doc": "White circle with upper left quadrant"
+    },
+    {
+      "name": "circleurquad",
+      "detail": "◷",
+      "doc": "White circle with upper right quadrant"
+    },
+    {
+      "name": "cuberoot",
+      "arg": {
+        "format": "{}",
+        "snippet": "cuberoot{${1:arg}}"
+      },
+      "detail": "∛",
+      "doc": "Cube root"
+    },
+    {
+      "name": "cwgapcirclearrow",
+      "detail": "⟳",
+      "doc": "Clockwise gapped circle arrow"
+    },
+    {
+      "name": "DDownarrow",
+      "detail": "⟱",
+      "doc": "Downwards quadruple arrow"
+    },
+    {
+      "name": "Ddownarrow",
+      "detail": "⤋",
+      "doc": "Downwards triple arrow"
+    },
+    {
+      "name": "downarrowbar",
+      "detail": "⤓ (\"wrisym\" command)",
+      "doc": "Downwards arrow to bar"
+    },
+    {
+      "name": "downarrowbarred",
+      "detail": "⤈",
+      "doc": "Downwards arrow with horizontal stroke"
+    },
+    {
+      "name": "downdasharrow",
+      "detail": "⇣",
+      "doc": "Downwards dashed arrow"
+    },
+    {
+      "name": "downupharpoonsleftright",
+      "detail": "⥯ (\"mathabx\" command)",
+      "doc": "\\uprevequilibrium (wrisym), downwards harpoon with barb left beside upwards harpoon with barb right"
+    },
+    {
+      "name": "downzigzagarrow",
+      "detail": "↯ (\"stmaryrd -wasysym\" command)",
+      "doc": "T \\lightning (marvosym), downwards zigzag arrow"
+    },
+    {
+      "name": "droang",
+      "arg": {
+        "format": "{}",
+        "snippet": "droang{${1:arg}}"
+      },
+      "detail": " ̚",
+      "doc": "Left angle above (non-spacing)"
+    },
+    {
+      "name": "female",
+      "detail": "♀ (\"wasysym\" command)",
+      "doc": "\\venus (mathabx), \\girl (mathabx), venus, female"
+    },
+    {
+      "name": "fisheye",
+      "detail": "◉",
+      "doc": "Fisheye"
+    },
+    {
+      "name": "fourthroot",
+      "arg": {
+        "format": "{}",
+        "snippet": "fourthroot{${1:arg}}"
+      },
+      "detail": "∜",
+      "doc": "Fourth root"
+    },
+    {
+      "name": "gtlpar",
+      "detail": "⦠",
+      "doc": "Spherical angle opening left"
+    },
+    {
+      "name": "house",
+      "detail": "⌂",
+      "doc": "House"
+    },
+    {
+      "name": "inversewhitecircle",
+      "detail": "◙",
+      "doc": "Inverse white circle"
+    },
+    {
+      "name": "invwhitelowerhalfcircle",
+      "detail": "◛",
+      "doc": "Lower half inverse white circle"
+    },
+    {
+      "name": "invwhiteupperhalfcircle",
+      "detail": "◚",
+      "doc": "Upper half inverse white circle"
+    },
+    {
+      "name": "leftarrowonoplus",
+      "detail": "⬲",
+      "doc": "Left arrow with circled plus"
+    },
+    {
+      "name": "leftarrowtriangle",
+      "detail": "⇽ (\"stmaryrd\" command)",
+      "doc": "Leftwards open-headed arrow"
+    },
+    {
+      "name": "leftdasharrow",
+      "detail": "⇠ (\"amsfonts\" command)",
+      "doc": "Leftwards dashed arrow"
+    },
+    {
+      "name": "leftdbltail",
+      "detail": "⤛",
+      "doc": "Leftwards double arrow-tail"
+    },
+    {
+      "name": "leftharpoondownbar",
+      "detail": "⥞ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb down from bar"
+    },
+    {
+      "name": "leftharpoonupbar",
+      "detail": "⥚ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb up from bar"
+    },
+    {
+      "name": "leftrightarrowtriangle",
+      "detail": "⇿ (\"stmaryrd\" command)",
+      "doc": "Left right open-headed arrow"
+    },
+    {
+      "name": "leftrightharpoondowndown",
+      "detail": "⥐ (\"wrisym\" command)",
+      "doc": "Left barb down right barb down harpoon"
+    },
+    {
+      "name": "leftrightharpoondownup",
+      "detail": "⥋ (\"mathabx\" command)",
+      "doc": "Left barb down right barb up harpoon"
+    },
+    {
+      "name": "leftrightharpoonupdown",
+      "detail": "⥊ (\"mathabx\" command)",
+      "doc": "Left barb up right barb down harpoon"
+    },
+    {
+      "name": "leftrightharpoonupup",
+      "detail": "⥎ (\"wrisym\" command)",
+      "doc": "Left barb up right barb up harpoon"
+    },
+    {
+      "name": "lefttail",
+      "detail": "⤙",
+      "doc": "Leftwards arrow-tail"
+    },
+    {
+      "name": "leftwavearrow",
+      "detail": "↜",
+      "doc": "Left arrow-wavy"
+    },
+    {
+      "name": "lgblkcircle",
+      "detail": "⬤",
+      "doc": "Black large circle"
+    },
+    {
+      "name": "llarc",
+      "detail": "◟",
+      "doc": "Lower left quadrant circular arc"
+    },
+    {
+      "name": "llblacktriangle",
+      "detail": "◣",
+      "doc": "Lower left triangle, filled"
+    },
+    {
+      "name": "LLeftarrow",
+      "detail": "⭅",
+      "doc": "Leftwards quadruple arrow"
+    },
+    {
+      "name": "lrarc",
+      "detail": "◞",
+      "doc": "Lower right quadrant circular arc"
+    },
+    {
+      "name": "lrblacktriangle",
+      "detail": "◢",
+      "doc": "Lower right triangle, filled"
+    },
+    {
+      "name": "male",
+      "detail": "♂ (\"wasysym\" command)",
+      "doc": "\\mars (mathabx), \\boy (mathabx), mars, male"
+    },
+    {
+      "name": "mbfDigamma",
+      "unusual": true,
+      "detail": "𝟊",
+      "doc": "Mathematical bold capital digamma"
+    },
+    {
+      "name": "mbfdigamma",
+      "unusual": true,
+      "detail": "𝟋",
+      "doc": "Mathematical bold small digamma"
+    },
+    {
+      "name": "mdblkcircle",
+      "detail": "⚫ (\"txfonts\" command)",
+      "doc": "Medium black circle"
+    },
+    {
+      "name": "mdlgblkdiamond",
+      "detail": "◆ (\"txfonts\" command)",
+      "doc": "Black diamond"
+    },
+    {
+      "name": "mdlgwhtdiamond",
+      "detail": "◇ (\"amssymb\" command)",
+      "doc": "White diamond; diamond, open"
+    },
+    {
+      "name": "mdsmblkcircle",
+      "detail": "⦁ (\"oz\" command)",
+      "doc": "\\dot (oz), spot"
+    },
+    {
+      "name": "mdsmwhtcircle",
+      "detail": "⚬",
+      "doc": "Medium small white circle"
+    },
+    {
+      "name": "mdwhtcircle",
+      "detail": "⚪ (\"txfonts\" command)",
+      "doc": "Medium white circle"
+    },
+    {
+      "name": "mscrg",
+      "detail": "ℊ (\"urwchancal\" command)",
+      "doc": "/scr g, script small letter g"
+    },
+    {
+      "name": "nHdownarrow",
+      "detail": "⇟",
+      "doc": "Downwards arrow with double stroke"
+    },
+    {
+      "name": "nHuparrow",
+      "detail": "⇞",
+      "doc": "Upwards arrow with double stroke"
+    },
+    {
+      "name": "nvleftarrow",
+      "detail": "⇷",
+      "doc": "Leftwards arrow with vertical stroke"
+    },
+    {
+      "name": "nVleftarrow",
+      "detail": "⇺",
+      "doc": "Leftwards arrow with double vertical stroke"
+    },
+    {
+      "name": "nvLeftarrow",
+      "detail": "⤂",
+      "doc": "Leftwards double arrow with vertical stroke"
+    },
+    {
+      "name": "nvleftarrowtail",
+      "detail": "⬹",
+      "doc": "Leftwards arrow with tail with vertical stroke"
+    },
+    {
+      "name": "nVleftarrowtail",
+      "detail": "⬺",
+      "doc": "Leftwards arrow with tail with double vertical stroke"
+    },
+    {
+      "name": "nvleftrightarrow",
+      "detail": "⇹",
+      "doc": "Left right arrow with vertical stroke, partial relation"
+    },
+    {
+      "name": "nVleftrightarrow",
+      "detail": "⇼",
+      "doc": "Left right arrow with double vertical stroke, finite relation"
+    },
+    {
+      "name": "nvLeftrightarrow",
+      "detail": "⤄",
+      "doc": "Left right double arrow with vertical stroke"
+    },
+    {
+      "name": "nvrightarrow",
+      "detail": "⇸ (\"oz\" command)",
+      "doc": "Rightwards arrow with vertical stroke, partial function"
+    },
+    {
+      "name": "nVrightarrow",
+      "detail": "⇻ (\"oz\" command)",
+      "doc": "Rightwards arrow with double vertical stroke, finite function"
+    },
+    {
+      "name": "nvRightarrow",
+      "detail": "⤃",
+      "doc": "Rightwards double arrow with vertical stroke"
+    },
+    {
+      "name": "nvrightarrowtail",
+      "detail": "⤔ (\"oz\" command)",
+      "doc": "Rightwards arrow with tail with vertical stroke, partial injection"
+    },
+    {
+      "name": "nVrightarrowtail",
+      "detail": "⤕ (\"oz\" command)",
+      "doc": "Rightwards arrow with tail with double vertical stroke, finite injection"
+    },
+    {
+      "name": "nvtwoheadleftarrow",
+      "detail": "⬴",
+      "doc": "Leftwards two-headed arrow with vertical stroke"
+    },
+    {
+      "name": "nVtwoheadleftarrow",
+      "detail": "⬵",
+      "doc": "Leftwards two-headed arrow with double vertical stroke"
+    },
+    {
+      "name": "nvtwoheadleftarrowtail",
+      "detail": "⬼",
+      "doc": "Leftwards two-headed arrow with tail with vertical stroke"
+    },
+    {
+      "name": "nVtwoheadleftarrowtail",
+      "detail": "⬽",
+      "doc": "Leftwards two-headed arrow with tail with double vertical stroke"
+    },
+    {
+      "name": "nvtwoheadrightarrow",
+      "detail": "⤀ (\"oz\" command)",
+      "doc": "\\psurj (oz), rightwards two-headed arrow with vertical stroke, partial surjection"
+    },
+    {
+      "name": "nVtwoheadrightarrow",
+      "detail": "⤁",
+      "doc": "Rightwards two-headed arrow with double vertical stroke, finite surjection"
+    },
+    {
+      "name": "nvtwoheadrightarrowtail",
+      "detail": "⤗",
+      "doc": "Rightwards two-headed arrow with tail with vertical stroke, surjective injection"
+    },
+    {
+      "name": "nVtwoheadrightarrowtail",
+      "detail": "⤘",
+      "doc": "Rightwards two-headed arrow with tail with double vertical stroke, finite surjective injection"
+    },
+    {
+      "name": "oturnedcomma",
+      "arg": {
+        "format": "{}",
+        "snippet": "oturnedcomma{${1:arg}}"
+      },
+      "detail": " ̒",
+      "doc": "Combining turned comma above"
+    },
+    {
+      "name": "revangle",
+      "detail": "⦣",
+      "doc": "Reversed angle"
+    },
+    {
+      "name": "revemptyset",
+      "detail": "⦰",
+      "doc": "Reversed empty set"
+    },
+    {
+      "name": "rightarrowbar",
+      "detail": "⇥ (\"wrisym\" command)",
+      "doc": "Rightwards arrow to bar"
+    },
+    {
+      "name": "rightarrowtriangle",
+      "detail": "⇾ (\"stmaryrd\" command)",
+      "doc": "Rightwards open-headed arrow"
+    },
+    {
+      "name": "rightdasharrow",
+      "detail": "⇢ (\"amsfonts\" command)",
+      "doc": "\\dasharrow (amsfonts), rightwards dashed arrow"
+    },
+    {
+      "name": "rightdbltail",
+      "detail": "⤜",
+      "doc": "Rightwards double arrow-tail"
+    },
+    {
+      "name": "righttail",
+      "detail": "⤚",
+      "doc": "Rightwards arrow-tail"
+    },
+    {
+      "name": "rightwavearrow",
+      "detail": "↝",
+      "doc": "Right arrow-wavy"
+    },
+    {
+      "name": "RRightarrow",
+      "detail": "⭆",
+      "doc": "Rightwards quadruple arrow"
+    },
+    {
+      "name": "sphericalangleup",
+      "detail": "⦡",
+      "doc": "Spherical angle opening up"
+    },
+    {
+      "name": "squareleftblack",
+      "detail": "◧",
+      "doc": "Square, filled left half"
+    },
+    {
+      "name": "squarellquad",
+      "detail": "◱",
+      "doc": "White square with lower left quadrant"
+    },
+    {
+      "name": "squarelrblack",
+      "detail": "◪",
+      "doc": "Square, filled bottom right corner"
+    },
+    {
+      "name": "squarelrquad",
+      "detail": "◲",
+      "doc": "White square with lower right quadrant"
+    },
+    {
+      "name": "squarerightblack",
+      "detail": "◨",
+      "doc": "Square, filled right half"
+    },
+    {
+      "name": "squareulblack",
+      "detail": "◩",
+      "doc": "Square, filled top left corner"
+    },
+    {
+      "name": "squareulquad",
+      "detail": "◰",
+      "doc": "White square with upper left quadrant"
+    },
+    {
+      "name": "squareurquad",
+      "detail": "◳",
+      "doc": "White square with upper right quadrant"
+    },
+    {
+      "name": "squoval",
+      "detail": "▢",
+      "doc": "White square with rounded corners"
+    },
+    {
+      "name": "sun",
+      "detail": "☼ (\"wasysym\" command)",
+      "doc": "White sun with rays"
+    },
+    {
+      "name": "topsemicircle",
+      "detail": "◠",
+      "doc": "Upper half circle"
+    },
+    {
+      "name": "turnangle",
+      "detail": "⦢",
+      "doc": "Turned angle"
+    },
+    {
+      "name": "twoheadleftarrowtail",
+      "detail": "⬻",
+      "doc": "Leftwards two-headed arrow with tail"
+    },
+    {
+      "name": "twoheadmapsfrom",
+      "detail": "⬶",
+      "doc": "Leftwards two-headed arrow from bar"
+    },
+    {
+      "name": "twoheadmapsto",
+      "detail": "⤅",
+      "doc": "Rightwards two-headed arrow from bar"
+    },
+    {
+      "name": "twoheadrightarrowtail",
+      "detail": "⤖ (\"oz\" command)",
+      "doc": "Rightwards two-headed arrow with tail, bijection"
+    },
+    {
+      "name": "twonotes",
+      "detail": "♫ (\"wasysym\" command)",
+      "doc": "Beamed eighth notes"
+    },
+    {
+      "name": "ularc",
+      "detail": "◜",
+      "doc": "Upper left quadrant circular arc"
+    },
+    {
+      "name": "ulblacktriangle",
+      "detail": "◤",
+      "doc": "Upper left triangle, filled"
+    },
+    {
+      "name": "uparrowbarred",
+      "detail": "⤉",
+      "doc": "Upwards arrow with horizontal stroke"
+    },
+    {
+      "name": "upbackepsilon",
+      "detail": "϶ (\"amssymb wrisym\" command)",
+      "doc": "Greek reversed lunate epsilon symbol"
+    },
+    {
+      "name": "updasharrow",
+      "detail": "⇡",
+      "doc": "Upwards dashed arrow"
+    },
+    {
+      "name": "updownarrowbar",
+      "detail": "↨",
+      "doc": "Up down arrow with base (perpendicular)"
+    },
+    {
+      "name": "updownharpoonleftleft",
+      "detail": "⥑ (\"wrisym\" command)",
+      "doc": "Up barb left down barb left harpoon"
+    },
+    {
+      "name": "updownharpoonleftright",
+      "detail": "⥍",
+      "doc": "Up barb left down barb right harpoon"
+    },
+    {
+      "name": "updownharpoonrightleft",
+      "detail": "⥌",
+      "doc": "Up barb right down barb left harpoon"
+    },
+    {
+      "name": "updownharpoonrightright",
+      "detail": "⥏ (\"wrisym\" command)",
+      "doc": "Up barb right down barb right harpoon"
+    },
+    {
+      "name": "updownharpoonsleftright",
+      "detail": "⥮ (\"mathabx\" command)",
+      "doc": "\\upequilibrium (wrisym), upwards harpoon with barb left beside downwards harpoon with barb right"
+    },
+    {
+      "name": "upharpoonleftbar",
+      "detail": "⥠ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb left from bar"
+    },
+    {
+      "name": "upharpoonrightbar",
+      "detail": "⥜ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb right from bar"
+    },
+    {
+      "name": "urarc",
+      "detail": "◝",
+      "doc": "Upper right quadrant circular arc"
+    },
+    {
+      "name": "urblacktriangle",
+      "detail": "◥",
+      "doc": "Upper right triangle, filled"
+    },
+    {
+      "name": "UUparrow",
+      "detail": "⟰",
+      "doc": "Upwards quadruple arrow"
+    },
+    {
+      "name": "Uuparrow",
+      "detail": "⤊",
+      "doc": "Upwards triple arrow"
+    },
+    {
+      "name": "vrectangle",
+      "detail": "▯",
+      "doc": "Rectangle, white (vertical)"
+    },
+    {
+      "name": "vrectangleblack",
+      "detail": "▮",
+      "doc": "Black vertical rectangle"
+    },
+    {
+      "name": "Vvert",
+      "detail": "⦀ (\"fourier\" command)",
+      "doc": "Triple vertical bar delimiter"
+    },
+    {
+      "name": "whitearrowupfrombar",
+      "detail": "⇪",
+      "doc": "Upwards white arrow from bar"
+    },
+    {
+      "name": "wideangledown",
+      "detail": "⦦",
+      "doc": "Oblique angle opening up"
+    },
+    {
+      "name": "wideangleup",
+      "detail": "⦧",
+      "doc": "Oblique angle opening down"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/firamath-otf#c": [
+      "fakebold",
+      "weight=${1:weight}",
+      "lining",
+      "oldstyle",
+      "usefilenames",
+      "nomath",
+      "tabular",
+      "proportional",
+      "Scale=${1:factor}",
+      "defaultfeatures={${1:fontspec features}}",
+      "normal-style=${1|ISO,TeX,french,upright,literal|}",
+      "math-style=${1|ISO,TeX,french,upright,literal|}",
+      "bold-style=${1|ISO,TeX,upright,literal|}",
+      "sans-style=${1|italic,upright,literal|}",
+      "nabla=${1|italic,upright,literal|}",
+      "partial=${1|italic,upright,literal|}",
+      "colon=${1|TeX,literal|}",
+      "slash-delimiter=${1|ascii,frac,div|}",
+      "active-frac=${1|small,normalsize|}",
+      "mathrm=${1|text,sym|}",
+      "mathup=${1|text,sym|}",
+      "mathit=${1|text,sym|}",
+      "mathsf=${1|text,sym|}",
+      "mathbf=${1|text,sym|}",
+      "mathtt=${1|text,sym|}",
+      "trace=${1|on,debug,off|}",
+      "warnings-off={${1:warning list}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/firamath-otf#c"
+  ]
+}

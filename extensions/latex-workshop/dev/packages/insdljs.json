@@ -1,0 +1,324 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "conv-xkv"
+    },
+    {
+      "name": "everyshi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "flJSStr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "flJSStr{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "flJSStr",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "flJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}",
+        "keys": [
+          "\\flJSStr#c,\\flJSStr*#c,\\dlJSStr#c,\\dlJSStr*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "flJSStr*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "flJSStr*{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "flJSStr*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "flJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}",
+        "keys": [
+          "\\flJSStr#c,\\flJSStr*#c,\\dlJSStr#c,\\dlJSStr*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "defineJSStr",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defineJSStr{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "fieldJSStr",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fieldJSStr{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "dlJSStr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dlJSStr{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "dlJSStr",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dlJSStr[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}",
+        "keys": [
+          "\\flJSStr#c,\\flJSStr*#c,\\dlJSStr#c,\\dlJSStr*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dlJSStr*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dlJSStr*{${1:cmd}}{${2:JS string%definition}}"
+      }
+    },
+    {
+      "name": "dlJSStr*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dlJSStr*[${3:options%keyvals}]{${1:cmd}}{${2:JS string%definition}}",
+        "keys": [
+          "\\flJSStr#c,\\flJSStr*#c,\\dlJSStr#c,\\dlJSStr*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cs",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs{${1:csname}}"
+      }
+    },
+    {
+      "name": "eqbs",
+      "unusual": true
+    },
+    {
+      "name": "jslit"
+    },
+    {
+      "name": "OpenAction",
+      "arg": {
+        "format": "{}",
+        "snippet": "OpenAction{${1:action code}}"
+      }
+    },
+    {
+      "name": "thisPageAction",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "thisPageAction{${1:open script}}{${2:close script}}"
+      }
+    },
+    {
+      "name": "JS",
+      "arg": {
+        "format": "{}",
+        "snippet": "JS{${1:string}}"
+      }
+    },
+    {
+      "name": "Named",
+      "arg": {
+        "format": "{}",
+        "snippet": "Named{${1:string}}"
+      }
+    },
+    {
+      "name": "makeJSspecials",
+      "unusual": true
+    },
+    {
+      "name": "ifpdfmarkup",
+      "unusual": true
+    },
+    {
+      "name": "pdfmarkuptrue",
+      "unusual": true
+    },
+    {
+      "name": "pdfmarkupfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifthereisdjs",
+      "unusual": true
+    },
+    {
+      "name": "thereisdjstrue",
+      "unusual": true
+    },
+    {
+      "name": "thereisdjsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifpdfspaces",
+      "unusual": true
+    },
+    {
+      "name": "pdfspacestrue",
+      "unusual": true
+    },
+    {
+      "name": "pdfspacesfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifisdljs",
+      "unusual": true
+    },
+    {
+      "name": "isdljstrue",
+      "unusual": true
+    },
+    {
+      "name": "isdljsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifdlfortypeset",
+      "unusual": true
+    },
+    {
+      "name": "dlfortypesettrue",
+      "unusual": true
+    },
+    {
+      "name": "dlfortypesetfalse",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "insDLJS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:base name}}{${2:script name}}"
+      }
+    },
+    {
+      "name": "insDLJS",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:JS var}]{${1:base name}}{${2:script name}}"
+      }
+    },
+    {
+      "name": "insDLJS*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:base name}}"
+      }
+    },
+    {
+      "name": "insDLJS*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:JS var}]{${1:base name}}"
+      }
+    },
+    {
+      "name": "newsegment",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:script name}}"
+      }
+    },
+    {
+      "name": "execJS",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "defineJS",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cmd}}"
+      }
+    },
+    {
+      "name": "defineJS",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:chngCats}]{${1:cmd}}"
+      }
+    },
+    {
+      "name": "defineJS*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cmd}}"
+      }
+    },
+    {
+      "name": "defineJS*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:chngCats}]{${1:cmd}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/insdljs#c": [
+      "dvipsone",
+      "dvips",
+      "textures",
+      "pdftex",
+      "luatex",
+      "dvipdfm",
+      "dvipdfmx",
+      "xetex",
+      "nodljs",
+      "debug",
+      "execJS",
+      "nopro",
+      "reqjs",
+      "!reqjs",
+      "usealtadobe"
+    ],
+    "\\flJSStr#c,\\flJSStr*#c,\\dlJSStr#c,\\dlJSStr*#c": [
+      "quotes",
+      "noquotes",
+      "parens",
+      "noparens"
+    ]
+  },
+  "args": [
+    "\\usepackage/insdljs#c"
+  ]
+}

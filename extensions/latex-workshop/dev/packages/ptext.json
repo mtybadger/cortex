@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "biditools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setptextdefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "setptextdefault{${1:range}}"
+      }
+    },
+    {
+      "name": "ptext"
+    },
+    {
+      "name": "ptext",
+      "arg": {
+        "format": "[]",
+        "snippet": "ptext[${1:range}]"
+      }
+    },
+    {
+      "name": "ptext*"
+    },
+    {
+      "name": "ptext*",
+      "arg": {
+        "format": "[]",
+        "snippet": "ptext*[${1:range}]"
+      }
+    },
+    {
+      "name": "ChangePtextPar"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ptext#c": [
+      "nopar"
+    ]
+  },
+  "args": [
+    "\\usepackage/ptext#c"
+  ]
+}

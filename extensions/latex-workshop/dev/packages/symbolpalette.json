@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "macrolist"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newsuitetheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "newsuitetheme{${1:theme}}"
+      }
+    },
+    {
+      "name": "addsymboltotheme",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addsymboltotheme{${1:theme}}{${2:symbol}}"
+      }
+    },
+    {
+      "name": "newsuite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsuite{${1:theme}}{${2:suite}}"
+      }
+    },
+    {
+      "name": "setsuitesymbol",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "setsuitesymbol{${1:theme}}{${2:suite}}{${3:symbol}}{${4:icon}}"
+      }
+    },
+    {
+      "name": "activesuite",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "activesuite{${1:theme}}{${2:suite}}"
+      }
+    },
+    {
+      "name": "printsymbol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printsymbol{${1:theme}}{${2:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

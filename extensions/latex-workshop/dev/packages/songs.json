@@ -1,0 +1,945 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "chordson"
+    },
+    {
+      "name": "chordsoff"
+    },
+    {
+      "name": "slides"
+    },
+    {
+      "name": "measureson"
+    },
+    {
+      "name": "measuresoff"
+    },
+    {
+      "name": "indexeson"
+    },
+    {
+      "name": "indexesoff"
+    },
+    {
+      "name": "scriptureon"
+    },
+    {
+      "name": "scriptureoff"
+    },
+    {
+      "name": "includeonlysongs",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeonlysongs{${1:songlist}}"
+      }
+    },
+    {
+      "name": "beginsong",
+      "arg": {
+        "format": "{}",
+        "snippet": "beginsong{${1:titles%text}}"
+      }
+    },
+    {
+      "name": "beginsong",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "beginsong{${1:titles%text}}[${2:otherinfo%keyvals}]"
+      }
+    },
+    {
+      "name": "endsong"
+    },
+    {
+      "name": "setlicense",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlicense{${1:license}}"
+      }
+    },
+    {
+      "name": "beginverse"
+    },
+    {
+      "name": "beginverse*"
+    },
+    {
+      "name": "endverse"
+    },
+    {
+      "name": "beginchorus"
+    },
+    {
+      "name": "endchorus"
+    },
+    {
+      "name": "",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:chordname}]"
+      }
+    },
+    {
+      "name": "nolyrics"
+    },
+    {
+      "name": "DeclareLyricChar",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareLyricChar{${1:token}}"
+      }
+    },
+    {
+      "name": "DeclareNonLyric",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareNonLyric{${1:token}}"
+      }
+    },
+    {
+      "name": "DeclareNoHyphen",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareNoHyphen{${1:token}}"
+      }
+    },
+    {
+      "name": "MultiwordChords"
+    },
+    {
+      "name": "shrp"
+    },
+    {
+      "name": "flt"
+    },
+    {
+      "name": "memorize"
+    },
+    {
+      "name": "memorize",
+      "arg": {
+        "format": "[]",
+        "snippet": "memorize[${1:regname}]"
+      }
+    },
+    {
+      "name": "newchords",
+      "arg": {
+        "format": "{}",
+        "snippet": "newchords{${1:regname}}"
+      }
+    },
+    {
+      "name": "replay"
+    },
+    {
+      "name": "replay",
+      "arg": {
+        "format": "[]",
+        "snippet": "replay[${1:regname}]"
+      }
+    },
+    {
+      "name": "repchoruses"
+    },
+    {
+      "name": "norepchoruses"
+    },
+    {
+      "name": "brk"
+    },
+    {
+      "name": "nextcol"
+    },
+    {
+      "name": "sclearpage"
+    },
+    {
+      "name": "scleardpage"
+    },
+    {
+      "name": "echo",
+      "arg": {
+        "format": "{}",
+        "snippet": "echo{${1:lyrics and chords}}"
+      }
+    },
+    {
+      "name": "rep",
+      "arg": {
+        "format": "{}",
+        "snippet": "rep{${1:n}}"
+      }
+    },
+    {
+      "name": "lrep"
+    },
+    {
+      "name": "rrep"
+    },
+    {
+      "name": "measurebar"
+    },
+    {
+      "name": "meter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "meter{${1:n}}{${2:d}}"
+      }
+    },
+    {
+      "name": "mbar",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mbar{${1:n}}{${2:d}}"
+      }
+    },
+    {
+      "name": "textnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "textnote{${1:text}}"
+      }
+    },
+    {
+      "name": "musicnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "musicnote{${1:text}}"
+      }
+    },
+    {
+      "name": "capo",
+      "arg": {
+        "format": "{}",
+        "snippet": "capo{${1:n}}"
+      }
+    },
+    {
+      "name": "ch",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ch{${1:chord}}{${2:pre}}{${3:post}}{${4:full}}"
+      }
+    },
+    {
+      "name": "mch",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "mch{${1:chord}}{${2:pre}}{${3:post}}{${4:full}}"
+      }
+    },
+    {
+      "name": "gtab",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gtab{${1:chord}}{${2:fret:strings:fingering}}"
+      }
+    },
+    {
+      "name": "transpose",
+      "arg": {
+        "format": "{}",
+        "snippet": "transpose{${1:n}}"
+      }
+    },
+    {
+      "name": "preferflats"
+    },
+    {
+      "name": "prefersharps"
+    },
+    {
+      "name": "trchordformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "trchordformat{${1:chordname}}{${2:transposed-chordname}}"
+      }
+    },
+    {
+      "name": "solfedge"
+    },
+    {
+      "name": "alphascale"
+    },
+    {
+      "name": "notenames",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "notenames{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
+      }
+    },
+    {
+      "name": "notenamesin",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "notenamesin{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
+      }
+    },
+    {
+      "name": "notenamesout",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "notenamesout{${1:nameA}}{${2:nameB}}{${3:nameC}}{${4:nameD}}{${5:nameE}}{${6:nameF}}{${7:nameG}}"
+      }
+    },
+    {
+      "name": "transposehere",
+      "arg": {
+        "format": "{}",
+        "snippet": "transposehere{${1:chords}}"
+      }
+    },
+    {
+      "name": "notrans",
+      "arg": {
+        "format": "{}",
+        "snippet": "notrans{${1:chords}}"
+      }
+    },
+    {
+      "name": "gtabtrans",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "gtabtrans{${1:chord}}{${2:fret:strings:fingering}}"
+      }
+    },
+    {
+      "name": "beginscripture",
+      "arg": {
+        "format": "{}",
+        "snippet": "beginscripture{${1:ref}}"
+      }
+    },
+    {
+      "name": "endscripture"
+    },
+    {
+      "name": "Acolon"
+    },
+    {
+      "name": "Bcolon"
+    },
+    {
+      "name": "strophe"
+    },
+    {
+      "name": "scripindent"
+    },
+    {
+      "name": "scripoutdent"
+    },
+    {
+      "name": "songsection",
+      "arg": {
+        "format": "{}",
+        "snippet": "songsection{${1:title}}"
+      }
+    },
+    {
+      "name": "songchapter",
+      "arg": {
+        "format": "{}",
+        "snippet": "songchapter{${1:title}}"
+      }
+    },
+    {
+      "name": "newindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newindex{${1:id}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "newauthorindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newauthorindex{${1:id}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "newscripindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newscripindex{${1:id}}{${2:filename%file}}"
+      }
+    },
+    {
+      "name": "showindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "showindex{${1:title%text}}{${2:id}}"
+      }
+    },
+    {
+      "name": "showindex",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "showindex[${3:columns}]{${1:title%text}}{${2:id}}"
+      }
+    },
+    {
+      "name": "indexentry",
+      "arg": {
+        "format": "{}",
+        "snippet": "indexentry{${1:lyrics%text}}"
+      }
+    },
+    {
+      "name": "indexentry",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indexentry[${2:indexes}]{${1:lyrics%text}}"
+      }
+    },
+    {
+      "name": "indextitleentry",
+      "arg": {
+        "format": "{}",
+        "snippet": "indextitleentry{${1:title%text}}"
+      }
+    },
+    {
+      "name": "indextitleentry",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indextitleentry[${2:indexes}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "thesongnum",
+      "unusual": true
+    },
+    {
+      "name": "printsongnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printsongnum{${1:arg}}"
+      }
+    },
+    {
+      "name": "songnumwidth",
+      "unusual": true
+    },
+    {
+      "name": "nosongnumbers"
+    },
+    {
+      "name": "theversenum",
+      "unusual": true
+    },
+    {
+      "name": "printversenum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printversenum{${1:arg}}"
+      }
+    },
+    {
+      "name": "versenumwidth",
+      "unusual": true
+    },
+    {
+      "name": "noversenumbers"
+    },
+    {
+      "name": "placeversenum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "placeversenum{${1:arg}}"
+      }
+    },
+    {
+      "name": "lyricfont",
+      "unusual": true
+    },
+    {
+      "name": "stitlefont",
+      "unusual": true
+    },
+    {
+      "name": "versefont",
+      "unusual": true
+    },
+    {
+      "name": "chorusfont",
+      "unusual": true
+    },
+    {
+      "name": "meterfont",
+      "unusual": true
+    },
+    {
+      "name": "echofont",
+      "unusual": true
+    },
+    {
+      "name": "notefont",
+      "unusual": true
+    },
+    {
+      "name": "notebgcolor",
+      "unusual": true
+    },
+    {
+      "name": "snumbgcolor",
+      "unusual": true
+    },
+    {
+      "name": "printchord",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printchord{${1:arg}}"
+      }
+    },
+    {
+      "name": "sharpsymbol",
+      "unusual": true
+    },
+    {
+      "name": "flatsymbol",
+      "unusual": true
+    },
+    {
+      "name": "everyverse",
+      "unusual": true
+    },
+    {
+      "name": "everychorus",
+      "unusual": true
+    },
+    {
+      "name": "versesep",
+      "unusual": true
+    },
+    {
+      "name": "afterpreludeskip",
+      "unusual": true
+    },
+    {
+      "name": "beforepostludeskip",
+      "unusual": true
+    },
+    {
+      "name": "baselineadj",
+      "unusual": true
+    },
+    {
+      "name": "clineparams",
+      "unusual": true
+    },
+    {
+      "name": "cbarwidth",
+      "unusual": true
+    },
+    {
+      "name": "sbarheight",
+      "unusual": true
+    },
+    {
+      "name": "extendprelude",
+      "unusual": true
+    },
+    {
+      "name": "showauthors",
+      "unusual": true
+    },
+    {
+      "name": "showrefs",
+      "unusual": true
+    },
+    {
+      "name": "extendpostlude",
+      "unusual": true
+    },
+    {
+      "name": "makeprelude",
+      "unusual": true
+    },
+    {
+      "name": "makepostlude",
+      "unusual": true
+    },
+    {
+      "name": "vvpenalty",
+      "unusual": true
+    },
+    {
+      "name": "ccpenalty",
+      "unusual": true
+    },
+    {
+      "name": "vcpenalty",
+      "unusual": true
+    },
+    {
+      "name": "cvpenalty",
+      "unusual": true
+    },
+    {
+      "name": "brkpenalty",
+      "unusual": true
+    },
+    {
+      "name": "sepverses",
+      "unusual": true
+    },
+    {
+      "name": "versejustify",
+      "unusual": true
+    },
+    {
+      "name": "chorusjustify",
+      "unusual": true
+    },
+    {
+      "name": "justifyleft",
+      "unusual": true
+    },
+    {
+      "name": "justifycenter",
+      "unusual": true
+    },
+    {
+      "name": "notejustify",
+      "unusual": true
+    },
+    {
+      "name": "placenote",
+      "unusual": true
+    },
+    {
+      "name": "scripturefont",
+      "unusual": true
+    },
+    {
+      "name": "printscrcite",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "printscrcite{${1:arg}}"
+      }
+    },
+    {
+      "name": "ifchorded"
+    },
+    {
+      "name": "iflyric"
+    },
+    {
+      "name": "ifslides"
+    },
+    {
+      "name": "ifpartiallist"
+    },
+    {
+      "name": "ifpartial"
+    },
+    {
+      "name": "ifsongindexes"
+    },
+    {
+      "name": "ifmeasures"
+    },
+    {
+      "name": "ifrawtext"
+    },
+    {
+      "name": "iftranscapos"
+    },
+    {
+      "name": "ifnolyrics"
+    },
+    {
+      "name": "ifpagepreludes"
+    },
+    {
+      "name": "ifvnumbered"
+    },
+    {
+      "name": "songcolumns",
+      "arg": {
+        "format": "{}",
+        "snippet": "songcolumns{${1:n}}"
+      }
+    },
+    {
+      "name": "pagepreludes"
+    },
+    {
+      "name": "colbotglue",
+      "unusual": true
+    },
+    {
+      "name": "lastcolglue",
+      "unusual": true
+    },
+    {
+      "name": "songpos",
+      "arg": {
+        "format": "{}",
+        "snippet": "songpos{${1:level}}"
+      }
+    },
+    {
+      "name": "spenalty",
+      "unusual": true
+    },
+    {
+      "name": "sepindexestrue"
+    },
+    {
+      "name": "sepindexesfalse"
+    },
+    {
+      "name": "idxheadwidth",
+      "unusual": true
+    },
+    {
+      "name": "idxrefsfont",
+      "unusual": true
+    },
+    {
+      "name": "idxtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "idxlyricfont",
+      "unusual": true
+    },
+    {
+      "name": "idxheadfont",
+      "unusual": true
+    },
+    {
+      "name": "idxbgcolor",
+      "unusual": true
+    },
+    {
+      "name": "idxauthfont",
+      "unusual": true
+    },
+    {
+      "name": "idxscripfont",
+      "unusual": true
+    },
+    {
+      "name": "idxbook",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "idxbook{${1:text}}"
+      }
+    },
+    {
+      "name": "idxcont",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "idxcont{${1:text}}"
+      }
+    },
+    {
+      "name": "indexsongsas",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "indexsongsas{${1:id}}{${2:number}}"
+      }
+    },
+    {
+      "name": "songtarget",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "songtarget{${1:level}}{${2:name}}"
+      }
+    },
+    {
+      "name": "songlink",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "songlink{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "titleprefixword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "titleprefixword{${1:word}}"
+      }
+    },
+    {
+      "name": "authsepword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "authsepword{${1:word}}"
+      }
+    },
+    {
+      "name": "authbyword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "authbyword{${1:word}}"
+      }
+    },
+    {
+      "name": "authignoreword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "authignoreword{${1:word}}"
+      }
+    },
+    {
+      "name": "songmark",
+      "unusual": true
+    },
+    {
+      "name": "versemark",
+      "unusual": true
+    },
+    {
+      "name": "chorusmark",
+      "unusual": true
+    },
+    {
+      "name": "newsongkey",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newsongkey{${1:keyname%specialDef}}{${2:initcode}}{${3:setcode}}"
+      }
+    },
+    {
+      "name": "newsongkey",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]{}",
+        "snippet": "newsongkey{${1:keyname%specialDef}}{${2:initcode}}[${4:default}]{${3:setcode}}"
+      }
+    },
+    {
+      "name": "chordlocals",
+      "unusual": true
+    },
+    {
+      "name": "shiftdblquotes",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "shiftdblquotes{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "songauthors",
+      "unusual": true
+    },
+    {
+      "name": "songrefs",
+      "unusual": true
+    },
+    {
+      "name": "songcopyright",
+      "unusual": true
+    },
+    {
+      "name": "songlicense",
+      "unusual": true
+    },
+    {
+      "name": "songtitle",
+      "unusual": true
+    },
+    {
+      "name": "resettitles",
+      "unusual": true
+    },
+    {
+      "name": "nexttitle",
+      "unusual": true
+    },
+    {
+      "name": "foreachtitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "foreachtitle{${1:code}}"
+      }
+    },
+    {
+      "name": "songlist",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "songs",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:indexes}}"
+      }
+    },
+    {
+      "name": "intersong"
+    },
+    {
+      "name": "intersong*"
+    },
+    {
+      "name": "songgroup"
+    }
+  ],
+  "keys": {
+    "\\usepackage/songs#c": [
+      "slides",
+      "unouter",
+      "rawtext",
+      "noshading",
+      "noindexes",
+      "nopdfindex",
+      "chorded",
+      "lyric",
+      "showmeasures",
+      "nomeasures",
+      "transposecapos",
+      "noscripture",
+      "twosongcolumns",
+      "onesongcolumn"
+    ],
+    "\\beginsong": [
+      "by={${1:authors}}",
+      "cr={${1:copyright}}",
+      "li={${1:license}}",
+      "sr={${1:refs}}",
+      "index={${1:lyrics}}",
+      "ititle={${1:title}}",
+      "%newsongkey"
+    ]
+  },
+  "args": [
+    "\\usepackage/songs#c"
+  ]
+}

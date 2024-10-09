@@ -1,0 +1,624 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pstricks-add"
+    },
+    {
+      "name": "pst-xkey"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "fp"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "dspW"
+    },
+    {
+      "name": "dspH"
+    },
+    {
+      "name": "dspPlotFrame"
+    },
+    {
+      "name": "dspCustomTicks",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspCustomTicks{${1:pos1 label1 pos2 label2 ...}}"
+      }
+    },
+    {
+      "name": "dspCustomTicks",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspCustomTicks[${2:options%keyvals}]{${1:pos1 label1 pos2 label2 ...}}"
+      }
+    },
+    {
+      "name": "dspText",
+      "arg": {
+        "format": "(){}",
+        "snippet": "dspText(${2:x},${3:y}){${1:label}}"
+      }
+    },
+    {
+      "name": "dspTaps",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspTaps{${1:data}}"
+      }
+    },
+    {
+      "name": "dspTaps",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspTaps[${2:options%keyvals}]{${1:data}}"
+      }
+    },
+    {
+      "name": "dspTapsAt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dspTapsAt{${1:start}}{${2:data}}"
+      }
+    },
+    {
+      "name": "dspTapsAt",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dspTapsAt[${3:options%keyvals}]{${1:start}}{${2:data}}"
+      }
+    },
+    {
+      "name": "dspTapsFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspTapsFile{${1:file}}"
+      }
+    },
+    {
+      "name": "dspTapsFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspTapsFile[${2:options%keyvals}]{${1:file}}"
+      }
+    },
+    {
+      "name": "dspSignal",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspSignal{${1:PS code}}"
+      }
+    },
+    {
+      "name": "dspSignal",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspSignal[${2:options%keyvals}]{${1:PS code}}"
+      }
+    },
+    {
+      "name": "dspSignalOpt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dspSignalOpt{${1:init}}{${2:PS code}}"
+      }
+    },
+    {
+      "name": "dspSignalOpt",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "dspSignalOpt[${3:options%keyvals}]{${1:init}}{${2:PS code}}"
+      }
+    },
+    {
+      "name": "dspFunc",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspFunc{${1:PS code}}"
+      }
+    },
+    {
+      "name": "dspFunc",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspFunc[${2:options%keyvals}]{${1:PS code}}"
+      }
+    },
+    {
+      "name": "dspFuncData",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspFuncData{${1:data}}"
+      }
+    },
+    {
+      "name": "dspFuncData",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspFuncData[${2:options%keyvals}]{${1:data}}"
+      }
+    },
+    {
+      "name": "dspFuncFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspFuncFile{${1:file}}"
+      }
+    },
+    {
+      "name": "dspFuncFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspFuncFile[${2:options%keyvals}]{${1:file}}"
+      }
+    },
+    {
+      "name": "dspDiracs",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspDiracs{${1:pos1 label1 pos2 label2 ...}}"
+      }
+    },
+    {
+      "name": "dspDiracs",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspDiracs[${2:options%keyvals}]{${1:pos1 label1 pos2 label2 ...}}"
+      }
+    },
+    {
+      "name": "dspPeriodize"
+    },
+    {
+      "name": "dspPZ",
+      "arg": {
+        "format": "{}",
+        "snippet": "dspPZ{${1:a,b}}"
+      }
+    },
+    {
+      "name": "dspPZ",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspPZ[${2:options%keyvals}]{${1:a,b}}"
+      }
+    },
+    {
+      "name": "PZAROC",
+      "unusual": true
+    },
+    {
+      "name": "PZCROC",
+      "unusual": true
+    },
+    {
+      "name": "PZLP",
+      "unusual": true
+    },
+    {
+      "name": "PZLabel",
+      "unusual": true
+    },
+    {
+      "name": "action",
+      "unusual": true
+    },
+    {
+      "name": "dirac",
+      "unusual": true
+    },
+    {
+      "name": "doOnPairs",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "doOnPairs{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "dspAxisColor",
+      "unusual": true
+    },
+    {
+      "name": "dspBU",
+      "unusual": true
+    },
+    {
+      "name": "dspCA",
+      "unusual": true
+    },
+    {
+      "name": "dspCPArcn",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "dspCPArcn{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+      }
+    },
+    {
+      "name": "dspCPArc",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "dspCPArc{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}{${5:arg5}}"
+      }
+    },
+    {
+      "name": "dspCPCirclePoint",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "dspCPCirclePoint{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "dspCPCircle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspCPCircle{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspCPPointSC",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspCPPointSC{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspCPPoint",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspCPPoint{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspCPW",
+      "unusual": true
+    },
+    {
+      "name": "dspCircle",
+      "unusual": true
+    },
+    {
+      "name": "dspCircleLabel",
+      "unusual": true
+    },
+    {
+      "name": "dspDotSize",
+      "unusual": true
+    },
+    {
+      "name": "dspFrameLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "dspFuncDataAt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspFuncDataAt{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspFuncOpt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspFuncOpt{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspHeight",
+      "unusual": true
+    },
+    {
+      "name": "dspImageFile",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dspImageFile{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspLabels",
+      "unusual": true
+    },
+    {
+      "name": "dspLegend",
+      "unusual": true
+    },
+    {
+      "name": "dspLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "dspMainPeriod",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dspMainPeriod{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspMakeTicks",
+      "unusual": true
+    },
+    {
+      "name": "dspMaxActX",
+      "unusual": true
+    },
+    {
+      "name": "dspMinActX",
+      "unusual": true
+    },
+    {
+      "name": "dspMkTk",
+      "unusual": true
+    },
+    {
+      "name": "dspPeriod",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dspPeriod{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspPointValueSC",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspPointValueSC{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspPointValue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "dspPointValue{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "dspPoints",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dspPoints{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "dspSetDims",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dspSetDims{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspSetupAxes",
+      "unusual": true
+    },
+    {
+      "name": "dspShowImage",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "dspShowImage[${2:opt}]{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspShowImage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dspShowImage{${1:arg1}}"
+      }
+    },
+    {
+      "name": "dspStemWidth",
+      "unusual": true
+    },
+    {
+      "name": "dspTickLabelX",
+      "unusual": true
+    },
+    {
+      "name": "dspTickLabelY",
+      "unusual": true
+    },
+    {
+      "name": "dspTickLabelYR",
+      "unusual": true
+    },
+    {
+      "name": "dspTickLen",
+      "unusual": true
+    },
+    {
+      "name": "dspTickLineWidth",
+      "unusual": true
+    },
+    {
+      "name": "dspTickX",
+      "unusual": true
+    },
+    {
+      "name": "dspTickY",
+      "unusual": true
+    },
+    {
+      "name": "dspTmpLen",
+      "unusual": true
+    },
+    {
+      "name": "dspUnitX",
+      "unusual": true
+    },
+    {
+      "name": "dspUnitY",
+      "unusual": true
+    },
+    {
+      "name": "dspWidth",
+      "unusual": true
+    },
+    {
+      "name": "dspXLabel",
+      "unusual": true
+    },
+    {
+      "name": "dspXTickGap",
+      "unusual": true
+    },
+    {
+      "name": "dspXlabel",
+      "unusual": true
+    },
+    {
+      "name": "dspXmax",
+      "unusual": true
+    },
+    {
+      "name": "dspXmin",
+      "unusual": true
+    },
+    {
+      "name": "dspYLabel",
+      "unusual": true
+    },
+    {
+      "name": "dspYLabelR",
+      "unusual": true
+    },
+    {
+      "name": "dspYTickGap",
+      "unusual": true
+    },
+    {
+      "name": "haY",
+      "unusual": true
+    },
+    {
+      "name": "incX",
+      "unusual": true
+    },
+    {
+      "name": "incY",
+      "unusual": true
+    },
+    {
+      "name": "outTicks",
+      "unusual": true
+    },
+    {
+      "name": "pcorps",
+      "unusual": true
+    },
+    {
+      "name": "removeFactor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "removeFactor{${1:arg1}}"
+      }
+    },
+    {
+      "name": "sg",
+      "unusual": true
+    },
+    {
+      "name": "sideGap",
+      "unusual": true
+    },
+    {
+      "name": "simplifyPiFrac",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "simplifyPiFrac{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "thisTickLabelX",
+      "unusual": true
+    },
+    {
+      "name": "thisTickX",
+      "unusual": true
+    },
+    {
+      "name": "tickColor",
+      "unusual": true
+    },
+    {
+      "name": "twoArgSplit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "twoArgSplit{${1:arg1}}"
+      }
+    },
+    {
+      "name": "xt",
+      "unusual": true
+    },
+    {
+      "name": "yt",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "dspPlot",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:xmin,xmax}}{${2:ymin,ymax}}"
+      }
+    },
+    {
+      "name": "dspPlot",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:options%keyvals}]{${1:xmin,xmax}}{${2:ymin,ymax}}"
+      }
+    },
+    {
+      "name": "dspClip"
+    },
+    {
+      "name": "dspPZPlot",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:M}}"
+      }
+    },
+    {
+      "name": "dspPZPlot",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:M}}"
+      }
+    },
+    {
+      "name": "dspCP",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

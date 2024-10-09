@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "makeindex",
+      "arg": {
+        "format": "{}",
+        "snippet": "makeindex{${1:name}}"
+      }
+    },
+    {
+      "name": "printindex",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "printindex{${1:name}}{${2:title}}"
+      }
+    },
+    {
+      "name": "see",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "see{${1:text}}{${2:page number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

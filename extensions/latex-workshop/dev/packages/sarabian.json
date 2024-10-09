@@ -1,0 +1,123 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sarabfamily"
+    },
+    {
+      "name": "textsarab",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsarab{${1:arg}}"
+      }
+    },
+    {
+      "name": "SAa"
+    },
+    {
+      "name": "SAb"
+    },
+    {
+      "name": "SAd"
+    },
+    {
+      "name": "SAdb"
+    },
+    {
+      "name": "SAdd"
+    },
+    {
+      "name": "SAf"
+    },
+    {
+      "name": "SAg"
+    },
+    {
+      "name": "SAga"
+    },
+    {
+      "name": "SAh"
+    },
+    {
+      "name": "SAhd"
+    },
+    {
+      "name": "SAhu"
+    },
+    {
+      "name": "SAk"
+    },
+    {
+      "name": "SAl"
+    },
+    {
+      "name": "SAlq"
+    },
+    {
+      "name": "SAm"
+    },
+    {
+      "name": "SAn"
+    },
+    {
+      "name": "SAo"
+    },
+    {
+      "name": "SAq"
+    },
+    {
+      "name": "SAr"
+    },
+    {
+      "name": "SArq"
+    },
+    {
+      "name": "SAs"
+    },
+    {
+      "name": "SAsa"
+    },
+    {
+      "name": "SAsd"
+    },
+    {
+      "name": "SAsv"
+    },
+    {
+      "name": "SAt"
+    },
+    {
+      "name": "SAtb"
+    },
+    {
+      "name": "SAtd"
+    },
+    {
+      "name": "SAw"
+    },
+    {
+      "name": "SAy"
+    },
+    {
+      "name": "SAz"
+    },
+    {
+      "name": "SAzd"
+    },
+    {
+      "name": "translitsarab",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "translitsarab{${1:char-commands}}"
+      }
+    },
+    {
+      "name": "translitsarabfont",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

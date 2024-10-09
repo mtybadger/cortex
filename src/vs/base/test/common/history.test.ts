@@ -3,8 +3,8 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 import assert from 'assert';
-import { HistoryNavigator, HistoryNavigator2 } from '../../common/history.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { HistoryNavigator, HistoryNavigator2 } from 'vs/base/common/history';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('History Navigator', () => {
 

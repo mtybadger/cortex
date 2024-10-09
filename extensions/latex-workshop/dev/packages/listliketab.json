@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [
+    {
+      "name": "storestyleof",
+      "arg": {
+        "format": "{}",
+        "snippet": "storestyleof{${1:envname}}"
+      }
+    },
+    {
+      "name": "storeliststyle"
+    }
+  ],
+  "envs": [
+    {
+      "name": "listliketab"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

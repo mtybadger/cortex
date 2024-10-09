@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "soul",
+      "if": "ulemph"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/comicsans#c": [
+      "ulemph",
+      "boldemph",
+      "largesymbols",
+      "plusminus"
+    ]
+  },
+  "args": [
+    "\\usepackage/comicsans#c"
+  ]
+}

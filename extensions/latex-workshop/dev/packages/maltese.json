@@ -1,0 +1,103 @@
+{
+  "deps": [
+    {
+      "name": "ucs"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mc"
+    },
+    {
+      "name": "mC"
+    },
+    {
+      "name": "mg"
+    },
+    {
+      "name": "mG"
+    },
+    {
+      "name": "mh"
+    },
+    {
+      "name": "mH"
+    },
+    {
+      "name": "mz"
+    },
+    {
+      "name": "mZ"
+    },
+    {
+      "name": "my"
+    },
+    {
+      "name": "mY"
+    },
+    {
+      "name": "mi"
+    },
+    {
+      "name": "mI"
+    },
+    {
+      "name": "maltesec",
+      "unusual": true
+    },
+    {
+      "name": "malteseC",
+      "unusual": true
+    },
+    {
+      "name": "malteseg",
+      "unusual": true
+    },
+    {
+      "name": "malteseG",
+      "unusual": true
+    },
+    {
+      "name": "malteseh",
+      "unusual": true
+    },
+    {
+      "name": "malteseH",
+      "unusual": true
+    },
+    {
+      "name": "maltesez",
+      "unusual": true
+    },
+    {
+      "name": "malteseZ",
+      "unusual": true
+    },
+    {
+      "name": "maltesey",
+      "unusual": true
+    },
+    {
+      "name": "malteseY",
+      "unusual": true
+    },
+    {
+      "name": "maltesei",
+      "unusual": true
+    },
+    {
+      "name": "malteseI",
+      "unusual": true
+    },
+    {
+      "name": "maltesetext",
+      "arg": {
+        "format": "{}",
+        "snippet": "maltesetext{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

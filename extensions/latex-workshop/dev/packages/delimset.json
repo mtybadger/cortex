@@ -1,0 +1,176 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "delimsize"
+    },
+    {
+      "name": "kerndelim",
+      "arg": {
+        "format": "{}",
+        "snippet": "kerndelim{${1:width}}"
+      }
+    },
+    {
+      "name": "usedelim"
+    },
+    {
+      "name": "DeclareMathDelimiterSet",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareMathDelimiterSet{${1:command}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "DeclareMathDelimiterSet",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "DeclareMathDelimiterSet{${1:command}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "selectdeliml",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdeliml{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdeliml*",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdeliml*{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelim",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdelim{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelim*",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdelim*{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelim",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "selectdelim[${2:class%plain}]{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelim",
+      "arg": {
+        "format": "[]*{}",
+        "snippet": "selectdelim[${2:class%plain}]*{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelimr",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdelimr{${1:delim}}"
+      }
+    },
+    {
+      "name": "selectdelimr*",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectdelimr*{${1:delim}}"
+      }
+    },
+    {
+      "name": "DeclareMathDelimiterSel",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DeclareMathDelimiterSel{${1:command}}{${2:left-def%definition}}{${3:right-def%definition}}"
+      }
+    },
+    {
+      "name": "parsedelimflags",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "parsedelimflags{${1:compositor}}{${2:selector}}"
+      }
+    },
+    {
+      "name": "bigp"
+    },
+    {
+      "name": "bigb"
+    },
+    {
+      "name": "Bigb"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "Bigg"
+    },
+    {
+      "name": "Bigp"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "bigi"
+    },
+    {
+      "name": "Bigi"
+    },
+    {
+      "name": "bigg"
+    },
+    {
+      "name": "Bigg"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/delimset#c": [
+      "stddef",
+      "extdef",
+      "scriptstyle"
+    ],
+    "\\brk": [
+      "r",
+      "s",
+      "c",
+      "a"
+    ],
+    "\\eval": [
+      "v",
+      "s"
+    ],
+    "\\intv": [
+      "c",
+      "o",
+      "l",
+      "r",
+      "c",
+      "o",
+      "l",
+      "r"
+    ]
+  },
+  "args": [
+    "\\usepackage/delimset#c"
+  ]
+}

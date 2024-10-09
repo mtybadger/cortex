@@ -1,0 +1,420 @@
+{
+  "deps": [
+    {
+      "name": "translations"
+    },
+    {
+      "name": "xfrac"
+    },
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "fmtcount",
+      "if": "use-fmtcount-numerals"
+    },
+    {
+      "name": "fmtcount",
+      "if": "use-fmtcount-numerals=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cunum",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cunum{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cunum",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cunum[${3:options%keyvals}]{${1:amount}}{${2:unit}}",
+        "keys": [
+          "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cunum<label>",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cunum<label>{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cunum<label>",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cunum<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cunum<label>",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "cunum<label>[${3:options%keyvals}]{${1:amount}}[${4:space%l}]{${2:unit}}"
+      }
+    },
+    {
+      "name": "cutext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cutext{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cutext",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cutext[${3:options%keyvals}]{${1:amount}}{${2:unit}}",
+        "keys": [
+          "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cutext<label>",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cutext<label>{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cutext<label>",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "cutext<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "Cutext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Cutext{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "Cutext",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Cutext[${3:options%keyvals}]{${1:amount}}{${2:unit}}",
+        "keys": [
+          "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Cutext<label>",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Cutext<label>{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "Cutext<label>",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Cutext<label>[${3:options%keyvals}]{${1:amount}}{${2:unit}}"
+      }
+    },
+    {
+      "name": "cuam",
+      "arg": {
+        "format": "{}",
+        "snippet": "cuam{${1:amount}}"
+      }
+    },
+    {
+      "name": "cuam",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cuam[${2:options%keyvals}]{${1:amount}}",
+        "keys": [
+          "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cuam<label>",
+      "arg": {
+        "format": "{}",
+        "snippet": "cuam<label>{${1:amount}}"
+      }
+    },
+    {
+      "name": "cuam<label>",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cuam<label>[${2:options%keyvals}]{${1:amount}}"
+      }
+    },
+    {
+      "name": "cusetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "cusetup{${1:options%keyvals}}",
+        "keys": [
+          "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cudeclareunitgroup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cudeclareunitgroup{${1:group name}}{${2:unit list}}"
+      }
+    },
+    {
+      "name": "cuaddtounitgroup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cuaddtounitgroup{${1:group name}}{${2:unit list}}"
+      }
+    },
+    {
+      "name": "culabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "culabel{${1:label}}{${2:number of persons}}"
+      }
+    },
+    {
+      "name": "curef",
+      "arg": {
+        "format": "{}",
+        "snippet": "curef{${1:label}}"
+      }
+    },
+    {
+      "name": "declarecookingunit",
+      "arg": {
+        "format": "{}",
+        "snippet": "declarecookingunit{${1:unit}}"
+      }
+    },
+    {
+      "name": "declarecookingunit",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "declarecookingunit[${2:options%keyvals}]{${1:unit}}",
+        "keys": [
+          "\\declarecookingunit#c,\\newcookingunit#c,\\providecookingunit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "newcookingunit",
+      "arg": {
+        "format": "{}",
+        "snippet": "newcookingunit{${1:unit}}"
+      }
+    },
+    {
+      "name": "newcookingunit",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "newcookingunit[${2:options%keyvals}]{${1:unit}}",
+        "keys": [
+          "\\declarecookingunit#c,\\newcookingunit#c,\\providecookingunit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "providecookingunit",
+      "arg": {
+        "format": "{}",
+        "snippet": "providecookingunit{${1:unit}}"
+      }
+    },
+    {
+      "name": "providecookingunit",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "providecookingunit[${2:options%keyvals}]{${1:unit}}",
+        "keys": [
+          "\\declarecookingunit#c,\\newcookingunit#c,\\providecookingunit#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "declarecookingderivatives",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "declarecookingderivatives{${1:unit list}}{${2:unit}}{${3:relation}}{${4:unit symbol}}"
+      }
+    },
+    {
+      "name": "cudefinekeychain",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cudefinekeychain{${1:key specs}}"
+      }
+    },
+    {
+      "name": "cudefinesinglekey",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cudefinesinglekey{${1:key%plain}}{${2:key specs}}"
+      }
+    },
+    {
+      "name": "cuaddtokeychain",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cuaddtokeychain{${1:key specs}}"
+      }
+    },
+    {
+      "name": "cuaddsinglekeys",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cuaddsinglekeys{${1:key%plain}}{${2:key specs}}"
+      }
+    },
+    {
+      "name": "cudefinename",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cudefinename{${1:language}}{${2:specs}}"
+      }
+    },
+    {
+      "name": "cudefinesymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cudefinesymbol{${1:language}}{${2:specs}}"
+      }
+    },
+    {
+      "name": "cudefinephrase",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cudefinephrase{${1:language}}{${2:specs}}"
+      }
+    },
+    {
+      "name": "cusetoptionfor",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cusetoptionfor{${1:unit list}}{${2:options}}"
+      }
+    },
+    {
+      "name": "cuaddoptionfor",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cuaddoptionfor{${1:unit list}}{${2:options}}"
+      }
+    },
+    {
+      "name": "cuclearoptionfor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cuclearoptionfor{${1:unit list}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cooking-units#c": [
+      "use-fmtcount-numerals"
+    ],
+    "\\cunum#c,\\cutext#c,\\Cutext#c,\\cuam#c,\\cusetup#c": [
+      "${1:old unit}=${2:new unit}",
+      "${1:group}=${2:unit}",
+      "add-unit-to-group={${1:group={unit list},...}}",
+      "set-option-for-${1:unit}={${2:keyvals}}",
+      "add-option-for-${1:unit}={${2:keyvals}}",
+      "set-option-for={${1:unit={keyvals},...}}",
+      "add-option-for={${1:unit={keyvals},...}}",
+      "erase-all-options",
+      "erase-all-options-for={${1:unit list}}",
+      "cutext-to-cunum",
+      "cutext-change-unit",
+      "cuam-version=${1|old,new|}",
+      "cutext-version=${1|old,new|}",
+      "commands-add-hook={${1:code}}",
+      "cunum-add-hook={${1:code}}",
+      "cutext-add-hook={${1:code}}",
+      "Cutext-add-hook={${1:code}}",
+      "cuam-add-hook={${1:code}}",
+      "expand-both=${1|n,o,f,x|}",
+      "expand-amount=${1|n,o,f,x|}",
+      "expand-unit=${1|n,o,f,x|}",
+      "set-special-sign={${1:characters}}",
+      "add-special-sign={${1:characters}}",
+      "set-unknown-message=${1|error,warning,none|}",
+      "set-cutext-translation-message=${1|error,warning,none|}",
+      "print-numerals",
+      "use-numerals-below=${1:integer}",
+      "numeral-function=${1:function}",
+      "Numeral-function=${1:function}",
+      "parse-number",
+      "range-sign=${1:string}",
+      "cunum-range-sign=${1:string}",
+      "cutext-range-sign=${1:string}",
+      "use-phrases",
+      "round-precision=${1:integer}",
+      "round-to-int",
+      "round-half=${1|default,commercial|}",
+      "eval-fraction",
+      "convert-fraction",
+      "fraction-inline={${1:input}}",
+      "mixed-fraction-space=",
+      "cutext-space=${1:string}",
+      "phrase-space=${1:string}",
+      "amount-unit-space=${1:string}",
+      "times-space=${1:string}",
+      "recalculate-amount",
+      "set-number-of-persons=${1:integer}",
+      "label=${1:string}*${2:integer}",
+      "get-label=${1:label}",
+      "ref=${1:label}",
+      "curef-add-forbidden-unit={${1:unit list}}",
+      "curef-remove-forbidden-unit={${1:unit list}}",
+      "curef-clear-forbidden-units",
+      "check-temperature",
+      "add-temperature-to-check={${1:unit=min value,...}}",
+      "convert-to-eV",
+      "add-natural-unit=${1:unit}",
+      "42",
+      "nothing-special",
+      "going-bonkers",
+      "fully-bonkers",
+      "xD-lol"
+    ],
+    "\\declarecookingunit#c,\\newcookingunit#c,\\providecookingunit#c": [
+      "symbol=${1:symbol}",
+      "gender=${1|m,f,n|}",
+      "set-options={${1:keyvals}}",
+      "add-to-group=${1:group}",
+      "natural-unit"
+    ]
+  },
+  "args": [
+    "\\usepackage/cooking-units#c"
+  ]
+}

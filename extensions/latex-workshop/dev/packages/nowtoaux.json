@@ -1,0 +1,36 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "immediateaddtocontents",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "immediateaddtocontents{${1:table}}{${2:text}}"
+      }
+    },
+    {
+      "name": "immediatewriteaux",
+      "arg": {
+        "format": "{}",
+        "snippet": "immediatewriteaux{${1:commands}}"
+      }
+    },
+    {
+      "name": "macrotoaux",
+      "arg": {
+        "format": "{}",
+        "snippet": "macrotoaux{${1:command}}"
+      }
+    },
+    {
+      "name": "writeaux",
+      "arg": {
+        "format": "{}",
+        "snippet": "writeaux{${1:commands}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "defpattern"
+    },
+    {
+      "name": "fp-upn"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FPeval",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FPeval{${1:variable%cmd}}{${2:expression}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

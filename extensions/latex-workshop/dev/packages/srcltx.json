@@ -1,0 +1,71 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Input",
+      "arg": {
+        "format": "{}",
+        "snippet": "Input{${1:file}}"
+      }
+    },
+    {
+      "name": "MainFile"
+    },
+    {
+      "name": "srcIncludeHook",
+      "arg": {
+        "format": "{}",
+        "snippet": "srcIncludeHook{${1:file}}"
+      }
+    },
+    {
+      "name": "CurrentInput",
+      "unusual": true
+    },
+    {
+      "name": "srcInputHook",
+      "arg": {
+        "format": "{}",
+        "snippet": "srcInputHook{${1:file}}"
+      }
+    },
+    {
+      "name": "ifSRCOK",
+      "unusual": true
+    },
+    {
+      "name": "SRCOKtrue"
+    },
+    {
+      "name": "SRCOKfalse"
+    },
+    {
+      "name": "WinEdt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "WinEdt{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/srcltx#c": [
+      "active",
+      "inactive",
+      "nowinedt",
+      "dviwin",
+      "debug",
+      "nopar",
+      "nomath",
+      "nodisplay"
+    ]
+  },
+  "args": [
+    "\\usepackage/srcltx#c"
+  ]
+}

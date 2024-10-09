@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "simplechapter"
+    },
+    {
+      "name": "simplechapter",
+      "arg": {
+        "format": "[]",
+        "snippet": "simplechapter[${1:name}]"
+      }
+    },
+    {
+      "name": "restorechapter"
+    },
+    {
+      "name": "simplechapterdelim",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    }
+  ],
+  "macros": [
+    {
+      "name": "hlineB",
+      "arg": {
+        "format": "{}",
+        "snippet": "hlineB{${1:width}}"
+      }
+    },
+    {
+      "name": "clineB",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "clineB{${1:i-j}}{${2:width}}"
+      }
+    },
+    {
+      "name": "hlxB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "hlxB{${1:width}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

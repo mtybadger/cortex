@@ -1,0 +1,619 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "enumerate"
+    },
+    {
+      "name": "fp"
+    },
+    {
+      "name": "currfile"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xargs"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "amsmath",
+      "if": "xyz"
+    },
+    {
+      "name": "pstricks",
+      "if": "autopstoff"
+    },
+    {
+      "name": "pstricks-add",
+      "if": "autopstoff"
+    },
+    {
+      "name": "pstricks",
+      "if": "autopston"
+    },
+    {
+      "name": "pstricks-add",
+      "if": "autopston"
+    },
+    {
+      "name": "auto-pst-pdf",
+      "if": "autopston"
+    }
+  ],
+  "macros": [
+    {
+      "name": "annu",
+      "if": "xyz",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "annu{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "arcsen",
+      "if": "xyz"
+    },
+    {
+      "name": "arctg",
+      "if": "xyz"
+    },
+    {
+      "name": "D",
+      "if": "xyz"
+    },
+    {
+      "name": "dif",
+      "if": "xyz"
+    },
+    {
+      "name": "dlim",
+      "if": "xyz"
+    },
+    {
+      "name": "dsum",
+      "if": "xyz"
+    },
+    {
+      "name": "eps",
+      "if": "xyz"
+    },
+    {
+      "name": "istruzionii",
+      "if": "xyz"
+    },
+    {
+      "name": "istruzioniii",
+      "if": "xyz"
+    },
+    {
+      "name": "me",
+      "if": "xyz"
+    },
+    {
+      "name": "punteggio",
+      "if": "xyz",
+      "unusual": true
+    },
+    {
+      "name": "sen",
+      "if": "xyz"
+    },
+    {
+      "name": "stringasol",
+      "if": "xyz",
+      "unusual": true
+    },
+    {
+      "name": "testa",
+      "if": "xyz"
+    },
+    {
+      "name": "tg",
+      "if": "xyz"
+    },
+    {
+      "name": "vect",
+      "if": "xyz",
+      "arg": {
+        "format": "{}",
+        "snippet": "vect{${1:arg}}"
+      }
+    },
+    {
+      "name": "newproblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "newproblem{${1:text}}"
+      }
+    },
+    {
+      "name": "esercizi",
+      "arg": {
+        "format": "{}",
+        "snippet": "esercizi{${1:file1,file2,...%file}}"
+      }
+    },
+    {
+      "name": "selectrandomlyn",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "selectrandomlyn{${1:exercise number}}{${2:file}}"
+      }
+    },
+    {
+      "name": "esercizidb",
+      "arg": {
+        "format": "{}",
+        "snippet": "esercizidb{${1:file}}"
+      }
+    },
+    {
+      "name": "PTs",
+      "arg": {
+        "format": "{}",
+        "snippet": "PTs{${1:points}}"
+      }
+    },
+    {
+      "name": "bChoices",
+      "arg": {
+        "format": "[]",
+        "snippet": "bChoices[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "eChoices"
+    },
+    {
+      "name": "eAns"
+    },
+    {
+      "name": "eFreeze"
+    },
+    {
+      "name": "fillin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fillin{${1:width}}{${2:answer%text}}"
+      }
+    },
+    {
+      "name": "fillin",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "fillin[${3:type%keyvals}]{${1:width}}{${2:answer%text}}",
+        "keys": [
+          "\\fillin#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "matching"
+    },
+    {
+      "name": "pair",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pair{${1:item1%text}}{${2:item2%text}}"
+      }
+    },
+    {
+      "name": "selectallproblems",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectallproblems{${1:file}}"
+      }
+    },
+    {
+      "name": "esercizio"
+    },
+    {
+      "name": "FPsetpar",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "FPsetpar{${1:param}}{${2:first-value}}{${3:last-value}}"
+      }
+    },
+    {
+      "name": "FPsetpar",
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "FPsetpar{${1:param}}{${2:first-value}}{${3:last-value}}[${4:excl-values}]"
+      }
+    },
+    {
+      "name": "FPsetpar",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "FPsetpar[${4:seed}]{${1:param}}{${2:first-value}}{${3:last-value}}"
+      }
+    },
+    {
+      "name": "FPsetpar",
+      "arg": {
+        "format": "[]{}{}{}[]",
+        "snippet": "FPsetpar[${4:seed}]{${1:param}}{${2:first-value}}{${3:last-value}}[${5:excl-values}]"
+      }
+    },
+    {
+      "name": "FPsv",
+      "arg": {
+        "format": "{}",
+        "snippet": "FPsv{${1:expression}}"
+      }
+    },
+    {
+      "name": "FPsv",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "FPsv[${2:decimal-places}]{${1:expression}}"
+      }
+    },
+    {
+      "name": "FPval",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FPval{${1:name}}{${2:expression}}"
+      }
+    },
+    {
+      "name": "FPval",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "FPval{${1:name}}[${3:decimal-places}]{${2:expression}}"
+      }
+    },
+    {
+      "name": "sempli",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sempli{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "semplix",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "semplix{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "esempli",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "esempli{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "sempliz",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sempliz{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "simpsqrt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "simpsqrt{${1:index}}{${2:expression}}"
+      }
+    },
+    {
+      "name": "RandS"
+    },
+    {
+      "name": "FPsignpol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FPsignpol{${1:expression}}{${2:arg}}"
+      }
+    },
+    {
+      "name": "estrai",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "estrai[${3:m}]{${1:list}}{${2:name}}"
+      }
+    },
+    {
+      "name": "randestrai",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "randestrai[${3:m}]{${1:list}}{${2:name}}"
+      }
+    },
+    {
+      "name": "estraialfa",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "estraialfa{${1:m}}{${2:list}}{${3:name}}"
+      }
+    },
+    {
+      "name": "estraies",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "estraies[${2:m}]{${1:list}}"
+      }
+    },
+    {
+      "name": "randestraies",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "randestraies[${2:m}]{${1:list}}"
+      }
+    },
+    {
+      "name": "longdate"
+    },
+    {
+      "name": "shortdate"
+    },
+    {
+      "name": "thevers"
+    },
+    {
+      "name": "stepvers"
+    },
+    {
+      "name": "thenomefile"
+    },
+    {
+      "name": "permuta"
+    },
+    {
+      "name": "testversioni"
+    },
+    {
+      "name": "closevers"
+    },
+    {
+      "name": "closeverssols",
+      "unusual": true
+    },
+    {
+      "name": "stepverssols",
+      "unusual": true
+    },
+    {
+      "name": "fillinproblem"
+    },
+    {
+      "name": "newfillinproblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "newfillinproblem{${1:text}}"
+      }
+    },
+    {
+      "name": "seme"
+    },
+    {
+      "name": "semeex"
+    },
+    {
+      "name": "randomi",
+      "unusual": true
+    },
+    {
+      "name": "nextrandom",
+      "unusual": true
+    },
+    {
+      "name": "setrannum",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrannum{${1:count register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "setrandim",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setrandim{${1:dimen register}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "pointless",
+      "unusual": true
+    },
+    {
+      "name": "ranval",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "sistema",
+      "if": "xyz"
+    },
+    {
+      "name": "test"
+    },
+    {
+      "name": "test",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points}]"
+      }
+    },
+    {
+      "name": "questions"
+    },
+    {
+      "name": "esdb",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:db name}}"
+      }
+    },
+    {
+      "name": "answers",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number of columns}}"
+      }
+    },
+    {
+      "name": "solution"
+    },
+    {
+      "name": "solution",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:space}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points}]"
+      }
+    },
+    {
+      "name": "problem*"
+    },
+    {
+      "name": "problem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points}]"
+      }
+    },
+    {
+      "name": "parts"
+    },
+    {
+      "name": "problemmp"
+    },
+    {
+      "name": "problemmp",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points}]"
+      }
+    },
+    {
+      "name": "problemmp*"
+    },
+    {
+      "name": "problemmp*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:points}]"
+      }
+    },
+    {
+      "name": "domanda"
+    },
+    {
+      "name": "risposta",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:vspace}}"
+      }
+    },
+    {
+      "name": "risposta",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:type%keyvals}]{${1:vspace}}",
+        "keys": [
+          "\\begin{risposta}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tabella",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:visible-align}}{${2:hidden-align}}"
+      }
+    },
+    {
+      "name": "tabella",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "[${3:number of columns}]{${1:visible-align}}{${2:hidden-align}}"
+      }
+    },
+    {
+      "name": "workarea",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:height}}"
+      }
+    },
+    {
+      "name": "workarea",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:width}]{${1:height}}"
+      }
+    },
+    {
+      "name": "shortquiz"
+    }
+  ],
+  "keys": {
+    "\\usepackage/esami#c": [
+      "twocolumns",
+      "sansserif",
+      "solutionsonly",
+      "allowrandomize",
+      "norandomize",
+      "shuffle",
+      "shufflerandom",
+      "noshuffle",
+      "pointsonright",
+      "solutions",
+      "nosolutions",
+      "noquizsolutions",
+      "quizsolutions",
+      "xyz",
+      "autopstoff",
+      "autopston",
+      "prova",
+      "correzione",
+      "param"
+    ],
+    "\\fillin#c": [
+      "u",
+      "b",
+      "e"
+    ],
+    "\\begin{risposta}#c": [
+      "b",
+      "l"
+    ]
+  },
+  "args": [
+    "\\usepackage/esami#c"
+  ]
+}

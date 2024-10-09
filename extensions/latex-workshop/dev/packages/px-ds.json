@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbbb",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbbb{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/px-ds#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/px-ds#c"
+  ]
+}

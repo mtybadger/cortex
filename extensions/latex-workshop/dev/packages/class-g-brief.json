@@ -1,0 +1,534 @@
+{
+  "deps": [
+    {
+      "name": "class-letter"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "marvosym"
+    },
+    {
+      "name": "europs"
+    },
+    {
+      "name": "eurosym"
+    }
+  ],
+  "macros": [
+    {
+      "name": "adresse",
+      "unusual": true
+    },
+    {
+      "name": "Adresse",
+      "arg": {
+        "format": "{}",
+        "snippet": "Adresse{${1:Anschrift}}"
+      }
+    },
+    {
+      "name": "anlagen",
+      "unusual": true
+    },
+    {
+      "name": "Anlagen",
+      "arg": {
+        "format": "{}",
+        "snippet": "Anlagen{${1:Anlagen}}"
+      }
+    },
+    {
+      "name": "anrede",
+      "unusual": true
+    },
+    {
+      "name": "Anrede",
+      "arg": {
+        "format": "{}",
+        "snippet": "Anrede{${1:Anrede%text}}"
+      }
+    },
+    {
+      "name": "bank",
+      "unusual": true
+    },
+    {
+      "name": "Bank",
+      "arg": {
+        "format": "{}",
+        "snippet": "Bank{${1:Bank}}"
+      }
+    },
+    {
+      "name": "banktext",
+      "unusual": true
+    },
+    {
+      "name": "betreff",
+      "unusual": true
+    },
+    {
+      "name": "Betreff",
+      "arg": {
+        "format": "{}",
+        "snippet": "Betreff{${1:Betreff%text}}"
+      }
+    },
+    {
+      "name": "betrefftext",
+      "unusual": true
+    },
+    {
+      "name": "blz",
+      "unusual": true
+    },
+    {
+      "name": "BLZ",
+      "arg": {
+        "format": "{}",
+        "snippet": "BLZ{${1:Bankleitzahl}}"
+      }
+    },
+    {
+      "name": "blztext",
+      "unusual": true
+    },
+    {
+      "name": "datum",
+      "unusual": true
+    },
+    {
+      "name": "Datum",
+      "arg": {
+        "format": "{}",
+        "snippet": "Datum{${1:Datum}}"
+      }
+    },
+    {
+      "name": "datumtext",
+      "unusual": true
+    },
+    {
+      "name": "Einrueckung",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Einrueckung{${1:text}}"
+      }
+    },
+    {
+      "name": "email",
+      "unusual": true
+    },
+    {
+      "name": "EMail",
+      "arg": {
+        "format": "{}",
+        "snippet": "EMail{${1:eMail-Adresse%URL}}"
+      }
+    },
+    {
+      "name": "emailtext",
+      "unusual": true
+    },
+    {
+      "name": "faltmarken"
+    },
+    {
+      "name": "fenstermarken"
+    },
+    {
+      "name": "gruss",
+      "unusual": true
+    },
+    {
+      "name": "Gruss",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Gruss{${1:text}}{${2:length}}"
+      }
+    },
+    {
+      "name": "grussskip",
+      "unusual": true
+    },
+    {
+      "name": "http",
+      "unusual": true
+    },
+    {
+      "name": "HTTP",
+      "arg": {
+        "format": "{}",
+        "snippet": "HTTP{${1:URL}}"
+      }
+    },
+    {
+      "name": "httptext",
+      "unusual": true
+    },
+    {
+      "name": "iffaltmarken",
+      "unusual": true
+    },
+    {
+      "name": "iffenstermarken",
+      "unusual": true
+    },
+    {
+      "name": "ifklassisch",
+      "unusual": true
+    },
+    {
+      "name": "iflochermarke",
+      "unusual": true
+    },
+    {
+      "name": "iftrennlinien",
+      "unusual": true
+    },
+    {
+      "name": "ifunserzeichen",
+      "unusual": true
+    },
+    {
+      "name": "ihrschreiben",
+      "unusual": true
+    },
+    {
+      "name": "IhrSchreiben",
+      "arg": {
+        "format": "{}",
+        "snippet": "IhrSchreiben{${1:Datum}}"
+      }
+    },
+    {
+      "name": "ihrschreibentext",
+      "unusual": true
+    },
+    {
+      "name": "ihrzeichen",
+      "unusual": true
+    },
+    {
+      "name": "IhrZeichen",
+      "arg": {
+        "format": "{}",
+        "snippet": "IhrZeichen{${1:Zeichen}}"
+      }
+    },
+    {
+      "name": "ihrzeichentext",
+      "unusual": true
+    },
+    {
+      "name": "klassisch"
+    },
+    {
+      "name": "konto",
+      "unusual": true
+    },
+    {
+      "name": "Konto",
+      "arg": {
+        "format": "{}",
+        "snippet": "Konto{${1:Kontonummer}}"
+      }
+    },
+    {
+      "name": "kontotext",
+      "unusual": true
+    },
+    {
+      "name": "land",
+      "unusual": true
+    },
+    {
+      "name": "Land",
+      "arg": {
+        "format": "{}",
+        "snippet": "Land{${1:Land}}"
+      }
+    },
+    {
+      "name": "lochermarke"
+    },
+    {
+      "name": "meinzeichen",
+      "unusual": true
+    },
+    {
+      "name": "MeinZeichen",
+      "arg": {
+        "format": "{}",
+        "snippet": "MeinZeichen{${1:Zeichen}}"
+      }
+    },
+    {
+      "name": "meinzeichentext",
+      "unusual": true
+    },
+    {
+      "name": "name",
+      "unusual": true
+    },
+    {
+      "name": "Name",
+      "arg": {
+        "format": "{}",
+        "snippet": "Name{${1:Name}}"
+      }
+    },
+    {
+      "name": "ort",
+      "unusual": true
+    },
+    {
+      "name": "Ort",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ort{${1:Postleitzahl und Ort}}"
+      }
+    },
+    {
+      "name": "postvermerk",
+      "unusual": true
+    },
+    {
+      "name": "Postvermerk",
+      "arg": {
+        "format": "{}",
+        "snippet": "Postvermerk{${1:Vermerke}}"
+      }
+    },
+    {
+      "name": "retouradresse",
+      "unusual": true
+    },
+    {
+      "name": "RetourAdresse",
+      "arg": {
+        "format": "{}",
+        "snippet": "RetourAdresse{${1:Adresse}}"
+      }
+    },
+    {
+      "name": "sprache",
+      "unusual": true
+    },
+    {
+      "name": "strasse",
+      "unusual": true
+    },
+    {
+      "name": "Strasse",
+      "arg": {
+        "format": "{}",
+        "snippet": "Strasse{${1:Straße}}"
+      }
+    },
+    {
+      "name": "telefax",
+      "unusual": true
+    },
+    {
+      "name": "Telefax",
+      "arg": {
+        "format": "{}",
+        "snippet": "Telefax{${1:Telefaxnummer}}"
+      }
+    },
+    {
+      "name": "telefaxtext",
+      "unusual": true
+    },
+    {
+      "name": "Telefon",
+      "arg": {
+        "format": "{}",
+        "snippet": "Telefon{${1:Telefonnummer}}"
+      }
+    },
+    {
+      "name": "telefontex",
+      "unusual": true
+    },
+    {
+      "name": "telex",
+      "unusual": true
+    },
+    {
+      "name": "Telex",
+      "arg": {
+        "format": "{}",
+        "snippet": "Telex{${1:Telexnummer}}"
+      }
+    },
+    {
+      "name": "telextext",
+      "unusual": true
+    },
+    {
+      "name": "trennlinien"
+    },
+    {
+      "name": "unserzeichen"
+    },
+    {
+      "name": "unserzeichentext",
+      "unusual": true
+    },
+    {
+      "name": "unterschrift",
+      "unusual": true
+    },
+    {
+      "name": "Unterschrift",
+      "arg": {
+        "format": "{}",
+        "snippet": "Unterschrift{${1:Name}}"
+      }
+    },
+    {
+      "name": "verteiler",
+      "unusual": true
+    },
+    {
+      "name": "Verteiler",
+      "arg": {
+        "format": "{}",
+        "snippet": "Verteiler{${1:Verteiler}}"
+      }
+    },
+    {
+      "name": "VorschubH"
+    },
+    {
+      "name": "VorschubV"
+    },
+    {
+      "name": "zusatz",
+      "unusual": true
+    },
+    {
+      "name": "Zusatz",
+      "arg": {
+        "format": "{}",
+        "snippet": "Zusatz{${1:Zusatz zur Adresse}}"
+      }
+    },
+    {
+      "name": "captionsngerman",
+      "unusual": true
+    },
+    {
+      "name": "datengerman",
+      "unusual": true
+    },
+    {
+      "name": "extrasngerman",
+      "unusual": true
+    },
+    {
+      "name": "noextrasngerman",
+      "unusual": true
+    },
+    {
+      "name": "dq"
+    },
+    {
+      "name": "ntosstrue",
+      "unusual": true
+    },
+    {
+      "name": "ntossfalse",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "mdqon",
+      "unusual": true
+    },
+    {
+      "name": "mdqoff",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/g-brief#c": [
+      "10pt",
+      "11pt",
+      "12pt",
+      "ansinew",
+      "applemac",
+      "ascii",
+      "cp1250",
+      "cp1252",
+      "cp437de",
+      "cp437",
+      "cp850",
+      "cp852",
+      "cp865",
+      "decmulti",
+      "latin1",
+      "latin2",
+      "latin3",
+      "latin4",
+      "latin5",
+      "latin9",
+      "next",
+      "german",
+      "ngerman",
+      "english",
+      "american"
+    ]
+  },
+  "args": [
+    "\\documentclass/g-brief#c"
+  ]
+}

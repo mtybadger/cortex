@@ -1,0 +1,465 @@
+{
+  "deps": [
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tocloft"
+    },
+    {
+      "name": "float"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "translations"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "stmaryrd"
+    },
+    {
+      "name": "pdfpages"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "totcount"
+    },
+    {
+      "name": "changepage"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "tgpagella"
+    },
+    {
+      "name": "suffix"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gradingtable"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "{}",
+        "snippet": "exercise{${1:title%text}}"
+      }
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "exercise[${2:points}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "exercise*",
+      "arg": {
+        "format": "{}",
+        "snippet": "exercise*{${1:title%text}}"
+      }
+    },
+    {
+      "name": "exercise*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "exercise*[${2:points}]{${1:title%text}}"
+      }
+    },
+    {
+      "name": "subexercise"
+    },
+    {
+      "name": "subexercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "subexercise[${1:title%text}]"
+      }
+    },
+    {
+      "name": "exerciseRules"
+    },
+    {
+      "name": "subexerciseRules"
+    },
+    {
+      "name": "noPoints"
+    },
+    {
+      "name": "course",
+      "arg": {
+        "format": "{}",
+        "snippet": "course{${1:course%text}}"
+      }
+    },
+    {
+      "name": "sheet",
+      "arg": {
+        "format": "{}",
+        "snippet": "sheet{${1:number}}"
+      }
+    },
+    {
+      "name": "group",
+      "arg": {
+        "format": "{}",
+        "snippet": "group{${1:name}}"
+      }
+    },
+    {
+      "name": "due",
+      "arg": {
+        "format": "{}",
+        "snippet": "due{${1:date}}"
+      }
+    },
+    {
+      "name": "member",
+      "arg": {
+        "format": "{}",
+        "snippet": "member{${1:name}}"
+      }
+    },
+    {
+      "name": "member",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "member[${2:student id}]{${1:name}}"
+      }
+    },
+    {
+      "name": "PrefixId",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrefixId{${1:prefix text%text}}"
+      }
+    },
+    {
+      "name": "PrefixAuthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrefixAuthor{${1:prefix text%text}}"
+      }
+    },
+    {
+      "name": "PrefixDate",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrefixDate{${1:prefix text%text}}"
+      }
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "F"
+    },
+    {
+      "name": "primefield"
+    },
+    {
+      "name": "modring",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "modring{${1:ring}}{${2:modulus}}"
+      }
+    },
+    {
+      "name": "derivative",
+      "arg": {
+        "format": "{}",
+        "snippet": "derivative{${1:variable%formula}}"
+      }
+    },
+    {
+      "name": "matadd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "matadd{${1:mat1%formula}}{${2:mat2%formula}}{${3:mat3%formula}}"
+      }
+    },
+    {
+      "name": "matmul",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "matmul{${1:mat1%formula}}{${2:mat2%formula}}"
+      }
+    },
+    {
+      "name": "matswap",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "matswap{${1:mat1%formula}}{${2:mat2%formula}}"
+      }
+    },
+    {
+      "name": "floor",
+      "arg": {
+        "format": "{}",
+        "snippet": "floor{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "ceil",
+      "arg": {
+        "format": "{}",
+        "snippet": "ceil{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "abs",
+      "arg": {
+        "format": "{}",
+        "snippet": "abs{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "rfrac",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rfrac{${1:numerator}}{${2:denominator}}"
+      }
+    },
+    {
+      "name": "rel",
+      "arg": {
+        "format": "{}",
+        "snippet": "rel{${1:symbol%formula}}"
+      }
+    },
+    {
+      "name": "QED",
+      "detail": "∎",
+      "doc": "\\blacksquare (amssymb), end of proof"
+    },
+    {
+      "name": "theexercisenumber",
+      "unusual": true
+    },
+    {
+      "name": "thesubexercisenumber",
+      "unusual": true
+    },
+    {
+      "name": "thetotalpoints",
+      "unusual": true
+    },
+    {
+      "name": "gradingTableExerciseLabel",
+      "unusual": true
+    },
+    {
+      "name": "gradingTableExercisePoints",
+      "unusual": true
+    },
+    {
+      "name": "PTableA",
+      "unusual": true
+    },
+    {
+      "name": "PTableB",
+      "unusual": true
+    },
+    {
+      "name": "PTHead",
+      "unusual": true
+    },
+    {
+      "name": "points",
+      "unusual": true
+    },
+    {
+      "name": "Vhrulefill",
+      "unusual": true
+    },
+    {
+      "name": "pdfmembers",
+      "unusual": true
+    },
+    {
+      "name": "pdfmember",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfmember{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfmember",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pdfmember[${2:student id}]{${1:name}}"
+      }
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/csassignments#c": [
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ],
+    "\\theoremstyle#c": [
+      "it"
+    ]
+  },
+  "args": [
+    "\\documentclass/csassignments#c"
+  ]
+}

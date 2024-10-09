@@ -1,0 +1,157 @@
+{
+  "deps": [
+    {
+      "name": "cleveref"
+    },
+    {
+      "name": "iflang"
+    },
+    {
+      "name": "regexpatch"
+    },
+    {
+      "name": "crefthe",
+      "if": "crefthe"
+    },
+    {
+      "name": "crefthe",
+      "if": "crefthe=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cref[${2:option%keyvals}]{${1:labellist}}",
+        "keys": [
+          "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cref*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cref*[${2:option%keyvals}]{${1:labellist}}",
+        "keys": [
+          "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Cref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Cref[${2:option%keyvals}]{${1:labellist}}",
+        "keys": [
+          "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Cref*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Cref*[${2:option%keyvals}]{${1:labellist}}",
+        "keys": [
+          "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "labelcref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "labelcref[${2:option%keyvals}]{${1:labellist}}",
+        "keys": [
+          "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SetUsedOnMessageText",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetUsedOnMessageText{${1:text}}"
+      }
+    },
+    {
+      "name": "SetUsedByMessageText",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetUsedByMessageText{${1:text}}"
+      }
+    },
+    {
+      "name": "SetUsedByAndOnMessageText",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetUsedByAndOnMessageText{${1:text}}"
+      }
+    },
+    {
+      "name": "SetForwardReferenceStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetForwardReferenceStyle{${1:code}}"
+      }
+    },
+    {
+      "name": "SetForwardReferenceStyleInsideMath",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetForwardReferenceStyleInsideMath{${1:code}}"
+      }
+    },
+    {
+      "name": "SetForwardReferenceStyleOutsideMath",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetForwardReferenceStyleOutsideMath{${1:code}}"
+      }
+    },
+    {
+      "name": "SetForwardReferenceRefForm",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetForwardReferenceRefForm{${1:code}}"
+      }
+    },
+    {
+      "name": "SetForwardReferencePagerefForm",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetForwardReferencePagerefForm{${1:code}}"
+      }
+    },
+    {
+      "name": "restorelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "restorelabel{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cleveref-forward#c": [
+      "default=${1|used on,used by,used by and on|}",
+      "crefthe"
+    ],
+    "\\cref#c,\\cref*#c,\\Cref#c,\\Cref*#c,\\labelcref#c": [
+      "used on",
+      "used by",
+      "used by and on",
+      "no use"
+    ]
+  },
+  "args": [
+    "\\usepackage/cleveref-forward#c"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "octaveprimes"
+    },
+    {
+      "name": "octavenumbers"
+    },
+    {
+      "name": "pitch",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pitch{${1:letter}}{${2:number}}"
+      }
+    },
+    {
+      "name": "pitch",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "pitch{${1:letter}}[${3:accidental}]{${2:number}}"
+      }
+    },
+    {
+      "name": "pitchfont",
+      "unusual": true
+    },
+    {
+      "name": "octavetable"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/octave#c": [
+      "prime",
+      "number"
+    ]
+  },
+  "args": [
+    "\\usepackage/octave#c"
+  ]
+}

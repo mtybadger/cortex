@@ -1,0 +1,233 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgffor"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "xintexpr"
+    },
+    {
+      "name": "xintbinhex"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tkzSchemBernoulli"
+    },
+    {
+      "name": "tkzSchemBernoulli",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzSchemBernoulli[${1:clés%keyvals}]",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzSchemBernoulli<options TikZ>"
+    },
+    {
+      "name": "tkzSchemBernoulli",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "tkzSchemBernoulli[${1:clés%keyvals}]<${2:options TikZ}>",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzSchemBernoulli*"
+    },
+    {
+      "name": "tkzSchemBernoulli*",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzSchemBernoulli*[${1:clés%keyvals}]",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzSchemBernoulli*<options TikZ>"
+    },
+    {
+      "name": "tkzSchemBernoulli*",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "tkzSchemBernoulli*[${1:clés%keyvals}]<${2:options TikZ}>",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzEpreuvBernoulli"
+    },
+    {
+      "name": "tkzEpreuvBernoulli",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzEpreuvBernoulli[${1:clés%keyvals}]",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzEpreuvBernoulli*"
+    },
+    {
+      "name": "tkzEpreuvBernoulli*",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzEpreuvBernoulli*[${1:clés%keyvals}]",
+        "keys": [
+          "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzSchemBernStyleDefaut",
+      "unusual": true
+    },
+    {
+      "name": "tkzBernoulliTree"
+    },
+    {
+      "name": "tkzBernoulliTree",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzBernoulliTree[${1:keyvals}]",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernoulliTree<TikZ options>"
+    },
+    {
+      "name": "tkzBernoulliTree",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "tkzBernoulliTree[${1:keyvals}]<${2:TikZ options}>",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernoulliTree*"
+    },
+    {
+      "name": "tkzBernoulliTree*",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzBernoulliTree*[${1:keyvals}]",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernoulliTree*<TikZ options>"
+    },
+    {
+      "name": "tkzBernoulliTree*",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "tkzBernoulliTree*[${1:keyvals}]<${2:TikZ options}>",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernoulliTrial"
+    },
+    {
+      "name": "tkzBernoulliTrial",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzBernoulliTrial[${1:keyvals}]",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernoulliTrial*"
+    },
+    {
+      "name": "tkzBernoulliTrial*",
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzBernoulliTrial*[${1:keyvals}]",
+        "keys": [
+          "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzBernTreeStyleDefault",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\tkzSchemBernoulli,\\tkzSchemBernoulli*,\\tkzEpreuvBernoulli,\\tkzEpreuvBernoulli*": [
+      "EspNiv=${1:nombre}",
+      "EspFeuil=${1:nombre}",
+      "Evts=${1:Succès/Échec}",
+      "Probas=${1:probabilités}",
+      "Grille",
+      "AffProbas",
+      "Racine=${1:nom}",
+      "Aide",
+      "Notice",
+      "Var=${1:nom}",
+      "N=${1:nombre}"
+    ],
+    "\\tkzBernoulliTree,\\tkzBernoulliTree*,\\tkzBernoulliTrial,\\tkzBernoulliTrial*": [
+      "LevelSep=${1:number}",
+      "NodeSep=${1:number}",
+      "Events=",
+      "Probs=",
+      "Grid",
+      "ShowProbs",
+      "Root=${1:name}",
+      "Help",
+      "Guide",
+      "Var=${1:name}",
+      "N=${1:number}"
+    ]
+  },
+  "args": []
+}

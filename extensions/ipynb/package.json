@@ -22,8 +22,8 @@
     "workspace",
     "ui"
   ],
-  "main": "./out/ipynbMain.node.js",
-  "browser": "./dist/browser/ipynbMain.browser.js",
+  "main": "./out/ipynbMain.js",
+  "browser": "./dist/browser/ipynbMain.js",
   "capabilities": {
     "virtualWorkspaces": true,
     "untrustedWorkspaces": {
@@ -39,15 +39,6 @@
             "scope": "resource",
             "markdownDescription": "%ipynb.pasteImagesAsAttachments.enabled%",
             "default": true
-          },
-          "ipynb.experimental.serialization": {
-            "type": "boolean",
-            "scope": "resource",
-            "markdownDescription": "%ipynb.experimental.serialization%",
-            "default": false,
-            "tags": [
-              "experimental"
-            ]
           }
         }
       }

@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "TeXXeTOn"
+    },
+    {
+      "name": "TeXXeTOff"
+    },
+    {
+      "name": "RL",
+      "arg": {
+        "format": "{}",
+        "snippet": "RL{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,124 @@
+{
+  "deps": [
+    {
+      "name": "expkv-pop"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ekvcSplit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcSplit{${1:cmd}}{${2:primary keys}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "ekvcSplitAndForward",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcSplitAndForward{${1:cmd}}{${2:after}}{${3:primary keys}}"
+      }
+    },
+    {
+      "name": "ekvcSplitAndUse",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcSplitAndUse{${1:cmd}}{${2:primary keys}}"
+      }
+    },
+    {
+      "name": "ekvcHash",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcHash{${1:cmd}}{${2:primary keys}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "ekvcHashAndForward",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcHashAndForward{${1:cmd}}{${2:after}}{${3:primary keys}}"
+      }
+    },
+    {
+      "name": "ekvcHashAndUse",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcHashAndUse{${1:cmd}}{${2:primary keys}}"
+      }
+    },
+    {
+      "name": "ekvcValue",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcValue{${1:key%plain}}{${2:key list}}"
+      }
+    },
+    {
+      "name": "ekvcValueFast",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcValueFast{${1:key%plain}}{${2:key list}}"
+      }
+    },
+    {
+      "name": "ekvcValueSplit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcValueSplit{${1:key%plain}}{${2:key list}}{${3:next}}"
+      }
+    },
+    {
+      "name": "ekvcValueSplitFast",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcValueSplitFast{${1:key%plain}}{${2:key list}}{${3:next}}"
+      }
+    },
+    {
+      "name": "ekvcSecondaryKeys",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcSecondaryKeys{${1:cmd}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "ekvcChange",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcChange{${1:cmd}}{${2:keyvals}}"
+      }
+    },
+    {
+      "name": "ekvcFlagGetHeights",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ekvcFlagGetHeights{${1:flag-list}}{${2:next}}"
+      }
+    },
+    {
+      "name": "ekvcPass",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ekvcPass{${1:cmd}}{${2:key%plain}}{${3:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

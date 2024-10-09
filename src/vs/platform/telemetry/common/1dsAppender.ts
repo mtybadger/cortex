@@ -5,11 +5,10 @@
 
 import type { IExtendedConfiguration, IExtendedTelemetryItem, ITelemetryItem, ITelemetryUnloadState } from '@microsoft/1ds-core-js';
 import type { IChannelConfiguration, IXHROverride, PostChannel } from '@microsoft/1ds-post-js';
-import { importAMDNodeModule } from '../../../amdX.js';
-import { onUnexpectedError } from '../../../base/common/errors.js';
-import { mixin } from '../../../base/common/objects.js';
-import { isWeb } from '../../../base/common/platform.js';
-import { ITelemetryAppender, validateTelemetryData } from './telemetryUtils.js';
+import { importAMDNodeModule } from 'vs/amdX';
+import { onUnexpectedError } from 'vs/base/common/errors';
+import { mixin } from 'vs/base/common/objects';
+import { ITelemetryAppender, validateTelemetryData } from 'vs/platform/telemetry/common/telemetryUtils';
 
 // Interface type which is a subset of @microsoft/1ds-core-js AppInsightsCore.
 // Allows us to more easily build mock objects for testing as the interface is quite large and we only need a few properties.
@@ -19,15 +18,12 @@ export interface IAppInsightsCore {
 	unload(isAsync: boolean, unloadComplete: (unloadState: ITelemetryUnloadState) => void): void;
 }
 
-const endpointUrl = 'https://mobile.events.data.microsoft.com/OneCollector/1.0';
-const endpointHealthUrl = 'https://mobile.events.data.microsoft.com/ping';
+const endpointUrl = 'https://0.0.0.0/OneCollector/1.0';
+const endpointHealthUrl = 'https://0.0.0.0/ping';
 
 async function getClient(instrumentationKey: string, addInternalFlag?: boolean, xhrOverride?: IXHROverride): Promise<IAppInsightsCore> {
-	// eslint-disable-next-line local/code-amd-node-module
-	const oneDs = isWeb ? await importAMDNodeModule<typeof import('@microsoft/1ds-core-js')>('@microsoft/1ds-core-js', 'bundle/ms.core.min.js') : await import('@microsoft/1ds-core-js');
-	// eslint-disable-next-line local/code-amd-node-module
-	const postPlugin = isWeb ? await importAMDNodeModule<typeof import('@microsoft/1ds-post-js')>('@microsoft/1ds-post-js', 'bundle/ms.post.min.js') : await import('@microsoft/1ds-post-js');
-
+	const oneDs = await importAMDNodeModule<typeof import('@microsoft/1ds-core-js')>('@microsoft/1ds-core-js', 'dist/ms.core.js');
+	const postPlugin = await importAMDNodeModule<typeof import('@microsoft/1ds-post-js')>('@microsoft/1ds-post-js', 'dist/ms.post.js');
 	const appInsightsCore = new oneDs.AppInsightsCore();
 	const collectorChannelPlugin: PostChannel = new postPlugin.PostChannel();
 	// Configure the app insights core to send to collector++ and disable logging of debug info
@@ -144,7 +140,7 @@ export abstract class AbstractOneDataSystemAppender implements ITelemetryAppende
 		} catch { }
 	}
 
-	flush(): Promise<void> {
+	flush(): Promise<any> {
 		if (this._aiCoreOrKey) {
 			return new Promise(resolve => {
 				this._withAIClient((aiClient) => {

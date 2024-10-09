@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycircuits"
+    },
+    {
+      "name": "tikzlibraryshapes.gates.ee"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "circuit ee",
+      "every circuit ee/.style={${1:options}}"
+    ]
+  },
+  "args": []
+}

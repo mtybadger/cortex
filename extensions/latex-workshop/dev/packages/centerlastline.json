@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "centerlastline"
+    }
+  ],
+  "envs": [
+    {
+      "name": "centerlastline"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

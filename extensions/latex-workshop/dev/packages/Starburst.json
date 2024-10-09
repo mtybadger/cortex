@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Starburstfamily"
+    },
+    {
+      "name": "starburst",
+      "arg": {
+        "format": "{}",
+        "snippet": "starburst{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

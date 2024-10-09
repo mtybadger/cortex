@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "multnooverflow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "multnooverflow{${1:num1}}{${2:num2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

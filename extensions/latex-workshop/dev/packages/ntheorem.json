@@ -1,0 +1,1168 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "amssymb",
+      "if": "standard"
+    }
+  ],
+  "macros": [
+    {
+      "name": "theoremsymbol",
+      "if": "thmmarks",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremsymbol{${1:symbol}}"
+      }
+    },
+    {
+      "name": "label",
+      "if": "thref",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "label{${1:label}}[${2:type}]"
+      }
+    },
+    {
+      "name": "thref",
+      "if": "thref",
+      "arg": {
+        "format": "{}",
+        "snippet": "thref{${1:label}}"
+      }
+    },
+    {
+      "name": "theproof",
+      "if": "amsthm",
+      "unusual": true
+    },
+    {
+      "name": "openbox",
+      "if": "amsthm",
+      "unusual": true
+    },
+    {
+      "name": "proofSymbol",
+      "if": "amsthm",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "if": "amsthm",
+      "unusual": true
+    },
+    {
+      "name": "newframedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "newframedtheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
+      }
+    },
+    {
+      "name": "newframedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newframedtheorem{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "newframedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newframedtheorem{${1:envname}}{${2:caption}}[${3:within}]"
+      }
+    },
+    {
+      "name": "newshadedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "newshadedtheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
+      }
+    },
+    {
+      "name": "newshadedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newshadedtheorem{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "newshadedtheorem",
+      "if": "framed",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newshadedtheorem{${1:envname}}{${2:caption}}[${3:within}]"
+      }
+    },
+    {
+      "name": "shadecolor",
+      "if": "framed",
+      "arg": {
+        "format": "{}",
+        "snippet": "shadecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "theoremframecommand",
+      "if": "framed",
+      "unusual": true
+    },
+    {
+      "name": "theoremframepreskip",
+      "if": "framed",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremframepreskip{${1:skip}}"
+      }
+    },
+    {
+      "name": "theoremframepostskip",
+      "if": "framed",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremframepostskip{${1:skip}}"
+      }
+    },
+    {
+      "name": "theoreminframepreskip",
+      "if": "framed",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoreminframepreskip{${1:skip}}"
+      }
+    },
+    {
+      "name": "theoreminframepostskip",
+      "if": "framed",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoreminframepostskip{${1:skip}}"
+      }
+    },
+    {
+      "name": "newtheorem*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newtheorem*{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "renewtheorem{${1:envname}}[${3:numbered like}]{${2:caption}}"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "renewtheorem{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "renewtheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "renewtheorem{${1:envname}}{${2:caption}}[${3:within}]"
+      }
+    },
+    {
+      "name": "theoremstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremstyle{${1:style%keyvals}}",
+        "keys": [
+          "\\theoremstyle#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "theoremheaderfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremheaderfont{${1:font cmds}}"
+      }
+    },
+    {
+      "name": "theorembodyfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "theorembodyfont{${1:font cmds}}"
+      }
+    },
+    {
+      "name": "theoremnumbering",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremnumbering{${1:style%keyvals}}",
+        "keys": [
+          "\\theoremnumbering"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "theoremseparator",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremseparator{${1:symbol}}"
+      }
+    },
+    {
+      "name": "theorempreskip"
+    },
+    {
+      "name": "theorempostskip"
+    },
+    {
+      "name": "theoremindent"
+    },
+    {
+      "name": "theoremprework",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremprework{${1:code}}"
+      }
+    },
+    {
+      "name": "theorempostwork",
+      "arg": {
+        "format": "{}",
+        "snippet": "theorempostwork{${1:code}}"
+      }
+    },
+    {
+      "name": "theoremclass",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremclass{${1:theorem type}}"
+      }
+    },
+    {
+      "name": "theorempreskipamount"
+    },
+    {
+      "name": "theorempostskipamount"
+    },
+    {
+      "name": "theoremframepreskipamount",
+      "unusual": true
+    },
+    {
+      "name": "theoremframepostskipamount",
+      "unusual": true
+    },
+    {
+      "name": "theoreminframepreskipamount",
+      "unusual": true
+    },
+    {
+      "name": "theoreminframepostskipamount",
+      "unusual": true
+    },
+    {
+      "name": "theoremrightindent",
+      "unusual": true
+    },
+    {
+      "name": "listtheorems",
+      "arg": {
+        "format": "{}",
+        "snippet": "listtheorems{${1:thmset1,thmset2,...}}"
+      }
+    },
+    {
+      "name": "theoremlisttype",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremlisttype{${1:type%keyvals}}",
+        "keys": [
+          "\\theoremlisttype"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "addtheoremline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addtheoremline{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "addtheoremline*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addtheoremline*{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "addtotheoremfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "addtotheoremfile{${1:text}}"
+      }
+    },
+    {
+      "name": "addtotheoremfile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "addtotheoremfile[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "newtheoremstyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newtheoremstyle{${1:name%specialDef}}{${2:head}}{${3:opt-head}}"
+      }
+    },
+    {
+      "name": "renewtheoremstyle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "renewtheoremstyle{${1:name}}{${2:head}}{${3:opt-head}}"
+      }
+    },
+    {
+      "name": "newtheoremlisttype",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "newtheoremlisttype{${1:name%specialDef}}{${2:start}}{${3:line}}{${4:end}}"
+      }
+    },
+    {
+      "name": "renewtheoremlisttype",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "renewtheoremlisttype{${1:name}}{${2:start}}{${3:line}}{${4:end}}"
+      }
+    },
+    {
+      "name": "qed"
+    },
+    {
+      "name": "qedsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "qedsymbol{${1:symbol}}"
+      }
+    },
+    {
+      "name": "NoEndMark"
+    },
+    {
+      "name": "greek",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "greek{${1:counter}}"
+      }
+    },
+    {
+      "name": "Greek",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Greek{${1:counter}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Theorem",
+      "if": "standard"
+    },
+    {
+      "name": "Theorem",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "theorem",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Lemma",
+      "if": "standard"
+    },
+    {
+      "name": "Lemma",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "lemma",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Proposition",
+      "if": "standard"
+    },
+    {
+      "name": "Proposition",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "proposition",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Corollary",
+      "if": "standard"
+    },
+    {
+      "name": "Corollary",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "corollary",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Satz",
+      "if": "standard"
+    },
+    {
+      "name": "Satz",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "satz",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "satz",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Korollar",
+      "if": "standard"
+    },
+    {
+      "name": "Korollar",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "korollar",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "korollar",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Definition",
+      "if": "standard"
+    },
+    {
+      "name": "Definition",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "definition",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Example",
+      "if": "standard"
+    },
+    {
+      "name": "Example",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "example",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Beispiel",
+      "if": "standard"
+    },
+    {
+      "name": "Beispiel",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "beispiel",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "beispiel",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Anmerkung",
+      "if": "standard"
+    },
+    {
+      "name": "Anmerkung",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "anmerkung",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "anmerkung",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Bemerkung",
+      "if": "standard"
+    },
+    {
+      "name": "Bemerkung",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "bemerkung",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "bemerkung",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Remark",
+      "if": "standard"
+    },
+    {
+      "name": "Remark",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "remark",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Proof",
+      "if": "standard"
+    },
+    {
+      "name": "Proof",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "proof",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Beweis",
+      "if": "standard"
+    },
+    {
+      "name": "Beweis",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "beweis",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "beweis",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Theorem*",
+      "if": "standard"
+    },
+    {
+      "name": "Theorem*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "theorem*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Lemma*",
+      "if": "standard"
+    },
+    {
+      "name": "Lemma*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "lemma*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Proposition*",
+      "if": "standard"
+    },
+    {
+      "name": "Proposition*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "proposition*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Corollary*",
+      "if": "standard"
+    },
+    {
+      "name": "Corollary*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "corollary*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Satz*",
+      "if": "standard"
+    },
+    {
+      "name": "Satz*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "satz*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "satz*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Korollar*",
+      "if": "standard"
+    },
+    {
+      "name": "Korollar*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "korollar*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "korollar*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Definition*",
+      "if": "standard"
+    },
+    {
+      "name": "Definition*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "definition*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Example*",
+      "if": "standard"
+    },
+    {
+      "name": "Example*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "example*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Beispiel*",
+      "if": "standard"
+    },
+    {
+      "name": "Beispiel*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "beispiel*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "beispiel*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Anmerkung*",
+      "if": "standard"
+    },
+    {
+      "name": "Anmerkung*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "anmerkung*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "anmerkung*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Bemerkung*",
+      "if": "standard"
+    },
+    {
+      "name": "Bemerkung*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "bemerkung*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "bemerkung*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Remark*",
+      "if": "standard"
+    },
+    {
+      "name": "Remark*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "remark*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Proof*",
+      "if": "standard"
+    },
+    {
+      "name": "Proof*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "proof*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Beweis*",
+      "if": "standard"
+    },
+    {
+      "name": "Beweis*",
+      "if": "standard",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "beweis*",
+      "if": "standard",
+      "unusual": true
+    },
+    {
+      "name": "beweis*",
+      "if": "standard",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof",
+      "if": "amsthm"
+    },
+    {
+      "name": "proof",
+      "if": "amsthm",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/ntheorem#c": [
+      "thmmarks",
+      "leqno",
+      "fleqn",
+      "thref",
+      "amsmath",
+      "standard",
+      "noconfig",
+      "amsthm",
+      "framed",
+      "hyperref"
+    ],
+    "\\theoremstyle#c": [
+      "plain",
+      "break",
+      "change",
+      "changebreak",
+      "margin",
+      "marginbreak",
+      "nonumberplain",
+      "nonumberbreak",
+      "empty",
+      "%ntheoremstyle"
+    ],
+    "\\theoremnumbering": [
+      "arabic",
+      "alph",
+      "Alph",
+      "roman",
+      "Roman",
+      "greek",
+      "Greek",
+      "fnsymbol"
+    ],
+    "\\theoremlisttype": [
+      "all",
+      "allname",
+      "opt",
+      "optname",
+      "%ntheoremlisttype"
+    ]
+  },
+  "args": [
+    "\\usepackage/ntheorem#c"
+  ]
+}

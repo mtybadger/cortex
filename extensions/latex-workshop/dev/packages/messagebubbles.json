@@ -1,0 +1,67 @@
+{
+  "deps": [
+    {
+      "name": "pbox"
+    },
+    {
+      "name": "fancybox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "messagebubbleleft",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "messagebubbleleft{${1:caption%text}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "messagebubbleright",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "messagebubbleright{${1:caption%text}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "messagebubble",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "messagebubble{${1:content%text}}"
+      }
+    },
+    {
+      "name": "messagebubblewidth",
+      "unusual": true
+    },
+    {
+      "name": "adjustvspace",
+      "unusual": true
+    },
+    {
+      "name": "timestampright",
+      "arg": {
+        "format": "{}",
+        "snippet": "timestampright{${1:content%text}}"
+      }
+    },
+    {
+      "name": "timestampleft",
+      "arg": {
+        "format": "{}",
+        "snippet": "timestampleft{${1:content%text}}"
+      }
+    },
+    {
+      "name": "timestamp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "timestamp{${1:content%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

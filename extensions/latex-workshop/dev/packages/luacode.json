@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "luadirect",
+      "arg": {
+        "format": "{}",
+        "snippet": "luadirect{${1:lua code%definition}}"
+      }
+    },
+    {
+      "name": "luaexec",
+      "arg": {
+        "format": "{}",
+        "snippet": "luaexec{${1:lua code%definition}}"
+      }
+    },
+    {
+      "name": "luastring",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luastring{${1:string}}"
+      }
+    },
+    {
+      "name": "luastringN",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luastringN{${1:string}}"
+      }
+    },
+    {
+      "name": "luastringO",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "luastringO{${1:string}}"
+      }
+    },
+    {
+      "name": "LuaCodeDebugOn",
+      "unusual": true
+    },
+    {
+      "name": "LuaCodeDebugOff",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "luacode*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

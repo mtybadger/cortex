@@ -1,0 +1,78 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [
+    {
+      "name": "Section",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "Section*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubSection*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubSubSection",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubSubSection*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "Paragraph",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "Paragraph*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubParagraph",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    },
+    {
+      "name": "SubParagraph*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:data}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

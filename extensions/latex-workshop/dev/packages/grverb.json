@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "grverb",
+      "arg": {
+        "format": "||",
+        "snippet": "grverb|${1:text}|"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "grverbatim"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

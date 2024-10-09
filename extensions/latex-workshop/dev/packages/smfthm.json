@@ -1,0 +1,127 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "NoSwapTheoremNumbers"
+    },
+    {
+      "name": "NumberTheoremsAs",
+      "arg": {
+        "format": "{}",
+        "snippet": "NumberTheoremsAs{${1:counter}}"
+      }
+    },
+    {
+      "name": "NumberTheoremsIn",
+      "arg": {
+        "format": "{}",
+        "snippet": "NumberTheoremsIn{${1:counter}}"
+      }
+    },
+    {
+      "name": "SwapTheoremNumbers"
+    },
+    {
+      "name": "thesmfthm",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "theo"
+    },
+    {
+      "name": "theo",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "prop"
+    },
+    {
+      "name": "prop",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "conj"
+    },
+    {
+      "name": "conj",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "coro"
+    },
+    {
+      "name": "coro",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "lemm"
+    },
+    {
+      "name": "lemm",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "defi"
+    },
+    {
+      "name": "defi",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "rema"
+    },
+    {
+      "name": "rema",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "exem"
+    },
+    {
+      "name": "exem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:header%text}]"
+      }
+    },
+    {
+      "name": "enonce",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:theorem name}}"
+      }
+    },
+    {
+      "name": "enonce*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:theorem name}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

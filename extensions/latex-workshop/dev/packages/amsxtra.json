@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sphat"
+    },
+    {
+      "name": "sptilde"
+    },
+    {
+      "name": "spbreve"
+    },
+    {
+      "name": "spcheck"
+    },
+    {
+      "name": "spdddot"
+    },
+    {
+      "name": "spddot"
+    },
+    {
+      "name": "spdot"
+    },
+    {
+      "name": "accentedsymbol",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "accentedsymbol{${1:cmd}}{${2:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

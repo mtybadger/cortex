@@ -1,0 +1,165 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PstPolygon"
+    },
+    {
+      "name": "PstPolygon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstPolygon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstPolygon*"
+    },
+    {
+      "name": "PstPolygon*",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstPolygon*[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstTriangle"
+    },
+    {
+      "name": "PstTriangle",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstTriangle[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstSquare"
+    },
+    {
+      "name": "PstSquare",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstSquare[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstPentagon"
+    },
+    {
+      "name": "PstPentagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstPentagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstHexagon"
+    },
+    {
+      "name": "PstHexagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstHexagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstHeptagon"
+    },
+    {
+      "name": "PstHeptagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstHeptagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstOctogon"
+    },
+    {
+      "name": "PstOctogon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstOctogon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstNonagon"
+    },
+    {
+      "name": "PstNonagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstNonagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstDecagon"
+    },
+    {
+      "name": "PstDecagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstDecagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstDodecagon"
+    },
+    {
+      "name": "PstDodecagon",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstDodecagon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstStarFiveLines"
+    },
+    {
+      "name": "PstStarFiveLines",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstStarFiveLines[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "PstStarFive"
+    },
+    {
+      "name": "PstStarFive",
+      "arg": {
+        "format": "[]",
+        "snippet": "PstStarFive[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "pspolygonbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "pspolygonbox{${1:text}}"
+      }
+    },
+    {
+      "name": "pspolygonbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pspolygonbox[${2:options%keyvals}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

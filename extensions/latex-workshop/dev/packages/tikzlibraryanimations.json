@@ -1,0 +1,56 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pgfanimateattribute",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfanimateattribute{${1:attribute%keyvals}}{${2:options}}"
+      }
+    },
+    {
+      "name": "pgfanimateattributecode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfanimateattributecode{${1:attribute%keyvals}}{${2:code}}"
+      }
+    },
+    {
+      "name": "pgfparsetime",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfparsetime{${1:time}}"
+      }
+    },
+    {
+      "name": "pgfsnapshot",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfsnapshot{${1:time}}"
+      }
+    },
+    {
+      "name": "pgfsnapshotafter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfsnapshotafter{${1:time}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c,\\path#c,\\draw#c,\\fill#c,\\filldraw#c,\\pattern#c,\\shade#c,\\shadedraw#c,\\clip#c,\\node#c,\\coordinate#c,\\nodepart#c,\\pic#c,\\matrix#c,\\calendar#c,\\chainin#c,\\arrow#c,\\arrowreversed#c": [
+      "animate={${1:animation specification}}",
+      "make snapshot of=${1:time}",
+      "make snapshot after=${1:time}",
+      "make snapshot if necessary",
+      "make snapshot if necessary=${1:time}"
+    ]
+  },
+  "args": []
+}

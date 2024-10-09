@@ -1,0 +1,152 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Langle"
+    },
+    {
+      "name": "Lbrack"
+    },
+    {
+      "name": "Lparen"
+    },
+    {
+      "name": "Rangle"
+    },
+    {
+      "name": "Rbrack"
+    },
+    {
+      "name": "Rparen"
+    },
+    {
+      "name": "Eins"
+    },
+    {
+      "name": "bbalpha",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbbeta",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbgamma",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbdelta",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbespilon",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbzeta",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbeta",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbtheta",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbiota",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbkappa",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bblambda",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbmu",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbnu",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbxi",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbpi",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbrho",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbsigma",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbtau",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbupsilon",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbphi",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbchi",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbpsi",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "bbomega",
+      "if": "bbgreekl"
+    },
+    {
+      "name": "ifcspex",
+      "unusual": true
+    },
+    {
+      "name": "cspexfalse",
+      "unusual": true
+    },
+    {
+      "name": "cspextrue",
+      "unusual": true
+    },
+    {
+      "name": "ifbbgreekl",
+      "unusual": true
+    },
+    {
+      "name": "bbgreeklfalse",
+      "unusual": true
+    },
+    {
+      "name": "bbgreekltrue",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathbbol#c": [
+      "cspex",
+      "bbgreekl"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathbbol#c"
+  ]
+}

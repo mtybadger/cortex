@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "biditools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "choice"
+    }
+  ],
+  "envs": [
+    {
+      "name": "choices"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

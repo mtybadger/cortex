@@ -1,0 +1,196 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "newtxtt"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "tikzlibraryshadows"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibrarybabel"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "colortbl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Touche"
+    },
+    {
+      "name": "Touche",
+      "arg": {
+        "format": "[]",
+        "snippet": "Touche[${1:options%keyvals}]",
+        "keys": [
+          "\\Touche"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Menu",
+      "arg": {
+        "format": "{}",
+        "snippet": "Menu{${1:nom}}"
+      }
+    },
+    {
+      "name": "Menu",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Menu[${2:option%keyvals}]{${1:nom}}",
+        "keys": [
+          "\\Menu"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Ecran",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ecran{${1:contenu}}"
+      }
+    },
+    {
+      "name": "Ecran",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Ecran[${2:options%keyvals}]{${1:contenu}}",
+        "keys": [
+          "\\Ecran"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Calculatrice"
+    },
+    {
+      "name": "Calculatrice",
+      "arg": {
+        "format": "[]",
+        "snippet": "Calculatrice[${1:title%text}]"
+      }
+    },
+    {
+      "name": "Calculatrice*",
+      "arg": {
+        "format": "[]",
+        "snippet": "Calculatrice*[${1:options%keyvals}]",
+        "keys": [
+          "\\Calculatrice*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Circonflexe"
+    },
+    {
+      "name": "Racine"
+    },
+    {
+      "name": "theLineCommand",
+      "unusual": true
+    },
+    {
+      "name": "theLineResult",
+      "unusual": true
+    },
+    {
+      "name": "DefBool",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefBool{${1:bool name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\Touche": [
+      "style=${1|function,number,operation,graph,second,alpha,on,enter,arrows|}",
+      "principal=${1:text}",
+      "position=${1:nombre}",
+      "raise=",
+      "fontsize=",
+      "second=${1:text}",
+      "alpha=${1:text}",
+      "circle",
+      "radius=",
+      "colour=",
+      "color=",
+      "thickness=",
+      "fixed",
+      "xoffset=",
+      "yoffset=",
+      "scalearrows=${1:nombre}",
+      "arrowtot",
+      "arrowup",
+      "arrowdown",
+      "arrowleft",
+      "arrowright",
+      "name=${1:text}"
+    ],
+    "\\Menu": [
+      "size=",
+      "select",
+      "colourbox=",
+      "text=${1:text}"
+    ],
+    "\\Ecran": [
+      "screencolour=",
+      "screencolor=",
+      "screenname=${1:text}",
+      "width=${1:nombre}",
+      "height=${1:nombre}",
+      "graphic",
+      "xgrad=${1:nombre}",
+      "ygrad=${1:nombre}",
+      "nbgradx=${1:nombre}",
+      "nbgrady=${1:nombre}",
+      "origin={(${1:x,y})}",
+      "plotcolour=",
+      "plotcolor=",
+      "plotwidth="
+    ],
+    "\\Calculatrice*": [
+      "calcscale=${1:nombre}",
+      "calcrotate=${1:degrés}",
+      "calcraise="
+    ]
+  },
+  "args": []
+}

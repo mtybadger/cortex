@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "expkv"
+    }
+  ],
+  "macros": [
+    {
+      "name": "colorstripSet",
+      "arg": {
+        "format": "{}",
+        "snippet": "colorstripSet{${1:keyvals}}",
+        "keys": [
+          "\\colorstripSet,\\begin{colorstrip}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "colorstrip",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:color}}[${2:keyvals}]",
+        "keys": [
+          "\\colorstripSet,\\begin{colorstrip}"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "colorstrip",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]",
+        "snippet": "[${2:model}]{${1:color}}[${3:keyvals}]",
+        "keys": [
+          "\\colorstripSet,\\begin{colorstrip}"
+        ],
+        "keyPos": 2
+      }
+    }
+  ],
+  "keys": {
+    "\\colorstripSet,\\begin{colorstrip}": [
+      "inner=",
+      "inner top=",
+      "inner bot=",
+      "outer=",
+      "outer top=",
+      "outer bot=",
+      "width=",
+      "left=",
+      "afterheading",
+      "noindent"
+    ]
+  },
+  "args": []
+}

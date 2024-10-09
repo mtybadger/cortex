@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "EbnfTerminal",
+      "arg": {
+        "format": "{}",
+        "snippet": "EbnfTerminal{${1:symbol}}"
+      }
+    },
+    {
+      "name": "EbnfNonTerminal",
+      "arg": {
+        "format": "{}",
+        "snippet": "EbnfNonTerminal{${1:rule}}"
+      }
+    },
+    {
+      "name": "EbnfSpecial",
+      "arg": {
+        "format": "{}",
+        "snippet": "EbnfSpecial{${1:symbol}}"
+      }
+    },
+    {
+      "name": "EbnfRegex",
+      "arg": {
+        "format": "{}",
+        "snippet": "EbnfRegex{${1:regex}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "ebnf"
+    },
+    {
+      "name": "ebnf",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:width}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/naive-ebnf#c": [
+      "bw",
+      "trail=${1:file name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/naive-ebnf#c"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "class-ctexart"
+    },
+    {
+      "name": "xeCJK"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "marvosym"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "paralist"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "subcaption"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "subfig",
+      "if": "subfig"
+    },
+    {
+      "name": "subfig",
+      "if": "subfig=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "boldnames",
+      "unusual": true
+    },
+    {
+      "name": "cemph",
+      "arg": {
+        "format": "{}",
+        "snippet": "cemph{${1:text}}"
+      }
+    },
+    {
+      "name": "initauthors",
+      "arg": {
+        "format": "{}",
+        "snippet": "initauthors{${1:arg}}"
+      }
+    },
+    {
+      "name": "tocformat",
+      "unusual": true
+    },
+    {
+      "name": "mkpagegrouped",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mkpagegrouped{${1:text}}"
+      }
+    },
+    {
+      "name": "mkonepagegrouped",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mkonepagegrouped{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/mynsfc#c": [
+      "subfig",
+      "boldtoc",
+      "tocfont=${1:font name}",
+      "toccolor=${1:HTML color}"
+    ]
+  },
+  "args": [
+    "\\documentclass/mynsfc#c"
+  ]
+}

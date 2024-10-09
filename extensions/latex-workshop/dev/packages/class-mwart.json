@@ -1,0 +1,186 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "SetSectionFormatting",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "SetSectionFormatting{${1:nazwa polecenia}}{${2:odstęp przed}}{${3:nagłówek}}{${4:odstęp p}}"
+      }
+    },
+    {
+      "name": "SetSectionFormatting",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "SetSectionFormatting[${5:flagi%keyvals}]{${1:nazwa polecenia}}{${2:odstęp przed}}{${3:nagłówek}}{${4:odstęp p}}",
+        "keys": [
+          "\\SetSectionFormatting,\\DeclareSectioningCommand"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DeclareSectioningCommand",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareSectioningCommand{${1:nazwa polecenia}}{${2:odstęp przed}}"
+      }
+    },
+    {
+      "name": "DeclareSectioningCommand",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "DeclareSectioningCommand[${3:flag%keyvals}]{${1:nazwa polecenia}}{${2:odstęp przed}}",
+        "keys": [
+          "\\SetSectionFormatting,\\DeclareSectioningCommand"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "captionsettings",
+      "unusual": true
+    },
+    {
+      "name": "centeredlast",
+      "unusual": true
+    },
+    {
+      "name": "figuresettings",
+      "unusual": true
+    },
+    {
+      "name": "FormatBlockHeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "FormatBlockHeading{${1:dekl}}"
+      }
+    },
+    {
+      "name": "FormatChapterHeading",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "FormatChapterHeading{${1:odstęp}}{${2:dekl num}}{${3:dekl tyt}}"
+      }
+    },
+    {
+      "name": "FormatHangHeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "FormatHangHeading{${1:dekl}}"
+      }
+    },
+    {
+      "name": "FormatRigidChapterHeading",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "FormatRigidChapterHeading{${1:wys}}{${2:odstęp}}{${3:dekl num}}{${4:dekl tyt}}"
+      }
+    },
+    {
+      "name": "FormatRunInHeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "FormatRunInHeading{${1:dekl}}"
+      }
+    },
+    {
+      "name": "HeadingNumber"
+    },
+    {
+      "name": "HeadingNumberedfalse",
+      "unusual": true
+    },
+    {
+      "name": "HeadingNumberedtrue",
+      "unusual": true
+    },
+    {
+      "name": "HeadingRHeadText"
+    },
+    {
+      "name": "HeadingText"
+    },
+    {
+      "name": "HeadingTOCText"
+    },
+    {
+      "name": "ifHeadingNumbered"
+    },
+    {
+      "name": "partmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "partmark{${1:code}}"
+      }
+    },
+    {
+      "name": "secondarysize"
+    },
+    {
+      "name": "sectsettings",
+      "unusual": true
+    },
+    {
+      "name": "tablesettings",
+      "unusual": true
+    },
+    {
+      "name": "titlesettings",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/mwart#c": [
+      "a4paper",
+      "a5paper",
+      "a6paper",
+      "b4paper",
+      "b5paper",
+      "b6paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "wide",
+      "withmarginpar",
+      "withoutmarginpar",
+      "10pt",
+      "10dd",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib",
+      "rmheadings",
+      "sfheadings",
+      "floatssmall",
+      "floatsnormalsize",
+      "authortitle",
+      "titleauthor",
+      "indentfirst",
+      "noindentfirst"
+    ],
+    "\\SetSectionFormatting,\\DeclareSectioningCommand": [
+      "runin",
+      "breakbefore",
+      "breakafter",
+      "wholewidth"
+    ]
+  },
+  "args": [
+    "\\documentclass/mwart#c"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "stretchwith",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "stretchwith{${1:code}}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,65 @@
+{
+  "deps": [
+    {
+      "name": "algpseudocodex"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "algorithm"
+    }
+  ],
+  "macros": [
+    {
+      "name": "StateNN",
+      "arg": {
+        "format": "{}",
+        "snippet": "StateNN{${1:text}}"
+      }
+    },
+    {
+      "name": "StateNN",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "StateNN[${2:nesting}]{${1:text}}"
+      }
+    },
+    {
+      "name": "Input",
+      "arg": {
+        "format": "{}",
+        "snippet": "Input{${1:description}}"
+      }
+    },
+    {
+      "name": "Output",
+      "arg": {
+        "format": "{}",
+        "snippet": "Output{${1:description}}"
+      }
+    },
+    {
+      "name": "Returns",
+      "arg": {
+        "format": "{}",
+        "snippet": "Returns{${1:description}}"
+      }
+    },
+    {
+      "name": "algsmallskip"
+    },
+    {
+      "name": "algmedskip"
+    },
+    {
+      "name": "algbigskip"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

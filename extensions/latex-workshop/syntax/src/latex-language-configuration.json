@@ -1,0 +1,38 @@
+{
+	"extends": "https://raw.githubusercontent.com/jlelong/vscode-latex-basics/main/languages/latex-language-configuration.json",
+
+	"overrides": {
+		"autoClosingPairs": [
+			["\\begin{", ""],
+			["\\left(", ""],
+			["\\left[", ""],
+			["\\left{", ""],
+			["\\bigl(", ""],
+			["\\bigl[", ""],
+			["\\bigl{", ""],
+			["\\Bigl(", ""],
+			["\\Bigl[", ""],
+			["\\Bigl{", ""],
+			["\\biggl(", ""],
+			["\\biggl[", ""],
+			["\\biggl{", ""],
+			["\\Biggl(", ""],
+			["\\Biggl[", ""],
+			["\\Biggl{", ""],
+			["\\(", ""],
+			["\\[", ""],
+			["\\{", ""],
+			["@(", ""],
+			["@[", ""],
+			["@{", ""],
+			["{", "}"],
+			["[", "]"],
+			["(", ")"],
+			["`", "'"]
+		],
+		"wordPattern": {
+			"pattern": "(__)|(\\*\\*)|(\\.\\.\\.)|(\\p{Alphabetic}|\\p{Number}|\\p{Nonspacing_Mark}){1,}",
+			"flags": "u"
+		}
+	}
+}

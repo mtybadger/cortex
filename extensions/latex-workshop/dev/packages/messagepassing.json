@@ -1,0 +1,256 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryquotes"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "float"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newprocess",
+      "arg": {
+        "format": "{}",
+        "snippet": "newprocess{${1:name}}"
+      }
+    },
+    {
+      "name": "newprocess",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "newprocess{${1:name}}[${2:display name}]"
+      }
+    },
+    {
+      "name": "newprocesswithlength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newprocesswithlength{${1:name}}{${2:length%plain}}"
+      }
+    },
+    {
+      "name": "newprocesswithlength",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "newprocesswithlength{${1:name}}[${3:display name}]{${2:length%plain}}"
+      }
+    },
+    {
+      "name": "processlength",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "processlength{${1:name}}{${2:length%plain}}"
+      }
+    },
+    {
+      "name": "newprocesswithstateinterval",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newprocesswithstateinterval{${1:name}}{${2:state name}}"
+      }
+    },
+    {
+      "name": "newprocesswithstateinterval",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "newprocesswithstateinterval{${1:name}}[${3:display name}]{${2:state name}}"
+      }
+    },
+    {
+      "name": "newprocesswithcrash",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newprocesswithcrash{${1:name}}{${2:length%plain}}{${3:crash coord name}}"
+      }
+    },
+    {
+      "name": "newprocesswithcrash",
+      "arg": {
+        "format": "{}[]{}{}",
+        "snippet": "newprocesswithcrash{${1:name}}[${4:display name}]{${2:length%plain}}{${3:crash coord name}}"
+      }
+    },
+    {
+      "name": "drawtimeline",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawtimeline{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "send",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "send{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}"
+      }
+    },
+    {
+      "name": "sendwithname",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "sendwithname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}"
+      }
+    },
+    {
+      "name": "sendwithname",
+      "arg": {
+        "format": "{}{}{}{}{}[]",
+        "snippet": "sendwithname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}[${6:label options}]"
+      }
+    },
+    {
+      "name": "sendoutofband",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "sendoutofband{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:label}}"
+      }
+    },
+    {
+      "name": "crash",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "crash{${1:process}}{${2:time}}{${3:name}}"
+      }
+    },
+    {
+      "name": "restart",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "restart{${1:name}}{${2:date}}{${3:duration}}"
+      }
+    },
+    {
+      "name": "checkpoint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "checkpoint{${1:process}}{${2:time}}{${3:name%formula}}"
+      }
+    },
+    {
+      "name": "checkpointspecial",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "checkpointspecial{${1:process}}{${2:time}}{${3:name%formula}}{${4:label}}"
+      }
+    },
+    {
+      "name": "stateinterval",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "stateinterval{${1:process}}{${2:time}}{${3:name%formula}}"
+      }
+    },
+    {
+      "name": "stateintervalspecial",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "stateintervalspecial{${1:process}}{${2:time}}{${3:name%formula}}{${4:label}}"
+      }
+    },
+    {
+      "name": "colouredbox",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "colouredbox{${1:process1}}{${2:process2}}{${3:start time}}{${4:end time}}{${5:label}}"
+      }
+    },
+    {
+      "name": "annotate",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "annotate{${1:process}}{${2:time}}{${3:text}}"
+      }
+    },
+    {
+      "name": "annotatexplicit",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "annotatexplicit{${1:process}}{${2:time}}{${3:text}}{${4:name}}"
+      }
+    },
+    {
+      "name": "sendwithstateinterval",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "sendwithstateinterval{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}"
+      }
+    },
+    {
+      "name": "sendwithstateintervalandname",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "sendwithstateintervalandname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}{${6:message name}}"
+      }
+    },
+    {
+      "name": "sendwithstateintervalandname",
+      "arg": {
+        "format": "{}{}{}{}{}{}[]",
+        "snippet": "sendwithstateintervalandname{${1:sender}}{${2:send time}}{${3:receiver}}{${4:receive time}}{${5:name%formula}}{${6:message name}}[${7:label options}]"
+      }
+    },
+    {
+      "name": "colouredboxcolour",
+      "arg": {
+        "format": "{}",
+        "snippet": "colouredboxcolour{${1:color}}"
+      }
+    },
+    {
+      "name": "oobcolour",
+      "arg": {
+        "format": "{}",
+        "snippet": "oobcolour{${1:color}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "messagepassing"
+    },
+    {
+      "name": "messagepassing",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:TikZ options}]"
+      }
+    },
+    {
+      "name": "messagepassing",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:TikZ options}][${2:caption%text}]"
+      }
+    },
+    {
+      "name": "messagepassing",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "[${1:TikZ options}][${2:caption%text}][${3:placement}]"
+      }
+    },
+    {
+      "name": "messagepassing",
+      "arg": {
+        "format": "[][][][]",
+        "snippet": "[${1:TikZ options}][${2:caption%text}][${3:placement}][${4:label}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/messagepassing#c": [
+      "vertical",
+      "annotatevertical"
+    ]
+  },
+  "args": [
+    "\\usepackage/messagepassing#c"
+  ]
+}

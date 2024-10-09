@@ -12,82 +12,82 @@
 
 //#region --- workbench common
 
-import './workbench.common.main.js';
+import 'vs/workbench/workbench.common.main';
 
 //#endregion
 
 
 //#region --- workbench (desktop main)
 
-import './electron-sandbox/desktop.main.js';
-import './electron-sandbox/desktop.contribution.js';
+import 'vs/workbench/electron-sandbox/desktop.main';
+import 'vs/workbench/electron-sandbox/desktop.contribution';
 
 //#endregion
 
 
 //#region --- workbench parts
 
-import './electron-sandbox/parts/dialogs/dialog.contribution.js';
+import 'vs/workbench/electron-sandbox/parts/dialogs/dialog.contribution';
 
 //#endregion
 
 
 //#region --- workbench services
 
-import './services/textfile/electron-sandbox/nativeTextFileService.js';
-import './services/dialogs/electron-sandbox/fileDialogService.js';
-import './services/workspaces/electron-sandbox/workspacesService.js';
-import './services/menubar/electron-sandbox/menubarService.js';
-import './services/update/electron-sandbox/updateService.js';
-import './services/url/electron-sandbox/urlService.js';
-import './services/lifecycle/electron-sandbox/lifecycleService.js';
-import './services/title/electron-sandbox/titleService.js';
-import './services/host/electron-sandbox/nativeHostService.js';
-import './services/request/electron-sandbox/requestService.js';
-import './services/clipboard/electron-sandbox/clipboardService.js';
-import './services/contextmenu/electron-sandbox/contextmenuService.js';
-import './services/workspaces/electron-sandbox/workspaceEditingService.js';
-import './services/configurationResolver/electron-sandbox/configurationResolverService.js';
-import './services/accessibility/electron-sandbox/accessibilityService.js';
-import './services/keybinding/electron-sandbox/nativeKeyboardLayout.js';
-import './services/path/electron-sandbox/pathService.js';
-import './services/themes/electron-sandbox/nativeHostColorSchemeService.js';
-import './services/extensionManagement/electron-sandbox/extensionManagementService.js';
-import './services/encryption/electron-sandbox/encryptionService.js';
-import './services/secrets/electron-sandbox/secretStorageService.js';
-import './services/localization/electron-sandbox/languagePackService.js';
-import './services/telemetry/electron-sandbox/telemetryService.js';
-import './services/extensions/electron-sandbox/extensionHostStarter.js';
-import '../platform/extensionResourceLoader/common/extensionResourceLoaderService.js';
-import './services/localization/electron-sandbox/localeService.js';
-import './services/extensions/electron-sandbox/extensionsScannerService.js';
-import './services/extensionManagement/electron-sandbox/extensionManagementServerService.js';
-import './services/extensionManagement/electron-sandbox/extensionTipsService.js';
-import './services/userDataSync/electron-sandbox/userDataSyncService.js';
-import './services/userDataSync/electron-sandbox/userDataAutoSyncService.js';
-import './services/timer/electron-sandbox/timerService.js';
-import './services/environment/electron-sandbox/shellEnvironmentService.js';
-import './services/integrity/electron-sandbox/integrityService.js';
-import './services/workingCopy/electron-sandbox/workingCopyBackupService.js';
-import './services/checksum/electron-sandbox/checksumService.js';
-import '../platform/remote/electron-sandbox/sharedProcessTunnelService.js';
-import './services/tunnel/electron-sandbox/tunnelService.js';
-import '../platform/diagnostics/electron-sandbox/diagnosticsService.js';
-import '../platform/profiling/electron-sandbox/profilingService.js';
-import '../platform/telemetry/electron-sandbox/customEndpointTelemetryService.js';
-import '../platform/remoteTunnel/electron-sandbox/remoteTunnelService.js';
-import './services/files/electron-sandbox/elevatedFileService.js';
-import './services/search/electron-sandbox/searchService.js';
-import './services/workingCopy/electron-sandbox/workingCopyHistoryService.js';
-import './services/userDataSync/browser/userDataSyncEnablementService.js';
-import './services/extensions/electron-sandbox/nativeExtensionService.js';
-import '../platform/userDataProfile/electron-sandbox/userDataProfileStorageService.js';
-import './services/auxiliaryWindow/electron-sandbox/auxiliaryWindowService.js';
-import '../platform/extensionManagement/electron-sandbox/extensionsProfileScannerService.js';
+import 'vs/workbench/services/textfile/electron-sandbox/nativeTextFileService';
+import 'vs/workbench/services/dialogs/electron-sandbox/fileDialogService';
+import 'vs/workbench/services/workspaces/electron-sandbox/workspacesService';
+import 'vs/workbench/services/menubar/electron-sandbox/menubarService';
+import 'vs/workbench/services/update/electron-sandbox/updateService';
+import 'vs/workbench/services/url/electron-sandbox/urlService';
+import 'vs/workbench/services/lifecycle/electron-sandbox/lifecycleService';
+import 'vs/workbench/services/title/electron-sandbox/titleService';
+import 'vs/workbench/services/host/electron-sandbox/nativeHostService';
+import 'vs/workbench/services/request/electron-sandbox/requestService';
+import 'vs/workbench/services/clipboard/electron-sandbox/clipboardService';
+import 'vs/workbench/services/contextmenu/electron-sandbox/contextmenuService';
+import 'vs/workbench/services/workspaces/electron-sandbox/workspaceEditingService';
+import 'vs/workbench/services/configurationResolver/electron-sandbox/configurationResolverService';
+import 'vs/workbench/services/accessibility/electron-sandbox/accessibilityService';
+import 'vs/workbench/services/keybinding/electron-sandbox/nativeKeyboardLayout';
+import 'vs/workbench/services/path/electron-sandbox/pathService';
+import 'vs/workbench/services/themes/electron-sandbox/nativeHostColorSchemeService';
+import 'vs/workbench/services/extensionManagement/electron-sandbox/extensionManagementService';
+import 'vs/workbench/services/encryption/electron-sandbox/encryptionService';
+import 'vs/workbench/services/secrets/electron-sandbox/secretStorageService';
+import 'vs/workbench/services/localization/electron-sandbox/languagePackService';
+import 'vs/workbench/services/telemetry/electron-sandbox/telemetryService';
+import 'vs/workbench/services/extensions/electron-sandbox/extensionHostStarter';
+import 'vs/platform/extensionResourceLoader/common/extensionResourceLoaderService';
+import 'vs/workbench/services/localization/electron-sandbox/localeService';
+import 'vs/workbench/services/extensions/electron-sandbox/extensionsScannerService';
+import 'vs/workbench/services/extensionManagement/electron-sandbox/extensionManagementServerService';
+import 'vs/workbench/services/extensionManagement/electron-sandbox/extensionTipsService';
+import 'vs/workbench/services/userDataSync/electron-sandbox/userDataSyncService';
+import 'vs/workbench/services/userDataSync/electron-sandbox/userDataAutoSyncService';
+import 'vs/workbench/services/timer/electron-sandbox/timerService';
+import 'vs/workbench/services/environment/electron-sandbox/shellEnvironmentService';
+import 'vs/workbench/services/integrity/electron-sandbox/integrityService';
+import 'vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupService';
+import 'vs/workbench/services/checksum/electron-sandbox/checksumService';
+import 'vs/platform/remote/electron-sandbox/sharedProcessTunnelService';
+import 'vs/workbench/services/tunnel/electron-sandbox/tunnelService';
+import 'vs/platform/diagnostics/electron-sandbox/diagnosticsService';
+import 'vs/platform/profiling/electron-sandbox/profilingService';
+import 'vs/platform/telemetry/electron-sandbox/customEndpointTelemetryService';
+import 'vs/platform/remoteTunnel/electron-sandbox/remoteTunnelService';
+import 'vs/workbench/services/files/electron-sandbox/elevatedFileService';
+import 'vs/workbench/services/search/electron-sandbox/searchService';
+import 'vs/workbench/services/workingCopy/electron-sandbox/workingCopyHistoryService';
+import 'vs/workbench/services/userDataSync/browser/userDataSyncEnablementService';
+import 'vs/workbench/services/extensions/electron-sandbox/nativeExtensionService';
+import 'vs/platform/userDataProfile/electron-sandbox/userDataProfileStorageService';
+import 'vs/workbench/services/auxiliaryWindow/electron-sandbox/auxiliaryWindowService';
+import 'vs/platform/extensionManagement/electron-sandbox/extensionsProfileScannerService';
 
-import { registerSingleton } from '../platform/instantiation/common/extensions.js';
-import { IUserDataInitializationService, UserDataInitializationService } from './services/userData/browser/userDataInit.js';
-import { SyncDescriptor } from '../platform/instantiation/common/descriptors.js';
+import { registerSingleton } from 'vs/platform/instantiation/common/extensions';
+import { IUserDataInitializationService, UserDataInitializationService } from 'vs/workbench/services/userData/browser/userDataInit';
+import { SyncDescriptor } from 'vs/platform/instantiation/common/descriptors';
 
 registerSingleton(IUserDataInitializationService, new SyncDescriptor(UserDataInitializationService, [[]], true));
 
@@ -98,87 +98,84 @@ registerSingleton(IUserDataInitializationService, new SyncDescriptor(UserDataIni
 //#region --- workbench contributions
 
 // Logs
-import './contrib/logs/electron-sandbox/logs.contribution.js';
+import 'vs/workbench/contrib/logs/electron-sandbox/logs.contribution';
 
 // Localizations
-import './contrib/localization/electron-sandbox/localization.contribution.js';
+import 'vs/workbench/contrib/localization/electron-sandbox/localization.contribution';
 
 // Explorer
-import './contrib/files/electron-sandbox/fileActions.contribution.js';
+import 'vs/workbench/contrib/files/electron-sandbox/fileActions.contribution';
 
 // CodeEditor Contributions
-import './contrib/codeEditor/electron-sandbox/codeEditor.contribution.js';
+import 'vs/workbench/contrib/codeEditor/electron-sandbox/codeEditor.contribution';
 
 // Debug
-import './contrib/debug/electron-sandbox/extensionHostDebugService.js';
+import 'vs/workbench/contrib/debug/electron-sandbox/extensionHostDebugService';
 
 // Extensions Management
-import './contrib/extensions/electron-sandbox/extensions.contribution.js';
+import 'vs/workbench/contrib/extensions/electron-sandbox/extensions.contribution';
 
 // Issues
-import './contrib/issue/electron-sandbox/issue.contribution.js';
+import 'vs/workbench/contrib/issue/electron-sandbox/issue.contribution';
 
 // Process
-import './contrib/issue/electron-sandbox/process.contribution.js';
+import 'vs/workbench/contrib/issue/electron-sandbox/process.contribution';
 
 // Remote
-import './contrib/remote/electron-sandbox/remote.contribution.js';
+import 'vs/workbench/contrib/remote/electron-sandbox/remote.contribution';
 
 // Configuration Exporter
-import './contrib/configExporter/electron-sandbox/configurationExportHelper.contribution.js';
+import 'vs/workbench/contrib/configExporter/electron-sandbox/configurationExportHelper.contribution';
 
 // Terminal
-import './contrib/terminal/electron-sandbox/terminal.contribution.js';
+import 'vs/workbench/contrib/terminal/electron-sandbox/terminal.contribution';
 
 // Themes
-import './contrib/themes/browser/themes.test.contribution.js';
-import './services/themes/electron-sandbox/themes.contribution.js';
+import 'vs/workbench/contrib/themes/browser/themes.test.contribution';
+import 'vs/workbench/services/themes/electron-sandbox/themes.contribution';
 
 // User Data Sync
-import './contrib/userDataSync/electron-sandbox/userDataSync.contribution.js';
+import 'vs/workbench/contrib/userDataSync/electron-sandbox/userDataSync.contribution';
 
 // Tags
-import './contrib/tags/electron-sandbox/workspaceTagsService.js';
-import './contrib/tags/electron-sandbox/tags.contribution.js';
+import 'vs/workbench/contrib/tags/electron-sandbox/workspaceTagsService';
+import 'vs/workbench/contrib/tags/electron-sandbox/tags.contribution';
 
 // Performance
-import './contrib/performance/electron-sandbox/performance.contribution.js';
+import 'vs/workbench/contrib/performance/electron-sandbox/performance.contribution';
 
 // Tasks
-import './contrib/tasks/electron-sandbox/taskService.js';
+import 'vs/workbench/contrib/tasks/electron-sandbox/taskService';
 
 // External terminal
-import './contrib/externalTerminal/electron-sandbox/externalTerminal.contribution.js';
+import 'vs/workbench/contrib/externalTerminal/electron-sandbox/externalTerminal.contribution';
 
 // Webview
-import './contrib/webview/electron-sandbox/webview.contribution.js';
+import 'vs/workbench/contrib/webview/electron-sandbox/webview.contribution';
 
 // Splash
-import './contrib/splash/electron-sandbox/splash.contribution.js';
+import 'vs/workbench/contrib/splash/electron-sandbox/splash.contribution';
 
 // Local History
-import './contrib/localHistory/electron-sandbox/localHistory.contribution.js';
+import 'vs/workbench/contrib/localHistory/electron-sandbox/localHistory.contribution';
 
 // Merge Editor
-import './contrib/mergeEditor/electron-sandbox/mergeEditor.contribution.js';
+import 'vs/workbench/contrib/mergeEditor/electron-sandbox/mergeEditor.contribution';
 
 // Multi Diff Editor
-import './contrib/multiDiffEditor/browser/multiDiffEditor.contribution.js';
+import 'vs/workbench/contrib/multiDiffEditor/browser/multiDiffEditor.contribution';
 
 // Remote Tunnel
-import './contrib/remoteTunnel/electron-sandbox/remoteTunnel.contribution.js';
+import 'vs/workbench/contrib/remoteTunnel/electron-sandbox/remoteTunnel.contribution';
 
 // Chat
-import './contrib/chat/electron-sandbox/chat.contribution.js';
-import './contrib/inlineChat/electron-sandbox/inlineChat.contribution.js';
+import 'vs/workbench/contrib/chat/electron-sandbox/chat.contribution';
+import 'vs/workbench/contrib/inlineChat/electron-sandbox/inlineChat.contribution';
 
 // Encryption
-import './contrib/encryption/electron-sandbox/encryption.contribution.js';
-
-// Emergency Alert
-import './contrib/emergencyAlert/electron-sandbox/emergencyAlert.contribution.js';
+import 'vs/workbench/contrib/encryption/electron-sandbox/encryption.contribution';
 
 //#endregion
 
 
-export { main } from './electron-sandbox/desktop.main.js';
+export { main } from 'vs/workbench/electron-sandbox/desktop.main';

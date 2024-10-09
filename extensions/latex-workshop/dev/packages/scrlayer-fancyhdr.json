@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "scrlayer"
+    },
+    {
+      "name": "fancyhdr"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/scrlayer-fancyhdr#c": [
+      "nocheck",
+      "compatV3",
+      "myheadings",
+      "headings"
+    ]
+  },
+  "args": [
+    "\\usepackage/scrlayer-fancyhdr#c"
+  ]
+}

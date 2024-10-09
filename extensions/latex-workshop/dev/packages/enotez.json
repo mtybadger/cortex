@@ -1,0 +1,211 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xtemplate"
+    },
+    {
+      "name": "translations"
+    }
+  ],
+  "macros": [
+    {
+      "name": "endnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "endnote{${1:text}}"
+      }
+    },
+    {
+      "name": "endnote",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "endnote[${2:mark}]{${1:text}}"
+      }
+    },
+    {
+      "name": "endnotemark",
+      "unusual": true
+    },
+    {
+      "name": "endnotemark",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "endnotemark[${1:mark}]"
+      }
+    },
+    {
+      "name": "endnotetext",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "endnotetext{${1:text}}"
+      }
+    },
+    {
+      "name": "enotezwritemark",
+      "unusual": true
+    },
+    {
+      "name": "enmarkstyle",
+      "unusual": true
+    },
+    {
+      "name": "printendnotes"
+    },
+    {
+      "name": "printendnotes",
+      "arg": {
+        "format": "[]",
+        "snippet": "printendnotes[${1:style%keyvals}]",
+        "keys": [
+          "\\printendnotes#c,\\printendnotes*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printendnotes*",
+      "unusual": true
+    },
+    {
+      "name": "printendnotes*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "printendnotes*[${1:style%keyvals}]",
+        "keys": [
+          "\\printendnotes#c,\\printendnotes*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "AtEveryEndnotesList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AtEveryEndnotesList{${1:text}}"
+      }
+    },
+    {
+      "name": "AtNextEndnotesList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AtNextEndnotesList{${1:text}}"
+      }
+    },
+    {
+      "name": "AfterEveryEndnotesList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AfterEveryEndnotesList{${1:text}}"
+      }
+    },
+    {
+      "name": "AfterNextEndnotesList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AfterNextEndnotesList{${1:text}}"
+      }
+    },
+    {
+      "name": "setenotez",
+      "arg": {
+        "format": "{}",
+        "snippet": "setenotez{${1:options%keyvals}}",
+        "keys": [
+          "\\setenotez"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "enmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "enmark{${1:arg}}"
+      }
+    },
+    {
+      "name": "AtEveryListSplit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AtEveryListSplit{${1:code}}"
+      }
+    },
+    {
+      "name": "AfterEveryListSplit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AfterEveryListSplit{${1:code}}"
+      }
+    },
+    {
+      "name": "EnotezCurrentSplitTitle",
+      "unusual": true
+    },
+    {
+      "name": "NewSplitTitleTag",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NewSplitTitleTag{${1:tag}}{${2:replacement}}"
+      }
+    },
+    {
+      "name": "enotezlistheading",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "enotezlistheading{${1:text}}"
+      }
+    },
+    {
+      "name": "enotezsplitlistheading",
+      "unusual": true
+    },
+    {
+      "name": "enotezdisable",
+      "unusual": true
+    },
+    {
+      "name": "theendnote",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\printendnotes#c,\\printendnotes*#c": [
+      "description",
+      "itemize"
+    ],
+    "\\setenotez": [
+      "list-name=",
+      "reset",
+      "counter-format=${1|arabic,alph,Alph,roman,Roman,symbols|}",
+      "mark-format={${1:code}}",
+      "mark-cs={${1:command}}",
+      "backref",
+      "totoc=${1|subsection,section,chapter,part,auto,false|}",
+      "list-heading=",
+      "list-style=",
+      "list-preamble-skip=",
+      "list-postamble-skip=",
+      "split=${1|section,chapter,false|}",
+      "split-sectioning={${1:csname}}",
+      "split-heading=",
+      "split-title={${1:token list}}"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifpgfmathcond",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ifpgfmathcond{${1:condition}}"
+      }
+    },
+    {
+      "name": "dubinspath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dubinspath{${1:options}}"
+      }
+    },
+    {
+      "name": "dubinspathset",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dubinspathset{${1:options}}"
+      }
+    },
+    {
+      "name": "dubinspathcalc",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "dubinspathcalc{${1:options}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

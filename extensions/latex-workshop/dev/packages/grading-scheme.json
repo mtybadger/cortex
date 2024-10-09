@@ -1,0 +1,60 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "rotating"
+    }
+  ],
+  "macros": [
+    {
+      "name": "entry",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "entry{${1:description%text}}{${2:points}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "gradingscheme",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:operator}}"
+      }
+    },
+    {
+      "name": "gradingscheme",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:description%text}]{${1:operator}}"
+      }
+    },
+    {
+      "name": "block",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:operator}}"
+      }
+    },
+    {
+      "name": "block",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:description%text}]{${1:operator}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/grading-scheme#c": [
+      "pipe"
+    ]
+  },
+  "args": [
+    "\\usepackage/grading-scheme#c"
+  ]
+}

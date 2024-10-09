@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "luacode"
+    }
+  ],
+  "macros": [
+    {
+      "name": "luagcd",
+      "arg": {
+        "format": "{}",
+        "snippet": "luagcd{${1:int1,int2,...}}"
+      }
+    },
+    {
+      "name": "luagcdwithsteps",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "luagcdwithsteps{${1:int1}}{${2:int2}}"
+      }
+    },
+    {
+      "name": "luagcdlincomb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "luagcdlincomb{${1:int1}}{${2:int2}}"
+      }
+    },
+    {
+      "name": "luagcdlincombwithsteps",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "luagcdlincombwithsteps{${1:int1}}{${2:int2}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

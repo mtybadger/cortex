@@ -1,0 +1,1001 @@
+{
+  "deps": [
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "cancel"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "eurosym"
+    },
+    {
+      "name": "teubner"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Alpha"
+    },
+    {
+      "name": "Beta"
+    },
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "Complex"
+    },
+    {
+      "name": "Dagger"
+    },
+    {
+      "name": "Darr"
+    },
+    {
+      "name": "Epsilon"
+    },
+    {
+      "name": "Eta"
+    },
+    {
+      "name": "Harr"
+    },
+    {
+      "name": "Iota"
+    },
+    {
+      "name": "Kappa"
+    },
+    {
+      "name": "Larr"
+    },
+    {
+      "name": "Lrarr"
+    },
+    {
+      "name": "Mu"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "Nu"
+    },
+    {
+      "name": "Omicron"
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "Rarr"
+    },
+    {
+      "name": "Reals"
+    },
+    {
+      "name": "Rho"
+    },
+    {
+      "name": "Tau"
+    },
+    {
+      "name": "Uarr"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "Zeta"
+    },
+    {
+      "name": "alef"
+    },
+    {
+      "name": "alefsym"
+    },
+    {
+      "name": "ang"
+    },
+    {
+      "name": "bull"
+    },
+    {
+      "name": "clubs"
+    },
+    {
+      "name": "cnums"
+    },
+    {
+      "name": "dArr"
+    },
+    {
+      "name": "darr"
+    },
+    {
+      "name": "diamonds"
+    },
+    {
+      "name": "exist"
+    },
+    {
+      "name": "hAar"
+    },
+    {
+      "name": "harr"
+    },
+    {
+      "name": "hearts"
+    },
+    {
+      "name": "image"
+    },
+    {
+      "name": "infin"
+    },
+    {
+      "name": "isin"
+    },
+    {
+      "name": "lArr"
+    },
+    {
+      "name": "lang"
+    },
+    {
+      "name": "larr"
+    },
+    {
+      "name": "lrArr"
+    },
+    {
+      "name": "lrarr"
+    },
+    {
+      "name": "natnums"
+    },
+    {
+      "name": "omicron"
+    },
+    {
+      "name": "plusmn"
+    },
+    {
+      "name": "rArr"
+    },
+    {
+      "name": "rang"
+    },
+    {
+      "name": "rarr"
+    },
+    {
+      "name": "real"
+    },
+    {
+      "name": "reals"
+    },
+    {
+      "name": "sdot"
+    },
+    {
+      "name": "sect"
+    },
+    {
+      "name": "spades"
+    },
+    {
+      "name": "sub"
+    },
+    {
+      "name": "sube"
+    },
+    {
+      "name": "supe"
+    },
+    {
+      "name": "thetasym"
+    },
+    {
+      "name": "uArr"
+    },
+    {
+      "name": "uarr"
+    },
+    {
+      "name": "varcoppa"
+    },
+    {
+      "name": "weierp"
+    },
+    {
+      "name": "captionsgreek",
+      "unusual": true
+    },
+    {
+      "name": "dategreek",
+      "unusual": true
+    },
+    {
+      "name": "extrasgreek",
+      "unusual": true
+    },
+    {
+      "name": "noextrasgreek",
+      "unusual": true
+    },
+    {
+      "name": "greekscript",
+      "unusual": true
+    },
+    {
+      "name": "greektext",
+      "unusual": true
+    },
+    {
+      "name": "ensuregreek",
+      "arg": {
+        "format": "{}",
+        "snippet": "ensuregreek{${1:text}}"
+      }
+    },
+    {
+      "name": "textgreek",
+      "arg": {
+        "format": "{}",
+        "snippet": "textgreek{${1:text}}"
+      }
+    },
+    {
+      "name": "greeknumeral",
+      "arg": {
+        "format": "{}",
+        "snippet": "greeknumeral{${1:number}}"
+      }
+    },
+    {
+      "name": "Greeknumeral",
+      "arg": {
+        "format": "{}",
+        "snippet": "Greeknumeral{${1:number}}"
+      }
+    },
+    {
+      "name": "greekfontencoding",
+      "unusual": true
+    },
+    {
+      "name": "textol",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textol{${1:text}}"
+      }
+    },
+    {
+      "name": "outlfamily",
+      "unusual": true
+    },
+    {
+      "name": "greekhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "Grtoday"
+    },
+    {
+      "name": "anwtonos"
+    },
+    {
+      "name": "katwtonos"
+    },
+    {
+      "name": "qoppa"
+    },
+    {
+      "name": "varqoppa"
+    },
+    {
+      "name": "stigma"
+    },
+    {
+      "name": "sampi"
+    },
+    {
+      "name": "Digamma"
+    },
+    {
+      "name": "ddigamma"
+    },
+    {
+      "name": "euro",
+      "detail": "€",
+      "doc": "Euro sign"
+    },
+    {
+      "name": "permill"
+    },
+    {
+      "name": "textAlpha",
+      "unusual": true
+    },
+    {
+      "name": "textBeta",
+      "unusual": true
+    },
+    {
+      "name": "textGamma",
+      "unusual": true
+    },
+    {
+      "name": "textDelta",
+      "unusual": true
+    },
+    {
+      "name": "textEpsilon",
+      "unusual": true
+    },
+    {
+      "name": "textZeta",
+      "unusual": true
+    },
+    {
+      "name": "textEta",
+      "unusual": true
+    },
+    {
+      "name": "textTheta",
+      "unusual": true
+    },
+    {
+      "name": "textIota",
+      "unusual": true
+    },
+    {
+      "name": "textKappa",
+      "unusual": true
+    },
+    {
+      "name": "textLambda",
+      "unusual": true
+    },
+    {
+      "name": "textMu",
+      "unusual": true
+    },
+    {
+      "name": "textNu",
+      "unusual": true
+    },
+    {
+      "name": "textXi",
+      "unusual": true
+    },
+    {
+      "name": "textOmicron",
+      "unusual": true
+    },
+    {
+      "name": "textPi",
+      "unusual": true
+    },
+    {
+      "name": "textRho",
+      "unusual": true
+    },
+    {
+      "name": "textSigma",
+      "unusual": true
+    },
+    {
+      "name": "textTau",
+      "unusual": true
+    },
+    {
+      "name": "textUpsilon",
+      "unusual": true
+    },
+    {
+      "name": "textPhi",
+      "unusual": true
+    },
+    {
+      "name": "textChi",
+      "unusual": true
+    },
+    {
+      "name": "textPsi",
+      "unusual": true
+    },
+    {
+      "name": "textOmega",
+      "unusual": true
+    },
+    {
+      "name": "textalpha",
+      "unusual": true
+    },
+    {
+      "name": "textbeta",
+      "unusual": true
+    },
+    {
+      "name": "textgamma",
+      "unusual": true
+    },
+    {
+      "name": "textdelta",
+      "unusual": true
+    },
+    {
+      "name": "textepsilon",
+      "unusual": true
+    },
+    {
+      "name": "textzeta",
+      "unusual": true
+    },
+    {
+      "name": "texteta",
+      "unusual": true
+    },
+    {
+      "name": "texttheta",
+      "unusual": true
+    },
+    {
+      "name": "textiota",
+      "unusual": true
+    },
+    {
+      "name": "textkappa",
+      "unusual": true
+    },
+    {
+      "name": "textlambda",
+      "unusual": true
+    },
+    {
+      "name": "textmu",
+      "unusual": true
+    },
+    {
+      "name": "textnu",
+      "unusual": true
+    },
+    {
+      "name": "textxi",
+      "unusual": true
+    },
+    {
+      "name": "textomicron",
+      "unusual": true
+    },
+    {
+      "name": "textpi",
+      "unusual": true
+    },
+    {
+      "name": "textrho",
+      "unusual": true
+    },
+    {
+      "name": "textsigma",
+      "unusual": true
+    },
+    {
+      "name": "textfinalsigma",
+      "unusual": true
+    },
+    {
+      "name": "textautosigma",
+      "unusual": true
+    },
+    {
+      "name": "texttau",
+      "unusual": true
+    },
+    {
+      "name": "textupsilon",
+      "unusual": true
+    },
+    {
+      "name": "textphi",
+      "unusual": true
+    },
+    {
+      "name": "textchi",
+      "unusual": true
+    },
+    {
+      "name": "textpsi",
+      "unusual": true
+    },
+    {
+      "name": "textomega",
+      "unusual": true
+    },
+    {
+      "name": "textpentedeka",
+      "unusual": true
+    },
+    {
+      "name": "textpentehekaton",
+      "unusual": true
+    },
+    {
+      "name": "textpenteqilioi",
+      "unusual": true
+    },
+    {
+      "name": "textstigma",
+      "unusual": true
+    },
+    {
+      "name": "textvarstigma",
+      "unusual": true
+    },
+    {
+      "name": "textKoppa",
+      "unusual": true
+    },
+    {
+      "name": "textkoppa",
+      "unusual": true
+    },
+    {
+      "name": "textqoppa",
+      "unusual": true
+    },
+    {
+      "name": "textQoppa",
+      "unusual": true
+    },
+    {
+      "name": "textStigma",
+      "unusual": true
+    },
+    {
+      "name": "textSampi",
+      "unusual": true
+    },
+    {
+      "name": "textsampi",
+      "unusual": true
+    },
+    {
+      "name": "textanoteleia",
+      "unusual": true
+    },
+    {
+      "name": "texterotimatiko",
+      "unusual": true
+    },
+    {
+      "name": "textdigamma",
+      "unusual": true
+    },
+    {
+      "name": "textDigamma",
+      "unusual": true
+    },
+    {
+      "name": "textdexiakeraia",
+      "unusual": true
+    },
+    {
+      "name": "textaristerikeraia",
+      "unusual": true
+    },
+    {
+      "name": "textvarsigma",
+      "unusual": true
+    },
+    {
+      "name": "textstigmagreek",
+      "unusual": true
+    },
+    {
+      "name": "textkoppagreek",
+      "unusual": true
+    },
+    {
+      "name": "textStigmagreek",
+      "unusual": true
+    },
+    {
+      "name": "textSampigreek",
+      "unusual": true
+    },
+    {
+      "name": "textsampigreek",
+      "unusual": true
+    },
+    {
+      "name": "textdigammagreek",
+      "unusual": true
+    },
+    {
+      "name": "textDigammagreek",
+      "unusual": true
+    },
+    {
+      "name": "textnumeralsigngreek",
+      "unusual": true
+    },
+    {
+      "name": "textnumeralsignlowergreek",
+      "unusual": true
+    },
+    {
+      "name": "textpentemuria",
+      "unusual": true
+    },
+    {
+      "name": "textpercent",
+      "unusual": true
+    },
+    {
+      "name": "textmicro",
+      "unusual": true
+    },
+    {
+      "name": "textschwa",
+      "unusual": true
+    },
+    {
+      "name": "textampersand"
+    },
+    {
+      "name": "accdialytika",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytika{${1:arg}}"
+      }
+    },
+    {
+      "name": "acctonos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "acctonos{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "prosgegrammeni",
+      "unusual": true
+    },
+    {
+      "name": "ypogegrammeni",
+      "unusual": true
+    },
+    {
+      "name": "accdialytikaperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdialytikatonos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikatonos{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdialytikavaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdialytikavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiavaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaoxia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaoxia{${1:a}}"
+      }
+    },
+    {
+      "name": "accpsiliperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsiliperispomeni{${1:a}}"
+      }
+    },
+    {
+      "name": "accpsilioxia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilioxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilivaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilivaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accinvertedbrevebelow",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accinvertedbrevebelow{${1:arg}}"
+      }
+    },
+    {
+      "name": "textsubarch",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsubarch{${1:arg}}"
+      }
+    },
+    {
+      "name": "accbrevebelow",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accbrevebelow{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiavaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiavaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "acctonos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "acctonos{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaoxia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaoxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilioxia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilioxia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsilivaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsilivaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasiaperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasiaperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsiliperispomeni",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsiliperispomeni{${1:arg}}"
+      }
+    },
+    {
+      "name": "accvaria",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accvaria{${1:arg}}"
+      }
+    },
+    {
+      "name": "accdasia",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accdasia{${1:arg}}"
+      }
+    },
+    {
+      "name": "accpsili",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "accpsili{${1:arg}}"
+      }
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

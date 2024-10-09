@@ -1,0 +1,27 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "upDelta",
+      "detail": "Δ",
+      "doc": "\\delta (-slantedgreek), \\mathrm{\\delta}, capital delta, greek"
+    },
+    {
+      "name": "upOmega",
+      "detail": "Ω",
+      "doc": "\\omega (-slantedgreek), \\mathrm{\\omega}, capital omega, greek"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/ccfonts#c": [
+      "standard-baselineskips",
+      "exscale",
+      "slantedGreek",
+      "boldsans"
+    ]
+  },
+  "args": [
+    "\\usepackage/ccfonts#c"
+  ]
+}

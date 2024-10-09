@@ -1,0 +1,27 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "StartFromTextArea"
+    },
+    {
+      "name": "StartFromHeaderArea"
+    },
+    {
+      "name": "ExpandTextArea"
+    },
+    {
+      "name": "ExpandTextArea",
+      "arg": {
+        "format": "[]",
+        "snippet": "ExpandTextArea[${1:hfm}]"
+      }
+    },
+    {
+      "name": "RestoreTextArea"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,482 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "micro"
+    },
+    {
+      "name": "V"
+    },
+    {
+      "name": "V",
+      "arg": {
+        "format": "[]",
+        "snippet": "V[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Volt"
+    },
+    {
+      "name": "Volt",
+      "arg": {
+        "format": "[]",
+        "snippet": "Volt[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Coulomb"
+    },
+    {
+      "name": "Coulomb",
+      "arg": {
+        "format": "[]",
+        "snippet": "Coulomb[${1:prefix}]"
+      }
+    },
+    {
+      "name": "esu"
+    },
+    {
+      "name": "Ohm"
+    },
+    {
+      "name": "Ohm",
+      "arg": {
+        "format": "[]",
+        "snippet": "Ohm[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Amp"
+    },
+    {
+      "name": "Amp",
+      "arg": {
+        "format": "[]",
+        "snippet": "Amp[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Farad"
+    },
+    {
+      "name": "Farad",
+      "arg": {
+        "format": "[]",
+        "snippet": "Farad[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Tesla"
+    },
+    {
+      "name": "Tesla",
+      "arg": {
+        "format": "[]",
+        "snippet": "Tesla[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Gauss"
+    },
+    {
+      "name": "Gauss",
+      "arg": {
+        "format": "[]",
+        "snippet": "Gauss[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Henry"
+    },
+    {
+      "name": "Henry",
+      "arg": {
+        "format": "[]",
+        "snippet": "Henry[${1:prefix}]"
+      }
+    },
+    {
+      "name": "eV"
+    },
+    {
+      "name": "eV",
+      "arg": {
+        "format": "[]",
+        "snippet": "eV[${1:prefix}]"
+      }
+    },
+    {
+      "name": "keV"
+    },
+    {
+      "name": "MeV"
+    },
+    {
+      "name": "J"
+    },
+    {
+      "name": "J",
+      "arg": {
+        "format": "[]",
+        "snippet": "J[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Joule"
+    },
+    {
+      "name": "Joule",
+      "arg": {
+        "format": "[]",
+        "snippet": "Joule[${1:prefix}]"
+      }
+    },
+    {
+      "name": "erg"
+    },
+    {
+      "name": "kcal"
+    },
+    {
+      "name": "Cal"
+    },
+    {
+      "name": "calorie"
+    },
+    {
+      "name": "calorie",
+      "arg": {
+        "format": "[]",
+        "snippet": "calorie[${1:prefix}]"
+      }
+    },
+    {
+      "name": "BTU"
+    },
+    {
+      "name": "tnt"
+    },
+    {
+      "name": "Watt"
+    },
+    {
+      "name": "Watt",
+      "arg": {
+        "format": "[]",
+        "snippet": "Watt[${1:prefix}]"
+      }
+    },
+    {
+      "name": "hpi"
+    },
+    {
+      "name": "hpm"
+    },
+    {
+      "name": "hp"
+    },
+    {
+      "name": "meter"
+    },
+    {
+      "name": "meter",
+      "arg": {
+        "format": "[]",
+        "snippet": "meter[${1:prefix}]"
+      }
+    },
+    {
+      "name": "m"
+    },
+    {
+      "name": "m",
+      "arg": {
+        "format": "[]",
+        "snippet": "m[${1:prefix}]"
+      }
+    },
+    {
+      "name": "km"
+    },
+    {
+      "name": "au"
+    },
+    {
+      "name": "pc"
+    },
+    {
+      "name": "pc",
+      "arg": {
+        "format": "[]",
+        "snippet": "pc[${1:prefix}]"
+      }
+    },
+    {
+      "name": "ly"
+    },
+    {
+      "name": "ly",
+      "arg": {
+        "format": "[]",
+        "snippet": "ly[${1:prefix}]"
+      }
+    },
+    {
+      "name": "cm"
+    },
+    {
+      "name": "nm"
+    },
+    {
+      "name": "ft"
+    },
+    {
+      "name": "inch"
+    },
+    {
+      "name": "mi"
+    },
+    {
+      "name": "s"
+    },
+    {
+      "name": "s",
+      "arg": {
+        "format": "[]",
+        "snippet": "s[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Sec"
+    },
+    {
+      "name": "Sec",
+      "arg": {
+        "format": "[]",
+        "snippet": "Sec[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Min"
+    },
+    {
+      "name": "h"
+    },
+    {
+      "name": "y"
+    },
+    {
+      "name": "y",
+      "arg": {
+        "format": "[]",
+        "snippet": "y[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Day"
+    },
+    {
+      "name": "gm"
+    },
+    {
+      "name": "gm",
+      "arg": {
+        "format": "[]",
+        "snippet": "gm[${1:prefix}]"
+      }
+    },
+    {
+      "name": "kg"
+    },
+    {
+      "name": "lb"
+    },
+    {
+      "name": "amu"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "N",
+      "arg": {
+        "format": "[]",
+        "snippet": "N[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Newton"
+    },
+    {
+      "name": "Newton",
+      "arg": {
+        "format": "[]",
+        "snippet": "Newton[${1:prefix}]"
+      }
+    },
+    {
+      "name": "dyne"
+    },
+    {
+      "name": "dyne",
+      "arg": {
+        "format": "[]",
+        "snippet": "dyne[${1:prefix}]"
+      }
+    },
+    {
+      "name": "lbf"
+    },
+    {
+      "name": "kmps"
+    },
+    {
+      "name": "kmph"
+    },
+    {
+      "name": "mps"
+    },
+    {
+      "name": "mps",
+      "arg": {
+        "format": "[]",
+        "snippet": "mps[${1:prefix}]"
+      }
+    },
+    {
+      "name": "miph"
+    },
+    {
+      "name": "kts"
+    },
+    {
+      "name": "mpss"
+    },
+    {
+      "name": "mpss",
+      "arg": {
+        "format": "[]",
+        "snippet": "mpss[${1:prefix}]"
+      }
+    },
+    {
+      "name": "gacc"
+    },
+    {
+      "name": "ftpss"
+    },
+    {
+      "name": "K"
+    },
+    {
+      "name": "K",
+      "arg": {
+        "format": "[]",
+        "snippet": "K[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Kelvin"
+    },
+    {
+      "name": "Kelvin",
+      "arg": {
+        "format": "[]",
+        "snippet": "Kelvin[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Celsius"
+    },
+    {
+      "name": "Celcius",
+      "unusual": true
+    },
+    {
+      "name": "centigrade",
+      "unusual": true
+    },
+    {
+      "name": "Rankine"
+    },
+    {
+      "name": "Fahrenheit"
+    },
+    {
+      "name": "rpm"
+    },
+    {
+      "name": "Hz"
+    },
+    {
+      "name": "Hz",
+      "arg": {
+        "format": "[]",
+        "snippet": "Hz[${1:prefix}]"
+      }
+    },
+    {
+      "name": "barP"
+    },
+    {
+      "name": "barP",
+      "arg": {
+        "format": "[]",
+        "snippet": "barP[${1:prefix}]"
+      }
+    },
+    {
+      "name": "atm"
+    },
+    {
+      "name": "Pa"
+    },
+    {
+      "name": "Pa",
+      "arg": {
+        "format": "[]",
+        "snippet": "Pa[${1:prefix}]"
+      }
+    },
+    {
+      "name": "mmHg"
+    },
+    {
+      "name": "inHg"
+    },
+    {
+      "name": "lbsi"
+    },
+    {
+      "name": "lbsf"
+    },
+    {
+      "name": "Ba"
+    },
+    {
+      "name": "Ba",
+      "arg": {
+        "format": "[]",
+        "snippet": "Ba[${1:prefix}]"
+      }
+    },
+    {
+      "name": "Torr"
+    },
+    {
+      "name": "Torr",
+      "arg": {
+        "format": "[]",
+        "snippet": "Torr[${1:prefix}]"
+      }
+    },
+    {
+      "name": "mol"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

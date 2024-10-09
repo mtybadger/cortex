@@ -1,0 +1,28 @@
+{
+  "deps": [
+    {
+      "name": "siunitx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "TblrNum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TblrNum{${1:number}}"
+      }
+    },
+    {
+      "name": "TblrUnit",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TblrUnit{${1:unit}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

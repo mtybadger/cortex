@@ -1,0 +1,129 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "listofitems"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    }
+  ],
+  "macros": [
+    {
+      "name": "TangramTikz",
+      "arg": {
+        "format": "{}",
+        "snippet": "TangramTikz{${1:tangram name}}"
+      }
+    },
+    {
+      "name": "TangramTikz<TikZ options>",
+      "arg": {
+        "format": "{}",
+        "snippet": "TangramTikz<TikZ options>{${1:tangram name}}"
+      }
+    },
+    {
+      "name": "TangramTikz",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "TangramTikz[${2:options%keyvals}]{${1:tangram name}}",
+        "keys": [
+          "\\begin{EnvTangramTikz},\\TangramTikz"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "TangramTikz",
+      "arg": {
+        "format": "[]<>{}",
+        "snippet": "TangramTikz[${2:options%keyvals}]<${3:TikZ options}>{${1:tangram name}}",
+        "keys": [
+          "\\begin{EnvTangramTikz},\\TangramTikz"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PieceTangram",
+      "arg": {
+        "format": "[](){}",
+        "snippet": "PieceTangram[${2:options%keyvals}](${3:x},${4:y}){${1:piece name}}",
+        "keys": [
+          "\\PieceTangram#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PieceTangram",
+      "arg": {
+        "format": "[]<>(){}",
+        "snippet": "PieceTangram[${2:options%keyvals}]<${3:TikZ options}>(${4:x},${5:y}){${1:piece name}}",
+        "keys": [
+          "\\PieceTangram#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "EnvTangramTikz"
+    },
+    {
+      "name": "EnvTangramTikz",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{EnvTangramTikz},\\TangramTikz"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "EnvTangramTikz",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "[${1:options%keyvals}]<${2:TikZ options}>",
+        "keys": [
+          "\\begin{EnvTangramTikz},\\TangramTikz"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{EnvTangramTikz},\\TangramTikz": [
+      "Puzzle",
+      "Correction",
+      "Color=",
+      "Couleur=",
+      "ColorCorrection",
+      "CorrectionCouleur",
+      "ColorList={${1:color1,color2,...}}",
+      "ListeCouleurs={${1:couleur1,couleur2,...}}",
+      "Sep="
+    ],
+    "\\PieceTangram#c": [
+      "TangPuzz",
+      "TangPuzz={${1:color}}",
+      "TangSol",
+      "TangSol={${1:color}}"
+    ]
+  },
+  "args": []
+}

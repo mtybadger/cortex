@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/couleurs-fr#c": [
+      "Prefixe"
+    ]
+  },
+  "args": [
+    "\\usepackage/couleurs-fr#c"
+  ]
+}

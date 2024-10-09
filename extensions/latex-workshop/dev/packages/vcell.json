@@ -1,0 +1,47 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "savecellbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "savecellbox{${1:content%text}}"
+      }
+    },
+    {
+      "name": "vcell",
+      "arg": {
+        "format": "{}",
+        "snippet": "vcell{${1:content%text}}"
+      }
+    },
+    {
+      "name": "savecellheight",
+      "unusual": true
+    },
+    {
+      "name": "printcelltop"
+    },
+    {
+      "name": "printcellmiddle"
+    },
+    {
+      "name": "printcellbottom"
+    },
+    {
+      "name": "resetcellcount"
+    },
+    {
+      "name": "rowheight"
+    },
+    {
+      "name": "rowht"
+    },
+    {
+      "name": "rowdp"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

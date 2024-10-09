@@ -1,0 +1,106 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "pict2e"
+    },
+    {
+      "name": "picture"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Circled",
+      "arg": {
+        "format": "{}",
+        "snippet": "Circled{${1:text}}"
+      }
+    },
+    {
+      "name": "Circled",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Circled[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\Circled,\\CircledTop,\\CircledText,\\CircledParamOpts"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CircledTop",
+      "arg": {
+        "format": "{}",
+        "snippet": "CircledTop{${1:text}}"
+      }
+    },
+    {
+      "name": "CircledTop",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "CircledTop[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\Circled,\\CircledTop,\\CircledText,\\CircledParamOpts"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CircledText",
+      "arg": {
+        "format": "{}",
+        "snippet": "CircledText{${1:text}}"
+      }
+    },
+    {
+      "name": "CircledText",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "CircledText[${2:options%keyvals}]{${1:text}}",
+        "keys": [
+          "\\Circled,\\CircledTop,\\CircledText,\\CircledParamOpts"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "cstep"
+    },
+    {
+      "name": "startcstep"
+    },
+    {
+      "name": "resetcstep"
+    },
+    {
+      "name": "thecstepcnt"
+    },
+    {
+      "name": "CircledParamOpts",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CircledParamOpts{${1:options%keyvals}}{0 or 1}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\Circled,\\CircledTop,\\CircledText,\\CircledParamOpts": [
+      "inner ysep=",
+      "inner xsep=",
+      "inner color=",
+      "outer color=",
+      "fill color="
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,92 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bnfprod",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bnfprod{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "bnfprod*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "bnfprod*{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "bnfmore",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bnfmore{${1:definition}}"
+      }
+    },
+    {
+      "name": "bnfmore*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "bnfmore*{${1:definition}}"
+      }
+    },
+    {
+      "name": "bnfpn",
+      "arg": {
+        "format": "{}",
+        "snippet": "bnfpn{${1:name}}"
+      }
+    },
+    {
+      "name": "bnfts",
+      "arg": {
+        "format": "{}",
+        "snippet": "bnfts{${1:string}}"
+      }
+    },
+    {
+      "name": "bnftd",
+      "arg": {
+        "format": "{}",
+        "snippet": "bnftd{${1:phrase}}"
+      }
+    },
+    {
+      "name": "bnfes"
+    },
+    {
+      "name": "bnfsk"
+    },
+    {
+      "name": "bnfor"
+    },
+    {
+      "name": "bnfsp"
+    },
+    {
+      "name": "bnfpo"
+    }
+  ],
+  "envs": [
+    {
+      "name": "bnf"
+    },
+    {
+      "name": "bnf*"
+    }
+  ],
+  "keys": {
+    "\\usepackage/backnaur#c": [
+      "perp",
+      "epsilon",
+      "tsrm",
+      "altpo"
+    ]
+  },
+  "args": [
+    "\\usepackage/backnaur#c"
+  ]
+}

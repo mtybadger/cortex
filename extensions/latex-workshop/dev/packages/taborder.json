@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setTabOrder",
+      "arg": {
+        "format": "{}",
+        "snippet": "setTabOrder{${1:order type%keyvals}}",
+        "keys": [
+          "\\setTabOrder#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setTabOrderByList"
+    },
+    {
+      "name": "setTabOrderByNumber"
+    },
+    {
+      "name": "setStructTabOrder",
+      "arg": {
+        "format": "{}",
+        "snippet": "setStructTabOrder{${1:object list}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/taborder#c": [
+      "structure"
+    ],
+    "\\setTabOrder#c": [
+      "c",
+      "C",
+      "r",
+      "R",
+      "s",
+      "S",
+      "w",
+      "W",
+      "a",
+      "A",
+      "unspecified"
+    ]
+  },
+  "args": [
+    "\\usepackage/taborder#c"
+  ]
+}

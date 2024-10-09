@@ -1,0 +1,77 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "glsnavhypertarget",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsnavhypertarget{${1:group-label}}{${2:group-title%text}}"
+      }
+    },
+    {
+      "name": "glsnavhypertarget",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "glsnavhypertarget[${3:glossary-label}]{${1:group-label}}{${2:group-title%text}}"
+      }
+    },
+    {
+      "name": "glsnavhypergroupdotarget",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "glsnavhypergroupdotarget{${1:glossary-label}}{${2:group-label}}{${3:group-title}}"
+      }
+    },
+    {
+      "name": "glsnavhyperlink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "glsnavhyperlink{${1:group-label}}{${2:group-title%text}}"
+      }
+    },
+    {
+      "name": "glsnavhyperlink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "glsnavhyperlink[${3:glossary-label}]{${1:group-label}}{${2:group-title%text}}"
+      }
+    },
+    {
+      "name": "glsnavhyperlinkname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "glsnavhyperlinkname{${1:group-label}}"
+      }
+    },
+    {
+      "name": "glsnavhyperlinkname",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "glsnavhyperlinkname[${2:glossary-label}]{${1:group-label}}"
+      }
+    },
+    {
+      "name": "glsnavigation"
+    },
+    {
+      "name": "glsnavigationitem",
+      "arg": {
+        "format": "{}",
+        "snippet": "glsnavigationitem{${1:group-label}}"
+      }
+    },
+    {
+      "name": "glshypernavsep",
+      "unusual": true
+    },
+    {
+      "name": "glssymbolnav",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

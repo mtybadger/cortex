@@ -1,0 +1,93 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setsepchar",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsepchar{${1:character}}"
+      }
+    },
+    {
+      "name": "setsepchar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setsepchar[${2:nested sep char}]{${1:character}}"
+      }
+    },
+    {
+      "name": "readlist",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "readlist{${1:cmd}}{${2:list}}"
+      }
+    },
+    {
+      "name": "readlist*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "readlist*{${1:cmd}}{${2:list}}"
+      }
+    },
+    {
+      "name": "greadlist",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "greadlist{${1:cmd}}{${2:list}}"
+      }
+    },
+    {
+      "name": "greadlist*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "greadlist*{${1:cmd}}{${2:list}}"
+      }
+    },
+    {
+      "name": "showitems",
+      "arg": {
+        "format": "{}",
+        "snippet": "showitems{${1:list cmd}}"
+      }
+    },
+    {
+      "name": "ignoreemptyitems",
+      "unusual": true
+    },
+    {
+      "name": "reademptyitems",
+      "unusual": true
+    },
+    {
+      "name": "itemtomacro",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "itemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
+      }
+    },
+    {
+      "name": "gitemtomacro",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "gitemtomacro{${1:list cmd}}[${3:index}]{${2:cmd}}"
+      }
+    },
+    {
+      "name": "listlen",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "listlen{${1:list cmd}}[${2:index}]"
+      }
+    },
+    {
+      "name": "defpair",
+      "arg": {
+        "format": "{}",
+        "snippet": "defpair{${1:<tok1><tok2>...}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,49 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "printbibshortfields"
+    },
+    {
+      "name": "printbibshortfields",
+      "arg": {
+        "format": "[]",
+        "snippet": "printbibshortfields[${1:options%keyvals}]",
+        "keys": [
+          "\\printbibshortfields"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "shortfieldswidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\printbibshortfields": [
+      "heading=${1:name}",
+      "title=${1:text}",
+      "label=",
+      "block=${1|none,space,par,nbpar,ragged|}",
+      "prenote=${1:name}",
+      "postnote=${1:name}",
+      "section=${1:integer}",
+      "segment=${1:integer}",
+      "type=${1:entrytype}",
+      "nottype=${1:entrytype}",
+      "subtype=${1:subtype}",
+      "notsubtype=${1:subtype}",
+      "keyword=${1:keyword}",
+      "notkeyword=${1:keyword}",
+      "category=${1:category}",
+      "notcategory=${1:category}",
+      "filter=${1:name}",
+      "resetnumbers=",
+      "omitnumbers",
+      "locallabelwidth"
+    ]
+  },
+  "args": []
+}

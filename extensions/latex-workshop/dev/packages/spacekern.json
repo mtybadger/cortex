@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "semicolon",
+      "detail": ";",
+      "doc": "Semicolon p:"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/spacekern#c": [
+      "noiwkern",
+      "noredef"
+    ]
+  },
+  "args": [
+    "\\usepackage/spacekern#c"
+  ]
+}

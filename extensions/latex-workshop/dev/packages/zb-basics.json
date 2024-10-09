@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "stmaryrd"
+    },
+    {
+      "name": "mathrsfs"
+    },
+    {
+      "name": "tikz-cd"
+    },
+    {
+      "name": "gensymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Aut"
+    },
+    {
+      "name": "Hom"
+    },
+    {
+      "name": "ran"
+    },
+    {
+      "name": "1"
+    },
+    {
+      "name": "fintsymbol",
+      "unusual": true
+    },
+    {
+      "name": "fint",
+      "detail": "⨏ (\"esint wrisym\" command)",
+      "doc": "Integral average with slash"
+    },
+    {
+      "name": "Sha"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

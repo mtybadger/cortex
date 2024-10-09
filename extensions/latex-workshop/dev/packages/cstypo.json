@@ -1,0 +1,39 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "ifluatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cstypoSingleLetterEnable"
+    },
+    {
+      "name": "cstypoSingleLetterDisable"
+    },
+    {
+      "name": "cstypoALetterEnable"
+    },
+    {
+      "name": "cstypoALetterDisable"
+    },
+    {
+      "name": "cstypoPercentsEnable"
+    },
+    {
+      "name": "cstypoPercentsDisable"
+    },
+    {
+      "name": "cstypoParagraphEnable"
+    },
+    {
+      "name": "cstypoParagraphDisable"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,63 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:word1,word2,...%text}}"
+      }
+    },
+    {
+      "name": "runningtitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "runningtitle{${1:text}}"
+      }
+    },
+    {
+      "name": "amssubj",
+      "arg": {
+        "format": "{}",
+        "snippet": "amssubj{${1:classifications}}"
+      }
+    },
+    {
+      "name": "authorfootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "authorfootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "keywordsname",
+      "unusual": true
+    },
+    {
+      "name": "runningtitlename",
+      "unusual": true
+    },
+    {
+      "name": "amssubjname",
+      "unusual": true
+    },
+    {
+      "name": "authorfnname",
+      "unusual": true
+    },
+    {
+      "name": "unmarkedfntext",
+      "arg": {
+        "format": "{}",
+        "snippet": "unmarkedfntext{${1:text}}"
+      }
+    },
+    {
+      "name": "footnotecomma",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

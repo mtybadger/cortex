@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { localize2 } from '../../../nls.js';
+import { localize2 } from 'vs/nls';
 
 export const Categories = Object.freeze({
 	View: localize2('view', 'View'),

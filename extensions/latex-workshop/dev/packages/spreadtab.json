@@ -1,0 +1,372 @@
+{
+  "deps": [
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "fp"
+    }
+  ],
+  "macros": [
+    {
+      "name": "STeol",
+      "arg": {
+        "format": "{}",
+        "snippet": "STeol{${1:macro}}"
+      }
+    },
+    {
+      "name": "STcopy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STcopy{${1:>x,vy}}{${2:formula}}"
+      }
+    },
+    {
+      "name": "STsetdecimalsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "STsetdecimalsep{${1:character}}"
+      }
+    },
+    {
+      "name": "STautoround",
+      "arg": {
+        "format": "{}",
+        "snippet": "STautoround{${1:number of digits}}"
+      }
+    },
+    {
+      "name": "STautoround*",
+      "arg": {
+        "format": "{}",
+        "snippet": "STautoround*{${1:number of digits}}"
+      }
+    },
+    {
+      "name": "hhline",
+      "arg": {
+        "format": "{}",
+        "snippet": "hhline{${1:colspec}}"
+      }
+    },
+    {
+      "name": "toprule"
+    },
+    {
+      "name": "toprule",
+      "arg": {
+        "format": "[]",
+        "snippet": "toprule[${1:line width%l}]"
+      }
+    },
+    {
+      "name": "midrule"
+    },
+    {
+      "name": "midrule",
+      "arg": {
+        "format": "[]",
+        "snippet": "midrule[${1:line width%l}]"
+      }
+    },
+    {
+      "name": "bottomrule"
+    },
+    {
+      "name": "bottomrule",
+      "arg": {
+        "format": "[]",
+        "snippet": "bottomrule[${1:line width%l}]"
+      }
+    },
+    {
+      "name": "cmidrule",
+      "arg": {
+        "format": "{}",
+        "snippet": "cmidrule{${1:a-b}}"
+      }
+    },
+    {
+      "name": "cmidrule",
+      "arg": {
+        "format": "(){}",
+        "snippet": "cmidrule(${2:trim}){${1:a-b}}"
+      }
+    },
+    {
+      "name": "cmidrule",
+      "arg": {
+        "format": "[](){}",
+        "snippet": "cmidrule[${2:line width%l}](${3:trim}){${1:a-b}}"
+      }
+    },
+    {
+      "name": "morecmidrules"
+    },
+    {
+      "name": "specialrule",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "specialrule{${1:line width%l}}{${2:above space}}{${3:below space}}"
+      }
+    },
+    {
+      "name": "addlinespace"
+    },
+    {
+      "name": "addlinespace",
+      "arg": {
+        "format": "[]",
+        "snippet": "addlinespace[${1:vspace}]"
+      }
+    },
+    {
+      "name": "SThiderow"
+    },
+    {
+      "name": "SThidecol"
+    },
+    {
+      "name": "STsavecell",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STsavecell{${1:cmd}}{${2:reference}}"
+      }
+    },
+    {
+      "name": "STsetdisplaymarks",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STsetdisplaymarks{${1:left-delim}}{${2:right-delim}}"
+      }
+    },
+    {
+      "name": "STtag",
+      "arg": {
+        "format": "{}",
+        "snippet": "STtag{${1:name}}"
+      }
+    },
+    {
+      "name": "STmakegtag",
+      "arg": {
+        "format": "{}",
+        "snippet": "STmakegtag{${1:name}}"
+      }
+    },
+    {
+      "name": "STmessage",
+      "arg": {
+        "format": "{}",
+        "snippet": "STmessage{${1:bool%keyvals}}",
+        "keys": [
+          "\\STmessage"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "STdebug",
+      "arg": {
+        "format": "{}",
+        "snippet": "STdebug{${1:option%keyvals}}",
+        "keys": [
+          "\\STdebug"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "STusefp",
+      "unusual": true
+    },
+    {
+      "name": "STusexfp",
+      "unusual": true
+    },
+    {
+      "name": "STtextcell",
+      "unusual": true
+    },
+    {
+      "name": "STnumericfieldmarker",
+      "unusual": true
+    },
+    {
+      "name": "STtransposecar",
+      "unusual": true
+    },
+    {
+      "name": "STprintnum",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "STprintnum{${1:arg}}"
+      }
+    },
+    {
+      "name": "STeval",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STeval{${1:variable%cmd}}{${2:expression}}"
+      }
+    },
+    {
+      "name": "STround",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "STround{${1:variable%cmd}}{${2:value}}{${3:digits}}"
+      }
+    },
+    {
+      "name": "STclip",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STclip{${1:variable%cmd}}{${2:value}}"
+      }
+    },
+    {
+      "name": "STtrunc",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "STtrunc{${1:variable%cmd}}{${2:value}}{${3:digits}}"
+      }
+    },
+    {
+      "name": "STadd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "STadd{${1:variable%cmd}}{${2:value1}}{${3:value2}}"
+      }
+    },
+    {
+      "name": "STmul",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "STmul{${1:variable%cmd}}{${2:value1}}{${3:value2}}"
+      }
+    },
+    {
+      "name": "STdiv",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "STdiv{${1:variable%cmd}}{${2:value1}}{${3:value2}}"
+      }
+    },
+    {
+      "name": "STseed",
+      "unusual": true
+    },
+    {
+      "name": "STrandom",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "STrandom{${1:variable%cmd}}"
+      }
+    },
+    {
+      "name": "STifzero",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "STifzero{${1:value}}"
+      }
+    },
+    {
+      "name": "STifgt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STifgt{${1:value1}}{${2:value2}}"
+      }
+    },
+    {
+      "name": "STiflt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STiflt{${1:value1}}{${2:value2}}"
+      }
+    },
+    {
+      "name": "STifeq",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STifeq{${1:value1}}{${2:value2}}"
+      }
+    },
+    {
+      "name": "STifint",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "STifint{${1:value}}"
+      }
+    },
+    {
+      "name": "STifneg",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "STifneg{${1:value}}"
+      }
+    },
+    {
+      "name": "STaddcol",
+      "unusual": true
+    },
+    {
+      "name": "STaddrow",
+      "unusual": true
+    },
+    {
+      "name": "STdatetonum",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "STdatetonum{${1:cmd}}{${2:jj}}{${3:mm}}{${4:aa}}"
+      }
+    },
+    {
+      "name": "STdisplaytab",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "spreadtab",
+      "arg": {
+        "format": "{{}{}}",
+        "snippet": "{{${1:envname}}{${2:preamble}}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/spreadtab#c": [
+      "fp",
+      "xfp"
+    ],
+    "\\STmessage": [
+      "true",
+      "false"
+    ],
+    "\\STdebug": [
+      "formula",
+      "text",
+      "code"
+    ]
+  },
+  "args": [
+    "\\usepackage/spreadtab#c"
+  ]
+}

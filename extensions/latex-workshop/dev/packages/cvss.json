@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cvssScore",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssScore{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "cvssScorepretty",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssScorepretty{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "cvssLevel",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssLevel{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "cvssLevelpretty",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssLevelpretty{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "cvssTag",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssTag{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "cvssPrint",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssPrint{${1:CVSS string}}"
+      }
+    },
+    {
+      "name": "category",
+      "arg": {
+        "format": "{}",
+        "snippet": "category{${1:CVSS score}}"
+      }
+    },
+    {
+      "name": "cvssFrame",
+      "arg": {
+        "format": "{}",
+        "snippet": "cvssFrame{${1:CVSS score}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

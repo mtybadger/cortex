@@ -3,18 +3,18 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import './media/gettingStarted.css';
-import { localize } from '../../../../nls.js';
-import { EditorInput } from '../../../common/editor/editorInput.js';
-import { URI } from '../../../../base/common/uri.js';
-import { Schemas } from '../../../../base/common/network.js';
-import { IUntypedEditorInput } from '../../../common/editor.js';
-import { IEditorOptions } from '../../../../platform/editor/common/editor.js';
+import 'vs/css!./media/gettingStarted';
+import { localize } from 'vs/nls';
+import { EditorInput } from 'vs/workbench/common/editor/editorInput';
+import { URI } from 'vs/base/common/uri';
+import { Schemas } from 'vs/base/common/network';
+import { IUntypedEditorInput } from 'vs/workbench/common/editor';
+import { IEditorOptions } from 'vs/platform/editor/common/editor';
 
 export const gettingStartedInputTypeId = 'workbench.editors.gettingStartedInput';
 
 export interface GettingStartedEditorOptions extends IEditorOptions {
-	selectedCategory?: string; selectedStep?: string; showTelemetryNotice?: boolean; showWelcome?: boolean;
+	selectedCategory?: string; selectedStep?: string; showTelemetryNotice?: boolean;
 }
 
 export class GettingStartedInput extends EditorInput {
@@ -62,7 +62,6 @@ export class GettingStartedInput extends EditorInput {
 		this.selectedCategory = options.selectedCategory;
 		this.selectedStep = options.selectedStep;
 		this.showTelemetryNotice = !!options.showTelemetryNotice;
-		this.showWelcome = options.showWelcome ?? true;
 	}
 
 	override getName() {
@@ -72,5 +71,4 @@ export class GettingStartedInput extends EditorInput {
 	selectedCategory: string | undefined;
 	selectedStep: string | undefined;
 	showTelemetryNotice: boolean;
-	showWelcome: boolean;
 }

@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "overlock"
+    },
+    {
+      "name": "overlockBlack"
+    },
+    {
+      "name": "liningnums",
+      "arg": {
+        "format": "{}",
+        "snippet": "liningnums{${1:text}}"
+      }
+    },
+    {
+      "name": "overlockfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/overlock#c": [
+      "scaled=${1:factor}",
+      "lining",
+      "oldstyle",
+      "default",
+      "sfdefault",
+      "type1",
+      "black"
+    ]
+  },
+  "args": [
+    "\\usepackage/overlock#c"
+  ]
+}

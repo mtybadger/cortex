@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pdfprivacy#c": [
+      "nodocdata",
+      "docdata",
+      "noproducerdata",
+      "producerdata",
+      "noeditdata",
+      "editdata",
+      "noptexdata",
+      "ptexdata",
+      "nopdftrailerid",
+      "pdftrailerid",
+      "all"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfprivacy#c"
+  ]
+}

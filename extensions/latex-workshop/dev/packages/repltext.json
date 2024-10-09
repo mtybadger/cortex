@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "repltext",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "repltext{${1:replacement text%text}}{${2:general text%text}}"
+      }
+    },
+    {
+      "name": "prevrepl"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

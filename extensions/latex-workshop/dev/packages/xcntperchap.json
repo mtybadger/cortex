@@ -1,0 +1,141 @@
+{
+  "deps": [
+    {
+      "name": "zref-counter"
+    },
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "xassoccnt"
+    }
+  ],
+  "macros": [
+    {
+      "name": "RegisterTrackCounter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RegisterTrackCounter{${1:track counter}}{${2:counter1,counter2,...}}"
+      }
+    },
+    {
+      "name": "RegisterMultipleTrackCounters",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RegisterMultipleTrackCounters{${1:trackcounter1,trackcounter2,...}}{${2:counter1,counter2,...}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValue",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObtainTrackedValue{${1:track level}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValue",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObtainTrackedValue[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValueExp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObtainTrackedValueExp{${1:track level}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValueExp",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObtainTrackedValueExp[${3:counter value}]{${1:track level}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "tracklabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "tracklabel{${1:label}}"
+      }
+    },
+    {
+      "name": "tracklabel",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tracklabel[${2:counter}]{${1:label}}"
+      }
+    },
+    {
+      "name": "tracklabel*",
+      "arg": {
+        "format": "{}",
+        "snippet": "tracklabel*{${1:label}}"
+      }
+    },
+    {
+      "name": "tracklabel*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tracklabel*[${2:counter}]{${1:label}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValueByLabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObtainTrackedValueByLabel{${1:label}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "ObtainTrackedValueByLabel",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObtainTrackedValueByLabel[${3:counter}]{${1:label}}{${2:tracked counter}}"
+      }
+    },
+    {
+      "name": "AddToTrackedCounters",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AddToTrackedCounters{${1:trackedcounter1,trackedcounter2,...}}{${2:counter value}}"
+      }
+    },
+    {
+      "name": "CloseTrackFileForWrite",
+      "unusual": true
+    },
+    {
+      "name": "GetStoredValues",
+      "unusual": true
+    },
+    {
+      "name": "LoadTrackedValues",
+      "unusual": true
+    },
+    {
+      "name": "OpenTrackFileForWrite",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "OpenTrackFileForWrite{${1:file}}"
+      }
+    },
+    {
+      "name": "StoreCounterValues",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "StoreCounterValues{${1:arg}}"
+      }
+    },
+    {
+      "name": "TrackCounters",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

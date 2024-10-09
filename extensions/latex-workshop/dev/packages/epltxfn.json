@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "expex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "everyfootnote"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AfterPackage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AfterPackage{${1:package}}{${2:commands}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

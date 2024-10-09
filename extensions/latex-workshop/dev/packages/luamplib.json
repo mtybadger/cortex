@@ -1,0 +1,256 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mplibforcehmode"
+    },
+    {
+      "name": "mplibnoforcehmode"
+    },
+    {
+      "name": "mpfig"
+    },
+    {
+      "name": "mpfig*"
+    },
+    {
+      "name": "endmpfig"
+    },
+    {
+      "name": "mpfiginstancename",
+      "unusual": true
+    },
+    {
+      "name": "mpliblegacybehavior",
+      "arg": {
+        "format": "{}",
+        "snippet": "mpliblegacybehavior{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "MPwidth"
+    },
+    {
+      "name": "MPheight"
+    },
+    {
+      "name": "MPllx"
+    },
+    {
+      "name": "MPlly"
+    },
+    {
+      "name": "MPurx"
+    },
+    {
+      "name": "MPury"
+    },
+    {
+      "name": "everymplib",
+      "arg": {
+        "format": "{}",
+        "snippet": "everymplib{${1:MetaPost code%definition}}"
+      }
+    },
+    {
+      "name": "everymplib",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "everymplib[${2:instance name}]{${1:MetaPost code%definition}}"
+      }
+    },
+    {
+      "name": "everyendmplib",
+      "arg": {
+        "format": "{}",
+        "snippet": "everyendmplib{${1:MetaPost code%definition}}"
+      }
+    },
+    {
+      "name": "everyendmplib",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "everyendmplib[${2:instance name}]{${1:MetaPost code%definition}}"
+      }
+    },
+    {
+      "name": "mpdim",
+      "arg": {
+        "format": "{}",
+        "snippet": "mpdim{${1:dimen%l}}"
+      }
+    },
+    {
+      "name": "mpcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "mpcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "mplibnumbersystem",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibnumbersystem{${1:type%keyvals}}",
+        "keys": [
+          "\\mplibnumbersystem#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mplibmakenocache",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibmakenocache{${1:file1,file2,...%file}}"
+      }
+    },
+    {
+      "name": "mplibcancelnocache",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibcancelnocache{${1:file1,file2,...%file}}"
+      }
+    },
+    {
+      "name": "mplibcachedir",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibcachedir{${1:directory path%definition}}"
+      }
+    },
+    {
+      "name": "mplibtextextlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibtextextlabel{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mplibcodeinherit",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibcodeinherit{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "currentmpinstancename"
+    },
+    {
+      "name": "mplibglobaltextext",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibglobaltextext{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mplibverbatim",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibverbatim{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mplibshowlog",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibshowlog{${1:choice%keyvals}}",
+        "keys": [
+          "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mplibsetformat",
+      "arg": {
+        "format": "{}",
+        "snippet": "mplibsetformat{${1:format name%keyvals}}",
+        "keys": [
+          "\\mplibsetformat#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "mplibcode"
+    },
+    {
+      "name": "mplibcode",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:instance name}]"
+      }
+    },
+    {
+      "name": "mppattern",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:name}}"
+      }
+    },
+    {
+      "name": "mppattern",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "{${1:name}}[${2:options%keyvals}]",
+        "keys": [
+          "\\begin{mppattern}"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "keys": {
+    "\\mpliblegacybehavior#c,\\mplibtextextlabel#c,\\mplibcodeinherit#c,\\mplibglobaltextext#c,\\mplibverbatim#c,\\mplibshowlog#c": [
+      "enable",
+      "disable"
+    ],
+    "\\mplibnumbersystem#c": [
+      "scaled",
+      "double",
+      "decimal"
+    ],
+    "\\begin{mppattern}": [
+      "xstep=${1:number}",
+      "ystep=${1:number}",
+      "xshift=${1:number}",
+      "yshift=${1:number}",
+      "bbox=\"${1:llx lly urx ury}\"",
+      "matrix=\"${1:xx xy yx yy}\"",
+      "resources=${1:PDF resources}",
+      "colored"
+    ],
+    "\\mplibsetformat#c": [
+      "plain",
+      "metafun"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,112 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "StopDoing",
+      "unusual": true
+    },
+    {
+      "name": "setdo",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setdo{${1:definition}}"
+      }
+    },
+    {
+      "name": "DoWithAllOf",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DoWithAllOf{${1:cmd}}{${2:<arg1><arg2>...<${3:argN}>}}"
+      }
+    },
+    {
+      "name": "DoDoWithAllOf",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DoDoWithAllOf{${1:<arg1><arg2>...<${2:argN}>}}"
+      }
+    },
+    {
+      "name": "DoWithAllIn",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DoWithAllIn{${1:cmd}}{${2:list macro}}"
+      }
+    },
+    {
+      "name": "DoDoWithAllIn",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DoDoWithAllIn{${1:list macro}}"
+      }
+    },
+    {
+      "name": "InitializeListMacro",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "InitializeListMacro{${1:list macro}}"
+      }
+    },
+    {
+      "name": "ReInitializeListMacro",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ReInitializeListMacro{${1:list macro}}"
+      }
+    },
+    {
+      "name": "ToListMacroAdd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ToListMacroAdd{${1:list macro}}{${2:cmd-or}}"
+      }
+    },
+    {
+      "name": "TestListMacroForToken",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TestListMacroForToken{${1:list macro}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "FromTokenListMacroRemove",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "FromTokenListMacroRemove{${1:list macro}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "InTokenListMacroProvide",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InTokenListMacroProvide{${1:list macro}}{${2:cmd}}"
+      }
+    },
+    {
+      "name": "ifltx",
+      "unusual": true
+    },
+    {
+      "name": "PushCatMakeLetterAt",
+      "unusual": true
+    },
+    {
+      "name": "PopLetterCatAt",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

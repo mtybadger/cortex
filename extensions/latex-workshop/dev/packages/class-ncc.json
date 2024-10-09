@@ -1,0 +1,225 @@
+{
+  "deps": [
+    {
+      "name": "dcounter"
+    },
+    {
+      "name": "makeidx"
+    },
+    {
+      "name": "nccbiblist"
+    },
+    {
+      "name": "nccheadings"
+    },
+    {
+      "name": "ncclatex"
+    },
+    {
+      "name": "nccold"
+    },
+    {
+      "name": "ncctitlepage"
+    },
+    {
+      "name": "tocenter"
+    },
+    {
+      "name": "topsection"
+    },
+    {
+      "name": "watermark"
+    },
+    {
+      "name": "ncctitle",
+      "if": "preprint"
+    },
+    {
+      "name": "afterpackage",
+      "if": "preprint"
+    },
+    {
+      "name": "ncctitle",
+      "if": "book"
+    },
+    {
+      "name": "ncctitle",
+      "if": "report"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setseries",
+      "if": "article",
+      "arg": {
+        "format": "{}",
+        "snippet": "setseries{${1:series%text}}"
+      }
+    },
+    {
+      "name": "theseries",
+      "if": "article",
+      "unusual": true
+    },
+    {
+      "name": "setvolume",
+      "if": "article",
+      "arg": {
+        "format": "{}",
+        "snippet": "setvolume{${1:volume%text}}"
+      }
+    },
+    {
+      "name": "thevolume",
+      "if": "article",
+      "unusual": true
+    },
+    {
+      "name": "setissue",
+      "if": "article",
+      "arg": {
+        "format": "{}",
+        "snippet": "setissue{${1:issue%text}}"
+      }
+    },
+    {
+      "name": "theissue",
+      "if": "article",
+      "unusual": true
+    },
+    {
+      "name": "preprintname",
+      "if": "preprint",
+      "unusual": true
+    },
+    {
+      "name": "preprint",
+      "if": "preprint",
+      "arg": {
+        "format": "{}",
+        "snippet": "preprint{${1:number}}"
+      }
+    },
+    {
+      "name": "thepreprint",
+      "if": "preprint",
+      "unusual": true
+    },
+    {
+      "name": "bookeditor",
+      "if": "book",
+      "arg": {
+        "format": "{}",
+        "snippet": "bookeditor{${1:text}}"
+      }
+    },
+    {
+      "name": "bookeditor",
+      "if": "report",
+      "arg": {
+        "format": "{}",
+        "snippet": "bookeditor{${1:text}}"
+      }
+    },
+    {
+      "name": "AuthorBeforeTitle"
+    },
+    {
+      "name": "TitleBeforeAuthor"
+    },
+    {
+      "name": "alloweqbreak"
+    },
+    {
+      "name": "noeqbreak"
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "thechapter",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "mit",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "printglossary"
+    },
+    {
+      "name": "setyear",
+      "arg": {
+        "format": "{}",
+        "snippet": "setyear{${1:year}}"
+      }
+    },
+    {
+      "name": "theyear",
+      "unusual": true
+    },
+    {
+      "name": "openrightorany"
+    }
+  ],
+  "envs": [
+    {
+      "name": "alloweqbreak",
+      "unusual": true
+    },
+    {
+      "name": "noeqbreak",
+      "unusual": true
+    },
+    {
+      "name": "theglossary"
+    }
+  ],
+  "keys": {
+    "\\documentclass/ncc#c": [
+      "a4paper",
+      "a5paper",
+      "a5a4paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "fittopage",
+      "10pt",
+      "11pt",
+      "12pt",
+      "14pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "openany",
+      "openright",
+      "onecolumn",
+      "twocolumn",
+      "openbib",
+      "article",
+      "preprint",
+      "book",
+      "report",
+      "centertags"
+    ]
+  },
+  "args": [
+    "\\documentclass/ncc#c"
+  ]
+}

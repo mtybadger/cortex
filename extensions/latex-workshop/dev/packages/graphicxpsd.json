@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "shellesc"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/graphicxpsd#c": [
+      "dvipdfmx",
+      "xetex",
+      "luatex",
+      "pdftex",
+      "sips",
+      "imagemagick",
+      "magick",
+      "convert",
+      "graphicsmagick",
+      "cache=${1|true,false|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/graphicxpsd#c"
+  ]
+}

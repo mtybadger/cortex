@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PstFrameBoxThreeD",
+      "arg": {
+        "format": "{}",
+        "snippet": "PstFrameBoxThreeD{${1:stuff%text}}"
+      }
+    },
+    {
+      "name": "PstFrameBoxThreeD",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PstFrameBoxThreeD[${2:options%keyvals}]{${1:stuff%text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

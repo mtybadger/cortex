@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "linebreakersetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "linebreakersetup{${1:options%keyvals}}",
+        "keys": [
+          "\\linebreakersetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "linebreakerenable"
+    },
+    {
+      "name": "linebreakerdisable"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\linebreakersetup": [
+      "maxcycles=${1:number}",
+      "maxemergencystretch=",
+      "maxtolerance=${1:number}",
+      "cubic",
+      "debug"
+    ]
+  },
+  "args": []
+}

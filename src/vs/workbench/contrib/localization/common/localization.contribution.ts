@@ -3,16 +3,16 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Disposable } from '../../../../base/common/lifecycle.js';
-import { localize } from '../../../../nls.js';
-import { registerAction2 } from '../../../../platform/actions/common/actions.js';
-import { IExtensionManifest } from '../../../../platform/extensions/common/extensions.js';
-import { SyncDescriptor } from '../../../../platform/instantiation/common/descriptors.js';
-import { Registry } from '../../../../platform/registry/common/platform.js';
-import { IWorkbenchContribution } from '../../../common/contributions.js';
-import { ClearDisplayLanguageAction, ConfigureDisplayLanguageAction } from './localizationsActions.js';
-import { IExtensionFeatureTableRenderer, IRenderedData, ITableData, IRowData, IExtensionFeaturesRegistry, Extensions } from '../../../services/extensionManagement/common/extensionFeatures.js';
-import { ExtensionsRegistry } from '../../../services/extensions/common/extensionsRegistry.js';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { localize } from 'vs/nls';
+import { registerAction2 } from 'vs/platform/actions/common/actions';
+import { IExtensionManifest } from 'vs/platform/extensions/common/extensions';
+import { SyncDescriptor } from 'vs/platform/instantiation/common/descriptors';
+import { Registry } from 'vs/platform/registry/common/platform';
+import { IWorkbenchContribution } from 'vs/workbench/common/contributions';
+import { ClearDisplayLanguageAction, ConfigureDisplayLanguageAction } from 'vs/workbench/contrib/localization/common/localizationsActions';
+import { IExtensionFeatureTableRenderer, IRenderedData, ITableData, IRowData, IExtensionFeaturesRegistry, Extensions } from 'vs/workbench/services/extensionManagement/common/extensionFeatures';
+import { ExtensionsRegistry } from 'vs/workbench/services/extensions/common/extensionsRegistry';
 
 export class BaseLocalizationWorkbenchContribution extends Disposable implements IWorkbenchContribution {
 	constructor() {
@@ -56,9 +56,9 @@ export class BaseLocalizationWorkbenchContribution extends Disposable implements
 								properties: {
 									id: {
 										type: 'string',
-										description: localize('vscode.extension.contributes.localizations.translations.id', "Id of VS Code or Extension for which this translation is contributed to. Id of VS Code is always `vscode` and of extension should be in format `publisherId.extensionName`."),
+										description: localize('vscode.extension.contributes.localizations.translations.id', "Id of Cortex or Extension for which this translation is contributed to. Id of Cortex is always `vscode` and of extension should be in format `publisherId.extensionName`."),
 										pattern: '^((vscode)|([a-z0-9A-Z][a-z0-9A-Z-]*)\\.([a-z0-9A-Z][a-z0-9A-Z-]*))$',
-										patternErrorMessage: localize('vscode.extension.contributes.localizations.translations.id.pattern', "Id should be `vscode` or in format `publisherId.extensionName` for translating VS code or an extension respectively.")
+										patternErrorMessage: localize('vscode.extension.contributes.localizations.translations.id.pattern', "Id should be `vscode` or in format `publisherId.extensionName` for translating Cortex or an extension respectively.")
 									},
 									path: {
 										type: 'string',

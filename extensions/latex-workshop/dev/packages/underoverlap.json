@@ -1,0 +1,93 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "mathtools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "UOLoverbrace",
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLoverbrace{${1:arg}}"
+      }
+    },
+    {
+      "name": "UOLoverbrace",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "UOLoverbrace{${1:arg}}[${2:overlap arg}]"
+      }
+    },
+    {
+      "name": "UOLunderbrace",
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLunderbrace{${1:arg}}"
+      }
+    },
+    {
+      "name": "UOLunderbrace",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "UOLunderbrace{${1:arg}}[${2:overlap arg}]"
+      }
+    },
+    {
+      "name": "UOLoverline",
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLoverline{${1:arg}}"
+      }
+    },
+    {
+      "name": "UOLoverline",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "UOLoverline{${1:arg}}[${2:overlap arg}]"
+      }
+    },
+    {
+      "name": "UOLunderline",
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLunderline{${1:arg}}"
+      }
+    },
+    {
+      "name": "UOLunderline",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "UOLunderline{${1:arg}}[${2:overlap arg}]"
+      }
+    },
+    {
+      "name": "newUOLdecorator",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newUOLdecorator{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "UOLaugment",
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLaugment{${1:cmd}}"
+      }
+    },
+    {
+      "name": "UOLunaugment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "UOLunaugment{${1:cmd}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

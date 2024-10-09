@@ -1,0 +1,142 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "mdframed"
+    },
+    {
+      "name": "fancyvrb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tkzexamplebox",
+      "unusual": true
+    },
+    {
+      "name": "tkzexamplewidth",
+      "unusual": true
+    },
+    {
+      "name": "tkzFileSavedPrefix",
+      "unusual": true
+    },
+    {
+      "name": "tkzltxexamplebox",
+      "unusual": true
+    },
+    {
+      "name": "tkzltxexamplewidth",
+      "unusual": true
+    },
+    {
+      "name": "tkzref",
+      "unusual": true
+    },
+    {
+      "name": "tkzSavedCode",
+      "unusual": true
+    },
+    {
+      "name": "tkzSavedCode",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "tkzSavedCode[${1:prefix=prefix}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "tkzexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{tkzexample}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzltxexample",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{tkzltxexample}#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/tkzexample#c": [
+      "saved"
+    ],
+    "\\begin{tkzexample}#c": [
+      "execute code",
+      "show num",
+      "overhang",
+      "code only",
+      "width=",
+      "code=",
+      "graphic=",
+      "overhang",
+      "num",
+      "numcolor=",
+      "numbkgcolor=",
+      "global num",
+      "code style=${1:font commands}",
+      "normal",
+      "small",
+      "very small",
+      "right margin=",
+      "left margin=",
+      "inner left margin=",
+      "inner right margin=",
+      "inner top margin=",
+      "inner bottom margin=",
+      "line frame width=",
+      "frame code=",
+      "frame tex=",
+      "above skip=",
+      "below skip=",
+      "hsep=",
+      "pre=${1:code}",
+      "post=${1:code}",
+      "latex=",
+      "vbox"
+    ],
+    "\\begin{tkzltxexample}#c": [
+      "width=",
+      "code=",
+      "show num",
+      "num",
+      "global num",
+      "numcolor=",
+      "numbkgcolor=",
+      "normal",
+      "small",
+      "very small",
+      "right margin",
+      "left margin=",
+      "inner left margin=",
+      "inner right margin=",
+      "inner top margin=",
+      "inner bottom margin=",
+      "line frame width=",
+      "hsep=",
+      "typeset listing",
+      "frame code=",
+      "ignorespaces",
+      "leave comments",
+      "vbox"
+    ]
+  },
+  "args": [
+    "\\usepackage/tkzexample#c"
+  ]
+}

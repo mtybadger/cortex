@@ -1,0 +1,30 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "oldstyle"
+    },
+    {
+      "name": "textos",
+      "arg": {
+        "format": "{}",
+        "snippet": "textos{${1:text}}"
+      }
+    },
+    {
+      "name": "mathos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mathos{${1:text}}"
+      }
+    },
+    {
+      "name": "oldstylefamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

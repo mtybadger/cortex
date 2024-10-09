@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "floatpagestyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "floatpagestyle{${1:style}}"
+      }
+    },
+    {
+      "name": "emptyfloatpage"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

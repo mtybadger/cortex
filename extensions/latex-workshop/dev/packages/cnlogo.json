@@ -1,0 +1,2956 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ahulogo",
+      "if": "ahu"
+    },
+    {
+      "name": "ahulogo",
+      "if": "ahu",
+      "arg": {
+        "format": "[]",
+        "snippet": "ahulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "ahulogo",
+      "if": "ahu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ahulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hgyulogo",
+      "if": "ahu"
+    },
+    {
+      "name": "hgyulogo",
+      "if": "ahu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hgyulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hgyulogo",
+      "if": "ahu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hgyulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bhulogo",
+      "if": "bhu"
+    },
+    {
+      "name": "bhulogo",
+      "if": "bhu",
+      "arg": {
+        "format": "[]",
+        "snippet": "bhulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "bhulogo",
+      "if": "bhu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bhulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bjtuwhole",
+      "if": "bjtu"
+    },
+    {
+      "name": "bjtuwhole",
+      "if": "bjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "bjtuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "bjtuwhole",
+      "if": "bjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bjtuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bjtulogo",
+      "if": "bjtu"
+    },
+    {
+      "name": "bjtulogo",
+      "if": "bjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "bjtulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "bjtulogo",
+      "if": "bjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bjtulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bjtutext",
+      "if": "bjtu"
+    },
+    {
+      "name": "bjtutext",
+      "if": "bjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "bjtutext[${1:color}]"
+      }
+    },
+    {
+      "name": "bjtutext",
+      "if": "bjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bjtutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bjydulogo",
+      "if": "bjydu"
+    },
+    {
+      "name": "bjydulogo",
+      "if": "bjydu",
+      "arg": {
+        "format": "[]",
+        "snippet": "bjydulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "bjydulogo",
+      "if": "bjydu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bjydulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "bnuwhole",
+      "if": "bnu"
+    },
+    {
+      "name": "bnuwhole",
+      "if": "bnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bnuwhole[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "bnuwhole",
+      "if": "bnu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "bnuwhole[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "bnulogo",
+      "if": "bnu"
+    },
+    {
+      "name": "bnulogo",
+      "if": "bnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bnulogo[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "bnulogo",
+      "if": "bnu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "bnulogo[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "bnutext",
+      "if": "bnu"
+    },
+    {
+      "name": "bnutext",
+      "if": "bnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "bnutext[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "bnutext",
+      "if": "bnu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "bnutext[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "chulogo",
+      "if": "chu"
+    },
+    {
+      "name": "chulogo",
+      "if": "chu",
+      "arg": {
+        "format": "[]",
+        "snippet": "chulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "chulogo",
+      "if": "chu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "chulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ckyulogo",
+      "if": "ckyu"
+    },
+    {
+      "name": "ckyulogo",
+      "if": "ckyu",
+      "arg": {
+        "format": "[]",
+        "snippet": "ckyulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "ckyulogo",
+      "if": "ckyu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ckyulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "csulogo",
+      "if": "csu"
+    },
+    {
+      "name": "csulogo",
+      "if": "csu",
+      "arg": {
+        "format": "[]",
+        "snippet": "csulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "csulogo",
+      "if": "csu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "csulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "cuglogo",
+      "if": "cug"
+    },
+    {
+      "name": "cuglogo",
+      "if": "cug",
+      "arg": {
+        "format": "[]",
+        "snippet": "cuglogo[${1:color}]"
+      }
+    },
+    {
+      "name": "cuglogo",
+      "if": "cug",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cuglogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "cupslwhole",
+      "if": "cupsl"
+    },
+    {
+      "name": "cupslwhole",
+      "if": "cupsl",
+      "arg": {
+        "format": "[]",
+        "snippet": "cupslwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "cupslwhole",
+      "if": "cupsl",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cupslwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "cupsllogo",
+      "if": "cupsl"
+    },
+    {
+      "name": "cupsllogo",
+      "if": "cupsl",
+      "arg": {
+        "format": "[]",
+        "snippet": "cupsllogo[${1:color}]"
+      }
+    },
+    {
+      "name": "cupsllogo",
+      "if": "cupsl",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cupsllogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "cupsltext",
+      "if": "cupsl"
+    },
+    {
+      "name": "cupsltext",
+      "if": "cupsl",
+      "arg": {
+        "format": "[]",
+        "snippet": "cupsltext[${1:color}]"
+      }
+    },
+    {
+      "name": "cupsltext",
+      "if": "cupsl",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cupsltext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "dbcjulogo",
+      "if": "dbcju"
+    },
+    {
+      "name": "dbcjulogo",
+      "if": "dbcju",
+      "arg": {
+        "format": "[]",
+        "snippet": "dbcjulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "dbcjulogo",
+      "if": "dbcju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "dbcjulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "dllguwhole",
+      "if": "dllgu"
+    },
+    {
+      "name": "dllguwhole",
+      "if": "dllgu",
+      "arg": {
+        "format": "[]",
+        "snippet": "dllguwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "dllguwhole",
+      "if": "dllgu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "dllguwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "dllgulogo",
+      "if": "dllgu"
+    },
+    {
+      "name": "dllgulogo",
+      "if": "dllgu",
+      "arg": {
+        "format": "[]",
+        "snippet": "dllgulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "dllgulogo",
+      "if": "dllgu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "dllgulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "dllgutext",
+      "if": "dllgu"
+    },
+    {
+      "name": "dllgutext",
+      "if": "dllgu",
+      "arg": {
+        "format": "[]",
+        "snippet": "dllgutext[${1:color}]"
+      }
+    },
+    {
+      "name": "dllgutext",
+      "if": "dllgu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "dllgutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "fdulogo",
+      "if": "fdu"
+    },
+    {
+      "name": "fdulogo",
+      "if": "fdu",
+      "arg": {
+        "format": "[]",
+        "snippet": "fdulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "fdulogo",
+      "if": "fdu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fdulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "fdutext",
+      "if": "fdu"
+    },
+    {
+      "name": "fdutext",
+      "if": "fdu",
+      "arg": {
+        "format": "[]",
+        "snippet": "fdutext[${1:color}]"
+      }
+    },
+    {
+      "name": "fdutext",
+      "if": "fdu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fdutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "gnulogo",
+      "if": "gnu"
+    },
+    {
+      "name": "fdutext",
+      "if": "gnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "fdutext[${1:color}]"
+      }
+    },
+    {
+      "name": "fdutext",
+      "if": "gnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fdutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "gnutext",
+      "if": "gnu"
+    },
+    {
+      "name": "fdutext",
+      "if": "gnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "fdutext[${1:color}]"
+      }
+    },
+    {
+      "name": "fdutext",
+      "if": "gnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "fdutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "gufswhole",
+      "if": "gufs"
+    },
+    {
+      "name": "gufswhole",
+      "if": "gufs",
+      "arg": {
+        "format": "[][]",
+        "snippet": "gufswhole[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "gufswhole",
+      "if": "gufs",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "gufswhole[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "gufslogo",
+      "if": "gufs"
+    },
+    {
+      "name": "gufslogo",
+      "if": "gufs",
+      "arg": {
+        "format": "[][]",
+        "snippet": "gufslogo[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "gufslogo",
+      "if": "gufs",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "gufslogo[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "gufstext",
+      "if": "gufs"
+    },
+    {
+      "name": "gufstext",
+      "if": "gufs",
+      "arg": {
+        "format": "[]",
+        "snippet": "gufstext[${1:color}]"
+      }
+    },
+    {
+      "name": "gufstext",
+      "if": "gufs",
+      "arg": {
+        "format": "[][]",
+        "snippet": "gufstext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hbulogo",
+      "if": "hbu"
+    },
+    {
+      "name": "hbulogo",
+      "if": "hbu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hbulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hbulogo",
+      "if": "hbu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hbulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hdsfulogo",
+      "if": "hdsfu"
+    },
+    {
+      "name": "hdsfulogo",
+      "if": "hdsfu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hdsfulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hdsfulogo",
+      "if": "hdsfu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hdsfulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hdzfuwhole",
+      "if": "hdzfu"
+    },
+    {
+      "name": "hdzfuwhole",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hdzfuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "hdzfuwhole",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hdzfuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hdzfulogo",
+      "if": "hdzfu"
+    },
+    {
+      "name": "hdzfulogo",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hdzfulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hdzfulogo",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hdzfulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hdzfutext",
+      "if": "hdzfu"
+    },
+    {
+      "name": "hdzfutext",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hdzfutext[${1:color}]"
+      }
+    },
+    {
+      "name": "hdzfutext",
+      "if": "hdzfu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hdzfutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hhuwhole",
+      "if": "hhu"
+    },
+    {
+      "name": "hhuwhole",
+      "if": "hhu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hhuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "hhuwhole",
+      "if": "hhu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hhuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hhulogo",
+      "if": "hhu"
+    },
+    {
+      "name": "hhulogo",
+      "if": "hhu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hhulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hhulogo",
+      "if": "hhu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hhulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hhutext",
+      "if": "hhu"
+    },
+    {
+      "name": "hhutext",
+      "if": "hhu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hhutext[${1:color}]"
+      }
+    },
+    {
+      "name": "hhutext",
+      "if": "hhu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hhutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hitwhole",
+      "if": "hit"
+    },
+    {
+      "name": "hitwhole",
+      "if": "hit",
+      "arg": {
+        "format": "[]",
+        "snippet": "hitwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "hitwhole",
+      "if": "hit",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hitwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hitside",
+      "if": "hit"
+    },
+    {
+      "name": "hitside",
+      "if": "hit",
+      "arg": {
+        "format": "[]",
+        "snippet": "hitside[${1:color}]"
+      }
+    },
+    {
+      "name": "hitside",
+      "if": "hit",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hitside[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hitlogo",
+      "if": "hit"
+    },
+    {
+      "name": "hitlogo",
+      "if": "hit",
+      "arg": {
+        "format": "[]",
+        "snippet": "hitlogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hitlogo",
+      "if": "hit",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hitlogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hittext",
+      "if": "hit"
+    },
+    {
+      "name": "hittext",
+      "if": "hit",
+      "arg": {
+        "format": "[]",
+        "snippet": "hittext[${1:color}]"
+      }
+    },
+    {
+      "name": "hittext",
+      "if": "hit",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hittext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hitjt",
+      "if": "hit"
+    },
+    {
+      "name": "hitjt",
+      "if": "hit",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hitjt[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "hitjt",
+      "if": "hit",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "hitjt[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "hnlguwhole",
+      "if": "hnlgu"
+    },
+    {
+      "name": "hnlgulogo",
+      "if": "hnlgu"
+    },
+    {
+      "name": "hnlgutext",
+      "if": "hnlgu"
+    },
+    {
+      "name": "hnnutext",
+      "if": "hnnu"
+    },
+    {
+      "name": "hnnutext",
+      "if": "hnnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hnnutext[${1:color}]"
+      }
+    },
+    {
+      "name": "hnnutext",
+      "if": "hnnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hnnutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hnnulogo",
+      "if": "hnnu"
+    },
+    {
+      "name": "hnnulogo",
+      "if": "hnnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hnnulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hnnulogo",
+      "if": "hnnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hnnulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hnuwhole",
+      "if": "hnu"
+    },
+    {
+      "name": "hnuwhole",
+      "if": "hnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hnuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "hnuwhole",
+      "if": "hnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hnuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hnutext",
+      "if": "hnu"
+    },
+    {
+      "name": "hnutext",
+      "if": "hnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hnutext[${1:color}]"
+      }
+    },
+    {
+      "name": "hnutext",
+      "if": "hnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hnutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hnulogo",
+      "if": "hnu"
+    },
+    {
+      "name": "hnulogo",
+      "if": "hnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hnulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hnulogo",
+      "if": "hnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hnulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hustcwhole",
+      "if": "hustc"
+    },
+    {
+      "name": "hustcwhole",
+      "if": "hustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "hustcwhole[${1:scale}]"
+      }
+    },
+    {
+      "name": "hustcwhole",
+      "if": "hustc",
+      "arg": {
+        "format": "[][][][]",
+        "snippet": "hustcwhole[${1:scale}][${2:color1}][${3:color2}][${4:color3}]"
+      }
+    },
+    {
+      "name": "hustclogo",
+      "if": "hustc"
+    },
+    {
+      "name": "hustclogo",
+      "if": "hustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "hustclogo[${1:scale}]"
+      }
+    },
+    {
+      "name": "hustclogo",
+      "if": "hustc",
+      "arg": {
+        "format": "[][][][]",
+        "snippet": "hustclogo[${1:scale}][${2:color1}][${3:color2}][${4:color3}]"
+      }
+    },
+    {
+      "name": "hustctext",
+      "if": "hustc"
+    },
+    {
+      "name": "hustctext",
+      "if": "hustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "hustctext[${1:scale}]"
+      }
+    },
+    {
+      "name": "hustctext",
+      "if": "hustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hustctext[${1:scale}][${2:color}]"
+      }
+    },
+    {
+      "name": "hznuwhole",
+      "if": "hznu"
+    },
+    {
+      "name": "hznuwhole",
+      "if": "hznu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hznuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "hznuwhole",
+      "if": "hznu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hznuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hznulogo",
+      "if": "hznu"
+    },
+    {
+      "name": "hznulogo",
+      "if": "hznu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hznulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "hznulogo",
+      "if": "hznu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hznulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "hznutext",
+      "if": "hznu"
+    },
+    {
+      "name": "hznutext",
+      "if": "hznu",
+      "arg": {
+        "format": "[]",
+        "snippet": "hznutext[${1:color}]"
+      }
+    },
+    {
+      "name": "hznutext",
+      "if": "hznu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "hznutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "jlulogo",
+      "if": "jlu"
+    },
+    {
+      "name": "jlulogo",
+      "if": "jlu",
+      "arg": {
+        "format": "[]",
+        "snippet": "jlulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "jlulogo",
+      "if": "jlu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "jlulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "jnuwhole",
+      "if": "jnu"
+    },
+    {
+      "name": "jnuwhole",
+      "if": "jnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "jnuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "jnuwhole",
+      "if": "jnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "jnuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "jnulogo",
+      "if": "jnu"
+    },
+    {
+      "name": "jnulogo",
+      "if": "jnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "jnulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "jnulogo",
+      "if": "jnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "jnulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "jnutext",
+      "if": "jnu"
+    },
+    {
+      "name": "jnutext",
+      "if": "jnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "jnutext[${1:color}]"
+      }
+    },
+    {
+      "name": "jnutext",
+      "if": "jnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "jnutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "julogo",
+      "if": "ju"
+    },
+    {
+      "name": "julogo",
+      "if": "ju",
+      "arg": {
+        "format": "[]",
+        "snippet": "julogo[${1:color}]"
+      }
+    },
+    {
+      "name": "julogo",
+      "if": "ju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "julogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "lzuwhole",
+      "if": "lzu"
+    },
+    {
+      "name": "lzuwhole",
+      "if": "lzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "lzuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "lzuwhole",
+      "if": "lzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "lzuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "lzulogo",
+      "if": "lzu"
+    },
+    {
+      "name": "lzulogo",
+      "if": "lzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "lzulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "lzulogo",
+      "if": "lzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "lzulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "lzutext",
+      "if": "lzu"
+    },
+    {
+      "name": "lzutext",
+      "if": "lzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "lzutext[${1:color}]"
+      }
+    },
+    {
+      "name": "lzutext",
+      "if": "lzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "lzutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "mucwhole",
+      "if": "muc"
+    },
+    {
+      "name": "mucwhole",
+      "if": "muc",
+      "arg": {
+        "format": "[]",
+        "snippet": "mucwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "mucwhole",
+      "if": "muc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "mucwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "muclogo",
+      "if": "muc"
+    },
+    {
+      "name": "muclogo",
+      "if": "muc",
+      "arg": {
+        "format": "[]",
+        "snippet": "muclogo[${1:color}]"
+      }
+    },
+    {
+      "name": "muclogo",
+      "if": "muc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "muclogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "muctext",
+      "if": "muc"
+    },
+    {
+      "name": "muctext",
+      "if": "muc",
+      "arg": {
+        "format": "[]",
+        "snippet": "muctext[${1:color}]"
+      }
+    },
+    {
+      "name": "muctext",
+      "if": "muc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "muctext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "nculogo",
+      "if": "ncu"
+    },
+    {
+      "name": "nculogo",
+      "if": "ncu",
+      "arg": {
+        "format": "[]",
+        "snippet": "nculogo[${1:color}]"
+      }
+    },
+    {
+      "name": "nculogo",
+      "if": "ncu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "nculogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ncutext",
+      "if": "ncu"
+    },
+    {
+      "name": "ncutext",
+      "if": "ncu",
+      "arg": {
+        "format": "[]",
+        "snippet": "ncutext[${1:color}]"
+      }
+    },
+    {
+      "name": "ncutext",
+      "if": "ncu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ncutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "neuwhole",
+      "if": "neu"
+    },
+    {
+      "name": "neuwhole",
+      "if": "neu",
+      "arg": {
+        "format": "[]",
+        "snippet": "neuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "neuwhole",
+      "if": "neu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "neuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "neulogo",
+      "if": "neu"
+    },
+    {
+      "name": "neulogo",
+      "if": "neu",
+      "arg": {
+        "format": "[]",
+        "snippet": "neulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "neulogo",
+      "if": "neu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "neulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "neutext",
+      "if": "neu"
+    },
+    {
+      "name": "neutext",
+      "if": "neu",
+      "arg": {
+        "format": "[]",
+        "snippet": "neutext[${1:color}]"
+      }
+    },
+    {
+      "name": "neutext",
+      "if": "neu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "neutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "njuwhole",
+      "if": "nju"
+    },
+    {
+      "name": "njuwhole",
+      "if": "nju",
+      "arg": {
+        "format": "[]",
+        "snippet": "njuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "njuwhole",
+      "if": "nju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "njuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "njulogo",
+      "if": "nju"
+    },
+    {
+      "name": "njulogo",
+      "if": "nju",
+      "arg": {
+        "format": "[]",
+        "snippet": "njulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "njulogo",
+      "if": "nju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "njulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "njutext",
+      "if": "nju"
+    },
+    {
+      "name": "njutext",
+      "if": "nju",
+      "arg": {
+        "format": "[]",
+        "snippet": "njutext[${1:color}]"
+      }
+    },
+    {
+      "name": "njutext",
+      "if": "nju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "njutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "njustwhole",
+      "if": "njust"
+    },
+    {
+      "name": "njustwhole",
+      "if": "njust",
+      "arg": {
+        "format": "[]",
+        "snippet": "njustwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "njustwhole",
+      "if": "njust",
+      "arg": {
+        "format": "[][]",
+        "snippet": "njustwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "nkuwhole",
+      "if": "nku"
+    },
+    {
+      "name": "nkuwhole",
+      "if": "nku",
+      "arg": {
+        "format": "[]",
+        "snippet": "nkuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "nkuwhole",
+      "if": "nku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "nkuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "nkulogo",
+      "if": "nku"
+    },
+    {
+      "name": "nkulogo",
+      "if": "nku",
+      "arg": {
+        "format": "[]",
+        "snippet": "nkulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "nkulogo",
+      "if": "nku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "nkulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "nkutext",
+      "if": "nku"
+    },
+    {
+      "name": "nkutext",
+      "if": "nku",
+      "arg": {
+        "format": "[]",
+        "snippet": "nkutext[${1:color}]"
+      }
+    },
+    {
+      "name": "nkutext",
+      "if": "nku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "nkutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "pkutext",
+      "if": "pku"
+    },
+    {
+      "name": "pkutext",
+      "if": "pku",
+      "arg": {
+        "format": "[]",
+        "snippet": "pkutext[${1:color}]"
+      }
+    },
+    {
+      "name": "pkutext",
+      "if": "pku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "pkutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "pkulogo",
+      "if": "pku"
+    },
+    {
+      "name": "pkulogo",
+      "if": "pku",
+      "arg": {
+        "format": "[]",
+        "snippet": "pkulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "pkulogo",
+      "if": "pku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "pkulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "pkuwhole",
+      "if": "pku"
+    },
+    {
+      "name": "pkuwhole",
+      "if": "pku",
+      "arg": {
+        "format": "[][]",
+        "snippet": "pkuwhole[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "pkuwhole",
+      "if": "pku",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "pkuwhole[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "rucside",
+      "if": "ruc"
+    },
+    {
+      "name": "rucside",
+      "if": "ruc",
+      "arg": {
+        "format": "[]",
+        "snippet": "rucside[${1:color}]"
+      }
+    },
+    {
+      "name": "rucside",
+      "if": "ruc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "rucside[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "rucwhole",
+      "if": "ruc"
+    },
+    {
+      "name": "rucwhole",
+      "if": "ruc",
+      "arg": {
+        "format": "[]",
+        "snippet": "rucwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "rucwhole",
+      "if": "ruc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "rucwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ruclogo",
+      "if": "ruc"
+    },
+    {
+      "name": "ruclogo",
+      "if": "ruc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ruclogo[${1:color}]"
+      }
+    },
+    {
+      "name": "ruclogo",
+      "if": "ruc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ruclogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ructext",
+      "if": "ruc"
+    },
+    {
+      "name": "ructext",
+      "if": "ruc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ructext[${1:color}]"
+      }
+    },
+    {
+      "name": "ructext",
+      "if": "ruc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ructext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "scuwhole",
+      "if": "scu"
+    },
+    {
+      "name": "scuwhole",
+      "if": "scu",
+      "arg": {
+        "format": "[]",
+        "snippet": "scuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "scuwhole",
+      "if": "scu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "scuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sculogo",
+      "if": "scu"
+    },
+    {
+      "name": "sculogo",
+      "if": "scu",
+      "arg": {
+        "format": "[]",
+        "snippet": "sculogo[${1:color}]"
+      }
+    },
+    {
+      "name": "sculogo",
+      "if": "scu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sculogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "scutext",
+      "if": "scu"
+    },
+    {
+      "name": "scutext",
+      "if": "scu",
+      "arg": {
+        "format": "[]",
+        "snippet": "scutext[${1:color}]"
+      }
+    },
+    {
+      "name": "scutext",
+      "if": "scu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "scutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sdcjuwhole",
+      "if": "sdcju"
+    },
+    {
+      "name": "sdcjuwhole",
+      "if": "sdcju",
+      "arg": {
+        "format": "[]",
+        "snippet": "sdcjuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "sdcjuwhole",
+      "if": "sdcju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sdcjuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sdcjulogo",
+      "if": "sdcju"
+    },
+    {
+      "name": "sdcjulogo",
+      "if": "sdcju",
+      "arg": {
+        "format": "[]",
+        "snippet": "sdcjulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "sdcjulogo",
+      "if": "sdcju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sdcjulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sdcjutext",
+      "if": "sdcju"
+    },
+    {
+      "name": "sdcjutext",
+      "if": "sdcju",
+      "arg": {
+        "format": "[]",
+        "snippet": "sdcjutext[${1:color}]"
+      }
+    },
+    {
+      "name": "sdcjutext",
+      "if": "sdcju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sdcjutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sdulogo",
+      "if": "sdu"
+    },
+    {
+      "name": "sdulogo",
+      "if": "sdu",
+      "arg": {
+        "format": "[]",
+        "snippet": "sdulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "sdulogo",
+      "if": "sdu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sdulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "shulogo",
+      "if": "shu"
+    },
+    {
+      "name": "shulogo",
+      "if": "shu",
+      "arg": {
+        "format": "[]",
+        "snippet": "shulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "shulogo",
+      "if": "shu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "shulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "stjulogo",
+      "if": "stju"
+    },
+    {
+      "name": "stjulogo",
+      "if": "stju",
+      "arg": {
+        "format": "[]",
+        "snippet": "stjulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "stjulogo",
+      "if": "stju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "stjulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "stjutext",
+      "if": "stju"
+    },
+    {
+      "name": "stjutext",
+      "if": "stju",
+      "arg": {
+        "format": "[]",
+        "snippet": "stjutext[${1:color}]"
+      }
+    },
+    {
+      "name": "stjutext",
+      "if": "stju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "stjutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "stjuside",
+      "if": "stju"
+    },
+    {
+      "name": "stjuside",
+      "if": "stju",
+      "arg": {
+        "format": "[]",
+        "snippet": "stjuside[${1:color}]"
+      }
+    },
+    {
+      "name": "stjuside",
+      "if": "stju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "stjuside[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sustclogoen",
+      "if": "sustc"
+    },
+    {
+      "name": "sustclogoen",
+      "if": "sustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sustclogoen[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "sustclogoen",
+      "if": "sustc",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "sustclogoen[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "sustclogocn",
+      "if": "sustc"
+    },
+    {
+      "name": "sustclogocn",
+      "if": "sustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sustclogocn[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "sustclogocn",
+      "if": "sustc",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "sustclogocn[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "swaulogo",
+      "if": "swau"
+    },
+    {
+      "name": "swaulogo",
+      "if": "swau",
+      "arg": {
+        "format": "[][]",
+        "snippet": "swaulogo[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "swaulogo",
+      "if": "swau",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "swaulogo[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "swcnulogo",
+      "if": "swcnu"
+    },
+    {
+      "name": "swcnulogo",
+      "if": "swcnu",
+      "arg": {
+        "format": "[]",
+        "snippet": "swcnulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "swcnulogo",
+      "if": "swcnu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "swcnulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sysulogo",
+      "if": "sysu"
+    },
+    {
+      "name": "sysulogo",
+      "if": "sysu",
+      "arg": {
+        "format": "[]",
+        "snippet": "sysulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "sysulogo",
+      "if": "sysu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sysulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "sysutext",
+      "if": "sysu"
+    },
+    {
+      "name": "sysutext",
+      "if": "sysu",
+      "arg": {
+        "format": "[]",
+        "snippet": "sysutext[${1:color}]"
+      }
+    },
+    {
+      "name": "sysutext",
+      "if": "sysu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "sysutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "szuwhole",
+      "if": "szu"
+    },
+    {
+      "name": "szuwhole",
+      "if": "szu",
+      "arg": {
+        "format": "[]",
+        "snippet": "szuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "szuwhole",
+      "if": "szu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "szuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "szulogo",
+      "if": "szu"
+    },
+    {
+      "name": "szulogo",
+      "if": "szu",
+      "arg": {
+        "format": "[]",
+        "snippet": "szulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "szulogo",
+      "if": "szu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "szulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "szutext",
+      "if": "szu"
+    },
+    {
+      "name": "szutext",
+      "if": "szu",
+      "arg": {
+        "format": "[]",
+        "snippet": "szutext[${1:color}]"
+      }
+    },
+    {
+      "name": "szutext",
+      "if": "szu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "szutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "thulogo",
+      "if": "thu"
+    },
+    {
+      "name": "thulogo",
+      "if": "thu",
+      "arg": {
+        "format": "[]",
+        "snippet": "thulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "thulogo",
+      "if": "thu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "thulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "thulib",
+      "if": "thu"
+    },
+    {
+      "name": "thulib",
+      "if": "thu",
+      "arg": {
+        "format": "[]",
+        "snippet": "thulib[${1:color}]"
+      }
+    },
+    {
+      "name": "thulib",
+      "if": "thu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "thulib[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "thutext",
+      "if": "thu"
+    },
+    {
+      "name": "thutext",
+      "if": "thu",
+      "arg": {
+        "format": "[]",
+        "snippet": "thutext[${1:color}]"
+      }
+    },
+    {
+      "name": "thutext",
+      "if": "thu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "thutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "thuside",
+      "if": "thu"
+    },
+    {
+      "name": "thuside",
+      "if": "thu",
+      "arg": {
+        "format": "[]",
+        "snippet": "thuside[${1:color}]"
+      }
+    },
+    {
+      "name": "thuside",
+      "if": "thu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "thuside[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjuwhole",
+      "if": "tju"
+    },
+    {
+      "name": "tjuwhole",
+      "if": "tju",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "tjuwhole",
+      "if": "tju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjulogo",
+      "if": "tju"
+    },
+    {
+      "name": "tjulogo",
+      "if": "tju",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "tjulogo",
+      "if": "tju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjutext",
+      "if": "tju"
+    },
+    {
+      "name": "tjutext",
+      "if": "tju",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjutext[${1:color}]"
+      }
+    },
+    {
+      "name": "tjutext",
+      "if": "tju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjuuwhole",
+      "if": "tjuu"
+    },
+    {
+      "name": "tjuuwhole",
+      "if": "tjuu",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjuuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "tjuuwhole",
+      "if": "tjuu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjuuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjuulogo",
+      "if": "tjuu"
+    },
+    {
+      "name": "tjuulogo",
+      "if": "tjuu",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjuulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "tjuulogo",
+      "if": "tjuu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjuulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "tjuutext",
+      "if": "tjuu"
+    },
+    {
+      "name": "tjuutext",
+      "if": "tjuu",
+      "arg": {
+        "format": "[]",
+        "snippet": "tjuutext[${1:color}]"
+      }
+    },
+    {
+      "name": "tjuutext",
+      "if": "tjuu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "tjuutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ustblogo",
+      "if": "ustb"
+    },
+    {
+      "name": "ustblogo",
+      "if": "ustb",
+      "arg": {
+        "format": "[]",
+        "snippet": "ustblogo[${1:color}]"
+      }
+    },
+    {
+      "name": "ustblogo",
+      "if": "ustb",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ustblogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ustclogo",
+      "if": "ustc"
+    },
+    {
+      "name": "ustclogo",
+      "if": "ustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ustclogo[${1:color}]"
+      }
+    },
+    {
+      "name": "ustclogo",
+      "if": "ustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ustclogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ustcside",
+      "if": "ustc"
+    },
+    {
+      "name": "ustcside",
+      "if": "ustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ustcside[${1:color}]"
+      }
+    },
+    {
+      "name": "ustcside",
+      "if": "ustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ustcside[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ustcwhole",
+      "if": "ustc"
+    },
+    {
+      "name": "ustcwhole",
+      "if": "ustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ustcwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "ustcwhole",
+      "if": "ustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ustcwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "ustctext",
+      "if": "ustc"
+    },
+    {
+      "name": "ustctext",
+      "if": "ustc",
+      "arg": {
+        "format": "[]",
+        "snippet": "ustctext[${1:color}]"
+      }
+    },
+    {
+      "name": "ustctext",
+      "if": "ustc",
+      "arg": {
+        "format": "[][]",
+        "snippet": "ustctext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "whlgulogo",
+      "if": "whlgu"
+    },
+    {
+      "name": "whlgulogo",
+      "if": "whlgu",
+      "arg": {
+        "format": "[]",
+        "snippet": "whlgulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "whlgulogo",
+      "if": "whlgu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "whlgulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "whulogo",
+      "if": "whu"
+    },
+    {
+      "name": "whulogo",
+      "if": "whu",
+      "arg": {
+        "format": "[][][][]",
+        "snippet": "whulogo[${1:color1}][${2:color2}][${3:color3}][${4:color4}]"
+      }
+    },
+    {
+      "name": "whulogo",
+      "if": "whu",
+      "arg": {
+        "format": "[][][][][]",
+        "snippet": "whulogo[${1:color1}][${2:color2}][${3:color3}][${4:color4}][${5:scale}]"
+      }
+    },
+    {
+      "name": "wzulogo",
+      "if": "wzu"
+    },
+    {
+      "name": "wzulogo",
+      "if": "wzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "wzulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "wzulogo",
+      "if": "wzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "wzulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xbnlkjuwhole",
+      "if": "xbnlkju"
+    },
+    {
+      "name": "xbnlkjuwhole",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xbnlkjuwhole[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "xbnlkjuwhole",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "xbnlkjuwhole[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "xbnlkjulogo",
+      "if": "xbnlkju"
+    },
+    {
+      "name": "xbnlkjulogo",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xbnlkjulogo[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "xbnlkjulogo",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "xbnlkjulogo[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "xbnlkjutext",
+      "if": "xbnlkju"
+    },
+    {
+      "name": "xbnlkjutext",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xbnlkjutext[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "xbnlkjutext",
+      "if": "xbnlkju",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "xbnlkjutext[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "xdulogo",
+      "if": "xdu"
+    },
+    {
+      "name": "xdulogo",
+      "if": "xdu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xdulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "xdulogo",
+      "if": "xdu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xdulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xjtuwhole",
+      "if": "xjtu"
+    },
+    {
+      "name": "xjtuwhole",
+      "if": "xjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xjtuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "xjtuwhole",
+      "if": "xjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xjtuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xjtulogo",
+      "if": "xjtu"
+    },
+    {
+      "name": "xjtulogo",
+      "if": "xjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xjtulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "xjtulogo",
+      "if": "xjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xjtulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xjtutext",
+      "if": "xjtu"
+    },
+    {
+      "name": "xjtutext",
+      "if": "xjtu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xjtutext[${1:color}]"
+      }
+    },
+    {
+      "name": "xjtutext",
+      "if": "xjtu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xjtutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xmutext",
+      "if": "xmu"
+    },
+    {
+      "name": "xmutext",
+      "if": "xmu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xmutext[${1:color}]"
+      }
+    },
+    {
+      "name": "xmutext",
+      "if": "xmu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xmutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "xmulogo",
+      "if": "xmu"
+    },
+    {
+      "name": "xmulogo",
+      "if": "xmu",
+      "arg": {
+        "format": "[]",
+        "snippet": "xmulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "xmulogo",
+      "if": "xmu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "xmulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "yzuwhole",
+      "if": "yzu"
+    },
+    {
+      "name": "yzuwhole",
+      "if": "yzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "yzuwhole[${1:color}]"
+      }
+    },
+    {
+      "name": "yzuwhole",
+      "if": "yzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "yzuwhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "yzulogo",
+      "if": "yzu"
+    },
+    {
+      "name": "yzulogo",
+      "if": "yzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "yzulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "yzulogo",
+      "if": "yzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "yzulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "yzutext",
+      "if": "yzu"
+    },
+    {
+      "name": "yzutext",
+      "if": "yzu",
+      "arg": {
+        "format": "[]",
+        "snippet": "yzutext[${1:color}]"
+      }
+    },
+    {
+      "name": "yzutext",
+      "if": "yzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "yzutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zcmulogo",
+      "if": "zcmu"
+    },
+    {
+      "name": "zcmulogo",
+      "if": "zcmu",
+      "arg": {
+        "format": "[]",
+        "snippet": "zcmulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "zcmulogo",
+      "if": "zcmu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zcmulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zhyulogo",
+      "if": "zhyu"
+    },
+    {
+      "name": "zhyulogo",
+      "if": "zhyu",
+      "arg": {
+        "format": "[][][][]",
+        "snippet": "zhyulogo[${1:color1}][${2:color2}][${3:color3}][${4:color4}]"
+      }
+    },
+    {
+      "name": "zhyulogo",
+      "if": "zhyu",
+      "arg": {
+        "format": "[][][][][]",
+        "snippet": "zhyulogo[${1:color1}][${2:color2}][${3:color3}][${4:color4}][${5:scale}]"
+      }
+    },
+    {
+      "name": "zjulogo",
+      "if": "zju"
+    },
+    {
+      "name": "zjulogo",
+      "if": "zju",
+      "arg": {
+        "format": "[]",
+        "snippet": "zjulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "zjulogo",
+      "if": "zju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zjulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zjutext",
+      "if": "zju"
+    },
+    {
+      "name": "zjutext",
+      "if": "zju",
+      "arg": {
+        "format": "[]",
+        "snippet": "zjutext[${1:color}]"
+      }
+    },
+    {
+      "name": "zjutext",
+      "if": "zju",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zjutext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zkywhole",
+      "if": "zky"
+    },
+    {
+      "name": "zkywhole",
+      "if": "zky",
+      "arg": {
+        "format": "[]",
+        "snippet": "zkywhole[${1:color}]"
+      }
+    },
+    {
+      "name": "zkywhole",
+      "if": "zky",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zkywhole[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zkylogo",
+      "if": "zky"
+    },
+    {
+      "name": "zkylogo",
+      "if": "zky",
+      "arg": {
+        "format": "[]",
+        "snippet": "zkylogo[${1:color}]"
+      }
+    },
+    {
+      "name": "zkylogo",
+      "if": "zky",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zkylogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zkytext",
+      "if": "zky"
+    },
+    {
+      "name": "zkytext",
+      "if": "zky",
+      "arg": {
+        "format": "[]",
+        "snippet": "zkytext[${1:color}]"
+      }
+    },
+    {
+      "name": "zkytext",
+      "if": "zky",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zkytext[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "znyulogo",
+      "if": "znyu"
+    },
+    {
+      "name": "znyulogo",
+      "if": "znyu",
+      "arg": {
+        "format": "[]",
+        "snippet": "znyulogo[${1:color}]"
+      }
+    },
+    {
+      "name": "znyulogo",
+      "if": "znyu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "znyulogo[${1:color}][${2:scale}]"
+      }
+    },
+    {
+      "name": "zzuwhole",
+      "if": "zzu"
+    },
+    {
+      "name": "zzuwhole",
+      "if": "zzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zzuwhole[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "zzuwhole",
+      "if": "zzu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "zzuwhole[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "zzulogo",
+      "if": "zzu"
+    },
+    {
+      "name": "zzulogo",
+      "if": "zzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zzulogo[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "zzulogo",
+      "if": "zzu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "zzulogo[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    },
+    {
+      "name": "zzutext",
+      "if": "zzu"
+    },
+    {
+      "name": "zzutext",
+      "if": "zzu",
+      "arg": {
+        "format": "[][]",
+        "snippet": "zzutext[${1:color1}][${2:color2}]"
+      }
+    },
+    {
+      "name": "zzutext",
+      "if": "zzu",
+      "arg": {
+        "format": "[][][]",
+        "snippet": "zzutext[${1:color1}][${2:color2}][${3:scale}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cnlogo#c": [
+      "ahu",
+      "bhu",
+      "bjtu",
+      "bjydu",
+      "bnu",
+      "chu",
+      "ckyu",
+      "csu",
+      "cug",
+      "cupsl",
+      "dbcju",
+      "dllgu",
+      "fdu",
+      "gnu",
+      "gufs",
+      "hbu",
+      "hdsfu",
+      "hdzfu",
+      "hhu",
+      "hit",
+      "hnlgu",
+      "hnnu",
+      "hnu",
+      "hustc",
+      "hznu",
+      "jlu",
+      "jnu",
+      "ju",
+      "lzu",
+      "muc",
+      "ncu",
+      "neu",
+      "nju",
+      "njust",
+      "nku",
+      "pku",
+      "ruc",
+      "scu",
+      "sdcju",
+      "sdu",
+      "shu",
+      "stju",
+      "sustc",
+      "swau",
+      "swcnu",
+      "sysu",
+      "szu",
+      "thu",
+      "tju",
+      "tju",
+      "tjuu",
+      "ustb",
+      "ustc",
+      "whlgu",
+      "whu",
+      "wzu",
+      "xbnlkju",
+      "xdu",
+      "xjtu",
+      "xmu",
+      "yzu",
+      "zcmu",
+      "zhyu",
+      "zju",
+      "zky",
+      "znyu",
+      "zzu"
+    ]
+  },
+  "args": [
+    "\\usepackage/cnlogo#c"
+  ]
+}

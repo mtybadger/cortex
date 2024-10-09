@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "csvsimple-legacy"
+    },
+    {
+      "name": "csvsimple-l3",
+      "if": "l3"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/csvsimple#c": [
+      "l3",
+      "legacy"
+    ]
+  },
+  "args": [
+    "\\usepackage/csvsimple#c"
+  ]
+}

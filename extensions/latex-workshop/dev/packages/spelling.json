@@ -1,0 +1,112 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    },
+    {
+      "name": "atbegshi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "spellingreadgood",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingreadgood{${1:file}}"
+      }
+    },
+    {
+      "name": "spellingmatchrules",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingmatchrules{${1:file}}"
+      }
+    },
+    {
+      "name": "spellinghighlight",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellinghighlight{${1:on/off}}"
+      }
+    },
+    {
+      "name": "spellinghighlightcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellinghighlightcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "spellingoutput",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingoutput{${1:on/off}}"
+      }
+    },
+    {
+      "name": "spellingoutputname",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingoutputname{${1:file}}"
+      }
+    },
+    {
+      "name": "spellingoutputlinelength",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingoutputlinelength{${1:number}}"
+      }
+    },
+    {
+      "name": "spellingextract",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingextract{${1:on/off}}"
+      }
+    },
+    {
+      "name": "spellingmapping",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "spellingmapping{${1:number}}{${2:chars}}"
+      }
+    },
+    {
+      "name": "spellingclearallmappings"
+    },
+    {
+      "name": "spellingtablepar",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingtablepar{${1:number}}"
+      }
+    },
+    {
+      "name": "spellingreadLT",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingreadLT{${1:file}}"
+      }
+    },
+    {
+      "name": "spellingreadbad",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingreadbad{${1:file}}"
+      }
+    },
+    {
+      "name": "spellingreadgood",
+      "arg": {
+        "format": "{}",
+        "snippet": "spellingreadgood{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

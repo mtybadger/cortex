@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "qrcode"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "calculator"
+    }
+  ],
+  "macros": [
+    {
+      "name": "epcqr",
+      "arg": {
+        "format": "{}",
+        "snippet": "epcqr{${1:keyvals}}",
+        "keys": [
+          "\\epcqr"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\epcqr": [
+      "bic=${1:BIC}",
+      "name=${1:text}",
+      "iban=${1:IBAN}",
+      "amount=${1:number}",
+      "reason=${1:text}",
+      "ref=${1:text}",
+      "text=${1:text}",
+      "information=${1:text}"
+    ]
+  },
+  "args": []
+}

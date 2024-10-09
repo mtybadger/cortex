@@ -1,0 +1,54 @@
+{
+  "deps": [
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "libertinus-otf"
+    },
+    {
+      "name": "inconsolata-nerd-font"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pdftexengine",
+      "unusual": true
+    },
+    {
+      "name": "xetexengine",
+      "unusual": true
+    },
+    {
+      "name": "luatexengine",
+      "unusual": true
+    },
+    {
+      "name": "ifengineTF",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifengineTF{${1:engine}}{${2:then block}}{${3:else block}}"
+      }
+    },
+    {
+      "name": "ifengineT",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifengineT{${1:engine}}{${2:then block}}"
+      }
+    },
+    {
+      "name": "ifengineF",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifengineF{${1:engine}}{${2:else block}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

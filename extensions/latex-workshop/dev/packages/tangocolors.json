@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "colortbl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "dumptangocolors"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

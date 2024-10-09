@@ -1,0 +1,99 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "computeilg",
+      "unusual": true
+    },
+    {
+      "name": "createparshapespec",
+      "unusual": true
+    },
+    {
+      "name": "framepic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "framepic{${1:boxname}}"
+      }
+    },
+    {
+      "name": "prune",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "prune{${1:box1}}{${2:box2}}"
+      }
+    },
+    {
+      "name": "wframepic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "wframepic{${1:boxname}}"
+      }
+    },
+    {
+      "name": "wincaption",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "wincaption{${1:text}}"
+      }
+    },
+    {
+      "name": "winrefstepcounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "winrefstepcounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "winstepcounter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "winstepcounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "wstrut",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "window"
+    },
+    {
+      "name": "window",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:lines,pos,graphics,caption%text}]"
+      }
+    },
+    {
+      "name": "figwindow"
+    },
+    {
+      "name": "figwindow",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:lines,pos,graphics,caption%text}]"
+      }
+    },
+    {
+      "name": "tabwindow"
+    },
+    {
+      "name": "tabwindow",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:lines,pos,graphics,caption%text}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

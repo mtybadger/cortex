@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "tkz-tab"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tkzTabPos",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzTabPos{${1:symbol1/expr1,symbol2/expr2,...}}"
+      }
+    },
+    {
+      "name": "tkzTabPos",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tkzTabPos[${2:options%keyvals}]{${1:symbol1/expr1,symbol2/expr2,...}}",
+        "keys": [
+          "\\tkzTabPos"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Nline",
+      "unusual": true
+    },
+    {
+      "name": "Nplot",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\tkzTabPos": [
+      "help"
+    ]
+  },
+  "args": []
+}

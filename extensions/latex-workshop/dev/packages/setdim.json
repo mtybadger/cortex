@@ -1,0 +1,72 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "txa",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "txa{${1:text}}"
+      }
+    },
+    {
+      "name": "settext",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "settext{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}"
+      }
+    },
+    {
+      "name": "lsettext",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "lsettext{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}"
+      }
+    },
+    {
+      "name": "retdims",
+      "unusual": true
+    },
+    {
+      "name": "rstdims",
+      "unusual": true
+    },
+    {
+      "name": "setpage",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}{}",
+        "snippet": "setpage{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}{${6:topmargin}}{${7:headheight}}{${8:headsep}}{${9:footskip}}"
+      }
+    },
+    {
+      "name": "lsetpage",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}{}",
+        "snippet": "lsetpage{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}{${6:topmargin}}{${7:headheight}}{${8:headsep}}{${9:footskip}}"
+      }
+    },
+    {
+      "name": "changetext",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "changetext{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}"
+      }
+    },
+    {
+      "name": "changepage",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}{}{}{}{}",
+        "snippet": "changepage{${1:height}}{${2:width}}{${3:evenmargin}}{${4:oddmargin}}{${5:colsep}}{${6:topmargin}}{${7:headheight}}{${8:headsep}}{${9:footskip}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,775 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "actuarialangle"
+    }
+  ],
+  "macros": [
+    {
+      "name": "actsymb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "actsymb{${1:symbol}}{${2:lr}}"
+      }
+    },
+    {
+      "name": "actsymb",
+      "arg": {
+        "format": "[][]{}{}[]",
+        "snippet": "actsymb[${3:ll}][${4:ul}]{${1:symbol}}{${2:lr}}[${5:ur}]"
+      }
+    },
+    {
+      "name": "actsymb",
+      "unusual": true,
+      "arg": {
+        "format": "[][][]{}{}[]",
+        "snippet": "actsymb[${3:ll}][${4:ul}][${5:P}]{${1:symbol}}{${2:lr}}[${6:ur}]"
+      }
+    },
+    {
+      "name": "twoletsymb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "twoletsymb{${1:symbol1}}{${2:symbol2}}"
+      }
+    },
+    {
+      "name": "twoletsymb",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "twoletsymb[${3:length}]{${1:symbol1}}{${2:symbol2}}"
+      }
+    },
+    {
+      "name": "twoletkern",
+      "unusual": true
+    },
+    {
+      "name": "nthtop",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthtop{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthtop",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nthtop[${3:length}]{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthtop*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthtop*{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthtop*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nthtop*[${3:length}]{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthbottom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthbottom{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthbottom",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nthbottom[${3:length}]{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthbottom*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nthbottom*{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthbottom*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nthbottom*[${3:length}]{${1:number}}{${2:status}}"
+      }
+    },
+    {
+      "name": "nthtopsep",
+      "unusual": true
+    },
+    {
+      "name": "nthtopskip",
+      "unusual": true
+    },
+    {
+      "name": "nthbottomsep",
+      "unusual": true
+    },
+    {
+      "name": "nthbottomskip",
+      "unusual": true
+    },
+    {
+      "name": "lx",
+      "arg": {
+        "format": "{}",
+        "snippet": "lx{${1:age}}"
+      }
+    },
+    {
+      "name": "lx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "lx[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Lx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Lx{${1:age}}"
+      }
+    },
+    {
+      "name": "Lx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Lx[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "dx",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "dx{${1:age}}{${2:lr}}"
+      }
+    },
+    {
+      "name": "dx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "dx[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Dx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Dx{${1:age}}"
+      }
+    },
+    {
+      "name": "Dx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Dx[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "px",
+      "arg": {
+        "format": "{}",
+        "snippet": "px{${1:age}}"
+      }
+    },
+    {
+      "name": "px",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "px[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "qx",
+      "arg": {
+        "format": "{}",
+        "snippet": "qx{${1:age}}"
+      }
+    },
+    {
+      "name": "qx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "qx[${2:ll}][${3:ul}]{${1:age}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "eringx",
+      "arg": {
+        "format": "{}",
+        "snippet": "eringx{${1:lr}}"
+      }
+    },
+    {
+      "name": "eringx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "eringx[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Ax",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ax{${1:lr}}"
+      }
+    },
+    {
+      "name": "Ax",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Ax[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Ax*",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ax*{${1:lr}}"
+      }
+    },
+    {
+      "name": "Ax*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Ax*[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Ex",
+      "arg": {
+        "format": "{}",
+        "snippet": "Ex{${1:lr}}"
+      }
+    },
+    {
+      "name": "Ex",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Ex[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "ax",
+      "arg": {
+        "format": "{}",
+        "snippet": "ax{${1:lr}}"
+      }
+    },
+    {
+      "name": "ax",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "ax[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "ax*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ax*{${1:lr}}"
+      }
+    },
+    {
+      "name": "ax*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "ax*[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "ax**",
+      "arg": {
+        "format": "{}",
+        "snippet": "ax**{${1:lr}}"
+      }
+    },
+    {
+      "name": "ax**",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "ax**[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "sx",
+      "arg": {
+        "format": "{}",
+        "snippet": "sx{${1:lr}}"
+      }
+    },
+    {
+      "name": "sx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "sx[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "sx*",
+      "arg": {
+        "format": "{}",
+        "snippet": "sx*{${1:lr}}"
+      }
+    },
+    {
+      "name": "sx*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "sx*[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "sx**",
+      "arg": {
+        "format": "{}",
+        "snippet": "sx**{${1:lr}}"
+      }
+    },
+    {
+      "name": "sx**",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "sx**[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "aringx",
+      "arg": {
+        "format": "{}",
+        "snippet": "aringx{${1:lr}}"
+      }
+    },
+    {
+      "name": "aringx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "aringx[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Px",
+      "arg": {
+        "format": "{}",
+        "snippet": "Px{${1:lr}}"
+      }
+    },
+    {
+      "name": "Px",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Px[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Vx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Vx{${1:lr}}"
+      }
+    },
+    {
+      "name": "Vx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Vx[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "Wx",
+      "arg": {
+        "format": "{}",
+        "snippet": "Wx{${1:lr}}"
+      }
+    },
+    {
+      "name": "Wx",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "Wx[${2:ll}][${3:ul}]{${1:lr}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "premium",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "premium{${1:benefit}}{${2:lr}}"
+      }
+    },
+    {
+      "name": "premium",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "premium[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "premium*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "premium*{${1:benefit}}{${2:benefit}}{${3:lr}}"
+      }
+    },
+    {
+      "name": "premium*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "premium*[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "reserve",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "reserve{${1:benefit}}{${2:benefit}}{${3:lr}}"
+      }
+    },
+    {
+      "name": "reserve",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "reserve[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "reserve*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "reserve*{${1:benefit}}{${2:benefit}}{${3:lr}}"
+      }
+    },
+    {
+      "name": "reserve*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "reserve*[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "paidup",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "paidup{${1:benefit}}{${2:benefit}}{${3:lr}}"
+      }
+    },
+    {
+      "name": "paidup",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "paidup[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "paidup*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "paidup*{${1:benefit}}{${2:benefit}}{${3:lr}}"
+      }
+    },
+    {
+      "name": "paidup*",
+      "arg": {
+        "format": "[][]{}[]",
+        "snippet": "paidup*[${2:ll}][${3:ul}]{${1:benefit}}[${4:ur}]"
+      }
+    },
+    {
+      "name": "term",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "term{${1:age}}{${2:duration}}"
+      }
+    },
+    {
+      "name": "termxn"
+    },
+    {
+      "name": "pureendow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pureendow{${1:age}}{${2:duration}}"
+      }
+    },
+    {
+      "name": "pureendowxn"
+    },
+    {
+      "name": "endow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "endow{${1:age}}{${2:duration}}"
+      }
+    },
+    {
+      "name": "endowxn"
+    },
+    {
+      "name": "joint",
+      "arg": {
+        "format": "{}",
+        "snippet": "joint{${1:ages}}"
+      }
+    },
+    {
+      "name": "IA"
+    },
+    {
+      "name": "DA"
+    },
+    {
+      "name": "IA*"
+    },
+    {
+      "name": "DA*"
+    },
+    {
+      "name": "IbA"
+    },
+    {
+      "name": "DbA"
+    },
+    {
+      "name": "IbA*"
+    },
+    {
+      "name": "DbA*"
+    },
+    {
+      "name": "ImA"
+    },
+    {
+      "name": "DmA"
+    },
+    {
+      "name": "ImA*"
+    },
+    {
+      "name": "DmA*"
+    },
+    {
+      "name": "Ia"
+    },
+    {
+      "name": "Da"
+    },
+    {
+      "name": "Ia*"
+    },
+    {
+      "name": "Da*"
+    },
+    {
+      "name": "Ia**"
+    },
+    {
+      "name": "Da**"
+    },
+    {
+      "name": "Is"
+    },
+    {
+      "name": "Ds"
+    },
+    {
+      "name": "Is*"
+    },
+    {
+      "name": "Ds*"
+    },
+    {
+      "name": "Is**"
+    },
+    {
+      "name": "Ds**"
+    },
+    {
+      "name": "firsttop",
+      "arg": {
+        "format": "{}",
+        "snippet": "firsttop{${1:status}}"
+      }
+    },
+    {
+      "name": "itop",
+      "arg": {
+        "format": "{}",
+        "snippet": "itop{${1:status}}"
+      }
+    },
+    {
+      "name": "secondtop",
+      "arg": {
+        "format": "{}",
+        "snippet": "secondtop{${1:status}}"
+      }
+    },
+    {
+      "name": "iitop",
+      "arg": {
+        "format": "{}",
+        "snippet": "iitop{${1:status}}"
+      }
+    },
+    {
+      "name": "thirdtop",
+      "arg": {
+        "format": "{}",
+        "snippet": "thirdtop{${1:status}}"
+      }
+    },
+    {
+      "name": "iiitop",
+      "arg": {
+        "format": "{}",
+        "snippet": "iiitop{${1:status}}"
+      }
+    },
+    {
+      "name": "firsttop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "firsttop*{${1:status}}"
+      }
+    },
+    {
+      "name": "itop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "itop*{${1:status}}"
+      }
+    },
+    {
+      "name": "secondtop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "secondtop*{${1:status}}"
+      }
+    },
+    {
+      "name": "iitop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "iitop*{${1:status}}"
+      }
+    },
+    {
+      "name": "thirdtop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "thirdtop*{${1:status}}"
+      }
+    },
+    {
+      "name": "iiitop*",
+      "arg": {
+        "format": "{}",
+        "snippet": "iiitop*{${1:status}}"
+      }
+    },
+    {
+      "name": "firstbottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "firstbottom{${1:status}}"
+      }
+    },
+    {
+      "name": "ibottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "ibottom{${1:status}}"
+      }
+    },
+    {
+      "name": "secondbottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "secondbottom{${1:status}}"
+      }
+    },
+    {
+      "name": "iibottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "iibottom{${1:status}}"
+      }
+    },
+    {
+      "name": "thirdbottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "thirdbottom{${1:status}}"
+      }
+    },
+    {
+      "name": "iiibottom",
+      "arg": {
+        "format": "{}",
+        "snippet": "iiibottom{${1:status}}"
+      }
+    },
+    {
+      "name": "firstbottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "firstbottom*{${1:status}}"
+      }
+    },
+    {
+      "name": "ibottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "ibottom*{${1:status}}"
+      }
+    },
+    {
+      "name": "secondbottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "secondbottom*{${1:status}}"
+      }
+    },
+    {
+      "name": "iibottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "iibottom*{${1:status}}"
+      }
+    },
+    {
+      "name": "thirdbottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "thirdbottom*{${1:status}}"
+      }
+    },
+    {
+      "name": "iiibottom*",
+      "arg": {
+        "format": "{}",
+        "snippet": "iiibottom*{${1:status}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/actuarialsymbol#c": [
+      "alignpreced",
+      "compactpreced"
+    ]
+  },
+  "args": [
+    "\\usepackage/actuarialsymbol#c"
+  ]
+}

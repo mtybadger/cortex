@@ -1,0 +1,249 @@
+{
+  "deps": [
+    {
+      "name": "tree-dvips"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Node",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Node{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "Node",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "Node[${3:n}]{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "NodeWidthNo",
+      "arg": {
+        "format": "{}",
+        "snippet": "NodeWidthNo{${1:n}}"
+      }
+    },
+    {
+      "name": "NodeNo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeNo{${1:n}}{${2:nodename}}"
+      }
+    },
+    {
+      "name": "NodeZ",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeZ{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "nodeZ",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nodeZ{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "NodeTNo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeTNo{${1:n}}{${2:nodename}}"
+      }
+    },
+    {
+      "name": "NodeTZNo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeTZNo{${1:n}}{${2:nodename}}"
+      }
+    },
+    {
+      "name": "NodeZTNo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeZTNo{${1:n}}{${2:nodename}}"
+      }
+    },
+    {
+      "name": "MinNodeWidth",
+      "unusual": true
+    },
+    {
+      "name": "NodeTZ",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeTZ{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "NodeT",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeT{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "NodeZT",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NodeZT{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "NodeWidth",
+      "unusual": true
+    },
+    {
+      "name": "AddToToks",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AddToToks{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "AllNodes",
+      "unusual": true
+    },
+    {
+      "name": "CollectedNodes",
+      "unusual": true
+    },
+    {
+      "name": "CollectedTNodes",
+      "unusual": true
+    },
+    {
+      "name": "Compare",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Compare{${1:arg}}"
+      }
+    },
+    {
+      "name": "ConnectNode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConnectNode{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "ConnectTNode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ConnectTNode{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "EveryNode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "EveryNode{${1:arg}}"
+      }
+    },
+    {
+      "name": "EveryTNode",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "EveryTNode{${1:arg}}"
+      }
+    },
+    {
+      "name": "ifIsElement",
+      "unusual": true
+    },
+    {
+      "name": "IfIsNodeName",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IfIsNodeName{${1:arg}}"
+      }
+    },
+    {
+      "name": "ifTNode",
+      "unusual": true
+    },
+    {
+      "name": "IsElementfalse",
+      "unusual": true
+    },
+    {
+      "name": "IsElementOf",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IsElementOf{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "IsElementtrue",
+      "unusual": true
+    },
+    {
+      "name": "NoNodeWarning",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NoNodeWarning{${1:text}}"
+      }
+    },
+    {
+      "name": "OptionNode",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "OptionNode[${3:n}]{${1:nodename}}{${2:object%text}}"
+      }
+    },
+    {
+      "name": "OptionNodeNo",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "OptionNodeNo{${1:n}}[${3:opt}]{${2:nodename}}"
+      }
+    },
+    {
+      "name": "TestAndAdd",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TestAndAdd{${1:arg}}"
+      }
+    },
+    {
+      "name": "TNodefalse",
+      "unusual": true
+    },
+    {
+      "name": "TNodetrue",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "treetab",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols%plain}}"
+      }
+    },
+    {
+      "name": "psTree",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

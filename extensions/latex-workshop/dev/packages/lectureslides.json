@@ -1,0 +1,116 @@
+{
+  "deps": [
+    {
+      "name": "pdfpages"
+    },
+    {
+      "name": "tocloft"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "babel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "course",
+      "arg": {
+        "format": "{}",
+        "snippet": "course{${1:title}}"
+      }
+    },
+    {
+      "name": "course",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "course[${2:footnote%text}]{${1:title}}"
+      }
+    },
+    {
+      "name": "lecture",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "lecture{${1:title}}{${2:PDF file%file}}"
+      }
+    },
+    {
+      "name": "lecture",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "lecture{${1:title}}[${3:start}]{${2:PDF file%file}}"
+      }
+    },
+    {
+      "name": "lecture",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "lecture{${1:title}}[${3:start}][${4:end}]{${2:PDF file%file}}"
+      }
+    },
+    {
+      "name": "lecturetitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "lecturetitle{${1:title}}"
+      }
+    },
+    {
+      "name": "lectureslides",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "lectureslides{${1:PDF file%file}}"
+      }
+    },
+    {
+      "name": "lectureslides",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "lectureslides[${2:start}]{${1:PDF file%file}}"
+      }
+    },
+    {
+      "name": "lectureslides",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "lectureslides[${2:start}][${3:end}]{${1:PDF file%file}}"
+      }
+    },
+    {
+      "name": "tocline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tocline{${1:arg}}"
+      }
+    },
+    {
+      "name": "createdAt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "createdAt{${1:text}}"
+      }
+    },
+    {
+      "name": "orientation",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lectureslides#c": [
+      "portrait",
+      "landscape"
+    ]
+  },
+  "args": [
+    "\\usepackage/lectureslides#c"
+  ]
+}

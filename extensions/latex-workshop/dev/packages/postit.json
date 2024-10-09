@@ -1,0 +1,181 @@
+{
+  "deps": [
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "settobox"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarydecorations"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    },
+    {
+      "name": "tikzlibrarybabel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "MiniPostIt",
+      "arg": {
+        "format": "{}",
+        "snippet": "MiniPostIt{${1:contenu%text}}"
+      }
+    },
+    {
+      "name": "MiniPostIt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "MiniPostIt[${2:color}]{${1:contenu%text}}"
+      }
+    },
+    {
+      "name": "MiniPostIt*",
+      "arg": {
+        "format": "{}",
+        "snippet": "MiniPostIt*{${1:contenu%text}}"
+      }
+    },
+    {
+      "name": "MiniPostIt*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "MiniPostIt*[${2:color}]{${1:contenu%text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "PostIt"
+    },
+    {
+      "name": "PostIt",
+      "arg": {
+        "format": "<>",
+        "snippet": "<${1:options tcbox}>",
+        "keys": [
+          "\\begin{PostIt}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PostIt",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:clés%keyvals}]",
+        "keys": [
+          "\\begin{PostIt}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PostIt",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "[${1:clés%keyvals}]<${2:options tcbox}>",
+        "keys": [
+          "\\begin{PostIt}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PostItNote"
+    },
+    {
+      "name": "PostItNote",
+      "arg": {
+        "format": "<>",
+        "snippet": "<${1:tcbox options}>"
+      }
+    },
+    {
+      "name": "PostItNote",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{PostItNote}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PostItNote",
+      "arg": {
+        "format": "[]<>",
+        "snippet": "[${1:options%keyvals}]<${2:tcbox options}>",
+        "keys": [
+          "\\begin{PostItNote}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{PostIt}": [
+      "RappelPostIt=${1:nom}",
+      "Largeur=",
+      "Couleur=",
+      "Hauteur=",
+      "Rendu=${1|tcbox,tikz,tikzv2|}",
+      "Inclinaison=${1:nombre}",
+      "Ombre",
+      "Bordure",
+      "Coin",
+      "Attache=${1|Trombone,Punaise,Non,Scotch|}",
+      "CouleurAttache=",
+      "DecalAttache=${1:nombre}",
+      "Titre=${1:texte}",
+      "PoliceTitre=${1:font commands}",
+      "ExtraMargeDroite=",
+      "AlignementV=${1|top,center,bottom|}",
+      "AlignementH=${1|left,center,right,justify|}",
+      "AlignementPostIt=${1|top,center,bottom|}"
+    ],
+    "\\begin{PostItNote}": [
+      "StorePostIt=${1:name}",
+      "Width=",
+      "Color=",
+      "Height=",
+      "Render=${1|tcbox,tikz,tikz2|}",
+      "Rotate=${1:degrees}",
+      "Shadow",
+      "Border",
+      "Corner",
+      "Pin=${1|Paperclip,Pushpin,None,Scotch|}",
+      "PinColor=",
+      "PinScale=${1:factor}",
+      "PinShift=${1:number}",
+      "Title=${1:text}",
+      "FontTitle=${1:font commands}",
+      "ExtraRightMargin=",
+      "AlignV=${1|top,center,bottom|}",
+      "AlignH=${1|left,center,right,justify|}",
+      "AlignPostIt=${1|top,center,bottom|}"
+    ]
+  },
+  "args": []
+}

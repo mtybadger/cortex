@@ -1,0 +1,34 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MainClassName"
+    },
+    {
+      "name": "ClassList"
+    },
+    {
+      "name": "ClassListEntry",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ClassListEntry{${1:class}}{${2:class options}}{${3:requested version}}"
+      }
+    },
+    {
+      "name": "PrintClassList"
+    },
+    {
+      "name": "PrintClassListTitle"
+    },
+    {
+      "name": "PrintClassListEntry",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "PrintClassListEntry{${1:class}}{${2:class options}}{${3:requested version}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

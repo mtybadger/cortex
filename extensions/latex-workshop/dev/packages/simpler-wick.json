@@ -1,0 +1,47 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryexternal"
+    }
+  ],
+  "macros": [
+    {
+      "name": "wick",
+      "arg": {
+        "format": "{}",
+        "snippet": "wick{${1:arg}}"
+      }
+    },
+    {
+      "name": "wick",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "wick[${2:options%keyvals}]{${1:arg}}",
+        "keys": [
+          "\\wick"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "c"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\wick": [
+      "sep=",
+      "offset="
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "setouterhboxFailure",
+      "unusual": true
+    },
+    {
+      "name": "setouterhboxRemove",
+      "unusual": true
+    },
+    {
+      "name": "setouterhboxFinish",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setouterhboxFinish{${1:number}}"
+      }
+    },
+    {
+      "name": "setouterhboxAfter",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setouterhboxAfter{${1:number}}"
+      }
+    },
+    {
+      "name": "setouterhboxReturnAfterFi",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "setouterhboxReturnAfterFi{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "setouterhbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:box number}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

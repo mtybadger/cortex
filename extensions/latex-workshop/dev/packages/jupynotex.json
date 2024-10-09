@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "tcolorbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "jupynotex",
+      "arg": {
+        "format": "{}",
+        "snippet": "jupynotex{${1:file}}"
+      }
+    },
+    {
+      "name": "jupynotex",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "jupynotex[${2:cells}]{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

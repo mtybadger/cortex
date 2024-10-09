@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "SetParskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetParskip{${1:distance%l}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

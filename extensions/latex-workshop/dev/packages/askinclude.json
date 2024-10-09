@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "makematch",
+      "if": "makematch"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/askinclude#c": [
+      "makematch",
+      "pdfmatch",
+      "noregexp"
+    ]
+  },
+  "args": [
+    "\\usepackage/askinclude#c"
+  ]
+}

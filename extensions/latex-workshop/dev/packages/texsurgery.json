@@ -1,0 +1,92 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "theTSeval",
+      "unusual": true
+    },
+    {
+      "name": "theTSrun",
+      "unusual": true
+    },
+    {
+      "name": "theTSrunsilent",
+      "unusual": true
+    },
+    {
+      "name": "lstinlinesafe",
+      "arg": {
+        "format": "||",
+        "snippet": "lstinlinesafe|${1:code}|"
+      }
+    },
+    {
+      "name": "eval",
+      "arg": {
+        "format": "{}",
+        "snippet": "eval{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "eval",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "eval[${2:language}]{${1:code%definition}}"
+      }
+    },
+    {
+      "name": "sage",
+      "arg": {
+        "format": "{}",
+        "snippet": "sage{${1:code%definition}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "run"
+    },
+    {
+      "name": "run",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:language}]"
+      }
+    },
+    {
+      "name": "runsilent"
+    },
+    {
+      "name": "runsilent",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:language}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/texsurgery#c": [
+      "showcode",
+      "noinstructions"
+    ]
+  },
+  "args": [
+    "\\usepackage/texsurgery#c"
+  ]
+}

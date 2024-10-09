@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "checkoddpage",
+      "unusual": true
+    },
+    {
+      "name": "ifoddpage",
+      "unusual": true
+    },
+    {
+      "name": "ifoddpageoroneside",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

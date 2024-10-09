@@ -1,0 +1,96 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "collectbox",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "collectbox{${1:code}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "collectbox*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "collectbox*{${1:code}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "collectbox",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "collectbox[${3:begin code}]{${1:code}}[${4:end code}]{${2:content%text}}"
+      }
+    },
+    {
+      "name": "collectbox*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "collectbox*[${3:begin code}]{${1:code}}[${4:end code}]{${2:content%text}}"
+      }
+    },
+    {
+      "name": "collectboxto",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "collectboxto{${1:register}}{${2:code}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "collectboxto",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]{}",
+        "snippet": "collectboxto{${1:register}}[${4:begin code}]{${2:code}}[${5:end code}]{${3:content%text}}"
+      }
+    },
+    {
+      "name": "collectboxcheckenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "collectboxcheckenv{${1:name}}"
+      }
+    },
+    {
+      "name": "collectedbox",
+      "unusual": true
+    },
+    {
+      "name": "BOXCONTENT",
+      "unusual": true
+    },
+    {
+      "name": "ifcollectboxenv",
+      "unusual": true
+    },
+    {
+      "name": "collectboxenvtrue",
+      "unusual": true
+    },
+    {
+      "name": "collectboxenvfalse",
+      "unusual": true
+    },
+    {
+      "name": "collectboxcheckenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "collectboxcheckenv{${1:arg}}"
+      }
+    },
+    {
+      "name": "collectboxenvend",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "exscale",
+      "if": "exscale"
+    },
+    {
+      "name": "amsfonts",
+      "if": "amsfonts"
+    },
+    {
+      "name": "amssymb",
+      "if": "amssymb"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/concmath#c": [
+      "exscale",
+      "amsfonts",
+      "amssymb",
+      "boldsans"
+    ]
+  },
+  "args": [
+    "\\usepackage/concmath#c"
+  ]
+}

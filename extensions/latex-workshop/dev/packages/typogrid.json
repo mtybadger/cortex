@@ -1,0 +1,50 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "eso-pic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "typogridsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "typogridsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\usepackage/typogrid#c,\\typogridsetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "typogrid"
+    },
+    {
+      "name": "gridwidth"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/typogrid#c": [
+      "draft",
+      "final",
+      "colorgrid",
+      "grid"
+    ],
+    "\\usepackage/typogrid#c,\\typogridsetup": [
+      "columns=${1:number}",
+      "headings",
+      "margin"
+    ]
+  },
+  "args": [
+    "\\usepackage/typogrid#c",
+    "\\usepackage/typogrid#c,\\typogridsetup"
+  ]
+}

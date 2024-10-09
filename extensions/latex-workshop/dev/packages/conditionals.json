@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "given",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "given{${1:arg}}"
+      }
+    },
+    {
+      "name": "blank",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "blank{${1:arg}}"
+      }
+    },
+    {
+      "name": "nil",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nil{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

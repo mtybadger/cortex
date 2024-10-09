@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "supertabular"
+    }
+  ],
+  "macros": [
+    {
+      "name": "glsdescwidth",
+      "unusual": true
+    },
+    {
+      "name": "glspagelistwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

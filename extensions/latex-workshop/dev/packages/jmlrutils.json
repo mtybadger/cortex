@@ -1,0 +1,739 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "aliascnt",
+      "if": "cleveref"
+    },
+    {
+      "name": "cleveref",
+      "if": "cleveref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "algocfconts",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "algocfconts{${1:label}}{${2:caption%text}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "algorithmref",
+      "arg": {
+        "format": "{}",
+        "snippet": "algorithmref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "algorithmrefname",
+      "unusual": true
+    },
+    {
+      "name": "algorithmsrefname",
+      "unusual": true
+    },
+    {
+      "name": "altdescriptionlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "altdescriptionlabel{${1:label}}"
+      }
+    },
+    {
+      "name": "appendixref",
+      "arg": {
+        "format": "{}",
+        "snippet": "appendixref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "appendixrefname",
+      "unusual": true
+    },
+    {
+      "name": "appendixsrefname",
+      "unusual": true
+    },
+    {
+      "name": "axiomref",
+      "arg": {
+        "format": "{}",
+        "snippet": "axiomref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "axiomrefname",
+      "unusual": true
+    },
+    {
+      "name": "axiomsrefname",
+      "unusual": true
+    },
+    {
+      "name": "conjectureref",
+      "arg": {
+        "format": "{}",
+        "snippet": "conjectureref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "conjecturerefname",
+      "unusual": true
+    },
+    {
+      "name": "conjecturesrefname",
+      "unusual": true
+    },
+    {
+      "name": "corollaryref",
+      "arg": {
+        "format": "{}",
+        "snippet": "corollaryref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "corollaryrefname",
+      "unusual": true
+    },
+    {
+      "name": "corollarysrefname",
+      "unusual": true
+    },
+    {
+      "name": "definitionref",
+      "arg": {
+        "format": "{}",
+        "snippet": "definitionref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "definitionrefname",
+      "unusual": true
+    },
+    {
+      "name": "definitionsrefname",
+      "unusual": true
+    },
+    {
+      "name": "equationref",
+      "arg": {
+        "format": "{}",
+        "snippet": "equationref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "equationrefname",
+      "unusual": true
+    },
+    {
+      "name": "equationsrefname",
+      "unusual": true
+    },
+    {
+      "name": "exampleref",
+      "arg": {
+        "format": "{}",
+        "snippet": "exampleref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "examplerefname",
+      "unusual": true
+    },
+    {
+      "name": "examplesrefname",
+      "unusual": true
+    },
+    {
+      "name": "figureconts",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "figureconts{${1:label}}{${2:caption%text}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "figureref",
+      "arg": {
+        "format": "{}",
+        "snippet": "figureref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "figurerefname",
+      "unusual": true
+    },
+    {
+      "name": "figuresrefname",
+      "unusual": true
+    },
+    {
+      "name": "floatconts",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "floatconts{${1:label}}{${2:caption%text}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "ifjmlrcleveref",
+      "unusual": true
+    },
+    {
+      "name": "ifjmlrutilsmaths",
+      "unusual": true
+    },
+    {
+      "name": "ifjmlrutilssubfloats",
+      "unusual": true
+    },
+    {
+      "name": "ifjmlrutilstheorems",
+      "unusual": true
+    },
+    {
+      "name": "iftablecaptiontop",
+      "unusual": true
+    },
+    {
+      "name": "includeteximage",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "includeteximage[${2:options%keyvals}]{${1:imagefile}}",
+        "keys": [
+          "\\includeteximage"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "includeteximage",
+      "arg": {
+        "format": "{}",
+        "snippet": "includeteximage{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "jmlralgorule",
+      "unusual": true
+    },
+    {
+      "name": "jmlrBlackBox",
+      "unusual": true
+    },
+    {
+      "name": "jmlrclevereffalse",
+      "unusual": true
+    },
+    {
+      "name": "jmlrclevereftrue",
+      "unusual": true
+    },
+    {
+      "name": "jmlrminsubcaptionwidth",
+      "unusual": true
+    },
+    {
+      "name": "jmlrprehyperref",
+      "unusual": true
+    },
+    {
+      "name": "jmlrQED",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilsmathsfalse",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilsmathstrue",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilssubfloatsfalse",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilssubfloatstrue",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilstheoremsfalse",
+      "unusual": true
+    },
+    {
+      "name": "jmlrutilstheoremstrue",
+      "unusual": true
+    },
+    {
+      "name": "lemmaref",
+      "arg": {
+        "format": "{}",
+        "snippet": "lemmaref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "lemmarefname",
+      "unusual": true
+    },
+    {
+      "name": "lemmasrefname",
+      "unusual": true
+    },
+    {
+      "name": "mailto",
+      "arg": {
+        "format": "{}",
+        "snippet": "mailto{${1:email address%URL}}"
+      }
+    },
+    {
+      "name": "newtheorem*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newtheorem*{${1:envname}}{${2:caption}}"
+      }
+    },
+    {
+      "name": "objectref",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "objectref{${1:labellist}}{${2:singular name}}{${3:plural name}}{${4:before}}{${5:after}}"
+      }
+    },
+    {
+      "name": "orgvec",
+      "arg": {
+        "format": "{}",
+        "snippet": "orgvec{${1:arg}}"
+      }
+    },
+    {
+      "name": "partref",
+      "arg": {
+        "format": "{}",
+        "snippet": "partref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "partrefname",
+      "unusual": true
+    },
+    {
+      "name": "partsrefname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "remarkref",
+      "arg": {
+        "format": "{}",
+        "snippet": "remarkref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "remarkrefname",
+      "unusual": true
+    },
+    {
+      "name": "remarksrefname",
+      "unusual": true
+    },
+    {
+      "name": "sectionref",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectionref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "sectionrefname",
+      "unusual": true
+    },
+    {
+      "name": "sectionsrefname",
+      "unusual": true
+    },
+    {
+      "name": "set",
+      "arg": {
+        "format": "{}",
+        "snippet": "set{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "subfigref",
+      "arg": {
+        "format": "{}",
+        "snippet": "subfigref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "subfigure",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "subfigure[${2:title%text}][${3:valign%keyvals}]{${1:contents%text}}",
+        "keys": [
+          "\\subfigure,\\subtable"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "subfigure",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subfigure[${2:title%text}]{${1:contents%text}}"
+      }
+    },
+    {
+      "name": "subfigure",
+      "arg": {
+        "format": "{}",
+        "snippet": "subfigure{${1:contents%text}}"
+      }
+    },
+    {
+      "name": "subfigurelabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "subfigurelabel{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "subtable",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "subtable[${2:title%text}][${3:valign%keyvals}]{${1:contents%text}}",
+        "keys": [
+          "\\subfigure,\\subtable"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "subtable",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subtable[${2:title%text}]{${1:contents%text}}"
+      }
+    },
+    {
+      "name": "subtable",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtable{${1:contents%text}}"
+      }
+    },
+    {
+      "name": "subtablelabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "subtablelabel{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "subtabref",
+      "arg": {
+        "format": "{}",
+        "snippet": "subtabref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "tablecaptiontopfalse",
+      "unusual": true
+    },
+    {
+      "name": "tablecaptiontoptrue",
+      "unusual": true
+    },
+    {
+      "name": "tableconts",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "tableconts{${1:label}}{${2:caption%text}}{${3:content%text}}"
+      }
+    },
+    {
+      "name": "tableref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tableref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "tablerefname",
+      "unusual": true
+    },
+    {
+      "name": "tablesrefname",
+      "unusual": true
+    },
+    {
+      "name": "theaxiom",
+      "unusual": true
+    },
+    {
+      "name": "theconjecture",
+      "unusual": true
+    },
+    {
+      "name": "thecorollary",
+      "unusual": true
+    },
+    {
+      "name": "thedefinition",
+      "unusual": true
+    },
+    {
+      "name": "theexample",
+      "unusual": true
+    },
+    {
+      "name": "thelemma",
+      "unusual": true
+    },
+    {
+      "name": "theorembodyfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "theorembodyfont{${1:font declarations}}"
+      }
+    },
+    {
+      "name": "theoremheaderfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremheaderfont{${1:font declarations}}"
+      }
+    },
+    {
+      "name": "theorempostheader",
+      "arg": {
+        "format": "{}",
+        "snippet": "theorempostheader{${1:text}}"
+      }
+    },
+    {
+      "name": "theoremref",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremref{${1:labellist}}"
+      }
+    },
+    {
+      "name": "theoremrefname",
+      "unusual": true
+    },
+    {
+      "name": "theoremsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremsep{${1:separation code}}"
+      }
+    },
+    {
+      "name": "theoremsrefname",
+      "unusual": true
+    },
+    {
+      "name": "theproposition",
+      "unusual": true
+    },
+    {
+      "name": "theremark",
+      "unusual": true
+    },
+    {
+      "name": "thesubfigure",
+      "unusual": true
+    },
+    {
+      "name": "thesubtable",
+      "unusual": true
+    },
+    {
+      "name": "thetheorem",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "algorithm"
+    },
+    {
+      "name": "algorithm",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:placement}]"
+      }
+    },
+    {
+      "name": "altdescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:widest label}}"
+      }
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof"
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/jmlrutils#c": [
+      "maths",
+      "nomaths",
+      "math",
+      "nomath",
+      "theorems",
+      "notheorems",
+      "cleveref",
+      "nocleveref",
+      "subfloats",
+      "nosubfloats"
+    ],
+    "\\includeteximage": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}"
+    ],
+    "\\subfigure,\\subtable": [
+      "t",
+      "c",
+      "b"
+    ]
+  },
+  "args": [
+    "\\usepackage/jmlrutils#c"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    }
+  ],
+  "macros": [
+    {
+      "name": "zlabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "zlabel{${1:label}}"
+      }
+    },
+    {
+      "name": "zkvlabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "zkvlabel{${1:keyvals}}{${2:label}}",
+        "keys": [
+          "\\zkvlabel"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "zref",
+      "arg": {
+        "format": "{}",
+        "snippet": "zref{${1:label}}"
+      }
+    },
+    {
+      "name": "zref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zref[${2:propname%keyvals}]{${1:label}}",
+        "keys": [
+          "\\zref#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "zpageref",
+      "arg": {
+        "format": "{}",
+        "snippet": "zpageref{${1:label}}"
+      }
+    },
+    {
+      "name": "zrefused",
+      "arg": {
+        "format": "{}",
+        "snippet": "zrefused{${1:label}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\zkvlabel": [
+      "prop=",
+      "list=",
+      "delprop=",
+      "immediate",
+      "values="
+    ],
+    "\\zref#c": [
+      "default",
+      "page"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,96 @@
+{
+  "deps": [
+    {
+      "name": "lcg"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "drawnimstick"
+    },
+    {
+      "name": "nimgame",
+      "arg": {
+        "format": "{}",
+        "snippet": "nimgame{${1:number list}}"
+      }
+    },
+    {
+      "name": "nimgame",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "nimgame[${2:inline}]{${1:number list}}"
+      }
+    },
+    {
+      "name": "setnimstickcolour",
+      "arg": {
+        "format": "{}",
+        "snippet": "setnimstickcolour{${1:color}}"
+      }
+    },
+    {
+      "name": "nimstickcolour",
+      "unusual": true
+    },
+    {
+      "name": "setnimscale",
+      "arg": {
+        "format": "{}",
+        "snippet": "setnimscale{${1:factor}}"
+      }
+    },
+    {
+      "name": "nimstickheight",
+      "unusual": true
+    },
+    {
+      "name": "nimstickthickness",
+      "unusual": true
+    },
+    {
+      "name": "nimstickgap",
+      "unusual": true
+    },
+    {
+      "name": "nimheapgap",
+      "unusual": true
+    },
+    {
+      "name": "nimheapwobble",
+      "unusual": true
+    },
+    {
+      "name": "nimheaplift",
+      "unusual": true
+    },
+    {
+      "name": "nimrandrange",
+      "unusual": true
+    },
+    {
+      "name": "onenimstick"
+    },
+    {
+      "name": "topx",
+      "unusual": true
+    },
+    {
+      "name": "botx",
+      "unusual": true
+    },
+    {
+      "name": "lift",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

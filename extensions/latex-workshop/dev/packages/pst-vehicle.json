@@ -1,0 +1,99 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-xkey"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "pst-node"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psVehicle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "psVehicle{${1:scaling factor}}{${2:abscissa back wheel}}{${3:function}}"
+      }
+    },
+    {
+      "name": "psVehicle",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "psVehicle[${4:options%keyvals}]{${1:scaling factor}}{${2:abscissa back wheel}}{${3:function}}"
+      }
+    },
+    {
+      "name": "Bike"
+    },
+    {
+      "name": "Tractor"
+    },
+    {
+      "name": "HighWheeler"
+    },
+    {
+      "name": "Truck"
+    },
+    {
+      "name": "Segway"
+    },
+    {
+      "name": "UniCycle"
+    },
+    {
+      "name": "wheelA"
+    },
+    {
+      "name": "wheelB"
+    },
+    {
+      "name": "wheelC"
+    },
+    {
+      "name": "wheelD"
+    },
+    {
+      "name": "arrowWheel"
+    },
+    {
+      "name": "TruckWheel"
+    },
+    {
+      "name": "segWheel"
+    },
+    {
+      "name": "SpokesWheelCrossed"
+    },
+    {
+      "name": "SpokesWheelA"
+    },
+    {
+      "name": "SpokesWheelB"
+    },
+    {
+      "name": "TractorFrontWheel"
+    },
+    {
+      "name": "TractorRearWheel"
+    },
+    {
+      "name": "SlopeoMeter",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SlopeoMeter{${1:color}}{${2:angle}}"
+      }
+    },
+    {
+      "name": "SelfDefinedVehicle"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

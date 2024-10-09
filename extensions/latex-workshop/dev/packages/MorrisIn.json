@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "MorrisInfamily"
+    },
+    {
+      "name": "morrisin",
+      "arg": {
+        "format": "{}",
+        "snippet": "morrisin{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

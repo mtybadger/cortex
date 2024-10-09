@@ -1,0 +1,152 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tag",
+      "arg": {
+        "format": "{}",
+        "snippet": "tag{${1:text}}"
+      }
+    },
+    {
+      "name": "notag"
+    },
+    {
+      "name": "minilab",
+      "arg": {
+        "format": "{}",
+        "snippet": "minilab{${1:label}}"
+      }
+    },
+    {
+      "name": "setlabtype",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlabtype{${1:style}}"
+      }
+    },
+    {
+      "name": "intertext",
+      "arg": {
+        "format": "{}",
+        "snippet": "intertext{${1:text}}"
+      }
+    },
+    {
+      "name": "multicol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "multicol{${1:num of cols}}{${2:content}}"
+      }
+    },
+    {
+      "name": "computelength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "computelength{${1:arg}}"
+      }
+    },
+    {
+      "name": "getlength",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "getlength{${1:arg}}"
+      }
+    },
+    {
+      "name": "next",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "next{${1:arg}}"
+      }
+    },
+    {
+      "name": "MHcenter",
+      "unusual": true
+    },
+    {
+      "name": "MHbig",
+      "unusual": true
+    },
+    {
+      "name": "openup",
+      "unusual": true
+    },
+    {
+      "name": "displaylines",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "displaylines{${1:arg}}"
+      }
+    },
+    {
+      "name": "MHsavelabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MHsavelabel{${1:arg}}"
+      }
+    },
+    {
+      "name": "sublabeltype",
+      "unusual": true
+    },
+    {
+      "name": "MHgobble",
+      "unusual": true
+    },
+    {
+      "name": "comm",
+      "unusual": true
+    },
+    {
+      "name": "strutdepth",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "equ"
+    },
+    {
+      "name": "equ",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "equs"
+    },
+    {
+      "name": "equs",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:label}]"
+      }
+    },
+    {
+      "name": "equs",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:num of cols}][${2:label}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/mhequ#c": [
+      "righttag",
+      "lefttag",
+      "numberall",
+      "fleqn",
+      "leqno"
+    ]
+  },
+  "args": [
+    "\\usepackage/mhequ#c"
+  ]
+}

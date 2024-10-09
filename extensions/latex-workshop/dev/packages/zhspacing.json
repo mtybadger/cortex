@@ -1,0 +1,128 @@
+{
+  "deps": [
+    {
+      "name": "zhsusefulmacros"
+    },
+    {
+      "name": "zhsmyclass"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "zhspacing"
+    },
+    {
+      "name": "zhfont",
+      "unusual": true
+    },
+    {
+      "name": "zhpunctfont",
+      "unusual": true
+    },
+    {
+      "name": "zhcjkextafont",
+      "unusual": true
+    },
+    {
+      "name": "zhcjkextbfont",
+      "unusual": true
+    },
+    {
+      "name": "skipzh",
+      "unusual": true
+    },
+    {
+      "name": "skipenzh",
+      "unusual": true
+    },
+    {
+      "name": "skipzhopen",
+      "unusual": true
+    },
+    {
+      "name": "skipzhinteropen",
+      "unusual": true
+    },
+    {
+      "name": "skipzhlinestartopen",
+      "unusual": true
+    },
+    {
+      "name": "skipzhclose",
+      "unusual": true
+    },
+    {
+      "name": "skipzhinterclose",
+      "unusual": true
+    },
+    {
+      "name": "skipzhlineendclose",
+      "unusual": true
+    },
+    {
+      "name": "skipzhhalfstop",
+      "unusual": true
+    },
+    {
+      "name": "skipzhinterhalfstop",
+      "unusual": true
+    },
+    {
+      "name": "skipzhlineendhalfstop",
+      "unusual": true
+    },
+    {
+      "name": "skipzhfullstop",
+      "unusual": true
+    },
+    {
+      "name": "skipzhinterfullstop",
+      "unusual": true
+    },
+    {
+      "name": "skipzhlineendfullstop",
+      "unusual": true
+    },
+    {
+      "name": "skipnegzhlinestartopen",
+      "unusual": true
+    },
+    {
+      "name": "skipnegzhlineendclose",
+      "unusual": true
+    },
+    {
+      "name": "skipnegzhlineendhalfstop",
+      "unusual": true
+    },
+    {
+      "name": "skipnegzhlineendfullstop",
+      "unusual": true
+    },
+    {
+      "name": "simsunskipscheme",
+      "unusual": true
+    },
+    {
+      "name": "emptyskipscheme",
+      "unusual": true
+    },
+    {
+      "name": "haltskipscheme",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/zhspacing": [
+      "ambiwide",
+      "ambinarrow"
+    ]
+  },
+  "args": [
+    "\\usepackage/zhspacing"
+  ]
+}

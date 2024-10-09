@@ -1,0 +1,51 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cabin"
+    },
+    {
+      "name": "cabincondensed"
+    },
+    {
+      "name": "cabinfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cabin#c": [
+      "scaled=${1:factor}",
+      "default",
+      "sfdefault",
+      "type1",
+      "semibold",
+      "bold",
+      "medium",
+      "regular",
+      "condensed"
+    ]
+  },
+  "args": [
+    "\\usepackage/cabin#c"
+  ]
+}

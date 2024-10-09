@@ -1,0 +1,16 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pdfbase#c": [
+      "xetex",
+      "dvipdfmx",
+      "dvisvgm",
+      "bigfiles"
+    ]
+  },
+  "args": [
+    "\\usepackage/pdfbase#c"
+  ]
+}

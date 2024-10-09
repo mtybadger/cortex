@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { WellDefinedPrefixTree } from '../../common/prefixTree.js';
+import { WellDefinedPrefixTree } from 'vs/base/common/prefixTree';
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 suite('WellDefinedPrefixTree', () => {
 	let tree: WellDefinedPrefixTree<number>;

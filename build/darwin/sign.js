@@ -10,8 +10,8 @@ const codesign = require("electron-osx-sign");
 const cross_spawn_promise_1 = require("@malept/cross-spawn-promise");
 const root = path.dirname(path.dirname(__dirname));
 function getElectronVersion() {
-    const npmrc = fs.readFileSync(path.join(root, '.npmrc'), 'utf8');
-    const target = /^target="(.*)"$/m.exec(npmrc)[1];
+    const yarnrc = fs.readFileSync(path.join(root, '.yarnrc'), 'utf8');
+    const target = /^target "(.*)"$/m.exec(yarnrc)[1];
     return target;
 }
 async function main(buildDir) {
@@ -51,9 +51,11 @@ async function main(buildDir) {
         ...defaultOpts,
         // TODO(deepak1556): Incorrectly declared type in electron-osx-sign
         ignore: (filePath) => {
+						const ext = path.extname(filePath);
             return filePath.includes(gpuHelperAppName) ||
                 filePath.includes(rendererHelperAppName) ||
-                filePath.includes(pluginHelperAppName);
+                filePath.includes(pluginHelperAppName) ||
+								ext == '.asar' || ext == '.dat' || ext == '.gif' || ext == '.icns' || ext == '.ico' || ext == '.json' || ext == '.mp3' || ext == '.nib' || ext == '.pak' || ext == '.png' || ext == '.scpt' || ext == '.ttf' || ext == '.wasm' || ext == '.woff' || ext == '.woff2';
         }
     };
     const gpuHelperOpts = {
@@ -81,21 +83,21 @@ async function main(buildDir) {
             '-insert',
             'NSAppleEventsUsageDescription',
             '-string',
-            'An application in Visual Studio Code wants to use AppleScript.',
+            'An application in VSCodium wants to use AppleScript.',
             `${infoPlistPath}`
         ]);
         await (0, cross_spawn_promise_1.spawn)('plutil', [
             '-replace',
             'NSMicrophoneUsageDescription',
             '-string',
-            'An application in Visual Studio Code wants to use the Microphone.',
+            'An application in VSCodium wants to use the Microphone.',
             `${infoPlistPath}`
         ]);
         await (0, cross_spawn_promise_1.spawn)('plutil', [
             '-replace',
             'NSCameraUsageDescription',
             '-string',
-            'An application in Visual Studio Code wants to use the Camera.',
+            'An application in VSCodium wants to use the Camera.',
             `${infoPlistPath}`
         ]);
     }

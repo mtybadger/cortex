@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dhucs-ucshyper#c": [
+      "dvips"
+    ]
+  },
+  "args": [
+    "\\usepackage/dhucs-ucshyper#c"
+  ]
+}

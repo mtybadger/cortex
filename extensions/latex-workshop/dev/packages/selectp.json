@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "outputonly",
+      "arg": {
+        "format": "{}",
+        "snippet": "outputonly{${1:list of page numbers}}"
+      }
+    },
+    {
+      "name": "AbsVal",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "AbsVal{${1:TeX num or dimen}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

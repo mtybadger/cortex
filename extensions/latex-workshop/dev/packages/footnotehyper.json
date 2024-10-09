@@ -1,0 +1,53 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "savenotes",
+      "unusual": true
+    },
+    {
+      "name": "spewnotes",
+      "unusual": true
+    },
+    {
+      "name": "makesavenoteenv",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "makesavenoteenv{${1:environment}}"
+      }
+    },
+    {
+      "name": "makesavenoteenv",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "makesavenoteenv[${2:new_envname%envname}]{${1:environment}}"
+      }
+    },
+    {
+      "name": "footnotehyperwarnfalse",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "savenotes"
+    },
+    {
+      "name": "footnote"
+    },
+    {
+      "name": "footnote",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:number}]"
+      }
+    },
+    {
+      "name": "footnotetext"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

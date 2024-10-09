@@ -1,0 +1,49 @@
+{
+  "deps": [
+    {
+      "name": "xspace"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xperiod"
+    },
+    {
+      "name": "xcomma"
+    },
+    {
+      "name": "xperiodcomma"
+    },
+    {
+      "name": "xspaceafter",
+      "arg": {
+        "format": "{}",
+        "snippet": "xspaceafter{${1:text}}"
+      }
+    },
+    {
+      "name": "xperiodafter",
+      "arg": {
+        "format": "{}",
+        "snippet": "xperiodafter{${1:text}}"
+      }
+    },
+    {
+      "name": "xcommaafter",
+      "arg": {
+        "format": "{}",
+        "snippet": "xcommaafter{${1:text}}"
+      }
+    },
+    {
+      "name": "xperiodcommaafter",
+      "arg": {
+        "format": "{}",
+        "snippet": "xperiodcommaafter{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

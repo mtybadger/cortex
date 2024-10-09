@@ -1,0 +1,1054 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "empheq"
+    },
+    {
+      "name": "otf",
+      "if": "curriculum"
+    },
+    {
+      "name": "luatexja-otf",
+      "if": "lua"
+    }
+  ],
+  "macros": [
+    {
+      "name": "currI",
+      "if": "curriculum"
+    },
+    {
+      "name": "currII",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIII",
+      "if": "curriculum"
+    },
+    {
+      "name": "currA",
+      "if": "curriculum"
+    },
+    {
+      "name": "currB",
+      "if": "curriculum"
+    },
+    {
+      "name": "currC",
+      "if": "curriculum"
+    },
+    {
+      "name": "currD",
+      "if": "curriculum"
+    },
+    {
+      "name": "currE",
+      "if": "curriculum"
+    },
+    {
+      "name": "currF",
+      "if": "curriculum"
+    },
+    {
+      "name": "currG",
+      "if": "curriculum"
+    },
+    {
+      "name": "currH",
+      "if": "curriculum"
+    },
+    {
+      "name": "currI",
+      "if": "curriculum"
+    },
+    {
+      "name": "currJ",
+      "if": "curriculum"
+    },
+    {
+      "name": "currK",
+      "if": "curriculum"
+    },
+    {
+      "name": "currL",
+      "if": "curriculum"
+    },
+    {
+      "name": "currM",
+      "if": "curriculum"
+    },
+    {
+      "name": "currN",
+      "if": "curriculum"
+    },
+    {
+      "name": "currO",
+      "if": "curriculum"
+    },
+    {
+      "name": "currP",
+      "if": "curriculum"
+    },
+    {
+      "name": "currQ",
+      "if": "curriculum"
+    },
+    {
+      "name": "currR",
+      "if": "curriculum"
+    },
+    {
+      "name": "currS",
+      "if": "curriculum"
+    },
+    {
+      "name": "currT",
+      "if": "curriculum"
+    },
+    {
+      "name": "currU",
+      "if": "curriculum"
+    },
+    {
+      "name": "currV",
+      "if": "curriculum"
+    },
+    {
+      "name": "currW",
+      "if": "curriculum"
+    },
+    {
+      "name": "currX",
+      "if": "curriculum"
+    },
+    {
+      "name": "currY",
+      "if": "curriculum"
+    },
+    {
+      "name": "currZ",
+      "if": "curriculum"
+    },
+    {
+      "name": "curra",
+      "if": "curriculum"
+    },
+    {
+      "name": "currb",
+      "if": "curriculum"
+    },
+    {
+      "name": "currc",
+      "if": "curriculum"
+    },
+    {
+      "name": "currd",
+      "if": "curriculum"
+    },
+    {
+      "name": "curre",
+      "if": "curriculum"
+    },
+    {
+      "name": "currf",
+      "if": "curriculum"
+    },
+    {
+      "name": "currg",
+      "if": "curriculum"
+    },
+    {
+      "name": "currh",
+      "if": "curriculum"
+    },
+    {
+      "name": "curri",
+      "if": "curriculum"
+    },
+    {
+      "name": "currj",
+      "if": "curriculum"
+    },
+    {
+      "name": "currk",
+      "if": "curriculum"
+    },
+    {
+      "name": "currl",
+      "if": "curriculum"
+    },
+    {
+      "name": "currm",
+      "if": "curriculum"
+    },
+    {
+      "name": "currn",
+      "if": "curriculum"
+    },
+    {
+      "name": "curro",
+      "if": "curriculum"
+    },
+    {
+      "name": "currp",
+      "if": "curriculum"
+    },
+    {
+      "name": "currq",
+      "if": "curriculum"
+    },
+    {
+      "name": "currr",
+      "if": "curriculum"
+    },
+    {
+      "name": "currs",
+      "if": "curriculum"
+    },
+    {
+      "name": "currt",
+      "if": "curriculum"
+    },
+    {
+      "name": "curru",
+      "if": "curriculum"
+    },
+    {
+      "name": "currv",
+      "if": "curriculum"
+    },
+    {
+      "name": "currw",
+      "if": "curriculum"
+    },
+    {
+      "name": "currx",
+      "if": "curriculum"
+    },
+    {
+      "name": "curry",
+      "if": "curriculum"
+    },
+    {
+      "name": "currz",
+      "if": "curriculum"
+    },
+    {
+      "name": "curralpha",
+      "if": "curriculum"
+    },
+    {
+      "name": "currbeta",
+      "if": "curriculum"
+    },
+    {
+      "name": "currgamma",
+      "if": "curriculum"
+    },
+    {
+      "name": "currdelta",
+      "if": "curriculum"
+    },
+    {
+      "name": "currepsilon",
+      "if": "curriculum"
+    },
+    {
+      "name": "currzeta",
+      "if": "curriculum"
+    },
+    {
+      "name": "curreta",
+      "if": "curriculum"
+    },
+    {
+      "name": "currtheta",
+      "if": "curriculum"
+    },
+    {
+      "name": "curriota",
+      "if": "curriculum"
+    },
+    {
+      "name": "currkappa",
+      "if": "curriculum"
+    },
+    {
+      "name": "currlambda",
+      "if": "curriculum"
+    },
+    {
+      "name": "currmu",
+      "if": "curriculum"
+    },
+    {
+      "name": "currnu",
+      "if": "curriculum"
+    },
+    {
+      "name": "currxi",
+      "if": "curriculum"
+    },
+    {
+      "name": "curromicron",
+      "if": "curriculum"
+    },
+    {
+      "name": "currpai",
+      "if": "curriculum"
+    },
+    {
+      "name": "currrho",
+      "if": "curriculum"
+    },
+    {
+      "name": "currsigma",
+      "if": "curriculum"
+    },
+    {
+      "name": "currtau",
+      "if": "curriculum"
+    },
+    {
+      "name": "currupsilon",
+      "if": "curriculum"
+    },
+    {
+      "name": "currphi",
+      "if": "curriculum"
+    },
+    {
+      "name": "currchi",
+      "if": "curriculum"
+    },
+    {
+      "name": "currpsi",
+      "if": "curriculum"
+    },
+    {
+      "name": "curromega",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIA",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIA*",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIB",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIB*",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIBC",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIBC*",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIIC",
+      "if": "curriculum"
+    },
+    {
+      "name": "currIIIC*",
+      "if": "curriculum"
+    },
+    {
+      "name": "originalfrac",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "originalfrac{${1:num}}{${2:den}}"
+      }
+    },
+    {
+      "name": "originalsqrt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "originalsqrt{${1:arg}}"
+      }
+    },
+    {
+      "name": "originalsqrt",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "originalsqrt[${2:root}]{${1:arg}}"
+      }
+    },
+    {
+      "name": "originallim",
+      "unusual": true
+    },
+    {
+      "name": "originalvec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "originalvec{${1:arg}}"
+      }
+    },
+    {
+      "name": "angstrom"
+    },
+    {
+      "name": "capitaleszett"
+    },
+    {
+      "name": "AA"
+    },
+    {
+      "name": "BB"
+    },
+    {
+      "name": "CC"
+    },
+    {
+      "name": "DD"
+    },
+    {
+      "name": "EE"
+    },
+    {
+      "name": "FF"
+    },
+    {
+      "name": "GG"
+    },
+    {
+      "name": "HH"
+    },
+    {
+      "name": "II"
+    },
+    {
+      "name": "JJ"
+    },
+    {
+      "name": "KK"
+    },
+    {
+      "name": "LL"
+    },
+    {
+      "name": "MM"
+    },
+    {
+      "name": "NN"
+    },
+    {
+      "name": "OO"
+    },
+    {
+      "name": "PP"
+    },
+    {
+      "name": "QQ"
+    },
+    {
+      "name": "RR"
+    },
+    {
+      "name": "SS"
+    },
+    {
+      "name": "TT"
+    },
+    {
+      "name": "UU"
+    },
+    {
+      "name": "VV"
+    },
+    {
+      "name": "WW"
+    },
+    {
+      "name": "XX"
+    },
+    {
+      "name": "YY"
+    },
+    {
+      "name": "ZZ"
+    },
+    {
+      "name": "phantomheight"
+    },
+    {
+      "name": "phantomheight",
+      "arg": {
+        "format": "[]",
+        "snippet": "phantomheight[${1:letter%formula}]"
+      }
+    },
+    {
+      "name": "comma",
+      "detail": ",",
+      "doc": "Comma"
+    },
+    {
+      "name": "comma*"
+    },
+    {
+      "name": "period",
+      "detail": ".",
+      "doc": "Full stop, period"
+    },
+    {
+      "name": "period*"
+    },
+    {
+      "name": "pair",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pair{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "pair*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pair*{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "triplet",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "triplet{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "triplet*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "triplet*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "quadruplet",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "quadruplet{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "quadruplet*",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "quadruplet*{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "intersection"
+    },
+    {
+      "name": "union"
+    },
+    {
+      "name": "complement",
+      "arg": {
+        "format": "{}",
+        "snippet": "complement{${1:arg}}"
+      },
+      "detail": "∁ (\"amssymb fourier\" command)",
+      "doc": "Complement sign"
+    },
+    {
+      "name": "cmpl",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cmpl{${1:arg}}"
+      }
+    },
+    {
+      "name": "tand"
+    },
+    {
+      "name": "tor"
+    },
+    {
+      "name": "eand"
+    },
+    {
+      "name": "eor"
+    },
+    {
+      "name": "lto"
+    },
+    {
+      "name": "lfrom"
+    },
+    {
+      "name": "iff"
+    },
+    {
+      "name": "plto"
+    },
+    {
+      "name": "plfrom"
+    },
+    {
+      "name": "piff"
+    },
+    {
+      "name": "peq"
+    },
+    {
+      "name": "set",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "set{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "NZ"
+    },
+    {
+      "name": "NP"
+    },
+    {
+      "name": "Z"
+    },
+    {
+      "name": "Q"
+    },
+    {
+      "name": "R"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "inverse",
+      "arg": {
+        "format": "{}",
+        "snippet": "inverse{${1:arg}}"
+      }
+    },
+    {
+      "name": "abs",
+      "arg": {
+        "format": "{}",
+        "snippet": "abs{${1:arg}}"
+      }
+    },
+    {
+      "name": "abs*",
+      "arg": {
+        "format": "{}",
+        "snippet": "abs*{${1:arg}}"
+      }
+    },
+    {
+      "name": "neconcave"
+    },
+    {
+      "name": "neconcave*"
+    },
+    {
+      "name": "seconcave"
+    },
+    {
+      "name": "seconcave*"
+    },
+    {
+      "name": "neconvex"
+    },
+    {
+      "name": "neconvex*"
+    },
+    {
+      "name": "seconvex"
+    },
+    {
+      "name": "seconvex*"
+    },
+    {
+      "name": "dint"
+    },
+    {
+      "name": "dr"
+    },
+    {
+      "name": "ds"
+    },
+    {
+      "name": "dt"
+    },
+    {
+      "name": "du"
+    },
+    {
+      "name": "dx"
+    },
+    {
+      "name": "dy"
+    },
+    {
+      "name": "dz"
+    },
+    {
+      "name": "dtheta"
+    },
+    {
+      "name": "const"
+    },
+    {
+      "name": "defint",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "defint{${1:from}}{${2:to}}{${3:function}}"
+      }
+    },
+    {
+      "name": "transformvariable",
+      "arg": {
+        "format": "{}{}{}{}{}{}",
+        "snippet": "transformvariable{${1:var1%formula}}{${2:from1%formula}}{${3:to1%formula}}{${4:var2%formula}}{${5:from2%formula}}{${6:to2%formula}}"
+      }
+    },
+    {
+      "name": "rvec",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rvec{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "rvec*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "rvec*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "cvec",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "cvec{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "cvec*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "cvec*{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "innerproduct",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "innerproduct{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "innerproduct*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "innerproduct*{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "inp",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "inp{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "inp*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "inp*{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "sequence",
+      "arg": {
+        "format": "{}",
+        "snippet": "sequence{${1:arg}}"
+      }
+    },
+    {
+      "name": "seq",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "seq{${1:arg}}"
+      }
+    },
+    {
+      "name": "sum*"
+    },
+    {
+      "name": "GCD"
+    },
+    {
+      "name": "LCM"
+    },
+    {
+      "name": "degree"
+    },
+    {
+      "name": "arc",
+      "arg": {
+        "format": "{}",
+        "snippet": "arc{${1:arg}}"
+      }
+    },
+    {
+      "name": "notparallel"
+    },
+    {
+      "name": "similar"
+    },
+    {
+      "name": "similar",
+      "arg": {
+        "format": "[]",
+        "snippet": "similar[${1:factor}]"
+      }
+    },
+    {
+      "name": "permutation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "permutation{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "combination",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "combination{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "repeatedpermutation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "repeatedpermutation{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "homogeneous",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "homogeneous{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "repeatedcombination",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "repeatedcombination{${1:arg1%formula}}{${2:arg2%formula}}"
+      }
+    },
+    {
+      "name": "expectedvalue",
+      "arg": {
+        "format": "{}",
+        "snippet": "expectedvalue{${1:arg}}"
+      }
+    },
+    {
+      "name": "conjugate",
+      "arg": {
+        "format": "{}",
+        "snippet": "conjugate{${1:arg}}"
+      }
+    },
+    {
+      "name": "conj",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "conj{${1:arg}}"
+      }
+    },
+    {
+      "name": "parentext",
+      "arg": {
+        "format": "{}",
+        "snippet": "parentext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "squaretext",
+      "arg": {
+        "format": "{}",
+        "snippet": "squaretext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "whitesquaretext",
+      "arg": {
+        "format": "{}",
+        "snippet": "whitesquaretext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "ltext",
+      "arg": {
+        "format": "{}",
+        "snippet": "ltext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "lltext",
+      "arg": {
+        "format": "{}",
+        "snippet": "lltext{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "ltextbegin"
+    },
+    {
+      "name": "lltextbegin"
+    },
+    {
+      "name": "ltextend"
+    },
+    {
+      "name": "lltextend"
+    },
+    {
+      "name": "nomination",
+      "arg": {
+        "format": "{}",
+        "snippet": "nomination{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "condition",
+      "arg": {
+        "format": "{}",
+        "snippet": "condition{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "condition*",
+      "arg": {
+        "format": "{}",
+        "snippet": "condition*{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "explanation",
+      "arg": {
+        "format": "{}",
+        "snippet": "explanation{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "explanation*",
+      "arg": {
+        "format": "{}",
+        "snippet": "explanation*{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "quantify",
+      "arg": {
+        "format": "{}",
+        "snippet": "quantify{${1:text}}"
+      }
+    },
+    {
+      "name": "equationunit",
+      "arg": {
+        "format": "{}",
+        "snippet": "equationunit{${1:unit}}"
+      }
+    },
+    {
+      "name": "texttherefore"
+    },
+    {
+      "name": "textbecause"
+    },
+    {
+      "name": "QED",
+      "detail": "∎",
+      "doc": "\\blacksquare (amssymb), end of proof"
+    }
+  ],
+  "envs": [
+    {
+      "name": "ecases",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "ecases",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:envname}]{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "simul"
+    },
+    {
+      "name": "simul",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:envname}]"
+      }
+    },
+    {
+      "name": "signchart",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:num of columns}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/jpnedumathsymbols#c": [
+      "nofrac",
+      "nosqrt",
+      "nolim",
+      "novec",
+      "nopointroman",
+      "nocurriculum",
+      "curriculum",
+      "mathbb",
+      "setcolon",
+      "rvecbracket",
+      "cvecbracket",
+      "innerproductbracket",
+      "lua"
+    ]
+  },
+  "args": [
+    "\\usepackage/jpnedumathsymbols#c"
+  ]
+}

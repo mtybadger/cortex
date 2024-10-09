@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "realtranspose",
+      "arg": {
+        "format": "{}",
+        "snippet": "realtranspose{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

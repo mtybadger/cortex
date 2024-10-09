@@ -1,0 +1,109 @@
+{
+  "deps": [
+    {
+      "name": "color",
+      "if": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "galois",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "galois{${1:above%formula}}{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "galois",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "galois[${3:color1}]{${1:above%formula}}[${4:color2}]{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "galoiS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "galoiS{${1:above%formula}}{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "galoiS",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "galoiS[${3:color1}]{${1:above%formula}}[${4:color2}]{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "Galois",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Galois{${1:above%formula}}{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "Galois",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "Galois[${3:color1}]{${1:above%formula}}[${4:color2}]{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "GaloiS",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "GaloiS{${1:above%formula}}{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "GaloiS",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "GaloiS[${3:color1}]{${1:above%formula}}[${4:color2}]{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "galoiSr",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "galoiSr{${1:above%formula}}{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "galoiSr",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "galoiSr[${3:color1}]{${1:above%formula}}[${4:color2}]{${2:below%formula}}"
+      }
+    },
+    {
+      "name": "comp"
+    },
+    {
+      "name": "comp",
+      "arg": {
+        "format": "[]",
+        "snippet": "comp[${1:color}]"
+      }
+    },
+    {
+      "name": "GaloisStyle",
+      "unusual": true
+    },
+    {
+      "name": "GaloisArrowThickness",
+      "unusual": true
+    },
+    {
+      "name": "GaloisArrowsSep",
+      "unusual": true
+    },
+    {
+      "name": "GaloisArrowTagSep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

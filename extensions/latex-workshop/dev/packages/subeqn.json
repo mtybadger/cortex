@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "thesubequation"
+    },
+    {
+      "name": "themainequation"
+    }
+  ],
+  "envs": [
+    {
+      "name": "subequations"
+    },
+    {
+      "name": "subeqnarray"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

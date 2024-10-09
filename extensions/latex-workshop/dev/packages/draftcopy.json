@@ -1,0 +1,124 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "draftcopyBottomTransform",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyBottomTransform{${1:PS code}}"
+      }
+    },
+    {
+      "name": "draftcopyBottomX",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyBottomX{${1:integer}}"
+      }
+    },
+    {
+      "name": "draftcopyBottomY",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyBottomY{${1:integer}}"
+      }
+    },
+    {
+      "name": "draftcopyFirstPage",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyFirstPage{${1:pagenum}}"
+      }
+    },
+    {
+      "name": "draftcopyLastPage",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyLastPage{${1:pagenum}}"
+      }
+    },
+    {
+      "name": "draftcopyName",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "draftcopyName{${1:word%text}}{${2:scale}}"
+      }
+    },
+    {
+      "name": "draftcopyPageTransform",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyPageTransform{${1:PS code}}"
+      }
+    },
+    {
+      "name": "draftcopyPageX",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyPageX{${1:integer}}"
+      }
+    },
+    {
+      "name": "draftcopyPageY",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyPageY{${1:integer}}"
+      }
+    },
+    {
+      "name": "draftcopySetGrey",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopySetGrey{${1:factor}}"
+      }
+    },
+    {
+      "name": "draftcopySetScaleFactor",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopySetScaleFactor{${1:factor}}"
+      }
+    },
+    {
+      "name": "draftcopySetScale",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopySetScale{${1:scale}}"
+      }
+    },
+    {
+      "name": "draftcopyVersion",
+      "arg": {
+        "format": "{}",
+        "snippet": "draftcopyVersion{${1:version}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/draftcopy#c": [
+      "conditional",
+      "draft",
+      "final",
+      "timestamp",
+      "vtex",
+      "dvips",
+      "dvipsone",
+      "textures",
+      "outline",
+      "light",
+      "dark",
+      "none",
+      "first",
+      "firsttwo",
+      "all",
+      "bottom",
+      "bottomafter",
+      "${1:language}",
+      "portrait",
+      "landscape"
+    ]
+  },
+  "args": [
+    "\\usepackage/draftcopy#c"
+  ]
+}

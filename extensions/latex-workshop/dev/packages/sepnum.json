@@ -1,0 +1,37 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sepnum",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sepnum{${1:symbol}}{${2:whole-part-sep}}{${3:frac-part-sep}}{${4:number}}"
+      }
+    },
+    {
+      "name": "sepnumform",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sepnumform{${1:symbol}}{${2:whole-part-sep}}{${3:frac-part-sep}}{${4:counter}}"
+      }
+    },
+    {
+      "name": "printnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "printnum{${1:number}}"
+      }
+    },
+    {
+      "name": "printnumKomma",
+      "unusual": true
+    },
+    {
+      "name": "printnumTrenner",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

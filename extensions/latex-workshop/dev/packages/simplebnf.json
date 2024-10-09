@@ -1,0 +1,70 @@
+{
+  "deps": [
+    {
+      "name": "tabularray"
+    },
+    {
+      "name": "mathtools"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SetBNFLayout",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetBNFLayout{${1:tblr options}}"
+      }
+    },
+    {
+      "name": "SetBNFConfig",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetBNFConfig{${1:options%keyvals}}",
+        "keys": [
+          "\\begin{bnf},\\SetBNFConfig"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "bnf"
+    },
+    {
+      "name": "bnf",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:tblr options}]"
+      }
+    },
+    {
+      "name": "bnf",
+      "arg": {
+        "format": "()",
+        "snippet": "(${1:options%keyvals})"
+      }
+    },
+    {
+      "name": "bnf",
+      "arg": {
+        "format": "()[]",
+        "snippet": "(${2:options%keyvals})[${1:tblr options}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{bnf},\\SetBNFConfig": [
+      "prod-delim={${1:characters}}",
+      "new-line-delim={${1:characters}}",
+      "single-line-delim={${1:characters}}",
+      "comment={${1:characters}}",
+      "relation={${1:characters}}",
+      "relation-sym-map={${1:specification}}",
+      "or-sym=${1:symbol}",
+      "prod-sep=",
+      "row-sep="
+    ]
+  },
+  "args": []
+}

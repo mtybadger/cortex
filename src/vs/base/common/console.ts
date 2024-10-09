@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { URI } from './uri.js';
+import { URI } from 'vs/base/common/uri';
 
 export interface IRemoteConsoleLog {
 	type: string;

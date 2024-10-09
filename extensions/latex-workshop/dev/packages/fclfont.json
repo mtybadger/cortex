@@ -1,0 +1,126 @@
+{
+  "deps": [
+    {
+      "name": "newlfont"
+    },
+    {
+      "name": "fontenc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ttseries",
+      "unusual": true
+    },
+    {
+      "name": "m",
+      "arg": {
+        "format": "{}",
+        "snippet": "m{${1:letter}}"
+      }
+    },
+    {
+      "name": "M",
+      "arg": {
+        "format": "{}",
+        "snippet": "M{${1:letter}}"
+      }
+    },
+    {
+      "name": "B",
+      "arg": {
+        "format": "{}",
+        "snippet": "B{${1:letter}}"
+      }
+    },
+    {
+      "name": "G",
+      "arg": {
+        "format": "{}",
+        "snippet": "G{${1:character}}"
+      }
+    },
+    {
+      "name": "U",
+      "arg": {
+        "format": "{}",
+        "snippet": "U{${1:character}}"
+      }
+    },
+    {
+      "name": "I",
+      "arg": {
+        "format": "{}",
+        "snippet": "I{${1:character}}"
+      }
+    },
+    {
+      "name": "T",
+      "arg": {
+        "format": "{}",
+        "snippet": "T{${1:letter}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "copyleft"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:character}}"
+      }
+    },
+    {
+      "name": "SS"
+    },
+    {
+      "name": "guillemotleft"
+    },
+    {
+      "name": "guillemotright"
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "tsh"
+    },
+    {
+      "name": "TSH"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

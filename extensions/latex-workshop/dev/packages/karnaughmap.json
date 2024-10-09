@@ -1,0 +1,247 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "xstring"
+    }
+  ],
+  "macros": [
+    {
+      "name": "karnaughmap",
+      "arg": {
+        "format": "{}",
+        "snippet": "karnaughmap{${1:entries}}"
+      }
+    },
+    {
+      "name": "karnaughmap",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "karnaughmap[${2:options%keyvals}]{${1:entries}}",
+        "keys": [
+          "\\karnaughmap,\\setkarnaughmap"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "karnaughmapcolorfield",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "karnaughmapcolorfield{${1:map size}}{${2:field string}}{${3:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapcolorfield",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "karnaughmapcolorfield[${4:TikZ keys}]{${1:map size}}{${2:field string}}{${3:color}}"
+      }
+    },
+    {
+      "name": "setkarnaughmap",
+      "arg": {
+        "format": "[]",
+        "snippet": "setkarnaughmap[${1:options%keyvals}]",
+        "keys": [
+          "\\karnaughmap,\\setkarnaughmap"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "karnaughmapCellEntries",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapHighlightField",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "karnaughmapHighlightField{${1:coordinates}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapHighlightField",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "karnaughmapHighlightField[${3:options}]{${1:coordinates}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapNumCol",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapNumRow",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapNumVar",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapPCCColumnSpecifier",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapPrintCellContents",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "karnaughmapPrintCellContents{${1:xoffset}}{${2:yoffset}}{${3:size}}{${4:rowsize}}{${5:function}}"
+      }
+    },
+    {
+      "name": "karnaughmapPrintCellContents",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "karnaughmapPrintCellContents[${6:node pos}]{${1:xoffset}}{${2:yoffset}}{${3:size}}{${4:rowsize}}{${5:function}}"
+      }
+    },
+    {
+      "name": "karnaughmapPrintIndex",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapPrintIndex",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "karnaughmapPrintIndex[${1:numBits}]"
+      }
+    },
+    {
+      "name": "karnaughmapPrintValue",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "karnaughmapPrintValue{${1:input string}}"
+      }
+    },
+    {
+      "name": "karnaughmapPrintValue",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "karnaughmapPrintValue[${2:value}]{${1:input string}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldFOUR",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "karnaughmapShadeMapfieldFOUR{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldFOUR",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "karnaughmapShadeMapfieldFOUR[${3:options}]{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldTHREE",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "karnaughmapShadeMapfieldTHREE{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldTHREE",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "karnaughmapShadeMapfieldTHREE[${3:options}]{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldTWO",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "karnaughmapShadeMapfieldTWO{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapShadeMapfieldTWO",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "karnaughmapShadeMapfieldTWO[${3:options}]{${1:decimal number}}{${2:color}}"
+      }
+    },
+    {
+      "name": "karnaughmapSize",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapVarLabelB",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapVarLabelD",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapVariableBaseBias",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapVariableLeftBias",
+      "unusual": true
+    },
+    {
+      "name": "karnaughmapVariableTopBias",
+      "unusual": true
+    },
+    {
+      "name": "thekarnaughmapIdxCounter",
+      "unusual": true
+    },
+    {
+      "name": "thekarnaughmapStrCounter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\karnaughmap,\\setkarnaughmap": [
+      "omitzeros",
+      "omitones",
+      "omitdontcares",
+      "omitbinaries",
+      "omitvariables",
+      "omitidx",
+      "binaryidx",
+      "omitnegated",
+      "outline",
+      "fill",
+      "opacity=${1:factor}",
+      "defaultmap=${1:number}",
+      "function=${1:function label}",
+      "variables=${1:variables}",
+      "dontcare=${1:character}",
+      "color=",
+      "draw=",
+      "labelcolor=",
+      "xshift=",
+      "yshift="
+    ]
+  },
+  "args": []
+}

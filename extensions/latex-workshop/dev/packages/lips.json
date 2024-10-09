@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "lips"
+    },
+    {
+      "name": "LPNobreakList",
+      "unusual": true
+    },
+    {
+      "name": "BracketedLips",
+      "unusual": true
+    },
+    {
+      "name": "GobbleIgnoreSpaces",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "GobbleIgnoreSpaces{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lips#c": [
+      "mla"
+    ]
+  },
+  "args": [
+    "\\usepackage/lips#c"
+  ]
+}

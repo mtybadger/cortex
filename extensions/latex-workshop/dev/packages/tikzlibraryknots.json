@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibraryintersections"
+    },
+    {
+      "name": "tikzlibraryspath3"
+    }
+  ],
+  "macros": [
+    {
+      "name": "flipcrossings",
+      "arg": {
+        "format": "{}",
+        "snippet": "flipcrossings{${1:list of crossings}}"
+      }
+    },
+    {
+      "name": "redraw",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "redraw{${1:strand number}}{${2:point}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "knot"
+    },
+    {
+      "name": "knot",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "IfLanguageName",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfLanguageName{${1:lang}}{${2:then}}{${3:else}}"
+      }
+    },
+    {
+      "name": "IfLanguagePatterns",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IfLanguagePatterns{${1:lang}}{${2:then}}{${3:else}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

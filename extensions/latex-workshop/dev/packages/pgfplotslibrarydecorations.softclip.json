@@ -1,0 +1,80 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibraryintersections"
+    }
+  ],
+  "macros": [
+    {
+      "name": "pgfpathcomputesoftclippath",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfpathcomputesoftclippath{${1:input path}}{${2:clip path}}"
+      }
+    },
+    {
+      "name": "pgfcomputeintersectionsegments",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfcomputeintersectionsegments{1 or 2}"
+      }
+    },
+    {
+      "name": "pgfgetintersectionsegmentpath",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfgetintersectionsegmentpath{1 or 2}{${1:index}}"
+      }
+    },
+    {
+      "name": "pgfcomputereversepath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfcomputereversepath{${1:macro}}"
+      }
+    },
+    {
+      "name": "pgfaddpath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfaddpath{${1:macro}}"
+      }
+    },
+    {
+      "name": "pgfsetpathandBB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfsetpathandBB{${1:macro}}"
+      }
+    },
+    {
+      "name": "pgfaddpathandBB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfaddpathandBB{${1:macro}}"
+      }
+    },
+    {
+      "name": "pgfpathreplacefirstmoveto",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfpathreplacefirstmoveto{${1:macro}}"
+      }
+    },
+    {
+      "name": "pgfintersectionsegments",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

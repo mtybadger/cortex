@@ -1,0 +1,92 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibraryplotmarks"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarydecorations.text"
+    },
+    {
+      "name": "textpos",
+      "if": "textpos"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tpflip",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tpflip{${1:odd page code}}{${2:even page code}}"
+      }
+    },
+    {
+      "name": "tikzpageputanchorsdefaults"
+    },
+    {
+      "name": "tikzpageputanchorsbody"
+    },
+    {
+      "name": "tikzpageputanchorsmarginpar"
+    },
+    {
+      "name": "tikzpageputanchorsheader"
+    },
+    {
+      "name": "tikzpageputanchorsfooter"
+    },
+    {
+      "name": "tikzpageputanchorstop"
+    },
+    {
+      "name": "tikzpageputanchorsright"
+    },
+    {
+      "name": "tikzpageputanchorsbottom"
+    },
+    {
+      "name": "tikzpageputanchorsleft"
+    },
+    {
+      "name": "tikzpageputanchors"
+    },
+    {
+      "name": "tpshowframes"
+    },
+    {
+      "name": "tpfancyhdrdefault"
+    },
+    {
+      "name": "tikzpage"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tikz-page#c": [
+      "textpos"
+    ]
+  },
+  "args": [
+    "\\usepackage/tikz-page#c"
+  ]
+}

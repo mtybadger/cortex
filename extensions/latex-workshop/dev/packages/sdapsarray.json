@@ -1,0 +1,45 @@
+{
+  "deps": [
+    {
+      "name": "sdapsbase"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sdapsnested",
+      "arg": {
+        "format": "{}",
+        "snippet": "sdapsnested{${1:content%text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "sdapsarray"
+    },
+    {
+      "name": "sdapsarray",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{sdapsarray}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{sdapsarray}": [
+      "flip",
+      "layouter=${1|default,rotated|}",
+      "angle=${1:angle}",
+      "align=${1:string}",
+      "keepenv",
+      "no_header",
+      "colsep=",
+      "rowsep="
+    ]
+  },
+  "args": []
+}

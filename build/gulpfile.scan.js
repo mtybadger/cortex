@@ -26,9 +26,6 @@ const BUILD_TARGETS = [
 	{ platform: 'linux', arch: 'arm64' },
 ];
 
-// The following files do not have PDBs downloaded for them during the download symbols process.
-const excludedCheckList = ['d3dcompiler_47.dll'];
-
 BUILD_TARGETS.forEach(buildTarget => {
 	const dashed = (/** @type {string | null} */ str) => (str ? `-${str}` : ``);
 	const platform = buildTarget.platform;
@@ -49,6 +46,7 @@ BUILD_TARGETS.forEach(buildTarget => {
 	if (platform === 'win32') {
 		tasks.push(
 			() => electron.dest(destinationPdb, { ...config, platform, arch: arch === 'armhf' ? 'arm' : arch, pdbs: true }),
+			util.rimraf(path.join(destinationExe, 'd3dcompiler_47.dll')),
 			() => confirmPdbsExist(destinationExe, destinationPdb)
 		);
 	}
@@ -71,15 +69,12 @@ BUILD_TARGETS.forEach(buildTarget => {
 	gulp.task(setupSymbolsTask);
 });
 
-function getProductionDependencySources() {
-	const productionDependencies = deps.getProductionDependencies(root);
-	return productionDependencies.map(d => path.relative(root, d)).map(d => [`${d}/**`, `!${d}/**/{test,tests}/**`]).flat();
-}
-
 function nodeModules(destinationExe, destinationPdb, platform) {
+	const productionDependencies = deps.getProductionDependencies(root);
+	const dependenciesSrc = productionDependencies.map(d => path.relative(root, d.path)).map(d => [`${d}/**`, `!${d}/**/{test,tests}/**`]).flat();
 
 	const exe = () => {
-		return gulp.src(getProductionDependencySources(), { base: '.', dot: true })
+		return gulp.src(dependenciesSrc, { base: '.', dot: true })
 			.pipe(filter([
 				'**/*.node',
 				// Exclude these paths.
@@ -92,7 +87,7 @@ function nodeModules(destinationExe, destinationPdb, platform) {
 
 	if (platform === 'win32') {
 		const pdb = () => {
-			return gulp.src(getProductionDependencySources(), { base: '.', dot: true })
+			return gulp.src(dependenciesSrc, { base: '.', dot: true })
 				.pipe(filter(['**/*.pdb']))
 				.pipe(gulp.dest(destinationPdb));
 		};
@@ -102,7 +97,7 @@ function nodeModules(destinationExe, destinationPdb, platform) {
 
 	if (platform === 'linux') {
 		const pdb = () => {
-			return gulp.src(getProductionDependencySources(), { base: '.', dot: true })
+			return gulp.src(dependenciesSrc, { base: '.', dot: true })
 				.pipe(filter(['**/*.sym']))
 				.pipe(gulp.dest(destinationPdb));
 		};
@@ -115,10 +110,6 @@ function nodeModules(destinationExe, destinationPdb, platform) {
 
 function confirmPdbsExist(destinationExe, destinationPdb) {
 	readdirSync(destinationExe).forEach(file => {
-		if (excludedCheckList.includes(file)) {
-			return;
-		}
-
 		if (file.endsWith('.dll') || file.endsWith('.exe')) {
 			const pdb = `${file}.pdb`;
 			if (!existsSync(path.join(destinationPdb, pdb))) {

@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "classicthesis"
+    }
+  ],
+  "macros": [
+    {
+      "name": "formatchapter",
+      "arg": {
+        "format": "{}",
+        "snippet": "formatchapter{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

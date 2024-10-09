@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "atbegshi"
+    }
+  ],
+  "macros": [
+    {
+      "name": "luacolorProcessBox",
+      "arg": {
+        "format": "{}",
+        "snippet": "luacolorProcessBox{${1:box}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

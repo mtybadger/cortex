@@ -1,0 +1,53 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "infwarerr"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "atveryend"
+    },
+    {
+      "name": "uniquecounter"
+    }
+  ],
+  "macros": [
+    {
+      "name": "RerunFileCheckSetup",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "RerunFileCheckSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\RerunFileCheckSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "RerunFileCheck",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "RerunFileCheck{${1:file}}{${2:file closing action}}{${3:rerun warning}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\RerunFileCheckSetup": [
+      "mainaux",
+      "partaux",
+      "starttoc",
+      "index",
+      "glossary",
+      "aux"
+    ]
+  },
+  "args": []
+}

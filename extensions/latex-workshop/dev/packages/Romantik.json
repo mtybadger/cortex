@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Romantik"
+    },
+    {
+      "name": "romantik",
+      "arg": {
+        "format": "{}",
+        "snippet": "romantik{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,45 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "citeall"
+    },
+    {
+      "name": "citeall",
+      "arg": {
+        "format": "[]",
+        "snippet": "citeall[${1:list of cmds}]"
+      }
+    },
+    {
+      "name": "citeall",
+      "arg": {
+        "format": "[][]",
+        "snippet": "citeall[${1:list of cmds}][${2:num of entries}]"
+      }
+    },
+    {
+      "name": "citeallgroupseparator",
+      "unusual": true
+    },
+    {
+      "name": "citeallseparator",
+      "unusual": true
+    },
+    {
+      "name": "citeallfinentry",
+      "unusual": true
+    },
+    {
+      "name": "citealldefaultcite",
+      "unusual": true
+    },
+    {
+      "name": "citeallpreambledefinition",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

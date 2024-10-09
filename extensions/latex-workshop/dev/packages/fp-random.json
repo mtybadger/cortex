@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "fp-basic"
+    }
+  ],
+  "macros": [
+    {
+      "name": "FPseed"
+    },
+    {
+      "name": "FPrandom",
+      "arg": {
+        "format": "{}",
+        "snippet": "FPrandom{${1:variable%cmd}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

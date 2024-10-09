@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "beamersidebarwidth",
+      "unusual": true
+    },
+    {
+      "name": "beamerheadheight",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/sidebar": [
+      "width=",
+      "dark",
+      "tab"
+    ]
+  },
+  "args": []
+}

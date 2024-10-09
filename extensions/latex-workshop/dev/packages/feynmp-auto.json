@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "feynmp"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/feynmp-auto#c": [
+      "force",
+      "errorstop",
+      "scroll",
+      "nonstop",
+      "batch"
+    ]
+  },
+  "args": [
+    "\\usepackage/feynmp-auto#c"
+  ]
+}

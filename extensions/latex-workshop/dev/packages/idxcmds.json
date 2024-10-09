@@ -1,0 +1,155 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "ltxcmds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newidxcmd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newidxcmd{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newidxcmd",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newidxcmd{${1:cmd}}{${2:definition}}[${3:append}]"
+      }
+    },
+    {
+      "name": "newidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "newidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}[${4:append}]"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newsubidxcmd{${1:cmd}}{${2:main entry}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "newsubidxcmd{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}[]",
+        "snippet": "newsubidxcmd[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
+      }
+    },
+    {
+      "name": "newsubidxcmd*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd*",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd*",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}[]",
+        "snippet": "newsubidxcmd*{${1:cmd}}{${2:main entry}}{${3:definition}}[${4:append}]"
+      }
+    },
+    {
+      "name": "newsubidxcmd*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}[]",
+        "snippet": "newsubidxcmd*[${4:index cmd}]{${1:cmd}}{${2:main entry}}{${3:definition}}[${5:append}]"
+      }
+    },
+    {
+      "name": "newsubmainidxcmd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsubmainidxcmd{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsubidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newsubidxcmd{${1:cmd}}{${2:main entry}}[${3:append}]"
+      }
+    },
+    {
+      "name": "newsubidxcmd",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "newsubidxcmd[${3:index cmd}]{${1:cmd}}{${2:definition}}[${4:append}]"
+      }
+    },
+    {
+      "name": "setidxcmds",
+      "arg": {
+        "format": "{}",
+        "snippet": "setidxcmds{${1:options%keyvals}}",
+        "keys": [
+          "\\setidxcmds"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\setidxcmds": [
+      "sort-sep={${1:symbol}}",
+      "sub-sep={${1:symbol}}",
+      "idx-cmd={${1:cmd}}"
+    ]
+  },
+  "args": []
+}

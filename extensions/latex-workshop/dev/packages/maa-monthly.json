@@ -1,0 +1,257 @@
+{
+  "deps": [
+    {
+      "name": "times"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "doi",
+      "arg": {
+        "format": "{}",
+        "snippet": "doi{${1:DOI}}"
+      }
+    },
+    {
+      "name": "papertrimheight",
+      "unusual": true
+    },
+    {
+      "name": "papertrimwidth",
+      "unusual": true
+    },
+    {
+      "name": "journalname",
+      "unusual": true
+    },
+    {
+      "name": "thevolume",
+      "unusual": true
+    },
+    {
+      "name": "theissue",
+      "unusual": true
+    },
+    {
+      "name": "theannual",
+      "unusual": true
+    },
+    {
+      "name": "themonth",
+      "unusual": true
+    },
+    {
+      "name": "copysize",
+      "unusual": true
+    },
+    {
+      "name": "editor",
+      "arg": {
+        "format": "{}",
+        "snippet": "editor{${1:name}}"
+      }
+    },
+    {
+      "name": "editor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "editor[${2:address%text}]{${1:name}}"
+      }
+    },
+    {
+      "name": "nomaketitle",
+      "unusual": true
+    },
+    {
+      "name": "reviewer",
+      "arg": {
+        "format": "{}",
+        "snippet": "reviewer{${1:name}}"
+      }
+    },
+    {
+      "name": "fillerhead",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fillerhead{${1:title}}"
+      }
+    },
+    {
+      "name": "fillerheadmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fillerheadmark{${1:code}}"
+      }
+    },
+    {
+      "name": "auq",
+      "arg": {
+        "format": "{}",
+        "snippet": "auq{${1:text}}"
+      }
+    },
+    {
+      "name": "fudgetrimdown",
+      "unusual": true
+    },
+    {
+      "name": "fudgetrimright",
+      "unusual": true
+    },
+    {
+      "name": "tlmark",
+      "unusual": true
+    },
+    {
+      "name": "trmark",
+      "unusual": true
+    },
+    {
+      "name": "brmark",
+      "unusual": true
+    },
+    {
+      "name": "blmark",
+      "unusual": true
+    },
+    {
+      "name": "imagemarks",
+      "unusual": true
+    },
+    {
+      "name": "timestring",
+      "unusual": true
+    },
+    {
+      "name": "dffudge",
+      "unusual": true
+    },
+    {
+      "name": "jotskip",
+      "unusual": true
+    },
+    {
+      "name": "nnoalign",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nnoalign{${1:material}}"
+      }
+    },
+    {
+      "name": "abrule",
+      "unusual": true
+    },
+    {
+      "name": "arule",
+      "unusual": true
+    },
+    {
+      "name": "brule",
+      "unusual": true
+    },
+    {
+      "name": "settildes",
+      "unusual": true
+    },
+    {
+      "name": "figskipamount",
+      "unusual": true
+    },
+    {
+      "name": "figskip",
+      "unusual": true
+    },
+    {
+      "name": "threeem",
+      "unusual": true
+    },
+    {
+      "name": "bysame",
+      "unusual": true
+    },
+    {
+      "name": "refsection",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "refsection{${1:title}}"
+      }
+    },
+    {
+      "name": "refsection",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "refsection[${2:short title}]{${1:title}}"
+      }
+    },
+    {
+      "name": "refsection*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "refsection*{${1:title}}"
+      }
+    },
+    {
+      "name": "refsectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "refsectionmark{${1:code}}"
+      }
+    },
+    {
+      "name": "final",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "filler",
+      "unusual": true
+    },
+    {
+      "name": "acknowledgment",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:heading%text}}"
+      }
+    },
+    {
+      "name": "biog"
+    },
+    {
+      "name": "affil"
+    },
+    {
+      "name": "biogaffil"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

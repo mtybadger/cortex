@@ -1,0 +1,32 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newcites",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newcites{${1:suffix1,suffix2,...}}{${2:title1,title2,...%text}}"
+      }
+    },
+    {
+      "name": "setbiblabelwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "setbiblabelwidth{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/multibib#c": [
+      "labeled",
+      "resetlabels"
+    ],
+    "\\bibliographystyle#c": [
+      "mbplain"
+    ]
+  },
+  "args": [
+    "\\usepackage/multibib#c"
+  ]
+}

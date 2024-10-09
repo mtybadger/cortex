@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luatexbase"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/showhyphens#c": [
+      "blue"
+    ]
+  },
+  "args": [
+    "\\usepackage/showhyphens#c"
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "deps": [
+    {
+      "name": "inputenc"
+    },
+    {
+      "name": "upgreek"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "gensymb"
+    },
+    {
+      "name": "nicefrac"
+    }
+  ],
+  "macros": [
+    {
+      "name": "omicron"
+    },
+    {
+      "name": "Alpha"
+    },
+    {
+      "name": "Beta"
+    },
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "Epsilon"
+    },
+    {
+      "name": "Eta"
+    },
+    {
+      "name": "Iota"
+    },
+    {
+      "name": "Kappa"
+    },
+    {
+      "name": "Mu"
+    },
+    {
+      "name": "Nu"
+    },
+    {
+      "name": "Omicron"
+    },
+    {
+      "name": "Rho"
+    },
+    {
+      "name": "Tau"
+    },
+    {
+      "name": "Zeta"
+    },
+    {
+      "name": "Upomicron"
+    },
+    {
+      "name": "Upalpha"
+    },
+    {
+      "name": "Upbeta"
+    },
+    {
+      "name": "Upchi"
+    },
+    {
+      "name": "Upepsilon"
+    },
+    {
+      "name": "Upeta"
+    },
+    {
+      "name": "Upiota"
+    },
+    {
+      "name": "Upkappa"
+    },
+    {
+      "name": "Upmu"
+    },
+    {
+      "name": "Upnu"
+    },
+    {
+      "name": "Upomicron"
+    },
+    {
+      "name": "Uprho"
+    },
+    {
+      "name": "Uptau"
+    },
+    {
+      "name": "Upzeta"
+    },
+    {
+      "name": "textfoursuperior",
+      "unusual": true
+    },
+    {
+      "name": "textfivesuperior",
+      "unusual": true
+    },
+    {
+      "name": "textsixsuperior",
+      "unusual": true
+    },
+    {
+      "name": "textsevensuperior",
+      "unusual": true
+    },
+    {
+      "name": "texteightsuperior",
+      "unusual": true
+    },
+    {
+      "name": "textninesuperior",
+      "unusual": true
+    },
+    {
+      "name": "textzerosuperior",
+      "unusual": true
+    },
+    {
+      "name": "textoneinferior",
+      "unusual": true
+    },
+    {
+      "name": "texttwoinferior",
+      "unusual": true
+    },
+    {
+      "name": "textthreeinferior",
+      "unusual": true
+    },
+    {
+      "name": "textfourinferior",
+      "unusual": true
+    },
+    {
+      "name": "textfiveinferior",
+      "unusual": true
+    },
+    {
+      "name": "textsixinferior",
+      "unusual": true
+    },
+    {
+      "name": "textseveninferior",
+      "unusual": true
+    },
+    {
+      "name": "texteightinferior",
+      "unusual": true
+    },
+    {
+      "name": "textnineinferior",
+      "unusual": true
+    },
+    {
+      "name": "textzeroinferior",
+      "unusual": true
+    },
+    {
+      "name": "textonethird",
+      "unusual": true
+    },
+    {
+      "name": "texttwothirds",
+      "unusual": true
+    },
+    {
+      "name": "textzerothirds",
+      "unusual": true
+    },
+    {
+      "name": "textonefifth",
+      "unusual": true
+    },
+    {
+      "name": "texttwofifths",
+      "unusual": true
+    },
+    {
+      "name": "textthreefifths",
+      "unusual": true
+    },
+    {
+      "name": "textfourfifths",
+      "unusual": true
+    },
+    {
+      "name": "textonesixth",
+      "unusual": true
+    },
+    {
+      "name": "textfivesixths",
+      "unusual": true
+    },
+    {
+      "name": "textoneseventh",
+      "unusual": true
+    },
+    {
+      "name": "textoneeighth",
+      "unusual": true
+    },
+    {
+      "name": "textthreeeighths",
+      "unusual": true
+    },
+    {
+      "name": "textfiveeighths",
+      "unusual": true
+    },
+    {
+      "name": "textseveneighths",
+      "unusual": true
+    },
+    {
+      "name": "textonenininth",
+      "unusual": true
+    },
+    {
+      "name": "textonetenth",
+      "unusual": true
+    },
+    {
+      "name": "texttwothird",
+      "unusual": true
+    },
+    {
+      "name": "textthreequarter",
+      "unusual": true
+    },
+    {
+      "name": "texttwofifth",
+      "unusual": true
+    },
+    {
+      "name": "textthreefifth",
+      "unusual": true
+    },
+    {
+      "name": "textfourfifth",
+      "unusual": true
+    },
+    {
+      "name": "textfivesixth",
+      "unusual": true
+    },
+    {
+      "name": "textthreeeighth",
+      "unusual": true
+    },
+    {
+      "name": "textfiveeighth",
+      "unusual": true
+    },
+    {
+      "name": "textseveneighth",
+      "unusual": true
+    },
+    {
+      "name": "molar"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/utf8add#c": [
+      "nogreek",
+      "uppercasegreek=${1|default,italic,upright|}",
+      "lowercasegreek=${1|default,italic,upright|}",
+      "greek=${1|default,italic,upright|}",
+      "mathinferior",
+      "mathsuperior",
+      "mathfigures",
+      "mathfractions",
+      "math",
+      "nicefrac"
+    ]
+  },
+  "args": [
+    "\\usepackage/utf8add#c"
+  ]
+}

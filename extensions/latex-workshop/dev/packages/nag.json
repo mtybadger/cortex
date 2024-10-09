@@ -1,0 +1,165 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "PackageInfoNoLine",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PackageInfoNoLine{${1:package name}}{${2:info text%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteCS",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObsoleteCS{${1:csname}}{${2:suggestions%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteCS",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObsoleteCS[${3:reason%text}]{${1:csname}}{${2:suggestions%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteEnv",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObsoleteEnv{${1:envname}}{${2:suggestions%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteEnv",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObsoleteEnv[${3:reason%text}]{${1:envname}}{${2:suggestions%text}}"
+      }
+    },
+    {
+      "name": "ObsoletePackage",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObsoletePackage{${1:package name}}{${2:alternative%text}}"
+      }
+    },
+    {
+      "name": "ObsoletePackage",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObsoletePackage[${3:reason%text}]{${1:package name}}{${2:alternative%text}}"
+      }
+    },
+    {
+      "name": "SuggestedPackage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SuggestedPackage{${1:package name}}"
+      }
+    },
+    {
+      "name": "SuggestedPackage",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "SuggestedPackage[${2:reason%text}]{${1:package name}}"
+      }
+    },
+    {
+      "name": "IncompatiblePackages",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "IncompatiblePackages{${1:package1}}{${2:package2}}{${3:hint%text}}"
+      }
+    },
+    {
+      "name": "IncompatiblePackages",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "IncompatiblePackages[${4:reason%text}]{${1:package name}}{${2:package2}}{${3:hint%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteClass",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ObsoleteClass{${1:class name}}{${2:alternative%text}}"
+      }
+    },
+    {
+      "name": "ObsoleteClass",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "ObsoleteClass[${3:reason%text}]{${1:class name}}{${2:alternative%text}}"
+      }
+    },
+    {
+      "name": "BadFileLoadOrder",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "BadFileLoadOrder{${1:file1}}{${2:file2}}"
+      }
+    },
+    {
+      "name": "BadFileLoadOrder",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "BadFileLoadOrder[${3:reason%text}]{${1:file1}}{${2:file2}}"
+      }
+    },
+    {
+      "name": "NotAnEnvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NotAnEnvironment{${1:command}}"
+      }
+    },
+    {
+      "name": "NotASwitch",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NotASwitch{${1:command}}"
+      }
+    },
+    {
+      "name": "FBsuboheight",
+      "unusual": true
+    },
+    {
+      "name": "NagDeclareFloat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "NagDeclareFloat{${1:float name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/nag#c": [
+      "abort",
+      "experimental",
+      "l2tabu",
+      "orthodox"
+    ]
+  },
+  "args": [
+    "\\usepackage/nag#c"
+  ]
+}

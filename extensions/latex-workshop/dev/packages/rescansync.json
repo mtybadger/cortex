@@ -1,0 +1,30 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "rescansyncPacked",
+      "arg": {
+        "format": "{}",
+        "snippet": "rescansyncPacked{${1:macro}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "rescansyncSaveenvPacked",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    },
+    {
+      "name": "rescansyncSaveenvghostPacked",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro%cmd}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

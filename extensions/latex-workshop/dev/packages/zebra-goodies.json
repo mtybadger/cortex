@@ -1,0 +1,192 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikzpagenodes"
+    },
+    {
+      "name": "marginnote"
+    },
+    {
+      "name": "manfnt"
+    }
+  ],
+  "macros": [
+    {
+      "name": "todo",
+      "arg": {
+        "format": "{}",
+        "snippet": "todo{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "todo",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "todo[${2:name}]{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "{}",
+        "snippet": "note{${1:text}}"
+      }
+    },
+    {
+      "name": "note",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "note[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "{}",
+        "snippet": "comment{${1:text}}"
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "comment[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "fixed",
+      "arg": {
+        "format": "{}",
+        "snippet": "fixed{${1:text}}"
+      }
+    },
+    {
+      "name": "fixed",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fixed[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "placeholder",
+      "arg": {
+        "format": "{}",
+        "snippet": "placeholder{${1:text}}"
+      }
+    },
+    {
+      "name": "placeholder",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "placeholder[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "zebratodo",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "zebratodo{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "zebratodo",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zebratodo[${2:name}]{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "zebranote",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "zebranote{${1:text}}"
+      }
+    },
+    {
+      "name": "zebranote",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zebranote[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "zebracomment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "zebracomment{${1:text}}"
+      }
+    },
+    {
+      "name": "zebracomment",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zebracomment[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "zebrafixed",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "zebrafixed{${1:text}}"
+      }
+    },
+    {
+      "name": "zebrafixed",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zebrafixed[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "zebraplaceholder",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "zebraplaceholder{${1:text}}"
+      }
+    },
+    {
+      "name": "zebraplaceholder",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "zebraplaceholder[${2:name}]{${1:text}}"
+      }
+    },
+    {
+      "name": "zebranewnote",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "zebranewnote{${1:note name}}{${2:color}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/zebra-goodies#c": [
+      "draft",
+      "final",
+      "microtype"
+    ]
+  },
+  "args": [
+    "\\usepackage/zebra-goodies#c"
+  ]
+}

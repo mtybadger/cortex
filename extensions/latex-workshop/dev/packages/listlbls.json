@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "translations"
+    }
+  ],
+  "macros": [
+    {
+      "name": "listoflabels"
+    },
+    {
+      "name": "listoflabels",
+      "arg": {
+        "format": "[]",
+        "snippet": "listoflabels[${1:label}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/listlbls#c": [
+      "draft",
+      "final",
+      "totoc",
+      "notoc",
+      "numtoc",
+      "nonameref"
+    ]
+  },
+  "args": [
+    "\\usepackage/listlbls#c"
+  ]
+}

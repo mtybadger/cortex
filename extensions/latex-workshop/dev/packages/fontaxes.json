@@ -1,0 +1,136 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "figureversion",
+      "arg": {
+        "format": "{}",
+        "snippet": "figureversion{${1:versions%keyvals}}",
+        "keys": [
+          "\\figureversion#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "liningfigures",
+      "arg": {
+        "format": "{}",
+        "snippet": "liningfigures{${1:text}}"
+      }
+    },
+    {
+      "name": "lnfigures"
+    },
+    {
+      "name": "noscshape",
+      "unusual": true
+    },
+    {
+      "name": "prfigures"
+    },
+    {
+      "name": "proportionalfigures",
+      "arg": {
+        "format": "{}",
+        "snippet": "proportionalfigures{${1:text}}"
+      }
+    },
+    {
+      "name": "proportionalmath"
+    },
+    {
+      "name": "tabularfigures",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabularfigures{${1:text}}"
+      }
+    },
+    {
+      "name": "tabularmath"
+    },
+    {
+      "name": "tbfigures"
+    },
+    {
+      "name": "textfigures",
+      "arg": {
+        "format": "{}",
+        "snippet": "textfigures{${1:text}}"
+      }
+    },
+    {
+      "name": "txfigures"
+    },
+    {
+      "name": "fontbasefamily",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontbasefamily{${1:value}}"
+      }
+    },
+    {
+      "name": "fontfigurealignment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontfigurealignment{${1:value}}"
+      }
+    },
+    {
+      "name": "fontfigurestyle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontfigurestyle{${1:value}}"
+      }
+    },
+    {
+      "name": "fontprimaryshape",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontprimaryshape{${1:value}}"
+      }
+    },
+    {
+      "name": "fontsecondaryshape",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fontsecondaryshape{${1:value}}"
+      }
+    },
+    {
+      "name": "mathfigurealignment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mathfigurealignment{${1:value}}"
+      }
+    },
+    {
+      "name": "mathweight",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mathweight{${1:value}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\figureversion#c": [
+      "text",
+      "osf",
+      "lining",
+      "lf",
+      "tabular",
+      "tab",
+      "proportional",
+      "prop"
+    ]
+  },
+  "args": []
+}

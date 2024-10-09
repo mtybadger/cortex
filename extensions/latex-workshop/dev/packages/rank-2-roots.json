@@ -1,0 +1,103 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarydecorations.markings"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathreplacing"
+    },
+    {
+      "name": "tikzlibraryshadings"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    }
+  ],
+  "macros": [
+    {
+      "name": "weightLength",
+      "unusual": true
+    },
+    {
+      "name": "weightRadius",
+      "unusual": true
+    },
+    {
+      "name": "gradingDot",
+      "unusual": true
+    },
+    {
+      "name": "AutoSizeWeightLatticetrue",
+      "unusual": true
+    },
+    {
+      "name": "AutoSizeWeightLatticefalse",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "rootSystem",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:type%keyvals}}",
+        "keys": [
+          "\\begin{rootSystem}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rootSystem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options}]{${1:type%keyvals}}",
+        "keys": [
+          "\\begin{rootSystem}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{rootSystem}": [
+      "A",
+      "B",
+      "C",
+      "G"
+    ],
+    "\\wt#c,\\hexwt#c,\\squarewt#c": [
+      "multiplicity=${1:integer}",
+      "root",
+      "%color"
+    ]
+  },
+  "args": []
+}

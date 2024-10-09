@@ -3,9 +3,9 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { URI } from '../../../base/common/uri.js';
-import { NativeParsedArgs } from './argv.js';
-import { createDecorator, refineServiceDecorator } from '../../instantiation/common/instantiation.js';
+import { URI } from 'vs/base/common/uri';
+import { NativeParsedArgs } from 'vs/platform/environment/common/argv';
+import { createDecorator, refineServiceDecorator } from 'vs/platform/instantiation/common/instantiation';
 
 export const IEnvironmentService = createDecorator<IEnvironmentService>('environmentService');
 export const INativeEnvironmentService = refineServiceDecorator<IEnvironmentService, INativeEnvironmentService>(IEnvironmentService);

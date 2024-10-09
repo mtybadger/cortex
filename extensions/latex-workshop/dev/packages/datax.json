@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "pgfopts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "datax",
+      "arg": {
+        "format": "{}",
+        "snippet": "datax{${1:tag}}"
+      }
+    },
+    {
+      "name": "dataxfile",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/datax#c": [
+      "dataxfile=${1:file}"
+    ]
+  },
+  "args": [
+    "\\usepackage/datax#c"
+  ]
+}

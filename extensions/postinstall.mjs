@@ -26,10 +26,7 @@ function processRoot() {
 function processLib() {
 	const toDelete = new Set([
 		'tsc.js',
-		'_tsc.js',
-
 		'typescriptServices.js',
-		'_typescriptServices.js',
 	]);
 
 	const libRoot = path.join(root, 'lib');

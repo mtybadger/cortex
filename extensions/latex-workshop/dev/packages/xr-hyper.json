@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "xr"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

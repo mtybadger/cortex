@@ -3,18 +3,17 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { HistoryNavigator2 } from '../../../../base/common/history.js';
-import { Disposable } from '../../../../base/common/lifecycle.js';
-import { ResourceMap } from '../../../../base/common/map.js';
-import { URI } from '../../../../base/common/uri.js';
-import { createDecorator } from '../../../../platform/instantiation/common/instantiation.js';
+import { HistoryNavigator2 } from 'vs/base/common/history';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { ResourceMap } from 'vs/base/common/map';
+import { URI } from 'vs/base/common/uri';
+import { createDecorator } from 'vs/platform/instantiation/common/instantiation';
 
 export const IInteractiveHistoryService = createDecorator<IInteractiveHistoryService>('IInteractiveHistoryService');
 
 export interface IInteractiveHistoryService {
 	readonly _serviceBrand: undefined;
 
-	matchesCurrent(uri: URI, value: string): boolean;
 	addToHistory(uri: URI, value: string): void;
 	getPreviousValue(uri: URI): string | null;
 	getNextValue(uri: URI): string | null;
@@ -33,26 +32,19 @@ export class InteractiveHistoryService extends Disposable implements IInteractiv
 		this._history = new ResourceMap<HistoryNavigator2<string>>();
 	}
 
-	matchesCurrent(uri: URI, value: string): boolean {
-		const history = this._history.get(uri);
-		if (!history) {
-			return false;
-		}
-
-		return history.current() === value;
-	}
-
 	addToHistory(uri: URI, value: string): void {
-		const history = this._history.get(uri);
-		if (!history) {
+		if (!this._history.has(uri)) {
 			this._history.set(uri, new HistoryNavigator2<string>([value], 50));
 			return;
 		}
 
-		history.resetCursor();
-		history.add(value);
-	}
+		const history = this._history.get(uri)!;
 
+		history.resetCursor();
+		if (history?.current() !== value) {
+			history?.add(value);
+		}
+	}
 	getPreviousValue(uri: URI): string | null {
 		const history = this._history.get(uri);
 		return history?.previous() ?? null;
@@ -65,14 +57,16 @@ export class InteractiveHistoryService extends Disposable implements IInteractiv
 	}
 
 	replaceLast(uri: URI, value: string) {
-		const history = this._history.get(uri);
-		if (!history) {
+		if (!this._history.has(uri)) {
 			this._history.set(uri, new HistoryNavigator2<string>([value], 50));
 			return;
 		} else {
-			history.replaceLast(value);
-			history.resetCursor();
+			const history = this._history.get(uri);
+			if (history?.current() !== value) {
+				history?.replaceLast(value);
+			}
 		}
+
 	}
 
 	clearHistory(uri: URI) {

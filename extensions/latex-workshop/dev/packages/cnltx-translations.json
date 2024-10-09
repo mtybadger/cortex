@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "cnltx-base"
+    },
+    {
+      "name": "translations"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

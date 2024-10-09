@@ -1,0 +1,92 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mailfields",
+      "arg": {
+        "format": "{}",
+        "snippet": "mailfields{${1:name1,name2,...}}"
+      }
+    },
+    {
+      "name": "mailrepeat",
+      "arg": {
+        "format": "{}",
+        "snippet": "mailrepeat{${1:text}}"
+      }
+    },
+    {
+      "name": "field",
+      "arg": {
+        "format": "{}",
+        "snippet": "field{${1:name}}"
+      }
+    },
+    {
+      "name": "numberoffields"
+    },
+    {
+      "name": "numberofentries"
+    },
+    {
+      "name": "entrynumber"
+    },
+    {
+      "name": "mailentry",
+      "arg": {
+        "format": "{}",
+        "snippet": "mailentry{${1:value1,value2,...}}"
+      }
+    },
+    {
+      "name": "mailnewdata"
+    },
+    {
+      "name": "MAILMcurrtag",
+      "unusual": true
+    },
+    {
+      "name": "MAILMtok",
+      "unusual": true
+    },
+    {
+      "name": "theMAILMcount",
+      "unusual": true
+    },
+    {
+      "name": "theMAILMentry",
+      "unusual": true
+    },
+    {
+      "name": "MAILMrepetition",
+      "unusual": true
+    },
+    {
+      "name": "MAILMsetnumfields",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MAILMsetnumfields{${1:tag}}{${2:number}}"
+      }
+    },
+    {
+      "name": "MAILMsetnumentries",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "MAILMsetnumentries{${1:tag}}{${2:number}}"
+      }
+    },
+    {
+      "name": "MAILMaux",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

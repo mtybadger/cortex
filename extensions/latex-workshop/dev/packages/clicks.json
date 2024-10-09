@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "theminutes",
+      "unusual": true
+    },
+    {
+      "name": "print",
+      "arg": {
+        "format": "{}",
+        "snippet": "print{${1:text}}"
+      }
+    },
+    {
+      "name": "flush",
+      "arg": {
+        "format": "[]",
+        "snippet": "flush[${1:minutes}]"
+      }
+    },
+    {
+      "name": "click",
+      "arg": {
+        "format": "[]",
+        "snippet": "click[${1:minutes}]"
+      }
+    },
+    {
+      "name": "plush",
+      "arg": {
+        "format": "{}",
+        "snippet": "plush{${1:text}}"
+      }
+    },
+    {
+      "name": "plush",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "plush[${2:minutes}]{${1:text}}"
+      }
+    },
+    {
+      "name": "plick",
+      "arg": {
+        "format": "{}",
+        "snippet": "plick{${1:text}}"
+      }
+    },
+    {
+      "name": "plick",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "plick[${2:minutes}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/clicks#c": [
+      "static"
+    ]
+  },
+  "args": [
+    "\\usepackage/clicks#c"
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "deps": [
+    {
+      "name": "upmethodology-p-common"
+    },
+    {
+      "name": "upmethodology-version"
+    }
+  ],
+  "macros": [
+    {
+      "name": "taskname",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskname{${1:name}}"
+      }
+    },
+    {
+      "name": "tasksuper",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tasksuper{${1:id}}"
+      }
+    },
+    {
+      "name": "taskcomment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskcomment{${1:text}}"
+      }
+    },
+    {
+      "name": "taskprogress",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskprogress{${1:percent}}"
+      }
+    },
+    {
+      "name": "taskstart",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskstart{${1:date}}"
+      }
+    },
+    {
+      "name": "taskend",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskend{${1:date}}"
+      }
+    },
+    {
+      "name": "taskmanager",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskmanager{${1:name}}"
+      }
+    },
+    {
+      "name": "taskmember",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "taskmember{${1:name}}"
+      }
+    },
+    {
+      "name": "taskmilestone",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "taskmilestone{${1:date}}{${2:comment%text}}"
+      }
+    },
+    {
+      "name": "thetasksuper",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetasksuper{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskname",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskname{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskcomment",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskcomment{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskprogress",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskprogress{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskstart",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskstart{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskend",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskend{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskmanagers",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskmanagers{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskmembers",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskmembers{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskmilestones",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskmilestones{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskmilestonecomment",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "thetaskmilestonecomment{${1:id}}{${2:date}}"
+      }
+    },
+    {
+      "name": "thetaskdescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "thetaskdescription{${1:id}}"
+      }
+    },
+    {
+      "name": "thetaskdescription",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thetaskdescription[${2:width}]{${1:id}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "taskdescription",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:id}}"
+      }
+    },
+    {
+      "name": "taskdescription*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:id}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/upmethodology-task#c": [
+      "french",
+      "francais",
+      "english"
+    ]
+  },
+  "args": [
+    "\\usepackage/upmethodology-task#c"
+  ]
+}

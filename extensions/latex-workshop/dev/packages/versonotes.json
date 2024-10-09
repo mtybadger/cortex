@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "versonote",
+      "arg": {
+        "format": "{}",
+        "snippet": "versonote{${1:text}}"
+      }
+    },
+    {
+      "name": "versoleftmargin",
+      "unusual": true
+    },
+    {
+      "name": "versotextwidth",
+      "unusual": true
+    },
+    {
+      "name": "versolayout",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

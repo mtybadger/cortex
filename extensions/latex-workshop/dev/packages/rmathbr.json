@@ -1,0 +1,133 @@
+{
+  "deps": [
+    {
+      "name": "ifetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "*"
+    },
+    {
+      "name": "cdott"
+    },
+    {
+      "name": "nobr"
+    },
+    {
+      "name": "SetBreakableRel",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetBreakableRel{${1:command}}"
+      }
+    },
+    {
+      "name": "SetBreakableBin",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetBreakableBin{${1:command}}"
+      }
+    },
+    {
+      "name": "SetBreakableInner",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetBreakableInner{${1:command}}"
+      }
+    },
+    {
+      "name": "SetOpenBracket",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetOpenBracket{${1:command}}"
+      }
+    },
+    {
+      "name": "SetMathOperator",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetMathOperator{${1:command}}"
+      }
+    },
+    {
+      "name": "SetPunctuation",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetPunctuation{${1:command}}"
+      }
+    },
+    {
+      "name": "UnsetBrokenCmd",
+      "arg": {
+        "format": "{}",
+        "snippet": "UnsetBrokenCmd{${1:command}}"
+      }
+    },
+    {
+      "name": "BrokenBinOff"
+    },
+    {
+      "name": "BrokenBinOn"
+    },
+    {
+      "name": "brokenbin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "brokenbin{${1:arg}}"
+      }
+    },
+    {
+      "name": "brokeninner",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "brokeninner{${1:arg}}"
+      }
+    },
+    {
+      "name": "brokenrel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "brokenrel{${1:arg}}"
+      }
+    },
+    {
+      "name": "xDeclareBoolOptionX",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "xDeclareBoolOptionX{${1:key%plain}}{${2:func}}"
+      }
+    },
+    {
+      "name": "xDeclareChoiceOptionX",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}[]{}",
+        "snippet": "xDeclareChoiceOptionX{${1:key%plain}}[${4:bin}]{${2:al}}[${5:dft}]{${3:func}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/rmathbr#c": [
+      "scripts=${1|noactive,mathactive,active|}",
+      "run=${1|atload,atbegindocument,auto|}",
+      "cdottimes",
+      "brokencolon",
+      "brokenminus",
+      "brokenbin"
+    ]
+  },
+  "args": [
+    "\\usepackage/rmathbr#c"
+  ]
+}

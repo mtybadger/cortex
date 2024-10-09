@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "upmethodology-p-common"
+    },
+    {
+      "name": "upmethodology-extension"
+    }
+  ],
+  "macros": [
+    {
+      "name": "makebackcover"
+    },
+    {
+      "name": "setbackcover",
+      "arg": {
+        "format": "{}",
+        "snippet": "setbackcover{${1:layout name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/upmethodology-backpage#c": [
+      "french",
+      "francais",
+      "english"
+    ]
+  },
+  "args": [
+    "\\usepackage/upmethodology-backpage#c"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "moredefs"
+    },
+    {
+      "name": "relsize"
+    }
+  ],
+  "macros": [
+    {
+      "name": "smallblocks"
+    },
+    {
+      "name": "normalblocks"
+    },
+    {
+      "name": "PreChunk",
+      "unusual": true
+    },
+    {
+      "name": "PreFootnote",
+      "unusual": true
+    },
+    {
+      "name": "PreQuotation",
+      "unusual": true
+    },
+    {
+      "name": "PreQuote",
+      "unusual": true
+    },
+    {
+      "name": "PreVerse",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/blkcntrl#c": [
+      "smallblocks",
+      "normalblocks"
+    ]
+  },
+  "args": [
+    "\\usepackage/blkcntrl#c"
+  ]
+}

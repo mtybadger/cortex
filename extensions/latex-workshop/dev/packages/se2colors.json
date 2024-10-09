@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/se2colors#c": [
+      "cmode=${1|4C,cmyk,RGB,BW,gray|}"
+    ]
+  },
+  "args": [
+    "\\usepackage/se2colors#c"
+  ]
+}

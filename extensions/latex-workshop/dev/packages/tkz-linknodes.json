@@ -1,0 +1,63 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LinkNodes",
+      "arg": {
+        "format": "{}",
+        "snippet": "LinkNodes{${1:expression}}"
+      }
+    },
+    {
+      "name": "LinkNodes",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "LinkNodes[${2:keyvals}]{${1:expression}}",
+        "keys": [
+          "\\begin{NodesList},\\LinkNodes"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "AddNode"
+    },
+    {
+      "name": "AddNode",
+      "arg": {
+        "format": "[]",
+        "snippet": "AddNode[${1:number}]"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "NodesList"
+    },
+    {
+      "name": "NodesList",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:keyvals}]",
+        "keys": [
+          "\\begin{NodesList},\\LinkNodes"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{NodesList},\\LinkNodes": [
+      "margin=",
+      "dy="
+    ]
+  },
+  "args": []
+}

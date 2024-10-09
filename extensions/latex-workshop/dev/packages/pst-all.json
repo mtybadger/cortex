@@ -1,0 +1,44 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-plot"
+    },
+    {
+      "name": "pst-node"
+    },
+    {
+      "name": "pst-tree"
+    },
+    {
+      "name": "pst-grad"
+    },
+    {
+      "name": "pst-coil"
+    },
+    {
+      "name": "pst-text"
+    },
+    {
+      "name": "pst-3d"
+    },
+    {
+      "name": "pst-eps"
+    },
+    {
+      "name": "pst-fill"
+    },
+    {
+      "name": "pstricks-add"
+    },
+    {
+      "name": "multido"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

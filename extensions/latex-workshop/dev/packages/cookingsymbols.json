@@ -1,0 +1,41 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "Oven"
+    },
+    {
+      "name": "Topbottomheat"
+    },
+    {
+      "name": "Topheat"
+    },
+    {
+      "name": "Bottomheat"
+    },
+    {
+      "name": "Fanoven"
+    },
+    {
+      "name": "Gasstove"
+    },
+    {
+      "name": "Dish"
+    },
+    {
+      "name": "Knife"
+    },
+    {
+      "name": "Fork"
+    },
+    {
+      "name": "Spoon"
+    },
+    {
+      "name": "Gloves"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

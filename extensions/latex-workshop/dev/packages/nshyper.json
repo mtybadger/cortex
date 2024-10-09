@@ -1,0 +1,14 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,30 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "EuScript",
+      "arg": {
+        "format": "{}",
+        "snippet": "EuScript{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "CMcal",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CMcal{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/euscript#c": [
+      "mathcal",
+      "mathscr"
+    ]
+  },
+  "args": [
+    "\\usepackage/euscript#c"
+  ]
+}

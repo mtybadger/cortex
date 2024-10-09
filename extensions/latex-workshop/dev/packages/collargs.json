@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "pgfkeys"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CollectArguments",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CollectArguments{${1:argspec}}{${2:next-code}}"
+      }
+    },
+    {
+      "name": "CollectArguments",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "CollectArguments[${3:options%keyvals}]{${1:argspec}}{${2:next-code}}",
+        "keys": [
+          "\\CollectArguments"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "CollectArgumentsRaw",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "CollectArgumentsRaw{${1:option-setting code}}{${2:argspec}}{${3:next-code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\CollectArguments": [
+      "caller=${1:control sequence}",
+      "environment=${1:envname}",
+      "begin tag",
+      "end tag",
+      "tags",
+      "ignore nesting",
+      "ignore other tags",
+      "append preprocessor=${1:code}",
+      "prepend preprocessor=${1:code}",
+      "append postprocessor=${1:code}",
+      "prepend postprocessor=${1:code}",
+      "clear preprocessors",
+      "clear postprocessors",
+      "append expandable preprocessor=${1:code}",
+      "prepend expandable preprocessor=${1:code}",
+      "append expandable postprocessor=${1:code}",
+      "prepend expandable postprocessor=${1:code}",
+      "no delimiters",
+      "return=${1|braced,plain,no|}",
+      "clear args",
+      "verbatim",
+      "verb",
+      "no verbatim",
+      "fix from verbatim",
+      "fix from verb",
+      "fix from no verbatim",
+      "braces=${1:<begin-char><end-char>}",
+      "verbatim ranges={${1:from-to}}"
+    ]
+  },
+  "args": []
+}

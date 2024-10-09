@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/onlyamsmath#c": [
+      "eqnarray",
+      "all",
+      "error",
+      "warning",
+      "nodollardollar"
+    ]
+  },
+  "args": [
+    "\\usepackage/onlyamsmath#c"
+  ]
+}

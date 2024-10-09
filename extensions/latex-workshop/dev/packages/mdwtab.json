@@ -1,0 +1,211 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tabpause"
+    },
+    {
+      "name": "vline"
+    },
+    {
+      "name": "vline",
+      "arg": {
+        "format": "[]",
+        "snippet": "vline[${1:width}]"
+      }
+    },
+    {
+      "name": "vgap",
+      "arg": {
+        "format": "{}",
+        "snippet": "vgap{${1:length}}"
+      }
+    },
+    {
+      "name": "vgap",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "vgap[${2:cols}]{${1:length}}"
+      }
+    },
+    {
+      "name": "hlx",
+      "arg": {
+        "format": "{}",
+        "snippet": "hlx{${1:colspec}}"
+      }
+    },
+    {
+      "name": "tabstyle",
+      "unusual": true
+    },
+    {
+      "name": "extrarowheight",
+      "unusual": true
+    },
+    {
+      "name": "tabextrasep",
+      "unusual": true
+    },
+    {
+      "name": "arrayextrasep",
+      "unusual": true
+    },
+    {
+      "name": "smarrayextrasep",
+      "unusual": true
+    },
+    {
+      "name": "smarraycolsep",
+      "unusual": true
+    },
+    {
+      "name": "newcolumntype",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newcolumntype{${1:name}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "newcolumntype",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "newcolumntype{${1:name}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "newcolumntype",
+      "arg": {
+        "format": "{}[][]{}",
+        "snippet": "newcolumntype{${1:name}}[${3:args}][${4:default}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "colset",
+      "arg": {
+        "format": "{}",
+        "snippet": "colset{${1:set-name}}"
+      }
+    },
+    {
+      "name": "colpush",
+      "arg": {
+        "format": "{}",
+        "snippet": "colpush{${1:set-name}}"
+      }
+    },
+    {
+      "name": "colpop"
+    },
+    {
+      "name": "tabcoltype",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tabcoltype{${1:pre-text}}{${2:post-text}}"
+      }
+    },
+    {
+      "name": "tabuserpretype",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabuserpretype{${1:text}}"
+      }
+    },
+    {
+      "name": "tabuserposttype",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabuserposttype{${1:text}}"
+      }
+    },
+    {
+      "name": "tabspctype",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabspctype{${1:text}}"
+      }
+    },
+    {
+      "name": "tabruletype",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabruletype{${1:text}}"
+      }
+    },
+    {
+      "name": "ifinrange",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "ifinrange{${1:number}}{${2:range-list}}{${3:then}}{${4:else}}"
+      }
+    },
+    {
+      "name": "ranges",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ranges{${1:macro}}{${2:range-list}}"
+      }
+    },
+    {
+      "name": "showcol",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "showcol{${1:name}}"
+      }
+    },
+    {
+      "name": "showpream",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "showpream{${1:preamble}}"
+      }
+    },
+    {
+      "name": "savenotes",
+      "unusual": true
+    },
+    {
+      "name": "spewnotes",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "array",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "array",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "smarray",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cols}}"
+      }
+    },
+    {
+      "name": "smarray",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:pos}]{${1:cols}}"
+      }
+    },
+    {
+      "name": "savenotes"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

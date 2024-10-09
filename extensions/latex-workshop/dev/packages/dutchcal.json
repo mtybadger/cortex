@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mathbcal",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbcal{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/dutchcal#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/dutchcal#c"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bidituftehyperref#c": [
+      "hyper",
+      "nohyper"
+    ]
+  },
+  "args": [
+    "\\usepackage/bidituftehyperref#c"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/Gudea#c": [
+      "scaled=${1:factor}",
+      "lining",
+      "tabular",
+      "mainfont",
+      "bold",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/Gudea#c"
+  ]
+}

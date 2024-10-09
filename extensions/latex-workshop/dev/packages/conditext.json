@@ -1,0 +1,193 @@
+{
+  "deps": [
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "xifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setcondispace",
+      "arg": {
+        "format": "{}",
+        "snippet": "setcondispace{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "setcondispace",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setcondispace[${2:domaine de condition}]{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "setcondispace*",
+      "arg": {
+        "format": "{}",
+        "snippet": "setcondispace*{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "setcondispace*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "setcondispace*[${2:domaine de condition}]{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "newcondifield",
+      "arg": {
+        "format": "{}",
+        "snippet": "newcondifield{${1:nouveau domaine de condition}}"
+      }
+    },
+    {
+      "name": "newcondifield*",
+      "arg": {
+        "format": "{}",
+        "snippet": "newcondifield*{${1:nouveau domaine de condition}}"
+      }
+    },
+    {
+      "name": "newcondiprop",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newcondiprop{${1:domaine de condition}}{${2:nouvelle propriété de condition}}"
+      }
+    },
+    {
+      "name": "setimplicitcondifield",
+      "arg": {
+        "format": "{}",
+        "snippet": "setimplicitcondifield{${1:domaine de condition}}"
+      }
+    },
+    {
+      "name": "miniconditext",
+      "arg": {
+        "format": "{}",
+        "snippet": "miniconditext{${1:forme-substituable}}"
+      }
+    },
+    {
+      "name": "setminicondiprop",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setminicondiprop{${1:i-ix}}{${2:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropi",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropi{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropii",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropii{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropiii",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropiii{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropiv",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropiv{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropv",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropv{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropvi",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropvi{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropvii",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropvii{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropviii",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropviii{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "setminicondipropix",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondipropix{${1:propriété de condition redéfinie}}"
+      }
+    },
+    {
+      "name": "resettingminicondiprops"
+    },
+    {
+      "name": "setminicondispace",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminicondispace{${1:propriété de condition}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "conditext",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "conditext",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:domaine de condition}]{${1:propriété de condition}}"
+      }
+    },
+    {
+      "name": "conditext",
+      "arg": {
+        "format": "{}*",
+        "snippet": "{${1:propriété de condition}}*"
+      }
+    },
+    {
+      "name": "conditext",
+      "arg": {
+        "format": "[]{}*",
+        "snippet": "[${2:domaine de condition}]{${1:propriété de condition}}*"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/conditext#c": [
+      "defaultdisplayall"
+    ]
+  },
+  "args": [
+    "\\usepackage/conditext#c"
+  ]
+}

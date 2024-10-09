@@ -1,0 +1,96 @@
+{
+  "deps": [
+    {
+      "name": "xintfrac"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xintSeries",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "xintSeries{${1:start-index}}{${2:end-index}}{${3:macro}}"
+      }
+    },
+    {
+      "name": "xintiSeries",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "xintiSeries{${1:start-index}}{${2:end-index}}{${3:macro}}"
+      }
+    },
+    {
+      "name": "xintRationalSeries",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "xintRationalSeries{${1:start-index}}{${2:end-index}}{${3:frac}}{${4:macro}}"
+      }
+    },
+    {
+      "name": "xintRationalSeriesX",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "xintRationalSeriesX{${1:start-index}}{${2:end-index}}{${3:init-macro}}{${4:macro}}{${5:init-input}}"
+      }
+    },
+    {
+      "name": "xintPowerSeries",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "xintPowerSeries{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    },
+    {
+      "name": "xintPowerSeriesX",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "xintPowerSeriesX{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    },
+    {
+      "name": "xintFxPtPowerSeries",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "xintFxPtPowerSeries{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}{${5:digits}}"
+      }
+    },
+    {
+      "name": "xintFxPtPowerSeriesX",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "xintFxPtPowerSeriesX{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}{${5:digits}}"
+      }
+    },
+    {
+      "name": "xintFloatPowerSeries",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "xintFloatPowerSeries{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    },
+    {
+      "name": "xintFloatPowerSeries",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "xintFloatPowerSeries[${5:digits}]{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    },
+    {
+      "name": "xintFloatPowerSeriesX",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "xintFloatPowerSeriesX{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    },
+    {
+      "name": "xintFloatPowerSeriesX",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "xintFloatPowerSeriesX[${5:digits}]{${1:start-index}}{${2:end-index}}{${3:macro}}{${4:base}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

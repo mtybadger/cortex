@@ -1,0 +1,22 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "soul"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tbd",
+      "arg": {
+        "format": "{}",
+        "snippet": "tbd{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

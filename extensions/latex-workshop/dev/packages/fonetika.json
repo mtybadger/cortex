@@ -1,0 +1,28 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fonetikashape",
+      "unusual": true
+    },
+    {
+      "name": "fonetikafamily"
+    },
+    {
+      "name": "fonetikasansfamily"
+    },
+    {
+      "name": "fonetikaseriffamily"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fonetika#c": [
+      "sans",
+      "serif"
+    ]
+  },
+  "args": [
+    "\\usepackage/fonetika#c"
+  ]
+}

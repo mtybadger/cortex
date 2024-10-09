@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "class-einfart"
+    },
+    {
+      "name": "ProjLib"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarymany"
+    },
+    {
+      "name": "needspace"
+    },
+    {
+      "name": "enumitem"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\documentclass/jwjournal#c": [
+      "month-day-year",
+      "day-month-year",
+      "paperstyle=${1|lightyellow,yellow,parchment,green,lightgray,gray,nord,dark|}",
+      "scroll",
+      "color entry"
+    ]
+  },
+  "args": [
+    "\\documentclass/jwjournal#c"
+  ]
+}

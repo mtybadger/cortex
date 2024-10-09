@@ -1,0 +1,90 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "kvmapsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "kvmapsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\kvmapsetup#c,\\begin{kvmap}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "kvlist",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "kvlist{${1:width}}{${2:height}}{${3:elements%formula}}{${4:variables%formula}}"
+      }
+    },
+    {
+      "name": "bundle",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "bundle{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}"
+      }
+    },
+    {
+      "name": "bundle",
+      "arg": {
+        "format": "[]{}{}{}{}",
+        "snippet": "bundle[${5:options%keyvals}]{${1:x1}}{${2:y1}}{${3:x2}}{${4:y2}}",
+        "keys": [
+          "\\bundle"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "kvmap"
+    },
+    {
+      "name": "kvmap",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\kvmapsetup#c,\\begin{kvmap}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "kvmatrix",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:variables%formula}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\kvmapsetup#c,\\begin{kvmap}#c": [
+      "bundle/invert",
+      "bundle/hinvert",
+      "bundle/vinvert",
+      "bundle/overlapmargins=",
+      "bundle/color=",
+      "bundle/reducespace="
+    ],
+    "\\bundle": [
+      "invert",
+      "hinvert",
+      "vinvert",
+      "overlapmargins=",
+      "color=",
+      "reducespace="
+    ]
+  },
+  "args": []
+}

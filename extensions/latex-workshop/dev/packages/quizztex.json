@@ -1,0 +1,131 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "pgf"
+    },
+    {
+      "name": "pgffor"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "simplekv"
+    },
+    {
+      "name": "settobox"
+    },
+    {
+      "name": "fontawesome5"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    },
+    {
+      "name": "tikzlibrarybabel"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    }
+  ],
+  "macros": [
+    {
+      "name": "QuizzMillions",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "QuizzMillions{${1:question%text}}{${2:réponse1%text}}{${3:réponse2%text}}{${4:réponse3%text}}{${5:réponse4%text}}"
+      }
+    },
+    {
+      "name": "QuizzMillions",
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "QuizzMillions[${6:clés%keyvals}]{${1:question%text}}{${2:réponse1%text}}{${3:réponse2%text}}{${4:réponse3%text}}{${5:réponse4%text}}",
+        "keys": [
+          "\\QuizzMillions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "QuizzPrendrePlace",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "QuizzPrendrePlace{${1:question%text}}{${2:réponse1%text}}{${3:réponse2%text}}{${4:réponse3%text}}{${5:réponse4%text}}"
+      }
+    },
+    {
+      "name": "QuizzPrendrePlace",
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "QuizzPrendrePlace[${6:clés%keyvals}]{${1:question%text}}{${2:réponse1%text}}{${3:réponse2%text}}{${4:réponse3%text}}{${5:réponse4%text}}",
+        "keys": [
+          "\\QuizzPrendrePlace"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\QuizzMillions": [
+      "Largeur=",
+      "Marge=",
+      "Hauteurs=",
+      "Couleur=",
+      "CouleurFond=",
+      "CouleurLettre=",
+      "CouleurTexte=",
+      "Bonne=${1|A,B,C,D|}",
+      "Mauvaise=${1|A,B,C,D|}",
+      "Choix=${1|A,B,C,D|}",
+      "CoulBonne=",
+      "CoulChoix=",
+      "CoulMauvaise=",
+      "Affichage=${1|Choix,Sol,PropSol|}",
+      "EspacementV=",
+      "OffsetV=",
+      "Decorations",
+      "AffChoix=",
+      "Jokers",
+      "AffJokers=",
+      "CodeAvant=${1:code}",
+      "Effet"
+    ],
+    "\\QuizzPrendrePlace": [
+      "Largeur=",
+      "MargeMilieu=",
+      "Hauteurs=",
+      "Couleur=",
+      "CouleurFond=",
+      "CouleurTexte=",
+      "Bonne=${1|A,B,C,D|}",
+      "Mauvaise=${1|A,B,C,D|}",
+      "Choix=${1|A,B,C,D|}",
+      "CoulBonne=",
+      "CoulChoix=",
+      "CoulMauvaise=",
+      "Affichage=${1|Choix,Sol,PropSol|}",
+      "EspacementV=",
+      "Cadre",
+      "Offset=",
+      "CodeAvant=${1:code}",
+      "Theme=${1:texte}",
+      "Type=${1|Duo,Carre,Cash|}",
+      "Effet"
+    ]
+  },
+  "args": []
+}

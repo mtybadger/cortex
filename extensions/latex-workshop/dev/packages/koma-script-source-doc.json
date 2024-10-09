@@ -1,0 +1,744 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "class-ltxdoc"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "auxhook"
+    },
+    {
+      "name": "scrlogo"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cls",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls{${1:class}}"
+      }
+    },
+    {
+      "name": "cls",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cls[${2:CTAN path%URL}]{${1:class}}"
+      }
+    },
+    {
+      "name": "cls*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cls*{${1:class}}"
+      }
+    },
+    {
+      "name": "cls*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cls*[${2:CTAN path%URL}]{${1:class}}"
+      }
+    },
+    {
+      "name": "cnt",
+      "arg": {
+        "format": "{}",
+        "snippet": "cnt{${1:counter}}"
+      }
+    },
+    {
+      "name": "dhook",
+      "arg": {
+        "format": "{}",
+        "snippet": "dhook{${1:dohook}}"
+      }
+    },
+    {
+      "name": "env",
+      "arg": {
+        "format": "{}",
+        "snippet": "env{${1:envname}}"
+      }
+    },
+    {
+      "name": "file",
+      "arg": {
+        "format": "{}",
+        "snippet": "file{${1:file}}"
+      }
+    },
+    {
+      "name": "fnt",
+      "arg": {
+        "format": "{}",
+        "snippet": "fnt{${1:font}}"
+      }
+    },
+    {
+      "name": "len",
+      "arg": {
+        "format": "{}",
+        "snippet": "len{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "opt",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt{${1:option}}"
+      }
+    },
+    {
+      "name": "optvalue",
+      "arg": {
+        "format": "{}",
+        "snippet": "optvalue{${1:value}}"
+      }
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg{${1:package}}"
+      }
+    },
+    {
+      "name": "pkg",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pkg[${2:CTAN path%URL}]{${1:package}}"
+      }
+    },
+    {
+      "name": "pkg*",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg*{${1:package}}"
+      }
+    },
+    {
+      "name": "pkg*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pkg*[${2:CTAN path%URL}]{${1:package}}"
+      }
+    },
+    {
+      "name": "plen",
+      "arg": {
+        "format": "{}",
+        "snippet": "plen{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "pstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "pstyle{${1:pstyle}}"
+      }
+    },
+    {
+      "name": "var",
+      "arg": {
+        "format": "{}",
+        "snippet": "var{${1:variable}}"
+      }
+    },
+    {
+      "name": "DescribeCommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeCommand{${1:cmd}}"
+      }
+    },
+    {
+      "name": "DescribeCommand",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeCommand[${2:options%keyvals}]{${1:cmd}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeCommand",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeCommand{${1:cmd}}"
+      }
+    },
+    {
+      "name": "PrintCommandName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintCommandName{${1:cmd}}"
+      }
+    },
+    {
+      "name": "SpecialMainCommandIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainCommandIndex{${1:cmd}}"
+      }
+    },
+    {
+      "name": "SpecialCommandIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialCommandIndex{${1:cmd}}"
+      }
+    },
+    {
+      "name": "DescribeOption",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeOption{${1:option}}"
+      }
+    },
+    {
+      "name": "DescribeOption",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeOption[${2:options%keyvals}]{${1:option}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeOption",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeOption{${1:option}}"
+      }
+    },
+    {
+      "name": "PrintOptionName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintOptionName{${1:option}}"
+      }
+    },
+    {
+      "name": "SpecialMainOptionIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainOptionIndex{${1:option}}"
+      }
+    },
+    {
+      "name": "SpecialOptionIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialOptionIndex{${1:option}}"
+      }
+    },
+    {
+      "name": "DescribeILength",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeILength{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "DescribeILength",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeILength[${2:options%keyvals}]{${1:length%plain}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeILength",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeILength{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "PrintILengthName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintILengthName{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "SpecialMainILengthIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainILengthIndex{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "SpecialILengthIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialILengthIndex{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "DescribeCounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeCounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "DescribeCounter",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeCounter[${2:options%keyvals}]{${1:counter}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeCounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeCounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "PrintCounterName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintCounterName{${1:counter}}"
+      }
+    },
+    {
+      "name": "SpecialMainCounterIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainCounterIndex{${1:counter}}"
+      }
+    },
+    {
+      "name": "SpecialCounterIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialCounterIndex{${1:counter}}"
+      }
+    },
+    {
+      "name": "DescribeKOMAfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeKOMAfont{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "DescribeKOMAfont",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeKOMAfont[${2:options%keyvals}]{${1:KOMAfont}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeKOMAfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeKOMAfont{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "PrintKOMAfontName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintKOMAfontName{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "SpecialMainKOMAfontIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainKOMAfontIndex{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "SpecialKOMAfontIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialKOMAfontIndex{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "DescribeKOMAvar",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeKOMAvar{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "DescribeKOMAvar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeKOMAvar[${2:options%keyvals}]{${1:KOMAvar}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeKOMAvar",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeKOMAvar{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "PrintKOMAvarName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintKOMAvarName{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "SpecialMainKOMAvarIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainKOMAvarIndex{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "SpecialKOMAvarIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialKOMAvarIndex{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "DescribePLength",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribePLength{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "DescribePLength",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribePLength[${2:options%keyvals}]{${1:pseudolength}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribePLength",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribePLength{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "PrintPLengthName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintPLengthName{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "SpecialMainPLengthIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainPLengthIndex{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "SpecialPLengthIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialPLengthIndex{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "DescribePageStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribePageStyle{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "DescribePageStyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribePageStyle[${2:options%keyvals}]{${1:pagestyle}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribePageStyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribePageStyle{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "PrintPageStyleName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintPageStyleName{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "SpecialMainPageStyleIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainPageStyleIndex{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "SpecialPageStyleIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialPageStyleIndex{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "DescribeDoHook",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeDoHook{${1:dohook}}"
+      }
+    },
+    {
+      "name": "DescribeDoHook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DescribeDoHook[${2:options%keyvals}]{${1:dohook}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PrintDescribeDoHook",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDescribeDoHook{${1:dohook}}"
+      }
+    },
+    {
+      "name": "PrintDoHookName",
+      "arg": {
+        "format": "{}",
+        "snippet": "PrintDoHookName{${1:dohook}}"
+      }
+    },
+    {
+      "name": "SpecialMainDoHookIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialMainDoHookIndex{${1:dohook}}"
+      }
+    },
+    {
+      "name": "SpecialDoHookIndex",
+      "arg": {
+        "format": "{}",
+        "snippet": "SpecialDoHookIndex{${1:dohook}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "command",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:cmd}}"
+      }
+    },
+    {
+      "name": "command",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:element}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "option",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:option}}"
+      }
+    },
+    {
+      "name": "option",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:option}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ilength",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:length%plain}}"
+      }
+    },
+    {
+      "name": "ilength",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:length%plain}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "counter",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:counter}}"
+      }
+    },
+    {
+      "name": "counter",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:counter}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fontelement",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:KOMAfont}}"
+      }
+    },
+    {
+      "name": "fontelement",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:KOMAfont}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "variable",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:KOMAvar}}"
+      }
+    },
+    {
+      "name": "variable",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:KOMAvar}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pseudolength",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:pseudolength}}"
+      }
+    },
+    {
+      "name": "pseudolength",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:pseudolength}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pgstyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:pagestyle}}"
+      }
+    },
+    {
+      "name": "pgstyle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:pagestyle}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "dohook",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:dohook}}"
+      }
+    },
+    {
+      "name": "dohook",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:dohook}}",
+        "keys": [
+          "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/koma-script-source-doc#c": [
+      "indexlatex"
+    ],
+    "\\DescribeCommand#c,\\begin{command}#c,\\DescribeOption#c,\\begin{option}#c,\\DescribeILength#c,\\begin{ilength}#c,\\DescribeCounter#c,\\begin{counter}#c,\\DescribeKOMAfont#c,\\begin{fontelement}#c,\\DescribeKOMAvar#c,\\begin{variable}#c,\\DescribePLength#c,\\begin{pseudolength}#c,\\DescribePageStyle#c,\\begin{pgstyle}#c,\\DescribeDoHook#c,\\begin{dohook}#c": [
+      "noindex",
+      "noprint"
+    ]
+  },
+  "args": [
+    "\\documentclass/koma-script-source-doc#c"
+  ]
+}

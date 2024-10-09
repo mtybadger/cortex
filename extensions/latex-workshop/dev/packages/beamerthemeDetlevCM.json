@@ -1,0 +1,28 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "titlevsep",
+      "unusual": true
+    },
+    {
+      "name": "fachbereich",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fachbereich{${1:arg}}"
+      }
+    },
+    {
+      "name": "insertfachbereich",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/DetlevCM#c": [
+      "compress"
+    ]
+  },
+  "args": []
+}

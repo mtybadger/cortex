@@ -1,0 +1,41 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "CelticDrawPath",
+      "arg": {
+        "format": "{}",
+        "snippet": "CelticDrawPath{${1:options%keyvals}}",
+        "keys": [
+          "\\CelticDrawPath#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\CelticDrawPath#c": [
+      "max steps=${1:integer}",
+      "flip",
+      "width=",
+      "height=",
+      "size={${1:width,height}}",
+      "crossings={${1:x,y,type; ...}}",
+      "symmetric crossings={${1:x,y,type; ...}}",
+      "ignore crossings={${1:x,y,type; ...}}",
+      "ignore symmetric crossings={${1:x,y,type; ...}}",
+      "style={${1:TikZ keys}}",
+      "at=${1:coordinate}",
+      "inner clip=${1:integer}",
+      "outer clip=${1:integer}"
+    ],
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "celtic surround/.style={${1:TikZ keys}}",
+      "celtic bar/.style={${1:TikZ keys}}",
+      "celtic path/.style={${1:TikZ keys}}",
+      "celtic path ${1:⟨n⟩}/.style={${2:TikZ keys}}"
+    ]
+  },
+  "args": []
+}

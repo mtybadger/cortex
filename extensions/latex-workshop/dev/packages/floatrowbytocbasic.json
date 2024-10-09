@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "tocbasic"
+    },
+    {
+      "name": "floatrow"
+    },
+    {
+      "name": "xpatch"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DeclareFloatType",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DeclareFloatType{${1:envname}}{${2:options%keyvals}}",
+        "keys": [
+          "\\DeclareFloatType,\\ProvideFloatType,\\RedeclareFloatType"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "ProvideFloatType",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProvideFloatType{${1:envname}}{${2:options%keyvals}}",
+        "keys": [
+          "\\DeclareFloatType,\\ProvideFloatType,\\RedeclareFloatType"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "RedeclareFloatType",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RedeclareFloatType{${1:envname}}{${2:options%keyvals}}",
+        "keys": [
+          "\\DeclareFloatType,\\ProvideFloatType,\\RedeclareFloatType"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\DeclareFloatType,\\ProvideFloatType,\\RedeclareFloatType": [
+      "placement=${1:combination of t,b,h,p}",
+      "name=${1:name}",
+      "fileext=${1:ext}",
+      "within=${1:counter}",
+      "relatedcapstyle=${1|yes,no|}"
+    ]
+  },
+  "args": []
+}

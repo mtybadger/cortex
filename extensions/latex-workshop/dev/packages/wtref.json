@@ -1,0 +1,55 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newref",
+      "arg": {
+        "format": "{}",
+        "snippet": "newref{${1:ref types}}"
+      }
+    },
+    {
+      "name": "newref",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "newref[${2:options%keyvals}]{${1:ref types}}",
+        "keys": [
+          "\\newref"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "setrefstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setrefstyle{${1:ref types}}{${2:options%keyvals}}",
+        "keys": [
+          "\\setrefstyle"
+        ],
+        "keyPos": 1
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\newref": [
+      "namespace=${1:string}",
+      "nonamespace",
+      "scope=${1:counter}"
+    ],
+    "\\setrefstyle": [
+      "refcmd=${1:command}",
+      "sep=${1:command}",
+      "last sep",
+      "last sep=${1:command}",
+      "prefix=${1:command}",
+      "suffix=${1:command}"
+    ]
+  },
+  "args": []
+}

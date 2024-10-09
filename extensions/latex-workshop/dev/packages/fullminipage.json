@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "fullminipage"
+    },
+    {
+      "name": "fullminipage",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\begin{fullminipage}"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\begin{fullminipage}": [
+      "left=",
+      "right=",
+      "top=",
+      "bottom=",
+      "alignment=${1|t,c,b|}",
+      "bgcolor",
+      "bgcolor=",
+      "background=${1:code}",
+      "pagebreak=${1:code}"
+    ]
+  },
+  "args": []
+}

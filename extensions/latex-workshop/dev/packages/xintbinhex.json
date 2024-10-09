@@ -1,0 +1,61 @@
+{
+  "deps": [
+    {
+      "name": "xintkernel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "xintDecToHex",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDecToHex{${1:decimal integer}}"
+      }
+    },
+    {
+      "name": "xintDecToBin",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintDecToBin{${1:decimal integer}}"
+      }
+    },
+    {
+      "name": "xintHexToDec",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintHexToDec{${1:hex integer}}"
+      }
+    },
+    {
+      "name": "xintBinToDec",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintBinToDec{${1:hex integer}}"
+      }
+    },
+    {
+      "name": "xintBinToHex",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintBinToHex{${1:binary integer}}"
+      }
+    },
+    {
+      "name": "xintHexToBin",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintHexToBin{${1:binary integer}}"
+      }
+    },
+    {
+      "name": "xintCHexToBin",
+      "arg": {
+        "format": "{}",
+        "snippet": "xintCHexToBin{${1:hex integer}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

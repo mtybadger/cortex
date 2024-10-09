@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DNAblock"
+    },
+    {
+      "name": "DNAreserve"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

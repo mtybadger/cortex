@@ -476,7 +476,7 @@
   "scripts": {
     "watch": "gulp watch-extension:emmet",
     "compile": "gulp compile-extension:emmet",
-    "deps": "npm install @vscode/emmet-helper"
+    "deps": "yarn add @vscode/emmet-helper"
   },
   "devDependencies": {
     "@types/node": "20.x"

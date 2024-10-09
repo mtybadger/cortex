@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarydatavisualization"
+    }
+  ],
+  "macros": [
+    {
+      "name": "value",
+      "arg": {
+        "format": "{}",
+        "snippet": "value{${1:variable}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

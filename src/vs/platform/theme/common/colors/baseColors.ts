@@ -3,11 +3,11 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
+import * as nls from 'vs/nls';
 
 // Import the effects we need
-import { Color } from '../../../../base/common/color.js';
-import { registerColor, transparent } from '../colorUtils.js';
+import { Color } from 'vs/base/common/color';
+import { registerColor, transparent } from 'vs/platform/theme/common/colorUtils';
 
 
 export const foreground = registerColor('foreground',

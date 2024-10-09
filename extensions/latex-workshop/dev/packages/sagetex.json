@@ -1,0 +1,158 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "makecmds"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sage",
+      "arg": {
+        "format": "{}",
+        "snippet": "sage{${1:Sage code%definition}}"
+      }
+    },
+    {
+      "name": "sagestr",
+      "arg": {
+        "format": "{}",
+        "snippet": "sagestr{${1:Sage code%definition}}"
+      }
+    },
+    {
+      "name": "percent",
+      "detail": "%",
+      "doc": "Percent sign"
+    },
+    {
+      "name": "sageplot",
+      "arg": {
+        "format": "{}",
+        "snippet": "sageplot{${1:graphics obj, keyword args}}"
+      }
+    },
+    {
+      "name": "sageplot",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sageplot[${2:options%keyvals}]{${1:graphics obj, keyword args}}",
+        "keys": [
+          "\\sageplot"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sageplot",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "sageplot[${2:options%keyvals}][${3:fmt}]{${1:graphics obj, keyword args}}",
+        "keys": [
+          "\\sageplot"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "sagetexindent"
+    },
+    {
+      "name": "sagetexpause"
+    },
+    {
+      "name": "sagetexunpause"
+    },
+    {
+      "name": "sageexampleincludetextoutput",
+      "unusual": true
+    },
+    {
+      "name": "sagecommandlinetextoutput",
+      "unusual": true
+    },
+    {
+      "name": "sagecommandlineskip",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "sageblock"
+    },
+    {
+      "name": "sagesilent"
+    },
+    {
+      "name": "sageverbatim"
+    },
+    {
+      "name": "sageexample"
+    },
+    {
+      "name": "sagecommandline"
+    }
+  ],
+  "keys": {
+    "\\usepackage/sagetex#c": [
+      "final",
+      "imagemagick",
+      "epstopdf",
+      "noversioncheck"
+    ],
+    "\\sageplot": [
+      "alt={${1:alt text}}",
+      "bb=${1:llx lly urx ury}",
+      "bbllx=",
+      "bblly=",
+      "bburx=",
+      "bbury=",
+      "natwidth=",
+      "natheight=",
+      "hiresbb",
+      "pagebox=${1|mediabox,cropbox,bleedbox,trimbox,artbox|}",
+      "viewport=${1:llx lly urx ury}",
+      "trim=${1:llx lly urx ury}",
+      "angle=${1:degrees}",
+      "origin=",
+      "width=",
+      "height=",
+      "totalheight=",
+      "keepaspectratio",
+      "scale=${1:factor}",
+      "clip",
+      "draft",
+      "type=${1:file type}",
+      "ext=${1:file extension}",
+      "read=${1:read-file extension}",
+      "command=",
+      "quiet",
+      "page=${1:page number}",
+      "interpolate",
+      "decodearray={${1:color array}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/sagetex#c"
+  ]
+}

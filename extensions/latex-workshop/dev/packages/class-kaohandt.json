@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "kao"
+    },
+    {
+      "name": "abstract"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

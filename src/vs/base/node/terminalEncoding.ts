@@ -7,7 +7,7 @@
  * This code is also used by standalone cli's. Avoid adding dependencies to keep the size of the cli small.
  */
 import { exec } from 'child_process';
-import { isWindows } from '../common/platform.js';
+import { isWindows } from 'vs/base/common/platform';
 
 const windowsTerminalEncodings = {
 	'437': 'cp437', // United States

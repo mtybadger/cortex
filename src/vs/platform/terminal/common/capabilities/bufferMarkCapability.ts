@@ -3,9 +3,11 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { Emitter } from '../../../../base/common/event.js';
-import { Disposable } from '../../../../base/common/lifecycle.js';
-import { IBufferMarkCapability, TerminalCapability, IMarkProperties } from './capabilities.js';
+import { Emitter } from 'vs/base/common/event';
+import { Disposable } from 'vs/base/common/lifecycle';
+import { IBufferMarkCapability, TerminalCapability, IMarkProperties } from 'vs/platform/terminal/common/capabilities/capabilities';
+// Importing types is safe in any layer
+// eslint-disable-next-line local/code-import-patterns
 import type { IMarker, Terminal } from '@xterm/headless';
 
 /**

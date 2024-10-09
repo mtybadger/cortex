@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/href-ul#c": [
+      "plain"
+    ]
+  },
+  "args": [
+    "\\usepackage/href-ul#c"
+  ]
+}

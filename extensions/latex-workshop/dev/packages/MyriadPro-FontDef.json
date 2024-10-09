@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "otfontdef"
+    },
+    {
+      "name": "fltpoint"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/MyriadPro-FontDef#c": [
+      "noopticals",
+      "smallfamily",
+      "medfamily",
+      "normalsize"
+    ]
+  },
+  "args": [
+    "\\usepackage/MyriadPro-FontDef#c"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ifboustright",
+      "unusual": true
+    },
+    {
+      "name": "boustrighttrue"
+    },
+    {
+      "name": "boustrightfalse"
+    }
+  ],
+  "envs": [
+    {
+      "name": "boustrophedon"
+    },
+    {
+      "name": "rtl"
+    },
+    {
+      "name": "sidewaysflip",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:width}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

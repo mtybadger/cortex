@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "indentfirst"
+    },
+    {
+      "name": "class-memoir"
+    }
+  ],
+  "macros": [
+    {
+      "name": "degree",
+      "arg": {
+        "format": "{}",
+        "snippet": "degree{${1:degree%text}}"
+      }
+    },
+    {
+      "name": "degreemo",
+      "arg": {
+        "format": "{}",
+        "snippet": "degreemo{${1:month}}"
+      }
+    },
+    {
+      "name": "degreeyr",
+      "arg": {
+        "format": "{}",
+        "snippet": "degreeyr{${1:year}}"
+      }
+    },
+    {
+      "name": "preheadskip",
+      "unusual": true
+    },
+    {
+      "name": "postheadskip",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "acknowledgments"
+    },
+    {
+      "name": "dedication"
+    }
+  ],
+  "keys": {
+    "\\documentclass/mugsthesis#c": [
+      "thesis",
+      "dissertation",
+      "10pt",
+      "11pt",
+      "12pt",
+      "final",
+      "draft",
+      "indentfirsttrue",
+      "indentfirstfalse"
+    ]
+  },
+  "args": [
+    "\\documentclass/mugsthesis#c"
+  ]
+}

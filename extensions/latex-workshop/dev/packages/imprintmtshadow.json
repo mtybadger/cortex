@@ -1,0 +1,28 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "imprintmtshadowfamily"
+    },
+    {
+      "name": "textimprintmtshadow",
+      "arg": {
+        "format": "{}",
+        "snippet": "textimprintmtshadow{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/imprintmtshadow#c": [
+      "scaled=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/imprintmtshadow#c"
+  ]
+}

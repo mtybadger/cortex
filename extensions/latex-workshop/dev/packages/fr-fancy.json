@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "fancybox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "wshadowbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "wshadowbox{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

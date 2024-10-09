@@ -1,0 +1,34 @@
+{
+  "deps": [
+    {
+      "name": "luatexbase"
+    },
+    {
+      "name": "luaotfload"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setluaoption",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setluaoption{${1:family}}{${2:option%keyvals}}{${3:value}}"
+      }
+    },
+    {
+      "name": "useluaoption",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "useluaoption{${1:family}}{${2:option%keyvals}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

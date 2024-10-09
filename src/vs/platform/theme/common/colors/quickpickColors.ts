@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
+import * as nls from 'vs/nls';
 
 // Import the effects we need
-import { Color, RGBA } from '../../../../base/common/color.js';
-import { registerColor, oneOf } from '../colorUtils.js';
+import { Color, RGBA } from 'vs/base/common/color';
+import { registerColor, oneOf } from 'vs/platform/theme/common/colorUtils';
 
 // Import the colors we need
-import { editorWidgetBackground, editorWidgetForeground } from './editorColors.js';
-import { listActiveSelectionBackground, listActiveSelectionForeground, listActiveSelectionIconForeground } from './listColors.js';
+import { editorWidgetBackground, editorWidgetForeground } from 'vs/platform/theme/common/colors/editorColors';
+import { listActiveSelectionBackground, listActiveSelectionForeground, listActiveSelectionIconForeground } from 'vs/platform/theme/common/colors/listColors';
 
 
 export const quickInputBackground = registerColor('quickInput.background',

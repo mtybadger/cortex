@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { isFunction } from '../../../../base/common/types.js';
-import { Registry } from '../../common/platform.js';
+import { isFunction } from 'vs/base/common/types';
+import { Registry } from 'vs/platform/registry/common/platform';
 
 suite('Platform / Registry', () => {
 

@@ -1,0 +1,23 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "intitlebreak"
+    },
+    {
+      "name": "intitlebreakvs"
+    },
+    {
+      "name": "SaveTopMatter"
+    },
+    {
+      "name": "SavedTitle"
+    },
+    {
+      "name": "SavedAuthor"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "sishape"
+    },
+    {
+      "name": "textsi",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsi{${1:text}}"
+      }
+    },
+    {
+      "name": "specialdigits"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,144 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DefineFNsymbols",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "DefineFNsymbols{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
+      }
+    },
+    {
+      "name": "DefineFNsymbols*",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "DefineFNsymbols*{${1:set name%specialDef}}[${3:style}]{${2:symbol list}}"
+      }
+    },
+    {
+      "name": "setfnsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfnsymbol{${1:set name%keyvals}}",
+        "keys": [
+          "\\setfnsymbol#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "mpfootnotemark"
+    },
+    {
+      "name": "mpfootnotemark",
+      "arg": {
+        "format": "[]",
+        "snippet": "mpfootnotemark[${1:number}]"
+      }
+    },
+    {
+      "name": "footref",
+      "arg": {
+        "format": "{}",
+        "snippet": "footref{${1:label}}"
+      }
+    },
+    {
+      "name": "footnotelayout",
+      "unusual": true
+    },
+    {
+      "name": "footglue",
+      "unusual": true
+    },
+    {
+      "name": "footnotebaselineskip",
+      "unusual": true
+    },
+    {
+      "name": "fudgefactor",
+      "unusual": true
+    },
+    {
+      "name": "makefootnoteparagraph",
+      "unusual": true
+    },
+    {
+      "name": "makehboxofhboxes",
+      "unusual": true
+    },
+    {
+      "name": "removehboxes",
+      "unusual": true
+    },
+    {
+      "name": "footnotehint",
+      "unusual": true
+    },
+    {
+      "name": "footnotemargin",
+      "unusual": true
+    },
+    {
+      "name": "hangfootparskip",
+      "unusual": true
+    },
+    {
+      "name": "hangfootparindent",
+      "unusual": true
+    },
+    {
+      "name": "mpfootnoterule",
+      "if": "splitrule"
+    },
+    {
+      "name": "pagefootnoterule",
+      "if": "splitrule"
+    },
+    {
+      "name": "splitfootnoterule",
+      "if": "splitrule"
+    },
+    {
+      "name": "multiplefootnotemarker",
+      "if": "multiple",
+      "unusual": true
+    },
+    {
+      "name": "multfootsep",
+      "if": "multiple",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/footmisc#c": [
+      "perpage",
+      "para",
+      "side",
+      "ragged",
+      "symbol",
+      "symbol*",
+      "abovefloats",
+      "belowfloats",
+      "bottom",
+      "bottomfloats",
+      "marginal",
+      "flushmargin",
+      "hang",
+      "norule",
+      "splitrule",
+      "stable",
+      "multiple"
+    ],
+    "\\setfnsymbol#c": [
+      "bringhurst",
+      "chicago",
+      "wiley",
+      "%fnsymbolset"
+    ]
+  },
+  "args": [
+    "\\usepackage/footmisc#c"
+  ]
+}

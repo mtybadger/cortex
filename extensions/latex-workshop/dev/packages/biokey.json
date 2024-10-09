@@ -1,0 +1,150 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "AAAN"
+    },
+    {
+      "name": "AAN"
+    },
+    {
+      "name": "AN"
+    },
+    {
+      "name": "Ap"
+    },
+    {
+      "name": "DD",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DD{${1:label}}"
+      }
+    },
+    {
+      "name": "FK",
+      "arg": {
+        "format": "{}",
+        "snippet": "FK{${1:comment%text}}"
+      }
+    },
+    {
+      "name": "KOM",
+      "arg": {
+        "format": "{}",
+        "snippet": "KOM{${1:comment%text}}"
+      }
+    },
+    {
+      "name": "OTSTUP",
+      "unusual": true
+    },
+    {
+      "name": "SameDecl",
+      "unusual": true
+    },
+    {
+      "name": "SE",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SE{${1:label}}{${2:reflabel%ref}}"
+      }
+    },
+    {
+      "name": "SHRIFTN",
+      "unusual": true
+    },
+    {
+      "name": "SHRIFTZ",
+      "unusual": true
+    },
+    {
+      "name": "SS",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "SS{${1:label}}"
+      }
+    },
+    {
+      "name": "SSYLKA",
+      "arg": {
+        "format": "{}",
+        "snippet": "SSYLKA{${1:label}}"
+      }
+    },
+    {
+      "name": "STEZA",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "STEZA{${1:label}}{${2:reflabel%ref}}"
+      }
+    },
+    {
+      "name": "TE",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TE{${1:label}}"
+      }
+    },
+    {
+      "name": "TEZA",
+      "arg": {
+        "format": "{}",
+        "snippet": "TEZA{${1:label}}"
+      }
+    },
+    {
+      "name": "VPRAVO",
+      "arg": {
+        "format": "{}",
+        "snippet": "VPRAVO{${1:comment%text}}"
+      }
+    },
+    {
+      "name": "ZZZ",
+      "arg": {
+        "format": "{}",
+        "snippet": "ZZZ{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "biokey"
+    },
+    {
+      "name": "SDVIG",
+      "unusual": true
+    },
+    {
+      "name": "SDVIG",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:indent factor}]"
+      }
+    },
+    {
+      "name": "LE"
+    },
+    {
+      "name": "LE",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:indent factor}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/biokey#c": [
+      "nomargin",
+      "margin"
+    ]
+  },
+  "args": [
+    "\\usepackage/biokey#c"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "useCJKencmap",
+      "arg": {
+        "format": "{}",
+        "snippet": "useCJKencmap{${1:encoding}}"
+      }
+    },
+    {
+      "name": "CJKchartouni",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKchartouni{${1:character}}"
+      }
+    },
+    {
+      "name": "CJKsfdtouni",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CJKsfdtouni{${1:plane}}{${2:slot}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

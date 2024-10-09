@@ -1,0 +1,429 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-blur"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "pst-fill"
+    }
+  ],
+  "macros": [
+    {
+      "name": "crdback"
+    },
+    {
+      "name": "crdback",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "crdback[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "colorbgname",
+      "unusual": true
+    },
+    {
+      "name": "colorbackname",
+      "unusual": true
+    },
+    {
+      "name": "varclubsuit",
+      "detail": "♧ (\"txfonts\" command)",
+      "doc": "\\varclub (arevmath), club, white (card suit)"
+    },
+    {
+      "name": "vardiamondsuit",
+      "detail": "♦ (\"txfonts\" command)",
+      "doc": "\\vardiamond (arevmath), filled diamond (card suit)"
+    },
+    {
+      "name": "varheartsuit",
+      "detail": "♥ (\"txfonts\" command)",
+      "doc": "\\varheart (arevmath), filled heart (card suit)"
+    },
+    {
+      "name": "varspadesuit",
+      "detail": "♤ (\"txfonts\" command)",
+      "doc": "\\varspade (arevmath), spade, white (card suit)"
+    },
+    {
+      "name": "pspade"
+    },
+    {
+      "name": "pheart"
+    },
+    {
+      "name": "pdiamond"
+    },
+    {
+      "name": "pclub"
+    },
+    {
+      "name": "As"
+    },
+    {
+      "name": "Ah"
+    },
+    {
+      "name": "Ad"
+    },
+    {
+      "name": "Ac"
+    },
+    {
+      "name": "Ks"
+    },
+    {
+      "name": "Kh"
+    },
+    {
+      "name": "Kd"
+    },
+    {
+      "name": "Kc"
+    },
+    {
+      "name": "Qs"
+    },
+    {
+      "name": "Qh"
+    },
+    {
+      "name": "Qd"
+    },
+    {
+      "name": "Qc"
+    },
+    {
+      "name": "Js"
+    },
+    {
+      "name": "Jh"
+    },
+    {
+      "name": "Jd"
+    },
+    {
+      "name": "Jc"
+    },
+    {
+      "name": "tens"
+    },
+    {
+      "name": "tenh"
+    },
+    {
+      "name": "tend"
+    },
+    {
+      "name": "tenc"
+    },
+    {
+      "name": "nines"
+    },
+    {
+      "name": "nineh"
+    },
+    {
+      "name": "nined"
+    },
+    {
+      "name": "ninec"
+    },
+    {
+      "name": "eigs"
+    },
+    {
+      "name": "eigh"
+    },
+    {
+      "name": "eigd"
+    },
+    {
+      "name": "eigc"
+    },
+    {
+      "name": "sevs"
+    },
+    {
+      "name": "sevh"
+    },
+    {
+      "name": "sevd"
+    },
+    {
+      "name": "sevc"
+    },
+    {
+      "name": "sixs"
+    },
+    {
+      "name": "sixh"
+    },
+    {
+      "name": "sixd"
+    },
+    {
+      "name": "sixc"
+    },
+    {
+      "name": "fives"
+    },
+    {
+      "name": "fiveh"
+    },
+    {
+      "name": "fived"
+    },
+    {
+      "name": "fivec"
+    },
+    {
+      "name": "fours"
+    },
+    {
+      "name": "fourh"
+    },
+    {
+      "name": "fourd"
+    },
+    {
+      "name": "fourc"
+    },
+    {
+      "name": "tres"
+    },
+    {
+      "name": "treh"
+    },
+    {
+      "name": "tred"
+    },
+    {
+      "name": "trec"
+    },
+    {
+      "name": "twos"
+    },
+    {
+      "name": "twoh"
+    },
+    {
+      "name": "twod"
+    },
+    {
+      "name": "twoc"
+    },
+    {
+      "name": "icard",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "icard{${1:value}}{${2:suit}}{${3:color}}"
+      }
+    },
+    {
+      "name": "crdAs"
+    },
+    {
+      "name": "crdAh"
+    },
+    {
+      "name": "crdAd"
+    },
+    {
+      "name": "crdAc"
+    },
+    {
+      "name": "crdKs"
+    },
+    {
+      "name": "crdKh"
+    },
+    {
+      "name": "crdKd"
+    },
+    {
+      "name": "crdKc"
+    },
+    {
+      "name": "crdQs"
+    },
+    {
+      "name": "crdQh"
+    },
+    {
+      "name": "crdQd"
+    },
+    {
+      "name": "crdQc"
+    },
+    {
+      "name": "crdJs"
+    },
+    {
+      "name": "crdJh"
+    },
+    {
+      "name": "crdJd"
+    },
+    {
+      "name": "crdJc"
+    },
+    {
+      "name": "crdtens"
+    },
+    {
+      "name": "crdtenh"
+    },
+    {
+      "name": "crdtend"
+    },
+    {
+      "name": "crdtenc"
+    },
+    {
+      "name": "crdnines"
+    },
+    {
+      "name": "crdnineh"
+    },
+    {
+      "name": "crdnined"
+    },
+    {
+      "name": "crdninec"
+    },
+    {
+      "name": "crdeigs"
+    },
+    {
+      "name": "crdeigh"
+    },
+    {
+      "name": "crdeigd"
+    },
+    {
+      "name": "crdeigc"
+    },
+    {
+      "name": "crdsevs"
+    },
+    {
+      "name": "crdsevh"
+    },
+    {
+      "name": "crdsevd"
+    },
+    {
+      "name": "crdsevc"
+    },
+    {
+      "name": "crdsixs"
+    },
+    {
+      "name": "crdsixh"
+    },
+    {
+      "name": "crdsixd"
+    },
+    {
+      "name": "crdsixc"
+    },
+    {
+      "name": "crdfives"
+    },
+    {
+      "name": "crdfiveh"
+    },
+    {
+      "name": "crdfived"
+    },
+    {
+      "name": "crdfivec"
+    },
+    {
+      "name": "crdfours"
+    },
+    {
+      "name": "crdfourh"
+    },
+    {
+      "name": "crdfourd"
+    },
+    {
+      "name": "crdfourc"
+    },
+    {
+      "name": "crdtres"
+    },
+    {
+      "name": "crdtreh"
+    },
+    {
+      "name": "crdtred"
+    },
+    {
+      "name": "crdtrec"
+    },
+    {
+      "name": "crdtwos"
+    },
+    {
+      "name": "crdtwoh"
+    },
+    {
+      "name": "crdtwod"
+    },
+    {
+      "name": "crdtwoc"
+    },
+    {
+      "name": "drawcard",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "drawcard{${1:value}}{${2:suit}}{${3:color}}"
+      }
+    },
+    {
+      "name": "drawcard",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "drawcard[${4:options%keyvals}]{${1:value}}{${2:suit}}{${3:color}}"
+      }
+    },
+    {
+      "name": "fournier",
+      "unusual": true
+    },
+    {
+      "name": "crdpair",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "crdpair{${1:card1}}{${2:card2}}"
+      }
+    },
+    {
+      "name": "crdflop",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "crdflop{${1:card1}}{${2:card2}}{${3:card3}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

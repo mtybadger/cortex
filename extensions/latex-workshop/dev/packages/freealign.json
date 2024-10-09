@@ -1,0 +1,38 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "zref-savepos"
+    }
+  ],
+  "macros": [
+    {
+      "name": "<"
+    },
+    {
+      "name": "tabpoint",
+      "unusual": true
+    },
+    {
+      "name": "tabpoint",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "tabpoint[${1:offset}]"
+      }
+    },
+    {
+      "name": "tabto",
+      "unusual": true
+    },
+    {
+      "name": "tableft",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

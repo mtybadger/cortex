@@ -1,0 +1,278 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "keyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "ltxdockit"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "hypcap"
+    },
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "lmodern"
+    },
+    {
+      "name": "helvet"
+    },
+    {
+      "name": "charter"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fnurl",
+      "arg": {
+        "format": "{}",
+        "snippet": "fnurl{${1:URL}}"
+      }
+    },
+    {
+      "name": "fnurl",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fnurl[${2:prefix}]{${1:URL}}"
+      }
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "titlefont",
+      "unusual": true
+    },
+    {
+      "name": "titlepage",
+      "arg": {
+        "format": "{}",
+        "snippet": "titlepage{${1:options%keyvals}}",
+        "keys": [
+          "\\titlepage"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printtitlepage"
+    },
+    {
+      "name": "rcsfile",
+      "unusual": true
+    },
+    {
+      "name": "rcsrevision",
+      "unusual": true
+    },
+    {
+      "name": "rcsdate",
+      "unusual": true
+    },
+    {
+      "name": "rcstime",
+      "unusual": true
+    },
+    {
+      "name": "rcsstate",
+      "unusual": true
+    },
+    {
+      "name": "rcsauthor",
+      "unusual": true
+    },
+    {
+      "name": "rcslocker",
+      "unusual": true
+    },
+    {
+      "name": "rcstoday",
+      "unusual": true
+    },
+    {
+      "name": "rcsid",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "rcsid{${1:arg}}"
+      }
+    },
+    {
+      "name": "AtBeginToc",
+      "unusual": true
+    },
+    {
+      "name": "AtEndToc",
+      "unusual": true
+    },
+    {
+      "name": "AtBeginLot",
+      "unusual": true
+    },
+    {
+      "name": "AtEndLot",
+      "unusual": true
+    },
+    {
+      "name": "tex"
+    },
+    {
+      "name": "etex"
+    },
+    {
+      "name": "pdftex"
+    },
+    {
+      "name": "xetex"
+    },
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "latex"
+    },
+    {
+      "name": "pdflatex"
+    },
+    {
+      "name": "xelatex"
+    },
+    {
+      "name": "lualatex"
+    },
+    {
+      "name": "bibtex"
+    },
+    {
+      "name": "lppl"
+    },
+    {
+      "name": "pdf"
+    },
+    {
+      "name": "utf"
+    },
+    {
+      "name": "ie"
+    },
+    {
+      "name": "eg"
+    },
+    {
+      "name": "tablesetup"
+    },
+    {
+      "name": "textln",
+      "arg": {
+        "format": "{}",
+        "snippet": "textln{${1:text}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\titlepage": [
+      "title=",
+      "subtitle=",
+      "url=",
+      "author=",
+      "email=",
+      "revision=",
+      "date="
+    ]
+  },
+  "args": []
+}

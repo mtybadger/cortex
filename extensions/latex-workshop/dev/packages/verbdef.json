@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "verbdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "verbdef{${1:cmd}}{${2:verb text}}"
+      }
+    },
+    {
+      "name": "verbdef*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "verbdef*{${1:cmd}}{${2:verb text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

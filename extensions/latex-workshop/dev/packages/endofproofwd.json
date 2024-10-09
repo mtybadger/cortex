@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "import"
+    }
+  ],
+  "macros": [
+    {
+      "name": "wasserdicht"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

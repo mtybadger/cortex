@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "array"
+    },
+    {
+      "name": "fltpoint"
+    }
+  ],
+  "macros": [
+    {
+      "name": "rcRoundingtrue"
+    },
+    {
+      "name": "rcRoundingfalse"
+    },
+    {
+      "name": "rcDecimalSign",
+      "arg": {
+        "format": "{}",
+        "snippet": "rcDecimalSign{${1:character}}"
+      }
+    },
+    {
+      "name": "rcDecimalSignInput",
+      "arg": {
+        "format": "{}",
+        "snippet": "rcDecimalSignInput{${1:character}}"
+      }
+    },
+    {
+      "name": "rcDecimalSignOutput",
+      "arg": {
+        "format": "{}",
+        "snippet": "rcDecimalSignOutput{${1:character}}"
+      }
+    },
+    {
+      "name": "ifrcRounding",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

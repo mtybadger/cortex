@@ -1,0 +1,92 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "shellesc"
+    },
+    {
+      "name": "web"
+    },
+    {
+      "name": "eforms"
+    }
+  ],
+  "macros": [
+    {
+      "name": "wrtPkg",
+      "unusual": true
+    },
+    {
+      "name": "wrticonbody",
+      "unusual": true
+    },
+    {
+      "name": "IWB",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IWB{${1:arg}}"
+      }
+    },
+    {
+      "name": "IWP",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IWP{${1:arg}}"
+      }
+    },
+    {
+      "name": "addToPageList",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "addToPageList{${1:arg}}"
+      }
+    },
+    {
+      "name": "createRequiredIcons",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "createRequiredIcons{${1:number}}{${2:file}}"
+      }
+    },
+    {
+      "name": "dpsInputContent"
+    },
+    {
+      "name": "defineJSjsR",
+      "unusual": true
+    },
+    {
+      "name": "execExplode",
+      "unusual": true
+    },
+    {
+      "name": "wrtPageList",
+      "unusual": true
+    },
+    {
+      "name": "pagelist",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "icondoc",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/icon-doc#c": [
+      "useacrobat",
+      "!useacrobat",
+      "twice"
+    ]
+  },
+  "args": [
+    "\\usepackage/icon-doc#c"
+  ]
+}

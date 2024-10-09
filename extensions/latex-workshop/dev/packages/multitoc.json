@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "multicolumntoc"
+    },
+    {
+      "name": "multicolumnlot"
+    },
+    {
+      "name": "multicolumnlof"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/multitoc#c": [
+      "toc",
+      "lot",
+      "lof"
+    ]
+  },
+  "args": [
+    "\\usepackage/multitoc#c"
+  ]
+}

@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { SmoothScrollingOperation, SmoothScrollingUpdate } from '../../common/scrollable.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from './utils.js';
+import { SmoothScrollingOperation, SmoothScrollingUpdate } from 'vs/base/common/scrollable';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
 
 class TestSmoothScrollingOperation extends SmoothScrollingOperation {
 

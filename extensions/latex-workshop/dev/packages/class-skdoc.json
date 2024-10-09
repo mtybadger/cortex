@@ -1,0 +1,493 @@
+{
+  "deps": [
+    {
+      "name": "class-scrartcl"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xstring"
+    },
+    {
+      "name": "atbegshi"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "pdftexcmds"
+    },
+    {
+      "name": "everyhook"
+    },
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "needspace"
+    },
+    {
+      "name": "marginnote"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "multicol"
+    },
+    {
+      "name": "hologo"
+    },
+    {
+      "name": "glossaries"
+    },
+    {
+      "name": "ydoc-code"
+    },
+    {
+      "name": "ydoc-desc"
+    },
+    {
+      "name": "scrlayer-scrpage"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "csquotes"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "PTSerif"
+    },
+    {
+      "name": "sourcecodepro"
+    },
+    {
+      "name": "opensans"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "minted"
+    }
+  ],
+  "macros": [
+    {
+      "name": "package",
+      "arg": {
+        "format": "{}",
+        "snippet": "package{${1:package}}"
+      }
+    },
+    {
+      "name": "package",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "package[${2:options%keyvals}]{${1:package}}",
+        "keys": [
+          "\\package"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "version",
+      "arg": {
+        "format": "{}",
+        "snippet": "version{${1:version}}"
+      }
+    },
+    {
+      "name": "ctan",
+      "arg": {
+        "format": "{}",
+        "snippet": "ctan{${1:identifier}}"
+      }
+    },
+    {
+      "name": "repository",
+      "arg": {
+        "format": "{}",
+        "snippet": "repository{${1:URL}}"
+      }
+    },
+    {
+      "name": "email",
+      "arg": {
+        "format": "{}",
+        "snippet": "email{${1:email%URL}}"
+      }
+    },
+    {
+      "name": "theversion"
+    },
+    {
+      "name": "thepackage"
+    },
+    {
+      "name": "thepkg"
+    },
+    {
+      "name": "PrintLPPL"
+    },
+    {
+      "name": "Notice",
+      "arg": {
+        "format": "{}",
+        "snippet": "Notice{${1:notice%text}}"
+      }
+    },
+    {
+      "name": "Warning",
+      "arg": {
+        "format": "{}",
+        "snippet": "Warning{${1:warning%text}}"
+      }
+    },
+    {
+      "name": "LongWarning",
+      "arg": {
+        "format": "{}",
+        "snippet": "LongWarning{${1:warning%text}}"
+      }
+    },
+    {
+      "name": "cs*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cs*{${1:csname}}"
+      }
+    },
+    {
+      "name": "env*",
+      "arg": {
+        "format": "{}",
+        "snippet": "env*{${1:envname}}"
+      }
+    },
+    {
+      "name": "pkg*",
+      "arg": {
+        "format": "{}",
+        "snippet": "pkg*{${1:package}}"
+      }
+    },
+    {
+      "name": "opt*",
+      "arg": {
+        "format": "{}",
+        "snippet": "opt*{${1:option}}"
+      }
+    },
+    {
+      "name": "bib",
+      "arg": {
+        "format": "{}",
+        "snippet": "bib{${1:BibTeX entry type}}"
+      }
+    },
+    {
+      "name": "bib*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bib*{${1:BibTeX entry type}}"
+      }
+    },
+    {
+      "name": "thm",
+      "arg": {
+        "format": "{}",
+        "snippet": "thm{${1:theme}}"
+      }
+    },
+    {
+      "name": "thm*",
+      "arg": {
+        "format": "{}",
+        "snippet": "thm*{${1:theme}}"
+      }
+    },
+    {
+      "name": "file*",
+      "arg": {
+        "format": "{}",
+        "snippet": "file*{${1:file}}"
+      }
+    },
+    {
+      "name": "Option",
+      "arg": {
+        "format": "{}",
+        "snippet": "Option{${1:option}}"
+      }
+    },
+    {
+      "name": "Options",
+      "arg": {
+        "format": "{}",
+        "snippet": "Options{${1:option1,option2,...}}"
+      }
+    },
+    {
+      "name": "WithValues",
+      "arg": {
+        "format": "{}",
+        "snippet": "WithValues{${1:value1,value2,...}}"
+      }
+    },
+    {
+      "name": "AndDefault",
+      "arg": {
+        "format": "{}",
+        "snippet": "AndDefault{${1:default value}}"
+      }
+    },
+    {
+      "name": "BibEntry",
+      "arg": {
+        "format": "{}",
+        "snippet": "BibEntry{${1:entry}}"
+      }
+    },
+    {
+      "name": "WithFields",
+      "arg": {
+        "format": "{}",
+        "snippet": "WithFields{${1:mandatory fields}}"
+      }
+    },
+    {
+      "name": "WithFields",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "WithFields[${2:optional fields}]{${1:mandatory fields}}"
+      }
+    },
+    {
+      "name": "Theme",
+      "arg": {
+        "format": "{}",
+        "snippet": "Theme{${1:theme}}"
+      }
+    },
+    {
+      "name": "DescribeFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "DescribeFile{${1:file}}"
+      }
+    },
+    {
+      "name": "DeclareFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareFile{${1:file}}"
+      }
+    },
+    {
+      "name": "DeclareFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DeclareFile[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\DeclareFile"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "PreambleTo",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PreambleTo{${1:token}}{${2:file}}"
+      }
+    },
+    {
+      "name": "SelfPreambleTo",
+      "arg": {
+        "format": "{}",
+        "snippet": "SelfPreambleTo{${1:token}}"
+      }
+    },
+    {
+      "name": "Implementation"
+    },
+    {
+      "name": "Finale"
+    },
+    {
+      "name": "OnlyDescription"
+    },
+    {
+      "name": "changes",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "changes{${1:version}}{${2:description}}"
+      }
+    },
+    {
+      "name": "PrintChanges"
+    },
+    {
+      "name": "PrintIndex"
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "example"
+    },
+    {
+      "name": "macro*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:macro}}"
+      }
+    },
+    {
+      "name": "environment*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:envname}}"
+      }
+    },
+    {
+      "name": "option",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:option}}"
+      }
+    },
+    {
+      "name": "option*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:option}}"
+      }
+    },
+    {
+      "name": "bibentry",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:entry}}"
+      }
+    },
+    {
+      "name": "bibentry*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:entry}}"
+      }
+    },
+    {
+      "name": "theme",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:theme}}"
+      }
+    },
+    {
+      "name": "theme*",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:theme}}"
+      }
+    },
+    {
+      "name": "MacroCode"
+    }
+  ],
+  "keys": {
+    "\\documentclass/skdoc#c": [
+      "load=${1:package}",
+      "highlight",
+      "babel=${1:babel options}"
+    ],
+    "\\package": [
+      "ctan=${1:identifier}",
+      "vcs=${1:URL}"
+    ],
+    "\\DeclareFile": [
+      "key=${1:key}",
+      "preamble=${1:preamble}"
+    ]
+  },
+  "args": [
+    "\\documentclass/skdoc#c"
+  ]
+}

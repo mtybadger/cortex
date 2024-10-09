@@ -1,0 +1,36 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "makeparesseletter"
+    },
+    {
+      "name": "makeparesseother"
+    },
+    {
+      "name": "ActiveLaParesse"
+    },
+    {
+      "name": "declareunicodecharacter",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "declareunicodecharacter{${1:hexadecimal}}{${2:definition}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "ParesseActive"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

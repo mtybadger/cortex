@@ -1,0 +1,199 @@
+{
+  "deps": [
+    {
+      "name": "options"
+    },
+    {
+      "name": "longbox"
+    },
+    {
+      "name": "pict2e"
+    },
+    {
+      "name": "ellipse"
+    }
+  ],
+  "macros": [
+    {
+      "name": "lfbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "lfbox{${1:content%text}}"
+      }
+    },
+    {
+      "name": "lfbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "lfbox[${2:options%keyvals}]{${1:content%text}}",
+        "keys": [
+          "\\lfbox#c,\\begin{longfbox}#c,\\newfboxstyle#c,\\fboxset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "newfboxstyle",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newfboxstyle{${1:name%specialDef}}{${2:options%keyvals}}",
+        "keys": [
+          "\\lfbox#c,\\begin{longfbox}#c,\\newfboxstyle#c,\\fboxset#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "fboxset",
+      "arg": {
+        "format": "{}",
+        "snippet": "fboxset{${1:options%keyvals}}",
+        "keys": [
+          "\\lfbox#c,\\begin{longfbox}#c,\\newfboxstyle#c,\\fboxset#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "optionlengthlimit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "optionlengthlimit{${1:length}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "optionradiuslimit",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "optionradiuslimit{${1:r1}}{${2:r2}}{${3:min}}{${4:max}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "longfbox"
+    },
+    {
+      "name": "longfbox",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]",
+        "keys": [
+          "\\lfbox#c,\\begin{longfbox}#c,\\newfboxstyle#c,\\fboxset#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\lfbox#c,\\begin{longfbox}#c,\\newfboxstyle#c,\\fboxset#c": [
+      "border-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-top-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-right-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-bottom-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-left-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-break-style=",
+      "border-break-top-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-break-bottom-style=${1|none,hidden,solid,dotted,dashed,double,inset,outset,groove,ridge|}",
+      "border-width=",
+      "border-top-width=",
+      "border-right-width=",
+      "border-bottom-width=",
+      "border-left-width=",
+      "border-break-width=",
+      "border-break-top-width=",
+      "border-break-bottom-width=",
+      "border-color=",
+      "border-top-color=",
+      "border-right-color=",
+      "border-bottom-color=",
+      "border-left-color=",
+      "border-break-color=",
+      "border-break-top-color=",
+      "border-break-bottom-color=",
+      "border-dark-mix=${1:color mix}",
+      "border-radius=",
+      "border-top-left-radius=",
+      "border-top-right-radius=",
+      "border-bottom-left-radius=",
+      "border-bottom-right-radius=",
+      "baseline=${1|bottom,middle,top|}",
+      "vertical-align=${1|baseline,bottom,middle,top,text-bottom,text-top,super,sub|}",
+      "raise=",
+      "height-align=${1|top,middle,bottom|}",
+      "text-align=${1|default,left,center,right,justify|}",
+      "background-color=",
+      "background-clip=border-box,padding-box,content-box",
+      "background-padding-color=",
+      "background-border-color=",
+      "background-content-color=",
+      "padding=",
+      "padding-top=",
+      "padding-right=",
+      "padding-bottom=",
+      "padding-left=",
+      "margin=",
+      "margin-top=",
+      "margin-right=",
+      "margin-bottom=",
+      "margin-left=",
+      "padding-break-top=",
+      "padding-break-bottom=",
+      "margin-break-top=",
+      "margin-break-bottom=",
+      "breakable",
+      "extra-split=",
+      "breakat={${1:dimen1,dimen2,...}}",
+      "height=",
+      "width=",
+      "outer-height=",
+      "outer-width=",
+      "tight",
+      "rounded",
+      "dotted",
+      "render=${1|default,plain,picture|}",
+      "insert-before={${1:code}}",
+      "inser-after={${1:code}}",
+      "render-insert-before={${1:code}}",
+      "render-insert-after={${1:code}}",
+      "picture-insert-before={${1:code}}",
+      "picture-insert-after={${1:code}}",
+      "plain-side-insert-before={${1:code}}",
+      "plain-side-insert-after={${1:code}}",
+      "picture-side-insert-before={${1:code}}",
+      "picture-side-insert-after={${1:code}}",
+      "baseline-skip",
+      "show-markers",
+      "marker-color=",
+      "marker-width=",
+      "eject={${1:code}}",
+      "debug",
+      "verbose",
+      "border-dash=",
+      "border-top-dash=",
+      "border-right-dash=",
+      "border-bottom-dash=",
+      "border-left-dash=",
+      "border-break-top-dash=",
+      "border-break-bottom-dash=",
+      "border-dashskip=",
+      "border-top-dashskip=",
+      "border-right-dashskip=",
+      "border-bottom-dashskip=",
+      "border-left-dashskip=",
+      "border-break-top-dashskip=",
+      "border-break-bottom-dashskip=",
+      "border-dotskip=",
+      "border-top-dotskip=",
+      "border-right-dotskip=",
+      "border-bottom-dotskip=",
+      "border-left-dotskip=",
+      "border-break-top-dotskip=",
+      "border-break-bottom-dotskip=",
+      "%fboxstyle"
+    ]
+  },
+  "args": []
+}

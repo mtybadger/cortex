@@ -1,0 +1,111 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tkzKiviatDiagram",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzKiviatDiagram{${1:name1,name2,...}}"
+      }
+    },
+    {
+      "name": "tkzKiviatDiagram",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tkzKiviatDiagram[${2:options%keyvals}]{${1:name1,name2,...}}",
+        "keys": [
+          "\\tkzKiviatDiagram#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzKiviatLine",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tkzKiviatLine[${2:options%keyvals}]{${1:num1,num2,...}}",
+        "keys": [
+          "\\tkzKiviatLine#c,\\tkzKiviatLineFromFile#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzKiviatLineFromFile",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "tkzKiviatLineFromFile[${3:options%keyvals}]{${1:file1%file}}{${2:file2%file}}",
+        "keys": [
+          "\\tkzKiviatLine#c,\\tkzKiviatLineFromFile#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzKiviatGrad",
+      "arg": {
+        "format": "[]()",
+        "snippet": "tkzKiviatGrad[${1:options%keyvals}](${2:integer})",
+        "keys": [
+          "\\tkzKiviatGrad#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tkzKiviatDiagramFromFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "tkzKiviatDiagramFromFile{${1:file}}"
+      }
+    },
+    {
+      "name": "tkzKiviatDiagramFromFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tkzKiviatDiagramFromFile[${2:options%keyvals}]{${1:file}}",
+        "keys": [
+          "\\tkzKiviatDiagramFromFile#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\tkzKiviatDiagram#c": [
+      "lattice=",
+      "gap=",
+      "space=",
+      "label space=",
+      "step=",
+      "radial style=",
+      "label style="
+    ],
+    "\\tkzKiviatLine#c,\\tkzKiviatLineFromFile#c": [
+      "fill=",
+      "opacity="
+    ],
+    "\\tkzKiviatGrad#c": [
+      "graduation distance=",
+      "prefix=",
+      "suffix=",
+      "unity="
+    ],
+    "\\tkzKiviatDiagramFromFile#c": [
+      "lattice=",
+      "gap=",
+      "space=",
+      "label space=",
+      "step="
+    ]
+  },
+  "args": []
+}

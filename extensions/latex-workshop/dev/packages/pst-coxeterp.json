@@ -1,0 +1,91 @@
+{
+  "deps": [
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Polygon"
+    },
+    {
+      "name": "Polygon",
+      "arg": {
+        "format": "[]",
+        "snippet": "Polygon[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "Simplex"
+    },
+    {
+      "name": "Simplex",
+      "arg": {
+        "format": "[]",
+        "snippet": "Simplex[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "gammapn"
+    },
+    {
+      "name": "gammapn",
+      "arg": {
+        "format": "[]",
+        "snippet": "gammapn[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "betapn"
+    },
+    {
+      "name": "betapn",
+      "arg": {
+        "format": "[]",
+        "snippet": "betapn[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "gammaptwo"
+    },
+    {
+      "name": "gammaptwo",
+      "arg": {
+        "format": "[]",
+        "snippet": "gammaptwo[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "betaptwo"
+    },
+    {
+      "name": "betaptwo",
+      "arg": {
+        "format": "[]",
+        "snippet": "betaptwo[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "pscolorVertices",
+      "unusual": true
+    },
+    {
+      "name": "pscolorCenters",
+      "unusual": true
+    },
+    {
+      "name": "pssizeVertices",
+      "unusual": true
+    },
+    {
+      "name": "pssizeCenters",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

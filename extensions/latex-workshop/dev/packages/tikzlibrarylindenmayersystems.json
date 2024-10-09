@@ -1,0 +1,88 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pgfdeclarelindenmayersystem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfdeclarelindenmayersystem{${1:name}}{${2:specification}}"
+      }
+    },
+    {
+      "name": "symbol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "symbol{${1:name}}{${2:code}}"
+      }
+    },
+    {
+      "name": "pgflsystemcurrentstep"
+    },
+    {
+      "name": "pgflsystemcurrentleftangle"
+    },
+    {
+      "name": "pgflsystemcurrentrightangle"
+    },
+    {
+      "name": "pgflsystemrandomizestep"
+    },
+    {
+      "name": "pgflsystemrandomizeleftangle"
+    },
+    {
+      "name": "pgflsystemrandomizerightangle"
+    },
+    {
+      "name": "pgflsystemdrawforward"
+    },
+    {
+      "name": "pgflsystemmoveforward"
+    },
+    {
+      "name": "pgflsystemturnleft"
+    },
+    {
+      "name": "pgflsystemturnright"
+    },
+    {
+      "name": "pgflsystemsavestate"
+    },
+    {
+      "name": "pgflsystemrestorestate"
+    },
+    {
+      "name": "pgflsystemstep",
+      "unusual": true
+    },
+    {
+      "name": "pgflsystemrandomizesteppercent",
+      "unusual": true
+    },
+    {
+      "name": "pgflsystemrandomizeanglepercent",
+      "unusual": true
+    },
+    {
+      "name": "rule",
+      "arg": {
+        "format": "{}",
+        "snippet": "rule{${1:head -> body}}"
+      }
+    },
+    {
+      "name": "pgflindenmayersystem",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pgflindenmayersystem{${1:name}}{${2:axiom}}{${3:order}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c,\\path#c,\\draw#c,\\fill#c,\\filldraw#c,\\pattern#c,\\shade#c,\\shadedraw#c,\\clip#c": [
+      "lindenmayer system={${1:keys}}"
+    ]
+  },
+  "args": []
+}

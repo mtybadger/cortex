@@ -1,0 +1,73 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "regtotcounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "regtotcounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "regtotcounter",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "regtotcounter[${2:options%keyvals}]{${1:counter}}",
+        "keys": [
+          "\\regtotcounter,\\newtotcounter"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "newtotcounter",
+      "arg": {
+        "format": "{}",
+        "snippet": "newtotcounter{${1:counter}}"
+      }
+    },
+    {
+      "name": "newtotcounter",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "newtotcounter[${2:option%keyvals}]{${1:counter}}",
+        "keys": [
+          "\\regtotcounter,\\newtotcounter"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "total",
+      "arg": {
+        "format": "{}",
+        "snippet": "total{${1:counter}}"
+      }
+    },
+    {
+      "name": "totvalue",
+      "arg": {
+        "format": "{}",
+        "snippet": "totvalue{${1:counter}}"
+      }
+    },
+    {
+      "name": "usetotcountfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "usetotcountfile{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\regtotcounter,\\newtotcounter": [
+      "auxfile=${1:file}"
+    ]
+  },
+  "args": []
+}

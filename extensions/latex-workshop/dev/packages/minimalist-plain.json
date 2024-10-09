@@ -1,0 +1,204 @@
+{
+  "deps": [
+    {
+      "name": "relsize"
+    },
+    {
+      "name": "anyfontsize"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryshadings"
+    },
+    {
+      "name": "tikzpagenodes"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "extramarks"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "titletoc"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "imakeidx"
+    },
+    {
+      "name": "silence"
+    },
+    {
+      "name": "projlib-draft"
+    },
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "projlib-theorem"
+    },
+    {
+      "name": "projlib-author"
+    },
+    {
+      "name": "projlib-titlepage"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarymany"
+    },
+    {
+      "name": "projlib-language"
+    },
+    {
+      "name": "scontents"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LocallyStopLineNumbers"
+    },
+    {
+      "name": "ResumeLineNumbers"
+    },
+    {
+      "name": "parttext",
+      "arg": {
+        "format": "{}",
+        "snippet": "parttext{${1:text}}"
+      }
+    },
+    {
+      "name": "ifLNturnsON",
+      "unusual": true
+    },
+    {
+      "name": "keywordname",
+      "unusual": true
+    },
+    {
+      "name": "LNturnsONfalse",
+      "unusual": true
+    },
+    {
+      "name": "LNturnsONtrue",
+      "unusual": true
+    },
+    {
+      "name": "partstring",
+      "unusual": true
+    },
+    {
+      "name": "IndexDotfill",
+      "unusual": true
+    },
+    {
+      "name": "IndexLinebreak",
+      "unusual": true
+    },
+    {
+      "name": "IndexHeading",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "IndexHeading{${1:text}}"
+      }
+    },
+    {
+      "name": "keywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "keywords{${1:keywords%text}}"
+      }
+    },
+    {
+      "name": "dedicatory",
+      "arg": {
+        "format": "{}",
+        "snippet": "dedicatory{${1:text}}"
+      }
+    },
+    {
+      "name": "subjclass",
+      "arg": {
+        "format": "{}",
+        "snippet": "subjclass{${1:classification}}"
+      }
+    },
+    {
+      "name": "subjclass",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "subjclass[${2:year}]{${1:classification}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "keyword"
+    },
+    {
+      "name": "emphasis"
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

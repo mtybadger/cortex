@@ -1,0 +1,67 @@
+{
+  "deps": [
+    {
+      "name": "algorithmicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "For",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "For{${1:expr1%formula}}{${2:expr2%formula}}{${3:expr3%formula}}"
+      }
+    },
+    {
+      "name": "If",
+      "arg": {
+        "format": "{}",
+        "snippet": "If{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "Else"
+    },
+    {
+      "name": "While",
+      "arg": {
+        "format": "{}",
+        "snippet": "While{${1:expr%formula}}"
+      }
+    },
+    {
+      "name": "Do"
+    },
+    {
+      "name": "Function",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "Function{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "Return",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicbegin",
+      "unusual": true
+    },
+    {
+      "name": "algorithmicend",
+      "unusual": true
+    },
+    {
+      "name": "textkeyword",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textkeyword{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

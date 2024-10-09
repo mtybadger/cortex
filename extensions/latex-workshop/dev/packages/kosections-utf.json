@@ -1,0 +1,68 @@
+{
+  "deps": [
+    {
+      "name": "konames-utf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "circemph",
+      "arg": {
+        "format": "{}",
+        "snippet": "circemph{${1:text}}"
+      }
+    },
+    {
+      "name": "circemphchar",
+      "unusual": true
+    },
+    {
+      "name": "dotemph",
+      "arg": {
+        "format": "{}",
+        "snippet": "dotemph{${1:text}}"
+      }
+    },
+    {
+      "name": "dotemphchar",
+      "unusual": true
+    },
+    {
+      "name": "kscntformat",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "kscntformat{${1:level}}{${2:before}}{${3:after}}"
+      }
+    },
+    {
+      "name": "raisedotdim",
+      "unusual": true
+    },
+    {
+      "name": "TEXTsubscript",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TEXTsubscript{${1:text}}"
+      }
+    },
+    {
+      "name": "useremph",
+      "arg": {
+        "format": "{}",
+        "snippet": "useremph{${1:text}}"
+      }
+    },
+    {
+      "name": "useremphchar",
+      "unusual": true
+    },
+    {
+      "name": "useremphraisedim",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cinzel"
+    },
+    {
+      "name": "textcinzel",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcinzel{${1:text}}"
+      }
+    },
+    {
+      "name": "cinzelblack"
+    },
+    {
+      "name": "textcinzelblack",
+      "arg": {
+        "format": "{}",
+        "snippet": "textcinzelblack{${1:text}}"
+      }
+    },
+    {
+      "name": "cinzelfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cinzel#c": [
+      "type1",
+      "black",
+      "default"
+    ]
+  },
+  "args": [
+    "\\usepackage/cinzel#c"
+  ]
+}

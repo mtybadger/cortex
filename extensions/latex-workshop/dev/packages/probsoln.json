@@ -1,0 +1,470 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ClearUsedFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "ClearUsedFile{${1:file}}"
+      }
+    },
+    {
+      "name": "correctitem"
+    },
+    {
+      "name": "correctitemformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "correctitemformat{${1:label}}"
+      }
+    },
+    {
+      "name": "doforrandN",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "doforrandN{${1:n}}{${2:cmd}}{${3:file list}}{${4:text}}"
+      }
+    },
+    {
+      "name": "draftproblemlabel",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "draftproblemlabel{${1:data set}}{${2:label}}"
+      }
+    },
+    {
+      "name": "DTLifinlist",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "DTLifinlist{${1:element}}{${2:list}}{${3:true case}}{${4:false case}}"
+      }
+    },
+    {
+      "name": "ExcludePreviousFile",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ExcludePreviousFile[${2:num of years}]{${1:file}}"
+      }
+    },
+    {
+      "name": "ExcludePreviousFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "ExcludePreviousFile{${1:file}}"
+      }
+    },
+    {
+      "name": "firstpassfalse",
+      "unusual": true
+    },
+    {
+      "name": "firstpasstrue",
+      "unusual": true
+    },
+    {
+      "name": "foreachdataset",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "foreachdataset{${1:cmd}}{${2:body}}"
+      }
+    },
+    {
+      "name": "foreachproblem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "foreachproblem[${2:data set}]{${1:body}}"
+      }
+    },
+    {
+      "name": "foreachproblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "foreachproblem{${1:body}}"
+      }
+    },
+    {
+      "name": "foreachsolution",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "foreachsolution[${2:data set}]{${1:body}}"
+      }
+    },
+    {
+      "name": "foreachsolution",
+      "arg": {
+        "format": "{}",
+        "snippet": "foreachsolution{${1:body}}"
+      }
+    },
+    {
+      "name": "GetStartYear"
+    },
+    {
+      "name": "hideanswers"
+    },
+    {
+      "name": "iffirstpass",
+      "unusual": true
+    },
+    {
+      "name": "ifshowanswers"
+    },
+    {
+      "name": "ifusedefaultprobargs",
+      "unusual": true
+    },
+    {
+      "name": "incorrectitem"
+    },
+    {
+      "name": "incorrectitemformat",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "incorrectitemformat{${1:label}}"
+      }
+    },
+    {
+      "name": "loadallproblems",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "loadallproblems[${2:data set}]{${1:file}}"
+      }
+    },
+    {
+      "name": "loadallproblems",
+      "arg": {
+        "format": "{}",
+        "snippet": "loadallproblems{${1:file}}"
+      }
+    },
+    {
+      "name": "loadexceptproblems",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "loadexceptproblems[${3:data set}]{${1:label1,label2,...}}{${2:file}}"
+      }
+    },
+    {
+      "name": "loadexceptproblems",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "loadexceptproblems{${1:label1,label2,...}}{${2:file}}"
+      }
+    },
+    {
+      "name": "loadrandomexcept",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "loadrandomexcept[${4:data set}]{${1:n}}{${2:file}}{${3:label1,label2,...}}"
+      }
+    },
+    {
+      "name": "loadrandomexcept",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "loadrandomexcept{${1:n}}{${2:file}}{${3:label1,label2,...}}"
+      }
+    },
+    {
+      "name": "loadrandomproblems",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "loadrandomproblems[${3:data set}]{${1:n}}{${2:file}}"
+      }
+    },
+    {
+      "name": "loadrandomproblems",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "loadrandomproblems{${1:n}}{${2:file}}"
+      }
+    },
+    {
+      "name": "loadselectedproblems",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "loadselectedproblems[${3:data set}]{${1:label1,label2,...}}{${2:file}}"
+      }
+    },
+    {
+      "name": "loadselectedproblems",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "loadselectedproblems{${1:label1,label2,...}}{${2:file}}"
+      }
+    },
+    {
+      "name": "moveproblem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "moveproblem{${1:label}}{${2:source}}{${3:target}}"
+      }
+    },
+    {
+      "name": "newproblem*",
+      "arg": {
+        "format": "[][]{}{}",
+        "snippet": "newproblem*[${3:args}][${4:default}]{${1:label}}{${2:definition%text}}"
+      }
+    },
+    {
+      "name": "newproblem*",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newproblem*[${3:args}]{${1:label}}{${2:definition%text}}"
+      }
+    },
+    {
+      "name": "newproblem*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newproblem*{${1:label}}{${2:definition%text}}"
+      }
+    },
+    {
+      "name": "newproblem",
+      "arg": {
+        "format": "[][]{}{}{}",
+        "snippet": "newproblem[${4:args}][${5:default}]{${1:label}}{${2:problem%text}}{${3:solution%text}}"
+      }
+    },
+    {
+      "name": "newproblem",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "newproblem[${4:args}]{${1:label}}{${2:problem%text}}{${3:solution%text}}"
+      }
+    },
+    {
+      "name": "newproblem",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "newproblem{${1:label}}{${2:problem%text}}{${3:solution%text}}"
+      }
+    },
+    {
+      "name": "previousproblem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "previousproblem{${1:label}}{${2:data set}}{${3:year}}"
+      }
+    },
+    {
+      "name": "ProbSolnFragileExt",
+      "unusual": true
+    },
+    {
+      "name": "ProbSolnFragileFile",
+      "unusual": true
+    },
+    {
+      "name": "PSNgetrandseed",
+      "arg": {
+        "format": "{}",
+        "snippet": "PSNgetrandseed{${1:register}}"
+      }
+    },
+    {
+      "name": "PSNrand",
+      "unusual": true
+    },
+    {
+      "name": "PSNrandom",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "PSNrandom{${1:register}}{${2:n}}"
+      }
+    },
+    {
+      "name": "PSNrandseed",
+      "arg": {
+        "format": "{}",
+        "snippet": "PSNrandseed{${1:n}}"
+      }
+    },
+    {
+      "name": "PSNuseoldrandom",
+      "unusual": true
+    },
+    {
+      "name": "random",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "random{${1:counter}}{${2:min}}{${3:max}}"
+      }
+    },
+    {
+      "name": "selectallproblems",
+      "arg": {
+        "format": "{}",
+        "snippet": "selectallproblems{${1:file}}"
+      }
+    },
+    {
+      "name": "selectrandomly",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "selectrandomly{${1:file}}{${2:n}}"
+      }
+    },
+    {
+      "name": "setprobargs",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "setprobargs[${3:data set}]{${1:label}}{${2:args}}"
+      }
+    },
+    {
+      "name": "setprobargs",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setprobargs{${1:label}}{${2:args}}"
+      }
+    },
+    {
+      "name": "SetStartMonth",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetStartMonth{${1:n}}"
+      }
+    },
+    {
+      "name": "SetStartYear",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetStartYear{${1:year}}"
+      }
+    },
+    {
+      "name": "SetUsedFileName",
+      "arg": {
+        "format": "{}",
+        "snippet": "SetUsedFileName{${1:file name%file}}"
+      }
+    },
+    {
+      "name": "showanswers"
+    },
+    {
+      "name": "showanswersfalse",
+      "unusual": true
+    },
+    {
+      "name": "showanswerstrue",
+      "unusual": true
+    },
+    {
+      "name": "shuffle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "shuffle{${1:arg}}{${2:num}}"
+      },
+      "detail": "⧢",
+      "doc": "Shuffle product"
+    },
+    {
+      "name": "solutionname",
+      "unusual": true
+    },
+    {
+      "name": "thisproblem"
+    },
+    {
+      "name": "thisproblemargs",
+      "unusual": true
+    },
+    {
+      "name": "thisproblemlabel"
+    },
+    {
+      "name": "usedefaultprobargsfalse",
+      "unusual": true
+    },
+    {
+      "name": "usedefaultprobargstrue",
+      "unusual": true
+    },
+    {
+      "name": "usedproblem",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "usedproblem{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "defproblem",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:label}}"
+      }
+    },
+    {
+      "name": "defproblem",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:args}]{${1:label}}"
+      }
+    },
+    {
+      "name": "defproblem",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "[${2:args}][${3:default}]{${1:label}}"
+      }
+    },
+    {
+      "name": "onlyproblem"
+    },
+    {
+      "name": "onlysolution"
+    },
+    {
+      "name": "solution"
+    },
+    {
+      "name": "textenum"
+    },
+    {
+      "name": "PSNitem",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/probsoln#c": [
+      "answers",
+      "noanswers",
+      "draft",
+      "final",
+      "usedefaultargs",
+      "nousedefaultargs"
+    ]
+  },
+  "args": [
+    "\\usepackage/probsoln#c"
+  ]
+}

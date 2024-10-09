@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "zref-savepos"
+    },
+    {
+      "name": "zref-pagelayout"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

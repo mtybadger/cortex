@@ -1,0 +1,148 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "sourcesanspro"
+    },
+    {
+      "name": "sourcesansprolight"
+    },
+    {
+      "name": "sourcesansproextreme"
+    },
+    {
+      "name": "sourcesansprolf",
+      "unusual": true
+    },
+    {
+      "name": "nativeoldstylenums",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "nativeoldstylenums{${1:text}}"
+      }
+    },
+    {
+      "name": "DH"
+    },
+    {
+      "name": "NG"
+    },
+    {
+      "name": "dj"
+    },
+    {
+      "name": "ng"
+    },
+    {
+      "name": "k",
+      "arg": {
+        "format": "{}",
+        "snippet": "k{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemotleft",
+      "unusual": true
+    },
+    {
+      "name": "guillemotright",
+      "unusual": true
+    },
+    {
+      "name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright"
+    },
+    {
+      "name": "quotedblbase"
+    },
+    {
+      "name": "quotesinglbase"
+    },
+    {
+      "name": "textquotedbl"
+    },
+    {
+      "name": "DJ"
+    },
+    {
+      "name": "th"
+    },
+    {
+      "name": "TH"
+    },
+    {
+      "name": "dh"
+    },
+    {
+      "name": "Hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "hwithstroke",
+      "unusual": true
+    },
+    {
+      "name": "textogonekcentered",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textogonekcentered{${1:arg}}"
+      }
+    },
+    {
+      "name": "guillemetleft"
+    },
+    {
+      "name": "guillemetright"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/sourcesanspro#c": [
+      "lining",
+      "nf",
+      "lf",
+      "oldstyle",
+      "osf",
+      "tabular",
+      "proportional",
+      "black",
+      "semibold",
+      "bold",
+      "light",
+      "extralight",
+      "regular",
+      "scale=${1:factor}",
+      "scaled=${1:factor}",
+      "default",
+      "sfdefault",
+      "nosfdefault",
+      "type1",
+      "t1",
+      "opentype",
+      "otf"
+    ]
+  },
+  "args": [
+    "\\usepackage/sourcesanspro#c"
+  ]
+}

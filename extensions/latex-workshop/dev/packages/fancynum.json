@@ -1,0 +1,48 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "fnum",
+      "arg": {
+        "format": "{}",
+        "snippet": "fnum{${1:number}}"
+      }
+    },
+    {
+      "name": "setfnumdsym",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfnumdsym{${1:symbol}}"
+      }
+    },
+    {
+      "name": "setfnumgsym",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfnumgsym{${1:symbol}}"
+      }
+    },
+    {
+      "name": "setfnummsym",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfnummsym{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fancynum#c": [
+      "english",
+      "french",
+      "tight",
+      "loose",
+      "commas",
+      "thinspaces",
+      "plain"
+    ]
+  },
+  "args": [
+    "\\usepackage/fancynum#c"
+  ]
+}

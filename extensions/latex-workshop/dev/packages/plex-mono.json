@@ -1,0 +1,55 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "plexmono"
+    },
+    {
+      "name": "plexmonofamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/plex-mono#c": [
+      "scale=${1:factor}",
+      "type1",
+      "thin",
+      "t",
+      "extralight",
+      "el",
+      "light",
+      "l",
+      "text",
+      "tx",
+      "textmd",
+      "txmd",
+      "medium",
+      "m",
+      "semibold",
+      "sb"
+    ]
+  },
+  "args": [
+    "\\usepackage/plex-mono#c"
+  ]
+}

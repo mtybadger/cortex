@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es2021", "dom", "dom.iterable"
+        ],
+        "module": "es2022",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "../out/viewer",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2021",
+        "typeRoots": []
+    }
+}

@@ -1,0 +1,98 @@
+{
+  "deps": [
+    {
+      "name": "soul"
+    },
+    {
+      "name": "todonotes"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "addColor",
+      "unusual": true
+    },
+    {
+      "name": "add",
+      "arg": {
+        "format": "{}",
+        "snippet": "add{${1:text}}"
+      }
+    },
+    {
+      "name": "alertColor",
+      "unusual": true
+    },
+    {
+      "name": "alert",
+      "arg": {
+        "format": "{}",
+        "snippet": "alert{${1:text}}"
+      }
+    },
+    {
+      "name": "comment",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "comment{${1:text}}{${2:comment%text}}"
+      }
+    },
+    {
+      "name": "highlight",
+      "arg": {
+        "format": "{}",
+        "snippet": "highlight{${1:text}}"
+      }
+    },
+    {
+      "name": "removeColor",
+      "unusual": true
+    },
+    {
+      "name": "remove",
+      "arg": {
+        "format": "{}",
+        "snippet": "remove{${1:text}}"
+      }
+    },
+    {
+      "name": "replace",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "replace{${1:text}}{${2:replacement%text}}"
+      }
+    },
+    {
+      "name": "setreviewsoff"
+    },
+    {
+      "name": "setreviewson"
+    },
+    {
+      "name": "substitute",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "substitute{${1:text}}{${2:replacement%text}}"
+      }
+    },
+    {
+      "name": "ifistoreview",
+      "unusual": true
+    },
+    {
+      "name": "istoreviewfalse",
+      "unusual": true
+    },
+    {
+      "name": "istoreviewtrue",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

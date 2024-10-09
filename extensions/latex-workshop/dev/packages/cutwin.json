@@ -1,0 +1,47 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "opencutleft"
+    },
+    {
+      "name": "opencutright"
+    },
+    {
+      "name": "opencutcenter"
+    },
+    {
+      "name": "cutfuzz"
+    },
+    {
+      "name": "pageinwindow"
+    },
+    {
+      "name": "windowpagestuff"
+    },
+    {
+      "name": "picinwindow"
+    },
+    {
+      "name": "putstuffinpic"
+    }
+  ],
+  "envs": [
+    {
+      "name": "cutout",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "{${1:num top}}{${2:left width}}{${3:right width}}{${4:num cut}}"
+      }
+    },
+    {
+      "name": "shapedcutout",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:num top}}{${2:num cut}}{${3:shape sec}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

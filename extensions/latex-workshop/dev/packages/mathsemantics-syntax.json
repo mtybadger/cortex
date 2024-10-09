@@ -1,0 +1,1165 @@
+{
+  "deps": [
+    {
+      "name": "mathsemantics-commons"
+    }
+  ],
+  "macros": [
+    {
+      "name": "C",
+      "if": "shortbb"
+    },
+    {
+      "name": "K",
+      "if": "shortbb"
+    },
+    {
+      "name": "N",
+      "if": "shortbb"
+    },
+    {
+      "name": "Q",
+      "if": "shortbb"
+    },
+    {
+      "name": "R",
+      "if": "shortbb"
+    },
+    {
+      "name": "Z",
+      "if": "shortbb"
+    },
+    {
+      "name": "bA"
+    },
+    {
+      "name": "bB"
+    },
+    {
+      "name": "bC"
+    },
+    {
+      "name": "bD"
+    },
+    {
+      "name": "bE"
+    },
+    {
+      "name": "bF"
+    },
+    {
+      "name": "bG"
+    },
+    {
+      "name": "bH"
+    },
+    {
+      "name": "bI"
+    },
+    {
+      "name": "bJ"
+    },
+    {
+      "name": "bK"
+    },
+    {
+      "name": "bL"
+    },
+    {
+      "name": "bM"
+    },
+    {
+      "name": "bN"
+    },
+    {
+      "name": "bO"
+    },
+    {
+      "name": "bP"
+    },
+    {
+      "name": "bQ"
+    },
+    {
+      "name": "bR"
+    },
+    {
+      "name": "bS"
+    },
+    {
+      "name": "bT"
+    },
+    {
+      "name": "bU"
+    },
+    {
+      "name": "bV"
+    },
+    {
+      "name": "bW"
+    },
+    {
+      "name": "bX"
+    },
+    {
+      "name": "bY"
+    },
+    {
+      "name": "bZ"
+    },
+    {
+      "name": "ba"
+    },
+    {
+      "name": "bb"
+    },
+    {
+      "name": "bc"
+    },
+    {
+      "name": "bd"
+    },
+    {
+      "name": "be"
+    },
+    {
+      "name": "bf"
+    },
+    {
+      "name": "bg"
+    },
+    {
+      "name": "bh"
+    },
+    {
+      "name": "bi"
+    },
+    {
+      "name": "bj"
+    },
+    {
+      "name": "bk"
+    },
+    {
+      "name": "bl"
+    },
+    {
+      "name": "bm"
+    },
+    {
+      "name": "bn"
+    },
+    {
+      "name": "bo"
+    },
+    {
+      "name": "bp"
+    },
+    {
+      "name": "bq"
+    },
+    {
+      "name": "br"
+    },
+    {
+      "name": "bs"
+    },
+    {
+      "name": "bt"
+    },
+    {
+      "name": "bu"
+    },
+    {
+      "name": "bv"
+    },
+    {
+      "name": "bw"
+    },
+    {
+      "name": "bx"
+    },
+    {
+      "name": "by"
+    },
+    {
+      "name": "bz"
+    },
+    {
+      "name": "bnull"
+    },
+    {
+      "name": "bone"
+    },
+    {
+      "name": "balpha"
+    },
+    {
+      "name": "bbeta"
+    },
+    {
+      "name": "bgamma"
+    },
+    {
+      "name": "bdelta"
+    },
+    {
+      "name": "bepsilon"
+    },
+    {
+      "name": "bvarepsilon"
+    },
+    {
+      "name": "bzeta"
+    },
+    {
+      "name": "boldeta"
+    },
+    {
+      "name": "btheta"
+    },
+    {
+      "name": "bvartheta"
+    },
+    {
+      "name": "biota"
+    },
+    {
+      "name": "bkappa"
+    },
+    {
+      "name": "bvarkappa"
+    },
+    {
+      "name": "blambda"
+    },
+    {
+      "name": "bmu"
+    },
+    {
+      "name": "bnu"
+    },
+    {
+      "name": "bomicron"
+    },
+    {
+      "name": "bxi"
+    },
+    {
+      "name": "bpi"
+    },
+    {
+      "name": "bvarpi"
+    },
+    {
+      "name": "brho"
+    },
+    {
+      "name": "bvarrho"
+    },
+    {
+      "name": "bsigma"
+    },
+    {
+      "name": "bvarsigma"
+    },
+    {
+      "name": "btau"
+    },
+    {
+      "name": "bupsilon"
+    },
+    {
+      "name": "bphi"
+    },
+    {
+      "name": "bvarphi"
+    },
+    {
+      "name": "bchi"
+    },
+    {
+      "name": "bpsi"
+    },
+    {
+      "name": "bomega"
+    },
+    {
+      "name": "bAlpha"
+    },
+    {
+      "name": "bBeta"
+    },
+    {
+      "name": "bGamma"
+    },
+    {
+      "name": "bDelta"
+    },
+    {
+      "name": "bEpsilon"
+    },
+    {
+      "name": "bZeta"
+    },
+    {
+      "name": "bEta"
+    },
+    {
+      "name": "bTheta"
+    },
+    {
+      "name": "bIota"
+    },
+    {
+      "name": "bKappa"
+    },
+    {
+      "name": "bLambda"
+    },
+    {
+      "name": "bMu"
+    },
+    {
+      "name": "bNu"
+    },
+    {
+      "name": "bXi"
+    },
+    {
+      "name": "bOmicron"
+    },
+    {
+      "name": "bPi"
+    },
+    {
+      "name": "bRho"
+    },
+    {
+      "name": "bSigma"
+    },
+    {
+      "name": "bTau"
+    },
+    {
+      "name": "bUpsilon"
+    },
+    {
+      "name": "bPhi"
+    },
+    {
+      "name": "bChi"
+    },
+    {
+      "name": "bPsi"
+    },
+    {
+      "name": "bOmega"
+    },
+    {
+      "name": "cA"
+    },
+    {
+      "name": "cB"
+    },
+    {
+      "name": "cC"
+    },
+    {
+      "name": "cD"
+    },
+    {
+      "name": "cE"
+    },
+    {
+      "name": "cF"
+    },
+    {
+      "name": "cG"
+    },
+    {
+      "name": "cH"
+    },
+    {
+      "name": "cI"
+    },
+    {
+      "name": "cJ"
+    },
+    {
+      "name": "cK"
+    },
+    {
+      "name": "cL"
+    },
+    {
+      "name": "cM"
+    },
+    {
+      "name": "cN"
+    },
+    {
+      "name": "cO"
+    },
+    {
+      "name": "cP"
+    },
+    {
+      "name": "cQ"
+    },
+    {
+      "name": "cR"
+    },
+    {
+      "name": "cS"
+    },
+    {
+      "name": "cT"
+    },
+    {
+      "name": "cU"
+    },
+    {
+      "name": "cV"
+    },
+    {
+      "name": "cW"
+    },
+    {
+      "name": "cX"
+    },
+    {
+      "name": "cY"
+    },
+    {
+      "name": "cZ"
+    },
+    {
+      "name": "fA"
+    },
+    {
+      "name": "fB"
+    },
+    {
+      "name": "fC"
+    },
+    {
+      "name": "fD"
+    },
+    {
+      "name": "fE"
+    },
+    {
+      "name": "fF"
+    },
+    {
+      "name": "fG"
+    },
+    {
+      "name": "fH"
+    },
+    {
+      "name": "fI"
+    },
+    {
+      "name": "fJ"
+    },
+    {
+      "name": "fK"
+    },
+    {
+      "name": "fL"
+    },
+    {
+      "name": "fM"
+    },
+    {
+      "name": "fN"
+    },
+    {
+      "name": "fO"
+    },
+    {
+      "name": "fP"
+    },
+    {
+      "name": "fQ"
+    },
+    {
+      "name": "fR"
+    },
+    {
+      "name": "fS"
+    },
+    {
+      "name": "fT"
+    },
+    {
+      "name": "fU"
+    },
+    {
+      "name": "fV"
+    },
+    {
+      "name": "fW"
+    },
+    {
+      "name": "fX"
+    },
+    {
+      "name": "fY"
+    },
+    {
+      "name": "fZ"
+    },
+    {
+      "name": "sA"
+    },
+    {
+      "name": "sB"
+    },
+    {
+      "name": "sC"
+    },
+    {
+      "name": "sD"
+    },
+    {
+      "name": "sE"
+    },
+    {
+      "name": "sF"
+    },
+    {
+      "name": "sG"
+    },
+    {
+      "name": "sH"
+    },
+    {
+      "name": "sI"
+    },
+    {
+      "name": "sJ"
+    },
+    {
+      "name": "sK"
+    },
+    {
+      "name": "sL"
+    },
+    {
+      "name": "sM"
+    },
+    {
+      "name": "sN"
+    },
+    {
+      "name": "sO"
+    },
+    {
+      "name": "sP"
+    },
+    {
+      "name": "sQ"
+    },
+    {
+      "name": "sR"
+    },
+    {
+      "name": "sS"
+    },
+    {
+      "name": "sT"
+    },
+    {
+      "name": "sU"
+    },
+    {
+      "name": "sV"
+    },
+    {
+      "name": "sW"
+    },
+    {
+      "name": "sX"
+    },
+    {
+      "name": "sY"
+    },
+    {
+      "name": "sZ"
+    },
+    {
+      "name": "va"
+    },
+    {
+      "name": "vb"
+    },
+    {
+      "name": "vc"
+    },
+    {
+      "name": "vd"
+    },
+    {
+      "name": "ve"
+    },
+    {
+      "name": "vf"
+    },
+    {
+      "name": "vg"
+    },
+    {
+      "name": "vh"
+    },
+    {
+      "name": "vi"
+    },
+    {
+      "name": "vj"
+    },
+    {
+      "name": "vk"
+    },
+    {
+      "name": "vl"
+    },
+    {
+      "name": "vm"
+    },
+    {
+      "name": "vn"
+    },
+    {
+      "name": "vo"
+    },
+    {
+      "name": "vp"
+    },
+    {
+      "name": "vq"
+    },
+    {
+      "name": "vr"
+    },
+    {
+      "name": "vs"
+    },
+    {
+      "name": "vt"
+    },
+    {
+      "name": "vu"
+    },
+    {
+      "name": "vv"
+    },
+    {
+      "name": "vw"
+    },
+    {
+      "name": "vx"
+    },
+    {
+      "name": "vy"
+    },
+    {
+      "name": "vz"
+    },
+    {
+      "name": "vA"
+    },
+    {
+      "name": "vB"
+    },
+    {
+      "name": "vC"
+    },
+    {
+      "name": "vD"
+    },
+    {
+      "name": "vE"
+    },
+    {
+      "name": "vF"
+    },
+    {
+      "name": "vG"
+    },
+    {
+      "name": "vH"
+    },
+    {
+      "name": "vI"
+    },
+    {
+      "name": "vJ"
+    },
+    {
+      "name": "vK"
+    },
+    {
+      "name": "vL"
+    },
+    {
+      "name": "vM"
+    },
+    {
+      "name": "vN"
+    },
+    {
+      "name": "vO"
+    },
+    {
+      "name": "vP"
+    },
+    {
+      "name": "vQ"
+    },
+    {
+      "name": "vR"
+    },
+    {
+      "name": "vS"
+    },
+    {
+      "name": "vT"
+    },
+    {
+      "name": "vU"
+    },
+    {
+      "name": "vV"
+    },
+    {
+      "name": "vW"
+    },
+    {
+      "name": "vX"
+    },
+    {
+      "name": "vY"
+    },
+    {
+      "name": "vZ"
+    },
+    {
+      "name": "vnull"
+    },
+    {
+      "name": "vone"
+    },
+    {
+      "name": "valpha"
+    },
+    {
+      "name": "vbeta"
+    },
+    {
+      "name": "vgamma"
+    },
+    {
+      "name": "vdelta"
+    },
+    {
+      "name": "vepsilon"
+    },
+    {
+      "name": "vvarepsilon"
+    },
+    {
+      "name": "vzeta"
+    },
+    {
+      "name": "veta"
+    },
+    {
+      "name": "vtheta"
+    },
+    {
+      "name": "vvartheta"
+    },
+    {
+      "name": "viota"
+    },
+    {
+      "name": "vkappa"
+    },
+    {
+      "name": "vvarkappa"
+    },
+    {
+      "name": "vlambda"
+    },
+    {
+      "name": "vmu"
+    },
+    {
+      "name": "vnu"
+    },
+    {
+      "name": "vomicron"
+    },
+    {
+      "name": "vxi"
+    },
+    {
+      "name": "vpi"
+    },
+    {
+      "name": "vvarpi"
+    },
+    {
+      "name": "vrho"
+    },
+    {
+      "name": "vvarrho"
+    },
+    {
+      "name": "vsigma"
+    },
+    {
+      "name": "vvarsigma"
+    },
+    {
+      "name": "vtau"
+    },
+    {
+      "name": "vupsilon"
+    },
+    {
+      "name": "vphi"
+    },
+    {
+      "name": "vvarphi"
+    },
+    {
+      "name": "vchi"
+    },
+    {
+      "name": "vpsi"
+    },
+    {
+      "name": "vomega"
+    },
+    {
+      "name": "vAlpha"
+    },
+    {
+      "name": "vBeta"
+    },
+    {
+      "name": "vGamma"
+    },
+    {
+      "name": "vDelta"
+    },
+    {
+      "name": "vEpsilon"
+    },
+    {
+      "name": "vZeta"
+    },
+    {
+      "name": "vEta"
+    },
+    {
+      "name": "vTheta"
+    },
+    {
+      "name": "vIota"
+    },
+    {
+      "name": "vKappa"
+    },
+    {
+      "name": "vLambda"
+    },
+    {
+      "name": "vMu"
+    },
+    {
+      "name": "vNu"
+    },
+    {
+      "name": "vOmicron"
+    },
+    {
+      "name": "vXi"
+    },
+    {
+      "name": "vPi"
+    },
+    {
+      "name": "vRho"
+    },
+    {
+      "name": "vSigma"
+    },
+    {
+      "name": "vTau"
+    },
+    {
+      "name": "vUpsilon"
+    },
+    {
+      "name": "vPhi"
+    },
+    {
+      "name": "vChi"
+    },
+    {
+      "name": "vPsi"
+    },
+    {
+      "name": "vOmega"
+    },
+    {
+      "name": "bbA"
+    },
+    {
+      "name": "bbB"
+    },
+    {
+      "name": "bbC"
+    },
+    {
+      "name": "bbD"
+    },
+    {
+      "name": "bbE"
+    },
+    {
+      "name": "bbF"
+    },
+    {
+      "name": "bbG"
+    },
+    {
+      "name": "bbH"
+    },
+    {
+      "name": "bbI"
+    },
+    {
+      "name": "bbJ"
+    },
+    {
+      "name": "bbK"
+    },
+    {
+      "name": "bbL"
+    },
+    {
+      "name": "bbM"
+    },
+    {
+      "name": "bbN"
+    },
+    {
+      "name": "bbO"
+    },
+    {
+      "name": "bbP"
+    },
+    {
+      "name": "bbQ"
+    },
+    {
+      "name": "bbR"
+    },
+    {
+      "name": "bbS"
+    },
+    {
+      "name": "bbT"
+    },
+    {
+      "name": "bbU"
+    },
+    {
+      "name": "bbV"
+    },
+    {
+      "name": "bbW"
+    },
+    {
+      "name": "bbX"
+    },
+    {
+      "name": "bbY"
+    },
+    {
+      "name": "bbZ"
+    },
+    {
+      "name": "enclspacing",
+      "unusual": true
+    },
+    {
+      "name": "enclose",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "enclose{${1:ldelim}}{${2:arg}}{${3:rdelim}}"
+      }
+    },
+    {
+      "name": "enclose",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "enclose[${4:scale%keyvals}]{${1:ldelim}}{${2:arg}}{${3:rdelim}}",
+        "keys": [
+          "\\enclose#c,\\encloseSet#c,\\paren#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "enclspacingSet",
+      "unusual": true
+    },
+    {
+      "name": "encloseSet",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "encloseSet{${1:ldelim}}{${2:arg1}}{${3:mdelim}}{${4:arg2}}{${5:rdelim}}"
+      }
+    },
+    {
+      "name": "encloseSet",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}{}{}",
+        "snippet": "encloseSet[${6:scale%keyvals}]{${1:ldelim}}{${2:arg1}}{${3:mdelim}}{${4:arg2}}{${5:rdelim}}",
+        "keys": [
+          "\\enclose#c,\\encloseSet#c,\\paren#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "paren",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "paren{${1:ldelim}}{${2:rdelim}}{${3:arg}}"
+      }
+    },
+    {
+      "name": "paren",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "paren[${4:scale%keyvals}]{${1:ldelim}}{${2:rdelim}}{${3:arg}}",
+        "keys": [
+          "\\enclose#c,\\encloseSet#c,\\paren#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "clap",
+      "arg": {
+        "format": "{}",
+        "snippet": "clap{${1:text}}"
+      }
+    },
+    {
+      "name": "mathllap",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathllap{${1:arg}}"
+      }
+    },
+    {
+      "name": "mathrlap",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathrlap{${1:arg}}"
+      }
+    },
+    {
+      "name": "mathclap",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathclap{${1:arg}}"
+      }
+    },
+    {
+      "name": "mathllapinternal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathllapinternal{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "mathrlapinternal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathrlapinternal{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "mathclapinternal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mathclapinternal{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "mrepinternal",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "mrepinternal{${1:arg1}}{${2:arg2}}{${3:arg3}}{${4:arg4}}"
+      }
+    },
+    {
+      "name": "mrep",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "mrep{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "mrep",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "mrep[${3:align%keyvals}]{${1:arg1}}{${2:arg2}}",
+        "keys": [
+          "\\mrep"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathsemantics-syntax#c": [
+      "shortbb"
+    ],
+    "\\enclose#c,\\encloseSet#c,\\paren#c": [
+      "big",
+      "Big",
+      "bigg",
+      "Bigg",
+      "auto",
+      "none"
+    ],
+    "\\mrep": [
+      "l",
+      "c",
+      "r"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathsemantics-syntax#c"
+  ]
+}

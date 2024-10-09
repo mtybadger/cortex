@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "atbegshi"
+    },
+    {
+      "name": "zref-abspage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "zthepage",
+      "arg": {
+        "format": "{}",
+        "snippet": "zthepage{${1:page number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\zref#c": [
+      "pagevalue"
+    ]
+  },
+  "args": []
+}

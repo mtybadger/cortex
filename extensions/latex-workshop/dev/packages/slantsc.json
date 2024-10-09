@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "scitdefault",
+      "unusual": true
+    },
+    {
+      "name": "scsldefault",
+      "unusual": true
+    },
+    {
+      "name": "noscshape"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "float"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "listalgorithmname",
+      "unusual": true
+    },
+    {
+      "name": "listofalgorithms",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "algorithm"
+    },
+    {
+      "name": "algorithm",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:placement}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/algorithm#c": [
+      "plain",
+      "ruled",
+      "boxed",
+      "part",
+      "chapter",
+      "section",
+      "subsection",
+      "subsubsection",
+      "nothing"
+    ]
+  },
+  "args": [
+    "\\usepackage/algorithm#c"
+  ]
+}

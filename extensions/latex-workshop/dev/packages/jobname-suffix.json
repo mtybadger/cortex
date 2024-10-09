@@ -1,0 +1,71 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "JobnameSuffix"
+    },
+    {
+      "name": "IfSuffixTF",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "IfSuffixTF{${1:true condition}}{${2:false condition}}"
+      }
+    },
+    {
+      "name": "IfSuffixTF",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "IfSuffixTF[${3:suffixes}]{${1:true condition}}{${2:false condition}}"
+      }
+    },
+    {
+      "name": "IfSuffixT",
+      "arg": {
+        "format": "{}",
+        "snippet": "IfSuffixT{${1:true condition}}"
+      }
+    },
+    {
+      "name": "IfSuffixT",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "IfSuffixT[${2:suffixes}]{${1:true condition}}"
+      }
+    },
+    {
+      "name": "IfSuffixF",
+      "arg": {
+        "format": "{}",
+        "snippet": "IfSuffixF{${1:false condition}}"
+      }
+    },
+    {
+      "name": "IfSuffixF",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "IfSuffixF[${2:suffixes}]{${1:false condition}}"
+      }
+    },
+    {
+      "name": "OverrideSuffix",
+      "arg": {
+        "format": "{}",
+        "snippet": "OverrideSuffix{${1:suffix}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "IfSuffix"
+    },
+    {
+      "name": "IfSuffix",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:suffixes}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

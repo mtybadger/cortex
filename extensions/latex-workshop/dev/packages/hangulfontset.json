@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "kotex"
+    },
+    {
+      "name": "unfontsxe"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/hangulfontset#c": [
+      "nanum",
+      "nanumx",
+      "barun",
+      "barunx",
+      "hcr",
+      "noto",
+      "notocjk",
+      "kopub"
+    ]
+  },
+  "args": [
+    "\\usepackage/hangulfontset#c"
+  ]
+}

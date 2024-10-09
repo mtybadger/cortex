@@ -1,0 +1,296 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pgfmathfpscale",
+      "unusual": true
+    },
+    {
+      "name": "pgfmathfpparse",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpparse{${1:expr}}"
+      }
+    },
+    {
+      "name": "pgfmathfpscientific",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpscientific{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfplessthan",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfplessthan{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpgreaterthan",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpgreaterthan{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpequalto",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpequalto{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpadd",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpadd{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpsubtract",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpsubtract{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpmultiply",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpmultiply{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpdivide",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpdivide{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpabs",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpabs{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpneg",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpneg{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpround",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpround{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpfloor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpfloor{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpceil",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpceil{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpmod",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpmod{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpmax",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpmax{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpmin",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpmin{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfppow",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfppow{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpexp",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpexp{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpln",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpln{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpsqrt",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpsqrt{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpveclen",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgfmathfpveclen{${1:x}}{${2:y}}"
+      }
+    },
+    {
+      "name": "pgfmathfpsin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpsin{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpcos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpcos{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfptan",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfptan{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpacos",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpacos{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpasin",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpasin{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpatan",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpatan{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpcot",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpcot{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpsec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpsec{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpcosec",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpcosec{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpdeg",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpdeg{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfprad",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfprad{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfpsetseed",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmathfpsetseed{${1:x}}"
+      }
+    },
+    {
+      "name": "pgfmathfprnd",
+      "unusual": true
+    },
+    {
+      "name": "pgfmathfprand",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "fixed point arithmetic={${1:options}}"
+    ]
+  },
+  "args": []
+}

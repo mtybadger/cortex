@@ -1,0 +1,11 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarycurvilinear"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

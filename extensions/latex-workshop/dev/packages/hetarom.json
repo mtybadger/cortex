@@ -1,0 +1,1921 @@
+{
+  "deps": [
+    {
+      "name": "chemstr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "azetidine",
+      "arg": {
+        "format": "{}",
+        "snippet": "azetidine{${1:subslist}}"
+      }
+    },
+    {
+      "name": "azetidine",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "azetidine[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "aziridinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "aziridinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "aziridinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aziridinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "aziridinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "aziridinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "aziridinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "aziridinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzofuranev",
+      "arg": {
+        "format": "{}",
+        "snippet": "benzofuranev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzofuranev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "benzofuranev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzofuranevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "benzofuranevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzofuranevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "benzofuranevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzoxazolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "benzoxazolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzoxazolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "benzoxazolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzoxazolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "benzoxazolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "benzoxazolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "benzoxazolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "cinnolinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cinnolinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "cinnolinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cinnolinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "cinnolinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cinnolinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "cinnolinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "cinnolinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cinnolinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "decaheterov{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "decaheterov{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "decaheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "decaheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "decaheterov(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "decaheterov(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "decaheterov(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterov",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "decaheterov(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "decaheterovi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "decaheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "decaheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "decaheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "decaheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "decaheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "decaheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "decaheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "decaheterovb{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "decaheterovb{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "decaheterovb[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "decaheterovb[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "decaheterovb(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "decaheterovb(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "decaheterovb(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovb",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "decaheterovb(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "decaheterovt{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "decaheterovt{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "decaheterovt[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "decaheterovt[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "decaheterovt(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "decaheterovt(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "decaheterovt(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "decaheterovt",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "decaheterovt(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fiveheterov{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "fiveheterov{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "fiveheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "fiveheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "fiveheterov(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "fiveheterov(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "fiveheterov(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterov",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "fiveheterov(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fiveheterovi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "fiveheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "fiveheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "fiveheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "fiveheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "fiveheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "fiveheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fiveheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "fiveheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "fourhetero{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "fourhetero{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "fourhetero[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "fourhetero[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "fourhetero(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "fourhetero(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "fourhetero(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "fourhetero",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "fourhetero(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "furanv",
+      "arg": {
+        "format": "{}",
+        "snippet": "furanv{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furanv",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "furanv[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furanvi",
+      "arg": {
+        "format": "{}",
+        "snippet": "furanvi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "furanvi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "furanvi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "imidazolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "imidazolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "imidazolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "imidazolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "imidazolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "imidazolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "imidazolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "imidazolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "indolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "indolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolizinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "indolizinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolizinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indolizinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolizinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "indolizinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "indolizinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "indolizinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isobenzofuranev",
+      "arg": {
+        "format": "{}",
+        "snippet": "isobenzofuranev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isobenzofuranev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isobenzofuranev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isobenzofuranevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "isobenzofuranevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isobenzofuranevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isobenzofuranevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoindolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoindolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoindolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoindolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoindolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoindolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoindolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoindolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoquinolinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoquinolinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoquinolinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoquinolinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoquinolinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoquinolinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoquinolinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoquinolinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoquinolinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoxazolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoxazolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoxazolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoxazolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoxazolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "isoxazolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "isoxazolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "isoxazolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nonaheterov{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "nonaheterov{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nonaheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "nonaheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "nonaheterov(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "nonaheterov(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "nonaheterov(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterov",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "nonaheterov(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "nonaheterovi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "nonaheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "nonaheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "nonaheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "nonaheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "nonaheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "nonaheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "nonaheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "nonaheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "oxazolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "oxazolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxazolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "oxazolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxazolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "oxazolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxazolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "oxazolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxetane",
+      "arg": {
+        "format": "{}",
+        "snippet": "oxetane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxetane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "oxetane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxiranev",
+      "arg": {
+        "format": "{}",
+        "snippet": "oxiranev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxiranev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "oxiranev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxiranevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "oxiranevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "oxiranevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "oxiranevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pteridinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pteridinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "pteridinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pteridinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pteridinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pteridinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "pteridinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pteridinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pteridinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "purinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "purinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "purinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "purinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "purinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "purinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "purinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "purinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrazinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrazinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrazinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrazinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrazolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrazolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrazolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrazolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrazolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridazinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyridazinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridazinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyridazinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridazinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyridazinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridazinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyridazinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyridinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyridinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyridinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyridinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyridinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrimidinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrimidinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrimidinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrimidinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrimidinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrimidinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrimidinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrimidinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrrolev",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrrolev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrrolev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrrolev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrrolevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "pyrrolevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "pyrrolevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pyrrolevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinazolinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinazolinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinazolinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinazolinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinazolinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinazolinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinazolinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinazolinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinazolinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinolinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinolinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinolinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinolinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinolinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinolinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinolinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinolinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinolinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinoxalinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinoxalinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevb",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinoxalinevb{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevb",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinoxalinevb[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinoxalinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinoxalinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevt",
+      "arg": {
+        "format": "{}",
+        "snippet": "quinoxalinevt{${1:subslist}}"
+      }
+    },
+    {
+      "name": "quinoxalinevt",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "quinoxalinevt[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sixheterov{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "sixheterov{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "sixheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "sixheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "sixheterov(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "sixheterov(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "sixheterov(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterov",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "sixheterov(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "sixheterovi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "sixheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "sixheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "sixheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "sixheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "sixheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "sixheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "sixheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "thietane",
+      "arg": {
+        "format": "{}",
+        "snippet": "thietane{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thietane",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thietane[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiiranev",
+      "arg": {
+        "format": "{}",
+        "snippet": "thiiranev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiiranev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thiiranev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiiranevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "thiiranevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiiranevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thiiranevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiophenev",
+      "arg": {
+        "format": "{}",
+        "snippet": "thiophenev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiophenev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thiophenev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiophenevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "thiophenevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "thiophenevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "thiophenevi[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "threehetero",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "threehetero{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "sixheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "sixheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "sixheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "sixheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "sixheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "sixheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "sixheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "sixheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "threeheteroi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "threeheteroi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "threeheteroi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "threeheteroi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "threeheteroi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "threeheteroi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "threeheteroi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheteroi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "threeheteroi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "threeheterov{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "threeheterov{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "threeheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "threeheterov[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "threeheterov(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "threeheterov(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "threeheterov(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterov",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "threeheterov(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "threeheterovi{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "threeheterovi{${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "threeheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "arg": {
+        "format": "[]{}{}[]",
+        "snippet": "threeheterovi[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}",
+        "snippet": "threeheterovi(${3:skelbdlist}){${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "(){}{}[]",
+        "snippet": "threeheterovi(${4:skelbdlist}){${1:atomlist}}{${2:subslist}}[${3:delbdlist}]"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "unusual": true,
+      "arg": {
+        "format": "()[]{}{}",
+        "snippet": "threeheterovi(${4:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}"
+      }
+    },
+    {
+      "name": "threeheterovi",
+      "arg": {
+        "format": "()[]{}{}[]",
+        "snippet": "threeheterovi(${5:skelbdlist})[${3:bondlist}]{${1:atomlist}}{${2:subslist}}[${4:delbdlist}]"
+      }
+    },
+    {
+      "name": "triazinev",
+      "arg": {
+        "format": "{}",
+        "snippet": "triazinev{${1:subslist}}"
+      }
+    },
+    {
+      "name": "triazinev",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "triazinev[${2:bondlist}]{${1:subslist}}"
+      }
+    },
+    {
+      "name": "triazinevi",
+      "arg": {
+        "format": "{}",
+        "snippet": "triazinevi{${1:subslist}}"
+      }
+    },
+    {
+      "name": "triazinevi",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "triazinevi[${2:bondlist}]{${1:subslist}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

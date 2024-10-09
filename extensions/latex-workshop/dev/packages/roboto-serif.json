@@ -1,0 +1,170 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "robotoserifBlack",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifBlack{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifBold",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifBold{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifLF",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifLF{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifLight",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifLight{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifMedium",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifMedium{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifOsF",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifOsF{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifRegular",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifRegular{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifThin",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifThin{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifTLF",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifTLF{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserifTOsF",
+      "arg": {
+        "format": "{}",
+        "snippet": "robotoserifTOsF{${1:text}}"
+      }
+    },
+    {
+      "name": "robotoserif",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifblack",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifbold",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifboldcondensed",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifcondensed",
+      "unusual": true
+    },
+    {
+      "name": "robotoseriflf",
+      "unusual": true
+    },
+    {
+      "name": "robotoseriflight",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifmedium",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifosf",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifregular",
+      "unusual": true
+    },
+    {
+      "name": "robotoserifthin",
+      "unusual": true
+    },
+    {
+      "name": "robotoseriftlf",
+      "unusual": true
+    },
+    {
+      "name": "robotoseriftosf",
+      "unusual": true
+    },
+    {
+      "name": "robotoseriffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/roboto-serif#c": [
+      "type1",
+      "medium",
+      "bold",
+      "black",
+      "thin",
+      "light",
+      "regular",
+      "condensed",
+      "lining",
+      "oldstyle",
+      "tabular",
+      "proportional"
+    ]
+  },
+  "args": [
+    "\\usepackage/roboto-serif#c"
+  ]
+}

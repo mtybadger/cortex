@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
+import * as nls from 'vs/nls';
 
 // Import the effects we need
-import { Color } from '../../../../base/common/color.js';
-import { registerColor, darken, lighten, transparent, ifDefinedThenElse } from '../colorUtils.js';
+import { Color } from 'vs/base/common/color';
+import { registerColor, darken, lighten, transparent, ifDefinedThenElse } from 'vs/platform/theme/common/colorUtils';
 
 // Import the colors we need
-import { foreground, contrastBorder, activeContrastBorder, focusBorder, iconForeground } from './baseColors.js';
-import { editorWidgetBackground, editorFindMatchHighlightBorder, editorFindMatchHighlight, widgetShadow, editorWidgetForeground } from './editorColors.js';
+import { foreground, contrastBorder, activeContrastBorder, focusBorder, iconForeground } from 'vs/platform/theme/common/colors/baseColors';
+import { editorWidgetBackground, editorFindMatchHighlightBorder, editorFindMatchHighlight, widgetShadow } from 'vs/platform/theme/common/colors/editorColors';
 
 
 export const listFocusBackground = registerColor('list.focusBackground',
@@ -145,21 +145,3 @@ export const tableColumnsBorder = registerColor('tree.tableColumnsBorder',
 export const tableOddRowsBackgroundColor = registerColor('tree.tableOddRowsBackground',
 	{ dark: transparent(foreground, 0.04), light: transparent(foreground, 0.04), hcDark: null, hcLight: null },
 	nls.localize('tableOddRowsBackgroundColor', "Background color for odd table rows."));
-
-// ------ action list
-
-export const editorActionListBackground = registerColor('editorActionList.background',
-	editorWidgetBackground,
-	nls.localize('editorActionListBackground', "Action List background color."));
-
-export const editorActionListForeground = registerColor('editorActionList.foreground',
-	editorWidgetForeground,
-	nls.localize('editorActionListForeground', "Action List foreground color."));
-
-export const editorActionListFocusForeground = registerColor('editorActionList.focusForeground',
-	listActiveSelectionForeground,
-	nls.localize('editorActionListFocusForeground', "Action List foreground color for the focused item."));
-
-export const editorActionListFocusBackground = registerColor('editorActionList.focusBackground',
-	listActiveSelectionBackground,
-	nls.localize('editorActionListFocusBackground', "Action List background color for the focused item."));

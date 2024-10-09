@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { exec } from 'child_process';
-import { FileAccess } from '../common/network.js';
-import { ProcessItem } from '../common/processes.js';
+import { FileAccess } from 'vs/base/common/network';
+import { ProcessItem } from 'vs/base/common/processes';
 
 export function listProcesses(rootPid: number): Promise<ProcessItem> {
 

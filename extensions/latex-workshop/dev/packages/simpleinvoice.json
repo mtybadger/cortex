@@ -1,0 +1,171 @@
+{
+  "deps": [
+    {
+      "name": "advdate"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "url"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "colortbl"
+    },
+    {
+      "name": "babel"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setinvoicetitle",
+      "arg": {
+        "format": "{}",
+        "snippet": "setinvoicetitle{${1:title}}"
+      }
+    },
+    {
+      "name": "setinvoicenumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "setinvoicenumber{${1:number}}"
+      }
+    },
+    {
+      "name": "setreceivername",
+      "arg": {
+        "format": "{}",
+        "snippet": "setreceivername{${1:reciever's name}}"
+      }
+    },
+    {
+      "name": "setreceiveraddress",
+      "arg": {
+        "format": "{}",
+        "snippet": "setreceiveraddress{${1:reciever's address}}"
+      }
+    },
+    {
+      "name": "setname",
+      "arg": {
+        "format": "{}",
+        "snippet": "setname{${1:your name}}"
+      }
+    },
+    {
+      "name": "setaddress",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setaddress{${1:your address (${3:multiline})}}{${2:your address (${4:single line})}}"
+      }
+    },
+    {
+      "name": "setphonenumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "setphonenumber{${1:your phone number}}"
+      }
+    },
+    {
+      "name": "setemail",
+      "arg": {
+        "format": "{}",
+        "snippet": "setemail{${1:your email}}"
+      }
+    },
+    {
+      "name": "setyourref",
+      "arg": {
+        "format": "{}",
+        "snippet": "setyourref{${1:name}}"
+      }
+    },
+    {
+      "name": "setourref",
+      "arg": {
+        "format": "{}",
+        "snippet": "setourref{${1:name}}"
+      }
+    },
+    {
+      "name": "setinvoicedate",
+      "arg": {
+        "format": "{}",
+        "snippet": "setinvoicedate{${1:date}}"
+      }
+    },
+    {
+      "name": "setdeadline",
+      "arg": {
+        "format": "{}",
+        "snippet": "setdeadline{${1:days from now}}"
+      }
+    },
+    {
+      "name": "additem",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "additem{${1:description}}{${2:price excluding vat}}{${3:vat percentage}}{${4:price including vat}}"
+      }
+    },
+    {
+      "name": "setsubtotal",
+      "arg": {
+        "format": "{}",
+        "snippet": "setsubtotal{${1:total excluding vat}}"
+      }
+    },
+    {
+      "name": "setvat",
+      "arg": {
+        "format": "{}",
+        "snippet": "setvat{${1:total vat}}"
+      }
+    },
+    {
+      "name": "settotal",
+      "arg": {
+        "format": "{}",
+        "snippet": "settotal{${1:total including vat}}"
+      }
+    },
+    {
+      "name": "setaccountnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "setaccountnumber{${1:number}}"
+      }
+    },
+    {
+      "name": "makeinvoice"
+    },
+    {
+      "name": "linesep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/simpleinvoice#c": [
+      "american",
+      "english",
+      "UKenglish",
+      "USenglish",
+      "norsk",
+      "norwegian",
+      "bokmaal"
+    ]
+  },
+  "args": [
+    "\\usepackage/simpleinvoice#c"
+  ]
+}

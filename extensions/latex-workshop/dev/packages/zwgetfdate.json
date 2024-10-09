@@ -1,0 +1,22 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "DateOfPackage",
+      "arg": {
+        "format": "{}",
+        "snippet": "DateOfPackage{${1:package}}"
+      }
+    },
+    {
+      "name": "DateOfFile",
+      "arg": {
+        "format": "{}",
+        "snippet": "DateOfFile{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

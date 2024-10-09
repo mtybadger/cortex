@@ -1,0 +1,56 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "everypage"
+    },
+    {
+      "name": "afterpage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "backgroundsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "backgroundsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\backgroundsetup,\\usepackage/background#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "BgThispage"
+    },
+    {
+      "name": "NoBgThispage"
+    },
+    {
+      "name": "BgMaterial"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\backgroundsetup,\\usepackage/background#c": [
+      "pages=${1|all,some|}",
+      "firstpage",
+      "placement=${1|center,top,bottom|}",
+      "contents=",
+      "color=",
+      "angle=${1:degrees}",
+      "opacity=",
+      "scale=",
+      "position=",
+      "nodeanchor=",
+      "anchor=",
+      "hshift=",
+      "vshift="
+    ]
+  },
+  "args": [
+    "\\backgroundsetup,\\usepackage/background#c"
+  ]
+}

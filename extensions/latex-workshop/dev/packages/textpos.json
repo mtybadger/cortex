@@ -1,0 +1,200 @@
+{
+  "deps": [
+    {
+      "name": "everyshi"
+    },
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "TPoptions",
+      "arg": {
+        "format": "{}",
+        "snippet": "TPoptions{${1:options%keyvals}}",
+        "keys": [
+          "\\TPoptions"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "TPGrid",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TPGrid{${1:nhoriz}}{${2:nvert}}"
+      }
+    },
+    {
+      "name": "TPGrid",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "TPGrid[${3:x,y}]{${1:nhoriz}}{${2:nvert}}"
+      }
+    },
+    {
+      "name": "TPShowGrid",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "TPShowGrid{${1:nhoriz}}{${2:nvert}}"
+      }
+    },
+    {
+      "name": "TPMargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "TPMargin{${1:size%l}}"
+      }
+    },
+    {
+      "name": "TPMargin*",
+      "arg": {
+        "format": "{}",
+        "snippet": "TPMargin*{${1:size%l}}"
+      }
+    },
+    {
+      "name": "TPReferencePosition",
+      "arg": {
+        "format": "{}",
+        "snippet": "TPReferencePosition{${1:val1,val2}}"
+      }
+    },
+    {
+      "name": "TPHorizModule"
+    },
+    {
+      "name": "TPVertModule"
+    },
+    {
+      "name": "ifTPshowboxes",
+      "unusual": true
+    },
+    {
+      "name": "TPshowboxestrue"
+    },
+    {
+      "name": "TPshowboxesfalse"
+    },
+    {
+      "name": "TPboxrulesize"
+    },
+    {
+      "name": "textblocklabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblocklabel{${1:label%plain}}"
+      }
+    },
+    {
+      "name": "showtextsize"
+    },
+    {
+      "name": "textblockorigin",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textblockorigin{${1:hpos}}{${2:vpos}}"
+      }
+    },
+    {
+      "name": "textblockcolour",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textblockcolour{${1:color}}"
+      }
+    },
+    {
+      "name": "textblockcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblockcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "textblockrulecolour",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textblockrulecolour{${1:color}}"
+      }
+    },
+    {
+      "name": "textblockrulecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "textblockrulecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "tekstblokkulur",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tekstblokkulur{${1:color}}"
+      }
+    },
+    {
+      "name": "tekstblokroolkulur",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "tekstblokroolkulur{${1:color}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "textblock",
+      "arg": {
+        "format": "{}()",
+        "snippet": "{${1:hsize}}(${2:hpos},${3:vpos})"
+      }
+    },
+    {
+      "name": "textblock",
+      "arg": {
+        "format": "{}[]()",
+        "snippet": "{${1:hsize}}[${2:ho,vo}](${3:hpos},${4:vpos})"
+      }
+    },
+    {
+      "name": "textblock*",
+      "arg": {
+        "format": "{}()",
+        "snippet": "{${1:hsize}}(${2:hpos},${3:vpos})"
+      }
+    },
+    {
+      "name": "textblock*",
+      "arg": {
+        "format": "{}[]()",
+        "snippet": "{${1:hsize}}[${2:ho,vo}](${3:hpos},${4:vpos})"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/textpos#c": [
+      "showboxes",
+      "noshowtext",
+      "absolute",
+      "relative",
+      "overlay",
+      "quiet",
+      "verbose",
+      "discardcontent"
+    ],
+    "\\TPoptions": [
+      "absolute",
+      "overlay",
+      "verbose",
+      "showboxes",
+      "showtext",
+      "discardcontent"
+    ]
+  },
+  "args": [
+    "\\usepackage/textpos#c"
+  ]
+}

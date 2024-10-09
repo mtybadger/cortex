@@ -1,0 +1,72 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "textgfsbaskerville",
+      "arg": {
+        "format": "{}",
+        "snippet": "textgfsbaskerville{${1:text}}"
+      }
+    },
+    {
+      "name": "ou"
+    },
+    {
+      "name": "ouox"
+    },
+    {
+      "name": "oudas"
+    },
+    {
+      "name": "oupsil"
+    },
+    {
+      "name": "oupsilvar"
+    },
+    {
+      "name": "oudasox"
+    },
+    {
+      "name": "oupsilox"
+    },
+    {
+      "name": "ouper"
+    },
+    {
+      "name": "oupsilper"
+    },
+    {
+      "name": "oudasper"
+    },
+    {
+      "name": "oudier"
+    },
+    {
+      "name": "oudierox"
+    },
+    {
+      "name": "oudiervar"
+    },
+    {
+      "name": "kai"
+    },
+    {
+      "name": "pialt"
+    },
+    {
+      "name": "dagger",
+      "detail": "†",
+      "doc": "Dagger relation"
+    },
+    {
+      "name": "gammaalt"
+    }
+  ],
+  "envs": [
+    {
+      "name": "gfsbaskerville"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

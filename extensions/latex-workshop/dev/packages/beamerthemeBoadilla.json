@@ -1,0 +1,11 @@
+{
+  "deps": [],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usetheme/Boadilla": [
+      "secheader"
+    ]
+  },
+  "args": []
+}

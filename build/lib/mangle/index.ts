@@ -12,7 +12,7 @@ import * as ts from 'typescript';
 import { pathToFileURL } from 'url';
 import * as workerpool from 'workerpool';
 import { StaticLanguageServiceHost } from './staticLanguageServiceHost';
-const buildfile = require('../../buildfile');
+const buildfile = require('../../../src/buildfile');
 
 class ShortIdent {
 
@@ -279,6 +279,7 @@ function isNameTakenInFile(node: ts.Node, name: string): boolean {
 	return false;
 }
 
+
 const skippedExportMangledFiles = [
 	// Build
 	'css.build',
@@ -299,18 +300,17 @@ const skippedExportMangledFiles = [
 
 	// entry points
 	...[
-		buildfile.workerEditor,
+		buildfile.entrypoint('vs/server/node/server.main', []),
+		buildfile.entrypoint('vs/workbench/workbench.desktop.main', []),
+		buildfile.base,
 		buildfile.workerExtensionHost,
 		buildfile.workerNotebook,
 		buildfile.workerLanguageDetection,
 		buildfile.workerLocalFileSearch,
 		buildfile.workerProfileAnalysis,
-		buildfile.workerOutputLinks,
-		buildfile.workerBackgroundTokenization,
 		buildfile.workbenchDesktop,
 		buildfile.workbenchWeb,
-		buildfile.code,
-		buildfile.codeWeb
+		buildfile.code
 	].flat().map(x => x.name),
 ];
 

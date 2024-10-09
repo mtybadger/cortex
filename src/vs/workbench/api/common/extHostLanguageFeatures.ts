@@ -3,39 +3,40 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { asArray, coalesce, isFalsyOrEmpty, isNonEmptyArray } from '../../../base/common/arrays.js';
-import { raceCancellationError } from '../../../base/common/async.js';
-import { VSBuffer } from '../../../base/common/buffer.js';
-import { CancellationToken } from '../../../base/common/cancellation.js';
-import { NotImplementedError, isCancellationError } from '../../../base/common/errors.js';
-import { IdGenerator } from '../../../base/common/idGenerator.js';
-import { DisposableStore } from '../../../base/common/lifecycle.js';
-import { equals, mixin } from '../../../base/common/objects.js';
-import { StopWatch } from '../../../base/common/stopwatch.js';
-import { regExpLeadsToEndlessLoop } from '../../../base/common/strings.js';
-import { assertType, isObject } from '../../../base/common/types.js';
-import { URI, UriComponents } from '../../../base/common/uri.js';
-import { IURITransformer } from '../../../base/common/uriIpc.js';
-import { IPosition } from '../../../editor/common/core/position.js';
-import { Range as EditorRange, IRange } from '../../../editor/common/core/range.js';
-import { ISelection, Selection } from '../../../editor/common/core/selection.js';
-import * as languages from '../../../editor/common/languages.js';
-import { IAutoClosingPairConditional } from '../../../editor/common/languages/languageConfiguration.js';
-import { encodeSemanticTokensDto } from '../../../editor/common/services/semanticTokensDto.js';
-import { localize } from '../../../nls.js';
-import { ExtensionIdentifier, IExtensionDescription } from '../../../platform/extensions/common/extensions.js';
-import { ILogService } from '../../../platform/log/common/log.js';
-import { IExtHostApiDeprecationService } from './extHostApiDeprecationService.js';
-import { CommandsConverter, ExtHostCommands } from './extHostCommands.js';
-import { ExtHostDiagnostics } from './extHostDiagnostics.js';
-import { ExtHostDocuments } from './extHostDocuments.js';
-import { ExtHostTelemetry, IExtHostTelemetry } from './extHostTelemetry.js';
-import * as typeConvert from './extHostTypeConverters.js';
-import { CodeActionKind, CompletionList, Disposable, DocumentDropOrPasteEditKind, DocumentSymbol, InlineCompletionTriggerKind, InlineEditTriggerKind, InternalDataTransferItem, Location, NewSymbolNameTriggerKind, Range, SemanticTokens, SemanticTokensEdit, SemanticTokensEdits, SnippetString, SymbolInformation, SyntaxTokenType } from './extHostTypes.js';
-import { checkProposedApiEnabled, isProposedApiEnabled } from '../../services/extensions/common/extensions.js';
+import { asArray, coalesce, isFalsyOrEmpty, isNonEmptyArray } from 'vs/base/common/arrays';
+import { raceCancellationError } from 'vs/base/common/async';
+import { VSBuffer } from 'vs/base/common/buffer';
+import { CancellationToken } from 'vs/base/common/cancellation';
+import { NotImplementedError, isCancellationError } from 'vs/base/common/errors';
+import { IdGenerator } from 'vs/base/common/idGenerator';
+import { DisposableStore } from 'vs/base/common/lifecycle';
+import { equals, mixin } from 'vs/base/common/objects';
+import { StopWatch } from 'vs/base/common/stopwatch';
+import { regExpLeadsToEndlessLoop } from 'vs/base/common/strings';
+import { assertType, isObject } from 'vs/base/common/types';
+import { URI, UriComponents } from 'vs/base/common/uri';
+import { IURITransformer } from 'vs/base/common/uriIpc';
+import { ISingleEditOperation } from 'vs/editor/common/core/editOperation';
+import { IPosition } from 'vs/editor/common/core/position';
+import { Range as EditorRange, IRange } from 'vs/editor/common/core/range';
+import { ISelection, Selection } from 'vs/editor/common/core/selection';
+import * as languages from 'vs/editor/common/languages';
+import { IAutoClosingPairConditional } from 'vs/editor/common/languages/languageConfiguration';
+import { encodeSemanticTokensDto } from 'vs/editor/common/services/semanticTokensDto';
+import { localize } from 'vs/nls';
+import { ExtensionIdentifier, IExtensionDescription } from 'vs/platform/extensions/common/extensions';
+import { ILogService } from 'vs/platform/log/common/log';
+import { IExtHostApiDeprecationService } from 'vs/workbench/api/common/extHostApiDeprecationService';
+import { CommandsConverter, ExtHostCommands } from 'vs/workbench/api/common/extHostCommands';
+import { ExtHostDiagnostics } from 'vs/workbench/api/common/extHostDiagnostics';
+import { ExtHostDocuments } from 'vs/workbench/api/common/extHostDocuments';
+import { ExtHostTelemetry, IExtHostTelemetry } from 'vs/workbench/api/common/extHostTelemetry';
+import * as typeConvert from 'vs/workbench/api/common/extHostTypeConverters';
+import { CodeActionKind, CompletionList, Disposable, DocumentDropOrPasteEditKind, DocumentSymbol, InlineCompletionTriggerKind, InlineEditTriggerKind, InternalDataTransferItem, Location, NewSymbolNameTriggerKind, Range, SemanticTokens, SemanticTokensEdit, SemanticTokensEdits, SnippetString, SymbolInformation, SyntaxTokenType } from 'vs/workbench/api/common/extHostTypes';
+import { checkProposedApiEnabled, isProposedApiEnabled } from 'vs/workbench/services/extensions/common/extensions';
 import type * as vscode from 'vscode';
-import { Cache } from './cache.js';
-import * as extHostProtocol from './extHost.protocol.js';
+import { Cache } from './cache';
+import * as extHostProtocol from './extHost.protocol';
 
 // --- adapter
 
@@ -372,21 +373,13 @@ class MultiDocumentHighlightAdapter {
 
 	constructor(
 		private readonly _documents: ExtHostDocuments,
-		private readonly _provider: vscode.MultiDocumentHighlightProvider,
-		private readonly _logService: ILogService,
+		private readonly _provider: vscode.MultiDocumentHighlightProvider
 	) { }
 
 	async provideMultiDocumentHighlights(resource: URI, position: IPosition, otherResources: URI[], token: CancellationToken): Promise<languages.MultiDocumentHighlight[] | undefined> {
-		const doc = this._documents.getDocument(resource);
-		const otherDocuments = otherResources.map(r => {
-			try {
-				return this._documents.getDocument(r);
-			} catch (err) {
-				this._logService.error('Error: Unable to retrieve document from URI: ' + r + '. Error message: ' + err);
-				return undefined;
-			}
-		}).filter(doc => doc !== undefined);
 
+		const doc = this._documents.getDocument(resource);
+		const otherDocuments = otherResources.map(r => this._documents.getDocument(r));
 		const pos = typeConvert.Position.to(position);
 
 		const value = await this._provider.provideMultiDocumentHighlights(doc, pos, otherDocuments, token);
@@ -664,7 +657,7 @@ class DocumentFormattingAdapter {
 		private readonly _provider: vscode.DocumentFormattingEditProvider
 	) { }
 
-	async provideDocumentFormattingEdits(resource: URI, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	async provideDocumentFormattingEdits(resource: URI, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 
 		const document = this._documents.getDocument(resource);
 
@@ -683,7 +676,7 @@ class RangeFormattingAdapter {
 		private readonly _provider: vscode.DocumentRangeFormattingEditProvider
 	) { }
 
-	async provideDocumentRangeFormattingEdits(resource: URI, range: IRange, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	async provideDocumentRangeFormattingEdits(resource: URI, range: IRange, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 
 		const document = this._documents.getDocument(resource);
 		const ran = typeConvert.Range.to(range);
@@ -695,7 +688,7 @@ class RangeFormattingAdapter {
 		return undefined;
 	}
 
-	async provideDocumentRangesFormattingEdits(resource: URI, ranges: IRange[], options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	async provideDocumentRangesFormattingEdits(resource: URI, ranges: IRange[], options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 		assertType(typeof this._provider.provideDocumentRangesFormattingEdits === 'function', 'INVALID invocation of `provideDocumentRangesFormattingEdits`');
 
 		const document = this._documents.getDocument(resource);
@@ -717,7 +710,7 @@ class OnTypeFormattingAdapter {
 
 	autoFormatTriggerCharacters: string[] = []; // not here
 
-	async provideOnTypeFormattingEdits(resource: URI, position: IPosition, ch: string, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	async provideOnTypeFormattingEdits(resource: URI, position: IPosition, ch: string, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 
 		const document = this._documents.getDocument(resource);
 		const pos = typeConvert.Position.to(position);
@@ -1294,7 +1287,7 @@ class InlineCompletionAdapterBase {
 		return undefined;
 	}
 
-	async provideInlineEditsForRange(resource: URI, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
+	async provideInlineEdits(resource: URI, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
 		return undefined;
 	}
 
@@ -1403,8 +1396,8 @@ class InlineCompletionAdapter extends InlineCompletionAdapterBase {
 		};
 	}
 
-	override async provideInlineEditsForRange(resource: URI, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
-		if (!this._provider.provideInlineEditsForRange) {
+	override async provideInlineEdits(resource: URI, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
+		if (!this._provider.provideInlineEdits) {
 			return undefined;
 		}
 		checkProposedApiEnabled(this._extension, 'inlineCompletionsAdditions');
@@ -1412,7 +1405,7 @@ class InlineCompletionAdapter extends InlineCompletionAdapterBase {
 		const doc = this._documents.getDocument(resource);
 		const r = typeConvert.Range.to(range);
 
-		const result = await this._provider.provideInlineEditsForRange(doc, r, {
+		const result = await this._provider.provideInlineEdits(doc, r, {
 			selectedCompletionInfo:
 				context.selectedSuggestionInfo
 					? {
@@ -2157,32 +2150,19 @@ class MappedEditsAdapter {
 		const uri = URI.revive(resource);
 		const doc = this._documents.getDocument(uri);
 
-		const reviveContextItem = (item: extHostProtocol.IDocumentContextItemDto) => ({
-			uri: URI.revive(item.uri),
-			version: item.version,
-			ranges: item.ranges.map(r => typeConvert.Range.to(r)),
-		} satisfies vscode.DocumentContextItem);
-
-
-		const usedContext = context.documents.map(docSubArray => docSubArray.map(reviveContextItem));
+		const usedContext = context.documents.map((docSubArray) =>
+			docSubArray.map((r) => {
+				return {
+					uri: URI.revive(r.uri),
+					version: r.version,
+					ranges: r.ranges.map((range) => typeConvert.Range.to(range)),
+				};
+			})
+		);
 
 		const ctx = {
 			documents: usedContext,
-			selections: usedContext[0]?.[0]?.ranges ?? [], // @ulugbekna: this is a hack for backward compatibility
-			conversation: context.conversation?.map(c => {
-				if (c.type === 'response') {
-					return {
-						type: 'response',
-						message: c.message,
-						references: c.references?.map(reviveContextItem)
-					} satisfies vscode.ConversationResponse;
-				} else {
-					return {
-						type: 'request',
-						message: c.message,
-					} satisfies vscode.ConversationRequest;
-				}
-			})
+			selections: usedContext[0]?.[0]?.ranges ?? [] // @ulugbekna: this is a hack for backward compatibility
 		};
 
 		const mappedEdits = await this._provider.provideMappedEdits(doc, codeBlocks, ctx, token);
@@ -2332,15 +2312,15 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 	}
 
 	$provideCodeLenses(handle: number, resource: UriComponents, token: CancellationToken): Promise<extHostProtocol.ICodeLensListDto | undefined> {
-		return this._withAdapter(handle, CodeLensAdapter, adapter => adapter.provideCodeLenses(URI.revive(resource), token), undefined, token, resource.scheme === 'output');
+		return this._withAdapter(handle, CodeLensAdapter, adapter => adapter.provideCodeLenses(URI.revive(resource), token), undefined, token);
 	}
 
 	$resolveCodeLens(handle: number, symbol: extHostProtocol.ICodeLensDto, token: CancellationToken): Promise<extHostProtocol.ICodeLensDto | undefined> {
-		return this._withAdapter(handle, CodeLensAdapter, adapter => adapter.resolveCodeLens(symbol, token), undefined, undefined, true);
+		return this._withAdapter(handle, CodeLensAdapter, adapter => adapter.resolveCodeLens(symbol, token), undefined, undefined);
 	}
 
 	$releaseCodeLenses(handle: number, cacheId: number): void {
-		this._withAdapter(handle, CodeLensAdapter, adapter => Promise.resolve(adapter.releaseCodeLenses(cacheId)), undefined, undefined, true);
+		this._withAdapter(handle, CodeLensAdapter, adapter => Promise.resolve(adapter.releaseCodeLenses(cacheId)), undefined, undefined);
 	}
 
 	// --- declaration
@@ -2443,7 +2423,7 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 	}
 
 	registerMultiDocumentHighlightProvider(extension: IExtensionDescription, selector: vscode.DocumentSelector, provider: vscode.MultiDocumentHighlightProvider): vscode.Disposable {
-		const handle = this._addNewAdapter(new MultiDocumentHighlightAdapter(this._documents, provider, this._logService), extension);
+		const handle = this._addNewAdapter(new MultiDocumentHighlightAdapter(this._documents, provider), extension);
 		this._proxy.$registerMultiDocumentHighlightProvider(handle, this._transformDocumentSelector(selector, extension));
 		return this._createDisposable(handle);
 	}
@@ -2526,7 +2506,7 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 		return this._createDisposable(handle);
 	}
 
-	$provideDocumentFormattingEdits(handle: number, resource: UriComponents, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	$provideDocumentFormattingEdits(handle: number, resource: UriComponents, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 		return this._withAdapter(handle, DocumentFormattingAdapter, adapter => adapter.provideDocumentFormattingEdits(URI.revive(resource), options, token), undefined, token);
 	}
 
@@ -2537,11 +2517,11 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 		return this._createDisposable(handle);
 	}
 
-	$provideDocumentRangeFormattingEdits(handle: number, resource: UriComponents, range: IRange, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	$provideDocumentRangeFormattingEdits(handle: number, resource: UriComponents, range: IRange, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 		return this._withAdapter(handle, RangeFormattingAdapter, adapter => adapter.provideDocumentRangeFormattingEdits(URI.revive(resource), range, options, token), undefined, token);
 	}
 
-	$provideDocumentRangesFormattingEdits(handle: number, resource: UriComponents, ranges: IRange[], options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	$provideDocumentRangesFormattingEdits(handle: number, resource: UriComponents, ranges: IRange[], options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 		return this._withAdapter(handle, RangeFormattingAdapter, adapter => adapter.provideDocumentRangesFormattingEdits(URI.revive(resource), ranges, options, token), undefined, token);
 	}
 
@@ -2551,7 +2531,7 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 		return this._createDisposable(handle);
 	}
 
-	$provideOnTypeFormattingEdits(handle: number, resource: UriComponents, position: IPosition, ch: string, options: languages.FormattingOptions, token: CancellationToken): Promise<languages.TextEdit[] | undefined> {
+	$provideOnTypeFormattingEdits(handle: number, resource: UriComponents, position: IPosition, ch: string, options: languages.FormattingOptions, token: CancellationToken): Promise<ISingleEditOperation[] | undefined> {
 		return this._withAdapter(handle, OnTypeFormattingAdapter, adapter => adapter.provideOnTypeFormattingEdits(URI.revive(resource), position, ch, options, token), undefined, token);
 	}
 
@@ -2681,8 +2661,8 @@ export class ExtHostLanguageFeatures implements extHostProtocol.ExtHostLanguageF
 		return this._withAdapter(handle, InlineCompletionAdapterBase, adapter => adapter.provideInlineCompletions(URI.revive(resource), position, context, token), undefined, token);
 	}
 
-	$provideInlineEditsForRange(handle: number, resource: UriComponents, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
-		return this._withAdapter(handle, InlineCompletionAdapterBase, adapter => adapter.provideInlineEditsForRange(URI.revive(resource), range, context, token), undefined, token);
+	$provideInlineEdits(handle: number, resource: UriComponents, range: IRange, context: languages.InlineCompletionContext, token: CancellationToken): Promise<extHostProtocol.IdentifiableInlineCompletions | undefined> {
+		return this._withAdapter(handle, InlineCompletionAdapterBase, adapter => adapter.provideInlineEdits(URI.revive(resource), range, context, token), undefined, token);
 	}
 
 	$handleInlineCompletionDidShow(handle: number, pid: number, idx: number, updatedInsertText: string): void {

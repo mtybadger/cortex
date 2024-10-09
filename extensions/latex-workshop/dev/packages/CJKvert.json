@@ -1,0 +1,43 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "CJKvert"
+    },
+    {
+      "name": "CJKhorz"
+    },
+    {
+      "name": "CJKsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKsymbol{${1:n}}"
+      }
+    },
+    {
+      "name": "CJKsymbolsimple",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKsymbolsimple{${1:n}}"
+      }
+    },
+    {
+      "name": "CJKbaselinestretch",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/CJKvert#c": [
+      "usebaselinestretch"
+    ]
+  },
+  "args": [
+    "\\usepackage/CJKvert#c"
+  ]
+}

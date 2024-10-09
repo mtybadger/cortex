@@ -4,15 +4,15 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { DisposableStore } from '../../../../../base/common/lifecycle.js';
-import { Mimes } from '../../../../../base/common/mime.js';
-import { URI } from '../../../../../base/common/uri.js';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../base/test/common/utils.js';
-import { ILanguageService } from '../../../../../editor/common/languages/language.js';
-import { TestInstantiationService } from '../../../../../platform/instantiation/test/common/instantiationServiceMock.js';
-import { CellKind, CellUri, diff, MimeTypeDisplayOrder, NotebookWorkingCopyTypeIdentifier } from '../../common/notebookCommon.js';
-import { cellIndexesToRanges, cellRangesToIndexes, reduceCellRanges } from '../../common/notebookRange.js';
-import { setupInstantiationService, TestCell } from './testNotebookEditor.js';
+import { DisposableStore } from 'vs/base/common/lifecycle';
+import { Mimes } from 'vs/base/common/mime';
+import { URI } from 'vs/base/common/uri';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { ILanguageService } from 'vs/editor/common/languages/language';
+import { TestInstantiationService } from 'vs/platform/instantiation/test/common/instantiationServiceMock';
+import { CellKind, CellUri, diff, MimeTypeDisplayOrder, NotebookWorkingCopyTypeIdentifier } from 'vs/workbench/contrib/notebook/common/notebookCommon';
+import { cellIndexesToRanges, cellRangesToIndexes, reduceCellRanges } from 'vs/workbench/contrib/notebook/common/notebookRange';
+import { setupInstantiationService, TestCell } from 'vs/workbench/contrib/notebook/test/browser/testNotebookEditor';
 
 suite('NotebookCommon', () => {
 	ensureNoDisposablesAreLeakedInTestSuite();
@@ -410,17 +410,10 @@ suite('CellRange', function () {
 suite('NotebookWorkingCopyTypeIdentifier', function () {
 	ensureNoDisposablesAreLeakedInTestSuite();
 
-	test('supports notebook type only', function () {
+	test('works', function () {
 		const viewType = 'testViewType';
-		const type = NotebookWorkingCopyTypeIdentifier.create(viewType);
-		assert.deepEqual(NotebookWorkingCopyTypeIdentifier.parse(type), { notebookType: viewType, viewType });
-		assert.strictEqual(NotebookWorkingCopyTypeIdentifier.parse('something'), undefined);
-	});
-
-	test('supports different viewtype', function () {
-		const notebookType = { notebookType: 'testNotebookType', viewType: 'testViewType' };
-		const type = NotebookWorkingCopyTypeIdentifier.create(notebookType.notebookType, notebookType.viewType);
-		assert.deepEqual(NotebookWorkingCopyTypeIdentifier.parse(type), notebookType);
+		const type = NotebookWorkingCopyTypeIdentifier.create('testViewType');
+		assert.strictEqual(NotebookWorkingCopyTypeIdentifier.parse(type), viewType);
 		assert.strictEqual(NotebookWorkingCopyTypeIdentifier.parse('something'), undefined);
 	});
 });

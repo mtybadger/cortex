@@ -1,0 +1,115 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "interrowspace",
+      "arg": {
+        "format": "{}",
+        "snippet": "interrowspace{${1:height spec%keyvals}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "interrowspace",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "interrowspace[${2:line num list}]{${1:height spec%keyvals}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "interrowfill"
+    },
+    {
+      "name": "interrowfill",
+      "arg": {
+        "format": "[]",
+        "snippet": "interrowfill[${1:line num list}]"
+      }
+    },
+    {
+      "name": "interrowstart"
+    },
+    {
+      "name": "interrowstart",
+      "arg": {
+        "format": "[]",
+        "snippet": "interrowstart[${1:line num list}]"
+      }
+    },
+    {
+      "name": "interrowstop"
+    }
+  ],
+  "envs": [
+    {
+      "name": "tabularht",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:height spec%keyvals}}{${2:preamble}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tabularht*",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:height spec%keyvals}}{${2:width}}{${3:preamble}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "arrayht",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:height spec%keyvals}}{${2:preamble}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tabularhtx",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "{${1:height spec%keyvals}}{${2:width}}{${3:preamble}}",
+        "keys": [
+          "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/tabularht#c": [
+      "vlines",
+      "pdftex",
+      "dvips"
+    ],
+    "\\begin{tabularht}#c,\\begin{tabularht*}#c,\\begin{arrayht}#c,\\begin{tabularhtx}#c,\\interrowspace#c": [
+      "to=",
+      "spread="
+    ]
+  },
+  "args": [
+    "\\usepackage/tabularht#c"
+  ]
+}

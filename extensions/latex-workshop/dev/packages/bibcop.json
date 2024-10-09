@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "iexec"
+    },
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "shellesc"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bibcop#c": [
+      "verbose",
+      "script=${1:path}",
+      "nocaps",
+      "nowraps",
+      "nodoi",
+      "noinproc",
+      "noorg",
+      "notags"
+    ]
+  },
+  "args": [
+    "\\usepackage/bibcop#c"
+  ]
+}

@@ -13,9 +13,9 @@ server/test/**
 server/bin/**
 server/build/**
 server/lib/cgmanifest.json
-server/package-lock.json
+server/yarn.lock
 server/.npmignore
-package-lock.json
+yarn.lock
 server/extension.webpack.config.js
 extension.webpack.config.js
 server/extension-browser.webpack.config.js

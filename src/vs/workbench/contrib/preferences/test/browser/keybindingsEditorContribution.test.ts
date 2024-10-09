@@ -4,8 +4,8 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../base/test/common/utils.js';
-import { KeybindingEditorDecorationsRenderer } from '../../browser/keybindingsEditorContribution.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { KeybindingEditorDecorationsRenderer } from 'vs/workbench/contrib/preferences/browser/keybindingsEditorContribution';
 
 suite('KeybindingsEditorContribution', () => {
 

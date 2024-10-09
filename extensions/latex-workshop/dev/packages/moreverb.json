@@ -1,0 +1,90 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "verbatimtabinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "verbatimtabinput{${1:file}}"
+      }
+    },
+    {
+      "name": "verbatimtabinput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "verbatimtabinput[${2:tab width}]{${1:file}}"
+      }
+    },
+    {
+      "name": "verbatimtabsize",
+      "unusual": true
+    },
+    {
+      "name": "listinglabel",
+      "unusual": true
+    },
+    {
+      "name": "listinginput",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "listinginput{${1:start line}}{${2:file}}"
+      }
+    },
+    {
+      "name": "listinginput",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "listinginput[${3:interval}]{${1:start line}}{${2:file}}"
+      }
+    },
+    {
+      "name": "listingoffset",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "verbatimtab"
+    },
+    {
+      "name": "verbatimtab",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:tab width}]"
+      }
+    },
+    {
+      "name": "listing",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:start line}}"
+      }
+    },
+    {
+      "name": "listing",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:interval}]{${1:start line}}"
+      }
+    },
+    {
+      "name": "listingcont"
+    },
+    {
+      "name": "verbatimwrite",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:file}}"
+      }
+    },
+    {
+      "name": "boxedverbatim"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

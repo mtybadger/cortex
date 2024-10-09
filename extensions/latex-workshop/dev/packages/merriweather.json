@@ -1,0 +1,74 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "merriweather"
+    },
+    {
+      "name": "merriweathersans"
+    },
+    {
+      "name": "merriweatherlight"
+    },
+    {
+      "name": "merriweathersanslight"
+    },
+    {
+      "name": "merriweatherblack"
+    },
+    {
+      "name": "merriweathersansblack"
+    },
+    {
+      "name": "merriweatherfamily",
+      "unusual": true
+    },
+    {
+      "name": "merriweathersffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/merriweather#c": [
+      "scaled=${1:factor}",
+      "sf",
+      "rm",
+      "sfdefault",
+      "type1",
+      "light",
+      "rmlight",
+      "sflight",
+      "black",
+      "rmblack",
+      "sfblack",
+      "rmlining",
+      "rmoldstyle",
+      "sflining",
+      "sfoldstyle",
+      "rmtabular",
+      "rmproportional",
+      "sftabular",
+      "sfproportional"
+    ]
+  },
+  "args": [
+    "\\usepackage/merriweather#c"
+  ]
+}

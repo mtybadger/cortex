@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "GetTokens",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "GetTokens{${1:csname1}}{${2:csname2}}{${3:source}}"
+      }
+    },
+    {
+      "name": "TrimSpaces",
+      "arg": {
+        "format": "{}",
+        "snippet": "TrimSpaces{${1:source}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/tokenizer#c": [
+      "trim",
+      "notrim"
+    ]
+  },
+  "args": [
+    "\\usepackage/tokenizer#c"
+  ]
+}

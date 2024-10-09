@@ -1,0 +1,3990 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "unicode-math"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BbbDelta"
+    },
+    {
+      "name": "BbbLambda"
+    },
+    {
+      "name": "BbbOmega"
+    },
+    {
+      "name": "BbbPhi"
+    },
+    {
+      "name": "BbbPsi"
+    },
+    {
+      "name": "BbbSigma"
+    },
+    {
+      "name": "BbbTheta"
+    },
+    {
+      "name": "BbbXi"
+    },
+    {
+      "name": "blacklozenge"
+    },
+    {
+      "name": "blacksquare"
+    },
+    {
+      "name": "Box"
+    },
+    {
+      "name": "centerdot"
+    },
+    {
+      "name": "circlearrowleft"
+    },
+    {
+      "name": "circlearrowright"
+    },
+    {
+      "name": "circledR"
+    },
+    {
+      "name": "circledS"
+    },
+    {
+      "name": "dashleftarrow"
+    },
+    {
+      "name": "dashrightarrow"
+    },
+    {
+      "name": "Diamond"
+    },
+    {
+      "name": "doteqdot"
+    },
+    {
+      "name": "doublecap"
+    },
+    {
+      "name": "doublecup"
+    },
+    {
+      "name": "gggtr"
+    },
+    {
+      "name": "gtreqqslantless"
+    },
+    {
+      "name": "gtreqslantless"
+    },
+    {
+      "name": "gvertneqq"
+    },
+    {
+      "name": "leadsto"
+    },
+    {
+      "name": "lesseqqslantgtr"
+    },
+    {
+      "name": "lesseqslantgtr"
+    },
+    {
+      "name": "lhd"
+    },
+    {
+      "name": "llless"
+    },
+    {
+      "name": "lozenge"
+    },
+    {
+      "name": "lvertneqq"
+    },
+    {
+      "name": "mbfdotlessi"
+    },
+    {
+      "name": "mbfdotlessj"
+    },
+    {
+      "name": "mbfimath"
+    },
+    {
+      "name": "mbfjmath"
+    },
+    {
+      "name": "mithbar"
+    },
+    {
+      "name": "ngeqq"
+    },
+    {
+      "name": "ngeqqslant"
+    },
+    {
+      "name": "ngeqslant"
+    },
+    {
+      "name": "nleqq"
+    },
+    {
+      "name": "nleqqslant"
+    },
+    {
+      "name": "nleqslant"
+    },
+    {
+      "name": "nparallelslant"
+    },
+    {
+      "name": "npreceq"
+    },
+    {
+      "name": "nshortmid"
+    },
+    {
+      "name": "nshortparallel"
+    },
+    {
+      "name": "nshortparallelslant"
+    },
+    {
+      "name": "nsubseteqq"
+    },
+    {
+      "name": "nsucceq"
+    },
+    {
+      "name": "nsupseteqq"
+    },
+    {
+      "name": "ntriangleleft",
+      "detail": "⋪ (\"amssymb\" command)",
+      "doc": "\\notlefttriangle (wrisym), not left triangle"
+    },
+    {
+      "name": "ntriangleright",
+      "detail": "⋫ (\"amssymb\" command)",
+      "doc": "\\notrighttriangle (wrisym), not right triangle"
+    },
+    {
+      "name": "parallelslant "
+    },
+    {
+      "name": "restriction"
+    },
+    {
+      "name": "rhd"
+    },
+    {
+      "name": "shortmid"
+    },
+    {
+      "name": "shortparallel"
+    },
+    {
+      "name": "shortparallelslant"
+    },
+    {
+      "name": "smallfrown"
+    },
+    {
+      "name": "smallsmile"
+    },
+    {
+      "name": "square"
+    },
+    {
+      "name": "thickapprox"
+    },
+    {
+      "name": "thicksim"
+    },
+    {
+      "name": "unlhd"
+    },
+    {
+      "name": "unrhd"
+    },
+    {
+      "name": "varemptyset"
+    },
+    {
+      "name": "varpropto"
+    },
+    {
+      "name": "varsubsetneq"
+    },
+    {
+      "name": "varsubsetneqq"
+    },
+    {
+      "name": "varsupsetneq"
+    },
+    {
+      "name": "varsupsetneqq"
+    },
+    {
+      "name": "acwcirclearrow",
+      "detail": "⥀",
+      "doc": "Anticlockwise closed circle arrow"
+    },
+    {
+      "name": "acwgapcirclearrow",
+      "detail": "⟲",
+      "doc": "Anticlockwise gapped circle arrow"
+    },
+    {
+      "name": "acwleftarcarrow",
+      "detail": "⤹",
+      "doc": "Left-side arc anticlockwise arrow"
+    },
+    {
+      "name": "acwoverarcarrow",
+      "detail": "⤺",
+      "doc": "Top arc anticlockwise arrow"
+    },
+    {
+      "name": "acwunderarcarrow",
+      "detail": "⤻",
+      "doc": "Bottom arc anticlockwise arrow"
+    },
+    {
+      "name": "angdnr",
+      "detail": "⦟",
+      "doc": "Acute angle"
+    },
+    {
+      "name": "angles",
+      "detail": "⦞",
+      "doc": "Angle with s inside"
+    },
+    {
+      "name": "angleubar",
+      "detail": "⦤",
+      "doc": "Angle with underbar"
+    },
+    {
+      "name": "annuity",
+      "arg": {
+        "format": "{}",
+        "snippet": "annuity{${1:arg}}"
+      },
+      "detail": "x⃧",
+      "doc": "Combining annuity symbol"
+    },
+    {
+      "name": "approxeqq",
+      "detail": "⩰",
+      "doc": "Approximately equal or equal to"
+    },
+    {
+      "name": "asteq",
+      "detail": "⩮",
+      "doc": "Equals with asterisk"
+    },
+    {
+      "name": "astrosun",
+      "detail": "☉ (\"mathabx\" command)",
+      "doc": "Sun"
+    },
+    {
+      "name": "backepsilon"
+    },
+    {
+      "name": "bagmember",
+      "detail": "⋿",
+      "doc": "\\mathsf{e}, bag membership"
+    },
+    {
+      "name": "barcap",
+      "detail": "⩃",
+      "doc": "Intersection with overbar"
+    },
+    {
+      "name": "barcup",
+      "detail": "⩂",
+      "doc": "Union with overbar"
+    },
+    {
+      "name": "bardownharpoonleft",
+      "detail": "⥡ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb left from bar"
+    },
+    {
+      "name": "bardownharpoonright",
+      "detail": "⥝ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb right from bar"
+    },
+    {
+      "name": "barleftarrow",
+      "detail": "⇤ (\"wrisym\" command)",
+      "doc": "Leftwards arrow to bar"
+    },
+    {
+      "name": "barleftarrowrightarrowbar"
+    },
+    {
+      "name": "barleftharpoondown",
+      "detail": "⥖ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb down to bar"
+    },
+    {
+      "name": "barleftharpoonup",
+      "detail": "⥒ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb up to bar"
+    },
+    {
+      "name": "barovernorthwestarrow",
+      "detail": "↸",
+      "doc": "North west arrow to long bar"
+    },
+    {
+      "name": "barrightarrowdiamond",
+      "detail": "⤠",
+      "doc": "Rightwards arrow from bar to black diamond"
+    },
+    {
+      "name": "barrightharpoondown",
+      "detail": "⥟ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb down from bar"
+    },
+    {
+      "name": "barrightharpoonup",
+      "detail": "⥛ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb up from bar"
+    },
+    {
+      "name": "baruparrow",
+      "detail": "⤒ (\"wrisym\" command)",
+      "doc": "Upwards arrow to bar"
+    },
+    {
+      "name": "barupharpoonleft",
+      "detail": "⥘ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb left to bar"
+    },
+    {
+      "name": "barupharpoonright",
+      "detail": "⥔ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb right to bar"
+    },
+    {
+      "name": "Barv",
+      "detail": "⫧",
+      "doc": "Short down tack with overbar"
+    },
+    {
+      "name": "barV",
+      "detail": "⫪ (\"txfonts\" command)",
+      "doc": "Double down tack"
+    },
+    {
+      "name": "bbrktbrk",
+      "detail": "⎶",
+      "doc": "Bottom square bracket over top square bracket"
+    },
+    {
+      "name": "benzenr",
+      "detail": "⏣",
+      "doc": "Benzene ring with circle"
+    },
+    {
+      "name": "biginterleave",
+      "detail": "⫼ (\"stmaryrd\" command)",
+      "doc": "Large triple vertical bar operator"
+    },
+    {
+      "name": "bigslopedvee",
+      "detail": "⩗",
+      "doc": "Sloping large or"
+    },
+    {
+      "name": "bigslopedwedge",
+      "detail": "⩘",
+      "doc": "Sloping large and"
+    },
+    {
+      "name": "bigstar",
+      "detail": "★ (\"amssymb\" command)",
+      "doc": "Star, filled"
+    },
+    {
+      "name": "bigtalloblong",
+      "detail": "⫿",
+      "doc": "N-ary white vertical bar"
+    },
+    {
+      "name": "bigtriangleleft",
+      "detail": "⨞",
+      "doc": "Large left triangle operator"
+    },
+    {
+      "name": "bigwhitestar",
+      "detail": "☆",
+      "doc": "Star, open"
+    },
+    {
+      "name": "blackcircledownarrow",
+      "detail": "⧭",
+      "doc": "Black circle with down arrow"
+    },
+    {
+      "name": "blackcircleulquadwhite",
+      "detail": "◕",
+      "doc": "Circle with all but upper left quadrant black"
+    },
+    {
+      "name": "blackdiamonddownarrow",
+      "detail": "⧪",
+      "doc": "Black diamond with down arrow"
+    },
+    {
+      "name": "blackhourglass",
+      "detail": "⧗",
+      "doc": "Black hourglass"
+    },
+    {
+      "name": "blackinwhitediamond",
+      "detail": "◈",
+      "doc": "White diamond containing black small diamond"
+    },
+    {
+      "name": "blackinwhitesquare",
+      "detail": "▣",
+      "doc": "White square containing black small square"
+    },
+    {
+      "name": "blacklefthalfcircle",
+      "detail": "◖ (\"wasysym\" command)",
+      "doc": "Left half black circle"
+    },
+    {
+      "name": "blackpointerleft",
+      "detail": "◄",
+      "doc": "Black left-pointing pointer"
+    },
+    {
+      "name": "blackpointerright",
+      "detail": "►",
+      "doc": "Black right-pointing pointer"
+    },
+    {
+      "name": "blackrighthalfcircle",
+      "detail": "◗ (\"wasysym\" command)",
+      "doc": "Right half black circle"
+    },
+    {
+      "name": "blacktriangle",
+      "detail": "▴ (\"mathabx\" command)",
+      "doc": "Up triangle, filled"
+    },
+    {
+      "name": "blacktriangledown",
+      "detail": "▾ (\"mathabx\" command)",
+      "doc": "Black down-pointing small triangle"
+    },
+    {
+      "name": "blkhorzoval",
+      "detail": "⬬",
+      "doc": "Black horizontal ellipse"
+    },
+    {
+      "name": "blkvertoval",
+      "detail": "⬮",
+      "doc": "Black vertical ellipse"
+    },
+    {
+      "name": "bNot",
+      "detail": "⫭",
+      "doc": "Reversed double stroke not sign"
+    },
+    {
+      "name": "botsemicircle",
+      "detail": "◡",
+      "doc": "Lower half circle"
+    },
+    {
+      "name": "boxast",
+      "detail": "⧆ (\"stmaryrd txfonts\" command)",
+      "doc": "Squared asterisk"
+    },
+    {
+      "name": "boxbar",
+      "detail": "◫ (\"stmaryrd txfonts\" command)",
+      "doc": "Vertical bar in box"
+    },
+    {
+      "name": "boxbox",
+      "detail": "⧈ (\"stmaryrd\" command)",
+      "doc": "Squared square"
+    },
+    {
+      "name": "boxbslash",
+      "detail": "⧅ (\"stmaryrd txfonts\" command)",
+      "doc": "Squared falling diagonal slash"
+    },
+    {
+      "name": "boxcircle",
+      "detail": "⧇ (\"stmaryrd\" command)",
+      "doc": "Squared small circle"
+    },
+    {
+      "name": "boxdiag",
+      "detail": "⧄ (\"stmaryrd txfonts\" command)",
+      "doc": "Squared rising diagonal slash"
+    },
+    {
+      "name": "boxonbox",
+      "detail": "⧉",
+      "doc": "Two joined squares"
+    },
+    {
+      "name": "bsimilarleftarrow",
+      "detail": "⭁",
+      "doc": "Reverse tilde operator above leftwards arrow"
+    },
+    {
+      "name": "bsimilarrightarrow",
+      "detail": "⭇",
+      "doc": "Reverse tilde operator above rightwards arrow"
+    },
+    {
+      "name": "bsolhsub",
+      "detail": "⟈",
+      "doc": "Reverse solidus preceding subset"
+    },
+    {
+      "name": "btimes",
+      "detail": "⨲",
+      "doc": "Semidirect product with bottom closed"
+    },
+    {
+      "name": "bullseye",
+      "detail": "◎",
+      "doc": "\\circledcirc (amssymb), bullseye"
+    },
+    {
+      "name": "bumpeqq",
+      "detail": "⪮",
+      "doc": "Equals sign with bumpy above"
+    },
+    {
+      "name": "candra",
+      "arg": {
+        "format": "{}",
+        "snippet": "candra{${1:arg}}"
+      },
+      "detail": " ̐",
+      "doc": "Candrabindu (non-spacing)"
+    },
+    {
+      "name": "capbarcup",
+      "detail": "⩉",
+      "doc": "Intersection above bar above union"
+    },
+    {
+      "name": "capdot",
+      "detail": "⩀",
+      "doc": "Intersection with dot"
+    },
+    {
+      "name": "capovercup",
+      "detail": "⩇",
+      "doc": "Intersection above union"
+    },
+    {
+      "name": "capwedge",
+      "detail": "⩄",
+      "doc": "Intersection with logical and"
+    },
+    {
+      "name": "caretinsert",
+      "detail": "‸",
+      "doc": "Caret (insertion mark)"
+    },
+    {
+      "name": "ccwundercurvearrow",
+      "detail": "⤿",
+      "doc": "Lower left semicircular anticlockwise arrow"
+    },
+    {
+      "name": "cirbot",
+      "detail": "⟟",
+      "doc": "Up tack with circle above"
+    },
+    {
+      "name": "circlebottomhalfblack",
+      "detail": "◒",
+      "doc": "Circle, filled bottom half"
+    },
+    {
+      "name": "circledbullet",
+      "detail": "⦿",
+      "doc": "Circled bullet"
+    },
+    {
+      "name": "circledownarrow",
+      "detail": "⧬",
+      "doc": "White circle with down arrow"
+    },
+    {
+      "name": "circledparallel",
+      "detail": "⦷",
+      "doc": "Circled parallel"
+    },
+    {
+      "name": "circledvert",
+      "detail": "⦶",
+      "doc": "Circled vertical bar"
+    },
+    {
+      "name": "circledwhitebullet",
+      "detail": "⦾",
+      "doc": "Circled white bullet"
+    },
+    {
+      "name": "circlehbar",
+      "detail": "⦵",
+      "doc": "Circle with horizontal bar"
+    },
+    {
+      "name": "circlelefthalfblack",
+      "detail": "◐ (\"wasysym\" command)",
+      "doc": "Circle, filled left half [harvey ball]"
+    },
+    {
+      "name": "circlellquad",
+      "detail": "◵",
+      "doc": "White circle with lower left quadrant"
+    },
+    {
+      "name": "circlelrquad",
+      "detail": "◶",
+      "doc": "White circle with lower right quadrant"
+    },
+    {
+      "name": "circleonleftarrow",
+      "detail": "⬰",
+      "doc": "Left arrow with small circle"
+    },
+    {
+      "name": "circleonrightarrow",
+      "detail": "⇴",
+      "doc": "Right arrow with small circle"
+    },
+    {
+      "name": "circlerighthalfblack",
+      "detail": "◑ (\"wasysym\" command)",
+      "doc": "Circle, filled right half"
+    },
+    {
+      "name": "circletophalfblack",
+      "detail": "◓",
+      "doc": "Circle, filled top half"
+    },
+    {
+      "name": "circleulquad",
+      "detail": "◴",
+      "doc": "White circle with upper left quadrant"
+    },
+    {
+      "name": "circleurquad",
+      "detail": "◷",
+      "doc": "White circle with upper right quadrant"
+    },
+    {
+      "name": "circleurquadblack",
+      "detail": "◔",
+      "doc": "Circle with upper right quadrant black"
+    },
+    {
+      "name": "circlevertfill",
+      "detail": "◍",
+      "doc": "Circle with vertical fill"
+    },
+    {
+      "name": "cirE",
+      "detail": "⧃",
+      "doc": "Circle with two horizontal strokes to the right"
+    },
+    {
+      "name": "cirmid",
+      "detail": "⫯",
+      "doc": "Vertical line with circle above"
+    },
+    {
+      "name": "cirscir",
+      "detail": "⧂",
+      "doc": "Circle with small circle to the right"
+    },
+    {
+      "name": "closedvarcap",
+      "detail": "⩍",
+      "doc": "Closed intersection with serifs"
+    },
+    {
+      "name": "closedvarcup",
+      "detail": "⩌",
+      "doc": "Closed union with serifs"
+    },
+    {
+      "name": "closedvarcupsmashprod",
+      "detail": "⩐",
+      "doc": "Closed union with serifs and smash product"
+    },
+    {
+      "name": "closure",
+      "detail": "⁐",
+      "doc": "Close up (editing mark)"
+    },
+    {
+      "name": "Coloneq",
+      "detail": "⩴ (\"txfonts\" command)",
+      "doc": "::=, \\coloneq (txfonts), double colon equal"
+    },
+    {
+      "name": "commaminus",
+      "detail": "⨩",
+      "doc": "Minus sign with comma above"
+    },
+    {
+      "name": "congdot",
+      "detail": "⩭",
+      "doc": "Congruent with dot above"
+    },
+    {
+      "name": "conjquant",
+      "detail": "⨇",
+      "doc": "Two logical and operator"
+    },
+    {
+      "name": "csub",
+      "detail": "⫏",
+      "doc": "Closed subset"
+    },
+    {
+      "name": "csube",
+      "detail": "⫑",
+      "doc": "Closed subset or equal to"
+    },
+    {
+      "name": "csup",
+      "detail": "⫐",
+      "doc": "Closed superset"
+    },
+    {
+      "name": "csupe",
+      "detail": "⫒",
+      "doc": "Closed superset or equal to"
+    },
+    {
+      "name": "cuberoot",
+      "arg": {
+        "format": "{}",
+        "snippet": "cuberoot{${1:arg}}"
+      },
+      "detail": "∛",
+      "doc": "Cube root"
+    },
+    {
+      "name": "cuberootsign",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cuberootsign{${1:arg}}"
+      }
+    },
+    {
+      "name": "cupbarcap",
+      "detail": "⩈",
+      "doc": "Union above bar above intersection"
+    },
+    {
+      "name": "cupovercap",
+      "detail": "⩆",
+      "doc": "Union above intersection"
+    },
+    {
+      "name": "cupvee",
+      "detail": "⩅",
+      "doc": "Union with logical or"
+    },
+    {
+      "name": "curvearrowleftplus",
+      "detail": "⤽",
+      "doc": "Top arc anticlockwise arrow with plus"
+    },
+    {
+      "name": "curvearrowrightminus",
+      "detail": "⤼",
+      "doc": "Top arc clockwise arrow with minus"
+    },
+    {
+      "name": "cwcirclearrow",
+      "detail": "⥁",
+      "doc": "Clockwise closed circle arrow"
+    },
+    {
+      "name": "cwgapcirclearrow",
+      "detail": "⟳",
+      "doc": "Clockwise gapped circle arrow"
+    },
+    {
+      "name": "cwrightarcarrow",
+      "detail": "⤸",
+      "doc": "Right-side arc clockwise arrow"
+    },
+    {
+      "name": "cwundercurvearrow",
+      "detail": "⤾",
+      "doc": "Lower right semicircular clockwise arrow"
+    },
+    {
+      "name": "danger",
+      "detail": "☡",
+      "doc": "Caution sign, dangerous bend"
+    },
+    {
+      "name": "dashleftharpoondown",
+      "detail": "⥫ (\"mathabx\" command)",
+      "doc": "Leftwards harpoon with barb down below long dash"
+    },
+    {
+      "name": "dashrightharpoondown",
+      "detail": "⥭ (\"mathabx\" command)",
+      "doc": "Rightwards harpoon with barb down below long dash"
+    },
+    {
+      "name": "dashV",
+      "detail": "⫣",
+      "doc": "Double vertical bar left turnstile"
+    },
+    {
+      "name": "Dashv",
+      "detail": "⫤",
+      "doc": "Vertical bar double left turnstile"
+    },
+    {
+      "name": "DashV",
+      "detail": "⫥",
+      "doc": "Double vertical bar double left turnstile"
+    },
+    {
+      "name": "dbkarow",
+      "detail": "⤏",
+      "doc": "Rightwards triple dash arrow"
+    },
+    {
+      "name": "dbkarrow"
+    },
+    {
+      "name": "ddotseq",
+      "detail": "⩷",
+      "doc": "Equals sign with two dots above and two dots below"
+    },
+    {
+      "name": "DDownarrow",
+      "detail": "⟱",
+      "doc": "Downwards quadruple arrow"
+    },
+    {
+      "name": "Ddownarrow",
+      "detail": "⤋",
+      "doc": "Downwards triple arrow"
+    },
+    {
+      "name": "diamondbotblack",
+      "detail": "⬙",
+      "doc": "Diamond with bottom half black"
+    },
+    {
+      "name": "diamondcdot",
+      "detail": "⟐ (\"txfonts\" command)",
+      "doc": "White diamond with centred dot"
+    },
+    {
+      "name": "diamondleftarrow",
+      "detail": "⤝",
+      "doc": "Leftwards arrow to black diamond"
+    },
+    {
+      "name": "diamondleftarrowbar",
+      "detail": "⤟",
+      "doc": "Leftwards arrow from bar to black diamond"
+    },
+    {
+      "name": "diamondleftblack",
+      "detail": "⬖",
+      "doc": "Diamond with left half black"
+    },
+    {
+      "name": "diamondrightblack",
+      "detail": "⬗",
+      "doc": "Diamond with right half black"
+    },
+    {
+      "name": "diamondtopblack",
+      "detail": "⬘",
+      "doc": "Diamond with top half black"
+    },
+    {
+      "name": "Digamma"
+    },
+    {
+      "name": "digamma"
+    },
+    {
+      "name": "disin",
+      "detail": "⋲",
+      "doc": "Element of with long horizontal stroke"
+    },
+    {
+      "name": "disjquant",
+      "detail": "⨈",
+      "doc": "Two logical or operator"
+    },
+    {
+      "name": "dotequiv",
+      "detail": "⩧",
+      "doc": "Identical with dot above"
+    },
+    {
+      "name": "dotsim",
+      "detail": "⩪",
+      "doc": "Tilde operator with dot above"
+    },
+    {
+      "name": "dottedcircle",
+      "detail": "◌",
+      "doc": "Dotted circle"
+    },
+    {
+      "name": "dottimes",
+      "detail": "⨰",
+      "doc": "Multiplication sign with dot above"
+    },
+    {
+      "name": "doublebarvee",
+      "detail": "⩢",
+      "doc": "Logical or with double overbar"
+    },
+    {
+      "name": "doublebarwedge",
+      "detail": "⩞ (\"amssymb\" command)",
+      "doc": "Logical and with double overbar"
+    },
+    {
+      "name": "doubleplus",
+      "detail": "⧺",
+      "doc": "Double plus"
+    },
+    {
+      "name": "downarrowbar",
+      "detail": "⤓ (\"wrisym\" command)",
+      "doc": "Downwards arrow to bar"
+    },
+    {
+      "name": "downarrowbarred",
+      "detail": "⤈",
+      "doc": "Downwards arrow with horizontal stroke"
+    },
+    {
+      "name": "downdasharrow",
+      "detail": "⇣",
+      "doc": "Downwards dashed arrow"
+    },
+    {
+      "name": "downfishtail",
+      "detail": "⥿",
+      "doc": "Down fish tail"
+    },
+    {
+      "name": "downharpoonleftbar",
+      "detail": "⥙ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb left to bar"
+    },
+    {
+      "name": "downharpoonrightbar",
+      "detail": "⥕ (\"wrisym\" command)",
+      "doc": "Downwards harpoon with barb right to bar"
+    },
+    {
+      "name": "downharpoonsleftright",
+      "detail": "⥥ (\"mathabx\" command)",
+      "doc": "Downwards harpoon with barb left beside downwards harpoon with barb right"
+    },
+    {
+      "name": "downrightcurvedarrow",
+      "detail": "⤵",
+      "doc": "Arrow pointing rightwards then curving downwards"
+    },
+    {
+      "name": "downtriangleleftblack",
+      "detail": "⧨",
+      "doc": "Down-pointing triangle with left half black"
+    },
+    {
+      "name": "downtrianglerightblack",
+      "detail": "⧩",
+      "doc": "Down-pointing triangle with right half black"
+    },
+    {
+      "name": "downupharpoonsleftright",
+      "detail": "⥯ (\"mathabx\" command)",
+      "doc": "\\uprevequilibrium (wrisym), downwards harpoon with barb left beside upwards harpoon with barb right"
+    },
+    {
+      "name": "downzigzagarrow",
+      "detail": "↯ (\"stmaryrd -wasysym\" command)",
+      "doc": "T \\lightning (marvosym), downwards zigzag arrow"
+    },
+    {
+      "name": "draftingarrow",
+      "detail": "➛",
+      "doc": "Right arrow with bold head (drafting)"
+    },
+    {
+      "name": "drbkarow",
+      "detail": "⤐",
+      "doc": "Rightwards two-headed triple dash arrow"
+    },
+    {
+      "name": "drbkarrow"
+    },
+    {
+      "name": "droang",
+      "arg": {
+        "format": "{}",
+        "snippet": "droang{${1:arg}}"
+      },
+      "detail": " ̚",
+      "doc": "Left angle above (non-spacing)"
+    },
+    {
+      "name": "dsol",
+      "detail": "⧶",
+      "doc": "Solidus with overbar"
+    },
+    {
+      "name": "dsub",
+      "detail": "⩤ (\"oz\" command)",
+      "doc": "\\ndres (oz), domain antirestriction"
+    },
+    {
+      "name": "dualmap",
+      "detail": "⧟ (\"txfonts\" command)",
+      "doc": "Double-ended multimap"
+    },
+    {
+      "name": "egsdot",
+      "detail": "⪘",
+      "doc": "Slanted equal to or greater-than with dot inside"
+    },
+    {
+      "name": "elsdot",
+      "detail": "⪗",
+      "doc": "Slanted equal to or less-than with dot inside"
+    },
+    {
+      "name": "emptysetoarr",
+      "detail": "⦳",
+      "doc": "Empty set with right arrow above"
+    },
+    {
+      "name": "emptysetoarrl",
+      "detail": "⦴",
+      "doc": "Empty set with left arrow above"
+    },
+    {
+      "name": "emptysetobar",
+      "detail": "⦱",
+      "doc": "Empty set with overbar"
+    },
+    {
+      "name": "emptysetocirc",
+      "detail": "⦲",
+      "doc": "Empty set with small circle above"
+    },
+    {
+      "name": "enleadertwodots",
+      "detail": "‥",
+      "doc": "Double baseline dot (en leader)"
+    },
+    {
+      "name": "eparsl",
+      "detail": "⧣",
+      "doc": "Equals sign and slanted parallel"
+    },
+    {
+      "name": "eqdot",
+      "detail": "⩦",
+      "doc": "Equals sign with dot below"
+    },
+    {
+      "name": "eqeq",
+      "detail": "⩵ (\"wrisym\" command)",
+      "doc": "==, two consecutive equals signs"
+    },
+    {
+      "name": "eqeqeq",
+      "detail": "⩶ (\"wrisym\" command)",
+      "doc": "===, three consecutive equals signs"
+    },
+    {
+      "name": "eqqgtr",
+      "detail": "⪚",
+      "doc": "Double-line equal to or greater-than"
+    },
+    {
+      "name": "eqqless",
+      "detail": "⪙",
+      "doc": "Double-line equal to or less-than"
+    },
+    {
+      "name": "eqqplus",
+      "detail": "⩱",
+      "doc": "Equals sign above plus sign"
+    },
+    {
+      "name": "eqqsim",
+      "detail": "⩳",
+      "doc": "Equals sign above tilde operator"
+    },
+    {
+      "name": "eqqslantgtr",
+      "detail": "⪜",
+      "doc": "Double-line slanted equal to or greater-than"
+    },
+    {
+      "name": "eqqslantless",
+      "detail": "⪛",
+      "doc": "Double-line slanted equal to or less-than"
+    },
+    {
+      "name": "equalleftarrow",
+      "detail": "⭀",
+      "doc": "Equals sign above leftwards arrow"
+    },
+    {
+      "name": "equalrightarrow",
+      "detail": "⥱",
+      "doc": "Equals sign above rightwards arrow"
+    },
+    {
+      "name": "equivDD",
+      "detail": "⩸",
+      "doc": "Equivalent with four dots above"
+    },
+    {
+      "name": "equivVert",
+      "detail": "⩨",
+      "doc": "Triple horizontal bar with double vertical stroke"
+    },
+    {
+      "name": "equivVvert",
+      "detail": "⩩",
+      "doc": "Triple horizontal bar with triple vertical stroke"
+    },
+    {
+      "name": "eqvparsl",
+      "detail": "⧥",
+      "doc": "Identical to and slanted parallel"
+    },
+    {
+      "name": "errbarblackcircle",
+      "detail": "⧳",
+      "doc": "Error-barred black circle"
+    },
+    {
+      "name": "errbarblackdiamond",
+      "detail": "⧱",
+      "doc": "Error-barred black diamond"
+    },
+    {
+      "name": "errbarblacksquare",
+      "detail": "⧯",
+      "doc": "Error-barred black square"
+    },
+    {
+      "name": "errbarcircle",
+      "detail": "⧲",
+      "doc": "Error-barred white circle"
+    },
+    {
+      "name": "errbardiamond",
+      "detail": "⧰",
+      "doc": "Error-barred white diamond"
+    },
+    {
+      "name": "errbarsquare",
+      "detail": "⧮",
+      "doc": "Error-barred white square"
+    },
+    {
+      "name": "Exclam",
+      "detail": "‼",
+      "doc": "!!, double exclamation mark"
+    },
+    {
+      "name": "fbowtie",
+      "detail": "⧓",
+      "doc": "Black bowtie"
+    },
+    {
+      "name": "fcmp",
+      "detail": "⨾ (\"oz\" command)",
+      "doc": "\\comp (oz), relational composition"
+    },
+    {
+      "name": "fdiagovnearrow",
+      "detail": "⤯",
+      "doc": "Falling diagonal crossing north east arrow"
+    },
+    {
+      "name": "fdiagovrdiag",
+      "detail": "⤬",
+      "doc": "Falling diagonal crossing rising diagonal"
+    },
+    {
+      "name": "fint",
+      "detail": "⨏ (\"esint wrisym\" command)",
+      "doc": "Integral average with slash"
+    },
+    {
+      "name": "Finv",
+      "detail": "Ⅎ (\"amssymb\" command)",
+      "doc": "Turned capital f"
+    },
+    {
+      "name": "fisheye",
+      "detail": "◉",
+      "doc": "Fisheye"
+    },
+    {
+      "name": "fltns",
+      "detail": "⏥",
+      "doc": "Flatness"
+    },
+    {
+      "name": "forks",
+      "detail": "⫝̸",
+      "doc": "Forking"
+    },
+    {
+      "name": "forksnot",
+      "detail": "⫝",
+      "doc": "Nonforking"
+    },
+    {
+      "name": "forkv",
+      "detail": "⫙",
+      "doc": "Element of opening downwards"
+    },
+    {
+      "name": "fourthroot",
+      "arg": {
+        "format": "{}",
+        "snippet": "fourthroot{${1:arg}}"
+      },
+      "detail": "∜",
+      "doc": "Fourth root"
+    },
+    {
+      "name": "fourthrootsign",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "fourthrootsign{${1:arg}}"
+      }
+    },
+    {
+      "name": "fourvdots",
+      "detail": "⦙",
+      "doc": "Dotted fence"
+    },
+    {
+      "name": "fullouterjoin",
+      "detail": "⟗",
+      "doc": "Full outer join"
+    },
+    {
+      "name": "Game",
+      "detail": "⅁",
+      "doc": "\\game (amssymb), turned sans-serif capital g (amssymb has mirrored g)"
+    },
+    {
+      "name": "geqqslant",
+      "detail": "⫺",
+      "doc": "Double-line slanted greater-than or equal to"
+    },
+    {
+      "name": "gescc",
+      "detail": "⪩",
+      "doc": "Greater-than closed by curve above slanted equal"
+    },
+    {
+      "name": "gesdot",
+      "detail": "⪀",
+      "doc": "Greater-than or slanted equal to with dot inside"
+    },
+    {
+      "name": "gesdoto",
+      "detail": "⪂",
+      "doc": "Greater-than or slanted equal to with dot above"
+    },
+    {
+      "name": "gesdotol",
+      "detail": "⪄",
+      "doc": "Greater-than or slanted equal to with dot above left"
+    },
+    {
+      "name": "gesles",
+      "detail": "⪔",
+      "doc": "Greater-than above slanted equal above less-than above slanted equal"
+    },
+    {
+      "name": "gggnest",
+      "detail": "⫸",
+      "doc": "Triple nested greater-than"
+    },
+    {
+      "name": "gla",
+      "detail": "⪥",
+      "doc": "Greater-than beside less-than"
+    },
+    {
+      "name": "glE",
+      "detail": "⪒",
+      "doc": "Greater-than above less-than above double-line equal"
+    },
+    {
+      "name": "gleichstark",
+      "detail": "⧦",
+      "doc": "Gleich stark"
+    },
+    {
+      "name": "glj",
+      "detail": "⪤",
+      "doc": "Greater-than overlapping less-than"
+    },
+    {
+      "name": "gsime",
+      "detail": "⪎",
+      "doc": "Greater-than above similar or equal"
+    },
+    {
+      "name": "gsiml",
+      "detail": "⪐",
+      "doc": "Greater-than above similar above less-than"
+    },
+    {
+      "name": "Gt",
+      "detail": "⪢ (\"wrisym\" command)",
+      "doc": "\\ggg (mathabx -amssymb), double nested greater-than"
+    },
+    {
+      "name": "gtcc",
+      "detail": "⪧ (\"stmaryrd\" command)",
+      "doc": "Greater-than closed by curve"
+    },
+    {
+      "name": "gtcir",
+      "detail": "⩺",
+      "doc": "Greater-than with circle inside"
+    },
+    {
+      "name": "gtlpar",
+      "detail": "⦠",
+      "doc": "Spherical angle opening left"
+    },
+    {
+      "name": "gtquest",
+      "detail": "⩼",
+      "doc": "Greater-than with question mark above"
+    },
+    {
+      "name": "gtrarr",
+      "detail": "⥸",
+      "doc": "Greater-than above rightwards arrow"
+    },
+    {
+      "name": "hatapprox",
+      "detail": "⩯",
+      "doc": "Almost equal to with circumflex accent"
+    },
+    {
+      "name": "hexagon",
+      "detail": "⎔",
+      "doc": "Horizontal benzene ring [hexagon flat open]"
+    },
+    {
+      "name": "hexagonblack",
+      "detail": "⬣",
+      "doc": "Horizontal black hexagon"
+    },
+    {
+      "name": "hknearrow",
+      "detail": "⤤",
+      "doc": "North east arrow with hook"
+    },
+    {
+      "name": "hknwarrow",
+      "detail": "⤣",
+      "doc": "North west arrow with hook"
+    },
+    {
+      "name": "hksearow",
+      "detail": "⤥",
+      "doc": "South east arrow with hook"
+    },
+    {
+      "name": "hksearrow"
+    },
+    {
+      "name": "hkswarow",
+      "detail": "⤦",
+      "doc": "South west arrow with hook"
+    },
+    {
+      "name": "hkswarrow"
+    },
+    {
+      "name": "hourglass",
+      "detail": "⧖",
+      "doc": "White hourglass"
+    },
+    {
+      "name": "house",
+      "detail": "⌂",
+      "doc": "House"
+    },
+    {
+      "name": "hyphenbullet",
+      "detail": "⁃",
+      "doc": "Rectangle, filled (hyphen bullet)"
+    },
+    {
+      "name": "iinfin",
+      "detail": "⧜",
+      "doc": "Incomplete infinity"
+    },
+    {
+      "name": "intbar",
+      "detail": "⨍",
+      "doc": "Finite part integral"
+    },
+    {
+      "name": "intBar",
+      "detail": "⨎",
+      "doc": "Integral with double stroke"
+    },
+    {
+      "name": "interleave",
+      "detail": "⫴ (\"stmaryrd\" command)",
+      "doc": "Triple vertical bar binary relation"
+    },
+    {
+      "name": "intextender",
+      "unusual": true,
+      "detail": "⎮",
+      "doc": "Integral extension"
+    },
+    {
+      "name": "intprod",
+      "detail": "⨼",
+      "doc": "Interior product"
+    },
+    {
+      "name": "intprodr",
+      "detail": "⨽",
+      "doc": "Righthand interior product"
+    },
+    {
+      "name": "inversebullet",
+      "detail": "◘",
+      "doc": "Inverse bullet"
+    },
+    {
+      "name": "inversewhitecircle",
+      "detail": "◙",
+      "doc": "Inverse white circle"
+    },
+    {
+      "name": "invwhitelowerhalfcircle",
+      "detail": "◛",
+      "doc": "Lower half inverse white circle"
+    },
+    {
+      "name": "invwhiteupperhalfcircle",
+      "detail": "◚",
+      "doc": "Upper half inverse white circle"
+    },
+    {
+      "name": "isindot",
+      "detail": "⋵",
+      "doc": "Element of with dot above"
+    },
+    {
+      "name": "isinE",
+      "detail": "⋹",
+      "doc": "Element of with two horizontal strokes"
+    },
+    {
+      "name": "isinobar",
+      "detail": "⋷",
+      "doc": "Small element of with overbar"
+    },
+    {
+      "name": "isins",
+      "detail": "⋴",
+      "doc": "Small element of with vertical bar at end of horizontal stroke"
+    },
+    {
+      "name": "isinvb",
+      "detail": "⋸",
+      "doc": "Element of with underbar"
+    },
+    {
+      "name": "Join",
+      "detail": "⨝ (\"amssymb\" command)",
+      "doc": "Join"
+    },
+    {
+      "name": "langledot",
+      "detail": "⦑",
+      "doc": "Left angle bracket with dot"
+    },
+    {
+      "name": "laplac",
+      "detail": "⧠",
+      "doc": "Square with contoured outline"
+    },
+    {
+      "name": "lat",
+      "detail": "⪫",
+      "doc": "Larger than"
+    },
+    {
+      "name": "late",
+      "detail": "⪭",
+      "doc": "Larger than or equal to"
+    },
+    {
+      "name": "lbag",
+      "detail": "⟅ (\"stmaryrd txfonts\" command)",
+      "doc": "\\lbag (stmaryrd -oz), left s-shaped bag delimiter"
+    },
+    {
+      "name": "lblkbrbrak",
+      "detail": "⦗",
+      "doc": "Left black tortoise shell bracket"
+    },
+    {
+      "name": "lbracklltick",
+      "detail": "⦏",
+      "doc": "Left square bracket with tick in bottom corner"
+    },
+    {
+      "name": "lbrackubar",
+      "detail": "⦋",
+      "doc": "Left square bracket with underbar"
+    },
+    {
+      "name": "lbrackultick",
+      "detail": "⦍",
+      "doc": "Left square bracket with tick in top corner"
+    },
+    {
+      "name": "Lbrbrak",
+      "detail": "〘",
+      "doc": "Left white tortoise shell bracket"
+    },
+    {
+      "name": "lbrbrak",
+      "detail": "〔",
+      "doc": "Left broken bracket"
+    },
+    {
+      "name": "lcurvyangle",
+      "detail": "⧼",
+      "doc": "Left pointing curved angle bracket"
+    },
+    {
+      "name": "leftarrowapprox",
+      "detail": "⭊",
+      "doc": "Leftwards arrow above almost equal to"
+    },
+    {
+      "name": "leftarrowbackapprox",
+      "detail": "⭂",
+      "doc": "Leftwards arrow above reverse almost equal to"
+    },
+    {
+      "name": "leftarrowbsimilar",
+      "detail": "⭋",
+      "doc": "Leftwards arrow above reverse tilde operator"
+    },
+    {
+      "name": "leftarrowless",
+      "detail": "⥷",
+      "doc": "Leftwards arrow through less-than"
+    },
+    {
+      "name": "leftarrowonoplus",
+      "detail": "⬲",
+      "doc": "Left arrow with circled plus"
+    },
+    {
+      "name": "leftarrowplus",
+      "detail": "⥆",
+      "doc": "Leftwards arrow with plus below"
+    },
+    {
+      "name": "leftarrowshortrightarrow",
+      "detail": "⥃",
+      "doc": "Leftwards arrow above short rightwards arrow"
+    },
+    {
+      "name": "leftarrowsimilar",
+      "detail": "⥳",
+      "doc": "Leftwards arrow above tilde operator"
+    },
+    {
+      "name": "leftarrowsubset",
+      "detail": "⥺",
+      "doc": "Leftwards arrow through subset"
+    },
+    {
+      "name": "leftarrowtriangle",
+      "detail": "⇽ (\"stmaryrd\" command)",
+      "doc": "Leftwards open-headed arrow"
+    },
+    {
+      "name": "leftarrowx",
+      "detail": "⬾",
+      "doc": "Leftwards arrow through x"
+    },
+    {
+      "name": "leftbkarrow",
+      "detail": "⤌",
+      "doc": "Leftwards double dash arrow"
+    },
+    {
+      "name": "leftcurvedarrow",
+      "detail": "⬿",
+      "doc": "Wave arrow pointing directly left"
+    },
+    {
+      "name": "leftdasharrow",
+      "detail": "⇠ (\"amsfonts\" command)",
+      "doc": "Leftwards dashed arrow"
+    },
+    {
+      "name": "leftdbkarrow",
+      "detail": "⤎",
+      "doc": "Leftwards triple dash arrow"
+    },
+    {
+      "name": "leftdbltail",
+      "detail": "⤛",
+      "doc": "Leftwards double arrow-tail"
+    },
+    {
+      "name": "leftdotarrow",
+      "detail": "⬸",
+      "doc": "Leftwards arrow with dotted stem"
+    },
+    {
+      "name": "leftdowncurvedarrow",
+      "detail": "⤶",
+      "doc": "Arrow pointing downwards then curving leftwards"
+    },
+    {
+      "name": "leftfishtail",
+      "detail": "⥼ (\"txfonts\" command)",
+      "doc": "Left fish tail"
+    },
+    {
+      "name": "leftharpoondownbar",
+      "detail": "⥞ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb down from bar"
+    },
+    {
+      "name": "leftharpoonsupdown",
+      "detail": "⥢ (\"mathabx\" command)",
+      "doc": "Leftwards harpoon with barb up above leftwards harpoon with barb down"
+    },
+    {
+      "name": "leftharpoonupbar",
+      "detail": "⥚ (\"wrisym\" command)",
+      "doc": "Leftwards harpoon with barb up from bar"
+    },
+    {
+      "name": "leftharpoonupdash",
+      "detail": "⥪ (\"mathabx\" command)",
+      "doc": "Leftwards harpoon with barb up above long dash"
+    },
+    {
+      "name": "leftouterjoin",
+      "detail": "⟕",
+      "doc": "Left outer join"
+    },
+    {
+      "name": "leftrightarrowcircle",
+      "detail": "⥈",
+      "doc": "Left right arrow through small circle"
+    },
+    {
+      "name": "leftrightarrowtriangle",
+      "detail": "⇿ (\"stmaryrd\" command)",
+      "doc": "Left right open-headed arrow"
+    },
+    {
+      "name": "leftrightharpoondowndown",
+      "detail": "⥐ (\"wrisym\" command)",
+      "doc": "Left barb down right barb down harpoon"
+    },
+    {
+      "name": "leftrightharpoondownup",
+      "detail": "⥋ (\"mathabx\" command)",
+      "doc": "Left barb down right barb up harpoon"
+    },
+    {
+      "name": "leftrightharpoonsdown",
+      "detail": "⥧",
+      "doc": "Leftwards harpoon with barb down above rightwards harpoon with barb down"
+    },
+    {
+      "name": "leftrightharpoonsup",
+      "detail": "⥦",
+      "doc": "Leftwards harpoon with barb up above rightwards harpoon with barb up"
+    },
+    {
+      "name": "leftrightharpoonupdown",
+      "detail": "⥊ (\"mathabx\" command)",
+      "doc": "Left barb up right barb down harpoon"
+    },
+    {
+      "name": "leftrightharpoonupup",
+      "detail": "⥎ (\"wrisym\" command)",
+      "doc": "Left barb up right barb up harpoon"
+    },
+    {
+      "name": "lefttail",
+      "detail": "⤙",
+      "doc": "Leftwards arrow-tail"
+    },
+    {
+      "name": "leftwavearrow",
+      "detail": "↜",
+      "doc": "Left arrow-wavy"
+    },
+    {
+      "name": "leqqslant",
+      "detail": "⫹",
+      "doc": "Double-line slanted less-than or equal to"
+    },
+    {
+      "name": "lescc",
+      "detail": "⪨",
+      "doc": "Less-than closed by curve above slanted equal"
+    },
+    {
+      "name": "lesdot",
+      "detail": "⩿",
+      "doc": "Less-than or slanted equal to with dot inside"
+    },
+    {
+      "name": "lesdoto",
+      "detail": "⪁",
+      "doc": "Less-than or slanted equal to with dot above"
+    },
+    {
+      "name": "lesdotor",
+      "detail": "⪃",
+      "doc": "Less-than or slanted equal to with dot above right"
+    },
+    {
+      "name": "lesges",
+      "detail": "⪓",
+      "doc": "Less-than above slanted equal above greater-than above slanted equal"
+    },
+    {
+      "name": "lfbowtie",
+      "detail": "⧑",
+      "doc": "Left black bowtie"
+    },
+    {
+      "name": "lftimes",
+      "detail": "⧔",
+      "doc": "Left black times"
+    },
+    {
+      "name": "lgblkcircle",
+      "detail": "⬤",
+      "doc": "Black large circle"
+    },
+    {
+      "name": "lgblksquare",
+      "detail": "⬛ (\"fourier -amssymb\" command)",
+      "doc": "Black large square"
+    },
+    {
+      "name": "lgE",
+      "detail": "⪑",
+      "doc": "Less-than above greater-than above double-line equal"
+    },
+    {
+      "name": "lgwhtsquare",
+      "detail": "⬜ (\"fourier -amssymb\" command)",
+      "doc": "White large square"
+    },
+    {
+      "name": "llangle",
+      "detail": "⦉ (\"oz\" command)",
+      "doc": "Z notation left binding bracket"
+    },
+    {
+      "name": "llarc",
+      "detail": "◟",
+      "doc": "Lower left quadrant circular arc"
+    },
+    {
+      "name": "llblacktriangle",
+      "detail": "◣",
+      "doc": "Lower left triangle, filled"
+    },
+    {
+      "name": "LLeftarrow",
+      "detail": "⭅",
+      "doc": "Leftwards quadruple arrow"
+    },
+    {
+      "name": "lllnest",
+      "detail": "⫷",
+      "doc": "Triple nested less-than"
+    },
+    {
+      "name": "llparenthesis",
+      "detail": "⦇ (\"oz\" command)",
+      "doc": "\\llparenthesis (stmaryrd), left image bracket"
+    },
+    {
+      "name": "lltriangle",
+      "detail": "◺",
+      "doc": "Lower left triangle"
+    },
+    {
+      "name": "longdivision",
+      "arg": {
+        "format": "{}",
+        "snippet": "longdivision{${1:arg}}"
+      },
+      "detail": "⟌",
+      "doc": "Long division"
+    },
+    {
+      "name": "longdivisionsign",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "longdivisionsign{${1:arg}}"
+      }
+    },
+    {
+      "name": "Lparengtr",
+      "detail": "⦕",
+      "doc": "Double left arc greater-than bracket"
+    },
+    {
+      "name": "lparenless",
+      "detail": "⦓",
+      "doc": "Left arc less-than bracket"
+    },
+    {
+      "name": "lrarc",
+      "detail": "◞",
+      "doc": "Lower right quadrant circular arc"
+    },
+    {
+      "name": "lrblacktriangle",
+      "detail": "◢",
+      "doc": "Lower right triangle, filled"
+    },
+    {
+      "name": "lrtriangle",
+      "detail": "◿",
+      "doc": "Lower right triangle"
+    },
+    {
+      "name": "lrtriangleeq",
+      "detail": "⧡",
+      "doc": "Increases as"
+    },
+    {
+      "name": "lsime",
+      "detail": "⪍",
+      "doc": "Less-than above similar or equal"
+    },
+    {
+      "name": "lsimg",
+      "detail": "⪏",
+      "doc": "Less-than above similar above greater-than"
+    },
+    {
+      "name": "lsqhook",
+      "detail": "⫍",
+      "doc": "Square left open box operator"
+    },
+    {
+      "name": "Lt",
+      "detail": "⪡ (\"wrisym\" command)",
+      "doc": "\\lll (mathabx -amssymb), double nested less-than"
+    },
+    {
+      "name": "ltcc",
+      "detail": "⪦ (\"stmaryrd\" command)",
+      "doc": "Less-than closed by curve"
+    },
+    {
+      "name": "ltcir",
+      "detail": "⩹",
+      "doc": "Less-than with circle inside"
+    },
+    {
+      "name": "ltlarr",
+      "detail": "⥶",
+      "doc": "Less-than above leftwards arrow"
+    },
+    {
+      "name": "ltquest",
+      "detail": "⩻",
+      "doc": "Less-than with question mark above"
+    },
+    {
+      "name": "ltrivb",
+      "detail": "⧏ (\"wrisym\" command)",
+      "doc": "Left triangle beside vertical bar"
+    },
+    {
+      "name": "lvboxline",
+      "detail": "⎸",
+      "doc": "Left vertical box line"
+    },
+    {
+      "name": "lvzigzag",
+      "detail": "⧘",
+      "doc": "Left wiggly fence"
+    },
+    {
+      "name": "Lvzigzag",
+      "detail": "⧚",
+      "doc": "Left double wiggly fence"
+    },
+    {
+      "name": "mbfDigamma",
+      "detail": "𝟊",
+      "doc": "Mathematical bold capital digamma"
+    },
+    {
+      "name": "mbfdigamma",
+      "detail": "𝟋",
+      "doc": "Mathematical bold small digamma"
+    },
+    {
+      "name": "mdblkcircle",
+      "detail": "⚫ (\"txfonts\" command)",
+      "doc": "Medium black circle"
+    },
+    {
+      "name": "mdblkdiamond",
+      "detail": "⬥",
+      "doc": "Black medium diamond"
+    },
+    {
+      "name": "mdblklozenge",
+      "detail": "⬧",
+      "doc": "\\blacklozenge (amssymb), black medium lozenge"
+    },
+    {
+      "name": "mdblksquare",
+      "detail": "◼ (\"amssymb -fourier\" command)",
+      "doc": "Black medium square"
+    },
+    {
+      "name": "mdlgblkdiamond",
+      "detail": "◆ (\"txfonts\" command)",
+      "doc": "Black diamond"
+    },
+    {
+      "name": "mdlgblklozenge",
+      "detail": "⧫ (\"amssymb\" command)",
+      "doc": "Black lozenge"
+    },
+    {
+      "name": "mdlgwhtdiamond",
+      "detail": "◇ (\"amssymb\" command)",
+      "doc": "White diamond; diamond, open"
+    },
+    {
+      "name": "mdsmblkcircle",
+      "detail": "⦁ (\"oz\" command)",
+      "doc": "\\dot (oz), spot"
+    },
+    {
+      "name": "mdsmblksquare",
+      "detail": "◾",
+      "doc": "Black medium small square"
+    },
+    {
+      "name": "mdsmwhtcircle",
+      "detail": "⚬",
+      "doc": "Medium small white circle"
+    },
+    {
+      "name": "mdsmwhtsquare",
+      "detail": "◽",
+      "doc": "White medium small square"
+    },
+    {
+      "name": "mdwhtcircle",
+      "detail": "⚪ (\"txfonts\" command)",
+      "doc": "Medium white circle"
+    },
+    {
+      "name": "mdwhtdiamond",
+      "detail": "⬦",
+      "doc": "White medium diamond"
+    },
+    {
+      "name": "mdwhtlozenge",
+      "detail": "⬨",
+      "doc": "\\lozenge (amssymb), white medium lozenge"
+    },
+    {
+      "name": "mdwhtsquare",
+      "detail": "◻ (\"amssymb -fourier\" command)",
+      "doc": "White medium square"
+    },
+    {
+      "name": "measangledltosw",
+      "detail": "⦯",
+      "doc": "Measured angle with open arm ending in arrow pointing left and down"
+    },
+    {
+      "name": "measangledrtose",
+      "detail": "⦮",
+      "doc": "Measured angle with open arm ending in arrow pointing right and down"
+    },
+    {
+      "name": "measangleldtosw",
+      "detail": "⦫",
+      "doc": "Measured angle with open arm ending in arrow pointing down and left"
+    },
+    {
+      "name": "measanglelutonw",
+      "detail": "⦩",
+      "doc": "Measured angle with open arm ending in arrow pointing up and left"
+    },
+    {
+      "name": "measanglerdtose",
+      "detail": "⦪",
+      "doc": "Measured angle with open arm ending in arrow pointing down and right"
+    },
+    {
+      "name": "measanglerutone",
+      "detail": "⦨",
+      "doc": "Measured angle with open arm ending in arrow pointing up and right"
+    },
+    {
+      "name": "measangleultonw",
+      "detail": "⦭",
+      "doc": "Measured angle with open arm ending in arrow pointing left and up"
+    },
+    {
+      "name": "measangleurtone",
+      "detail": "⦬",
+      "doc": "Measured angle with open arm ending in arrow pointing right and up"
+    },
+    {
+      "name": "measuredangleleft",
+      "detail": "⦛",
+      "doc": "Measured angle opening left"
+    },
+    {
+      "name": "medblackstar",
+      "detail": "⭑",
+      "doc": "Black medium star"
+    },
+    {
+      "name": "medwhitestar",
+      "detail": "⭐",
+      "doc": "White medium star"
+    },
+    {
+      "name": "midbarvee",
+      "detail": "⩝",
+      "doc": "Logical or with horizontal dash"
+    },
+    {
+      "name": "midbarwedge",
+      "detail": "⩜",
+      "doc": "Ogical and with horizontal dash"
+    },
+    {
+      "name": "midcir",
+      "detail": "⫰",
+      "doc": "Vertical line with circle below"
+    },
+    {
+      "name": "minusdot",
+      "detail": "⨪",
+      "doc": "Minus sign with dot below"
+    },
+    {
+      "name": "minusfdots",
+      "detail": "⨫",
+      "doc": "Minus sign with falling dots"
+    },
+    {
+      "name": "minusrdots",
+      "detail": "⨬",
+      "doc": "Minus sign with rising dots"
+    },
+    {
+      "name": "mlcp",
+      "detail": "⫛",
+      "doc": "Transversal intersection"
+    },
+    {
+      "name": "modtwosum",
+      "detail": "⨊",
+      "doc": "Modulo two sum"
+    },
+    {
+      "name": "mscre",
+      "detail": "ℯ (\"urwchancal\" command)",
+      "doc": "/scr e, script small letter e"
+    },
+    {
+      "name": "mscro",
+      "detail": "ℴ (\"urwchancal\" command)",
+      "doc": "Order of (script small o)"
+    },
+    {
+      "name": "neovnwarrow",
+      "detail": "⤱",
+      "doc": "North east arrow crossing north west arrow"
+    },
+    {
+      "name": "neovsearrow",
+      "detail": "⤮",
+      "doc": "North east arrow crossing south east arrow"
+    },
+    {
+      "name": "neswarrow",
+      "detail": "⤢",
+      "doc": "North east and south west arrow"
+    },
+    {
+      "name": "nHdownarrow",
+      "detail": "⇟",
+      "doc": "Downwards arrow with double stroke"
+    },
+    {
+      "name": "nhpar",
+      "detail": "⫲",
+      "doc": "Parallel with horizontal stroke"
+    },
+    {
+      "name": "nHuparrow",
+      "detail": "⇞",
+      "doc": "Upwards arrow with double stroke"
+    },
+    {
+      "name": "nhVvert",
+      "detail": "⫵",
+      "doc": "Triple vertical bar with horizontal stroke"
+    },
+    {
+      "name": "niobar",
+      "detail": "⋾",
+      "doc": "Small contains with overbar"
+    },
+    {
+      "name": "nis",
+      "detail": "⋼",
+      "doc": "Small contains with vertical bar at end of horizontal stroke"
+    },
+    {
+      "name": "nisd",
+      "detail": "⋺",
+      "doc": "Contains with long horizontal stroke"
+    },
+    {
+      "name": "Not",
+      "detail": "⫬",
+      "doc": "Double stroke not sign"
+    },
+    {
+      "name": "nvinfty",
+      "detail": "⧞",
+      "doc": "Infinity negated with vertical bar"
+    },
+    {
+      "name": "nvleftarrow",
+      "detail": "⇷",
+      "doc": "Leftwards arrow with vertical stroke"
+    },
+    {
+      "name": "nVleftarrow",
+      "detail": "⇺",
+      "doc": "Leftwards arrow with double vertical stroke"
+    },
+    {
+      "name": "nvLeftarrow",
+      "detail": "⤂",
+      "doc": "Leftwards double arrow with vertical stroke"
+    },
+    {
+      "name": "nvleftarrowtail",
+      "detail": "⬹",
+      "doc": "Leftwards arrow with tail with vertical stroke"
+    },
+    {
+      "name": "nVleftarrowtail",
+      "detail": "⬺",
+      "doc": "Leftwards arrow with tail with double vertical stroke"
+    },
+    {
+      "name": "nvleftrightarrow",
+      "detail": "⇹",
+      "doc": "Left right arrow with vertical stroke, partial relation"
+    },
+    {
+      "name": "nVleftrightarrow",
+      "detail": "⇼",
+      "doc": "Left right arrow with double vertical stroke, finite relation"
+    },
+    {
+      "name": "nvLeftrightarrow",
+      "detail": "⤄",
+      "doc": "Left right double arrow with vertical stroke"
+    },
+    {
+      "name": "nvrightarrow",
+      "detail": "⇸ (\"oz\" command)",
+      "doc": "Rightwards arrow with vertical stroke, partial function"
+    },
+    {
+      "name": "nVrightarrow",
+      "detail": "⇻ (\"oz\" command)",
+      "doc": "Rightwards arrow with double vertical stroke, finite function"
+    },
+    {
+      "name": "nvRightarrow",
+      "detail": "⤃",
+      "doc": "Rightwards double arrow with vertical stroke"
+    },
+    {
+      "name": "nvrightarrowtail",
+      "detail": "⤔ (\"oz\" command)",
+      "doc": "Rightwards arrow with tail with vertical stroke, partial injection"
+    },
+    {
+      "name": "nVrightarrowtail",
+      "detail": "⤕ (\"oz\" command)",
+      "doc": "Rightwards arrow with tail with double vertical stroke, finite injection"
+    },
+    {
+      "name": "nvtwoheadleftarrow",
+      "detail": "⬴",
+      "doc": "Leftwards two-headed arrow with vertical stroke"
+    },
+    {
+      "name": "nVtwoheadleftarrow",
+      "detail": "⬵",
+      "doc": "Leftwards two-headed arrow with double vertical stroke"
+    },
+    {
+      "name": "nvtwoheadleftarrowtail",
+      "detail": "⬼",
+      "doc": "Leftwards two-headed arrow with tail with vertical stroke"
+    },
+    {
+      "name": "nVtwoheadleftarrowtail",
+      "detail": "⬽",
+      "doc": "Leftwards two-headed arrow with tail with double vertical stroke"
+    },
+    {
+      "name": "nvtwoheadrightarrow",
+      "detail": "⤀ (\"oz\" command)",
+      "doc": "\\psurj (oz), rightwards two-headed arrow with vertical stroke, partial surjection"
+    },
+    {
+      "name": "nVtwoheadrightarrow",
+      "detail": "⤁",
+      "doc": "Rightwards two-headed arrow with double vertical stroke, finite surjection"
+    },
+    {
+      "name": "nvtwoheadrightarrowtail",
+      "detail": "⤗",
+      "doc": "Rightwards two-headed arrow with tail with vertical stroke, surjective injection"
+    },
+    {
+      "name": "nVtwoheadrightarrowtail",
+      "detail": "⤘",
+      "doc": "Rightwards two-headed arrow with tail with double vertical stroke, finite surjective injection"
+    },
+    {
+      "name": "nwovnearrow",
+      "detail": "⤲",
+      "doc": "North west arrow crossing north east arrow"
+    },
+    {
+      "name": "nwsearrow",
+      "detail": "⤡",
+      "doc": "North west and south east arrow"
+    },
+    {
+      "name": "obar",
+      "detail": "⌽",
+      "doc": "\\aplvert{\\circle} (wasysym), \\obar (stmaryrd), apl functional symbol circle stile, circle with vertical bar"
+    },
+    {
+      "name": "obot",
+      "detail": "⦺",
+      "doc": "Circle divided by horizontal bar and top half divided by vertical bar"
+    },
+    {
+      "name": "obslash",
+      "detail": "⦸ (\"txfonts\" command)",
+      "doc": "Circled reverse solidus"
+    },
+    {
+      "name": "ocommatopright",
+      "arg": {
+        "format": "{}",
+        "snippet": "ocommatopright{${1:arg}}"
+      },
+      "detail": " ̕",
+      "doc": "Combining comma above right"
+    },
+    {
+      "name": "odiv",
+      "detail": "⨸",
+      "doc": "Circled division sign"
+    },
+    {
+      "name": "odotslashdot",
+      "detail": "⦼",
+      "doc": "Circled anticlockwise-rotated division sign"
+    },
+    {
+      "name": "ogreaterthan",
+      "detail": "⧁ (\"txfonts\" command)",
+      "doc": "Circled greater-than"
+    },
+    {
+      "name": "olcross",
+      "detail": "⦻",
+      "doc": "Circle with superimposed x"
+    },
+    {
+      "name": "olessthan",
+      "detail": "⧀ (\"txfonts\" command)",
+      "doc": "Circled less-than"
+    },
+    {
+      "name": "operp",
+      "detail": "⦹",
+      "doc": "Circled perpendicular"
+    },
+    {
+      "name": "opluslhrim",
+      "detail": "⨭",
+      "doc": "Plus sign in left half circle"
+    },
+    {
+      "name": "oplusrhrim",
+      "detail": "⨮",
+      "doc": "Plus sign in right half circle"
+    },
+    {
+      "name": "Otimes",
+      "detail": "⨷",
+      "doc": "Multiplication sign in double circle"
+    },
+    {
+      "name": "otimeshat",
+      "detail": "⨶",
+      "doc": "Circled multiplication sign with circumflex accent"
+    },
+    {
+      "name": "otimeslhrim",
+      "detail": "⨴",
+      "doc": "Multiplication sign in left half circle"
+    },
+    {
+      "name": "otimesrhrim",
+      "detail": "⨵",
+      "doc": "Multiplication sign in right half circle"
+    },
+    {
+      "name": "oturnedcomma",
+      "arg": {
+        "format": "{}",
+        "snippet": "oturnedcomma{${1:arg}}"
+      },
+      "detail": " ̒",
+      "doc": "Combining turned comma above"
+    },
+    {
+      "name": "parallelogram",
+      "detail": "▱",
+      "doc": "Parallelogram, open"
+    },
+    {
+      "name": "parallelogramblack",
+      "detail": "▰",
+      "doc": "Black parallelogram"
+    },
+    {
+      "name": "parsim",
+      "detail": "⫳",
+      "doc": "Parallel with tilde operator"
+    },
+    {
+      "name": "partialmeetcontraction",
+      "detail": "⪣",
+      "doc": "Double less-than with underbar"
+    },
+    {
+      "name": "pentagon",
+      "detail": "⬠",
+      "doc": "White pentagon"
+    },
+    {
+      "name": "pentagonblack",
+      "detail": "⬟",
+      "doc": "Black pentagon"
+    },
+    {
+      "name": "perps",
+      "detail": "⫡",
+      "doc": "Perpendicular with s"
+    },
+    {
+      "name": "pitchfork",
+      "detail": "⋔ (\"amssymb\" command)",
+      "doc": "Pitchfork"
+    },
+    {
+      "name": "plusdot",
+      "detail": "⨥",
+      "doc": "Plus sign with dot below"
+    },
+    {
+      "name": "pluseqq",
+      "detail": "⩲",
+      "doc": "Plus sign above equals sign"
+    },
+    {
+      "name": "plushat",
+      "detail": "⨣",
+      "doc": "Plus sign with circumflex accent above"
+    },
+    {
+      "name": "plussim",
+      "detail": "⨦",
+      "doc": "Plus sign with tilde below"
+    },
+    {
+      "name": "plussubtwo",
+      "detail": "⨧",
+      "doc": "Plus sign with subscript two"
+    },
+    {
+      "name": "plustrif",
+      "detail": "⨨",
+      "doc": "Plus sign with black triangle"
+    },
+    {
+      "name": "Prec",
+      "detail": "⪻ (\"mathabx\" command)",
+      "doc": "Double precedes"
+    },
+    {
+      "name": "precapprox",
+      "detail": "⪷ (\"amssymb\" command)",
+      "doc": "Precedes above almost equal to"
+    },
+    {
+      "name": "preceqq",
+      "detail": "⪳ (\"txfonts\" command)",
+      "doc": "Precedes above equals sign"
+    },
+    {
+      "name": "precnapprox",
+      "detail": "⪹ (\"amssymb\" command)",
+      "doc": "Precedes above not almost equal to"
+    },
+    {
+      "name": "precneq",
+      "detail": "⪱",
+      "doc": "Precedes above single-line not equal to"
+    },
+    {
+      "name": "precneqq",
+      "detail": "⪵ (\"amssymb\" command)",
+      "doc": "Precedes above not equal to"
+    },
+    {
+      "name": "profline",
+      "detail": "⌒",
+      "doc": "Profile of a line"
+    },
+    {
+      "name": "profsurf",
+      "detail": "⌓",
+      "doc": "Profile of a surface"
+    },
+    {
+      "name": "PropertyLine",
+      "detail": "⅊",
+      "doc": "Property line"
+    },
+    {
+      "name": "prurel",
+      "detail": "⊰",
+      "doc": "Element precedes under relation"
+    },
+    {
+      "name": "pullback",
+      "detail": "⟓",
+      "doc": "Lower right corner with dot"
+    },
+    {
+      "name": "pushout",
+      "detail": "⟔",
+      "doc": "Upper left corner with dot"
+    },
+    {
+      "name": "quarternote",
+      "detail": "♩ (\"arevmath wasysym\" command)",
+      "doc": "Music note (sung text sign)"
+    },
+    {
+      "name": "Question",
+      "detail": "⁇",
+      "doc": "??, double question mark"
+    },
+    {
+      "name": "rangledot",
+      "detail": "⦒",
+      "doc": "Right angle bracket with dot"
+    },
+    {
+      "name": "rbag",
+      "detail": "⟆ (\"stmaryrd txfonts\" command)",
+      "doc": "\\rbag (stmaryrd -oz), right s-shaped bag delimiter"
+    },
+    {
+      "name": "rblkbrbrak",
+      "detail": "⦘",
+      "doc": "Right black tortoise shell bracket"
+    },
+    {
+      "name": "rbracklrtick",
+      "detail": "⦎",
+      "doc": "Right square bracket with tick in bottom corner"
+    },
+    {
+      "name": "rbrackubar",
+      "detail": "⦌",
+      "doc": "Right square bracket with underbar"
+    },
+    {
+      "name": "rbrackurtick",
+      "detail": "⦐",
+      "doc": "Right square bracket with tick in top corner"
+    },
+    {
+      "name": "Rbrbrak",
+      "detail": "〙",
+      "doc": "Right white tortoise shell bracket"
+    },
+    {
+      "name": "rbrbrak",
+      "detail": "〕",
+      "doc": "Right broken bracket"
+    },
+    {
+      "name": "rcurvyangle",
+      "detail": "⧽",
+      "doc": "Right pointing curved angle bracket"
+    },
+    {
+      "name": "rdiagovfdiag",
+      "detail": "⤫",
+      "doc": "Rising diagonal crossing falling diagonal"
+    },
+    {
+      "name": "rdiagovsearrow",
+      "detail": "⤰",
+      "doc": "Rising diagonal crossing south east arrow"
+    },
+    {
+      "name": "revangle",
+      "detail": "⦣",
+      "doc": "Reversed angle"
+    },
+    {
+      "name": "revangleubar",
+      "detail": "⦥",
+      "doc": "Reversed angle with underbar"
+    },
+    {
+      "name": "revemptyset",
+      "detail": "⦰",
+      "doc": "Reversed empty set"
+    },
+    {
+      "name": "revnmid",
+      "detail": "⫮",
+      "doc": "Does not divide with reversed negation slash"
+    },
+    {
+      "name": "rfbowtie",
+      "detail": "⧒",
+      "doc": "Right black bowtie"
+    },
+    {
+      "name": "rftimes",
+      "detail": "⧕",
+      "doc": "Right black times"
+    },
+    {
+      "name": "rightanglemdot",
+      "detail": "⦝",
+      "doc": "Measured right angle with dot"
+    },
+    {
+      "name": "rightanglesqr",
+      "detail": "⦜",
+      "doc": "Right angle variant with square"
+    },
+    {
+      "name": "rightarrowapprox",
+      "detail": "⥵",
+      "doc": "Rightwards arrow above almost equal to"
+    },
+    {
+      "name": "rightarrowbackapprox",
+      "detail": "⭈",
+      "doc": "Rightwards arrow above reverse almost equal to"
+    },
+    {
+      "name": "rightarrowbar",
+      "detail": "⇥ (\"wrisym\" command)",
+      "doc": "Rightwards arrow to bar"
+    },
+    {
+      "name": "rightarrowbsimilar",
+      "detail": "⭌",
+      "doc": "Righttwards arrow above reverse tilde operator"
+    },
+    {
+      "name": "rightarrowdiamond",
+      "detail": "⤞",
+      "doc": "Rightwards arrow to black diamond"
+    },
+    {
+      "name": "rightarrowgtr",
+      "detail": "⭃",
+      "doc": "Rightwards arrow through less-than"
+    },
+    {
+      "name": "rightarrowplus",
+      "detail": "⥅",
+      "doc": "Rightwards arrow with plus below"
+    },
+    {
+      "name": "rightarrowshortleftarrow",
+      "detail": "⥂",
+      "doc": "Rightwards arrow above short leftwards arrow"
+    },
+    {
+      "name": "rightarrowsimilar",
+      "detail": "⥴",
+      "doc": "Rightwards arrow above tilde operator"
+    },
+    {
+      "name": "rightarrowsupset",
+      "detail": "⭄",
+      "doc": "Rightwards arrow through subset"
+    },
+    {
+      "name": "rightarrowtriangle",
+      "detail": "⇾ (\"stmaryrd\" command)",
+      "doc": "Rightwards open-headed arrow"
+    },
+    {
+      "name": "rightarrowx",
+      "detail": "⥇",
+      "doc": "Rightwards arrow through x"
+    },
+    {
+      "name": "rightbkarrow",
+      "detail": "⤍",
+      "doc": "Rightwards double dash arrow"
+    },
+    {
+      "name": "rightcurvedarrow",
+      "detail": "⤳ (\"txfonts\" command)",
+      "doc": "Wave arrow pointing directly right"
+    },
+    {
+      "name": "rightdasharrow",
+      "detail": "⇢ (\"amsfonts\" command)",
+      "doc": "\\dasharrow (amsfonts), rightwards dashed arrow"
+    },
+    {
+      "name": "rightdbltail",
+      "detail": "⤜",
+      "doc": "Rightwards double arrow-tail"
+    },
+    {
+      "name": "rightdotarrow",
+      "detail": "⤑",
+      "doc": "Rightwards arrow with dotted stem"
+    },
+    {
+      "name": "rightdowncurvedarrow",
+      "detail": "⤷",
+      "doc": "Arrow pointing downwards then curving rightwards"
+    },
+    {
+      "name": "rightfishtail",
+      "detail": "⥽ (\"txfonts\" command)",
+      "doc": "Right fish tail"
+    },
+    {
+      "name": "rightharpoondownbar",
+      "detail": "⥗ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb down to bar"
+    },
+    {
+      "name": "rightharpoonsupdown",
+      "detail": "⥤ (\"mathabx\" command)",
+      "doc": "Rightwards harpoon with barb up above rightwards harpoon with barb down"
+    },
+    {
+      "name": "rightharpoonupbar",
+      "detail": "⥓ (\"wrisym\" command)",
+      "doc": "Rightwards harpoon with barb up to bar"
+    },
+    {
+      "name": "rightharpoonupdash",
+      "detail": "⥬ (\"mathabx\" command)",
+      "doc": "Rightwards harpoon with barb up above long dash"
+    },
+    {
+      "name": "rightimply",
+      "detail": "⥰",
+      "doc": "Right double arrow with rounded head"
+    },
+    {
+      "name": "rightleftharpoonsdown",
+      "detail": "⥩",
+      "doc": "Rightwards harpoon with barb down above leftwards harpoon with barb down"
+    },
+    {
+      "name": "rightleftharpoonsup",
+      "detail": "⥨",
+      "doc": "Rightwards harpoon with barb up above leftwards harpoon with barb up"
+    },
+    {
+      "name": "rightouterjoin",
+      "detail": "⟖",
+      "doc": "Right outer join"
+    },
+    {
+      "name": "rightpentagon",
+      "detail": "⭔",
+      "doc": "White right-pointing pentagon"
+    },
+    {
+      "name": "rightpentagonblack",
+      "detail": "⭓",
+      "doc": "Black right-pointing pentagon"
+    },
+    {
+      "name": "righttail",
+      "detail": "⤚",
+      "doc": "Rightwards arrow-tail"
+    },
+    {
+      "name": "rightwavearrow",
+      "detail": "↝",
+      "doc": "Right arrow-wavy"
+    },
+    {
+      "name": "ringplus",
+      "detail": "⨢",
+      "doc": "Plus sign with small circle above"
+    },
+    {
+      "name": "rparengtr",
+      "detail": "⦔",
+      "doc": "Right arc greater-than bracket"
+    },
+    {
+      "name": "Rparenless",
+      "detail": "⦖",
+      "doc": "Double right arc less-than bracket"
+    },
+    {
+      "name": "rrangle",
+      "detail": "⦊ (\"oz\" command)",
+      "doc": "Z notation right binding bracket"
+    },
+    {
+      "name": "RRightarrow",
+      "detail": "⭆",
+      "doc": "Rightwards quadruple arrow"
+    },
+    {
+      "name": "rrparenthesis",
+      "detail": "⦈ (\"oz\" command)",
+      "doc": "\\rrparenthesis (stmaryrd), right image bracket"
+    },
+    {
+      "name": "rsolbar",
+      "detail": "⧷",
+      "doc": "Reverse solidus with horizontal stroke"
+    },
+    {
+      "name": "rsqhook",
+      "detail": "⫎",
+      "doc": "Square right open box operator"
+    },
+    {
+      "name": "rsub",
+      "detail": "⩥ (\"oz\" command)",
+      "doc": "\\nrres (oz), range antirestriction"
+    },
+    {
+      "name": "rtriltri",
+      "detail": "⧎",
+      "doc": "Right triangle above left triangle"
+    },
+    {
+      "name": "ruledelayed",
+      "detail": "⧴",
+      "doc": "Rule-delayed"
+    },
+    {
+      "name": "rvboxline",
+      "detail": "⎹",
+      "doc": "Right vertical box line"
+    },
+    {
+      "name": "rvzigzag",
+      "detail": "⧙",
+      "doc": "Right wiggly fence"
+    },
+    {
+      "name": "Rvzigzag",
+      "detail": "⧛",
+      "doc": "Right double wiggly fence"
+    },
+    {
+      "name": "sansLmirrored",
+      "detail": "⅃",
+      "doc": "Reversed sans-serif capital l"
+    },
+    {
+      "name": "sansLturned",
+      "detail": "⅂",
+      "doc": "Turned sans-serif capital l"
+    },
+    {
+      "name": "scurel",
+      "detail": "⊱",
+      "doc": "Succeeds under relation"
+    },
+    {
+      "name": "seovnearrow",
+      "detail": "⤭",
+      "doc": "South east arrow crossing north east arrow"
+    },
+    {
+      "name": "shortdowntack",
+      "detail": "⫟",
+      "doc": "Short down tack"
+    },
+    {
+      "name": "shortlefttack",
+      "detail": "⫞",
+      "doc": "Short left tack"
+    },
+    {
+      "name": "shortrightarrowleftarrow",
+      "detail": "⥄",
+      "doc": "Short rightwards arrow above leftwards arrow"
+    },
+    {
+      "name": "shortuptack",
+      "detail": "⫠",
+      "doc": "Short up tack"
+    },
+    {
+      "name": "shuffle",
+      "detail": "⧢",
+      "doc": "Shuffle product"
+    },
+    {
+      "name": "simgE",
+      "detail": "⪠",
+      "doc": "Similar above greater-than above equals sign"
+    },
+    {
+      "name": "simgtr",
+      "detail": "⪞",
+      "doc": "Similar or greater-than"
+    },
+    {
+      "name": "similarleftarrow",
+      "detail": "⭉",
+      "doc": "Tilde operator above leftwards arrow"
+    },
+    {
+      "name": "similarrightarrow",
+      "detail": "⥲",
+      "doc": "Tilde operator above rightwards arrow"
+    },
+    {
+      "name": "simlE",
+      "detail": "⪟",
+      "doc": "Similar above less-than above equals sign"
+    },
+    {
+      "name": "simless",
+      "detail": "⪝",
+      "doc": "Similar or less-than"
+    },
+    {
+      "name": "simminussim",
+      "detail": "⩬",
+      "doc": "Similar minus similar"
+    },
+    {
+      "name": "simplus",
+      "detail": "⨤",
+      "doc": "Plus sign with tilde above"
+    },
+    {
+      "name": "simrdots",
+      "detail": "⩫",
+      "doc": "Tilde operator with rising dots"
+    },
+    {
+      "name": "smallblacktriangleleft",
+      "detail": "◂ (\"mathabx -fourier\" command)",
+      "doc": "Left triangle, filled"
+    },
+    {
+      "name": "smallblacktriangleright",
+      "detail": "▸ (\"mathabx -fourier\" command)",
+      "doc": "Right triangle, filled"
+    },
+    {
+      "name": "smalltriangleleft",
+      "detail": "◃ (\"mathabx\" command)",
+      "doc": "\\triangleleft, \\triangleleft (mathabx), left triangle, open"
+    },
+    {
+      "name": "smalltriangleright",
+      "detail": "▹ (\"mathabx\" command)",
+      "doc": "\\triangleright, \\triangleright (mathabx), right triangle, open"
+    },
+    {
+      "name": "smashtimes",
+      "detail": "⨳",
+      "doc": "Smash product"
+    },
+    {
+      "name": "smblkdiamond",
+      "detail": "⬩",
+      "doc": "Black small diamond"
+    },
+    {
+      "name": "smblklozenge",
+      "detail": "⬪",
+      "doc": "Black small lozenge"
+    },
+    {
+      "name": "smeparsl",
+      "detail": "⧤",
+      "doc": "Equals sign and slanted parallel with tilde above"
+    },
+    {
+      "name": "smt",
+      "detail": "⪪",
+      "doc": "Smaller than"
+    },
+    {
+      "name": "smte",
+      "detail": "⪬",
+      "doc": "Smaller than or equal to"
+    },
+    {
+      "name": "smwhitestar",
+      "detail": "⭒",
+      "doc": "White small star"
+    },
+    {
+      "name": "smwhtlozenge",
+      "detail": "⬫",
+      "doc": "White small lozenge"
+    },
+    {
+      "name": "sphericalangleup",
+      "detail": "⦡",
+      "doc": "Spherical angle opening up"
+    },
+    {
+      "name": "Sqcap",
+      "detail": "⩎",
+      "doc": "Double square intersection"
+    },
+    {
+      "name": "Sqcup",
+      "detail": "⩏",
+      "doc": "Double square union"
+    },
+    {
+      "name": "sqint",
+      "detail": "⨖ (\"esint\" command)",
+      "doc": "\\sqrint (wrisym), quaternion integral operator"
+    },
+    {
+      "name": "sqlozenge",
+      "detail": "⌑ (\"wasysym\" command)",
+      "doc": "Square lozenge"
+    },
+    {
+      "name": "squarebotblack",
+      "detail": "⬓",
+      "doc": "Square with bottom half black"
+    },
+    {
+      "name": "squarecrossfill",
+      "detail": "▩",
+      "doc": "Square with diagonal crosshatch fill"
+    },
+    {
+      "name": "squarehfill",
+      "detail": "▤",
+      "doc": "Square, horizontal rule filled"
+    },
+    {
+      "name": "squarehvfill",
+      "detail": "▦",
+      "doc": "Square with orthogonal crosshatch fill"
+    },
+    {
+      "name": "squareleftblack",
+      "detail": "◧",
+      "doc": "Square, filled left half"
+    },
+    {
+      "name": "squarellblack",
+      "detail": "⬕",
+      "doc": "Square with lower left diagonal half black"
+    },
+    {
+      "name": "squarellquad",
+      "detail": "◱",
+      "doc": "White square with lower left quadrant"
+    },
+    {
+      "name": "squarelrblack",
+      "detail": "◪",
+      "doc": "Square, filled bottom right corner"
+    },
+    {
+      "name": "squarelrquad",
+      "detail": "◲",
+      "doc": "White square with lower right quadrant"
+    },
+    {
+      "name": "squareneswfill",
+      "detail": "▨",
+      "doc": "Square, ne-to-sw rule filled"
+    },
+    {
+      "name": "squarenwsefill",
+      "detail": "▧",
+      "doc": "Square, nw-to-se rule filled"
+    },
+    {
+      "name": "squarerightblack",
+      "detail": "◨",
+      "doc": "Square, filled right half"
+    },
+    {
+      "name": "squaretopblack",
+      "detail": "⬒",
+      "doc": "Square with top half black"
+    },
+    {
+      "name": "squareulblack",
+      "detail": "◩",
+      "doc": "Square, filled top left corner"
+    },
+    {
+      "name": "squareulquad",
+      "detail": "◰",
+      "doc": "White square with upper left quadrant"
+    },
+    {
+      "name": "squareurblack",
+      "detail": "⬔",
+      "doc": "Square with upper right diagonal half black"
+    },
+    {
+      "name": "squareurquad",
+      "detail": "◳",
+      "doc": "White square with upper right quadrant"
+    },
+    {
+      "name": "squarevfill",
+      "detail": "▥",
+      "doc": "Square, vertical rule filled"
+    },
+    {
+      "name": "squoval",
+      "detail": "▢",
+      "doc": "White square with rounded corners"
+    },
+    {
+      "name": "sslash",
+      "detail": "⫽ (\"stmaryrd\" command)",
+      "doc": "\\varparallel (txfonts), double solidus operator"
+    },
+    {
+      "name": "strns",
+      "detail": "⏤",
+      "doc": "Straightness"
+    },
+    {
+      "name": "subedot",
+      "detail": "⫃",
+      "doc": "Subset of or equal to with dot above"
+    },
+    {
+      "name": "submult",
+      "detail": "⫁",
+      "doc": "Subset with multiplication sign below"
+    },
+    {
+      "name": "subrarr",
+      "detail": "⥹",
+      "doc": "Subset above rightwards arrow"
+    },
+    {
+      "name": "subsetapprox",
+      "detail": "⫉",
+      "doc": "Subset of above almost equal to"
+    },
+    {
+      "name": "subsetcirc",
+      "detail": "⟃",
+      "doc": "Open subset"
+    },
+    {
+      "name": "subsetdot",
+      "detail": "⪽",
+      "doc": "Subset with dot"
+    },
+    {
+      "name": "subseteqq",
+      "detail": "⫅ (\"amssymb\" command)",
+      "doc": "Subset of above equals sign"
+    },
+    {
+      "name": "subsetneqq",
+      "detail": "⫋ (\"amssymb\" command)",
+      "doc": "Subset of above not equal to"
+    },
+    {
+      "name": "subsetplus",
+      "detail": "⪿",
+      "doc": "Subset with plus sign below"
+    },
+    {
+      "name": "subsim",
+      "detail": "⫇",
+      "doc": "Subset of above tilde operator"
+    },
+    {
+      "name": "subsub",
+      "detail": "⫕",
+      "doc": "Subset above subset"
+    },
+    {
+      "name": "subsup",
+      "detail": "⫓",
+      "doc": "Subset above superset"
+    },
+    {
+      "name": "Succ",
+      "detail": "⪼ (\"mathabx\" command)",
+      "doc": "Double succeeds"
+    },
+    {
+      "name": "succapprox",
+      "detail": "⪸ (\"amssymb\" command)",
+      "doc": "Succeeds above almost equal to"
+    },
+    {
+      "name": "succeqq",
+      "detail": "⪴ (\"txfonts\" command)",
+      "doc": "Succeeds above equals sign"
+    },
+    {
+      "name": "succnapprox",
+      "detail": "⪺ (\"amssymb\" command)",
+      "doc": "Succeeds above not almost equal to"
+    },
+    {
+      "name": "succneq",
+      "detail": "⪲",
+      "doc": "Succeeds above single-line not equal to"
+    },
+    {
+      "name": "succneqq",
+      "detail": "⪶ (\"amssymb\" command)",
+      "doc": "Succeeds above not equal to"
+    },
+    {
+      "name": "sumint",
+      "detail": "⨋",
+      "doc": "Summation with integral"
+    },
+    {
+      "name": "supdsub",
+      "detail": "⫘",
+      "doc": "Superset beside and joined by dash with subset"
+    },
+    {
+      "name": "supedot",
+      "detail": "⫄",
+      "doc": "Superset of or equal to with dot above"
+    },
+    {
+      "name": "suphsol",
+      "detail": "⟉",
+      "doc": "Superset preceding solidus"
+    },
+    {
+      "name": "suphsub",
+      "detail": "⫗",
+      "doc": "Superset beside subset"
+    },
+    {
+      "name": "suplarr",
+      "detail": "⥻",
+      "doc": "Superset above leftwards arrow"
+    },
+    {
+      "name": "supmult",
+      "detail": "⫂",
+      "doc": "Superset with multiplication sign below"
+    },
+    {
+      "name": "supsetapprox",
+      "detail": "⫊",
+      "doc": "Superset of above almost equal to"
+    },
+    {
+      "name": "supsetcirc",
+      "detail": "⟄",
+      "doc": "Open superset"
+    },
+    {
+      "name": "supsetdot",
+      "detail": "⪾",
+      "doc": "Superset with dot"
+    },
+    {
+      "name": "supseteqq",
+      "detail": "⫆ (\"amssymb\" command)",
+      "doc": "Superset of above equals sign"
+    },
+    {
+      "name": "supsetneqq",
+      "detail": "⫌ (\"amssymb\" command)",
+      "doc": "Superset of above not equal to"
+    },
+    {
+      "name": "supsetplus",
+      "detail": "⫀",
+      "doc": "Superset with plus sign below"
+    },
+    {
+      "name": "supsim",
+      "detail": "⫈",
+      "doc": "Superset of above tilde operator"
+    },
+    {
+      "name": "supsub",
+      "detail": "⫔",
+      "doc": "Superset above subset"
+    },
+    {
+      "name": "supsup",
+      "detail": "⫖",
+      "doc": "Superset above superset"
+    },
+    {
+      "name": "talloblong",
+      "detail": "⫾ (\"stmaryrd\" command)",
+      "doc": "White vertical bar"
+    },
+    {
+      "name": "thermod",
+      "detail": "⧧",
+      "doc": "Thermodynamic"
+    },
+    {
+      "name": "threedangle",
+      "detail": "⟀",
+      "doc": "Three dimensional angle"
+    },
+    {
+      "name": "threedotcolon",
+      "detail": "⫶",
+      "doc": "Triple colon operator"
+    },
+    {
+      "name": "tieinfty",
+      "detail": "⧝",
+      "doc": "Tie over infinity"
+    },
+    {
+      "name": "timesbar",
+      "detail": "⨱",
+      "doc": "Multiplication sign with underbar"
+    },
+    {
+      "name": "tminus",
+      "detail": "⧿",
+      "doc": "Miny"
+    },
+    {
+      "name": "toea",
+      "detail": "⤨",
+      "doc": "North east arrow and south east arrow"
+    },
+    {
+      "name": "tona",
+      "detail": "⤧",
+      "doc": "North west arrow and north east arrow"
+    },
+    {
+      "name": "topcir",
+      "detail": "⫱",
+      "doc": "Down tack with circle below"
+    },
+    {
+      "name": "topfork",
+      "detail": "⫚",
+      "doc": "Pitchfork with tee top"
+    },
+    {
+      "name": "topsemicircle",
+      "detail": "◠",
+      "doc": "Upper half circle"
+    },
+    {
+      "name": "tosa",
+      "detail": "⤩",
+      "doc": "South east arrow and south west arrow"
+    },
+    {
+      "name": "towa",
+      "detail": "⤪",
+      "doc": "South west arrow and north west arrow"
+    },
+    {
+      "name": "tplus",
+      "detail": "⧾",
+      "doc": "Tiny"
+    },
+    {
+      "name": "trapezium",
+      "detail": "⏢",
+      "doc": "White trapezium"
+    },
+    {
+      "name": "trianglecdot",
+      "detail": "◬",
+      "doc": "Triangle with centered dot"
+    },
+    {
+      "name": "triangledown",
+      "detail": "▿ (\"mathabx\" command)",
+      "doc": "\\triangledown (amssymb), white down-pointing small triangle"
+    },
+    {
+      "name": "triangleleftblack",
+      "detail": "◭",
+      "doc": "Up-pointing triangle with left half black"
+    },
+    {
+      "name": "triangleminus",
+      "detail": "⨺",
+      "doc": "Minus sign in triangle"
+    },
+    {
+      "name": "triangleodot",
+      "detail": "⧊",
+      "doc": "Triangle with dot above"
+    },
+    {
+      "name": "triangleplus",
+      "detail": "⨹",
+      "doc": "Plus sign in triangle"
+    },
+    {
+      "name": "trianglerightblack",
+      "detail": "◮",
+      "doc": "Up-pointing triangle with right half black"
+    },
+    {
+      "name": "triangles",
+      "detail": "⧌",
+      "doc": "S in triangle"
+    },
+    {
+      "name": "triangleserifs",
+      "detail": "⧍",
+      "doc": "Triangle with serifs at bottom"
+    },
+    {
+      "name": "triangletimes",
+      "detail": "⨻",
+      "doc": "Multiplication sign in triangle"
+    },
+    {
+      "name": "triangleubar",
+      "detail": "⧋",
+      "doc": "Triangle with underbar"
+    },
+    {
+      "name": "tripleplus",
+      "detail": "⧻",
+      "doc": "Triple plus"
+    },
+    {
+      "name": "trslash",
+      "detail": "⫻",
+      "doc": "Triple solidus binary relation"
+    },
+    {
+      "name": "turnangle",
+      "detail": "⦢",
+      "doc": "Turned angle"
+    },
+    {
+      "name": "turnediota",
+      "detail": "℩",
+      "doc": "Turned iota"
+    },
+    {
+      "name": "twocaps",
+      "detail": "⩋",
+      "doc": "Intersection beside and joined with intersection"
+    },
+    {
+      "name": "twocups",
+      "detail": "⩊",
+      "doc": "Union beside and joined with union"
+    },
+    {
+      "name": "twoheadleftarrowtail",
+      "detail": "⬻",
+      "doc": "Leftwards two-headed arrow with tail"
+    },
+    {
+      "name": "twoheadleftdbkarrow",
+      "detail": "⬷",
+      "doc": "Leftwards two-headed triple-dash arrow"
+    },
+    {
+      "name": "twoheadmapsfrom",
+      "detail": "⬶",
+      "doc": "Leftwards two-headed arrow from bar"
+    },
+    {
+      "name": "twoheadmapsto",
+      "detail": "⤅",
+      "doc": "Rightwards two-headed arrow from bar"
+    },
+    {
+      "name": "twoheadrightarrowtail",
+      "detail": "⤖ (\"oz\" command)",
+      "doc": "Rightwards two-headed arrow with tail, bijection"
+    },
+    {
+      "name": "twoheaduparrowcircle",
+      "detail": "⥉",
+      "doc": "Upwards two-headed arrow from small circle"
+    },
+    {
+      "name": "twonotes",
+      "detail": "♫ (\"wasysym\" command)",
+      "doc": "Beamed eighth notes"
+    },
+    {
+      "name": "typecolon",
+      "detail": "⦂",
+      "doc": "Z notation type colon, (present in bbold font but no command)"
+    },
+    {
+      "name": "ularc",
+      "detail": "◜",
+      "doc": "Upper left quadrant circular arc"
+    },
+    {
+      "name": "ulblacktriangle",
+      "detail": "◤",
+      "doc": "Upper left triangle, filled"
+    },
+    {
+      "name": "ultriangle",
+      "detail": "◸",
+      "doc": "Upper left triangle"
+    },
+    {
+      "name": "uminus",
+      "detail": "⩁",
+      "doc": "Union with minus sign, bag subtraction"
+    },
+    {
+      "name": "upand",
+      "detail": "⅋ (\"txfonts\" command)",
+      "doc": "\\bindnasrepma (stmaryrd), turned ampersand"
+    },
+    {
+      "name": "uparrowbarred",
+      "detail": "⤉",
+      "doc": "Upwards arrow with horizontal stroke"
+    },
+    {
+      "name": "uparrowoncircle",
+      "detail": "⦽",
+      "doc": "Up arrow through circle"
+    },
+    {
+      "name": "upbackepsilon",
+      "detail": "϶ (\"amssymb wrisym\" command)",
+      "doc": "Greek reversed lunate epsilon symbol"
+    },
+    {
+      "name": "updasharrow",
+      "detail": "⇡",
+      "doc": "Upwards dashed arrow"
+    },
+    {
+      "name": "upDigamma",
+      "detail": "Ϝ (\"wrisym\" command)",
+      "doc": "Capital digamma"
+    },
+    {
+      "name": "updigamma",
+      "detail": "ϝ (\"amssymb arevmath wrisym\" command)",
+      "doc": "Greek small letter digamma"
+    },
+    {
+      "name": "updownarrowbar",
+      "detail": "↨",
+      "doc": "Up down arrow with base (perpendicular)"
+    },
+    {
+      "name": "updownharpoonleftleft",
+      "detail": "⥑ (\"wrisym\" command)",
+      "doc": "Up barb left down barb left harpoon"
+    },
+    {
+      "name": "updownharpoonleftright",
+      "detail": "⥍",
+      "doc": "Up barb left down barb right harpoon"
+    },
+    {
+      "name": "updownharpoonrightleft",
+      "detail": "⥌",
+      "doc": "Up barb right down barb left harpoon"
+    },
+    {
+      "name": "updownharpoonrightright",
+      "detail": "⥏ (\"wrisym\" command)",
+      "doc": "Up barb right down barb right harpoon"
+    },
+    {
+      "name": "updownharpoonsleftright",
+      "detail": "⥮ (\"mathabx\" command)",
+      "doc": "\\upequilibrium (wrisym), upwards harpoon with barb left beside downwards harpoon with barb right"
+    },
+    {
+      "name": "upfishtail",
+      "detail": "⥾",
+      "doc": "Up fish tail"
+    },
+    {
+      "name": "upharpoonleftbar",
+      "detail": "⥠ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb left from bar"
+    },
+    {
+      "name": "upharpoonrightbar",
+      "detail": "⥜ (\"wrisym\" command)",
+      "doc": "Upwards harpoon with barb right from bar"
+    },
+    {
+      "name": "upharpoonsleftright",
+      "detail": "⥣ (\"mathabx\" command)",
+      "doc": "Upwards harpoon with barb left beside upwards harpoon with barb right"
+    },
+    {
+      "name": "upin",
+      "detail": "⟒",
+      "doc": "Element of opening upwards"
+    },
+    {
+      "name": "uprightcurvearrow",
+      "detail": "⤴",
+      "doc": "Arrow pointing rightwards then curving upwards"
+    },
+    {
+      "name": "urarc",
+      "detail": "◝",
+      "doc": "Upper right quadrant circular arc"
+    },
+    {
+      "name": "urblacktriangle",
+      "detail": "◥",
+      "doc": "Upper right triangle, filled"
+    },
+    {
+      "name": "urtriangle",
+      "detail": "◹",
+      "doc": "Upper right triangle"
+    },
+    {
+      "name": "UUparrow",
+      "detail": "⟰",
+      "doc": "Upwards quadruple arrow"
+    },
+    {
+      "name": "Uuparrow",
+      "detail": "⤊",
+      "doc": "Upwards triple arrow"
+    },
+    {
+      "name": "varcarriagereturn",
+      "detail": "⏎",
+      "doc": "Return symbol"
+    },
+    {
+      "name": "varhexagon",
+      "detail": "⬡",
+      "doc": "White hexagon"
+    },
+    {
+      "name": "varhexagonblack",
+      "detail": "⬢",
+      "doc": "Black hexagon"
+    },
+    {
+      "name": "varisinobar",
+      "detail": "⋶ (\"mathabx\" command)",
+      "doc": "Element of with overbar"
+    },
+    {
+      "name": "varisins",
+      "detail": "⋳",
+      "doc": "Element of with vertical bar at end of horizontal stroke"
+    },
+    {
+      "name": "varniobar",
+      "detail": "⋽",
+      "doc": "Contains with overbar"
+    },
+    {
+      "name": "varnis",
+      "detail": "⋻",
+      "doc": "Contains with vertical bar at end of horizontal stroke"
+    },
+    {
+      "name": "vartriangle",
+      "detail": "▵ (\"mathabx\" command)",
+      "doc": "\\vartriangle (amssymb), small up triangle, open"
+    },
+    {
+      "name": "varVdash",
+      "detail": "⫦",
+      "doc": "Long dash from left member of double vertical"
+    },
+    {
+      "name": "varveebar",
+      "detail": "⩡",
+      "doc": "Small vee with underbar"
+    },
+    {
+      "name": "vBar",
+      "detail": "⫨",
+      "doc": "Short up tack with underbar"
+    },
+    {
+      "name": "Vbar",
+      "detail": "⫫ (\"txfonts\" command)",
+      "doc": "\\perp (txfonts), double up tack"
+    },
+    {
+      "name": "vBarv",
+      "detail": "⫩",
+      "doc": "Short up tack above short down tack"
+    },
+    {
+      "name": "vbrtri",
+      "detail": "⧐ (\"wrisym\" command)",
+      "doc": "Vertical bar beside right triangle"
+    },
+    {
+      "name": "vDdash",
+      "detail": "⫢",
+      "doc": "Vertical bar triple right turnstile"
+    },
+    {
+      "name": "Vee",
+      "detail": "⩔",
+      "doc": "Double logical or"
+    },
+    {
+      "name": "veedot",
+      "detail": "⟇",
+      "doc": "Or with dot inside"
+    },
+    {
+      "name": "veedoublebar",
+      "detail": "⩣",
+      "doc": "Logical or with double underbar"
+    },
+    {
+      "name": "veemidvert",
+      "detail": "⩛",
+      "doc": "Logical or with middle stem"
+    },
+    {
+      "name": "veeodot",
+      "detail": "⩒",
+      "doc": "Logical or with dot above"
+    },
+    {
+      "name": "veeonvee",
+      "detail": "⩖",
+      "doc": "Two intersecting logical or"
+    },
+    {
+      "name": "veeonwedge",
+      "detail": "⩙",
+      "doc": "Logical or overlapping logical and"
+    },
+    {
+      "name": "viewdata",
+      "detail": "⌗",
+      "doc": "Viewdata square"
+    },
+    {
+      "name": "vrectangle",
+      "detail": "▯",
+      "doc": "Rectangle, white (vertical)"
+    },
+    {
+      "name": "vrectangleblack",
+      "detail": "▮",
+      "doc": "Black vertical rectangle"
+    },
+    {
+      "name": "Vvert",
+      "detail": "⦀ (\"fourier\" command)",
+      "doc": "Triple vertical bar delimiter"
+    },
+    {
+      "name": "vysmblksquare",
+      "detail": "⬝",
+      "doc": "\\centerdot (amssymb), t \\squaredot (marvosym), black very small square"
+    },
+    {
+      "name": "vysmwhtsquare",
+      "detail": "⬞",
+      "doc": "White very small square"
+    },
+    {
+      "name": "vzigzag",
+      "detail": "⦚",
+      "doc": "Vertical zigzag line"
+    },
+    {
+      "name": "Wedge",
+      "detail": "⩓",
+      "doc": "Double logical and"
+    },
+    {
+      "name": "wedgebar",
+      "detail": "⩟",
+      "doc": "Logical and with underbar"
+    },
+    {
+      "name": "wedgedot",
+      "detail": "⟑",
+      "doc": "And with dot"
+    },
+    {
+      "name": "wedgedoublebar",
+      "detail": "⩠",
+      "doc": "Logical and with double underbar"
+    },
+    {
+      "name": "wedgemidvert",
+      "detail": "⩚",
+      "doc": "Logical and with middle stem"
+    },
+    {
+      "name": "wedgeodot",
+      "detail": "⩑",
+      "doc": "Logical and with dot above"
+    },
+    {
+      "name": "wedgeonwedge",
+      "detail": "⩕",
+      "doc": "Two intersecting logical and"
+    },
+    {
+      "name": "whitearrowupfrombar",
+      "detail": "⇪",
+      "doc": "Upwards white arrow from bar"
+    },
+    {
+      "name": "whiteinwhitetriangle",
+      "detail": "⟁",
+      "doc": "White triangle containing small white triangle"
+    },
+    {
+      "name": "whitepointerleft",
+      "detail": "◅",
+      "doc": "\\triangleleft (mathabx), white left-pointing pointer"
+    },
+    {
+      "name": "whitepointerright",
+      "detail": "▻",
+      "doc": "\\triangleright (mathabx), white right-pointing pointer"
+    },
+    {
+      "name": "whitesquaretickleft",
+      "detail": "⟤",
+      "doc": "White square with leftwards tick"
+    },
+    {
+      "name": "whitesquaretickright",
+      "detail": "⟥",
+      "doc": "White square with rightwards tick"
+    },
+    {
+      "name": "whthorzoval",
+      "detail": "⬭",
+      "doc": "White horizontal ellipse"
+    },
+    {
+      "name": "whtvertoval",
+      "detail": "⬯",
+      "doc": "White vertical ellipse"
+    },
+    {
+      "name": "wideangledown",
+      "detail": "⦦",
+      "doc": "Oblique angle opening up"
+    },
+    {
+      "name": "wideangleup",
+      "detail": "⦧",
+      "doc": "Oblique angle opening down"
+    },
+    {
+      "name": "xbsol",
+      "detail": "⧹ (\"oz\" command)",
+      "doc": "\\hide (oz), big reverse solidus, schema hiding"
+    },
+    {
+      "name": "xsol",
+      "detail": "⧸",
+      "doc": "Big solidus"
+    },
+    {
+      "name": "Yup",
+      "detail": "⅄ (\"stmaryrd\" command)",
+      "doc": "Turned sans-serif capital y"
+    },
+    {
+      "name": "Zbar",
+      "detail": "Ƶ",
+      "doc": "Impedance"
+    },
+    {
+      "name": "zcmp",
+      "detail": "⨟ (\"oz\" command)",
+      "doc": "\\semi (oz), \\fatsemi (stmaryrd), schema composition"
+    },
+    {
+      "name": "zpipe",
+      "detail": "⨠ (\"oz\" command)",
+      "doc": "Z notation schema piping"
+    },
+    {
+      "name": "zproject",
+      "detail": "⨡ (\"oz\" command)",
+      "doc": "\\project (oz), schema projection"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/lete-sans-math#c": [
+      "tight",
+      "loose",
+      "fulloldstyle",
+      "math-style=${1|ISO,TeX,french,upright|}",
+      "bold-style=${1|ISO,TeX,upright|}",
+      "nabla=${1|upright,italic|}",
+      "partial=${1|upright,italic|}",
+      "CharacterVariant={${1:variants}}",
+      "StylisticSet=${1:number}",
+      "Style=${1:style}",
+      "Scale=${1:factor}"
+    ]
+  },
+  "args": [
+    "\\usepackage/lete-sans-math#c"
+  ]
+}

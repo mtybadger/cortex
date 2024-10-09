@@ -1,0 +1,19 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "spverb",
+      "arg": {
+        "format": "||",
+        "snippet": "spverb|${1:text}|"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "spverbatim"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

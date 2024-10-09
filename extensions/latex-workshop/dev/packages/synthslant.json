@@ -1,0 +1,99 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontspec",
+      "if": "fontspec"
+    },
+    {
+      "name": "l3draw",
+      "if": "l3draw"
+    },
+    {
+      "name": "pst-3d",
+      "if": "ps"
+    },
+    {
+      "name": "pst-3d",
+      "if": "PS"
+    },
+    {
+      "name": "tikz",
+      "if": "tikz"
+    },
+    {
+      "name": "tikz",
+      "if": "TikZ"
+    }
+  ],
+  "macros": [
+    {
+      "name": "synthslant"
+    },
+    {
+      "name": "synthnegslant"
+    },
+    {
+      "name": "textsynthslant",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsynthslant{${1:text}}"
+      }
+    },
+    {
+      "name": "textsynthuprightitalic",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsynthuprightitalic{${1:text}}"
+      }
+    },
+    {
+      "name": "synthslantbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "synthslantbox{${1:slant}}{${2:text}}"
+      }
+    },
+    {
+      "name": "slantcontext",
+      "unusual": true
+    },
+    {
+      "name": "negslantcontext",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "slantenvironment"
+    },
+    {
+      "name": "negslantenvironment"
+    }
+  ],
+  "keys": {
+    "\\usepackage/synthslant#c": [
+      "auto",
+      "disable",
+      "fontspec",
+      "l3draw",
+      "negslant=${1:slant-expr}",
+      "pdf",
+      "posslant=${1:slant-expr}",
+      "ps",
+      "slant=${1:slant-expr}",
+      "tikz"
+    ]
+  },
+  "args": [
+    "\\usepackage/synthslant#c"
+  ]
+}

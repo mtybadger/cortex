@@ -3,15 +3,15 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
+import * as nls from 'vs/nls';
 
 // Import the effects we need
-import { Color, RGBA } from '../../../../base/common/color.js';
-import { registerColor, transparent, lighten, darken } from '../colorUtils.js';
+import { Color, RGBA } from 'vs/base/common/color';
+import { registerColor, transparent, lighten, darken } from 'vs/platform/theme/common/colorUtils';
 
 // Import the colors we need
-import { foreground, contrastBorder, focusBorder, iconForeground } from './baseColors.js';
-import { editorWidgetBackground } from './editorColors.js';
+import { foreground, contrastBorder, focusBorder, iconForeground } from 'vs/platform/theme/common/colors/baseColors';
+import { editorWidgetBackground } from 'vs/platform/theme/common/colors/editorColors';
 
 
 // ----- input

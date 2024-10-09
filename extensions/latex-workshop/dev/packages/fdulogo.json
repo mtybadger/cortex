@@ -1,0 +1,58 @@
+{
+  "deps": [
+    {
+      "name": "luatex85"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    }
+  ],
+  "macros": [
+    {
+      "name": "fduname"
+    },
+    {
+      "name": "fduname",
+      "arg": {
+        "format": "[]",
+        "snippet": "fduname[${1:TikZ keys}]"
+      }
+    },
+    {
+      "name": "fduemblem"
+    },
+    {
+      "name": "fduemblem",
+      "arg": {
+        "format": "[]",
+        "snippet": "fduemblem[${1:TikZ keys}]"
+      }
+    },
+    {
+      "name": "fduemblem*"
+    },
+    {
+      "name": "fduemblem*",
+      "arg": {
+        "format": "[]",
+        "snippet": "fduemblem*[${1:TikZ keys}]"
+      }
+    },
+    {
+      "name": "fdumotto"
+    },
+    {
+      "name": "fdumotto",
+      "arg": {
+        "format": "[]",
+        "snippet": "fdumotto[${1:TikZ keys}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

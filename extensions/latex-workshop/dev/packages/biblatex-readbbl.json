@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/biblatex-readbbl#c": [
+      "bblfile=${1:.bbl file}"
+    ]
+  },
+  "args": [
+    "\\usepackage/biblatex-readbbl#c"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "deps": [
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarypatterns"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setcard",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "setcard{${1:num}}{${2:shadingnum}}{${3:colornum}}{${4:shapenum}}{${5:scaling}}"
+      }
+    },
+    {
+      "name": "smallsetcard",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "smallsetcard{${1:num}}{${2:shadingnum}}{${3:colornum}}{${4:shapenum}}{${5:scaling}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

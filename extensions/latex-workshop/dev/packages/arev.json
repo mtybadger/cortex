@@ -1,0 +1,17 @@
+{
+  "deps": [
+    {
+      "name": "arevtext"
+    },
+    {
+      "name": "arevmath"
+    },
+    {
+      "name": "beramono"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

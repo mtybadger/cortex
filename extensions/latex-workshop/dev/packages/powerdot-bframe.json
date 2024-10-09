@@ -1,0 +1,101 @@
+{
+  "deps": [
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "pst-blur"
+    }
+  ],
+  "macros": [],
+  "envs": [
+    {
+      "name": "titleslide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "titleslide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "basic",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "basic",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "wideslide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "wideslide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "slide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "slide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "sectionslide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "sectionslide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    },
+    {
+      "name": "sectionwideslide",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:title}}"
+      }
+    },
+    {
+      "name": "sectionwideslide",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:options%keyvals}]{${1:title}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "hyperref"
+    }
+  ],
+  "macros": [
+    {
+      "name": "digsigfield",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "digsigfield{${1:width}}{${2:height}}{${3:field name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,37 @@
+{
+  "deps": [
+    {
+      "name": "scrtime",
+      "if": "scrtime"
+    }
+  ],
+  "macros": [
+    {
+      "name": "PrelimText"
+    },
+    {
+      "name": "PrelimWords"
+    },
+    {
+      "name": "PrelimTextStyle"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/prelim2e#c": [
+      "danish",
+      "draft",
+      "final",
+      "english",
+      "french",
+      "german",
+      "italian",
+      "norsk",
+      "time",
+      "scrtime"
+    ]
+  },
+  "args": [
+    "\\usepackage/prelim2e#c"
+  ]
+}

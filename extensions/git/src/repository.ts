@@ -6,7 +6,7 @@
 import TelemetryReporter from '@vscode/extension-telemetry';
 import * as fs from 'fs';
 import * as path from 'path';
-import picomatch from 'picomatch';
+import * as picomatch from 'picomatch';
 import { CancellationError, CancellationToken, CancellationTokenSource, Command, commands, Disposable, Event, EventEmitter, FileDecoration, l10n, LogLevel, LogOutputChannel, Memento, ProgressLocation, ProgressOptions, RelativePattern, scm, SourceControl, SourceControlInputBox, SourceControlInputBoxValidation, SourceControlInputBoxValidationType, SourceControlResourceDecorations, SourceControlResourceGroup, SourceControlResourceState, TabInputNotebookDiff, TabInputTextDiff, TabInputTextMultiDiff, ThemeColor, Uri, window, workspace, WorkspaceEdit } from 'vscode';
 import { ActionButton } from './actionButton';
 import { ApiRepository } from './api/api1';
@@ -718,16 +718,9 @@ export class Repository implements Disposable {
 	private _untrackedGroup: SourceControlResourceGroup;
 	get untrackedGroup(): GitResourceGroup { return this._untrackedGroup as GitResourceGroup; }
 
-	private _EMPTY_TREE: string | undefined;
-
 	private _HEAD: Branch | undefined;
 	get HEAD(): Branch | undefined {
 		return this._HEAD;
-	}
-
-	private _refs: Ref[] = [];
-	get refs(): Ref[] {
-		return this._refs;
 	}
 
 	get headShortName(): string | undefined {
@@ -788,21 +781,6 @@ export class Repository implements Disposable {
 
 	get mergeInProgress() {
 		return this._mergeInProgress;
-	}
-
-	private _cherryPickInProgress: boolean = false;
-
-	set cherryPickInProgress(value: boolean) {
-		if (this._cherryPickInProgress === value) {
-			return;
-		}
-
-		this._cherryPickInProgress = value;
-		commands.executeCommand('setContext', 'gitCherryPickInProgress', value);
-	}
-
-	get cherryPickInProgress() {
-		return this._cherryPickInProgress;
 	}
 
 	private _operations = new OperationManager(this.logger);
@@ -1068,9 +1046,8 @@ export class Repository implements Disposable {
 		return this.run(Operation.Config(false), () => this.repository.config('local', key, value));
 	}
 
-	log(options?: LogOptions & { silent?: boolean }): Promise<Commit[]> {
-		const showProgress = !options || options.silent !== true;
-		return this.run(Operation.Log(showProgress), () => this.repository.log(options));
+	log(options?: LogOptions): Promise<Commit[]> {
+		return this.run(Operation.Log, () => this.repository.log(options));
 	}
 
 	logFile(uri: Uri, options?: LogFileOptions): Promise<Commit[]> {
@@ -1133,10 +1110,6 @@ export class Repository implements Disposable {
 
 	diffBetweenShortStat(ref1: string, ref2: string): Promise<{ files: number; insertions: number; deletions: number }> {
 		return this.run(Operation.Diff, () => this.repository.diffBetweenShortStat(ref1, ref2));
-	}
-
-	diffTrees(treeish1: string, treeish2?: string): Promise<Change[]> {
-		return this.run(Operation.Diff, () => this.repository.diffTrees(treeish1, treeish2));
 	}
 
 	getMergeBase(ref1: string, ref2: string, ...refs: string[]): Promise<string | undefined> {
@@ -1449,10 +1422,6 @@ export class Repository implements Disposable {
 		await this.run(Operation.CherryPick, () => this.repository.cherryPick(commitHash));
 	}
 
-	async cherryPickAbort(): Promise<void> {
-		await this.run(Operation.CherryPick, () => this.repository.cherryPickAbort());
-	}
-
 	async move(from: string, to: string): Promise<void> {
 		await this.run(Operation.Move, () => this.repository.move(from, to));
 	}
@@ -1484,15 +1453,7 @@ export class Repository implements Disposable {
 
 		// Reflog
 		const branchFromReflog = await this.getBranchBaseFromReflog(ref);
-
-		let branchFromReflogUpstream: Branch | undefined = undefined;
-
-		if (branchFromReflog?.type === RefType.RemoteHead) {
-			branchFromReflogUpstream = branchFromReflog;
-		} else if (branchFromReflog?.type === RefType.Head) {
-			branchFromReflogUpstream = await this.getUpstreamBranch(branchFromReflog);
-		}
-
+		const branchFromReflogUpstream = branchFromReflog ? await this.getUpstreamBranch(branchFromReflog) : undefined;
 		if (branchFromReflogUpstream) {
 			await this.setConfig(mergeBaseConfigKey, `${branchFromReflogUpstream.remote}/${branchFromReflogUpstream.name}`);
 			return branchFromReflogUpstream;
@@ -1540,13 +1501,16 @@ export class Repository implements Disposable {
 
 	private async getDefaultBranch(): Promise<Branch | undefined> {
 		try {
-			const defaultBranch = await this.repository.getDefaultBranch();
-			return defaultBranch;
+			const defaultBranchResult = await this.repository.exec(['symbolic-ref', '--short', 'refs/remotes/origin/HEAD']);
+			if (defaultBranchResult.stdout.trim() === '' || defaultBranchResult.stderr) {
+				return undefined;
+			}
+
+			return this.getBranch(defaultBranchResult.stdout.trim());
 		}
-		catch (err) {
-			this.logger.warn(`[Repository][getDefaultBranch] Failed to get default branch details: ${err.message}.`);
-			return undefined;
-		}
+		catch (err) { }
+
+		return undefined;
 	}
 
 	private async getUpstreamBranch(branch: Branch): Promise<Branch | undefined> {
@@ -1595,8 +1559,8 @@ export class Repository implements Disposable {
 		await this.run(Operation.Rebase, () => this.repository.rebase(branch));
 	}
 
-	async tag(options: { name: string; message?: string; ref?: string }): Promise<void> {
-		await this.run(Operation.Tag, () => this.repository.tag(options));
+	async tag(name: string, message?: string): Promise<void> {
+		await this.run(Operation.Tag, () => this.repository.tag(name, message));
 	}
 
 	async deleteTag(name: string): Promise<void> {
@@ -1638,13 +1602,12 @@ export class Repository implements Disposable {
 		return await this.repository.getCommit(ref);
 	}
 
-	async getEmptyTree(): Promise<string> {
-		if (!this._EMPTY_TREE) {
-			const result = await this.repository.exec(['hash-object', '-t', 'tree', '/dev/null']);
-			this._EMPTY_TREE = result.stdout.trim();
-		}
+	async getCommitCount(range: string): Promise<{ ahead: number; behind: number }> {
+		return await this.run(Operation.RevList, () => this.repository.getCommitCount(range));
+	}
 
-		return this._EMPTY_TREE;
+	async revParse(ref: string): Promise<string | undefined> {
+		return await this.run(Operation.RevParse, () => this.repository.revParse(ref));
 	}
 
 	async reset(treeish: string, hard?: boolean): Promise<void> {
@@ -1856,7 +1819,7 @@ export class Repository implements Disposable {
 			return true;
 		}
 
-		const maybeRebased = await this.run(Operation.Log(true), async () => {
+		const maybeRebased = await this.run(Operation.Log, async () => {
 			try {
 				const result = await this.repository.exec(['log', '--oneline', '--cherry', `${currentBranch ?? ''}...${currentBranch ?? ''}@{upstream}`, '--']);
 				if (result.exitCode) {
@@ -1980,8 +1943,7 @@ export class Repository implements Disposable {
 		return await this.run(Operation.Ignore, async () => {
 			const ignoreFile = `${this.repository.root}${path.sep}.gitignore`;
 			const textToAppend = files
-				.map(uri => relativePath(this.repository.root, uri.fsPath)
-					.replace(/\\|\[/g, match => match === '\\' ? '/' : `\\${match}`))
+				.map(uri => relativePath(this.repository.root, uri.fsPath).replace(/\\/g, '/'))
 				.join('\n');
 
 			const document = await new Promise(c => fs.exists(ignoreFile, c))
@@ -2190,14 +2152,13 @@ export class Repository implements Disposable {
 				this._updateResourceGroupsState(optimisticResourcesGroups);
 			}
 
-			const [HEAD, remotes, submodules, rebaseCommit, mergeInProgress, cherryPickInProgress, commitTemplate] =
+			const [HEAD, remotes, submodules, rebaseCommit, mergeInProgress, commitTemplate] =
 				await Promise.all([
 					this.repository.getHEADRef(),
 					this.repository.getRemotes(),
 					this.repository.getSubmodules(),
 					this.getRebaseCommit(),
 					this.isMergeInProgress(),
-					this.isCherryPickInProgress(),
 					this.getInputTemplate()]);
 
 			this._HEAD = HEAD;
@@ -2205,17 +2166,11 @@ export class Repository implements Disposable {
 			this._submodules = submodules!;
 			this.rebaseCommit = rebaseCommit;
 			this.mergeInProgress = mergeInProgress;
-			this.cherryPickInProgress = cherryPickInProgress;
 
 			this._sourceControl.commitTemplate = commitTemplate;
 
 			// Execute cancellable long-running operation
-			const [resourceGroups, refs] =
-				await Promise.all([
-					this.getStatus(cancellationToken),
-					this.getRefs({}, cancellationToken)]);
-
-			this._refs = refs;
+			const resourceGroups = await this.getStatus(cancellationToken);
 			this._updateResourceGroupsState(resourceGroups);
 
 			this._onDidChangeStatus.fire();
@@ -2431,11 +2386,6 @@ export class Repository implements Disposable {
 	private isMergeInProgress(): Promise<boolean> {
 		const mergeHeadPath = path.join(this.repository.root, '.git', 'MERGE_HEAD');
 		return new Promise<boolean>(resolve => fs.exists(mergeHeadPath, resolve));
-	}
-
-	private isCherryPickInProgress(): Promise<boolean> {
-		const cherryPickHeadPath = path.join(this.repository.root, '.git', 'CHERRY_PICK_HEAD');
-		return new Promise<boolean>(resolve => fs.exists(cherryPickHeadPath, resolve));
 	}
 
 	private async maybeAutoStash<T>(runOperation: () => Promise<T>): Promise<T> {

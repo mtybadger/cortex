@@ -1,0 +1,31 @@
+{
+  "deps": [
+    {
+      "name": "pgfopts"
+    },
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "fontspec"
+    }
+  ],
+  "macros": [
+    {
+      "name": "renewcaps",
+      "arg": {
+        "format": "{}",
+        "snippet": "renewcaps{${1:font name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/stealcaps#c": [
+      "from=${1:font name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/stealcaps#c"
+  ]
+}

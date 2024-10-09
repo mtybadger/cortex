@@ -1,0 +1,42 @@
+{
+  "deps": [
+    {
+      "name": "xetex"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "iftex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "definergbcolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definergbcolor{${1:color}}{${2:RRGGBB}}"
+      }
+    },
+    {
+      "name": "xecolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "xecolor{${1:color}}"
+      }
+    },
+    {
+      "name": "textxecolor",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "textxecolor{${1:color}}{${2:text}}"
+      }
+    },
+    {
+      "name": "normalxecolor"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

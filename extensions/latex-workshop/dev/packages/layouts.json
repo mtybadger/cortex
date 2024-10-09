@@ -1,0 +1,826 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bs",
+      "unusual": true
+    },
+    {
+      "name": "currentfloat"
+    },
+    {
+      "name": "currentfloatpage"
+    },
+    {
+      "name": "currentfootnote"
+    },
+    {
+      "name": "currentheading"
+    },
+    {
+      "name": "currentlist"
+    },
+    {
+      "name": "currentpage"
+    },
+    {
+      "name": "currentparagraph"
+    },
+    {
+      "name": "currentstock"
+    },
+    {
+      "name": "currenttoc"
+    },
+    {
+      "name": "drawaspread",
+      "arg": {
+        "format": "[]{}{}{}{}{}{}{}",
+        "snippet": "drawaspread[${8:F}]{${1:w%l}}{${2:P}}{${3:T}}{${4:S}}{${5:H}}{${6:E}}{${7:G}}"
+      }
+    },
+    {
+      "name": "drawaspread",
+      "arg": {
+        "format": "{}{}{}{}{}{}{}",
+        "snippet": "drawaspread{${1:w%l}}{${2:P}}{${3:T}}{${4:S}}{${5:H}}{${6:E}}{${7:G}}"
+      }
+    },
+    {
+      "name": "drawdimensionsfalse"
+    },
+    {
+      "name": "drawdimensionstrue"
+    },
+    {
+      "name": "drawfloat"
+    },
+    {
+      "name": "drawfloatpage"
+    },
+    {
+      "name": "drawfontframe",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawfontframe{${1:text}}"
+      }
+    },
+    {
+      "name": "drawfontframelabel",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawfontframelabel{${1:text}}"
+      }
+    },
+    {
+      "name": "drawfootnote"
+    },
+    {
+      "name": "drawheading",
+      "arg": {
+        "format": "{}",
+        "snippet": "drawheading{${1:font style}}"
+      }
+    },
+    {
+      "name": "drawlist"
+    },
+    {
+      "name": "drawmarginparsfalse"
+    },
+    {
+      "name": "drawmarginparstrue"
+    },
+    {
+      "name": "drawpage"
+    },
+    {
+      "name": "drawparagraph"
+    },
+    {
+      "name": "drawparametersfalse"
+    },
+    {
+      "name": "drawparameterstrue"
+    },
+    {
+      "name": "drawstock"
+    },
+    {
+      "name": "drawtoc"
+    },
+    {
+      "name": "floatdesign"
+    },
+    {
+      "name": "floatdiagram"
+    },
+    {
+      "name": "floatpagedesign"
+    },
+    {
+      "name": "floatpagediagram"
+    },
+    {
+      "name": "floatpagevalues"
+    },
+    {
+      "name": "floatvalues"
+    },
+    {
+      "name": "footnotedesign"
+    },
+    {
+      "name": "footnotediagram"
+    },
+    {
+      "name": "footnotevalues"
+    },
+    {
+      "name": "headingdesign",
+      "arg": {
+        "format": "{}",
+        "snippet": "headingdesign{${1:font style}}"
+      }
+    },
+    {
+      "name": "headingdiagram",
+      "arg": {
+        "format": "{}",
+        "snippet": "headingdiagram{${1:font style}}"
+      }
+    },
+    {
+      "name": "headingvalues"
+    },
+    {
+      "name": "ifdrawdimensions",
+      "unusual": true
+    },
+    {
+      "name": "ifdrawmarginpars",
+      "unusual": true
+    },
+    {
+      "name": "ifdrawparameters",
+      "unusual": true
+    },
+    {
+      "name": "iflistaspara",
+      "unusual": true
+    },
+    {
+      "name": "ifmarginparswitch",
+      "unusual": true
+    },
+    {
+      "name": "ifoddpagelayout",
+      "unusual": true
+    },
+    {
+      "name": "ifprintheadings",
+      "unusual": true
+    },
+    {
+      "name": "ifprintparameters",
+      "unusual": true
+    },
+    {
+      "name": "ifreversemarginpar",
+      "unusual": true
+    },
+    {
+      "name": "ifruninhead",
+      "unusual": true
+    },
+    {
+      "name": "iftwocolumnlayout",
+      "unusual": true
+    },
+    {
+      "name": "layoutsbox"
+    },
+    {
+      "name": "listasparafalse"
+    },
+    {
+      "name": "listasparatrue"
+    },
+    {
+      "name": "listdesign"
+    },
+    {
+      "name": "listdiagram"
+    },
+    {
+      "name": "listvalues"
+    },
+    {
+      "name": "marginparswitchfalse"
+    },
+    {
+      "name": "marginparswitchtrue"
+    },
+    {
+      "name": "oddpagelayoutfalse"
+    },
+    {
+      "name": "oddpagelayouttrue"
+    },
+    {
+      "name": "pagedesign"
+    },
+    {
+      "name": "pagediagram"
+    },
+    {
+      "name": "pagevalues"
+    },
+    {
+      "name": "paragraphdesign"
+    },
+    {
+      "name": "paragraphdiagram"
+    },
+    {
+      "name": "paragraphvalues"
+    },
+    {
+      "name": "printheadingsfalse"
+    },
+    {
+      "name": "printheadingstrue"
+    },
+    {
+      "name": "printinunitsof",
+      "arg": {
+        "format": "{}",
+        "snippet": "printinunitsof{${1:unit}}"
+      }
+    },
+    {
+      "name": "printparametersfalse"
+    },
+    {
+      "name": "printparameterstrue"
+    },
+    {
+      "name": "prntlen",
+      "arg": {
+        "format": "{}",
+        "snippet": "prntlen{${1:length}}"
+      }
+    },
+    {
+      "name": "reversemarginparfalse"
+    },
+    {
+      "name": "reversemarginpartrue"
+    },
+    {
+      "name": "runinheadfalse"
+    },
+    {
+      "name": "runinheadtrue"
+    },
+    {
+      "name": "setfootbox",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "setfootbox{${1:height%l}}{${2:depth%l}}"
+      }
+    },
+    {
+      "name": "setlabelfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlabelfont{${1:font style}}"
+      }
+    },
+    {
+      "name": "setlayoutscale",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlayoutscale{${1:factor}}"
+      }
+    },
+    {
+      "name": "setparameterstextsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "setparameterstextsize{${1:fontsize cmd}}"
+      }
+    },
+    {
+      "name": "setparametertextfont",
+      "arg": {
+        "format": "{}",
+        "snippet": "setparametertextfont{${1:font style}}"
+      }
+    },
+    {
+      "name": "setuplayouts"
+    },
+    {
+      "name": "setvaluestextsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "setvaluestextsize{${1:fontsize cmd}}"
+      }
+    },
+    {
+      "name": "spinemargin"
+    },
+    {
+      "name": "stockdesign"
+    },
+    {
+      "name": "stockdiagram"
+    },
+    {
+      "name": "stockheight"
+    },
+    {
+      "name": "stockvalues"
+    },
+    {
+      "name": "stockwidth"
+    },
+    {
+      "name": "testdrawdimensions",
+      "unusual": true
+    },
+    {
+      "name": "testprintparameters",
+      "unusual": true
+    },
+    {
+      "name": "tocdesign"
+    },
+    {
+      "name": "tocdiagram"
+    },
+    {
+      "name": "tocvalues"
+    },
+    {
+      "name": "trimedge"
+    },
+    {
+      "name": "trimtop"
+    },
+    {
+      "name": "tryafterskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryafterskip{${1:length}}"
+      }
+    },
+    {
+      "name": "trybeforeskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "trybeforeskip{${1:length}}"
+      }
+    },
+    {
+      "name": "trybotfigrule",
+      "arg": {
+        "format": "{}",
+        "snippet": "trybotfigrule{${1:length}}"
+      }
+    },
+    {
+      "name": "trybottomfraction",
+      "arg": {
+        "format": "{}",
+        "snippet": "trybottomfraction{${1:decimal}}"
+      }
+    },
+    {
+      "name": "trybottomnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "trybottomnumber{${1:integer}}"
+      }
+    },
+    {
+      "name": "trycolumnsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trycolumnsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trycolumnseprule",
+      "arg": {
+        "format": "{}",
+        "snippet": "trycolumnseprule{${1:length}}"
+      }
+    },
+    {
+      "name": "tryevensidemargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryevensidemargin{${1:length}}"
+      }
+    },
+    {
+      "name": "tryfloatsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfloatsep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryfootins",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootins{${1:length}}"
+      }
+    },
+    {
+      "name": "tryfootnotebaseline",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootnotebaseline{${1:length}}"
+      }
+    },
+    {
+      "name": "tryfootnotesep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootnotesep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryfootrulefrac",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootrulefrac{${1:decimal}}"
+      }
+    },
+    {
+      "name": "tryfootruleheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootruleheight{${1:height%l}}"
+      }
+    },
+    {
+      "name": "tryfootskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryfootskip{${1:length}}"
+      }
+    },
+    {
+      "name": "tryheadheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryheadheight{${1:length}}"
+      }
+    },
+    {
+      "name": "tryheadsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryheadsep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryhoffset",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryhoffset{${1:length}}"
+      }
+    },
+    {
+      "name": "tryindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryindent{${1:length}}"
+      }
+    },
+    {
+      "name": "tryintextsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryintextsep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryitemindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryitemindent{${1:length}}"
+      }
+    },
+    {
+      "name": "tryitemsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryitemsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trylabelsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trylabelsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trylabelwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trylabelwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tryleftmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryleftmargin{${1:length}}"
+      }
+    },
+    {
+      "name": "trylistparindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "trylistparindent{${1:length}}"
+      }
+    },
+    {
+      "name": "trymarginparpush",
+      "arg": {
+        "format": "{}",
+        "snippet": "trymarginparpush{${1:length}}"
+      }
+    },
+    {
+      "name": "trymarginparsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trymarginparsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trymarginparwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trymarginparwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tryoddsidemargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryoddsidemargin{${1:length}}"
+      }
+    },
+    {
+      "name": "trypaperheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "trypaperheight{${1:height%l}}"
+      }
+    },
+    {
+      "name": "trypaperwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trypaperwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tryparbaselineskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparbaselineskip{${1:length}}"
+      }
+    },
+    {
+      "name": "tryparindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparindent{${1:length}}"
+      }
+    },
+    {
+      "name": "tryparlinewidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparlinewidth{${1:width}}"
+      }
+    },
+    {
+      "name": "tryparsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparsep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryparskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparskip{${1:length}}"
+      }
+    },
+    {
+      "name": "tryparskip",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryparskip{${1:length}}"
+      }
+    },
+    {
+      "name": "trypartopsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trypartopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "tryrightmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryrightmargin{${1:length}}"
+      }
+    },
+    {
+      "name": "tryspinemargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryspinemargin{${1:length}}"
+      }
+    },
+    {
+      "name": "trystockheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "trystockheight{${1:height%l}}"
+      }
+    },
+    {
+      "name": "trystockwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trystockwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "trytextfloatsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytextfloatsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trytextfraction",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytextfraction{${1:decimal}}"
+      }
+    },
+    {
+      "name": "trytextheight",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytextheight{${1:height%l}}"
+      }
+    },
+    {
+      "name": "trytextwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytextwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "trytocdotsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytocdotsep{${1:decimal}}"
+      }
+    },
+    {
+      "name": "trytocindent",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytocindent{${1:length}}"
+      }
+    },
+    {
+      "name": "trytoclinewidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytoclinewidth{${1:width}}"
+      }
+    },
+    {
+      "name": "trytocnumwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytocnumwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "trytocpnumwidth",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytocpnumwidth{${1:width}}"
+      }
+    },
+    {
+      "name": "trytocrmarg",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytocrmarg{${1:length}}"
+      }
+    },
+    {
+      "name": "trytopfigrule",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytopfigrule{${1:length}}"
+      }
+    },
+    {
+      "name": "trytopfraction",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytopfraction{${1:decimal}}"
+      }
+    },
+    {
+      "name": "trytopmargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytopmargin{${1:length}}"
+      }
+    },
+    {
+      "name": "trytopnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytopnumber{${1:integer}}"
+      }
+    },
+    {
+      "name": "trytopsep",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytopsep{${1:length}}"
+      }
+    },
+    {
+      "name": "trytotalnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytotalnumber{${1:integer}}"
+      }
+    },
+    {
+      "name": "trytrimedge",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytrimedge{${1:length}}"
+      }
+    },
+    {
+      "name": "trytrimtop",
+      "arg": {
+        "format": "{}",
+        "snippet": "trytrimtop{${1:length}}"
+      }
+    },
+    {
+      "name": "tryuppermargin",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryuppermargin{${1:length}}"
+      }
+    },
+    {
+      "name": "tryvoffset",
+      "arg": {
+        "format": "{}",
+        "snippet": "tryvoffset{${1:length}}"
+      }
+    },
+    {
+      "name": "twocolumnlayoutfalse"
+    },
+    {
+      "name": "twocolumnlayouttrue"
+    },
+    {
+      "name": "uppermargin"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

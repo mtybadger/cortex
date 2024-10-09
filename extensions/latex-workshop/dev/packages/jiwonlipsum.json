@@ -1,0 +1,65 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "jiwon"
+    },
+    {
+      "name": "jiwon",
+      "arg": {
+        "format": "[]",
+        "snippet": "jiwon[${1:num/char}]"
+      }
+    },
+    {
+      "name": "jiwon",
+      "arg": {
+        "format": "[]",
+        "snippet": "jiwon[${1:num-num}]"
+      }
+    },
+    {
+      "name": "jiwon*",
+      "unusual": true
+    },
+    {
+      "name": "jiwon*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "jiwon*[${1:num/char}]"
+      }
+    },
+    {
+      "name": "jiwon*",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "jiwon*[${1:num-num}]"
+      }
+    },
+    {
+      "name": "jiwondef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "jiwondef{${1:cmd}}{${2:jiwon no.}}"
+      }
+    },
+    {
+      "name": "jiwonparnumberon"
+    },
+    {
+      "name": "jiwonparnumberoff"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/jiwonlipsum#c": [
+      "nopar",
+      "numbers"
+    ]
+  },
+  "args": [
+    "\\usepackage/jiwonlipsum#c"
+  ]
+}

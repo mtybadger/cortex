@@ -1,0 +1,33 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "pagenumbering",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "pagenumbering[${2:prefix}]{${1:numstyle%keyvals}}",
+        "keys": [
+          "\\pagenumbering#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "chappgsep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/chappg#c": [
+      "auto",
+      "noauto"
+    ],
+    "\\pagenumbering#c": [
+      "bychapter"
+    ]
+  },
+  "args": [
+    "\\usepackage/chappg#c"
+  ]
+}

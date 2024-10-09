@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bidihl",
+      "arg": {
+        "format": "{}",
+        "snippet": "bidihl{${1:text}}"
+      }
+    },
+    {
+      "name": "bidihlspace"
+    },
+    {
+      "name": "bidihlnewline"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,77 @@
+{
+  "deps": [
+    {
+      "name": "listings"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "framemargin",
+      "unusual": true
+    },
+    {
+      "name": "pythonprompt",
+      "unusual": true
+    },
+    {
+      "name": "literatecolour",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "literatecolour{${1:text}}"
+      }
+    },
+    {
+      "name": "inputpythonfile",
+      "arg": {
+        "format": "{}",
+        "snippet": "inputpythonfile{${1:file}}"
+      }
+    },
+    {
+      "name": "inputpythonfile",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "inputpythonfile{${1:file}}[${2:start num}]"
+      }
+    },
+    {
+      "name": "inputpythonfile",
+      "arg": {
+        "format": "{}[][]",
+        "snippet": "inputpythonfile{${1:file}}[${2:start num}][${3:end num}]"
+      }
+    },
+    {
+      "name": "pyth",
+      "arg": {
+        "format": "||",
+        "snippet": "pyth|${1:text}|"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "python"
+    },
+    {
+      "name": "python",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\lstset,\\begin{lstlisting},\\lstinputlisting,\\lstdefinelanguage,\\lstdefinestyle": [
+      "style=pythonhighlight-style"
+    ],
+    "\\lstinline,\\lstMakeShortInline,\\lstdefinelanguage,\\lstdefinestyle": [
+      "style=pythonhighlight-inline-style"
+    ]
+  },
+  "args": []
+}

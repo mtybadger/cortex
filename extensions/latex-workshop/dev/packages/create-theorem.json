@@ -1,0 +1,118 @@
+{
+  "deps": [
+    {
+      "name": "crefthe"
+    },
+    {
+      "name": "amsfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "NameTheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NameTheorem{${1:envname}}{${2:keyvals}}",
+        "keys": [
+          "\\NameTheorem#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "CreateTheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "CreateTheorem{${1:envname}}{${2:keyvals}}",
+        "keys": [
+          "\\CreateTheorem#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SetTheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetTheorem{${1:envname}}{${2:keyvals}}",
+        "keys": [
+          "\\SetTheorem#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "SetTheoremBinding",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetTheoremBinding{${1:envname}}{${2:envname to bind with}}"
+      }
+    },
+    {
+      "name": "NameTheorems",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "NameTheorems{${1:language}}{${2:keyvals}}",
+        "keys": [
+          "\\NameTheorems#c"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "CreateTheoremAddLanguage",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CreateTheoremAddLanguage{${1:language}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/create-theorem#c": [
+      "name as context",
+      "name as is",
+      "name in link",
+      "no preset names"
+    ],
+    "\\NameTheorem#c": [
+      "heading=${1:string}",
+      "heading={${1:lang1=string1,lang2=string2,...}}",
+      "heading style=${1:font commands}",
+      "crefname={${1:singular name}}{${2:plural name}}",
+      "crefname={${1:lang1={name1}{pluralname1},...}}",
+      "crefname style=${1:font commands}",
+      "Crefname={${1:singular name}}{${2:plural name}}",
+      "Crefname={${1:lang1={name1}{pluralname1},...}}",
+      "Crefname style=${1:font commands}",
+      "numbering style=${1:font commands}",
+      "use name={${1:envname1;envname2;...}}"
+    ],
+    "\\CreateTheorem#c": [
+      "name={${1:\\NameTheorem keyvals}}",
+      "use name={${1:envname1;envname2;...}}",
+      "style=${1:theorem style}",
+      "qed=${1:symbol}",
+      "parent counter=${1:counter}",
+      "shared counter=${1:counter}",
+      "numberless",
+      "create starred version",
+      "copy existed=${1:envname}"
+    ],
+    "\\SetTheorem#c": [
+      "name={${1:\\NameTheorem keyvals}}",
+      "qed=${1:symbol}",
+      "parent counter=${1:counter}",
+      "shared counter=${1:counter}"
+    ],
+    "\\NameTheorems#c": [
+      "heading={${1:envname}=${2:string}}",
+      "crefname={${1:envname}={${2:singular}}{${3:plural}}}",
+      "Crefname={${1:envname}={${2:singular}}{${3:plural}}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/create-theorem#c"
+  ]
+}

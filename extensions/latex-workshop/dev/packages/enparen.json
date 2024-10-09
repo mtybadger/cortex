@@ -1,0 +1,103 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "protecteddef"
+    },
+    {
+      "name": "atveryend"
+    },
+    {
+      "name": "uniquecounter"
+    },
+    {
+      "name": "zref-base"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "kvsetkeys"
+    }
+  ],
+  "macros": [
+    {
+      "name": "enparen",
+      "arg": {
+        "format": "{}",
+        "snippet": "enparen{${1:text}}"
+      }
+    },
+    {
+      "name": "enparenLeft"
+    },
+    {
+      "name": "enparenRight"
+    },
+    {
+      "name": "enparenSetSymbols",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "enparenSetSymbols{${1:level}}{${2:open}}{${3:close}}"
+      }
+    },
+    {
+      "name": "enparenUnsetSymbols",
+      "arg": {
+        "format": "{}",
+        "snippet": "enparenUnsetSymbols{${1:level}}"
+      }
+    },
+    {
+      "name": "enparenBeginContext",
+      "arg": {
+        "format": "{}",
+        "snippet": "enparenBeginContext{${1:name}}"
+      }
+    },
+    {
+      "name": "enparenEndContext",
+      "arg": {
+        "format": "{}",
+        "snippet": "enparenEndContext{${1:name}}"
+      }
+    },
+    {
+      "name": "enparenSetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "enparenSetup{${1:options%keyvals}}",
+        "keys": [
+          "\\enparenSetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "enparenContextDefault",
+      "unusual": true
+    },
+    {
+      "name": "enparenBeginContext",
+      "unusual": true
+    },
+    {
+      "name": "enparenEndContext",
+      "unusual": true
+    },
+    {
+      "name": "enparenCheckEmptyStack",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\enparenSetup": [
+      "caption",
+      "footnote"
+    ]
+  },
+  "args": []
+}

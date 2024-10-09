@@ -1,0 +1,87 @@
+{
+  "deps": [
+    {
+      "name": "hsetup"
+    }
+  ],
+  "macros": [
+    {
+      "name": "closingtwo",
+      "arg": {
+        "format": "{}",
+        "snippet": "closingtwo{${1:text}}"
+      }
+    },
+    {
+      "name": "opening",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "opening[${2:add. text%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "reference",
+      "arg": {
+        "format": "{}",
+        "snippet": "reference{${1:text}}"
+      }
+    },
+    {
+      "name": "sign",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "sign[${2:height%l}]{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "sign",
+      "arg": {
+        "format": "{}",
+        "snippet": "sign{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "reftext",
+      "unusual": true
+    },
+    {
+      "name": "signatureheight",
+      "unusual": true
+    },
+    {
+      "name": "signatureimage",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/hletter#c": [
+      "private",
+      "signit",
+      "bruni",
+      "test",
+      "english",
+      "german",
+      "french",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "twoside",
+      "oneside",
+      "draft",
+      "final",
+      "leqno",
+      "fleqn"
+    ]
+  },
+  "args": [
+    "\\documentclass/hletter#c"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "topI"
+    },
+    {
+      "name": "endtopI"
+    },
+    {
+      "name": "topII"
+    },
+    {
+      "name": "endtopII"
+    },
+    {
+      "name": "tabcap",
+      "arg": {
+        "format": "{}",
+        "snippet": "tabcap{${1:text}}"
+      }
+    },
+    {
+      "name": "tabcap",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "tabcap[${2:width}]{${1:text}}"
+      }
+    },
+    {
+      "name": "figcap",
+      "arg": {
+        "format": "{}",
+        "snippet": "figcap{${1:text}}"
+      }
+    },
+    {
+      "name": "figcap",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "figcap[${2:width}]{${1:text}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "topfloat",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:number}}"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

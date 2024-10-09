@@ -1,0 +1,385 @@
+{
+  "deps": [
+    {
+      "name": "yax"
+    }
+  ],
+  "macros": [
+    {
+      "name": "finishpdffile"
+    },
+    {
+      "name": "anchor",
+      "arg": {
+        "format": "{}",
+        "snippet": "anchor{${1:name}}"
+      }
+    },
+    {
+      "name": "anchor",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "anchor[${2:options%keyvals}]{${1:name}}",
+        "keys": [
+          "\\anchor"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "anchorname",
+      "arg": {
+        "format": "{}",
+        "snippet": "anchorname{${1:name}}"
+      }
+    },
+    {
+      "name": "outline",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "outline{${1:level}}{${2:title%plain}}"
+      }
+    },
+    {
+      "name": "outline",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "outline[${3:options%keyvals}]{${1:level}}{${2:title%plain}}",
+        "keys": [
+          "\\outline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "outline",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "outline{${1:level}}[${3:name}]{${2:title%plain}}"
+      }
+    },
+    {
+      "name": "outline",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "outline[${3:options%keyvals}]{${1:level}}[${4:name}]{${2:title%plain}}",
+        "keys": [
+          "\\outline"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pdfdef",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pdfdef{${1:cmd}}{${2:definition}}"
+      }
+    },
+    {
+      "name": "pdfdef",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "pdfdef{${1:cmd}}[${3:args}]{${2:definition}}"
+      }
+    },
+    {
+      "name": "jumplink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "jumplink{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "jumplink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "jumplink[${3:options%keyvals}]{${1:name}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "urllink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "urllink{${1:URL}}{${2:text}}"
+      }
+    },
+    {
+      "name": "urllink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "urllink[${3:options%keyvals}]{${1:URL}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "javascriptlink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "javascriptlink{${1:JavaScript code}}{${2:text}}"
+      }
+    },
+    {
+      "name": "javascriptlink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "javascriptlink[${3:options%keyvals}]{${1:JavaScript code}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "actionlink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "actionlink{${1:name}}{${2:text}}"
+      }
+    },
+    {
+      "name": "actionlink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "actionlink[${3:options%keyvals}]{${1:name}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "rawactionlink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "rawactionlink{${1:PDF code}}{${2:text}}"
+      }
+    },
+    {
+      "name": "rawactionlink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "rawactionlink[${3:options%keyvals}]{${1:PDF code}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "annotation",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "annotation{${1:PDF code}}{${2:text}}"
+      }
+    },
+    {
+      "name": "annotation",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "annotation[${3:options%keyvals}]{${1:PDF code}}{${2:text}}",
+        "keys": [
+          "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "urlaction",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "urlaction{${1:name}}{${2:URL}}"
+      }
+    },
+    {
+      "name": "javascriptaction",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "javascriptaction{${1:name}}{${2:JavaScript code}}"
+      }
+    },
+    {
+      "name": "embeddedfile",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "embeddedfile{${1:object name}}{${2:file}}"
+      }
+    },
+    {
+      "name": "embeddedfile",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "embeddedfile[${3:description}]{${1:object name}}{${2:file}}"
+      }
+    },
+    {
+      "name": "embeddedfile",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "embeddedfile{${1:object name}}[${3:alt filename}]{${2:file}}"
+      }
+    },
+    {
+      "name": "embeddedfile",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "embeddedfile[${3:description}]{${1:object name}}[${4:alt filename}]{${2:file}}"
+      }
+    },
+    {
+      "name": "openfilelink",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "openfilelink{${1:file}}{${2:text}}"
+      }
+    },
+    {
+      "name": "openfilelink",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "openfilelink[${3:options%keyvals}]{${1:file}}{${2:text}}"
+      }
+    },
+    {
+      "name": "openfilelink",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "openfilelink{${1:file}}[${3:page}]{${2:text}}"
+      }
+    },
+    {
+      "name": "openfilelink",
+      "arg": {
+        "format": "[]{}[]{}",
+        "snippet": "openfilelink[${3:options%keyvals}]{${1:file}}[${4:page}]{${2:text}}"
+      }
+    },
+    {
+      "name": "pdfobject",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pdfobject{${1:name}}{${2:code}}"
+      }
+    },
+    {
+      "name": "pdfdictobject",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pdfdictobject{${1:name}}{${2:code}}"
+      }
+    },
+    {
+      "name": "pdfstreamobject",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pdfstreamobject{${1:name}}{${2:stream}}"
+      }
+    },
+    {
+      "name": "pdfstreamobject",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pdfstreamobject[${3:raw code}]{${1:name}}{${2:stream}}"
+      }
+    },
+    {
+      "name": "pdffileobject",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pdffileobject{${1:name}}{${2:file}}"
+      }
+    },
+    {
+      "name": "pdffileobject",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "pdffileobject[${3:raw code}]{${1:name}}{${2:file}}"
+      }
+    },
+    {
+      "name": "pdfreserveobject",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfreserveobject{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfensureobject",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfensureobject{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfobjectnumber",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfobjectnumber{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfrefobject",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfrefobject{${1:name}}"
+      }
+    },
+    {
+      "name": "pdfobjectstatus",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfobjectstatus{${1:name}}"
+      }
+    },
+    {
+      "name": "ifpdfobject",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "ifpdfobject{${1:name}}{${2:true}}{${3:false}}"
+      }
+    },
+    {
+      "name": "pdfstring",
+      "arg": {
+        "format": "{}",
+        "snippet": "pdfstring{${1:string}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\anchor": [
+      "up=",
+      "left=",
+      "fit=${1|xyz,fit,fith,fitv,fitb,fitbh,fitbv,fitr|}",
+      "zoom=${1:number}"
+    ],
+    "\\outline": [
+      "open",
+      "bold",
+      "italic",
+      "color=${1:r g b}",
+      "outlinecolor${1:r g b}",
+      "anchor=${1:name}",
+      "action${1:name}"
+    ],
+    "\\jumplink,\\urllink,\\javascriptlink,\\actionlink,\\rawactionlink,\\annotation,\\openfilelink": [
+      "border=${1:number}",
+      "color=${1:r g b}",
+      "linkcolor=${1:r g b}",
+      "dash=${1:numbers}",
+      "highlight=${1|none,invert,outline,push|}",
+      "pre=${1:code}",
+      "post=${1:code}",
+      "raw=${1:PDF code}"
+    ]
+  },
+  "args": []
+}

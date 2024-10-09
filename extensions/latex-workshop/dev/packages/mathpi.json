@@ -1,0 +1,25 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathfrak",
+      "if": "mathfrak",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathfrak{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/mathpi#c": [
+      "mathfrak",
+      "mathcal",
+      "mathscr",
+      "mathbb"
+    ]
+  },
+  "args": [
+    "\\usepackage/mathpi#c"
+  ]
+}

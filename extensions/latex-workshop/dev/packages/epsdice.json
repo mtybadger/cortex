@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "epsdice",
+      "arg": {
+        "format": "{}",
+        "snippet": "epsdice{${1:number}}"
+      }
+    },
+    {
+      "name": "epsdice",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "epsdice[${2:black}]{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

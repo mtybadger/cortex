@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "mweights"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "textsu",
+      "arg": {
+        "format": "{}",
+        "snippet": "textsu{${1:text}}"
+      }
+    },
+    {
+      "name": "textsuperior",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "textsuperior{${1:text}}"
+      }
+    },
+    {
+      "name": "sufigures"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/clara#c": [
+      "scaled=${1:factor}",
+      "lining",
+      "oldstyle",
+      "tabular",
+      "mainfont",
+      "bold",
+      "regular"
+    ]
+  },
+  "args": [
+    "\\usepackage/clara#c"
+  ]
+}

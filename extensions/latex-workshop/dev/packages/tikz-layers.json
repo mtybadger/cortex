@@ -1,0 +1,20 @@
+{
+  "deps": [
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarybackgrounds"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\begin{scope}#c,\\scoped#c": [
+      "on behind layer",
+      "on above layer",
+      "on glass layer"
+    ]
+  },
+  "args": []
+}

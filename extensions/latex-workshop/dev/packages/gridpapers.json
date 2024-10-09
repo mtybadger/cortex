@@ -1,0 +1,50 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarypatterns.meta"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzpagenodes"
+    },
+    {
+      "name": "pagecolor"
+    },
+    {
+      "name": "geometry"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/gridpapers#c": [
+      "pattern=${1|std,stdeight,majmin,dot,hex,hexup,tri,iso,lightcone,ruled,doubleruled|}",
+      "colorset=${1|std,precocious,ghostly,brickred,engineer,plumpad|}",
+      "majorcolor=",
+      "minorcolor=",
+      "bgcolor=",
+      "patternsize=",
+      "dotsize=",
+      "fullpage",
+      "textarea",
+      "geometry={${1:geometry spec}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/gridpapers#c"
+  ]
+}

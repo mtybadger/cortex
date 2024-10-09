@@ -1,0 +1,56 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ushort",
+      "arg": {
+        "format": "{}",
+        "snippet": "ushort{${1:char%formula}}"
+      }
+    },
+    {
+      "name": "ushortw",
+      "arg": {
+        "format": "{}",
+        "snippet": "ushortw{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "ushortd",
+      "arg": {
+        "format": "{}",
+        "snippet": "ushortd{${1:char%formula}}"
+      }
+    },
+    {
+      "name": "ushortdw",
+      "arg": {
+        "format": "{}",
+        "snippet": "ushortdw{${1:arg%formula}}"
+      }
+    },
+    {
+      "name": "ushortdline",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ushortdline{${1:arg}}"
+      }
+    },
+    {
+      "name": "ushortCreate",
+      "unusual": true
+    },
+    {
+      "name": "ushortEnsuremath",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ushortEnsuremath{${1:expression}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

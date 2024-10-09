@@ -1,0 +1,877 @@
+{
+  "deps": [
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "class-ctexbook"
+    },
+    {
+      "name": "xeCJK"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "newtxtext"
+    },
+    {
+      "name": "pifont"
+    },
+    {
+      "name": "xeCJKfntef"
+    },
+    {
+      "name": "newfloat"
+    },
+    {
+      "name": "caption"
+    },
+    {
+      "name": "subcaption"
+    },
+    {
+      "name": "bicaption"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "tabularx"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "longtable"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "diagbox"
+    },
+    {
+      "name": "tabu"
+    },
+    {
+      "name": "courier"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "pdfpages"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "ntheorem"
+    },
+    {
+      "name": "changepage"
+    },
+    {
+      "name": "afterpage"
+    },
+    {
+      "name": "footmisc"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "metalogo"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "natbib"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "tocloft"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "totcount"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "mhchem"
+    },
+    {
+      "name": "siunitx"
+    },
+    {
+      "name": "upgreek"
+    },
+    {
+      "name": "listings"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bigcell",
+      "arg": {
+        "format": "{}",
+        "snippet": "bigcell{${1:content}}"
+      }
+    },
+    {
+      "name": "cdate",
+      "unusual": true
+    },
+    {
+      "name": "cec",
+      "arg": {
+        "format": "{}",
+        "snippet": "cec{${1:molecule1,molecule2,...}}"
+      }
+    },
+    {
+      "name": "cftafterequENtitle",
+      "unusual": true
+    },
+    {
+      "name": "cftafterequtitle",
+      "unusual": true
+    },
+    {
+      "name": "cftequationsENnumwidth",
+      "unusual": true
+    },
+    {
+      "name": "cftequationsnumwidth",
+      "unusual": true
+    },
+    {
+      "name": "cftequENtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "cftequtitlefont",
+      "unusual": true
+    },
+    {
+      "name": "chapterstar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "chapterstar{${1:title}}"
+      }
+    },
+    {
+      "name": "ckeywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "ckeywords{${1:关键词 1,关键词 2,...%text}}"
+      }
+    },
+    {
+      "name": "colsep"
+    },
+    {
+      "name": "colsep",
+      "arg": {
+        "format": "[]",
+        "snippet": "colsep[${1:length}]"
+      }
+    },
+    {
+      "name": "cquauthpage"
+    },
+    {
+      "name": "cquauthpage",
+      "arg": {
+        "format": "[]",
+        "snippet": "cquauthpage[${1:scannedFile}]"
+      }
+    },
+    {
+      "name": "cqueqshortname",
+      "unusual": true
+    },
+    {
+      "name": "cquthesis"
+    },
+    {
+      "name": "edate",
+      "unusual": true
+    },
+    {
+      "name": "ekeywords",
+      "arg": {
+        "format": "{}",
+        "snippet": "ekeywords{${1:keyword1,keyword2,...%text}}"
+      }
+    },
+    {
+      "name": "eqlist",
+      "arg": {
+        "format": "{}",
+        "snippet": "eqlist{${1:中文 name}}"
+      }
+    },
+    {
+      "name": "eqlist",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "eqlist{${1:中文 name}}[${2:English name}]"
+      }
+    },
+    {
+      "name": "headcell",
+      "arg": {
+        "format": "{}",
+        "snippet": "headcell{${1:content}}"
+      }
+    },
+    {
+      "name": "inlinecite",
+      "arg": {
+        "format": "{}",
+        "snippet": "inlinecite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "listeq",
+      "arg": {
+        "format": "{}",
+        "snippet": "listeq{${1:中文 name}}"
+      }
+    },
+    {
+      "name": "listeq",
+      "arg": {
+        "format": "{}[]",
+        "snippet": "listeq{${1:中文 name}}[${2:English name}]"
+      }
+    },
+    {
+      "name": "listofequations"
+    },
+    {
+      "name": "listofequationsEN"
+    },
+    {
+      "name": "listofequationsname",
+      "unusual": true
+    },
+    {
+      "name": "listofequationsnameEN",
+      "unusual": true
+    },
+    {
+      "name": "listoffiguresEN"
+    },
+    {
+      "name": "listoffiguresnameEN",
+      "unusual": true
+    },
+    {
+      "name": "listoftablesEN"
+    },
+    {
+      "name": "listoftablesnameEN",
+      "unusual": true
+    },
+    {
+      "name": "makeabstract"
+    },
+    {
+      "name": "makecover"
+    },
+    {
+      "name": "MONTH",
+      "unusual": true
+    },
+    {
+      "name": "onlinecite",
+      "arg": {
+        "format": "{}",
+        "snippet": "onlinecite{${1:bibid}}"
+      }
+    },
+    {
+      "name": "parenthesesthis",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "parenthesesthis{${1:text}}"
+      }
+    },
+    {
+      "name": "resetrownum"
+    },
+    {
+      "name": "resetxuhao"
+    },
+    {
+      "name": "rownum"
+    },
+    {
+      "name": "rownum",
+      "arg": {
+        "format": "[]",
+        "snippet": "rownum[${1:1}]"
+      }
+    },
+    {
+      "name": "rownumseparator"
+    },
+    {
+      "name": "rownumtype",
+      "arg": {
+        "format": "[]",
+        "snippet": "rownumtype[${1:1-6}]"
+      }
+    },
+    {
+      "name": "secretize",
+      "arg": {
+        "format": "{}",
+        "snippet": "secretize{${1:text}}"
+      }
+    },
+    {
+      "name": "shortfigurename",
+      "unusual": true
+    },
+    {
+      "name": "shortfigurenameEN",
+      "unusual": true
+    },
+    {
+      "name": "shorttablename",
+      "unusual": true
+    },
+    {
+      "name": "shorttablenameEN",
+      "unusual": true
+    },
+    {
+      "name": "thecquXuHao",
+      "unusual": true
+    },
+    {
+      "name": "thecquXuHaoType",
+      "unusual": true
+    },
+    {
+      "name": "version"
+    },
+    {
+      "name": "xuhao"
+    },
+    {
+      "name": "xuhaoseparator"
+    },
+    {
+      "name": "xuhaotype",
+      "arg": {
+        "format": "[]",
+        "snippet": "xuhaotype[${1:1-6}]"
+      }
+    },
+    {
+      "name": "cqusetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "cqusetup{${1:options%keyvals}}",
+        "keys": [
+          "\\cqusetup"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ctitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ctitle{${1:论文中文题目%text}}"
+      }
+    },
+    {
+      "name": "etitle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "etitle{${1:English title%text}}"
+      }
+    },
+    {
+      "name": "cauthor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cauthor{${1:中文名字}}"
+      }
+    },
+    {
+      "name": "eauthor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "eauthor{${1:English name}}"
+      }
+    },
+    {
+      "name": "csupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "csupervisor{${1:中文名字}}"
+      }
+    },
+    {
+      "name": "esupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "esupervisor{${1:English name}}"
+      }
+    },
+    {
+      "name": "cpsupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cpsupervisor{${1:中文名字}}"
+      }
+    },
+    {
+      "name": "epsupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "epsupervisor{${1:English name}}"
+      }
+    },
+    {
+      "name": "cassistsupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cassistsupervisor{${1:中文名字}}"
+      }
+    },
+    {
+      "name": "cextrasupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cextrasupervisor{${1:中文名字}}"
+      }
+    },
+    {
+      "name": "eassistsupervisor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "eassistsupervisor{${1:English name}}"
+      }
+    },
+    {
+      "name": "cmajor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cmajor{${1:中文专业%text}}"
+      }
+    },
+    {
+      "name": "emajor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "emajor{${1:English major%text}}"
+      }
+    },
+    {
+      "name": "mycdate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "mycdate{${1:中文日期}}"
+      }
+    },
+    {
+      "name": "myedate",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "myedate{${1:English date}}"
+      }
+    },
+    {
+      "name": "ckeywords",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ckeywords{${1:关键词 1,关键词 2,...%text}}"
+      }
+    },
+    {
+      "name": "ekeywords",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "ekeywords{${1:keyword1,keyword2,...%text}}"
+      }
+    },
+    {
+      "name": "cclass",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cclass{${1:中文学科%text}}"
+      }
+    },
+    {
+      "name": "edgree",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "edgree{${1:English degree%text}}"
+      }
+    },
+    {
+      "name": "cdepartment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "cdepartment{${1:中文系%text}}"
+      }
+    },
+    {
+      "name": "edepartment",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "edepartment{${1:English department%text}}"
+      }
+    },
+    {
+      "name": "studentid",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "studentid{${1:id}}"
+      }
+    },
+    {
+      "name": "theoremsymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "theoremsymbol{${1:symbol}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "cabstract"
+    },
+    {
+      "name": "Cplus"
+    },
+    {
+      "name": "eabstract"
+    },
+    {
+      "name": "denotation"
+    },
+    {
+      "name": "denotation",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:indent%l}]"
+      }
+    },
+    {
+      "name": "denotation",
+      "arg": {
+        "format": "[][]",
+        "snippet": "[${1:indent%l}][${2:labelwidth%l}]"
+      }
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "secretizeEnv"
+    },
+    {
+      "name": "proof"
+    },
+    {
+      "name": "assumption"
+    },
+    {
+      "name": "assumption",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "definition"
+    },
+    {
+      "name": "definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proposition"
+    },
+    {
+      "name": "proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "lemma"
+    },
+    {
+      "name": "lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "theorem"
+    },
+    {
+      "name": "theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "axiom"
+    },
+    {
+      "name": "axiom",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "corollary"
+    },
+    {
+      "name": "corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "exercise"
+    },
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "example"
+    },
+    {
+      "name": "example",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "remark"
+    },
+    {
+      "name": "remark",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "problem"
+    },
+    {
+      "name": "problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "conjecture"
+    },
+    {
+      "name": "conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "enumerate*"
+    },
+    {
+      "name": "enumerate*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "itemize*"
+    },
+    {
+      "name": "itemize*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "description*"
+    },
+    {
+      "name": "description*",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/cquthesis#c": [
+      "type=${1|bachelor,master,doctor|}",
+      "liberalformat",
+      "academic",
+      "proffesionalmaster",
+      "openany",
+      "openright",
+      "blankleft",
+      "abstractopenright",
+      "blindtrail",
+      "printmode=${1|oneside,twoside,auto|}",
+      "secret",
+      "seriftoc",
+      "continuoustoc",
+      "bilinguallist=${1|off,combined,apart|}",
+      "GBK",
+      "UTF8",
+      "zhmap=${1|true,false,zhmCJK|}",
+      "zihao=${1|-4,5,false|}",
+      "heading",
+      "sub3section",
+      "sub4section",
+      "scheme=${1|chinese,plain|}",
+      "linespread=${1:number}",
+      "fontset=${1|adobe,fandol,founder,mac,macnew,macold,ubuntu,windows,none|}",
+      "punct=${1|quanjiao,banjiao,kaiming,CCT,plain|}",
+      "space=${1|true,false,auto|}",
+      "autoindent=",
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "onecolumn",
+      "twocolumn",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ],
+    "\\cqusetup": [
+      "ctitle={${1:论文中文题目}}",
+      "etitle={${1:English title}}",
+      "cauthor={${1:中文名字}}",
+      "eauthor={${1:English name}}",
+      "csupervisor={${1:中文名字}}",
+      "esupervisor={${1:English name}}",
+      "cpsupervisor={${1:中文名字}}",
+      "epsupervisor={${1:English name}}",
+      "cassistsupervisor={${1:中文名字}}",
+      "cextrasupervisor={${1:中文名字}}",
+      "eassistsupervisor={${1:English name}}",
+      "cmajor={${1:中文专业}}",
+      "emajor={${1:English major}}",
+      "mycdate={${1:中文日期}}",
+      "myedate={${1:English date}}",
+      "ckeywords={${1:关键词 1,关键词 2,...}}",
+      "ekeywords={${1:keyword1,keyword2,...}}",
+      "cclass={${1:中文学科}}",
+      "edgree={${1:English degree}}",
+      "cdepartment={${1:中文系}}",
+      "edepartment={${1:English department}}",
+      "studentid={${1:id}}"
+    ],
+    "\\begin{enumerate}#c,\\begin{itemize}#c,\\begin{description}#c,\\begin{enumerate*}#c,\\begin{itemize*}#c,\\begin{description*}#c": [
+      "A",
+      "a",
+      "I",
+      "i",
+      "1"
+    ]
+  },
+  "args": [
+    "\\documentclass/cquthesis#c"
+  ]
+}

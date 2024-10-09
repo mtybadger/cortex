@@ -1,0 +1,18 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/urwchancal#c": [
+      "scaled=${1:factor}",
+      "mathscr"
+    ]
+  },
+  "args": [
+    "\\usepackage/urwchancal#c"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "deps": [
+    {
+      "name": "ltxcmds"
+    },
+    {
+      "name": "infwarerr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "eolgrab",
+      "arg": {
+        "format": "{}",
+        "snippet": "eolgrab{${1:code}}"
+      }
+    },
+    {
+      "name": "eolgrabopt",
+      "arg": {
+        "format": "{}",
+        "snippet": "eolgrabopt{${1:code}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

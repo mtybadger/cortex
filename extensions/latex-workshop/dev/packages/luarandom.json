@@ -1,0 +1,50 @@
+{
+  "deps": [
+    {
+      "name": "iftex"
+    },
+    {
+      "name": "luacode"
+    }
+  ],
+  "macros": [
+    {
+      "name": "makeSimpleRandomNumberList",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "makeSimpleRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
+      }
+    },
+    {
+      "name": "makeSimpleRandomNumberList",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "makeSimpleRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
+      }
+    },
+    {
+      "name": "makeRandomNumberList",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "makeRandomNumberList{${1:least}}{${2:greatest}}{${3:number}}"
+      }
+    },
+    {
+      "name": "makeRandomNumberList",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "makeRandomNumberList[${4:seed}]{${1:least}}{${2:greatest}}{${3:number}}"
+      }
+    },
+    {
+      "name": "getNumberFromList",
+      "arg": {
+        "format": "{}",
+        "snippet": "getNumberFromList{${1:number}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

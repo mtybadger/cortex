@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "mathbbm",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbbm{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathbbmss",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbbmss{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mathbbmtt",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbbmtt{${1:text%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

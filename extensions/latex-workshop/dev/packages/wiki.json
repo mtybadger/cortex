@@ -1,0 +1,69 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "wikimarkup"
+    },
+    {
+      "name": "nowikimarkup"
+    },
+    {
+      "name": "wikiEnvironments"
+    },
+    {
+      "name": "nowikiEnvironments"
+    },
+    {
+      "name": "wikiFonts"
+    },
+    {
+      "name": "nowikiFonts"
+    },
+    {
+      "name": "wikiHeadings"
+    },
+    {
+      "name": "nowikiHeadings"
+    },
+    {
+      "name": "AssignCatCode",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "AssignCatCode{${1:cmd}}{${2:catcode}}"
+      }
+    },
+    {
+      "name": "MakeActive",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MakeActive{${1:cmd}}"
+      }
+    },
+    {
+      "name": "MakeOther",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "MakeOther{${1:cmd}}"
+      }
+    },
+    {
+      "name": "normalequals",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/wiki#c": [
+      "noFonts",
+      "noHeadings",
+      "noEnvironments",
+      "noVerbatim"
+    ]
+  },
+  "args": [
+    "\\usepackage/wiki#c"
+  ]
+}

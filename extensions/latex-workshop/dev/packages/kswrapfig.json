@@ -1,0 +1,105 @@
+{
+  "deps": [
+    {
+      "name": "environ"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "keycommand"
+    },
+    {
+      "name": "xifthen"
+    },
+    {
+      "name": "picinpar"
+    },
+    {
+      "name": "picins"
+    },
+    {
+      "name": "ksinsbox",
+      "if": "insboxonly"
+    },
+    {
+      "name": "ksinsbox",
+      "if": "insbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "kswrapfig",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "kswrapfig{${1:imagefile}}{${2:text}}"
+      }
+    },
+    {
+      "name": "kswrapfig",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "kswrapfig[${3:options%keyvals}]{${1:imagefile}}{${2:text}}",
+        "keys": [
+          "\\kswrapfig#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "kswrapfigline",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "kswrapfigline[${3:options%keyvals}]{${1:imagefile}}{${2:text}}",
+        "keys": [
+          "\\kswrapfigline#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "tightlist"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/kswrapfig#c": [
+      "insboxonly",
+      "clscaption",
+      "insbox"
+    ],
+    "\\kswrapfig#c": [
+      "Pos=${1|r,l|}",
+      "Width=",
+      "InPos=${1|r,c,l|}",
+      "Sep=",
+      "Indent=",
+      "Lower=",
+      "Caption={${1:text}}",
+      "LastLineSkip=",
+      "FirstLineSkip=",
+      "List=${1:env name}",
+      "VAdjust=",
+      "UseBox"
+    ],
+    "\\kswrapfigline#c": [
+      "Line=${1:num lines}",
+      "Pos=${1|r,l,c|}",
+      "CaptionName=${1:env name}",
+      "Width=",
+      "InPos=${1|r,c,l|}",
+      "Sep=",
+      "Indent=",
+      "Lower=",
+      "Caption={${1:text}}",
+      "LastLineSkip=",
+      "FirstLineSkip=",
+      "List=${1:env name}",
+      "VAdjust=",
+      "UseBox"
+    ]
+  },
+  "args": [
+    "\\usepackage/kswrapfig#c"
+  ]
+}

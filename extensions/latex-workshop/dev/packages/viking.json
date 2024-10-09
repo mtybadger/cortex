@@ -1,0 +1,18 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "vikfamily"
+    },
+    {
+      "name": "textvik",
+      "arg": {
+        "format": "{}",
+        "snippet": "textvik{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

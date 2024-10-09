@@ -1,0 +1,26 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "StripSemantex",
+      "arg": {
+        "format": "{}",
+        "snippet": "StripSemantex{${1:file}}"
+      }
+    },
+    {
+      "name": "StripSemantexStripComments",
+      "arg": {
+        "format": "{}",
+        "snippet": "StripSemantexStripComments{${1:file}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

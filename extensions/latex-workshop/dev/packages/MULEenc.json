@@ -1,0 +1,55 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "CJKbibliography",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKbibliography{${1:bib file}}"
+      }
+    },
+    {
+      "name": "CJKinclude",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKinclude{${1:file}}"
+      }
+    },
+    {
+      "name": "CJKinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "CJKinput{${1:file}}"
+      }
+    },
+    {
+      "name": "CJKverbatim"
+    },
+    {
+      "name": "I",
+      "unusual": true
+    },
+    {
+      "name": "textcommercialat"
+    },
+    {
+      "name": "Thaibreak",
+      "unusual": true
+    },
+    {
+      "name": "Thaiglue",
+      "unusual": true
+    },
+    {
+      "name": "Thainospace",
+      "unusual": true
+    },
+    {
+      "name": "Thaispace",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

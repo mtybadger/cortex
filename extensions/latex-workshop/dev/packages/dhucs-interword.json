@@ -1,0 +1,87 @@
+{
+  "deps": [
+    {
+      "name": "dhucs"
+    },
+    {
+      "name": "verbatim"
+    }
+  ],
+  "macros": [
+    {
+      "name": "interhchar",
+      "arg": {
+        "format": "{}",
+        "snippet": "interhchar{${1:space%l}}"
+      }
+    },
+    {
+      "name": "interhword",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "interhword{${1:skip}}{${2:plus}}{${3:minus}}"
+      }
+    },
+    {
+      "name": "interhword",
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "interhword[${4:xskip}]{${1:skip}}{${2:plus}}{${3:minus}}"
+      }
+    },
+    {
+      "name": "DEFAULTskips",
+      "unusual": true
+    },
+    {
+      "name": "HWPinterwordskip",
+      "unusual": true
+    },
+    {
+      "name": "narrowerhangul",
+      "unusual": true
+    },
+    {
+      "name": "setinterwordskip",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setinterwordskip{${1:skip}}{${2:plus}}{${3:minus}}"
+      }
+    },
+    {
+      "name": "setinterwordskip",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "setinterwordskip[${4:xskip}]{${1:skip}}{${2:plus}}{${3:minus}}"
+      }
+    },
+    {
+      "name": "ucsfninterwordhook",
+      "unusual": true
+    },
+    {
+      "name": "widerhangul",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "engtext",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/dhucs-interword#c": [
+      "HWP",
+      "default",
+      "nonfrench",
+      "wider",
+      "narrower"
+    ]
+  },
+  "args": [
+    "\\usepackage/dhucs-interword#c"
+  ]
+}

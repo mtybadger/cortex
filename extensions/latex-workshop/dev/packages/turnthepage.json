@@ -1,0 +1,35 @@
+{
+  "deps": [
+    {
+      "name": "atbegshi"
+    },
+    {
+      "name": "picture"
+    },
+    {
+      "name": "zref-abspage"
+    },
+    {
+      "name": "zref-lastpage"
+    }
+  ],
+  "macros": [
+    {
+      "name": "turnthepage",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/turnthepage#c": [
+      "short",
+      "english",
+      "francais",
+      "nederlands",
+      "deutsch"
+    ]
+  },
+  "args": [
+    "\\usepackage/turnthepage#c"
+  ]
+}

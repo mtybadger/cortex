@@ -1,0 +1,47 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "commandlist"
+    },
+    {
+      "name": "untrack",
+      "arg": {
+        "format": "{}",
+        "snippet": "untrack{${1:cmd1,cmd2,...}}"
+      }
+    },
+    {
+      "name": "logcmd",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "logcmd{${1:cmd1%cmd}}{${2:cmd2%cmd}}"
+      }
+    },
+    {
+      "name": "testthm",
+      "arg": {
+        "format": "{}",
+        "snippet": "testthm{${1:arg}}"
+      }
+    },
+    {
+      "name": "ShowPackageInfo",
+      "arg": {
+        "format": "{}",
+        "snippet": "ShowPackageInfo{${1:package}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cmdtrack#c": [
+      "?",
+      "morose",
+      "simple"
+    ]
+  },
+  "args": [
+    "\\usepackage/cmdtrack#c"
+  ]
+}

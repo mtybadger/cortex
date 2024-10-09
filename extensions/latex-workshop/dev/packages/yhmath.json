@@ -1,0 +1,57 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    }
+  ],
+  "macros": [
+    {
+      "name": "ring",
+      "arg": {
+        "format": "{}",
+        "snippet": "ring{${1:arg}}"
+      }
+    },
+    {
+      "name": "adots",
+      "detail": "⋰ (\"mathdots\" command)",
+      "doc": "\\adots (yhmath), three dots, ascending"
+    },
+    {
+      "name": "wideparen",
+      "arg": {
+        "format": "{}",
+        "snippet": "wideparen{${1:arg}}"
+      }
+    },
+    {
+      "name": "widetriangle",
+      "arg": {
+        "format": "{}",
+        "snippet": "widetriangle{${1:arg}}"
+      }
+    },
+    {
+      "name": "widering",
+      "arg": {
+        "format": "{}",
+        "snippet": "widering{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "amatrix"
+    }
+  ],
+  "keys": {
+    "\\usepackage/yhmath#c": [
+      "minimal",
+      "full",
+      "nowidering"
+    ]
+  },
+  "args": [
+    "\\usepackage/yhmath#c"
+  ]
+}

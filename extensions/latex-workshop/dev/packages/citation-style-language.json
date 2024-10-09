@@ -1,0 +1,346 @@
+{
+  "deps": [
+    {
+      "name": "filehook"
+    },
+    {
+      "name": "url"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cslsetup",
+      "arg": {
+        "format": "{}",
+        "snippet": "cslsetup{${1:options%keyvals}}",
+        "keys": [
+          "\\cslsetup,\\usepackage/citation-style-language#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "addbibresource",
+      "arg": {
+        "format": "{}",
+        "snippet": "addbibresource{${1:bib file}}"
+      }
+    },
+    {
+      "name": "cite*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "cite*[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "parencite",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "parencite[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "parencite*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "parencite*{${1:keylist}}"
+      }
+    },
+    {
+      "name": "parencite*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "parencite*[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "citep",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "citep{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citep",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citep[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "textcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "textcite[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "citet",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "citet{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citet",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citet[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "footcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "footcite{${1:keylist}}"
+      }
+    },
+    {
+      "name": "footcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "footcite[${2:options%keyvals}]{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citeauthor",
+      "arg": {
+        "format": "{}",
+        "snippet": "citeauthor{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citeyearpar",
+      "arg": {
+        "format": "{}",
+        "snippet": "citeyearpar{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citeyearpar",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citeyearpar[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "citeyearpar*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "citeyearpar*{${1:keylist}}"
+      }
+    },
+    {
+      "name": "citeyearpar*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citeyearpar*[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "fullcite",
+      "arg": {
+        "format": "{}",
+        "snippet": "fullcite{${1:keylist}}"
+      }
+    },
+    {
+      "name": "fullcite",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "fullcite[${2:options%keyvals}]{${1:keylist}}",
+        "keys": [
+          "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printbibliography"
+    },
+    {
+      "name": "printbibliography",
+      "arg": {
+        "format": "[]",
+        "snippet": "printbibliography[${1:options%keyvals}]",
+        "keys": [
+          "\\printbibliography"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "printbibheading"
+    },
+    {
+      "name": "printbibheading",
+      "arg": {
+        "format": "[]",
+        "snippet": "printbibheading[${1:options%keyvals}]",
+        "keys": [
+          "\\printbibheading"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "addtocategory",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "addtocategory{${1:category}}{${2:keys%plain}}"
+      }
+    },
+    {
+      "name": "DeclareBibliographyCategory",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DeclareBibliographyCategory{${1:category}}"
+      }
+    },
+    {
+      "name": "defbibenvironment",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "defbibenvironment{${1:name}}{${2:begdef}}{${3:enddef}}{${4:item code}}"
+      }
+    },
+    {
+      "name": "defbibheading",
+      "unusual": true,
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "defbibheading{${1:name}}[${3:title%text}]{${2:code}}"
+      }
+    },
+    {
+      "name": "defbibheading",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defbibheading{${1:name}}{${2:code}}"
+      }
+    },
+    {
+      "name": "defbibnote",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "defbibnote{${1:name}}{${2:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\cslsetup,\\usepackage/citation-style-language#c": [
+      "regression-test",
+      "style=${1|american-chemical-society,american-medical-association,american-political-science-association,american-sociological-association,apa,chicago-author-date,chicago-fullnote-bibliography,chicago-note-bibliography,elsevier-harvard,harvard-cite-them-right,ieee,modern-humanities-research-association,modern-language-association,nature,vancouver|}",
+      "locale=${1:language code}",
+      "backref=${1|true,page,section,false|}",
+      "bib-font=${1:font commands}",
+      "bib-entry-page-break",
+      "bib-item-sep=${1:<length> or <glue>}",
+      "bib-hang=",
+      "bib-par-indent=",
+      "prefix-separator=${1:separator}",
+      "suffix-separator=${1:separator}"
+    ],
+    "\\cite,\\cite*,\\parencite,\\parencite*,\\citep,\\textcite,\\citet,\\cites,\\citeyearpar,\\citeyearpar*,\\fullcite": [
+      "prefix=${1:text}",
+      "suffix=${1:text}",
+      "act=${1:number}",
+      "appendix=${1:number}",
+      "article=${1:number}",
+      "book=${1:number}",
+      "canon=${1:number}",
+      "chapter=${1:number}",
+      "column=${1:number}",
+      "elocation=${1:number}",
+      "equation=${1:number}",
+      "figure=${1:number}",
+      "folio=${1:number}",
+      "infix=${1:text}",
+      "issue=${1:number}",
+      "line=${1:number}",
+      "note=${1:number}",
+      "opus=${1:number}",
+      "page=${1:number}",
+      "paragraph=${1:number}",
+      "part=${1:number}",
+      "rule=${1:number}",
+      "scene=${1:number}",
+      "section=${1:number}",
+      "sub-verbo=${1:number}",
+      "supplement=${1:number}",
+      "table=${1:number}",
+      "timestamp=${1:number}",
+      "title=${1:number}",
+      "verse=${1:number}",
+      "version=${1:number}",
+      "volume=${1:number}"
+    ],
+    "\\printbibliography": [
+      "heading=${1:text}",
+      "title=${1:text}",
+      "prenote=${1:text}",
+      "postnote=${1:text}",
+      "type=",
+      "nottype=",
+      "keyword=",
+      "notkeyword=",
+      "category=",
+      "notcategory="
+    ],
+    "\\printbibheading": [
+      "heading=${1:text}",
+      "title=${1:text}"
+    ]
+  },
+  "args": [
+    "\\cslsetup,\\usepackage/citation-style-language#c"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "ifpdf"
+    },
+    {
+      "name": "ifvtex"
+    },
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "pdftexcmds"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bxpdfver#c": [
+      "check",
+      "nocheck",
+      "dvips",
+      "xdvi",
+      "dvipdf",
+      "dvipdfm",
+      "dvipdfmx",
+      "dvipsone",
+      "dviwindo",
+      "oztex",
+      "textures",
+      "pctexps",
+      "pctex32"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxpdfver#c"
+  ]
+}

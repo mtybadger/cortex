@@ -1,0 +1,112 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "bibliographyunit"
+    },
+    {
+      "name": "bibliographyunit",
+      "arg": {
+        "format": "[]",
+        "snippet": "bibliographyunit[${1:unit}]"
+      }
+    },
+    {
+      "name": "cite*",
+      "arg": {
+        "format": "{}",
+        "snippet": "cite*{${1:bibid}}"
+      }
+    },
+    {
+      "name": "nocite*",
+      "arg": {
+        "format": "{}",
+        "snippet": "nocite*{${1:bibid}}"
+      }
+    },
+    {
+      "name": "putbib"
+    },
+    {
+      "name": "putbib",
+      "arg": {
+        "format": "[]",
+        "snippet": "putbib[${1:bib file}]"
+      }
+    },
+    {
+      "name": "defaultbibliography",
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultbibliography{${1:bib file}}"
+      }
+    },
+    {
+      "name": "defaultbibliographystyle",
+      "arg": {
+        "format": "{}",
+        "snippet": "defaultbibliographystyle{${1:style%keyvals}}",
+        "keys": [
+          "\\begin{bibunit}#c,\\defaultbibliographystyle#c,\\bibliographystyle*#c"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "bibliography*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibliography*{${1:bib file}}"
+      }
+    },
+    {
+      "name": "bibliographystyle*",
+      "arg": {
+        "format": "{}",
+        "snippet": "bibliographystyle*{${1:style%keyvals}}",
+        "keys": [
+          "\\begin{bibunit}#c,\\defaultbibliographystyle#c,\\bibliographystyle*#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "bibunit"
+    },
+    {
+      "name": "bibunit",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:style%keyvals}]",
+        "keys": [
+          "\\begin{bibunit}#c,\\defaultbibliographystyle#c,\\bibliographystyle*#c"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/bibunits#c": [
+      "globalcitecopy",
+      "labelstoglobalaux",
+      "sectionbib",
+      "subsectionbib"
+    ],
+    "\\begin{bibunit}#c,\\defaultbibliographystyle#c,\\bibliographystyle*#c": [
+      "abbrv",
+      "acm",
+      "alpha",
+      "apalike",
+      "ieeetr",
+      "plain",
+      "siam",
+      "unsrt"
+    ]
+  },
+  "args": [
+    "\\usepackage/bibunits#c"
+  ]
+}

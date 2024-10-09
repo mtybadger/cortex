@@ -1,0 +1,27 @@
+{
+  "deps": [
+    {
+      "name": "url"
+    }
+  ],
+  "macros": [
+    {
+      "name": "useOriginalUrlSetting",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/xurl#c": [
+      "nobiblatex",
+      "obeyspaces",
+      "hyphens",
+      "spaces",
+      "lowtilde",
+      "allowmove"
+    ]
+  },
+  "args": [
+    "\\usepackage/xurl#c"
+  ]
+}

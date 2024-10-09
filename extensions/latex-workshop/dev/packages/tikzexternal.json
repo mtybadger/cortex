@@ -1,0 +1,118 @@
+{
+  "deps": [
+    {
+      "name": "graphicx"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tikzexternalize"
+    },
+    {
+      "name": "tikzexternalize",
+      "arg": {
+        "format": "[]",
+        "snippet": "tikzexternalize[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "tikzsetnextfilename",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzsetnextfilename{${1:file name%file}}"
+      }
+    },
+    {
+      "name": "tikzsetexternalprefix",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzsetexternalprefix{${1:prefix}}"
+      }
+    },
+    {
+      "name": "tikzsetfigurename",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzsetfigurename{${1:name}}"
+      }
+    },
+    {
+      "name": "tikzappendtofigurename",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzappendtofigurename{${1:suffix}}"
+      }
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikz",
+      "arg": {
+        "format": "[]",
+        "snippet": "tikz[${1:options%keyvals}]"
+      }
+    },
+    {
+      "name": "tikzset",
+      "arg": {
+        "format": "{}",
+        "snippet": "tikzset{${1:options%keyvals}}"
+      }
+    },
+    {
+      "name": "beginpgfgraphicnamed",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "beginpgfgraphicnamed{${1:file name prefix}}"
+      }
+    },
+    {
+      "name": "endpgfgraphicnamed",
+      "unusual": true
+    },
+    {
+      "name": "tikzifinpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "tikzifinpicture{${1:in code}}{${2:out code}}"
+      }
+    },
+    {
+      "name": "pgfincludeexternalgraphics",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfincludeexternalgraphics{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "pgfexternalreaddpth",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfexternalreaddpth{${1:imagefile}}"
+      }
+    },
+    {
+      "name": "pgfretval",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "tikzpicture"
+    },
+    {
+      "name": "tikzpicture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,61 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "scaletoheight",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "scaletoheight{${1:height}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "scaletowidth",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "scaletowidth{${1:width}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "ifScalebyMagsteps",
+      "unusual": true
+    },
+    {
+      "name": "ScalebyMagstepstrue",
+      "unusual": true
+    },
+    {
+      "name": "ScalebyMagstepsfalse",
+      "unusual": true
+    },
+    {
+      "name": "ifNoisyFitting",
+      "unusual": true
+    },
+    {
+      "name": "NoisyFittingtrue",
+      "unusual": true
+    },
+    {
+      "name": "NoisyFittingfalse",
+      "unusual": true
+    },
+    {
+      "name": "magsteps",
+      "unusual": true
+    },
+    {
+      "name": "Fontname",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/textfit#c": [
+      "noisy",
+      "magstep"
+    ]
+  },
+  "args": [
+    "\\usepackage/textfit#c"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "etoolbox"
+    }
+  ],
+  "macros": [
+    {
+      "name": "thecoupletcounter",
+      "unusual": true
+    },
+    {
+      "name": "lead"
+    },
+    {
+      "name": "firstlead"
+    },
+    {
+      "name": "secondlead"
+    },
+    {
+      "name": "ident",
+      "arg": {
+        "format": "{}",
+        "snippet": "ident{${1:identity}}"
+      }
+    },
+    {
+      "name": "goto",
+      "arg": {
+        "format": "{}",
+        "snippet": "goto{${1:number}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "key"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

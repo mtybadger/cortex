@@ -1,0 +1,15 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "excludeonly",
+      "arg": {
+        "format": "{}",
+        "snippet": "excludeonly{${1:filelist}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

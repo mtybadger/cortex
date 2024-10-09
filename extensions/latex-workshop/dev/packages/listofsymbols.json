@@ -1,0 +1,161 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "xspace"
+    },
+    {
+      "name": "nomencl",
+      "if": "nomencl"
+    }
+  ],
+  "macros": [
+    {
+      "name": "opensymdef"
+    },
+    {
+      "name": "closesymdef"
+    },
+    {
+      "name": "newsym",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsym{${1:name}}{${2:output%formula}}"
+      }
+    },
+    {
+      "name": "newsym",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsym[${3:description}]{${1:name}}{${2:output%formula}}"
+      }
+    },
+    {
+      "name": "newsub",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newsub{${1:name}}{${2:output%formula}}"
+      }
+    },
+    {
+      "name": "newsub",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "newsub[${3:description}]{${1:name}}{${2:output%formula}}"
+      }
+    },
+    {
+      "name": "subsep",
+      "arg": {
+        "format": "[]",
+        "snippet": "subsep[${1:separator}]"
+      }
+    },
+    {
+      "name": "listofsymbols"
+    },
+    {
+      "name": "symwidth",
+      "unusual": true
+    },
+    {
+      "name": "symindent",
+      "unusual": true
+    },
+    {
+      "name": "sympagenowidth",
+      "unusual": true
+    },
+    {
+      "name": "listofsubscripts"
+    },
+    {
+      "name": "listofboth"
+    },
+    {
+      "name": "symheadingname",
+      "unusual": true
+    },
+    {
+      "name": "subheadingname",
+      "unusual": true
+    },
+    {
+      "name": "bothheadingname",
+      "unusual": true
+    },
+    {
+      "name": "markasused",
+      "arg": {
+        "format": "{}",
+        "snippet": "markasused{${1:name}}"
+      }
+    },
+    {
+      "name": "markasunused",
+      "arg": {
+        "format": "{}",
+        "snippet": "markasunused{${1:name}}"
+      }
+    },
+    {
+      "name": "dontmarkasused",
+      "arg": {
+        "format": "{}",
+        "snippet": "dontmarkasused{${1:name}}"
+      }
+    },
+    {
+      "name": "losstring"
+    },
+    {
+      "name": "printsymline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "printsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:pageno}}"
+      }
+    },
+    {
+      "name": "addsymline",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "addsymline{${1:sortkey}}{${2:symbol}}{${3:name}}{${4:description}}{${5:filehandle}}"
+      }
+    },
+    {
+      "name": "symheading",
+      "unusual": true
+    },
+    {
+      "name": "subheading",
+      "unusual": true
+    },
+    {
+      "name": "spaceaftersym",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/listofsymbols#c": [
+      "nomencl",
+      "draft",
+      "final",
+      "Final",
+      "pageno",
+      "nopageno",
+      "usexspace",
+      "noxspace"
+    ]
+  },
+  "args": [
+    "\\usepackage/listofsymbols#c"
+  ]
+}

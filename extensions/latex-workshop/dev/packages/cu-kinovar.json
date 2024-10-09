@@ -1,0 +1,38 @@
+{
+  "deps": [
+    {
+      "name": "cu-util"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "luacolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "cuKinovar"
+    },
+    {
+      "name": "cuKinovarColor"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/cu-kinovar#c": [
+      "color",
+      "gray",
+      "bw"
+    ]
+  },
+  "args": [
+    "\\usepackage/cu-kinovar#c"
+  ]
+}

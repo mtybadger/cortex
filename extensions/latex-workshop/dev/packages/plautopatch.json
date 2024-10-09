@@ -1,0 +1,19 @@
+{
+  "deps": [
+    {
+      "name": "platex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "plautopatchdisable",
+      "arg": {
+        "format": "{}",
+        "snippet": "plautopatchdisable{${1:package}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

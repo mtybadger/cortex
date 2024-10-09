@@ -1,0 +1,23 @@
+{
+  "deps": [
+    {
+      "name": "booktabs"
+    }
+  ],
+  "macros": [
+    {
+      "name": "tramlines",
+      "arg": {
+        "format": "{}",
+        "snippet": "tramlines{${1:text}}"
+      }
+    },
+    {
+      "name": "tramlinesep",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

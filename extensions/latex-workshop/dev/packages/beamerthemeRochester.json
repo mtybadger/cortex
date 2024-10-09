@@ -1,0 +1,20 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "beamersidebarwidth",
+      "unusual": true
+    },
+    {
+      "name": "beamerheadheight",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usetheme/Rochester": [
+      "height="
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,97 @@
+{
+  "deps": [
+    {
+      "name": "luacode"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "enumitem"
+    }
+  ],
+  "macros": [
+    {
+      "name": "APomit"
+    },
+    {
+      "name": "APpass"
+    },
+    {
+      "name": "setAPeach",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "setAPeach{${1:default punct}}{${2:second last punct}}{${3:last punct}}"
+      }
+    },
+    {
+      "name": "setAPall",
+      "arg": {
+        "format": "{}",
+        "snippet": "setAPall{${1:punct}}"
+      }
+    },
+    {
+      "name": "setAPdef",
+      "arg": {
+        "format": "{}",
+        "snippet": "setAPdef{${1:punct}}"
+      }
+    },
+    {
+      "name": "setAPseclast",
+      "arg": {
+        "format": "{}",
+        "snippet": "setAPseclast{${1:punct}}"
+      }
+    },
+    {
+      "name": "setAPlast",
+      "arg": {
+        "format": "{}",
+        "snippet": "setAPlast{${1:punct}}"
+      }
+    },
+    {
+      "name": "enableAPautopassnest"
+    },
+    {
+      "name": "disableAPautopassnest"
+    },
+    {
+      "name": "enableAPprotectnest"
+    },
+    {
+      "name": "disableAPprotectnest"
+    }
+  ],
+  "envs": [
+    {
+      "name": "AutoPuncItems"
+    },
+    {
+      "name": "AutoPuncItemsO",
+      "unusual": true
+    },
+    {
+      "name": "AutoPuncItemsE",
+      "unusual": true
+    },
+    {
+      "name": "AutoPuncTabular"
+    }
+  ],
+  "keys": {
+    "\\usepackage/autopuncitem#c": [
+      "noenumitem"
+    ],
+    "\\setlist,\\SetEnumitemKey,\\begin{enumerate}#c,\\begin{itemize}#c,\\begin{description}#c,\\begin{enumerate*}#c,\\begin{itemize*}#c,\\begin{description*}#c": [
+      "autopunc",
+      "autopuncO",
+      "autopuncE"
+    ]
+  },
+  "args": [
+    "\\usepackage/autopuncitem#c"
+  ]
+}

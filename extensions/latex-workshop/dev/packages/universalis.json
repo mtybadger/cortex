@@ -1,0 +1,46 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "univrs"
+    },
+    {
+      "name": "univrscondensed"
+    },
+    {
+      "name": "univrsfamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/universalis#c": [
+      "scaled=${1:factor}",
+      "sfdefault",
+      "type1",
+      "condensed"
+    ]
+  },
+  "args": [
+    "\\usepackage/universalis#c"
+  ]
+}

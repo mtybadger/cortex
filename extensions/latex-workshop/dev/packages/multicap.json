@@ -1,0 +1,63 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "mfcaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "mfcaption{${1:text}}"
+      }
+    },
+    {
+      "name": "mfcaption",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "mfcaption[${2:short text%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "mtcaption",
+      "arg": {
+        "format": "{}",
+        "snippet": "mtcaption{${1:text}}"
+      }
+    },
+    {
+      "name": "mtcaption",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "mtcaption[${2:short text%text}]{${1:text}}"
+      }
+    },
+    {
+      "name": "themcapsize",
+      "unusual": true
+    },
+    {
+      "name": "themcapskip",
+      "unusual": true
+    },
+    {
+      "name": "abvmcapskip",
+      "unusual": true
+    },
+    {
+      "name": "blwmcapskip",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/multicap#c": [
+      "Sans",
+      "normal"
+    ]
+  },
+  "args": [
+    "\\usepackage/multicap#c"
+  ]
+}

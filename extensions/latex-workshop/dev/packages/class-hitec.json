@@ -1,0 +1,90 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "company",
+      "arg": {
+        "format": "{}",
+        "snippet": "company{${1:company%text}}"
+      }
+    },
+    {
+      "name": "confidential",
+      "arg": {
+        "format": "{}",
+        "snippet": "confidential{${1:text}}"
+      }
+    },
+    {
+      "name": "emptyfoottopmargin",
+      "unusual": true
+    },
+    {
+      "name": "emptyheadtopmargin",
+      "unusual": true
+    },
+    {
+      "name": "footruleskip",
+      "unusual": true
+    },
+    {
+      "name": "fullcenter",
+      "arg": {
+        "format": "{}",
+        "snippet": "fullcenter{${1:text}}"
+      }
+    },
+    {
+      "name": "fullwidth",
+      "unusual": true
+    },
+    {
+      "name": "leftmarginwidth",
+      "unusual": true
+    },
+    {
+      "name": "longrule"
+    },
+    {
+      "name": "longthickrule"
+    },
+    {
+      "name": "secshape",
+      "unusual": true
+    },
+    {
+      "name": "settextfraction",
+      "arg": {
+        "format": "{}",
+        "snippet": "settextfraction{${1:factor}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/hitec#c": [
+      "a4paper",
+      "a5paper",
+      "b5paper",
+      "letterpaper",
+      "legalpaper",
+      "executivepaper",
+      "landscape",
+      "10pt",
+      "11pt",
+      "12pt",
+      "oneside",
+      "twoside",
+      "draft",
+      "final",
+      "titlepage",
+      "notitlepage",
+      "leqno",
+      "fleqn",
+      "openbib"
+    ]
+  },
+  "args": [
+    "\\documentclass/hitec#c"
+  ]
+}

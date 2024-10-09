@@ -1,0 +1,34 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "countword",
+      "arg": {
+        "format": "{}",
+        "snippet": "countword{${1:word%text}}"
+      }
+    },
+    {
+      "name": "countword",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "countword[${2:subst%text}]{${1:word%text}}"
+      }
+    },
+    {
+      "name": "CWClosePar",
+      "unusual": true
+    },
+    {
+      "name": "CWtextscript",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CWtextscript{${1:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,429 @@
+{
+  "deps": [
+    {
+      "name": "luatex"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "tocloft"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "bookmark"
+    },
+    {
+      "name": "luacolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "JumplineArticle",
+      "arg": {
+        "format": "{}",
+        "snippet": "JumplineArticle{${1:content%text}}"
+      }
+    },
+    {
+      "name": "JumplineArticle",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "JumplineArticle[${2:options%keyvals}]{${1:content%text}}",
+        "keys": [
+          "\\JumplineArticle"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ShipoutArticleTeasers"
+    },
+    {
+      "name": "ShipoutArticleHangingArticles"
+    },
+    {
+      "name": "listofarticle"
+    },
+    {
+      "name": "listofcontarticle"
+    },
+    {
+      "name": "listofarticlesname",
+      "unusual": true
+    },
+    {
+      "name": "listofcontinuedarticlesname",
+      "unusual": true
+    },
+    {
+      "name": "thearticle",
+      "unusual": true
+    },
+    {
+      "name": "ContinuedArticleList",
+      "unusual": true
+    },
+    {
+      "name": "ContinuedFrom",
+      "unusual": true
+    },
+    {
+      "name": "ContinuedOn",
+      "unusual": true
+    },
+    {
+      "name": "DefaultContinuedArticleTocExt",
+      "unusual": true
+    },
+    {
+      "name": "DefaultTeaserTocExt",
+      "unusual": true
+    },
+    {
+      "name": "DisplayContinuedArticle",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DisplayContinuedArticle{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "DisplayJumplineTeaser",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "DisplayJumplineTeaser{${1:arg1}}{${2:arg2}}"
+      }
+    },
+    {
+      "name": "JLArticleName",
+      "unusual": true
+    },
+    {
+      "name": "JLBookmarkEntry",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroArticleAuthor",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroArticleFullHeight",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroArticleHeadline",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroBookmarkEntry",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedArticleBottomskip",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedArticleHeaderContent",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedArticleHeaderOptions",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedArticleHeight",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedBookmarkLevel",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedFromBottomskip",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedFromTopskip",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedHeaderColor",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedOnBottomskip",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedOnTopskip",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedTocExt",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroContinuedTocLevel",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroGenericBookmarkDest",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroGenericBookmarkLevel",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroInternalMode",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserBookmarkLevel",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserHeaderColor",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserHeaderContent",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserHeaderOptions",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserHeight",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserTocExt",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroTeaserTocLevel",
+      "unusual": true
+    },
+    {
+      "name": "JLKVMacroToc",
+      "unusual": true
+    },
+    {
+      "name": "JLPackageMacroLanguages",
+      "unusual": true
+    },
+    {
+      "name": "JLTocEntry",
+      "unusual": true
+    },
+    {
+      "name": "JumplineOptionsList",
+      "unusual": true
+    },
+    {
+      "name": "OnPage",
+      "unusual": true
+    },
+    {
+      "name": "Pagename",
+      "unusual": true
+    },
+    {
+      "name": "TeaserBoxList",
+      "unusual": true
+    },
+    {
+      "name": "articlesname",
+      "unusual": true
+    },
+    {
+      "name": "byauthor",
+      "unusual": true
+    },
+    {
+      "name": "captionsngerman",
+      "unusual": true
+    },
+    {
+      "name": "datengerman",
+      "unusual": true
+    },
+    {
+      "name": "extrasngerman",
+      "unusual": true
+    },
+    {
+      "name": "noextrasngerman",
+      "unusual": true
+    },
+    {
+      "name": "dq"
+    },
+    {
+      "name": "ntosstrue",
+      "unusual": true
+    },
+    {
+      "name": "ntossfalse",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    },
+    {
+      "name": "mdqon",
+      "unusual": true
+    },
+    {
+      "name": "mdqoff",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/jumplines#c": [
+      "languages=${1:languages}"
+    ],
+    "\\JumplineArticle": [
+      "TeaserHeight=",
+      "ArticleHeadline={${1:text}}",
+      "TeaserHeaderOptions={${1:tcolorbox options}}",
+      "ContinuedArticleHeaderOptions={${1:tcolorbox options}}",
+      "ContinuedOnTopskip=",
+      "ContinuedOnBottomskip=",
+      "ArticleAuthor={${1:list of authors}}"
+    ]
+  },
+  "args": [
+    "\\usepackage/jumplines#c"
+  ]
+}

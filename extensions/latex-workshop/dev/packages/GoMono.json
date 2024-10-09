@@ -1,0 +1,40 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "mweights"
+    }
+  ],
+  "macros": [
+    {
+      "name": "gomonofamily",
+      "unusual": true
+    },
+    {
+      "name": "gomonolgr",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/GoMono#c": [
+      "scaled=${1:factor}",
+      "type1",
+      "nomap"
+    ]
+  },
+  "args": [
+    "\\usepackage/GoMono#c"
+  ]
+}

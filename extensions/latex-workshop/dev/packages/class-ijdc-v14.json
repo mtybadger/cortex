@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "dccpaper-base"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\documentclass/ijdc-v14#c": [
+      "article",
+      "conference",
+      "editorial",
+      "paper",
+      "preprint"
+    ]
+  },
+  "args": [
+    "\\documentclass/ijdc-v14#c"
+  ]
+}

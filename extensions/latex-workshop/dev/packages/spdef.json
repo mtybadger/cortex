@@ -1,0 +1,46 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ifsmartphone",
+      "unusual": true
+    },
+    {
+      "name": "smartphonetrue",
+      "unusual": true
+    },
+    {
+      "name": "smartphonefalse",
+      "unusual": true
+    },
+    {
+      "name": "ifsp",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ifsp{${1:true}}{${2:false}}"
+      }
+    },
+    {
+      "name": "expexe",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "expexe{${1:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/spdef#c,\\RequirePackage/spdef#c": [
+      "ph",
+      "pa",
+      "!ph",
+      "!pa",
+      "use=${1:csname}",
+      "!use=${1:csname}"
+    ]
+  },
+  "args": [
+    "\\usepackage/spdef#c,\\RequirePackage/spdef#c"
+  ]
+}

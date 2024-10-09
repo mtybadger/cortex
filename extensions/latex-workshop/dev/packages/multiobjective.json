@@ -1,0 +1,52 @@
+{
+  "deps": [
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "dom"
+    },
+    {
+      "name": "negdom"
+    },
+    {
+      "name": "weakdom"
+    },
+    {
+      "name": "negweakdom"
+    },
+    {
+      "name": "strictdom"
+    },
+    {
+      "name": "negstrictdom"
+    },
+    {
+      "name": "multepsilondom"
+    },
+    {
+      "name": "addiepsilondom"
+    },
+    {
+      "name": "better"
+    },
+    {
+      "name": "set",
+      "arg": {
+        "format": "{}",
+        "snippet": "set{${1:arg}}"
+      }
+    },
+    {
+      "name": "argmin"
+    },
+    {
+      "name": "argmax"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

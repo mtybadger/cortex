@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "abc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "normalmupoutputfile",
+      "unusual": true
+    },
+    {
+      "name": "mupinput",
+      "arg": {
+        "format": "{}",
+        "snippet": "mupinput{${1:file}}"
+      }
+    },
+    {
+      "name": "mupinput",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "mupinput[${2:options%keyvals}]{${1:file}}"
+      }
+    },
+    {
+      "name": "mupwidth",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "mup"
+    },
+    {
+      "name": "mup",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:options%keyvals}]"
+      }
+    }
+  ],
+  "keys": {
+    "\\usepackage/mup#c": [
+      "shellescape",
+      "noshellescape",
+      "generate",
+      "nogenerate",
+      "ps2epsi",
+      "ps2epsidos",
+      "ps2eps",
+      "nosaveall",
+      "saveall"
+    ]
+  },
+  "args": [
+    "\\usepackage/mup#c"
+  ]
+}

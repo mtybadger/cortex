@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "pgfpages"
+    },
+    {
+      "name": "translator"
+    }
+  ],
+  "macros": [
+    {
+      "name": "notesbox",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/handoutWithNotes#c": [
+      "slide-frame",
+      "note-frame",
+      "lines=${1:integer}",
+      "graph",
+      "rule=",
+      "beamer-notes"
+    ]
+  },
+  "args": [
+    "\\usepackage/handoutWithNotes#c"
+  ]
+}

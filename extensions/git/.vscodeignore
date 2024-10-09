@@ -4,4 +4,4 @@ out/**
 tsconfig.json
 build/**
 extension.webpack.config.js
-package-lock.json
+yarn.lock

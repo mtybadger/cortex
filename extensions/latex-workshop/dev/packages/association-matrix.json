@@ -1,0 +1,114 @@
+{
+  "deps": [
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "forloop"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "amxrow",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "amxrow{${1:key%plain}}{${2:text}}"
+      }
+    },
+    {
+      "name": "amxcol",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "amxcol{${1:key%plain}}{${2:text}}"
+      }
+    },
+    {
+      "name": "amxassociate",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "amxassociate{${1:col-key}}{${2:row-key}}"
+      }
+    },
+    {
+      "name": "amxrows"
+    },
+    {
+      "name": "amxcols"
+    },
+    {
+      "name": "amxrowtext",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxrowtext{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "amxcoltext",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxcoltext{${1:key%plain}}"
+      }
+    },
+    {
+      "name": "amxgenerate"
+    },
+    {
+      "name": "amxgenerate",
+      "arg": {
+        "format": "[]",
+        "snippet": "amxgenerate[${1:row-key}]"
+      }
+    },
+    {
+      "name": "amxsetTopCorner",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxsetTopCorner{${1:heading%text}}"
+      }
+    },
+    {
+      "name": "amxsetColumnHeading",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxsetColumnHeading{${1:render-command}}"
+      }
+    },
+    {
+      "name": "amxsetRowFormat",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxsetRowFormat{${1:render-command}}"
+      }
+    },
+    {
+      "name": "amxsetRowFormatHighlighted",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxsetRowFormatHighlighted{${1:render-command}}"
+      }
+    },
+    {
+      "name": "amxsetIndicator",
+      "arg": {
+        "format": "{}",
+        "snippet": "amxsetIndicator{${1:indicator}}"
+      }
+    },
+    {
+      "name": "amxsetIndicatorHighlighted",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "amxsetIndicatorHighlighted{${1:hl-indicator}}{${2:ot-indicator}}"
+      }
+    },
+    {
+      "name": "amxReset"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

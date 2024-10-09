@@ -1,0 +1,29 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "floatpagekeepfraction",
+      "unusual": true
+    },
+    {
+      "name": "thefloatpagedeferlimit",
+      "unusual": true
+    },
+    {
+      "name": "thefloatpagekeeplimit",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/fewerfloatpages#c": [
+      "checktb",
+      "addbang",
+      "nocheck",
+      "trace"
+    ]
+  },
+  "args": [
+    "\\usepackage/fewerfloatpages#c"
+  ]
+}

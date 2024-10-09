@@ -1,0 +1,80 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "poemblocksep",
+      "unusual": true
+    },
+    {
+      "name": "poemcolsepskip",
+      "unusual": true
+    },
+    {
+      "name": "poemextrabaselineskip",
+      "unusual": true
+    },
+    {
+      "name": "poemmarginskip",
+      "unusual": true
+    },
+    {
+      "name": "poemskip",
+      "unusual": true
+    },
+    {
+      "name": "Setversedim",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Setversedim{${1:half-verse-length}}{${2:separation}}"
+      }
+    },
+    {
+      "name": "Setversedim",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "Setversedim{${1:right-half-verse-length}}[${3:left-half-verse-length}]{${2:separation}}"
+      }
+    },
+    {
+      "name": "traditionalconnverses",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "traditionalconnverses{${1:right-half-verse-text%text}}{${2:connection-text%text}}{${3:left-half-verse-text%text}}"
+      }
+    },
+    {
+      "name": "traditionalhalfverses",
+      "arg": {
+        "format": "{}[]{}",
+        "snippet": "traditionalhalfverses{${1:right-half-verse-text%text}}[${3:connection-text%text}]{${2:left-half-verse-text%text}}"
+      }
+    },
+    {
+      "name": "traditionalhalfverses",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "traditionalhalfverses{${1:right-half-verse-text%text}}{${2:left-half-verse-text%text}}"
+      }
+    },
+    {
+      "name": "versewidth"
+    }
+  ],
+  "envs": [
+    {
+      "name": "modernpoem"
+    },
+    {
+      "name": "modernpoem*"
+    },
+    {
+      "name": "traditionalpoem"
+    },
+    {
+      "name": "traditionalpoem*"
+    }
+  ],
+  "keys": {},
+  "args": []
+}

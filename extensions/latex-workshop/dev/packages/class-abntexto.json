@@ -1,0 +1,231 @@
+{
+  "deps": [
+    {
+      "name": "keyval"
+    }
+  ],
+  "macros": [
+    {
+      "name": "setfontsize",
+      "arg": {
+        "format": "{}",
+        "snippet": "setfontsize{${1:id}}"
+      }
+    },
+    {
+      "name": "definefontsize",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "definefontsize{${1:id}}{${2:definições}}"
+      }
+    },
+    {
+      "name": "sizedef",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "sizedef{${1:cmd}}{${2:tamanho}}{${3:entrelinha natural}}{${4:definições}}"
+      }
+    },
+    {
+      "name": "spacing",
+      "arg": {
+        "format": "{}",
+        "snippet": "spacing{${1:factor}}"
+      }
+    },
+    {
+      "name": "singlesp"
+    },
+    {
+      "name": "onehalfsp"
+    },
+    {
+      "name": "doublesp"
+    },
+    {
+      "name": "setlayout",
+      "arg": {
+        "format": "{}",
+        "snippet": "setlayout{${1:keyvals}}",
+        "keys": [
+          "\\setlayout"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "pretextual"
+    },
+    {
+      "name": "textual"
+    },
+    {
+      "name": "tocifont",
+      "unusual": true
+    },
+    {
+      "name": "tociifont",
+      "unusual": true
+    },
+    {
+      "name": "tociiifont",
+      "unusual": true
+    },
+    {
+      "name": "tocivfont",
+      "unusual": true
+    },
+    {
+      "name": "tocvfont",
+      "unusual": true
+    },
+    {
+      "name": "sectionfont",
+      "unusual": true
+    },
+    {
+      "name": "subsectionfont",
+      "unusual": true
+    },
+    {
+      "name": "subsubsectionfont",
+      "unusual": true
+    },
+    {
+      "name": "paragraphfont",
+      "unusual": true
+    },
+    {
+      "name": "subparagraphfont",
+      "unusual": true
+    },
+    {
+      "name": "abovesection",
+      "unusual": true
+    },
+    {
+      "name": "abovesubsection",
+      "unusual": true
+    },
+    {
+      "name": "abovesubsubsection",
+      "unusual": true
+    },
+    {
+      "name": "aboveparagraph",
+      "unusual": true
+    },
+    {
+      "name": "abovesubparagraph",
+      "unusual": true
+    },
+    {
+      "name": "belowsection",
+      "unusual": true
+    },
+    {
+      "name": "belowsubsection",
+      "unusual": true
+    },
+    {
+      "name": "belowsubsubsection",
+      "unusual": true
+    },
+    {
+      "name": "belowparagraph",
+      "unusual": true
+    },
+    {
+      "name": "belowsubparagraph",
+      "unusual": true
+    },
+    {
+      "name": "maketoc"
+    },
+    {
+      "name": "place",
+      "arg": {
+        "format": "{}",
+        "snippet": "place{${1:content%text}}"
+      }
+    },
+    {
+      "name": "legend",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "legend{${1:type}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "src",
+      "arg": {
+        "format": "{}",
+        "snippet": "src{${1:texto%text}}"
+      }
+    },
+    {
+      "name": "aboveplace",
+      "unusual": true
+    },
+    {
+      "name": "belowplace",
+      "unusual": true
+    },
+    {
+      "name": "definelegendplace",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "definelegendplace{${1:type}}{${2:name}}{${3:list name}}{${4:ref def}}{${5:ext}}"
+      }
+    },
+    {
+      "name": "enquote",
+      "arg": {
+        "format": "{}",
+        "snippet": "enquote{${1:texto%text}}"
+      }
+    },
+    {
+      "name": "Enquote",
+      "arg": {
+        "format": "{}",
+        "snippet": "Enquote{${1:texto%text}}"
+      }
+    },
+    {
+      "name": "annex"
+    },
+    {
+      "name": "appendixlabelwidth",
+      "unusual": true
+    },
+    {
+      "name": "annexlabelwidth",
+      "unusual": true
+    },
+    {
+      "name": "corrprinton"
+    },
+    {
+      "name": "corrprintoff"
+    }
+  ],
+  "envs": [
+    {
+      "name": "topics"
+    }
+  ],
+  "keys": {
+    "\\setlayout": [
+      "paper=${1:size}",
+      "width=",
+      "height=",
+      "left=",
+      "right=",
+      "top=",
+      "bottom=",
+      "twoside"
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,59 @@
+{
+  "deps": [
+    {
+      "name": "intcalc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "jalipsum",
+      "arg": {
+        "format": "{}",
+        "snippet": "jalipsum{${1:key%keyvals}}",
+        "keys": [
+          "\\jalipsum"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "jalipsum",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "jalipsum[${2:range}]{${1:key%keyvals}}",
+        "keys": [
+          "\\jalipsum"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "jalipsumiroha"
+    },
+    {
+      "name": "jalipsumjugemu"
+    },
+    {
+      "name": "jalipsumjugemuP"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/bxjalipsum#c": [
+      "noCJKtilde",
+      "CJKtilde"
+    ],
+    "\\jalipsum": [
+      "iroha",
+      "jugemu",
+      "jugemuP",
+      "wagahai",
+      "preamble",
+      "hatsukoi",
+      "kusamakura"
+    ]
+  },
+  "args": [
+    "\\usepackage/bxjalipsum#c"
+  ]
+}

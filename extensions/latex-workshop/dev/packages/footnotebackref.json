@@ -1,0 +1,33 @@
+{
+  "deps": [
+    {
+      "name": "letltxmacro"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "kvoptions"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BackrefFootnoteTag",
+      "unusual": true
+    },
+    {
+      "name": "theBackrefHyperFootnoteCounter",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/footnotebackref#c": [
+      "symbol=${1:symbol}",
+      "numberlinked"
+    ]
+  },
+  "args": [
+    "\\usepackage/footnotebackref#c"
+  ]
+}

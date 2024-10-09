@@ -1,0 +1,67 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "exercise",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "exercise{${1:Enunciado%text}}{${2:Respuesta%text}}"
+      }
+    },
+    {
+      "name": "exercise*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "exercise*{${1:Enunciado%text}}{${2:Sugerencia%text}}"
+      }
+    },
+    {
+      "name": "subexercise",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "subexercise{${1:Enunciado%text}}{${2:Respuesta%text}}"
+      }
+    },
+    {
+      "name": "group"
+    },
+    {
+      "name": "listofanswers"
+    },
+    {
+      "name": "answershead",
+      "unusual": true
+    },
+    {
+      "name": "answersname",
+      "unusual": true
+    },
+    {
+      "name": "answerstype",
+      "unusual": true
+    },
+    {
+      "name": "exercisesname",
+      "unusual": true
+    },
+    {
+      "name": "groupname",
+      "unusual": true
+    },
+    {
+      "name": "theexercise",
+      "unusual": true
+    },
+    {
+      "name": "thegroup",
+      "unusual": true
+    },
+    {
+      "name": "thesubexercise",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

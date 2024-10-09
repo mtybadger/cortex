@@ -1,0 +1,48 @@
+{
+  "deps": [
+    {
+      "name": "ifxetex"
+    },
+    {
+      "name": "ifluatex"
+    },
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "fontenc"
+    },
+    {
+      "name": "fontaxes"
+    }
+  ],
+  "macros": [
+    {
+      "name": "quattrocento"
+    },
+    {
+      "name": "quattrocentosans"
+    },
+    {
+      "name": "quattrocentofamily",
+      "unusual": true
+    },
+    {
+      "name": "quattrocentosffamily",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/quattrocento#c": [
+      "scaled=${1:factor}",
+      "sf",
+      "rm",
+      "sfdefault",
+      "type1"
+    ]
+  },
+  "args": [
+    "\\usepackage/quattrocento#c"
+  ]
+}

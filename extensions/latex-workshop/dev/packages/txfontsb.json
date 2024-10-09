@@ -1,0 +1,81 @@
+{
+  "deps": [
+    {
+      "name": "txfonts"
+    }
+  ],
+  "macros": [
+    {
+      "name": "scslshape"
+    },
+    {
+      "name": "textscsl",
+      "arg": {
+        "format": "{}",
+        "snippet": "textscsl{${1:text}}"
+      }
+    },
+    {
+      "name": "anwtonos"
+    },
+    {
+      "name": "Digamma",
+      "unusual": true
+    },
+    {
+      "name": "ddigamma",
+      "unusual": true
+    },
+    {
+      "name": "tao",
+      "unusual": true
+    },
+    {
+      "name": "Qoppa",
+      "unusual": true
+    },
+    {
+      "name": "varqoppa",
+      "unusual": true
+    },
+    {
+      "name": "Sampi",
+      "unusual": true
+    },
+    {
+      "name": "sampi",
+      "unusual": true
+    },
+    {
+      "name": "vardigamma",
+      "unusual": true
+    },
+    {
+      "name": "Stigma",
+      "unusual": true
+    },
+    {
+      "name": "VarQoppa",
+      "unusual": true
+    },
+    {
+      "name": "euro",
+      "unusual": true,
+      "detail": "€",
+      "doc": "Euro sign"
+    },
+    {
+      "name": "Euro",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/txfontsb#c": [
+      "Upsilonalt"
+    ]
+  },
+  "args": [
+    "\\usepackage/txfontsb#c"
+  ]
+}

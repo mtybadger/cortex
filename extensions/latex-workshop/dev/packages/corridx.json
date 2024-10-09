@@ -1,0 +1,104 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ia",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ia{${1:expanded text}}{${2:acronym}}"
+      }
+    },
+    {
+      "name": "noia",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "noia{${1:expanded text}}{${2:acronym}}"
+      }
+    },
+    {
+      "name": "ic",
+      "arg": {
+        "format": "{}",
+        "snippet": "ic{${1:index entry}}"
+      }
+    },
+    {
+      "name": "noic",
+      "arg": {
+        "format": "{}",
+        "snippet": "noic{${1:index entry}}"
+      }
+    },
+    {
+      "name": "ib",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ib{${1:expanded text}}{${2:acronym}}"
+      }
+    },
+    {
+      "name": "noib",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "noib{${1:expanded text}}{${2:acronym}}"
+      }
+    },
+    {
+      "name": "ig",
+      "arg": {
+        "format": "{}",
+        "snippet": "ig{${1:index entry}}"
+      }
+    },
+    {
+      "name": "ig",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ig[${2:subentry}]{${1:index entry}}"
+      }
+    },
+    {
+      "name": "noig",
+      "arg": {
+        "format": "{}",
+        "snippet": "noig{${1:index entry}}"
+      }
+    },
+    {
+      "name": "noig",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "noig[${2:subentry}]{${1:index entry}}"
+      }
+    },
+    {
+      "name": "crrdxformatpage",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "crrdxformatpage{${1:type}}{${2:format}}"
+      }
+    },
+    {
+      "name": "sectioncrrdx",
+      "arg": {
+        "format": "{}",
+        "snippet": "sectioncrrdx{${1:index heading}}"
+      }
+    },
+    {
+      "name": "swallow"
+    }
+  ],
+  "envs": [
+    {
+      "name": "crrdxchem",
+      "unusual": true
+    },
+    {
+      "name": "crrdxacr",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

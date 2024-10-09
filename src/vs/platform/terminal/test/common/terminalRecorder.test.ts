@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 
 import assert from 'assert';
-import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../base/test/common/utils.js';
-import { ReplayEntry } from '../../common/terminalProcess.js';
-import { TerminalRecorder } from '../../common/terminalRecorder.js';
+import { ensureNoDisposablesAreLeakedInTestSuite } from 'vs/base/test/common/utils';
+import { ReplayEntry } from 'vs/platform/terminal/common/terminalProcess';
+import { TerminalRecorder } from 'vs/platform/terminal/common/terminalRecorder';
 
 async function eventsEqual(recorder: TerminalRecorder, expected: ReplayEntry[]) {
 	const actual = (await recorder.generateReplayEvent()).events;

@@ -1,0 +1,81 @@
+{
+  "deps": [
+    {
+      "name": "pgf"
+    }
+  ],
+  "macros": [
+    {
+      "name": "subpictureid",
+      "unusual": true
+    },
+    {
+      "name": "pgfnewsubpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfnewsubpicture{${1:name}}"
+      }
+    },
+    {
+      "name": "pgfsavesubpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfsavesubpicture{${1:name}}"
+      }
+    },
+    {
+      "name": "pgfmergesubpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfmergesubpicture{${1:name}}"
+      }
+    },
+    {
+      "name": "pgfrestoresubpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfrestoresubpicture{${1:name}}"
+      }
+    },
+    {
+      "name": "pgfplacesubpicture",
+      "unusual": true
+    },
+    {
+      "name": "pgffitsubpicture",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "pgffitsubpicture{${1:southwest}}{${2:northeast}}"
+      }
+    },
+    {
+      "name": "pgfnodedelete",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "pgfnodedelete{${1:name}}"
+      }
+    },
+    {
+      "name": "pgfnodeifexists",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "pgfnodeifexists{${1:name}}{${2:true}}{${3:false}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "pgfsubpicture",
+      "unusual": true
+    }
+  ],
+  "keys": {},
+  "args": []
+}

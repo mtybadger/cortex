@@ -3,25 +3,13 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { IDiffEditorConstructionOptions } from '../../../../../editor/browser/editorBrowser.js';
-import { IEditorOptions } from '../../../../../editor/common/config/editorOptions.js';
+import { IDiffEditorConstructionOptions } from 'vs/editor/browser/editorBrowser';
+import { IEditorOptions } from 'vs/editor/common/config/editorOptions';
 
-/**
- * Do not leave at 12, when at 12 and we have whitespace and only one line,
- * then there's not enough space for the button `Show Whitespace Differences`
- */
-const fixedEditorPaddingSingleLineCells = {
-	top: 24,
-	bottom: 24
-};
-const fixedEditorPadding = {
+export const fixedEditorPadding = {
 	top: 12,
 	bottom: 12
 };
-
-export function getEditorPadding(lineCount: number) {
-	return lineCount === 1 ? fixedEditorPaddingSingleLineCells : fixedEditorPadding;
-}
 
 export const fixedEditorOptions: IEditorOptions = {
 	padding: fixedEditorPadding,
@@ -41,7 +29,8 @@ export const fixedEditorOptions: IEditorOptions = {
 	selectOnLineNumbers: false,
 	wordWrap: 'off',
 	lineNumbers: 'off',
-	glyphMargin: true,
+	lineDecorationsWidth: 0,
+	glyphMargin: false,
 	fixedOverflowWidgets: true,
 	minimap: { enabled: false },
 	renderValidationDecorations: 'on',

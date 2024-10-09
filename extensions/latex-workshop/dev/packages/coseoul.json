@@ -1,0 +1,64 @@
+{
+  "deps": [
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "levelup",
+      "arg": {
+        "format": "{}",
+        "snippet": "levelup{${1:title}}"
+      }
+    },
+    {
+      "name": "leveldown",
+      "arg": {
+        "format": "{}",
+        "snippet": "leveldown{${1:title}}"
+      }
+    },
+    {
+      "name": "levelstay",
+      "arg": {
+        "format": "{}",
+        "snippet": "levelstay{${1:title}}"
+      }
+    },
+    {
+      "name": "levelmultiup",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "levelmultiup{${1:title}}{${2:levels}}"
+      }
+    },
+    {
+      "name": "chex",
+      "unusual": true
+    },
+    {
+      "name": "findnewlevel",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "findnewlevel{${1:levels}}"
+      }
+    },
+    {
+      "name": "levelchange",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "levelchange{${1:title}}{${2:levels}}"
+      }
+    },
+    {
+      "name": "thecurrentlevel",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

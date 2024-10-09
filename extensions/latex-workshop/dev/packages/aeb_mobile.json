@@ -1,0 +1,100 @@
+{
+  "deps": [
+    {
+      "name": "web"
+    },
+    {
+      "name": "eforms"
+    }
+  ],
+  "macros": [
+    {
+      "name": "scalefiguresOn"
+    },
+    {
+      "name": "scalefiguresOff"
+    },
+    {
+      "name": "mobPrint",
+      "arg": {
+        "format": "{}",
+        "snippet": "mobPrint{${1:text}}"
+      }
+    },
+    {
+      "name": "mobPrintTip",
+      "unusual": true
+    },
+    {
+      "name": "mobToggleCols",
+      "arg": {
+        "format": "{}",
+        "snippet": "mobToggleCols{${1:text}}"
+      }
+    },
+    {
+      "name": "mobToggleColsTip",
+      "unusual": true
+    },
+    {
+      "name": "mobFormPresets",
+      "arg": {
+        "format": "{}",
+        "snippet": "mobFormPresets{${1:commands}}"
+      }
+    },
+    {
+      "name": "ifsmartphone",
+      "unusual": true
+    },
+    {
+      "name": "smartphonetrue",
+      "unusual": true
+    },
+    {
+      "name": "smartphonefalse",
+      "unusual": true
+    },
+    {
+      "name": "generateEvenPage",
+      "unusual": true
+    },
+    {
+      "name": "mobPrintIt",
+      "unusual": true
+    },
+    {
+      "name": "mobPrintIt",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "mobPrintIt[${1:opt}]"
+      }
+    },
+    {
+      "name": "mobTwoCols",
+      "unusual": true
+    },
+    {
+      "name": "mobTwoCols",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "mobTwoCols[${1:opt}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/aeb_mobile#c": [
+      "smartphone",
+      "nomaketitle",
+      "useforms",
+      "scalefigures",
+      "!scalefigures"
+    ]
+  },
+  "args": [
+    "\\usepackage/aeb_mobile#c"
+  ]
+}

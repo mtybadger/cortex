@@ -1,0 +1,78 @@
+{
+  "deps": [
+    {
+      "name": "fp"
+    },
+    {
+      "name": "pstricks"
+    },
+    {
+      "name": "pst-3d"
+    },
+    {
+      "name": "multido"
+    },
+    {
+      "name": "pst-xkey"
+    }
+  ],
+  "macros": [
+    {
+      "name": "psCalendar"
+    },
+    {
+      "name": "psCalendar",
+      "arg": {
+        "format": "[]",
+        "snippet": "psCalendar[${1:options%keyvals}]",
+        "keys": [
+          "\\psCalendar,\\psCalDodecaeder"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "psCalDodecaeder"
+    },
+    {
+      "name": "psCalDodecaeder",
+      "arg": {
+        "format": "[]",
+        "snippet": "psCalDodecaeder[${1:options%keyvals}]",
+        "keys": [
+          "\\psCalendar,\\psCalDodecaeder"
+        ],
+        "keyPos": 0
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/pst-calendar#c": [
+      "english",
+      "french",
+      "ngerman"
+    ],
+    "\\psCalendar,\\psCalDodecaeder": [
+      "Year=${1:integer}",
+      "Month=${1:integer}",
+      "MonthUse=${1:integer}",
+      "Day=${1:integer}",
+      "style=${1:month}",
+      "Jour=${1:integer}",
+      "MoisChoisi=${1:integer}",
+      "Mois=${1:integer}",
+      "An=${1:integer}",
+      "Tag=${1:integer}",
+      "MonatT=${1:integer}",
+      "Monat=${1:integer}",
+      "Jahr=${1:integer}",
+      "Vx=${1:integer}",
+      "Vy=${1:integer}",
+      "Vz=${1:integer}"
+    ]
+  },
+  "args": [
+    "\\usepackage/pst-calendar#c"
+  ]
+}

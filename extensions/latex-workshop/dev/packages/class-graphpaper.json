@@ -1,0 +1,259 @@
+{
+  "deps": [
+    {
+      "name": "xkeyval"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "euclideangeometry"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "xcolor"
+    }
+  ],
+  "macros": [
+    {
+      "name": "bilinear"
+    },
+    {
+      "name": "semilogx",
+      "arg": {
+        "format": "{}",
+        "snippet": "semilogx{${1:decades along x}}"
+      }
+    },
+    {
+      "name": "semilogy",
+      "arg": {
+        "format": "{}",
+        "snippet": "semilogy{${1:decades along y}}"
+      }
+    },
+    {
+      "name": "loglog",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "loglog{${1:decades along x}}{${2:decades along y}}"
+      }
+    },
+    {
+      "name": "loglog",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "loglog[${3:0 or 1}]{${1:decades along x}}{${2:decades along y}}"
+      }
+    },
+    {
+      "name": "polar"
+    },
+    {
+      "name": "logpolar",
+      "arg": {
+        "format": "{}",
+        "snippet": "logpolar{${1:decades along radius}}"
+      }
+    },
+    {
+      "name": "smith"
+    },
+    {
+      "name": "setxside",
+      "arg": {
+        "format": "{}",
+        "snippet": "setxside{${1:length}}"
+      }
+    },
+    {
+      "name": "setyside",
+      "arg": {
+        "format": "{}",
+        "snippet": "setyside{${1:length}}"
+      }
+    },
+    {
+      "name": "setminimumdistance",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminimumdistance{${1:length}}"
+      }
+    },
+    {
+      "name": "setgridcolor",
+      "arg": {
+        "format": "{}",
+        "snippet": "setgridcolor{${1:color}}"
+      }
+    },
+    {
+      "name": "setmajorlinethickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "setmajorlinethickness{${1:length}}"
+      }
+    },
+    {
+      "name": "setmediumlinethickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "setmediumlinethickness{${1:length}}"
+      }
+    },
+    {
+      "name": "setminorlinethickness",
+      "arg": {
+        "format": "{}",
+        "snippet": "setminorlinethickness{${1:length}}"
+      }
+    },
+    {
+      "name": "customcode",
+      "arg": {
+        "format": "{}",
+        "snippet": "customcode{${1:picture env cmds}}"
+      }
+    },
+    {
+      "name": "customcode",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "customcode[${2:0 or 1}]{${1:picture env cmds}}"
+      }
+    },
+    {
+      "name": "GradPolar",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "GradPolar{${1:number}}"
+      }
+    },
+    {
+      "name": "GradResist",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "GradResist{${1:number}}"
+      }
+    },
+    {
+      "name": "CalcRxx",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "CalcRxx{${1:number}}"
+      }
+    },
+    {
+      "name": "PolarChart",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "PolarChart[${2:diameter}]{${1:decades}}"
+      }
+    },
+    {
+      "name": "PolarChart",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "PolarChart{${1:decades}}"
+      }
+    },
+    {
+      "name": "SmithChart",
+      "unusual": true,
+      "arg": {
+        "format": "[]",
+        "snippet": "SmithChart[${1:diameter}]"
+      }
+    },
+    {
+      "name": "WhileDoOne",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "WhileDoOne[${4:step}]{${1:init value}}{${2:final value}}{${3:code}}"
+      }
+    },
+    {
+      "name": "WhileDoOne",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "WhileDoOne{${1:init value}}{${2:final value}}{${3:code}}"
+      }
+    },
+    {
+      "name": "WhileDoTwo",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}{}",
+        "snippet": "WhileDoTwo[${4:step}]{${1:init value}}{${2:final value}}{${3:code}}"
+      }
+    },
+    {
+      "name": "WhileDoTwo",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "WhileDoTwo{${1:init value}}{${2:final value}}{${3:code}}"
+      }
+    },
+    {
+      "name": "Xcircle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Xcircle{${1:number}}"
+      }
+    },
+    {
+      "name": "Ycircle",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Ycircle{${1:number}}"
+      }
+    },
+    {
+      "name": "Ycircle",
+      "unusual": true,
+      "arg": {
+        "format": "{}*",
+        "snippet": "Ycircle{${1:number}}*"
+      }
+    },
+    {
+      "name": "carta",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "carta[${3:0 or 1}]{${1:x-decades}}{${2:y-decades}}"
+      }
+    },
+    {
+      "name": "carta",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "carta{${1:x-decades}}{${2:y-decades}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/graphpaper#c": [
+      "a4paper",
+      "a3paper",
+      "letterpaper"
+    ]
+  },
+  "args": [
+    "\\documentclass/graphpaper#c"
+  ]
+}

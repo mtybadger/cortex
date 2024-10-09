@@ -1,0 +1,88 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "ksinsbox",
+      "arg": {
+        "format": "{}",
+        "snippet": "ksinsbox{${1:content%text}}"
+      }
+    },
+    {
+      "name": "ksinsbox",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ksinsbox[${2:pos%keyvals}]{${1:content%text}}",
+        "keys": [
+          "\\ksinsbox"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "ksinsbox",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "ksinsbox[${2:pos%keyvals}][${3:number}]{${1:content%text}}",
+        "keys": [
+          "\\ksinsbox"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "InsertBoxL",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InsertBoxL{${1:lines}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "InsertBoxL",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "InsertBoxL{${1:lines}}{${2:content%text}}[${3:correction}]"
+      }
+    },
+    {
+      "name": "InsertBoxR",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InsertBoxR{${1:lines}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "InsertBoxR",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "InsertBoxR{${1:lines}}{${2:content%text}}[${3:correction}]"
+      }
+    },
+    {
+      "name": "InsertBoxC",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "InsertBoxC{${1:lines}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "InsertBoxC",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "InsertBoxC{${1:lines}}{${2:content%text}}[${3:correction}]"
+      }
+    },
+    {
+      "name": "MoveBelowBox"
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\ksinsbox": [
+      "l",
+      "c",
+      "r"
+    ]
+  },
+  "args": []
+}

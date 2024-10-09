@@ -1,0 +1,197 @@
+{
+  "deps": [
+    {
+      "name": "mathtools"
+    },
+    {
+      "name": "mathrsfs"
+    },
+    {
+      "name": "amssymb"
+    }
+  ],
+  "macros": [
+    {
+      "name": "DefineMathOperator",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineMathOperator{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathOperator",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineMathOperator[${2:style=code}]{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathOperator*",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineMathOperator*{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathOperator*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineMathOperator*[${2:style=code}]{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineOperator",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineOperator{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineOperator",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineOperator[${2:style=code}]{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineOperator*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineOperator*{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineOperator*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineOperator*[${2:style=code}]{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathSymbol",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineMathSymbol{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathSymbol",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineMathSymbol[${2:options}]{${1:name}}",
+        "keys": [
+          "\\DefineMathSymbol,\\DefineMathSymbol*,\\DefineShortcut,\\DefineShortcut*,\\ProjLibDefineMathSymbol,\\ProjLibDefineMathSymbol*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DefineMathSymbol*",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineMathSymbol*{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineMathSymbol*",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineMathSymbol*[${2:options}]{${1:name}}",
+        "keys": [
+          "\\DefineMathSymbol,\\DefineMathSymbol*,\\DefineShortcut,\\DefineShortcut*,\\ProjLibDefineMathSymbol,\\ProjLibDefineMathSymbol*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DefineShortcut",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineShortcut{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineShortcut",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineShortcut[${2:options}]{${1:name}}",
+        "keys": [
+          "\\DefineMathSymbol,\\DefineMathSymbol*,\\DefineShortcut,\\DefineShortcut*,\\ProjLibDefineMathSymbol,\\ProjLibDefineMathSymbol*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "DefineShortcut*",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineShortcut*{${1:name}}"
+      }
+    },
+    {
+      "name": "DefineShortcut*",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "DefineShortcut*[${2:options}]{${1:name}}",
+        "keys": [
+          "\\DefineMathSymbol,\\DefineMathSymbol*,\\DefineShortcut,\\DefineShortcut*,\\ProjLibDefineMathSymbol,\\ProjLibDefineMathSymbol*"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "RedefineInMathMode",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "RedefineInMathMode{${1:cmd}}{${2:def}}"
+      }
+    },
+    {
+      "name": "ListOfSymbols",
+      "arg": {
+        "format": "{}",
+        "snippet": "ListOfSymbols{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "ListOfSymbols",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ListOfSymbols[${2:colwidth1}]{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "ListOfSymbols",
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "ListOfSymbols[${2:colwidth1}][${3:colwidth2}]{${1:keyvals}}"
+      }
+    },
+    {
+      "name": "ProvideCommandCopy",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "ProvideCommandCopy{${1:cmd}}{${2:def}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\DefineMathSymbol,\\DefineMathSymbol*,\\DefineShortcut,\\DefineShortcut*,\\ProjLibDefineMathSymbol,\\ProjLibDefineMathSymbol*": [
+      "prefix=",
+      "type=",
+      "style="
+    ]
+  },
+  "args": []
+}

@@ -1,0 +1,44 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "newclipboard",
+      "arg": {
+        "format": "{}",
+        "snippet": "newclipboard{${1:basename}}"
+      }
+    },
+    {
+      "name": "openclipboard",
+      "arg": {
+        "format": "{}",
+        "snippet": "openclipboard{${1:basename}}"
+      }
+    },
+    {
+      "name": "clipboard",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}",
+        "snippet": "clipboard{${1:key%plain}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "Copy",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "Copy{${1:key%plain}}{${2:content%text}}"
+      }
+    },
+    {
+      "name": "Paste",
+      "arg": {
+        "format": "{}",
+        "snippet": "Paste{${1:key%plain}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

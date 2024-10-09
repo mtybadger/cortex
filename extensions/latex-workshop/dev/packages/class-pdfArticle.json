@@ -1,0 +1,376 @@
+{
+  "deps": [
+    {
+      "name": "class-extarticle"
+    },
+    {
+      "name": "kvoptions"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "graphbox"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "fifo-stack"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "fancyvrb"
+    },
+    {
+      "name": "fvextra"
+    },
+    {
+      "name": "ulem"
+    },
+    {
+      "name": "contour"
+    },
+    {
+      "name": "shadowtext"
+    },
+    {
+      "name": "enumitem"
+    },
+    {
+      "name": "alphalph"
+    },
+    {
+      "name": "pbox"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "overpic"
+    },
+    {
+      "name": "wrapfig"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "dcolumn"
+    },
+    {
+      "name": "tabto"
+    },
+    {
+      "name": "changepage"
+    },
+    {
+      "name": "ragged2e"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "unicode-math"
+    },
+    {
+      "name": "adjustbox"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "minted",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorbox",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibrarymany",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibraryvignette",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibraryminted",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibrarymagazine",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibraryposter",
+      "if": "extra"
+    },
+    {
+      "name": "tcolorboxlibraryexternal",
+      "if": "extra"
+    },
+    {
+      "name": "minted",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorbox",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibrarymany",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibraryvignette",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibraryminted",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibrarymagazine",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibraryposter",
+      "if": "extra=true"
+    },
+    {
+      "name": "tcolorboxlibraryexternal",
+      "if": "extra=true"
+    }
+  ],
+  "macros": [
+    {
+      "name": "forceNewPageGeometry",
+      "arg": {
+        "format": "{}",
+        "snippet": "forceNewPageGeometry{${1:options%keyvals}}",
+        "keys": [
+          "\\forceNewPageGeometry"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "hl",
+      "arg": {
+        "format": "{}",
+        "snippet": "hl{${1:text}}"
+      }
+    },
+    {
+      "name": "hl",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "hl[${2:color}]{${1:text}}"
+      }
+    },
+    {
+      "name": "st",
+      "arg": {
+        "format": "{}",
+        "snippet": "st{${1:text}}"
+      }
+    },
+    {
+      "name": "st",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "st[${2:color}]{${1:text}}"
+      }
+    },
+    {
+      "name": "ul",
+      "arg": {
+        "format": "{}",
+        "snippet": "ul{${1:text}}"
+      }
+    },
+    {
+      "name": "ul",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "ul[${2:color}]{${1:text}}"
+      }
+    },
+    {
+      "name": "namedLabel",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "namedLabel{${1:label}}{${2:name}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/pdfArticle#c": [
+      "fontSize=",
+      "mainFontFeat={${1:fontspec features}}",
+      "mainFont=${1:font name}",
+      "sansFontFeat={${1:fontspec features}}",
+      "sansFont=${1:font name}",
+      "monoFontFeat={${1:fontspec features}}",
+      "monoFont=${1:font name}",
+      "paperSize=${1|a0paper,a1paper,a2paper,a3paper,a4paper,a5paper,a6paper,b0paper,b1paper,b2paper,b3paper,b4paper,b5paper,b6paper,c0paper,c1paper,c2paper,c3paper,c4paper,c5paper,c6paper,b0j,b1j,b2j,b3j,b4j,b5j,b6j,ansiapaper,ansibpaper,ansicpaper,ansidpaper,ansiepaper,letterpaper,executivepaper,legalpaper|}",
+      "paperMode=${1|portrait,landscape|}",
+      "tmargin=",
+      "bmargin=",
+      "lmargin=",
+      "rmargin=",
+      "twoside",
+      "imgResolution=${1:ppi}",
+      "extra"
+    ],
+    "\\forceNewPageGeometry": [
+      "paper=${1|a0paper,a1paper,a2paper,a3paper,a4paper,a5paper,a6paper,b0paper,b1paper,b2paper,b3paper,b4paper,b5paper,b6paper,c0paper,c1paper,c2paper,c3paper,c4paper,c5paper,c6paper,b0j,b1j,b2j,b3j,b4j,b5j,b6j,ansiapaper,ansibpaper,ansicpaper,ansidpaper,ansiepaper,letterpaper,executivepaper,legalpaper|}",
+      "papername=${1|a0paper,a1paper,a2paper,a3paper,a4paper,a5paper,a6paper,b0paper,b1paper,b2paper,b3paper,b4paper,b5paper,b6paper,c0paper,c1paper,c2paper,c3paper,c4paper,c5paper,c6paper,b0j,b1j,b2j,b3j,b4j,b5j,b6j,ansiapaper,ansibpaper,ansicpaper,ansidpaper,ansiepaper,letterpaper,executivepaper,legalpaper|}",
+      "a0paper",
+      "a1paper",
+      "a2paper",
+      "a3paper",
+      "a4paper",
+      "a5paper",
+      "a6paper",
+      "b0paper",
+      "b1paper",
+      "b2paper",
+      "b3paper",
+      "b4paper",
+      "b5paper",
+      "b6paper",
+      "c0paper",
+      "c1paper",
+      "c2paper",
+      "c3paper",
+      "c4paper",
+      "c5paper",
+      "c6paper",
+      "b0j",
+      "b1j",
+      "b2j",
+      "b3j",
+      "b4j",
+      "b5j",
+      "b6j",
+      "ansiapaper",
+      "ansibpaper",
+      "ansicpaper",
+      "ansidpaper",
+      "ansiepaper",
+      "letterpaper",
+      "executivepaper",
+      "legalpaper",
+      "screen",
+      "paperwidth=",
+      "paperheight=",
+      "papersize=",
+      "papersize={${1:width},${2:height}}",
+      "landscape",
+      "portrait",
+      "layout=${1|a0paper,a1paper,a2paper,a3paper,a4paper,a5paper,a6paper,b0paper,b1paper,b2paper,b3paper,b4paper,b5paper,b6paper,c0paper,c1paper,c2paper,c3paper,c4paper,c5paper,c6paper,b0j,b1j,b2j,b3j,b4j,b5j,b6j,ansiapaper,ansibpaper,ansicpaper,ansidpaper,ansiepaper,letterpaper,executivepaper,legalpaper|}",
+      "layoutwidth=",
+      "layoutheight=",
+      "layoutsize=",
+      "layoutsize={${1:width},${2:height}}",
+      "layouthoffset=",
+      "layoutvoffset=",
+      "layoutoffset=",
+      "layoutoffset={${1:hoffset},${2:voffset}}",
+      "hscale=${1:scale}",
+      "vscale=${1:scale}",
+      "scale=${1:scale}",
+      "scale={${1:hscale},${2:vscale}}",
+      "width=",
+      "totalwidth=",
+      "height=",
+      "totalheight=",
+      "total=",
+      "total={${1:width},${2:height}}",
+      "textwidth=",
+      "textheight=",
+      "text=",
+      "body={${1:width},${2:height}}",
+      "lines=${1:integer}",
+      "includehead",
+      "includefoot",
+      "includeheadfoot",
+      "includemp",
+      "includeall",
+      "ignorehead",
+      "ignorefoot",
+      "ignoreheadfoot",
+      "ignoremp",
+      "ignoreall",
+      "heightrounded",
+      "hdivide={${1:left margin},${2:width},${3:right margin}}",
+      "vdivide={${1:top margin},${2:height},${3:bottom margin}}",
+      "divide={${1:left/top margin},${2:width/height},${3:right/bottom margin}}",
+      "left=",
+      "lmargin=",
+      "inner=",
+      "right=",
+      "rmargin=",
+      "outer=",
+      "top=",
+      "tmargin=",
+      "bottom=",
+      "bmargin=",
+      "hmargin=",
+      "hmargin={${1:left margin},${2:right margin}}",
+      "vmargin=",
+      "vmargin={${1:top margin},${2:bottom margin}}",
+      "margin=",
+      "margin={${1:left/top margin},${2:right/bottom margin}}",
+      "hmarginratio=${1:left}:${2:right}",
+      "vmarginratio=${1:top}:${2:bottom}",
+      "marginratio={${1:left}:${2:right},${3:top}:${4:bottom}}",
+      "marginratio=${1:left/top}:${2:right/bottom}",
+      "ratio={${1:left}:${2:right},${3:top}:${4:bottom}}",
+      "ratio=${1:left/top}:${2:right/bottom}",
+      "hcentering",
+      "vcentering",
+      "centering",
+      "twoside",
+      "asymmetric",
+      "bindingoffset=",
+      "headheight=",
+      "head=",
+      "headsep=",
+      "footskip=",
+      "foot=",
+      "nohead",
+      "nofoot",
+      "noheadfoot",
+      "footnotesep=",
+      "marginparwidth=",
+      "marginparsep=",
+      "nomarginpar",
+      "columnsep=",
+      "hoffset=",
+      "voffset=",
+      "offset=",
+      "offset={${1:hoffset},${2:voffset}}",
+      "twocolumn",
+      "onecolumn",
+      "twoside",
+      "reversemp",
+      "reversemarginpar"
+    ]
+  },
+  "args": [
+    "\\documentclass/pdfArticle#c"
+  ]
+}

@@ -3,12 +3,12 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import * as nls from '../../../../nls.js';
-import { registerColor, transparent } from '../colorUtils.js';
+import * as nls from 'vs/nls';
+import { registerColor, transparent } from 'vs/platform/theme/common/colorUtils';
 
-import { foreground } from './baseColors.js';
-import { editorErrorForeground, editorInfoForeground, editorWarningForeground } from './editorColors.js';
-import { minimapFindMatch } from './minimapColors.js';
+import { foreground } from 'vs/platform/theme/common/colors/baseColors';
+import { editorErrorForeground, editorInfoForeground, editorWarningForeground } from 'vs/platform/theme/common/colors/editorColors';
+import { minimapFindMatch } from 'vs/platform/theme/common/colors/minimapColors';
 
 
 export const chartsForeground = registerColor('charts.foreground',

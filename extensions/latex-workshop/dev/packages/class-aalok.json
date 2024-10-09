@@ -1,0 +1,118 @@
+{
+  "deps": [
+    {
+      "name": "class-memoir"
+    },
+    {
+      "name": "expex"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "marathi"
+    },
+    {
+      "name": "microtype"
+    },
+    {
+      "name": "fontawesome5"
+    },
+    {
+      "name": "diagbox"
+    },
+    {
+      "name": "fancyhdr"
+    },
+    {
+      "name": "float"
+    },
+    {
+      "name": "paracol"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarymost"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "mdframed"
+    },
+    {
+      "name": "etoolbox"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "biblatex"
+    },
+    {
+      "name": "tocloft"
+    },
+    {
+      "name": "minitoc"
+    }
+  ],
+  "macros": [
+    {
+      "name": "orcid",
+      "arg": {
+        "format": "{}",
+        "snippet": "orcid{${1:orcid क्रमांक}}"
+      }
+    },
+    {
+      "name": "citetitleyear",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "citetitleyear[${2:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "citetitleyear",
+      "unusual": true,
+      "arg": {
+        "format": "[][]{}",
+        "snippet": "citetitleyear[${2:prenote}][${3:postnote}]{${1:bibid}}"
+      }
+    },
+    {
+      "name": "citetitleyear",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "citetitleyear{${1:bibid}}"
+      }
+    },
+    {
+      "name": "orcidlogo",
+      "unusual": true
+    },
+    {
+      "name": "orcidno",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\documentclass/aalok#c": [
+      "खासगीवितरण",
+      "छापील",
+      "सुटालेख",
+      "रेगे",
+      "राजवाडे"
+    ]
+  },
+  "args": [
+    "\\documentclass/aalok#c"
+  ]
+}

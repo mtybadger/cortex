@@ -1,0 +1,25 @@
+{
+  "deps": [
+    {
+      "name": "xtemplate"
+    },
+    {
+      "name": "l3keys2e"
+    },
+    {
+      "name": "keyparse"
+    }
+  ],
+  "macros": [
+    {
+      "name": "LambdaX",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "LambdaX{${1:definition}}{${2:arg}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

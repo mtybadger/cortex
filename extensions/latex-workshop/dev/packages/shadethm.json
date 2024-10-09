@@ -1,0 +1,71 @@
+{
+  "deps": [
+    {
+      "name": "color"
+    }
+  ],
+  "macros": [
+    {
+      "name": "newshadetheorem",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "newshadetheorem{${1:envname}}{${2:label text}}"
+      }
+    },
+    {
+      "name": "newshadetheorem",
+      "arg": {
+        "format": "{}{}[]",
+        "snippet": "newshadetheorem{${1:envname}}{${2:label text}}[${3:counter}]"
+      }
+    },
+    {
+      "name": "shadeboxrule",
+      "unusual": true
+    },
+    {
+      "name": "shadeboxsep",
+      "unusual": true
+    },
+    {
+      "name": "shadesetinsideminipage",
+      "unusual": true
+    },
+    {
+      "name": "saveparindent",
+      "unusual": true
+    },
+    {
+      "name": "shadedtextwidth",
+      "unusual": true
+    },
+    {
+      "name": "shadeleftshift",
+      "unusual": true
+    },
+    {
+      "name": "shaderightshift",
+      "unusual": true
+    },
+    {
+      "name": "shadesavebox",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "shadebox",
+      "unusual": true
+    }
+  ],
+  "keys": {
+    "\\usepackage/shadethm#c": [
+      "bodymargin",
+      "shademargin",
+      "${1:sth file name}"
+    ]
+  },
+  "args": [
+    "\\usepackage/shadethm#c"
+  ]
+}

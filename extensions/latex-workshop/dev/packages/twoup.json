@@ -1,0 +1,51 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "cleartolastpage"
+    },
+    {
+      "name": "cleartolastpage",
+      "arg": {
+        "format": "[]",
+        "snippet": "cleartolastpage[${1:div}]"
+      }
+    },
+    {
+      "name": "cleartolastpage",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cleartolastpage[${1:div}][${2:rem}]"
+      }
+    },
+    {
+      "name": "cleartolastpage*"
+    },
+    {
+      "name": "cleartolastpage*",
+      "arg": {
+        "format": "[]",
+        "snippet": "cleartolastpage*[${1:div}]"
+      }
+    },
+    {
+      "name": "cleartolastpage*",
+      "arg": {
+        "format": "[][]",
+        "snippet": "cleartolastpage*[${1:div}][${2:rem}]"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\usepackage/twoup#c": [
+      "noheadfoot",
+      "nofoot",
+      "nohead",
+      "nospecial"
+    ]
+  },
+  "args": [
+    "\\usepackage/twoup#c"
+  ]
+}

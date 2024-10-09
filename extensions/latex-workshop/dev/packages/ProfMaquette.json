@@ -1,0 +1,293 @@
+{
+  "deps": [
+    {
+      "name": "verbatim"
+    },
+    {
+      "name": "calc"
+    },
+    {
+      "name": "xlop"
+    },
+    {
+      "name": "varwidth"
+    },
+    {
+      "name": "tcolorbox"
+    },
+    {
+      "name": "tcolorboxlibrarybreakable"
+    },
+    {
+      "name": "tcolorboxlibraryexternal"
+    },
+    {
+      "name": "tcolorboxlibraryfitting"
+    },
+    {
+      "name": "tcolorboxlibraryhooks"
+    },
+    {
+      "name": "tcolorboxlibrarymagazine"
+    },
+    {
+      "name": "tcolorboxlibraryposter"
+    },
+    {
+      "name": "tcolorboxlibraryraster"
+    },
+    {
+      "name": "tcolorboxlibraryskins"
+    },
+    {
+      "name": "tcolorboxlibrarytheorems"
+    },
+    {
+      "name": "tcolorboxlibrarylistings"
+    },
+    {
+      "name": "tcolorboxlibrarylistingsutf8"
+    },
+    {
+      "name": "xinttools"
+    },
+    {
+      "name": "listofitems"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "datatool"
+    },
+    {
+      "name": "modulus"
+    },
+    {
+      "name": "simplekv"
+    }
+  ],
+  "macros": [
+    {
+      "name": "TikzDM",
+      "unusual": true
+    },
+    {
+      "name": "TikzDMCor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzDMCor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzDS",
+      "unusual": true
+    },
+    {
+      "name": "TikzDSCor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzDSCor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzIE",
+      "unusual": true
+    },
+    {
+      "name": "TikzIECor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzIECor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzFiche",
+      "unusual": true
+    },
+    {
+      "name": "TikzFicheCor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzFicheCor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzParcours",
+      "unusual": true
+    },
+    {
+      "name": "TikzParcoursCor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzParcoursCor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzPdT",
+      "unusual": true
+    },
+    {
+      "name": "TikzPdTCor",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "TikzPdTCor{${1:clés}}"
+      }
+    },
+    {
+      "name": "TikzCours",
+      "unusual": true
+    },
+    {
+      "name": "Competences",
+      "arg": {
+        "format": "{}",
+        "snippet": "Competences{${1:texte1/texte2/...%text}}"
+      }
+    },
+    {
+      "name": "Competences",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "Competences[${2:N}]{${1:col1§...§colN/texte1/texte2/...%text}}"
+      }
+    },
+    {
+      "name": "PfMCompNA",
+      "unusual": true
+    },
+    {
+      "name": "PfMCompECA",
+      "unusual": true
+    },
+    {
+      "name": "PfMCompA",
+      "unusual": true
+    },
+    {
+      "name": "brm",
+      "arg": {
+        "format": "{}",
+        "snippet": "brm{${1:nombre}}"
+      }
+    },
+    {
+      "name": "AfficheParcours",
+      "arg": {
+        "format": "{}",
+        "snippet": "AfficheParcours{${1:parcour}}"
+      }
+    },
+    {
+      "name": "AfficheParcours",
+      "unusual": true,
+      "arg": {
+        "format": "[]{}",
+        "snippet": "AfficheParcours[${2:clés%keyvals}]{${1:parcour}}"
+      }
+    },
+    {
+      "name": "CheminVrai",
+      "arg": {
+        "format": "{}",
+        "snippet": "CheminVrai{${1:noeud départ/noeud arrivée}}"
+      }
+    },
+    {
+      "name": "CheminFaux",
+      "arg": {
+        "format": "{}",
+        "snippet": "CheminFaux{${1:noeud départ/noeud arrivée}}"
+      }
+    }
+  ],
+  "envs": [
+    {
+      "name": "Maquette",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:clés%keyvals}}",
+        "keys": [
+          "\\begin{Maquette}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "Maquette",
+      "arg": {
+        "format": "[]{}",
+        "snippet": "[${2:type}]{${1:clés%keyvals}}",
+        "keys": [
+          "\\begin{Maquette}"
+        ],
+        "keyPos": 1
+      }
+    },
+    {
+      "name": "exercice"
+    },
+    {
+      "name": "exercice",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:clés%keyvals}]",
+        "keys": [
+          "\\begin{exercice}"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "SOS"
+    },
+    {
+      "name": "Solution"
+    },
+    {
+      "name": "Reponse"
+    },
+    {
+      "name": "Indice"
+    }
+  ],
+  "keys": {
+    "\\begin{Maquette}": [
+      "Numero=${1:numero}",
+      "Date=${1:date}",
+      "Classe=${1:texte}",
+      "Niveau=${1:nombre}",
+      "Code=${1:code}",
+      "Calculatrice",
+      "Sujet=${1:texte}",
+      "Theme=${1:texte}",
+      "Nom=${1:texte}",
+      "NomExercice=${1:texte}",
+      "Fichier=${1:.csv file}",
+      "Couleur="
+    ],
+    "\\begin{exercice}": [
+      "Background=",
+      "Cadre=",
+      "BaremeTotal",
+      "BaremeDetaille",
+      "MotPoint=${1:texte}",
+      "Source=${1:texte}",
+      "Titre=${1:texte}",
+      "Competence=${1:texte}",
+      "Oral",
+      "Calculatrice",
+      "Trajet={${1:parcour1,parcour2,...}}",
+      "PasCorrige",
+      "Pouce",
+      "Direct"
+    ]
+  },
+  "args": []
+}

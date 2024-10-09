@@ -6,23 +6,23 @@ Make sure you are on **Node v12.x**.
 
 ```bash
 # Build extensions in the VS Code repo (if needed)
-npm i && npm run compile
+yarn && yarn compile
 
 # Dev (Electron)
-npm run smoketest
+yarn smoketest
 
 # Dev (Web - Must be run on distro)
-npm run smoketest -- --web --browser [chromium|webkit]
+yarn smoketest --web --browser [chromium|webkit]
 
 # Build (Electron)
-npm run smoketest -- --build <path to latest version>
-example: npm run smoketest -- --build /Applications/Visual\ Studio\ Code\ -\ Insiders.app
+yarn smoketest --build <path to latest version>
+example: yarn smoketest --build /Applications/Visual\ Studio\ Code\ -\ Insiders.app
 
 # Build (Web - read instructions below)
-npm run smoketest -- --build <path to server web build (ends in -web)> --web --browser [chromium|webkit]
+yarn smoketest --build <path to server web build (ends in -web)> --web --browser [chromium|webkit]
 
 # Remote (Electron)
-npm run smoketest -- --build <path to latest version> --remote
+yarn smoketest --build <path to latest version> --remote
 ```
 
 \* This step is necessary only when running without `--build` and OSS doesn't already exist in the `.build/electron` directory.
@@ -34,9 +34,8 @@ You must always run the smoketest version that matches the release you are testi
 ```bash
 git fetch
 git checkout release/1.22
-npm i && npm run compile
-cd test/smoke
-npm i
+yarn && yarn compile
+yarn --cwd test/smoke
 ```
 
 #### Web
@@ -64,7 +63,7 @@ xattr -d com.apple.quarantine <path to server with web folder zip>
 
 ```bash
 cd test/smoke
-npm run watch
+yarn watch
 ```
 
 ## Troubleshooting

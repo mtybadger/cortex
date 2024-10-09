@@ -1,0 +1,15 @@
+{
+  "deps": [
+    {
+      "name": "tikzlibrarydatavisualization"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\datavisualization#c,\\tikzdatavisualizationset#c": [
+      "candle stick plot"
+    ]
+  },
+  "args": []
+}

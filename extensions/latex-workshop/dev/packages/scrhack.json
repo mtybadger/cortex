@@ -1,0 +1,30 @@
+{
+  "deps": [
+    {
+      "name": "scrkbase"
+    },
+    {
+      "name": "xpatch"
+    },
+    {
+      "name": "scrlogo"
+    }
+  ],
+  "macros": [],
+  "envs": [],
+  "keys": {
+    "\\KOMAoptions#c,\\usepackage/scrhack#c": [
+      "hyperref",
+      "floatrow",
+      "float",
+      "listings",
+      "nomencl",
+      "setspace",
+      "lscape",
+      "standardsections"
+    ]
+  },
+  "args": [
+    "\\KOMAoptions#c,\\usepackage/scrhack#c"
+  ]
+}

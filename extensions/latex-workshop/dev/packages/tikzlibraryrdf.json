@@ -1,0 +1,21 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "tikzrdfhashmark",
+      "unusual": true
+    },
+    {
+      "name": "tikzrdfcontext",
+      "unusual": true
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\begin{tikzpicture}#c,\\tikz#c,\\begin{scope}#c,\\tikzset#c,\\scoped#c": [
+      "rdf engine on",
+      "rdf engine={${1:rdf keys}}"
+    ]
+  },
+  "args": []
+}

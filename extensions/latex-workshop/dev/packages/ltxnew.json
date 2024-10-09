@@ -1,0 +1,21 @@
+{
+  "deps": [
+    {
+      "name": "etex"
+    }
+  ],
+  "macros": [
+    {
+      "name": "new"
+    },
+    {
+      "name": "renew"
+    },
+    {
+      "name": "provide"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

@@ -1,0 +1,588 @@
+{
+  "deps": [
+    {
+      "name": "class-report"
+    },
+    {
+      "name": "geometry"
+    },
+    {
+      "name": "babel"
+    },
+    {
+      "name": "cite"
+    },
+    {
+      "name": "environ"
+    },
+    {
+      "name": "rotating"
+    },
+    {
+      "name": "framed"
+    },
+    {
+      "name": "hyperref"
+    },
+    {
+      "name": "color"
+    },
+    {
+      "name": "fontspec"
+    },
+    {
+      "name": "xunicode"
+    },
+    {
+      "name": "xltxtra"
+    },
+    {
+      "name": "lmodern"
+    },
+    {
+      "name": "underscore"
+    },
+    {
+      "name": "titlesec"
+    },
+    {
+      "name": "setspace"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "longtable"
+    },
+    {
+      "name": "multirow"
+    },
+    {
+      "name": "booktabs"
+    },
+    {
+      "name": "array"
+    },
+    {
+      "name": "arydshln"
+    },
+    {
+      "name": "datetime2"
+    },
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amsbsy"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "amsthm"
+    },
+    {
+      "name": "algpseudocode"
+    },
+    {
+      "name": "lipsum"
+    }
+  ],
+  "macros": [
+    {
+      "name": "BlankFootnote",
+      "arg": {
+        "format": "{}",
+        "snippet": "BlankFootnote{${1:text}}"
+      }
+    },
+    {
+      "name": "Break"
+    },
+    {
+      "name": "CaptionFontSize"
+    },
+    {
+      "name": "Chapter"
+    },
+    {
+      "name": "Chaptermark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Chaptermark{${1:code}}"
+      }
+    },
+    {
+      "name": "Chaptername",
+      "unusual": true
+    },
+    {
+      "name": "Chapters"
+    },
+    {
+      "name": "Claim"
+    },
+    {
+      "name": "Claims"
+    },
+    {
+      "name": "code",
+      "arg": {
+        "format": "{}",
+        "snippet": "code{${1:code}}"
+      }
+    },
+    {
+      "name": "CommentLeft",
+      "arg": {
+        "format": "{}",
+        "snippet": "CommentLeft{${1:text}}"
+      }
+    },
+    {
+      "name": "CommentRight",
+      "arg": {
+        "format": "{}",
+        "snippet": "CommentRight{${1:text}}"
+      }
+    },
+    {
+      "name": "Conjecture"
+    },
+    {
+      "name": "Conjectures"
+    },
+    {
+      "name": "Corollaries"
+    },
+    {
+      "name": "Corollary"
+    },
+    {
+      "name": "cref",
+      "arg": {
+        "format": "{}",
+        "snippet": "cref{${1:label}}"
+      }
+    },
+    {
+      "name": "dashhorizontal"
+    },
+    {
+      "name": "dashvertical"
+    },
+    {
+      "name": "DefineItem",
+      "arg": {
+        "format": "{}",
+        "snippet": "DefineItem{${1:text}}"
+      }
+    },
+    {
+      "name": "Definition"
+    },
+    {
+      "name": "Definitions"
+    },
+    {
+      "name": "DisableTOCUpdates"
+    },
+    {
+      "name": "DummyThree",
+      "unusual": true,
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "DummyThree{${1:arg1}}{${2:arg2}}{${3:arg3}}"
+      }
+    },
+    {
+      "name": "EnableTOCUpdates"
+    },
+    {
+      "name": "Example"
+    },
+    {
+      "name": "Examples"
+    },
+    {
+      "name": "Figure"
+    },
+    {
+      "name": "Figures"
+    },
+    {
+      "name": "FooterText",
+      "unusual": true
+    },
+    {
+      "name": "fref",
+      "arg": {
+        "format": "{}",
+        "snippet": "fref{${1:label}}"
+      }
+    },
+    {
+      "name": "Goto"
+    },
+    {
+      "name": "Hide",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Hide{${1:text}}"
+      }
+    },
+    {
+      "name": "IndentBlock",
+      "arg": {
+        "format": "{}",
+        "snippet": "IndentBlock{${1:length}}"
+      }
+    },
+    {
+      "name": "IndentHanging"
+    },
+    {
+      "name": "Lemma"
+    },
+    {
+      "name": "Lemmas"
+    },
+    {
+      "name": "mathbbold",
+      "arg": {
+        "format": "{}",
+        "snippet": "mathbbold{${1:text%plain}}"
+      }
+    },
+    {
+      "name": "mref",
+      "arg": {
+        "format": "{}",
+        "snippet": "mref{${1:label}}"
+      }
+    },
+    {
+      "name": "one",
+      "arg": {
+        "format": "{}",
+        "snippet": "one{${1:arg}}"
+      }
+    },
+    {
+      "name": "Part"
+    },
+    {
+      "name": "Parts"
+    },
+    {
+      "name": "pref",
+      "arg": {
+        "format": "{}",
+        "snippet": "pref{${1:label}}"
+      }
+    },
+    {
+      "name": "Problem"
+    },
+    {
+      "name": "Problems"
+    },
+    {
+      "name": "Proposition"
+    },
+    {
+      "name": "Propositions"
+    },
+    {
+      "name": "qedmarker"
+    },
+    {
+      "name": "Section"
+    },
+    {
+      "name": "Sectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Sectionmark{${1:code}}"
+      }
+    },
+    {
+      "name": "Sectionname",
+      "unusual": true
+    },
+    {
+      "name": "Sections"
+    },
+    {
+      "name": "sref",
+      "arg": {
+        "format": "{}",
+        "snippet": "sref{${1:label}}"
+      }
+    },
+    {
+      "name": "Stateu"
+    },
+    {
+      "name": "Subsectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Subsectionmark{${1:code}}"
+      }
+    },
+    {
+      "name": "Subsectionname",
+      "unusual": true
+    },
+    {
+      "name": "Subsubsectionmark",
+      "unusual": true,
+      "arg": {
+        "format": "{}",
+        "snippet": "Subsubsectionmark{${1:code}}"
+      }
+    },
+    {
+      "name": "Subsubsectionname",
+      "unusual": true
+    },
+    {
+      "name": "Table"
+    },
+    {
+      "name": "Tables"
+    },
+    {
+      "name": "Theorem"
+    },
+    {
+      "name": "Theorems"
+    },
+    {
+      "name": "Timestamp",
+      "unusual": true
+    },
+    {
+      "name": "TODO",
+      "arg": {
+        "format": "{}",
+        "snippet": "TODO{${1:text%todo}}"
+      }
+    },
+    {
+      "name": "tref",
+      "arg": {
+        "format": "{}",
+        "snippet": "tref{${1:label}}"
+      }
+    },
+    {
+      "name": "TypesetInDraftMode",
+      "unusual": true
+    },
+    {
+      "name": "UseHeaderFooterFont",
+      "unusual": true
+    },
+    {
+      "name": "captionsenglish",
+      "unusual": true
+    },
+    {
+      "name": "dateenglish",
+      "unusual": true
+    },
+    {
+      "name": "extrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "noextrasenglish",
+      "unusual": true
+    },
+    {
+      "name": "englishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "britishhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "americanhyphenmins",
+      "unusual": true
+    },
+    {
+      "name": "prefacename",
+      "unusual": true
+    },
+    {
+      "name": "bibname",
+      "unusual": true
+    },
+    {
+      "name": "chaptername",
+      "unusual": true
+    },
+    {
+      "name": "enclname",
+      "unusual": true
+    },
+    {
+      "name": "ccname",
+      "unusual": true
+    },
+    {
+      "name": "headtoname",
+      "unusual": true
+    },
+    {
+      "name": "seename",
+      "unusual": true
+    },
+    {
+      "name": "alsoname",
+      "unusual": true
+    },
+    {
+      "name": "proofname",
+      "unusual": true
+    },
+    {
+      "name": "glossaryname",
+      "unusual": true
+    }
+  ],
+  "envs": [
+    {
+      "name": "Thm:Theorem"
+    },
+    {
+      "name": "Thm:Theorem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Lemma"
+    },
+    {
+      "name": "Thm:Lemma",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Corollary"
+    },
+    {
+      "name": "Thm:Corollary",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Claim"
+    },
+    {
+      "name": "Thm:Claim",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Proposition"
+    },
+    {
+      "name": "Thm:Proposition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Conjecture"
+    },
+    {
+      "name": "Thm:Conjecture",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Problem"
+    },
+    {
+      "name": "Thm:Problem",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "Thm:Definition"
+    },
+    {
+      "name": "Thm:Definition",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "proof",
+      "arg": {
+        "format": "[]",
+        "snippet": "[${1:heading%text}]"
+      }
+    },
+    {
+      "name": "ResizedAlign",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:h-length%l}}{${2:width}}"
+      }
+    },
+    {
+      "name": "ResizedAlign*",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "{${1:h-length%l}}{${2:width}}"
+      }
+    },
+    {
+      "name": "CodeBlock",
+      "arg": {
+        "format": "{}",
+        "snippet": "{${1:heading%text}}"
+      }
+    }
+  ],
+  "keys": {
+    "\\documentclass/simplethesisdissertation#c": [
+      "a4paper",
+      "letterpaper",
+      "nonstopmode",
+      "draftmode"
+    ],
+    "\\theoremstyle#c": [
+      "MyPlain",
+      "MyDefinition"
+    ]
+  },
+  "args": [
+    "\\documentclass/simplethesisdissertation#c"
+  ]
+}

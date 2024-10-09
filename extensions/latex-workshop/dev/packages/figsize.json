@@ -1,0 +1,41 @@
+{
+  "deps": [
+    {
+      "name": "calc"
+    },
+    {
+      "name": "subfigure"
+    },
+    {
+      "name": "graphicx"
+    },
+    {
+      "name": "ifthen"
+    }
+  ],
+  "macros": [
+    {
+      "name": "SetFigLayout",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "SetFigLayout{${1:rows}}{${2:columns}}"
+      }
+    },
+    {
+      "name": "SetFigLayout",
+      "arg": {
+        "format": "[]{}{}",
+        "snippet": "SetFigLayout[${3:space}]{${1:rows}}{${2:columns}}"
+      }
+    },
+    {
+      "name": "figheight"
+    },
+    {
+      "name": "figwidth"
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}

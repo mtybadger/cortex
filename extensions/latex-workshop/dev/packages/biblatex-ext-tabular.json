@@ -1,0 +1,96 @@
+{
+  "deps": [],
+  "macros": [
+    {
+      "name": "printbibtabular"
+    },
+    {
+      "name": "printbibtabular",
+      "arg": {
+        "format": "[]",
+        "snippet": "printbibtabular[${1:options%keyvals}]",
+        "keys": [
+          "\\printbibtabular"
+        ],
+        "keyPos": 0
+      }
+    },
+    {
+      "name": "defbibtabular",
+      "arg": {
+        "format": "{}{}{}{}",
+        "snippet": "defbibtabular{${1:name}}{${2:begin code%definition}}{${3:end code%definition}}{${4:row code%definition}}"
+      }
+    },
+    {
+      "name": "plain",
+      "arg": {
+        "format": "{}",
+        "snippet": "plain{${1:code}}"
+      }
+    },
+    {
+      "name": "plainlang",
+      "arg": {
+        "format": "{}",
+        "snippet": "plainlang{${1:code}}"
+      }
+    },
+    {
+      "name": "anchor",
+      "arg": {
+        "format": "{}",
+        "snippet": "anchor{${1:code}}"
+      }
+    },
+    {
+      "name": "anchorlang",
+      "arg": {
+        "format": "{}",
+        "snippet": "anchorlang{${1:code}}"
+      }
+    },
+    {
+      "name": "driver",
+      "arg": {
+        "format": "{}",
+        "snippet": "driver{${1:precode}}"
+      }
+    },
+    {
+      "name": "defbibtabulartwocolumn",
+      "arg": {
+        "format": "{}{}{}{}{}",
+        "snippet": "defbibtabulartwocolumn{${1:name}}{${2:begin code%definition}}{${3:end code%definition}}{${4:anchor code%definition}}{${5:driver code%definition}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {
+    "\\printbibtabular": [
+      "env=${1:name}",
+      "heading=${1:name}",
+      "title=${1:text}",
+      "label=",
+      "block=${1|none,space,par,nbpar,ragged|}",
+      "prenote=${1:name}",
+      "postnote=${1:name}",
+      "section=${1:integer}",
+      "segment=${1:integer}",
+      "type=${1:entrytype}",
+      "nottype=${1:entrytype}",
+      "subtype=${1:subtype}",
+      "notsubtype=${1:subtype}",
+      "keyword=${1:keyword}",
+      "notkeyword=${1:keyword}",
+      "category=${1:category}",
+      "notcategory=${1:category}",
+      "filter=${1:name}",
+      "check=${1:name}",
+      "resetnumbers=",
+      "omitnumbers",
+      "locallabelwidth"
+    ]
+  },
+  "args": []
+}

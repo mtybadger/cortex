@@ -1,0 +1,80 @@
+{
+  "deps": [
+    {
+      "name": "amsmath"
+    },
+    {
+      "name": "amsfonts"
+    },
+    {
+      "name": "amssymb"
+    },
+    {
+      "name": "mathrsfs"
+    },
+    {
+      "name": "xcolor"
+    },
+    {
+      "name": "tikz"
+    },
+    {
+      "name": "tikzlibrarypatterns"
+    },
+    {
+      "name": "tikzlibraryshapes"
+    },
+    {
+      "name": "tikzlibraryshadings"
+    },
+    {
+      "name": "tikzlibraryshadows"
+    },
+    {
+      "name": "tikzlibraryshapes.geometric"
+    },
+    {
+      "name": "tikzlibrarydecorations"
+    },
+    {
+      "name": "tikzlibrarypositioning"
+    },
+    {
+      "name": "tikzlibrarydecorations.pathmorphing"
+    },
+    {
+      "name": "tikzlibrarycalc"
+    },
+    {
+      "name": "tikzlibraryfadings"
+    },
+    {
+      "name": "tikzlibraryshapes.misc"
+    },
+    {
+      "name": "tikzlibraryintersections"
+    },
+    {
+      "name": "fancyhdr"
+    }
+  ],
+  "macros": [
+    {
+      "name": "naborder",
+      "arg": {
+        "format": "{}{}",
+        "snippet": "naborder{${1:color}}{${2:letter}}"
+      }
+    },
+    {
+      "name": "bordertitle",
+      "arg": {
+        "format": "{}{}{}",
+        "snippet": "bordertitle{${1:top frame color}}{${2:bottom frame color}}{${3:text}}"
+      }
+    }
+  ],
+  "envs": [],
+  "keys": {},
+  "args": []
+}
